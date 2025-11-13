@@ -51,7 +51,7 @@
                  <https://www.imdb.com/name/nm0404993/> . # Jonathan Hyde
 	schema:duration "PT3H14M"^^xsd:duration ;
 	schema:contentRating "12" ; # Assuming UK BBFC rating based on context
-	schema:image <https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg> ;
+	schema:thumbnail <https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg> ;
 	schema:aggregateRating <https://www.imdb.com/title/tt0120338/ratings/> ;
 	schema:trailer <https://www.imdb.com/video/vi1740686617/> ;
 	schema:productionCompany <https://www.imdb.com/company/co0000756/>, # Twentieth Century Fox
@@ -74,7 +74,7 @@
         schema:ratingValue "75"^^xsd:decimal ;
         schema:bestRating "100"^^xsd:integer ;
         schema:worstRating "0"^^xsd:integer ;
-        schema:url <https://www.metacritic.com/movie/titanic> # Example URL, not in source; XXX to check
+        schema:url <https://www.imdb.com/title/tt0120338/criticreviews/>
     ] .
 
 <https://www.imdb.com/title/tt0120338> schema:review [
@@ -94,8 +94,42 @@
             schema:bestRating "10"^^xsd:integer ;
             schema:ratingValue "8"^^xsd:integer
         ]
+    ] ,
+    [
+        a schema:Review ;
+        schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+        schema:author [
+            a schema:Person ;
+            schema:name "OU"
+        ] ;
+        schema:dateCreated "2020-02-23"^^xsd:date ;
+        schema:inLanguage "English" ;
+        schema:name "Great" ;
+        schema:reviewBody "Very beautiful and cinematic movie with lots of classic scenes.Also extremely sad at times.Absolute 90's classic." ;
+        schema:reviewRating [
+            a schema:Rating ;
+            schema:worstRating "1"^^xsd:integer ;
+            schema:bestRating "10"^^xsd:integer ;
+            schema:ratingValue "10"^^xsd:integer
+        ]
+    ] ,
+    [
+        a schema:Review ;
+        schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+        schema:author [
+            a schema:SoftwareApplication ;
+            schema:name "AI-Generated Review"
+        ] ;
+        schema:inLanguage "English" ;
+        schema:name "Summary" ;
+        schema:reviewBody "Reviewers say 'Titanic' is celebrated for its epic love story and stunning visual effects, particularly the recreation of the sinking ship. Praised for Leonardo DiCaprio and Kate Winslet's performances and chemistry, the film also garners attention for its historical detail and portrayal of class differences. However, some criticize its melodramatic elements, perceived historical inaccuracies, and length. Despite these criticisms, many acknowledge its cultural impact and status as a phenomenon." ;
+        schema:reviewRating [
+            a schema:Rating ;
+            schema:worstRating "1"^^xsd:integer ;
+            schema:bestRating "10"^^xsd:integer ;
+            schema:ratingValue "7.9"^^xsd:decimal
+        ]
     ] .
-
 
 # Define the Aggregate Rating
 <https://www.imdb.com/title/tt0120338/ratings/> a schema:AggregateRating ;
@@ -104,7 +138,11 @@
 	schema:ratingCount 1360849 ;
 	schema:bestRating "10"^^xsd:integer ;
 	schema:worstRating "1"^^xsd:integer .
- 
+
+# ==============================================================================
+# DEFINITIONS OF RELATED ENTITIES
+# ==============================================================================
+
 # Define the Trailer
 <hhttps://www.imdb.com/video/vi1740686617/> a schema:VideoObject ;
 	schema:name "Official Trailer" ;
@@ -173,54 +211,63 @@
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4069242624/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BNzY5MDQzOTAwNV5BMl5BanBnXkFtZTcwNTY0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000701/> ; # Kate Winslet
 	schema:height "1496"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4052465408/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMjE0OTk0OTI0OF5BMl5BanBnXkFtZTcwNjY0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Billy Zane in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000708/> ; # Billy Zane
 	schema:height "2048"^^xsd:integer ;
 	schema:width "1385"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4035688192/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMTcxNjczODgyMl5BMl5BanBnXkFtZTcwODY0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
 	schema:height "1385"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4287346432/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BODQ1MzI0MDkyMF5BMl5BanBnXkFtZTcwMTc0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
 	schema:height "1352"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4270569216/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMTg0NzYwMzc0OV5BMl5BanBnXkFtZTcwMjc0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
 	schema:height "1534"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4253792000/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BNjIxMDQ3NjYxNl5BMl5BanBnXkFtZTcwMzc0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
 	schema:height "2048"^^xsd:integer ;
 	schema:width "1355"^^xsd:integer .
  
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm4237014784/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMTYxNDU1Mzk0N15BMl5BanBnXkFtZTcwNDc0NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio, Kate Winslet, Billy Zane, and Frances Fisher in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/>, <https://www.imdb.com/name/nm0000708/>, <https://www.imdb.com/name/nm0004920/> ; # Leonardo DiCaprio, Kate Winslet, Billy Zane, Frances Fisher
 	schema:height "1368"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm378320640/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMzMwNDg2OTU3NV5BMl5BanBnXkFtZTcwMzY2NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Leonardo DiCaprio and Danny Nucci in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0634240/> ; # Leonardo DiCaprio, Danny Nucci
 	schema:height "1385"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
 
 <https://www.imdb.com/title/tt0120338/mediaviewer/rm361543424/> a schema:ImageObject ;
 	schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NDIzMDExMV5BMl5BanBnXkFtZTcwNTY2NTk1Nw@@._V1_.jpg> ;
 	schema:caption "Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000701/> ; # Kate Winslet
 	schema:height "1355"^^xsd:integer ;
 	schema:width "2048"^^xsd:integer .
  
@@ -236,9 +283,6 @@
         schema:byArtist <https://www.imdb.com/name/nm0001144/> ; # Céline Dion
         schema:producer <https://www.imdb.com/name/nm0000035/>, # James Horner
                         <https://www.imdb.com/name/nm0290788/> ; # Simon Franglen
-        schema:publisher [
-            a schema:Organization ;
-            schema:name "550 Music/Sony Music Entertainment (Canada) Inc." ] ;
         schema:recordingOf
         [
             a schema:MusicComposition ;
@@ -250,96 +294,44 @@
     ],
     [
         a schema:MusicRecording ;
-        schema:name "Southampton" ;
-        schema:conductor <https://www.imdb.com/name/nm0000035/> ; # James Horner
-        schema:recordingOf
-        [
-            a schema:MusicComposition ;
-            schema:name "Southampton" ;
-            schema:composer <https://www.imdb.com/name/nm0000035/> . # James Horner
-        ]
-        schema:url "YOUR_YOUTUBE_LINK_HERE"
-    ],
-    [
-        a schema:MusicRecording ;
-        schema:name "Come Josephine, in My Flying Machine" ;
-        schema:byArtist <https://www.imdb.com/name/nm0107380/> ; # Maire Brennan
-        schema:publisher [
-            a schema:Organization ;
-            schema:name "BMG Records (UK) Ltd." ] ;
-        schema:recordingOf <https://www.imdb.com/title/tt0120338/soundtrack#ComeJosephine> ;
-        schema:url "YOUR_YOUTUBE_LINK_HERE"
-    ],
-    [
-        a schema:MusicRecording ;
         schema:name "Come Josephine, in My Flying Machine" ;
         schema:byArtist <https://www.imdb.com/name/nm0000138/> ; # Leonardo DiCaprio
+        schema:producer <https://www.imdb.com/name/nm0743919> ; # William Ross
         schema:recordingOf
         [
             a schema:MusicComposition ;
             schema:name "Come Josephine, in My Flying Machine" ;
-            schema:author <https://www.imdb.com/name/nm0278857/>,  # Fred Fisher
-                           <https://www.imdb.com/name/nm0117001/> . # Alfred Bryan
+            schema:author <https://www.imdb.com/name/nm0279494/>,  # Fred Fisher
+                          <https://www.imdb.com/name/nm0116890/> ; # Al Bryan
         ] ;
         schema:url "YOUR_YOUTUBE_LINK_HERE"
     ],
     [
         a schema:MusicRecording ;
         schema:name "Blue Danube" ;
-        schema:byArtist [
-            a schema:MusicGroup ;
-            schema:name "I Salonisti" ] ;
-        schema:publisher [ a schema:Organization ; schema:name "Sony Classical" ] ;
+        schema:byArtist <https://www.imdb.com/name/nm9200859/> ; # I Salonisti
         schema:recordingOf
         [
             a schema:MusicComposition ;
             schema:name "Blue Danube" ;
-            schema:composer <https://www.imdb.com/name/nm0006209/> . # Johann Strauss
+            schema:composer <https://www.imdb.com/name/nm0006310/> . # Johann Strauss
         ] ;
         schema:url "YOUR_YOUTUBE_LINK_HERE"
     ],
     [
         a schema:MusicRecording ;
         schema:name "Nearer My God To Thee" ;
-        schema:byArtist [
-            a schema:MusicGroup ;
-            schema:name "I Salonisti" ] ;
-        schema:publisher [
-            a schema:Organization ;
-            schema:name "Sony Classical" ] ;
+        schema:byArtist <https://www.imdb.com/name/nm9200859/> ; # I Salonisti
+        schema:producer <https://www.imdb.com/name/nm0368229/> ; # Lorenz Hasler
         schema:recordingOf
         [
             a schema:MusicComposition ;
             schema:name "Nearer My God To Thee" ;
-            schema:composer <https://www.imdb.com/name/nm0556943/> . # Lowell Mason
+            schema:composer <https://www.imdb.com/name/nm1131663/>, # Lowell Mason
+                        <https://www.imdb.com/name/nm1131805/> ; # Sarah F. Adams
         ] ;
         schema:url "YOUR_YOUTUBE_LINK_HERE"
     ] .
-
-# --- Define the Musical Compositions (The "Works") ---
-# Note: Using blank nodes above as the URI of the MusicComposition is tied to the movie in the solution below
-
-# <https://www.imdb.com/title/tt0120338/soundtrack#MyHeartWillGoOn> a schema:MusicComposition ;
-#     schema:name "My Heart Will Go On" ;
-#     schema:composer <https://www.imdb.com/name/nm0000035/> ; # James Horner
-#     schema:lyricist <https://www.imdb.com/name/nm0421263/> . # Will Jennings
-
-# <https://www.imdb.com/title/tt0120338/soundtrack#Southampton> a schema:MusicComposition ;
-#     schema:name "Southampton" ;
-#     schema:composer <https://www.imdb.com/name/nm0000035/> . # James Horner
-
-# <https://www.imdb.com/title/tt0120338/soundtrack#ComeJosephine> a schema:MusicComposition ;
-#     schema:name "Come Josephine, in My Flying Machine" ;
-#     schema:author <https://www.imdb.com/name/nm0278857/>,  # Fred Fisher
-#                    <https://www.imdb.com/name/nm0117001/> . # Alfred Bryan
-
-# <https://www.imdb.com/title/tt0120338/soundtrack#BlueDanube> a schema:MusicComposition ;
-#     schema:name "Blue Danube" ;
-#     schema:composer <https://www.imdb.com/name/nm0006209/> . # Johann Strauss
-
-# <https://www.imdb.com/title/tt0120338/soundtrack#NearerMyGodToThee> a schema:MusicComposition ;
-#     schema:name "Nearer My God To Thee" ;
-#     schema:composer <https://www.imdb.com/name/nm0556943/> . # Lowell Mason
     
 # --- Define People (Composers, Performers, etc.) ---
 
@@ -351,15 +343,20 @@
     schema:name "Céline Dion" .
 <https://www.imdb.com/name/nm0290788/> a schema:Person ;
     schema:name "Simon Franglen" .
-<https://www.imdb.com/name/nm0107380/> a schema:Person ;
-    schema:name "Maire Brennan" .
-<https://www.imdb.com/name/nm0278857/> a schema:Person ;
+<https://www.imdb.com/name/nm0279494/> a schema:Person ;
     schema:name "Fred Fisher" .
-<https://www.imdb.com/name/nm0117001/> a schema:Person ;
-    schema:name "Alfred Bryan" .
+<https://www.imdb.com/name/nm0116890/> a schema:Person ;
+    schema:name "Al Bryan" .
 <https://www.imdb.com/name/nm0006209/> a schema:Person ;
     schema:name "Johann Strauss" .
-<https://www.imdb.com/name/nm0556943/> a schema:Person ;
+<https://www.imdb.com/name/nm1131663/> a schema:Person ;
     schema:name "Lowell Mason" .
-<https://www.imdb.com/name/nm0000138/> a schema:Person ;
-    schema:name "Leonardo DiCaprio" .
+<https://www.imdb.com/name/nm1131805/> a schema:Person ;
+    schema:name "Sarah F. Adams" .
+<https://www.imdb.com/name/nm0743919/> a schema:Person ;
+    schema:name "William Ross" .
+<https://www.imdb.com/name/nm9200859/> a schema:MusicGroup ;
+    schema:name "I Salonisti" .
+<https://www.imdb.com/name/nm0368229/> a schema:Person ;
+    schema:name "Lorenz Hasler" .
+# ==============================================================================
