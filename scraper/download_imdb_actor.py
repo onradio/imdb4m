@@ -11,6 +11,12 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 
+driver_dir = Path("YOUR CHROMEDRIVE DIR PATH HERE")
+driver_path = driver_dir / "chromedriver"
+from selenium.webdriver.chrome.service import Service
+service = Service(str(driver_path))
+driver = webdriver.Chrome(service=service)
+
 def extract_actor_id(url):
     """
     Extract the actor ID from an IMDb URL.
@@ -51,8 +57,10 @@ def setup_driver(headless=True):
     chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
     
     # Use webdriver-manager to automatically handle ChromeDriver
-    service = Service(ChromeDriverManager().install())
+    service = Service(str(driver_path))
     driver = webdriver.Chrome(service=service, options=chrome_options)
+    # service = Service(ChromeDriverManager().install())
+    # driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
 
