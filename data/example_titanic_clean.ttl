@@ -1,0 +1,257 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.imdb.com/title/tt0120338> a schema:Movie ;
+	schema:name "Titanic" ;
+    schema:alternateName "Planet Ice" ;
+	schema:url <https://www.imdb.com/title/tt0120338/> ;
+	schema:abstract "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic." ;
+    schema:description <https://www.imdb.com/title/tt0120338/plotsummary/?ref_=tt_stry_pl#synopsis> ;
+    schema:datePublished "1998-01-23"^^xsd:date ; # UK Release Date from JSON-LD
+    schema:dateCreated "1997-12-19"^^xsd:date ; # US Release Date from JSON-LD
+    schema:countryOfOrigin <https://www.imdb.com/search/title/?country_of_origin=US> ; # Using this search shortcut as URI for now | Could be <https://www.wikidata.org/wiki/Q30> if reusing a linker at this level.
+	# Consider adding publicationEvent for more detail if needed, or dateCreated for 1997.
+    schema:inLanguage "English", "Swedish", "Italian", "French" ;
+	schema:genre "Drama", "Romance" ; # XXX Extract more here, as this will create more connections!
+	schema:keywords "iceberg, titanic, drowning, nude modeling, melodrama" ; # XXX Extract more here, as this will create more connections!
+	schema:creator <https://www.imdb.com/name/nm0000116/> ; # James Cameron
+    schema:director <https://www.imdb.com/name/nm0000116/> ; # James Cameron
+	schema:actor <https://www.imdb.com/name/nm0000138/>, # Leonardo DiCaprio
+                 <https://www.imdb.com/name/nm0000701/>, # Kate Winslet
+                 <https://www.imdb.com/name/nm0000708/>, # Billy Zane
+                 <https://www.imdb.com/name/nm0000870/>, # Kathy Bates
+                 <https://www.imdb.com/name/nm0004920/>, # Frances Fisher
+                 <https://www.imdb.com/name/nm0001784/>, # Gloria Stuart
+                 <https://www.imdb.com/name/nm0000200/>, # Bill Paxton
+                 <https://www.imdb.com/name/nm0384060/>, # Bernard Hill
+                 <https://www.imdb.com/name/nm0001831/>, # David Warner
+                 <https://www.imdb.com/name/nm0001255/>, # Victor Garber
+                 <https://www.imdb.com/name/nm0404993/> ; # Jonathan Hyde
+	schema:duration "PT3H14M"^^xsd:duration ;
+	schema:contentRating "12" ; # Assuming UK BBFC rating based on context
+	schema:thumbnail <https://m.media-amazon.com/images/M/MV5BYzYyN2FiZmUtYWYzMy00MzViLWJkZTMtOGY1ZjgzNWMwN2YxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg> ;
+	schema:aggregateRating <https://www.imdb.com/title/tt0120338/ratings/> ;
+	schema:trailer <https://www.imdb.com/video/vi1740686617/> ;
+	schema:productionCompany <https://www.imdb.com/company/co0000756/>, # Twentieth Century Fox
+                             <https://www.imdb.com/company/co0023400/>, # Paramount Pictures
+							 <https://www.imdb.com/company/co0038663/> ; # Lightstorm Entertainment
+    schema:productionBudget [
+        a schema:MonetaryAmount ;
+        schema:currency "USD" ;
+        schema:value "200000000"^^xsd:decimal ;
+        schema:description "$200,000,000 (estimated)"
+    ] ;
+    schema:award "Won 11 Oscars" .
+
+# ==============================================================================
+# SIMILAR MOVIES
+# ==============================================================================
+<https://www.imdb.com/title/tt0120338> 
+    schema:isSimilarTo <https://www.imdb.com/title/tt0499549> . # Avatar
+
+# ==============================================================================
+# REVIEWS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120338> schema:aggregateRating [
+        a schema:AggregateRating ;
+        schema:name "Metacritic Score" ;
+        schema:ratingValue "75"^^xsd:decimal ;
+        schema:bestRating "100"^^xsd:integer ;
+        schema:worstRating "0"^^xsd:integer ;
+        schema:url <https://www.imdb.com/title/tt0120338/criticreviews/>
+    ] .
+
+<https://www.imdb.com/title/tt0120338> schema:review [
+        a schema:Review ;
+        schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+        schema:author [
+            a schema:Person ;
+            schema:name "chera_khalid"
+        ] ;
+        schema:dateCreated "2023-09-28"^^xsd:date ;
+        schema:inLanguage "English" ;
+        schema:name "Amazing masterpiece" ;
+        schema:reviewBody "\"Titanic\" sweeps you off your feet with its breathtaking grandeur and emotional depth, earning every bit of your 8/10 rating and love. Leonardo DiCaprio and Kate Winslet's mesmerizing performances breathe life into the ill-fated lovers, making their tragic tale utterly compelling. The film's meticulous editing ensures a seamless transition between timelines, keeping the audience engrossed in both past and present. James Horner's iconic score amplifies the emotional resonance, making every heartache and triumph feel profoundly moving. Director James Cameron's underlying message of love prevailing in the face of adversity is masterfully conveyed, and the film's cinematography captures the ship's opulence and ultimate demise with unparalleled artistry. \"Titanic\" remains an epic cinematic achievement that continues to touch the hearts of audiences worldwide." ;
+        schema:reviewRating [
+            a schema:Rating ;
+            schema:worstRating "1"^^xsd:integer ;
+            schema:bestRating "10"^^xsd:integer ;
+            schema:ratingValue "8"^^xsd:integer
+        ]
+    ] ,
+    [
+        a schema:Review ;
+        schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+        schema:author [
+            a schema:Person ;
+            schema:name "OU"
+        ] ;
+        schema:dateCreated "2020-02-23"^^xsd:date ;
+        schema:inLanguage "English" ;
+        schema:name "Great" ;
+        schema:reviewBody "Very beautiful and cinematic movie with lots of classic scenes.Also extremely sad at times.Absolute 90's classic." ;
+        schema:reviewRating [
+            a schema:Rating ;
+            schema:worstRating "1"^^xsd:integer ;
+            schema:bestRating "10"^^xsd:integer ;
+            schema:ratingValue "10"^^xsd:integer
+        ]
+    ] ,
+    [
+        a schema:Review ;
+        schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+        schema:author [
+            a schema:SoftwareApplication ;
+            schema:name "AI-Generated Review"
+        ] ;
+        schema:inLanguage "English" ;
+        schema:name "Summary" ;
+        schema:reviewBody "Reviewers say 'Titanic' is celebrated for its epic love story and stunning visual effects, particularly the recreation of the sinking ship. Praised for Leonardo DiCaprio and Kate Winslet's performances and chemistry, the film also garners attention for its historical detail and portrayal of class differences. However, some criticize its melodramatic elements, perceived historical inaccuracies, and length. Despite these criticisms, many acknowledge its cultural impact and status as a phenomenon." ;
+        schema:reviewRating [
+            a schema:Rating ;
+            schema:worstRating "1"^^xsd:integer ;
+            schema:bestRating "10"^^xsd:integer ;
+            schema:ratingValue "7.9"^^xsd:decimal
+        ]
+    ] .
+
+# Define the Aggregate Rating
+<https://www.imdb.com/title/tt0120338/ratings/> a schema:AggregateRating ;
+    schema:itemReviewed <https://www.imdb.com/title/tt0120338/> ;
+	schema:ratingValue "7.9"^^xsd:decimal ;
+	schema:ratingCount 1360849 ;
+	schema:bestRating "10"^^xsd:integer ;
+	schema:worstRating "1"^^xsd:integer .
+
+# ==============================================================================
+# DEFINITIONS OF RELATED ENTITIES
+# ==============================================================================
+
+# Define the Trailer
+<https://www.imdb.com/video/vi1740686617/> a schema:VideoObject ;
+	schema:name "Official Trailer" ;
+	schema:description "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic." ;
+	schema:embedUrl <https://www.imdb.com/video/vi1740686617/> ;
+	schema:thumbnailUrl <https://m.media-amazon.com/images/M/MV5BYzExZDkwNzYtYmI0Mi00OThhLWFhNmMtZTZjYWU2MTdkMDAzXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg>;
+	schema:duration "PT1M37S"^^xsd:duration ;
+	schema:uploadDate "2023-01-10T18:08:38.447Z"^^xsd:dateTime .
+ 
+# Define People (Director, Actors)
+<https://www.imdb.com/name/nm0000116/> a schema:Person ;
+	schema:name "James Cameron" .
+<https://www.imdb.com/name/nm0000138> a schema:Person ;
+	schema:name "Leonardo DiCaprio" .
+<https://www.imdb.com/name/nm0000701/> a schema:Person ;
+	schema:name "Kate Winslet" .
+<https://www.imdb.com/name/nm0000708/> a schema:Person ;
+	schema:name "Billy Zane" .
+<https://www.imdb.com/name/nm0000870/> a schema:Person ;
+	schema:name "Kathy Bates" .
+<https://www.imdb.com/name/nm0004920/> a schema:Person ;
+    schema:name "Frances Fisher" .
+<https://www.imdb.com/name/nm0001784/> a schema:Person ;
+    schema:name "Gloria Stuart" .
+<https://www.imdb.com/name/nm0000200/> a schema:Person ;
+    schema:name "Bill Paxton" .
+<https://www.imdb.com/name/nm0384060/> a schema:Person ;
+    schema:name "Bernard Hill" .
+<https://www.imdb.com/name/nm0001831/> a schema:Person ;
+    schema:name "David Warner" .
+<https://www.imdb.com/name/nm0001255/> a schema:Person ;
+    schema:name "Victor Garber" .
+<https://www.imdb.com/name/nm0404993/> a schema:Person ;
+    schema:name "Jonathan Hyde" .
+ 
+# Define Organizations (Production Companies) - Using URLs from JSON-LD as identifiers
+<https://www.imdb.com/company/co0000756/> a schema:Organization ;
+	schema:name "Twentieth Century Fox" ;
+	schema:url <https://www.imdb.com/company/co0000756/> .
+
+<https://www.imdb.com/company/co0023400/> a schema:Organization ;
+	schema:name "Paramount Pictures" ;
+	schema:url <https://www.imdb.com/company/co0023400/> .
+
+<https://www.imdb.com/company/co0038663/> a schema:Organization ;
+	schema:name "Lightstorm Entertainment" ;
+	schema:url <https://www.imdb.com/company/co0038663/> .
+
+
+# ==============================================================================
+# IMAGES
+# ==============================================================================
+ 
+# Add ImageObjects for the gallery images and link them to the movie
+<https://www.imdb.com/title/tt0120338/> schema:image
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4069242624/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4052465408/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4035688192/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4287346432/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4270569216/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4253792000/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm4237014784/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm378320640/>,
+    <https://www.imdb.com/title/tt0120338/mediaviewer/rm361543424/> .
+ 
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4069242624/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BNzY5MDQzOTAwNV5BMl5BanBnXkFtZTcwNTY0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000701/> ; # Kate Winslet
+	schema:height "1496"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4052465408/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMjE0OTk0OTI0OF5BMl5BanBnXkFtZTcwNjY0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Billy Zane in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000708/> ; # Billy Zane
+	schema:height "2048"^^xsd:integer ;
+	schema:width "1385"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4035688192/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMTcxNjczODgyMl5BMl5BanBnXkFtZTcwODY0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
+	schema:height "1385"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4287346432/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BODQ1MzI0MDkyMF5BMl5BanBnXkFtZTcwMTc0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
+	schema:height "1352"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4270569216/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMTg0NzYwMzc0OV5BMl5BanBnXkFtZTcwMjc0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
+	schema:height "1534"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4253792000/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BNjIxMDQ3NjYxNl5BMl5BanBnXkFtZTcwMzc0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio and Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/> ; # Leonardo DiCaprio, Kate Winslet
+	schema:height "2048"^^xsd:integer ;
+	schema:width "1355"^^xsd:integer .
+ 
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm4237014784/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMTYxNDU1Mzk0N15BMl5BanBnXkFtZTcwNDc0NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio, Kate Winslet, Billy Zane, and Frances Fisher in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0000701/>, <https://www.imdb.com/name/nm0000708/>, <https://www.imdb.com/name/nm0004920/> ; # Leonardo DiCaprio, Kate Winslet, Billy Zane, Frances Fisher
+	schema:height "1368"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm378320640/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMzMwNDg2OTU3NV5BMl5BanBnXkFtZTcwMzY2NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Leonardo DiCaprio and Danny Nucci in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000138/>, <https://www.imdb.com/name/nm0634240/> ; # Leonardo DiCaprio, Danny Nucci
+	schema:height "1385"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/title/tt0120338/mediaviewer/rm361543424/> a schema:ImageObject ;
+	schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NDIzMDExMV5BMl5BanBnXkFtZTcwNTY2NTk1Nw@@._V1_.jpg> ;
+	schema:caption "Kate Winslet in Titanic (1997)" ;
+    schema:mainEntity <https://www.imdb.com/name/nm0000701/> ; # Kate Winslet
+	schema:height "1355"^^xsd:integer ;
+	schema:width "2048"^^xsd:integer .
