@@ -1,6 +1,5 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix mov: <http://movie.example.org/> .
 
 # ==============================================================================
 # LEONARDO DICAPRIO (schema:Person)
@@ -30,7 +29,16 @@
     schema:performerIn <https://www.imdb.com/title/tt1375666/>,    # Inception
                        <https://www.imdb.com/title/tt0120338/>,    # Titanic
                        <https://www.imdb.com/title/tt0407887/>,    # The Departed
-                       <https://www.imdb.com/title/tt0993846/> ;   # The Wolf of Wall Street
+                       <https://www.imdb.com/title/tt0993846/>,    # The Wolf of Wall Street
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1663202/>, # The Revenant
+                       <https://www.imdb.com/title/tt7131622/>, # Once Upon a Time... in Hollywood
+                       <https://www.imdb.com/title/tt1853728/>, # Django Unchained
+                       <https://www.imdb.com/title/tt1343092/>, # The Great Gatsby
+                       <https://www.imdb.com/title/tt1616195/>, # J. Edgar
+                       <https://www.imdb.com/title/tt1130884/>, # Shutter Island
+                       <https://www.imdb.com/title/tt0959337/>, # Revolutionary Road
+                       <https://www.imdb.com/title/tt0758774/> . # Body of Lies
                    
     schema:award [
         a schema:Award ;
@@ -47,7 +55,7 @@
         schema:value [
             a schema:MonetaryAmount ;
             schema:currency "USD" ;
-            schema:value "30000000"^^xsd:decimal
+            schema:value "30000000"^^xsd:integer
         ]
     ] ;
 
@@ -87,6 +95,99 @@
 <https://www.imdb.com/title/tt5537002/> a schema:Movie ;
     schema:name "Killers of the Flower Moon" ;
     schema:url <https://www.imdb.com/title/tt5537002/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Revenant (2015)
+<https://www.imdb.com/title/tt1663202/> a schema:Movie ;
+    schema:name "The Revenant" ;
+    schema:url <https://www.imdb.com/title/tt1663202/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Hugh Glass"
+    ] .
+
+# Once Upon a Time... in Hollywood (2019)
+<https://www.imdb.com/title/tt7131622/> a schema:Movie ;
+    schema:name "Once Upon a Time... in Hollywood" ;
+    schema:url <https://www.imdb.com/title/tt7131622/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Rick Dalton"
+    ] .
+
+# Django Unchained (2012)
+<https://www.imdb.com/title/tt1853728/> a schema:Movie ;
+    schema:name "Django Unchained" ;
+    schema:url <https://www.imdb.com/title/tt1853728/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Calvin J. Candie"
+    ] .
+
+# The Great Gatsby (2013)
+<https://www.imdb.com/title/tt1343092/> a schema:Movie ;
+    schema:name "The Great Gatsby" ;
+    schema:url <https://www.imdb.com/title/tt1343092/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Jay Gatsby"
+    ] .
+
+# J. Edgar (2011)
+<https://www.imdb.com/title/tt1616195/> a schema:Movie ;
+    schema:name "J. Edgar" ;
+    schema:url <https://www.imdb.com/title/tt1616195/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "J. Edgar Hoover"
+    ] .
+
+# Shutter Island (2010)
+<https://www.imdb.com/title/tt1130884/> a schema:Movie ;
+    schema:name "Shutter Island" ;
+    schema:url <https://www.imdb.com/title/tt1130884/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Teddy Daniels"
+    ] .
+
+# Revolutionary Road (2008)
+<https://www.imdb.com/title/tt0959337/> a schema:Movie ;
+    schema:name "Revolutionary Road" ;
+    schema:url <https://www.imdb.com/title/tt0959337/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Frank Wheeler"
+    ] .
+
+# Body of Lies (2008)
+<https://www.imdb.com/title/tt0758774/> a schema:Movie ;
+    schema:name "Body of Lies" ;
+    schema:url <https://www.imdb.com/title/tt0758774/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Roger Ferris"
+    ] .
 
 # ==============================================================================
 # VIDEO (schema:VideoObject definition) 
@@ -129,7 +230,7 @@
     schema:width "6144"^^xsd:integer .
 
 <https://www.imdb.com/name/nm0000138/mediaviewer/rm642495746/> a schema:ImageObject ;
-    schema:url <httpss://m.media-amazon.com/images/M/MV5BYzVkNmI2ZWYtYTJkOS00ZTRjLWExM2QtZGYxNDU1YTkyMjc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzVkNmI2ZWYtYTJkOS00ZTRjLWExM2QtZGYxNDU1YTkyMjc0XkEyXkFqcGc@._V1_.jpg> ;
     schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
     schema:height "4096"^^xsd:integer ;
     schema:width "6144"^^xsd:integer .
@@ -163,3 +264,12 @@
     schema:caption "Leonardo DiCaprio in Killers of the Flower Moon (2023)" ;
     schema:height "1080"^^xsd:integer ;
     schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000138/>
+    schema:sameAs <https://www.facebook.com/LeonardoDiCaprio>,
+                  <https://www.instagram.com/leonardodicaprio/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.
