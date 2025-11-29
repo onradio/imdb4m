@@ -164,79 +164,86 @@ def parse_imdb_html(html_file_path):
             g.add((movie_uri, SCHEMA.keywords, Literal(keywords_formatted)))
     
     # Creator/Director - Extract from principalCreditsV2 in __NEXT_DATA__
-    # The first item (index 0) in principalCreditsV2 is usually the Director
-    # The second item (index 1) is usually the Writer/Creator
-    director_uri = None
-    creator_uri = None
+    # The first item (index 0) in principalCreditsV2 is usually the Director(s)
+    # The second item (index 1) is usually the Writer(s)/Creator(s)
+    director_uris = []
+    creator_uris = []
     
     principal_credits = above_fold.get('principalCreditsV2', [])
     if isinstance(principal_credits, list):
-        # Extract Director (first group)
+        # Extract Director(s) (first group)
         if len(principal_credits) > 0:
             director_group = principal_credits[0]
             if isinstance(director_group, dict) and 'grouping' in director_group:
                 grouping = director_group.get('grouping', {})
-                if grouping.get('text') == 'Director' and 'credits' in director_group:
+                # Handle both singular "Director" and plural "Directors"
+                if grouping.get('text') in ['Director', 'Directors'] and 'credits' in director_group:
                     credits = director_group['credits']
-                    if isinstance(credits, list) and credits:
-                        credit = credits[0]
-                        if isinstance(credit, dict) and 'name' in credit:
-                            name_obj = credit['name']
-                            if isinstance(name_obj, dict):
-                                person_id = name_obj.get('id', '')
-                                name_text_obj = name_obj.get('nameText', {})
-                                if isinstance(name_text_obj, dict):
-                                    director_name = name_text_obj.get('text', '')
-                                
-                                if person_id and director_name:
-                                    director_url = f"https://www.imdb.com/name/{person_id}/"
-                                    director_uri = URIRef(director_url.rstrip('/'))
-                                    g.add((movie_uri, SCHEMA.director, director_uri))
-                                    g.add((director_uri, RDF.type, SCHEMA.Person))
-                                    g.add((director_uri, SCHEMA.name, Literal(director_name)))
+                    if isinstance(credits, list):
+                        for credit in credits:
+                            if isinstance(credit, dict) and 'name' in credit:
+                                name_obj = credit['name']
+                                if isinstance(name_obj, dict):
+                                    person_id = name_obj.get('id', '')
+                                    name_text_obj = name_obj.get('nameText', {})
+                                    if isinstance(name_text_obj, dict):
+                                        director_name = name_text_obj.get('text', '')
+                                    
+                                    if person_id and director_name:
+                                        director_url = f"https://www.imdb.com/name/{person_id}/"
+                                        director_uri = URIRef(director_url.rstrip('/'))
+                                        director_uris.append(director_uri)
+                                        g.add((movie_uri, SCHEMA.director, director_uri))
+                                        g.add((director_uri, RDF.type, SCHEMA.Person))
+                                        g.add((director_uri, SCHEMA.name, Literal(director_name)))
         
-        # Extract Creator/Writer (second group)
+        # Extract Creator/Writer(s) (second group)
         if len(principal_credits) > 1:
             writer_group = principal_credits[1]
             if isinstance(writer_group, dict) and 'grouping' in writer_group:
                 grouping = writer_group.get('grouping', {})
-                if grouping.get('text') in ['Writer', 'Creator'] and 'credits' in writer_group:
+                # Handle both singular and plural forms
+                if grouping.get('text') in ['Writer', 'Writers', 'Creator', 'Creators'] and 'credits' in writer_group:
                     credits = writer_group['credits']
-                    if isinstance(credits, list) and credits:
-                        credit = credits[0]
-                        if isinstance(credit, dict) and 'name' in credit:
-                            name_obj = credit['name']
-                            if isinstance(name_obj, dict):
-                                person_id = name_obj.get('id', '')
-                                name_text_obj = name_obj.get('nameText', {})
-                                if isinstance(name_text_obj, dict):
-                                    creator_name = name_text_obj.get('text', '')
-                                
-                                if person_id and creator_name:
-                                    creator_url = f"https://www.imdb.com/name/{person_id}/"
-                                    creator_uri = URIRef(creator_url.rstrip('/'))
-                                    g.add((movie_uri, SCHEMA.creator, creator_uri))
-                                    g.add((creator_uri, RDF.type, SCHEMA.Person))
-                                    g.add((creator_uri, SCHEMA.name, Literal(creator_name)))
+                    if isinstance(credits, list):
+                        for credit in credits:
+                            if isinstance(credit, dict) and 'name' in credit:
+                                name_obj = credit['name']
+                                if isinstance(name_obj, dict):
+                                    person_id = name_obj.get('id', '')
+                                    name_text_obj = name_obj.get('nameText', {})
+                                    if isinstance(name_text_obj, dict):
+                                        creator_name = name_text_obj.get('text', '')
+                                    
+                                    if person_id and creator_name:
+                                        creator_url = f"https://www.imdb.com/name/{person_id}/"
+                                        creator_uri = URIRef(creator_url.rstrip('/'))
+                                        creator_uris.append(creator_uri)
+                                        g.add((movie_uri, SCHEMA.creator, creator_uri))
+                                        g.add((creator_uri, RDF.type, SCHEMA.Person))
+                                        g.add((creator_uri, SCHEMA.name, Literal(creator_name)))
     
     # Fallback to JSON-LD if available
-    if not director_uri and 'director' in json_data:
-        director_data = json_data['director']
-        if isinstance(director_data, list):
-            director_data = director_data[0]
-        if isinstance(director_data, dict) and 'url' in director_data:
-            director_url = director_data['url']
-            if not director_url.startswith('http'):
-                director_url = f"https://www.imdb.com{director_url}"
-            director_uri = URIRef(director_url.rstrip('/'))
-            g.add((movie_uri, SCHEMA.director, director_uri))
-            g.add((director_uri, RDF.type, SCHEMA.Person))
-            if 'name' in director_data:
-                g.add((director_uri, SCHEMA.name, Literal(director_data['name'])))
+    if not director_uris and 'director' in json_data:
+        directors_data = json_data['director']
+        if not isinstance(directors_data, list):
+            directors_data = [directors_data]
+        for director_data in directors_data:
+            if isinstance(director_data, dict) and 'url' in director_data:
+                director_url = director_data['url']
+                if not director_url.startswith('http'):
+                    director_url = f"https://www.imdb.com{director_url}"
+                director_uri = URIRef(director_url.rstrip('/'))
+                director_uris.append(director_uri)
+                g.add((movie_uri, SCHEMA.director, director_uri))
+                g.add((director_uri, RDF.type, SCHEMA.Person))
+                if 'name' in director_data:
+                    g.add((director_uri, SCHEMA.name, Literal(director_data['name'])))
     
     # If creator is same as director, link them
-    if director_uri and not creator_uri:
-        g.add((movie_uri, SCHEMA.creator, director_uri))
+    if director_uris and not creator_uris:
+        for director_uri in director_uris:
+            g.add((movie_uri, SCHEMA.creator, director_uri))
     
     # Actors - Extract from principalCreditsV2 in __NEXT_DATA__
     # The third item (index 2) in principalCreditsV2 contains the cast
