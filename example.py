@@ -1,8 +1,11 @@
 """
 Example script showing how to use the Music Linker.
+Now prefers reading soundtrack metadata from local TTL files.
 """
-from src import MusicLinker, SoundtrackParser, Config, setup_logging
-from src.utils import save_results_to_json, save_results_to_csv
+from pathlib import Path
+import os
+from linker import MusicLinker, SoundtrackParser, Config, setup_logging
+from linker.utils import save_results_to_json, save_results_to_csv
 
 
 def main():
@@ -13,75 +16,29 @@ def main():
     config = Config()
     config.validate()
     
-    # IMDb soundtrack text (example from Titanic)
-    titanic_soundtrack_text = """My Heart Will Go On
-Music by James Horner
-Lyrics by Will Jennings
-Performed by Céline Dion
-Produced by James Horner and Simon Franglen
-Celine Dion performs courtesy of 550 Music/Sony Music Entertainment (Canada) Inc.
-Valse Septembre
-Written by Felix Godin
-Performed by Salonisti (as I Salonisti)
-Produced by John Altman
-Wedding Dance
-Written by Paul Lincke
-Performed by Salonisti (as I Salonisti)
-Produced by John Altman
-Sphinx
-Written by Francis Popy
-Performed by Salonisti (as I Salonisti)
-Produced by John Altman
-Vision Of Salome
-Written by Archibald Joyce
-Performed by Salonisti (as I Salonisti)
-Produced by John Altman
-Alexander's Ragtime Band
-Written by Irving Berlin
-Performed by Salonisti (as I Salonisti)
-Produced by John Altman
-Oh You Beautiful Doll
-by A. Seymour Brown and Nat Ayer as (Nat D. Ayer)
-Produced and Arranged by William Ross
-Come, Josephine, In My Flying Machine
-by Al Bryan (as Alfred Bryan) and Fred Fisher
-Performed by Leonardo DiCaprio (uncredited) and Kate Winslet (uncredited)
-Produced and Arranged by William Ross
-Nearer My God To Thee
-Written by Lowell Mason and Sarah F. Adams (as Sarah Adams)
-Performed by Salonisti (as I Salonisti)
-Arranged by Jonathan Evans-Jones
-Produced by Lorenz Hasler
-An Irish Party in Third Class
-(uncredited)
-includes "John Ryan's Polka" and "Blarney Pilgrim" (Traditional)
-Performed & Arranged by Gaelic Storm
-Produced by Randy Gerston
-Jack Dawson's Luck
-(uncredited)
-includes "Humours of Caledon", "The Red-Haired Lass", "The Boys On The Hilltop", and "The Bucks Of Oranmore" (Traditional)
-Lament
-(uncredited)
-includes "A Spailpín A Rún" (Traditional)
-Blue Danube
-(uncredited)
-Written by Johann Strauss
-Performed by Salonisti (as I Salonisti)
-Orpheus
-(uncredited)
-Written by Jacques Offenbach
-Performed by Salonisti (as I Salonisti)
-Eternal Father Strong To Save
-(uncredited)
-Lyrics by William Whiting and music by John B. Dykes (uncredited))
-Performed by Cast"""
-    
-    # Parse the soundtrack text
-    print("Parsing soundtrack metadata...")
-    soundtracks = SoundtrackParser.parse_soundtrack_text(
-        titanic_soundtrack_text,
-        movie_title="Titanic"
+    # Prefer TTL parsing from data/subset/<IMDB_ID>
+    project_root = Path(__file__).resolve().parent
+    subset_root = project_root / "data" / "subset"
+    imdb_id = os.getenv("IMDB_ID", "tt0405159")
+
+    soundtracks = []
+    movie_dir = subset_root / imdb_id
+    has_ttl = (
+        (movie_dir / "movie_html" / f"{imdb_id}.ttl").exists()
+        and (movie_dir / "movie_soundtrack" / f"{imdb_id}_soundtrack.ttl").exists()
     )
+
+    if has_ttl:
+        print(f"Parsing TTL metadata for {imdb_id} from {subset_root}...")
+        soundtracks = SoundtrackParser.parse_soundtrack_ttl(str(subset_root), imdb_id)
+    else:
+        print("TTL not found; falling back to text parsing example.")
+        titanic_soundtrack_text = """My Heart Will Go On\nMusic by James Horner\nLyrics by Will Jennings\nPerformed by Céline Dion\nProduced by James Horner and Simon Franglen\nCeline Dion performs courtesy of 550 Music/Sony Music Entertainment (Canada) Inc.\nValse Septembre\nWritten by Felix Godin\nPerformed by Salonisti (as I Salonisti)\nProduced by John Altman\nWedding Dance\nWritten by Paul Lincke\nPerformed by Salonisti (as I Salonisti)\nProduced by John Altman\nSphinx\nWritten by Francis Popy\nPerformed by Salonisti (as I Salonisti)\nProduced by John Altman\nVision Of Salome\nWritten by Archibald Joyce\nPerformed by Salonisti (as I Salonisti)\nProduced by John Altman\nAlexander's Ragtime Band\nWritten by Irving Berlin\nPerformed by Salonisti (as I Salonisti)\nProduced by John Altman\nOh You Beautiful Doll\nby A. Seymour Brown and Nat Ayer as (Nat D. Ayer)\nProduced and Arranged by William Ross\nCome, Josephine, In My Flying Machine\nby Al Bryan (as Alfred Bryan) and Fred Fisher\nPerformed by Leonardo DiCaprio (uncredited) and Kate Winslet (uncredited)\nProduced and Arranged by William Ross\nNearer My God To Thee\nWritten by Lowell Mason and Sarah F. Adams (as Sarah Adams)\nPerformed by Salonisti (as I Salonisti)\nArranged by Jonathan Evans-Jones\nProduced by Lorenz Hasler\nAn Irish Party in Third Class\n(uncredited)\nincludes \"John Ryan's Polka\" and \"Blarney Pilgrim\" (Traditional)\nPerformed & Arranged by Gaelic Storm\nProduced by Randy Gerston\nJack Dawson's Luck\n(uncredited)\nincludes \"Humours of Caledon\", \"The Red-Haired Lass\", \"The Boys On The Hilltop\", and \"The Bucks Of Oranmore\" (Traditional)\nLament\n(uncredited)\nincludes \"A Spailpín A Rún\" (Traditional)\nBlue Danube\n(uncredited)\nWritten by Johann Strauss\nPerformed by Salonisti (as I Salonisti)\nOrpheus\n(uncredited)\nWritten by Jacques Offenbach\nPerformed by Salonisti (as I Salonisti)\nEternal Father Strong To Save\n(uncredited)\nLyrics by William Whiting and music by John B. Dykes (uncredited))\nPerformed by Cast"""
+        print("Parsing soundtrack metadata from example text...")
+        soundtracks = SoundtrackParser.parse_soundtrack_text(
+            titanic_soundtrack_text,
+            movie_title="Titanic"
+        )
     print(f"Found {len(soundtracks)} soundtracks\n")
     
     # Initialize the music linker

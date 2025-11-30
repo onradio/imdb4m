@@ -14,7 +14,7 @@ An intelligent pipeline that retrieves the most relevant YouTube video URLs for 
 
 ## How It Works
 
-1. **Parse Metadata**: Converts IMDb soundtrack text into structured `SoundtrackMetadata` objects
+1. **Parse Metadata**: Converts IMDb soundtrack text or local TTL files into structured `SoundtrackMetadata` objects
 2. **Search YouTube**: Queries YouTube API with optimized search terms (title + performer + movie)
 3. **Enrich Data**: Fetches video descriptions, statistics, and top comments
 4. **LLM Analysis**: Gemini analyzes all candidates considering:
@@ -57,14 +57,14 @@ cp .env.template .env
 ## Quick Start
 
 ```python
-from src import MusicLinker, SoundtrackParser, Config, setup_logging
+from linker import MusicLinker, SoundtrackParser, Config, setup_logging
 
 # Setup
 setup_logging('INFO')
 config = Config()
 config.validate()
 
-# Parse IMDb soundtrack text
+# Option A: Parse IMDb soundtrack text
 soundtrack_text = """My Heart Will Go On
 Music by James Horner
 Lyrics by Will Jennings
@@ -73,6 +73,15 @@ Performed by Céline Dion"""
 soundtracks = SoundtrackParser.parse_soundtrack_text(
     soundtrack_text,
     movie_title="Titanic"
+)
+
+# Option B: Parse from local TTL (data/subset/<IMDB_ID>)
+from pathlib import Path
+from linker import SoundtrackParser
+
+soundtracks = SoundtrackParser.parse_soundtrack_ttl(
+  subset_root="data/subset",
+  imdb_id="tt0405159",
 )
 
 # Initialize linker
@@ -97,10 +106,14 @@ Run the provided example script:
 
 ```bash
 python example.py
+
+# Optionally override the IMDb ID used for TTL parsing
+IMDB_ID=tt0405159 python example.py
 ```
 
 This will:
-- Parse the Titanic soundtrack from the example
+- Prefer reading soundtrack TTL from `data/subset/<IMDB_ID>`
+- Fall back to the built-in Titanic text example if TTL is missing
 - Search YouTube for each song
 - Use Gemini to find the best matches
 - Save results to `output/results.json` and `output/results.csv`
@@ -109,7 +122,7 @@ This will:
 
 ```
 imdb4m/
-├── src/
+├── linker/
 │   ├── __init__.py           # Package exports
 │   ├── models.py             # Pydantic data models
 │   ├── parser.py             # IMDb soundtrack parser
@@ -152,7 +165,7 @@ LOG_LEVEL=INFO
 ### Using Individual Components
 
 ```python
-from src import YouTubeClient, GeminiMatcher, SoundtrackMetadata
+from linker import YouTubeClient, GeminiMatcher, SoundtrackMetadata
 
 # Direct YouTube search
 youtube = YouTubeClient(api_key="your_key")
@@ -174,7 +187,7 @@ best_match, score = matcher.find_best_match(soundtrack, videos_with_comments)
 ### Custom Parser
 
 ```python
-from src.parser import SoundtrackParser
+from linker.parser import SoundtrackParser
 
 # Parse custom soundtrack format
 soundtracks = SoundtrackParser.parse_soundtrack_text(
