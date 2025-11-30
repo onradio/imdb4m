@@ -3,7 +3,10 @@ Main music linker pipeline orchestrator.
 """
 from typing import List, Optional
 import logging
+import time
+import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from tqdm import tqdm
 
 from .models import SoundtrackMetadata, MusicLinkResult, YouTubeVideo
 from .youtube_client import YouTubeClient
@@ -59,15 +62,28 @@ class MusicLinker:
 			MusicLinkResult with the best match and analysis
 		"""
 		try:
-			# Generate search query
-			search_query = soundtrack.to_search_query()
-			logger.info(f"Searching for: {search_query}")
-            
-			# Search YouTube
-			candidates = self.youtube_client.search_videos(
-				query=search_query,
-				max_results=self.max_search_results
-			)
+			retries = 3
+			for attempt in range(retries):
+				# Generate search query
+				logger.info(f"Search attempt {attempt + 1} for '{soundtrack.title}'")
+				add_movie = attempt < 1  # Add movie title only on first attempt
+				add_performer = attempt < 2  # Add performer for first 2 attempts
+				# Last attempt uses only the song title for broader search
+				search_query = soundtrack.to_search_query(
+					add_movie=add_movie, add_performer=add_performer)
+				logger.info(f"Searching for: {search_query}")
+				# Search YouTube for candidates
+				candidates = self.youtube_client.search_videos(
+					query=search_query,
+					max_results=self.max_search_results
+				)
+				# Stop retrying if we found candidates
+				if candidates:
+					break
+				# Generate a backoff delay before retrying
+				backoff_delay = (2 ** attempt) + random.uniform(0, 1)
+				logger.info(f"No candidates found, retrying in {backoff_delay:.2f} seconds...")
+				time.sleep(backoff_delay)
             
 			if not candidates:
 				return MusicLinkResult(
@@ -110,6 +126,52 @@ class MusicLinker:
 				error=str(e)
 			)
     
+	def find_matches_sequential(
+		self,
+		soundtracks: List[SoundtrackMetadata],
+		delay_range: tuple = (1.0, 3.0)
+	) -> List[MusicLinkResult]:
+		"""
+		Find matches for multiple soundtracks sequentially (useful for debugging).
+        
+		Args:
+			soundtracks: List of soundtrack metadata
+			delay_range: Tuple of (min, max) seconds to wait between requests
+            
+		Returns:
+			List of MusicLinkResult objects
+		"""
+		results = []
+		
+		for i, soundtrack in enumerate(tqdm(soundtracks, desc="Processing tracks", unit="track")):
+			try:
+				result = self.find_match(soundtrack)
+				results.append(result)
+				
+				if result.is_successful():
+					logger.info(
+						f"✓ Found match for '{soundtrack.title}': "
+						f"{result.best_match.url} "
+						f"(confidence: {result.match_score.confidence:.2f})"
+					)
+				else:
+					logger.warning(f"✗ No match found for '{soundtrack.title}'")
+					
+			except Exception as e:
+				logger.error(f"Exception processing '{soundtrack.title}': {e}")
+				results.append(MusicLinkResult(
+					soundtrack=soundtrack,
+					search_query=soundtrack.to_search_query(),
+					error=str(e)
+				))
+			
+			# Add random delay between requests (except after the last one)
+			if i < len(soundtracks) - 1:
+				delay = random.uniform(delay_range[0], delay_range[1])
+				time.sleep(delay)
+		
+		return results
+	
 	def find_matches_batch(
 		self,
 		soundtracks: List[SoundtrackMetadata],
@@ -135,28 +197,31 @@ class MusicLinker:
 				for soundtrack in soundtracks
 			}
             
-			# Collect results as they complete
-			for future in as_completed(future_to_soundtrack):
-				soundtrack = future_to_soundtrack[future]
-				try:
-					result = future.result()
-					results.append(result)
-                    
-					if result.is_successful():
-						logger.info(
-							f"✓ Found match for '{soundtrack.title}': "
-							f"{result.best_match.url} "
-							f"(confidence: {result.match_score.confidence:.2f})"
-						)
-					else:
-						logger.warning(f"✗ No match found for '{soundtrack.title}'")
-                        
-				except Exception as e:
-					logger.error(f"Exception processing '{soundtrack.title}': {e}")
-					results.append(MusicLinkResult(
-						soundtrack=soundtrack,
-						search_query=soundtrack.to_search_query(),
-						error=str(e)
-					))
+			# Collect results as they complete with progress bar
+			with tqdm(total=len(soundtracks), desc="Processing tracks", unit="track") as pbar:
+				for future in as_completed(future_to_soundtrack):
+					soundtrack = future_to_soundtrack[future]
+					try:
+						result = future.result()
+						results.append(result)
+						
+						if result.is_successful():
+							logger.info(
+								f"✓ Found match for '{soundtrack.title}': "
+								f"{result.best_match.url} "
+								f"(confidence: {result.match_score.confidence:.2f})"
+							)
+						else:
+							logger.warning(f"✗ No match found for '{soundtrack.title}'")
+							
+					except Exception as e:
+						logger.error(f"Exception processing '{soundtrack.title}': {e}")
+						results.append(MusicLinkResult(
+							soundtrack=soundtrack,
+							search_query=soundtrack.to_search_query(),
+							error=str(e)
+						))
+					
+					pbar.update(1)
         
 		return results

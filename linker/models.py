@@ -19,7 +19,7 @@ class SoundtrackMetadata(BaseModel):
 	is_traditional: bool = Field(False, description="Whether the song is traditional")
 	is_uncredited: bool = Field(False, description="Whether the entry is uncredited")
     
-	def to_search_query(self) -> str:
+	def to_search_query(self, add_performer=True, add_movie=True) -> str:
 		"""Generate a search query for YouTube."""
 		parts = []
         
@@ -27,13 +27,16 @@ class SoundtrackMetadata(BaseModel):
 		parts.append(self.title)
         
 		# Add performer if available (most important for finding the right version)
-		if self.performer:
-			parts.append(self.performer)
+		if add_performer:
+			if self.performer:
+				parts.append(self.performer)
+			elif self.composer:
+				parts.append(self.composer)
         
 		# Add movie context if available
-		if self.movie_title:
-			parts.append(f"from {self.movie_title}")
-        
+		if add_movie and self.movie_title:
+			parts.append(self.movie_title)
+
 		return " ".join(parts)
     
 	def to_context_dict(self) -> Dict[str, Any]:
