@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0796366/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Theme from 'Star Trek' TV Series" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Theme from 'Star Trek' TV Series" ;
+            schema:author <https://www.imdb.com/name/nm0006021/>, # Alexander Courage
+                       <https://www.imdb.com/name/nm0734472/> # Gene Roddenberry
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sabotage" ;
+        schema:byArtist <https://www.imdb.com/name/nm1561997/> ; # Beastie Boys
+        schema:producer <https://www.imdb.com/name/nm0005069/> ; # Spike Jonze
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sabotage" ;
+            schema:author <https://www.imdb.com/name/nm0004855/>, # Mike D
+                       <https://www.imdb.com/name/nm0395259/>, # Adam Horovitz
+                       <https://www.imdb.com/name/nm0946888/> # Adam Yauch
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Josh Greenstein" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Awasoruk Jam" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Future Blues" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Grande Valse" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Grande Valse" ;
+            schema:author <https://www.imdb.com/name/nm0850656/> # Francisco Tárrega
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004855/> a schema:Person ;
+    schema:name "Mike D" .
+<https://www.imdb.com/name/nm0005069/> a schema:Person ;
+    schema:name "Spike Jonze" .
+<https://www.imdb.com/name/nm0006021/> a schema:Person ;
+    schema:name "Alexander Courage" .
+<https://www.imdb.com/name/nm0395259/> a schema:Person ;
+    schema:name "Adam Horovitz" .
+<https://www.imdb.com/name/nm0734472/> a schema:Person ;
+    schema:name "Gene Roddenberry" .
+<https://www.imdb.com/name/nm0850656/> a schema:Person ;
+    schema:name "Francisco Tárrega" .
+<https://www.imdb.com/name/nm0946888/> a schema:Person ;
+    schema:name "Adam Yauch" .
+<https://www.imdb.com/name/nm1561997/> a schema:Person ;
+    schema:name "Beastie Boys" .
+# ==============================================================================

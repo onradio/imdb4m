@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1631867/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Massive Mellow" ;
+        schema:byArtist <https://www.imdb.com/name/nm0502333/> ; # Daniel Lenz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Massive Mellow" ;
+            schema:author <https://www.imdb.com/name/nm0502333/> # Daniel Lenz
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Railroad Track" ;
+        schema:byArtist <https://www.imdb.com/name/nm5421229/> ; # Willy Moon
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Railroad Track" ;
+            schema:author <https://www.imdb.com/name/nm5421229/>, # Willy Moon
+                       <https://www.imdb.com/name/nm0526644/> # Curtis Lundy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Trip Into the Light" ;
+        schema:byArtist <https://www.imdb.com/name/nm9904957/> ; # Jeremy & The Harlequins
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Trip Into the Light" ;
+            schema:author <https://www.imdb.com/name/nm10973844/>, # Jeremy Lublin
+                       <https://www.imdb.com/name/nm6248164/> # Patrick Meyer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Me Again" ;
+        schema:byArtist <https://www.imdb.com/name/nm5939987/> ; # John Newman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Me Again" ;
+            schema:author <https://www.imdb.com/name/nm3219809/>, # Steve Booker
+                       <https://www.imdb.com/name/nm5939987/> # John Newman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0502333/> a schema:Person ;
+    schema:name "Daniel Lenz" .
+<https://www.imdb.com/name/nm0526644/> a schema:Person ;
+    schema:name "Curtis Lundy" .
+<https://www.imdb.com/name/nm10973844/> a schema:Person ;
+    schema:name "Jeremy Lublin" .
+<https://www.imdb.com/name/nm3219809/> a schema:Person ;
+    schema:name "Steve Booker" .
+<https://www.imdb.com/name/nm5421229/> a schema:Person ;
+    schema:name "Willy Moon" .
+<https://www.imdb.com/name/nm5939987/> a schema:Person ;
+    schema:name "John Newman" .
+<https://www.imdb.com/name/nm6248164/> a schema:Person ;
+    schema:name "Patrick Meyer" .
+<https://www.imdb.com/name/nm9904957/> a schema:Person ;
+    schema:name "Jeremy & The Harlequins" .
+# ==============================================================================

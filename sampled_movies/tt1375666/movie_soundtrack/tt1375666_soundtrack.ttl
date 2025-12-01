@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1375666/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Non, je ne Regrette rien" ;
+        schema:byArtist <https://www.imdb.com/name/nm0681191/> ; # Édith Piaf
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Non, je ne Regrette rien" ;
+            schema:composer <https://www.imdb.com/name/nm0241627/> ; # Charles Dumont
+            schema:lyricist <https://www.imdb.com/name/nm1343743/> # Michel Vaucaire
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aboun Salehoun" ;
+        schema:byArtist <https://www.imdb.com/name/nm3216202/> ; # Amira Saqati
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Aboun Salehoun" ;
+            schema:author <https://www.imdb.com/name/nm3395884/>, # Youssef El Mejjad
+                       <https://www.imdb.com/name/nm2964561/> # Pat Jabbar
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0241627/> a schema:Person ;
+    schema:name "Charles Dumont" .
+<https://www.imdb.com/name/nm0681191/> a schema:Person ;
+    schema:name "Édith Piaf" .
+<https://www.imdb.com/name/nm1343743/> a schema:Person ;
+    schema:name "Michel Vaucaire" .
+<https://www.imdb.com/name/nm2964561/> a schema:Person ;
+    schema:name "Pat Jabbar" .
+<https://www.imdb.com/name/nm3216202/> a schema:Person ;
+    schema:name "Amira Saqati" .
+<https://www.imdb.com/name/nm3395884/> a schema:Person ;
+    schema:name "Youssef El Mejjad" .
+# ==============================================================================

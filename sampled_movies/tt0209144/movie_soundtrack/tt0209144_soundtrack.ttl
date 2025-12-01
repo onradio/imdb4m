@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0209144/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Something in the Air" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000309/> ; # David Bowie
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Something in the Air" ;
+            schema:composer <https://www.imdb.com/name/nm0000309/>, # David Bowie
+                        <https://www.imdb.com/name/nm0300169/> ; # Reeves Gabrels
+            schema:lyricist <https://www.imdb.com/name/nm0000309/> # David Bowie
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Stone" ;
+        schema:byArtist <https://www.imdb.com/name/nm0597596/> ; # Monc
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Stone" ;
+            schema:author <https://www.imdb.com/name/nm0597596/> # Monc
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Generation Z" ;
+        schema:byArtist <https://www.imdb.com/name/nm0597596/> ; # Monc
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Generation Z" ;
+            schema:author <https://www.imdb.com/name/nm0597596/> # Monc
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Motherlode" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Motherlode" ;
+            schema:author <https://www.imdb.com/name/nm1945158/>, # Chuck Hamshaw
+                       <https://www.imdb.com/name/nm2005149/> # Mark Schmidt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ipanema Dreaming" ;
+        schema:byArtist <https://www.imdb.com/name/nm0561906/> ; # Daniel May
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ipanema Dreaming" ;
+            schema:author <https://www.imdb.com/name/nm0561906/> # Daniel May
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Do the Boogaloo" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Do the Boogaloo" ;
+            schema:author <https://www.imdb.com/name/nm0621429/>, # Gerhard Narholz
+                       <https://www.imdb.com/name/nm0275735/> # John Fiddy
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000309/> a schema:Person ;
+    schema:name "David Bowie" .
+<https://www.imdb.com/name/nm0275735/> a schema:Person ;
+    schema:name "John Fiddy" .
+<https://www.imdb.com/name/nm0300169/> a schema:Person ;
+    schema:name "Reeves Gabrels" .
+<https://www.imdb.com/name/nm0561906/> a schema:Person ;
+    schema:name "Daniel May" .
+<https://www.imdb.com/name/nm0597596/> a schema:Person ;
+    schema:name "Monc" .
+<https://www.imdb.com/name/nm0621429/> a schema:Person ;
+    schema:name "Gerhard Narholz" .
+<https://www.imdb.com/name/nm1945158/> a schema:Person ;
+    schema:name "Chuck Hamshaw" .
+<https://www.imdb.com/name/nm2005149/> a schema:Person ;
+    schema:name "Mark Schmidt" .
+# ==============================================================================

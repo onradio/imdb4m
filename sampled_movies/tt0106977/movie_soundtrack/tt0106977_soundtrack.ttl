@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0106977/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Thrill is Gone" ;
+        schema:byArtist <https://www.imdb.com/name/nm0454475/>, # B.B. King
+                        <https://www.imdb.com/name/nm1569189/> ; # Bobby Bland
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Thrill is Gone" ;
+            schema:author <https://www.imdb.com/name/nm1340897/>, # Roy Hawkins
+                       <https://www.imdb.com/name/nm1338696/> # Rick Darnell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tahiti Tahiti" ;
+        schema:byArtist <https://www.imdb.com/name/nm0903899/>, # Voyage
+                        <https://www.imdb.com/name/nm1126721/>, # Sylvia Mason-James
+                        <https://www.imdb.com/name/nm1000657/>, # Pierre-Alain Dahan
+                        <https://www.imdb.com/name/nm1002630/>, # Marc Chantereau
+                        <https://www.imdb.com/name/nm0679077/> ; # Slim Pezin
+        schema:producer <https://www.imdb.com/name/nm1168088/> ; # Roger Tokarz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tahiti Tahiti" ;
+            schema:author <https://www.imdb.com/name/nm1002630/>, # Marc Chantereau
+                       <https://www.imdb.com/name/nm1000657/>, # Pierre-Alain Dahan
+                       <https://www.imdb.com/name/nm0679077/> # Slim Pezin
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0454475/> a schema:Person ;
+    schema:name "B.B. King" .
+<https://www.imdb.com/name/nm0679077/> a schema:Person ;
+    schema:name "Slim Pezin" .
+<https://www.imdb.com/name/nm0903899/> a schema:Person ;
+    schema:name "Voyage" .
+<https://www.imdb.com/name/nm1000657/> a schema:Person ;
+    schema:name "Pierre-Alain Dahan" .
+<https://www.imdb.com/name/nm1002630/> a schema:Person ;
+    schema:name "Marc Chantereau" .
+<https://www.imdb.com/name/nm1126721/> a schema:Person ;
+    schema:name "Sylvia Mason-James" .
+<https://www.imdb.com/name/nm1168088/> a schema:Person ;
+    schema:name "Roger Tokarz" .
+<https://www.imdb.com/name/nm1338696/> a schema:Person ;
+    schema:name "Rick Darnell" .
+<https://www.imdb.com/name/nm1340897/> a schema:Person ;
+    schema:name "Roy Hawkins" .
+<https://www.imdb.com/name/nm1569189/> a schema:Person ;
+    schema:name "Bobby Bland" .
+# ==============================================================================

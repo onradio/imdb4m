@@ -1,0 +1,35 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095489/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "If We Hold On Together" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005384/> ; # Diana Ross
+        schema:producer <https://www.imdb.com/name/nm0004717/> ; # Peter Asher
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "If We Hold On Together" ;
+            schema:composer <https://www.imdb.com/name/nm0000035/>, # James Horner
+                        <https://www.imdb.com/name/nm0421263/> ; # Will Jennings
+            schema:lyricist <https://www.imdb.com/name/nm0000035/>, # James Horner
+                        <https://www.imdb.com/name/nm0421263/> # Will Jennings
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000035/> a schema:Person ;
+    schema:name "James Horner" .
+<https://www.imdb.com/name/nm0004717/> a schema:Person ;
+    schema:name "Peter Asher" .
+<https://www.imdb.com/name/nm0005384/> a schema:Person ;
+    schema:name "Diana Ross" .
+<https://www.imdb.com/name/nm0421263/> a schema:Person ;
+    schema:name "Will Jennings" .
+# ==============================================================================

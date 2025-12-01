@@ -1,0 +1,133 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0096895/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Future" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vicki Waiting" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Electric Chair" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Partyman" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Trust" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Scandalous" ;
+        schema:byArtist <https://www.imdb.com/name/nm0002239/> ; # Prince
+        schema:producer <https://www.imdb.com/name/nm0002239/> ; # Prince
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Scandalous" ;
+            schema:author <https://www.imdb.com/name/nm0002239/>, # Prince
+                       <https://www.imdb.com/name/nm0625484/> # John L. Nelson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Theme From A Summer Place" ;
+        schema:byArtist <https://www.imdb.com/name/nm1505969/> ; # Percy Faith and His Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Theme From A Summer Place" ;
+            schema:author <https://www.imdb.com/name/nm0000070/> # Max Steiner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Beautiful Dreamer" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Beautiful Dreamer" ;
+            schema:author <https://www.imdb.com/name/nm0288062/> # Stephen Foster
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "There'll Be A Hot Time In The Old Town Tonight" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000197/> ; # Jack Nicholson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "There'll Be A Hot Time In The Old Town Tonight" ;
+            schema:author <https://www.imdb.com/name/nm1105332/>, # Joe Hayden
+                       <https://www.imdb.com/name/nm1105877/> # Theodore A. Metz
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Serenade no. 13 in G, K. 525 ('Eine Kleine Nachtmusik'), second movement" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Serenade no. 13 in G, K. 525 ('Eine Kleine Nachtmusik'), second movement" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Arms of Orion" ;
+        schema:byArtist <https://www.imdb.com/name/nm0002239/>, # Prince
+                        <https://www.imdb.com/name/nm0002054/> ; # Sheena Easton
+        schema:producer <https://www.imdb.com/name/nm0002239/> ; # Prince
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Arms of Orion" ;
+            schema:lyricist <https://www.imdb.com/name/nm0002054/> ; # Sheena Easton
+            schema:author <https://www.imdb.com/name/nm0002239/> # Prince
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Batdance" ;
+        schema:byArtist <https://www.imdb.com/name/nm3164466/> ; # Sounds of Blackness
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lemon Crush" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000070/> a schema:Person ;
+    schema:name "Max Steiner" .
+<https://www.imdb.com/name/nm0000197/> a schema:Person ;
+    schema:name "Jack Nicholson" .
+<https://www.imdb.com/name/nm0002054/> a schema:Person ;
+    schema:name "Sheena Easton" .
+<https://www.imdb.com/name/nm0002239/> a schema:Person ;
+    schema:name "Prince" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0288062/> a schema:Person ;
+    schema:name "Stephen Foster" .
+<https://www.imdb.com/name/nm0625484/> a schema:Person ;
+    schema:name "John L. Nelson" .
+<https://www.imdb.com/name/nm1105332/> a schema:Person ;
+    schema:name "Joe Hayden" .
+<https://www.imdb.com/name/nm1105877/> a schema:Person ;
+    schema:name "Theodore A. Metz" .
+<https://www.imdb.com/name/nm1505969/> a schema:Person ;
+    schema:name "Percy Faith and His Orchestra" .
+<https://www.imdb.com/name/nm3164466/> a schema:Person ;
+    schema:name "Sounds of Blackness" .
+# ==============================================================================

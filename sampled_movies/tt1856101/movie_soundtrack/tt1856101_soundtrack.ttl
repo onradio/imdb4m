@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1856101/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Summer Wind" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000069/> ; # Frank Sinatra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Summer Wind" ;
+            schema:author <https://www.imdb.com/name/nm0006197/>, # Johnny Mercer
+                       <https://www.imdb.com/name/nm0103557/>, # Hans Bradtke
+                       <https://www.imdb.com/name/nm0562398/> # Henry Mayer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Peter and the Wolf Op. 67" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Peter and the Wolf Op. 67" ;
+            schema:author <https://www.imdb.com/name/nm0006241/> # Sergei Prokofiev
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Suspicious Minds" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000062/> ; # Elvis Presley
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Suspicious Minds" ;
+            schema:author <https://www.imdb.com/name/nm1108027/> # Francis Zambon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Karma Drama" ;
+        schema:byArtist <https://www.imdb.com/name/nm4071804/>, # Kully Bhamra
+                        <https://www.imdb.com/name/nm6248933/> ; # Gussy G
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Karma Drama" ;
+            schema:author <https://www.imdb.com/name/nm4071804/> # Kully Bhamra
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Can't Help Falling in Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000062/> ; # Elvis Presley
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Can't Help Falling in Love" ;
+            schema:author <https://www.imdb.com/name/nm0187158/>, # Luigi Creatore
+                       <https://www.imdb.com/name/nm0673392/>, # Hugo Peretti
+                       <https://www.imdb.com/name/nm0918993/> # George David Weiss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One for My Baby (and One More for the Road)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000069/> ; # Frank Sinatra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "One for My Baby (and One More for the Road)" ;
+            schema:author <https://www.imdb.com/name/nm0002182/>, # Harold Arlen
+                       <https://www.imdb.com/name/nm0006197/> # Johnny Mercer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tears in Rain" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tears in Rain" ;
+            schema:composer <https://www.imdb.com/name/nm0006331/> # Vangelis
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Almost Human" ;
+        schema:byArtist <https://www.imdb.com/name/nm8332279/> ; # Lauren Daigle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Almost Human" ;
+            schema:author <https://www.imdb.com/name/nm8332279/>, # Lauren Daigle
+                       <https://www.imdb.com/name/nm1215246/>, # Michael Hodges
+                       <https://www.imdb.com/name/nm7617374/>, # Kayla Morrison
+                       <https://www.imdb.com/name/nm9238406/> # Gerald Trottman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000062/> a schema:Person ;
+    schema:name "Elvis Presley" .
+<https://www.imdb.com/name/nm0000069/> a schema:Person ;
+    schema:name "Frank Sinatra" .
+<https://www.imdb.com/name/nm0002182/> a schema:Person ;
+    schema:name "Harold Arlen" .
+<https://www.imdb.com/name/nm0006197/> a schema:Person ;
+    schema:name "Johnny Mercer" .
+<https://www.imdb.com/name/nm0006241/> a schema:Person ;
+    schema:name "Sergei Prokofiev" .
+<https://www.imdb.com/name/nm0006331/> a schema:Person ;
+    schema:name "Vangelis" .
+<https://www.imdb.com/name/nm0103557/> a schema:Person ;
+    schema:name "Hans Bradtke" .
+<https://www.imdb.com/name/nm0187158/> a schema:Person ;
+    schema:name "Luigi Creatore" .
+<https://www.imdb.com/name/nm0562398/> a schema:Person ;
+    schema:name "Henry Mayer" .
+<https://www.imdb.com/name/nm0673392/> a schema:Person ;
+    schema:name "Hugo Peretti" .
+<https://www.imdb.com/name/nm0918993/> a schema:Person ;
+    schema:name "George David Weiss" .
+<https://www.imdb.com/name/nm1108027/> a schema:Person ;
+    schema:name "Francis Zambon" .
+<https://www.imdb.com/name/nm1215246/> a schema:Person ;
+    schema:name "Michael Hodges" .
+<https://www.imdb.com/name/nm4071804/> a schema:Person ;
+    schema:name "Kully Bhamra" .
+<https://www.imdb.com/name/nm6248933/> a schema:Person ;
+    schema:name "Gussy G" .
+<https://www.imdb.com/name/nm7617374/> a schema:Person ;
+    schema:name "Kayla Morrison" .
+<https://www.imdb.com/name/nm8332279/> a schema:Person ;
+    schema:name "Lauren Daigle" .
+<https://www.imdb.com/name/nm9238406/> a schema:Person ;
+    schema:name "Gerald Trottman" .
+# ==============================================================================
