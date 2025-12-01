@@ -11,12 +11,18 @@ import logging
 import sys
 from pathlib import Path
 from typing import List
+from googleapiclient.errors import HttpError
 
 from linker import MusicLinker, SoundtrackParser, setup_logging
 from linker.models import SoundtrackMetadata, MusicLinkResult
 from linker.utils import save_results_to_json
 
 logger = logging.getLogger(__name__)
+
+
+class QuotaExceededException(Exception):
+	"""Exception raised when YouTube API quota is exceeded."""
+	pass
 
 
 def parse_args():
@@ -172,10 +178,20 @@ def process_movie(
 		
 		# Process soundtracks sequentially with delays
 		logger.info(f"Finding YouTube matches (delay: {args.delay_min}-{args.delay_max}s)...")
-		results = linker.find_matches_sequential(
-			tracks,
-			delay_range=(args.delay_min, args.delay_max)
-		)
+		try:
+			results = linker.find_matches_sequential(
+				tracks,
+				delay_range=(args.delay_min, args.delay_max)
+			)
+		except HttpError as e:
+			# Check if this is a quota exceeded error
+			if e.resp.status == 403 and 'quota' in str(e).lower():
+				logger.error(f"🚫 YouTube API quota exceeded!")
+				logger.error(f"   Error details: {str(e)[:200]}")
+				raise QuotaExceededException("YouTube API quota exceeded") from e
+			else:
+				# Re-raise other HTTP errors
+				raise
 		
 		# Analyze results
 		successful_matches = 0
@@ -215,6 +231,10 @@ def process_movie(
 		logger.info(f"  Success rate: {successful_matches/len(tracks)*100:.1f}%")
 		
 		return (len(tracks), successful_matches)
+	
+	except QuotaExceededException:
+		# Re-raise quota exception to stop processing
+		raise
 		
 	except Exception as e:
 		logger.error(f"✗ Error processing {imdb_id}: {e}", exc_info=True)
@@ -266,29 +286,54 @@ def main():
 	# Process all movies
 	total_tracks_processed = 0
 	total_successful_matches = 0
+	movies_processed = 0
+	quota_exceeded = False
 	
-	for movie_folder in movie_folders:
-		tracks_count, matches_count = process_movie(
-			movie_folder,
-			dataset_root,
-			linker,
-			args
-		)
-		total_tracks_processed += tracks_count
-		total_successful_matches += matches_count
+	try:
+		for movie_folder in movie_folders:
+			try:
+				tracks_count, matches_count = process_movie(
+					movie_folder,
+					dataset_root,
+					linker,
+					args
+				)
+				total_tracks_processed += tracks_count
+				total_successful_matches += matches_count
+				movies_processed += 1
+				
+			except QuotaExceededException:
+				logger.error(f"\n{'='*70}")
+				logger.error("🚫 YOUTUBE API QUOTA EXCEEDED")
+				logger.error('='*70)
+				logger.error(f"Processed {movies_processed}/{len(movie_folders)} movies before quota limit")
+				logger.error(f"Remaining movies: {len(movie_folders) - movies_processed}")
+				logger.error("Processing stopped to avoid saving empty results.")
+				logger.error(f"To continue, wait for quota reset or use a different API key.")
+				quota_exceeded = True
+				break
+	
+	except KeyboardInterrupt:
+		logger.warning("\n\n⚠️  Processing interrupted by user")
 	
 	# Final summary
 	logger.info(f"\n{'='*70}")
 	logger.info("FINAL SUMMARY")
 	logger.info('='*70)
-	logger.info(f"Movies processed: {len(movie_folders)}")
+	logger.info(f"Movies processed: {movies_processed}/{len(movie_folders)}")
 	logger.info(f"Total tracks processed: {total_tracks_processed}")
 	logger.info(f"Total successful matches: {total_successful_matches}")
 	if total_tracks_processed > 0:
 		success_rate = total_successful_matches / total_tracks_processed * 100
 		logger.info(f"Overall success rate: {success_rate:.1f}%")
 	logger.info(f"Output files saved to: <movie_folder>/movie_soundtrack/{args.output_filename}")
+	if quota_exceeded:
+		logger.info(f"⚠️  Stopped early due to quota limit")
 	logger.info('='*70)
+	
+	# Exit with error code if quota was exceeded
+	if quota_exceeded:
+		sys.exit(2)
 
 
 if __name__ == '__main__':
