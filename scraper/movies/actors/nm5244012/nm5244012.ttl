@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5244012/> a schema:Person ;
+    schema:name "Cameron Zeigler" ;
+    schema:url <https://www.imdb.com/name/nm5244012/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Cameron Zeigler. Actor: 12 Years a Slave. Cameron Zeigler is known for 12 Years a Slave (2013), Woodlands (2015) and The Stand (2016)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.19"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "3′ 11″ (1.19 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5494422/>,    # The Stand
+                       <https://www.imdb.com/title/tt4513666/>,    # Woodlands
+                       <https://www.imdb.com/title/tt2024544/> ; # 12 Years a Slave
+
+
+    schema:video <https://www.imdb.com/video/vi2643372057/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5244012/mediaviewer/rm2307841024/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Stand (2016)
+<https://www.imdb.com/title/tt5494422/> a schema:Movie ;
+    schema:name "The Stand" ;
+    schema:url <https://www.imdb.com/title/tt5494422/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5244012/> ;
+        schema:characterName "Chilemba"
+    ] .
+
+# Woodlands (2015)
+<https://www.imdb.com/title/tt4513666/> a schema:Movie ;
+    schema:name "Woodlands" ;
+    schema:url <https://www.imdb.com/title/tt4513666/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5244012/> ;
+        schema:characterName "Lukas"
+    ] .
+
+# 12 Years a Slave (2013)
+<https://www.imdb.com/title/tt2024544/> a schema:Movie ;
+    schema:name "12 Years a Slave" ;
+    schema:url <https://www.imdb.com/title/tt2024544/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5244012/> ;
+        schema:characterName "Alonzo Northup"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2643372057/> a schema:VideoObject ;
+        schema:name "12 Years a Slave" ;
+        schema:description "Clip: I Want To Live" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2643372057/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjQwMThiODMtNDJiMi00OWUzLWJiYTctMTM5MTg5NWI4N2UwXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT41S"^^xsd:duration ;
+        schema:uploadDate "2013-10-16T04:00:47Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5244012/mediaviewer/rm2307841024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyOTUwNDg1N15BMl5BanBnXkFtZTgwNjczOTkzMDE@._V1_.jpg> ;
+    schema:caption "Chiwetel Ejiofor, Kelsey Scott, Quvenzhané Wallis, and Cameron Zeigler in 12 Years a Slave (2013)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

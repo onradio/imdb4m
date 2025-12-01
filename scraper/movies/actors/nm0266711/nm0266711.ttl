@@ -1,0 +1,112 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0266711/> a schema:Person ;
+    schema:name "Billy Fane" ;
+    schema:url <https://www.imdb.com/name/nm0266711/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Billy Fane. Actor: Billy Elliot. Billy Fane was born in 1946 in Tyne and Wear, England, UK. He is an actor, known for Billy Elliot (2000), Young Hearts Run Free (2011) and Purely Belter (2000)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tyne and Wear, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1578869/>,    # Young Hearts Run Free
+                       <https://www.imdb.com/title/tt0381957/>,    # Cloud Cuckoo Land
+                       <https://www.imdb.com/title/tt0101114/>,    # Heartbeat
+                       <https://www.imdb.com/title/tt0249462/>,    # Billy Elliot
+                       <https://www.imdb.com/title/tt0246875/>,    # Purely Belter
+                       <https://www.imdb.com/title/tt0163437/> . # Byker Grove
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Young Hearts Run Free (2011)
+<https://www.imdb.com/title/tt1578869/> a schema:Movie ;
+    schema:name "Young Hearts Run Free" ;
+    schema:url <https://www.imdb.com/title/tt1578869/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Friendly Miner on Bus"
+    ] .
+
+# Cloud Cuckoo Land (2004)
+<https://www.imdb.com/title/tt0381957/> a schema:Movie ;
+    schema:name "Cloud Cuckoo Land" ;
+    schema:url <https://www.imdb.com/title/tt0381957/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Car Scrapman"
+    ] .
+
+# Heartbeat (2001)
+<https://www.imdb.com/title/tt0101114/> a schema:Movie ;
+    schema:name "Heartbeat" ;
+    schema:url <https://www.imdb.com/title/tt0101114/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Tramp"
+    ] .
+
+# Billy Elliot (2000)
+<https://www.imdb.com/title/tt0249462/> a schema:Movie ;
+    schema:name "Billy Elliot" ;
+    schema:url <https://www.imdb.com/title/tt0249462/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Mr Braithwaite"
+    ] .
+
+# Purely Belter (2000)
+<https://www.imdb.com/title/tt0246875/> a schema:Movie ;
+    schema:name "Purely Belter" ;
+    schema:url <https://www.imdb.com/title/tt0246875/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Bingo caller"
+    ] .
+
+# Byker Grove (1989)
+<https://www.imdb.com/title/tt0163437/> a schema:Movie ;
+    schema:name "Byker Grove" ;
+    schema:url <https://www.imdb.com/title/tt0163437/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0266711/> ;
+        schema:characterName "Geoff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

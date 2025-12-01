@@ -1,0 +1,27 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0105695/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Claudia's Song" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Claudia's Song" ;
+            schema:author <https://www.imdb.com/name/nm0000142/>, # Clint Eastwood
+                       <https://www.imdb.com/name/nm0006215/> # Lennie Niehaus
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000142/> a schema:Person ;
+    schema:name "Clint Eastwood" .
+<https://www.imdb.com/name/nm0006215/> a schema:Person ;
+    schema:name "Lennie Niehaus" .
+# ==============================================================================

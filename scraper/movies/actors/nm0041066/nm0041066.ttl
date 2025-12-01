@@ -1,0 +1,146 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0041066/> a schema:Person ;
+    schema:name "Antonella Attili" ;
+    schema:url <https://www.imdb.com/name/nm0041066/> ;
+    schema:birthDate "1963-04-03"^^xsd:date ;
+    schema:jobTitle "Actress", "Production Manager" ;
+    schema:description "Antonella Attili. Actress: Cinema Paradiso. Antonella Attili was born on 3 April 1963 in Rome, Lazio, Italy. She is an actress and production manager, known for Cinema Paradiso (1988), Prima del tramonto (1999) and Il grande giorno (2022)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY2MzEyMjA3Ml5BMl5BanBnXkFtZTcwNTYzNDAzMQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rome, Lazio, Italy"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5263880/>,    # Il paradiso delle signore
+                       <https://www.imdb.com/title/tt10149896/> ; # 9 su 10
+
+
+    schema:video <https://www.imdb.com/video/vi982107929/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0041066/mediaviewer/rm3912803841/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3979912705/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3761808897/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm1043899905/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3274155521/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3542916352/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3526139136/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm1714265344/>,
+                 <https://www.imdb.com/name/nm0041066/mediaviewer/rm3559693568/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Il paradiso delle signore (2018)
+<https://www.imdb.com/title/tt5263880/> a schema:Movie ;
+    schema:name "Il paradiso delle signore" ;
+    schema:url <https://www.imdb.com/title/tt5263880/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041066/> ;
+        schema:characterName "Agnese Amato"
+    ] .
+
+# 9 su 10 (2019)
+<https://www.imdb.com/title/tt10149896/> a schema:Movie ;
+    schema:name "9 su 10" ;
+    schema:url <https://www.imdb.com/title/tt10149896/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041066/> ;
+        schema:characterName "Cassiera"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi982107929/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi982107929/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWQwZmIyZWYtYjY1Ni00ZTI3LWFjZWItNWY4NjJhNWQxZDk0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M46S"^^xsd:duration ;
+        schema:uploadDate "2023-08-09T12:38:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY2MzEyMjA3Ml5BMl5BanBnXkFtZTcwNTYzNDAzMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2MzEyMjA3Ml5BMl5BanBnXkFtZTcwNTYzNDAzMQ@@._V1_.jpg> ;
+    schema:caption "Antonella Attili" ;
+    schema:height "615"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3912803841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDBlNjU4ZDAtNWQwMS00NWM1LTkyYjYtYzBmZmE1ZTU3MjY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Antonella Attili, Roberta Lena, Philippe Noiret, and Leopoldo Trieste in Cinema Paradiso (1988)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3979912705/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmQ3MGViZjAtYzExMy00NmMxLTkxYjEtYjYwNTAyZjA2Y2E5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Antonella Attili, Roberta Lena, Marco Leonardi, and Philippe Noiret in Cinema Paradiso (1988)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3761808897/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDk5NzkxNWMtNDVhNi00YWY1LWIxMmMtYzczNDE2YTliNThjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Antonella Attili in Cinema Paradiso (1988)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm1043899905/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjU0YTNjZjEtZmQyMC00NGFhLThiNzgtZjMxNmY5NWZiOWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Antonella Attili, Enzo Cannavale, Salvatore Cascio, and Leopoldo Trieste in Cinema Paradiso (1988)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3274155521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjJlNzc2OWItYTM0NC00NThlLWJhODctZWIxZTdkMTg2MjZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Antonella Attili, Salvatore Cascio, and Philippe Noiret in Cinema Paradiso (1988)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3542916352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIzMTUyMTg5N15BMl5BanBnXkFtZTcwNjYzNDAzMQ@@._V1_.jpg> ;
+    schema:caption "Antonella Attili" ;
+    schema:height "615"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3526139136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEzNDk5MDk0OV5BMl5BanBnXkFtZTcwNzYzNDAzMQ@@._V1_.jpg> ;
+    schema:caption "Antonella Attili" ;
+    schema:height "615"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm1714265344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk2MTc0OTYxOF5BMl5BanBnXkFtZTcwNDg0NDAzMQ@@._V1_.jpg> ;
+    schema:caption "Antonella Attili" ;
+    schema:height "615"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0041066/mediaviewer/rm3559693568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2MzEyMjA3Ml5BMl5BanBnXkFtZTcwNTYzNDAzMQ@@._V1_.jpg> ;
+    schema:caption "Antonella Attili" ;
+    schema:height "615"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

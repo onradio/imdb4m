@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0794186/> a schema:Person ;
+    schema:name "Ayano Shiraishi" ;
+    schema:url <https://www.imdb.com/name/nm0794186/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Ayano Shiraishi. Actress: Grave of the Fireflies. Ayano Shiraishi is known for Grave of the Fireflies (1988)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0095327/> ;    # Grave of the Fireflies
+
+
+    schema:video <https://www.imdb.com/video/vi4000957977/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Grave of the Fireflies (1988)
+<https://www.imdb.com/title/tt0095327/> a schema:Movie ;
+    schema:name "Grave of the Fireflies" ;
+    schema:url <https://www.imdb.com/title/tt0095327/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0794186/> ;
+        schema:characterName "Setsuko"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4000957977/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A young boy and his little sister struggle to survive in Japan during World War II." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4000957977/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTY1YWMyZDktOGQzYS00NTMwLThhMWQtM2Y1NDczYzU1ODhlXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2024-08-22T15:50:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

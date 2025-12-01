@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8013346/> a schema:Person ;
+    schema:name "Mursaleem Qureshi" ;
+    schema:url <https://www.imdb.com/name/nm8013346/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mursaleem Qureshi. Actor: Bajrangi Bhaijaan. Mursaleem Qureshi is known for Bajrangi Bhaijaan (2015), Antim: The Final Truth (2021) and Padmaavat (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8060624/>,    # Nawabzaade
+                       <https://www.imdb.com/title/tt5935704/>,    # Padmaavat
+                       <https://www.imdb.com/title/tt5570606/>,    # Muzaffarnagar 2013
+                       <https://www.imdb.com/title/tt3863552/> ; # Bajrangi Bhaijaan
+
+
+    schema:video <https://www.imdb.com/video/vi3274161689/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Nawabzaade (2018)
+<https://www.imdb.com/title/tt8060624/> a schema:Movie ;
+    schema:name "Nawabzaade" ;
+    schema:url <https://www.imdb.com/title/tt8060624/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8013346/> ;
+        schema:characterName "Chaudhary"
+    ] .
+
+# Padmaavat (2018)
+<https://www.imdb.com/title/tt5935704/> a schema:Movie ;
+    schema:name "Padmaavat" ;
+    schema:url <https://www.imdb.com/title/tt5935704/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8013346/> ;
+        schema:characterName "Mursaleen"
+    ] .
+
+# Muzaffarnagar 2013 (2017)
+<https://www.imdb.com/title/tt5570606/> a schema:Movie ;
+    schema:name "Muzaffarnagar 2013" ;
+    schema:url <https://www.imdb.com/title/tt5570606/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8013346/> ;
+        schema:characterName "Sunny"
+    ] .
+
+# Bajrangi Bhaijaan (2015)
+<https://www.imdb.com/title/tt3863552/> a schema:Movie ;
+    schema:name "Bajrangi Bhaijaan" ;
+    schema:url <https://www.imdb.com/title/tt3863552/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8013346/> ;
+        schema:characterName "Border Agent"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3274161689/> a schema:VideoObject ;
+        schema:name "Muzaffarnagar 2013 (2017) Trailer" ;
+        schema:description "Range shooter Dev Malik, a resident of Muzzafarnagar gets into trouble with Jodha Singh, a land mafia who tortures villagers." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3274161689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTU1YTE3MWEtYmQwNi00NTg0LTk2NDItZTY0NDdkNWNjNjM0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M37S"^^xsd:duration ;
+        schema:uploadDate "2020-06-17T12:42:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1300111/> a schema:Person ;
+    schema:name "Sonya Jehan" ;
+    schema:url <https://www.imdb.com/name/nm1300111/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Sonya Jehan. Actress: Taj Mahal: An Eternal Love Story. Sonya Jehan is known for Taj Mahal: An Eternal Love Story (2005), My Name Is Khan (2010) and Ho Mann Jahaan (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5200814/>,    # Ho Mann Jahaan
+                       <https://www.imdb.com/title/tt2032557/>,    # The Reluctant Fundamentalist
+                       <https://www.imdb.com/title/tt1188996/>,    # My Name Is Khan
+                       <https://www.imdb.com/title/tt0995823/>,    # Khoya Khoya Chand
+                       <https://www.imdb.com/title/tt0328503/> . # Taj Mahal: An Eternal Love Story
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ho Mann Jahaan (2015)
+<https://www.imdb.com/title/tt5200814/> a schema:Movie ;
+    schema:name "Ho Mann Jahaan" ;
+    schema:url <https://www.imdb.com/title/tt5200814/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1300111/> ;
+        schema:characterName "Sabina"
+    ] .
+
+# The Reluctant Fundamentalist (2012)
+<https://www.imdb.com/title/tt2032557/> a schema:Movie ;
+    schema:name "The Reluctant Fundamentalist" ;
+    schema:url <https://www.imdb.com/title/tt2032557/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1300111/> ;
+        schema:characterName "Nadia"
+    ] .
+
+# My Name Is Khan (2010)
+<https://www.imdb.com/title/tt1188996/> a schema:Movie ;
+    schema:name "My Name Is Khan" ;
+    schema:url <https://www.imdb.com/title/tt1188996/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1300111/> ;
+        schema:characterName "Hasina Khan"
+    ] .
+
+# Khoya Khoya Chand (2007)
+<https://www.imdb.com/title/tt0995823/> a schema:Movie ;
+    schema:name "Khoya Khoya Chand" ;
+    schema:url <https://www.imdb.com/title/tt0995823/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1300111/> ;
+        schema:characterName "Ratanbala"
+    ] .
+
+# Taj Mahal: An Eternal Love Story (2005)
+<https://www.imdb.com/title/tt0328503/> a schema:Movie ;
+    schema:name "Taj Mahal: An Eternal Love Story" ;
+    schema:url <https://www.imdb.com/title/tt0328503/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1300111/> ;
+        schema:characterName "Arjumand Bano"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

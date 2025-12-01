@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1600560/> a schema:Person ;
+    schema:name "Gus Lewis" ;
+    schema:url <https://www.imdb.com/name/nm1600560/> ;
+    schema:birthDate "1993-01-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gus Lewis. Actor: Batman Begins. Gus Lewis was born on 19 January 1993 in New York City, New York, USA. He is an actor, known for Batman Begins (2005), Asylum (2005) and The End (2012)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0372784/>,    # Batman Begins
+                       <https://www.imdb.com/title/tt0348505/>,    # Asylum
+                       <https://www.imdb.com/title/tt1671673/>,    # One for Sorrow
+                       <https://www.imdb.com/title/tt2275989/>,    # The End
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1145529/>,    # The Shooting of Thomas Hurndall
+                       <https://www.imdb.com/title/tt1445205/>,    # Revelation
+                       <https://www.imdb.com/title/tt0492429/> ; # I Shouldn't Be Alive
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1600560/mediaviewer/rm469014784/>,
+                 <https://www.imdb.com/name/nm1600560/mediaviewer/rm452237568/>,
+                 <https://www.imdb.com/name/nm1600560/mediaviewer/rm1945409792/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0372784/> a schema:Movie ;
+    schema:name "Batman Begins" ;
+    schema:url <https://www.imdb.com/title/tt0372784/> .
+
+<https://www.imdb.com/title/tt0348505/> a schema:Movie ;
+    schema:name "Asylum" ;
+    schema:url <https://www.imdb.com/title/tt0348505/> .
+
+<https://www.imdb.com/title/tt1671673/> a schema:Movie ;
+    schema:name "One for Sorrow" ;
+    schema:url <https://www.imdb.com/title/tt1671673/> .
+
+<https://www.imdb.com/title/tt2275989/> a schema:Movie ;
+    schema:name "The End" ;
+    schema:url <https://www.imdb.com/title/tt2275989/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Shooting of Thomas Hurndall (2008)
+<https://www.imdb.com/title/tt1145529/> a schema:Movie ;
+    schema:name "The Shooting of Thomas Hurndall" ;
+    schema:url <https://www.imdb.com/title/tt1145529/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1600560/> ;
+        schema:characterName "Freddy"
+    ] .
+
+# Revelation (2007)
+<https://www.imdb.com/title/tt1445205/> a schema:Movie ;
+    schema:name "Revelation" ;
+    schema:url <https://www.imdb.com/title/tt1445205/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1600560/> ;
+        schema:characterName ""
+    ] .
+
+# I Shouldn't Be Alive (2006)
+<https://www.imdb.com/title/tt0492429/> a schema:Movie ;
+    schema:name "I Shouldn't Be Alive" ;
+    schema:url <https://www.imdb.com/title/tt0492429/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1600560/> ;
+        schema:characterName "Matthew Couillard"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1600560/mediaviewer/rm469014784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzMjQ5ODI1Nl5BMl5BanBnXkFtZTYwOTAxMTI3._V1_.jpg> ;
+    schema:caption "Michael Caine, Linus Roache, and Gus Lewis in Batman Begins (2005)" ;
+    schema:height "297"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1600560/mediaviewer/rm452237568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwODU3MTU3NF5BMl5BanBnXkFtZTYwMDExMTI3._V1_.jpg> ;
+    schema:caption "Michael Caine, Rutger Hauer, and Gus Lewis in Batman Begins (2005)" ;
+    schema:height "303"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1600560/mediaviewer/rm1945409792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg5ODM5NjE0OF5BMl5BanBnXkFtZTYwMjQxMTI3._V1_.jpg> ;
+    schema:caption "Linus Roache, Sara Stewart, and Gus Lewis in Batman Begins (2005)" ;
+    schema:height "338"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1600560/>
+    schema:sameAs <https://www.facebook.com/gus.lewis.10> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

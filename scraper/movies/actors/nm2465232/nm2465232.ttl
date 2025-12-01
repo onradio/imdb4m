@@ -1,0 +1,195 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2465232/> a schema:Person ;
+    schema:name "Natasha Powell" ;
+    schema:url <https://www.imdb.com/name/nm2465232/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Natasha Powell. Actress: Suspect: The Shooting of Jean Charles de Menezes. Natasha Powell is known for Suspect: The Shooting of Jean Charles de Menezes (2025), Emmerdale (1972) and Judy (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTY5ZTg4Y2EtMmVlNC00MzNiLWE1NDAtN2I5MGY0ZmVhMGI0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7549996/>,    # Judy
+                       <https://www.imdb.com/title/tt9382522/>,    # Duracell Battery Aisle
+                       <https://www.imdb.com/title/tt0068069/>,    # Emmerdale
+                       <https://www.imdb.com/title/tt5191110/>,    # Berlin Station
+                       <https://www.imdb.com/title/tt5075360/>,    # Murder Maps
+                       <https://www.imdb.com/title/tt5178026/> ; # Is This Rape? Sex on Trial
+
+
+    schema:video <https://www.imdb.com/video/vi4157196313/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2465232/mediaviewer/rm1212653057/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm1874723328/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm1857946112/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm482214400/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm3956140288/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm2173028097/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm2256914177/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm3179661057/>,
+                 <https://www.imdb.com/name/nm2465232/mediaviewer/rm1803929345/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Judy (2019)
+<https://www.imdb.com/title/tt7549996/> a schema:Movie ;
+    schema:name "Judy" ;
+    schema:url <https://www.imdb.com/title/tt7549996/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "Ethel Gumm"
+    ] .
+
+# Duracell Battery Aisle (2018)
+<https://www.imdb.com/title/tt9382522/> a schema:Movie ;
+    schema:name "Duracell Battery Aisle" ;
+    schema:url <https://www.imdb.com/title/tt9382522/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "Mrs. Claus"
+    ] .
+
+# Emmerdale (2018)
+<https://www.imdb.com/title/tt0068069/> a schema:Movie ;
+    schema:name "Emmerdale" ;
+    schema:url <https://www.imdb.com/title/tt0068069/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "Fiona"
+    ] .
+
+# Berlin Station (2016)
+<https://www.imdb.com/title/tt5191110/> a schema:Movie ;
+    schema:name "Berlin Station" ;
+    schema:url <https://www.imdb.com/title/tt5191110/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "BBC Anchor Woman"
+    ] .
+
+# Murder Maps (2016)
+<https://www.imdb.com/title/tt5075360/> a schema:Movie ;
+    schema:name "Murder Maps" ;
+    schema:url <https://www.imdb.com/title/tt5075360/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "Trial Witness"
+    ] .
+
+# Is This Rape? Sex on Trial (2015)
+<https://www.imdb.com/title/tt5178026/> a schema:Movie ;
+    schema:name "Is This Rape? Sex on Trial" ;
+    schema:url <https://www.imdb.com/title/tt5178026/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2465232/> ;
+        schema:characterName "Defence Barrister"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4157196313/> a schema:VideoObject ;
+        schema:name "Acting Demo" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4157196313/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMmZkN2IyMjYtOWIzNy00NzQ2LTlkOTMtZGQ4ZmI4MjRhOTAyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT4M25S"^^xsd:duration ;
+        schema:uploadDate "2025-08-01T15:41:55Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTY5ZTg4Y2EtMmVlNC00MzNiLWE1NDAtN2I5MGY0ZmVhMGI0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY5ZTg4Y2EtMmVlNC00MzNiLWE1NDAtN2I5MGY0ZmVhMGI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "5760"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm1212653057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGFmY2E3ZDUtYTFmMS00YmZmLWJiOGMtOTNhYmM3ZTk0MjI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "3840"^^xsd:integer ;
+    schema:width "5760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm1874723328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI1N2E1MGYtM2RiNi00NmVjLThiMmMtZjE1ZDcyNTQ0ZjFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2182"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm1857946112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5MDkxNDgtNWNiZC00ODM3LWJkN2QtYTM3MTFkZDMxMjZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2182"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm482214400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjAyY2ExZWYtNzZlNS00MWQ3LWI1OGEtZmU5OGNmN2FlZjEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2182"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm3956140288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmEzZTZmNWMtYzVjNi00ZWE2LWE3MmItMTg4ZWQwMTMyYzU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "2419"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm2173028097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGQ5Zjg3ZjMtYTdmZS00N2I3LTkzMzMtYzEyOTUyNGExMTRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Natasha Powell" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm2256914177/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmI4MGVmYzgtZTYyNS00OTU2LWEyZTMtODE4ZDM2Yjc1YjA3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emmerdale" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm3179661057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzM5YmU5MzYtMWFlOS00ZGI4LWEzM2UtM2Q1MDJkYTA2NzZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emmerdale" ;
+    schema:height "2458"^^xsd:integer ;
+    schema:width "3277"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2465232/mediaviewer/rm1803929345/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzEzNjI1MDYtMDc2MC00ZDJmLTkyZTctNmE3MWRjNjI1Y2RlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Judy" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

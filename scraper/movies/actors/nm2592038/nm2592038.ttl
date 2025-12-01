@@ -1,0 +1,135 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2592038/> a schema:Person ;
+    schema:name "Tess Allen" ;
+    schema:url <https://www.imdb.com/name/nm2592038/> ;
+    schema:jobTitle "Actress", "Writer", "Producer" ;
+    schema:description "Tess Allen. Actress: Boyhood. Tess Allen is known for Boyhood (2014), Matched (2020) and Downtown (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTQyYWY3YzItM2Q5Zi00YzgxLTg3ZjYtZjM4YzdmNTQ3NjhmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4017296/>,    # The Year Was 1969
+                       <https://www.imdb.com/title/tt5228574/>,    # Favorites
+                       <https://www.imdb.com/title/tt5226560/>,    # Godsend
+                       <https://www.imdb.com/title/tt5226354/>,    # My Friend Jill
+                       <https://www.imdb.com/title/tt5226578/>,    # The Choking Kind
+                       <https://www.imdb.com/title/tt4608556/>,    # Downtown
+                       <https://www.imdb.com/title/tt1065073/> ; # Boyhood
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2592038/mediaviewer/rm1795993601/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Year Was 1969 (2015)
+<https://www.imdb.com/title/tt4017296/> a schema:Movie ;
+    schema:name "The Year Was 1969" ;
+    schema:url <https://www.imdb.com/title/tt4017296/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Marisa"
+    ] .
+
+# Favorites (2015)
+<https://www.imdb.com/title/tt5228574/> a schema:Movie ;
+    schema:name "Favorites" ;
+    schema:url <https://www.imdb.com/title/tt5228574/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Trixie"
+    ] .
+
+# Godsend (2015)
+<https://www.imdb.com/title/tt5226560/> a schema:Movie ;
+    schema:name "Godsend" ;
+    schema:url <https://www.imdb.com/title/tt5226560/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Jessi"
+    ] .
+
+# My Friend Jill (2015)
+<https://www.imdb.com/title/tt5226354/> a schema:Movie ;
+    schema:name "My Friend Jill" ;
+    schema:url <https://www.imdb.com/title/tt5226354/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Teri"
+    ] .
+
+# The Choking Kind (2015)
+<https://www.imdb.com/title/tt5226578/> a schema:Movie ;
+    schema:name "The Choking Kind" ;
+    schema:url <https://www.imdb.com/title/tt5226578/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Misty"
+    ] .
+
+# Downtown (2015)
+<https://www.imdb.com/title/tt4608556/> a schema:Movie ;
+    schema:name "Downtown" ;
+    schema:url <https://www.imdb.com/title/tt4608556/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Amanda"
+    ] .
+
+# Boyhood (2014)
+<https://www.imdb.com/title/tt1065073/> a schema:Movie ;
+    schema:name "Boyhood" ;
+    schema:url <https://www.imdb.com/title/tt1065073/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2592038/> ;
+        schema:characterName "Neighborhood Friend #2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTQyYWY3YzItM2Q5Zi00YzgxLTg3ZjYtZjM4YzdmNTQ3NjhmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTQyYWY3YzItM2Q5Zi00YzgxLTg3ZjYtZjM4YzdmNTQ3NjhmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tess Allen" ;
+    schema:height "817"^^xsd:integer ;
+    schema:width "515"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2592038/mediaviewer/rm1795993601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTQyYWY3YzItM2Q5Zi00YzgxLTg3ZjYtZjM4YzdmNTQ3NjhmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tess Allen" ;
+    schema:height "817"^^xsd:integer ;
+    schema:width "515"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

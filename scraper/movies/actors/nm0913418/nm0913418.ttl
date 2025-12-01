@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0913418/> a schema:Person ;
+    schema:name "Dan Washington" ;
+    schema:url <https://www.imdb.com/name/nm0913418/> ;
+    schema:birthDate "1966-01-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dan Washington. Actor: Good Will Hunting. Dan Washington was born on 25 January 1966 in the USA. He is an actor, known for Good Will Hunting (1997) and Mortal Kombat vs. DC Universe (2008)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119217/>,    # Good Will Hunting
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1107835/> . # Mortal Kombat vs. DC Universe
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0119217/> a schema:Movie ;
+    schema:name "Good Will Hunting" ;
+    schema:url <https://www.imdb.com/title/tt0119217/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mortal Kombat vs. DC Universe (2008)
+<https://www.imdb.com/title/tt1107835/> a schema:Movie ;
+    schema:name "Mortal Kombat vs. DC Universe" ;
+    schema:url <https://www.imdb.com/title/tt1107835/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0913418/> ;
+        schema:characterName "Jax"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

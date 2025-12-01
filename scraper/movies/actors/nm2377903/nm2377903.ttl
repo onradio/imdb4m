@@ -1,0 +1,397 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2377903/> a schema:Person ;
+    schema:name "Lucy Boynton" ;
+    schema:url <https://www.imdb.com/name/nm2377903/> ;
+    schema:birthDate "1994-01-17"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:alternateName "Lucy Christabel Boynton" ;
+    schema:description "Lucy Boynton. Actress: Sing Street. Lucy Boynton (born 17 January 1994) is an American-English actress. She made her film debut with a leading role in Miss Potter (2006). Boynton's credits include Copperhead (2013), Sing Street (2016), Murder on the Orient Express (2017) and Bohemian Rhapsody (2018).\n\nBoynton was born in New York City and grew up in London. She is the daughter of British-born Graham Boynton, the Group Travel Editor of..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmM0YmI3N2EtMjUwMS00MDJlLWFiYTgtOTc0N2YxNDg5ZGI1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt0482546/>,    # Miss Potter
+                       <https://www.imdb.com/title/tt1727824/>,    # Bohemian Rhapsody
+                       <https://www.imdb.com/title/tt3402236/>,    # Murder on the Orient Express
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7971476/>,    # The Politician
+                       <https://www.imdb.com/title/tt6217306/>,    # Apostle
+                       <https://www.imdb.com/title/tt5503718/>,    # Gypsy
+                       <https://www.imdb.com/title/tt5153952/>,    # Let Me Go
+                       <https://www.imdb.com/title/tt4986134/>,    # Rebel in the Rye
+                       <https://www.imdb.com/title/tt5229236/>,    # Lock In
+                       <https://www.imdb.com/title/tt8350450/>,    # The Dreams of Bethany Mellmoth
+                       <https://www.imdb.com/title/tt3622110/>,    # Don't Knock Twice
+                       <https://www.imdb.com/title/tt5059406/>,    # I Am the Pretty Thing That Lives in the House
+                       <https://www.imdb.com/title/tt3286052/>,    # February
+                       <https://www.imdb.com/title/tt4034398/>,    # Life in Squares
+                       <https://www.imdb.com/title/tt1736341/>,    # Borgia
+                       <https://www.imdb.com/title/tt1166893/>,    # Law & Order: UK
+                       <https://www.imdb.com/title/tt2701582/>,    # Endeavour
+                       <https://www.imdb.com/title/tt3152964/>,    # Hymn to Pan
+                       <https://www.imdb.com/title/tt2404555/>,    # Copperhead
+                       <https://www.imdb.com/title/tt0874608/>,    # Lewis
+                       <https://www.imdb.com/title/tt1591585/>,    # Mo
+                       <https://www.imdb.com/title/tt0847150/>,    # Sense & Sensibility
+                       <https://www.imdb.com/title/tt1083845/> ; # Ballet Shoes
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2805319961/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2377903/mediaviewer/rm3982967809/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3764864001/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm4016522241/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3798418433/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3781641217/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3815195649/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3964809217/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3763482625/>,
+                 <https://www.imdb.com/name/nm2377903/mediaviewer/rm3738312449/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> .
+
+<https://www.imdb.com/title/tt0482546/> a schema:Movie ;
+    schema:name "Miss Potter" ;
+    schema:url <https://www.imdb.com/title/tt0482546/> .
+
+<https://www.imdb.com/title/tt1727824/> a schema:Movie ;
+    schema:name "Bohemian Rhapsody" ;
+    schema:url <https://www.imdb.com/title/tt1727824/> .
+
+<https://www.imdb.com/title/tt3402236/> a schema:Movie ;
+    schema:name "Murder on the Orient Express" ;
+    schema:url <https://www.imdb.com/title/tt3402236/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Politician (2019)
+<https://www.imdb.com/title/tt7971476/> a schema:Movie ;
+    schema:name "The Politician" ;
+    schema:url <https://www.imdb.com/title/tt7971476/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Astrid Sloan"
+    ] .
+
+# Apostle (2018)
+<https://www.imdb.com/title/tt6217306/> a schema:Movie ;
+    schema:name "Apostle" ;
+    schema:url <https://www.imdb.com/title/tt6217306/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Andrea"
+    ] .
+
+# Gypsy (2017)
+<https://www.imdb.com/title/tt5503718/> a schema:Movie ;
+    schema:name "Gypsy" ;
+    schema:url <https://www.imdb.com/title/tt5503718/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Allison Adams"
+    ] .
+
+# Let Me Go (2017)
+<https://www.imdb.com/title/tt5153952/> a schema:Movie ;
+    schema:name "Let Me Go" ;
+    schema:url <https://www.imdb.com/title/tt5153952/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Emily"
+    ] .
+
+# Rebel in the Rye (2017)
+<https://www.imdb.com/title/tt4986134/> a schema:Movie ;
+    schema:name "Rebel in the Rye" ;
+    schema:url <https://www.imdb.com/title/tt4986134/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Claire Douglas"
+    ] .
+
+# Lock In (2016)
+<https://www.imdb.com/title/tt5229236/> a schema:Movie ;
+    schema:name "Lock In" ;
+    schema:url <https://www.imdb.com/title/tt5229236/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Lucy"
+    ] .
+
+# The Dreams of Bethany Mellmoth (2016)
+<https://www.imdb.com/title/tt8350450/> a schema:Movie ;
+    schema:name "The Dreams of Bethany Mellmoth" ;
+    schema:url <https://www.imdb.com/title/tt8350450/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Bethany Mellmoth"
+    ] .
+
+# Don't Knock Twice (2016)
+<https://www.imdb.com/title/tt3622110/> a schema:Movie ;
+    schema:name "Don't Knock Twice" ;
+    schema:url <https://www.imdb.com/title/tt3622110/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Chloe"
+    ] .
+
+# I Am the Pretty Thing That Lives in the House (2016)
+<https://www.imdb.com/title/tt5059406/> a schema:Movie ;
+    schema:name "I Am the Pretty Thing That Lives in the House" ;
+    schema:url <https://www.imdb.com/title/tt5059406/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Polly"
+    ] .
+
+# February (2015)
+<https://www.imdb.com/title/tt3286052/> a schema:Movie ;
+    schema:name "February" ;
+    schema:url <https://www.imdb.com/title/tt3286052/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Rose"
+    ] .
+
+# Life in Squares (2015)
+<https://www.imdb.com/title/tt4034398/> a schema:Movie ;
+    schema:name "Life in Squares" ;
+    schema:url <https://www.imdb.com/title/tt4034398/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Angelica Bell"
+    ] .
+
+# Borgia (2011)
+<https://www.imdb.com/title/tt1736341/> a schema:Movie ;
+    schema:name "Borgia" ;
+    schema:url <https://www.imdb.com/title/tt1736341/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Sister Lucia"
+    ] .
+
+# Law & Order: UK (2014)
+<https://www.imdb.com/title/tt1166893/> a schema:Movie ;
+    schema:name "Law & Order: UK" ;
+    schema:url <https://www.imdb.com/title/tt1166893/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Georgia Hutton"
+    ] .
+
+# Endeavour (2014)
+<https://www.imdb.com/title/tt2701582/> a schema:Movie ;
+    schema:name "Endeavour" ;
+    schema:url <https://www.imdb.com/title/tt2701582/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Petra Briers"
+    ] .
+
+# Hymn to Pan (2013)
+<https://www.imdb.com/title/tt3152964/> a schema:Movie ;
+    schema:name "Hymn to Pan" ;
+    schema:url <https://www.imdb.com/title/tt3152964/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Holliday"
+    ] .
+
+# Copperhead (2013)
+<https://www.imdb.com/title/tt2404555/> a schema:Movie ;
+    schema:name "Copperhead" ;
+    schema:url <https://www.imdb.com/title/tt2404555/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Esther Hagadorn"
+    ] .
+
+# Lewis (2011)
+<https://www.imdb.com/title/tt0874608/> a schema:Movie ;
+    schema:name "Lewis" ;
+    schema:url <https://www.imdb.com/title/tt0874608/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Zoe Suskin"
+    ] .
+
+# Mo (2010)
+<https://www.imdb.com/title/tt1591585/> a schema:Movie ;
+    schema:name "Mo" ;
+    schema:url <https://www.imdb.com/title/tt1591585/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Henrietta Norton"
+    ] .
+
+# Sense & Sensibility (2008)
+<https://www.imdb.com/title/tt0847150/> a schema:Movie ;
+    schema:name "Sense & Sensibility" ;
+    schema:url <https://www.imdb.com/title/tt0847150/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Margaret Dashwood"
+    ] .
+
+# Ballet Shoes (2007)
+<https://www.imdb.com/title/tt1083845/> a schema:Movie ;
+    schema:name "Ballet Shoes" ;
+    schema:url <https://www.imdb.com/title/tt1083845/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2377903/> ;
+        schema:characterName "Posy Fossil"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2805319961/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Follows the story of Ruth Ellis: her lifestyle as a young nightclub manageress, her violent relationship with the man she then killed in cold blood, her arrest, trial, and subsequent legal battle to get her release before she was hanged." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2805319961/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWM5NzY3YzQtNjdhMy00MGQ5LTg1MTMtNzJhMjhkNjA5NmNjXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2025-01-06T17:45:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmM0YmI3N2EtMjUwMS00MDJlLWFiYTgtOTc0N2YxNDg5ZGI1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmM0YmI3N2EtMjUwMS00MDJlLWFiYTgtOTc0N2YxNDg5ZGI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3982967809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQ3NzkxNTItZDkzYy00OGEyLWE1NTQtM2FjMzhiODQyNTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Justin H. Min in The Greatest Hits (2024)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3764864001/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzAxYTZjZDYtNzgwMS00ZTBmLWIwOGItNDQ4MjI3NGVkZDc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Justin H. Min in The Greatest Hits (2024)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm4016522241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2FlNmM0NGQtMmFmNy00YzQ5LThhNjUtNTc3ZmQ0NmQ1MzQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Justin H. Min in The Greatest Hits (2024)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3798418433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTViODNjMDktNjI4Yy00M2IzLTliODctZjA2MjMyNmZmMTdhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and David Corenswet in The Greatest Hits (2024)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3781641217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWRjODhhZTctODZjZS00ZTFkLWIzMWQtYmFjMzI1MDNjZDU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton in The Greatest Hits (2024)" ;
+    schema:height "3813"^^xsd:integer ;
+    schema:width "4746"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3815195649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyYTFhM2UtNjE4MC00MDJhLTlmMGYtODA1YzY2N2I2MGM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton in The Greatest Hits (2024)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3964809217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDRhNGNiY2MtM2FjZC00MGI4LThjNWMtOTE2NTBkNmEyYjcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Kelvin Harrison Jr. in Chevalier (2022)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3763482625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzQ3YjM4MmMtOTA3Zi00MTU5LTlhODQtM2VmNDFkNDdmYTk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Kelvin Harrison Jr. in Chevalier (2022)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2377903/mediaviewer/rm3738312449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNTcyOGYtYzQwOC00YmFmLWJkMjktNDI0YzM0OTVmMTIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joshua James, Lucy Boynton, Will Poulter, and Jonathan Jules in Why Didn't They Ask Evans? (2022)" ;
+    schema:height "5504"^^xsd:integer ;
+    schema:width "8256"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2377903/>
+    schema:sameAs <https://www.instagram.com/lucyboynton1> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,28 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8613070/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Portrait de la jeune fille en feu" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Concerto No. 2 for violin in G minor, Op. 8, RV 315, L'Estate" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Concerto No. 2 for violin in G minor, Op. 8, RV 315, L'Estate" ;
+            schema:composer <https://www.imdb.com/name/nm0006334/> # Antonio Vivaldi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006334/> a schema:Person ;
+    schema:name "Antonio Vivaldi" .
+# ==============================================================================

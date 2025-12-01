@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4849438/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Saahore Baahubali (Telugu)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1233452/>, # Daler Mehndi
+                        <https://www.imdb.com/name/nm7448566/> ; # Mounima
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hamsa Naava (Telugu)" ;
+        schema:byArtist <https://www.imdb.com/name/nm3573318/>, # Deepu
+                        <https://www.imdb.com/name/nm8981272/> ; # Sony
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kannaa Nidurinchara (Telugu)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kannaa Nidurinchara (Telugu)" ;
+            schema:composer <https://www.imdb.com/name/nm0444807/> ; # M.M. Keeravani
+            schema:lyricist <https://www.imdb.com/name/nm0444807/> # M.M. Keeravani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dandaalayyaa (Telugu)" ;
+        schema:byArtist <https://www.imdb.com/name/nm7474741/> ; # Kaala Bhairava
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dandaalayyaa (Telugu)" ;
+            schema:composer <https://www.imdb.com/name/nm0444807/> ; # M.M. Keeravani
+            schema:lyricist <https://www.imdb.com/name/nm0444807/> # M.M. Keeravani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Oka Praanam (Telugu)" ;
+        schema:byArtist <https://www.imdb.com/name/nm7474741/> ; # Kaala Bhairava
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Oka Praanam (Telugu)" ;
+            schema:composer <https://www.imdb.com/name/nm0444807/> ; # M.M. Keeravani
+            schema:lyricist <https://www.imdb.com/name/nm0444807/> # M.M. Keeravani
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0444807/> a schema:Person ;
+    schema:name "M.M. Keeravani" .
+<https://www.imdb.com/name/nm1233452/> a schema:Person ;
+    schema:name "Daler Mehndi" .
+<https://www.imdb.com/name/nm3573318/> a schema:Person ;
+    schema:name "Deepu" .
+<https://www.imdb.com/name/nm7448566/> a schema:Person ;
+    schema:name "Mounima" .
+<https://www.imdb.com/name/nm7474741/> a schema:Person ;
+    schema:name "Kaala Bhairava" .
+<https://www.imdb.com/name/nm8981272/> a schema:Person ;
+    schema:name "Sony" .
+# ==============================================================================

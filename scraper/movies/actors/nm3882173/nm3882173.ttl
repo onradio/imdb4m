@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3882173/> a schema:Person ;
+    schema:name "Shin Hyun-jong" ;
+    schema:url <https://www.imdb.com/name/nm3882173/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shin Hyun-jong. Actor: Memories of Murder. Shin Hyun-jong was born in 1962 in South Korea. He is an actor, known for Memories of Murder (2003), The Host (2006) and Man of Vendetta (2010)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjZiZDIzMzAtMDIwYy00OWFlLTg2OTgtNzg2NDIyMDIwMGZhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11585882/>,    # An Old Lady
+                       <https://www.imdb.com/title/tt7890304/>,    # Welcome to Waikiki
+                       <https://www.imdb.com/title/tt9674954/>,    # The Fiery Priest
+                       <https://www.imdb.com/title/tt1814819/>,    # Man of Vendetta
+                       <https://www.imdb.com/title/tt1535490/> ; # Jak-jeon
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3882173/mediaviewer/rm2625309697/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# An Old Lady (2019)
+<https://www.imdb.com/title/tt11585882/> a schema:Movie ;
+    schema:name "An Old Lady" ;
+    schema:url <https://www.imdb.com/title/tt11585882/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3882173/> ;
+        schema:characterName "Joong-ho's father-in-law"
+    ] .
+
+# Welcome to Waikiki (2019)
+<https://www.imdb.com/title/tt7890304/> a schema:Movie ;
+    schema:name "Welcome to Waikiki" ;
+    schema:url <https://www.imdb.com/title/tt7890304/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3882173/> ;
+        schema:characterName "Protester"
+    ] .
+
+# The Fiery Priest (2019)
+<https://www.imdb.com/title/tt9674954/> a schema:Movie ;
+    schema:name "The Fiery Priest" ;
+    schema:url <https://www.imdb.com/title/tt9674954/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3882173/> ;
+        schema:characterName "Gyeong-seon's Father's Friend"
+    ] .
+
+# Man of Vendetta (2010)
+<https://www.imdb.com/title/tt1814819/> a schema:Movie ;
+    schema:name "Man of Vendetta" ;
+    schema:url <https://www.imdb.com/title/tt1814819/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3882173/> ;
+        schema:characterName "Audio store owner"
+    ] .
+
+# Jak-jeon (2009)
+<https://www.imdb.com/title/tt1535490/> a schema:Movie ;
+    schema:name "Jak-jeon" ;
+    schema:url <https://www.imdb.com/title/tt1535490/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3882173/> ;
+        schema:characterName "Scholar Wu"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjZiZDIzMzAtMDIwYy00OWFlLTg2OTgtNzg2NDIyMDIwMGZhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjZiZDIzMzAtMDIwYy00OWFlLTg2OTgtNzg2NDIyMDIwMGZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shin Hyun-jong" ;
+    schema:height "814"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3882173/mediaviewer/rm2625309697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjZiZDIzMzAtMDIwYy00OWFlLTg2OTgtNzg2NDIyMDIwMGZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shin Hyun-jong" ;
+    schema:height "814"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

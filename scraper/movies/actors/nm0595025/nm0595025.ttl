@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0595025/> a schema:Person ;
+    schema:name "Claresie Mobley" ;
+    schema:url <https://www.imdb.com/name/nm0595025/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Claresie Mobley. Actor: Paris, Texas. Claresie Mobley is known for Paris, Texas (1984)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0087884/> .    # Paris, Texas
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Paris, Texas (1984)
+<https://www.imdb.com/title/tt0087884/> a schema:Movie ;
+    schema:name "Paris, Texas" ;
+    schema:url <https://www.imdb.com/title/tt0087884/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0595025/> ;
+        schema:characterName "Car Rental Clerk"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

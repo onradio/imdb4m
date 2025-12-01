@@ -1,0 +1,383 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0364307/> a schema:Person ;
+    schema:name "Laura Harrington" ;
+    schema:url <https://www.imdb.com/name/nm0364307/> ;
+    schema:birthDate "1958-04-29"^^xsd:date ;
+    schema:jobTitle "Actress", "Writer", "Soundtrack" ;
+    schema:description "Laura Harrington. Actress: Maximum Overdrive. Laura Harrington was born on 29 April 1958 in Ann Arbor, Michigan, USA. She is an actress and writer, known for Maximum Overdrive (1986), The Adventures of Buckaroo Banzai Across the 8th Dimension (1984) and Paulie (1998)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTQzOTJmMjYtMmVkNi00OTUyLWI0NmMtYzBjNGI2NDIxNzU5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ann Arbor, Michigan, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091499/>,    # Maximum Overdrive
+                       <https://www.imdb.com/title/tt0086856/>,    # The Adventures of Buckaroo Banzai Across the 8th Dimension
+                       <https://www.imdb.com/title/tt0108550/>,    # What's Eating Gilbert Grape
+                       <https://www.imdb.com/title/tt0125454/>,    # Paulie
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0177991/>,    # Providence
+                       <https://www.imdb.com/title/tt0118971/>,    # The Devil's Advocate
+                       <https://www.imdb.com/title/tt0109562/>,    # Dead Air
+                       <https://www.imdb.com/title/tt0107420/>,    # Linda
+                       <https://www.imdb.com/title/tt0096684/>,    # Quantum Leap
+                       <https://www.imdb.com/title/tt0105343/>,    # The Secret
+                       <https://www.imdb.com/title/tt0100146/>,    # Midnight Cabaret
+                       <https://www.imdb.com/title/tt0098772/>,    # Cop Rock
+                       <https://www.imdb.com/title/tt0098736/>,    # Against the Law
+                       <https://www.imdb.com/title/tt0098962/>,    # 12:01 PM
+                       <https://www.imdb.com/title/tt0098789/>,    # Equal Justice
+                       <https://www.imdb.com/title/tt0098080/>,    # Perfect Witness
+                       <https://www.imdb.com/title/tt0097700/>,    # L.A. Takedown
+                       <https://www.imdb.com/title/tt0092475/>,    # Vietnam War Story
+                       <https://www.imdb.com/title/tt0199214/>,    # Faerie Tale Theatre
+                       <https://www.imdb.com/title/tt0094255/>,    # The Verne Miller Story
+                       <https://www.imdb.com/title/tt21077662/>,    # Cinemax Comedy Experiment
+                       <https://www.imdb.com/title/tt0089705/>,    # Not My Kid
+                       <https://www.imdb.com/title/tt0087513/>,    # Joy of Sex
+                       <https://www.imdb.com/title/tt0087061/>,    # The City Girl
+                       <https://www.imdb.com/title/tt0082234/> ; # The Dark End of the Street
+
+
+    schema:video <https://www.imdb.com/video/vi3243032089/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0364307/mediaviewer/rm2758594048/>,
+                 <https://www.imdb.com/name/nm0364307/mediaviewer/rm2836430848/>,
+                 <https://www.imdb.com/name/nm0364307/mediaviewer/rm407699456/>,
+                 <https://www.imdb.com/name/nm0364307/mediaviewer/rm1300439040/>,
+                 <https://www.imdb.com/name/nm0364307/mediaviewer/rm1345560320/>,
+                 <https://www.imdb.com/name/nm0364307/mediaviewer/rm166697984/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091499/> a schema:Movie ;
+    schema:name "Maximum Overdrive" ;
+    schema:url <https://www.imdb.com/title/tt0091499/> .
+
+<https://www.imdb.com/title/tt0086856/> a schema:Movie ;
+    schema:name "The Adventures of Buckaroo Banzai Across the 8th Dimension" ;
+    schema:url <https://www.imdb.com/title/tt0086856/> .
+
+<https://www.imdb.com/title/tt0108550/> a schema:Movie ;
+    schema:name "What's Eating Gilbert Grape" ;
+    schema:url <https://www.imdb.com/title/tt0108550/> .
+
+<https://www.imdb.com/title/tt0125454/> a schema:Movie ;
+    schema:name "Paulie" ;
+    schema:url <https://www.imdb.com/title/tt0125454/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Providence (1999)
+<https://www.imdb.com/title/tt0177991/> a schema:Movie ;
+    schema:name "Providence" ;
+    schema:url <https://www.imdb.com/title/tt0177991/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Gina Vinton"
+    ] .
+
+# The Devil's Advocate (1997)
+<https://www.imdb.com/title/tt0118971/> a schema:Movie ;
+    schema:name "The Devil's Advocate" ;
+    schema:url <https://www.imdb.com/title/tt0118971/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Melissa Black"
+    ] .
+
+# Dead Air (1994)
+<https://www.imdb.com/title/tt0109562/> a schema:Movie ;
+    schema:name "Dead Air" ;
+    schema:url <https://www.imdb.com/title/tt0109562/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Susan"
+    ] .
+
+# Linda (1993)
+<https://www.imdb.com/title/tt0107420/> a schema:Movie ;
+    schema:name "Linda" ;
+    schema:url <https://www.imdb.com/title/tt0107420/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Stella Jeffries"
+    ] .
+
+# Quantum Leap (1989)
+<https://www.imdb.com/title/tt0096684/> a schema:Movie ;
+    schema:name "Quantum Leap" ;
+    schema:url <https://www.imdb.com/title/tt0096684/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Connie LaMotta"
+    ] .
+
+# The Secret (1992)
+<https://www.imdb.com/title/tt0105343/> a schema:Movie ;
+    schema:name "The Secret" ;
+    schema:url <https://www.imdb.com/title/tt0105343/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Meredith Dunmore"
+    ] .
+
+# Midnight Cabaret (1990)
+<https://www.imdb.com/title/tt0100146/> a schema:Movie ;
+    schema:name "Midnight Cabaret" ;
+    schema:url <https://www.imdb.com/title/tt0100146/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Tanya Richards"
+    ] .
+
+# Cop Rock (1990)
+<https://www.imdb.com/title/tt0098772/> a schema:Movie ;
+    schema:name "Cop Rock" ;
+    schema:url <https://www.imdb.com/title/tt0098772/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Cassandra Margolis"
+    ] .
+
+# Against the Law (1990)
+<https://www.imdb.com/title/tt0098736/> a schema:Movie ;
+    schema:name "Against the Law" ;
+    schema:url <https://www.imdb.com/title/tt0098736/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Sonia Kolowicz"
+    ] .
+
+# 12:01 PM (1990)
+<https://www.imdb.com/title/tt0098962/> a schema:Movie ;
+    schema:name "12:01 PM" ;
+    schema:url <https://www.imdb.com/title/tt0098962/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Dolores Park"
+    ] .
+
+# Equal Justice (1990)
+<https://www.imdb.com/title/tt0098789/> a schema:Movie ;
+    schema:name "Equal Justice" ;
+    schema:url <https://www.imdb.com/title/tt0098789/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Paula Jenkins"
+    ] .
+
+# Perfect Witness (1989)
+<https://www.imdb.com/title/tt0098080/> a schema:Movie ;
+    schema:name "Perfect Witness" ;
+    schema:url <https://www.imdb.com/title/tt0098080/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Jeanie Paxton"
+    ] .
+
+# L.A. Takedown (1989)
+<https://www.imdb.com/title/tt0097700/> a schema:Movie ;
+    schema:name "L.A. Takedown" ;
+    schema:url <https://www.imdb.com/title/tt0097700/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Eady"
+    ] .
+
+# Vietnam War Story (1988)
+<https://www.imdb.com/title/tt0092475/> a schema:Movie ;
+    schema:name "Vietnam War Story" ;
+    schema:url <https://www.imdb.com/title/tt0092475/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Meg Taylor"
+    ] .
+
+# Faerie Tale Theatre (1987)
+<https://www.imdb.com/title/tt0199214/> a schema:Movie ;
+    schema:name "Faerie Tale Theatre" ;
+    schema:url <https://www.imdb.com/title/tt0199214/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Coretta"
+    ] .
+
+# The Verne Miller Story (1987)
+<https://www.imdb.com/title/tt0094255/> a schema:Movie ;
+    schema:name "The Verne Miller Story" ;
+    schema:url <https://www.imdb.com/title/tt0094255/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Judge's Daughter"
+    ] .
+
+# Cinemax Comedy Experiment (1987)
+<https://www.imdb.com/title/tt21077662/> a schema:Movie ;
+    schema:name "Cinemax Comedy Experiment" ;
+    schema:url <https://www.imdb.com/title/tt21077662/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Hope Crosby"
+    ] .
+
+# Not My Kid (1985)
+<https://www.imdb.com/title/tt0089705/> a schema:Movie ;
+    schema:name "Not My Kid" ;
+    schema:url <https://www.imdb.com/title/tt0089705/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Melody"
+    ] .
+
+# Joy of Sex (1984)
+<https://www.imdb.com/title/tt0087513/> a schema:Movie ;
+    schema:name "Joy of Sex" ;
+    schema:url <https://www.imdb.com/title/tt0087513/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Pretty Girl #2"
+    ] .
+
+# The City Girl (1984)
+<https://www.imdb.com/title/tt0087061/> a schema:Movie ;
+    schema:name "The City Girl" ;
+    schema:url <https://www.imdb.com/title/tt0087061/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Anne"
+    ] .
+
+# The Dark End of the Street (1981)
+<https://www.imdb.com/title/tt0082234/> a schema:Movie ;
+    schema:name "The Dark End of the Street" ;
+    schema:url <https://www.imdb.com/title/tt0082234/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0364307/> ;
+        schema:characterName "Donna"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3243032089/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3243032089/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYThjOGI2OGMtYWNhNy00NGQ0LTg0MzgtNTc0YTI2ZmIxNWQzXkEyXkFqcGdeQW1haXdlbm4@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2020-08-28T18:36:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTQzOTJmMjYtMmVkNi00OTUyLWI0NmMtYzBjNGI2NDIxNzU5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQzOTJmMjYtMmVkNi00OTUyLWI0NmMtYzBjNGI2NDIxNzU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Laura Harrington in The Devil's Advocate (1997)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm2758594048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ2OTY0OTQwNF5BMl5BanBnXkFtZTgwMTAzNjY3MTE@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Leonardo DiCaprio, Darlene Cates, Laura Harrington, and Mary Kate Schellhardt in What's Eating Gilbert Grape (1993)" ;
+    schema:height "2840"^^xsd:integer ;
+    schema:width "4276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm2836430848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NjYzNTI1MV5BMl5BanBnXkFtZTcwNjQzNTY3Mw@@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Leonardo DiCaprio, Juliette Lewis, Darlene Cates, Laura Harrington, and Mary Kate Schellhardt in What's Eating Gilbert Grape (1993)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1390"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm407699456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODRmNmYwZGQtMjU4MC00ZGI3LWE2NTgtMWY4YmMzOWM0MGQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Stephen King, Emilio Estevez, and Laura Harrington in Maximum Overdrive (1986)" ;
+    schema:height "2913"^^xsd:integer ;
+    schema:width "1910"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm1300439040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQzOTJmMjYtMmVkNi00OTUyLWI0NmMtYzBjNGI2NDIxNzU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Laura Harrington in The Devil's Advocate (1997)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm1345560320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyMjAzOTkwMl5BMl5BanBnXkFtZTcwMjc4MzYxMQ@@._V1_.jpg> ;
+    schema:caption "Emilio Estevez and Laura Harrington in Maximum Overdrive (1986)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0364307/mediaviewer/rm166697984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3NTUyNDMwOF5BMl5BanBnXkFtZTcwODIyODcxMQ@@._V1_.jpg> ;
+    schema:caption "Gregory Hines and Laura Harrington in Dead Air (1994)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "258"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0364307/>
+    schema:sameAs <https://www.facebook.com/laura.harrington.3720/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

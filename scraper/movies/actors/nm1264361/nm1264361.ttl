@@ -1,0 +1,659 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1264361/> a schema:Person ;
+    schema:name "You-Nam Wong" ;
+    schema:url <https://www.imdb.com/name/nm1264361/> ;
+    schema:birthDate "1983-11-02"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "You-Nam Wong. Actor: Ip Man. You-Nam Wong was born on 2 November 1983 in Hong Kong, China. He is an actor, known for Ip Man (2008), Wong Ka Yan (2015) and Hooked on You (2007)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hong Kong, China"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt14241008/>,    # Ciao UFO
+                       <https://www.imdb.com/title/tt12257736/>,    # Yi du bu hui
+                       <https://www.imdb.com/title/tt9496232/>,    # Jing Xiang Ren·ming Ri Qing Chun
+                       <https://www.imdb.com/title/tt3824950/>,    # See You Tomorrow
+                       <https://www.imdb.com/title/tt11575364/>,    # Blue Veins
+                       <https://www.imdb.com/title/tt5221208/>,    # Guia In Love
+                       <https://www.imdb.com/title/tt3911074/>,    # Wong Ka Yan
+                       <https://www.imdb.com/title/tt6705862/>,    # Into the Mist
+                       <https://www.imdb.com/title/tt4141260/>,    # Gangster Payday
+                       <https://www.imdb.com/title/tt3504824/>,    # The Midnight After
+                       <https://www.imdb.com/title/tt3374864/>,    # Cold Pupil
+                       <https://www.imdb.com/title/tt4181726/>,    # Princess Show
+                       <https://www.imdb.com/title/tt2459084/>,    # Lian'ai san wan yingchi
+                       <https://www.imdb.com/title/tt2473462/>,    # Love Shock
+                       <https://www.imdb.com/title/tt1993428/>,    # The Woman Knight of Mirror Lake
+                       <https://www.imdb.com/title/tt1980198/>,    # Mysterious Island
+                       <https://www.imdb.com/title/tt1883399/>,    # Zhai Nan Zong Dong Yuan
+                       <https://www.imdb.com/title/tt1900886/>,    # Gong fu yong chun
+                       <https://www.imdb.com/title/tt1711475/>,    # The Jade and the Pearl
+                       <https://www.imdb.com/title/tt1612142/>,    # La comédie humaine
+                       <https://www.imdb.com/title/tt1611823/>,    # Gallants
+                       <https://www.imdb.com/title/tt1471236/>,    # Poker King
+                       <https://www.imdb.com/title/tt1437362/>,    # Murderer
+                       <https://www.imdb.com/title/tt1405383/>,    # Lau long che sai kai bui
+                       <https://www.imdb.com/title/tt1220719/>,    # Ip Man
+                       <https://www.imdb.com/title/tt1262141/>,    # La lingerie
+                       <https://www.imdb.com/title/tt1265698/>,    # Sup fun chung ching
+                       <https://www.imdb.com/title/tt1194582/>,    # Playboy Cops
+                       <https://www.imdb.com/title/tt1156136/>,    # Linger
+                       <https://www.imdb.com/title/tt1098218/>,    # Mor suit nam
+                       <https://www.imdb.com/title/tt1020976/>,    # Hooked on You
+                       <https://www.imdb.com/title/tt1019919/>,    # Simply Actors
+                       <https://www.imdb.com/title/tt34752585/>,    # Shine: Vulgar
+                       <https://www.imdb.com/title/tt0891603/>,    # Tin heng tse
+                       <https://www.imdb.com/title/tt0860387/>,    # Men Suddenly in Black 2
+                       <https://www.imdb.com/title/tt0778082/>,    # Siu sum ngan
+                       <https://www.imdb.com/title/tt0499525/>,    # Chun tian hua hua tong xue hui
+                       <https://www.imdb.com/title/tt0452931/>,    # AV
+                       <https://www.imdb.com/title/tt0441303/>,    # Himalaya Singh
+                       <https://www.imdb.com/title/tt0439940/>,    # Kung Fu Soccer
+                       <https://www.imdb.com/title/tt0401410/>,    # Fantasia
+                       <https://www.imdb.com/title/tt0395942/>,    # Anna in Kung-Fu Land
+                       <https://www.imdb.com/title/tt1306989/>,    # Love Under the Sun
+                       <https://www.imdb.com/title/tt0378773/>,    # Siu nin a Fu
+                       <https://www.imdb.com/title/tt3998438/>,    # 1:99 Shorts
+                       <https://www.imdb.com/title/tt0379871/>,    # Good Times, Bed Times
+                       <https://www.imdb.com/title/tt0347586/>,    # Ng goh haak gwai dik siu nin
+                       <https://www.imdb.com/title/tt0348448/>,    # Just One Look
+                       <https://www.imdb.com/title/tt0331350/>,    # Che goh ha tin yau yee sing
+                       <https://www.imdb.com/title/tt0290654/> ; # Heung Gong you ge He Li Huo
+
+
+    schema:video <https://www.imdb.com/video/vi827638809/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ciao UFO (2019)
+<https://www.imdb.com/title/tt14241008/> a schema:Movie ;
+    schema:name "Ciao UFO" ;
+    schema:url <https://www.imdb.com/title/tt14241008/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Ho, Ka-Him"
+    ] .
+
+# Yi du bu hui (2018)
+<https://www.imdb.com/title/tt12257736/> a schema:Movie ;
+    schema:name "Yi du bu hui" ;
+    schema:url <https://www.imdb.com/title/tt12257736/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Chen Fang Xing"
+    ] .
+
+# Jing Xiang Ren·ming Ri Qing Chun (2018)
+<https://www.imdb.com/title/tt9496232/> a schema:Movie ;
+    schema:name "Jing Xiang Ren·ming Ri Qing Chun" ;
+    schema:url <https://www.imdb.com/title/tt9496232/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# See You Tomorrow (2016)
+<https://www.imdb.com/title/tt3824950/> a schema:Movie ;
+    schema:name "See You Tomorrow" ;
+    schema:url <https://www.imdb.com/title/tt3824950/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Young Ma Li"
+    ] .
+
+# Blue Veins (2016)
+<https://www.imdb.com/title/tt11575364/> a schema:Movie ;
+    schema:name "Blue Veins" ;
+    schema:url <https://www.imdb.com/title/tt11575364/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Guia In Love (2015)
+<https://www.imdb.com/title/tt5221208/> a schema:Movie ;
+    schema:name "Guia In Love" ;
+    schema:url <https://www.imdb.com/title/tt5221208/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Sheh Tze Wah"
+    ] .
+
+# Wong Ka Yan (2015)
+<https://www.imdb.com/title/tt3911074/> a schema:Movie ;
+    schema:name "Wong Ka Yan" ;
+    schema:url <https://www.imdb.com/title/tt3911074/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Into the Mist (2014)
+<https://www.imdb.com/title/tt6705862/> a schema:Movie ;
+    schema:name "Into the Mist" ;
+    schema:url <https://www.imdb.com/title/tt6705862/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "A-Jun"
+    ] .
+
+# Gangster Payday (2014)
+<https://www.imdb.com/title/tt4141260/> a schema:Movie ;
+    schema:name "Gangster Payday" ;
+    schema:url <https://www.imdb.com/title/tt4141260/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Leung"
+    ] .
+
+# The Midnight After (2014)
+<https://www.imdb.com/title/tt3504824/> a schema:Movie ;
+    schema:name "The Midnight After" ;
+    schema:url <https://www.imdb.com/title/tt3504824/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Yau Tsi-chi"
+    ] .
+
+# Cold Pupil (2013)
+<https://www.imdb.com/title/tt3374864/> a schema:Movie ;
+    schema:name "Cold Pupil" ;
+    schema:url <https://www.imdb.com/title/tt3374864/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Princess Show (2013)
+<https://www.imdb.com/title/tt4181726/> a schema:Movie ;
+    schema:name "Princess Show" ;
+    schema:url <https://www.imdb.com/title/tt4181726/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Lian'ai san wan yingchi (2012)
+<https://www.imdb.com/title/tt2459084/> a schema:Movie ;
+    schema:name "Lian'ai san wan yingchi" ;
+    schema:url <https://www.imdb.com/title/tt2459084/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Love Shock (2011)
+<https://www.imdb.com/title/tt2473462/> a schema:Movie ;
+    schema:name "Love Shock" ;
+    schema:url <https://www.imdb.com/title/tt2473462/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Guan Jian"
+    ] .
+
+# The Woman Knight of Mirror Lake (2011)
+<https://www.imdb.com/title/tt1993428/> a schema:Movie ;
+    schema:name "The Woman Knight of Mirror Lake" ;
+    schema:url <https://www.imdb.com/title/tt1993428/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Chen Boping"
+    ] .
+
+# Mysterious Island (2011)
+<https://www.imdb.com/title/tt1980198/> a schema:Movie ;
+    schema:name "Mysterious Island" ;
+    schema:url <https://www.imdb.com/title/tt1980198/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Zhang Xiao Long"
+    ] .
+
+# Zhai Nan Zong Dong Yuan (2011)
+<https://www.imdb.com/title/tt1883399/> a schema:Movie ;
+    schema:name "Zhai Nan Zong Dong Yuan" ;
+    schema:url <https://www.imdb.com/title/tt1883399/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Gong fu yong chun (2010)
+<https://www.imdb.com/title/tt1900886/> a schema:Movie ;
+    schema:name "Gong fu yong chun" ;
+    schema:url <https://www.imdb.com/title/tt1900886/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# The Jade and the Pearl (2010)
+<https://www.imdb.com/title/tt1711475/> a schema:Movie ;
+    schema:name "The Jade and the Pearl" ;
+    schema:url <https://www.imdb.com/title/tt1711475/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Sing Pau"
+    ] .
+
+# La comédie humaine (2010)
+<https://www.imdb.com/title/tt1612142/> a schema:Movie ;
+    schema:name "La comédie humaine" ;
+    schema:url <https://www.imdb.com/title/tt1612142/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Maggie's Boyfriend"
+    ] .
+
+# Gallants (2010)
+<https://www.imdb.com/title/tt1611823/> a schema:Movie ;
+    schema:name "Gallants" ;
+    schema:url <https://www.imdb.com/title/tt1611823/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Leung King Cheung"
+    ] .
+
+# Poker King (2009)
+<https://www.imdb.com/title/tt1471236/> a schema:Movie ;
+    schema:name "Poker King" ;
+    schema:url <https://www.imdb.com/title/tt1471236/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Sean Ho"
+    ] .
+
+# Murderer (2009)
+<https://www.imdb.com/title/tt1437362/> a schema:Movie ;
+    schema:name "Murderer" ;
+    schema:url <https://www.imdb.com/title/tt1437362/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Leo"
+    ] .
+
+# Lau long che sai kai bui (2009)
+<https://www.imdb.com/title/tt1405383/> a schema:Movie ;
+    schema:name "Lau long che sai kai bui" ;
+    schema:url <https://www.imdb.com/title/tt1405383/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Dub"
+    ] .
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Yuan"
+    ] .
+
+# La lingerie (2008)
+<https://www.imdb.com/title/tt1262141/> a schema:Movie ;
+    schema:name "La lingerie" ;
+    schema:url <https://www.imdb.com/title/tt1262141/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Lingerie thief"
+    ] .
+
+# Sup fun chung ching (2008)
+<https://www.imdb.com/title/tt1265698/> a schema:Movie ;
+    schema:name "Sup fun chung ching" ;
+    schema:url <https://www.imdb.com/title/tt1265698/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "(segment \"Rock Lion Rock\")"
+    ] .
+
+# Playboy Cops (2008)
+<https://www.imdb.com/title/tt1194582/> a schema:Movie ;
+    schema:name "Playboy Cops" ;
+    schema:url <https://www.imdb.com/title/tt1194582/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Lung"
+    ] .
+
+# Linger (2008)
+<https://www.imdb.com/title/tt1156136/> a schema:Movie ;
+    schema:name "Linger" ;
+    schema:url <https://www.imdb.com/title/tt1156136/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Hui Luk Wo"
+    ] .
+
+# Mor suit nam (2007)
+<https://www.imdb.com/title/tt1098218/> a schema:Movie ;
+    schema:name "Mor suit nam" ;
+    schema:url <https://www.imdb.com/title/tt1098218/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Hooked on You (2007)
+<https://www.imdb.com/title/tt1020976/> a schema:Movie ;
+    schema:name "Hooked on You" ;
+    schema:url <https://www.imdb.com/title/tt1020976/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Joe"
+    ] .
+
+# Simply Actors (2007)
+<https://www.imdb.com/title/tt1019919/> a schema:Movie ;
+    schema:name "Simply Actors" ;
+    schema:url <https://www.imdb.com/title/tt1019919/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Angry Man"
+    ] .
+
+# Shine: Vulgar (2006)
+<https://www.imdb.com/title/tt34752585/> a schema:Movie ;
+    schema:name "Shine: Vulgar" ;
+    schema:url <https://www.imdb.com/title/tt34752585/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "You-Nam"
+    ] .
+
+# Tin heng tse (2006)
+<https://www.imdb.com/title/tt0891603/> a schema:Movie ;
+    schema:name "Tin heng tse" ;
+    schema:url <https://www.imdb.com/title/tt0891603/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Men Suddenly in Black 2 (2006)
+<https://www.imdb.com/title/tt0860387/> a schema:Movie ;
+    schema:name "Men Suddenly in Black 2" ;
+    schema:url <https://www.imdb.com/title/tt0860387/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Chai"
+    ] .
+
+# Siu sum ngan (2006)
+<https://www.imdb.com/title/tt0778082/> a schema:Movie ;
+    schema:name "Siu sum ngan" ;
+    schema:url <https://www.imdb.com/title/tt0778082/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Leung"
+    ] .
+
+# Chun tian hua hua tong xue hui (2006)
+<https://www.imdb.com/title/tt0499525/> a schema:Movie ;
+    schema:name "Chun tian hua hua tong xue hui" ;
+    schema:url <https://www.imdb.com/title/tt0499525/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# AV (2005)
+<https://www.imdb.com/title/tt0452931/> a schema:Movie ;
+    schema:name "AV" ;
+    schema:url <https://www.imdb.com/title/tt0452931/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Chan Ho-Ming"
+    ] .
+
+# Himalaya Singh (2005)
+<https://www.imdb.com/title/tt0441303/> a schema:Movie ;
+    schema:name "Himalaya Singh" ;
+    schema:url <https://www.imdb.com/title/tt0441303/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Panic's Nephew"
+    ] .
+
+# Kung Fu Soccer (2004)
+<https://www.imdb.com/title/tt0439940/> a schema:Movie ;
+    schema:name "Kung Fu Soccer" ;
+    schema:url <https://www.imdb.com/title/tt0439940/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Wu Man"
+    ] .
+
+# Fantasia (2004)
+<https://www.imdb.com/title/tt0401410/> a schema:Movie ;
+    schema:name "Fantasia" ;
+    schema:url <https://www.imdb.com/title/tt0401410/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Black Suit Thief"
+    ] .
+
+# Anna in Kung-Fu Land (2003)
+<https://www.imdb.com/title/tt0395942/> a schema:Movie ;
+    schema:name "Anna in Kung-Fu Land" ;
+    schema:url <https://www.imdb.com/title/tt0395942/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Sam"
+    ] .
+
+# Love Under the Sun (2003)
+<https://www.imdb.com/title/tt1306989/> a schema:Movie ;
+    schema:name "Love Under the Sun" ;
+    schema:url <https://www.imdb.com/title/tt1306989/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Siu nin a Fu (2003)
+<https://www.imdb.com/title/tt0378773/> a schema:Movie ;
+    schema:name "Siu nin a Fu" ;
+    schema:url <https://www.imdb.com/title/tt0378773/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "(as Yau-Nam Wong)"
+    ] .
+
+# 1:99 Shorts (2003)
+<https://www.imdb.com/title/tt3998438/> a schema:Movie ;
+    schema:name "1:99 Shorts" ;
+    schema:url <https://www.imdb.com/title/tt3998438/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "(as Yau-Nam Wong)"
+    ] .
+
+# Good Times, Bed Times (2003)
+<https://www.imdb.com/title/tt0379871/> a schema:Movie ;
+    schema:name "Good Times, Bed Times" ;
+    schema:url <https://www.imdb.com/title/tt0379871/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Ng goh haak gwai dik siu nin (2002)
+<https://www.imdb.com/title/tt0347586/> a schema:Movie ;
+    schema:name "Ng goh haak gwai dik siu nin" ;
+    schema:url <https://www.imdb.com/title/tt0347586/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Nam"
+    ] .
+
+# Just One Look (2002)
+<https://www.imdb.com/title/tt0348448/> a schema:Movie ;
+    schema:name "Just One Look" ;
+    schema:url <https://www.imdb.com/title/tt0348448/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Fishball Ming"
+    ] .
+
+# Che goh ha tin yau yee sing (2002)
+<https://www.imdb.com/title/tt0331350/> a schema:Movie ;
+    schema:name "Che goh ha tin yau yee sing" ;
+    schema:url <https://www.imdb.com/title/tt0331350/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName ""
+    ] .
+
+# Heung Gong you ge He Li Huo (2001)
+<https://www.imdb.com/title/tt0290654/> a schema:Movie ;
+    schema:name "Heung Gong you ge He Li Huo" ;
+    schema:url <https://www.imdb.com/title/tt0290654/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1264361/> ;
+        schema:characterName "Wong Chi-Keung"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi827638809/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A group of residents experience a night of chaos and comedy after the nude body of a man appears and threatens to cause scandal and plunging property values." ;
+        schema:embedUrl <https://www.imdb.com/video/vi827638809/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDk5Y2IzMjYtMjcyNS00ZWQ1LWE3YzQtYjkwMjE4MzYxNzhhXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M23S"^^xsd:duration ;
+        schema:uploadDate "2023-05-17T09:12:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1264361/>
+    schema:sameAs <https://www.instagram.com/wongyounam/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

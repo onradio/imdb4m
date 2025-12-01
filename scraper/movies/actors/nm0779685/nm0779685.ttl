@@ -1,0 +1,99 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0779685/> a schema:Person ;
+    schema:name "Randolph Scott" ;
+    schema:url <https://www.imdb.com/name/nm0779685/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Randolph Scott. Actor: Leon. Randolph Scott is known for Leon (1994), Coming to America (1988) and The Capture of Bigfoot (1979)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110413/>,    # Leon
+                       <https://www.imdb.com/title/tt0105475/>,    # Stompin' at the Savoy
+                       <https://www.imdb.com/title/tt0094898/>,    # Coming to America
+                       <https://www.imdb.com/title/tt0124307/> ; # The Capture of Bigfoot
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0779685/mediaviewer/rm67669504/>,
+                 <https://www.imdb.com/name/nm0779685/mediaviewer/rm1062968576/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0779685/> ;
+        schema:characterName "4th Stansfield Man"
+    ] .
+
+# Stompin' at the Savoy (1992)
+<https://www.imdb.com/title/tt0105475/> a schema:Movie ;
+    schema:name "Stompin' at the Savoy" ;
+    schema:url <https://www.imdb.com/title/tt0105475/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0779685/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# Coming to America (1988)
+<https://www.imdb.com/title/tt0094898/> a schema:Movie ;
+    schema:name "Coming to America" ;
+    schema:url <https://www.imdb.com/title/tt0094898/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0779685/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# The Capture of Bigfoot (1979)
+<https://www.imdb.com/title/tt0124307/> a schema:Movie ;
+    schema:name "The Capture of Bigfoot" ;
+    schema:url <https://www.imdb.com/title/tt0124307/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0779685/> ;
+        schema:characterName "Randy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0779685/mediaviewer/rm67669504/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM4MjEzNDE1NF5BMl5BanBnXkFtZTcwNzkwMDkwMw@@._V1_.jpg> ;
+    schema:caption "Dwayne Chattman, Victoria Dillard, Shaun Earl, and Randolph Scott in Coming to America (1988)" ;
+    schema:height "1152"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0779685/mediaviewer/rm1062968576/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA0NDEyMDEyNjReQTJeQWpwZ15BbWU3MDgwOTc5MjE@._V1_.jpg> ;
+    schema:caption "John Cooney, Randolph Scott, Joel Johnstone, Evan Hart, and Jamieson Rhyme" ;
+    schema:height "345"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

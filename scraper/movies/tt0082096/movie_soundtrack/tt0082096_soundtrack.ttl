@@ -1,0 +1,158 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0082096/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "La Paloma" ;
+        schema:byArtist <https://www.imdb.com/name/nm0785616/> ; # Rosita Serrano
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Paloma" ;
+            schema:author <https://www.imdb.com/name/nm0409769/>, # Sebastian Iradier
+                       <https://www.imdb.com/name/nm0419135/> # Michael Jary
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "J'Attendrai" ;
+        schema:byArtist <https://www.imdb.com/name/nm1445683/> ; # Rina Ketty
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "J'Attendrai" ;
+            schema:composer <https://www.imdb.com/name/nm0647215/> ; # Dino Olivieri
+            schema:lyricist <https://www.imdb.com/name/nm0711542/>, # Nino Rastelli
+                        <https://www.imdb.com/name/nm0693076/> # Louis Poterat
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "It's a Long Way to Tipperary" ;
+        schema:byArtist <https://www.imdb.com/name/nm1819887/> ; # The Red Army Choir
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It's a Long Way to Tipperary" ;
+            schema:author <https://www.imdb.com/name/nm1193323/>, # Jack Judge
+                       <https://www.imdb.com/name/nm0930739/> # Harry Williams
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Erzherzog-Albretch-Marsch" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sing Nachtigall Sing" ;
+        schema:byArtist <https://www.imdb.com/name/nm0478187/> ; # Evelyn Künneke
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sing Nachtigall Sing" ;
+            schema:author <https://www.imdb.com/name/nm0419135/>, # Michael Jary
+                       <https://www.imdb.com/name/nm0051300/> # Bruno Balz
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Heimat deine Sterne" ;
+        schema:byArtist <https://www.imdb.com/name/nm1186362/> ; # Wilhelm Strienz
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mon Gars" ;
+        schema:byArtist <https://www.imdb.com/name/nm0128233/> ; # Rita Cadillac
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mon Gars" ;
+            schema:composer <https://www.imdb.com/name/nm0006041/> ; # Klaus Doldinger
+            schema:lyricist <https://www.imdb.com/name/nm1522548/> # France Briffaut
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Westerwaldlied" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Muss i' denn zum Städtele hinaus" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Muss i' denn zum Städtele hinaus" ;
+            schema:author <https://www.imdb.com/name/nm2130487/> # Friedrich Silcher
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Parlez-moi d'Amour" ;
+        schema:byArtist <https://www.imdb.com/name/nm1139396/> ; # Lucienne Boyer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Parlez-moi d'Amour" ;
+            schema:composer <https://www.imdb.com/name/nm0502143/> ; # Jean Lenoir
+            schema:lyricist <https://www.imdb.com/name/nm0502143/> # Jean Lenoir
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Varsity Rag" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Varsity Rag" ;
+            schema:composer <https://www.imdb.com/name/nm0376575/> # Ray Henderson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006041/> a schema:Person ;
+    schema:name "Klaus Doldinger" .
+<https://www.imdb.com/name/nm0051300/> a schema:Person ;
+    schema:name "Bruno Balz" .
+<https://www.imdb.com/name/nm0128233/> a schema:Person ;
+    schema:name "Rita Cadillac" .
+<https://www.imdb.com/name/nm0376575/> a schema:Person ;
+    schema:name "Ray Henderson" .
+<https://www.imdb.com/name/nm0409769/> a schema:Person ;
+    schema:name "Sebastian Iradier" .
+<https://www.imdb.com/name/nm0419135/> a schema:Person ;
+    schema:name "Michael Jary" .
+<https://www.imdb.com/name/nm0478187/> a schema:Person ;
+    schema:name "Evelyn Künneke" .
+<https://www.imdb.com/name/nm0502143/> a schema:Person ;
+    schema:name "Jean Lenoir" .
+<https://www.imdb.com/name/nm0647215/> a schema:Person ;
+    schema:name "Dino Olivieri" .
+<https://www.imdb.com/name/nm0693076/> a schema:Person ;
+    schema:name "Louis Poterat" .
+<https://www.imdb.com/name/nm0711542/> a schema:Person ;
+    schema:name "Nino Rastelli" .
+<https://www.imdb.com/name/nm0785616/> a schema:Person ;
+    schema:name "Rosita Serrano" .
+<https://www.imdb.com/name/nm0930739/> a schema:Person ;
+    schema:name "Harry Williams" .
+<https://www.imdb.com/name/nm1139396/> a schema:Person ;
+    schema:name "Lucienne Boyer" .
+<https://www.imdb.com/name/nm1186362/> a schema:Person ;
+    schema:name "Wilhelm Strienz" .
+<https://www.imdb.com/name/nm1193323/> a schema:Person ;
+    schema:name "Jack Judge" .
+<https://www.imdb.com/name/nm1445683/> a schema:Person ;
+    schema:name "Rina Ketty" .
+<https://www.imdb.com/name/nm1522548/> a schema:Person ;
+    schema:name "France Briffaut" .
+<https://www.imdb.com/name/nm1819887/> a schema:Person ;
+    schema:name "The Red Army Choir" .
+<https://www.imdb.com/name/nm2130487/> a schema:Person ;
+    schema:name "Friedrich Silcher" .
+# ==============================================================================

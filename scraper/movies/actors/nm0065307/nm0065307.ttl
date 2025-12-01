@@ -1,0 +1,472 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0065307/> a schema:Person ;
+    schema:name "William Beck" ;
+    schema:url <https://www.imdb.com/name/nm0065307/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "William Beck. Actor: Snatch. William Beck was born in Ynys Puffin, Wales, UK. He is known for Snatch (2000), Casualty (1986) and Robin Hood (2006)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ynys Puffin, Wales, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0208092/>,    # Snatch
+                       <https://www.imdb.com/title/tt0096555/>,    # Casualty
+                       <https://www.imdb.com/title/tt0787985/>,    # Robin Hood
+                       <https://www.imdb.com/title/tt1046922/>,    # Filth: The Mary Whitehouse Story
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3182620/>,    # Bitter Harvest
+                       <https://www.imdb.com/title/tt3765994/>,    # Weeping Willow - a Hunger Games Fan Film
+                       <https://www.imdb.com/title/tt3629782/>,    # The Great Fire
+                       <https://www.imdb.com/title/tt3645874/>,    # Kim Philby: His Most Intimate Betrayal
+                       <https://www.imdb.com/title/tt1888075/>,    # Death in Paradise
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt1186356/>,    # Whitechapel
+                       <https://www.imdb.com/title/tt11460508/>,    # The Suspicions of Mr Whicher
+                       <https://www.imdb.com/title/tt0184122/>,    # Holby City
+                       <https://www.imdb.com/title/tt0379632/>,    # Hustle
+                       <https://www.imdb.com/title/tt0943690/>,    # M.I.High
+                       <https://www.imdb.com/title/tt1494762/>,    # Infidel
+                       <https://www.imdb.com/title/tt1149287/>,    # The Agent
+                       <https://www.imdb.com/title/tt1127190/>,    # More More More
+                       <https://www.imdb.com/title/tt0844794/>,    # Northanger Abbey
+                       <https://www.imdb.com/title/tt0473360/>,    # Goal II: Living the Dream
+                       <https://www.imdb.com/title/tt0757126/>,    # Vital Signs
+                       <https://www.imdb.com/title/tt0498319/>,    # Johnny and the Bomb
+                       <https://www.imdb.com/title/tt0460967/>,    # The Truth
+                       <https://www.imdb.com/title/tt0489278/>,    # The Somme
+                       <https://www.imdb.com/title/tt0432327/>,    # The Murder Room
+                       <https://www.imdb.com/title/tt0407389/>,    # Fallen
+                       <https://www.imdb.com/title/tt0327354/>,    # Red Cap
+                       <https://www.imdb.com/title/tt0353045/>,    # Canterbury Tales
+                       <https://www.imdb.com/title/tt0380693/>,    # Second Generation
+                       <https://www.imdb.com/title/tt0380012/>,    # Suspicion
+                       <https://www.imdb.com/title/tt0271136/>,    # Quicksand
+                       <https://www.imdb.com/title/tt0335744/>,    # Serious and Organised
+                       <https://www.imdb.com/title/tt0283366/>,    # Gypsy Woman
+                       <https://www.imdb.com/title/tt0261462/>,    # Attachments
+                       <https://www.imdb.com/title/tt0084987/> ; # The Bill
+
+
+    schema:video <https://www.imdb.com/video/vi148947737/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0065307/mediaviewer/rm2701272064/>,
+                 <https://www.imdb.com/name/nm0065307/mediaviewer/rm2734826496/>,
+                 <https://www.imdb.com/name/nm0065307/mediaviewer/rm913424640/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0208092/> a schema:Movie ;
+    schema:name "Snatch" ;
+    schema:url <https://www.imdb.com/title/tt0208092/> .
+
+<https://www.imdb.com/title/tt0096555/> a schema:Movie ;
+    schema:name "Casualty" ;
+    schema:url <https://www.imdb.com/title/tt0096555/> .
+
+<https://www.imdb.com/title/tt0787985/> a schema:Movie ;
+    schema:name "Robin Hood" ;
+    schema:url <https://www.imdb.com/title/tt0787985/> .
+
+<https://www.imdb.com/title/tt1046922/> a schema:Movie ;
+    schema:name "Filth: The Mary Whitehouse Story" ;
+    schema:url <https://www.imdb.com/title/tt1046922/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bitter Harvest (2017)
+<https://www.imdb.com/title/tt3182620/> a schema:Movie ;
+    schema:name "Bitter Harvest" ;
+    schema:url <https://www.imdb.com/title/tt3182620/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Stefan"
+    ] .
+
+# Weeping Willow - a Hunger Games Fan Film (2014)
+<https://www.imdb.com/title/tt3765994/> a schema:Movie ;
+    schema:name "Weeping Willow - a Hunger Games Fan Film" ;
+    schema:url <https://www.imdb.com/title/tt3765994/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Tribute"
+    ] .
+
+# The Great Fire (2014)
+<https://www.imdb.com/title/tt3629782/> a schema:Movie ;
+    schema:name "The Great Fire" ;
+    schema:url <https://www.imdb.com/title/tt3629782/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Richard Smith"
+    ] .
+
+# Kim Philby: His Most Intimate Betrayal (2014)
+<https://www.imdb.com/title/tt3645874/> a schema:Movie ;
+    schema:name "Kim Philby: His Most Intimate Betrayal" ;
+    schema:url <https://www.imdb.com/title/tt3645874/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Nicholas Elliott"
+    ] .
+
+# Death in Paradise (2014)
+<https://www.imdb.com/title/tt1888075/> a schema:Movie ;
+    schema:name "Death in Paradise" ;
+    schema:url <https://www.imdb.com/title/tt1888075/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Matt Webster"
+    ] .
+
+# Midsomer Murders (2014)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Michael Dewar"
+    ] .
+
+# Whitechapel (2013)
+<https://www.imdb.com/title/tt1186356/> a schema:Movie ;
+    schema:name "Whitechapel" ;
+    schema:url <https://www.imdb.com/title/tt1186356/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "John Washington"
+    ] .
+
+# The Suspicions of Mr Whicher (2011)
+<https://www.imdb.com/title/tt11460508/> a schema:Movie ;
+    schema:name "The Suspicions of Mr Whicher" ;
+    schema:url <https://www.imdb.com/title/tt11460508/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Chief Inspector 'Dolly' Williamson"
+    ] .
+
+# Holby City (2012)
+<https://www.imdb.com/title/tt0184122/> a schema:Movie ;
+    schema:name "Holby City" ;
+    schema:url <https://www.imdb.com/title/tt0184122/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Dylan Keogh"
+    ] .
+
+# Hustle (2011)
+<https://www.imdb.com/title/tt0379632/> a schema:Movie ;
+    schema:name "Hustle" ;
+    schema:url <https://www.imdb.com/title/tt0379632/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Jiles"
+    ] .
+
+# M.I.High (2011)
+<https://www.imdb.com/title/tt0943690/> a schema:Movie ;
+    schema:name "M.I.High" ;
+    schema:url <https://www.imdb.com/title/tt0943690/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Theo Phantom"
+    ] .
+
+# Infidel (2009)
+<https://www.imdb.com/title/tt1494762/> a schema:Movie ;
+    schema:name "Infidel" ;
+    schema:url <https://www.imdb.com/title/tt1494762/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "David"
+    ] .
+
+# The Agent (2008)
+<https://www.imdb.com/title/tt1149287/> a schema:Movie ;
+    schema:name "The Agent" ;
+    schema:url <https://www.imdb.com/title/tt1149287/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Alexander Joyce"
+    ] .
+
+# More More More (2007)
+<https://www.imdb.com/title/tt1127190/> a schema:Movie ;
+    schema:name "More More More" ;
+    schema:url <https://www.imdb.com/title/tt1127190/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Scott"
+    ] .
+
+# Northanger Abbey (2007)
+<https://www.imdb.com/title/tt0844794/> a schema:Movie ;
+    schema:name "Northanger Abbey" ;
+    schema:url <https://www.imdb.com/title/tt0844794/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "John Thorpe"
+    ] .
+
+# Goal II: Living the Dream (2007)
+<https://www.imdb.com/title/tt0473360/> a schema:Movie ;
+    schema:name "Goal II: Living the Dream" ;
+    schema:url <https://www.imdb.com/title/tt0473360/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Steve Parr"
+    ] .
+
+# Vital Signs (2006)
+<https://www.imdb.com/title/tt0757126/> a schema:Movie ;
+    schema:name "Vital Signs" ;
+    schema:url <https://www.imdb.com/title/tt0757126/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Billy Britten"
+    ] .
+
+# Johnny and the Bomb (2006)
+<https://www.imdb.com/title/tt0498319/> a schema:Movie ;
+    schema:name "Johnny and the Bomb" ;
+    schema:url <https://www.imdb.com/title/tt0498319/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Dr. Harris"
+    ] .
+
+# The Truth (2006)
+<https://www.imdb.com/title/tt0460967/> a schema:Movie ;
+    schema:name "The Truth" ;
+    schema:url <https://www.imdb.com/title/tt0460967/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Scott"
+    ] .
+
+# The Somme (2005)
+<https://www.imdb.com/title/tt0489278/> a schema:Movie ;
+    schema:name "The Somme" ;
+    schema:url <https://www.imdb.com/title/tt0489278/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Bundy"
+    ] .
+
+# The Murder Room (2005)
+<https://www.imdb.com/title/tt0432327/> a schema:Movie ;
+    schema:name "The Murder Room" ;
+    schema:url <https://www.imdb.com/title/tt0432327/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "DI Piers Tarrant"
+    ] .
+
+# Fallen (2004)
+<https://www.imdb.com/title/tt0407389/> a schema:Movie ;
+    schema:name "Fallen" ;
+    schema:url <https://www.imdb.com/title/tt0407389/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Dave Walker"
+    ] .
+
+# Red Cap (2003)
+<https://www.imdb.com/title/tt0327354/> a schema:Movie ;
+    schema:name "Red Cap" ;
+    schema:url <https://www.imdb.com/title/tt0327354/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Sgt. Maj. Steve Forney"
+    ] .
+
+# Canterbury Tales (2003)
+<https://www.imdb.com/title/tt0353045/> a schema:Movie ;
+    schema:name "Canterbury Tales" ;
+    schema:url <https://www.imdb.com/title/tt0353045/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Colin"
+    ] .
+
+# Second Generation (2003)
+<https://www.imdb.com/title/tt0380693/> a schema:Movie ;
+    schema:name "Second Generation" ;
+    schema:url <https://www.imdb.com/title/tt0380693/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Nick"
+    ] .
+
+# Suspicion (2003)
+<https://www.imdb.com/title/tt0380012/> a schema:Movie ;
+    schema:name "Suspicion" ;
+    schema:url <https://www.imdb.com/title/tt0380012/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Gareth Turner"
+    ] .
+
+# Quicksand (2003)
+<https://www.imdb.com/title/tt0271136/> a schema:Movie ;
+    schema:name "Quicksand" ;
+    schema:url <https://www.imdb.com/title/tt0271136/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Nicoli"
+    ] .
+
+# Serious and Organised (2003)
+<https://www.imdb.com/title/tt0335744/> a schema:Movie ;
+    schema:name "Serious and Organised" ;
+    schema:url <https://www.imdb.com/title/tt0335744/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Billy English"
+    ] .
+
+# Gypsy Woman (2001)
+<https://www.imdb.com/title/tt0283366/> a schema:Movie ;
+    schema:name "Gypsy Woman" ;
+    schema:url <https://www.imdb.com/title/tt0283366/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Gary"
+    ] .
+
+# Attachments (2000)
+<https://www.imdb.com/title/tt0261462/> a schema:Movie ;
+    schema:name "Attachments" ;
+    schema:url <https://www.imdb.com/title/tt0261462/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Reece Wilson"
+    ] .
+
+# The Bill (1999)
+<https://www.imdb.com/title/tt0084987/> a schema:Movie ;
+    schema:name "The Bill" ;
+    schema:url <https://www.imdb.com/title/tt0084987/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065307/> ;
+        schema:characterName "Adam Thwaite"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi148947737/> a schema:VideoObject ;
+        schema:name "The Suspicions of Mr Whicher Trailer - Season 1" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi148947737/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzQ5Y2ZmNjgtZGMyMy00ZjZlLThlZGYtMmFmNGE4N2Q1OGI4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M37S"^^xsd:duration ;
+        schema:uploadDate "2021-11-11T01:15:39Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0065307/mediaviewer/rm2701272064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTYwYjRjYTEtZDE3Yy00MWU3LThkNzAtZjEwZGNmYjQ1NTMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "William Beck and David Oakes in Kim Philby: His Most Intimate Betrayal (2014)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0065307/mediaviewer/rm2734826496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTk1MTUyNDktMjFmNC00MDkwLTliNzQtNzVjMTBiZTRjMDU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "William Beck and David Oakes in Kim Philby: His Most Intimate Betrayal (2014)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0065307/mediaviewer/rm913424640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDE0NDYxOTI2NF5BMl5BanBnXkFtZTgwMzkxMjg0MjE@._V1_.jpg> ;
+    schema:caption "William Beck, Jonas Armstrong, and Lucy Griffiths in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,50 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0160053/> a schema:Person ;
+    schema:name "Mary Christian" ;
+    schema:url <https://www.imdb.com/name/nm0160053/> ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Mary Christian Chestaro" ;
+    schema:description "Mary Christian. Actress: The Breakfast Club. Mary Christian was born in 1978. She is known for The Breakfast Club (1985)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088847/> ;    # The Breakfast Club
+
+
+    schema:video <https://www.imdb.com/video/vi2071703065/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088847/> a schema:Movie ;
+    schema:name "The Breakfast Club" ;
+    schema:url <https://www.imdb.com/title/tt0088847/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2071703065/> a schema:VideoObject ;
+        schema:name "The Breakfast Club: 30th Anniversary Edition" ;
+        schema:description "Trailer for The Breakfast Club 30th Anniversary Edition" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2071703065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDBiMzIyNzgtNmQ0Ny00ZDkyLWJiYjAtNGUwZDg1MmJmZTYwXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M21S"^^xsd:duration ;
+        schema:uploadDate "2015-02-20T08:04:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

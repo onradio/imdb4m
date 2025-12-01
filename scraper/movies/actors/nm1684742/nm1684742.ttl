@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1684742/> a schema:Person ;
+    schema:name "Samantha Day" ;
+    schema:url <https://www.imdb.com/name/nm1684742/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Samantha Day. Actress: Shaun of the Dead. Samantha Day is known for Shaun of the Dead (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0365748/> .    # Shaun of the Dead
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shaun of the Dead (2004)
+<https://www.imdb.com/title/tt0365748/> a schema:Movie ;
+    schema:name "Shaun of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0365748/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684742/> ;
+        schema:characterName "Woman on Trisha"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

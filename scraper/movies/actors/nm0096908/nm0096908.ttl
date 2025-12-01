@@ -1,0 +1,223 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0096908/> a schema:Person ;
+    schema:name "Gene Borkan" ;
+    schema:url <https://www.imdb.com/name/nm0096908/> ;
+    schema:birthDate "1947-02-18"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gene Borkan. Actor: Beverly Hills Cop. Gene Borkan was born on 18 February 1947 in New York City, New York, USA. He is an actor, known for Beverly Hills Cop (1984), Seven (1995) and The Last Boy Scout (1991)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3644258/>,    # Stevie D
+                       <https://www.imdb.com/title/tt0499570/>,    # Slipstream
+                       <https://www.imdb.com/title/tt0308055/>,    # Bobby
+                       <https://www.imdb.com/title/tt0834538/>,    # Broken
+                       <https://www.imdb.com/title/tt0106079/>,    # NYPD Blue
+                       <https://www.imdb.com/title/tt0112022/>,    # JAG
+                       <https://www.imdb.com/title/tt0279469/>,    # Time of Fear
+                       <https://www.imdb.com/title/tt0201391/>,    # Roswell
+                       <https://www.imdb.com/title/tt0201394/>,    # The Shrink Is In
+                       <https://www.imdb.com/title/tt0167720/>,    # Seven Days
+                       <https://www.imdb.com/title/tt0120171/>,    # The Souler Opposite
+                       <https://www.imdb.com/title/tt0119188/>,    # George B.
+                       <https://www.imdb.com/title/tt0115736/>,    # Bound
+                       <https://www.imdb.com/title/tt0114369/> ; # Seven
+
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Seven)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "2610"^^xsd:integer
+        ]
+    ]  .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114369/> a schema:Movie ;
+    schema:name "Seven" ;
+    schema:url <https://www.imdb.com/title/tt0114369/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Stevie D (2016)
+<https://www.imdb.com/title/tt3644258/> a schema:Movie ;
+    schema:name "Stevie D" ;
+    schema:url <https://www.imdb.com/title/tt3644258/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Tony Lo Grasso"
+    ] .
+
+# Slipstream (2007)
+<https://www.imdb.com/title/tt0499570/> a schema:Movie ;
+    schema:name "Slipstream" ;
+    schema:url <https://www.imdb.com/title/tt0499570/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Mel"
+    ] .
+
+# Bobby (2006)
+<https://www.imdb.com/title/tt0308055/> a schema:Movie ;
+    schema:name "Bobby" ;
+    schema:url <https://www.imdb.com/title/tt0308055/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Salesman"
+    ] .
+
+# Broken (2006)
+<https://www.imdb.com/title/tt0834538/> a schema:Movie ;
+    schema:name "Broken" ;
+    schema:url <https://www.imdb.com/title/tt0834538/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Gerecke"
+    ] .
+
+# NYPD Blue (2001)
+<https://www.imdb.com/title/tt0106079/> a schema:Movie ;
+    schema:name "NYPD Blue" ;
+    schema:url <https://www.imdb.com/title/tt0106079/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Al"
+    ] .
+
+# JAG (2003)
+<https://www.imdb.com/title/tt0112022/> a schema:Movie ;
+    schema:name "JAG" ;
+    schema:url <https://www.imdb.com/title/tt0112022/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Judge"
+    ] .
+
+# Time of Fear (2002)
+<https://www.imdb.com/title/tt0279469/> a schema:Movie ;
+    schema:name "Time of Fear" ;
+    schema:url <https://www.imdb.com/title/tt0279469/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Jennings"
+    ] .
+
+# Roswell (2001)
+<https://www.imdb.com/title/tt0201391/> a schema:Movie ;
+    schema:name "Roswell" ;
+    schema:url <https://www.imdb.com/title/tt0201391/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Santa #1"
+    ] .
+
+# The Shrink Is In (2001)
+<https://www.imdb.com/title/tt0201394/> a schema:Movie ;
+    schema:name "The Shrink Is In" ;
+    schema:url <https://www.imdb.com/title/tt0201394/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Mailman"
+    ] .
+
+# Seven Days (2000)
+<https://www.imdb.com/title/tt0167720/> a schema:Movie ;
+    schema:name "Seven Days" ;
+    schema:url <https://www.imdb.com/title/tt0167720/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "INS Leader"
+    ] .
+
+# The Souler Opposite (1998)
+<https://www.imdb.com/title/tt0120171/> a schema:Movie ;
+    schema:name "The Souler Opposite" ;
+    schema:url <https://www.imdb.com/title/tt0120171/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Father 'Actor'"
+    ] .
+
+# George B. (1997)
+<https://www.imdb.com/title/tt0119188/> a schema:Movie ;
+    schema:name "George B." ;
+    schema:url <https://www.imdb.com/title/tt0119188/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Lee"
+    ] .
+
+# Bound (1996)
+<https://www.imdb.com/title/tt0115736/> a schema:Movie ;
+    schema:name "Bound" ;
+    schema:url <https://www.imdb.com/title/tt0115736/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Roy"
+    ] .
+
+# Seven (1995)
+<https://www.imdb.com/title/tt0114369/> a schema:Movie ;
+    schema:name "Seven" ;
+    schema:url <https://www.imdb.com/title/tt0114369/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096908/> ;
+        schema:characterName "Eli Gould - Greed Victim"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

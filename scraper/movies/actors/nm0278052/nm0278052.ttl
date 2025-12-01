@@ -1,0 +1,114 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0278052/> a schema:Person ;
+    schema:name "Karen Finley" ;
+    schema:url <https://www.imdb.com/name/nm0278052/> ;
+    schema:birthDate "1956-03-07"^^xsd:date ;
+    schema:jobTitle "Actress", "Writer", "Producer" ;
+    schema:description "Karen Finley. Actress: Philadelphia. Karen Finley was born on 7 March 1956 in Evanston, Illinois, USA. She is an actress and writer, known for Philadelphia (1993), Far East of Eden (2016) and The Genius (1993). She was previously married to Michael Overn and Brian Routh." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTJiMTc5MWEtOGYwMy00NDVmLWJmZTctNjBjNDgzNWMyNGI2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Evanston, Illinois, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0107818/>,    # Philadelphia
+                       <https://www.imdb.com/title/tt0106998/>,    # The Genius
+                       <https://www.imdb.com/title/tt0109843/>,    # Fresh Kill
+                       <https://www.imdb.com/title/tt6447232/>,    # Far East of Eden
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0479801/>,    # Karen Finley Live
+                       <https://www.imdb.com/title/tt0372108/>,    # 12 Rounds
+                       <https://www.imdb.com/title/tt0190157/> ; # You Killed Me First
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0278052/mediaviewer/rm339804929/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> .
+
+<https://www.imdb.com/title/tt0106998/> a schema:Movie ;
+    schema:name "The Genius" ;
+    schema:url <https://www.imdb.com/title/tt0106998/> .
+
+<https://www.imdb.com/title/tt0109843/> a schema:Movie ;
+    schema:name "Fresh Kill" ;
+    schema:url <https://www.imdb.com/title/tt0109843/> .
+
+<https://www.imdb.com/title/tt6447232/> a schema:Movie ;
+    schema:name "Far East of Eden" ;
+    schema:url <https://www.imdb.com/title/tt6447232/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Karen Finley Live (2004)
+<https://www.imdb.com/title/tt0479801/> a schema:Movie ;
+    schema:name "Karen Finley Live" ;
+    schema:url <https://www.imdb.com/title/tt0479801/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278052/> ;
+        schema:characterName "Karen Finley"
+    ] .
+
+# 12 Rounds (2000)
+<https://www.imdb.com/title/tt0372108/> a schema:Movie ;
+    schema:name "12 Rounds" ;
+    schema:url <https://www.imdb.com/title/tt0372108/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278052/> ;
+        schema:characterName ""
+    ] .
+
+# You Killed Me First (1985)
+<https://www.imdb.com/title/tt0190157/> a schema:Movie ;
+    schema:name "You Killed Me First" ;
+    schema:url <https://www.imdb.com/title/tt0190157/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278052/> ;
+        schema:characterName "Mom"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTJiMTc5MWEtOGYwMy00NDVmLWJmZTctNjBjNDgzNWMyNGI2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTJiMTc5MWEtOGYwMy00NDVmLWJmZTctNjBjNDgzNWMyNGI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Finley" ;
+    schema:height "1429"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0278052/mediaviewer/rm339804929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTJiMTc5MWEtOGYwMy00NDVmLWJmZTctNjBjNDgzNWMyNGI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Finley" ;
+    schema:height "1429"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

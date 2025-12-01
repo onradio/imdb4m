@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0809286/> a schema:Person ;
+    schema:name "Matt Smith" ;
+    schema:url <https://www.imdb.com/name/nm0809286/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Matt Smith. Actor: The Altruist. Matt Smith is known for The Altruist (2020), Scent of a Woman (1992) and The Provider (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2750524/>,    # Untitled Bounty Hunter Project
+                       <https://www.imdb.com/title/tt0119645/>,    # Meet the Mosaics
+                       <https://www.imdb.com/title/tt0263111/>,    # Before She Met Me
+                       <https://www.imdb.com/title/tt0201369/>,    # Fish
+                       <https://www.imdb.com/title/tt0209032/>,    # Hunting Earl
+                       <https://www.imdb.com/title/tt0105323/> ; # Scent of a Woman
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0809286/mediaviewer/rm4227413760/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Untitled Bounty Hunter Project (2013)
+<https://www.imdb.com/title/tt2750524/> a schema:Movie ;
+    schema:name "Untitled Bounty Hunter Project" ;
+    schema:url <https://www.imdb.com/title/tt2750524/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "James Oakely"
+    ] .
+
+# Meet the Mosaics (2001)
+<https://www.imdb.com/title/tt0119645/> a schema:Movie ;
+    schema:name "Meet the Mosaics" ;
+    schema:url <https://www.imdb.com/title/tt0119645/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "Augie"
+    ] .
+
+# Before She Met Me (2000)
+<https://www.imdb.com/title/tt0263111/> a schema:Movie ;
+    schema:name "Before She Met Me" ;
+    schema:url <https://www.imdb.com/title/tt0263111/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "Busboy"
+    ] .
+
+# Fish (1998)
+<https://www.imdb.com/title/tt0201369/> a schema:Movie ;
+    schema:name "Fish" ;
+    schema:url <https://www.imdb.com/title/tt0201369/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "Fish"
+    ] .
+
+# Hunting Earl (1996)
+<https://www.imdb.com/title/tt0209032/> a schema:Movie ;
+    schema:name "Hunting Earl" ;
+    schema:url <https://www.imdb.com/title/tt0209032/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "Predator"
+    ] .
+
+# Scent of a Woman (1992)
+<https://www.imdb.com/title/tt0105323/> a schema:Movie ;
+    schema:name "Scent of a Woman" ;
+    schema:url <https://www.imdb.com/title/tt0105323/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809286/> ;
+        schema:characterName "Jimmy Jameson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0809286/mediaviewer/rm4227413760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2EwNTg4OWMtYTlkMS00YTBlLWE2YzktMGNlNGY2OWMwMDlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Philip Seymour Hoffman, Todd Louiso, Nicholas Sadler, and Matt Smith in Scent of a Woman (1992)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

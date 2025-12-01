@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1049413/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Wedding March" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Wedding March" ;
+            schema:author <https://www.imdb.com/name/nm0006196/> # Felix Mendelssohn
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Habanera" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Habanera" ;
+            schema:composer <https://www.imdb.com/name/nm0005964/> # Georges Bizet
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "What A Wonderful World" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "What A Wonderful World" ;
+            schema:author <https://www.imdb.com/name/nm0001918/> # Louis Armstrong
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Spirit of Adventure" ;
+        schema:byArtist <https://www.imdb.com/name/nm0178592/> ; # Craig Copeland
+        schema:producer <https://www.imdb.com/name/nm0656104/>, # Andrew Page
+                       <https://www.imdb.com/name/nm2835548/> ; # Siobhan Sullivan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Spirit of Adventure" ;
+            schema:author <https://www.imdb.com/name/nm0315974/> # Michael Giacchino
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001918/> a schema:Person ;
+    schema:name "Louis Armstrong" .
+<https://www.imdb.com/name/nm0005964/> a schema:Person ;
+    schema:name "Georges Bizet" .
+<https://www.imdb.com/name/nm0006196/> a schema:Person ;
+    schema:name "Felix Mendelssohn" .
+<https://www.imdb.com/name/nm0178592/> a schema:Person ;
+    schema:name "Craig Copeland" .
+<https://www.imdb.com/name/nm0315974/> a schema:Person ;
+    schema:name "Michael Giacchino" .
+<https://www.imdb.com/name/nm0656104/> a schema:Person ;
+    schema:name "Andrew Page" .
+<https://www.imdb.com/name/nm2835548/> a schema:Person ;
+    schema:name "Siobhan Sullivan" .
+# ==============================================================================

@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7857736/> a schema:Person ;
+    schema:name "Teja Kakumanu" ;
+    schema:url <https://www.imdb.com/name/nm7857736/> ;
+    schema:jobTitle "Actor", "Director", "Second Unit or Assistant Director" ;
+    schema:description "Teja Kakumanu. Actor: Baahubali: The Beginning. Teja Kakumanu is known for Baahubali: The Beginning (2015), Save the Tigers (2023) and Devadas (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt13004720/>,    # Thanu Vachenanta
+                       <https://www.imdb.com/title/tt2631186/> ; # Baahubali: The Beginning
+
+
+    schema:video <https://www.imdb.com/video/vi4071277337/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Thanu Vachenanta (2016)
+<https://www.imdb.com/title/tt13004720/> a schema:Movie ;
+    schema:name "Thanu Vachenanta" ;
+    schema:url <https://www.imdb.com/title/tt13004720/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7857736/> ;
+        schema:characterName ""
+    ] .
+
+# Baahubali: The Beginning (2015)
+<https://www.imdb.com/title/tt2631186/> a schema:Movie ;
+    schema:name "Baahubali: The Beginning" ;
+    schema:url <https://www.imdb.com/title/tt2631186/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7857736/> ;
+        schema:characterName "Saketudu"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4071277337/> a schema:VideoObject ;
+        schema:name "Aakashavaani Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4071277337/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWRlYWNkM2QtZWRjNC00MzMwLWE1OGUtNmQ0Y2FjMGI4NDkzXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M47S"^^xsd:duration ;
+        schema:uploadDate "2021-09-28T06:08:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

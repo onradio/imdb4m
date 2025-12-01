@@ -1,0 +1,93 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0206154/> a schema:Person ;
+    schema:name "Jeremy Dawson" ;
+    schema:url <https://www.imdb.com/name/nm0206154/> ;
+    schema:jobTitle "Producer", "Visual Effects", "Editorial Department" ;
+    schema:description "Jeremy Dawson. Producer: Fantastic Mr. Fox. Jeremy Dawson is known for Fantastic Mr. Fox (2009), Moonrise Kingdom (2012) and Isle of Dogs (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTIwMzE1NTI4MV5BMl5BanBnXkFtZTgwMjYxNTcxNDE@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0432283/> ;    # Fantastic Mr. Fox
+
+
+    schema:video <https://www.imdb.com/video/vi1605109017/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0206154/mediaviewer/rm1691110144/>,
+                 <https://www.imdb.com/name/nm0206154/mediaviewer/rm2751656448/>,
+                 <https://www.imdb.com/name/nm0206154/mediaviewer/rm1037171712/>,
+                 <https://www.imdb.com/name/nm0206154/mediaviewer/rm71105536/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0206154/> ;
+        schema:characterName "Beaver's Son"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1605109017/> a schema:VideoObject ;
+        schema:name "Fantastic Mr. Fox" ;
+        schema:description "Interview: Jeremy Dawson \"On George Clooney as Mr. Fox\"" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1605109017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWU2YzE1ZWUtZGM5OS00NTZlLTgyYjktNmI1YzExMzE5NjYzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT46S"^^xsd:duration ;
+        schema:uploadDate "2009-11-04T09:21:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTIwMzE1NTI4MV5BMl5BanBnXkFtZTgwMjYxNTcxNDE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTIwMzE1NTI4MV5BMl5BanBnXkFtZTgwMjYxNTcxNDE@._V1_.jpg> ;
+    schema:caption "Jeremy Dawson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1388"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0206154/mediaviewer/rm1691110144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDkwZjMwMDAtYThiMS00NDlmLTgzNmQtNjg4NzhkNGQ2MjM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Murray, Wes Anderson, Jeremy Dawson, and Kunichi Nomura at an event for Isle of Dogs (2018)" ;
+    schema:height "2003"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0206154/mediaviewer/rm2751656448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4NjY5OTQxMV5BMl5BanBnXkFtZTgwOTk4NTg1NDE@._V1_.jpg> ;
+    schema:caption "Jeff Goldblum, Adrien Brody, Jason Schwartzman, Wes Anderson, Jeremy Dawson, Tony Revolori, and Hugo Guinness at an event for The Oscars (2015)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0206154/mediaviewer/rm1037171712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyMTgzMzAwMl5BMl5BanBnXkFtZTgwOTA4MjUwNDE@._V1_.jpg> ;
+    schema:caption "Jeremy Dawson and Tony Revolori" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1713"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0206154/mediaviewer/rm71105536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTIwMzE1NTI4MV5BMl5BanBnXkFtZTgwMjYxNTcxNDE@._V1_.jpg> ;
+    schema:caption "Jeremy Dawson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1388"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

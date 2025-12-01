@@ -1,0 +1,215 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0899953/> a schema:Person ;
+    schema:name "Mike Vitar" ;
+    schema:url <https://www.imdb.com/name/nm0899953/> ;
+    schema:birthDate "1978-12-21"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Michael Anthony Vitar" ;
+    schema:description "Mike Vitar. Actor: The Sandlot Kids. Mike Vitar started acting at age 12, when a casting manager spotted him in line for a ride at a school carnival. After several roles as a child, such as The Sandlot Kids (1993), D2: The Mighty Ducks (1994) and D3: The Mighty Ducks (1996), and a couple guest roles on TV series as a teenager, he discontinued his professional acting career." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAwMzM5NTEyNV5BMl5BanBnXkFtZTYwMjgxNzY2._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.84"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 0½″ (1.84 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0101735/>,    # Diplomatic Immunity
+                       <https://www.imdb.com/title/tt0108037/>,    # The Sandlot
+                       <https://www.imdb.com/title/tt0109520/>,    # D2: The Mighty Ducks
+                       <https://www.imdb.com/title/tt0116000/>,    # D3: The Mighty Ducks
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0108724/>,    # Chicago Hope
+                       <https://www.imdb.com/title/tt0106079/>,    # NYPD Blue
+                       <https://www.imdb.com/title/tt0108253/>,    # Sunset Grill
+                       <https://www.imdb.com/title/tt0101055/>,    # Brooklyn Bridge
+                       <https://www.imdb.com/title/tt12670476/> ; # Everything You Wanted to Know About Puberty For Boys
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2247295257/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0899953/mediaviewer/rm3520050945/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm2630858497/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm1411167745/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm1881601/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm689747457/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm3525031425/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm289971969/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm432042496/>,
+                 <https://www.imdb.com/name/nm0899953/mediaviewer/rm1786069248/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0101735/> a schema:Movie ;
+    schema:name "Diplomatic Immunity" ;
+    schema:url <https://www.imdb.com/title/tt0101735/> .
+
+<https://www.imdb.com/title/tt0108037/> a schema:Movie ;
+    schema:name "The Sandlot" ;
+    schema:url <https://www.imdb.com/title/tt0108037/> .
+
+<https://www.imdb.com/title/tt0109520/> a schema:Movie ;
+    schema:name "D2: The Mighty Ducks" ;
+    schema:url <https://www.imdb.com/title/tt0109520/> .
+
+<https://www.imdb.com/title/tt0116000/> a schema:Movie ;
+    schema:name "D3: The Mighty Ducks" ;
+    schema:url <https://www.imdb.com/title/tt0116000/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Chicago Hope (1997)
+<https://www.imdb.com/title/tt0108724/> a schema:Movie ;
+    schema:name "Chicago Hope" ;
+    schema:url <https://www.imdb.com/title/tt0108724/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0899953/> ;
+        schema:characterName "Carlo Lunes"
+    ] .
+
+# NYPD Blue (1996)
+<https://www.imdb.com/title/tt0106079/> a schema:Movie ;
+    schema:name "NYPD Blue" ;
+    schema:url <https://www.imdb.com/title/tt0106079/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0899953/> ;
+        schema:characterName "Teenager"
+    ] .
+
+# Sunset Grill (1993)
+<https://www.imdb.com/title/tt0108253/> a schema:Movie ;
+    schema:name "Sunset Grill" ;
+    schema:url <https://www.imdb.com/title/tt0108253/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0899953/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Brooklyn Bridge (1991)
+<https://www.imdb.com/title/tt0101055/> a schema:Movie ;
+    schema:name "Brooklyn Bridge" ;
+    schema:url <https://www.imdb.com/title/tt0101055/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0899953/> ;
+        schema:characterName "Anthony Gambuzza"
+    ] .
+
+# Everything You Wanted to Know About Puberty For Boys (1991)
+<https://www.imdb.com/title/tt12670476/> a schema:Movie ;
+    schema:name "Everything You Wanted to Know About Puberty For Boys" ;
+    schema:url <https://www.imdb.com/title/tt12670476/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0899953/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2247295257/> a schema:VideoObject ;
+        schema:name "The Sandlot" ;
+        schema:description "Home Video Trailer from 20th Century Fox Home Entertainment" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2247295257/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjllMGFiNjgtYzNjNi00YmZlLWJiYjAtODdjYWYwOWU4MjdhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T16:46:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAwMzM5NTEyNV5BMl5BanBnXkFtZTYwMjgxNzY2._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAwMzM5NTEyNV5BMl5BanBnXkFtZTYwMjgxNzY2._V1_.jpg> ;
+    schema:caption "Joshua Jackson, Kenan Thompson, and Mike Vitar in D3: The Mighty Ducks (1996)" ;
+    schema:height "398"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm3520050945/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2U1ZmE4MDktMTU4Ni00ZjZmLTg2NTItNGFmMTQzZGVjNTk0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kenan Thompson and Mike Vitar in D3: The Mighty Ducks (1996)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm2630858497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWRlOGU2NGUtMzNlMS00OTUxLTgxZGItZTExNWJkYTQxOGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joshua Jackson, Matt Doherty, Colombe Jacobsen-Derstine, Marguerite Moreau, Elden Henson, Kenan Thompson, Mike Vitar, Shaun Weiss, and Justin Wong in D3: The Mighty Ducks (1996)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm1411167745/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODI4ZTQwOTQtNWYwYi00ZWQyLTlhY2ItZjU2ZDJjZWM5MzM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marguerite Moreau and Mike Vitar in D2: The Mighty Ducks (1994)" ;
+    schema:height "1076"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm1881601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2ZkZjcxMWUtNTY1YS00ZTEwLWIzMTgtNjNhNTk3MDAwY2U0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joshua Jackson, Vincent LaRusso, Elden Henson, and Mike Vitar in D2: The Mighty Ducks (1994)" ;
+    schema:height "1076"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm689747457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWNkNTNhYTAtNGYzYS00NGNkLTg3YTktNjY3YjUwMWZkYTYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joshua Jackson and Mike Vitar in D2: The Mighty Ducks (1994)" ;
+    schema:height "1076"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm3525031425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDQxN2E1MjEtNDRiMi00MjIyLWJkM2EtZDJjOTFmNWRjNDExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Marguerite Moreau, Mike Vitar, and Shaun Weiss in D2: The Mighty Ducks (1994)" ;
+    schema:height "1076"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm289971969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDA1NDQyYWItMDM4ZC00YjIxLThkNjQtYTE3YmZmZTQ1NmI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Guiry and Mike Vitar in The Sandlot Kids (1993)" ;
+    schema:height "422"^^xsd:integer ;
+    schema:width "995"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm432042496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjY4MTUxMzMtYTdmMS00NWRiLWJmNjUtMzY0MzMxMGRiNzQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mike Vitar in The Sandlot Kids (1993)" ;
+    schema:height "522"^^xsd:integer ;
+    schema:width "690"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0899953/mediaviewer/rm1786069248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTVhMjEyM2ItOTQ4Ni00MTA3LTljMjUtZTUzZTZhMzcyMjRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick Renna and Mike Vitar in The Sandlot Kids (1993)" ;
+    schema:height "1812"^^xsd:integer ;
+    schema:width "2730"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

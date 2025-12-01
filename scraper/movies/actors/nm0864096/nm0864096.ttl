@@ -1,0 +1,378 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0864096/> a schema:Person ;
+    schema:name "Tiny Ron" ;
+    schema:url <https://www.imdb.com/name/nm0864096/> ;
+    schema:birthDate "1947-11-21"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Tiny Ron", "Ronald Taylor" ;
+    schema:description "Tiny Ron. Actor: Last Man Standing. Tiny Ron was born on 21 November 1947 in Torrance, California, USA. He was an actor, known for Last Man Standing (1996), Road House (1989) and The Rocketeer (1991). He died on 28 November 2019 in Santa Clarita, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Torrance, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "2.13"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "7′ (2.13 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116830/>,    # Last Man Standing
+                       <https://www.imdb.com/title/tt0098206/>,    # Road House
+                       <https://www.imdb.com/title/tt0102803/>,    # The Rocketeer
+                       <https://www.imdb.com/title/tt0109040/>,    # Ace Ventura: Pet Detective
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5329490/>,    # Hitting the Breaks
+                       <https://www.imdb.com/title/tt3915566/>,    # Dancer and the Dame
+                       <https://www.imdb.com/title/tt1657563/>,    # Check It Out! with Dr. Steve Brule
+                       <https://www.imdb.com/title/tt2521404/>,    # The Book of Esther
+                       <https://www.imdb.com/title/tt2171809/>,    # Brother White
+                       <https://www.imdb.com/title/tt1144546/>,    # Holyman Undercover
+                       <https://www.imdb.com/title/tt0918558/>,    # Revamped
+                       <https://www.imdb.com/title/tt0486569/>,    # Sasquatch Mountain
+                       <https://www.imdb.com/title/tt0344777/>,    # Six: The Mark Unleashed
+                       <https://www.imdb.com/title/tt0173498/>,    # Zigs
+                       <https://www.imdb.com/title/tt0106145/>,    # Star Trek: Deep Space Nine
+                       <https://www.imdb.com/title/tt0112178/>,    # Star Trek: Voyager
+                       <https://www.imdb.com/title/tt0115505/>,    # Alien Nation: The Enemy Within
+                       <https://www.imdb.com/title/tt0112319/>,    # Alien Nation: Body and Soul
+                       <https://www.imdb.com/title/tt0105947/>,    # Bakersfield P.D.
+                       <https://www.imdb.com/title/tt0180590/>,    # Camp Fear
+                       <https://www.imdb.com/title/tt0096528/>,    # The New Adam-12
+                       <https://www.imdb.com/title/tt0096635/>,    # Life Goes On
+                       <https://www.imdb.com/title/tt0096560/>,    # Coach
+                       <https://www.imdb.com/title/tt0092410/>,    # My Two Dads
+                       <https://www.imdb.com/title/tt0095705/>,    # The Naked Gun: From the Files of Police Squad!
+                       <https://www.imdb.com/title/tt0096072/>,    # Seven Hours to Judgment
+                       <https://www.imdb.com/title/tt0083466/> ; # Police Squad!
+
+
+    schema:video <https://www.imdb.com/video/vi2853810457/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0864096/mediaviewer/rm4094833664/>,
+                 <https://www.imdb.com/name/nm0864096/mediaviewer/rm3326918912/>,
+                 <https://www.imdb.com/name/nm0864096/mediaviewer/rm4098670848/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0116830/> a schema:Movie ;
+    schema:name "Last Man Standing" ;
+    schema:url <https://www.imdb.com/title/tt0116830/> .
+
+<https://www.imdb.com/title/tt0098206/> a schema:Movie ;
+    schema:name "Road House" ;
+    schema:url <https://www.imdb.com/title/tt0098206/> .
+
+<https://www.imdb.com/title/tt0102803/> a schema:Movie ;
+    schema:name "The Rocketeer" ;
+    schema:url <https://www.imdb.com/title/tt0102803/> .
+
+<https://www.imdb.com/title/tt0109040/> a schema:Movie ;
+    schema:name "Ace Ventura: Pet Detective" ;
+    schema:url <https://www.imdb.com/title/tt0109040/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hitting the Breaks (2016)
+<https://www.imdb.com/title/tt5329490/> a schema:Movie ;
+    schema:name "Hitting the Breaks" ;
+    schema:url <https://www.imdb.com/title/tt5329490/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Tiny"
+    ] .
+
+# Dancer and the Dame (2015)
+<https://www.imdb.com/title/tt3915566/> a schema:Movie ;
+    schema:name "Dancer and the Dame" ;
+    schema:url <https://www.imdb.com/title/tt3915566/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Martin"
+    ] .
+
+# Check It Out! with Dr. Steve Brule (2010)
+<https://www.imdb.com/title/tt1657563/> a schema:Movie ;
+    schema:name "Check It Out! with Dr. Steve Brule" ;
+    schema:url <https://www.imdb.com/title/tt1657563/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "God"
+    ] .
+
+# The Book of Esther (2013)
+<https://www.imdb.com/title/tt2521404/> a schema:Movie ;
+    schema:name "The Book of Esther" ;
+    schema:url <https://www.imdb.com/title/tt2521404/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Nasir"
+    ] .
+
+# Brother White (2010)
+<https://www.imdb.com/title/tt2171809/> a schema:Movie ;
+    schema:name "Brother White" ;
+    schema:url <https://www.imdb.com/title/tt2171809/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Tiny"
+    ] .
+
+# Holyman Undercover (2010)
+<https://www.imdb.com/title/tt1144546/> a schema:Movie ;
+    schema:name "Holyman Undercover" ;
+    schema:url <https://www.imdb.com/title/tt1144546/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Tiny"
+    ] .
+
+# Revamped (2007)
+<https://www.imdb.com/title/tt0918558/> a schema:Movie ;
+    schema:name "Revamped" ;
+    schema:url <https://www.imdb.com/title/tt0918558/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Giant Vladimus"
+    ] .
+
+# Sasquatch Mountain (2006)
+<https://www.imdb.com/title/tt0486569/> a schema:Movie ;
+    schema:name "Sasquatch Mountain" ;
+    schema:url <https://www.imdb.com/title/tt0486569/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Sasquatch"
+    ] .
+
+# Six: The Mark Unleashed (2004)
+<https://www.imdb.com/title/tt0344777/> a schema:Movie ;
+    schema:name "Six: The Mark Unleashed" ;
+    schema:url <https://www.imdb.com/title/tt0344777/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Eddie"
+    ] .
+
+# Zigs (2001)
+<https://www.imdb.com/title/tt0173498/> a schema:Movie ;
+    schema:name "Zigs" ;
+    schema:url <https://www.imdb.com/title/tt0173498/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Terry"
+    ] .
+
+# Star Trek: Deep Space Nine (1993)
+<https://www.imdb.com/title/tt0106145/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine" ;
+    schema:url <https://www.imdb.com/title/tt0106145/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Maihar'du"
+    ] .
+
+# Star Trek: Voyager (1998)
+<https://www.imdb.com/title/tt0112178/> a schema:Movie ;
+    schema:name "Star Trek: Voyager" ;
+    schema:url <https://www.imdb.com/title/tt0112178/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Alpha-Hirogen Idrin"
+    ] .
+
+# Alien Nation: The Enemy Within (1996)
+<https://www.imdb.com/title/tt0115505/> a schema:Movie ;
+    schema:name "Alien Nation: The Enemy Within" ;
+    schema:url <https://www.imdb.com/title/tt0115505/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Queen Mother"
+    ] .
+
+# Alien Nation: Body and Soul (1995)
+<https://www.imdb.com/title/tt0112319/> a schema:Movie ;
+    schema:name "Alien Nation: Body and Soul" ;
+    schema:url <https://www.imdb.com/title/tt0112319/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Giant"
+    ] .
+
+# Bakersfield P.D. (1994)
+<https://www.imdb.com/title/tt0105947/> a schema:Movie ;
+    schema:name "Bakersfield P.D." ;
+    schema:url <https://www.imdb.com/title/tt0105947/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Indian"
+    ] .
+
+# Camp Fear (1991)
+<https://www.imdb.com/title/tt0180590/> a schema:Movie ;
+    schema:name "Camp Fear" ;
+    schema:url <https://www.imdb.com/title/tt0180590/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "The Druid"
+    ] .
+
+# The New Adam-12 (1990)
+<https://www.imdb.com/title/tt0096528/> a schema:Movie ;
+    schema:name "The New Adam-12" ;
+    schema:url <https://www.imdb.com/title/tt0096528/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Tall Suspect"
+    ] .
+
+# Life Goes On (1990)
+<https://www.imdb.com/title/tt0096635/> a schema:Movie ;
+    schema:name "Life Goes On" ;
+    schema:url <https://www.imdb.com/title/tt0096635/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Tall Man"
+    ] .
+
+# Coach (1989)
+<https://www.imdb.com/title/tt0096560/> a schema:Movie ;
+    schema:name "Coach" ;
+    schema:url <https://www.imdb.com/title/tt0096560/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Player"
+    ] .
+
+# My Two Dads (1989)
+<https://www.imdb.com/title/tt0092410/> a schema:Movie ;
+    schema:name "My Two Dads" ;
+    schema:url <https://www.imdb.com/title/tt0092410/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Jeffrey"
+    ] .
+
+# The Naked Gun: From the Files of Police Squad! (1988)
+<https://www.imdb.com/title/tt0095705/> a schema:Movie ;
+    schema:name "The Naked Gun: From the Files of Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0095705/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Al"
+    ] .
+
+# Seven Hours to Judgment (1988)
+<https://www.imdb.com/title/tt0096072/> a schema:Movie ;
+    schema:name "Seven Hours to Judgment" ;
+    schema:url <https://www.imdb.com/title/tt0096072/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Ira Martin"
+    ] .
+
+# Police Squad! (1982)
+<https://www.imdb.com/title/tt0083466/> a schema:Movie ;
+    schema:name "Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0083466/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0864096/> ;
+        schema:characterName "Al"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2853810457/> a schema:VideoObject ;
+        schema:name "Dancer and the Dame" ;
+        schema:description "Trailer for Dancer and the Dame" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2853810457/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjNmM2EzNTUtNDY0NS00M2FhLTg5NjItNGUwNGYxMWVlOWY0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M10S"^^xsd:duration ;
+        schema:uploadDate "2015-04-04T04:15:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0864096/mediaviewer/rm4094833664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzRmMWI0ZGYtMmI5Yy00YmUzLWFjYTgtMWQ5NzgyZThiMTE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Paul Sorvino, Billy Campbell, Timothy Dalton, Clint Howard, John Lavachielli, Robert Miranda, and Tiny Ron in The Rocketeer (1991)" ;
+    schema:height "834"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0864096/mediaviewer/rm3326918912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3MzYzOTc2Ml5BMl5BanBnXkFtZTgwODkzNTg0MjE@._V1_.jpg> ;
+    schema:caption "Wallace Shawn, Armin Shimerman, Chase Masterson, Max Grodénchik, and Tiny Ron in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0864096/mediaviewer/rm4098670848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzMzE4ODMyM15BMl5BanBnXkFtZTgwNDczNTg0MjE@._V1_.jpg> ;
+    schema:caption "Wallace Shawn and Tiny Ron in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2048806/> a schema:Person ;
+    schema:name "Jessica Skelton" ;
+    schema:url <https://www.imdb.com/name/nm2048806/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jessica Skelton. Actress: Pig Hunt. Jessica Skelton is known for Pig Hunt (2008) and Her Best Move (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1022883/>,    # Pig Hunt
+                       <https://www.imdb.com/title/tt0910970/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0469429/> ; # Her Best Move
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2048806/mediaviewer/rm626233856/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pig Hunt (2008)
+<https://www.imdb.com/title/tt1022883/> a schema:Movie ;
+    schema:name "Pig Hunt" ;
+    schema:url <https://www.imdb.com/title/tt1022883/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2048806/> ;
+        schema:characterName "Cult Girl"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2048806/> ;
+        schema:characterName "Young Girlfriend"
+    ] .
+
+# Her Best Move (2007)
+<https://www.imdb.com/title/tt0469429/> a schema:Movie ;
+    schema:name "Her Best Move" ;
+    schema:url <https://www.imdb.com/title/tt0469429/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2048806/> ;
+        schema:characterName "Cheerleader"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2048806/mediaviewer/rm626233856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc4MDc3OTc2NF5BMl5BanBnXkFtZTcwMDE2NDA0MQ@@._V1_.jpg> ;
+    schema:caption "\"Her Best Move\" San Francisco Premiere" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

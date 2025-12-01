@@ -1,0 +1,99 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3241306/> a schema:Person ;
+    schema:name "Vanessa Haywood" ;
+    schema:url <https://www.imdb.com/name/nm3241306/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Vanessa Haywood. Actress: District 9. Vanessa Haywood is known for District 9 (2009), Hey Boy (2003) and Survivor South Africa (2006)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1663692/>,    # The Sweet Shop
+                       <https://www.imdb.com/title/tt1136608/>,    # District 9
+                       <https://www.imdb.com/title/tt0450259/>,    # Blood Diamond
+                       <https://www.imdb.com/title/tt0436388/> ; # Hey Boy
+
+
+    schema:video <https://www.imdb.com/video/vi4147708441/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Sweet Shop (2013)
+<https://www.imdb.com/title/tt1663692/> a schema:Movie ;
+    schema:name "The Sweet Shop" ;
+    schema:url <https://www.imdb.com/title/tt1663692/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3241306/> ;
+        schema:characterName "Shelley"
+    ] .
+
+# District 9 (2009)
+<https://www.imdb.com/title/tt1136608/> a schema:Movie ;
+    schema:name "District 9" ;
+    schema:url <https://www.imdb.com/title/tt1136608/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3241306/> ;
+        schema:characterName "Tania van de Merwe"
+    ] .
+
+# Blood Diamond (2006)
+<https://www.imdb.com/title/tt0450259/> a schema:Movie ;
+    schema:name "Blood Diamond" ;
+    schema:url <https://www.imdb.com/title/tt0450259/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3241306/> ;
+        schema:characterName "Diplomat's Wife"
+    ] .
+
+# Hey Boy (2003)
+<https://www.imdb.com/title/tt0436388/> a schema:Movie ;
+    schema:name "Hey Boy" ;
+    schema:url <https://www.imdb.com/title/tt0436388/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3241306/> ;
+        schema:characterName "Mourner"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4147708441/> a schema:VideoObject ;
+        schema:name "District 9: &quot;Contraband&quot;" ;
+        schema:description "Here's a clip from the movie District 9." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4147708441/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjk4NzQ1MTY5NF5BMl5BanBnXkFtZTgwNTI0NTQ4MjE@._V1_.jpg" ;
+        schema:duration "PT43S"^^xsd:duration ;
+        schema:uploadDate "2009-08-08T09:38:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,363 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1225475/> a schema:Person ;
+    schema:name "Bobby Lockwood" ;
+    schema:url <https://www.imdb.com/name/nm1225475/> ;
+    schema:birthDate "1993-05-24"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:alternateName "Bob", "Bobert", "Bobster", "B", "Bobby Leslie Lockwood" ;
+    schema:description "Bobby Lockwood. Actor: Eurovision Song Contest: The Story of Fire Saga. Bobby started his acting career at a young age and landed his breakout role as the voice of 'Patch' in Walt Disney's 101 Dalmatians 2: Patch's London Adventure (2002). He was then part of the original cast of House of Anubis (2011), before landing the lead role in CBBC's hit series Wolfblood (2012) (for which he won Best Performer..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODBhY2NlYjctOTc1Zi00MzAzLWI1ZjktZjhkYmEyZmFiNTZlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Essex, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8580274/>,    # Eurovision Song Contest: The Story of Fire Saga
+                       <https://www.imdb.com/title/tt10451914/>,    # Outside the Wire
+                       <https://www.imdb.com/title/tt2321596/>,    # Wolfblood
+                       <https://www.imdb.com/title/tt5013056/>,    # Dunkirk
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3833480/>,    # The Outpost
+                       <https://www.imdb.com/title/tt5809150/>,    # Ransom
+                       <https://www.imdb.com/title/tt0241383/>,    # Doctors
+                       <https://www.imdb.com/title/tt5578604/>,    # Vikes
+                       <https://www.imdb.com/title/tt4615318/>,    # Access All Areas
+                       <https://www.imdb.com/title/tt2546866/>,    # Uncle
+                       <https://www.imdb.com/title/tt4192812/>,    # Unforgotten
+                       <https://www.imdb.com/title/tt5129674/>,    # Mum's List
+                       <https://www.imdb.com/title/tt4677938/>,    # Honey 3: Dare to Dance
+                       <https://www.imdb.com/title/tt0874608/>,    # Lewis
+                       <https://www.imdb.com/title/tt4011466/>,    # Friday Download: The Movie
+                       <https://www.imdb.com/title/tt4675086/>,    # Relapse
+                       <https://www.imdb.com/title/tt3056876/>,    # Ups & Downs
+                       <https://www.imdb.com/title/tt2474852/>,    # Dani's Castle
+                       <https://www.imdb.com/title/tt1638319/>,    # House of Anubis
+                       <https://www.imdb.com/title/tt0084987/>,    # The Bill
+                       <https://www.imdb.com/title/tt0324941/> ; # 101 Dalmatians 2: Patch's London Adventure
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 BAFTA Children's Award"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1275511065/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1225475/mediaviewer/rm754865920/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm788420352/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm805197568/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm1795053312/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm721311488/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm1761498880/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm896758528/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm695431936/>,
+                 <https://www.imdb.com/name/nm1225475/mediaviewer/rm1069972736/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8580274/> a schema:Movie ;
+    schema:name "Eurovision Song Contest: The Story of Fire Saga" ;
+    schema:url <https://www.imdb.com/title/tt8580274/> .
+
+<https://www.imdb.com/title/tt10451914/> a schema:Movie ;
+    schema:name "Outside the Wire" ;
+    schema:url <https://www.imdb.com/title/tt10451914/> .
+
+<https://www.imdb.com/title/tt2321596/> a schema:Movie ;
+    schema:name "Wolfblood" ;
+    schema:url <https://www.imdb.com/title/tt2321596/> .
+
+<https://www.imdb.com/title/tt5013056/> a schema:Movie ;
+    schema:name "Dunkirk" ;
+    schema:url <https://www.imdb.com/title/tt5013056/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Outpost (2019)
+<https://www.imdb.com/title/tt3833480/> a schema:Movie ;
+    schema:name "The Outpost" ;
+    schema:url <https://www.imdb.com/title/tt3833480/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "PFC Kevin Thomson"
+    ] .
+
+# Ransom (2018)
+<https://www.imdb.com/title/tt5809150/> a schema:Movie ;
+    schema:name "Ransom" ;
+    schema:url <https://www.imdb.com/title/tt5809150/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Sean"
+    ] .
+
+# Doctors (2018)
+<https://www.imdb.com/title/tt0241383/> a schema:Movie ;
+    schema:name "Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0241383/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Paul Kirkwood"
+    ] .
+
+# Vikes (2017)
+<https://www.imdb.com/title/tt5578604/> a schema:Movie ;
+    schema:name "Vikes" ;
+    schema:url <https://www.imdb.com/title/tt5578604/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Warren Turdslinger"
+    ] .
+
+# Access All Areas (2017)
+<https://www.imdb.com/title/tt4615318/> a schema:Movie ;
+    schema:name "Access All Areas" ;
+    schema:url <https://www.imdb.com/title/tt4615318/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Spiritual Simon"
+    ] .
+
+# Uncle (2017)
+<https://www.imdb.com/title/tt2546866/> a schema:Movie ;
+    schema:name "Uncle" ;
+    schema:url <https://www.imdb.com/title/tt2546866/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Josh"
+    ] .
+
+# Unforgotten (2017)
+<https://www.imdb.com/title/tt4192812/> a schema:Movie ;
+    schema:name "Unforgotten" ;
+    schema:url <https://www.imdb.com/title/tt4192812/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Nathan"
+    ] .
+
+# Mum's List (2016)
+<https://www.imdb.com/title/tt5129674/> a schema:Movie ;
+    schema:name "Mum's List" ;
+    schema:url <https://www.imdb.com/title/tt5129674/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Matt"
+    ] .
+
+# Honey 3: Dare to Dance (2016)
+<https://www.imdb.com/title/tt4677938/> a schema:Movie ;
+    schema:name "Honey 3: Dare to Dance" ;
+    schema:url <https://www.imdb.com/title/tt4677938/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Laser"
+    ] .
+
+# Lewis (2015)
+<https://www.imdb.com/title/tt0874608/> a schema:Movie ;
+    schema:name "Lewis" ;
+    schema:url <https://www.imdb.com/title/tt0874608/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Sam Langton"
+    ] .
+
+# Friday Download: The Movie (2015)
+<https://www.imdb.com/title/tt4011466/> a schema:Movie ;
+    schema:name "Friday Download: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt4011466/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Bobby"
+    ] .
+
+# Relapse (2014)
+<https://www.imdb.com/title/tt4675086/> a schema:Movie ;
+    schema:name "Relapse" ;
+    schema:url <https://www.imdb.com/title/tt4675086/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Ben"
+    ] .
+
+# Ups & Downs (2013)
+<https://www.imdb.com/title/tt3056876/> a schema:Movie ;
+    schema:name "Ups & Downs" ;
+    schema:url <https://www.imdb.com/title/tt3056876/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Harry"
+    ] .
+
+# Dani's Castle (2013)
+<https://www.imdb.com/title/tt2474852/> a schema:Movie ;
+    schema:name "Dani's Castle" ;
+    schema:url <https://www.imdb.com/title/tt2474852/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Conal Connor"
+    ] .
+
+# House of Anubis (2011)
+<https://www.imdb.com/title/tt1638319/> a schema:Movie ;
+    schema:name "House of Anubis" ;
+    schema:url <https://www.imdb.com/title/tt1638319/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Mick Campbell"
+    ] .
+
+# The Bill (2006)
+<https://www.imdb.com/title/tt0084987/> a schema:Movie ;
+    schema:name "The Bill" ;
+    schema:url <https://www.imdb.com/title/tt0084987/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Taylor Little"
+    ] .
+
+# 101 Dalmatians 2: Patch's London Adventure (2002)
+<https://www.imdb.com/title/tt0324941/> a schema:Movie ;
+    schema:name "101 Dalmatians 2: Patch's London Adventure" ;
+    schema:url <https://www.imdb.com/title/tt0324941/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225475/> ;
+        schema:characterName "Patch"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1275511065/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "When disgraced drone pilot, Lt. Harp (Damson Idris) is sent into a deadly militarized zone after disobeying orders, he finds himself working for Capt. Leo (Anthony Mackie), an android officer tasked with locating a doomsday device before insurgents do.  Outside the Wire is directed by Mikael Hafstrom and debuts on Netflix January 15." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1275511065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTE4NjFhY2UtMDA4NS00OWFmLWIyYTMtNDdkZGI0MjM4YmMwXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg" ;
+        schema:duration "PT2M19S"^^xsd:duration ;
+        schema:uploadDate "2021-01-06T18:13:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODBhY2NlYjctOTc1Zi00MzAzLWI1ZjktZjhkYmEyZmFiNTZlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODBhY2NlYjctOTc1Zi00MzAzLWI1ZjktZjhkYmEyZmFiNTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phil Sharp" ;
+    schema:height "1523"^^xsd:integer ;
+    schema:width "1224"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm754865920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWRjZDhiMjUtMDcyMC00Yzk3LTk5YjAtM2NkZDk2MWQ4OTdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood as Nathan in The Unforgotten" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm788420352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTk3ZGI4OGMtZTk3OS00MGQ1LTk0YTAtZGRiMWM5ZmU0OGQyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood as Nathan in The Unforgotten" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm805197568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDVjZjczZmMtZjc4My00YmJkLTg2NjYtYjlkNjA4NWNkM2EyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood as Josh in Uncle" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "1136"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm1795053312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODBhY2NlYjctOTc1Zi00MzAzLWI1ZjktZjhkYmEyZmFiNTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phil Sharp" ;
+    schema:height "1523"^^xsd:integer ;
+    schema:width "1224"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm721311488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmYyNWI1ZWMtYThiMS00MDhjLWE3NWYtNWNlZTc0MjA1NmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phil Sharp" ;
+    schema:height "5825"^^xsd:integer ;
+    schema:width "4660"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm1761498880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDljZGMyNGQtZGMyMS00MmQwLWIxMjAtODViNGQ3MTQ2MTQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phil Sharp" ;
+    schema:height "1470"^^xsd:integer ;
+    schema:width "1177"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm896758528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTU5MTRiNmQtYWQzNS00MzhjLThhNWItODc3YjRhNWU4N2IwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood and Tasie Lawrence in House of Anubis (2011)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm695431936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTUyYmUwMzUtNTUxYy00YTAxLWIyOTEtZGEyMzI0NjI4M2JmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood, Frances Encell, and Tasie Lawrence in House of Anubis (2011)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225475/mediaviewer/rm1069972736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2QwY2ZmMDEtYjdkMS00NzlkLWI3ZjctNjEzNGRjYWQwMGM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bobby Lockwood and Eugene Simon in House of Anubis (2011)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

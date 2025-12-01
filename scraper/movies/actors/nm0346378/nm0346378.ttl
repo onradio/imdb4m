@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0346378/> a schema:Person ;
+    schema:name "Michael Guess" ;
+    schema:url <https://www.imdb.com/name/nm0346378/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Michael Guess. Actor: King of New York. Michael Guess is known for King of New York (1990), Malcolm X (1992) and Glory (1989)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0107079/>,    # Sugar Hill
+                       <https://www.imdb.com/title/tt0106161/>,    # Tribeca
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0104797/>,    # Malcolm X
+                       <https://www.imdb.com/title/tt0099939/>,    # King of New York
+                       <https://www.imdb.com/title/tt0096969/>,    # Born on the Fourth of July
+                       <https://www.imdb.com/title/tt0097441/> . # Glory
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sugar Hill (1994)
+<https://www.imdb.com/title/tt0107079/> a schema:Movie ;
+    schema:name "Sugar Hill" ;
+    schema:url <https://www.imdb.com/title/tt0107079/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "Y.G. (Young Gun)"
+    ] .
+
+# Tribeca (1993)
+<https://www.imdb.com/title/tt0106161/> a schema:Movie ;
+    schema:name "Tribeca" ;
+    schema:url <https://www.imdb.com/title/tt0106161/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "Crack Addict"
+    ] .
+
+# Law & Order (1993)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "Wesley"
+    ] .
+
+# Malcolm X (1992)
+<https://www.imdb.com/title/tt0104797/> a schema:Movie ;
+    schema:name "Malcolm X" ;
+    schema:url <https://www.imdb.com/title/tt0104797/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "William X"
+    ] .
+
+# King of New York (1990)
+<https://www.imdb.com/title/tt0099939/> a schema:Movie ;
+    schema:name "King of New York" ;
+    schema:url <https://www.imdb.com/title/tt0099939/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "Carter"
+    ] .
+
+# Born on the Fourth of July (1989)
+<https://www.imdb.com/title/tt0096969/> a schema:Movie ;
+    schema:name "Born on the Fourth of July" ;
+    schema:url <https://www.imdb.com/title/tt0096969/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "Platoon"
+    ] .
+
+# Glory (1989)
+<https://www.imdb.com/title/tt0097441/> a schema:Movie ;
+    schema:name "Glory" ;
+    schema:url <https://www.imdb.com/title/tt0097441/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0346378/> ;
+        schema:characterName "'A' Company Soldier"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

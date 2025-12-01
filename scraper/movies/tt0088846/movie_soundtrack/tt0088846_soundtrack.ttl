@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088846/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Hava Nagila" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "As Time Goes By" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "As Time Goes By" ;
+            schema:author <https://www.imdb.com/name/nm0403259/> # Herman Hupfeld
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Brazil" ;
+        schema:byArtist <https://www.imdb.com/name/nm1190424/> ; # Geoff Muldaur
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Brazil" ;
+            schema:composer <https://www.imdb.com/name/nm0057795/> ; # Ary Barroso
+            schema:lyricist <https://www.imdb.com/name/nm0057795/> # Ary Barroso
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Flying Messenger" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Flying Messenger" ;
+            schema:composer <https://www.imdb.com/name/nm1056403/> # Graham Whettam
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sam Lowry's 1st Dream/Brazil" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004383/>, # Michael Kamen
+                        <https://www.imdb.com/name/nm0124165/> ; # Kate Bush
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Valse" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Valse" ;
+            schema:author <https://www.imdb.com/name/nm0712315/> # Maurice Ravel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The First Nowell" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004383/> a schema:Person ;
+    schema:name "Michael Kamen" .
+<https://www.imdb.com/name/nm0057795/> a schema:Person ;
+    schema:name "Ary Barroso" .
+<https://www.imdb.com/name/nm0124165/> a schema:Person ;
+    schema:name "Kate Bush" .
+<https://www.imdb.com/name/nm0403259/> a schema:Person ;
+    schema:name "Herman Hupfeld" .
+<https://www.imdb.com/name/nm0712315/> a schema:Person ;
+    schema:name "Maurice Ravel" .
+<https://www.imdb.com/name/nm1056403/> a schema:Person ;
+    schema:name "Graham Whettam" .
+<https://www.imdb.com/name/nm1190424/> a schema:Person ;
+    schema:name "Geoff Muldaur" .
+# ==============================================================================

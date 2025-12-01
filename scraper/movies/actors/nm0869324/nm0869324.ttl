@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0869324/> a schema:Person ;
+    schema:name "Frank Toth" ;
+    schema:url <https://www.imdb.com/name/nm0869324/> ;
+    schema:jobTitle "Actor", "Editor", "Stunts" ;
+    schema:description "Frank Toth. Actor: Twilight Zone: The Movie. Frank Toth was an actor and editor, known for Twilight Zone: The Movie (1983), E.T. the Extra-Terrestrial (1982) and Never Too Young to Die (1986). He died on 22 May 2023 in the USA." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0092480/>,    # Werewolf
+                       <https://www.imdb.com/title/tt0086491/>,    # Twilight Zone: The Movie
+                       <https://www.imdb.com/title/tt0083866/> . # E.T. the Extra-Terrestrial
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Werewolf (1987)
+<https://www.imdb.com/title/tt0092480/> a schema:Movie ;
+    schema:name "Werewolf" ;
+    schema:url <https://www.imdb.com/title/tt0092480/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0869324/> ;
+        schema:characterName "Deputy"
+    ] .
+
+# Twilight Zone: The Movie (1983)
+<https://www.imdb.com/title/tt0086491/> a schema:Movie ;
+    schema:name "Twilight Zone: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt0086491/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0869324/> ;
+        schema:characterName "Mechanic No. 2"
+    ] .
+
+# E.T. the Extra-Terrestrial (1982)
+<https://www.imdb.com/title/tt0083866/> a schema:Movie ;
+    schema:name "E.T. the Extra-Terrestrial" ;
+    schema:url <https://www.imdb.com/title/tt0083866/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0869324/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

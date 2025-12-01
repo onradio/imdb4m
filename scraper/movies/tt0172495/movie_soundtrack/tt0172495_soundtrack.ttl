@@ -1,0 +1,67 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0172495/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Pavor" ;
+        schema:byArtist <https://www.imdb.com/name/nm2938971/> ; # Synaulia
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pavor" ;
+            schema:author <https://www.imdb.com/name/nm1132748/>, # Walter Maioli
+                       <https://www.imdb.com/name/nm0887775/> # Nathalie Van Ravenstein
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Etruria" ;
+        schema:byArtist <https://www.imdb.com/name/nm2938971/> ; # Synaulia
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Etruria" ;
+            schema:author <https://www.imdb.com/name/nm1132748/>, # Walter Maioli
+                       <https://www.imdb.com/name/nm0887775/> # Nathalie Van Ravenstein
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Now We Are Free" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Now We Are Free" ;
+            schema:author <https://www.imdb.com/name/nm0314713/>, # Lisa Gerrard
+                       <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sorrow" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sorrow" ;
+            schema:author <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001877/> a schema:Person ;
+    schema:name "Hans Zimmer" .
+<https://www.imdb.com/name/nm0314713/> a schema:Person ;
+    schema:name "Lisa Gerrard" .
+<https://www.imdb.com/name/nm0887775/> a schema:Person ;
+    schema:name "Nathalie Van Ravenstein" .
+<https://www.imdb.com/name/nm1132748/> a schema:Person ;
+    schema:name "Walter Maioli" .
+<https://www.imdb.com/name/nm2938971/> a schema:Person ;
+    schema:name "Synaulia" .
+# ==============================================================================

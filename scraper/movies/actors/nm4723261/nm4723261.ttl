@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4723261/> a schema:Person ;
+    schema:name "Mohammadhasan Asghari" ;
+    schema:url <https://www.imdb.com/name/nm4723261/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mohammadhasan Asghari. Actor: A Separation. Mohammadhasan Asghari is known for A Separation (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1832382/> .    # A Separation
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Separation (2011)
+<https://www.imdb.com/title/tt1832382/> a schema:Movie ;
+    schema:name "A Separation" ;
+    schema:url <https://www.imdb.com/title/tt1832382/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4723261/> ;
+        schema:characterName "Creditor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8621196/> a schema:Person ;
+    schema:name "Yoo Min-chae" ;
+    schema:url <https://www.imdb.com/name/nm8621196/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Yoo Min-chae. Actress: The Handmaiden. Yoo Min-chae is known for The Handmaiden (2016), The Accidental Detective (2015) and The Great Actor (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4016934/>,    # The Handmaiden
+                       <https://www.imdb.com/title/tt6449626/>,    # The Great Actor
+                       <https://www.imdb.com/title/tt5031892/> . # The Accidental Detective
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8621196/> ;
+        schema:characterName "Ggeut-dan"
+    ] .
+
+# The Great Actor (2016)
+<https://www.imdb.com/title/tt6449626/> a schema:Movie ;
+    schema:name "The Great Actor" ;
+    schema:url <https://www.imdb.com/title/tt6449626/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8621196/> ;
+        schema:characterName "Soo-Bin"
+    ] .
+
+# The Accidental Detective (2015)
+<https://www.imdb.com/title/tt5031892/> a schema:Movie ;
+    schema:name "The Accidental Detective" ;
+    schema:url <https://www.imdb.com/title/tt5031892/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8621196/> ;
+        schema:characterName "Hot Barista"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,192 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0925096/> a schema:Person ;
+    schema:name "Lari White" ;
+    schema:url <https://www.imdb.com/name/nm0925096/> ;
+    schema:birthDate "1965-05-13"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:alternateName "Lari Michele White" ;
+    schema:description "Lari White. Actress: Cast Away. Lari White was born on 13 May 1965 in Dunedin, Florida, USA. She was an actress, known for Cast Away (2000), No Regrets (2004) and Country Strong (2010). She was married to Chuck Cannon. She died on 23 January 2018 in Nashville, Tennessee, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTA4NTc1NDc3MjBeQTJeQWpwZ15BbWU4MDE0Njk0NjQz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dunedin, Florida, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0162222/>,    # Cast Away
+                       <https://www.imdb.com/title/tt0212815/>,    # Big Eden
+                       <https://www.imdb.com/title/tt0384376/>,    # No Regrets
+                       <https://www.imdb.com/title/tt1555064/>,    # Country Strong
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt14732868/>,    # Ring of Fire TV Commercial
+                       <https://www.imdb.com/title/tt0111758/>,    # XXX's & OOO's
+                       <https://www.imdb.com/title/tt13731924/>,    # Michelle Wright: Take It Like a Man
+                       <https://www.imdb.com/title/tt0096340/> ; # The Unholy
+
+
+    schema:video <https://www.imdb.com/video/vi3633252633/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0925096/mediaviewer/rm3537672448/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm3520895232/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm3638335744/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm635279616/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm1505139200/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm2022479872/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm2309462784/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm652056832/>,
+                 <https://www.imdb.com/name/nm0925096/mediaviewer/rm4213985280/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0162222/> a schema:Movie ;
+    schema:name "Cast Away" ;
+    schema:url <https://www.imdb.com/title/tt0162222/> .
+
+<https://www.imdb.com/title/tt0212815/> a schema:Movie ;
+    schema:name "Big Eden" ;
+    schema:url <https://www.imdb.com/title/tt0212815/> .
+
+<https://www.imdb.com/title/tt0384376/> a schema:Movie ;
+    schema:name "No Regrets" ;
+    schema:url <https://www.imdb.com/title/tt0384376/> .
+
+<https://www.imdb.com/title/tt1555064/> a schema:Movie ;
+    schema:name "Country Strong" ;
+    schema:url <https://www.imdb.com/title/tt1555064/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ring of Fire TV Commercial (2007)
+<https://www.imdb.com/title/tt14732868/> a schema:Movie ;
+    schema:name "Ring of Fire TV Commercial" ;
+    schema:url <https://www.imdb.com/title/tt14732868/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925096/> ;
+        schema:characterName ""
+    ] .
+
+# XXX's & OOO's (1994)
+<https://www.imdb.com/title/tt0111758/> a schema:Movie ;
+    schema:name "XXX's & OOO's" ;
+    schema:url <https://www.imdb.com/title/tt0111758/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925096/> ;
+        schema:characterName "Greta"
+    ] .
+
+# Michelle Wright: Take It Like a Man (1992)
+<https://www.imdb.com/title/tt13731924/> a schema:Movie ;
+    schema:name "Michelle Wright: Take It Like a Man" ;
+    schema:url <https://www.imdb.com/title/tt13731924/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925096/> ;
+        schema:characterName "Back Up Singer"
+    ] .
+
+# The Unholy (1988)
+<https://www.imdb.com/title/tt0096340/> a schema:Movie ;
+    schema:name "The Unholy" ;
+    schema:url <https://www.imdb.com/title/tt0096340/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925096/> ;
+        schema:characterName "Housekeeper"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3633252633/> a schema:VideoObject ;
+        schema:name "Country Stong" ;
+        schema:description "A drama centered on a rising country-music songwriter (Hedlund) who sparks with a fallen star (Paltrow). Together, they mount his ascent and her comeback, which leads to romantic complications involving her husband/manager (McGraw) and a beauty queen-turned-singer (Meester)." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3633252633/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTEwMjcyNDEwMzheQTJeQWpwZ15BbWU4MDQ2NzYyMjMx._V1_.jpg" ;
+        schema:duration "PT2M34S"^^xsd:duration ;
+        schema:uploadDate "2010-09-16T12:17:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTA4NTc1NDc3MjBeQTJeQWpwZ15BbWU4MDE0Njk0NjQz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA4NTc1NDc3MjBeQTJeQWpwZ15BbWU4MDE0Njk0NjQz._V1_.jpg> ;
+    schema:caption "Lari White" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1592"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm3537672448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3MDEzNzI5N15BMl5BanBnXkFtZTYwNjMyMjM3._V1_.jpg> ;
+    schema:caption "Lari White, Brad Johnson, Janine Turner, Robert Merrill in No Regrets (2004)" ;
+    schema:height "325"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm3520895232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyNjY5MDQ5OF5BMl5BanBnXkFtZTYwODMyMjM3._V1_.jpg> ;
+    schema:caption " Brad Johnson and Lari White in No Regrets (2004)" ;
+    schema:height "623"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm3638335744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEyMjQxNDc5NV5BMl5BanBnXkFtZTYwODQyMjM3._V1_.jpg> ;
+    schema:caption "Lari White and Robert Merrill in No Regrets (2004)  " ;
+    schema:height "325"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm635279616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA3MzU3Nzc0MF5BMl5BanBnXkFtZTYwMjUyMjM3._V1_.jpg> ;
+    schema:caption "\"No Regrets\" Cast: Robert Merrill, Lari White, Edward Albert, Kate Jackson, Jennifer Hetrick, Brad Johnson, Janine Turner" ;
+    schema:height "325"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm1505139200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjExMzcwMzUwMV5BMl5BanBnXkFtZTYwMDA5MDAz._V1_.jpg> ;
+    schema:caption "Robert Merrill and Lari White in \"No Regrets\"" ;
+    schema:height "321"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm2022479872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4OTU4NTU1MV5BMl5BanBnXkFtZTYwNzc5NDE2._V1_.jpg> ;
+    schema:caption "Lari White" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "271"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm2309462784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwNzM0NDk1NV5BMl5BanBnXkFtZTYwMzM2NjQ0._V1_.jpg> ;
+    schema:caption "Lari White" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "272"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm652056832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1Njk1MDkzOF5BMl5BanBnXkFtZTYwMDUyMjM3._V1_.jpg> ;
+    schema:caption "Kate Jackson, Edward Albert, Janine Turner, Jennifer Hetrick, Brad Johnson, Lari White, and Robert Merrill in No Regrets (2004)" ;
+    schema:height "623"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925096/mediaviewer/rm4213985280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA4NTc1NDc3MjBeQTJeQWpwZ15BbWU4MDE0Njk0NjQz._V1_.jpg> ;
+    schema:caption "Lari White" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1592"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2721322/> a schema:Person ;
+    schema:name "John Roberson" ;
+    schema:url <https://www.imdb.com/name/nm2721322/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "John Roberson. Actor: The Bourne Ultimatum. John Roberson is known for The Bourne Ultimatum (2007) and Green Zone (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0947810/>,    # Green Zone
+                       <https://www.imdb.com/title/tt0440963/> . # The Bourne Ultimatum
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Green Zone (2010)
+<https://www.imdb.com/title/tt0947810/> a schema:Movie ;
+    schema:name "Green Zone" ;
+    schema:url <https://www.imdb.com/title/tt0947810/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2721322/> ;
+        schema:characterName "Infantry Sergeant"
+    ] .
+
+# The Bourne Ultimatum (2007)
+<https://www.imdb.com/title/tt0440963/> a schema:Movie ;
+    schema:name "The Bourne Ultimatum" ;
+    schema:url <https://www.imdb.com/title/tt0440963/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2721322/> ;
+        schema:characterName "Technician"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

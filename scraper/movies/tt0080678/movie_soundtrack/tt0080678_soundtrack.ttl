@@ -1,0 +1,27 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0080678/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Adagio for Strings, Op. 11" ;
+        schema:byArtist <https://www.imdb.com/name/nm1499772/> ; # London Symphony Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Adagio for Strings, Op. 11" ;
+            schema:composer <https://www.imdb.com/name/nm0053462/> # Samuel Barber
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0053462/> a schema:Person ;
+    schema:name "Samuel Barber" .
+<https://www.imdb.com/name/nm1499772/> a schema:Person ;
+    schema:name "London Symphony Orchestra" .
+# ==============================================================================

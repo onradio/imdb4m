@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2355922/> a schema:Person ;
+    schema:name "Mike Miller" ;
+    schema:url <https://www.imdb.com/name/nm2355922/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mike Miller. Actor: The Wrestler. Mike Miller is known for The Wrestler (2008), WXW Rage TV (1996) and Blunt Movie (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0452183/>,    # Blunt Movie
+                       <https://www.imdb.com/title/tt1125849/>,    # The Wrestler
+                       <https://www.imdb.com/title/tt0397843/> . # WXW Rage TV
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blunt Movie (2013)
+<https://www.imdb.com/title/tt0452183/> a schema:Movie ;
+    schema:name "Blunt Movie" ;
+    schema:url <https://www.imdb.com/title/tt0452183/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2355922/> ;
+        schema:characterName "Goon 2"
+    ] .
+
+# The Wrestler (2008)
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2355922/> ;
+        schema:characterName "Lex Lethal"
+    ] .
+
+# WXW Rage TV (1996)
+<https://www.imdb.com/title/tt0397843/> a schema:Movie ;
+    schema:name "WXW Rage TV" ;
+    schema:url <https://www.imdb.com/title/tt0397843/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2355922/> ;
+        schema:characterName "LexLethal"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,166 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087332/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Ghostbusters" ;
+        schema:byArtist <https://www.imdb.com/name/nm0662018/> ; # Ray Parker Jr.
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ghostbusters" ;
+            schema:author <https://www.imdb.com/name/nm0662018/> # Ray Parker Jr.
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Savin' the Day" ;
+        schema:byArtist <https://www.imdb.com/name/nm15395748/> ; # Alessi Brothers
+        schema:producer <https://www.imdb.com/name/nm0708500/> ; # Phil Ramone
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Savin' the Day" ;
+            schema:author <https://www.imdb.com/name/nm1943637/>, # Bobby Alessi
+                       <https://www.imdb.com/name/nm2526810/> # Dave Immer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hot Night" ;
+        schema:byArtist <https://www.imdb.com/name/nm0105104/> ; # Laura Branigan
+        schema:producer <https://www.imdb.com/name/nm0924902/>, # Jack White
+                       <https://www.imdb.com/name/nm0118064/> ; # Robbie Buchanan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hot Night" ;
+            schema:author <https://www.imdb.com/name/nm0005534/> # Diane Warren
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Disco Inferno" ;
+        schema:byArtist <https://www.imdb.com/name/nm1719184/> ; # The Trammps
+        schema:producer <https://www.imdb.com/name/nm1300291/> ; # Ron Kersey
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Disco Inferno" ;
+            schema:author <https://www.imdb.com/name/nm1299655/>, # Leroy Green
+                       <https://www.imdb.com/name/nm1300291/> # Ron Kersey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cleanin' Up the Town" ;
+        schema:byArtist <https://www.imdb.com/name/nm3163815/> ; # The Bus Boys
+        schema:producer <https://www.imdb.com/name/nm1461898/>, # Kevin O'Neal
+                       <https://www.imdb.com/name/nm1110359/>, # Brian O'Neal
+                       <https://www.imdb.com/name/nm5101982/> ; # John Leslie Hug
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cleanin' Up the Town" ;
+            schema:author <https://www.imdb.com/name/nm1461898/>, # Kevin O'Neal
+                       <https://www.imdb.com/name/nm1110359/> # Brian O'Neal
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In the Name of Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm1277689/> ; # Thompson Twins
+        schema:producer <https://www.imdb.com/name/nm1185538/> ; # Steve Lillywhite
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "In the Name of Love" ;
+            schema:author <https://www.imdb.com/name/nm0047522/> # Tom Bailey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Can Wait Forever" ;
+        schema:byArtist <https://www.imdb.com/name/nm2937657/> ; # Air Supply
+        schema:producer <https://www.imdb.com/name/nm0287757/>, # David Foster
+                       <https://www.imdb.com/name/nm1179923/> ; # Jay Graydon
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Can Wait Forever" ;
+            schema:author <https://www.imdb.com/name/nm0751166/>, # Graham Russell
+                       <https://www.imdb.com/name/nm0287757/>, # David Foster
+                       <https://www.imdb.com/name/nm1179923/> # Jay Graydon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Magic" ;
+        schema:byArtist <https://www.imdb.com/name/nm2512923/> ; # Mick Smiley
+        schema:producer <https://www.imdb.com/name/nm0286850/> ; # Keith Forsey
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Magic" ;
+            schema:author <https://www.imdb.com/name/nm2512923/> # Mick Smiley
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005534/> a schema:Person ;
+    schema:name "Diane Warren" .
+<https://www.imdb.com/name/nm0047522/> a schema:Person ;
+    schema:name "Tom Bailey" .
+<https://www.imdb.com/name/nm0105104/> a schema:Person ;
+    schema:name "Laura Branigan" .
+<https://www.imdb.com/name/nm0118064/> a schema:Person ;
+    schema:name "Robbie Buchanan" .
+<https://www.imdb.com/name/nm0286850/> a schema:Person ;
+    schema:name "Keith Forsey" .
+<https://www.imdb.com/name/nm0287757/> a schema:Person ;
+    schema:name "David Foster" .
+<https://www.imdb.com/name/nm0662018/> a schema:Person ;
+    schema:name "Ray Parker Jr." .
+<https://www.imdb.com/name/nm0708500/> a schema:Person ;
+    schema:name "Phil Ramone" .
+<https://www.imdb.com/name/nm0751166/> a schema:Person ;
+    schema:name "Graham Russell" .
+<https://www.imdb.com/name/nm0924902/> a schema:Person ;
+    schema:name "Jack White" .
+<https://www.imdb.com/name/nm1110359/> a schema:Person ;
+    schema:name "Brian O'Neal" .
+<https://www.imdb.com/name/nm1179923/> a schema:Person ;
+    schema:name "Jay Graydon" .
+<https://www.imdb.com/name/nm1185538/> a schema:Person ;
+    schema:name "Steve Lillywhite" .
+<https://www.imdb.com/name/nm1277689/> a schema:Person ;
+    schema:name "Thompson Twins" .
+<https://www.imdb.com/name/nm1299655/> a schema:Person ;
+    schema:name "Leroy Green" .
+<https://www.imdb.com/name/nm1300291/> a schema:Person ;
+    schema:name "Ron Kersey" .
+<https://www.imdb.com/name/nm1461898/> a schema:Person ;
+    schema:name "Kevin O'Neal" .
+<https://www.imdb.com/name/nm15395748/> a schema:Person ;
+    schema:name "Alessi Brothers" .
+<https://www.imdb.com/name/nm1719184/> a schema:Person ;
+    schema:name "The Trammps" .
+<https://www.imdb.com/name/nm1943637/> a schema:Person ;
+    schema:name "Bobby Alessi" .
+<https://www.imdb.com/name/nm2512923/> a schema:Person ;
+    schema:name "Mick Smiley" .
+<https://www.imdb.com/name/nm2526810/> a schema:Person ;
+    schema:name "Dave Immer" .
+<https://www.imdb.com/name/nm2937657/> a schema:Person ;
+    schema:name "Air Supply" .
+<https://www.imdb.com/name/nm3163815/> a schema:Person ;
+    schema:name "The Bus Boys" .
+<https://www.imdb.com/name/nm5101982/> a schema:Person ;
+    schema:name "John Leslie Hug" .
+# ==============================================================================

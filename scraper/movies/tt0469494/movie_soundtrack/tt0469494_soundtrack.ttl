@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0469494/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Popcorn Superhet Receiver" ;
+        schema:byArtist <https://www.imdb.com/name/nm3137699/> ; # BBC Concert Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Popcorn Superhet Receiver" ;
+            schema:composer <https://www.imdb.com/name/nm0339351/> # Jonny Greenwood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Violin Concerto in D major Op. 77 III. Allegro giocoso, ma non troppo vivace" ;
+        schema:byArtist <https://www.imdb.com/name/nm1617101/>, # Berliner Philharmoniker
+                        <https://www.imdb.com/name/nm0616171/>, # Anne-Sophie Mutter
+                        <https://www.imdb.com/name/nm1371468/> ; # Antonio Meneses
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Violin Concerto in D major Op. 77 III. Allegro giocoso, ma non troppo vivace" ;
+            schema:composer <https://www.imdb.com/name/nm0005974/> # Johannes Brahms
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Smear" ;
+        schema:byArtist <https://www.imdb.com/name/nm2986368/> ; # London Sinfonietta
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Smear" ;
+            schema:composer <https://www.imdb.com/name/nm0339351/> # Jonny Greenwood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pärt: Fratres for Cello and Piano" ;
+        schema:byArtist <https://www.imdb.com/name/nm5770525/> ; # I Fiamminghi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pärt: Fratres for Cello and Piano" ;
+            schema:composer <https://www.imdb.com/name/nm0701736/> # Arvo Pärt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "What a Friend We Have in Jesus" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "What a Friend We Have in Jesus" ;
+            schema:author <https://www.imdb.com/name/nm3772784/>, # Joseph M. Scriven
+                       <https://www.imdb.com/name/nm3772649/> # Charles Crozat Converse
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "There Is Power in the Blood" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "There Is Power in the Blood" ;
+            schema:author <https://www.imdb.com/name/nm7744108/> # Lewis E. Jones
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Gradh Geal Mo Chridh" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005974/> a schema:Person ;
+    schema:name "Johannes Brahms" .
+<https://www.imdb.com/name/nm0339351/> a schema:Person ;
+    schema:name "Jonny Greenwood" .
+<https://www.imdb.com/name/nm0616171/> a schema:Person ;
+    schema:name "Anne-Sophie Mutter" .
+<https://www.imdb.com/name/nm0701736/> a schema:Person ;
+    schema:name "Arvo Pärt" .
+<https://www.imdb.com/name/nm1371468/> a schema:Person ;
+    schema:name "Antonio Meneses" .
+<https://www.imdb.com/name/nm1617101/> a schema:Person ;
+    schema:name "Berliner Philharmoniker" .
+<https://www.imdb.com/name/nm2986368/> a schema:Person ;
+    schema:name "London Sinfonietta" .
+<https://www.imdb.com/name/nm3137699/> a schema:Person ;
+    schema:name "BBC Concert Orchestra" .
+<https://www.imdb.com/name/nm3772649/> a schema:Person ;
+    schema:name "Charles Crozat Converse" .
+<https://www.imdb.com/name/nm3772784/> a schema:Person ;
+    schema:name "Joseph M. Scriven" .
+<https://www.imdb.com/name/nm5770525/> a schema:Person ;
+    schema:name "I Fiamminghi" .
+<https://www.imdb.com/name/nm7744108/> a schema:Person ;
+    schema:name "Lewis E. Jones" .
+# ==============================================================================

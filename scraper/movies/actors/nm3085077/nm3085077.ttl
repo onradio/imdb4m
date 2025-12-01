@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3085077/> a schema:Person ;
+    schema:name "Sam Sheridan" ;
+    schema:url <https://www.imdb.com/name/nm3085077/> ;
+    schema:jobTitle "Producer", "Writer", "Actor" ;
+    schema:description "Sam Sheridan. Actor: Warrior. Sam Sheridan is known for Warrior (2011), I Am the Night (2019) and The Institute (2025). He has been married to Patty Jenkins since 1 September 2007." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjI0ODQ3MzM5MF5BMl5BanBnXkFtZTgwNTg0NjcyNzM@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1291584/> ;    # Warrior
+
+
+    schema:video <https://www.imdb.com/video/vi2438268185/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3085077/mediaviewer/rm2754635776/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1378904064/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1597007872/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1563453440/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1529899008/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1496344576/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1479567360/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm2804967424/>,
+                 <https://www.imdb.com/name/nm3085077/mediaviewer/rm1345349632/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Warrior (2011)
+<https://www.imdb.com/title/tt1291584/> a schema:Movie ;
+    schema:name "Warrior" ;
+    schema:url <https://www.imdb.com/title/tt1291584/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3085077/> ;
+        schema:characterName "Sam Sheridan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2438268185/> a schema:VideoObject ;
+        schema:name "Fight Life" ;
+        schema:description "Fight Life is a new groundbreaking documentary that gives the audience an intimate look into the real life of the modern day professional fighter. From paying dues starting out at the smaller shows to the championship fight on prime time TV, Fight Life chronicles the daily lives of professional fighters from all different levels over the course of one year." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2438268185/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjAyNjg3MTgwMl5BMl5BanBnXkFtZTcwNDIyNDk5Mg@@._V1_.jpg" ;
+        schema:duration "PT2M47S"^^xsd:duration ;
+        schema:uploadDate "2009-11-16T00:55:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjI0ODQ3MzM5MF5BMl5BanBnXkFtZTgwNTg0NjcyNzM@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI0ODQ3MzM5MF5BMl5BanBnXkFtZTgwNTg0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm2754635776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyOTE4MDA2N15BMl5BanBnXkFtZTgwNzk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Patty Jenkins and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1378904064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc0MDkzNDYzOF5BMl5BanBnXkFtZTgwMzg0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Patty Jenkins, India Eisley, and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1597007872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyMzUyNjAzMl5BMl5BanBnXkFtZTgwNjg0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1563453440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjU0NzgzNTk4NV5BMl5BanBnXkFtZTgwODg0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Patty Jenkins, India Eisley, and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1439"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1529899008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYyOTk4OTE1MV5BMl5BanBnXkFtZTgwMDk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Patty Jenkins, India Eisley, and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1444"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1496344576/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3NjE5Mjk1OV5BMl5BanBnXkFtZTgwMjk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "India Eisley and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1407"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1479567360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjM5MDgwODE3Nl5BMl5BanBnXkFtZTgwMzk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm2804967424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyNTM1OTU5NF5BMl5BanBnXkFtZTgwNDk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Patty Jenkins, India Eisley, and Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3085077/mediaviewer/rm1345349632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI0ODQ3MzM5MF5BMl5BanBnXkFtZTgwNTg0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Sam Sheridan at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

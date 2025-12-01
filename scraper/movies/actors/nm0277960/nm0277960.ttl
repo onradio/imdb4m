@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0277960/> a schema:Person ;
+    schema:name "Natalie Finland" ;
+    schema:url <https://www.imdb.com/name/nm0277960/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Natalie Finland. Actress: Labyrinth. Natalie Finland is known for Labyrinth (1986) and So You Want to be Top? (1983)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091369/> ;    # Labyrinth
+
+
+    schema:video <https://www.imdb.com/video/vi3636961561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Labyrinth (1986)
+<https://www.imdb.com/title/tt0091369/> a schema:Movie ;
+    schema:name "Labyrinth" ;
+    schema:url <https://www.imdb.com/title/tt0091369/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0277960/> ;
+        schema:characterName "Fairy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3636961561/> a schema:VideoObject ;
+        schema:name "Labyrinth: Blu-Ray" ;
+        schema:description "Trailer for Labyrinth" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3636961561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjNhMDdjYTEtNjc4Ni00OWQ5LWFiNGUtNTdjODgzNmE1MTY3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M29S"^^xsd:duration ;
+        schema:uploadDate "2012-02-04T06:18:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

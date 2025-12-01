@@ -1,0 +1,224 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4156656/> a schema:Person ;
+    schema:name "Adam Brown" ;
+    schema:url <https://www.imdb.com/name/nm4156656/> ;
+    schema:birthDate "1980-05-29"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:description "Adam Brown. Actor: The Hobbit: An Unexpected Journey. Adam is an actor and comedy writer. He is best known for playing 'Ori' in The Hobbit (Warner Brothers), directed by Peter Jackson as well as Jack Sparrow's new recruit in Pirates Of The Caribbean: Dead Men Tale No Tales (Disney). Recently, he appeared on stage alongside Ian McKellen in Mother Goose (West End/UK Tour) and Iolanthe (West End) for the English..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDk2ZTkwN2YtM2I0Yi00MjgyLThlOTYtMWVlNDJiNWY2NTlhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0903624/>,    # The Hobbit: An Unexpected Journey
+                       <https://www.imdb.com/title/tt1170358/>,    # The Hobbit: The Desolation of Smaug
+                       <https://www.imdb.com/title/tt1790809/>,    # Pirates of the Caribbean: Dead Men Tell No Tales
+                       <https://www.imdb.com/title/tt2310332/>,    # The Hobbit: The Battle of the Five Armies
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6257970/>,    # The End of the F***ing World
+                       <https://www.imdb.com/title/tt6679640/>,    # The Bunker
+                       <https://www.imdb.com/title/tt4733640/>,    # The Limehouse Golem
+                       <https://www.imdb.com/title/tt5303584/>,    # The Bunker
+                       <https://www.imdb.com/title/tt7941046/>,    # The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London
+                       <https://www.imdb.com/title/tt2996108/> ; # Minimus
+
+
+    schema:video <https://www.imdb.com/video/vi2707078169/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4156656/mediaviewer/rm4168044032/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm3351530241/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm2375602432/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm949398784/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm523840000/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm3097022720/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm1739336192/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm4279761152/>,
+                 <https://www.imdb.com/name/nm4156656/mediaviewer/rm1978388480/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0903624/> a schema:Movie ;
+    schema:name "The Hobbit: An Unexpected Journey" ;
+    schema:url <https://www.imdb.com/title/tt0903624/> .
+
+<https://www.imdb.com/title/tt1170358/> a schema:Movie ;
+    schema:name "The Hobbit: The Desolation of Smaug" ;
+    schema:url <https://www.imdb.com/title/tt1170358/> .
+
+<https://www.imdb.com/title/tt1790809/> a schema:Movie ;
+    schema:name "Pirates of the Caribbean: Dead Men Tell No Tales" ;
+    schema:url <https://www.imdb.com/title/tt1790809/> .
+
+<https://www.imdb.com/title/tt2310332/> a schema:Movie ;
+    schema:name "The Hobbit: The Battle of the Five Armies" ;
+    schema:url <https://www.imdb.com/title/tt2310332/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The End of the F***ing World (2017)
+<https://www.imdb.com/title/tt6257970/> a schema:Movie ;
+    schema:name "The End of the F***ing World" ;
+    schema:url <https://www.imdb.com/title/tt6257970/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "Kyle"
+    ] .
+
+# The Bunker (2017)
+<https://www.imdb.com/title/tt6679640/> a schema:Movie ;
+    schema:name "The Bunker" ;
+    schema:url <https://www.imdb.com/title/tt6679640/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "John"
+    ] .
+
+# The Limehouse Golem (2016)
+<https://www.imdb.com/title/tt4733640/> a schema:Movie ;
+    schema:name "The Limehouse Golem" ;
+    schema:url <https://www.imdb.com/title/tt4733640/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "Mr Gerrard"
+    ] .
+
+# The Bunker (2016)
+<https://www.imdb.com/title/tt5303584/> a schema:Movie ;
+    schema:name "The Bunker" ;
+    schema:url <https://www.imdb.com/title/tt5303584/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "John"
+    ] .
+
+# The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London (2013)
+<https://www.imdb.com/title/tt7941046/> a schema:Movie ;
+    schema:name "The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London" ;
+    schema:url <https://www.imdb.com/title/tt7941046/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "Self"
+    ] .
+
+# Minimus (2013)
+<https://www.imdb.com/title/tt2996108/> a schema:Movie ;
+    schema:name "Minimus" ;
+    schema:url <https://www.imdb.com/title/tt2996108/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4156656/> ;
+        schema:characterName "Minimus"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2707078169/> a schema:VideoObject ;
+        schema:name "McKellen: Playing the Part" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2707078169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjE2NDgxZWYtMWRiOC00MTMyLWIwNGItOTNiMzZmYjM4NTBmXkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT1M4S"^^xsd:duration ;
+        schema:uploadDate "2019-08-06T17:25:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDk2ZTkwN2YtM2I0Yi00MjgyLThlOTYtMWVlNDJiNWY2NTlhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk2ZTkwN2YtM2I0Yi00MjgyLThlOTYtMWVlNDJiNWY2NTlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Brown" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm4168044032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzljMDVlODQtODg5My00ZTlmLTg0MmQtMTNjMmE3YWQ4OTFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Brown in Pirates of the Caribbean: Salazar's Revenge (2017)" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "813"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm3351530241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmJkY2M0NjMtOWU3ZS00N2YyLTg0ZWEtYmQ2ZTZhMWEyMGIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Brown" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm2375602432/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjllNTU5M2YtOGI5MC00OGVmLTgwMzItZWI0NTBiYjk1ZWNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Brown" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "436"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm949398784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NTYwNTY1MV5BMl5BanBnXkFtZTcwMDIxOTA5OA@@._V1_.jpg> ;
+    schema:caption "Cate Blanchett, Peter Jackson, Zane Weiner, Ian McKellen, Richard Armitage, Jed Brophy, John Callen, Carolynne Cunningham, Toby Emmerich, Martin Freeman, Mark Hadlow, Peter Hambleton, William Kircher, Sylvester McCoy, Graham McTavish, James Nesbitt, Dean O'Gorman, Andy Serkis, Stephen Hunter, Carolyn Blackwood, Aidan Turner, and Adam Brown at an event for The Hobbit: An Unexpected Journey (2012)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm523840000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQxNjQ3OWYtNTYzMy00ZTNlLTlkNzItNWQ4YTAwMmVmODZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Brown in Pirates of the Caribbean: Salazar's Revenge (2017)" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "768"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm3097022720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWE5ODgzNGItNjlkMi00MmQyLWEzYzMtYjhlMjNmODhlNjc4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Peter Jackson and Adam Brown" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "219"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm1739336192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNTgyNTY5Nl5BMl5BanBnXkFtZTgwODEwNjMzMjI@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Stephen Graham, Martin Klebba, Kevin McNally, Kaya Scodelario, Danny Kirrane, Salomon Passariello, Brenton Thwaites, Adam Brown, and Leandro Arturo Carrasquero in Pirates of the Caribbean: Salazar's Revenge (2017)" ;
+    schema:height "858"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm4279761152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc1NjYwODIxNV5BMl5BanBnXkFtZTgwMjkzNDM2MzE@._V1_.jpg> ;
+    schema:caption "Jed Brophy, John Callen, Martin Freeman, Peter Hambleton, William Kircher, James Nesbitt, Dean O'Gorman, Ken Stott, Stephen Hunter, Aidan Turner, and Adam Brown in The Hobbit: The Battle of the Five Armies (2014)" ;
+    schema:height "1352"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4156656/mediaviewer/rm1978388480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMyMjE5Nzk2N15BMl5BanBnXkFtZTgwOTk2MDM3MDE@._V1_.jpg> ;
+    schema:caption "Richard Armitage, John Callen, Peter Hambleton, William Kircher, Graham McTavish, James Nesbitt, Dean O'Gorman, Stephen Hunter, Luke Evans, Aidan Turner, and Adam Brown in The Hobbit: The Desolation of Smaug (2013)" ;
+    schema:height "1138"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm4156656/>
+    schema:sameAs <https://www.instagram.com/brownads/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

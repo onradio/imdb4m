@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4202593/> a schema:Person ;
+    schema:name "Li Chak" ;
+    schema:url <https://www.imdb.com/name/nm4202593/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Li Chak. Actor: Ip Man. Li Chak is known for Ip Man (2008) and Ip Man 2 (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1386932/>,    # Ip Man 2
+                       <https://www.imdb.com/title/tt1220719/> . # Ip Man
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ip Man 2 (2010)
+<https://www.imdb.com/title/tt1386932/> a schema:Movie ;
+    schema:name "Ip Man 2" ;
+    schema:url <https://www.imdb.com/title/tt1386932/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4202593/> ;
+        schema:characterName "Yip Chun"
+    ] .
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4202593/> ;
+        schema:characterName "Zhun"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

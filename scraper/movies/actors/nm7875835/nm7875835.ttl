@@ -1,0 +1,171 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7875835/> a schema:Person ;
+    schema:name "Quincy Fouse" ;
+    schema:url <https://www.imdb.com/name/nm7875835/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Quincy Fouse. Actor: Logan. Quincy was born August 26, 1997 in Jacksonville, FL. He is an actor well known for his role as the young vampire named MG in The CW's series Legacies (2018-2021), which, in February 2021, has been renewed for a fourth season. He is also known for his roles in The Goldbergs (2016-2018), Bosch (2018), Doubt (2017), Logan (2017), The Kicker (TV Movie, 2016), and K.C. Undercover..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTA2ZTIyMTctMDAzNS00OTk4LWJjZmItZmJlN2FkMmU2Yjk5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.77"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9¾″ (1.77 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3315342/>,    # Logan
+                       <https://www.imdb.com/title/tt3502248/>,    # Bosch
+                       <https://www.imdb.com/title/tt3598030/>,    # K.C. Undercover
+                       <https://www.imdb.com/title/tt8103070/>,    # Legacies
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10507502/>,    # Soul Fro: I Know
+                       <https://www.imdb.com/title/tt7661368/>,    # All About the Washingtons
+                       <https://www.imdb.com/title/tt2712740/>,    # The Goldbergs
+                       <https://www.imdb.com/title/tt4447390/>,    # Doubt
+                       <https://www.imdb.com/title/tt5511490/> ; # The Kicker
+
+
+    schema:video <https://www.imdb.com/video/vi3129328409/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7875835/mediaviewer/rm3718399232/>,
+                 <https://www.imdb.com/name/nm7875835/mediaviewer/rm3366077696/>,
+                 <https://www.imdb.com/name/nm7875835/mediaviewer/rm3649242112/>,
+                 <https://www.imdb.com/name/nm7875835/mediaviewer/rm4221715712/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3315342/> a schema:Movie ;
+    schema:name "Logan" ;
+    schema:url <https://www.imdb.com/title/tt3315342/> .
+
+<https://www.imdb.com/title/tt3502248/> a schema:Movie ;
+    schema:name "Bosch" ;
+    schema:url <https://www.imdb.com/title/tt3502248/> .
+
+<https://www.imdb.com/title/tt3598030/> a schema:Movie ;
+    schema:name "K.C. Undercover" ;
+    schema:url <https://www.imdb.com/title/tt3598030/> .
+
+<https://www.imdb.com/title/tt8103070/> a schema:Movie ;
+    schema:name "Legacies" ;
+    schema:url <https://www.imdb.com/title/tt8103070/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Soul Fro: I Know (2019)
+<https://www.imdb.com/title/tt10507502/> a schema:Movie ;
+    schema:name "Soul Fro: I Know" ;
+    schema:url <https://www.imdb.com/title/tt10507502/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7875835/> ;
+        schema:characterName ""
+    ] .
+
+# All About the Washingtons (2018)
+<https://www.imdb.com/title/tt7661368/> a schema:Movie ;
+    schema:name "All About the Washingtons" ;
+    schema:url <https://www.imdb.com/title/tt7661368/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7875835/> ;
+        schema:characterName "Malik"
+    ] .
+
+# The Goldbergs (2016)
+<https://www.imdb.com/title/tt2712740/> a schema:Movie ;
+    schema:name "The Goldbergs" ;
+    schema:url <https://www.imdb.com/title/tt2712740/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7875835/> ;
+        schema:characterName "Taz Money"
+    ] .
+
+# Doubt (2017)
+<https://www.imdb.com/title/tt4447390/> a schema:Movie ;
+    schema:name "Doubt" ;
+    schema:url <https://www.imdb.com/title/tt4447390/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7875835/> ;
+        schema:characterName "Heyward Taylor"
+    ] .
+
+# The Kicker (2016)
+<https://www.imdb.com/title/tt5511490/> a schema:Movie ;
+    schema:name "The Kicker" ;
+    schema:url <https://www.imdb.com/title/tt5511490/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7875835/> ;
+        schema:characterName "Elden Pugh-Thorkelson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3129328409/> a schema:VideoObject ;
+        schema:name "Season 4 Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3129328409/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWRjMjZjNmYtN2MwOS00ZDY5LWExMzEtYTM4YTc5MmUxMjk2XkEyXkFqcGdeQWFuaW5vc2M@._V1_.jpg" ;
+        schema:duration "PT30S"^^xsd:duration ;
+        schema:uploadDate "2021-10-20T10:40:32Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTA2ZTIyMTctMDAzNS00OTk4LWJjZmItZmJlN2FkMmU2Yjk5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTA2ZTIyMTctMDAzNS00OTk4LWJjZmItZmJlN2FkMmU2Yjk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Quincy Fouse in Logan (2017)" ;
+    schema:height "1111"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7875835/mediaviewer/rm3718399232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2ExYmU1ODktMGExYS00MGNhLTk1ZjEtYjYyZWU4NTBiYmJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eriq La Salle, Elise Neal, and Quincy Fouse in Logan (2017)" ;
+    schema:height "1111"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7875835/mediaviewer/rm3366077696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ0ODg1YzMtMzEzOC00YzkzLTgxMWEtYmQ5NTMxNWMwYWRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick Stewart, Eriq La Salle, Elise Neal, Hugh Jackman, Dafne Keen, and Quincy Fouse in Logan (2017)" ;
+    schema:height "1111"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7875835/mediaviewer/rm3649242112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODE3NDliNGItOTVmYi00M2JkLThkNzMtNzdmYTEzZDE2ZTUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Stephen Tobolowsky, AJ Michalka, Sean Giambrone, Kenny Ridwan, and Quincy Fouse in The Goldbergs (2013)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7875835/mediaviewer/rm4221715712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTA2ZTIyMTctMDAzNS00OTk4LWJjZmItZmJlN2FkMmU2Yjk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Quincy Fouse in Logan (2017)" ;
+    schema:height "1111"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7875835/>
+    schema:sameAs <https://www.instagram.com/quincyfouse/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

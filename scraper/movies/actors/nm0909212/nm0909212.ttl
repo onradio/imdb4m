@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0909212/> a schema:Person ;
+    schema:name "Gerald Walling" ;
+    schema:url <https://www.imdb.com/name/nm0909212/> ;
+    schema:birthDate "1928-06-26"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gerald Walling. Actor: The Blues Brothers. Gerald Walling was born on 26 June 1928 in Chicago, Illinois, USA. He was an actor, known for The Blues Brothers (1980). He died on 25 November 2011 in Clarkston, Michigan, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chicago, Illinois, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0080455/> .    # The Blues Brothers
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Blues Brothers (1980)
+<https://www.imdb.com/title/tt0080455/> a schema:Movie ;
+    schema:name "The Blues Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0080455/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909212/> ;
+        schema:characterName "Prison Guard"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

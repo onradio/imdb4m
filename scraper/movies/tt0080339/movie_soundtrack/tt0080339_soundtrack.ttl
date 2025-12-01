@@ -1,0 +1,120 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0080339/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Stayin' Alive" ;
+        schema:byArtist <https://www.imdb.com/name/nm1397320/> ; # The Bee Gees
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Stayin' Alive" ;
+            schema:author <https://www.imdb.com/name/nm0002956/>, # Barry Gibb
+                       <https://www.imdb.com/name/nm0316471/>, # Robin Gibb
+                       <https://www.imdb.com/name/nm0316465/> # Maurice Gibb
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Theme From Jaws" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Theme From Jaws" ;
+            schema:author <https://www.imdb.com/name/nm0002354/> # John Williams
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Notre Dame Victory March" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Notre Dame Victory March" ;
+            schema:author <https://www.imdb.com/name/nm1121637/>, # Michael J. Shea
+                       <https://www.imdb.com/name/nm1123330/> # John F. Shea
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "River of Jordan" ;
+        schema:byArtist <https://www.imdb.com/name/nm0666309/> ; # Lorna Patterson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "River of Jordan" ;
+            schema:author <https://www.imdb.com/name/nm0946534/> # Peter Yarrow
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Everything's Coming Up Roses" ;
+        schema:byArtist <https://www.imdb.com/name/nm0581062/> ; # Ethel Merman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Everything's Coming Up Roses" ;
+            schema:author <https://www.imdb.com/name/nm0814227/>, # Stephen Sondheim
+                       <https://www.imdb.com/name/nm0006312/> # Jule Styne
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Respect" ;
+        schema:byArtist <https://www.imdb.com/name/nm0569581/> ; # Maureen McGovern
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Respect" ;
+            schema:author <https://www.imdb.com/name/nm0714727/> # Otis Redding
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "1812 Overture" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "1812 Overture" ;
+            schema:author <https://www.imdb.com/name/nm0006318/> # Pyotr Ilyich Tchaikovsky
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002354/> a schema:Person ;
+    schema:name "John Williams" .
+<https://www.imdb.com/name/nm0002956/> a schema:Person ;
+    schema:name "Barry Gibb" .
+<https://www.imdb.com/name/nm0006312/> a schema:Person ;
+    schema:name "Jule Styne" .
+<https://www.imdb.com/name/nm0006318/> a schema:Person ;
+    schema:name "Pyotr Ilyich Tchaikovsky" .
+<https://www.imdb.com/name/nm0316465/> a schema:Person ;
+    schema:name "Maurice Gibb" .
+<https://www.imdb.com/name/nm0316471/> a schema:Person ;
+    schema:name "Robin Gibb" .
+<https://www.imdb.com/name/nm0569581/> a schema:Person ;
+    schema:name "Maureen McGovern" .
+<https://www.imdb.com/name/nm0581062/> a schema:Person ;
+    schema:name "Ethel Merman" .
+<https://www.imdb.com/name/nm0666309/> a schema:Person ;
+    schema:name "Lorna Patterson" .
+<https://www.imdb.com/name/nm0714727/> a schema:Person ;
+    schema:name "Otis Redding" .
+<https://www.imdb.com/name/nm0814227/> a schema:Person ;
+    schema:name "Stephen Sondheim" .
+<https://www.imdb.com/name/nm0946534/> a schema:Person ;
+    schema:name "Peter Yarrow" .
+<https://www.imdb.com/name/nm1121637/> a schema:Person ;
+    schema:name "Michael J. Shea" .
+<https://www.imdb.com/name/nm1123330/> a schema:Person ;
+    schema:name "John F. Shea" .
+<https://www.imdb.com/name/nm1397320/> a schema:Person ;
+    schema:name "The Bee Gees" .
+# ==============================================================================

@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0381061/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "You Know my Name" ;
+        schema:byArtist <https://www.imdb.com/name/nm0180225/> ; # Chris Cornell
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You Know my Name" ;
+            schema:composer <https://www.imdb.com/name/nm0003417/> ; # David Arnold
+            schema:lyricist <https://www.imdb.com/name/nm0180225/> # Chris Cornell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Linstead Market" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "James Bond Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "James Bond Theme" ;
+            schema:composer <https://www.imdb.com/name/nm0635578/> # Monty Norman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Name's Bond... James Bond" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Name's Bond... James Bond" ;
+            schema:composer <https://www.imdb.com/name/nm0635578/>, # Monty Norman
+                        <https://www.imdb.com/name/nm0003417/> # David Arnold
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003417/> a schema:Person ;
+    schema:name "David Arnold" .
+<https://www.imdb.com/name/nm0180225/> a schema:Person ;
+    schema:name "Chris Cornell" .
+<https://www.imdb.com/name/nm0635578/> a schema:Person ;
+    schema:name "Monty Norman" .
+# ==============================================================================

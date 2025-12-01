@@ -1,0 +1,156 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0612155/> a schema:Person ;
+    schema:name "Herb Muller" ;
+    schema:url <https://www.imdb.com/name/nm0612155/> ;
+    schema:birthDate "1928-03-31"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Murray Herbert Muller" ;
+    schema:description "Herb Muller. Actor: Jaws 2. Herb Muller was born on 31 March 1928 in Brooklyn, New York, USA. He was an actor, known for Jaws 2 (1978), The Sandlot Kids (1993) and V.I. Warshawski (1991). He died on 18 May 1995 in Los Angeles, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0077766/>,    # Jaws 2
+                       <https://www.imdb.com/title/tt0086734/>,    # Hunter
+                       <https://www.imdb.com/title/tt0108037/>,    # The Sandlot
+                       <https://www.imdb.com/title/tt0108551/>,    # What's Love Got to Do with It
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0103404/>,    # Down the Shore
+                       <https://www.imdb.com/title/tt0103184/>,    # V.I. Warshawski
+                       <https://www.imdb.com/title/tt0090466/>,    # L.A. Law
+                       <https://www.imdb.com/title/tt0096099/>,    # Shootdown
+                       <https://www.imdb.com/title/tt0096161/>,    # Split Decisions
+                       <https://www.imdb.com/title/tt0090981/>,    # Dutch Treat
+                       <https://www.imdb.com/title/tt0120930/> ; # TV's Bloopers & Practical Jokes
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0612155/mediaviewer/rm2568055808/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0077766/> a schema:Movie ;
+    schema:name "Jaws 2" ;
+    schema:url <https://www.imdb.com/title/tt0077766/> .
+
+<https://www.imdb.com/title/tt0086734/> a schema:Movie ;
+    schema:name "Hunter" ;
+    schema:url <https://www.imdb.com/title/tt0086734/> .
+
+<https://www.imdb.com/title/tt0108037/> a schema:Movie ;
+    schema:name "The Sandlot" ;
+    schema:url <https://www.imdb.com/title/tt0108037/> .
+
+<https://www.imdb.com/title/tt0108551/> a schema:Movie ;
+    schema:name "What's Love Got to Do with It" ;
+    schema:url <https://www.imdb.com/title/tt0108551/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Down the Shore (1992)
+<https://www.imdb.com/title/tt0103404/> a schema:Movie ;
+    schema:name "Down the Shore" ;
+    schema:url <https://www.imdb.com/title/tt0103404/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "The Laughing Man"
+    ] .
+
+# V.I. Warshawski (1991)
+<https://www.imdb.com/title/tt0103184/> a schema:Movie ;
+    schema:name "V.I. Warshawski" ;
+    schema:url <https://www.imdb.com/title/tt0103184/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "Contreras"
+    ] .
+
+# L.A. Law (1989)
+<https://www.imdb.com/title/tt0090466/> a schema:Movie ;
+    schema:name "L.A. Law" ;
+    schema:url <https://www.imdb.com/title/tt0090466/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "Fat Morty"
+    ] .
+
+# Shootdown (1988)
+<https://www.imdb.com/title/tt0096099/> a schema:Movie ;
+    schema:name "Shootdown" ;
+    schema:url <https://www.imdb.com/title/tt0096099/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "News Vendor"
+    ] .
+
+# Split Decisions (1988)
+<https://www.imdb.com/title/tt0096161/> a schema:Movie ;
+    schema:name "Split Decisions" ;
+    schema:url <https://www.imdb.com/title/tt0096161/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "Mr. 'D'"
+    ] .
+
+# Dutch Treat (1987)
+<https://www.imdb.com/title/tt0090981/> a schema:Movie ;
+    schema:name "Dutch Treat" ;
+    schema:url <https://www.imdb.com/title/tt0090981/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "Bailiff"
+    ] .
+
+# TV's Bloopers & Practical Jokes (1984)
+<https://www.imdb.com/title/tt0120930/> a schema:Movie ;
+    schema:name "TV's Bloopers & Practical Jokes" ;
+    schema:url <https://www.imdb.com/title/tt0120930/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0612155/> ;
+        schema:characterName "Mechanic"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0612155/mediaviewer/rm2568055808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOThmNjU3NjAtNWMxMy00NzBhLTllMjUtNjkwOTlkMTk4MzRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roy Scheider and Herb Muller in Jaws 2 (1978)" ;
+    schema:height "816"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

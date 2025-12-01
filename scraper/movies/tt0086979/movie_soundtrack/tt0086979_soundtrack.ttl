@@ -1,0 +1,126 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086979/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "It's the Same Old Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm1763087/> ; # The Four Tops
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It's the Same Old Song" ;
+            schema:author <https://www.imdb.com/name/nm0390595/>, # Eddie Holland
+                       <https://www.imdb.com/name/nm0236541/>, # Lamont Dozier
+                       <https://www.imdb.com/name/nm0390622/> # Brian Holland
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Louie Louie" ;
+        schema:byArtist <https://www.imdb.com/name/nm1731228/> ; # Toots & The Maytals
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Louie Louie" ;
+            schema:author <https://www.imdb.com/name/nm1807606/> # Richard Berry
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Lady in Red" ;
+        schema:byArtist <https://www.imdb.com/name/nm1288160/> ; # Xavier Cugat and His Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Lady in Red" ;
+            schema:author <https://www.imdb.com/name/nm0228930/>, # Mort Dixon
+                       <https://www.imdb.com/name/nm0943034/> # Allie Wrubel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rogaciano" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "He'll Have To Go" ;
+        schema:producer <https://www.imdb.com/name/nm0053440/> ; # Murri Barber
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "He'll Have To Go" ;
+            schema:author <https://www.imdb.com/name/nm0021449/>, # Joe Allison
+                       <https://www.imdb.com/name/nm10988274/> # Audrey Allison
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "El Sueno" ;
+        schema:byArtist <https://www.imdb.com/name/nm1869489/> ; # Johnny Ventura
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Anahi" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sweet Dreams" ;
+        schema:byArtist <https://www.imdb.com/name/nm0007177/> ; # Patsy Cline
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sweet Dreams" ;
+            schema:author <https://www.imdb.com/name/nm1104210/> # Don Gibson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'm a Believer" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'm a Believer" ;
+            schema:author <https://www.imdb.com/name/nm0004871/> # Neil Diamond
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004871/> a schema:Person ;
+    schema:name "Neil Diamond" .
+<https://www.imdb.com/name/nm0007177/> a schema:Person ;
+    schema:name "Patsy Cline" .
+<https://www.imdb.com/name/nm0021449/> a schema:Person ;
+    schema:name "Joe Allison" .
+<https://www.imdb.com/name/nm0053440/> a schema:Person ;
+    schema:name "Murri Barber" .
+<https://www.imdb.com/name/nm0228930/> a schema:Person ;
+    schema:name "Mort Dixon" .
+<https://www.imdb.com/name/nm0236541/> a schema:Person ;
+    schema:name "Lamont Dozier" .
+<https://www.imdb.com/name/nm0390595/> a schema:Person ;
+    schema:name "Eddie Holland" .
+<https://www.imdb.com/name/nm0390622/> a schema:Person ;
+    schema:name "Brian Holland" .
+<https://www.imdb.com/name/nm0943034/> a schema:Person ;
+    schema:name "Allie Wrubel" .
+<https://www.imdb.com/name/nm10988274/> a schema:Person ;
+    schema:name "Audrey Allison" .
+<https://www.imdb.com/name/nm1104210/> a schema:Person ;
+    schema:name "Don Gibson" .
+<https://www.imdb.com/name/nm1288160/> a schema:Person ;
+    schema:name "Xavier Cugat and His Orchestra" .
+<https://www.imdb.com/name/nm1731228/> a schema:Person ;
+    schema:name "Toots & The Maytals" .
+<https://www.imdb.com/name/nm1763087/> a schema:Person ;
+    schema:name "The Four Tops" .
+<https://www.imdb.com/name/nm1807606/> a schema:Person ;
+    schema:name "Richard Berry" .
+<https://www.imdb.com/name/nm1869489/> a schema:Person ;
+    schema:name "Johnny Ventura" .
+# ==============================================================================

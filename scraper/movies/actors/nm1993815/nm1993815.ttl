@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1993815/> a schema:Person ;
+    schema:name "Shaun Patten" ;
+    schema:url <https://www.imdb.com/name/nm1993815/> ;
+    schema:jobTitle "Additional Crew", "Art Department", "Special Effects" ;
+    schema:description "Shaun Patten. Special Effects: Elysium. Shaun Patten is known for Elysium (2013), The Hobbit: An Unexpected Journey (2012) and Mary and Max (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0978762/> .    # Mary and Max
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mary and Max (2009)
+<https://www.imdb.com/title/tt0978762/> a schema:Movie ;
+    schema:name "Mary and Max" ;
+    schema:url <https://www.imdb.com/title/tt0978762/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1993815/> ;
+        schema:characterName "Frankston Icebreaker Two"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

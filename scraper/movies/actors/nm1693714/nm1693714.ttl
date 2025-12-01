@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1693714/> a schema:Person ;
+    schema:name "Igor Gnevashev" ;
+    schema:url <https://www.imdb.com/name/nm1693714/> ;
+    schema:birthDate "1936-10-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Igor Gnevashev. Actor: Come and See. Igor Gnevashev was born on 19 October 1936. He was an actor, known for Come and See (1985), 72 metra (2004) and Pobeg na kray sveta (1991). He died on 25 November 2016." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0401089/>,    # 72 metra
+                       <https://www.imdb.com/title/tt0203217/>,    # Ya - Russkiy soldat
+                       <https://www.imdb.com/title/tt5841744/>,    # Pobeg na kray sveta
+                       <https://www.imdb.com/title/tt0093024/>,    # Filyor
+                       <https://www.imdb.com/title/tt0091251/>,    # Come and See
+                       <https://www.imdb.com/title/tt0171517/> . # Mechtat i zhit
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 72 metra (2004)
+<https://www.imdb.com/title/tt0401089/> a schema:Movie ;
+    schema:name "72 metra" ;
+    schema:url <https://www.imdb.com/title/tt0401089/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName ""
+    ] .
+
+# Ya - Russkiy soldat (1995)
+<https://www.imdb.com/title/tt0203217/> a schema:Movie ;
+    schema:name "Ya - Russkiy soldat" ;
+    schema:url <https://www.imdb.com/title/tt0203217/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName ""
+    ] .
+
+# Pobeg na kray sveta (1991)
+<https://www.imdb.com/title/tt5841744/> a schema:Movie ;
+    schema:name "Pobeg na kray sveta" ;
+    schema:url <https://www.imdb.com/title/tt5841744/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName ""
+    ] .
+
+# Filyor (1988)
+<https://www.imdb.com/title/tt0093024/> a schema:Movie ;
+    schema:name "Filyor" ;
+    schema:url <https://www.imdb.com/title/tt0093024/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName ""
+    ] .
+
+# Come and See (1985)
+<https://www.imdb.com/title/tt0091251/> a schema:Movie ;
+    schema:name "Come and See" ;
+    schema:url <https://www.imdb.com/title/tt0091251/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName "Yankel"
+    ] .
+
+# Mechtat i zhit (1975)
+<https://www.imdb.com/title/tt0171517/> a schema:Movie ;
+    schema:name "Mechtat i zhit" ;
+    schema:url <https://www.imdb.com/title/tt0171517/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1693714/> ;
+        schema:characterName "(as I. Gnevashev)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

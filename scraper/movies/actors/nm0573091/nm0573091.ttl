@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0573091/> a schema:Person ;
+    schema:name "Tony McMahon" ;
+    schema:url <https://www.imdb.com/name/nm0573091/> ;
+    schema:jobTitle "Actor", "Transportation Department" ;
+    schema:description "Tony McMahon. Actor: Lock, Stock and Two Smoking Barrels. Tony McMahon is known for Lock, Stock and Two Smoking Barrels (1998), Woman in Gold (2015) and The Knock (1994)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0202644/>,    # Underground
+                       <https://www.imdb.com/title/tt0120735/>,    # Lock, Stock and Two Smoking Barrels
+                       <https://www.imdb.com/title/tt0155436/>,    # The Knock
+                       <https://www.imdb.com/title/tt0192756/> ; # The Visit
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0573091/mediaviewer/rm2902110976/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Underground (1998)
+<https://www.imdb.com/title/tt0202644/> a schema:Movie ;
+    schema:name "Underground" ;
+    schema:url <https://www.imdb.com/title/tt0202644/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0573091/> ;
+        schema:characterName "Gary Watts"
+    ] .
+
+# Lock, Stock and Two Smoking Barrels (1998)
+<https://www.imdb.com/title/tt0120735/> a schema:Movie ;
+    schema:name "Lock, Stock and Two Smoking Barrels" ;
+    schema:url <https://www.imdb.com/title/tt0120735/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0573091/> ;
+        schema:characterName "John"
+    ] .
+
+# The Knock (1997)
+<https://www.imdb.com/title/tt0155436/> a schema:Movie ;
+    schema:name "The Knock" ;
+    schema:url <https://www.imdb.com/title/tt0155436/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0573091/> ;
+        schema:characterName "1st Villain"
+    ] .
+
+# The Visit (1992)
+<https://www.imdb.com/title/tt0192756/> a schema:Movie ;
+    schema:name "The Visit" ;
+    schema:url <https://www.imdb.com/title/tt0192756/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0573091/> ;
+        schema:characterName "Man in pub"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0573091/mediaviewer/rm2902110976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2MDAyNTkzOV5BMl5BanBnXkFtZTcwMDE5ODQwNw@@._V1_.jpg> ;
+    schema:caption "Ronnie Fox, Frank Harper, Tony McMahon, and Steve Sweeney in Lock, Stock and Two Smoking Barrels (1998)" ;
+    schema:height "391"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

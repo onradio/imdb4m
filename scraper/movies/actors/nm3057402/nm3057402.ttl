@@ -1,0 +1,153 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3057402/> a schema:Person ;
+    schema:name "Bee Vang" ;
+    schema:url <https://www.imdb.com/name/nm3057402/> ;
+    schema:birthDate "1991-11-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Editorial Department", "Writer" ;
+    schema:description "Bee Vang. Actor: Gran Torino. Bee Vang was born on 4 November 1991 in Fresno, California, USA. He is an actor and writer, known for Gran Torino (2008), Sunset on Dawn/Kho Neeg and Comisery (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTg2N2QxN2UtNmU4MS00OTUwLWFjNzctM2Y2Y2M2MjcyNTdmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Fresno, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.68"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6″ (1.68 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9875580/>,    # Thao Does Walt: Lost Scenes from Gran Torino
+                       <https://www.imdb.com/title/tt1205489/> ; # Gran Torino
+
+
+    schema:video <https://www.imdb.com/video/vi517604121/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3057402/mediaviewer/rm47545601/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm4086481921/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm1449252097/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm48007680/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm1365366017/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm4260660993/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm4277438209/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm748648192/>,
+                 <https://www.imdb.com/name/nm3057402/mediaviewer/rm1166027264/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Thao Does Walt: Lost Scenes from Gran Torino (2010)
+<https://www.imdb.com/title/tt9875580/> a schema:Movie ;
+    schema:name "Thao Does Walt: Lost Scenes from Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt9875580/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3057402/> ;
+        schema:characterName "Thao"
+    ] .
+
+# Gran Torino (2008)
+<https://www.imdb.com/title/tt1205489/> a schema:Movie ;
+    schema:name "Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt1205489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3057402/> ;
+        schema:characterName "Thao"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi517604121/> a schema:VideoObject ;
+        schema:name "Gran Torino music video" ;
+        schema:description "A music video for the song \"Gran Torino\" by Jamie Cullum, from the Gran Torino motion picture soundtrack." ;
+        schema:embedUrl <https://www.imdb.com/video/vi517604121/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ2OTE5MjQyM15BMl5BanBnXkFtZTgwNTc5ODIyMzE@._V1_.jpg" ;
+        schema:duration "PT4M31S"^^xsd:duration ;
+        schema:uploadDate "2009-01-06T17:01:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTg2N2QxN2UtNmU4MS00OTUwLWFjNzctM2Y2Y2M2MjcyNTdmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTg2N2QxN2UtNmU4MS00OTUwLWFjNzctM2Y2Y2M2MjcyNTdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bee Vang" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm47545601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDVmMTUzYWUtNjc4NC00ZThiLWEyMWUtMDlkMmMyOGViYzM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bee Vang" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm4086481921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5OTY2MjEtNTU0OS00OGFkLTk0MjItYzYzMTBiZDIxZGIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bee Vang" ;
+    schema:height "1277"^^xsd:integer ;
+    schema:width "1012"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm1449252097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGM4MGM0ZmMtYTI0OS00MWYxLThmZTYtOWQzNTcxMTAyMWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bee Vang" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm48007680/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyNjAyMzQwNV5BMl5BanBnXkFtZTcwNjcwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Bee Vang in Gran Torino (2008)" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "725"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm1365366017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDlmMDk1NTAtZjIwMC00NjMxLTgyNTktMTQ0MGQ5YmE5YTc2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bee Vang" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm4260660993/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjgwYzQzOTgtY2ZiYS00NTM3LTk2MTMtZmVmMGM3MDJmNTk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Bee Vang in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm4277438209/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTllNmVkNTYtMzQwYi00ZDRhLWExZmMtMjljOTNlODBiOGM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Bee Vang in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm748648192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2RjYTEwYWEtYWRjNi00NWZlLWI2MGMtYTBjZjRjMzBlZmJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Bee Vang in Gran Torino (2008)" ;
+    schema:height "556"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3057402/mediaviewer/rm1166027264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4ODc4MDQ2OV5BMl5BanBnXkFtZTgwNzg5OTQzMjI@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, Brooke Chia Thao, and Chee Thao in Gran Torino (2008)" ;
+    schema:height "1664"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

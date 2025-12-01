@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4853568/> a schema:Person ;
+    schema:name "Ayush Tandon" ;
+    schema:url <https://www.imdb.com/name/nm4853568/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ayush Tandon. Actor: Life of Pi. Ayush Tandon is known for Life of Pi (2012), Bajirao Mastani (2015) and 7 Khoon Maaf (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt15018264/>,    # She
+                       <https://www.imdb.com/title/tt5805424/>,    # harry
+                       <https://www.imdb.com/title/tt3735246/>,    # Bajirao Mastani
+                       <https://www.imdb.com/title/tt0454876/>,    # Life of Pi
+                       <https://www.imdb.com/title/tt1629376/> ; # 7 Khoon Maaf
+
+
+    schema:video <https://www.imdb.com/video/vi2646320921/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# She (2018)
+<https://www.imdb.com/title/tt15018264/> a schema:Movie ;
+    schema:name "She" ;
+    schema:url <https://www.imdb.com/title/tt15018264/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4853568/> ;
+        schema:characterName ""
+    ] .
+
+# harry (2016)
+<https://www.imdb.com/title/tt5805424/> a schema:Movie ;
+    schema:name "harry" ;
+    schema:url <https://www.imdb.com/title/tt5805424/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4853568/> ;
+        schema:characterName ""
+    ] .
+
+# Bajirao Mastani (2015)
+<https://www.imdb.com/title/tt3735246/> a schema:Movie ;
+    schema:name "Bajirao Mastani" ;
+    schema:url <https://www.imdb.com/title/tt3735246/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4853568/> ;
+        schema:characterName "Nana Saheb"
+    ] .
+
+# Life of Pi (2012)
+<https://www.imdb.com/title/tt0454876/> a schema:Movie ;
+    schema:name "Life of Pi" ;
+    schema:url <https://www.imdb.com/title/tt0454876/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4853568/> ;
+        schema:characterName "Pi Patel (11-12 Years)"
+    ] .
+
+# 7 Khoon Maaf (2011)
+<https://www.imdb.com/title/tt1629376/> a schema:Movie ;
+    schema:name "7 Khoon Maaf" ;
+    schema:url <https://www.imdb.com/title/tt1629376/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4853568/> ;
+        schema:characterName "Young Arun"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2646320921/> a schema:VideoObject ;
+        schema:name "Winner: Best Director" ;
+        schema:description "A young man who survives a disaster at sea is hurtled into an epic journey of adventure and discovery. While cast away, he forms an unexpected connection with another survivor ... a fearsome Bengal tiger." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2646320921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjAxMDA3NTkwMV5BMl5BanBnXkFtZTcwMTkyMzQ3OA@@._V1_.jpg" ;
+        schema:duration "PT2M38S"^^xsd:duration ;
+        schema:uploadDate "2012-11-16T14:59:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

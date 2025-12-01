@@ -1,0 +1,158 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0596520/> a schema:Person ;
+    schema:name "Gerald R. Molen" ;
+    schema:url <https://www.imdb.com/name/nm0596520/> ;
+    schema:birthDate "1935-01-06"^^xsd:date ;
+    schema:jobTitle "Producer", "Production Manager", "Transportation Department" ;
+    schema:alternateName "Gerald Robert Molen" ;
+    schema:description "Gerald R. Molen. Producer: Rain Man. Gerald R. Molen was born on 6 January 1935 in Great Falls, Montana, USA. He is a producer and production manager, known for Rain Man (1988), Jurassic Park (1993) and Schindler's List (1993)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTExMTQ5NTI0MTFeQTJeQWpwZ15BbWU3MDU5NTQ2MTg@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Great Falls, Montana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0095953/>,    # Rain Man
+                       <https://www.imdb.com/title/tt0107290/>,    # Jurassic Park
+                       <https://www.imdb.com/title/tt0108052/>,    # Schindler's List
+                       <https://www.imdb.com/title/tt0119567/>,    # The Lost World: Jurassic Park
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0264464/>,    # Catch Me If You Can
+                       <https://www.imdb.com/title/tt0250371/>,    # The Other Side of Heaven
+                       <https://www.imdb.com/title/tt0118607/>,    # Amistad
+                       <https://www.imdb.com/title/tt0099371/> ; # Days of Thunder
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "8 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1846975001/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0596520/mediaviewer/rm1078984193/>,
+                 <https://www.imdb.com/name/nm0596520/mediaviewer/rm3530795776/>,
+                 <https://www.imdb.com/name/nm0596520/mediaviewer/rm3547572992/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095953/> a schema:Movie ;
+    schema:name "Rain Man" ;
+    schema:url <https://www.imdb.com/title/tt0095953/> .
+
+<https://www.imdb.com/title/tt0107290/> a schema:Movie ;
+    schema:name "Jurassic Park" ;
+    schema:url <https://www.imdb.com/title/tt0107290/> .
+
+<https://www.imdb.com/title/tt0108052/> a schema:Movie ;
+    schema:name "Schindler's List" ;
+    schema:url <https://www.imdb.com/title/tt0108052/> .
+
+<https://www.imdb.com/title/tt0119567/> a schema:Movie ;
+    schema:name "The Lost World: Jurassic Park" ;
+    schema:url <https://www.imdb.com/title/tt0119567/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Catch Me If You Can (2002)
+<https://www.imdb.com/title/tt0264464/> a schema:Movie ;
+    schema:name "Catch Me If You Can" ;
+    schema:url <https://www.imdb.com/title/tt0264464/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0596520/> ;
+        schema:characterName "FBI Agent"
+    ] .
+
+# The Other Side of Heaven (2001)
+<https://www.imdb.com/title/tt0250371/> a schema:Movie ;
+    schema:name "The Other Side of Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0250371/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0596520/> ;
+        schema:characterName "President Coombs"
+    ] .
+
+# Amistad (1997)
+<https://www.imdb.com/title/tt0118607/> a schema:Movie ;
+    schema:name "Amistad" ;
+    schema:url <https://www.imdb.com/title/tt0118607/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0596520/> ;
+        schema:characterName "Magistrate"
+    ] .
+
+# Days of Thunder (1990)
+<https://www.imdb.com/title/tt0099371/> a schema:Movie ;
+    schema:name "Days of Thunder" ;
+    schema:url <https://www.imdb.com/title/tt0099371/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0596520/> ;
+        schema:characterName "Dr. Wilhaire"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1846975001/> a schema:VideoObject ;
+        schema:name "Rain Man: Blu-Ray" ;
+        schema:description "Trailer for Rain Man" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1846975001/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjc2ZTliZTYtOWI4NS00YmYzLWJhZGMtODg0NmUyZmFhMDZhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M34S"^^xsd:duration ;
+        schema:uploadDate "2011-01-27T06:24:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTExMTQ5NTI0MTFeQTJeQWpwZ15BbWU3MDU5NTQ2MTg@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTExMTQ5NTI0MTFeQTJeQWpwZ15BbWU3MDU5NTQ2MTg@._V1_.jpg> ;
+    schema:caption "Gerald R. Molen" ;
+    schema:height "830"^^xsd:integer ;
+    schema:width "603"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0596520/mediaviewer/rm1078984193/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYThlMWI5MjMtZWYyZC00YWNkLWI2YTUtMGMwMTg1MWMzOWMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gerald R. Molen" ;
+    schema:height "1029"^^xsd:integer ;
+    schema:width "872"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0596520/mediaviewer/rm3530795776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxNTc4ODE0OF5BMl5BanBnXkFtZTcwNjk1NDYxOA@@._V1_.jpg> ;
+    schema:caption "Charlton Heston, Steven Spielberg, Branko Lustig, and Gerald R. Molen" ;
+    schema:height "1382"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0596520/mediaviewer/rm3547572992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTExMTQ5NTI0MTFeQTJeQWpwZ15BbWU3MDU5NTQ2MTg@._V1_.jpg> ;
+    schema:caption "Gerald R. Molen" ;
+    schema:height "830"^^xsd:integer ;
+    schema:width "603"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0422115/> a schema:Person ;
+    schema:name "Bilge Jeschim" ;
+    schema:url <https://www.imdb.com/name/nm0422115/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Bilge Jeschim. Actor: Before Sunrise. Bilge Jeschim is known for Before Sunrise (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112471/> .    # Before Sunrise
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Sunrise (1995)
+<https://www.imdb.com/title/tt0112471/> a schema:Movie ;
+    schema:name "Before Sunrise" ;
+    schema:url <https://www.imdb.com/title/tt0112471/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0422115/> ;
+        schema:characterName "Belly Dancer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

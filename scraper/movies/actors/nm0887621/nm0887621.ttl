@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0887621/> a schema:Person ;
+    schema:name "Lucy Van Oldenbarneveld" ;
+    schema:url <https://www.imdb.com/name/nm0887621/> ;
+    schema:jobTitle "Actress", "Producer", "Director" ;
+    schema:description "Lucy Van Oldenbarneveld. Actress: Arrival. Lucy Van Oldenbarneveld is known for Arrival (2016), Long Shot (2019) and North Boys: The Story of Jimmy and Charlie (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2139881/>,    # Long Shot
+                       <https://www.imdb.com/title/tt2543164/>,    # Arrival
+                       <https://www.imdb.com/title/tt2363397/>,    # Super
+                       <https://www.imdb.com/title/tt0113871/> ; # The Cold Heart of a Killer
+
+
+    schema:video <https://www.imdb.com/video/vi2638657305/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Long Shot (2019)
+<https://www.imdb.com/title/tt2139881/> a schema:Movie ;
+    schema:name "Long Shot" ;
+    schema:url <https://www.imdb.com/title/tt2139881/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0887621/> ;
+        schema:characterName "BCNMS News Anchor"
+    ] .
+
+# Arrival (2016)
+<https://www.imdb.com/title/tt2543164/> a schema:Movie ;
+    schema:name "Arrival" ;
+    schema:url <https://www.imdb.com/title/tt2543164/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0887621/> ;
+        schema:characterName "CNAC Anchor"
+    ] .
+
+# Super (2012)
+<https://www.imdb.com/title/tt2363397/> a schema:Movie ;
+    schema:name "Super" ;
+    schema:url <https://www.imdb.com/title/tt2363397/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0887621/> ;
+        schema:characterName "Reporter"
+    ] .
+
+# The Cold Heart of a Killer (1996)
+<https://www.imdb.com/title/tt0113871/> a schema:Movie ;
+    schema:name "The Cold Heart of a Killer" ;
+    schema:url <https://www.imdb.com/title/tt0113871/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0887621/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2638657305/> a schema:VideoObject ;
+        schema:name "North Boys: The Story of Jimmy and Charlie" ;
+        schema:description "Charlie Pete of Lower Post, British Columbia, led a sometimes tortured and troubled life. So did his friend Jimmy Dennis. As children, both were taken from their homes on the same day in 1944. They never saw their families again. Both men have spent a lifetime trying to overcome the impact of that awful day and the eight years that followed." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2638657305/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTU3MTM0ODMyMl5BMl5BanBnXkFtZTgwNTQ2MzM3OTE@._V1_.jpg" ;
+        schema:duration "PT1M39S"^^xsd:duration ;
+        schema:uploadDate "2016-08-15T18:29:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

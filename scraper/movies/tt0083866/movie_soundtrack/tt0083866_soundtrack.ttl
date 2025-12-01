@@ -1,0 +1,51 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0083866/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Willie" ;
+        schema:byArtist <https://www.imdb.com/name/nm0663299/> ; # Bob Parr
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Papa Oom Mow Mow" ;
+        schema:byArtist <https://www.imdb.com/name/nm2791163/> ; # The Persuasions
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Accidents Will Happen" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Accidents Will Happen" ;
+            schema:composer <https://www.imdb.com/name/nm0004845/> # Elvis Costello
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "People Who Died" ;
+        schema:byArtist <https://www.imdb.com/name/nm0140860/> ; # Jim Carroll
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "People Who Died" ;
+            schema:composer <https://www.imdb.com/name/nm0140860/> # Jim Carroll
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004845/> a schema:Person ;
+    schema:name "Elvis Costello" .
+<https://www.imdb.com/name/nm0140860/> a schema:Person ;
+    schema:name "Jim Carroll" .
+<https://www.imdb.com/name/nm0663299/> a schema:Person ;
+    schema:name "Bob Parr" .
+<https://www.imdb.com/name/nm2791163/> a schema:Person ;
+    schema:name "The Persuasions" .
+# ==============================================================================

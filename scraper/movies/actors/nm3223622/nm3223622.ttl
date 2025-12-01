@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3223622/> a schema:Person ;
+    schema:name "Sandy McMaster" ;
+    schema:url <https://www.imdb.com/name/nm3223622/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sandy McMaster. Actor: Room. Sandy McMaster is known for Room (2015), Killjoys (2015) and Night Cries (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3170832/>,    # Room
+                       <https://www.imdb.com/title/tt3952222/>,    # Killjoys
+                       <https://www.imdb.com/title/tt3330774/>,    # Night Cries
+                       <https://www.imdb.com/title/tt4341996/>,    # Gangland Undercover
+                       <https://www.imdb.com/title/tt1467403/>,    # Cra$h & Burn
+                       <https://www.imdb.com/title/tt1335990/> ; # Duel
+
+
+    schema:video <https://www.imdb.com/video/vi372093721/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Room (2015)
+<https://www.imdb.com/title/tt3170832/> a schema:Movie ;
+    schema:name "Room" ;
+    schema:url <https://www.imdb.com/title/tt3170832/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Veteran"
+    ] .
+
+# Killjoys (2015)
+<https://www.imdb.com/title/tt3952222/> a schema:Movie ;
+    schema:name "Killjoys" ;
+    schema:url <https://www.imdb.com/title/tt3952222/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Man in Tea House"
+    ] .
+
+# Night Cries (2015)
+<https://www.imdb.com/title/tt3330774/> a schema:Movie ;
+    schema:name "Night Cries" ;
+    schema:url <https://www.imdb.com/title/tt3330774/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Henchman #2"
+    ] .
+
+# Gangland Undercover (2015)
+<https://www.imdb.com/title/tt4341996/> a schema:Movie ;
+    schema:name "Gangland Undercover" ;
+    schema:url <https://www.imdb.com/title/tt4341996/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Devil's Drifter"
+    ] .
+
+# Cra$h & Burn (2009)
+<https://www.imdb.com/title/tt1467403/> a schema:Movie ;
+    schema:name "Cra$h & Burn" ;
+    schema:url <https://www.imdb.com/title/tt1467403/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Tolstoy Mechanic #1"
+    ] .
+
+# Duel (2008)
+<https://www.imdb.com/title/tt1335990/> a schema:Movie ;
+    schema:name "Duel" ;
+    schema:url <https://www.imdb.com/title/tt1335990/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3223622/> ;
+        schema:characterName "Brick"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi372093721/> a schema:VideoObject ;
+        schema:name "Room | Official Trailer HD" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi372093721/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTE2MDcwMDMwNl5BMl5BanBnXkFtZTgwNzAxMDY3NjE@._V1_.jpg" ;
+        schema:duration "PT2M31S"^^xsd:duration ;
+        schema:uploadDate "2015-09-10T07:32:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

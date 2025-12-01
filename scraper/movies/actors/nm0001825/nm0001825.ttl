@@ -1,0 +1,186 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001825/> a schema:Person ;
+    schema:name "Andrew Kevin Walker" ;
+    schema:url <https://www.imdb.com/name/nm0001825/> ;
+    schema:birthDate "1964-08-14"^^xsd:date ;
+    schema:jobTitle "Writer", "Script and Continuity Department", "Actor" ;
+    schema:description "Andrew Kevin Walker. Writer: The Killer. Andrew Kevin Walker was born on 14 August 1964 in Altoona, Pennsylvania, USA. He is a writer and actor, known for The Killer (2023), Seven (1995) and Metalocalypse: Army of the Doomstar (2023)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTYzNDBlZDYtZWU2NS00OTAzLWIxZTQtYWQyZjlmMjE2OWM5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Altoona, Pennsylvania, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1563725/>,    # Logorama
+                       <https://www.imdb.com/title/tt0258000/>,    # Panic Room
+                       <https://www.imdb.com/title/tt0114369/>,    # Seven
+                       <https://www.imdb.com/title/tt0212398/> ; # Oink
+
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (8MM)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "1250000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1206896409/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001825/mediaviewer/rm912974849/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm1597859072/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm1547527424/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm1144874240/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm1195205888/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm2659232256/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm3795608832/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm2676009472/>,
+                 <https://www.imdb.com/name/nm0001825/mediaviewer/rm2570872064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0134273/> a schema:Movie ;
+    schema:name "8MM" ;
+    schema:url <https://www.imdb.com/title/tt0134273/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Logorama (2009)
+<https://www.imdb.com/title/tt1563725/> a schema:Movie ;
+    schema:name "Logorama" ;
+    schema:url <https://www.imdb.com/title/tt1563725/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001825/> ;
+        schema:characterName "Pringles Hot & Spicy"
+    ] .
+
+# Panic Room (2002)
+<https://www.imdb.com/title/tt0258000/> a schema:Movie ;
+    schema:name "Panic Room" ;
+    schema:url <https://www.imdb.com/title/tt0258000/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001825/> ;
+        schema:characterName "Sleepy Neighbor"
+    ] .
+
+# Seven (1995)
+<https://www.imdb.com/title/tt0114369/> a schema:Movie ;
+    schema:name "Seven" ;
+    schema:url <https://www.imdb.com/title/tt0114369/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001825/> ;
+        schema:characterName "Dead Man at 1st Crime Scene"
+    ] .
+
+# Oink (1995)
+<https://www.imdb.com/title/tt0212398/> a schema:Movie ;
+    schema:name "Oink" ;
+    schema:url <https://www.imdb.com/title/tt0212398/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001825/> ;
+        schema:characterName "Employee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1206896409/> a schema:VideoObject ;
+        schema:name "All About The Killer" ;
+        schema:description "In director David Fincher's adaptation of French comic book 'The Killer,' Michael Fassbender stars as the titular, unnamed assassin who sets his sights on his employers after a hit goes sideways." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1206896409/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjBhMWUwZDktNTliMy00MjBmLTg1NjctNTFlYTNmMWM2N2NmXkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg" ;
+        schema:duration "PT2M1S"^^xsd:duration ;
+        schema:uploadDate "2023-09-19T16:22:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTYzNDBlZDYtZWU2NS00OTAzLWIxZTQtYWQyZjlmMjE2OWM5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYzNDBlZDYtZWU2NS00OTAzLWIxZTQtYWQyZjlmMjE2OWM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm912974849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ0MTEwZTQtODRiNC00NDQ2LTkxNWYtMWQyZDc3ZjQxMTc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1148"^^xsd:integer ;
+    schema:width "1158"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm1597859072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FhNWQ3YTYtNTIxZi00NjcxLWJlZmUtYmVlMjBhMGVjNTQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "w/ Kathryn Busby" ;
+    schema:height "1834"^^xsd:integer ;
+    schema:width "1242"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm1547527424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmExYjJiYTgtMzliNC00MWZmLWFmNGMtNmRiOTBlMWEzZDcyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1932"^^xsd:integer ;
+    schema:width "1932"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm1144874240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmJkYjc5MDItOWJjMC00MWNmLTkwNjYtZjc4NTcwMTU3Y2I2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1968"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm1195205888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTNjZmY1Y2MtOGYzZS00MTQxLThhYTQtZjZhNzkwNmIxMTA1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1936"^^xsd:integer ;
+    schema:width "1936"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm2659232256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTI2NzczMzQzOV5BMl5BanBnXkFtZTcwMDQ0NDg5Nw@@._V1_.jpg> ;
+    schema:caption "Shane Black, Andrew Kevin Walker, and Rita Hsiao" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm3795608832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjllM2Q5ZWQtMTg5YS00NTJiLTg4ZWQtYTk1YTc3MDJlMTAxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1661"^^xsd:integer ;
+    schema:width "2500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm2676009472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NDU5NTI0M15BMl5BanBnXkFtZTcwOTM0NDg5Nw@@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1133"^^xsd:integer ;
+    schema:width "743"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001825/mediaviewer/rm2570872064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYzNDBlZDYtZWU2NS00OTAzLWIxZTQtYWQyZjlmMjE2OWM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Kevin Walker" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0001825/>
+    schema:sameAs <https://www.instagram.com/andrewkevinwalker/?hl=en> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

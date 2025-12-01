@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1428429/> a schema:Person ;
+    schema:name "Timer the Dog" ;
+    schema:url <https://www.imdb.com/name/nm1428429/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Timer the Dog. Actor: As Good as It Gets. Timer the Dog is known for As Good as It Gets (1997)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119822/> .    # As Good as It Gets
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# As Good as It Gets (1997)
+<https://www.imdb.com/title/tt0119822/> a schema:Movie ;
+    schema:name "As Good as It Gets" ;
+    schema:url <https://www.imdb.com/title/tt0119822/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1428429/> ;
+        schema:characterName "Supporting Dog"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

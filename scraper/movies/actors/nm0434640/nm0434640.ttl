@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0434640/> a schema:Person ;
+    schema:name "Keiko Kagimoto" ;
+    schema:url <https://www.imdb.com/name/nm0434640/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Keiko Kagimoto. Actress: Kiki's Delivery Service. Keiko Kagimoto is known for Kiki's Delivery Service (1989), Shoten'in Michiru no mi no ue banashi (2013) and A Scene at the Sea (1991)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2558194/>,    # Shoten'in Michiru no mi no ue banashi
+                       <https://www.imdb.com/title/tt0315057/>,    # Sakura
+                       <https://www.imdb.com/title/tt4461262/>,    # Taxi Driver no Suiri Nisshi 6
+                       <https://www.imdb.com/title/tt0103704/>,    # A Scene at the Sea
+                       <https://www.imdb.com/title/tt0097814/> . # Kiki's Delivery Service
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shoten'in Michiru no mi no ue banashi (2013)
+<https://www.imdb.com/title/tt2558194/> a schema:Movie ;
+    schema:name "Shoten'in Michiru no mi no ue banashi" ;
+    schema:url <https://www.imdb.com/title/tt2558194/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0434640/> ;
+        schema:characterName "Michiru's Mother"
+    ] .
+
+# Sakura (2002)
+<https://www.imdb.com/title/tt0315057/> a schema:Movie ;
+    schema:name "Sakura" ;
+    schema:url <https://www.imdb.com/title/tt0315057/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0434640/> ;
+        schema:characterName "Madoka Hanazono"
+    ] .
+
+# Taxi Driver no Suiri Nisshi 6 (1995)
+<https://www.imdb.com/title/tt4461262/> a schema:Movie ;
+    schema:name "Taxi Driver no Suiri Nisshi 6" ;
+    schema:url <https://www.imdb.com/title/tt4461262/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0434640/> ;
+        schema:characterName ""
+    ] .
+
+# A Scene at the Sea (1991)
+<https://www.imdb.com/title/tt0103704/> a schema:Movie ;
+    schema:name "A Scene at the Sea" ;
+    schema:url <https://www.imdb.com/title/tt0103704/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0434640/> ;
+        schema:characterName "Surf Shop Woman"
+    ] .
+
+# Kiki's Delivery Service (1989)
+<https://www.imdb.com/title/tt0097814/> a schema:Movie ;
+    schema:name "Kiki's Delivery Service" ;
+    schema:url <https://www.imdb.com/title/tt0097814/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0434640/> ;
+        schema:characterName "Birthday Girl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

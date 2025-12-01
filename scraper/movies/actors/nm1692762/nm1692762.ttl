@@ -1,0 +1,355 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1692762/> a schema:Person ;
+    schema:name "Nathaniel Buzolic" ;
+    schema:url <https://www.imdb.com/name/nm1692762/> ;
+    schema:birthDate "1983-08-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:alternateName "Nate", "Nate Buzz" ;
+    schema:description "Nathaniel Buzolic. Actor: Hacksaw Ridge. Nathaniel Buzolic was born on 4 August 1983 in Sydney, New South Wales, Australia. He is an actor and producer, known for Hacksaw Ridge (2016), Pretty Little Liars (2010) and Supernatural (2005)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY5OTQxODEyNV5BMl5BanBnXkFtZTgwMTc0Mjk2MTE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sydney, New South Wales, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt1405406/>,    # The Vampire Diaries
+                       <https://www.imdb.com/title/tt2632424/>,    # The Originals
+                       <https://www.imdb.com/title/tt3924978/>,    # Significant Mother
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7319822/>,    # Saving Zoë
+                       <https://www.imdb.com/title/tt4971804/>,    # Significant Mother:Jimmy Loves Your Mamma
+                       <https://www.imdb.com/title/tt1578873/>,    # Pretty Little Liars
+                       <https://www.imdb.com/title/tt0460627/>,    # Bones
+                       <https://www.imdb.com/title/tt4151288/>,    # The Originals: Awakening
+                       <https://www.imdb.com/title/tt0460681/>,    # Supernatural
+                       <https://www.imdb.com/title/tt1822469/>,    # Crownies
+                       <https://www.imdb.com/title/tt1545315/>,    # Needle
+                       <https://www.imdb.com/title/tt1661114/>,    # Cops LAC
+                       <https://www.imdb.com/title/tt1672090/>,    # Multiple Choice
+                       <https://www.imdb.com/title/tt1052351/>,    # Offing David
+                       <https://www.imdb.com/title/tt1179658/>,    # Out of the Blue
+                       <https://www.imdb.com/title/tt1372645/>,    # Undercover Coach
+                       <https://www.imdb.com/title/tt1103163/>,    # My Greatest Day Ever
+                       <https://www.imdb.com/title/tt0972569/>,    # Road Rage
+                       <https://www.imdb.com/title/tt0163924/>,    # All Saints
+                       <https://www.imdb.com/title/tt0094481/> ; # Home and Away
+
+
+    schema:video <https://www.imdb.com/video/vi1685506329/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1692762/mediaviewer/rm567689472/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm4293403904/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm1718953984/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm846204928/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm3749646336/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm2261118208/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm2740119552/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm2723342336/>,
+                 <https://www.imdb.com/name/nm1692762/mediaviewer/rm2706565120/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> .
+
+<https://www.imdb.com/title/tt1405406/> a schema:Movie ;
+    schema:name "The Vampire Diaries" ;
+    schema:url <https://www.imdb.com/title/tt1405406/> .
+
+<https://www.imdb.com/title/tt2632424/> a schema:Movie ;
+    schema:name "The Originals" ;
+    schema:url <https://www.imdb.com/title/tt2632424/> .
+
+<https://www.imdb.com/title/tt3924978/> a schema:Movie ;
+    schema:name "Significant Mother" ;
+    schema:url <https://www.imdb.com/title/tt3924978/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Saving Zoë (2019)
+<https://www.imdb.com/title/tt7319822/> a schema:Movie ;
+    schema:name "Saving Zoë" ;
+    schema:url <https://www.imdb.com/title/tt7319822/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Jason"
+    ] .
+
+# Significant Mother:Jimmy Loves Your Mamma (2015)
+<https://www.imdb.com/title/tt4971804/> a schema:Movie ;
+    schema:name "Significant Mother:Jimmy Loves Your Mamma" ;
+    schema:url <https://www.imdb.com/title/tt4971804/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Jimmy Barnes"
+    ] .
+
+# Pretty Little Liars (2014)
+<https://www.imdb.com/title/tt1578873/> a schema:Movie ;
+    schema:name "Pretty Little Liars" ;
+    schema:url <https://www.imdb.com/title/tt1578873/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Dean Stavros"
+    ] .
+
+# Bones (2015)
+<https://www.imdb.com/title/tt0460627/> a schema:Movie ;
+    schema:name "Bones" ;
+    schema:url <https://www.imdb.com/title/tt0460627/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Hunter Ellis"
+    ] .
+
+# The Originals: Awakening (2013)
+<https://www.imdb.com/title/tt4151288/> a schema:Movie ;
+    schema:name "The Originals: Awakening" ;
+    schema:url <https://www.imdb.com/title/tt4151288/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Kol Mikaelson"
+    ] .
+
+# Supernatural (2014)
+<https://www.imdb.com/title/tt0460681/> a schema:Movie ;
+    schema:name "Supernatural" ;
+    schema:url <https://www.imdb.com/title/tt0460681/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "David Lassiter"
+    ] .
+
+# Crownies (2011)
+<https://www.imdb.com/title/tt1822469/> a schema:Movie ;
+    schema:name "Crownies" ;
+    schema:url <https://www.imdb.com/title/tt1822469/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Jesse Major"
+    ] .
+
+# Needle (2010)
+<https://www.imdb.com/title/tt1545315/> a schema:Movie ;
+    schema:name "Needle" ;
+    schema:url <https://www.imdb.com/title/tt1545315/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Ryan"
+    ] .
+
+# Cops LAC (2010)
+<https://www.imdb.com/title/tt1661114/> a schema:Movie ;
+    schema:name "Cops LAC" ;
+    schema:url <https://www.imdb.com/title/tt1661114/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Jahrryde"
+    ] .
+
+# Multiple Choice (2009)
+<https://www.imdb.com/title/tt1672090/> a schema:Movie ;
+    schema:name "Multiple Choice" ;
+    schema:url <https://www.imdb.com/title/tt1672090/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# Offing David (2008)
+<https://www.imdb.com/title/tt1052351/> a schema:Movie ;
+    schema:name "Offing David" ;
+    schema:url <https://www.imdb.com/title/tt1052351/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "David"
+    ] .
+
+# Out of the Blue (2008)
+<https://www.imdb.com/title/tt1179658/> a schema:Movie ;
+    schema:name "Out of the Blue" ;
+    schema:url <https://www.imdb.com/title/tt1179658/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Paul O'Donnell"
+    ] .
+
+# Undercover Coach (2008)
+<https://www.imdb.com/title/tt1372645/> a schema:Movie ;
+    schema:name "Undercover Coach" ;
+    schema:url <https://www.imdb.com/title/tt1372645/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Sports Commentator"
+    ] .
+
+# My Greatest Day Ever (2007)
+<https://www.imdb.com/title/tt1103163/> a schema:Movie ;
+    schema:name "My Greatest Day Ever" ;
+    schema:url <https://www.imdb.com/title/tt1103163/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Coach"
+    ] .
+
+# Road Rage (2007)
+<https://www.imdb.com/title/tt0972569/> a schema:Movie ;
+    schema:name "Road Rage" ;
+    schema:url <https://www.imdb.com/title/tt0972569/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Younger Driver"
+    ] .
+
+# All Saints (2003)
+<https://www.imdb.com/title/tt0163924/> a schema:Movie ;
+    schema:name "All Saints" ;
+    schema:url <https://www.imdb.com/title/tt0163924/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Damon Lloyd"
+    ] .
+
+# Home and Away (2002)
+<https://www.imdb.com/title/tt0094481/> a schema:Movie ;
+    schema:name "Home and Away" ;
+    schema:url <https://www.imdb.com/title/tt0094481/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1692762/> ;
+        schema:characterName "Paul Chalmers"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1685506329/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "When a retired NYPD detective publishes a book about his family's mob connections, war breaks out between the cops working for the city's big crime boss and the officers trying to bring them to justice." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1685506329/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmNkNGFlYzItMGRjYi00Y2E2LWFlZDktZjA1ZTg1MjRiMmJjXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg" ;
+        schema:duration "PT2M13S"^^xsd:duration ;
+        schema:uploadDate "2025-02-27T15:28:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY5OTQxODEyNV5BMl5BanBnXkFtZTgwMTc0Mjk2MTE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5OTQxODEyNV5BMl5BanBnXkFtZTgwMTc0Mjk2MTE@._V1_.jpg> ;
+    schema:caption "Nathaniel Buzolic in Supernatural (2005)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm567689472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTJjYjJjYjItNTI1OS00YzdjLWE0MzUtOGEwZjdiNWM3OGI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathaniel Buzolic in Needle (2010)" ;
+    schema:height "288"^^xsd:integer ;
+    schema:width "688"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm4293403904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjViMzVhM2ItODQ2ZS00ZjM4LTk0ZjgtODAzODAyNDdkYjliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathaniel Buzolic and Danielle Campbell in The Originals (2013)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm1718953984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2VhZDBjMGYtOTNkMS00MDU2LTkyMTgtNzNiOTdiNzE1ZGZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathaniel Buzolic and Danielle Campbell in The Originals (2013)" ;
+    schema:height "857"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm846204928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2MxNTBlZTQtM2IxZS00NzE2LWI3MGYtMjg5OTM1NjQxNjRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Gillies, Nathaniel Buzolic, Claire Holt, and Riley Voelkel in The Originals (2013)" ;
+    schema:height "729"^^xsd:integer ;
+    schema:width "1404"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm3749646336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjFiODE5YjgtNzUwNi00ZTQ2LTg1OTUtZWJjZmFlOGNlYjZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Gillies, Nathaniel Buzolic, Phoebe Tonkin, and Riley Voelkel in The Originals (2013)" ;
+    schema:height "736"^^xsd:integer ;
+    schema:width "1404"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm2261118208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjg5MDg2NTgxOV5BMl5BanBnXkFtZTgwNjg3MTg5NjE@._V1_.jpg> ;
+    schema:caption "Krista Allen, Josh Zuckerman, and Nathaniel Buzolic in Significant Mother (2015)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm2740119552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNjg4NTI4OF5BMl5BanBnXkFtZTgwMjQ0MjA0NjE@._V1_.jpg> ;
+    schema:caption "Denise Richards, Krista Allen, Josh Zuckerman, and Nathaniel Buzolic in Significant Mother (2015)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm2723342336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk5NTk4MjA3Nl5BMl5BanBnXkFtZTgwMzQ0MjA0NjE@._V1_.jpg> ;
+    schema:caption "Josh Zuckerman, Nathaniel Buzolic, and Jay Ali in Significant Mother (2015)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1692762/mediaviewer/rm2706565120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk4OTczMTc1N15BMl5BanBnXkFtZTgwNjM0MjA0NjE@._V1_.jpg> ;
+    schema:caption "Krista Allen and Nathaniel Buzolic in Significant Mother (2015)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

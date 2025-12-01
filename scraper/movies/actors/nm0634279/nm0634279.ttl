@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0634279/> a schema:Person ;
+    schema:name "Jane Nolan" ;
+    schema:url <https://www.imdb.com/name/nm0634279/> ;
+    schema:jobTitle "Actress", "Location Management", "Production Department" ;
+    schema:description "Jane Nolan. Location Management: Some Mother's Son. Jane Nolan is known for Some Mother's Son (1996), In the Name of the Father (1993) and The Devil's Own (1997)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDM1MWU5ZTAtMjJiNi00ZTNiLTliMzItMjFhM2RlY2UyOGM5XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0318904/>,    # MDA - Medical Defence Australia
+                       <https://www.imdb.com/title/tt0208071/>,    # A Country Practice
+                       <https://www.imdb.com/title/tt0107207/> ; # In the Name of the Father
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0634279/mediaviewer/rm253336066/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# MDA - Medical Defence Australia (2003)
+<https://www.imdb.com/title/tt0318904/> a schema:Movie ;
+    schema:name "MDA - Medical Defence Australia" ;
+    schema:url <https://www.imdb.com/title/tt0318904/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0634279/> ;
+        schema:characterName "Caroline O'Shea"
+    ] .
+
+# A Country Practice (1994)
+<https://www.imdb.com/title/tt0208071/> a schema:Movie ;
+    schema:name "A Country Practice" ;
+    schema:url <https://www.imdb.com/title/tt0208071/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0634279/> ;
+        schema:characterName "Julie Strickland"
+    ] .
+
+# In the Name of the Father (1993)
+<https://www.imdb.com/title/tt0107207/> a schema:Movie ;
+    schema:name "In the Name of the Father" ;
+    schema:url <https://www.imdb.com/title/tt0107207/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0634279/> ;
+        schema:characterName "Girl with Baby"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDM1MWU5ZTAtMjJiNi00ZTNiLTliMzItMjFhM2RlY2UyOGM5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDM1MWU5ZTAtMjJiNi00ZTNiLTliMzItMjFhM2RlY2UyOGM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jane Nolan" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1506"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0634279/mediaviewer/rm253336066/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDM1MWU5ZTAtMjJiNi00ZTNiLTliMzItMjFhM2RlY2UyOGM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jane Nolan" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1506"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

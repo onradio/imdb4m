@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0904484/> a schema:Person ;
+    schema:name "Richard Vuu" ;
+    schema:url <https://www.imdb.com/name/nm0904484/> ;
+    schema:birthDate "1981-10-18"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Richard Vuu. Actor: The Last Emperor. Richard Vuu was cast as the 3-year-old infant Pu Yi, the future emperor of China in Bernardo Bertolucci's acclaimed film The Last Emperor (1987). The playful kid was treated as young king but he was also a child who was trying his best to enjoy childhood, as demonstrated in the iconic scene where he frees and chases a grasshopper during an important event where..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjM3MDU5OTk3NV5BMl5BanBnXkFtZTgwMzE5MDAwMjE@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0093389/> ;    # The Last Emperor
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0904484/mediaviewer/rm4027061248/>,
+                 <https://www.imdb.com/name/nm0904484/mediaviewer/rm4077392896/>,
+                 <https://www.imdb.com/name/nm0904484/mediaviewer/rm1064881152/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Last Emperor (1987)
+<https://www.imdb.com/title/tt0093389/> a schema:Movie ;
+    schema:name "The Last Emperor" ;
+    schema:url <https://www.imdb.com/title/tt0093389/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0904484/> ;
+        schema:characterName "Pu Yi (3 years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjM3MDU5OTk3NV5BMl5BanBnXkFtZTgwMzE5MDAwMjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM3MDU5OTk3NV5BMl5BanBnXkFtZTgwMzE5MDAwMjE@._V1_.jpg> ;
+    schema:caption "Richard Vuu in The Last Emperor (1987)" ;
+    schema:height "1840"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0904484/mediaviewer/rm4027061248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzJiYjAwMWEtOThhNi00ZTg2LTg1ZGMtZTQ1MzRlZTk0MjUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard Vuu" ;
+    schema:height "755"^^xsd:integer ;
+    schema:width "478"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0904484/mediaviewer/rm4077392896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQwMWZhMGItMTk1ZC00NjUzLWE2NDMtMjdjNjkzMDc1NWJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard Vuu in The Last Emperor (1987)" ;
+    schema:height "755"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0904484/mediaviewer/rm1064881152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM3MDU5OTk3NV5BMl5BanBnXkFtZTgwMzE5MDAwMjE@._V1_.jpg> ;
+    schema:caption "Richard Vuu in The Last Emperor (1987)" ;
+    schema:height "1840"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

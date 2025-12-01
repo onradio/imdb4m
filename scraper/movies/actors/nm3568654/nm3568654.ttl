@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3568654/> a schema:Person ;
+    schema:name "Feroze Khan" ;
+    schema:url <https://www.imdb.com/name/nm3568654/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Feroze Khan. Actor: Slumdog Millionaire. Feroze Khan is known for Slumdog Millionaire (2008) and Chain Kulii Ki Main Kulii (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1010048/> .    # Slumdog Millionaire
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Slumdog Millionaire (2008)
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3568654/> ;
+        schema:characterName "Amitabh Bachchan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

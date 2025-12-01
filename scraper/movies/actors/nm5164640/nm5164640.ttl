@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5164640/> a schema:Person ;
+    schema:name "Søren Rønholt" ;
+    schema:url <https://www.imdb.com/name/nm5164640/> ;
+    schema:birthDate "1969-10-31"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Søren Rønholt. Actor: The Hunt. Søren Rønholt was born on 31 October 1969 in Karise, Sjælland, Denmark. He is an actor, known for The Hunt (2012)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Karise, Sjælland, Denmark"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2106476/> .    # The Hunt
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Hunt (2012)
+<https://www.imdb.com/title/tt2106476/> a schema:Movie ;
+    schema:name "The Hunt" ;
+    schema:url <https://www.imdb.com/title/tt2106476/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164640/> ;
+        schema:characterName "Jagtbroder - Store Carsten"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

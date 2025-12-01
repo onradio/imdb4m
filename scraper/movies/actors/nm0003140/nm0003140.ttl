@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0003140/> a schema:Person ;
+    schema:name "David Klein" ;
+    schema:url <https://www.imdb.com/name/nm0003140/> ;
+    schema:jobTitle "Cinematographer", "Camera and Electrical Department" ;
+    schema:description "David Klein. Cinematographer: The Mandalorian. David Klein was born in December 1972. He is a cinematographer, known for The Mandalorian (2019), The Book of Boba Fett (2021) and Deadwood (2019). He has been married to Marnie Shelton since 24 November 2001." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGM2YWI1N2MtYzk1Yi00N2MzLWI4NTEtNzJlNjNmM2YzMTllXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3449200/>,    # Shooting Clerks
+                       <https://www.imdb.com/title/tt0120467/>,    # Vulgar
+                       <https://www.imdb.com/title/tt0113749/>,    # Mallrats
+                       <https://www.imdb.com/title/tt0109445/> ; # Clerks
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0003140/mediaviewer/rm3780562945/>,
+                 <https://www.imdb.com/name/nm0003140/mediaviewer/rm3684864257/>,
+                 <https://www.imdb.com/name/nm0003140/mediaviewer/rm1145630465/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shooting Clerks (2019)
+<https://www.imdb.com/title/tt3449200/> a schema:Movie ;
+    schema:name "Shooting Clerks" ;
+    schema:url <https://www.imdb.com/title/tt3449200/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0003140/> ;
+        schema:characterName "Rental Clerk"
+    ] .
+
+# Vulgar (2000)
+<https://www.imdb.com/title/tt0120467/> a schema:Movie ;
+    schema:name "Vulgar" ;
+    schema:url <https://www.imdb.com/title/tt0120467/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0003140/> ;
+        schema:characterName "Cinnamon"
+    ] .
+
+# Mallrats (1995)
+<https://www.imdb.com/title/tt0113749/> a schema:Movie ;
+    schema:name "Mallrats" ;
+    schema:url <https://www.imdb.com/title/tt0113749/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0003140/> ;
+        schema:characterName "Fan at Comic Store"
+    ] .
+
+# Clerks (1994)
+<https://www.imdb.com/title/tt0109445/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0109445/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0003140/> ;
+        schema:characterName "Hunting Cap Smoking Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGM2YWI1N2MtYzk1Yi00N2MzLWI4NTEtNzJlNjNmM2YzMTllXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGM2YWI1N2MtYzk1Yi00N2MzLWI4NTEtNzJlNjNmM2YzMTllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Klein" ;
+    schema:height "1413"^^xsd:integer ;
+    schema:width "944"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0003140/mediaviewer/rm3780562945/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmY3NDRkODgtOWJlYy00NzEzLTgwNGUtYTdmZTVhZDBkZWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Klein" ;
+    schema:height "938"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0003140/mediaviewer/rm3684864257/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzNjOGU0MTEtOTU4Ni00Y2JlLTk3M2UtNmM3MjY4NmI3NTVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Klein" ;
+    schema:height "2092"^^xsd:integer ;
+    schema:width "2374"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0003140/mediaviewer/rm1145630465/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGM2YWI1N2MtYzk1Yi00N2MzLWI4NTEtNzJlNjNmM2YzMTllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Klein" ;
+    schema:height "1413"^^xsd:integer ;
+    schema:width "944"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

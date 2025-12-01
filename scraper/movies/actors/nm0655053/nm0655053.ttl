@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0655053/> a schema:Person ;
+    schema:name "Sergio Pablos" ;
+    schema:url <https://www.imdb.com/name/nm0655053/> ;
+    schema:jobTitle "Animation Department", "Art Department", "Producer" ;
+    schema:description "Sergio Pablos. Animation Department: Klaus. Sergio Pablos' career in animation spans over three decades. His work is well known as a Supervising Animator on Disney films such as \"Tarzan\" and \"Treasure Planet\". At the helm of his company The SPA Studios, he's also known for having developed the original story upon which films like \"Despicable Me\" and \"Smallfoot\" are based on. In addition to this, he has worked as a..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDAyZDliZTMtOWE5ZS00ZDZjLWIzZDQtODlmMjc1Zjg4YzM5XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4729430/>,    # Klaus
+                       <https://www.imdb.com/title/tt0133240/>,    # Treasure Planet
+                       <https://www.imdb.com/title/tt1323594/>,    # Despicable Me
+                       <https://www.imdb.com/title/tt1436562/> ; # Rio
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 14 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2468611097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0655053/mediaviewer/rm684890624/>,
+                 <https://www.imdb.com/name/nm0655053/mediaviewer/rm332170497/>,
+                 <https://www.imdb.com/name/nm0655053/mediaviewer/rm1489471233/>,
+                 <https://www.imdb.com/name/nm0655053/mediaviewer/rm3158148353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4729430/> a schema:Movie ;
+    schema:name "Klaus" ;
+    schema:url <https://www.imdb.com/title/tt4729430/> .
+
+<https://www.imdb.com/title/tt0133240/> a schema:Movie ;
+    schema:name "Treasure Planet" ;
+    schema:url <https://www.imdb.com/title/tt0133240/> .
+
+<https://www.imdb.com/title/tt1323594/> a schema:Movie ;
+    schema:name "Despicable Me" ;
+    schema:url <https://www.imdb.com/title/tt1323594/> .
+
+<https://www.imdb.com/title/tt1436562/> a schema:Movie ;
+    schema:name "Rio" ;
+    schema:url <https://www.imdb.com/title/tt1436562/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2468611097/> a schema:VideoObject ;
+        schema:name "Despicable Me: Super Bowl Trailer" ;
+        schema:description "Despicable Me: Super Bowl Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2468611097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjEwODg5MDc1Nl5BMl5BanBnXkFtZTgwNjUxMjczMzE@._V1_.jpg" ;
+        schema:duration "PT1M58S"^^xsd:duration ;
+        schema:uploadDate "2010-02-08T18:47:02Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDAyZDliZTMtOWE5ZS00ZDZjLWIzZDQtODlmMjc1Zjg4YzM5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAyZDliZTMtOWE5ZS00ZDZjLWIzZDQtODlmMjc1Zjg4YzM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sergio Pablos at an event for Klaus (2019)" ;
+    schema:height "469"^^xsd:integer ;
+    schema:width "667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0655053/mediaviewer/rm684890624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3NDMzOTMzMF5BMl5BanBnXkFtZTYwNjEyMTgy._V1_.jpg> ;
+    schema:caption "With Hades voice actor James Woods and animation crew for \"Hercules\" (Disney, 1997). (Other persons in photo: On right of Hades, Top row--Neal Goldstein,  Sergio Pablos, Eric Pigors, Jamie Oliff, Second row--Doug Post, James Baker, James Woods, Third row--Emily Juliano, Denise Meehan, Carl Hall, Fourth row--Dan Bond, Bill Berg, Bill Recinos, Jane Bonnet, Front row -- Eric Kuska, Casey Coffey, Brian Behling, On right of Hades, Top to Bottom--Nic Ranierij, Lieve Miessen, James DeValera Mansfield, Tom Roth." ;
+    schema:height "392"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0655053/mediaviewer/rm332170497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDllOTI4ZGQtMWY2Ny00ZjE2LWIzOWYtYTRiOTkxMTNjZjI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sergio Pablos and Jinko Gotoh at an event for 2020 EE BAFTA Film Awards (2020)" ;
+    schema:height "5186"^^xsd:integer ;
+    schema:width "3588"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0655053/mediaviewer/rm1489471233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODZiYTU3MDEtNjcwYi00NGQ1LWIyNzEtZjgxYTU5OWFhM2Q3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sergio Pablos, Jinko Gotoh, and Marisa Roman at an event for Klaus (2019)" ;
+    schema:height "414"^^xsd:integer ;
+    schema:width "446"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0655053/mediaviewer/rm3158148353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAyZDliZTMtOWE5ZS00ZDZjLWIzZDQtODlmMjc1Zjg4YzM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sergio Pablos at an event for Klaus (2019)" ;
+    schema:height "469"^^xsd:integer ;
+    schema:width "667"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

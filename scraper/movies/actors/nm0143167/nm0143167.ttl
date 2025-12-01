@@ -1,0 +1,609 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0143167/> a schema:Person ;
+    schema:name "Nicholas Cascone" ;
+    schema:url <https://www.imdb.com/name/nm0143167/> ;
+    schema:birthDate "1963-04-20"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Nicholas Cascone. Actor: Titanic. Nicholas Cascone was born on 20 April 1963 in Queens, New York, USA. He is an actor, known for Titanic (1997), Baby Boom (1987) and The Cell (2000). He was previously married to Monica Lundry." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Queens, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0787969/>,    # The Jake Effect
+                       <https://www.imdb.com/title/tt0363328/>,    # Drake & Josh
+                       <https://www.imdb.com/title/tt0321021/>,    # Without a Trace
+                       <https://www.imdb.com/title/tt0272376/>,    # The Division
+                       <https://www.imdb.com/title/tt0291561/>,    # Welcome to the Neighborhood
+                       <https://www.imdb.com/title/tt0281322/>,    # Undisputed
+                       <https://www.imdb.com/title/tt0158552/>,    # Charmed
+                       <https://www.imdb.com/title/tt0259288/>,    # Dragonfly
+                       <https://www.imdb.com/title/tt0285395/>,    # Philly
+                       <https://www.imdb.com/title/tt0285332/>,    # The Agency
+                       <https://www.imdb.com/title/tt0209069/>,    # Judging Amy
+                       <https://www.imdb.com/title/tt0247101/>,    # Gideon's Crossing
+                       <https://www.imdb.com/title/tt0200337/>,    # Family Law
+                       <https://www.imdb.com/title/tt0209958/>,    # The Cell
+                       <https://www.imdb.com/title/tt0182656/>,    # Zoe, Duncan, Jack & Jane
+                       <https://www.imdb.com/title/tt0238384/>,    # Locust Valley
+                       <https://www.imdb.com/title/tt0200276/>,    # The West Wing
+                       <https://www.imdb.com/title/tt0144071/>,    # To Have & to Hold
+                       <https://www.imdb.com/title/tt0127378/>,    # House of Frankenstein
+                       <https://www.imdb.com/title/tt0120338/>,    # Titanic
+                       <https://www.imdb.com/title/tt0119732/>,    # Murder in Mind
+                       <https://www.imdb.com/title/tt0119791/>,    # Nightwatch
+                       <https://www.imdb.com/title/tt0118055/>,    # Up Close & Personal
+                       <https://www.imdb.com/title/tt0116260/>,    # Eye for an Eye
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0112090/>,    # The Naked Truth
+                       <https://www.imdb.com/title/tt0112061/>,    # The Marshal
+                       <https://www.imdb.com/title/tt0111003/>,    # The Puppet Masters
+                       <https://www.imdb.com/title/tt0106145/>,    # Star Trek: Deep Space Nine
+                       <https://www.imdb.com/title/tt0109986/>,    # The Hard Truth
+                       <https://www.imdb.com/title/tt0090466/>,    # L.A. Law
+                       <https://www.imdb.com/title/tt0110870/>,    # The Pornographer
+                       <https://www.imdb.com/title/tt0104926/>,    # Mr. Baseball
+                       <https://www.imdb.com/title/tt0094447/>,    # Dear John USA
+                       <https://www.imdb.com/title/tt0099829/>,    # The Image
+                       <https://www.imdb.com/title/tt0094466/>,    # Freddy's Nightmares
+                       <https://www.imdb.com/title/tt0092455/>,    # Star Trek: The Next Generation
+                       <https://www.imdb.com/title/tt0096744/>,    # 84C MoPic
+                       <https://www.imdb.com/title/tt0088571/>,    # Moonlighting
+                       <https://www.imdb.com/title/tt0346222/>,    # CBS Summer Playhouse
+                       <https://www.imdb.com/title/tt0094593/>,    # 18 Again!
+                       <https://www.imdb.com/title/tt0092475/>,    # Vietnam War Story
+                       <https://www.imdb.com/title/tt0092605/>,    # Baby Boom
+                       <https://www.imdb.com/title/tt0090487/>,    # My Sister Sam
+                       <https://www.imdb.com/title/tt0086730/>,    # Highway to Heaven
+                       <https://www.imdb.com/title/tt0090481/> ; # Matlock
+
+
+    schema:video <https://www.imdb.com/video/vi2458886169/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Jake Effect (2006)
+<https://www.imdb.com/title/tt0787969/> a schema:Movie ;
+    schema:name "The Jake Effect" ;
+    schema:url <https://www.imdb.com/title/tt0787969/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Fred"
+    ] .
+
+# Drake & Josh (2004)
+<https://www.imdb.com/title/tt0363328/> a schema:Movie ;
+    schema:name "Drake & Josh" ;
+    schema:url <https://www.imdb.com/title/tt0363328/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Teacher"
+    ] .
+
+# Without a Trace (2004)
+<https://www.imdb.com/title/tt0321021/> a schema:Movie ;
+    schema:name "Without a Trace" ;
+    schema:url <https://www.imdb.com/title/tt0321021/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Landlord"
+    ] .
+
+# The Division (2003)
+<https://www.imdb.com/title/tt0272376/> a schema:Movie ;
+    schema:name "The Division" ;
+    schema:url <https://www.imdb.com/title/tt0272376/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Oliver Bratt"
+    ] .
+
+# Welcome to the Neighborhood (2003)
+<https://www.imdb.com/title/tt0291561/> a schema:Movie ;
+    schema:name "Welcome to the Neighborhood" ;
+    schema:url <https://www.imdb.com/title/tt0291561/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "David"
+    ] .
+
+# Undisputed (2002)
+<https://www.imdb.com/title/tt0281322/> a schema:Movie ;
+    schema:name "Undisputed" ;
+    schema:url <https://www.imdb.com/title/tt0281322/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Barry Pearl"
+    ] .
+
+# Charmed (2002)
+<https://www.imdb.com/title/tt0158552/> a schema:Movie ;
+    schema:name "Charmed" ;
+    schema:url <https://www.imdb.com/title/tt0158552/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Inspector Miles"
+    ] .
+
+# Dragonfly (2002)
+<https://www.imdb.com/title/tt0259288/> a schema:Movie ;
+    schema:name "Dragonfly" ;
+    schema:url <https://www.imdb.com/title/tt0259288/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Philly (2002)
+<https://www.imdb.com/title/tt0285395/> a schema:Movie ;
+    schema:name "Philly" ;
+    schema:url <https://www.imdb.com/title/tt0285395/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Ted Bronson"
+    ] .
+
+# The Agency (2001)
+<https://www.imdb.com/title/tt0285332/> a schema:Movie ;
+    schema:name "The Agency" ;
+    schema:url <https://www.imdb.com/title/tt0285332/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName ""
+    ] .
+
+# Judging Amy (1999)
+<https://www.imdb.com/title/tt0209069/> a schema:Movie ;
+    schema:name "Judging Amy" ;
+    schema:url <https://www.imdb.com/title/tt0209069/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Atty. David Trask"
+    ] .
+
+# Gideon's Crossing (2001)
+<https://www.imdb.com/title/tt0247101/> a schema:Movie ;
+    schema:name "Gideon's Crossing" ;
+    schema:url <https://www.imdb.com/title/tt0247101/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Dr. Boyd Robinson"
+    ] .
+
+# Family Law (2000)
+<https://www.imdb.com/title/tt0200337/> a schema:Movie ;
+    schema:name "Family Law" ;
+    schema:url <https://www.imdb.com/title/tt0200337/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Myers"
+    ] .
+
+# The Cell (2000)
+<https://www.imdb.com/title/tt0209958/> a schema:Movie ;
+    schema:name "The Cell" ;
+    schema:url <https://www.imdb.com/title/tt0209958/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "FBI Technician"
+    ] .
+
+# Zoe, Duncan, Jack & Jane (2000)
+<https://www.imdb.com/title/tt0182656/> a schema:Movie ;
+    schema:name "Zoe, Duncan, Jack & Jane" ;
+    schema:url <https://www.imdb.com/title/tt0182656/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Bryan"
+    ] .
+
+# Locust Valley (1999)
+<https://www.imdb.com/title/tt0238384/> a schema:Movie ;
+    schema:name "Locust Valley" ;
+    schema:url <https://www.imdb.com/title/tt0238384/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Vice Principal Seldon Mills"
+    ] .
+
+# The West Wing (1999)
+<https://www.imdb.com/title/tt0200276/> a schema:Movie ;
+    schema:name "The West Wing" ;
+    schema:url <https://www.imdb.com/title/tt0200276/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Loomis"
+    ] .
+
+# To Have & to Hold (1998)
+<https://www.imdb.com/title/tt0144071/> a schema:Movie ;
+    schema:name "To Have & to Hold" ;
+    schema:url <https://www.imdb.com/title/tt0144071/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Merle Melrod"
+    ] .
+
+# House of Frankenstein (1997)
+<https://www.imdb.com/title/tt0127378/> a schema:Movie ;
+    schema:name "House of Frankenstein" ;
+    schema:url <https://www.imdb.com/title/tt0127378/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName ""
+    ] .
+
+# Titanic (1997)
+<https://www.imdb.com/title/tt0120338/> a schema:Movie ;
+    schema:name "Titanic" ;
+    schema:url <https://www.imdb.com/title/tt0120338/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Bobby Buell"
+    ] .
+
+# Murder in Mind (1997)
+<https://www.imdb.com/title/tt0119732/> a schema:Movie ;
+    schema:name "Murder in Mind" ;
+    schema:url <https://www.imdb.com/title/tt0119732/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Prosecutor"
+    ] .
+
+# Nightwatch (1997)
+<https://www.imdb.com/title/tt0119791/> a schema:Movie ;
+    schema:name "Nightwatch" ;
+    schema:url <https://www.imdb.com/title/tt0119791/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Male Paramedic"
+    ] .
+
+# Up Close & Personal (1996)
+<https://www.imdb.com/title/tt0118055/> a schema:Movie ;
+    schema:name "Up Close & Personal" ;
+    schema:url <https://www.imdb.com/title/tt0118055/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "WMIA Director"
+    ] .
+
+# Eye for an Eye (1996)
+<https://www.imdb.com/title/tt0116260/> a schema:Movie ;
+    schema:name "Eye for an Eye" ;
+    schema:url <https://www.imdb.com/title/tt0116260/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Howard Bolinger"
+    ] .
+
+# ER (1996)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Howard Mills"
+    ] .
+
+# The Naked Truth (1995)
+<https://www.imdb.com/title/tt0112090/> a schema:Movie ;
+    schema:name "The Naked Truth" ;
+    schema:url <https://www.imdb.com/title/tt0112090/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Newt"
+    ] .
+
+# The Marshal (1995)
+<https://www.imdb.com/title/tt0112061/> a schema:Movie ;
+    schema:name "The Marshal" ;
+    schema:url <https://www.imdb.com/title/tt0112061/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Akbar"
+    ] .
+
+# The Puppet Masters (1994)
+<https://www.imdb.com/title/tt0111003/> a schema:Movie ;
+    schema:name "The Puppet Masters" ;
+    schema:url <https://www.imdb.com/title/tt0111003/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Greenberg"
+    ] .
+
+# Star Trek: Deep Space Nine (1994)
+<https://www.imdb.com/title/tt0106145/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine" ;
+    schema:url <https://www.imdb.com/title/tt0106145/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Timor"
+    ] .
+
+# The Hard Truth (1994)
+<https://www.imdb.com/title/tt0109986/> a schema:Movie ;
+    schema:name "The Hard Truth" ;
+    schema:url <https://www.imdb.com/title/tt0109986/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Councilman Polone"
+    ] .
+
+# L.A. Law (1994)
+<https://www.imdb.com/title/tt0090466/> a schema:Movie ;
+    schema:name "L.A. Law" ;
+    schema:url <https://www.imdb.com/title/tt0090466/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Alan Barbara"
+    ] .
+
+# The Pornographer (1994)
+<https://www.imdb.com/title/tt0110870/> a schema:Movie ;
+    schema:name "The Pornographer" ;
+    schema:url <https://www.imdb.com/title/tt0110870/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "E. Conrad Zabo"
+    ] .
+
+# Mr. Baseball (1992)
+<https://www.imdb.com/title/tt0104926/> a schema:Movie ;
+    schema:name "Mr. Baseball" ;
+    schema:url <https://www.imdb.com/title/tt0104926/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Doc"
+    ] .
+
+# Dear John USA (1991)
+<https://www.imdb.com/title/tt0094447/> a schema:Movie ;
+    schema:name "Dear John USA" ;
+    schema:url <https://www.imdb.com/title/tt0094447/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Robber"
+    ] .
+
+# The Image (1990)
+<https://www.imdb.com/title/tt0099829/> a schema:Movie ;
+    schema:name "The Image" ;
+    schema:url <https://www.imdb.com/title/tt0099829/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Sid Stillwell"
+    ] .
+
+# Freddy's Nightmares (1989)
+<https://www.imdb.com/title/tt0094466/> a schema:Movie ;
+    schema:name "Freddy's Nightmares" ;
+    schema:url <https://www.imdb.com/title/tt0094466/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Dr. Erwin"
+    ] .
+
+# Star Trek: The Next Generation (1989)
+<https://www.imdb.com/title/tt0092455/> a schema:Movie ;
+    schema:name "Star Trek: The Next Generation" ;
+    schema:url <https://www.imdb.com/title/tt0092455/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Ensign Davies"
+    ] .
+
+# 84C MoPic (1989)
+<https://www.imdb.com/title/tt0096744/> a schema:Movie ;
+    schema:name "84C MoPic" ;
+    schema:url <https://www.imdb.com/title/tt0096744/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Easy"
+    ] .
+
+# Moonlighting (1988)
+<https://www.imdb.com/title/tt0088571/> a schema:Movie ;
+    schema:name "Moonlighting" ;
+    schema:url <https://www.imdb.com/title/tt0088571/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Harold Swinburn"
+    ] .
+
+# CBS Summer Playhouse (1988)
+<https://www.imdb.com/title/tt0346222/> a schema:Movie ;
+    schema:name "CBS Summer Playhouse" ;
+    schema:url <https://www.imdb.com/title/tt0346222/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Dr. Irving Castleman"
+    ] .
+
+# 18 Again! (1988)
+<https://www.imdb.com/title/tt0094593/> a schema:Movie ;
+    schema:name "18 Again!" ;
+    schema:url <https://www.imdb.com/title/tt0094593/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Frat Member"
+    ] .
+
+# Vietnam War Story (1987)
+<https://www.imdb.com/title/tt0092475/> a schema:Movie ;
+    schema:name "Vietnam War Story" ;
+    schema:url <https://www.imdb.com/title/tt0092475/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Zadig"
+    ] .
+
+# Baby Boom (1987)
+<https://www.imdb.com/title/tt0092605/> a schema:Movie ;
+    schema:name "Baby Boom" ;
+    schema:url <https://www.imdb.com/title/tt0092605/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Delivery Boy"
+    ] .
+
+# My Sister Sam (1987)
+<https://www.imdb.com/title/tt0090487/> a schema:Movie ;
+    schema:name "My Sister Sam" ;
+    schema:url <https://www.imdb.com/title/tt0090487/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Waiter"
+    ] .
+
+# Highway to Heaven (1986)
+<https://www.imdb.com/title/tt0086730/> a schema:Movie ;
+    schema:name "Highway to Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0086730/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Joseph"
+    ] .
+
+# Matlock (1986)
+<https://www.imdb.com/title/tt0090481/> a schema:Movie ;
+    schema:name "Matlock" ;
+    schema:url <https://www.imdb.com/title/tt0090481/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0143167/> ;
+        schema:characterName "Wesley Wallace"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2458886169/> a schema:VideoObject ;
+        schema:name "Clip: Leaving Southampton" ;
+        schema:description "Titanic sets out to sea" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2458886169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTY0NjUzMzU3NV5BMl5BanBnXkFtZTcwMzIyMzE2Nw@@._V1_.jpg" ;
+        schema:duration "PT1M7S"^^xsd:duration ;
+        schema:uploadDate "2012-03-31T05:57:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

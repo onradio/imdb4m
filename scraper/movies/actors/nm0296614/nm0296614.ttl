@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0296614/> a schema:Person ;
+    schema:name "Toby Froud" ;
+    schema:url <https://www.imdb.com/name/nm0296614/> ;
+    schema:birthDate "1984-06-27"^^xsd:date ;
+    schema:jobTitle "Special Effects", "Animation Department", "Art Department" ;
+    schema:alternateName "Tobias Matthew Froud" ;
+    schema:description "Toby Froud. Actor: Labyrinth. Toby Froud was born on 27 June 1984 in Westminster, London, England, UK. He is known for Labyrinth (1986), Lessons Learned (2014) and King Kong (2005). He is married to Sarah Froud. They have one child." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjBiM2MyYTgtMjViNy00Y2QzLWI1OTAtZmQwYjU3NzcyYWY0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Westminster, London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091369/>,    # Labyrinth
+                       <https://www.imdb.com/title/tt0360717/>,    # King Kong
+                       <https://www.imdb.com/title/tt0363771/>,    # The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
+                       <https://www.imdb.com/title/tt3518082/> ; # Lessons Learned
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi514901529/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0296614/mediaviewer/rm269771008/>,
+                 <https://www.imdb.com/name/nm0296614/mediaviewer/rm2497426176/>,
+                 <https://www.imdb.com/name/nm0296614/mediaviewer/rm1269241856/>,
+                 <https://www.imdb.com/name/nm0296614/mediaviewer/rm1167272448/>,
+                 <https://www.imdb.com/name/nm0296614/mediaviewer/rm4085906177/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091369/> a schema:Movie ;
+    schema:name "Labyrinth" ;
+    schema:url <https://www.imdb.com/title/tt0091369/> .
+
+<https://www.imdb.com/title/tt0360717/> a schema:Movie ;
+    schema:name "King Kong" ;
+    schema:url <https://www.imdb.com/title/tt0360717/> .
+
+<https://www.imdb.com/title/tt0363771/> a schema:Movie ;
+    schema:name "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe" ;
+    schema:url <https://www.imdb.com/title/tt0363771/> .
+
+<https://www.imdb.com/title/tt3518082/> a schema:Movie ;
+    schema:name "Lessons Learned" ;
+    schema:url <https://www.imdb.com/title/tt3518082/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi514901529/> a schema:VideoObject ;
+        schema:name "Labyrinth" ;
+        schema:description "Fathom Events Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi514901529/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDlkYmQwMDItY2RiYi00ODZiLTk0OWItMjBkNmU3YjIxZTFmXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT21S"^^xsd:duration ;
+        schema:uploadDate "2024-02-14T17:04:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjBiM2MyYTgtMjViNy00Y2QzLWI1OTAtZmQwYjU3NzcyYWY0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjBiM2MyYTgtMjViNy00Y2QzLWI1OTAtZmQwYjU3NzcyYWY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Toby Froud" ;
+    schema:height "986"^^xsd:integer ;
+    schema:width "615"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0296614/mediaviewer/rm269771008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxNmY1ZmEtZDlmNS00ZTcwLWIwNmEtMTM3YTk2YTc4M2UwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly and Toby Froud in Labyrinth (1986)" ;
+    schema:height "706"^^xsd:integer ;
+    schema:width "1260"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0296614/mediaviewer/rm2497426176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY1NjcyMjMzM15BMl5BanBnXkFtZTcwOTM0NTYwNw@@._V1_.jpg> ;
+    schema:caption "Brian Henson, Timothy Bateson, Douglas Blackwell, Toby Froud, Anthony Jackson, Ron Mueck, David Shaughnessy, and Mildred Shay in Labyrinth (1986)" ;
+    schema:height "336"^^xsd:integer ;
+    schema:width "505"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0296614/mediaviewer/rm1269241856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGUxNTMzZDQtY2M3Yy00OGYyLWFlYWUtMmU3YzIyM2I5ODU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Toby Froud in Lessons Learned (2014)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0296614/mediaviewer/rm1167272448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk4ODUwMDg2M15BMl5BanBnXkFtZTgwMzAxNzUzMjI@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Brian Henson, David Alan Barclay, Robert Beatty, Kevin Clash, Toby Froud, Dave Goelz, Rob Mills, Ron Mueck, Toby Philpott, David Shaughnessy, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0296614/mediaviewer/rm4085906177/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjBiM2MyYTgtMjViNy00Y2QzLWI1OTAtZmQwYjU3NzcyYWY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Toby Froud" ;
+    schema:height "986"^^xsd:integer ;
+    schema:width "615"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

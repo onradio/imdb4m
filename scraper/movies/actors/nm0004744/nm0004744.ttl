@@ -1,0 +1,275 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0004744/> a schema:Person ;
+    schema:name "Lawrence Bender" ;
+    schema:url <https://www.imdb.com/name/nm0004744/> ;
+    schema:birthDate "1957-10-17"^^xsd:date ;
+    schema:jobTitle "Producer", "Camera and Electrical Department", "Actor" ;
+    schema:description "Lawrence Bender. Producer: Pulp Fiction. Lawrence Bender was born in The Bronx, New York City, as Lawrence Kirk Bender. His mother was a kindergarten teacher. Lawrence's father was a college history professor. In high school, he was inspired to follow his grandfather's career as a civil engineer. At the University of Maine in 1979, he graduated with a degree in Civil Engineering. After he graduated, he became a dancer for..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA3OTQzNjMwN15BMl5BanBnXkFtZTcwMTE3NjQxMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "The Bronx, New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0378194/>,    # Kill Bill: Vol. 2
+                       <https://www.imdb.com/title/tt0211465/>,    # Knockaround Guys
+                       <https://www.imdb.com/title/tt0236493/>,    # The Mexican
+                       <https://www.imdb.com/title/tt0116367/>,    # From Dusk Till Dawn
+                       <https://www.imdb.com/title/tt0114928/>,    # White Man's Burden
+                       <https://www.imdb.com/title/tt0113101/>,    # Four Rooms
+                       <https://www.imdb.com/title/tt0110912/>,    # Pulp Fiction
+                       <https://www.imdb.com/title/tt0109842/>,    # Fresh
+                       <https://www.imdb.com/title/tt0105236/>,    # Reservoir Dogs
+                       <https://www.imdb.com/title/tt0100029/>,    # A.W.O.L.: Absent Without Leave
+                       <https://www.imdb.com/title/tt0095379/> ; # Intruder
+
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (From Dusk Till Dawn)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "500000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi77267481/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0004744/mediaviewer/rm2470032896/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm1480429056/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm2052356352/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm1129609472/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm3009670912/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm828959232/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm2864172800/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm2931281664/>,
+                 <https://www.imdb.com/name/nm0004744/mediaviewer/rm2696400640/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0116367/> a schema:Movie ;
+    schema:name "From Dusk Till Dawn" ;
+    schema:url <https://www.imdb.com/title/tt0116367/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kill Bill: Vol. 2 (2004)
+<https://www.imdb.com/title/tt0378194/> a schema:Movie ;
+    schema:name "Kill Bill: Vol. 2" ;
+    schema:url <https://www.imdb.com/title/tt0378194/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Hotel Clerk"
+    ] .
+
+# Knockaround Guys (2001)
+<https://www.imdb.com/title/tt0211465/> a schema:Movie ;
+    schema:name "Knockaround Guys" ;
+    schema:url <https://www.imdb.com/title/tt0211465/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Bar Patron"
+    ] .
+
+# The Mexican (2001)
+<https://www.imdb.com/title/tt0236493/> a schema:Movie ;
+    schema:name "The Mexican" ;
+    schema:url <https://www.imdb.com/title/tt0236493/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Vegas Onlooker"
+    ] .
+
+# From Dusk Till Dawn (1996)
+<https://www.imdb.com/title/tt0116367/> a schema:Movie ;
+    schema:name "From Dusk Till Dawn" ;
+    schema:url <https://www.imdb.com/title/tt0116367/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Man in Diner"
+    ] .
+
+# White Man's Burden (1995)
+<https://www.imdb.com/title/tt0114928/> a schema:Movie ;
+    schema:name "White Man's Burden" ;
+    schema:url <https://www.imdb.com/title/tt0114928/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Bar Patron #1"
+    ] .
+
+# Four Rooms (1995)
+<https://www.imdb.com/title/tt0113101/> a schema:Movie ;
+    schema:name "Four Rooms" ;
+    schema:url <https://www.imdb.com/title/tt0113101/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Long Hair Yuppie Scum"
+    ] .
+
+# Pulp Fiction (1994)
+<https://www.imdb.com/title/tt0110912/> a schema:Movie ;
+    schema:name "Pulp Fiction" ;
+    schema:url <https://www.imdb.com/title/tt0110912/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Long Hair Yuppie-Scum"
+    ] .
+
+# Fresh (1994)
+<https://www.imdb.com/title/tt0109842/> a schema:Movie ;
+    schema:name "Fresh" ;
+    schema:url <https://www.imdb.com/title/tt0109842/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Long Hair Yuppie Scum"
+    ] .
+
+# Reservoir Dogs (1992)
+<https://www.imdb.com/title/tt0105236/> a schema:Movie ;
+    schema:name "Reservoir Dogs" ;
+    schema:url <https://www.imdb.com/title/tt0105236/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Young Cop"
+    ] .
+
+# A.W.O.L.: Absent Without Leave (1990)
+<https://www.imdb.com/title/tt0100029/> a schema:Movie ;
+    schema:name "A.W.O.L.: Absent Without Leave" ;
+    schema:url <https://www.imdb.com/title/tt0100029/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Garage Fight Heckler"
+    ] .
+
+# Intruder (1989)
+<https://www.imdb.com/title/tt0095379/> a schema:Movie ;
+    schema:name "Intruder" ;
+    schema:url <https://www.imdb.com/title/tt0095379/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004744/> ;
+        schema:characterName "Officer Adams"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi77267481/> a schema:VideoObject ;
+        schema:name "Clip - Jail cell" ;
+        schema:description "Jail cell clip" ;
+        schema:embedUrl <https://www.imdb.com/video/vi77267481/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk1MDc4NzY5N15BMl5BanBnXkFtZTgwMTMwMDY3MjI@._V1_.jpg" ;
+        schema:duration "PT1M13S"^^xsd:duration ;
+        schema:uploadDate "2009-05-23T05:32:49Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA3OTQzNjMwN15BMl5BanBnXkFtZTcwMTE3NjQxMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3OTQzNjMwN15BMl5BanBnXkFtZTcwMTE3NjQxMw@@._V1_.jpg> ;
+    schema:caption "Lawrence Bender" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "292"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm2470032896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk1NjI0MjQ5NF5BMl5BanBnXkFtZTcwMzQ0MzE1Nw@@._V1_.jpg> ;
+    schema:caption "Lawrence Bender and Jason Statham in Safe (2012)" ;
+    schema:height "933"^^xsd:integer ;
+    schema:width "1400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm1480429056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2MTkyMjE1MV5BMl5BanBnXkFtZTcwMDY1NzgwMw@@._V1_.jpg> ;
+    schema:caption "Lawrence Bender in White Man's Burden (1995)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1527"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm2052356352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY0OTc4OTUwNF5BMl5BanBnXkFtZTgwOTMwNjgyNjM@._V1_.jpg> ;
+    schema:caption "Isabelle Huppert, Neil Jordan, Lawrence Bender, John Penotti, Chloë Grace Moretz, and Maika Monroe at an event for Greta (2018)" ;
+    schema:height "1472"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm1129609472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwNjQ5NDEzMV5BMl5BanBnXkFtZTgwNzQwNjgyNjM@._V1_.jpg> ;
+    schema:caption "Lawrence Bender at an event for Greta (2018)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1311"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm3009670912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5NDI1Mzk5NV5BMl5BanBnXkFtZTgwNTYyMjc3NjE@._V1_.jpg> ;
+    schema:caption "Lawrence Bender at an event for Mr. Holmes (2015)" ;
+    schema:height "2023"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm828959232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ1MDUzNzc0Ml5BMl5BanBnXkFtZTgwMTE2NTcwNjE@._V1_.jpg> ;
+    schema:caption "Lawrence Bender" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1433"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm2864172800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzY2NjU2NjYxOV5BMl5BanBnXkFtZTgwMDI3MjY4MTE@._V1_.jpg> ;
+    schema:caption "Quentin Tarantino, Uma Thurman, John Travolta, Kelly Preston, and Lawrence Bender at an event for Pulp Fiction (1994)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm2931281664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY0NjYwODExNl5BMl5BanBnXkFtZTgwNjE3MjY4MTE@._V1_.jpg> ;
+    schema:caption "Quentin Tarantino, Uma Thurman, John Travolta, Kelly Preston, and Lawrence Bender at an event for Pulp Fiction (1994)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004744/mediaviewer/rm2696400640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4NTQ4NDQ1NF5BMl5BanBnXkFtZTgwMjE3MjY4MTE@._V1_.jpg> ;
+    schema:caption "Quentin Tarantino, Uma Thurman, and Lawrence Bender at an event for Pulp Fiction (1994)" ;
+    schema:height "1421"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

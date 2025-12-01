@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1003997/> a schema:Person ;
+    schema:name "Raja Awasthi" ;
+    schema:url <https://www.imdb.com/name/nm1003997/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Raja Awasthi. Actor: Lagaan: Once Upon a Time in India. Raja Awasthi is known for Lagaan: Once Upon a Time in India (2001), Swades: We, the People (2004) and Lafdaa (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9778022/>,    # Abhay
+                       <https://www.imdb.com/title/tt4502952/>,    # Mukkadarpur Ka Majnu
+                       <https://www.imdb.com/title/tt0826165/>,    # Raja Bhai Lagey Raho...
+                       <https://www.imdb.com/title/tt0367110/>,    # Swades: We, the People
+                       <https://www.imdb.com/title/tt0169102/>,    # Lagaan: Once Upon a Time in India
+                       <https://www.imdb.com/title/tt2677162/> ; # Lafdaa
+
+
+    schema:video <https://www.imdb.com/video/vi2269363737/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Abhay (2019)
+<https://www.imdb.com/title/tt9778022/> a schema:Movie ;
+    schema:name "Abhay" ;
+    schema:url <https://www.imdb.com/title/tt9778022/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName "Pramod Father"
+    ] .
+
+# Mukkadarpur Ka Majnu (2017)
+<https://www.imdb.com/title/tt4502952/> a schema:Movie ;
+    schema:name "Mukkadarpur Ka Majnu" ;
+    schema:url <https://www.imdb.com/title/tt4502952/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName "Hari Saxena"
+    ] .
+
+# Raja Bhai Lagey Raho... (2005)
+<https://www.imdb.com/title/tt0826165/> a schema:Movie ;
+    schema:name "Raja Bhai Lagey Raho..." ;
+    schema:url <https://www.imdb.com/title/tt0826165/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName ""
+    ] .
+
+# Swades: We, the People (2004)
+<https://www.imdb.com/title/tt0367110/> a schema:Movie ;
+    schema:name "Swades: We, the People" ;
+    schema:url <https://www.imdb.com/title/tt0367110/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName "Panch Gungadin"
+    ] .
+
+# Lagaan: Once Upon a Time in India (2001)
+<https://www.imdb.com/title/tt0169102/> a schema:Movie ;
+    schema:name "Lagaan: Once Upon a Time in India" ;
+    schema:url <https://www.imdb.com/title/tt0169102/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName "Ramprasad"
+    ] .
+
+# Lafdaa (1999)
+<https://www.imdb.com/title/tt2677162/> a schema:Movie ;
+    schema:name "Lafdaa" ;
+    schema:url <https://www.imdb.com/title/tt2677162/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1003997/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2269363737/> a schema:VideoObject ;
+        schema:name "Mukkadarpur Ka Majnu (2017) Trailer" ;
+        schema:description "Mukkadarpur ka Majnu is a story of a guy name Hannu from a small town Mukkadarpur, In today's modern time, he looking for love and affection but bounds by the suspicious hurdles of religion, job status, color, cast and creed." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2269363737/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjg2MTc2NGUtYTI0Yi00NDRiLTk3MWUtODJmMTViM2RmYzJhXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M"^^xsd:duration ;
+        schema:uploadDate "2020-08-22T11:13:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

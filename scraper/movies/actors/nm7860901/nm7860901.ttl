@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7860901/> a schema:Person ;
+    schema:name "Percy Chamburuka" ;
+    schema:url <https://www.imdb.com/name/nm7860901/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Percy Chamburuka. Actor: Sing Street. Percy Chamburuka is known for Sing Street (2016), One Bite (2017) and Joy Crookes: Early (ft. Jafaris) (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt19700392/>,    # Joy Crookes: Early (ft. Jafaris)
+                       <https://www.imdb.com/title/tt7239762/>,    # One Bite
+                       <https://www.imdb.com/title/tt3544112/> ; # Sing Street
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7860901/mediaviewer/rm1121852416/>,
+                 <https://www.imdb.com/name/nm7860901/mediaviewer/rm3799834880/>,
+                 <https://www.imdb.com/name/nm7860901/mediaviewer/rm2958846720/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Joy Crookes: Early (ft. Jafaris) (2019)
+<https://www.imdb.com/title/tt19700392/> a schema:Movie ;
+    schema:name "Joy Crookes: Early (ft. Jafaris)" ;
+    schema:url <https://www.imdb.com/title/tt19700392/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860901/> ;
+        schema:characterName "Jafaris"
+    ] .
+
+# One Bite (2017)
+<https://www.imdb.com/title/tt7239762/> a schema:Movie ;
+    schema:name "One Bite" ;
+    schema:url <https://www.imdb.com/title/tt7239762/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860901/> ;
+        schema:characterName "Jake Fleetwood"
+    ] .
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860901/> ;
+        schema:characterName "Ngig"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm7860901/mediaviewer/rm1121852416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAwMjMwMzMzMl5BMl5BanBnXkFtZTgwODM2MjU1ODE@._V1_.jpg> ;
+    schema:caption "Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1049"^^xsd:integer ;
+    schema:width "1236"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7860901/mediaviewer/rm3799834880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4OTM3MjIyNF5BMl5BanBnXkFtZTgwOTU3OTA1NzE@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1343"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7860901/mediaviewer/rm2958846720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODVmNGYzZDQtYTdjZi00NGJjLTkxODYtYWQ5M2ExNWZlNmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "290"^^xsd:integer ;
+    schema:width "215"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

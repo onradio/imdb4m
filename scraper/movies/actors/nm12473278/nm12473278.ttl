@@ -1,0 +1,79 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm12473278/> a schema:Person ;
+    schema:name "Brian Rodger" ;
+    schema:url <https://www.imdb.com/name/nm12473278/> ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "White Bread" ;
+    schema:description "Brian Rodger. Actor: The Power. Starting with acting lessons at his Grammar School, tutored by a leading member of the local rep, Brian had further private tuition in his late teens for two separate leading roles at the Royal Albert Hall.\n\nFrom the age of 11 and for the next 20 years he gained wide experience in the live theatre, carrying out every role from call boy to SM. Following a..." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt32138566/>,    # A Ghost Story for Christmas
+                       <https://www.imdb.com/title/tt3734688/>,    # Cordelia
+                       <https://www.imdb.com/title/tt6439020/> . # The Personal History of David Copperfield
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Ghost Story for Christmas (2019)
+<https://www.imdb.com/title/tt32138566/> a schema:Movie ;
+    schema:name "A Ghost Story for Christmas" ;
+    schema:url <https://www.imdb.com/title/tt32138566/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12473278/> ;
+        schema:characterName "Juror"
+    ] .
+
+# Cordelia (2019)
+<https://www.imdb.com/title/tt3734688/> a schema:Movie ;
+    schema:name "Cordelia" ;
+    schema:url <https://www.imdb.com/title/tt3734688/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12473278/> ;
+        schema:characterName "Train passenger"
+    ] .
+
+# The Personal History of David Copperfield (2019)
+<https://www.imdb.com/title/tt6439020/> a schema:Movie ;
+    schema:name "The Personal History of David Copperfield" ;
+    schema:url <https://www.imdb.com/title/tt6439020/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12473278/> ;
+        schema:characterName "Theatre goer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

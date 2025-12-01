@@ -1,0 +1,97 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0366413/> a schema:Person ;
+    schema:name "Lorali Hart" ;
+    schema:url <https://www.imdb.com/name/nm0366413/> ;
+    schema:birthDate "1935-10-22"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Texas Starr" ;
+    schema:description "Lorali Hart. Actress: Naked Gun 33 1/3: The Final Insult. Lorali Hart was born on 22 October 1935 in the USA. She is an actress, known for Naked Gun 33 1/3: The Final Insult (1994), The Naked Gun: From the Files of Police Squad! (1988) and Orgy of the Dead (1965)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.57"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 2″ (1.57 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110622/>,    # Naked Gun 33 1/3: The Final Insult
+                       <https://www.imdb.com/title/tt0281997/>,    # Mature Women 1
+                       <https://www.imdb.com/title/tt0095705/>,    # The Naked Gun: From the Files of Police Squad!
+                       <https://www.imdb.com/title/tt0054240/> . # Orgy of the Dead
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Naked Gun 33 1/3: The Final Insult (1994)
+<https://www.imdb.com/title/tt0110622/> a schema:Movie ;
+    schema:name "Naked Gun 33 1/3: The Final Insult" ;
+    schema:url <https://www.imdb.com/title/tt0110622/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0366413/> ;
+        schema:characterName "Melon Lady"
+    ] .
+
+# Mature Women 1 (1990)
+<https://www.imdb.com/title/tt0281997/> a schema:Movie ;
+    schema:name "Mature Women 1" ;
+    schema:url <https://www.imdb.com/title/tt0281997/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0366413/> ;
+        schema:characterName ""
+    ] .
+
+# The Naked Gun: From the Files of Police Squad! (1988)
+<https://www.imdb.com/title/tt0095705/> a schema:Movie ;
+    schema:name "The Naked Gun: From the Files of Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0095705/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0366413/> ;
+        schema:characterName "Woman On Ledge"
+    ] .
+
+# Orgy of the Dead (1965)
+<https://www.imdb.com/title/tt0054240/> a schema:Movie ;
+    schema:name "Orgy of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0054240/> ;
+    schema:datePublished "1965"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0366413/> ;
+        schema:characterName "Cat Dance"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,174 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0107048/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Weatherman" ;
+        schema:byArtist <https://www.imdb.com/name/nm0565875/> ; # Delbert McClinton
+        schema:producer <https://www.imdb.com/name/nm0006070/> ; # George Fenton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Weatherman" ;
+            schema:author <https://www.imdb.com/name/nm0006070/>, # George Fenton
+                       <https://www.imdb.com/name/nm0000601/> # Harold Ramis
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Got You Babe" ;
+        schema:byArtist <https://www.imdb.com/name/nm2204595/> ; # Sonny & Cher
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Got You Babe" ;
+            schema:author <https://www.imdb.com/name/nm0095122/> # Sonny Bono
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pennsylvania Polka" ;
+        schema:byArtist <https://www.imdb.com/name/nm0946149/> ; # Frankie Yankovic
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pennsylvania Polka" ;
+            schema:author <https://www.imdb.com/name/nm0497744/>, # Lester Lee
+                       <https://www.imdb.com/name/nm0543150/> # Zeke Manners
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Take Me Round Again" ;
+        schema:byArtist <https://www.imdb.com/name/nm0828799/> ; # Susie Stevens-Logan
+        schema:producer <https://www.imdb.com/name/nm0006070/> ; # George Fenton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Take Me Round Again" ;
+            schema:author <https://www.imdb.com/name/nm0006070/> # George Fenton
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You Don't Know Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0153124/> ; # Ray Charles
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You Don't Know Me" ;
+            schema:author <https://www.imdb.com/name/nm0036425/>, # Eddy Arnold
+                       <https://www.imdb.com/name/nm0907631/> # Cindy Walker
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Eighteenth Variation from Rhapsody on a Theme of Paganini" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Eighteenth Variation from Rhapsody on a Theme of Paganini" ;
+            schema:author <https://www.imdb.com/name/nm0006245/> # Sergei Rachmaninoff
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Phil's Piano Solo" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Almost Like Being in Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0170713/> ; # Nat 'King' Cole
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Almost Like Being in Love" ;
+            schema:author <https://www.imdb.com/name/nm0503585/>, # Alan Jay Lerner
+                       <https://www.imdb.com/name/nm0517350/> # Frederick Loewe
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Bourrée du Célibataire" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Bourrée du Célibataire" ;
+            schema:composer <https://www.imdb.com/name/nm0107035/> ; # Jacques Brel
+            schema:lyricist <https://www.imdb.com/name/nm0107035/> # Jacques Brel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Sonata in C, K545, 1st movement" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Sonata in C, K545, 1st movement" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Quartet No. 1 in D - The Ground Hog" ;
+        schema:byArtist <https://www.imdb.com/name/nm2068551/>, # Dennis Karmazyn
+                        <https://www.imdb.com/name/nm8198082/>, # Sheldon Sanov
+                        <https://www.imdb.com/name/nm1338068/> ; # Pamela Goldsmith
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Quartet No. 1 in D - The Ground Hog" ;
+            schema:author <https://www.imdb.com/name/nm0006070/> # George Fenton
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000601/> a schema:Person ;
+    schema:name "Harold Ramis" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0006070/> a schema:Person ;
+    schema:name "George Fenton" .
+<https://www.imdb.com/name/nm0006245/> a schema:Person ;
+    schema:name "Sergei Rachmaninoff" .
+<https://www.imdb.com/name/nm0036425/> a schema:Person ;
+    schema:name "Eddy Arnold" .
+<https://www.imdb.com/name/nm0095122/> a schema:Person ;
+    schema:name "Sonny Bono" .
+<https://www.imdb.com/name/nm0107035/> a schema:Person ;
+    schema:name "Jacques Brel" .
+<https://www.imdb.com/name/nm0153124/> a schema:Person ;
+    schema:name "Ray Charles" .
+<https://www.imdb.com/name/nm0170713/> a schema:Person ;
+    schema:name "Nat 'King' Cole" .
+<https://www.imdb.com/name/nm0497744/> a schema:Person ;
+    schema:name "Lester Lee" .
+<https://www.imdb.com/name/nm0503585/> a schema:Person ;
+    schema:name "Alan Jay Lerner" .
+<https://www.imdb.com/name/nm0517350/> a schema:Person ;
+    schema:name "Frederick Loewe" .
+<https://www.imdb.com/name/nm0543150/> a schema:Person ;
+    schema:name "Zeke Manners" .
+<https://www.imdb.com/name/nm0565875/> a schema:Person ;
+    schema:name "Delbert McClinton" .
+<https://www.imdb.com/name/nm0828799/> a schema:Person ;
+    schema:name "Susie Stevens-Logan" .
+<https://www.imdb.com/name/nm0907631/> a schema:Person ;
+    schema:name "Cindy Walker" .
+<https://www.imdb.com/name/nm0946149/> a schema:Person ;
+    schema:name "Frankie Yankovic" .
+<https://www.imdb.com/name/nm1338068/> a schema:Person ;
+    schema:name "Pamela Goldsmith" .
+<https://www.imdb.com/name/nm2068551/> a schema:Person ;
+    schema:name "Dennis Karmazyn" .
+<https://www.imdb.com/name/nm2204595/> a schema:Person ;
+    schema:name "Sonny & Cher" .
+<https://www.imdb.com/name/nm8198082/> a schema:Person ;
+    schema:name "Sheldon Sanov" .
+# ==============================================================================

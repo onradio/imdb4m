@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3797369/> a schema:Person ;
+    schema:name "Sergio Santana" ;
+    schema:url <https://www.imdb.com/name/nm3797369/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sergio Santana. Actor: The Secret in Their Eyes. Sergio Santana is known for The Secret in Their Eyes (2009), The Two Popes (2019) and At the End of the Tunnel (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8404614/>,    # The Two Popes
+                       <https://www.imdb.com/title/tt5133308/>,    # At the End of the Tunnel
+                       <https://www.imdb.com/title/tt1305806/> . # The Secret in Their Eyes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Two Popes (2019)
+<https://www.imdb.com/title/tt8404614/> a schema:Movie ;
+    schema:name "The Two Popes" ;
+    schema:url <https://www.imdb.com/title/tt8404614/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3797369/> ;
+        schema:characterName "Slum Man"
+    ] .
+
+# At the End of the Tunnel (2016)
+<https://www.imdb.com/title/tt5133308/> a schema:Movie ;
+    schema:name "At the End of the Tunnel" ;
+    schema:url <https://www.imdb.com/title/tt5133308/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3797369/> ;
+        schema:characterName "Policía 2"
+    ] .
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3797369/> ;
+        schema:characterName "Jacinto Cáceres"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

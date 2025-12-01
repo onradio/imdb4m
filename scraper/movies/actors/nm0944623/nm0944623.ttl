@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0944623/> a schema:Person ;
+    schema:name "Cheng Lin Xu" ;
+    schema:url <https://www.imdb.com/name/nm0944623/> ;
+    schema:jobTitle "Actor", "Director", "Second Unit or Assistant Director" ;
+    schema:description "Cheng Lin Xu. Actor: Crouching Tiger, Hidden Dragon. Cheng Lin Xu is known for Crouching Tiger, Hidden Dragon (2000), Fatal Training Course (2003) and Yat yeh ging ching (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5596352/>,    # Huo guo ying xiong
+                       <https://www.imdb.com/title/tt2247698/>,    # Hu xiao cangqiong
+                       <https://www.imdb.com/title/tt0190332/>,    # Crouching Tiger, Hidden Dragon
+                       <https://www.imdb.com/title/tt0339120/>,    # Hei hua sha shou
+                       <https://www.imdb.com/title/tt32575840/>,    # Yang jia jiang
+                       <https://www.imdb.com/title/tt0351619/> . # Qi an wei zhong zhi
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Huo guo ying xiong (2016)
+<https://www.imdb.com/title/tt5596352/> a schema:Movie ;
+    schema:name "Huo guo ying xiong" ;
+    schema:url <https://www.imdb.com/title/tt5596352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName "Bank Clerk"
+    ] .
+
+# Hu xiao cangqiong (2002)
+<https://www.imdb.com/title/tt2247698/> a schema:Movie ;
+    schema:name "Hu xiao cangqiong" ;
+    schema:url <https://www.imdb.com/title/tt2247698/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName "Xiao Tai Quan"
+    ] .
+
+# Crouching Tiger, Hidden Dragon (2000)
+<https://www.imdb.com/title/tt0190332/> a schema:Movie ;
+    schema:name "Crouching Tiger, Hidden Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0190332/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName "Captain"
+    ] .
+
+# Hei hua sha shou (1993)
+<https://www.imdb.com/title/tt0339120/> a schema:Movie ;
+    schema:name "Hei hua sha shou" ;
+    schema:url <https://www.imdb.com/title/tt0339120/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName "Qu Jingzhi"
+    ] .
+
+# Yang jia jiang (1992)
+<https://www.imdb.com/title/tt32575840/> a schema:Movie ;
+    schema:name "Yang jia jiang" ;
+    schema:url <https://www.imdb.com/title/tt32575840/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName ""
+    ] .
+
+# Qi an wei zhong zhi (1992)
+<https://www.imdb.com/title/tt0351619/> a schema:Movie ;
+    schema:name "Qi an wei zhong zhi" ;
+    schema:url <https://www.imdb.com/title/tt0351619/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0944623/> ;
+        schema:characterName "Mei Shan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,209 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6283951/> a schema:Person ;
+    schema:name "Olivia Hamilton" ;
+    schema:url <https://www.imdb.com/name/nm6283951/> ;
+    schema:jobTitle "Actress", "Writer", "Producer" ;
+    schema:description "Olivia Hamilton. Actress: La La Land. Olivia Hamilton is known for La La Land (2016), Don't Worry, He Won't Get Far on Foot (2018) and First Man (2018). She has been married to Damien Chazelle since 22 September 2018. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTczMzA5OTY2OV5BMl5BanBnXkFtZTgwNTY1ODA1NjM@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3783958/>,    # La La Land
+                       <https://www.imdb.com/title/tt1213641/>,    # First Man
+                       <https://www.imdb.com/title/tt3390892/>,    # The Last Tycoon
+                       <https://www.imdb.com/title/tt6288124/>,    # Don't Worry, He Won't Get Far on Foot
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8202262/>,    # Justine
+                       <https://www.imdb.com/title/tt6974880/>,    # Playground
+                       <https://www.imdb.com/title/tt6431328/>,    # Facetiming with Mommy
+                       <https://www.imdb.com/title/tt6230776/>,    # Surrogate
+                       <https://www.imdb.com/title/tt5037452/>,    # The Beard
+                       <https://www.imdb.com/title/tt1460205/> ; # Dinosaur Train
+
+
+    schema:video <https://www.imdb.com/video/vi4193892377/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6283951/mediaviewer/rm2097694464/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm1913145088/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm4231660544/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm1004812800/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm3292136448/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm2359967488/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm3119562241/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm3220225537/>,
+                 <https://www.imdb.com/name/nm6283951/mediaviewer/rm2412346624/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3783958/> a schema:Movie ;
+    schema:name "La La Land" ;
+    schema:url <https://www.imdb.com/title/tt3783958/> .
+
+<https://www.imdb.com/title/tt1213641/> a schema:Movie ;
+    schema:name "First Man" ;
+    schema:url <https://www.imdb.com/title/tt1213641/> .
+
+<https://www.imdb.com/title/tt3390892/> a schema:Movie ;
+    schema:name "The Last Tycoon" ;
+    schema:url <https://www.imdb.com/title/tt3390892/> .
+
+<https://www.imdb.com/title/tt6288124/> a schema:Movie ;
+    schema:name "Don't Worry, He Won't Get Far on Foot" ;
+    schema:url <https://www.imdb.com/title/tt6288124/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Justine (2019)
+<https://www.imdb.com/title/tt8202262/> a schema:Movie ;
+    schema:name "Justine" ;
+    schema:url <https://www.imdb.com/title/tt8202262/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Maddie"
+    ] .
+
+# Playground (2017)
+<https://www.imdb.com/title/tt6974880/> a schema:Movie ;
+    schema:name "Playground" ;
+    schema:url <https://www.imdb.com/title/tt6974880/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Beth"
+    ] .
+
+# Facetiming with Mommy (2016)
+<https://www.imdb.com/title/tt6431328/> a schema:Movie ;
+    schema:name "Facetiming with Mommy" ;
+    schema:url <https://www.imdb.com/title/tt6431328/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Bella"
+    ] .
+
+# Surrogate (2016)
+<https://www.imdb.com/title/tt6230776/> a schema:Movie ;
+    schema:name "Surrogate" ;
+    schema:url <https://www.imdb.com/title/tt6230776/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Liz"
+    ] .
+
+# The Beard (2016)
+<https://www.imdb.com/title/tt5037452/> a schema:Movie ;
+    schema:name "The Beard" ;
+    schema:url <https://www.imdb.com/title/tt5037452/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Ameilia"
+    ] .
+
+# Dinosaur Train (2011)
+<https://www.imdb.com/title/tt1460205/> a schema:Movie ;
+    schema:name "Dinosaur Train" ;
+    schema:url <https://www.imdb.com/title/tt1460205/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6283951/> ;
+        schema:characterName "Lily Lambeosaurus"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4193892377/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Based on the true story of cartoonist John Callahan, who became paralyzed after a car accident at age 21 and turned to drawing as a form of therapy." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4193892377/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWUzNjg0MDgtNjNhZi00NWJkLWIzN2YtOWRkY2Y4YmE4Y2JlXkEyXkFqcGdeQXVyNzQ0MDUyMzg@._V1_.jpg" ;
+        schema:duration "PT1M24S"^^xsd:duration ;
+        schema:uploadDate "2018-01-15T23:39:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTczMzA5OTY2OV5BMl5BanBnXkFtZTgwNTY1ODA1NjM@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczMzA5OTY2OV5BMl5BanBnXkFtZTgwNTY1ODA1NjM@._V1_.jpg> ;
+    schema:caption "Olivia Hamilton in First Man (2018)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm2097694464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWI2OGIzZjQtODlkNS00NzU5LTk3OGUtODBkZTI1MzdjOThmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olivia Hamilton at the premiere of Don't Worry He Won't Get Far On Foot" ;
+    schema:height "3150"^^xsd:integer ;
+    schema:width "2100"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm1913145088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDNiNGUzY2QtMzliMy00YTQyLWIwYzItNTIyM2U0M2Y3NTY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olivia Hamilton and Damien Chazelle attend premiere of Gus Van Sant's Film: Don't Worry He Won't Get Far On Foot" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm4231660544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjkxNWU3OGUtN2EwYi00NGYyLTg2MmItNDc5N2Y0ZjIxZDYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Actress Olivia Hamilton and Writer-Director Damien Chazelle attend the Venice Film Festival premier of La La Land" ;
+    schema:height "587"^^xsd:integer ;
+    schema:width "417"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm1004812800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmQzZmI2NDQtNGQ0ZS00ZmZkLWJkZDEtMmEyYTZmNTJhMTI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Critics Choice Awards for La La Land" ;
+    schema:height "241"^^xsd:integer ;
+    schema:width "309"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm3292136448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGJkMWQxMTgtNWQ5ZC00ZThjLThhYjEtYmJhMDUxOTc3ZGM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Actress Olivia Hamilton and Writer-Director Damien Chazelle attend the Toronto Film Festival screening of La La Land" ;
+    schema:height "522"^^xsd:integer ;
+    schema:width "364"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm2359967488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDM3YTE3ZDUtMDNiMC00ZjQzLTg0ZWItOTg0NTM0ZTk4YmZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olivia Hamilton" ;
+    schema:height "2592"^^xsd:integer ;
+    schema:width "3872"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm3119562241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDlhZjVhMGUtZmE3NC00N2IxLTk5MWItODFhZDM2Y2M5YzFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Claire Foy and Olivia Hamilton in First Man (2018)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm3220225537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmIzOWNmODEtYTJkNy00OWJiLTgwMmItZWFhMmU5YjY1MDc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jason Clarke, Patrick Fugit, Ryan Gosling, Kris Rey, Claire Foy, and Olivia Hamilton in First Man (2018)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6283951/mediaviewer/rm2412346624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODk0MTk5OTIxNV5BMl5BanBnXkFtZTgwNzY1ODA1NjM@._V1_.jpg> ;
+    schema:caption "Claire Foy and Olivia Hamilton in First Man (2018)" ;
+    schema:height "1154"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

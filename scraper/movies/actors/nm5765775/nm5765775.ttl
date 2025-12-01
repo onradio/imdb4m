@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5765775/> a schema:Person ;
+    schema:name "Fadi Yousef" ;
+    schema:url <https://www.imdb.com/name/nm5765775/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Fadi Yousef. Actor: Capernaum. Fadi Yousef is known for Capernaum (2018), Al Hayba (2017) and The Football Pitch (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8267604/>,    # Capernaum
+                       <https://www.imdb.com/title/tt3014818/> ; # The Football Pitch
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5765775/mediaviewer/rm1653769473/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Capernaum (2018)
+<https://www.imdb.com/title/tt8267604/> a schema:Movie ;
+    schema:name "Capernaum" ;
+    schema:url <https://www.imdb.com/title/tt8267604/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5765775/> ;
+        schema:characterName "Selim"
+    ] .
+
+# The Football Pitch (2000)
+<https://www.imdb.com/title/tt3014818/> a schema:Movie ;
+    schema:name "The Football Pitch" ;
+    schema:url <https://www.imdb.com/title/tt3014818/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5765775/> ;
+        schema:characterName "Palestinian Child"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5765775/mediaviewer/rm1653769473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2RmMGVlODgtYzQ4My00YzVkLWI3NDAtMjY2ODY1Y2Q3NzE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kawsar Al Haddad, Fadi Yousef, and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "843"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

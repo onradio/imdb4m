@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8222411/> a schema:Person ;
+    schema:name "Armagan Oguz" ;
+    schema:url <https://www.imdb.com/name/nm8222411/> ;
+    schema:birthDate "1984-02-11"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Armagan Oguz. Actor: Wolf. Armagan Oguz was born on 11 February 1984 in Istanbul, Turkey. He is an actor, known for Wolf (2018), El Turco (2025) and The Mountain II (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BM2VhY2FiZDQtMDA2Yy00ZDY4LTkyOGUtOTY5M2FhNjZkNzMwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Istanbul, Turkey"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.95"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4¾″ (1.95 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4320258/>,    # Dirilis: Ertugrul
+                       <https://www.imdb.com/title/tt7146600/>,    # Wolf
+                       <https://www.imdb.com/title/tt6724368/>,    # Fi
+                       <https://www.imdb.com/title/tt5813916/>,    # The Mountain II
+                       <https://www.imdb.com/title/tt4875162/>,    # Ah Neriman
+                       <https://www.imdb.com/title/tt25013228/> ; # Spoken Love
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8222411/mediaviewer/rm1869373952/>,
+                 <https://www.imdb.com/name/nm8222411/mediaviewer/rm1449909505/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dirilis: Ertugrul (2018)
+<https://www.imdb.com/title/tt4320258/> a schema:Movie ;
+    schema:name "Dirilis: Ertugrul" ;
+    schema:url <https://www.imdb.com/title/tt4320258/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Ataç Bey"
+    ] .
+
+# Wolf (2018)
+<https://www.imdb.com/title/tt7146600/> a schema:Movie ;
+    schema:name "Wolf" ;
+    schema:url <https://www.imdb.com/title/tt7146600/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Ayi Murat"
+    ] .
+
+# Fi (2017)
+<https://www.imdb.com/title/tt6724368/> a schema:Movie ;
+    schema:name "Fi" ;
+    schema:url <https://www.imdb.com/title/tt6724368/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Göksel"
+    ] .
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Sergeant Baybars Yucel"
+    ] .
+
+# Ah Neriman (2014)
+<https://www.imdb.com/title/tt4875162/> a schema:Movie ;
+    schema:name "Ah Neriman" ;
+    schema:url <https://www.imdb.com/title/tt4875162/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Selim"
+    ] .
+
+# Spoken Love (2011)
+<https://www.imdb.com/title/tt25013228/> a schema:Movie ;
+    schema:name "Spoken Love" ;
+    schema:url <https://www.imdb.com/title/tt25013228/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8222411/> ;
+        schema:characterName "Charles"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BM2VhY2FiZDQtMDA2Yy00ZDY4LTkyOGUtOTY5M2FhNjZkNzMwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2VhY2FiZDQtMDA2Yy00ZDY4LTkyOGUtOTY5M2FhNjZkNzMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Armagan Oguz in Kuzey Yildizi (2019)" ;
+    schema:height "560"^^xsd:integer ;
+    schema:width "840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8222411/mediaviewer/rm1869373952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzU3MTljZGUtZDhiNy00MWU0LTgzMWYtMTQzODAyNjRhMmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murat Arkin, Ahu Türkpençe, Firat Dogruloglu, Ahmet Pinar, Emir Benderlioglu, Bedii Akin, Can Nergis, Ozan Agaç, Serkan Çayoglu, Armagan Oguz, and Melis Hacic in Wolf (2018)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8222411/mediaviewer/rm1449909505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2VhY2FiZDQtMDA2Yy00ZDY4LTkyOGUtOTY5M2FhNjZkNzMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Armagan Oguz in Kuzey Yildizi (2019)" ;
+    schema:height "560"^^xsd:integer ;
+    schema:width "840"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

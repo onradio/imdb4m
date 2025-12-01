@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2044962/> a schema:Person ;
+    schema:name "Domenic Bove" ;
+    schema:url <https://www.imdb.com/name/nm2044962/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Domenic Bove. Actor: The Pursuit of Happyness. Domenic Bove is known for The Pursuit of Happyness (2006) and Bully (2007)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjU2NzgzNDg3M15BMl5BanBnXkFtZTcwMTAxNjY0MQ@@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1437886/>,    # Bully
+                       <https://www.imdb.com/title/tt0454921/>,    # The Pursuit of Happyness
+                       <https://www.imdb.com/title/tt0387059/> ; # Bee Season
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2044962/mediaviewer/rm1826592768/>,
+                 <https://www.imdb.com/name/nm2044962/mediaviewer/rm3721892608/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bully (2007)
+<https://www.imdb.com/title/tt1437886/> a schema:Movie ;
+    schema:name "Bully" ;
+    schema:url <https://www.imdb.com/title/tt1437886/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2044962/> ;
+        schema:characterName "Jared"
+    ] .
+
+# The Pursuit of Happyness (2006)
+<https://www.imdb.com/title/tt0454921/> a schema:Movie ;
+    schema:name "The Pursuit of Happyness" ;
+    schema:url <https://www.imdb.com/title/tt0454921/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2044962/> ;
+        schema:characterName "Tim Ribbon"
+    ] .
+
+# Bee Season (2005)
+<https://www.imdb.com/title/tt0387059/> a schema:Movie ;
+    schema:name "Bee Season" ;
+    schema:url <https://www.imdb.com/title/tt0387059/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2044962/> ;
+        schema:characterName "Spelling Bee Contestant"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjU2NzgzNDg3M15BMl5BanBnXkFtZTcwMTAxNjY0MQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjU2NzgzNDg3M15BMl5BanBnXkFtZTcwMTAxNjY0MQ@@._V1_.jpg> ;
+    schema:caption "Domenic Bove" ;
+    schema:height "611"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2044962/mediaviewer/rm1826592768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxMjkxOTI1MF5BMl5BanBnXkFtZTYwOTkyNzg1._V1_.jpg> ;
+    schema:caption "Jaden Smith and Domenic Bove at an event for The Pursuit of Happyness (2006)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2044962/mediaviewer/rm3721892608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjU2NzgzNDg3M15BMl5BanBnXkFtZTcwMTAxNjY0MQ@@._V1_.jpg> ;
+    schema:caption "Domenic Bove" ;
+    schema:height "611"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

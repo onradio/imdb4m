@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1004887/> a schema:Person ;
+    schema:name "Pradeep Singh Rawat" ;
+    schema:url <https://www.imdb.com/name/nm1004887/> ;
+    schema:birthDate "1952-01-21"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Pradeep Singh Rawat. Actor: Ghajini. Pradeep Singh Rawat was born on 21 January 1952 in Jabalpur, Madhya Pradesh. He is an actor, known for Ghajini (2008), Sarfarosh (1999) and 1: Nenokkadine (2014). He is married to Kalyani Rawat." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjEzNTBhNjAtYWVhNS00Mjg1LWE2NmItY2M5ZjZkMTU0M2E5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Jabalpur, Madhya Pradesh"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2895234841/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1004887/mediaviewer/rm3851782401/>,
+                 <https://www.imdb.com/name/nm1004887/mediaviewer/rm3649636608/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2895234841/> a schema:VideoObject ;
+        schema:name "DD Returns - Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2895234841/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTJmMjNjMjQtYjlkNC00ZDU5LWE4OGQtZmE5NzRjMTQyN2RlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M17S"^^xsd:duration ;
+        schema:uploadDate "2023-07-15T05:42:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjEzNTBhNjAtYWVhNS00Mjg1LWE2NmItY2M5ZjZkMTU0M2E5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEzNTBhNjAtYWVhNS00Mjg1LWE2NmItY2M5ZjZkMTU0M2E5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pradeep Singh Rawat" ;
+    schema:height "474"^^xsd:integer ;
+    schema:width "320"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004887/mediaviewer/rm3851782401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzZmODU0ZTctZGE1OS00ZjFlLWJmMzgtMmE5ZmUzYmE1MjYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pradeep Singh Rawat and Shaheen Siddique in Oru Kadath Naadan Katha (2019)" ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004887/mediaviewer/rm3649636608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEzNTBhNjAtYWVhNS00Mjg1LWE2NmItY2M5ZjZkMTU0M2E5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pradeep Singh Rawat" ;
+    schema:height "474"^^xsd:integer ;
+    schema:width "320"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

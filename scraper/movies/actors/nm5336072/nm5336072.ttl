@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5336072/> a schema:Person ;
+    schema:name "Lu Kai" ;
+    schema:url <https://www.imdb.com/name/nm5336072/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Lu Kai. Actor: The Man with the Iron Fists. Lu Kai is known for The Man with the Iron Fists (2012), Ip Man (2008) and The Bullet Vanishes (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt28250277/>,    # Duo ming lun hui
+                       <https://www.imdb.com/title/tt1258972/>,    # The Man with the Iron Fists
+                       <https://www.imdb.com/title/tt2106741/>,    # The Bullet Vanishes
+                       <https://www.imdb.com/title/tt1220719/> . # Ip Man
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Duo ming lun hui (2017)
+<https://www.imdb.com/title/tt28250277/> a schema:Movie ;
+    schema:name "Duo ming lun hui" ;
+    schema:url <https://www.imdb.com/title/tt28250277/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5336072/> ;
+        schema:characterName "Boss Li"
+    ] .
+
+# The Man with the Iron Fists (2012)
+<https://www.imdb.com/title/tt1258972/> a schema:Movie ;
+    schema:name "The Man with the Iron Fists" ;
+    schema:url <https://www.imdb.com/title/tt1258972/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5336072/> ;
+        schema:characterName "Lion Clan Servant"
+    ] .
+
+# The Bullet Vanishes (2012)
+<https://www.imdb.com/title/tt2106741/> a schema:Movie ;
+    schema:name "The Bullet Vanishes" ;
+    schema:url <https://www.imdb.com/title/tt2106741/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5336072/> ;
+        schema:characterName "Chief Jin's men"
+    ] .
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5336072/> ;
+        schema:characterName "Jin's Underling"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

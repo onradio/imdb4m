@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1281253/> a schema:Person ;
+    schema:name "Roddy Skeaping" ;
+    schema:url <https://www.imdb.com/name/nm1281253/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Roddy Skeaping. Soundtrack: It's Kind of a Funny Story. Roddy Skeaping is known for It's Kind of a Funny Story (2010), The Pianist (2002) and By the Sword Divided (1983)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0253474/>,    # The Pianist
+                       <https://www.imdb.com/title/tt0092712/> . # By the Sword Divided
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Pianist (2002)
+<https://www.imdb.com/title/tt0253474/> a schema:Movie ;
+    schema:name "The Pianist" ;
+    schema:url <https://www.imdb.com/title/tt0253474/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1281253/> ;
+        schema:characterName "Street Musician"
+    ] .
+
+# By the Sword Divided (1983)
+<https://www.imdb.com/title/tt0092712/> a schema:Movie ;
+    schema:name "By the Sword Divided" ;
+    schema:url <https://www.imdb.com/title/tt0092712/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1281253/> ;
+        schema:characterName "Village Band"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

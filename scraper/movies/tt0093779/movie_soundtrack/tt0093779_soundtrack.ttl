@@ -1,0 +1,40 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093779/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Storybook Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0212151/> ; # Willy DeVille
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Storybook Love" ;
+            schema:author <https://www.imdb.com/name/nm0212151/> # Willy DeVille
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Take Me Out to the Ballgame" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Take Me Out to the Ballgame" ;
+            schema:composer <https://www.imdb.com/name/nm0903117/> ; # Albert von Tilzer
+            schema:lyricist <https://www.imdb.com/name/nm0636413/> # Jack Norworth
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0212151/> a schema:Person ;
+    schema:name "Willy DeVille" .
+<https://www.imdb.com/name/nm0636413/> a schema:Person ;
+    schema:name "Jack Norworth" .
+<https://www.imdb.com/name/nm0903117/> a schema:Person ;
+    schema:name "Albert von Tilzer" .
+# ==============================================================================

@@ -1,0 +1,216 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7340546/> a schema:Person ;
+    schema:name "Eliza Scanlen" ;
+    schema:url <https://www.imdb.com/name/nm7340546/> ;
+    schema:birthDate "1999-01-06"^^xsd:date ;
+    schema:jobTitle "Actress", "Director", "Writer" ;
+    schema:description "Eliza Scanlen. Actress: Little Women. Australian actress Eliza Scanlen is perhaps best know for her starring role as Amma Crellin opposite Amy Adams and Patricia Clarkson in the HBO critically acclaimed drama series \"Sharp Objects\". Based on the novel written by Gillian Flynn of the same name, the story centers on reporter Camille Preaker (Adams), fresh from a psychiatric hospital, who must return to her hometown to uncover the murders..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNWJmNTdlOGQtOTY2NC00Mjk5LWE5YjUtYzgxMTlmYzYyYzAyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sydney, New South Wales, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.62"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3¾″ (1.62 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3281548/>,    # Little Women
+                       <https://www.imdb.com/title/tt2649356/>,    # Sharp Objects
+                       <https://www.imdb.com/title/tt7395114/>,    # The Devil All the Time
+                       <https://www.imdb.com/title/tt8399664/>,    # Babyteeth
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt9158400/>,    # Love and Other Places
+                       <https://www.imdb.com/title/tt5646970/>,    # Grace
+                       <https://www.imdb.com/title/tt4703728/>,    # Lacuna
+                       <https://www.imdb.com/title/tt0094481/>,    # Home and Away
+                       <https://www.imdb.com/title/tt3859542/> ; # A Class Act
+
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 14 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1558104089/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7340546/mediaviewer/rm2810997761/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm989667073/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm3472629505/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm2641763841/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm948932609/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm999264257/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm1032818689/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm1575634176/>,
+                 <https://www.imdb.com/name/nm7340546/mediaviewer/rm4170467072/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3281548/> a schema:Movie ;
+    schema:name "Little Women" ;
+    schema:url <https://www.imdb.com/title/tt3281548/> .
+
+<https://www.imdb.com/title/tt2649356/> a schema:Movie ;
+    schema:name "Sharp Objects" ;
+    schema:url <https://www.imdb.com/title/tt2649356/> .
+
+<https://www.imdb.com/title/tt7395114/> a schema:Movie ;
+    schema:name "The Devil All the Time" ;
+    schema:url <https://www.imdb.com/title/tt7395114/> .
+
+<https://www.imdb.com/title/tt8399664/> a schema:Movie ;
+    schema:name "Babyteeth" ;
+    schema:url <https://www.imdb.com/title/tt8399664/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Love and Other Places (2018)
+<https://www.imdb.com/title/tt9158400/> a schema:Movie ;
+    schema:name "Love and Other Places" ;
+    schema:url <https://www.imdb.com/title/tt9158400/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7340546/> ;
+        schema:characterName "Claude"
+    ] .
+
+# Grace (2018)
+<https://www.imdb.com/title/tt5646970/> a schema:Movie ;
+    schema:name "Grace" ;
+    schema:url <https://www.imdb.com/title/tt5646970/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7340546/> ;
+        schema:characterName "Grace"
+    ] .
+
+# Lacuna (2016)
+<https://www.imdb.com/title/tt4703728/> a schema:Movie ;
+    schema:name "Lacuna" ;
+    schema:url <https://www.imdb.com/title/tt4703728/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7340546/> ;
+        schema:characterName "Zoe"
+    ] .
+
+# Home and Away (2016)
+<https://www.imdb.com/title/tt0094481/> a schema:Movie ;
+    schema:name "Home and Away" ;
+    schema:url <https://www.imdb.com/title/tt0094481/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7340546/> ;
+        schema:characterName "Tabitha Ford"
+    ] .
+
+# A Class Act (2015)
+<https://www.imdb.com/title/tt3859542/> a schema:Movie ;
+    schema:name "A Class Act" ;
+    schema:url <https://www.imdb.com/title/tt3859542/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7340546/> ;
+        schema:characterName "Eliza"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1558104089/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "It follows the birth of the nightclub scene in London's Soho" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1558104089/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTUwZWQwZWMtYzcxZi00NWUzLWIwYTItNmEwNDhjOTkzYzkwXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M3S"^^xsd:duration ;
+        schema:uploadDate "2025-07-22T15:17:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNWJmNTdlOGQtOTY2NC00Mjk5LWE5YjUtYzgxMTlmYzYyYzAyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWJmNTdlOGQtOTY2NC00Mjk5LWE5YjUtYzgxMTlmYzYyYzAyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eliza Scanlen at an event for The 71st Primetime Emmy Awards (2019)" ;
+    schema:height "3866"^^xsd:integer ;
+    schema:width "2578"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm2810997761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGEyYWUzNDUtNjZiYi00ZTg4LTg2ODUtNTI5MDIwY2YwNGIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eliza Scanlen in Caddo Lake (2024)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm989667073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjYxODg5YzEtZWI1My00NzA4LWJjODctZGUwYjk1YTRjMzEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kristin Griffith, Tom Holland, and Eliza Scanlen in The Devil All the Time (2020)" ;
+    schema:height "529"^^xsd:integer ;
+    schema:width "754"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm3472629505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODUwMzFiYWQtYzkyYS00NTVkLTk4N2QtMjM1MTZkMTBlNzUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Holland and Eliza Scanlen in The Devil All the Time (2020)" ;
+    schema:height "537"^^xsd:integer ;
+    schema:width "417"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm2641763841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzYzZiZDUtNTQ2My00MWFiLWFlYWEtZThlMDZmNzAxOWU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Atkinson, Kristin Griffith, Tom Holland, and Eliza Scanlen in The Devil All the Time (2020)" ;
+    schema:height "504"^^xsd:integer ;
+    schema:width "1273"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm948932609/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTNkMmY5MjQtMGZjYi00MjRjLTk4NDMtNmUxYjc5ODBjM2FmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eliza Scanlen in Little Women (2019)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm999264257/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmUxY2JjNzEtYTdlYy00Y2EwLThhMGUtZjFlMjljMzM5Y2FmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma Watson, Saoirse Ronan, Florence Pugh, and Eliza Scanlen in Little Women (2019)" ;
+    schema:height "636"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm1032818689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDhiMmJiM2EtMDM2NS00YTZlLWI5NTUtYjhlMWU3ZTdlZGE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma Watson, Saoirse Ronan, Florence Pugh, and Eliza Scanlen in Little Women (2019)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm1575634176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM5MzQ4NzU4OV5BMl5BanBnXkFtZTgwOTcyNjc5NTM@._V1_.jpg> ;
+    schema:caption "Amy Adams, Patricia Clarkson, and Eliza Scanlen in Sharp Objects (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7340546/mediaviewer/rm4170467072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk3ZGI1YTQtOGM0Mi00ZDJmLWIxNGItNDU5MTRlMTUwNzQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patricia Clarkson and Eliza Scanlen in Sharp Objects (2018)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7340546/>
+    schema:sameAs <https://instagram.com/elizascanlen> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

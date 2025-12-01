@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0266543/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Girl from Ipanema" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Girl from Ipanema" ;
+            schema:author <https://www.imdb.com/name/nm0423388/>, # Antonio Carlos Jobim
+                       <https://www.imdb.com/name/nm0210460/>, # Vinicius de Moraes
+                       <https://www.imdb.com/name/nm0319757/> # Norman Gimbel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Psycho (The Murder)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Psycho (The Murder)" ;
+            schema:author <https://www.imdb.com/name/nm0002136/> # Bernard Herrmann
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Fandango" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Fandango" ;
+            schema:author <https://www.imdb.com/name/nm0047690/> # Bob Bain
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Beyond the Sea" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005560/> ; # Robbie Williams
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Beyond the Sea" ;
+            schema:composer <https://www.imdb.com/name/nm0872081/> ; # Charles Trenet
+            schema:lyricist <https://www.imdb.com/name/nm0872081/>, # Charles Trenet
+                        <https://www.imdb.com/name/nm0492805/> # Jack Lawrence
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Just Keep Swimming" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001122/> ; # Ellen DeGeneres
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Twinkle, Twinkle, Little Star" ;
+        schema:byArtist <https://www.imdb.com/name/nm1379845/> ; # LuLu Ebeling
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Twinkle, Twinkle, Little Star" ;
+            schema:lyricist <https://www.imdb.com/name/nm5634537/> # Jane Taylor
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001122/> a schema:Person ;
+    schema:name "Ellen DeGeneres" .
+<https://www.imdb.com/name/nm0002136/> a schema:Person ;
+    schema:name "Bernard Herrmann" .
+<https://www.imdb.com/name/nm0005560/> a schema:Person ;
+    schema:name "Robbie Williams" .
+<https://www.imdb.com/name/nm0047690/> a schema:Person ;
+    schema:name "Bob Bain" .
+<https://www.imdb.com/name/nm0210460/> a schema:Person ;
+    schema:name "Vinicius de Moraes" .
+<https://www.imdb.com/name/nm0319757/> a schema:Person ;
+    schema:name "Norman Gimbel" .
+<https://www.imdb.com/name/nm0423388/> a schema:Person ;
+    schema:name "Antonio Carlos Jobim" .
+<https://www.imdb.com/name/nm0492805/> a schema:Person ;
+    schema:name "Jack Lawrence" .
+<https://www.imdb.com/name/nm0872081/> a schema:Person ;
+    schema:name "Charles Trenet" .
+<https://www.imdb.com/name/nm1379845/> a schema:Person ;
+    schema:name "LuLu Ebeling" .
+<https://www.imdb.com/name/nm5634537/> a schema:Person ;
+    schema:name "Jane Taylor" .
+# ==============================================================================

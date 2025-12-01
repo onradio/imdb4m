@@ -1,0 +1,114 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3501632/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Immigrant Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm0496389/> ; # Led Zeppelin
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Immigrant Song" ;
+            schema:author <https://www.imdb.com/name/nm0656211/>, # Jimmy Page
+                       <https://www.imdb.com/name/nm0686619/> # Robert Plant
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Frisky Bizness" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Concerto for Two Violins in D minor, BWV 1043 II. Largo ma non tanto" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Concerto for Two Violins in D minor, BWV 1043 II. Largo ma non tanto" ;
+            schema:author <https://www.imdb.com/name/nm0001925/>, # Johann Sebastian Bach
+                       <https://www.imdb.com/name/nm3194100/> # Guido De Gaetano
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Thor: The Dark World Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Thor: The Dark World Theme" ;
+            schema:composer <https://www.imdb.com/name/nm0003911/> # Brian Tyler
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Harmony's Garden" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Main Title (Golden Ticket/Pure Imagination)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Main Title (Golden Ticket/Pure Imagination)" ;
+            schema:author <https://www.imdb.com/name/nm0108634/>, # Leslie Bricusse
+                       <https://www.imdb.com/name/nm0627969/> # Anthony Newley
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Avengers: Age of Ultron Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Avengers: Age of Ultron Theme" ;
+            schema:composer <https://www.imdb.com/name/nm0003911/> # Brian Tyler
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Lonely Man" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Lonely Man" ;
+            schema:composer <https://www.imdb.com/name/nm0363642/> # Joseph Harnell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Thor Themes" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Thor Themes" ;
+            schema:composer <https://www.imdb.com/name/nm0236462/> # Patrick Doyle
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0003911/> a schema:Person ;
+    schema:name "Brian Tyler" .
+<https://www.imdb.com/name/nm0108634/> a schema:Person ;
+    schema:name "Leslie Bricusse" .
+<https://www.imdb.com/name/nm0236462/> a schema:Person ;
+    schema:name "Patrick Doyle" .
+<https://www.imdb.com/name/nm0363642/> a schema:Person ;
+    schema:name "Joseph Harnell" .
+<https://www.imdb.com/name/nm0496389/> a schema:Person ;
+    schema:name "Led Zeppelin" .
+<https://www.imdb.com/name/nm0627969/> a schema:Person ;
+    schema:name "Anthony Newley" .
+<https://www.imdb.com/name/nm0656211/> a schema:Person ;
+    schema:name "Jimmy Page" .
+<https://www.imdb.com/name/nm0686619/> a schema:Person ;
+    schema:name "Robert Plant" .
+<https://www.imdb.com/name/nm3194100/> a schema:Person ;
+    schema:name "Guido De Gaetano" .
+# ==============================================================================

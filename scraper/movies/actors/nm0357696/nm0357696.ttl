@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0357696/> a schema:Person ;
+    schema:name "Leslie Hamilton Gearren" ;
+    schema:url <https://www.imdb.com/name/nm0357696/> ;
+    schema:birthDate "1956-09-26"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Leslie Freas" ;
+    schema:description "Leslie Hamilton Gearren. Actress: Terminator 2: Judgment Day. Leslie Hamilton Gearren was born on 26 September 1956 in Salisbury, Maryland, USA. She was an actress, known for Terminator 2: Judgment Day (1991). She died on 22 August 2020 in Mount Laurel, New Jersey, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Salisbury, Maryland, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0103064/> ;    # Terminator 2: Judgment Day
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0357696/mediaviewer/rm552733185/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Terminator 2: Judgment Day (1991)
+<https://www.imdb.com/title/tt0103064/> a schema:Movie ;
+    schema:name "Terminator 2: Judgment Day" ;
+    schema:url <https://www.imdb.com/title/tt0103064/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0357696/> ;
+        schema:characterName "Twin Sarah"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0357696/mediaviewer/rm552733185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTgwYTMwYWEtMWFjYS00N2QyLTkzMGYtMWQ2MTY5MDExNGYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Linda Hamilton and Leslie Hamilton Gearren" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1976"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

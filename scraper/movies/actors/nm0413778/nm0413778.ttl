@@ -1,0 +1,434 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0413778/> a schema:Person ;
+    schema:name "Leonard Jackson" ;
+    schema:url <https://www.imdb.com/name/nm0413778/> ;
+    schema:birthDate "1928-02-07"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:alternateName "L. Errol Jaye" ;
+    schema:description "Leonard Jackson. Actor: The Color Purple. Leonard Jackson was born on 7 February 1928 in Jacksonville, Florida, USA. He was an actor and writer, known for The Color Purple (1985), Conspiracy Theory (1997) and Car Wash (1976). He was married to Ada Edward. He died on 22 December 2013 in Manhattan, New York, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmIwYTE3YjQtYjdkMi00ZmVkLTg4ODYtZGI4NWE5Y2I2ZTk1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Jacksonville, Florida, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088939/>,    # The Color Purple
+                       <https://www.imdb.com/title/tt0074281/>,    # Car Wash
+                       <https://www.imdb.com/title/tt0103859/>,    # Boomerang
+                       <https://www.imdb.com/title/tt0118883/>,    # Conspiracy Theory
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0115632/>,    # Basquiat
+                       <https://www.imdb.com/title/tt2125614/>,    # Shining Time Station: One of the Family
+                       <https://www.imdb.com/title/tt0117284/>,    # Palookaville
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0106028/>,    # Homicide: Life on the Street
+                       <https://www.imdb.com/title/tt0092401/>,    # Mathnet
+                       <https://www.imdb.com/title/tt0191731/>,    # Square One TV
+                       <https://www.imdb.com/title/tt0102749/>,    # A Rage in Harlem
+                       <https://www.imdb.com/title/tt0102879/>,    # Separate But Equal
+                       <https://www.imdb.com/title/tt0063951/>,    # Sesame Street
+                       <https://www.imdb.com/title/tt0099108/>,    # Basket Case 2
+                       <https://www.imdb.com/title/tt0100207/>,    # Murder in Black and White
+                       <https://www.imdb.com/title/tt0098276/>,    # Second Sight
+                       <https://www.imdb.com/title/tt0098910/>,    # Shining Time Station
+                       <https://www.imdb.com/title/tt0088612/>,    # Spenser: For Hire
+                       <https://www.imdb.com/title/tt0090395/>,    # Amen
+                       <https://www.imdb.com/title/tt0094304/>,    # Weeds
+                       <https://www.imdb.com/title/tt0086687/>,    # The Cosby Show
+                       <https://www.imdb.com/title/tt0087004/>,    # The Brother from Another Planet
+                       <https://www.imdb.com/title/tt0086168/>,    # Rage of Angels
+                       <https://www.imdb.com/title/tt0072519/>,    # The Jeffersons
+                       <https://www.imdb.com/title/tt0077807/>,    # King of the Gypsies
+                       <https://www.imdb.com/title/tt0075729/>,    # The Baron
+                       <https://www.imdb.com/title/tt0069599/>,    # Kojak
+                       <https://www.imdb.com/title/tt0247744/>,    # Super Spook
+                       <https://www.imdb.com/title/tt0070063/>,    # Five on the Black Hand Side
+                       <https://www.imdb.com/title/tt0068619/>,    # Ganja & Hess
+                       <https://www.imdb.com/title/tt0202001/>,    # Together for Days
+                       <https://www.imdb.com/title/tt0063748/> ; # Uptight
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0413778/mediaviewer/rm4205192448/>,
+                 <https://www.imdb.com/name/nm0413778/mediaviewer/rm727211008/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088939/> a schema:Movie ;
+    schema:name "The Color Purple" ;
+    schema:url <https://www.imdb.com/title/tt0088939/> .
+
+<https://www.imdb.com/title/tt0074281/> a schema:Movie ;
+    schema:name "Car Wash" ;
+    schema:url <https://www.imdb.com/title/tt0074281/> .
+
+<https://www.imdb.com/title/tt0103859/> a schema:Movie ;
+    schema:name "Boomerang" ;
+    schema:url <https://www.imdb.com/title/tt0103859/> .
+
+<https://www.imdb.com/title/tt0118883/> a schema:Movie ;
+    schema:name "Conspiracy Theory" ;
+    schema:url <https://www.imdb.com/title/tt0118883/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Basquiat (1996)
+<https://www.imdb.com/title/tt0115632/> a schema:Movie ;
+    schema:name "Basquiat" ;
+    schema:url <https://www.imdb.com/title/tt0115632/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Jean Michel's Father"
+    ] .
+
+# Shining Time Station: One of the Family (1995)
+<https://www.imdb.com/title/tt2125614/> a schema:Movie ;
+    schema:name "Shining Time Station: One of the Family" ;
+    schema:url <https://www.imdb.com/title/tt2125614/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Harry Cupper"
+    ] .
+
+# Palookaville (1995)
+<https://www.imdb.com/title/tt0117284/> a schema:Movie ;
+    schema:name "Palookaville" ;
+    schema:url <https://www.imdb.com/title/tt0117284/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Bus Driver"
+    ] .
+
+# Law & Order (1994)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Marty"
+    ] .
+
+# Homicide: Life on the Street (1993)
+<https://www.imdb.com/title/tt0106028/> a schema:Movie ;
+    schema:name "Homicide: Life on the Street" ;
+    schema:url <https://www.imdb.com/title/tt0106028/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Cemetery Manager"
+    ] .
+
+# Mathnet (1992)
+<https://www.imdb.com/title/tt0092401/> a schema:Movie ;
+    schema:name "Mathnet" ;
+    schema:url <https://www.imdb.com/title/tt0092401/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Colonel Ashby Wiggins"
+    ] .
+
+# Square One TV (1992)
+<https://www.imdb.com/title/tt0191731/> a schema:Movie ;
+    schema:name "Square One TV" ;
+    schema:url <https://www.imdb.com/title/tt0191731/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Col. Ashby Wiggins"
+    ] .
+
+# A Rage in Harlem (1991)
+<https://www.imdb.com/title/tt0102749/> a schema:Movie ;
+    schema:name "A Rage in Harlem" ;
+    schema:url <https://www.imdb.com/title/tt0102749/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Mr. Clay"
+    ] .
+
+# Separate But Equal (1991)
+<https://www.imdb.com/title/tt0102879/> a schema:Movie ;
+    schema:name "Separate But Equal" ;
+    schema:url <https://www.imdb.com/title/tt0102879/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Harold Boulware"
+    ] .
+
+# Sesame Street (1989)
+<https://www.imdb.com/title/tt0063951/> a schema:Movie ;
+    schema:name "Sesame Street" ;
+    schema:url <https://www.imdb.com/title/tt0063951/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Mr. Handford"
+    ] .
+
+# Basket Case 2 (1990)
+<https://www.imdb.com/title/tt0099108/> a schema:Movie ;
+    schema:name "Basket Case 2" ;
+    schema:url <https://www.imdb.com/title/tt0099108/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Police Commissioner"
+    ] .
+
+# Murder in Black and White (1990)
+<https://www.imdb.com/title/tt0100207/> a schema:Movie ;
+    schema:name "Murder in Black and White" ;
+    schema:url <https://www.imdb.com/title/tt0100207/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Contrary Man"
+    ] .
+
+# Second Sight (1989)
+<https://www.imdb.com/title/tt0098276/> a schema:Movie ;
+    schema:name "Second Sight" ;
+    schema:url <https://www.imdb.com/title/tt0098276/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Doorman at Hampshire House"
+    ] .
+
+# Shining Time Station (1989)
+<https://www.imdb.com/title/tt0098910/> a schema:Movie ;
+    schema:name "Shining Time Station" ;
+    schema:url <https://www.imdb.com/title/tt0098910/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Harry Cupper"
+    ] .
+
+# Spenser: For Hire (1987)
+<https://www.imdb.com/title/tt0088612/> a schema:Movie ;
+    schema:name "Spenser: For Hire" ;
+    schema:url <https://www.imdb.com/title/tt0088612/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Larry"
+    ] .
+
+# Amen (1987)
+<https://www.imdb.com/title/tt0090395/> a schema:Movie ;
+    schema:name "Amen" ;
+    schema:url <https://www.imdb.com/title/tt0090395/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Martin Barlow"
+    ] .
+
+# Weeds (1987)
+<https://www.imdb.com/title/tt0094304/> a schema:Movie ;
+    schema:name "Weeds" ;
+    schema:url <https://www.imdb.com/title/tt0094304/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Inmate"
+    ] .
+
+# The Cosby Show (1986)
+<https://www.imdb.com/title/tt0086687/> a schema:Movie ;
+    schema:name "The Cosby Show" ;
+    schema:url <https://www.imdb.com/title/tt0086687/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Exterminator"
+    ] .
+
+# The Brother from Another Planet (1984)
+<https://www.imdb.com/title/tt0087004/> a schema:Movie ;
+    schema:name "The Brother from Another Planet" ;
+    schema:url <https://www.imdb.com/title/tt0087004/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Smokey"
+    ] .
+
+# Rage of Angels (1983)
+<https://www.imdb.com/title/tt0086168/> a schema:Movie ;
+    schema:name "Rage of Angels" ;
+    schema:url <https://www.imdb.com/title/tt0086168/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Judge North"
+    ] .
+
+# The Jeffersons (1981)
+<https://www.imdb.com/title/tt0072519/> a schema:Movie ;
+    schema:name "The Jeffersons" ;
+    schema:url <https://www.imdb.com/title/tt0072519/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Harold Mills"
+    ] .
+
+# King of the Gypsies (1978)
+<https://www.imdb.com/title/tt0077807/> a schema:Movie ;
+    schema:name "King of the Gypsies" ;
+    schema:url <https://www.imdb.com/title/tt0077807/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# The Baron (1977)
+<https://www.imdb.com/title/tt0075729/> a schema:Movie ;
+    schema:name "The Baron" ;
+    schema:url <https://www.imdb.com/title/tt0075729/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Gus"
+    ] .
+
+# Kojak (1977)
+<https://www.imdb.com/title/tt0069599/> a schema:Movie ;
+    schema:name "Kojak" ;
+    schema:url <https://www.imdb.com/title/tt0069599/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Dr. Logan"
+    ] .
+
+# Super Spook (1974)
+<https://www.imdb.com/title/tt0247744/> a schema:Movie ;
+    schema:name "Super Spook" ;
+    schema:url <https://www.imdb.com/title/tt0247744/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Super Spook"
+    ] .
+
+# Five on the Black Hand Side (1973)
+<https://www.imdb.com/title/tt0070063/> a schema:Movie ;
+    schema:name "Five on the Black Hand Side" ;
+    schema:url <https://www.imdb.com/title/tt0070063/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Mr. Brooks"
+    ] .
+
+# Ganja & Hess (1973)
+<https://www.imdb.com/title/tt0068619/> a schema:Movie ;
+    schema:name "Ganja & Hess" ;
+    schema:url <https://www.imdb.com/title/tt0068619/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Archie"
+    ] .
+
+# Together for Days (1972)
+<https://www.imdb.com/title/tt0202001/> a schema:Movie ;
+    schema:name "Together for Days" ;
+    schema:url <https://www.imdb.com/title/tt0202001/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Phil"
+    ] .
+
+# Uptight (1968)
+<https://www.imdb.com/title/tt0063748/> a schema:Movie ;
+    schema:name "Uptight" ;
+    schema:url <https://www.imdb.com/title/tt0063748/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413778/> ;
+        schema:characterName "Mr. Oakley"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmIwYTE3YjQtYjdkMi00ZmVkLTg4ODYtZGI4NWE5Y2I2ZTk1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIwYTE3YjQtYjdkMi00ZmVkLTg4ODYtZGI4NWE5Y2I2ZTk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonard Jackson, Annie Ross, and Heather Rattray in Basket Case 2 (1990)" ;
+    schema:height "1090"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0413778/mediaviewer/rm4205192448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQzNjQ2ZmQtODNkZC00MTVhLTkzYzgtNTU1ZjFjNDAyZDY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sherman Hemsley and Leonard Jackson in The Jeffersons (1975)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0413778/mediaviewer/rm727211008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIwYTE3YjQtYjdkMi00ZmVkLTg4ODYtZGI4NWE5Y2I2ZTk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonard Jackson, Annie Ross, and Heather Rattray in Basket Case 2 (1990)" ;
+    schema:height "1090"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

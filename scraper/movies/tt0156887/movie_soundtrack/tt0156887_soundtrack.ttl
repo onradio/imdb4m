@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0156887/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Season" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Season" ;
+            schema:lyricist <https://www.imdb.com/name/nm7902153/> # Masato Odake
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ai no tenshi" ;
+        schema:byArtist <https://www.imdb.com/name/nm3487595/>, # Emiko Furukawa
+                        <https://www.imdb.com/name/nm2401173/> ; # Mie Shimizu
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ai no tenshi" ;
+            schema:composer <https://www.imdb.com/name/nm0407553/> # Masahiro Ikumi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hitori de mo heiki" ;
+        schema:byArtist <https://www.imdb.com/name/nm3487595/>, # Emiko Furukawa
+                        <https://www.imdb.com/name/nm2401173/> ; # Mie Shimizu
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hitori de mo heiki" ;
+            schema:composer <https://www.imdb.com/name/nm13500775/> # Makoto Mitsui
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Omoide ni dakare te ima wa" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Baka Ni Shinaide" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0407553/> a schema:Person ;
+    schema:name "Masahiro Ikumi" .
+<https://www.imdb.com/name/nm13500775/> a schema:Person ;
+    schema:name "Makoto Mitsui" .
+<https://www.imdb.com/name/nm2401173/> a schema:Person ;
+    schema:name "Mie Shimizu" .
+<https://www.imdb.com/name/nm3487595/> a schema:Person ;
+    schema:name "Emiko Furukawa" .
+<https://www.imdb.com/name/nm7902153/> a schema:Person ;
+    schema:name "Masato Odake" .
+# ==============================================================================

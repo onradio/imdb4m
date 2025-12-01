@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097576/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "You're a Sweet Little Headache" ;
+        schema:byArtist <https://www.imdb.com/name/nm0329015/> ; # Benny Goodman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You're a Sweet Little Headache" ;
+            schema:author <https://www.imdb.com/name/nm0732209/>, # Leo Robin
+                       <https://www.imdb.com/name/nm0006247/> # Ralph Rainger
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Just a Gigolo" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Just a Gigolo" ;
+            schema:composer <https://www.imdb.com/name/nm0145754/> ; # Leonello Casucci
+            schema:lyricist <https://www.imdb.com/name/nm0104261/>, # Julius Brammer
+                        <https://www.imdb.com/name/nm0128371/> # Irving Caesar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cavalry Charge - Bugle Call" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Königgrätzer Marsch" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006247/> a schema:Person ;
+    schema:name "Ralph Rainger" .
+<https://www.imdb.com/name/nm0104261/> a schema:Person ;
+    schema:name "Julius Brammer" .
+<https://www.imdb.com/name/nm0128371/> a schema:Person ;
+    schema:name "Irving Caesar" .
+<https://www.imdb.com/name/nm0145754/> a schema:Person ;
+    schema:name "Leonello Casucci" .
+<https://www.imdb.com/name/nm0329015/> a schema:Person ;
+    schema:name "Benny Goodman" .
+<https://www.imdb.com/name/nm0732209/> a schema:Person ;
+    schema:name "Leo Robin" .
+# ==============================================================================

@@ -1,0 +1,90 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1225096/> a schema:Person ;
+    schema:name "Alexandre Tharaud" ;
+    schema:url <https://www.imdb.com/name/nm1225096/> ;
+    schema:birthDate "1968-12-09"^^xsd:date ;
+    schema:jobTitle "Actor", "Music Department", "Soundtrack" ;
+    schema:description "Alexandre Tharaud. Actor: Amour. Alexandre Tharaud was born on 9 December 1968 in Paris, France. He is an actor, known for Amour (2012), A Tale of Springtime (1990) and Promenade musicale à Versailles (2020)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Paris, France"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5160054/>,    # Bach Goldberg Variations
+                       <https://www.imdb.com/title/tt1602620/> ; # Amour
+
+
+    schema:video <https://www.imdb.com/video/vi2353964057/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1225096/mediaviewer/rm1169995008/>,
+                 <https://www.imdb.com/name/nm1225096/mediaviewer/rm1136440576/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bach Goldberg Variations (2015)
+<https://www.imdb.com/title/tt5160054/> a schema:Movie ;
+    schema:name "Bach Goldberg Variations" ;
+    schema:url <https://www.imdb.com/title/tt5160054/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225096/> ;
+        schema:characterName "Pianist"
+    ] .
+
+# Amour (2012)
+<https://www.imdb.com/title/tt1602620/> a schema:Movie ;
+    schema:name "Amour" ;
+    schema:url <https://www.imdb.com/title/tt1602620/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1225096/> ;
+        schema:characterName "Alexandre"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2353964057/> a schema:VideoObject ;
+        schema:name "Winner: Best Foreign Language Film" ;
+        schema:description "Georges and Anne are in their eighties. They are cultivated, retired music teachers. Their daughter, who is also a musician, lives abroad with her family. One day, Anne has an attack. The couple's bond of love is severely tested." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2353964057/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTg4MDAwMjA2NV5BMl5BanBnXkFtZTcwODQ4ODE3OA@@._V1_.jpg" ;
+        schema:duration "PT2M"^^xsd:duration ;
+        schema:uploadDate "2012-11-10T11:16:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1225096/mediaviewer/rm1169995008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1MjU0MjQwOV5BMl5BanBnXkFtZTcwOTAwNTM4Nw@@._V1_.jpg> ;
+    schema:caption "Jean-Louis Trintignant, Michael Haneke, Emmanuelle Riva, and Alexandre Tharaud at an event for Amour (2012)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1225096/mediaviewer/rm1136440576/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MjE5NjI1M15BMl5BanBnXkFtZTcwMTEwNTM4Nw@@._V1_.jpg> ;
+    schema:caption "Isabelle Huppert, Jean-Louis Trintignant, Michael Haneke, Emmanuelle Riva, and Alexandre Tharaud at an event for Amour (2012)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

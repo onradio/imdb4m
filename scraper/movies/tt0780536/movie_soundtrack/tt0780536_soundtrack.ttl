@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0780536/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "2000 Miles" ;
+        schema:byArtist <https://www.imdb.com/name/nm0696539/> ; # The Pretenders
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "2000 Miles" ;
+            schema:author <https://www.imdb.com/name/nm0005038/> # Chrissie Hynde
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "That Time" ;
+        schema:byArtist <https://www.imdb.com/name/nm1258550/> ; # Regina Spektor
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "That Time" ;
+            schema:author <https://www.imdb.com/name/nm1258550/> # Regina Spektor
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Brandy Alexander" ;
+        schema:byArtist <https://www.imdb.com/name/nm1581762/> ; # The Walkmen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Brandy Alexander" ;
+            schema:author <https://www.imdb.com/name/nm5787969/>, # Hamilton Leithauser
+                       <https://www.imdb.com/name/nm5787971/>, # Walter Martin
+                       <https://www.imdb.com/name/nm5787973/>, # Matt Barrick
+                       <https://www.imdb.com/name/nm5787970/>, # Paul Maroon
+                       <https://www.imdb.com/name/nm5787972/> # Peter Bauer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "St John the Gambler" ;
+        schema:byArtist <https://www.imdb.com/name/nm1376929/> ; # Townes van Zandt
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "St John the Gambler" ;
+            schema:author <https://www.imdb.com/name/nm1376929/> # Townes van Zandt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Schubert: 24. Der Leiermann [Winterreise, D.911]" ;
+        schema:byArtist <https://www.imdb.com/name/nm1444600/> ; # Andreas Schmidt
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Schubert: 24. Der Leiermann [Winterreise, D.911]" ;
+            schema:composer <https://www.imdb.com/name/nm0006280/> ; # Franz Schubert
+            schema:author <https://www.imdb.com/name/nm2316058/> # Wilhelm Müller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "On Raglan Road" ;
+        schema:byArtist <https://www.imdb.com/name/nm2129137/> ; # The Dubliners
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "On Raglan Road" ;
+            schema:author <https://www.imdb.com/name/nm12570221/> # Patrick Kavanagh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Touch Of Evil" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Touch Of Evil" ;
+            schema:composer <https://www.imdb.com/name/nm0000049/> # Henry Mancini
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000049/> a schema:Person ;
+    schema:name "Henry Mancini" .
+<https://www.imdb.com/name/nm0005038/> a schema:Person ;
+    schema:name "Chrissie Hynde" .
+<https://www.imdb.com/name/nm0006280/> a schema:Person ;
+    schema:name "Franz Schubert" .
+<https://www.imdb.com/name/nm0696539/> a schema:Person ;
+    schema:name "The Pretenders" .
+<https://www.imdb.com/name/nm12570221/> a schema:Person ;
+    schema:name "Patrick Kavanagh" .
+<https://www.imdb.com/name/nm1258550/> a schema:Person ;
+    schema:name "Regina Spektor" .
+<https://www.imdb.com/name/nm1376929/> a schema:Person ;
+    schema:name "Townes van Zandt" .
+<https://www.imdb.com/name/nm1444600/> a schema:Person ;
+    schema:name "Andreas Schmidt" .
+<https://www.imdb.com/name/nm1581762/> a schema:Person ;
+    schema:name "The Walkmen" .
+<https://www.imdb.com/name/nm2129137/> a schema:Person ;
+    schema:name "The Dubliners" .
+<https://www.imdb.com/name/nm2316058/> a schema:Person ;
+    schema:name "Wilhelm Müller" .
+<https://www.imdb.com/name/nm5787969/> a schema:Person ;
+    schema:name "Hamilton Leithauser" .
+<https://www.imdb.com/name/nm5787970/> a schema:Person ;
+    schema:name "Paul Maroon" .
+<https://www.imdb.com/name/nm5787971/> a schema:Person ;
+    schema:name "Walter Martin" .
+<https://www.imdb.com/name/nm5787972/> a schema:Person ;
+    schema:name "Peter Bauer" .
+<https://www.imdb.com/name/nm5787973/> a schema:Person ;
+    schema:name "Matt Barrick" .
+# ==============================================================================

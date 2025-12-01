@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0643897/> a schema:Person ;
+    schema:name "Sanryô Odaka" ;
+    schema:url <https://www.imdb.com/name/nm0643897/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sanryô Odaka. Actor: Ghost in the Shell. Sanryô Odaka is known for Ghost in the Shell (1995), Big Man Japan (2007) and Great Gift (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8273586/>,    # Harmonica-Taiyo
+                       <https://www.imdb.com/title/tt4457956/> . # Yamegoku: Yakuza yamete itadakimasu
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Harmonica-Taiyo (2018)
+<https://www.imdb.com/title/tt8273586/> a schema:Movie ;
+    schema:name "Harmonica-Taiyo" ;
+    schema:url <https://www.imdb.com/title/tt8273586/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643897/> ;
+        schema:characterName "(voice, as Sanryo Odaka)"
+    ] .
+
+# Yamegoku: Yakuza yamete itadakimasu (2015)
+<https://www.imdb.com/title/tt4457956/> a schema:Movie ;
+    schema:name "Yamegoku: Yakuza yamete itadakimasu" ;
+    schema:url <https://www.imdb.com/title/tt4457956/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643897/> ;
+        schema:characterName "Narration"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

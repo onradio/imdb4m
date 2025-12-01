@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10215504/> a schema:Person ;
+    schema:name "Jung Ik-han" ;
+    schema:url <https://www.imdb.com/name/nm10215504/> ;
+    schema:birthDate "1992-04-27"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jung Ik-han. Actor: Parasite. Jung Ik-han was born on 27 April 1992 in South Korea. He is an actor, known for Parasite (2019) and Strongest Deliveryman (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmJiZTkwZmMtMjIxOC00MzFlLWE1MTMtMThkYzg1MjZlNTkzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6751668/>,    # Parasite
+                       <https://www.imdb.com/title/tt7022748/> ; # Strongest Deliveryman
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10215504/mediaviewer/rm2965295105/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm1219416065/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm531550209/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm4239249409/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm2193543169/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm3194916865/>,
+                 <https://www.imdb.com/name/nm10215504/mediaviewer/rm1173524481/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10215504/> ;
+        schema:characterName "Neighbor"
+    ] .
+
+# Strongest Deliveryman (2017)
+<https://www.imdb.com/title/tt7022748/> a schema:Movie ;
+    schema:name "Strongest Deliveryman" ;
+    schema:url <https://www.imdb.com/title/tt7022748/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10215504/> ;
+        schema:characterName "Young-Taek"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmJiZTkwZmMtMjIxOC00MzFlLWE1MTMtMThkYzg1MjZlNTkzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmJiZTkwZmMtMjIxOC00MzFlLWE1MTMtMThkYzg1MjZlNTkzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ik-han" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm2965295105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTVmZWRmMjQtZDI5ZS00NTE0LWIwNmMtMTNmZjFlMjNmMWI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Heo Ji-Won, Jung Ik-han, Kim Min-Seok, Kim Gi-du, Go Kyung-pyo, Kang Bong-Sung, Chae Soo-bin, and Kim Seon-ho in Strongest Deliveryman (2017)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm1219416065/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMwNDI4MGEtN2VhZS00NjVhLWFkMWYtOTViOTRmNWRkYTFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Heo Ji-Won, Jung Ik-han, Kim Min-Seok, and Kim Gi-du in Strongest Deliveryman (2017)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm531550209/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWVmMDU3ODgtMWRhZC00ZTVjLWEzNDEtZDE3YjI0YmU2Y2VmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ik-han, Kim Min-Seok, and Kang Bong-Sung in Strongest Deliveryman (2017)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm4239249409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDZhZmY0NjctMzJjZi00Y2Y5LWFlYjMtZWI2NDMyYWMzN2ZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Heo Ji-Won, Jung Ik-han, Kim Min-Seok, Kim Gi-du, Go Kyung-pyo, and Kang Bong-Sung in Strongest Deliveryman (2017)" ;
+    schema:height "386"^^xsd:integer ;
+    schema:width "690"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm2193543169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTJlNzFiZjctMWMzYS00NmRkLTk1NDMtZjliYzU0YmZlYjVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Min-Young, Heo Ji-Won, Jung Ik-han, Kim Min-Seok, Lee Won-jong, Seon-woo Jae-deok, Jo Hie-bong, Lee Kan-hee, Kim Gi-du, Go Kyung-pyo, Kang Bong-Sung, Go Won-Hee, Chae Soo-bin, Kim Seon-ho, and Kim Kyung-Nam in Strongest Deliveryman (2017)" ;
+    schema:height "1252"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm3194916865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Song Kang-ho, Jung Ik-han, Jung Hyun-jun, Lee Joo-hyung, Lee Ji-hye, Lee Sun-kyun, Cho Yeo-jeong, Park Myeong-hoon, Park Keun-rok, Jang Hye-jin, Lee Jeong-eun, Choi Woo-sik, Park Seo-joon, Park So-dam, and Jung Ji-so in Parasite (2019)" ;
+    schema:height "3556"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10215504/mediaviewer/rm1173524481/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmJiZTkwZmMtMjIxOC00MzFlLWE1MTMtMThkYzg1MjZlNTkzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ik-han" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

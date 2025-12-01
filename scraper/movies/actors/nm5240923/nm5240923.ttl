@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5240923/> a schema:Person ;
+    schema:name "D.A. Wallach" ;
+    schema:url <https://www.imdb.com/name/nm5240923/> ;
+    schema:jobTitle "Actor", "Composer", "Music Department" ;
+    schema:description "D.A. Wallach. Soundtrack: Fast & Furious: Hobbs & Shaw. D.A. Wallach is known for Fast & Furious: Hobbs & Shaw (2019), Despicable Me (2010) and La La Land (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3783958/>,    # La La Land
+                       <https://www.imdb.com/title/tt27349264/>,    # D.A.: Glowing
+                       <https://www.imdb.com/title/tt29196072/> . # Chamillionaire Feat. D.A.: Show Love
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# La La Land (2016)
+<https://www.imdb.com/title/tt3783958/> a schema:Movie ;
+    schema:name "La La Land" ;
+    schema:url <https://www.imdb.com/title/tt3783958/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5240923/> ;
+        schema:characterName "'80s Singer"
+    ] .
+
+# D.A.: Glowing (2013)
+<https://www.imdb.com/title/tt27349264/> a schema:Movie ;
+    schema:name "D.A.: Glowing" ;
+    schema:url <https://www.imdb.com/title/tt27349264/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5240923/> ;
+        schema:characterName "D.A. Wallach"
+    ] .
+
+# Chamillionaire Feat. D.A.: Show Love (2012)
+<https://www.imdb.com/title/tt29196072/> a schema:Movie ;
+    schema:name "Chamillionaire Feat. D.A.: Show Love" ;
+    schema:url <https://www.imdb.com/title/tt29196072/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5240923/> ;
+        schema:characterName "D.A. Wallach"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

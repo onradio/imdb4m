@@ -1,0 +1,159 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0109707/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Bunny Hop" ;
+        schema:byArtist <https://www.imdb.com/name/nm1565184/> ; # John Keating
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bunny Hop" ;
+            schema:author <https://www.imdb.com/name/nm0030989/>, # Ray Anthony
+                       <https://www.imdb.com/name/nm1424289/> # Leonard Auletti
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Spring Fashion" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Spring Fashion" ;
+            schema:author <https://www.imdb.com/name/nm0102945/> # Alan Braden
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sweet and Lovely" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sweet and Lovely" ;
+            schema:author <https://www.imdb.com/name/nm0102945/> # Alan Braden
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kuba Mambo" ;
+        schema:byArtist <https://www.imdb.com/name/nm0702000/> ; # Dámaso Pérez Prado
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kuba Mambo" ;
+            schema:author <https://www.imdb.com/name/nm0702000/> # Dámaso Pérez Prado
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Que Sera, Sera (Whatever Will Be, Will Be)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000195/> ; # Bill Murray
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Que Sera, Sera (Whatever Will Be, Will Be)" ;
+            schema:author <https://www.imdb.com/name/nm0515254/>, # Jay Livingston
+                       <https://www.imdb.com/name/nm0263143/> # Ray Evans
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nautch Dance" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Grip of the Law" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Grip of the Law" ;
+            schema:author <https://www.imdb.com/name/nm0242126/> # Trevor Duncan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Seringa" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Seringa" ;
+            schema:author <https://www.imdb.com/name/nm0035041/> # Jon Arkell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Desolate Village" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Desolate Village" ;
+            schema:author <https://www.imdb.com/name/nm0132259/> # Bruce Campbell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lasst uns erfreuen (All Creatures of Our God and King)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lasst uns erfreuen (All Creatures of Our God and King)" ;
+            schema:lyricist <https://www.imdb.com/name/nm1756997/> # John Athelstan Laurie Riley
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Toccata and Fugue in D minor" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Toccata and Fugue in D minor" ;
+            schema:author <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ballet music from 'Swan Lake', Opus 20" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ballet music from 'Swan Lake', Opus 20" ;
+            schema:author <https://www.imdb.com/name/nm0006318/> # Pyotr Ilyich Tchaikovsky
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000195/> a schema:Person ;
+    schema:name "Bill Murray" .
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0006318/> a schema:Person ;
+    schema:name "Pyotr Ilyich Tchaikovsky" .
+<https://www.imdb.com/name/nm0030989/> a schema:Person ;
+    schema:name "Ray Anthony" .
+<https://www.imdb.com/name/nm0035041/> a schema:Person ;
+    schema:name "Jon Arkell" .
+<https://www.imdb.com/name/nm0102945/> a schema:Person ;
+    schema:name "Alan Braden" .
+<https://www.imdb.com/name/nm0132259/> a schema:Person ;
+    schema:name "Bruce Campbell" .
+<https://www.imdb.com/name/nm0242126/> a schema:Person ;
+    schema:name "Trevor Duncan" .
+<https://www.imdb.com/name/nm0263143/> a schema:Person ;
+    schema:name "Ray Evans" .
+<https://www.imdb.com/name/nm0515254/> a schema:Person ;
+    schema:name "Jay Livingston" .
+<https://www.imdb.com/name/nm0702000/> a schema:Person ;
+    schema:name "Dámaso Pérez Prado" .
+<https://www.imdb.com/name/nm1424289/> a schema:Person ;
+    schema:name "Leonard Auletti" .
+<https://www.imdb.com/name/nm1565184/> a schema:Person ;
+    schema:name "John Keating" .
+<https://www.imdb.com/name/nm1756997/> a schema:Person ;
+    schema:name "John Athelstan Laurie Riley" .
+# ==============================================================================

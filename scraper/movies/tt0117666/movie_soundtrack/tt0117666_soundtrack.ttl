@@ -1,0 +1,111 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0117666/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The One I Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0421107/> ; # Ali Jennings
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The One I Love" ;
+            schema:author <https://www.imdb.com/name/nm0421107/>, # Ali Jennings
+                       <https://www.imdb.com/name/nm0487011/> # Daniel Lanois
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Soul Dressing" ;
+        schema:byArtist <https://www.imdb.com/name/nm2747832/> ; # Booker T. & the M.G.s
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Soul Dressing" ;
+            schema:author <https://www.imdb.com/name/nm0427607/>, # Booker T. Jones
+                       <https://www.imdb.com/name/nm0188936/>, # Steve Cropper
+                       <https://www.imdb.com/name/nm1580562/>, # Al Jackson Jr.
+                       <https://www.imdb.com/name/nm1336733/> # Lewie Steinberg
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lonely One" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Plunger" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Plunger" ;
+            schema:author <https://www.imdb.com/name/nm0027283/> # Pete Anderson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Darlin" ;
+        schema:byArtist <https://www.imdb.com/name/nm0767248/> ; # Bambi Lee Savage
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Darlin" ;
+            schema:author <https://www.imdb.com/name/nm0767248/> # Bambi Lee Savage
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Maker" ;
+        schema:byArtist <https://www.imdb.com/name/nm0487011/> ; # Daniel Lanois
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Maker" ;
+            schema:author <https://www.imdb.com/name/nm0487011/> # Daniel Lanois
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Shenandoah" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004994/> ; # Emmylou Harris
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Softly and Tenderly" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Softly and Tenderly" ;
+            schema:author <https://www.imdb.com/name/nm1469178/> # Will L. Thompson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004994/> a schema:Person ;
+    schema:name "Emmylou Harris" .
+<https://www.imdb.com/name/nm0027283/> a schema:Person ;
+    schema:name "Pete Anderson" .
+<https://www.imdb.com/name/nm0188936/> a schema:Person ;
+    schema:name "Steve Cropper" .
+<https://www.imdb.com/name/nm0421107/> a schema:Person ;
+    schema:name "Ali Jennings" .
+<https://www.imdb.com/name/nm0427607/> a schema:Person ;
+    schema:name "Booker T. Jones" .
+<https://www.imdb.com/name/nm0487011/> a schema:Person ;
+    schema:name "Daniel Lanois" .
+<https://www.imdb.com/name/nm0767248/> a schema:Person ;
+    schema:name "Bambi Lee Savage" .
+<https://www.imdb.com/name/nm1336733/> a schema:Person ;
+    schema:name "Lewie Steinberg" .
+<https://www.imdb.com/name/nm1469178/> a schema:Person ;
+    schema:name "Will L. Thompson" .
+<https://www.imdb.com/name/nm1580562/> a schema:Person ;
+    schema:name "Al Jackson Jr." .
+<https://www.imdb.com/name/nm2747832/> a schema:Person ;
+    schema:name "Booker T. & the M.G.s" .
+# ==============================================================================

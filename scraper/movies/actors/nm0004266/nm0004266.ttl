@@ -1,0 +1,680 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0004266/> a schema:Person ;
+    schema:name "Anne Hathaway" ;
+    schema:url <https://www.imdb.com/name/nm0004266/> ;
+    schema:birthDate "1982-11-12"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Annie", "Anne Jacqueline Hathaway" ;
+    schema:description "Anne Hathaway. Actress: Les Misérables. Anne Jacqueline Hathaway was born in Brooklyn, New York, to Kate McCauley Hathaway, an actress, and Gerald T. Hathaway, a lawyer, both originally from Philadelphia. She is of mostly Irish descent, along with English, German, and French. Her first major role came in the short-lived television series Get Real (1999). She gained widespread recognition for her roles in The Princess Diaries (2001) and its 2004..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzA0MWI3ZDgtMDVkZS00NTVhLTkwMzQtNmNlODk5MDYzMzFmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1707386/>,    # Les Misérables
+                       <https://www.imdb.com/title/tt0758752/>,    # Love & Other Drugs
+                       <https://www.imdb.com/title/tt1084950/>,    # Rachel Getting Married
+                       <https://www.imdb.com/title/tt1345836/>,    # The Dark Knight Rises
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt9071322/>,    # Dark Waters
+                       <https://www.imdb.com/title/tt8543390/>,    # Modern Love
+                       <https://www.imdb.com/title/tt1298644/>,    # The Hustle
+                       <https://www.imdb.com/title/tt6476140/>,    # Serenity
+                       <https://www.imdb.com/title/tt5164214/>,    # Ocean's Eight
+                       <https://www.imdb.com/title/tt4677934/>,    # Documentary Now!
+                       <https://www.imdb.com/title/tt4680182/>,    # Colossal
+                       <https://www.imdb.com/title/tt2567026/>,    # Alice Through the Looking Glass
+                       <https://www.imdb.com/title/tt2361509/>,    # The Intern
+                       <https://www.imdb.com/title/tt3453566/>,    # HitRECord on TV
+                       <https://www.imdb.com/title/tt0816692/>,    # Interstellar
+                       <https://www.imdb.com/title/tt4775512/>,    # Jenny Lewis: Just One of the Guys
+                       <https://www.imdb.com/title/tt1828968/>,    # Don Peyote
+                       <https://www.imdb.com/title/tt2357291/>,    # Rio 2
+                       <https://www.imdb.com/title/tt2182972/>,    # Song One
+                       <https://www.imdb.com/title/tt2444946/>,    # Girl Rising
+                       <https://www.imdb.com/title/tt2229499/>,    # Don Jon
+                       <https://www.imdb.com/title/tt0096697/>,    # The Simpsons
+                       <https://www.imdb.com/title/tt1563738/>,    # One Day
+                       <https://www.imdb.com/title/tt1436562/>,    # Rio
+                       <https://www.imdb.com/title/tt0182576/>,    # Family Guy
+                       <https://www.imdb.com/title/tt1014759/>,    # Alice in Wonderland
+                       <https://www.imdb.com/title/tt0817230/>,    # Valentine's Day
+                       <https://www.imdb.com/title/tt0901476/>,    # Bride Wars
+                       <https://www.imdb.com/title/tt0449487/>,    # Passengers
+                       <https://www.imdb.com/title/tt1018723/>,    # Get Smart's Bruce and Lloyd Out of Control
+                       <https://www.imdb.com/title/tt0425061/>,    # Get Smart
+                       <https://www.imdb.com/title/tt0416508/>,    # Becoming Jane
+                       <https://www.imdb.com/title/tt0458352/>,    # The Devil Wears Prada
+                       <https://www.imdb.com/title/tt0443536/>,    # Hoodwinked
+                       <https://www.imdb.com/title/tt0388795/>,    # Brokeback Mountain
+                       <https://www.imdb.com/title/tt0285175/>,    # Havoc
+                       <https://www.imdb.com/title/tt37943108/>,    # The Princess Diaries 2: Royal Engagement - Deleted Scenes
+                       <https://www.imdb.com/title/tt0368933/>,    # The Princess Diaries 2
+                       <https://www.imdb.com/title/tt0327679/>,    # Ella Enchanted
+                       <https://www.imdb.com/title/tt28388377/>,    # The Princess Diaries
+                       <https://www.imdb.com/title/tt0309912/>,    # Nicholas Nickleby
+                       <https://www.imdb.com/title/tt5821092/>,    # Krystal: Supergirl!
+                       <https://www.imdb.com/title/tt0347618/>,    # The Cat Returns
+                       <https://www.imdb.com/title/tt0250371/>,    # The Other Side of Heaven
+                       <https://www.imdb.com/title/tt0247638/>,    # The Princess Diaries
+                       <https://www.imdb.com/title/tt0212662/> ; # Get Real
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "68 wins & 123 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (WeCrashed)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "6000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi962447385/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0004266/mediaviewer/rm173241345/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2898820353/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2515959553/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm3062253313/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2928035585/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2894481153/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2877703937/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2844149505/>,
+                 <https://www.imdb.com/name/nm0004266/mediaviewer/rm2827372289/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1707386/> a schema:Movie ;
+    schema:name "Les Misérables" ;
+    schema:url <https://www.imdb.com/title/tt1707386/> .
+
+<https://www.imdb.com/title/tt0758752/> a schema:Movie ;
+    schema:name "Love & Other Drugs" ;
+    schema:url <https://www.imdb.com/title/tt0758752/> .
+
+<https://www.imdb.com/title/tt1084950/> a schema:Movie ;
+    schema:name "Rachel Getting Married" ;
+    schema:url <https://www.imdb.com/title/tt1084950/> .
+
+<https://www.imdb.com/title/tt1345836/> a schema:Movie ;
+    schema:name "The Dark Knight Rises" ;
+    schema:url <https://www.imdb.com/title/tt1345836/> .
+
+<https://www.imdb.com/title/tt12005128/> a schema:Movie ;
+    schema:name "WeCrashed" ;
+    schema:url <https://www.imdb.com/title/tt12005128/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dark Waters (2019)
+<https://www.imdb.com/title/tt9071322/> a schema:Movie ;
+    schema:name "Dark Waters" ;
+    schema:url <https://www.imdb.com/title/tt9071322/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Sarah Barlage Bilott"
+    ] .
+
+# Modern Love (2019)
+<https://www.imdb.com/title/tt8543390/> a schema:Movie ;
+    schema:name "Modern Love" ;
+    schema:url <https://www.imdb.com/title/tt8543390/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Lexi"
+    ] .
+
+# The Hustle (2019)
+<https://www.imdb.com/title/tt1298644/> a schema:Movie ;
+    schema:name "The Hustle" ;
+    schema:url <https://www.imdb.com/title/tt1298644/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Josephine Chesterfield"
+    ] .
+
+# Serenity (2019)
+<https://www.imdb.com/title/tt6476140/> a schema:Movie ;
+    schema:name "Serenity" ;
+    schema:url <https://www.imdb.com/title/tt6476140/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Karen Zariakas"
+    ] .
+
+# Ocean's Eight (2018)
+<https://www.imdb.com/title/tt5164214/> a schema:Movie ;
+    schema:name "Ocean's Eight" ;
+    schema:url <https://www.imdb.com/title/tt5164214/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Daphne Kluger"
+    ] .
+
+# Documentary Now! (2016)
+<https://www.imdb.com/title/tt4677934/> a schema:Movie ;
+    schema:name "Documentary Now!" ;
+    schema:url <https://www.imdb.com/title/tt4677934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Anne Hathaway"
+    ] .
+
+# Colossal (2016)
+<https://www.imdb.com/title/tt4680182/> a schema:Movie ;
+    schema:name "Colossal" ;
+    schema:url <https://www.imdb.com/title/tt4680182/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Gloria"
+    ] .
+
+# Alice Through the Looking Glass (2016)
+<https://www.imdb.com/title/tt2567026/> a schema:Movie ;
+    schema:name "Alice Through the Looking Glass" ;
+    schema:url <https://www.imdb.com/title/tt2567026/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Mirana"
+    ] .
+
+# The Intern (2015)
+<https://www.imdb.com/title/tt2361509/> a schema:Movie ;
+    schema:name "The Intern" ;
+    schema:url <https://www.imdb.com/title/tt2361509/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jules"
+    ] .
+
+# HitRECord on TV (2015)
+<https://www.imdb.com/title/tt3453566/> a schema:Movie ;
+    schema:name "HitRECord on TV" ;
+    schema:url <https://www.imdb.com/title/tt3453566/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Vivica Virus"
+    ] .
+
+# Interstellar (2014)
+<https://www.imdb.com/title/tt0816692/> a schema:Movie ;
+    schema:name "Interstellar" ;
+    schema:url <https://www.imdb.com/title/tt0816692/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Brand"
+    ] .
+
+# Jenny Lewis: Just One of the Guys (2014)
+<https://www.imdb.com/title/tt4775512/> a schema:Movie ;
+    schema:name "Jenny Lewis: Just One of the Guys" ;
+    schema:url <https://www.imdb.com/title/tt4775512/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Man"
+    ] .
+
+# Don Peyote (2014)
+<https://www.imdb.com/title/tt1828968/> a schema:Movie ;
+    schema:name "Don Peyote" ;
+    schema:url <https://www.imdb.com/title/tt1828968/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Dream Agent"
+    ] .
+
+# Rio 2 (2014)
+<https://www.imdb.com/title/tt2357291/> a schema:Movie ;
+    schema:name "Rio 2" ;
+    schema:url <https://www.imdb.com/title/tt2357291/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jewel"
+    ] .
+
+# Song One (2014)
+<https://www.imdb.com/title/tt2182972/> a schema:Movie ;
+    schema:name "Song One" ;
+    schema:url <https://www.imdb.com/title/tt2182972/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Franny"
+    ] .
+
+# Girl Rising (2013)
+<https://www.imdb.com/title/tt2444946/> a schema:Movie ;
+    schema:name "Girl Rising" ;
+    schema:url <https://www.imdb.com/title/tt2444946/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Narrator - Afghanistan"
+    ] .
+
+# Don Jon (2013)
+<https://www.imdb.com/title/tt2229499/> a schema:Movie ;
+    schema:name "Don Jon" ;
+    schema:url <https://www.imdb.com/title/tt2229499/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Hollywood Actress #1"
+    ] .
+
+# The Simpsons (2009)
+<https://www.imdb.com/title/tt0096697/> a schema:Movie ;
+    schema:name "The Simpsons" ;
+    schema:url <https://www.imdb.com/title/tt0096697/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jenny"
+    ] .
+
+# One Day (2011)
+<https://www.imdb.com/title/tt1563738/> a schema:Movie ;
+    schema:name "One Day" ;
+    schema:url <https://www.imdb.com/title/tt1563738/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Emma"
+    ] .
+
+# Rio (2011)
+<https://www.imdb.com/title/tt1436562/> a schema:Movie ;
+    schema:name "Rio" ;
+    schema:url <https://www.imdb.com/title/tt1436562/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jewel"
+    ] .
+
+# Family Guy (2010)
+<https://www.imdb.com/title/tt0182576/> a schema:Movie ;
+    schema:name "Family Guy" ;
+    schema:url <https://www.imdb.com/title/tt0182576/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Hot Blonde"
+    ] .
+
+# Alice in Wonderland (2010)
+<https://www.imdb.com/title/tt1014759/> a schema:Movie ;
+    schema:name "Alice in Wonderland" ;
+    schema:url <https://www.imdb.com/title/tt1014759/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "White Queen"
+    ] .
+
+# Valentine's Day (2010)
+<https://www.imdb.com/title/tt0817230/> a schema:Movie ;
+    schema:name "Valentine's Day" ;
+    schema:url <https://www.imdb.com/title/tt0817230/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Liz"
+    ] .
+
+# Bride Wars (2009)
+<https://www.imdb.com/title/tt0901476/> a schema:Movie ;
+    schema:name "Bride Wars" ;
+    schema:url <https://www.imdb.com/title/tt0901476/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Emma"
+    ] .
+
+# Passengers (2008)
+<https://www.imdb.com/title/tt0449487/> a schema:Movie ;
+    schema:name "Passengers" ;
+    schema:url <https://www.imdb.com/title/tt0449487/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Claire"
+    ] .
+
+# Get Smart's Bruce and Lloyd Out of Control (2008)
+<https://www.imdb.com/title/tt1018723/> a schema:Movie ;
+    schema:name "Get Smart's Bruce and Lloyd Out of Control" ;
+    schema:url <https://www.imdb.com/title/tt1018723/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Agent 99"
+    ] .
+
+# Get Smart (2008)
+<https://www.imdb.com/title/tt0425061/> a schema:Movie ;
+    schema:name "Get Smart" ;
+    schema:url <https://www.imdb.com/title/tt0425061/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Agent 99"
+    ] .
+
+# Becoming Jane (2007)
+<https://www.imdb.com/title/tt0416508/> a schema:Movie ;
+    schema:name "Becoming Jane" ;
+    schema:url <https://www.imdb.com/title/tt0416508/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jane Austen"
+    ] .
+
+# The Devil Wears Prada (2006)
+<https://www.imdb.com/title/tt0458352/> a schema:Movie ;
+    schema:name "The Devil Wears Prada" ;
+    schema:url <https://www.imdb.com/title/tt0458352/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Andy Sachs"
+    ] .
+
+# Hoodwinked (2005)
+<https://www.imdb.com/title/tt0443536/> a schema:Movie ;
+    schema:name "Hoodwinked" ;
+    schema:url <https://www.imdb.com/title/tt0443536/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Red"
+    ] .
+
+# Brokeback Mountain (2005)
+<https://www.imdb.com/title/tt0388795/> a schema:Movie ;
+    schema:name "Brokeback Mountain" ;
+    schema:url <https://www.imdb.com/title/tt0388795/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Lureen Newsome"
+    ] .
+
+# Havoc (2005)
+<https://www.imdb.com/title/tt0285175/> a schema:Movie ;
+    schema:name "Havoc" ;
+    schema:url <https://www.imdb.com/title/tt0285175/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Allison Lang"
+    ] .
+
+# The Princess Diaries 2: Royal Engagement - Deleted Scenes (2004)
+<https://www.imdb.com/title/tt37943108/> a schema:Movie ;
+    schema:name "The Princess Diaries 2: Royal Engagement - Deleted Scenes" ;
+    schema:url <https://www.imdb.com/title/tt37943108/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Mia Thermopolis"
+    ] .
+
+# The Princess Diaries 2 (2004)
+<https://www.imdb.com/title/tt0368933/> a schema:Movie ;
+    schema:name "The Princess Diaries 2" ;
+    schema:url <https://www.imdb.com/title/tt0368933/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Mia Thermopolis"
+    ] .
+
+# Ella Enchanted (2004)
+<https://www.imdb.com/title/tt0327679/> a schema:Movie ;
+    schema:name "Ella Enchanted" ;
+    schema:url <https://www.imdb.com/title/tt0327679/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Ella"
+    ] .
+
+# The Princess Diaries (2003)
+<https://www.imdb.com/title/tt28388377/> a schema:Movie ;
+    schema:name "The Princess Diaries" ;
+    schema:url <https://www.imdb.com/title/tt28388377/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Nicholas Nickleby (2002)
+<https://www.imdb.com/title/tt0309912/> a schema:Movie ;
+    schema:name "Nicholas Nickleby" ;
+    schema:url <https://www.imdb.com/title/tt0309912/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Madeline Bray"
+    ] .
+
+# Krystal: Supergirl! (2002)
+<https://www.imdb.com/title/tt5821092/> a schema:Movie ;
+    schema:name "Krystal: Supergirl!" ;
+    schema:url <https://www.imdb.com/title/tt5821092/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Mia Thermopolis"
+    ] .
+
+# The Cat Returns (2002)
+<https://www.imdb.com/title/tt0347618/> a schema:Movie ;
+    schema:name "The Cat Returns" ;
+    schema:url <https://www.imdb.com/title/tt0347618/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Haru"
+    ] .
+
+# The Other Side of Heaven (2001)
+<https://www.imdb.com/title/tt0250371/> a schema:Movie ;
+    schema:name "The Other Side of Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0250371/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Jean Sabin"
+    ] .
+
+# The Princess Diaries (2001)
+<https://www.imdb.com/title/tt0247638/> a schema:Movie ;
+    schema:name "The Princess Diaries" ;
+    schema:url <https://www.imdb.com/title/tt0247638/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Mia Thermopolis"
+    ] .
+
+# Get Real (1999)
+<https://www.imdb.com/title/tt0212662/> a schema:Movie ;
+    schema:name "Get Real" ;
+    schema:url <https://www.imdb.com/title/tt0212662/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0004266/> ;
+        schema:characterName "Meghan Green"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi962447385/> a schema:VideoObject ;
+        schema:name "Official Teaser" ;
+        schema:description "Follows Miranda Priestly's struggle against Emily Charlton, her former assistant turned rival executive, as they compete for advertising revenue amidst declining print media while Miranda nears retirement." ;
+        schema:embedUrl <https://www.imdb.com/video/vi962447385/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmY4Zjg1OWQtOTI5MS00NjlhLThkNmItYzBhOTQ3YWM5ZWExXkEyXkFqcGdeQWFkcmllY2xh._V1_.jpg" ;
+        schema:duration "PT53S"^^xsd:duration ;
+        schema:uploadDate "2025-11-12T17:46:00Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzA0MWI3ZDgtMDVkZS00NTVhLTkwMzQtNmNlODk5MDYzMzFmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA0MWI3ZDgtMDVkZS00NTVhLTkwMzQtNmNlODk5MDYzMzFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2417"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm173241345/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzcyY2JiZmEtYjZlZS00YmRmLTk2MWItNzViNjlkMDBjNzRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway in The Witches (2020)" ;
+    schema:height "341"^^xsd:integer ;
+    schema:width "799"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2898820353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDUwMmYyNzgtZDAwNi00ZWU2LWEwMmUtZGE2MGZlZmEzNTUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julie Andrews and Anne Hathaway in The Princess Diaries 2 (2004)" ;
+    schema:height "794"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2515959553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA4YWM1YTEtZGM5OC00ZTkzLTk3ZjktMGFjNGI0ZGU4ZDJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in IMDb On Location: Set-Jetting With 'The Idea of You' (2024)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm3062253313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDcyZWY0MTMtZmM5Mi00MTJhLTlhNTMtMDE3YmYzMGNjYWFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in The Idea of You (2024)" ;
+    schema:height "3900"^^xsd:integer ;
+    schema:width "3449"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2928035585/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDlmY2YzYWMtZTljMy00ODM0LThjZjMtOWVlMTJkMGE3NWJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in The Idea of You (2024)" ;
+    schema:height "2250"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2894481153/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGRmMTk3ZTItMjY0Mi00YjhhLTgxYWEtYzBhNWU2NDk4M2UwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in The Idea of You (2024)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2877703937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjhlNDQ5MjgtOTc5NC00OTFjLTk4MWQtYmMyOTExMzhjN2MwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Ella Rubin in The Idea of You (2024)" ;
+    schema:height "2601"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2844149505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjc2MDc1ZmUtOGY1MC00YWQzLWJiYjAtNzk1NDlkOWNlNzdlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in The Idea of You (2024)" ;
+    schema:height "1950"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0004266/mediaviewer/rm2827372289/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzc4OGJlZjEtZWQyOC00ZmYyLTkyODYtYTc5Y2E4YjliZGIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anne Hathaway and Nicholas Galitzine in The Idea of You (2024)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0004266/>
+    schema:sameAs <https://www.facebook.com/Hathaway>,
+                  <https://www.instagram.com/annehathaway/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

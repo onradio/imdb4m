@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1035253/> a schema:Person ;
+    schema:name "Rob Curling" ;
+    schema:url <https://www.imdb.com/name/nm1035253/> ;
+    schema:birthDate "1957-09-08"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rob Curling. Actor: Children of Men. Rob Curling was born on 8 September 1957 in Kuala Lumpur, Malaya. He is an actor, known for Children of Men (2006), SuperBob (2015) and Natural Lies (1992)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kuala Lumpur, Malaya"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3055402/>,    # SuperBob
+                       <https://www.imdb.com/title/tt0206634/>,    # Children of Men
+                       <https://www.imdb.com/title/tt0354271/>,    # The Basil Brush Show
+                       <https://www.imdb.com/title/tt0103498/>,    # Natural Lies
+                       <https://www.imdb.com/title/tt1782614/>,    # Billy Webb's Amazing Story
+                       <https://www.imdb.com/title/tt0462077/> . # Alfonso Bonzo
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# SuperBob (2015)
+<https://www.imdb.com/title/tt3055402/> a schema:Movie ;
+    schema:name "SuperBob" ;
+    schema:url <https://www.imdb.com/title/tt3055402/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "Peckham Reporter"
+    ] .
+
+# Children of Men (2006)
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# The Basil Brush Show (2005)
+<https://www.imdb.com/title/tt0354271/> a schema:Movie ;
+    schema:name "The Basil Brush Show" ;
+    schema:url <https://www.imdb.com/title/tt0354271/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# Natural Lies (1992)
+<https://www.imdb.com/title/tt0103498/> a schema:Movie ;
+    schema:name "Natural Lies" ;
+    schema:url <https://www.imdb.com/title/tt0103498/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# Billy Webb's Amazing Story (1991)
+<https://www.imdb.com/title/tt1782614/> a schema:Movie ;
+    schema:name "Billy Webb's Amazing Story" ;
+    schema:url <https://www.imdb.com/title/tt1782614/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "TV Presenter"
+    ] .
+
+# Alfonso Bonzo (1990)
+<https://www.imdb.com/title/tt0462077/> a schema:Movie ;
+    schema:name "Alfonso Bonzo" ;
+    schema:url <https://www.imdb.com/title/tt0462077/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1035253/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

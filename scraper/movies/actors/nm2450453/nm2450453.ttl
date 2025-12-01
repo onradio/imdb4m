@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2450453/> a schema:Person ;
+    schema:name "Hugo Guinness" ;
+    schema:url <https://www.imdb.com/name/nm2450453/> ;
+    schema:birthDate "1959-09-12"^^xsd:date ;
+    schema:jobTitle "Writer", "Actor", "Art Department" ;
+    schema:description "Hugo Guinness. Writer: The Grand Budapest Hotel. Hugo Guinness was born on 12 September 1959 in London, England, UK. He is a writer and actor, known for The Grand Budapest Hotel (2014), The French Dispatch (2021) and Fantastic Mr. Fox (2009). He has been married to Elliott Puckette since 7 December 1996." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjA5ODkxNjQ3MV5BMl5BanBnXkFtZTgwMzg1ODAzNDE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7717624/>,    # Observatory Blues
+                       <https://www.imdb.com/title/tt0432283/> ; # Fantastic Mr. Fox
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2450453/mediaviewer/rm2751656448/>,
+                 <https://www.imdb.com/name/nm2450453/mediaviewer/rm2106126848/>,
+                 <https://www.imdb.com/name/nm2450453/mediaviewer/rm2055339264/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Observatory Blues (2017)
+<https://www.imdb.com/title/tt7717624/> a schema:Movie ;
+    schema:name "Observatory Blues" ;
+    schema:url <https://www.imdb.com/title/tt7717624/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2450453/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2450453/> ;
+        schema:characterName "Nathan Bunce"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjA5ODkxNjQ3MV5BMl5BanBnXkFtZTgwMzg1ODAzNDE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjA5ODkxNjQ3MV5BMl5BanBnXkFtZTgwMzg1ODAzNDE@._V1_.jpg> ;
+    schema:caption "Hugo Guinness" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1477"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2450453/mediaviewer/rm2751656448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4NjY5OTQxMV5BMl5BanBnXkFtZTgwOTk4NTg1NDE@._V1_.jpg> ;
+    schema:caption "Jeff Goldblum, Adrien Brody, Jason Schwartzman, Wes Anderson, Jeremy Dawson, Tony Revolori, and Hugo Guinness at an event for The Oscars (2015)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2450453/mediaviewer/rm2106126848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTE2NjI4NTIwM15BMl5BanBnXkFtZTgwMDgyMzY0NDE@._V1_.jpg> ;
+    schema:caption "Hugo Guinness" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2450453/mediaviewer/rm2055339264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjA5ODkxNjQ3MV5BMl5BanBnXkFtZTgwMzg1ODAzNDE@._V1_.jpg> ;
+    schema:caption "Hugo Guinness" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1477"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

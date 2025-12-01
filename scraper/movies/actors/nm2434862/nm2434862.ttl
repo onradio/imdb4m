@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2434862/> a schema:Person ;
+    schema:name "Sachin Parikh" ;
+    schema:url <https://www.imdb.com/name/nm2434862/> ;
+    schema:birthDate "1978-07-22"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sachin Parikh. Actor: PK. Sachin Parikh is a renowned Actor from Indian Cinema. Sachin hails from Mumbai and comes from a strong theatre background. He started his journey from Gujarati theatre and did innumerable plays in his career in the last 2 decades.\n\nHe has performed plays and given live performances across the world, including India, UK, Dubai, Kuwait, etc. One of his famous plays was Kanji vs Kanji, from which..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mumbai"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1921518/> ;    # Crime Patrol
+
+
+    schema:video <https://www.imdb.com/video/vi1691863065/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Crime Patrol (2014)
+<https://www.imdb.com/title/tt1921518/> a schema:Movie ;
+    schema:name "Crime Patrol" ;
+    schema:url <https://www.imdb.com/title/tt1921518/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2434862/> ;
+        schema:characterName "Ritesh Solanki"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1691863065/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1691863065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjg5NzVmYmMtYWExYy00YWUxLTgwYzktODdiMzQyMTcxZWY3XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M17S"^^xsd:duration ;
+        schema:uploadDate "2025-07-16T11:48:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

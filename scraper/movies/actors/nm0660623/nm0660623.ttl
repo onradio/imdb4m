@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0660623/> a schema:Person ;
+    schema:name "Robin Pappas" ;
+    schema:url <https://www.imdb.com/name/nm0660623/> ;
+    schema:birthDate "1950-12-15"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Robin Pappas. Actress: The Shining. Robin Pappas was born on 15 December 1950 in the USA. She is an actress, known for The Shining (1980), Superman II (1980) and Life at Stake (1978). She was previously married to Malcolm McKay." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0082158/>,    # Chariots of Fire
+                       <https://www.imdb.com/title/tt0081573/>,    # Superman II
+                       <https://www.imdb.com/title/tt0081505/>,    # The Shining
+                       <https://www.imdb.com/title/tt0188372/>,    # Tycoon
+                       <https://www.imdb.com/title/tt0149484/> ; # Life at Stake
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0660623/mediaviewer/rm2661833216/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Chariots of Fire (1981)
+<https://www.imdb.com/title/tt0082158/> a schema:Movie ;
+    schema:name "Chariots of Fire" ;
+    schema:url <https://www.imdb.com/title/tt0082158/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660623/> ;
+        schema:characterName "Clare"
+    ] .
+
+# Superman II (1980)
+<https://www.imdb.com/title/tt0081573/> a schema:Movie ;
+    schema:name "Superman II" ;
+    schema:url <https://www.imdb.com/title/tt0081573/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660623/> ;
+        schema:characterName "Alice"
+    ] .
+
+# The Shining (1980)
+<https://www.imdb.com/title/tt0081505/> a schema:Movie ;
+    schema:name "The Shining" ;
+    schema:url <https://www.imdb.com/title/tt0081505/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660623/> ;
+        schema:characterName "Nurse"
+    ] .
+
+# Tycoon (1978)
+<https://www.imdb.com/title/tt0188372/> a schema:Movie ;
+    schema:name "Tycoon" ;
+    schema:url <https://www.imdb.com/title/tt0188372/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660623/> ;
+        schema:characterName "Vikki Barr"
+    ] .
+
+# Life at Stake (1978)
+<https://www.imdb.com/title/tt0149484/> a schema:Movie ;
+    schema:name "Life at Stake" ;
+    schema:url <https://www.imdb.com/title/tt0149484/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660623/> ;
+        schema:characterName "Louise Cossette-Trudel"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0660623/mediaviewer/rm2661833216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQ3OGY1NjYtMTYwNy00NzgyLWE2NTAtMDc2ODZiNWQzZWE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Reeve, Robin Pappas, and Leueen Willoughby in Superman II (1980)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

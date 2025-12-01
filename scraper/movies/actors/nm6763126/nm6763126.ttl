@@ -1,0 +1,157 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6763126/> a schema:Person ;
+    schema:name "Faisal Malik" ;
+    schema:url <https://www.imdb.com/name/nm6763126/> ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Faisal Malik. Actor: Panchayat. Faisal Malik was born in Allahabad, Uttar Pradesh, India. He is known for Panchayat (2020), Gangs of Wasseypur (2012) and Revolver Rani (2014)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjJjNjg1YjktNmQ0OC00NzQ5LWI1YzEtZGE5NDc5OTg1ZGNjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Allahabad, Uttar Pradesh, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5013008/>,    # Fraud Saiyaan
+                       <https://www.imdb.com/title/tt8016120/>,    # The Playboy Mr. Sawhney
+                       <https://www.imdb.com/title/tt1954470/> ; # Gangs of Wasseypur
+
+
+    schema:video <https://www.imdb.com/video/vi2740635161/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6763126/mediaviewer/rm1556417025/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm969348865/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm3938850561/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm1338382081/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm1765456642/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm4243487745/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm736067329/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm885330689/>,
+                 <https://www.imdb.com/name/nm6763126/mediaviewer/rm1355090433/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fraud Saiyaan (2019)
+<https://www.imdb.com/title/tt5013008/> a schema:Movie ;
+    schema:name "Fraud Saiyaan" ;
+    schema:url <https://www.imdb.com/title/tt5013008/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6763126/> ;
+        schema:characterName "Inspector"
+    ] .
+
+# The Playboy Mr. Sawhney (2018)
+<https://www.imdb.com/title/tt8016120/> a schema:Movie ;
+    schema:name "The Playboy Mr. Sawhney" ;
+    schema:url <https://www.imdb.com/title/tt8016120/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6763126/> ;
+        schema:characterName "Naval kishore"
+    ] .
+
+# Gangs of Wasseypur (2012)
+<https://www.imdb.com/title/tt1954470/> a schema:Movie ;
+    schema:name "Gangs of Wasseypur" ;
+    schema:url <https://www.imdb.com/title/tt1954470/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6763126/> ;
+        schema:characterName "Inspector Gopal Singh"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2740635161/> a schema:VideoObject ;
+        schema:name "Teaser [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2740635161/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjgxNjVlNmItMjE4NS00N2QzLWEwNmYtY2MyZTZhMjY5OTJiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M"^^xsd:duration ;
+        schema:uploadDate "2024-09-23T07:34:32Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjJjNjg1YjktNmQ0OC00NzQ5LWI1YzEtZGE5NDc5OTg1ZGNjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjJjNjg1YjktNmQ0OC00NzQ5LWI1YzEtZGE5NDc5OTg1ZGNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Raghubir Yadav, Chandan Roy, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm1556417025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjA2OGFjNzctNTEzNi00MzM2LWIzMDktMmE1ZjE1YWE2YmY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Raghubir Yadav, Chandan Roy, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm969348865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2VkNzFmZDUtZGYxMi00MWVjLTg5MWYtOGI4ZGZmMWYyZjA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shiv Swaroop and Faisal Malik in Panchayat (2020)" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm3938850561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYxODNiODAtM2EzMS00NDAxLTkzYWMtYmMwNjUyZThhYjFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Raghubir Yadav, Chandan Roy, Shrikant Verma, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "583"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm1338382081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWZlOWFjY2QtMDE4Ny00NzA4LWI0YTktYzAwOThjYzI4MGZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neena Gupta, Raghubir Yadav, Chandan Roy, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "1064"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm1765456642/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODE0OTRhOTYtNTNjMi00YjgwLWIzYWEtODY5MWQzNTNkNWEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neena Gupta, Raghubir Yadav, Chandan Roy, Bulloo Kumar, Sanvikaa, Sunita Rajwar, Ashok Pathak, Durgesh Kumar, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm4243487745/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjIxNDA2MjMtZWQ5ZS00ZjA5LTljMzYtYTBhODRkZDk0NGYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neena Gupta, Pankaj Jha, Raghubir Yadav, Chandan Roy, Sanvikaa, Sunita Rajwar, Ashok Pathak, Durgesh Kumar, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm736067329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzkwZGNkYTctZDc2MS00OWM2LWI2NTUtMTM2ZGMzMTY0N2Q1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neena Gupta, Pankaj Jha, Raghubir Yadav, Chandan Roy, Sanvikaa, Sunita Rajwar, Durgesh Kumar, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm885330689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzhjYTRlODctZDE5NC00ZTlkLTk1YjItOWI2YTQxM2FmOTI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neena Gupta, Raghubir Yadav, Chandan Roy, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2083"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6763126/mediaviewer/rm1355090433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjJjNjg1YjktNmQ0OC00NzQ5LWI1YzEtZGE5NDc5OTg1ZGNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Raghubir Yadav, Chandan Roy, Faisal Malik, and Jitendra Kumar in Panchayat (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

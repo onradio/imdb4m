@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1480102/> a schema:Person ;
+    schema:name "Richard Edge" ;
+    schema:url <https://www.imdb.com/name/nm1480102/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Richard Edge. Actor: The Lord of the Rings: The Return of the King. Richard Edge is known for The Lord of the Rings: The Return of the King (2003), Rude Awakenings (2007) and He Was A Good Man (2025)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2186761/>,    # Eruption
+                       <https://www.imdb.com/title/tt0985477/>,    # Rude Awakenings
+                       <https://www.imdb.com/title/tt0167260/>,    # The Lord of the Rings: The Return of the King
+                       <https://www.imdb.com/title/tt0397822/> ; # Revelations: The Initial Journey
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1480102/mediaviewer/rm2208858112/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Eruption (2009)
+<https://www.imdb.com/title/tt2186761/> a schema:Movie ;
+    schema:name "Eruption" ;
+    schema:url <https://www.imdb.com/title/tt2186761/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480102/> ;
+        schema:characterName "Civil Defence Rep"
+    ] .
+
+# Rude Awakenings (2007)
+<https://www.imdb.com/title/tt0985477/> a schema:Movie ;
+    schema:name "Rude Awakenings" ;
+    schema:url <https://www.imdb.com/title/tt0985477/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480102/> ;
+        schema:characterName "Cop"
+    ] .
+
+# The Lord of the Rings: The Return of the King (2003)
+<https://www.imdb.com/title/tt0167260/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:url <https://www.imdb.com/title/tt0167260/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480102/> ;
+        schema:characterName "Gondorian Soldier 1"
+    ] .
+
+# Revelations: The Initial Journey (2003)
+<https://www.imdb.com/title/tt0397822/> a schema:Movie ;
+    schema:name "Revelations: The Initial Journey" ;
+    schema:url <https://www.imdb.com/title/tt0397822/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480102/> ;
+        schema:characterName "Thomas"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1480102/mediaviewer/rm2208858112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3MzcyMTM4NF5BMl5BanBnXkFtZTcwMTA3MTk2Mw@@._V1_.jpg> ;
+    schema:caption "Viggo Mortensen, Ian McKellen, Geoff Allen, David Aston, Orlando Bloom, Billy Boyd, Karl Urban, Walter Walsh, Sam Kelly, Mana Hira Davis, Aron Eastwood, Winham Hammond, Kirk Maxwell, Ben Britton, Richard Edge, Greg Ellis, Clint Carleton, Charlie McDermott, Daniel Andrews, Ken Stratton, Steve McCleary, Francis Mountjoy, Ron Kerkmeester, Mikel Taylor, Ralph Johnson, Rowan Fordham, Fraser Hesketh, Davey Hughes, Michael Fowler, Michael Harrison, James Bennett, Wayne Phillips, Alan Perry, Alessio Cavatore, and Michael Perry in The Lord of the Rings: The Return of the King (2003)" ;
+    schema:height "1157"^^xsd:integer ;
+    schema:width "2002"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

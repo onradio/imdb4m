@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0593052/> a schema:Person ;
+    schema:name "Akio Mitamura" ;
+    schema:url <https://www.imdb.com/name/nm0593052/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Akio Mitamura. Actor: Conan the Barbarian. Akio Mitamura was an actor, known for Conan the Barbarian (1982), Indiana Jones and the Temple of Doom (1984) and The Wind and the Lion (1975). He died in May 1998 in Los Angeles, California, USA." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110573/>,    # Motorcycle Gang
+                       <https://www.imdb.com/title/tt0099587/>,    # Flight of the Intruder
+                       <https://www.imdb.com/title/tt0090481/>,    # Matlock
+                       <https://www.imdb.com/title/tt0087469/>,    # Indiana Jones and the Temple of Doom
+                       <https://www.imdb.com/title/tt0082198/>,    # Conan the Barbarian
+                       <https://www.imdb.com/title/tt0078723/>,    # 1941
+                       <https://www.imdb.com/title/tt0073906/> ; # The Wind and the Lion
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0593052/mediaviewer/rm722880000/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Motorcycle Gang (1994)
+<https://www.imdb.com/title/tt0110573/> a schema:Movie ;
+    schema:name "Motorcycle Gang" ;
+    schema:url <https://www.imdb.com/title/tt0110573/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Hotel Owner"
+    ] .
+
+# Flight of the Intruder (1991)
+<https://www.imdb.com/title/tt0099587/> a schema:Movie ;
+    schema:name "Flight of the Intruder" ;
+    schema:url <https://www.imdb.com/title/tt0099587/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Sniper"
+    ] .
+
+# Matlock (1988)
+<https://www.imdb.com/title/tt0090481/> a schema:Movie ;
+    schema:name "Matlock" ;
+    schema:url <https://www.imdb.com/title/tt0090481/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Judge Raymond Kawai"
+    ] .
+
+# Indiana Jones and the Temple of Doom (1984)
+<https://www.imdb.com/title/tt0087469/> a schema:Movie ;
+    schema:name "Indiana Jones and the Temple of Doom" ;
+    schema:url <https://www.imdb.com/title/tt0087469/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Chinese Pilot"
+    ] .
+
+# Conan the Barbarian (1982)
+<https://www.imdb.com/title/tt0082198/> a schema:Movie ;
+    schema:name "Conan the Barbarian" ;
+    schema:url <https://www.imdb.com/title/tt0082198/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Mongol General"
+    ] .
+
+# 1941 (1979)
+<https://www.imdb.com/title/tt0078723/> a schema:Movie ;
+    schema:name "1941" ;
+    schema:url <https://www.imdb.com/title/tt0078723/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Ashimoto"
+    ] .
+
+# The Wind and the Lion (1975)
+<https://www.imdb.com/title/tt0073906/> a schema:Movie ;
+    schema:name "The Wind and the Lion" ;
+    schema:url <https://www.imdb.com/title/tt0073906/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0593052/> ;
+        schema:characterName "Japanese General"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0593052/mediaviewer/rm722880000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGViMmQ0NGMtYWQzYy00NDk0LWFmMzMtNzA0MDEyY2YyMzJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Slim Pickens, Akio Mitamura, and Hiroshi Shimizu in 1941 (1979)" ;
+    schema:height "1054"^^xsd:integer ;
+    schema:width "1570"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

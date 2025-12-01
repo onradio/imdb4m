@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0777191/> a schema:Person ;
+    schema:name "David Schwartz" ;
+    schema:url <https://www.imdb.com/name/nm0777191/> ;
+    schema:jobTitle "Actor", "Location Management" ;
+    schema:description "David Schwartz. Actor: Trading Places. David Schwartz is known for Trading Places (1983)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086465/> .    # Trading Places
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Trading Places (1983)
+<https://www.imdb.com/title/tt0086465/> a schema:Movie ;
+    schema:name "Trading Places" ;
+    schema:url <https://www.imdb.com/title/tt0086465/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0777191/> ;
+        schema:characterName "Duke & Duke Employee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

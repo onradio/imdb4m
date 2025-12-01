@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0198022/> a schema:Person ;
+    schema:name "Augusto Dallara" ;
+    schema:url <https://www.imdb.com/name/nm0198022/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Augusto Dallara. Actor: Rush. Augusto Dallara is known for Rush (2013) and All the Moron's Men (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1979320/>,    # Rush
+                       <https://www.imdb.com/title/tt0196176/> . # All the Moron's Men
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rush (2013)
+<https://www.imdb.com/title/tt1979320/> a schema:Movie ;
+    schema:name "Rush" ;
+    schema:url <https://www.imdb.com/title/tt1979320/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0198022/> ;
+        schema:characterName "Enzo Ferrari"
+    ] .
+
+# All the Moron's Men (1999)
+<https://www.imdb.com/title/tt0196176/> a schema:Movie ;
+    schema:name "All the Moron's Men" ;
+    schema:url <https://www.imdb.com/title/tt0196176/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0198022/> ;
+        schema:characterName "Padre del presidente"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

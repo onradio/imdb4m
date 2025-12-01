@@ -1,0 +1,334 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0809613/> a schema:Person ;
+    schema:name "Phyllis Smith" ;
+    schema:url <https://www.imdb.com/name/nm0809613/> ;
+    schema:birthDate "1949-08-15"^^xsd:date ;
+    schema:jobTitle "Actress", "Casting Department", "Soundtrack" ;
+    schema:description "Phyllis Smith. Actress: Inside Out. Phyllis Smith is an American actress from Missouri who is known for playing Phyllis Vance from The Office and Sadness from Inside Out. She also acted in Alvin and the Chipmunks: Chipwrecked, The 40-Year-Old Virgin and The OA. She also works for the casting department of Curb Your Enthusiasm, Spin City and Roswell." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA4NTM3NjUwMV5BMl5BanBnXkFtZTcwMDMyMTk3Mw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Lemay, Missouri, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.66"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5½″ (1.66 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2096673/>,    # Inside Out
+                       <https://www.imdb.com/title/tt0386676/>,    # The Office
+                       <https://www.imdb.com/title/tt1284575/>,    # Bad Teacher
+                       <https://www.imdb.com/title/tt1615918/>,    # Alvin and the Chipmunks: Chipwrecked
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4635282/>,    # The OA
+                       <https://www.imdb.com/title/tt7394380/>,    # Nunsense
+                       <https://www.imdb.com/title/tt12571356/>,    # Inside Out: Mind Candy
+                       <https://www.imdb.com/title/tt4941804/>,    # Riley's First Date?
+                       <https://www.imdb.com/title/tt4671444/>,    # Disney Infinity 3.0
+                       <https://www.imdb.com/title/tt1442464/>,    # The Middle
+                       <https://www.imdb.com/title/tt2400736/>,    # Trophy Wife
+                       <https://www.imdb.com/title/tt11620828/>,    # Threat Level Midnight: The Movie
+                       <https://www.imdb.com/title/tt1349451/>,    # Butter
+                       <https://www.imdb.com/title/tt1331287/>,    # The Office: The Outburst
+                       <https://www.imdb.com/title/tt0840149/>,    # The Office: The Accountants
+                       <https://www.imdb.com/title/tt0391229/>,    # I Want Someone to Eat Cheese With
+                       <https://www.imdb.com/title/tt0405422/>,    # The 40 Year-Old Virgin
+                       <https://www.imdb.com/title/tt0367279/>,    # Arrested Development
+                       <https://www.imdb.com/title/tt0107875/> ; # The Princess and the Goblin
+
+    schema:award [
+        a schema:Award ;
+        schema:description "8 wins & 10 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4145198617/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0809613/mediaviewer/rm3315140353/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm1382535425/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm862310657/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm1447259136/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm1171089920/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm3423630080/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm2545820928/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm4113971712/>,
+                 <https://www.imdb.com/name/nm0809613/mediaviewer/rm43828736/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2096673/> a schema:Movie ;
+    schema:name "Inside Out" ;
+    schema:url <https://www.imdb.com/title/tt2096673/> .
+
+<https://www.imdb.com/title/tt0386676/> a schema:Movie ;
+    schema:name "The Office" ;
+    schema:url <https://www.imdb.com/title/tt0386676/> .
+
+<https://www.imdb.com/title/tt1284575/> a schema:Movie ;
+    schema:name "Bad Teacher" ;
+    schema:url <https://www.imdb.com/title/tt1284575/> .
+
+<https://www.imdb.com/title/tt1615918/> a schema:Movie ;
+    schema:name "Alvin and the Chipmunks: Chipwrecked" ;
+    schema:url <https://www.imdb.com/title/tt1615918/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The OA (2016)
+<https://www.imdb.com/title/tt4635282/> a schema:Movie ;
+    schema:name "The OA" ;
+    schema:url <https://www.imdb.com/title/tt4635282/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "BBA - Betty Broderick-Allen"
+    ] .
+
+# Nunsense (2017)
+<https://www.imdb.com/title/tt7394380/> a schema:Movie ;
+    schema:name "Nunsense" ;
+    schema:url <https://www.imdb.com/title/tt7394380/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Sr. Julia, Child of God"
+    ] .
+
+# Inside Out: Mind Candy (2015)
+<https://www.imdb.com/title/tt12571356/> a schema:Movie ;
+    schema:name "Inside Out: Mind Candy" ;
+    schema:url <https://www.imdb.com/title/tt12571356/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Sadness"
+    ] .
+
+# Riley's First Date? (2015)
+<https://www.imdb.com/title/tt4941804/> a schema:Movie ;
+    schema:name "Riley's First Date?" ;
+    schema:url <https://www.imdb.com/title/tt4941804/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Sadness"
+    ] .
+
+# Disney Infinity 3.0 (2015)
+<https://www.imdb.com/title/tt4671444/> a schema:Movie ;
+    schema:name "Disney Infinity 3.0" ;
+    schema:url <https://www.imdb.com/title/tt4671444/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Sadness"
+    ] .
+
+# The Middle (2014)
+<https://www.imdb.com/title/tt1442464/> a schema:Movie ;
+    schema:name "The Middle" ;
+    schema:url <https://www.imdb.com/title/tt1442464/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Ms. Huff"
+    ] .
+
+# Trophy Wife (2013)
+<https://www.imdb.com/title/tt2400736/> a schema:Movie ;
+    schema:name "Trophy Wife" ;
+    schema:url <https://www.imdb.com/title/tt2400736/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Mrs. Steinberg"
+    ] .
+
+# Threat Level Midnight: The Movie (2011)
+<https://www.imdb.com/title/tt11620828/> a schema:Movie ;
+    schema:name "Threat Level Midnight: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt11620828/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Bachelorette #2"
+    ] .
+
+# Butter (2011)
+<https://www.imdb.com/title/tt1349451/> a schema:Movie ;
+    schema:name "Butter" ;
+    schema:url <https://www.imdb.com/title/tt1349451/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Nancy"
+    ] .
+
+# The Office: The Outburst (2008)
+<https://www.imdb.com/title/tt1331287/> a schema:Movie ;
+    schema:name "The Office: The Outburst" ;
+    schema:url <https://www.imdb.com/title/tt1331287/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Phyllis Vance"
+    ] .
+
+# The Office: The Accountants (2006)
+<https://www.imdb.com/title/tt0840149/> a schema:Movie ;
+    schema:name "The Office: The Accountants" ;
+    schema:url <https://www.imdb.com/title/tt0840149/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Phyllis Lapin"
+    ] .
+
+# I Want Someone to Eat Cheese With (2006)
+<https://www.imdb.com/title/tt0391229/> a schema:Movie ;
+    schema:name "I Want Someone to Eat Cheese With" ;
+    schema:url <https://www.imdb.com/title/tt0391229/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "OA Lady"
+    ] .
+
+# The 40 Year-Old Virgin (2005)
+<https://www.imdb.com/title/tt0405422/> a schema:Movie ;
+    schema:name "The 40 Year-Old Virgin" ;
+    schema:url <https://www.imdb.com/title/tt0405422/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Andy's Mother"
+    ] .
+
+# Arrested Development (2005)
+<https://www.imdb.com/title/tt0367279/> a schema:Movie ;
+    schema:name "Arrested Development" ;
+    schema:url <https://www.imdb.com/title/tt0367279/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Carla"
+    ] .
+
+# The Princess and the Goblin (1991)
+<https://www.imdb.com/title/tt0107875/> a schema:Movie ;
+    schema:name "The Princess and the Goblin" ;
+    schema:url <https://www.imdb.com/title/tt0107875/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0809613/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4145198617/> a schema:VideoObject ;
+        schema:name "&quot;No Small Parts&quot; IMDb Exclusive: &quot;The OA&quot; Star Phyllis Smith" ;
+        schema:description "Phyllis Smith, known mostly for her comedic work in \"The Office\" and her voiceover work as Sadness in Pixar's 'Inside Out,' plays a more serious role in the Netflix series \"The OA.\" \"No Small Parts\" takes a look at how she got into acting, and the various other parts she's played over the years." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4145198617/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ5Mzg4OTc3MF5BMl5BanBnXkFtZTgwMTgzMDAyMTI@._V1_.jpg" ;
+        schema:duration "PT2M40S"^^xsd:duration ;
+        schema:uploadDate "2017-01-21T00:20:05Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA4NTM3NjUwMV5BMl5BanBnXkFtZTcwMDMyMTk3Mw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4NTM3NjUwMV5BMl5BanBnXkFtZTcwMDMyMTk3Mw@@._V1_.jpg> ;
+    schema:caption "Phyllis Smith" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1421"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm3315140353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGVhMzZiNzktMGZiNS00NTQxLTkyZDYtMjhjODk5YWU0Y2QyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Creed Bratton, Jenna Fischer, Phyllis Smith, John Krasinski, Angela Kinsey, and Leslie David Baker in The Office (2005)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm1382535425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2RmMGI4ODUtN2U3Ny00NzM3LTlkNmEtZTgyZGUxZWU4OGQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phyllis Smith and Vanessa Bayer in Barb and Star Go to Vista Del Mar (2021)" ;
+    schema:height "2404"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm862310657/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDRjNTc3YTEtOTIyNC00OGM3LTg3MTUtZWJhM2U5MDMzY2ViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phyllis Smith and Vanessa Bayer in Barb and Star Go to Vista Del Mar (2021)" ;
+    schema:height "2404"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm1447259136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAxMTYwNzQyMDleQTJeQWpwZ15BbWU4MDI0MjcyNTcz._V1_.jpg> ;
+    schema:caption "Phyllis Smith, Brendan Meyer, Patrick Gibson, Chloë Levine, and Ian Alexander in The OA (2016)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm1171089920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzJhMjc2ZjQtZTAxOC00MDkyLTk5ZTEtMGI2YjRhNWIyMmUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phyllis Smith in No Small Parts (2014)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm3423630080/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg0ODkxNTUzOF5BMl5BanBnXkFtZTgwNzM4NDk2NjM@._V1_.jpg> ;
+    schema:caption "Creed Bratton, Steve Carell, Jenna Fischer, Kate Flannery, Paul Lieberstein, Phyllis Smith, Rainn Wilson, John Krasinski, B.J. Novak, Mindy Kaling, Angela Kinsey, Leslie David Baker, and Brian Baumgartner in The Office (2005)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm2545820928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTRkMDRlMjEtMDc4MC00MDFhLWFmZTktNzUyOWUzNmFmMzBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phyllis Smith, John Krasinski, and Leslie David Baker in The Office (2005)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm4113971712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTM3MjFlZmYtNTIwOC00Y2Y2LWI5NmEtMTE5OWRmNTMyMDk3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phyllis Smith and Brendan Meyer in The OA (2016)" ;
+    schema:height "2456"^^xsd:integer ;
+    schema:width "3680"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0809613/mediaviewer/rm43828736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5MDgyMDUxM15BMl5BanBnXkFtZTgwNzAxMTY1MjE@._V1_.jpg> ;
+    schema:caption "Clark Duke, Phyllis Smith, and Rainn Wilson in The Office (2005)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

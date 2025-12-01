@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1426333/> a schema:Person ;
+    schema:name "Buzz Visconti" ;
+    schema:url <https://www.imdb.com/name/nm1426333/> ;
+    schema:jobTitle "Additional Crew", "Actor" ;
+    schema:description "Buzz Visconti. Health and Safety Department: Kill Bill: Vol. 1. Buzz Visconti is known for Kill Bill: Vol. 1 (2003), Kill Bill: Vol. 2 (2004) and Jeepers Creepers 2 (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0212338/>,    # Meet the Parents
+                       <https://www.imdb.com/title/tt0209144/> . # Memento
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Meet the Parents (2000)
+<https://www.imdb.com/title/tt0212338/> a schema:Movie ;
+    schema:name "Meet the Parents" ;
+    schema:url <https://www.imdb.com/title/tt0212338/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1426333/> ;
+        schema:characterName "Bar Patron"
+    ] .
+
+# Memento (2000)
+<https://www.imdb.com/title/tt0209144/> a schema:Movie ;
+    schema:name "Memento" ;
+    schema:url <https://www.imdb.com/title/tt0209144/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1426333/> ;
+        schema:characterName "Motel Guest"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

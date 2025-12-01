@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2563129/> a schema:Person ;
+    schema:name "The 5.6.7.8&apos;s" ;
+    schema:url <https://www.imdb.com/name/nm2563129/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "The 5.6.7.8's. Soundtrack: Kill Bill: Vol. 1. The 5.6.7.8's is known for Kill Bill: Vol. 1 (2003), The Fast and the Furious: Tokyo Drift (2006) and Kill Bill: Vol. 2 (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0378194/> ;    # Kill Bill: Vol. 2
+
+
+    schema:video <https://www.imdb.com/video/vi4261086233/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kill Bill: Vol. 2 (2004)
+<https://www.imdb.com/title/tt0378194/> a schema:Movie ;
+    schema:name "Kill Bill: Vol. 2" ;
+    schema:url <https://www.imdb.com/title/tt0378194/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2563129/> ;
+        schema:characterName "The 5.6.7.8's"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4261086233/> a schema:VideoObject ;
+        schema:name "Rock &apos;n Tokyo" ;
+        schema:description "A portrait of Tokyo through 4 underground and intense rock bands." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4261086233/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM5NDYwODQwNl5BMl5BanBnXkFtZTcwNjczMjExMw@@._V1_.jpg" ;
+        schema:duration "PT2M14S"^^xsd:duration ;
+        schema:uploadDate "2010-01-12T00:01:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2563129/>
+    schema:sameAs <https://www.facebook.com/The-5678s-Official-277355125413/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

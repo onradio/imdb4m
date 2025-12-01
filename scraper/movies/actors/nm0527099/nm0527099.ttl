@@ -1,0 +1,382 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0527099/> a schema:Person ;
+    schema:name "John Lurie" ;
+    schema:url <https://www.imdb.com/name/nm0527099/> ;
+    schema:birthDate "1952-12-14"^^xsd:date ;
+    schema:jobTitle "Music Department", "Actor", "Composer" ;
+    schema:description "John Lurie. Actor: Stranger Than Paradise. John Lurie is a musician, actor, and painter. In 1978, he formed The Lounge Lizards jazz ensemble with his brother Evan, and the band made music for 20 years. Lurie has also composed scores for films, and his soundtrack for Get Shorty (1995) was nominated for a Grammy award. He had starring roles in the 1980s Jim Jarmusch films Stranger Than Paradise (1984) and..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ0MTkzMDYzNF5BMl5BanBnXkFtZTcwOTE4Njc5Ng@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hennepin, Minnesota, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088184/>,    # Stranger Than Paradise
+                       <https://www.imdb.com/title/tt0090967/>,    # Down by Law
+                       <https://www.imdb.com/title/tt0100935/>,    # Wild at Heart
+                       <https://www.imdb.com/title/tt0113161/>,    # Get Shorty
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1280729/>,    # Mobsters
+                       <https://www.imdb.com/title/tt1612111/>,    # Tortured by Joy
+                       <https://www.imdb.com/title/tt0363439/>,    # Are You Comfortable?
+                       <https://www.imdb.com/title/tt0118421/>,    # Oz
+                       <https://www.imdb.com/title/tt13418394/>,    # SpongeBob SquarePants: Sea Stories
+                       <https://www.imdb.com/title/tt0271193/>,    # Sleepwalk
+                       <https://www.imdb.com/title/tt0133122/>,    # New Rose Hotel
+                       <https://www.imdb.com/title/tt0116733/>,    # Just Your Luck
+                       <https://www.imdb.com/title/tt0095869/>,    # Il piccolo diavolo
+                       <https://www.imdb.com/title/tt0095497/>,    # The Last Temptation of Christ
+                       <https://www.imdb.com/title/tt0089017/>,    # Desperately Seeking Susan
+                       <https://www.imdb.com/title/tt0087884/>,    # Paris, Texas
+                       <https://www.imdb.com/title/tt0083138/>,    # Subway Riders
+                       <https://www.imdb.com/title/tt0084488/>,    # Permanent Vacation
+                       <https://www.imdb.com/title/tt0081682/>,    # Underground U.S.A.
+                       <https://www.imdb.com/title/tt0081265/>,    # The Offenders
+                       <https://www.imdb.com/title/tt6901596/>,    # Red Italy
+                       <https://www.imdb.com/title/tt0082734/>,    # Men in Orbit
+                       <https://www.imdb.com/title/tt1002643/> ; # Rome '78
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1465041945/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0527099/mediaviewer/rm2433405697/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm343103744/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm158554368/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm208886016/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm225663232/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm91445504/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm1030969600/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm913529088/>,
+                 <https://www.imdb.com/name/nm0527099/mediaviewer/rm678648064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088184/> a schema:Movie ;
+    schema:name "Stranger Than Paradise" ;
+    schema:url <https://www.imdb.com/title/tt0088184/> .
+
+<https://www.imdb.com/title/tt0090967/> a schema:Movie ;
+    schema:name "Down by Law" ;
+    schema:url <https://www.imdb.com/title/tt0090967/> .
+
+<https://www.imdb.com/title/tt0100935/> a schema:Movie ;
+    schema:name "Wild at Heart" ;
+    schema:url <https://www.imdb.com/title/tt0100935/> .
+
+<https://www.imdb.com/title/tt0113161/> a schema:Movie ;
+    schema:name "Get Shorty" ;
+    schema:url <https://www.imdb.com/title/tt0113161/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mobsters (2010)
+<https://www.imdb.com/title/tt1280729/> a schema:Movie ;
+    schema:name "Mobsters" ;
+    schema:url <https://www.imdb.com/title/tt1280729/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Tortured by Joy (2004)
+<https://www.imdb.com/title/tt1612111/> a schema:Movie ;
+    schema:name "Tortured by Joy" ;
+    schema:url <https://www.imdb.com/title/tt1612111/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Are You Comfortable? (2003)
+<https://www.imdb.com/title/tt0363439/> a schema:Movie ;
+    schema:name "Are You Comfortable?" ;
+    schema:url <https://www.imdb.com/title/tt0363439/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Host"
+    ] .
+
+# Oz (2001)
+<https://www.imdb.com/title/tt0118421/> a schema:Movie ;
+    schema:name "Oz" ;
+    schema:url <https://www.imdb.com/title/tt0118421/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Greg Penders"
+    ] .
+
+# SpongeBob SquarePants: Sea Stories (2002)
+<https://www.imdb.com/title/tt13418394/> a schema:Movie ;
+    schema:name "SpongeBob SquarePants: Sea Stories" ;
+    schema:url <https://www.imdb.com/title/tt13418394/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Fishermen"
+    ] .
+
+# Sleepwalk (2000)
+<https://www.imdb.com/title/tt0271193/> a schema:Movie ;
+    schema:name "Sleepwalk" ;
+    schema:url <https://www.imdb.com/title/tt0271193/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Frank"
+    ] .
+
+# New Rose Hotel (1998)
+<https://www.imdb.com/title/tt0133122/> a schema:Movie ;
+    schema:name "New Rose Hotel" ;
+    schema:url <https://www.imdb.com/title/tt0133122/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Distinguished Man"
+    ] .
+
+# Just Your Luck (1996)
+<https://www.imdb.com/title/tt0116733/> a schema:Movie ;
+    schema:name "Just Your Luck" ;
+    schema:url <https://www.imdb.com/title/tt0116733/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Coker"
+    ] .
+
+# Il piccolo diavolo (1988)
+<https://www.imdb.com/title/tt0095869/> a schema:Movie ;
+    schema:name "Il piccolo diavolo" ;
+    schema:url <https://www.imdb.com/title/tt0095869/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Cusatelli"
+    ] .
+
+# The Last Temptation of Christ (1988)
+<https://www.imdb.com/title/tt0095497/> a schema:Movie ;
+    schema:name "The Last Temptation of Christ" ;
+    schema:url <https://www.imdb.com/title/tt0095497/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "James Apostle"
+    ] .
+
+# Desperately Seeking Susan (1985)
+<https://www.imdb.com/title/tt0089017/> a schema:Movie ;
+    schema:name "Desperately Seeking Susan" ;
+    schema:url <https://www.imdb.com/title/tt0089017/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Neighbor Saxophonist"
+    ] .
+
+# Paris, Texas (1984)
+<https://www.imdb.com/title/tt0087884/> a schema:Movie ;
+    schema:name "Paris, Texas" ;
+    schema:url <https://www.imdb.com/title/tt0087884/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "'Slater'"
+    ] .
+
+# Subway Riders (1981)
+<https://www.imdb.com/title/tt0083138/> a schema:Movie ;
+    schema:name "Subway Riders" ;
+    schema:url <https://www.imdb.com/title/tt0083138/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "The Saxophonist"
+    ] .
+
+# Permanent Vacation (1980)
+<https://www.imdb.com/title/tt0084488/> a schema:Movie ;
+    schema:name "Permanent Vacation" ;
+    schema:url <https://www.imdb.com/title/tt0084488/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Sax Player"
+    ] .
+
+# Underground U.S.A. (1980)
+<https://www.imdb.com/title/tt0081682/> a schema:Movie ;
+    schema:name "Underground U.S.A." ;
+    schema:url <https://www.imdb.com/title/tt0081682/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Jack Smith"
+    ] .
+
+# The Offenders (1980)
+<https://www.imdb.com/title/tt0081265/> a schema:Movie ;
+    schema:name "The Offenders" ;
+    schema:url <https://www.imdb.com/title/tt0081265/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "The Lizard"
+    ] .
+
+# Red Italy (1979)
+<https://www.imdb.com/title/tt6901596/> a schema:Movie ;
+    schema:name "Red Italy" ;
+    schema:url <https://www.imdb.com/title/tt6901596/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName ""
+    ] .
+
+# Men in Orbit (1979)
+<https://www.imdb.com/title/tt0082734/> a schema:Movie ;
+    schema:name "Men in Orbit" ;
+    schema:url <https://www.imdb.com/title/tt0082734/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName "Astronaut"
+    ] .
+
+# Rome '78 (1978)
+<https://www.imdb.com/title/tt1002643/> a schema:Movie ;
+    schema:name "Rome '78" ;
+    schema:url <https://www.imdb.com/title/tt1002643/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0527099/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1465041945/> a schema:VideoObject ;
+        schema:name "Season 3  Official Trailer" ;
+        schema:description "Part meditative tutorial, part fireside chat, musician John Lurie shares his philosophical thoughts while honing his watercolor techniques." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1465041945/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTYzZDI4MDAtNjUxNi00NjRmLTg3MjMtNjE5MzBlODMyZTQ0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M1S"^^xsd:duration ;
+        schema:uploadDate "2023-05-15T21:28:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ0MTkzMDYzNF5BMl5BanBnXkFtZTcwOTE4Njc5Ng@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0MTkzMDYzNF5BMl5BanBnXkFtZTcwOTE4Njc5Ng@@._V1_.jpg> ;
+    schema:caption "John Lurie in Stranger Than Paradise (1984)" ;
+    schema:height "1401"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm2433405697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTEzMGZmZDAtYjhlZS00ODViLTljYTktM2E4ZTMwMzk2NGJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Lurie in Painting with John (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm343103744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGE0YTQ0M2ItYmQ2ZC00NTA1LThjMGYtZDEzMzExY2Q5NTkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Waits and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm158554368/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjI5MDRjMzctZGZmNy00YmI4LWE1N2UtNjllZTA3M2NhNDdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Waits and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm208886016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDJiYzAwZDQtZGE0ZS00Y2I4LWIzYzgtOGU5NTBiMGRjYzlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roberto Benigni, Nicoletta Braschi, Tom Waits, and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm225663232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDIyY2EyMDctMjM5Yi00MGMzLTg0YTAtZTIxMTllYjdkNTJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roberto Benigni, Tom Waits, and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm91445504/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdlNGU3MjMtNGI3ZS00MjhmLWE3ODktYTc2YzY1MDJlOTZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roberto Benigni, Tom Waits, and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm1030969600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA3OGRiMTYtZTQ0ZS00NGI5LWEyNmYtNjU4NWVlMWY5YTYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roberto Benigni, Tom Waits, and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm913529088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQxNTA3YWEtYTBiZS00OGYxLTk2ZGItODgyMGIxZGQxNzU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Waits and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0527099/mediaviewer/rm678648064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjJlMGE1YzctNDdiOC00MDcwLWI0MDQtMWM2NmZkYTkwZDVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Waits and John Lurie in Down by Law (1986)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

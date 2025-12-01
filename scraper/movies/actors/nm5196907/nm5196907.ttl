@@ -1,0 +1,240 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5196907/> a schema:Person ;
+    schema:name "Courtney Eaton" ;
+    schema:url <https://www.imdb.com/name/nm5196907/> ;
+    schema:birthDate "1996-01-06"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:description "Courtney Eaton. Actress: Yellowjackets. Courtney Eaton is an Australian Actress and Model. She is known for her supporting roles as Cheedo the Fragile in the 2015 film Mad Max: Fury Road, and as Zaya in the 2016 film Gods of Egypt. Eaton was born in Bunbury, Western Australia. She studied at Bunbury Cathedral Grammar School. Her father, Stephen Eaton, an IT manager, is Australian, of English descent, and her mother..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDdkMzA3ZjctZmEyNi00ZmVlLTljYjAtNjA2YjE5NWIxNDY5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bunbury, Western Australia, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11041332/>,    # Yellowjackets
+                       <https://www.imdb.com/title/tt1392190/>,    # Mad Max: Fury Road
+                       <https://www.imdb.com/title/tt21057800/>,    # Parachute
+                       <https://www.imdb.com/title/tt6408226/>,    # Newness
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3541524/>,    # In the Line of Duty
+                       <https://www.imdb.com/title/tt6222286/>,    # Perfect
+                       <https://www.imdb.com/title/tt5692390/>,    # Status Update
+                       <https://www.imdb.com/title/tt7499358/>,    # Angus & Julia Stone: Chateau
+                       <https://www.imdb.com/title/tt22176386/>,    # Panthère de Cartier
+                       <https://www.imdb.com/title/tt2404233/>,    # Gods of Egypt
+                       <https://www.imdb.com/title/tt7533052/> ; # R5: All Night
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3929392153/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5196907/mediaviewer/rm603401729/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm2237543937/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm2622827009/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm1970861824/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm3782299136/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm1239646722/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm2905378306/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm3354891522/>,
+                 <https://www.imdb.com/name/nm5196907/mediaviewer/rm4140929794/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt11041332/> a schema:Movie ;
+    schema:name "Yellowjackets" ;
+    schema:url <https://www.imdb.com/title/tt11041332/> .
+
+<https://www.imdb.com/title/tt1392190/> a schema:Movie ;
+    schema:name "Mad Max: Fury Road" ;
+    schema:url <https://www.imdb.com/title/tt1392190/> .
+
+<https://www.imdb.com/title/tt21057800/> a schema:Movie ;
+    schema:name "Parachute" ;
+    schema:url <https://www.imdb.com/title/tt21057800/> .
+
+<https://www.imdb.com/title/tt6408226/> a schema:Movie ;
+    schema:name "Newness" ;
+    schema:url <https://www.imdb.com/title/tt6408226/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# In the Line of Duty (2019)
+<https://www.imdb.com/title/tt3541524/> a schema:Movie ;
+    schema:name "In the Line of Duty" ;
+    schema:url <https://www.imdb.com/title/tt3541524/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Ava Brooks"
+    ] .
+
+# Perfect (2018)
+<https://www.imdb.com/title/tt6222286/> a schema:Movie ;
+    schema:name "Perfect" ;
+    schema:url <https://www.imdb.com/title/tt6222286/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Status Update (2018)
+<https://www.imdb.com/title/tt5692390/> a schema:Movie ;
+    schema:name "Status Update" ;
+    schema:url <https://www.imdb.com/title/tt5692390/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Charlotte Alden"
+    ] .
+
+# Angus & Julia Stone: Chateau (2017)
+<https://www.imdb.com/title/tt7499358/> a schema:Movie ;
+    schema:name "Angus & Julia Stone: Chateau" ;
+    schema:url <https://www.imdb.com/title/tt7499358/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Lead Girl"
+    ] .
+
+# Panthère de Cartier (2017)
+<https://www.imdb.com/title/tt22176386/> a schema:Movie ;
+    schema:name "Panthère de Cartier" ;
+    schema:url <https://www.imdb.com/title/tt22176386/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Courtney Eaton"
+    ] .
+
+# Gods of Egypt (2016)
+<https://www.imdb.com/title/tt2404233/> a schema:Movie ;
+    schema:name "Gods of Egypt" ;
+    schema:url <https://www.imdb.com/title/tt2404233/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Zaya"
+    ] .
+
+# R5: All Night (2015)
+<https://www.imdb.com/title/tt7533052/> a schema:Movie ;
+    schema:name "R5: All Night" ;
+    schema:url <https://www.imdb.com/title/tt7533052/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5196907/> ;
+        schema:characterName "Courtney Eaton"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3929392153/> a schema:VideoObject ;
+        schema:name "&quot;Yellowjackets&quot; Cast Weighs In on Their Favorite Fan Theories" ;
+        schema:description "Sophie Nélisse, Samantha Hanratty, Courtney Eaton, Kevin Alves, Steven Krueger, and Tawny Cypress answer IMDb's Burning Questions about their favorite fan theories, the co-stars who look most like their adult or teen counterparts, and the moments that shocked them on set." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3929392153/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGU3MGUxMGItMGJmMS00NTk1LWFjMTQtNGM3ZjI1YjJhNWJhXkEyXkFqcGdeQXNhcmFocmVi._V1_.jpg" ;
+        schema:duration "PT4M15S"^^xsd:duration ;
+        schema:uploadDate "2023-03-11T01:48:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDdkMzA3ZjctZmEyNi00ZmVlLTljYjAtNjA2YjE5NWIxNDY5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDdkMzA3ZjctZmEyNi00ZmVlLTljYjAtNjA2YjE5NWIxNDY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Courtney Eaton" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm603401729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDc0MjU4NjAtMWFkOS00MDc5LThlNGMtZDJmOWIxM2E0OWNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Courtney Eaton in Old Wounds (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm2237543937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI4NDg2MDYtY2FkOS00YWZlLWEyMzgtZTMwNjRiMGU2NTViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nuha Jes Izman, Nia Sondaya, Samantha Hanratty, Steven Krueger, Sophie Nélisse, Courtney Eaton, Jasmin Savoy Brown, Liv Hewson, Sophie Thatcher, and Alexa Barajas in Yellowjackets (2021)" ;
+    schema:height "3632"^^xsd:integer ;
+    schema:width "5459"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm2622827009/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTgxYjQ5ZDgtY2JjZS00ZjdmLTkwMTUtZDM1MWQ0OTkyMDE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Hanratty, Sophie Nélisse, and Courtney Eaton in Yellowjackets (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm1970861824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyNzgwMDE3MV5BMl5BanBnXkFtZTgwNTE3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1362"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm3782299136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDZjZmI3MTktZWVmMS00NzVjLTg5ZTQtZDY5MTE3YmNiYTk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hardy and Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "501"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm1239646722/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmM2M2Y0N2MtYzAwYS00OTU4LTg3OWItZDM1NmJkYzgxZmU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Courtney Eaton in Yellowjackets (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm2905378306/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2QzZjdiMmYtNDM0ZC00YTNhLTg5ZjEtZmVkYjk5MTZmMWE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Courtney Eaton in Yellowjackets (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm3354891522/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2NlYjM2YzAtMGQ0Zi00YTA4LWFkMGEtMTY0OGY0NzlmMjFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Courtney Eaton, Jasmin Savoy Brown, and Sophie Thatcher in Yellowjackets (2025)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5196907/mediaviewer/rm4140929794/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUwYzQ5NzItMmNhMS00MmI3LWIxYjAtMjdlNTQ5ZWVjNTg4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nia Sondaya, Samantha Hanratty, Kevin Alves, Sophie Nélisse, Courtney Eaton, Jasmin Savoy Brown, and Jenna Burgess in Yellowjackets (2021)" ;
+    schema:height "4024"^^xsd:integer ;
+    schema:width "6048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5196907/>
+    schema:sameAs <https://www.instagram.com/courteaton> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

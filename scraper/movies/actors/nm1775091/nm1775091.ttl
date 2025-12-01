@@ -1,0 +1,349 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1775091/> a schema:Person ;
+    schema:name "Danai Gurira" ;
+    schema:url <https://www.imdb.com/name/nm1775091/> ;
+    schema:birthDate "1978-02-14"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Writer" ;
+    schema:alternateName "Danai Jekesai Gurira" ;
+    schema:description "Danai Gurira. Actress: Black Panther. Danai Gurira was born in Grinnell, Iowa, to Josephine and Roger Gurira, who were from Zimbabwe. Her father was then teaching Chemistry at Grinnell College. When she was five, the family moved back to Zimbabwe, residing in the capital Harare. Gurira later returned to the United States, and studied social psychology at Macalester College, receiving an MFA from New York University's Tisch School of the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjYyNjg1OTU1M15BMl5BanBnXkFtZTgwNzYyNTkzMDI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Grinnell, Iowa, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1825683/>,    # Black Panther
+                       <https://www.imdb.com/title/tt0857191/>,    # The Visitor
+                       <https://www.imdb.com/title/tt4154756/>,    # Avengers: Infinity War
+                       <https://www.imdb.com/title/tt9114286/>,    # Black Panther: Wakanda Forever
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1520211/>,    # The Walking Dead
+                       <https://www.imdb.com/title/tt4154796/>,    # Avengers: Endgame
+                       <https://www.imdb.com/title/tt0437745/>,    # Robot Chicken
+                       <https://www.imdb.com/title/tt1666185/>,    # All Eyez on Me
+                       <https://www.imdb.com/title/tt3120408/>,    # Tinker Bell and the Legend of the NeverBeast
+                       <https://www.imdb.com/title/tt2094890/>,    # Mother of George
+                       <https://www.imdb.com/title/tt1279972/>,    # Treme
+                       <https://www.imdb.com/title/tt1545464/>,    # Restless City
+                       <https://www.imdb.com/title/tt0872230/>,    # My Soul to Take
+                       <https://www.imdb.com/title/tt1235099/>,    # Lie to Me
+                       <https://www.imdb.com/title/tt0094416/>,    # American Experience
+                       <https://www.imdb.com/title/tt1314190/>,    # 3 Backyards
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0787490/>,    # Life on Mars
+                       <https://www.imdb.com/title/tt0995039/>,    # Ghost Town
+                       <https://www.imdb.com/title/tt0275140/> ; # Law & Order: Criminal Intent
+
+    schema:award [
+        a schema:Award ;
+        schema:description "13 wins & 31 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1587004697/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1775091/mediaviewer/rm260329217/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm1881879297/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm3044738561/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm2876966401/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm2960719873/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm2227505153/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm2277836801/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm717691393/>,
+                 <https://www.imdb.com/name/nm1775091/mediaviewer/rm1410241281/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1825683/> a schema:Movie ;
+    schema:name "Black Panther" ;
+    schema:url <https://www.imdb.com/title/tt1825683/> .
+
+<https://www.imdb.com/title/tt0857191/> a schema:Movie ;
+    schema:name "The Visitor" ;
+    schema:url <https://www.imdb.com/title/tt0857191/> .
+
+<https://www.imdb.com/title/tt4154756/> a schema:Movie ;
+    schema:name "Avengers: Infinity War" ;
+    schema:url <https://www.imdb.com/title/tt4154756/> .
+
+<https://www.imdb.com/title/tt9114286/> a schema:Movie ;
+    schema:name "Black Panther: Wakanda Forever" ;
+    schema:url <https://www.imdb.com/title/tt9114286/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Walking Dead (2012)
+<https://www.imdb.com/title/tt1520211/> a schema:Movie ;
+    schema:name "The Walking Dead" ;
+    schema:url <https://www.imdb.com/title/tt1520211/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Michonne"
+    ] .
+
+# Avengers: Endgame (2019)
+<https://www.imdb.com/title/tt4154796/> a schema:Movie ;
+    schema:name "Avengers: Endgame" ;
+    schema:url <https://www.imdb.com/title/tt4154796/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Okoye"
+    ] .
+
+# Robot Chicken (2017)
+<https://www.imdb.com/title/tt0437745/> a schema:Movie ;
+    schema:name "Robot Chicken" ;
+    schema:url <https://www.imdb.com/title/tt0437745/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Michonne Hawthorne"
+    ] .
+
+# All Eyez on Me (2017)
+<https://www.imdb.com/title/tt1666185/> a schema:Movie ;
+    schema:name "All Eyez on Me" ;
+    schema:url <https://www.imdb.com/title/tt1666185/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Afeni Shakur"
+    ] .
+
+# Tinker Bell and the Legend of the NeverBeast (2014)
+<https://www.imdb.com/title/tt3120408/> a schema:Movie ;
+    schema:name "Tinker Bell and the Legend of the NeverBeast" ;
+    schema:url <https://www.imdb.com/title/tt3120408/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Fury"
+    ] .
+
+# Mother of George (2013)
+<https://www.imdb.com/title/tt2094890/> a schema:Movie ;
+    schema:name "Mother of George" ;
+    schema:url <https://www.imdb.com/title/tt2094890/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Adenike Balogun"
+    ] .
+
+# Treme (2010)
+<https://www.imdb.com/title/tt1279972/> a schema:Movie ;
+    schema:name "Treme" ;
+    schema:url <https://www.imdb.com/title/tt1279972/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Jill"
+    ] .
+
+# Restless City (2011)
+<https://www.imdb.com/title/tt1545464/> a schema:Movie ;
+    schema:name "Restless City" ;
+    schema:url <https://www.imdb.com/title/tt1545464/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Sisi"
+    ] .
+
+# My Soul to Take (2010)
+<https://www.imdb.com/title/tt0872230/> a schema:Movie ;
+    schema:name "My Soul to Take" ;
+    schema:url <https://www.imdb.com/title/tt0872230/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Jeanne-Baptiste"
+    ] .
+
+# Lie to Me (2010)
+<https://www.imdb.com/title/tt1235099/> a schema:Movie ;
+    schema:name "Lie to Me" ;
+    schema:url <https://www.imdb.com/title/tt1235099/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Michelle Russo"
+    ] .
+
+# American Experience (2010)
+<https://www.imdb.com/title/tt0094416/> a schema:Movie ;
+    schema:name "American Experience" ;
+    schema:url <https://www.imdb.com/title/tt0094416/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Sarah Steward"
+    ] .
+
+# 3 Backyards (2010)
+<https://www.imdb.com/title/tt1314190/> a schema:Movie ;
+    schema:name "3 Backyards" ;
+    schema:url <https://www.imdb.com/title/tt1314190/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Woman in Blue Dress"
+    ] .
+
+# Law & Order (2009)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Courtney Owens"
+    ] .
+
+# Life on Mars (2009)
+<https://www.imdb.com/title/tt0787490/> a schema:Movie ;
+    schema:name "Life on Mars" ;
+    schema:url <https://www.imdb.com/title/tt0787490/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Angela"
+    ] .
+
+# Ghost Town (2008)
+<https://www.imdb.com/title/tt0995039/> a schema:Movie ;
+    schema:name "Ghost Town" ;
+    schema:url <https://www.imdb.com/title/tt0995039/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Assorted Ghost"
+    ] .
+
+# Law & Order: Criminal Intent (2004)
+<https://www.imdb.com/title/tt0275140/> a schema:Movie ;
+    schema:name "Law & Order: Criminal Intent" ;
+    schema:url <https://www.imdb.com/title/tt0275140/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1775091/> ;
+        schema:characterName "Marei Rosa Rumbidzai"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1587004697/> a schema:VideoObject ;
+        schema:name "Burning Questions With &apos;Black Panther: Wakanda Forever&apos;" ;
+        schema:description "IMDb sits down with stars Letitia Wright, Lupita Nyong'o, Danai Gurira, Tenoch Huerta, Mabel Cadena, Alex Livinalli, and director Ryan Coogler to learn more about favorite costumes, cast traditions on set, underwater feats of endurance, Talokan phrases, memorable fan encounters, and more." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1587004697/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmU0ZTM5YWMtNjZkMi00YjViLTg1OTEtZjJhZWIyYmY4MWY1XkEyXkFqcGdeQWZlZGVyaWdh._V1_.jpg" ;
+        schema:duration "PT4M21S"^^xsd:duration ;
+        schema:uploadDate "2022-11-04T15:40:49Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjYyNjg1OTU1M15BMl5BanBnXkFtZTgwNzYyNTkzMDI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjYyNjg1OTU1M15BMl5BanBnXkFtZTgwNzYyNTkzMDI@._V1_.jpg> ;
+    schema:caption "Danai Gurira" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm260329217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTAzZDM1MTItM2E0Mi00YjUxLTg1NmItYjA0ZWZmNTlmZmU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danai Gurira in Gone (2024)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm1881879297/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2FiMzYzOTctNDM3Zi00YzZhLWFiODQtM2Y2ZTEwNzE1ODEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eddie Murphy, Diana Ross, Dorothy Dandridge, Beyoncé, and Danai Gurira in Black Fashion in Film & TV History (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm3044738561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGIxZjU5MWEtZWE0OS00MjQ4LWFiNTQtNWNlZGQwODE2NzQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danai Gurira and Letitia Wright in Black Panther: Wakanda Forever (2022)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm2876966401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAyZGUyNTMtMmU3My00YWI3LWFiZDEtNGJiYjdjMzQ5Y2RiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Angela Bassett and Danai Gurira in Black Panther: Wakanda Forever (2022)" ;
+    schema:height "3633"^^xsd:integer ;
+    schema:width "2999"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm2960719873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzliYWUyYjItNGVjMy00YjEzLWFhNTItYmU5ZjEyNjY3OWEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danai Gurira and Michaela Coel in Black Panther: Wakanda Forever (2022)" ;
+    schema:height "1676"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm2227505153/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzc2OTUwOWUtZWJmMC00NjFmLWExYjMtODg2ZDI1YTAzNDQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Angela Bassett, Isaach De Bankolé, Florence Kasumba, Danai Gurira, and Dorothy Steel in Black Panther: Wakanda Forever (2022)" ;
+    schema:height "1670"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm2277836801/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmQ1NjczMTEtMmFiZS00NDAzLWI1NjQtYTI5MTU0MzFkYzExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danai Gurira in Black Panther: Wakanda Forever (2022)" ;
+    schema:height "1670"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm717691393/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDMyNGM5OGItYTEyYi00NDJlLWEzYmQtYjNjNjAxYWYyOWY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Don Cheadle, Robert Downey Jr., Vin Diesel, Taika Waititi, Bradley Cooper, Chris Evans, Sean Gunn, Elizabeth Olsen, Chris Pratt, Jeremy Renner, Paul Rudd, Mark Ruffalo, Benedict Wong, Terry Notary, Anthony Mackie, Chris Hemsworth, Dave Bautista, Benedict Cumberbatch, Evangeline Lilly, Chadwick Boseman, Sebastian Stan, Danai Gurira, Tessa Thompson, Pom Klementieff, Letitia Wright, Tom Holland, Eric Word, Floyd Anthony Johns Jr., Marie Mouroum, Winston Duke, Bobby Hoskins, Alexa Medina, and Eric Wallace in Avengers: Endgame (2019)" ;
+    schema:height "572"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1775091/mediaviewer/rm1410241281/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzhlMGVkYWQtMjVjZC00ZjM1LWFjYWMtMTRkYTRjNjIxOGQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danai Gurira in The Walking Dead (2010)" ;
+    schema:height "2998"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1775091/>
+    schema:sameAs <https://www.instagram.com/danaigurira/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

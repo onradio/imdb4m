@@ -1,0 +1,50 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1287602/> a schema:Person ;
+    schema:name "Rio Kanno" ;
+    schema:url <https://www.imdb.com/name/nm1287602/> ;
+    schema:birthDate "1993-09-25"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rio Kanno. Actress: Dark Water. Rio Kanno was born on 25 September 1993 in Saitama, Japan. She is an actress, known for Dark Water (2002), Howl's Moving Castle (2004) and Noroi (2005)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Saitama, Japan"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2643575577/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2643575577/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A documentary filmmaker explores seemingly unrelated paranormal incidents connected by the legend of an ancient demon called the \"kagutaba.\"" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2643575577/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGQwMWY5ODMtZDBiZC00ZjliLTlhZDQtNDVjYzkyOTUxNDdmXkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M43S"^^xsd:duration ;
+        schema:uploadDate "2021-10-03T19:51:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1287602/>
+    schema:sameAs <https://www.instagram.com/riokanno.1993/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

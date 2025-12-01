@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4841645/> a schema:Person ;
+    schema:name "Hussein Sami" ;
+    schema:url <https://www.imdb.com/name/nm4841645/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Hussein Sami. Actor: Incendies. Hussein Sami is known for Incendies (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1255953/> ;    # Incendies
+
+
+    schema:video <https://www.imdb.com/video/vi722049561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Incendies (2010)
+<https://www.imdb.com/title/tt1255953/> a schema:Movie ;
+    schema:name "Incendies" ;
+    schema:url <https://www.imdb.com/title/tt1255953/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4841645/> ;
+        schema:characterName "Nihad (5 Ans)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi722049561/> a schema:VideoObject ;
+        schema:name "Incendies" ;
+        schema:description "As twins Jeanne and Simon Marwan learn the specifics of the will prepared by their mother, Nawal, they are handed two envelopes: one is for the father they presumed to be dead, the other is to be handed to the brother they didnÂ’t know existed. Jeanne drafts herself into the mystery, soon landing in an unnamed Middle Eastern country. Simon soon follows and the pair begin to unravel their mother's secret history." ;
+        schema:embedUrl <https://www.imdb.com/video/vi722049561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTczNDY5MDU5MF5BMl5BanBnXkFtZTgwNTM0NjkyMzE@._V1_.jpg" ;
+        schema:duration "PT2M9S"^^xsd:duration ;
+        schema:uploadDate "2011-02-03T14:06:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

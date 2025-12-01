@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099088/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Doubleback" ;
+        schema:byArtist <https://www.imdb.com/name/nm1151396/> ; # ZZ Top
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Doubleback" ;
+            schema:author <https://www.imdb.com/name/nm1151396/> # ZZ Top
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Power of Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm3539158/> ; # Huey Lewis & The News
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Power of Love" ;
+            schema:author <https://www.imdb.com/name/nm0507271/>, # Huey Lewis
+                       <https://www.imdb.com/name/nm0171614/>, # Johnny Colla
+                       <https://www.imdb.com/name/nm0370943/> # Chris Hayes
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Turkey in the Straw" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Battle Cry of Freedom" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Battle Cry of Freedom" ;
+            schema:composer <https://www.imdb.com/name/nm1150729/> # George Frederick Root
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Oh! My Darling, Clementine" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Doubleback (Acoustic Instrumental Version)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1151396/> ; # ZZ Top
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Doubleback (Acoustic Instrumental Version)" ;
+            schema:author <https://www.imdb.com/name/nm0316531/>, # Billy Gibbons
+                       <https://www.imdb.com/name/nm0384212/>, # Dusty Hill
+                       <https://www.imdb.com/name/nm0063896/> # Frank Beard
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Howdy Doody Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Howdy Doody Theme" ;
+            schema:author <https://www.imdb.com/name/nm1337927/>, # Edward Kean
+                       <https://www.imdb.com/name/nm0807470/> # Bob Smith
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0063896/> a schema:Person ;
+    schema:name "Frank Beard" .
+<https://www.imdb.com/name/nm0171614/> a schema:Person ;
+    schema:name "Johnny Colla" .
+<https://www.imdb.com/name/nm0316531/> a schema:Person ;
+    schema:name "Billy Gibbons" .
+<https://www.imdb.com/name/nm0370943/> a schema:Person ;
+    schema:name "Chris Hayes" .
+<https://www.imdb.com/name/nm0384212/> a schema:Person ;
+    schema:name "Dusty Hill" .
+<https://www.imdb.com/name/nm0507271/> a schema:Person ;
+    schema:name "Huey Lewis" .
+<https://www.imdb.com/name/nm0807470/> a schema:Person ;
+    schema:name "Bob Smith" .
+<https://www.imdb.com/name/nm1150729/> a schema:Person ;
+    schema:name "George Frederick Root" .
+<https://www.imdb.com/name/nm1151396/> a schema:Person ;
+    schema:name "ZZ Top" .
+<https://www.imdb.com/name/nm1337927/> a schema:Person ;
+    schema:name "Edward Kean" .
+<https://www.imdb.com/name/nm3539158/> a schema:Person ;
+    schema:name "Huey Lewis & The News" .
+# ==============================================================================

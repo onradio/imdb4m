@@ -1,0 +1,310 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0339233/> a schema:Person ;
+    schema:name "Alex Greenwald" ;
+    schema:url <https://www.imdb.com/name/nm0339233/> ;
+    schema:birthDate "1979-10-09"^^xsd:date ;
+    schema:jobTitle "Music Department", "Actor", "Composer" ;
+    schema:alternateName "Alexander Greenwald" ;
+    schema:description "Alex Greenwald. Actor: Donnie Darko. Born October 9 1979 in Los Angeles, California, also where he was raised and where he currently lives. Attended the same grade school as former Phantom Planet member and actor Jason Schwartzman, but lost contact with him until they were 14. Jason had told his classmates that he had band but he didn't have a singer, so he called up Alex remembering that he could..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk1MzY4NzkyOV5BMl5BanBnXkFtZTYwODA3NzA1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0246578/>,    # Donnie Darko
+                       <https://www.imdb.com/title/tt0881891/>,    # All About Steve
+                       <https://www.imdb.com/title/tt0948470/>,    # The Amazing Spider-Man
+                       <https://www.imdb.com/title/tt1458175/>,    # The Next Three Days
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2338454/>,    # Unicorn Store
+                       <https://www.imdb.com/title/tt8764356/>,    # Phantom Planet: Do the Panic
+                       <https://www.imdb.com/title/tt0408524/>,    # Bad News Bears
+                       <https://www.imdb.com/title/tt12769782/>,    # M83: Don't Save Us from the Flames
+                       <https://www.imdb.com/title/tt6810400/>,    # Phantom Planet: Big Brat
+                       <https://www.imdb.com/title/tt12769900/>,    # Rubicon
+                       <https://www.imdb.com/title/tt8764348/>,    # Phantom Planet: Lonely Day
+                       <https://www.imdb.com/title/tt8764350/>,    # Phantom Planet: California
+                       <https://www.imdb.com/title/tt8764340/>,    # Phantom Planet: Hey Now Girl
+                       <https://www.imdb.com/title/tt0115341/>,    # Sabrina, the Teenage Witch
+                       <https://www.imdb.com/title/tt0114132/>,    # A Pig's Tale
+                       <https://www.imdb.com/title/tt0110676/>,    # No Dessert, Dad, Till You Mow the Lawn
+                       <https://www.imdb.com/title/tt0191173/>,    # The Halloween Tree
+                       <https://www.imdb.com/title/tt0286912/> ; # Recycle Rex
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0339233/mediaviewer/rm20139776/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm171134720/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm1862607104/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm1845829888/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm2425893376/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm495075072/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm713113344/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm4097914880/>,
+                 <https://www.imdb.com/name/nm0339233/mediaviewer/rm2732791808/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0246578/> a schema:Movie ;
+    schema:name "Donnie Darko" ;
+    schema:url <https://www.imdb.com/title/tt0246578/> .
+
+<https://www.imdb.com/title/tt0881891/> a schema:Movie ;
+    schema:name "All About Steve" ;
+    schema:url <https://www.imdb.com/title/tt0881891/> .
+
+<https://www.imdb.com/title/tt0948470/> a schema:Movie ;
+    schema:name "The Amazing Spider-Man" ;
+    schema:url <https://www.imdb.com/title/tt0948470/> .
+
+<https://www.imdb.com/title/tt1458175/> a schema:Movie ;
+    schema:name "The Next Three Days" ;
+    schema:url <https://www.imdb.com/title/tt1458175/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Unicorn Store (2017)
+<https://www.imdb.com/title/tt2338454/> a schema:Movie ;
+    schema:name "Unicorn Store" ;
+    schema:url <https://www.imdb.com/title/tt2338454/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Ninja"
+    ] .
+
+# Phantom Planet: Do the Panic (2008)
+<https://www.imdb.com/title/tt8764356/> a schema:Movie ;
+    schema:name "Phantom Planet: Do the Panic" ;
+    schema:url <https://www.imdb.com/title/tt8764356/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# Bad News Bears (2005)
+<https://www.imdb.com/title/tt0408524/> a schema:Movie ;
+    schema:name "Bad News Bears" ;
+    schema:url <https://www.imdb.com/title/tt0408524/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "State Band Member"
+    ] .
+
+# M83: Don't Save Us from the Flames (2005)
+<https://www.imdb.com/title/tt12769782/> a schema:Movie ;
+    schema:name "M83: Don't Save Us from the Flames" ;
+    schema:url <https://www.imdb.com/title/tt12769782/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName ""
+    ] .
+
+# Phantom Planet: Big Brat (2003)
+<https://www.imdb.com/title/tt6810400/> a schema:Movie ;
+    schema:name "Phantom Planet: Big Brat" ;
+    schema:url <https://www.imdb.com/title/tt6810400/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# Rubicon (2003)
+<https://www.imdb.com/title/tt12769900/> a schema:Movie ;
+    schema:name "Rubicon" ;
+    schema:url <https://www.imdb.com/title/tt12769900/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Cute Guy"
+    ] .
+
+# Phantom Planet: Lonely Day (2002)
+<https://www.imdb.com/title/tt8764348/> a schema:Movie ;
+    schema:name "Phantom Planet: Lonely Day" ;
+    schema:url <https://www.imdb.com/title/tt8764348/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# Phantom Planet: California (2002)
+<https://www.imdb.com/title/tt8764350/> a schema:Movie ;
+    schema:name "Phantom Planet: California" ;
+    schema:url <https://www.imdb.com/title/tt8764350/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# Phantom Planet: Hey Now Girl (2001)
+<https://www.imdb.com/title/tt8764340/> a schema:Movie ;
+    schema:name "Phantom Planet: Hey Now Girl" ;
+    schema:url <https://www.imdb.com/title/tt8764340/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# Sabrina, the Teenage Witch (1998)
+<https://www.imdb.com/title/tt0115341/> a schema:Movie ;
+    schema:name "Sabrina, the Teenage Witch" ;
+    schema:url <https://www.imdb.com/title/tt0115341/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Alex Greenwald"
+    ] .
+
+# A Pig's Tale (1994)
+<https://www.imdb.com/title/tt0114132/> a schema:Movie ;
+    schema:name "A Pig's Tale" ;
+    schema:url <https://www.imdb.com/title/tt0114132/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Von Hofferman"
+    ] .
+
+# No Dessert, Dad, Till You Mow the Lawn (1994)
+<https://www.imdb.com/title/tt0110676/> a schema:Movie ;
+    schema:name "No Dessert, Dad, Till You Mow the Lawn" ;
+    schema:url <https://www.imdb.com/title/tt0110676/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Corby"
+    ] .
+
+# The Halloween Tree (1993)
+<https://www.imdb.com/title/tt0191173/> a schema:Movie ;
+    schema:name "The Halloween Tree" ;
+    schema:url <https://www.imdb.com/title/tt0191173/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "Ralph"
+    ] .
+
+# Recycle Rex (1993)
+<https://www.imdb.com/title/tt0286912/> a schema:Movie ;
+    schema:name "Recycle Rex" ;
+    schema:url <https://www.imdb.com/title/tt0286912/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0339233/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk1MzY4NzkyOV5BMl5BanBnXkFtZTYwODA3NzA1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk1MzY4NzkyOV5BMl5BanBnXkFtZTYwODA3NzA1._V1_.jpg> ;
+    schema:caption "Alex Greenwald" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "252"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm20139776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAwMTI5NzI3NzNeQTJeQWpwZ15BbWU4MDU1MjY3MzUz._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson at an event for Avengers: Infinity War (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm171134720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzgwOTEwNDk2MV5BMl5BanBnXkFtZTgwOTcyNjczNTM@._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson at an event for Avengers: Infinity War (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm1862607104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4MDM5OTQzMF5BMl5BanBnXkFtZTgwODQxODA1MzI@._V1_.jpg> ;
+    schema:caption "Alex Greenwald at an event for Unicorn Store (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1417"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm1845829888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU5Nzg3Njk3MV5BMl5BanBnXkFtZTgwOTQxODA1MzI@._V1_.jpg> ;
+    schema:caption "Alex Greenwald at an event for Unicorn Store (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1573"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm2425893376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMzk2MzEwOF5BMl5BanBnXkFtZTgwMTUxMzg1MTI@._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson at an event for The 89th Academy Awards (2017)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm495075072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzc1NTM0MTkyN15BMl5BanBnXkFtZTgwODA5MDAzMTI@._V1_.jpg> ;
+    schema:caption "Meryl Streep, Amy Adams, Alex Greenwald, Brie Larson, and Denis Villeneuve" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm713113344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3Mjg2NzY2OV5BMl5BanBnXkFtZTgwMDQ1MDAzMTI@._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1355"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm4097914880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0NTI2ODI3MV5BMl5BanBnXkFtZTgwMDMyNzYwMTI@._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson at an event for The 74th Annual Golden Globe Awards (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1385"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0339233/mediaviewer/rm2732791808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MTM2MzI5MF5BMl5BanBnXkFtZTgwMzQxMTgxODE@._V1_.jpg> ;
+    schema:caption "Alex Greenwald and Brie Larson at an event for The Oscars (2016)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1566"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

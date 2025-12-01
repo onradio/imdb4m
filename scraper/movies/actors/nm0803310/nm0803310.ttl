@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0803310/> a schema:Person ;
+    schema:name "Ping-Lam Siu" ;
+    schema:url <https://www.imdb.com/name/nm0803310/> ;
+    schema:jobTitle "Additional Crew", "Actor", "Art Department" ;
+    schema:description "Ping-Lam Siu. Actor: In the Mood for Love. Ping-Lam Siu is known for In the Mood for Love (2000), 2046 (2004) and The Grandmaster (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1462900/>,    # The Grandmaster
+                       <https://www.imdb.com/title/tt2158411/>,    # Betrayal
+                       <https://www.imdb.com/title/tt0969653/>,    # White Wall
+                       <https://www.imdb.com/title/tt1205065/>,    # Ngor dik zeoi oi
+                       <https://www.imdb.com/title/tt0212712/>,    # 2046
+                       <https://www.imdb.com/title/tt0279193/>,    # Lian'ai qiyi
+                       <https://www.imdb.com/title/tt0304098/>,    # Goodbye, Mr. Cool
+                       <https://www.imdb.com/title/tt0118694/> ; # In the Mood for Love
+
+
+    schema:video <https://www.imdb.com/video/vi2394096409/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Grandmaster (2013)
+<https://www.imdb.com/title/tt1462900/> a schema:Movie ;
+    schema:name "The Grandmaster" ;
+    schema:url <https://www.imdb.com/title/tt1462900/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Brother Ping"
+    ] .
+
+# Betrayal (2011)
+<https://www.imdb.com/title/tt2158411/> a schema:Movie ;
+    schema:name "Betrayal" ;
+    schema:url <https://www.imdb.com/title/tt2158411/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Ah Ping"
+    ] .
+
+# White Wall (2010)
+<https://www.imdb.com/title/tt0969653/> a schema:Movie ;
+    schema:name "White Wall" ;
+    schema:url <https://www.imdb.com/title/tt0969653/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Ah Ping"
+    ] .
+
+# Ngor dik zeoi oi (2008)
+<https://www.imdb.com/title/tt1205065/> a schema:Movie ;
+    schema:name "Ngor dik zeoi oi" ;
+    schema:url <https://www.imdb.com/title/tt1205065/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Food hawker"
+    ] .
+
+# 2046 (2004)
+<https://www.imdb.com/title/tt0212712/> a schema:Movie ;
+    schema:name "2046" ;
+    schema:url <https://www.imdb.com/title/tt0212712/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Ah Ping"
+    ] .
+
+# Lian'ai qiyi (2001)
+<https://www.imdb.com/title/tt0279193/> a schema:Movie ;
+    schema:name "Lian'ai qiyi" ;
+    schema:url <https://www.imdb.com/title/tt0279193/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Joe's father"
+    ] .
+
+# Goodbye, Mr. Cool (2001)
+<https://www.imdb.com/title/tt0304098/> a schema:Movie ;
+    schema:name "Goodbye, Mr. Cool" ;
+    schema:url <https://www.imdb.com/title/tt0304098/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "(as Siu Ping-Lam)"
+    ] .
+
+# In the Mood for Love (2000)
+<https://www.imdb.com/title/tt0118694/> a schema:Movie ;
+    schema:name "In the Mood for Love" ;
+    schema:url <https://www.imdb.com/title/tt0118694/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0803310/> ;
+        schema:characterName "Ah Ping"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2394096409/> a schema:VideoObject ;
+        schema:name "White Wall Trailer" ;
+        schema:description "Trailer for WHITE WALL" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2394096409/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjExNDE1MTQyOF5BMl5BanBnXkFtZTcwMDEzMTUwMg@@._V1_.jpg" ;
+        schema:duration "PT44S"^^xsd:duration ;
+        schema:uploadDate "2008-11-21T22:43:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

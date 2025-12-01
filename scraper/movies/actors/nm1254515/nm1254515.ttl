@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1254515/> a schema:Person ;
+    schema:name "Marcelo Frasca" ;
+    schema:url <https://www.imdb.com/name/nm1254515/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Marcelo Frasca. Actor: Wild Tales. Marcelo Frasca was an actor, known for Wild Tales (2014) and Burnt Money (2000). He died on 10 November 2019 in Buenos Aires, Argentina." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3011894/>,    # Wild Tales
+                       <https://www.imdb.com/title/tt0227277/> . # Burnt Money
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1254515/> ;
+        schema:characterName "Gerente Casa Tía"
+    ] .
+
+# Burnt Money (2000)
+<https://www.imdb.com/title/tt0227277/> a schema:Movie ;
+    schema:name "Burnt Money" ;
+    schema:url <https://www.imdb.com/title/tt0227277/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1254515/> ;
+        schema:characterName "Policía 3 E.F."
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0172709/> a schema:Person ;
+    schema:name "Teena Collins" ;
+    schema:url <https://www.imdb.com/name/nm0172709/> ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:description "Teena Collins. Actress: Snatch. Teena Collins is known for Snatch (2000), Caffeine (2006) and Do As You Likey (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0865905/>,    # The Insect Chorus
+                       <https://www.imdb.com/title/tt0460732/>,    # Caffeine
+                       <https://www.imdb.com/title/tt0208092/> ; # Snatch
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0172709/mediaviewer/rm1915656960/>,
+                 <https://www.imdb.com/name/nm0172709/mediaviewer/rm359176960/>,
+                 <https://www.imdb.com/name/nm0172709/mediaviewer/rm1780325632/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Insect Chorus (2006)
+<https://www.imdb.com/title/tt0865905/> a schema:Movie ;
+    schema:name "The Insect Chorus" ;
+    schema:url <https://www.imdb.com/title/tt0865905/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0172709/> ;
+        schema:characterName "Beatrice"
+    ] .
+
+# Caffeine (2006)
+<https://www.imdb.com/title/tt0460732/> a schema:Movie ;
+    schema:name "Caffeine" ;
+    schema:url <https://www.imdb.com/title/tt0460732/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0172709/> ;
+        schema:characterName "Tarty Girl #2"
+    ] .
+
+# Snatch (2000)
+<https://www.imdb.com/title/tt0208092/> a schema:Movie ;
+    schema:name "Snatch" ;
+    schema:url <https://www.imdb.com/title/tt0208092/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0172709/> ;
+        schema:characterName "Susi"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0172709/mediaviewer/rm1915656960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0Mjk0MjcxNF5BMl5BanBnXkFtZTYwMjQxODE1._V1_.jpg> ;
+    schema:caption "Nicola Collins and Teena Collins" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "251"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172709/mediaviewer/rm359176960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwMTAyNjQzMF5BMl5BanBnXkFtZTYwNDcxNjc0._V1_.jpg> ;
+    schema:caption "Nicola Collins and Teena Collins" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "234"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172709/mediaviewer/rm1780325632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0MzUyNDA2MF5BMl5BanBnXkFtZTcwNDM0MjYzMQ@@._V1_.jpg> ;
+    schema:caption "Callum Blue, Nicola Collins, and Teena Collins in Caffeine (2006)" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

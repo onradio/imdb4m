@@ -1,0 +1,156 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0859403/> a schema:Person ;
+    schema:name "Raymond Anthony Thomas" ;
+    schema:url <https://www.imdb.com/name/nm0859403/> ;
+    schema:birthDate "1956-12-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Raymond Anthony Thomas. Actor: Shutter Island. Raymond Anthony Thomas was born on 19 December 1956 in Kentwood, Louisiana, USA. He is an actor, known for Shutter Island (2010), Half Nelson (2006) and Trouble with the Curve (2012)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTY5MDU4MjI4MV5BMl5BanBnXkFtZTgwNjU3NjQwMzE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kentwood, Louisiana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1130884/>,    # Shutter Island
+                       <https://www.imdb.com/title/tt0468489/>,    # Half Nelson
+                       <https://www.imdb.com/title/tt2083383/>,    # Trouble with the Curve
+                       <https://www.imdb.com/title/tt23561236/>,    # American Fiction
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt7508932/>,    # The Rest of Us
+                       <https://www.imdb.com/title/tt2452244/>,    # Isn't It Romantic
+                       <https://www.imdb.com/title/tt7230846/> ; # No Activity
+
+
+    schema:video <https://www.imdb.com/video/vi2961031705/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0859403/mediaviewer/rm971246592/>,
+                 <https://www.imdb.com/name/nm0859403/mediaviewer/rm1116317952/>,
+                 <https://www.imdb.com/name/nm0859403/mediaviewer/rm277457152/>,
+                 <https://www.imdb.com/name/nm0859403/mediaviewer/rm1179580928/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1130884/> a schema:Movie ;
+    schema:name "Shutter Island" ;
+    schema:url <https://www.imdb.com/title/tt1130884/> .
+
+<https://www.imdb.com/title/tt0468489/> a schema:Movie ;
+    schema:name "Half Nelson" ;
+    schema:url <https://www.imdb.com/title/tt0468489/> .
+
+<https://www.imdb.com/title/tt2083383/> a schema:Movie ;
+    schema:name "Trouble with the Curve" ;
+    schema:url <https://www.imdb.com/title/tt2083383/> .
+
+<https://www.imdb.com/title/tt23561236/> a schema:Movie ;
+    schema:name "American Fiction" ;
+    schema:url <https://www.imdb.com/title/tt23561236/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Law & Order (1994)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859403/> ;
+        schema:characterName "Judge Desmond Bell"
+    ] .
+
+# The Rest of Us (2019)
+<https://www.imdb.com/title/tt7508932/> a schema:Movie ;
+    schema:name "The Rest of Us" ;
+    schema:url <https://www.imdb.com/title/tt7508932/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859403/> ;
+        schema:characterName "Amy's dad"
+    ] .
+
+# Isn't It Romantic (2019)
+<https://www.imdb.com/title/tt2452244/> a schema:Movie ;
+    schema:name "Isn't It Romantic" ;
+    schema:url <https://www.imdb.com/title/tt2452244/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859403/> ;
+        schema:characterName "Boss"
+    ] .
+
+# No Activity (2018)
+<https://www.imdb.com/title/tt7230846/> a schema:Movie ;
+    schema:name "No Activity" ;
+    schema:url <https://www.imdb.com/title/tt7230846/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859403/> ;
+        schema:characterName "Jamal"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2961031705/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Monique ventures out of quarantine to visit an old friend who's plagued by nightmares. She finds herself drawn into a hellish dreamscape where she must face her greatest fears - or risk never having existed at all." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2961031705/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmM0NGI3YzMtNWJjZS00MjZhLWFjM2YtNjllZTNiNTI4ZDhlXkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M36S"^^xsd:duration ;
+        schema:uploadDate "2022-08-22T14:09:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTY5MDU4MjI4MV5BMl5BanBnXkFtZTgwNjU3NjQwMzE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY5MDU4MjI4MV5BMl5BanBnXkFtZTgwNjU3NjQwMzE@._V1_.jpg> ;
+    schema:caption "Raymond Anthony Thomas" ;
+    schema:height "728"^^xsd:integer ;
+    schema:width "472"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859403/mediaviewer/rm971246592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTVmMGExMTEtYmNjZS00ZjIyLTk1N2UtOGE3NjI5NDYwNzk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Raymond Anthony Thomas in BrainDead (2016)" ;
+    schema:height "738"^^xsd:integer ;
+    schema:width "1379"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859403/mediaviewer/rm1116317952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjExNTE0NzI0MV5BMl5BanBnXkFtZTcwMzg5NDU0OA@@._V1_.jpg> ;
+    schema:caption "Ed Lauter, Chelcie Ross, and Raymond Anthony Thomas in Trouble with the Curve (2012)" ;
+    schema:height "795"^^xsd:integer ;
+    schema:width "1912"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859403/mediaviewer/rm277457152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzMzk1NDkwNl5BMl5BanBnXkFtZTcwNDQ5NDU0OA@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Ed Lauter, Chelcie Ross, and Raymond Anthony Thomas in Trouble with the Curve (2012)" ;
+    schema:height "770"^^xsd:integer ;
+    schema:width "1818"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859403/mediaviewer/rm1179580928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY5MDU4MjI4MV5BMl5BanBnXkFtZTgwNjU3NjQwMzE@._V1_.jpg> ;
+    schema:caption "Raymond Anthony Thomas" ;
+    schema:height "728"^^xsd:integer ;
+    schema:width "472"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

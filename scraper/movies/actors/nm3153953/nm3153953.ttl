@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3153953/> a schema:Person ;
+    schema:name "Robin Hurlstone" ;
+    schema:url <https://www.imdb.com/name/nm3153953/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Robin Hurlstone. Actor: Fantastic Mr. Fox. Robin Hurlstone was born in March 1958 in Marylebone, London, England, UK. He is an actor, known for Fantastic Mr. Fox (2009) and The Grand Budapest Hotel (2014)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Marylebone, London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2278388/>,    # The Grand Budapest Hotel
+                       <https://www.imdb.com/title/tt0432283/> . # Fantastic Mr. Fox
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Grand Budapest Hotel (2014)
+<https://www.imdb.com/title/tt2278388/> a schema:Movie ;
+    schema:name "The Grand Budapest Hotel" ;
+    schema:url <https://www.imdb.com/title/tt2278388/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3153953/> ;
+        schema:characterName "Herr Schneider"
+    ] .
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3153953/> ;
+        schema:characterName "Walter Boggis"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

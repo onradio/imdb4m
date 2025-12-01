@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120363/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Also Sprach Zarathustra" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Also Sprach Zarathustra" ;
+            schema:author <https://www.imdb.com/name/nm0006309/> # Richard Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Woody's Roundup (Theme Song)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1484276/> ; # Riders in the Sky
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Woody's Roundup (Theme Song)" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+            schema:lyricist <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "When She Loved Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005214/> ; # Sarah McLachlan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "When She Loved Me" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+            schema:lyricist <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got a Friend in Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0779860/> ; # Tom Scott
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You've Got a Friend in Me" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+            schema:lyricist <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wipe Out" ;
+        schema:byArtist <https://www.imdb.com/name/nm1580629/> ; # The Surfaris
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Wipe Out" ;
+            schema:author <https://www.imdb.com/name/nm1773826/>, # Robert Berryhill
+                       <https://www.imdb.com/name/nm1771944/>, # Patrick Connolly
+                       <https://www.imdb.com/name/nm1775999/>, # Jim Fuller
+                       <https://www.imdb.com/name/nm1772240/> # Ronald Wilson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got a Friend in Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000158/> ; # Tom Hanks
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You've Got a Friend in Me" ;
+            schema:author <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Star Spangled Banner" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Star Spangled Banner" ;
+            schema:composer <https://www.imdb.com/name/nm2397901/> ; # John Stafford Smith
+            schema:lyricist <https://www.imdb.com/name/nm1411746/> # Francis Scott Key
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Arkansas Traveler" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Arkansas Traveler" ;
+            schema:author <https://www.imdb.com/name/nm2315423/> # Sanford Faulkner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Goblins in the Steeple" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Goblins in the Steeple" ;
+            schema:composer <https://www.imdb.com/name/nm0139784/> # Leon Carr
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000158/> a schema:Person ;
+    schema:name "Tom Hanks" .
+<https://www.imdb.com/name/nm0005214/> a schema:Person ;
+    schema:name "Sarah McLachlan" .
+<https://www.imdb.com/name/nm0005271/> a schema:Person ;
+    schema:name "Randy Newman" .
+<https://www.imdb.com/name/nm0006309/> a schema:Person ;
+    schema:name "Richard Strauss" .
+<https://www.imdb.com/name/nm0139784/> a schema:Person ;
+    schema:name "Leon Carr" .
+<https://www.imdb.com/name/nm0779860/> a schema:Person ;
+    schema:name "Tom Scott" .
+<https://www.imdb.com/name/nm1411746/> a schema:Person ;
+    schema:name "Francis Scott Key" .
+<https://www.imdb.com/name/nm1484276/> a schema:Person ;
+    schema:name "Riders in the Sky" .
+<https://www.imdb.com/name/nm1580629/> a schema:Person ;
+    schema:name "The Surfaris" .
+<https://www.imdb.com/name/nm1771944/> a schema:Person ;
+    schema:name "Patrick Connolly" .
+<https://www.imdb.com/name/nm1772240/> a schema:Person ;
+    schema:name "Ronald Wilson" .
+<https://www.imdb.com/name/nm1773826/> a schema:Person ;
+    schema:name "Robert Berryhill" .
+<https://www.imdb.com/name/nm1775999/> a schema:Person ;
+    schema:name "Jim Fuller" .
+<https://www.imdb.com/name/nm2315423/> a schema:Person ;
+    schema:name "Sanford Faulkner" .
+<https://www.imdb.com/name/nm2397901/> a schema:Person ;
+    schema:name "John Stafford Smith" .
+# ==============================================================================

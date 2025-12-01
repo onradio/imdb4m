@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5113220/> a schema:Person ;
+    schema:name "Zeishan Quadri" ;
+    schema:url <https://www.imdb.com/name/nm5113220/> ;
+    schema:birthDate "1983-03-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Writer" ;
+    schema:description "Zeishan Quadri. Actor: Gangs of Wasseypur. Zeishan Quadri is an Indian writer,actor, director & producer who wrote the story and co-wrote the screenplay for the Bollywood crime genre film Gangs of Wasseypur (2012) directed by Anurag Kashyap . Quadri also acted in Gangs of Wasseypur II. He has produced and directed the movie Meeruthiya Gangsters (2015) Sajid Ali, director Imtiaz Ali brother, has roped in writer-actor Zeishan Quadri to play..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Wassepur, Dhanbad, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9239772/>,    # Setters
+                       <https://www.imdb.com/title/tt8706852/>,    # Hotel Milan
+                       <https://www.imdb.com/title/tt4620544/>,    # Robinhood Ke Pote
+                       <https://www.imdb.com/title/tt3290688/>,    # Revolver Rani
+                       <https://www.imdb.com/title/tt1954470/> ; # Gangs of Wasseypur
+
+
+    schema:video <https://www.imdb.com/video/vi4174036505/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Setters (2019)
+<https://www.imdb.com/title/tt9239772/> a schema:Movie ;
+    schema:name "Setters" ;
+    schema:url <https://www.imdb.com/title/tt9239772/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5113220/> ;
+        schema:characterName "Nihal"
+    ] .
+
+# Hotel Milan (2018)
+<https://www.imdb.com/title/tt8706852/> a schema:Movie ;
+    schema:name "Hotel Milan" ;
+    schema:url <https://www.imdb.com/title/tt8706852/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5113220/> ;
+        schema:characterName "Saurabh"
+    ] .
+
+# Robinhood Ke Pote (2016)
+<https://www.imdb.com/title/tt4620544/> a schema:Movie ;
+    schema:name "Robinhood Ke Pote" ;
+    schema:url <https://www.imdb.com/title/tt4620544/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5113220/> ;
+        schema:characterName ""
+    ] .
+
+# Revolver Rani (2014)
+<https://www.imdb.com/title/tt3290688/> a schema:Movie ;
+    schema:name "Revolver Rani" ;
+    schema:url <https://www.imdb.com/title/tt3290688/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5113220/> ;
+        schema:characterName "Pilot"
+    ] .
+
+# Gangs of Wasseypur (2012)
+<https://www.imdb.com/title/tt1954470/> a schema:Movie ;
+    schema:name "Gangs of Wasseypur" ;
+    schema:url <https://www.imdb.com/title/tt1954470/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5113220/> ;
+        schema:characterName "Definite"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4174036505/> a schema:VideoObject ;
+        schema:name "Hotel Milan (2018) Trailer" ;
+        schema:description "Vipul and Saurabh come up with a radical business idea and political hell breaks loose in Uttar Pradesh." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4174036505/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWNlNWVjOWMtNmJhOC00MjJmLWE1YjctNDJjYmY1MDI4ZDI4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M11S"^^xsd:duration ;
+        schema:uploadDate "2020-05-23T06:54:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

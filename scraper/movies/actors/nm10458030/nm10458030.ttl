@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10458030/> a schema:Person ;
+    schema:name "Matt Guidry" ;
+    schema:url <https://www.imdb.com/name/nm10458030/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Matt Guidry. Actor: The Straight Story. Matt Guidry is known for The Straight Story (1999), Sugar & Spice (2001) and World and Time Enough (1994)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2891324/>,    # Shifting Lights
+                       <https://www.imdb.com/title/tt0186589/>,    # Sugar & Spice
+                       <https://www.imdb.com/title/tt27557016/>,    # Star Wars: Crimson Empire
+                       <https://www.imdb.com/title/tt0166896/>,    # The Straight Story
+                       <https://www.imdb.com/title/tt0137186/>,    # Ramming Speed
+                       <https://www.imdb.com/title/tt0111747/> . # World and Time Enough
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shifting Lights (2013)
+<https://www.imdb.com/title/tt2891324/> a schema:Movie ;
+    schema:name "Shifting Lights" ;
+    schema:url <https://www.imdb.com/title/tt2891324/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "Matt"
+    ] .
+
+# Sugar & Spice (2001)
+<https://www.imdb.com/title/tt0186589/> a schema:Movie ;
+    schema:name "Sugar & Spice" ;
+    schema:url <https://www.imdb.com/title/tt0186589/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "Male Reporter"
+    ] .
+
+# Star Wars: Crimson Empire (1999)
+<https://www.imdb.com/title/tt27557016/> a schema:Movie ;
+    schema:name "Star Wars: Crimson Empire" ;
+    schema:url <https://www.imdb.com/title/tt27557016/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# The Straight Story (1999)
+<https://www.imdb.com/title/tt0166896/> a schema:Movie ;
+    schema:name "The Straight Story" ;
+    schema:url <https://www.imdb.com/title/tt0166896/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "Steve"
+    ] .
+
+# Ramming Speed (1997)
+<https://www.imdb.com/title/tt0137186/> a schema:Movie ;
+    schema:name "Ramming Speed" ;
+    schema:url <https://www.imdb.com/title/tt0137186/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "Roy"
+    ] .
+
+# World and Time Enough (1994)
+<https://www.imdb.com/title/tt0111747/> a schema:Movie ;
+    schema:name "World and Time Enough" ;
+    schema:url <https://www.imdb.com/title/tt0111747/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10458030/> ;
+        schema:characterName "Mark"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

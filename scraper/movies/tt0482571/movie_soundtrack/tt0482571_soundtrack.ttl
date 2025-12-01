@@ -1,0 +1,111 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0482571/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Drinkin' Down the Rose & Crown" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Drinkin' Down the Rose & Crown" ;
+            schema:composer <https://www.imdb.com/name/nm0629628/> # Keith Nichols
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tripping Gaily" ;
+        schema:byArtist <https://www.imdb.com/name/nm0046507/> ; # Ena Baga
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tripping Gaily" ;
+            schema:author <https://www.imdb.com/name/nm0046507/> # Ena Baga
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Eel Pie and Mash" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Eel Pie and Mash" ;
+            schema:composer <https://www.imdb.com/name/nm1630944/>, # Bob Barratt
+                        <https://www.imdb.com/name/nm1477659/> # Colin Frechter
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Butterfly Etude" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Butterfly Etude" ;
+            schema:composer <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vowel Movement" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vowel Movement" ;
+            schema:composer <https://www.imdb.com/name/nm3668464/> # Andy Vale
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bathroom Scales" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bathroom Scales" ;
+            schema:composer <https://www.imdb.com/name/nm3668464/> # Andy Vale
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Princess Waltz" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Princess Waltz" ;
+            schema:author <https://www.imdb.com/name/nm0204029/> # William Davies
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Analyse" ;
+        schema:byArtist <https://www.imdb.com/name/nm0948810/> ; # Thom Yorke
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Analyse" ;
+            schema:author <https://www.imdb.com/name/nm0948810/> # Thom Yorke
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0046507/> a schema:Person ;
+    schema:name "Ena Baga" .
+<https://www.imdb.com/name/nm0204029/> a schema:Person ;
+    schema:name "William Davies" .
+<https://www.imdb.com/name/nm0629628/> a schema:Person ;
+    schema:name "Keith Nichols" .
+<https://www.imdb.com/name/nm0948810/> a schema:Person ;
+    schema:name "Thom Yorke" .
+<https://www.imdb.com/name/nm1477659/> a schema:Person ;
+    schema:name "Colin Frechter" .
+<https://www.imdb.com/name/nm1630944/> a schema:Person ;
+    schema:name "Bob Barratt" .
+<https://www.imdb.com/name/nm3668464/> a schema:Person ;
+    schema:name "Andy Vale" .
+# ==============================================================================

@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4114427/> a schema:Person ;
+    schema:name "Anthony Allgood" ;
+    schema:url <https://www.imdb.com/name/nm4114427/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anthony Allgood. Actor: Hereafter. Anthony Allgood was born in December 1957 in the UK. He is an actor, known for Hereafter (2010), Harry Potter and the Deathly Hallows: Part 2 (2011) and Lava La Rue: Magpie (2021)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1201607/>,    # Harry Potter and the Deathly Hallows: Part 2
+                       <https://www.imdb.com/title/tt1212419/> . # Hereafter
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Harry Potter and the Deathly Hallows: Part 2 (2011)
+<https://www.imdb.com/title/tt1201607/> a schema:Movie ;
+    schema:name "Harry Potter and the Deathly Hallows: Part 2" ;
+    schema:url <https://www.imdb.com/title/tt1201607/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4114427/> ;
+        schema:characterName "Gringotts' Guard"
+    ] .
+
+# Hereafter (2010)
+<https://www.imdb.com/title/tt1212419/> a schema:Movie ;
+    schema:name "Hereafter" ;
+    schema:url <https://www.imdb.com/title/tt1212419/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4114427/> ;
+        schema:characterName "Visitor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

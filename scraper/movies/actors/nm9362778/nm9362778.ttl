@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9362778/> a schema:Person ;
+    schema:name "Selah Atwood" ;
+    schema:url <https://www.imdb.com/name/nm9362778/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Selah Atwood. Actress: Three Billboards Outside Ebbing, Missouri. Selah Atwood is known for Three Billboards Outside Ebbing, Missouri (2017), The Virgins and Paws P.I. (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10206662/>,    # Here There Be Tygers
+                       <https://www.imdb.com/title/tt8064262/>,    # Paws P.I.
+                       <https://www.imdb.com/title/tt5027774/>,    # Three Billboards Outside Ebbing, Missouri
+                       <https://www.imdb.com/title/tt1832293/>,    # Baby Einstein: Baby Beethoven
+                       <https://www.imdb.com/title/tt0756522/>,    # Little Einsteins
+                       <https://www.imdb.com/title/tt0446282/>,    # Baby Beethoven: Symphony of Fun
+                       <https://www.imdb.com/title/tt9808494/> ; # Baby Einstein
+
+
+    schema:video <https://www.imdb.com/video/vi50640921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9362778/mediaviewer/rm3297213184/>,
+                 <https://www.imdb.com/name/nm9362778/mediaviewer/rm1645103872/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Here There Be Tygers (2019)
+<https://www.imdb.com/title/tt10206662/> a schema:Movie ;
+    schema:name "Here There Be Tygers" ;
+    schema:url <https://www.imdb.com/title/tt10206662/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Susie"
+    ] .
+
+# Paws P.I. (2018)
+<https://www.imdb.com/title/tt8064262/> a schema:Movie ;
+    schema:name "Paws P.I." ;
+    schema:url <https://www.imdb.com/title/tt8064262/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Madison"
+    ] .
+
+# Three Billboards Outside Ebbing, Missouri (2017)
+<https://www.imdb.com/title/tt5027774/> a schema:Movie ;
+    schema:name "Three Billboards Outside Ebbing, Missouri" ;
+    schema:url <https://www.imdb.com/title/tt5027774/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Jane"
+    ] .
+
+# Baby Einstein: Baby Beethoven (2008)
+<https://www.imdb.com/title/tt1832293/> a schema:Movie ;
+    schema:name "Baby Einstein: Baby Beethoven" ;
+    schema:url <https://www.imdb.com/title/tt1832293/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Kid"
+    ] .
+
+# Little Einsteins (2006)
+<https://www.imdb.com/title/tt0756522/> a schema:Movie ;
+    schema:name "Little Einsteins" ;
+    schema:url <https://www.imdb.com/title/tt0756522/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Nina"
+    ] .
+
+# Baby Beethoven: Symphony of Fun (2002)
+<https://www.imdb.com/title/tt0446282/> a schema:Movie ;
+    schema:name "Baby Beethoven: Symphony of Fun" ;
+    schema:url <https://www.imdb.com/title/tt0446282/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Kid"
+    ] .
+
+# Baby Einstein (2002)
+<https://www.imdb.com/title/tt9808494/> a schema:Movie ;
+    schema:name "Baby Einstein" ;
+    schema:url <https://www.imdb.com/title/tt9808494/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362778/> ;
+        schema:characterName "Kid"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi50640921/> a schema:VideoObject ;
+        schema:name "PAWS P.I. Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi50640921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTNiZjA3MmYtOTc1ZS00N2E5LTllYjctNzFkM2M4ZGQzMGU1XkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M43S"^^xsd:duration ;
+        schema:uploadDate "2018-03-23T20:37:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm9362778/mediaviewer/rm3297213184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWM5MmQzZWItNDI0Ny00M2QzLTllMDktZGUxNjkxYjdhYmFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abbie Cornish, Riya May Atwood, and Selah Atwood in Three Billboards Outside Ebbing, Missouri (2017)" ;
+    schema:height "1088"^^xsd:integer ;
+    schema:width "2630"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9362778/mediaviewer/rm1645103872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmVhNGY4M2MtOTYzMy00ZGI2LTg5ZTctOTgwZDE4YjQ1MTMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Neal Genys and Selah Atwood in Paws P.I. (2018)" ;
+    schema:height "840"^^xsd:integer ;
+    schema:width "612"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

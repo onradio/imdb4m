@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0096828/> a schema:Person ;
+    schema:name "Devon Cole Borisoff" ;
+    schema:url <https://www.imdb.com/name/nm0096828/> ;
+    schema:birthDate "1989-05-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Devon Cole Borisoff. Actor: The Iron Giant. Devon Cole Borisoff was born on 19 May 1989 in Los Angeles County, California, USA. He is an actor, known for The Iron Giant (1999), The Man Who Wasn't There (2001) and Simon Birch (1998)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles County, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0243133/>,    # The Man Who Wasn't There
+                       <https://www.imdb.com/title/tt0129167/>,    # The Iron Giant
+                       <https://www.imdb.com/title/tt0120710/>,    # In Dreams
+                       <https://www.imdb.com/title/tt0124879/> . # Simon Birch
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Man Who Wasn't There (2001)
+<https://www.imdb.com/title/tt0243133/> a schema:Movie ;
+    schema:name "The Man Who Wasn't There" ;
+    schema:url <https://www.imdb.com/title/tt0243133/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096828/> ;
+        schema:characterName "Swimming Boy"
+    ] .
+
+# The Iron Giant (1999)
+<https://www.imdb.com/title/tt0129167/> a schema:Movie ;
+    schema:name "The Iron Giant" ;
+    schema:url <https://www.imdb.com/title/tt0129167/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096828/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# In Dreams (1999)
+<https://www.imdb.com/title/tt0120710/> a schema:Movie ;
+    schema:name "In Dreams" ;
+    schema:url <https://www.imdb.com/title/tt0120710/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096828/> ;
+        schema:characterName "Vivian Thompson - As Boy"
+    ] .
+
+# Simon Birch (1998)
+<https://www.imdb.com/title/tt0124879/> a schema:Movie ;
+    schema:name "Simon Birch" ;
+    schema:url <https://www.imdb.com/title/tt0124879/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0096828/> ;
+        schema:characterName "Junior Lamb"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

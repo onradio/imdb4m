@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5218471/> a schema:Person ;
+    schema:name "Lee Armstrong" ;
+    schema:url <https://www.imdb.com/name/nm5218471/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Lee Armstrong. Actor: Dunkirk. Lee Armstrong is an Actor, Writer and Director who was raised in a small mining village on the outskirts of Newcastle Upon Tyne. When he was 17, he travelled to London after being accepted into the National Youth Theatre. Later he trained at East 15 acting school in east London. Once graduated, Lee got his first big break when he was cast in the lead role..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10531124/>,    # Fine By Me
+                       <https://www.imdb.com/title/tt2701582/>,    # Endeavour
+                       <https://www.imdb.com/title/tt5013056/>,    # Dunkirk
+                       <https://www.imdb.com/title/tt0241383/>,    # Doctors
+                       <https://www.imdb.com/title/tt0053494/>,    # Coronation Street
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt1430509/> ; # Inspector George Gently
+
+
+    schema:video <https://www.imdb.com/video/vi3402283289/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fine By Me (2019)
+<https://www.imdb.com/title/tt10531124/> a schema:Movie ;
+    schema:name "Fine By Me" ;
+    schema:url <https://www.imdb.com/title/tt10531124/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Nick"
+    ] .
+
+# Endeavour (2018)
+<https://www.imdb.com/title/tt2701582/> a schema:Movie ;
+    schema:name "Endeavour" ;
+    schema:url <https://www.imdb.com/title/tt2701582/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Pte. Collier"
+    ] .
+
+# Dunkirk (2017)
+<https://www.imdb.com/title/tt5013056/> a schema:Movie ;
+    schema:name "Dunkirk" ;
+    schema:url <https://www.imdb.com/title/tt5013056/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Grenadier"
+    ] .
+
+# Doctors (2013)
+<https://www.imdb.com/title/tt0241383/> a schema:Movie ;
+    schema:name "Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0241383/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Kieran Stanworth"
+    ] .
+
+# Coronation Street (2016)
+<https://www.imdb.com/title/tt0053494/> a schema:Movie ;
+    schema:name "Coronation Street" ;
+    schema:url <https://www.imdb.com/title/tt0053494/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Jordan"
+    ] .
+
+# Midsomer Murders (2016)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "Dillon Faulkner"
+    ] .
+
+# Inspector George Gently (2012)
+<https://www.imdb.com/title/tt1430509/> a schema:Movie ;
+    schema:name "Inspector George Gently" ;
+    schema:url <https://www.imdb.com/title/tt1430509/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5218471/> ;
+        schema:characterName "PC Gavin Henderson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3402283289/> a schema:VideoObject ;
+        schema:name "Final Trailer" ;
+        schema:description "Allied soldiers from Belgium, the British Empire and France are surrounded by the German army and evacuated during a fierce battle in World War II." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3402283289/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BN2VhMGY3YWQtMGYwZC00ZmM5LTg2MzgtZGRlNWQ2MGE2MTNiXkEyXkFqcGdeQXVyMjM4OTI2MTU@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2017-07-17T19:54:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0187125/> a schema:Person ;
+    schema:name "William Creamer" ;
+    schema:url <https://www.imdb.com/name/nm0187125/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "William Creamer. Actor: The Texas Chain Saw Massacre. William Creamer is known for The Texas Chain Saw Massacre (1974), Blood Simple (1984) and Leadbelly (1976)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086979/>,    # Blood Simple
+                       <https://www.imdb.com/title/tt21154138/>,    # Gone to Texas
+                       <https://www.imdb.com/title/tt0074781/>,    # Leadbelly
+                       <https://www.imdb.com/title/tt0073075/>,    # The Great Waldo Pepper
+                       <https://www.imdb.com/title/tt0072271/>,    # The Texas Chain Saw Massacre
+                       <https://www.imdb.com/title/tt0044230/> ; # The Adventures of Ozzie and Harriet
+
+
+    schema:video <https://www.imdb.com/video/vi2174465817/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blood Simple (1984)
+<https://www.imdb.com/title/tt0086979/> a schema:Movie ;
+    schema:name "Blood Simple" ;
+    schema:url <https://www.imdb.com/title/tt0086979/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Old Cracker"
+    ] .
+
+# Gone to Texas (1978)
+<https://www.imdb.com/title/tt21154138/> a schema:Movie ;
+    schema:name "Gone to Texas" ;
+    schema:url <https://www.imdb.com/title/tt21154138/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Mr. Williams"
+    ] .
+
+# Leadbelly (1976)
+<https://www.imdb.com/title/tt0074781/> a schema:Movie ;
+    schema:name "Leadbelly" ;
+    schema:url <https://www.imdb.com/title/tt0074781/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Conductor"
+    ] .
+
+# The Great Waldo Pepper (1975)
+<https://www.imdb.com/title/tt0073075/> a schema:Movie ;
+    schema:name "The Great Waldo Pepper" ;
+    schema:url <https://www.imdb.com/title/tt0073075/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Country Man in Restaurant"
+    ] .
+
+# The Texas Chain Saw Massacre (1974)
+<https://www.imdb.com/title/tt0072271/> a schema:Movie ;
+    schema:name "The Texas Chain Saw Massacre" ;
+    schema:url <https://www.imdb.com/title/tt0072271/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Bearded Man"
+    ] .
+
+# The Adventures of Ozzie and Harriet (1963)
+<https://www.imdb.com/title/tt0044230/> a schema:Movie ;
+    schema:name "The Adventures of Ozzie and Harriet" ;
+    schema:url <https://www.imdb.com/title/tt0044230/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0187125/> ;
+        schema:characterName "Photographer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2174465817/> a schema:VideoObject ;
+        schema:name "Blood Simple" ;
+        schema:description "Trailer for Blood Simple" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2174465817/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmQzOWM4ZmMtYjRhNy00ZWY3LWJkMmItMGRhMjg3ZmQ0ODAxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2016-06-30T14:07:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

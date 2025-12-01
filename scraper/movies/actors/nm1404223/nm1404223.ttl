@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1404223/> a schema:Person ;
+    schema:name "Luis Otávio" ;
+    schema:url <https://www.imdb.com/name/nm1404223/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Luis Otávio. Actor: City of God. Luis Otávio is known for City of God (2002), City of God: 10 Years Later (2013) and Cidade de Deus: Oficina de Atores (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0317248/> .    # City of God
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1404223/> ;
+        schema:characterName "Buscapé Criança"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

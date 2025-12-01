@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099810/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Anthem of the Soviet Union" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Anthem of the Soviet Union" ;
+            schema:composer <https://www.imdb.com/name/nm2087716/> ; # Aleksandr Aleksandrov
+            schema:lyricist <https://www.imdb.com/name/nm1246051/>, # Gabriel Ureklyan
+                        <https://www.imdb.com/name/nm0586483/> # Sergey Mikhalkov
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Payoff" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Payoff" ;
+            schema:author <https://www.imdb.com/name/nm0006231/> # Basil Poledouris
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006231/> a schema:Person ;
+    schema:name "Basil Poledouris" .
+<https://www.imdb.com/name/nm0586483/> a schema:Person ;
+    schema:name "Sergey Mikhalkov" .
+<https://www.imdb.com/name/nm1246051/> a schema:Person ;
+    schema:name "Gabriel Ureklyan" .
+<https://www.imdb.com/name/nm2087716/> a schema:Person ;
+    schema:name "Aleksandr Aleksandrov" .
+# ==============================================================================

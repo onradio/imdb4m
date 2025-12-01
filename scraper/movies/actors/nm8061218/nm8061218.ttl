@@ -1,0 +1,184 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8061218/> a schema:Person ;
+    schema:name "Sunny Pawar" ;
+    schema:url <https://www.imdb.com/name/nm8061218/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sunny Pawar. Actor: Lion. Sunny Pawar is known for Lion (2016), The Tiger's Nest (2022) and Sacred Games (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE2NDcyMDM2MF5BMl5BanBnXkFtZTgwNzQ1NjYzMTI@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.42"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "4′ 8″ (1.42 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3741834/>,    # Lion
+                       <https://www.imdb.com/title/tt6077448/>,    # Sacred Games
+                       <https://www.imdb.com/title/tt7527028/>,    # The Tiger's Nest
+                       <https://www.imdb.com/title/tt8976464/>,    # Chippa
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7580876/>,    # To Remember Me By
+                       <https://www.imdb.com/title/tt3823392/>,    # Love Sonia
+                       <https://www.imdb.com/title/tt7504214/> ; # AA BB KK
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 10 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi605603097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8061218/mediaviewer/rm134095872/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm687744000/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm738075648/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm553526272/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm654189568/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm3657245696/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm3724354560/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm3506250752/>,
+                 <https://www.imdb.com/name/nm8061218/mediaviewer/rm3606914048/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3741834/> a schema:Movie ;
+    schema:name "Lion" ;
+    schema:url <https://www.imdb.com/title/tt3741834/> .
+
+<https://www.imdb.com/title/tt6077448/> a schema:Movie ;
+    schema:name "Sacred Games" ;
+    schema:url <https://www.imdb.com/title/tt6077448/> .
+
+<https://www.imdb.com/title/tt7527028/> a schema:Movie ;
+    schema:name "The Tiger's Nest" ;
+    schema:url <https://www.imdb.com/title/tt7527028/> .
+
+<https://www.imdb.com/title/tt8976464/> a schema:Movie ;
+    schema:name "Chippa" ;
+    schema:url <https://www.imdb.com/title/tt8976464/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# To Remember Me By (2019)
+<https://www.imdb.com/title/tt7580876/> a schema:Movie ;
+    schema:name "To Remember Me By" ;
+    schema:url <https://www.imdb.com/title/tt7580876/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8061218/> ;
+        schema:characterName "Chotu (Tea Stall Boy)"
+    ] .
+
+# Love Sonia (2018)
+<https://www.imdb.com/title/tt3823392/> a schema:Movie ;
+    schema:name "Love Sonia" ;
+    schema:url <https://www.imdb.com/title/tt3823392/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8061218/> ;
+        schema:characterName "Bang Bang"
+    ] .
+
+# AA BB KK (2018)
+<https://www.imdb.com/title/tt7504214/> a schema:Movie ;
+    schema:name "AA BB KK" ;
+    schema:url <https://www.imdb.com/title/tt7504214/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8061218/> ;
+        schema:characterName "Margya"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi605603097/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "One night, the little orphan boy Balmani rescues a tiger cub from ruthless poachers. He escapes and sets off on a long and perilous journey to a remote sanctuary, where he believes they will be safe. Along the way, Balmani and the tiger cub Mukti develop a close bond of trust and affection." ;
+        schema:embedUrl <https://www.imdb.com/video/vi605603097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzczNjI0NmItZGI3MC00NGI4LWJmMzktYmI2ZTc3MjcxYjIwXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M47S"^^xsd:duration ;
+        schema:uploadDate "2023-02-01T21:02:24Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE2NDcyMDM2MF5BMl5BanBnXkFtZTgwNzQ1NjYzMTI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE2NDcyMDM2MF5BMl5BanBnXkFtZTgwNzQ1NjYzMTI@._V1_.jpg> ;
+    schema:caption "Sunny Pawar" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm134095872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGQ1NWE0ZTctM2VlZi00ODA4LTk0MzMtZGZjMjE3ZmNkNTkwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Deepti Naval and Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm687744000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2U0MjhmZGItM2VlMi00YWNmLTk2ODEtMzVkN2RkNTIwYzE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm738075648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2ZmNmNhZjktNmI2ZS00YmE1LTk1NTYtYTliYWU0NThmMDY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm553526272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdjZThiNjYtN2JhYS00YzIxLTkyYWYtODA2NWVhNjg0MzY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nawazuddin Siddiqui and Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm654189568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmM4MmFmOGMtNmI3Zi00YjM3LWI1YWQtNDEwNzAzZWFjMTJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm3657245696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDJlOTg3Y2UtNDM2OC00YWM0LWExZDctZWQ1ODExYmU1ZWY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm3724354560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNTU2OWItMjg2NC00ZWZiLWEzMDItMjk2MWUxYzc0OTI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm3506250752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWNkYjczZTItZGY3Zi00ZjY0LWE1OGQtNzYyNTIwYTFlNjExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8061218/mediaviewer/rm3606914048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDVhZWRiNjYtNDFlMC00MjZlLTk3Y2EtNDM2ODBlMGYxYTZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

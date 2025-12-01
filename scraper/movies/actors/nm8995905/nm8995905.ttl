@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8995905/> a schema:Person ;
+    schema:name "Vivek Prasanna" ;
+    schema:url <https://www.imdb.com/name/nm8995905/> ;
+    schema:birthDate "1986-09-15"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Vivek Prasanna. Actor: Vikram Vedha. Vivek Prasanna was born on 15 September 1986 in Salem, Tamil Nadu, India. He is an actor, known for Vikram Vedha (2017), Meyaadha Maan (2017) and Soorarai Pottru (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTIyZjA4NjYtY2NiYS00NTVjLWEwMDYtMTY0MzkxOTQzZmU1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Salem, Tamil Nadu, India"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3277637913/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8995905/mediaviewer/rm147588353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3277637913/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3277637913/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjI0MTc2NGMtMDk0OS00YmQyLTgyNzQtNTM3MTI1ZjRhZTdiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M53S"^^xsd:duration ;
+        schema:uploadDate "2025-03-30T08:31:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTIyZjA4NjYtY2NiYS00NTVjLWEwMDYtMTY0MzkxOTQzZmU1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTIyZjA4NjYtY2NiYS00NTVjLWEwMDYtMTY0MzkxOTQzZmU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivek Prasanna" ;
+    schema:height "1653"^^xsd:integer ;
+    schema:width "1405"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8995905/mediaviewer/rm147588353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTIyZjA4NjYtY2NiYS00NTVjLWEwMDYtMTY0MzkxOTQzZmU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivek Prasanna" ;
+    schema:height "1653"^^xsd:integer ;
+    schema:width "1405"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,474 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0672225/> a schema:Person ;
+    schema:name "Bob Penny" ;
+    schema:url <https://www.imdb.com/name/nm0672225/> ;
+    schema:birthDate "1935-06-29"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Robert Lynn Penny" ;
+    schema:description "Bob Penny. Actor: Mississippi Burning. Bob Penny was born on 29 June 1935 in Anniston, Alabama, USA. He was an actor, known for Mississippi Burning (1988), Forrest Gump (1994) and My Cousin Vinny (1992). He died on 25 December 2022 in Huntsville, Alabama, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjI3OTI1ODUwMV5BMl5BanBnXkFtZTgwNDMzMjMxOTE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Anniston, Alabama, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0095647/>,    # Mississippi Burning
+                       <https://www.imdb.com/title/tt0104952/>,    # My Cousin Vinny
+                       <https://www.imdb.com/title/tt0109830/>,    # Forrest Gump
+                       <https://www.imdb.com/title/tt0256415/>,    # Sweet Home Alabama
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4172154/>,    # Still the King
+                       <https://www.imdb.com/title/tt5496630/>,    # Speed Dating for the Bereaved
+                       <https://www.imdb.com/title/tt3437602/>,    # Dropped
+                       <https://www.imdb.com/title/tt2226342/>,    # Devious Maids
+                       <https://www.imdb.com/title/tt2423054/>,    # Company M: A Mob of Soldiers
+                       <https://www.imdb.com/title/tt1280822/>,    # Drop Dead Diva
+                       <https://www.imdb.com/title/tt1799508/>,    # After
+                       <https://www.imdb.com/title/tt2245137/>,    # Skyhook
+                       <https://www.imdb.com/title/tt1754654/>,    # The Legend of Hallowdega
+                       <https://www.imdb.com/title/tt1500528/>,    # In Touch
+                       <https://www.imdb.com/title/tt1419110/>,    # White Blood
+                       <https://www.imdb.com/title/tt1024651/>,    # High Expectations
+                       <https://www.imdb.com/title/tt0874990/>,    # Piece of Cake
+                       <https://www.imdb.com/title/tt1432999/>,    # The Birthday Midget
+                       <https://www.imdb.com/title/tt0363768/>,    # Lightning Bug
+                       <https://www.imdb.com/title/tt0377256/>,    # Sekai Gyoten News
+                       <https://www.imdb.com/title/tt0146984/>,    # The Legend of Bagger Vance
+                       <https://www.imdb.com/title/tt0163579/>,    # Chill Factor
+                       <https://www.imdb.com/title/tt0110026/>,    # Higher Education
+                       <https://www.imdb.com/title/tt0108805/>,    # Higher Education
+                       <https://www.imdb.com/title/tt0111126/>,    # Separated by Murder
+                       <https://www.imdb.com/title/tt0107369/>,    # The Last Leaf
+                       <https://www.imdb.com/title/tt0094484/>,    # In the Heat of the Night
+                       <https://www.imdb.com/title/tt0101124/>,    # I'll Fly Away
+                       <https://www.imdb.com/title/tt0101921/>,    # Fried Green Tomatoes at the Whistle Stop Cafe
+                       <https://www.imdb.com/title/tt0103258/>,    # Wife, Mother, Murderer
+                       <https://www.imdb.com/title/tt0100920/>,    # When Will I Be Loved?
+                       <https://www.imdb.com/title/tt0098786/>,    # Elvis
+                       <https://www.imdb.com/title/tt0098510/>,    # Traveling Man
+                       <https://www.imdb.com/title/tt0097520/>,    # Home Fires Burning
+                       <https://www.imdb.com/title/tt0094255/> ; # The Verne Miller Story
+
+
+    schema:video <https://www.imdb.com/video/vi3880363033/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0672225/mediaviewer/rm2997044992/>,
+                 <https://www.imdb.com/name/nm0672225/mediaviewer/rm2714768896/>,
+                 <https://www.imdb.com/name/nm0672225/mediaviewer/rm2848986624/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095647/> a schema:Movie ;
+    schema:name "Mississippi Burning" ;
+    schema:url <https://www.imdb.com/title/tt0095647/> .
+
+<https://www.imdb.com/title/tt0104952/> a schema:Movie ;
+    schema:name "My Cousin Vinny" ;
+    schema:url <https://www.imdb.com/title/tt0104952/> .
+
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> .
+
+<https://www.imdb.com/title/tt0256415/> a schema:Movie ;
+    schema:name "Sweet Home Alabama" ;
+    schema:url <https://www.imdb.com/title/tt0256415/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Still the King (2016)
+<https://www.imdb.com/title/tt4172154/> a schema:Movie ;
+    schema:name "Still the King" ;
+    schema:url <https://www.imdb.com/title/tt4172154/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Harold"
+    ] .
+
+# Speed Dating for the Bereaved (2016)
+<https://www.imdb.com/title/tt5496630/> a schema:Movie ;
+    schema:name "Speed Dating for the Bereaved" ;
+    schema:url <https://www.imdb.com/title/tt5496630/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Harold"
+    ] .
+
+# Dropped (2014)
+<https://www.imdb.com/title/tt3437602/> a schema:Movie ;
+    schema:name "Dropped" ;
+    schema:url <https://www.imdb.com/title/tt3437602/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Gary"
+    ] .
+
+# Devious Maids (2014)
+<https://www.imdb.com/title/tt2226342/> a schema:Movie ;
+    schema:name "Devious Maids" ;
+    schema:url <https://www.imdb.com/title/tt2226342/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Teller #3"
+    ] .
+
+# Company M: A Mob of Soldiers (2012)
+<https://www.imdb.com/title/tt2423054/> a schema:Movie ;
+    schema:name "Company M: A Mob of Soldiers" ;
+    schema:url <https://www.imdb.com/title/tt2423054/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Coal Operator Spokesperson"
+    ] .
+
+# Drop Dead Diva (2012)
+<https://www.imdb.com/title/tt1280822/> a schema:Movie ;
+    schema:name "Drop Dead Diva" ;
+    schema:url <https://www.imdb.com/title/tt1280822/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Man in Heaven"
+    ] .
+
+# After (2012)
+<https://www.imdb.com/title/tt1799508/> a schema:Movie ;
+    schema:name "After" ;
+    schema:url <https://www.imdb.com/title/tt1799508/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Elderly Man"
+    ] .
+
+# Skyhook (2012)
+<https://www.imdb.com/title/tt2245137/> a schema:Movie ;
+    schema:name "Skyhook" ;
+    schema:url <https://www.imdb.com/title/tt2245137/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Ian"
+    ] .
+
+# The Legend of Hallowdega (2010)
+<https://www.imdb.com/title/tt1754654/> a schema:Movie ;
+    schema:name "The Legend of Hallowdega" ;
+    schema:url <https://www.imdb.com/title/tt1754654/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Shaman"
+    ] .
+
+# In Touch (2009)
+<https://www.imdb.com/title/tt1500528/> a schema:Movie ;
+    schema:name "In Touch" ;
+    schema:url <https://www.imdb.com/title/tt1500528/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Gentleman"
+    ] .
+
+# White Blood (2009)
+<https://www.imdb.com/title/tt1419110/> a schema:Movie ;
+    schema:name "White Blood" ;
+    schema:url <https://www.imdb.com/title/tt1419110/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Arthur Penfellow"
+    ] .
+
+# High Expectations (2007)
+<https://www.imdb.com/title/tt1024651/> a schema:Movie ;
+    schema:name "High Expectations" ;
+    schema:url <https://www.imdb.com/title/tt1024651/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Juror"
+    ] .
+
+# Piece of Cake (2006)
+<https://www.imdb.com/title/tt0874990/> a schema:Movie ;
+    schema:name "Piece of Cake" ;
+    schema:url <https://www.imdb.com/title/tt0874990/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Claire's Dad"
+    ] .
+
+# The Birthday Midget (2005)
+<https://www.imdb.com/title/tt1432999/> a schema:Movie ;
+    schema:name "The Birthday Midget" ;
+    schema:url <https://www.imdb.com/title/tt1432999/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "The Birthday Midget"
+    ] .
+
+# Lightning Bug (2004)
+<https://www.imdb.com/title/tt0363768/> a schema:Movie ;
+    schema:name "Lightning Bug" ;
+    schema:url <https://www.imdb.com/title/tt0363768/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Mr. Tightwiler"
+    ] .
+
+# Sekai Gyoten News (2002)
+<https://www.imdb.com/title/tt0377256/> a schema:Movie ;
+    schema:name "Sekai Gyoten News" ;
+    schema:url <https://www.imdb.com/title/tt0377256/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Presiding Judge"
+    ] .
+
+# The Legend of Bagger Vance (2000)
+<https://www.imdb.com/title/tt0146984/> a schema:Movie ;
+    schema:name "The Legend of Bagger Vance" ;
+    schema:url <https://www.imdb.com/title/tt0146984/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Laidlaw"
+    ] .
+
+# Chill Factor (1999)
+<https://www.imdb.com/title/tt0163579/> a schema:Movie ;
+    schema:name "Chill Factor" ;
+    schema:url <https://www.imdb.com/title/tt0163579/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Motel Manager"
+    ] .
+
+# Higher Education (1994)
+<https://www.imdb.com/title/tt0110026/> a schema:Movie ;
+    schema:name "Higher Education" ;
+    schema:url <https://www.imdb.com/title/tt0110026/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Karl Olendorf"
+    ] .
+
+# Higher Education (1994)
+<https://www.imdb.com/title/tt0108805/> a schema:Movie ;
+    schema:name "Higher Education" ;
+    schema:url <https://www.imdb.com/title/tt0108805/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Karl Olendorf"
+    ] .
+
+# Separated by Murder (1994)
+<https://www.imdb.com/title/tt0111126/> a schema:Movie ;
+    schema:name "Separated by Murder" ;
+    schema:url <https://www.imdb.com/title/tt0111126/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Dr. Duncan Walker"
+    ] .
+
+# The Last Leaf (1993)
+<https://www.imdb.com/title/tt0107369/> a schema:Movie ;
+    schema:name "The Last Leaf" ;
+    schema:url <https://www.imdb.com/title/tt0107369/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Behrmann"
+    ] .
+
+# In the Heat of the Night (1990)
+<https://www.imdb.com/title/tt0094484/> a schema:Movie ;
+    schema:name "In the Heat of the Night" ;
+    schema:url <https://www.imdb.com/title/tt0094484/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Alvin P. Epp"
+    ] .
+
+# I'll Fly Away (1993)
+<https://www.imdb.com/title/tt0101124/> a schema:Movie ;
+    schema:name "I'll Fly Away" ;
+    schema:url <https://www.imdb.com/title/tt0101124/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Fried Green Tomatoes at the Whistle Stop Cafe (1991)
+<https://www.imdb.com/title/tt0101921/> a schema:Movie ;
+    schema:name "Fried Green Tomatoes at the Whistle Stop Cafe" ;
+    schema:url <https://www.imdb.com/title/tt0101921/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Bailiff"
+    ] .
+
+# Wife, Mother, Murderer (1991)
+<https://www.imdb.com/title/tt0103258/> a schema:Movie ;
+    schema:name "Wife, Mother, Murderer" ;
+    schema:url <https://www.imdb.com/title/tt0103258/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Sergeant Michaelson"
+    ] .
+
+# When Will I Be Loved? (1990)
+<https://www.imdb.com/title/tt0100920/> a schema:Movie ;
+    schema:name "When Will I Be Loved?" ;
+    schema:url <https://www.imdb.com/title/tt0100920/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Hood #1"
+    ] .
+
+# Elvis (1990)
+<https://www.imdb.com/title/tt0098786/> a schema:Movie ;
+    schema:name "Elvis" ;
+    schema:url <https://www.imdb.com/title/tt0098786/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Mr. Peters"
+    ] .
+
+# Traveling Man (1989)
+<https://www.imdb.com/title/tt0098510/> a schema:Movie ;
+    schema:name "Traveling Man" ;
+    schema:url <https://www.imdb.com/title/tt0098510/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "John Parsons"
+    ] .
+
+# Home Fires Burning (1989)
+<https://www.imdb.com/title/tt0097520/> a schema:Movie ;
+    schema:name "Home Fires Burning" ;
+    schema:url <https://www.imdb.com/title/tt0097520/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Bystander"
+    ] .
+
+# The Verne Miller Story (1987)
+<https://www.imdb.com/title/tt0094255/> a schema:Movie ;
+    schema:name "The Verne Miller Story" ;
+    schema:url <https://www.imdb.com/title/tt0094255/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0672225/> ;
+        schema:characterName "Real Estate Agent"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3880363033/> a schema:VideoObject ;
+        schema:name "Lightning Bug" ;
+        schema:description "Trailer for Lightning Bug" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3880363033/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODY5OGNhYjgtOGQyZi00MzBkLTllOWEtMWY0NWZkM2FkODRkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M36S"^^xsd:duration ;
+        schema:uploadDate "2012-11-08T06:19:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjI3OTI1ODUwMV5BMl5BanBnXkFtZTgwNDMzMjMxOTE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3OTI1ODUwMV5BMl5BanBnXkFtZTgwNDMzMjMxOTE@._V1_.jpg> ;
+    schema:caption "Bob Penny" ;
+    schema:height "625"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0672225/mediaviewer/rm2997044992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzkyMWUxOTQtMGNmOS00Y2RiLThlYjAtODRhOThlNTNkYjE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carroll O'Connor, Tony Burton, David Hart, and Bob Penny in In the Heat of the Night (1988)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0672225/mediaviewer/rm2714768896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE5Mzc5ODkyNl5BMl5BanBnXkFtZTgwODEzMjMxOTE@._V1_.jpg> ;
+    schema:caption "Bob Penny" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "852"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0672225/mediaviewer/rm2848986624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3OTI1ODUwMV5BMl5BanBnXkFtZTgwNDMzMjMxOTE@._V1_.jpg> ;
+    schema:caption "Bob Penny" ;
+    schema:height "625"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

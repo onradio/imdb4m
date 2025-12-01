@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2474356/> a schema:Person ;
+    schema:name "Phoebe Hawthorne" ;
+    schema:url <https://www.imdb.com/name/nm2474356/> ;
+    schema:birthDate "1979-09-15"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Phoebe Hawthorne. Actress: Children of Men. Phoebe Hawthorne was born on 15 September 1979 in Maidstone, Kent, England, UK. She is an actress, known for Children of Men (2006) and Global Young People's Convocation 2010 (2010). She is married to Robin Stout." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Maidstone, Kent, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0206634/> ;    # Children of Men
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2474356/mediaviewer/rm736312064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Children of Men (2006)
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474356/> ;
+        schema:characterName "Café Customer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2474356/mediaviewer/rm736312064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDIxZjRlMWQtNGE1NC00MmNkLThjOTQtZmFjZmM4M2M0NmUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rita Davies, Kim Fenton, Clive Owen, Atalanta White, Phoebe Hawthorne, Chris Gilbert, Jon Chevalier, Rebecca Howard, and Laurence Woodbridge in Children of Men (2006)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

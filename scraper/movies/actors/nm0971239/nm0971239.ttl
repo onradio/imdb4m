@@ -1,0 +1,127 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0971239/> a schema:Person ;
+    schema:name "Simon J. Smith" ;
+    schema:url <https://www.imdb.com/name/nm0971239/> ;
+    schema:jobTitle "Producer", "Director", "Actor" ;
+    schema:description "Simon J. Smith. Actor: Shrek. Simon J Smith Personal Bio\n\nSimon J Smith is an award winning writer/director and 30 year computer graphics veteran with over 38 combined years of film, television, and post production experience in telling engaging stories with compelling characters. He is known mostly for his directing feature animation work at PDI/DreamWorks Animation, directing the feature film \"Penguins of Madagascar\" starring Benedict Cumberbatch and John Malkovich, and previously..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3608838/>,    # Dreamworks Spooky Stories
+                       <https://www.imdb.com/title/tt21942836/>,    # Ringo Starr: Liverpool 8
+                       <https://www.imdb.com/title/tt0389790/>,    # Bee Movie
+                       <https://www.imdb.com/title/tt0307461/>,    # Shrek in the Swamp Karaoke Dance Party
+                       <https://www.imdb.com/title/tt0126029/> ; # Shrek
+
+
+    schema:video <https://www.imdb.com/video/vi1725869849/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0971239/mediaviewer/rm1595930624/>,
+                 <https://www.imdb.com/name/nm0971239/mediaviewer/rm3104152064/>,
+                 <https://www.imdb.com/name/nm0971239/mediaviewer/rm3087374848/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dreamworks Spooky Stories (2012)
+<https://www.imdb.com/title/tt3608838/> a schema:Movie ;
+    schema:name "Dreamworks Spooky Stories" ;
+    schema:url <https://www.imdb.com/title/tt3608838/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971239/> ;
+        schema:characterName "(voice: English version)"
+    ] .
+
+# Ringo Starr: Liverpool 8 (2008)
+<https://www.imdb.com/title/tt21942836/> a schema:Movie ;
+    schema:name "Ringo Starr: Liverpool 8" ;
+    schema:url <https://www.imdb.com/title/tt21942836/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971239/> ;
+        schema:characterName "Simon J Smith - Bass"
+    ] .
+
+# Bee Movie (2007)
+<https://www.imdb.com/title/tt0389790/> a schema:Movie ;
+    schema:name "Bee Movie" ;
+    schema:url <https://www.imdb.com/title/tt0389790/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971239/> ;
+        schema:characterName "Truck Driver"
+    ] .
+
+# Shrek in the Swamp Karaoke Dance Party (2001)
+<https://www.imdb.com/title/tt0307461/> a schema:Movie ;
+    schema:name "Shrek in the Swamp Karaoke Dance Party" ;
+    schema:url <https://www.imdb.com/title/tt0307461/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971239/> ;
+        schema:characterName "Blind Mouse"
+    ] .
+
+# Shrek (2001)
+<https://www.imdb.com/title/tt0126029/> a schema:Movie ;
+    schema:name "Shrek" ;
+    schema:url <https://www.imdb.com/title/tt0126029/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971239/> ;
+        schema:characterName "Blind Mouse"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1725869849/> a schema:VideoObject ;
+        schema:name "Penguins of Madagascar" ;
+        schema:description "Clip: Northwind Headquarters" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1725869849/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODA5MzE5ODA1MV5BMl5BanBnXkFtZTgwNjMyNTEwMzE@._V1_.jpg" ;
+        schema:duration "PT1M59S"^^xsd:duration ;
+        schema:uploadDate "2014-10-18T04:47:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0971239/mediaviewer/rm1595930624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA5NDM3NjY3Ml5BMl5BanBnXkFtZTgwMTA2MTY0MzE@._V1_.jpg> ;
+    schema:caption "John Malkovich, Eric Darnell, Ken Jeong, Tom McGrath, Conrad Vernon, Simon J. Smith, and Benedict Cumberbatch at an event for Penguins of Madagascar (2014)" ;
+    schema:height "1472"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971239/mediaviewer/rm3104152064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg3NTM1MTA2NF5BMl5BanBnXkFtZTYwNjY1Njgz._V1_.jpg> ;
+    schema:caption "Jerry Seinfeld, Simon J. Smith, and Steve Hickner" ;
+    schema:height "366"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971239/mediaviewer/rm3087374848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzUxODk0NDk2M15BMl5BanBnXkFtZTYwODY1Njgz._V1_.jpg> ;
+    schema:caption "Jerry Seinfeld, Simon J. Smith, and Steve Hickner" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "268"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

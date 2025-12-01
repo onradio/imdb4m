@@ -1,0 +1,27 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5013056/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Variation 15 (Dunkirk)" ;
+        schema:producer <https://www.imdb.com/name/nm0001877/> ; # Hans Zimmer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Variation 15 (Dunkirk)" ;
+            schema:author <https://www.imdb.com/name/nm1818744/> # Benjamin Wallfisch
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001877/> a schema:Person ;
+    schema:name "Hans Zimmer" .
+<https://www.imdb.com/name/nm1818744/> a schema:Person ;
+    schema:name "Benjamin Wallfisch" .
+# ==============================================================================

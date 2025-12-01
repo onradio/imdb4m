@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0361735/> a schema:Person ;
+    schema:name "Masato Harada" ;
+    schema:url <https://www.imdb.com/name/nm0361735/> ;
+    schema:birthDate "1949-07-03"^^xsd:date ;
+    schema:jobTitle "Director", "Writer", "Producer" ;
+    schema:description "Masato Harada. Director: Chronicle of My Mother. Masato Harada was born on 3 July 1949 in Numazu, Shizuoka, Japan. He is a director and writer, known for Chronicle of My Mother (2011), The Last Samurai (2003) and Bounce Ko Gals (1997)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODQ4MjYyMDQ2Nl5BMl5BanBnXkFtZTYwOTkxOTQ1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Numazu, Shizuoka, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0446059/>,    # Fearless
+                       <https://www.imdb.com/title/tt0325710/> ; # The Last Samurai
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0361735/mediaviewer/rm1034231808/>,
+                 <https://www.imdb.com/name/nm0361735/mediaviewer/rm195726592/>,
+                 <https://www.imdb.com/name/nm0361735/mediaviewer/rm3910245120/>,
+                 <https://www.imdb.com/name/nm0361735/mediaviewer/rm2584845056/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fearless (2006)
+<https://www.imdb.com/title/tt0446059/> a schema:Movie ;
+    schema:name "Fearless" ;
+    schema:url <https://www.imdb.com/title/tt0446059/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0361735/> ;
+        schema:characterName "Mita"
+    ] .
+
+# The Last Samurai (2003)
+<https://www.imdb.com/title/tt0325710/> a schema:Movie ;
+    schema:name "The Last Samurai" ;
+    schema:url <https://www.imdb.com/title/tt0325710/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0361735/> ;
+        schema:characterName "Omura"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODQ4MjYyMDQ2Nl5BMl5BanBnXkFtZTYwOTkxOTQ1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ4MjYyMDQ2Nl5BMl5BanBnXkFtZTYwOTkxOTQ1._V1_.jpg> ;
+    schema:caption "Masato Harada at an event for The Last Samurai (2003)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "263"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0361735/mediaviewer/rm1034231808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWExOWUyYzYtMjA5YS00ZDdiLTkxMTAtMGYyZWZhOTYzMjE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Masato Harada and Shichinosuke Nakamura in The Last Samurai (2003)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2047"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0361735/mediaviewer/rm195726592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc4ODA1ODA5MV5BMl5BanBnXkFtZTcwMzk2MzUzMw@@._V1_.jpg> ;
+    schema:caption "Tom Cruise, Tony Goldwyn, Timothy Spall, Masato Harada, and Shichinosuke Nakamura in The Last Samurai (2003)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0361735/mediaviewer/rm3910245120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIxODg3MjEwMl5BMl5BanBnXkFtZTYwMzMyOTQ1._V1_.jpg> ;
+    schema:caption "Masato Harada and Shichinosuke Nakamura at an event for The Last Samurai (2003)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "273"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0361735/mediaviewer/rm2584845056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ4MjYyMDQ2Nl5BMl5BanBnXkFtZTYwOTkxOTQ1._V1_.jpg> ;
+    schema:caption "Masato Harada at an event for The Last Samurai (2003)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "263"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

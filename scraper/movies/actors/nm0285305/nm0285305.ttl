@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0285305/> a schema:Person ;
+    schema:name "Charles Forbes" ;
+    schema:url <https://www.imdb.com/name/nm0285305/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Charles Forbes. Actor: Lock, Stock and Two Smoking Barrels. Charles Forbes is known for Lock, Stock and Two Smoking Barrels (1998), Lift (2004) and Scene (1968)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0472596/>,    # Lift
+                       <https://www.imdb.com/title/tt0120735/>,    # Lock, Stock and Two Smoking Barrels
+                       <https://www.imdb.com/title/tt1049302/> . # Scene
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lift (2004)
+<https://www.imdb.com/title/tt0472596/> a schema:Movie ;
+    schema:name "Lift" ;
+    schema:url <https://www.imdb.com/title/tt0472596/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0285305/> ;
+        schema:characterName "Jake Martins"
+    ] .
+
+# Lock, Stock and Two Smoking Barrels (1998)
+<https://www.imdb.com/title/tt0120735/> a schema:Movie ;
+    schema:name "Lock, Stock and Two Smoking Barrels" ;
+    schema:url <https://www.imdb.com/title/tt0120735/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0285305/> ;
+        schema:characterName "Willie"
+    ] .
+
+# Scene (1996)
+<https://www.imdb.com/title/tt1049302/> a schema:Movie ;
+    schema:name "Scene" ;
+    schema:url <https://www.imdb.com/title/tt1049302/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0285305/> ;
+        schema:characterName "Forest People"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

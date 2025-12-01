@@ -1,0 +1,393 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3575723/> a schema:Person ;
+    schema:name "Lydia Wilson" ;
+    schema:url <https://www.imdb.com/name/nm3575723/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lydia Wilson. Actress: About Time. Lydia Wilson was born in London, England, UK. Lydia is an actor, known for About Time (2013), Star Trek Beyond (2016) and Never Let Me Go (2010)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMWZjMTQxZjYtMmJjMC00MzNkLWIzZmYtNGZmYzE0NjNmMGQwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4¼″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2194499/>,    # About Time
+                       <https://www.imdb.com/title/tt1334260/>,    # Never Let Me Go
+                       <https://www.imdb.com/title/tt2183641/>,    # Ripper Street
+                       <https://www.imdb.com/title/tt2660888/>,    # Star Trek Beyond
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8128344/>,    # Flack
+                       <https://www.imdb.com/title/tt7531600/>,    # Lie of You
+                       <https://www.imdb.com/title/tt8612010/>,    # The Plunge
+                       <https://www.imdb.com/title/tt9206798/>,    # All Is True
+                       <https://www.imdb.com/title/tt7666974/>,    # Dead Birds
+                       <https://www.imdb.com/title/tt6096308/>,    # Still
+                       <https://www.imdb.com/title/tt6712390/>,    # Requiem
+                       <https://www.imdb.com/title/tt4092422/>,    # Love Is Thicker Than Water
+                       <https://www.imdb.com/title/tt2915680/>,    # Hereafter
+                       <https://www.imdb.com/title/tt3398618/>,    # Columbite Tantalite
+                       <https://www.imdb.com/title/tt1548850/>,    # Misfits
+                       <https://www.imdb.com/title/tt2293276/>,    # The Making of a Lady
+                       <https://www.imdb.com/title/tt2303367/>,    # Dirk Gently
+                       <https://www.imdb.com/title/tt2085059/>,    # Black Mirror
+                       <https://www.imdb.com/title/tt0384013/>,    # The Crimson Petal and the White
+                       <https://www.imdb.com/title/tt1688606/>,    # South Riding
+                       <https://www.imdb.com/title/tt1631891/>,    # Any Human Heart
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt1690364/>,    # Pete Versus Life
+                       <https://www.imdb.com/title/tt6249768/> ; # Dogdom
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1847511065/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3575723/mediaviewer/rm968907520/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm2889211137/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm1809061120/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm2470009600/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm4287254784/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm3950595328/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm904818176/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm602828288/>,
+                 <https://www.imdb.com/name/nm3575723/mediaviewer/rm552496640/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2194499/> a schema:Movie ;
+    schema:name "About Time" ;
+    schema:url <https://www.imdb.com/title/tt2194499/> .
+
+<https://www.imdb.com/title/tt1334260/> a schema:Movie ;
+    schema:name "Never Let Me Go" ;
+    schema:url <https://www.imdb.com/title/tt1334260/> .
+
+<https://www.imdb.com/title/tt2183641/> a schema:Movie ;
+    schema:name "Ripper Street" ;
+    schema:url <https://www.imdb.com/title/tt2183641/> .
+
+<https://www.imdb.com/title/tt2660888/> a schema:Movie ;
+    schema:name "Star Trek Beyond" ;
+    schema:url <https://www.imdb.com/title/tt2660888/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Flack (2019)
+<https://www.imdb.com/title/tt8128344/> a schema:Movie ;
+    schema:name "Flack" ;
+    schema:url <https://www.imdb.com/title/tt8128344/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Eve"
+    ] .
+
+# Lie of You (2019)
+<https://www.imdb.com/title/tt7531600/> a schema:Movie ;
+    schema:name "Lie of You" ;
+    schema:url <https://www.imdb.com/title/tt7531600/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Kathy Hartman"
+    ] .
+
+# The Plunge (2018)
+<https://www.imdb.com/title/tt8612010/> a schema:Movie ;
+    schema:name "The Plunge" ;
+    schema:url <https://www.imdb.com/title/tt8612010/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Emily"
+    ] .
+
+# All Is True (2018)
+<https://www.imdb.com/title/tt9206798/> a schema:Movie ;
+    schema:name "All Is True" ;
+    schema:url <https://www.imdb.com/title/tt9206798/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Susanna Hall"
+    ] .
+
+# Dead Birds (2018)
+<https://www.imdb.com/title/tt7666974/> a schema:Movie ;
+    schema:name "Dead Birds" ;
+    schema:url <https://www.imdb.com/title/tt7666974/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Saskia Jensen"
+    ] .
+
+# Still (2018)
+<https://www.imdb.com/title/tt6096308/> a schema:Movie ;
+    schema:name "Still" ;
+    schema:url <https://www.imdb.com/title/tt6096308/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Ella"
+    ] .
+
+# Requiem (2018)
+<https://www.imdb.com/title/tt6712390/> a schema:Movie ;
+    schema:name "Requiem" ;
+    schema:url <https://www.imdb.com/title/tt6712390/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Matilda Gray"
+    ] .
+
+# Love Is Thicker Than Water (2016)
+<https://www.imdb.com/title/tt4092422/> a schema:Movie ;
+    schema:name "Love Is Thicker Than Water" ;
+    schema:url <https://www.imdb.com/title/tt4092422/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Vida"
+    ] .
+
+# Hereafter (2013)
+<https://www.imdb.com/title/tt2915680/> a schema:Movie ;
+    schema:name "Hereafter" ;
+    schema:url <https://www.imdb.com/title/tt2915680/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Katcher"
+    ] .
+
+# Columbite Tantalite (2013)
+<https://www.imdb.com/title/tt3398618/> a schema:Movie ;
+    schema:name "Columbite Tantalite" ;
+    schema:url <https://www.imdb.com/title/tt3398618/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Anna"
+    ] .
+
+# Misfits (2013)
+<https://www.imdb.com/title/tt1548850/> a schema:Movie ;
+    schema:name "Misfits" ;
+    schema:url <https://www.imdb.com/title/tt1548850/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Laura"
+    ] .
+
+# The Making of a Lady (2012)
+<https://www.imdb.com/title/tt2293276/> a schema:Movie ;
+    schema:name "The Making of a Lady" ;
+    schema:url <https://www.imdb.com/title/tt2293276/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Emily Fox Seton"
+    ] .
+
+# Dirk Gently (2012)
+<https://www.imdb.com/title/tt2303367/> a schema:Movie ;
+    schema:name "Dirk Gently" ;
+    schema:url <https://www.imdb.com/title/tt2303367/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Jane"
+    ] .
+
+# Black Mirror (2011)
+<https://www.imdb.com/title/tt2085059/> a schema:Movie ;
+    schema:name "Black Mirror" ;
+    schema:url <https://www.imdb.com/title/tt2085059/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Princess Susannah"
+    ] .
+
+# The Crimson Petal and the White (2011)
+<https://www.imdb.com/title/tt0384013/> a schema:Movie ;
+    schema:name "The Crimson Petal and the White" ;
+    schema:url <https://www.imdb.com/title/tt0384013/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Elizabeth"
+    ] .
+
+# South Riding (2011)
+<https://www.imdb.com/title/tt1688606/> a schema:Movie ;
+    schema:name "South Riding" ;
+    schema:url <https://www.imdb.com/title/tt1688606/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Muriel Carne"
+    ] .
+
+# Any Human Heart (2010)
+<https://www.imdb.com/title/tt1631891/> a schema:Movie ;
+    schema:name "Any Human Heart" ;
+    schema:url <https://www.imdb.com/title/tt1631891/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Monday"
+    ] .
+
+# Midsomer Murders (2010)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Zoe Stock"
+    ] .
+
+# Pete Versus Life (2010)
+<https://www.imdb.com/title/tt1690364/> a schema:Movie ;
+    schema:name "Pete Versus Life" ;
+    schema:url <https://www.imdb.com/title/tt1690364/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "Rachel"
+    ] .
+
+# Dogdom (2007)
+<https://www.imdb.com/title/tt6249768/> a schema:Movie ;
+    schema:name "Dogdom" ;
+    schema:url <https://www.imdb.com/title/tt6249768/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3575723/> ;
+        schema:characterName "The Substitute Dog"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1847511065/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A plane carrying ten people crashes into the Mexican jungle, leaving them stranded. As they are murdered one by one, the remaining survivors must solve the mystery of who is killing them." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1847511065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDc4YzIzODQtODUxMS00MWUxLTgxNWEtMDA1ZDdmZDY3ODgyXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT25S"^^xsd:duration ;
+        schema:uploadDate "2025-09-17T13:24:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMWZjMTQxZjYtMmJjMC00MzNkLWIzZmYtNGZmYzE0NjNmMGQwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWZjMTQxZjYtMmJjMC00MzNkLWIzZmYtNGZmYzE0NjNmMGQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lydia Wilson" ;
+    schema:height "1805"^^xsd:integer ;
+    schema:width "1289"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm968907520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjhlMDkxNjEtY2M1ZS00MzIxLWEwZDEtOWQ2OGFjYTQxZDIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lydia Wilson" ;
+    schema:height "1382"^^xsd:integer ;
+    schema:width "975"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm2889211137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjg2OTE5ODEtMWE5YS00NTQ5LTlhYzktZTMzNGVjODBlN2U3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still of Lydia Wilson in Flack" ;
+    schema:height "844"^^xsd:integer ;
+    schema:width "1268"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm1809061120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzE0NzAyNDY0M15BMl5BanBnXkFtZTgwMzIzMTI0OTE@._V1_.jpg> ;
+    schema:caption "Lydia Wilson at an event for Star Trek Beyond (2016)" ;
+    schema:height "1416"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm2470009600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzVjMTg1NGMtN2U0Ny00ZmUwLWFlOWUtMmFmYTgwZDcyZWFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lydia Wilson" ;
+    schema:height "1672"^^xsd:integer ;
+    schema:width "1204"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm4287254784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5MTEyNDUzMF5BMl5BanBnXkFtZTgwNTgwMDk2NDM@._V1_.jpg> ;
+    schema:caption "Lydia Wilson in Requiem (2018)" ;
+    schema:height "384"^^xsd:integer ;
+    schema:width "424"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm3950595328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmM3ZGZiYTMtMmUzMS00MTJlLTkxZjMtNjAyYzNmZDgyYWNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lydia Wilson" ;
+    schema:height "3456"^^xsd:integer ;
+    schema:width "5184"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm904818176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwNzU2NTU1N15BMl5BanBnXkFtZTgwNTY3MzUzNzM@._V1_.jpg> ;
+    schema:caption "Kenneth Branagh and Lydia Wilson in All Is True (2018)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm602828288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY0NTUxOTgwMV5BMl5BanBnXkFtZTgwNjQ3MzUzNzM@._V1_.jpg> ;
+    schema:caption "Kenneth Branagh and Lydia Wilson in All Is True (2018)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3575723/mediaviewer/rm552496640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5MTU5NjMyN15BMl5BanBnXkFtZTgwMDU3MzUzNzM@._V1_.jpg> ;
+    schema:caption "Kenneth Branagh, Judi Dench, Lydia Wilson, and Kathryn Wilder in All Is True (2018)" ;
+    schema:height "1638"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

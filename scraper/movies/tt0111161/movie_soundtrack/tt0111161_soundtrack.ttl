@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0111161/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "If I Didn't Care" ;
+        schema:byArtist <https://www.imdb.com/name/nm1311414/> ; # The Ink Spots
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "If I Didn't Care" ;
+            schema:author <https://www.imdb.com/name/nm0492805/> # Jack Lawrence
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Duettino - Sull'aria" ;
+        schema:byArtist <https://www.imdb.com/name/nm0558911/>, # Edith Mathis
+                        <https://www.imdb.com/name/nm0417916/> ; # Gundula Janowitz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Duettino - Sull'aria" ;
+            schema:composer <https://www.imdb.com/name/nm0003665/> ; # Wolfgang Amadeus Mozart
+            schema:lyricist <https://www.imdb.com/name/nm0196153/> # Lorenzo da Ponte
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Put The Blame On Mame" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Put The Blame On Mame" ;
+            schema:author <https://www.imdb.com/name/nm0730814/>, # Allan Roberts
+                       <https://www.imdb.com/name/nm0279463/> # Doris Fisher
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lovesick Blues" ;
+        schema:byArtist <https://www.imdb.com/name/nm0930729/> ; # Hank Williams
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lovesick Blues" ;
+            schema:author <https://www.imdb.com/name/nm0295522/>, # Cliff Friend
+                       <https://www.imdb.com/name/nm0590030/> # Irving Mills
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Willie and The Hand Jive" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Willie and The Hand Jive" ;
+            schema:author <https://www.imdb.com/name/nm0652906/> # Johnny Otis
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Mighty Fortress Is Our God" ;
+        schema:byArtist <https://www.imdb.com/name/nm0348409/> ; # Bob Gunton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Mighty Fortress Is Our God" ;
+            schema:author <https://www.imdb.com/name/nm1051447/> # Martin Luther
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0196153/> a schema:Person ;
+    schema:name "Lorenzo da Ponte" .
+<https://www.imdb.com/name/nm0279463/> a schema:Person ;
+    schema:name "Doris Fisher" .
+<https://www.imdb.com/name/nm0295522/> a schema:Person ;
+    schema:name "Cliff Friend" .
+<https://www.imdb.com/name/nm0348409/> a schema:Person ;
+    schema:name "Bob Gunton" .
+<https://www.imdb.com/name/nm0417916/> a schema:Person ;
+    schema:name "Gundula Janowitz" .
+<https://www.imdb.com/name/nm0492805/> a schema:Person ;
+    schema:name "Jack Lawrence" .
+<https://www.imdb.com/name/nm0558911/> a schema:Person ;
+    schema:name "Edith Mathis" .
+<https://www.imdb.com/name/nm0590030/> a schema:Person ;
+    schema:name "Irving Mills" .
+<https://www.imdb.com/name/nm0652906/> a schema:Person ;
+    schema:name "Johnny Otis" .
+<https://www.imdb.com/name/nm0730814/> a schema:Person ;
+    schema:name "Allan Roberts" .
+<https://www.imdb.com/name/nm0930729/> a schema:Person ;
+    schema:name "Hank Williams" .
+<https://www.imdb.com/name/nm1051447/> a schema:Person ;
+    schema:name "Martin Luther" .
+<https://www.imdb.com/name/nm1311414/> a schema:Person ;
+    schema:name "The Ink Spots" .
+# ==============================================================================

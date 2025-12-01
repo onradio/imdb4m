@@ -1,0 +1,155 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2973712/> a schema:Person ;
+    schema:name "Jordan Nagai" ;
+    schema:url <https://www.imdb.com/name/nm2973712/> ;
+    schema:birthDate "2000-02-05"^^xsd:date ;
+    schema:jobTitle "Actor", "Music Department" ;
+    schema:description "Jordan Nagai. Actor: Up. Jordan Nagai was born on 5 February 2000 in Los Angeles, California, USA. He is an actor, known for Up (2009), Up (2009) and The Simpsons (1989)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ0NjczNDczNl5BMl5BanBnXkFtZTcwMDMwMTc1Mg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1049413/>,    # Up
+                       <https://www.imdb.com/title/tt0096697/>,    # The Simpsons
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3480110/>,    # Beyond Beyond
+                       <https://www.imdb.com/title/tt0069627/>,    # Schoolhouse Rock!
+                       <https://www.imdb.com/title/tt1537759/>,    # Dug's Special Mission
+                       <https://www.imdb.com/title/tt30787069/>,    # Up: Upisodes
+                       <https://www.imdb.com/title/tt1485814/> ; # Up
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2600453401/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2973712/mediaviewer/rm951948545/>,
+                 <https://www.imdb.com/name/nm2973712/mediaviewer/rm31033344/>,
+                 <https://www.imdb.com/name/nm2973712/mediaviewer/rm994054144/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1049413/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1049413/> .
+
+<https://www.imdb.com/title/tt0096697/> a schema:Movie ;
+    schema:name "The Simpsons" ;
+    schema:url <https://www.imdb.com/title/tt0096697/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Beyond Beyond (2014)
+<https://www.imdb.com/title/tt3480110/> a schema:Movie ;
+    schema:name "Beyond Beyond" ;
+    schema:url <https://www.imdb.com/title/tt3480110/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2973712/> ;
+        schema:characterName "Johan"
+    ] .
+
+# Schoolhouse Rock! (2009)
+<https://www.imdb.com/title/tt0069627/> a schema:Movie ;
+    schema:name "Schoolhouse Rock!" ;
+    schema:url <https://www.imdb.com/title/tt0069627/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2973712/> ;
+        schema:characterName "Earth"
+    ] .
+
+# Dug's Special Mission (2009)
+<https://www.imdb.com/title/tt1537759/> a schema:Movie ;
+    schema:name "Dug's Special Mission" ;
+    schema:url <https://www.imdb.com/title/tt1537759/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2973712/> ;
+        schema:characterName "Russell"
+    ] .
+
+# Up: Upisodes (2009)
+<https://www.imdb.com/title/tt30787069/> a schema:Movie ;
+    schema:name "Up: Upisodes" ;
+    schema:url <https://www.imdb.com/title/tt30787069/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2973712/> ;
+        schema:characterName "Russell"
+    ] .
+
+# Up (2009)
+<https://www.imdb.com/title/tt1485814/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1485814/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2973712/> ;
+        schema:characterName "Russell"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2600453401/> a schema:VideoObject ;
+        schema:name "Dug Days (Latin America Market Trailer 1 Subtitled)" ;
+        schema:description "Dug Days (Latin America Market Trailer 1 Subtitled)" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2600453401/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2ZhNmIzNjktNTFkZi00ZjJhLWExY2ItNzhhN2UzOTcyMTZjXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT34S"^^xsd:duration ;
+        schema:uploadDate "2022-12-10T13:02:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ0NjczNDczNl5BMl5BanBnXkFtZTcwMDMwMTc1Mg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NjczNDczNl5BMl5BanBnXkFtZTcwMDMwMTc1Mg@@._V1_.jpg> ;
+    schema:caption "Jordan Nagai at an event for Up (2009)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "314"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2973712/mediaviewer/rm951948545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmVlOTVlNTMtZDFhMS00ODdmLTlkOTEtMWFkMTU0NTZhM2UxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Asner, Bob Peterson, and Jordan Nagai" ;
+    schema:height "445"^^xsd:integer ;
+    schema:width "311"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2973712/mediaviewer/rm31033344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NjczNDczNl5BMl5BanBnXkFtZTcwMDMwMTc1Mg@@._V1_.jpg> ;
+    schema:caption "Jordan Nagai at an event for Up (2009)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "314"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2973712/mediaviewer/rm994054144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDBjMmFlNDMtYTNkZi00ZWYzLWFhNTYtMGVmY2IwMTk2NGIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Asner, Bob Peterson, and Jordan Nagai in Up (2009)" ;
+    schema:height "1234"^^xsd:integer ;
+    schema:width "900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

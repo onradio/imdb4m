@@ -1,0 +1,212 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5037475/> a schema:Person ;
+    schema:name "Billy Postlethwaite" ;
+    schema:url <https://www.imdb.com/name/nm5037475/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Billy Postlethwaite. Actor: Indiana Jones and the Dial of Destiny. Billy Postlethwaite was born in 1989 in Shropshire, England, UK. He is an actor, known for Indiana Jones and the Dial of Destiny (2023), Tomb Raider (2018) and 1917 (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODAyMDUwODQ3MV5BMl5BanBnXkFtZTgwODY5OTg0MDI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Shropshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8579674/>,    # 1917
+                       <https://www.imdb.com/title/tt7366338/>,    # Chernobyl
+                       <https://www.imdb.com/title/tt8255500/>,    # Nurtured
+                       <https://www.imdb.com/title/tt2215842/>,    # Father Brown
+                       <https://www.imdb.com/title/tt8672520/>,    # National Theatre Live: The Madness of George III
+                       <https://www.imdb.com/title/tt0184122/>,    # Holby City
+                       <https://www.imdb.com/title/tt1365519/> ; # Tomb Raider
+
+
+    schema:video <https://www.imdb.com/video/vi1357168921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5037475/mediaviewer/rm540637696/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm1740334081/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm4281222913/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm4264445697/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm4046341889/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm3912124161/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm4147005185/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm3962455809/>,
+                 <https://www.imdb.com/name/nm5037475/mediaviewer/rm3498443008/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 1917 (2019)
+<https://www.imdb.com/title/tt8579674/> a schema:Movie ;
+    schema:name "1917" ;
+    schema:url <https://www.imdb.com/title/tt8579674/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "NCO Harvey"
+    ] .
+
+# Chernobyl (2019)
+<https://www.imdb.com/title/tt7366338/> a schema:Movie ;
+    schema:name "Chernobyl" ;
+    schema:url <https://www.imdb.com/title/tt7366338/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Boris Stolyarchuk"
+    ] .
+
+# Nurtured (2019)
+<https://www.imdb.com/title/tt8255500/> a schema:Movie ;
+    schema:name "Nurtured" ;
+    schema:url <https://www.imdb.com/title/tt8255500/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Val"
+    ] .
+
+# Father Brown (2019)
+<https://www.imdb.com/title/tt2215842/> a schema:Movie ;
+    schema:name "Father Brown" ;
+    schema:url <https://www.imdb.com/title/tt2215842/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Edmund Noon"
+    ] .
+
+# National Theatre Live: The Madness of George III (2018)
+<https://www.imdb.com/title/tt8672520/> a schema:Movie ;
+    schema:name "National Theatre Live: The Madness of George III" ;
+    schema:url <https://www.imdb.com/title/tt8672520/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Braun"
+    ] .
+
+# Holby City (2014)
+<https://www.imdb.com/title/tt0184122/> a schema:Movie ;
+    schema:name "Holby City" ;
+    schema:url <https://www.imdb.com/title/tt0184122/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Fredrik Johanssen"
+    ] .
+
+# Tomb Raider (2018)
+<https://www.imdb.com/title/tt1365519/> a schema:Movie ;
+    schema:name "Tomb Raider" ;
+    schema:url <https://www.imdb.com/title/tt1365519/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5037475/> ;
+        schema:characterName "Bill"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1357168921/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1357168921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzcyM2M5MTEtNmY4NS00MWFhLTg2NDMtZDM5OWNjMjgyNTM2XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2020-10-23T09:57:16Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODAyMDUwODQ3MV5BMl5BanBnXkFtZTgwODY5OTg0MDI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAyMDUwODQ3MV5BMl5BanBnXkFtZTgwODY5OTg0MDI@._V1_.jpg> ;
+    schema:caption "Billy Postlethwaite" ;
+    schema:height "1300"^^xsd:integer ;
+    schema:width "929"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm540637696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmQzYzdhZGMtZGFhZC00ZWFhLWE5NDMtNjdjNThhYTU1MTk3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alicia Vikander and Billy Postlethwaite in Tomb Raider (2018)" ;
+    schema:height "1100"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm1740334081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWZlMzNjMGUtYzJkOS00NzQwLWJmODQtMzliZDQwNzU2NGE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Postlethwaite at an event for Silo (2023)" ;
+    schema:height "5510"^^xsd:integer ;
+    schema:width "3800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm4281222913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFlYjdhOGItNWZiNi00NDdhLTkyMWEtOGVhNzYyODFkMTZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma McDonald and Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "4500"^^xsd:integer ;
+    schema:width "3002"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm4264445697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDZhOTgwZWYtMDY3ZC00ZmEwLWI2ZmItMTZmN2RmNjdlMzY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma McDonald, Joy Wilkinson, and Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "2994"^^xsd:integer ;
+    schema:width "4488"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm4046341889/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTg0ZGUwZTYtNWQ3Zi00ODZmLWFiNGEtOGQ2MTc0ZTMwYTU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "4500"^^xsd:integer ;
+    schema:width "3205"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm3912124161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWUwN2JmNDMtYmFlNC00Yjg0LWE3ZTgtNmE2ZTUxZGYxY2M4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma McDonald, Cassandra Sigsgaard, Joy Wilkinson, and Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "3002"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm4147005185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGQxODIyN2MtY2Y5My00YWVmLTk2MTctMzk3ZmRlZjlmNDU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "3002"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm3962455809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDhjMzA4OTItMGEyYi00MmZkLTg2ZjktNGZlZWM1OTIwMWU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emma McDonald and Billy Postlethwaite at an event for 7 Keys (2024)" ;
+    schema:height "3002"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5037475/mediaviewer/rm3498443008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAyMDUwODQ3MV5BMl5BanBnXkFtZTgwODY5OTg0MDI@._V1_.jpg> ;
+    schema:caption "Billy Postlethwaite" ;
+    schema:height "1300"^^xsd:integer ;
+    schema:width "929"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

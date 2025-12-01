@@ -1,0 +1,497 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2225369/> a schema:Person ;
+    schema:name "Jennifer Lawrence" ;
+    schema:url <https://www.imdb.com/name/nm2225369/> ;
+    schema:birthDate "1990-08-15"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Writer" ;
+    schema:alternateName "Jen", "J. Law", "Nitro", "Jennifer Shrader Lawrence" ;
+    schema:description "Jennifer Lawrence. Actress: The Hunger Games. As the highest-paid actress in the world in 2015 and 2016, and with her films grossing over $5.5 billion worldwide, Jennifer Lawrence is often cited as the most successful actress of her generation. She is also the first person born in the 1990s to have won an acting Oscar.\n\nJennifer Shrader Lawrence was born August 15, 1990, in Louisville, Kentucky, to Karen (Koch), who manages..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTU3NDE5MDQ4MV5BMl5BanBnXkFtZTgwMzE5ODQ3MDI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Louisville, Kentucky, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1392170/>,    # The Hunger Games
+                       <https://www.imdb.com/title/tt1045658/>,    # Silver Linings Playbook
+                       <https://www.imdb.com/title/tt1270798/>,    # X-Men: First Class
+                       <https://www.imdb.com/title/tt1800241/>,    # American Hustle
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6565702/>,    # X-Men: Dark Phoenix
+                       <https://www.imdb.com/title/tt8934082/>,    # Dior: Joy
+                       <https://www.imdb.com/title/tt2873282/>,    # Red Sparrow
+                       <https://www.imdb.com/title/tt5109784/>,    # Mother!
+                       <https://www.imdb.com/title/tt1355644/>,    # Passengers
+                       <https://www.imdb.com/title/tt3385516/>,    # X-Men: Apocalypse
+                       <https://www.imdb.com/title/tt2446980/>,    # Joy
+                       <https://www.imdb.com/title/tt1951266/>,    # The Hunger Games: Mockingjay - Part 2
+                       <https://www.imdb.com/title/tt1951265/>,    # The Hunger Games: Mockingjay - Part 1
+                       <https://www.imdb.com/title/tt1247690/>,    # Serena
+                       <https://www.imdb.com/title/tt1877832/>,    # X-Men: Days of Future Past
+                       <https://www.imdb.com/title/tt1951264/>,    # The Hunger Games: Catching Fire
+                       <https://www.imdb.com/title/tt0463960/>,    # The Devil You Know
+                       <https://www.imdb.com/title/tt1582507/>,    # House at the End of the Street
+                       <https://www.imdb.com/title/tt1321860/>,    # The Beaver
+                       <https://www.imdb.com/title/tt1758692/>,    # Like Crazy
+                       <https://www.imdb.com/title/tt3205676/>,    # 14 Actors Acting
+                       <https://www.imdb.com/title/tt1399683/>,    # Winter's Bone
+                       <https://www.imdb.com/title/tt0926732/>,    # The Bill Engvall Show
+                       <https://www.imdb.com/title/tt1068641/>,    # The Burning Plain
+                       <https://www.imdb.com/title/tt1014806/>,    # The Poker House
+                       <https://www.imdb.com/title/tt0828393/>,    # Garden Party
+                       <https://www.imdb.com/title/tt0412175/>,    # Medium
+                       <https://www.imdb.com/title/tt0876236/>,    # Not Another High School Show
+                       <https://www.imdb.com/title/tt0368479/>,    # Cold Case
+                       <https://www.imdb.com/title/tt0497893/>,    # Company Town
+                       <https://www.imdb.com/title/tt0312172/> ; # Monk
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "122 wins & 203 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Don't Look Up)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "25000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1886371865/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2225369/mediaviewer/rm3261901058/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm3329009922/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm4285311234/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm2018032130/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm2118695426/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm1934146050/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm1351843842/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm142963713/>,
+                 <https://www.imdb.com/name/nm2225369/mediaviewer/rm3726605313/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1392170/> a schema:Movie ;
+    schema:name "The Hunger Games" ;
+    schema:url <https://www.imdb.com/title/tt1392170/> .
+
+<https://www.imdb.com/title/tt1045658/> a schema:Movie ;
+    schema:name "Silver Linings Playbook" ;
+    schema:url <https://www.imdb.com/title/tt1045658/> .
+
+<https://www.imdb.com/title/tt1270798/> a schema:Movie ;
+    schema:name "X-Men: First Class" ;
+    schema:url <https://www.imdb.com/title/tt1270798/> .
+
+<https://www.imdb.com/title/tt1800241/> a schema:Movie ;
+    schema:name "American Hustle" ;
+    schema:url <https://www.imdb.com/title/tt1800241/> .
+
+<https://www.imdb.com/title/tt11286314/> a schema:Movie ;
+    schema:name "Don't Look Up" ;
+    schema:url <https://www.imdb.com/title/tt11286314/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# X-Men: Dark Phoenix (2019)
+<https://www.imdb.com/title/tt6565702/> a schema:Movie ;
+    schema:name "X-Men: Dark Phoenix" ;
+    schema:url <https://www.imdb.com/title/tt6565702/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Raven"
+    ] .
+
+# Dior: Joy (2018)
+<https://www.imdb.com/title/tt8934082/> a schema:Movie ;
+    schema:name "Dior: Joy" ;
+    schema:url <https://www.imdb.com/title/tt8934082/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Woman"
+    ] .
+
+# Red Sparrow (2018)
+<https://www.imdb.com/title/tt2873282/> a schema:Movie ;
+    schema:name "Red Sparrow" ;
+    schema:url <https://www.imdb.com/title/tt2873282/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Dominika Egorova"
+    ] .
+
+# Mother! (2017)
+<https://www.imdb.com/title/tt5109784/> a schema:Movie ;
+    schema:name "Mother!" ;
+    schema:url <https://www.imdb.com/title/tt5109784/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Mother"
+    ] .
+
+# Passengers (2016)
+<https://www.imdb.com/title/tt1355644/> a schema:Movie ;
+    schema:name "Passengers" ;
+    schema:url <https://www.imdb.com/title/tt1355644/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Aurora Lane"
+    ] .
+
+# X-Men: Apocalypse (2016)
+<https://www.imdb.com/title/tt3385516/> a schema:Movie ;
+    schema:name "X-Men: Apocalypse" ;
+    schema:url <https://www.imdb.com/title/tt3385516/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Raven"
+    ] .
+
+# Joy (2015)
+<https://www.imdb.com/title/tt2446980/> a schema:Movie ;
+    schema:name "Joy" ;
+    schema:url <https://www.imdb.com/title/tt2446980/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Joy"
+    ] .
+
+# The Hunger Games: Mockingjay - Part 2 (2015)
+<https://www.imdb.com/title/tt1951266/> a schema:Movie ;
+    schema:name "The Hunger Games: Mockingjay - Part 2" ;
+    schema:url <https://www.imdb.com/title/tt1951266/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Katniss Everdeen"
+    ] .
+
+# The Hunger Games: Mockingjay - Part 1 (2014)
+<https://www.imdb.com/title/tt1951265/> a schema:Movie ;
+    schema:name "The Hunger Games: Mockingjay - Part 1" ;
+    schema:url <https://www.imdb.com/title/tt1951265/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Katniss Everdeen"
+    ] .
+
+# Serena (2014)
+<https://www.imdb.com/title/tt1247690/> a schema:Movie ;
+    schema:name "Serena" ;
+    schema:url <https://www.imdb.com/title/tt1247690/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Serena Pemberton"
+    ] .
+
+# X-Men: Days of Future Past (2014)
+<https://www.imdb.com/title/tt1877832/> a schema:Movie ;
+    schema:name "X-Men: Days of Future Past" ;
+    schema:url <https://www.imdb.com/title/tt1877832/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Raven"
+    ] .
+
+# The Hunger Games: Catching Fire (2013)
+<https://www.imdb.com/title/tt1951264/> a schema:Movie ;
+    schema:name "The Hunger Games: Catching Fire" ;
+    schema:url <https://www.imdb.com/title/tt1951264/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Katniss Everdeen"
+    ] .
+
+# The Devil You Know (2013)
+<https://www.imdb.com/title/tt0463960/> a schema:Movie ;
+    schema:name "The Devil You Know" ;
+    schema:url <https://www.imdb.com/title/tt0463960/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Young Zoe"
+    ] .
+
+# House at the End of the Street (2012)
+<https://www.imdb.com/title/tt1582507/> a schema:Movie ;
+    schema:name "House at the End of the Street" ;
+    schema:url <https://www.imdb.com/title/tt1582507/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Elissa"
+    ] .
+
+# The Beaver (2011)
+<https://www.imdb.com/title/tt1321860/> a schema:Movie ;
+    schema:name "The Beaver" ;
+    schema:url <https://www.imdb.com/title/tt1321860/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Norah"
+    ] .
+
+# Like Crazy (2011)
+<https://www.imdb.com/title/tt1758692/> a schema:Movie ;
+    schema:name "Like Crazy" ;
+    schema:url <https://www.imdb.com/title/tt1758692/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Sam"
+    ] .
+
+# 14 Actors Acting (2010)
+<https://www.imdb.com/title/tt3205676/> a schema:Movie ;
+    schema:name "14 Actors Acting" ;
+    schema:url <https://www.imdb.com/title/tt3205676/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Actress"
+    ] .
+
+# Winter's Bone (2010)
+<https://www.imdb.com/title/tt1399683/> a schema:Movie ;
+    schema:name "Winter's Bone" ;
+    schema:url <https://www.imdb.com/title/tt1399683/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Ree"
+    ] .
+
+# The Bill Engvall Show (2007)
+<https://www.imdb.com/title/tt0926732/> a schema:Movie ;
+    schema:name "The Bill Engvall Show" ;
+    schema:url <https://www.imdb.com/title/tt0926732/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Lauren Pearson"
+    ] .
+
+# The Burning Plain (2008)
+<https://www.imdb.com/title/tt1068641/> a schema:Movie ;
+    schema:name "The Burning Plain" ;
+    schema:url <https://www.imdb.com/title/tt1068641/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Mariana"
+    ] .
+
+# The Poker House (2008)
+<https://www.imdb.com/title/tt1014806/> a schema:Movie ;
+    schema:name "The Poker House" ;
+    schema:url <https://www.imdb.com/title/tt1014806/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Agnes"
+    ] .
+
+# Garden Party (2008)
+<https://www.imdb.com/title/tt0828393/> a schema:Movie ;
+    schema:name "Garden Party" ;
+    schema:url <https://www.imdb.com/title/tt0828393/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Tiff"
+    ] .
+
+# Medium (2007)
+<https://www.imdb.com/title/tt0412175/> a schema:Movie ;
+    schema:name "Medium" ;
+    schema:url <https://www.imdb.com/title/tt0412175/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Young Allison"
+    ] .
+
+# Not Another High School Show (2007)
+<https://www.imdb.com/title/tt0876236/> a schema:Movie ;
+    schema:name "Not Another High School Show" ;
+    schema:url <https://www.imdb.com/title/tt0876236/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Frantic Girl"
+    ] .
+
+# Cold Case (2007)
+<https://www.imdb.com/title/tt0368479/> a schema:Movie ;
+    schema:name "Cold Case" ;
+    schema:url <https://www.imdb.com/title/tt0368479/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Abby Bradford - 2007"
+    ] .
+
+# Company Town (2006)
+<https://www.imdb.com/title/tt0497893/> a schema:Movie ;
+    schema:name "Company Town" ;
+    schema:url <https://www.imdb.com/title/tt0497893/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Caitlin"
+    ] .
+
+# Monk (2006)
+<https://www.imdb.com/title/tt0312172/> a schema:Movie ;
+    schema:name "Monk" ;
+    schema:url <https://www.imdb.com/title/tt0312172/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2225369/> ;
+        schema:characterName "Mascot"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1886371865/> a schema:VideoObject ;
+        schema:name "Jennifer Lawrence | Career Retrospective" ;
+        schema:description "Take a closer look at the various roles Jennifer Lawrence has played throughout her acting career." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1886371865/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDg1YTU0NmMtY2QxYi00NzhmLThkMjEtODk4YzJiODg1MDg2XkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M7S"^^xsd:duration ;
+        schema:uploadDate "2021-08-12T03:23:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTU3NDE5MDQ4MV5BMl5BanBnXkFtZTgwMzE5ODQ3MDI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTU3NDE5MDQ4MV5BMl5BanBnXkFtZTgwMzE5ODQ3MDI@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence at an event for Passengers (2016)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1284"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm3261901058/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGM4MzIyOTYtMmY2NS00YWE3LTljNzgtY2JlMGY4NWU3Y2M1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert Pattinson and Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "3771"^^xsd:integer ;
+    schema:width "5668"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm3329009922/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzk0OWEwNTQtYTNhOS00MTZmLWI2MDctMTQxZDcwN2IwYTFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sissy Spacek and Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "4024"^^xsd:integer ;
+    schema:width "6048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm4285311234/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTRkZDUzOGEtZjk4OC00Y2VhLTgyNjItYzcxNTJhMTYyYTVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "4024"^^xsd:integer ;
+    schema:width "6048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm2018032130/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWM2NjU1ZTYtYzhlMC00ODE0LWJjZTMtNmJkNjI2ZmI0ODU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm2118695426/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2RlNWQ4YmYtZGIyNy00NTFlLTlmYmEtNTk3M2Q3MjE5NTdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert Pattinson and Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "2155"^^xsd:integer ;
+    schema:width "2873"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm1934146050/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWExY2Q1NDMtZjM0MC00YWFlLTk2MzQtMTUzZDQzYjdkMWUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "4024"^^xsd:integer ;
+    schema:width "6048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm1351843842/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2QxMTU3YjItMWY1Yi00OWNkLTk5NWMtY2QzOTA2ZDg4MjJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Die My Love (2025)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3996"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm142963713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWQ2ZWJiMzktODM2Yi00YmE3LWI0M2QtY2Y3Mjk1MTEzMjQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Serena (2014)" ;
+    schema:height "369"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2225369/mediaviewer/rm3726605313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGFjZmNiMzgtY2RhZi00MDMxLTg4MDYtOTY2OTczYjMwNTVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Lawrence in Joy (2015)" ;
+    schema:height "728"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

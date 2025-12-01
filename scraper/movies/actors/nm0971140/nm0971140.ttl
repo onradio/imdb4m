@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0971140/> a schema:Person ;
+    schema:name "Clive Pearse" ;
+    schema:url <https://www.imdb.com/name/nm0971140/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Clive Pearse. Actor: Shrek. Clive Pearse was born in England, UK. He is known for Shrek (2001), M.U.G.E.N (1999) and The Incident at the Bergen School (2023)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTMxNTQ2MjAwNV5BMl5BanBnXkFtZTYwNjIwNDA3._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0126029/>,    # Shrek
+                       <https://www.imdb.com/title/tt12494574/> ; # M.U.G.E.N
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0971140/mediaviewer/rm2199296000/>,
+                 <https://www.imdb.com/name/nm0971140/mediaviewer/rm2148964352/>,
+                 <https://www.imdb.com/name/nm0971140/mediaviewer/rm2400622592/>,
+                 <https://www.imdb.com/name/nm0971140/mediaviewer/rm2216073216/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shrek (2001)
+<https://www.imdb.com/title/tt0126029/> a schema:Movie ;
+    schema:name "Shrek" ;
+    schema:url <https://www.imdb.com/title/tt0126029/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971140/> ;
+        schema:characterName "Ogre Hunter"
+    ] .
+
+# M.U.G.E.N (1999)
+<https://www.imdb.com/title/tt12494574/> a schema:Movie ;
+    schema:name "M.U.G.E.N" ;
+    schema:url <https://www.imdb.com/title/tt12494574/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0971140/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTMxNTQ2MjAwNV5BMl5BanBnXkFtZTYwNjIwNDA3._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxNTQ2MjAwNV5BMl5BanBnXkFtZTYwNjIwNDA3._V1_.jpg> ;
+    schema:caption "Clive Pearse in HGTV Design Star (2006)" ;
+    schema:height "673"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971140/mediaviewer/rm2199296000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ1NTIwNzcwOV5BMl5BanBnXkFtZTYwOTIwNDA3._V1_.jpg> ;
+    schema:caption "Clive Pearse in HGTV Design Star (2006)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971140/mediaviewer/rm2148964352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMDYzMzc4MV5BMl5BanBnXkFtZTYwODMwNDA3._V1_.jpg> ;
+    schema:caption "Clive Pearse in HGTV Design Star (2006)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971140/mediaviewer/rm2400622592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc3NTQwODAzOV5BMl5BanBnXkFtZTYwMTQwNDA3._V1_.jpg> ;
+    schema:caption "Clive Pearse in HGTV Design Star (2006)" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0971140/mediaviewer/rm2216073216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxNTQ2MjAwNV5BMl5BanBnXkFtZTYwNjIwNDA3._V1_.jpg> ;
+    schema:caption "Clive Pearse in HGTV Design Star (2006)" ;
+    schema:height "673"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

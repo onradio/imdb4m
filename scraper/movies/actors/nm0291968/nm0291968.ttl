@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0291968/> a schema:Person ;
+    schema:name "Myriam Emilie Francois" ;
+    schema:url <https://www.imdb.com/name/nm0291968/> ;
+    schema:birthDate "1982-12-20"^^xsd:date ;
+    schema:jobTitle "Producer", "Actress", "Director" ;
+    schema:alternateName "Myriam" ;
+    schema:description "Myriam Emilie Francois. Actress: Sense and Sensibility. Myriam Emilie Francois was born on 20 December 1982 in Camden, London, England, UK. She is a producer and actress, known for Sense and Sensibility (1995), Paws (1997) and Finding Alaa (2023)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Camden, London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0185542/>,    # New Year's Day
+                       <https://www.imdb.com/title/tt0119870/>,    # Paws
+                       <https://www.imdb.com/title/tt0114388/> ; # Sense and Sensibility
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0291968/mediaviewer/rm2584656128/>,
+                 <https://www.imdb.com/name/nm0291968/mediaviewer/rm4179201536/>,
+                 <https://www.imdb.com/name/nm0291968/mediaviewer/rm3273231872/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# New Year's Day (2000)
+<https://www.imdb.com/title/tt0185542/> a schema:Movie ;
+    schema:name "New Year's Day" ;
+    schema:url <https://www.imdb.com/title/tt0185542/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291968/> ;
+        schema:characterName "Heather"
+    ] .
+
+# Paws (1997)
+<https://www.imdb.com/title/tt0119870/> a schema:Movie ;
+    schema:name "Paws" ;
+    schema:url <https://www.imdb.com/title/tt0119870/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291968/> ;
+        schema:characterName "Samantha"
+    ] .
+
+# Sense and Sensibility (1995)
+<https://www.imdb.com/title/tt0114388/> a schema:Movie ;
+    schema:name "Sense and Sensibility" ;
+    schema:url <https://www.imdb.com/title/tt0114388/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291968/> ;
+        schema:characterName "Margaret Dashwood"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0291968/mediaviewer/rm2584656128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzMxODg2MjU5MF5BMl5BanBnXkFtZTcwNjQ3MTE0NQ@@._V1_.jpg> ;
+    schema:caption "Emma Thompson, Kate Winslet, and Myriam Emilie Francois in Sense and Sensibility (1995)" ;
+    schema:height "1373"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0291968/mediaviewer/rm4179201536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTA0NDExMDA2Nl5BMl5BanBnXkFtZTcwNDg2MDAxMw@@._V1_.jpg> ;
+    schema:caption "Emma Thompson, Kate Winslet, Myriam Emilie Francois, and Greg Wise in Sense and Sensibility (1995)" ;
+    schema:height "1356"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0291968/mediaviewer/rm3273231872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3NTUwNjI0NV5BMl5BanBnXkFtZTcwNTQ3MDAxMw@@._V1_.jpg> ;
+    schema:caption "Emma Thompson, Kate Winslet, Myriam Emilie Francois, and Gemma Jones in Sense and Sensibility (1995)" ;
+    schema:height "1342"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0537447/> a schema:Person ;
+    schema:name "Leslie Maier" ;
+    schema:url <https://www.imdb.com/name/nm0537447/> ;
+    schema:jobTitle "Additional Crew", "Actress" ;
+    schema:description "Leslie Maier. Additional Crew: The Naked Gun: From the Files of Police Squad!. Leslie Maier is known for The Naked Gun: From the Files of Police Squad! (1988), The Naked Gun 2½: The Smell of Fear (1991) and Taxi (1978)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113071/>,    # First Knight
+                       <https://www.imdb.com/title/tt0102510/>,    # The Naked Gun 2½: The Smell of Fear
+                       <https://www.imdb.com/title/tt0095705/> . # The Naked Gun: From the Files of Police Squad!
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# First Knight (1995)
+<https://www.imdb.com/title/tt0113071/> a schema:Movie ;
+    schema:name "First Knight" ;
+    schema:url <https://www.imdb.com/title/tt0113071/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0537447/> ;
+        schema:characterName "Wedding Guest #2"
+    ] .
+
+# The Naked Gun 2½: The Smell of Fear (1991)
+<https://www.imdb.com/title/tt0102510/> a schema:Movie ;
+    schema:name "The Naked Gun 2½: The Smell of Fear" ;
+    schema:url <https://www.imdb.com/title/tt0102510/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0537447/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# The Naked Gun: From the Files of Police Squad! (1988)
+<https://www.imdb.com/title/tt0095705/> a schema:Movie ;
+    schema:name "The Naked Gun: From the Files of Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0095705/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0537447/> ;
+        schema:characterName "'Weird Leslie'"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

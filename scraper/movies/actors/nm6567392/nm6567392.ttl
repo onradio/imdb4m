@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6567392/> a schema:Person ;
+    schema:name "Bonnie Cross" ;
+    schema:url <https://www.imdb.com/name/nm6567392/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Bonnie Cross. Actress: Boyhood. Bonnie Cross is known for Boyhood (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1065073/> ;    # Boyhood
+
+
+    schema:video <https://www.imdb.com/video/vi1306504217/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyhood (2014)
+<https://www.imdb.com/title/tt1065073/> a schema:Movie ;
+    schema:name "Boyhood" ;
+    schema:url <https://www.imdb.com/title/tt1065073/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6567392/> ;
+        schema:characterName "Teacher"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1306504217/> a schema:VideoObject ;
+        schema:name "Trailer #2" ;
+        schema:description "Filmed over short periods from 2002 to 2013, Boyhood is a ground-breaking cinematic experience covering 12 years in the life of a family. At the centre is Mason, who with his sister Samantha, is taken on an emotional and transcendent journey through the years, from childhood to adulthood." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1306504217/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTY2NjA0MjI0OF5BMl5BanBnXkFtZTgwMzkwMDYyMzE@._V1_.jpg" ;
+        schema:duration "PT1M46S"^^xsd:duration ;
+        schema:uploadDate "2014-07-19T11:29:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

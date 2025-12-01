@@ -1,0 +1,219 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0824527/> a schema:Person ;
+    schema:name "Don Steele" ;
+    schema:url <https://www.imdb.com/name/nm0824527/> ;
+    schema:birthDate "1936-04-01"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "The Real Don Steele", "Donald Steele Revert" ;
+    schema:description "Don Steele. Actor: Death Race 2000. Don Steele was born on 1 April 1936 in Hollywood, California, USA. He was an actor, known for Death Race 2000 (1975), Gremlins (1984) and Rock 'n' Roll High School (1979). He was married to Shaune McNamara Steele. He died on 5 August 1997 in Hollywood, California, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTkyY2RiMWEtMjI4MS00MDJhLWFhOWUtZDkxN2JkYTcyZDM4XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hollywood, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0072856/>,    # Death Race 2000
+                       <https://www.imdb.com/title/tt0076100/>,    # Grand Theft Auto
+                       <https://www.imdb.com/title/tt0079813/>,    # Rock 'n' Roll High School
+                       <https://www.imdb.com/title/tt0087363/>,    # Gremlins
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0108902/>,    # Rebel Highway
+                       <https://www.imdb.com/title/tt0098948/>,    # Wings
+                       <https://www.imdb.com/title/tt0098005/>,    # Nowhere to Run
+                       <https://www.imdb.com/title/tt0083869/>,    # Eating Raoul
+                       <https://www.imdb.com/title/tt0071392/>,    # The Day the Earth Moved
+                       <https://www.imdb.com/title/tt0070743/>,    # The Student Teachers
+                       <https://www.imdb.com/title/tt0062569/>,    # Here Come the Brides
+                       <https://www.imdb.com/title/tt0063877/>,    # Bracken's World
+                       <https://www.imdb.com/title/tt0063671/>,    # Targets
+                       <https://www.imdb.com/title/tt0057733/> ; # Bewitched
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3029053465/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0824527/mediaviewer/rm412037632/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0072856/> a schema:Movie ;
+    schema:name "Death Race 2000" ;
+    schema:url <https://www.imdb.com/title/tt0072856/> .
+
+<https://www.imdb.com/title/tt0076100/> a schema:Movie ;
+    schema:name "Grand Theft Auto" ;
+    schema:url <https://www.imdb.com/title/tt0076100/> .
+
+<https://www.imdb.com/title/tt0079813/> a schema:Movie ;
+    schema:name "Rock 'n' Roll High School" ;
+    schema:url <https://www.imdb.com/title/tt0079813/> .
+
+<https://www.imdb.com/title/tt0087363/> a schema:Movie ;
+    schema:name "Gremlins" ;
+    schema:url <https://www.imdb.com/title/tt0087363/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rebel Highway (1994)
+<https://www.imdb.com/title/tt0108902/> a schema:Movie ;
+    schema:name "Rebel Highway" ;
+    schema:url <https://www.imdb.com/title/tt0108902/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "XRAY DJ"
+    ] .
+
+# Wings (1993)
+<https://www.imdb.com/title/tt0098948/> a schema:Movie ;
+    schema:name "Wings" ;
+    schema:url <https://www.imdb.com/title/tt0098948/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Radio Announcer"
+    ] .
+
+# Nowhere to Run (1989)
+<https://www.imdb.com/title/tt0098005/> a schema:Movie ;
+    schema:name "Nowhere to Run" ;
+    schema:url <https://www.imdb.com/title/tt0098005/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Charlie Caddo"
+    ] .
+
+# Eating Raoul (1982)
+<https://www.imdb.com/title/tt0083869/> a schema:Movie ;
+    schema:name "Eating Raoul" ;
+    schema:url <https://www.imdb.com/title/tt0083869/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Howard Swine - Swingers Party Host"
+    ] .
+
+# The Day the Earth Moved (1974)
+<https://www.imdb.com/title/tt0071392/> a schema:Movie ;
+    schema:name "The Day the Earth Moved" ;
+    schema:url <https://www.imdb.com/title/tt0071392/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Disc Jockey"
+    ] .
+
+# The Student Teachers (1973)
+<https://www.imdb.com/title/tt0070743/> a schema:Movie ;
+    schema:name "The Student Teachers" ;
+    schema:url <https://www.imdb.com/title/tt0070743/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "(as The Real Don Steele)"
+    ] .
+
+# Here Come the Brides (1970)
+<https://www.imdb.com/title/tt0062569/> a schema:Movie ;
+    schema:name "Here Come the Brides" ;
+    schema:url <https://www.imdb.com/title/tt0062569/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "1st Logger"
+    ] .
+
+# Bracken's World (1970)
+<https://www.imdb.com/title/tt0063877/> a schema:Movie ;
+    schema:name "Bracken's World" ;
+    schema:url <https://www.imdb.com/title/tt0063877/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Don Steele"
+    ] .
+
+# Targets (1968)
+<https://www.imdb.com/title/tt0063671/> a schema:Movie ;
+    schema:name "Targets" ;
+    schema:url <https://www.imdb.com/title/tt0063671/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Deejay on Radio"
+    ] .
+
+# Bewitched (1966)
+<https://www.imdb.com/title/tt0057733/> a schema:Movie ;
+    schema:name "Bewitched" ;
+    schema:url <https://www.imdb.com/title/tt0057733/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0824527/> ;
+        schema:characterName "Don Steele"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3029053465/> a schema:VideoObject ;
+        schema:name "Death Race 2000" ;
+        schema:description "Clip: Machine Gun Joe" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3029053465/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzdlYTU0YjEtYzExNi00ZWFlLTlkNzUtNGQ5NDA0MTEyODRlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M9S"^^xsd:duration ;
+        schema:uploadDate "2015-05-13T04:20:27Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTkyY2RiMWEtMjI4MS00MDJhLWFhOWUtZDkxN2JkYTcyZDM4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyY2RiMWEtMjI4MS00MDJhLWFhOWUtZDkxN2JkYTcyZDM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Don Steele in Death Race 2000 (1975)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0824527/mediaviewer/rm412037632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyY2RiMWEtMjI4MS00MDJhLWFhOWUtZDkxN2JkYTcyZDM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Don Steele in Death Race 2000 (1975)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

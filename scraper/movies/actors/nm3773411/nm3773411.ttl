@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3773411/> a schema:Person ;
+    schema:name "Allan Guilherme" ;
+    schema:url <https://www.imdb.com/name/nm3773411/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Allan Guilherme. Actor: Elite Squad. Allan Guilherme is known for Elite Squad (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0861739/> .    # Elite Squad
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Elite Squad (2007)
+<https://www.imdb.com/title/tt0861739/> a schema:Movie ;
+    schema:name "Elite Squad" ;
+    schema:url <https://www.imdb.com/title/tt0861739/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3773411/> ;
+        schema:characterName "Romerito"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

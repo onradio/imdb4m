@@ -1,0 +1,91 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0466733/> a schema:Person ;
+    schema:name "Danny Kortchmar" ;
+    schema:url <https://www.imdb.com/name/nm0466733/> ;
+    schema:birthDate "1946-04-06"^^xsd:date ;
+    schema:jobTitle "Music Department", "Composer", "Actor" ;
+    schema:alternateName "Danny Kootch", "Kooch" ;
+    schema:description "Danny Kortchmar. Soundtrack: The Bodyguard. \"Kooch\" is an accomplished New York-based session guitarist. He was featured on just about every Carole King album of the late '60s and early '70s. Featured on James Taylor's Sweet Baby James (he was a member of a band called Flying Machine with a then-unknown Taylor. Remember the line \"Sweet dreams and Flying Machines in pieces on the ground\" from that album?).\n\nDid session work with..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAyMTU3OTMyN15BMl5BanBnXkFtZTcwODI4MzczNA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt34868333/>,    # Ivan Neville: Not Just Another Girl
+                       <https://www.imdb.com/title/tt0088258/> ; # This Is Spinal Tap
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0466733/mediaviewer/rm3661858048/>,
+                 <https://www.imdb.com/name/nm0466733/mediaviewer/rm574915840/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ivan Neville: Not Just Another Girl (1988)
+<https://www.imdb.com/title/tt34868333/> a schema:Movie ;
+    schema:name "Ivan Neville: Not Just Another Girl" ;
+    schema:url <https://www.imdb.com/title/tt34868333/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0466733/> ;
+        schema:characterName "Danny Kortchmar"
+    ] .
+
+# This Is Spinal Tap (1984)
+<https://www.imdb.com/title/tt0088258/> a schema:Movie ;
+    schema:name "This Is Spinal Tap" ;
+    schema:url <https://www.imdb.com/title/tt0088258/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0466733/> ;
+        schema:characterName "Ronnie Pudding"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAyMTU3OTMyN15BMl5BanBnXkFtZTcwODI4MzczNA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyMTU3OTMyN15BMl5BanBnXkFtZTcwODI4MzczNA@@._V1_.jpg> ;
+    schema:caption "Danny Kortchmar at an event for Troubadours: Carole King/James Taylor & the Rise of the Singer-Songwriter (2011)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1289"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0466733/mediaviewer/rm3661858048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NDEzNDg5OV5BMl5BanBnXkFtZTcwOTE4MzczNA@@._V1_.jpg> ;
+    schema:caption "Carole King, Danny Kortchmar, and Leland Sklar at an event for Troubadours: Carole King/James Taylor & the Rise of the Singer-Songwriter (2011)" ;
+    schema:height "1387"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0466733/mediaviewer/rm574915840/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyMTU3OTMyN15BMl5BanBnXkFtZTcwODI4MzczNA@@._V1_.jpg> ;
+    schema:caption "Danny Kortchmar at an event for Troubadours: Carole King/James Taylor & the Rise of the Singer-Songwriter (2011)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1289"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0466733/>
+    schema:sameAs <https://www.facebook.com/dkootch> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

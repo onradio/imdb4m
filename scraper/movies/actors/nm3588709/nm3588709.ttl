@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3588709/> a schema:Person ;
+    schema:name "Mitsuko Ishida" ;
+    schema:url <https://www.imdb.com/name/nm3588709/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Mitsuko Ishida. Actress: My Neighbour Totoro. Mitsuko Ishida is known for My Neighbour Totoro (1988), Star Musketeer Bismark (1984) and Lum the Invader Girl (1981)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0096283/>,    # My Neighbour Totoro
+                       <https://www.imdb.com/title/tt0090479/>,    # Maison Ikkoku
+                       <https://www.imdb.com/title/tt0093890/>,    # Rumik World: Laughing Target
+                       <https://www.imdb.com/title/tt0081954/>,    # Lum the Invader Girl
+                       <https://www.imdb.com/title/tt0088507/>,    # Dirty Pair: From Lovely Angels with Love
+                       <https://www.imdb.com/title/tt0294181/> . # Star Musketeer Bismark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# My Neighbour Totoro (1988)
+<https://www.imdb.com/title/tt0096283/> a schema:Movie ;
+    schema:name "My Neighbour Totoro" ;
+    schema:url <https://www.imdb.com/title/tt0096283/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Maison Ikkoku (1986)
+<https://www.imdb.com/title/tt0090479/> a schema:Movie ;
+    schema:name "Maison Ikkoku" ;
+    schema:url <https://www.imdb.com/title/tt0090479/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName ""
+    ] .
+
+# Rumik World: Laughing Target (1987)
+<https://www.imdb.com/title/tt0093890/> a schema:Movie ;
+    schema:name "Rumik World: Laughing Target" ;
+    schema:url <https://www.imdb.com/title/tt0093890/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName "Female Student C"
+    ] .
+
+# Lum the Invader Girl (1985)
+<https://www.imdb.com/title/tt0081954/> a schema:Movie ;
+    schema:name "Lum the Invader Girl" ;
+    schema:url <https://www.imdb.com/title/tt0081954/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName ""
+    ] .
+
+# Dirty Pair: From Lovely Angels with Love (1985)
+<https://www.imdb.com/title/tt0088507/> a schema:Movie ;
+    schema:name "Dirty Pair: From Lovely Angels with Love" ;
+    schema:url <https://www.imdb.com/title/tt0088507/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName "Maid"
+    ] .
+
+# Star Musketeer Bismark (1985)
+<https://www.imdb.com/title/tt0294181/> a schema:Movie ;
+    schema:name "Star Musketeer Bismark" ;
+    schema:url <https://www.imdb.com/title/tt0294181/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3588709/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

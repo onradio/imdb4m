@@ -1,0 +1,298 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0812307/> a schema:Person ;
+    schema:name "Peter Sohn" ;
+    schema:url <https://www.imdb.com/name/nm0812307/> ;
+    schema:birthDate "1977-10-18"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Animation Department" ;
+    schema:description "Peter Sohn. Actor: The Good Dinosaur. Peter Sohn joined Pixar Animation Studios in September 2000, and began working in both the art and story departments for the Academy Award®-winning \"Finding Nemo.\" Sohn continued on to work on \"The Incredibles\" in the art, story, and animation departments. He focused on animating members of the Parr family and worked on many memorable scenes from the film. He also worked as a story..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk0NzcwMzc1MF5BMl5BanBnXkFtZTcwMTY2NjkxOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11½″ (1.82 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1979388/>,    # The Good Dinosaur
+                       <https://www.imdb.com/title/tt0382932/>,    # Ratatouille
+                       <https://www.imdb.com/title/tt1453405/>,    # Monsters University
+                       <https://www.imdb.com/title/tt15789038/>,    # Elemental
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2446040/>,    # Toy Story of Terror
+                       <https://www.imdb.com/title/tt2833674/>,    # Disney Infinity
+                       <https://www.imdb.com/title/tt3116154/>,    # Party Central
+                       <https://www.imdb.com/title/tt2267146/>,    # Kinect Rush: A Disney-Pixar Adventure
+                       <https://www.imdb.com/title/tt2033372/>,    # Toy Story Toons: Small Fry
+                       <https://www.imdb.com/title/tt1437330/>,    # Tracy
+                       <https://www.imdb.com/title/tt1552624/>,    # George and A.J.
+                       <https://www.imdb.com/title/tt1841664/>,    # It Starts with Murder!
+                       <https://www.imdb.com/title/tt1384816/>,    # Mater's Tall Tales
+                       <https://www.imdb.com/title/tt1134859/>,    # Your Friend the Rat
+                       <https://www.imdb.com/title/tt1230569/>,    # Ratatouille: The Video Game
+                       <https://www.imdb.com/title/tt0317705/> ; # The Incredibles
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 13 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1034797593/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0812307/mediaviewer/rm3131611392/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm1178275073/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm1882918145/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm1664814337/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm305859841/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm2972650753/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm2871987457/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm2855210241/>,
+                 <https://www.imdb.com/name/nm0812307/mediaviewer/rm3879199488/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1979388/> a schema:Movie ;
+    schema:name "The Good Dinosaur" ;
+    schema:url <https://www.imdb.com/title/tt1979388/> .
+
+<https://www.imdb.com/title/tt0382932/> a schema:Movie ;
+    schema:name "Ratatouille" ;
+    schema:url <https://www.imdb.com/title/tt0382932/> .
+
+<https://www.imdb.com/title/tt1453405/> a schema:Movie ;
+    schema:name "Monsters University" ;
+    schema:url <https://www.imdb.com/title/tt1453405/> .
+
+<https://www.imdb.com/title/tt15789038/> a schema:Movie ;
+    schema:name "Elemental" ;
+    schema:url <https://www.imdb.com/title/tt15789038/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Toy Story of Terror (2013)
+<https://www.imdb.com/title/tt2446040/> a schema:Movie ;
+    schema:name "Toy Story of Terror" ;
+    schema:url <https://www.imdb.com/title/tt2446040/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Transitron"
+    ] .
+
+# Disney Infinity (2013)
+<https://www.imdb.com/title/tt2833674/> a schema:Movie ;
+    schema:name "Disney Infinity" ;
+    schema:url <https://www.imdb.com/title/tt2833674/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Squishy"
+    ] .
+
+# Party Central (2013)
+<https://www.imdb.com/title/tt3116154/> a schema:Movie ;
+    schema:name "Party Central" ;
+    schema:url <https://www.imdb.com/title/tt3116154/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Squishy"
+    ] .
+
+# Kinect Rush: A Disney-Pixar Adventure (2012)
+<https://www.imdb.com/title/tt2267146/> a schema:Movie ;
+    schema:name "Kinect Rush: A Disney-Pixar Adventure" ;
+    schema:url <https://www.imdb.com/title/tt2267146/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Emile"
+    ] .
+
+# Toy Story Toons: Small Fry (2011)
+<https://www.imdb.com/title/tt2033372/> a schema:Movie ;
+    schema:name "Toy Story Toons: Small Fry" ;
+    schema:url <https://www.imdb.com/title/tt2033372/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Recycle Ben"
+    ] .
+
+# Tracy (2009)
+<https://www.imdb.com/title/tt1437330/> a schema:Movie ;
+    schema:name "Tracy" ;
+    schema:url <https://www.imdb.com/title/tt1437330/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Blog Creator"
+    ] .
+
+# George and A.J. (2009)
+<https://www.imdb.com/title/tt1552624/> a schema:Movie ;
+    schema:name "George and A.J." ;
+    schema:url <https://www.imdb.com/title/tt1552624/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Russell"
+    ] .
+
+# It Starts with Murder! (2009)
+<https://www.imdb.com/title/tt1841664/> a schema:Movie ;
+    schema:name "It Starts with Murder!" ;
+    schema:url <https://www.imdb.com/title/tt1841664/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Milton Dicker"
+    ] .
+
+# Mater's Tall Tales (2008)
+<https://www.imdb.com/title/tt1384816/> a schema:Movie ;
+    schema:name "Mater's Tall Tales" ;
+    schema:url <https://www.imdb.com/title/tt1384816/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Ito-San's Modify Crew"
+    ] .
+
+# Your Friend the Rat (2007)
+<https://www.imdb.com/title/tt1134859/> a schema:Movie ;
+    schema:name "Your Friend the Rat" ;
+    schema:url <https://www.imdb.com/title/tt1134859/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Emile"
+    ] .
+
+# Ratatouille: The Video Game (2007)
+<https://www.imdb.com/title/tt1230569/> a schema:Movie ;
+    schema:name "Ratatouille: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt1230569/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Emile"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0812307/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1034797593/> a schema:VideoObject ;
+        schema:name "Official Trailer 2" ;
+        schema:description "The story of Buzz Lightyear and his adventures to infinity and beyond." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1034797593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWUxM2QyZTctNjVkNi00ZTBjLTk2OTMtNzViMTI1ZThkODc0XkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT2M28S"^^xsd:duration ;
+        schema:uploadDate "2022-04-21T14:08:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk0NzcwMzc1MF5BMl5BanBnXkFtZTcwMTY2NjkxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0NzcwMzc1MF5BMl5BanBnXkFtZTcwMTY2NjkxOA@@._V1_.jpg> ;
+    schema:caption "Peter Sohn at an event for Ratatouille (2007)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1542"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm3131611392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA2MDg5NDcyM15BMl5BanBnXkFtZTYwNTU4NjM3._V1_.jpg> ;
+    schema:caption "Peter Sohn in Ratatouille (2007)" ;
+    schema:height "421"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm1178275073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzE0MjIzZWEtNTg1Yi00ZGQxLTg0NjMtZDVhYWVhNjIzODU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Peter Sohn" ;
+    schema:height "3234"^^xsd:integer ;
+    schema:width "2204"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm1882918145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjY3M2FjY2EtOTExNC00MTQ2LTkyNGQtNjM5ODdmMjg4MDUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Ream and Peter Sohn" ;
+    schema:height "3328"^^xsd:integer ;
+    schema:width "2256"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm1664814337/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjliZWJhYjMtM2I1Ni00N2VhLWFiOTItYTBmMGQwOWNlMjhjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Ream, Peter Sohn, Leah Lewis, and Mamoudou Athie at an event for Elemental (2023)" ;
+    schema:height "3532"^^xsd:integer ;
+    schema:width "5298"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm305859841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDMxNGNhYzQtNzQwYy00M2UxLTk1NDktMzkzNjAxOGQxNjgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Ream, Peter Sohn, Leah Lewis, and Mamoudou Athie at an event for Elemental (2023)" ;
+    schema:height "2456"^^xsd:integer ;
+    schema:width "3575"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm2972650753/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDI0YjNhMzQtZGY2OC00ZTc2LTljYzAtNjY5ZGYwNDQ5YmMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Ream, Peter Sohn, Leah Lewis, and Mamoudou Athie at an event for Elemental (2023)" ;
+    schema:height "2840"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm2871987457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk2NjliZGItMTJjYy00ZTdkLTlkYWMtMmNmZjg0NjAwNjA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Peter Sohn at an event for Elemental (2023)" ;
+    schema:height "2668"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm2855210241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTEyMWNkMjYtNmUwYi00N2U3LWE2YTktYTc3NjFhNjQ4YzQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Peter Sohn at an event for Elemental (2023)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2668"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0812307/mediaviewer/rm3879199488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM3NzM4NTE5M15BMl5BanBnXkFtZTgwOTA4NzkyNzE@._V1_.jpg> ;
+    schema:caption "Peter Sohn and Jeffrey Wright at an event for The Good Dinosaur (2015)" ;
+    schema:height "1369"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,54 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0401792/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Absurd" ;
+        schema:byArtist <https://www.imdb.com/name/nm1645866/> ; # Fluke
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Absurd" ;
+            schema:author <https://www.imdb.com/name/nm1645866/> # Fluke
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sensemaya" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sensemaya" ;
+            schema:composer <https://www.imdb.com/name/nm0720956/> # Silvestre Revueltas
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wrong Baby" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cells (Instrumental)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1896091/> ; # The Servant
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cells (Instrumental)" ;
+            schema:author <https://www.imdb.com/name/nm1896091/> # The Servant
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0720956/> a schema:Person ;
+    schema:name "Silvestre Revueltas" .
+<https://www.imdb.com/name/nm1645866/> a schema:Person ;
+    schema:name "Fluke" .
+<https://www.imdb.com/name/nm1896091/> a schema:Person ;
+    schema:name "The Servant" .
+# ==============================================================================

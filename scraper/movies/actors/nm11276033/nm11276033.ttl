@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11276033/> a schema:Person ;
+    schema:name "Anmol Vijay Bhatkal" ;
+    schema:url <https://www.imdb.com/name/nm11276033/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anmol Vijay Bhatkal. Actor: K.G.F. Anmol Vijay Bhatkal is known for K.G.F (2018), K.G.F: Chapter 2 (2022) and Padaka (2021)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7838252/> .    # K.G.F
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11276033/> ;
+        schema:characterName "Young Rocky"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

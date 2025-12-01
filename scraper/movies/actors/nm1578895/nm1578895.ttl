@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1578895/> a schema:Person ;
+    schema:name "Diabolo" ;
+    schema:url <https://www.imdb.com/name/nm1578895/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Diabolo. Actor: Before Sunset. Diabolo is known for Before Sunset (2004), Shooting Stars (2002) and Louis Page (1997)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0217955/>,    # Louis Page
+                       <https://www.imdb.com/title/tt0381681/>,    # Before Sunset
+                       <https://www.imdb.com/title/tt0295736/> . # Shooting Stars
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Louis Page (2005)
+<https://www.imdb.com/title/tt0217955/> a schema:Movie ;
+    schema:name "Louis Page" ;
+    schema:url <https://www.imdb.com/title/tt0217955/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1578895/> ;
+        schema:characterName "Un collègue d'Hervé"
+    ] .
+
+# Before Sunset (2004)
+<https://www.imdb.com/title/tt0381681/> a schema:Movie ;
+    schema:name "Before Sunset" ;
+    schema:url <https://www.imdb.com/title/tt0381681/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1578895/> ;
+        schema:characterName "Philippe"
+    ] .
+
+# Shooting Stars (2002)
+<https://www.imdb.com/title/tt0295736/> a schema:Movie ;
+    schema:name "Shooting Stars" ;
+    schema:url <https://www.imdb.com/title/tt0295736/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1578895/> ;
+        schema:characterName "L'habitué pizza N°1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

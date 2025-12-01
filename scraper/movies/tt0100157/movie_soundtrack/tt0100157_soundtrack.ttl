@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0100157/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Shotgun" ;
+        schema:byArtist <https://www.imdb.com/name/nm2616231/> ; # Jr. Walker and the All Stars
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shotgun" ;
+            schema:author <https://www.imdb.com/name/nm0907914/> # Junior Walker
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Concerto #1" ;
+        schema:byArtist <https://www.imdb.com/name/nm0508766/> ; # Liberace
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Concerto #1" ;
+            schema:author <https://www.imdb.com/name/nm0006318/> # Pyotr Ilyich Tchaikovsky
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Moonlight Sonata" ;
+        schema:byArtist <https://www.imdb.com/name/nm0508766/> ; # Liberace
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Moonlight Sonata" ;
+            schema:author <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Be Seeing You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0508766/> ; # Liberace
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Be Seeing You" ;
+            schema:author <https://www.imdb.com/name/nm0434655/>, # Irving Kahal
+                       <https://www.imdb.com/name/nm0006066/> # Sammy Fain
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Connection" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Connection" ;
+            schema:author <https://www.imdb.com/name/nm0343675/> # Larry Grossman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0006066/> a schema:Person ;
+    schema:name "Sammy Fain" .
+<https://www.imdb.com/name/nm0006318/> a schema:Person ;
+    schema:name "Pyotr Ilyich Tchaikovsky" .
+<https://www.imdb.com/name/nm0343675/> a schema:Person ;
+    schema:name "Larry Grossman" .
+<https://www.imdb.com/name/nm0434655/> a schema:Person ;
+    schema:name "Irving Kahal" .
+<https://www.imdb.com/name/nm0508766/> a schema:Person ;
+    schema:name "Liberace" .
+<https://www.imdb.com/name/nm0907914/> a schema:Person ;
+    schema:name "Junior Walker" .
+<https://www.imdb.com/name/nm2616231/> a schema:Person ;
+    schema:name "Jr. Walker and the All Stars" .
+# ==============================================================================

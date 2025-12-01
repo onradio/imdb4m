@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0092067/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Kimi wo Nosete" ;
+        schema:byArtist <https://www.imdb.com/name/nm1710521/> ; # Azumi Inoue
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kimi wo Nosete" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> ; # Joe Hisaishi
+            schema:lyricist <https://www.imdb.com/name/nm0594503/> # Hayao Miyazaki
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Moshimo Sora wo Tobetara" ;
+        schema:byArtist <https://www.imdb.com/name/nm1022450/> ; # Obata Yoko
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Moshimo Sora wo Tobetara" ;
+            schema:composer <https://www.imdb.com/name/nm3072539/> ; # Kyôhei Tsutsumi
+            schema:lyricist <https://www.imdb.com/name/nm1191929/> # Takashi Matsumoto
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0386749/> a schema:Person ;
+    schema:name "Joe Hisaishi" .
+<https://www.imdb.com/name/nm0594503/> a schema:Person ;
+    schema:name "Hayao Miyazaki" .
+<https://www.imdb.com/name/nm1022450/> a schema:Person ;
+    schema:name "Obata Yoko" .
+<https://www.imdb.com/name/nm1191929/> a schema:Person ;
+    schema:name "Takashi Matsumoto" .
+<https://www.imdb.com/name/nm1710521/> a schema:Person ;
+    schema:name "Azumi Inoue" .
+<https://www.imdb.com/name/nm3072539/> a schema:Person ;
+    schema:name "Kyôhei Tsutsumi" .
+# ==============================================================================

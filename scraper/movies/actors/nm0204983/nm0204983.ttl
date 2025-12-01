@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0204983/> a schema:Person ;
+    schema:name "Kimberlee M. Davis" ;
+    schema:url <https://www.imdb.com/name/nm0204983/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Kimberlee M. Davis. Actress: Big. Kimberlee M. Davis is known for Big (1988) and High School Spirits (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094737/>,    # Big
+                       <https://www.imdb.com/title/tt0239463/> . # High School Spirits
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Big (1988)
+<https://www.imdb.com/title/tt0094737/> a schema:Movie ;
+    schema:name "Big" ;
+    schema:url <https://www.imdb.com/title/tt0094737/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0204983/> ;
+        schema:characterName "Cynthia Benson"
+    ] .
+
+# High School Spirits (1986)
+<https://www.imdb.com/title/tt0239463/> a schema:Movie ;
+    schema:name "High School Spirits" ;
+    schema:url <https://www.imdb.com/title/tt0239463/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0204983/> ;
+        schema:characterName "Girl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,195 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0524726/> a schema:Person ;
+    schema:name "Bud Luckey" ;
+    schema:url <https://www.imdb.com/name/nm0524726/> ;
+    schema:birthDate "1934-07-28"^^xsd:date ;
+    schema:jobTitle "Actor", "Animation Department", "Art Department" ;
+    schema:alternateName "William Everett Luckey" ;
+    schema:description "Bud Luckey. Actor: Winnie the Pooh. Bud Luckey was an American animator, writer, director and voice actor from Montana known for his works at Pixar and Sesame Street. He directed and voiced the short film Boundin' before voicing Rick Dicker in The Incredibles and Jack-Jack Attack. He later voiced Chuckles from Toy Story 3 and Eeyore from Winnie the Pooh. He passed away in February 2018 due to an extended..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTgxNzc2MTQ1N15BMl5BanBnXkFtZTcwOTA3NjAyOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Billings, Montana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1449283/>,    # Winnie the Pooh
+                       <https://www.imdb.com/title/tt0317705/>,    # The Incredibles
+                       <https://www.imdb.com/title/tt0395479/>,    # Boundin'
+                       <https://www.imdb.com/title/tt0435761/>,    # Toy Story 3
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2833674/>,    # Disney Infinity
+                       <https://www.imdb.com/title/tt3602428/>,    # Disney Magical World
+                       <https://www.imdb.com/title/tt2371873/>,    # Mini Adventures of Winnie the Pooh
+                       <https://www.imdb.com/title/tt1850374/>,    # Toy Story Toons: Hawaiian Vacation
+                       <https://www.imdb.com/title/tt0455565/>,    # Jack-Jack Attack
+                       <https://www.imdb.com/title/tt0063951/> ; # Sesame Street
+
+
+    schema:video <https://www.imdb.com/video/vi1431542041/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0524726/mediaviewer/rm3294319616/>,
+                 <https://www.imdb.com/name/nm0524726/mediaviewer/rm3428537344/>,
+                 <https://www.imdb.com/name/nm0524726/mediaviewer/rm4133180416/>,
+                 <https://www.imdb.com/name/nm0524726/mediaviewer/rm1645325056/>,
+                 <https://www.imdb.com/name/nm0524726/mediaviewer/rm1714016768/>,
+                 <https://www.imdb.com/name/nm0524726/mediaviewer/rm1628547840/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1449283/> a schema:Movie ;
+    schema:name "Winnie the Pooh" ;
+    schema:url <https://www.imdb.com/title/tt1449283/> .
+
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> .
+
+<https://www.imdb.com/title/tt0395479/> a schema:Movie ;
+    schema:name "Boundin'" ;
+    schema:url <https://www.imdb.com/title/tt0395479/> .
+
+<https://www.imdb.com/title/tt0435761/> a schema:Movie ;
+    schema:name "Toy Story 3" ;
+    schema:url <https://www.imdb.com/title/tt0435761/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Disney Infinity (2013)
+<https://www.imdb.com/title/tt2833674/> a schema:Movie ;
+    schema:name "Disney Infinity" ;
+    schema:url <https://www.imdb.com/title/tt2833674/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Rick Dicker"
+    ] .
+
+# Disney Magical World (2013)
+<https://www.imdb.com/title/tt3602428/> a schema:Movie ;
+    schema:name "Disney Magical World" ;
+    schema:url <https://www.imdb.com/title/tt3602428/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Eeyore"
+    ] .
+
+# Mini Adventures of Winnie the Pooh (2011)
+<https://www.imdb.com/title/tt2371873/> a schema:Movie ;
+    schema:name "Mini Adventures of Winnie the Pooh" ;
+    schema:url <https://www.imdb.com/title/tt2371873/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Eeyore"
+    ] .
+
+# Toy Story Toons: Hawaiian Vacation (2011)
+<https://www.imdb.com/title/tt1850374/> a schema:Movie ;
+    schema:name "Toy Story Toons: Hawaiian Vacation" ;
+    schema:url <https://www.imdb.com/title/tt1850374/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Chuckles"
+    ] .
+
+# Jack-Jack Attack (2005)
+<https://www.imdb.com/title/tt0455565/> a schema:Movie ;
+    schema:name "Jack-Jack Attack" ;
+    schema:url <https://www.imdb.com/title/tt0455565/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Agent Rick Dicker"
+    ] .
+
+# Sesame Street (1972)
+<https://www.imdb.com/title/tt0063951/> a schema:Movie ;
+    schema:name "Sesame Street" ;
+    schema:url <https://www.imdb.com/title/tt0063951/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0524726/> ;
+        schema:characterName "Candy Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1431542041/> a schema:VideoObject ;
+        schema:name "Winnie the Pooh" ;
+        schema:description "While out looking for some honey, Winnie the Pooh is pulled into a quest to save Christopher Robin from an imaginary culprit." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1431542041/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk5ODExMDE3N15BMl5BanBnXkFtZTcwMjUwOTgwNA@@._V1_.jpg" ;
+        schema:duration "PT2M11S"^^xsd:duration ;
+        schema:uploadDate "2010-11-12T16:04:18Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTgxNzc2MTQ1N15BMl5BanBnXkFtZTcwOTA3NjAyOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxNzc2MTQ1N15BMl5BanBnXkFtZTcwOTA3NjAyOA@@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "1197"^^xsd:integer ;
+    schema:width "822"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm3294319616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGU1MGE0ZGUtYTUzMS00NWI4LTk4NTMtZWEyMGViYmRiYTVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "523"^^xsd:integer ;
+    schema:width "928"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm3428537344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTE4YjZmMmUtNTNlOS00YmY3LWIxYjUtYWVlZWJjODQ5YWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "1342"^^xsd:integer ;
+    schema:width "2046"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm4133180416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTk2ZWZlMDctZDJiYy00NmMwLWE5NzgtNmIxZTYxYzE0OTFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "384"^^xsd:integer ;
+    schema:width "615"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm1645325056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwMjU2MTU5N15BMl5BanBnXkFtZTcwODA3NjAyOA@@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm1714016768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3MjM3ODg2MV5BMl5BanBnXkFtZTgwNzE3MTE2MDE@._V1_.jpg> ;
+    schema:caption "Holly Hunter, Elizabeth Peña, Julianne Buescher, Sean Hayes, Jason Lee, Craig T. Nelson, Carlos Alazraqui, Lee Arenberg, Mackenzie Crook, Peter Kelamis, Bud Luckey, Joel McCrary, Kevin McNally, Joel Murray, Bill Nighy, Peter Sohn, Orion Acaba, Kevin Delaney, and Jared Butler in Disney Infinity (2013)" ;
+    schema:height "750"^^xsd:integer ;
+    schema:width "532"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0524726/mediaviewer/rm1628547840/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxNzc2MTQ1N15BMl5BanBnXkFtZTcwOTA3NjAyOA@@._V1_.jpg> ;
+    schema:caption "Bud Luckey" ;
+    schema:height "1197"^^xsd:integer ;
+    schema:width "822"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

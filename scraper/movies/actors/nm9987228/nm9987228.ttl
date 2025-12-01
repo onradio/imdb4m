@@ -1,0 +1,146 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9987228/> a schema:Person ;
+    schema:name "Archie Yates" ;
+    schema:url <https://www.imdb.com/name/nm9987228/> ;
+    schema:birthDate "2009-02-22"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Archie Yates. Actor: Jojo Rabbit. Archie Yates was born on 22 February 2009 in Edenbridge, Kent, England, UK. He is an actor, known for Jojo Rabbit (2019), Home Sweet Home Alone (2021) and Paper Birds (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZTY0OWNjNDYtNDgzYy00NTNkLTk1NDYtMDI3NWVkZWVhMjMwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Edenbridge, Kent, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2584384/>,    # Jojo Rabbit
+                       <https://www.imdb.com/title/tt11012066/>,    # Home Sweet Home Alone
+                       <https://www.imdb.com/title/tt13016802/>,    # Paper Birds
+                       <https://www.imdb.com/title/tt32241947/> ; # Clout
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi161268505/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9987228/mediaviewer/rm3909351169/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm3926128385/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm3976460033/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm3959682817/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm1886658817/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm2541045505/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm1651832321/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm3446928897/>,
+                 <https://www.imdb.com/name/nm9987228/mediaviewer/rm4205996032/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2584384/> a schema:Movie ;
+    schema:name "Jojo Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt2584384/> .
+
+<https://www.imdb.com/title/tt11012066/> a schema:Movie ;
+    schema:name "Home Sweet Home Alone" ;
+    schema:url <https://www.imdb.com/title/tt11012066/> .
+
+<https://www.imdb.com/title/tt13016802/> a schema:Movie ;
+    schema:name "Paper Birds" ;
+    schema:url <https://www.imdb.com/title/tt13016802/> .
+
+<https://www.imdb.com/title/tt32241947/> a schema:Movie ;
+    schema:name "Clout" ;
+    schema:url <https://www.imdb.com/title/tt32241947/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi161268505/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Max Mercer is a mischievous and resourceful young boy who has been left behind while his family is in Japan for the holidays. So when a married couple attempting to retrieve a priceless heirloom set their sights on the Mercer family's home, it is up to Max to protect it from the trespassers ... and he will do whatever it takes to keep them out. Hilarious hijinks of epic proportions ensue, but despite the absolute chaos, Max comes to realize that there really is no place like home sweet home." ;
+        schema:embedUrl <https://www.imdb.com/video/vi161268505/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTUzMTI5YzEtZmUzZi00ZWQxLWI5MTAtZmQxMWQ0OTdkZGRkXkEyXkFqcGdeQWFybm8@._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2021-10-12T15:00:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZTY0OWNjNDYtNDgzYy00NTNkLTk1NDYtMDI3NWVkZWVhMjMwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTY0OWNjNDYtNDgzYy00NTNkLTk1NDYtMDI3NWVkZWVhMjMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "6016"^^xsd:integer ;
+    schema:width "4016"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm3909351169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmNjNTFmM2QtOTkyYy00YWE4LWIzNTctOGNmN2NlN2FhNzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates in Home Sweet Home Alone (2021)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm3926128385/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2M0ZGRiNGEtYzZiMy00MTg0LTkzZjMtZGQyZmZlYzdhMTNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates in Home Sweet Home Alone (2021)" ;
+    schema:height "6000"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm3976460033/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTQ5MmI5ZDItOWM0OC00OWEzLTg0OGUtMzZmODZmYjg1MGJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates in Home Sweet Home Alone (2021)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm3959682817/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjU2Y2M3OGQtNmQ2MC00ZDI2LWFlMzUtMmVkZWQwMDYyNzk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates in Home Sweet Home Alone (2021)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm1886658817/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjMwZGIxOTgtZTJkZi00MmU5LThkMjAtMTI3MzZmN2MzYzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "3954"^^xsd:integer ;
+    schema:width "3163"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm2541045505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzkxYjE0YWItNjVmZi00Y2YzLThjMWEtYzY5ZjQwMWM4YmVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "6016"^^xsd:integer ;
+    schema:width "4016"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm1651832321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGYzMjEwYjQtMjQzOS00NTZiLWI1ZTAtNTBmZDZlY2M5MTY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "3600"^^xsd:integer ;
+    schema:width "2880"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm3446928897/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWE0YzE4YmUtYmQ1YS00MjIyLTk5YzctNWI5ZGIyYmEyYjk0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "3791"^^xsd:integer ;
+    schema:width "3033"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9987228/mediaviewer/rm4205996032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZThkNTY0NTEtMDc0Zi00MWY0LThlNGEtZGZhYWI3YmM0MWZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Yates" ;
+    schema:height "3107"^^xsd:integer ;
+    schema:width "2486"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

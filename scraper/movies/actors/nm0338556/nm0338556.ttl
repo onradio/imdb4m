@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0338556/> a schema:Person ;
+    schema:name "Marti Greenberg" ;
+    schema:url <https://www.imdb.com/name/nm0338556/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Marti Greenberg. Actress: Edward Scissorhands. Marti Greenberg is known for Edward Scissorhands (1990) and Abandoned and Deceived (1995)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNGQwNjI3YTEtNTBiMC00NzE0LThiZjgtZTI0OTVlNzM4ZTJmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112273/>,    # Abandoned and Deceived
+                       <https://www.imdb.com/title/tt0099487/> ; # Edward Scissorhands
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0338556/mediaviewer/rm2404602624/>,
+                 <https://www.imdb.com/name/nm0338556/mediaviewer/rm3377615616/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Abandoned and Deceived (1995)
+<https://www.imdb.com/title/tt0112273/> a schema:Movie ;
+    schema:name "Abandoned and Deceived" ;
+    schema:url <https://www.imdb.com/title/tt0112273/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338556/> ;
+        schema:characterName "Young Woman on Line"
+    ] .
+
+# Edward Scissorhands (1990)
+<https://www.imdb.com/title/tt0099487/> a schema:Movie ;
+    schema:name "Edward Scissorhands" ;
+    schema:url <https://www.imdb.com/title/tt0099487/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338556/> ;
+        schema:characterName "Suzanne"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNGQwNjI3YTEtNTBiMC00NzE0LThiZjgtZTI0OTVlNzM4ZTJmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQwNjI3YTEtNTBiMC00NzE0LThiZjgtZTI0OTVlNzM4ZTJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marti Greenberg in Edward Scissorhands (1990)" ;
+    schema:height "1032"^^xsd:integer ;
+    schema:width "1915"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0338556/mediaviewer/rm2404602624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FhYjFjYTQtMmE1Mi00N2YxLTk3MjEtM2FmNTYxYmIzOWQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Winona Ryder, Anthony Michael Hall, and Marti Greenberg in Edward Scissorhands (1990)" ;
+    schema:height "1028"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0338556/mediaviewer/rm3377615616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQwNjI3YTEtNTBiMC00NzE0LThiZjgtZTI0OTVlNzM4ZTJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marti Greenberg in Edward Scissorhands (1990)" ;
+    schema:height "1032"^^xsd:integer ;
+    schema:width "1915"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

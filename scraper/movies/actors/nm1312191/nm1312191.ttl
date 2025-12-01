@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1312191/> a schema:Person ;
+    schema:name "Shirô Saitô" ;
+    schema:url <https://www.imdb.com/name/nm1312191/> ;
+    schema:birthDate "1956-08-31"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shirô Saitô. Actor: Sabikui Bisco. Shirô Saitô was born on 31 August 1956 in Sakata, Japan. He is an actor, known for Sabikui Bisco (2022), Megalobox (2018) and Princess Mononoke (1997)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sakata, Japan"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.74"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8½″ (1.74 m)"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3632310297/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3632310297/> a schema:VideoObject ;
+        schema:name "Sankarea: The Complete Series" ;
+        schema:description "Trailer for Sankarea: The Complete Series" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3632310297/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2ViZGM2ZDUtYTIzNS00ZDIxLTg5ZjMtNDljYWNkMTdhODU5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M9S"^^xsd:duration ;
+        schema:uploadDate "2013-10-09T04:58:02Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

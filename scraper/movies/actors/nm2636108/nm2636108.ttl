@@ -1,0 +1,346 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2636108/> a schema:Person ;
+    schema:name "Aidan Turner" ;
+    schema:url <https://www.imdb.com/name/nm2636108/> ;
+    schema:birthDate "1983-06-19"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Soundtrack" ;
+    schema:description "Aidan Turner. Actor: The Hobbit: The Desolation of Smaug. Aidan Turner was born in Dublin, Ireland in 1983. After graduating from the Gaiety School of Acting in 2004, Aidan appeared in a number of stage productions, many with Ireland's national theatre, The Abbey. Such productions included The Plough & The Stars, Romeo & Juliet and A Cry from Heaven. In 2008, Turner made the transition to movies and television with..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGQ3MTg2NGUtMDExMy00MDdkLWI3ODQtYmMwZGRmNGE5ZGExXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dublin, Ireland"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10¾″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1170358/>,    # The Hobbit: The Desolation of Smaug
+                       <https://www.imdb.com/title/tt0903624/>,    # The Hobbit: An Unexpected Journey
+                       <https://www.imdb.com/title/tt1538403/>,    # The Mortal Instruments: City of Bones
+                       <https://www.imdb.com/title/tt2310332/>,    # The Hobbit: The Battle of the Five Armies
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3636060/>,    # Poldark
+                       <https://www.imdb.com/title/tt4712086/>,    # Love Is Blind
+                       <https://www.imdb.com/title/tt7042862/>,    # The Man Who Killed Hitler and Then the Bigfoot
+                       <https://www.imdb.com/title/tt3262342/>,    # Loving Vincent
+                       <https://www.imdb.com/title/tt3344694/>,    # The Secret Scripture
+                       <https://www.imdb.com/title/tt3581932/>,    # And Then There Were None
+                       <https://www.imdb.com/title/tt7941046/>,    # The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London
+                       <https://www.imdb.com/title/tt1349938/>,    # Being Human
+                       <https://www.imdb.com/title/tt1685531/>,    # Hattie
+                       <https://www.imdb.com/title/tt5715848/>,    # Resonance
+                       <https://www.imdb.com/title/tt0383087/>,    # The Clinic
+                       <https://www.imdb.com/title/tt1346018/>,    # Desperate Romantics
+                       <https://www.imdb.com/title/tt1135960/>,    # Alarm
+                       <https://www.imdb.com/title/tt1170362/>,    # Matterhorn
+                       <https://www.imdb.com/title/tt1161868/>,    # The Sound of People
+                       <https://www.imdb.com/title/tt0758790/> ; # The Tudors
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 17 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4196121113/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2636108/mediaviewer/rm622485505/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm2670392321/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm459731712/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm1394482688/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm856996352/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm1364176640/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm167815682/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm5469952/>,
+                 <https://www.imdb.com/name/nm2636108/mediaviewer/rm2902816256/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1170358/> a schema:Movie ;
+    schema:name "The Hobbit: The Desolation of Smaug" ;
+    schema:url <https://www.imdb.com/title/tt1170358/> .
+
+<https://www.imdb.com/title/tt0903624/> a schema:Movie ;
+    schema:name "The Hobbit: An Unexpected Journey" ;
+    schema:url <https://www.imdb.com/title/tt0903624/> .
+
+<https://www.imdb.com/title/tt1538403/> a schema:Movie ;
+    schema:name "The Mortal Instruments: City of Bones" ;
+    schema:url <https://www.imdb.com/title/tt1538403/> .
+
+<https://www.imdb.com/title/tt2310332/> a schema:Movie ;
+    schema:name "The Hobbit: The Battle of the Five Armies" ;
+    schema:url <https://www.imdb.com/title/tt2310332/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Poldark (2015)
+<https://www.imdb.com/title/tt3636060/> a schema:Movie ;
+    schema:name "Poldark" ;
+    schema:url <https://www.imdb.com/title/tt3636060/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Ross Poldark"
+    ] .
+
+# Love Is Blind (2019)
+<https://www.imdb.com/title/tt4712086/> a schema:Movie ;
+    schema:name "Love Is Blind" ;
+    schema:url <https://www.imdb.com/title/tt4712086/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Russell Hank"
+    ] .
+
+# The Man Who Killed Hitler and Then the Bigfoot (2018)
+<https://www.imdb.com/title/tt7042862/> a schema:Movie ;
+    schema:name "The Man Who Killed Hitler and Then the Bigfoot" ;
+    schema:url <https://www.imdb.com/title/tt7042862/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Calvin Barr"
+    ] .
+
+# Loving Vincent (2017)
+<https://www.imdb.com/title/tt3262342/> a schema:Movie ;
+    schema:name "Loving Vincent" ;
+    schema:url <https://www.imdb.com/title/tt3262342/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "The Boatman"
+    ] .
+
+# The Secret Scripture (2016)
+<https://www.imdb.com/title/tt3344694/> a schema:Movie ;
+    schema:name "The Secret Scripture" ;
+    schema:url <https://www.imdb.com/title/tt3344694/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Jack Conroy"
+    ] .
+
+# And Then There Were None (2015)
+<https://www.imdb.com/title/tt3581932/> a schema:Movie ;
+    schema:name "And Then There Were None" ;
+    schema:url <https://www.imdb.com/title/tt3581932/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Philip Lombard"
+    ] .
+
+# The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London (2013)
+<https://www.imdb.com/title/tt7941046/> a schema:Movie ;
+    schema:name "The Hobbit: An Unexpected Journey - The Chronicles of The Hobbit - Part 1: A Short Rest: Rivendell & London" ;
+    schema:url <https://www.imdb.com/title/tt7941046/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName ""
+    ] .
+
+# Being Human (2009)
+<https://www.imdb.com/title/tt1349938/> a schema:Movie ;
+    schema:name "Being Human" ;
+    schema:url <https://www.imdb.com/title/tt1349938/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Mitchell"
+    ] .
+
+# Hattie (2011)
+<https://www.imdb.com/title/tt1685531/> a schema:Movie ;
+    schema:name "Hattie" ;
+    schema:url <https://www.imdb.com/title/tt1685531/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "John Schofield"
+    ] .
+
+# Resonance (2010)
+<https://www.imdb.com/title/tt5715848/> a schema:Movie ;
+    schema:name "Resonance" ;
+    schema:url <https://www.imdb.com/title/tt5715848/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "TT"
+    ] .
+
+# The Clinic (2008)
+<https://www.imdb.com/title/tt0383087/> a schema:Movie ;
+    schema:name "The Clinic" ;
+    schema:url <https://www.imdb.com/title/tt0383087/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Ruairí McGowan"
+    ] .
+
+# Desperate Romantics (2009)
+<https://www.imdb.com/title/tt1346018/> a schema:Movie ;
+    schema:name "Desperate Romantics" ;
+    schema:url <https://www.imdb.com/title/tt1346018/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Dante Gabriel Rossetti"
+    ] .
+
+# Alarm (2008)
+<https://www.imdb.com/title/tt1135960/> a schema:Movie ;
+    schema:name "Alarm" ;
+    schema:url <https://www.imdb.com/title/tt1135960/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Mal"
+    ] .
+
+# Matterhorn (2007)
+<https://www.imdb.com/title/tt1170362/> a schema:Movie ;
+    schema:name "Matterhorn" ;
+    schema:url <https://www.imdb.com/title/tt1170362/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Theodoro"
+    ] .
+
+# The Sound of People (2007)
+<https://www.imdb.com/title/tt1161868/> a schema:Movie ;
+    schema:name "The Sound of People" ;
+    schema:url <https://www.imdb.com/title/tt1161868/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Father"
+    ] .
+
+# The Tudors (2007)
+<https://www.imdb.com/title/tt0758790/> a schema:Movie ;
+    schema:name "The Tudors" ;
+    schema:url <https://www.imdb.com/title/tt0758790/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2636108/> ;
+        schema:characterName "Bedoli"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4196121113/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A legendary American war veteran (Sam Elliott) is recruited to hunt a mythical creature." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4196121113/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDVjZmNhMDQtODM4MC00YzA2LTkyNzEtOWE0YTJkMjBiNjUwXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg" ;
+        schema:duration "PT2M1S"^^xsd:duration ;
+        schema:uploadDate "2019-01-17T15:34:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGQ3MTg2NGUtMDExMy00MDdkLWI3ODQtYmMwZGRmNGE5ZGExXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGQ3MTg2NGUtMDExMy00MDdkLWI3ODQtYmMwZGRmNGE5ZGExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner" ;
+    schema:height "11648"^^xsd:integer ;
+    schema:width "8736"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm622485505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdiNzBlNWQtNWE1NC00YzVjLWI3YmUtMTBmMGI2NWE0ODMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner in Rivals (2024)" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm2670392321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYThjOWMzZGItOTg2Yy00YWQ3LTg4ODYtMzM5ODc4MTljNDM3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner" ;
+    schema:height "1538"^^xsd:integer ;
+    schema:width "2700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm459731712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyYzE0MjMtOWViYi00MWY5LWJkZTktM2YyNDI1NDU4ZGY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner" ;
+    schema:height "948"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm1394482688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTAzNGFkYWYtNTE4MC00NzcyLTllYzctNGI3YWM2YTdlMzEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner in Poldark (2015)" ;
+    schema:height "2828"^^xsd:integer ;
+    schema:width "4242"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm856996352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5MDk2OTI5Ml5BMl5BanBnXkFtZTcwMTU5NTg1NA@@._V1_.jpg> ;
+    schema:caption "Russell Tovey, Lenora Crichlow, and Aidan Turner in Being Human (2008)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1364"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm1364176640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTQ1NDk1OTMxMF5BMl5BanBnXkFtZTcwMTE1OTA3OA@@._V1_.jpg> ;
+    schema:caption "Aidan Turner in The Hobbit: An Unexpected Journey (2012)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1384"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm167815682/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGVjYmQ0YjktNTY4My00ZDliLWFiMmEtY2JlOTM3ZTUxMGMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Keri Russell and Aidan Turner in The Diplomat (2023)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm5469952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ2YjUwNTUtZDUwMi00OWNkLThhNGMtZTlkNWM1YTRiOWFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aidan Turner in Poldark (2015)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2636108/mediaviewer/rm2902816256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAyOWJlZWEtNDgyZi00N2E5LTg4NDQtMzc2MDVhNTk4NWFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly and Aidan Turner in The Hobbit: The Battle of the Five Armies (2014)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

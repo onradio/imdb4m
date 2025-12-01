@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5843518/> a schema:Person ;
+    schema:name "Andrew Farrier" ;
+    schema:url <https://www.imdb.com/name/nm5843518/> ;
+    schema:birthDate "1986-06-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Andrew Farrier. Actor: The Big Short. Andrew Farrier was born on 4 June 1986 in St. Francisville, Louisiana, USA. He is an actor, known for The Big Short (2015), American Horror Story (2011) and If You Were the Last (2023)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzgyM2VjY2EtOGQ1OC00ZWFmLWJlMzMtMjgxNmY4NzNlNmMxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "St. Francisville, Louisiana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1596363/>,    # The Big Short
+                       <https://www.imdb.com/title/tt1844624/>,    # American Horror Story
+                       <https://www.imdb.com/title/tt2762746/> ; # C: 299,792 Kilometers Per Second
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5843518/mediaviewer/rm2668111873/>,
+                 <https://www.imdb.com/name/nm5843518/mediaviewer/rm2349344769/>,
+                 <https://www.imdb.com/name/nm5843518/mediaviewer/rm2366121985/>,
+                 <https://www.imdb.com/name/nm5843518/mediaviewer/rm2399676417/>,
+                 <https://www.imdb.com/name/nm5843518/mediaviewer/rm2231904257/>,
+                 <https://www.imdb.com/name/nm5843518/mediaviewer/rm3204982785/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Big Short (2015)
+<https://www.imdb.com/title/tt1596363/> a schema:Movie ;
+    schema:name "The Big Short" ;
+    schema:url <https://www.imdb.com/title/tt1596363/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5843518/> ;
+        schema:characterName "Burry's Analyst"
+    ] .
+
+# American Horror Story (2014)
+<https://www.imdb.com/title/tt1844624/> a schema:Movie ;
+    schema:name "American Horror Story" ;
+    schema:url <https://www.imdb.com/title/tt1844624/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5843518/> ;
+        schema:characterName "Lavender John"
+    ] .
+
+# C: 299,792 Kilometers Per Second (2013)
+<https://www.imdb.com/title/tt2762746/> a schema:Movie ;
+    schema:name "C: 299,792 Kilometers Per Second" ;
+    schema:url <https://www.imdb.com/title/tt2762746/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5843518/> ;
+        schema:characterName "2nd Lieutenant Kai"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzgyM2VjY2EtOGQ1OC00ZWFmLWJlMzMtMjgxNmY4NzNlNmMxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzgyM2VjY2EtOGQ1OC00ZWFmLWJlMzMtMjgxNmY4NzNlNmMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm2668111873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY0ZjVmZjktYjIyZS00Y2U5LTk2ZTEtNWE5M2YzYzQ5ZTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm2349344769/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTc3YjI3M2YtMWQzNy00MTdlLThhMzAtYTk2YzIwMjM4MThhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm2366121985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjA1NjNmN2MtZWZhOC00Mjc0LThmYmItNTMyMzFlYjRhMGExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm2399676417/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTEwY2Y5NWItYTJjYy00ZTZlLWE4MjMtM2MzZDNiZWNiN2FiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm2231904257/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmJiNzNiOTQtYzczNS00YWE3LWIwMjItMDYyMjVhMGQ2MTZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5843518/mediaviewer/rm3204982785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzgyM2VjY2EtOGQ1OC00ZWFmLWJlMzMtMjgxNmY4NzNlNmMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Farrier" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

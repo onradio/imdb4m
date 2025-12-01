@@ -1,0 +1,39 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2209418/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Gia ena tango" ;
+        schema:byArtist <https://www.imdb.com/name/nm1341763/> ; # Haris Alexiou
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gia ena tango" ;
+            schema:author <https://www.imdb.com/name/nm1341763/> # Haris Alexiou
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Stou Mema ta traina" ;
+        schema:byArtist <https://www.imdb.com/name/nm6164587/> ; # Panayiotis Antellis
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Antonis o kekes" ;
+        schema:byArtist <https://www.imdb.com/name/nm0436156/> ; # Nikos Kalogeropoulos
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0436156/> a schema:Person ;
+    schema:name "Nikos Kalogeropoulos" .
+<https://www.imdb.com/name/nm1341763/> a schema:Person ;
+    schema:name "Haris Alexiou" .
+<https://www.imdb.com/name/nm6164587/> a schema:Person ;
+    schema:name "Panayiotis Antellis" .
+# ==============================================================================

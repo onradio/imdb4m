@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2491885/> a schema:Person ;
+    schema:name "Kim Eun-yeong" ;
+    schema:url <https://www.imdb.com/name/nm2491885/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Kim Eun-yeong. Actress: The Handmaiden. Kim Eun-yeong is known for The Handmaiden (2016), Mourning Grave (2014) and Mischievous Kiss (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4016934/>,    # The Handmaiden
+                       <https://www.imdb.com/title/tt3892620/>,    # Mourning Grave
+                       <https://www.imdb.com/title/tt2096097/>,    # Mischievous Kiss
+                       <https://www.imdb.com/title/tt0821463/> . # Horobicheu-reul wihayeo
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2491885/> ;
+        schema:characterName "Maid 4"
+    ] .
+
+# Mourning Grave (2014)
+<https://www.imdb.com/title/tt3892620/> a schema:Movie ;
+    schema:name "Mourning Grave" ;
+    schema:url <https://www.imdb.com/title/tt3892620/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2491885/> ;
+        schema:characterName "Student"
+    ] .
+
+# Mischievous Kiss (2010)
+<https://www.imdb.com/title/tt2096097/> a schema:Movie ;
+    schema:name "Mischievous Kiss" ;
+    schema:url <https://www.imdb.com/title/tt2096097/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2491885/> ;
+        schema:characterName "(as Eun-yeong Kim)"
+    ] .
+
+# Horobicheu-reul wihayeo (2006)
+<https://www.imdb.com/title/tt0821463/> a schema:Movie ;
+    schema:name "Horobicheu-reul wihayeo" ;
+    schema:url <https://www.imdb.com/title/tt0821463/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2491885/> ;
+        schema:characterName "Eun-yeong"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

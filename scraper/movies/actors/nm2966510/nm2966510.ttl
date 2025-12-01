@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2966510/> a schema:Person ;
+    schema:name "Jung Ae Kwak" ;
+    schema:url <https://www.imdb.com/name/nm2966510/> ;
+    schema:jobTitle "Costume Designer", "Actress", "Additional Crew" ;
+    schema:description "Jung Ae Kwak. Actress: Oldboy. Jung Ae Kwak is known for Oldboy (2003), Sympathy for Mr. Vengeance (2002) and A Werewolf Boy (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0364569/> ;    # Oldboy
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2966510/mediaviewer/rm4278409217/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Oldboy (2003)
+<https://www.imdb.com/title/tt0364569/> a schema:Movie ;
+    schema:name "Oldboy" ;
+    schema:url <https://www.imdb.com/title/tt0364569/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2966510/> ;
+        schema:characterName "Nun Teacher"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2966510/mediaviewer/rm4278409217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTE1NWJmYzctZGU0OC00MTI1LThkNTYtOTBkZTQzMDZjYjZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Choi Min-sik, Oh Tae-kyung, Yoo Ji-tae, Kim Young Ae, Lee Young-hee, Chae-soo Jang, Seol-a Im, Chang-hak Choi, Bi-Joon Shin, Ji Dae-han, Kim Byeong-Ok, Kang Hye-jeong, Syd Lim, Oh Dal-su, Yoon Jin-seo, Seok-jae Seong, Seon-bok Mun, Mi Mi Lee, Lee Seung-shin, Il-han Oo, Yoo Yeon-seok, Jin-Yool Yoon, Jung Ae Kwak, San Kim, Park Jae-woong, Choi Jae-sup, and Jae-Duk Han" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

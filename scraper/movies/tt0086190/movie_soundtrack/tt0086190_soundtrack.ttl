@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086190/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Lapti Nek" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lapti Nek" ;
+            schema:composer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+            schema:lyricist <https://www.imdb.com/name/nm0344706/>, # Michele Gruska
+                        <https://www.imdb.com/name/nm0930990/> # Joseph Williams
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ewok Celebration" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ewok Celebration" ;
+            schema:composer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+            schema:lyricist <https://www.imdb.com/name/nm0123785/> # Ben Burtt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jedi Rocks" ;
+        schema:producer <https://www.imdb.com/name/nm0715018/> ; # Nick Redman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jedi Rocks" ;
+            schema:composer <https://www.imdb.com/name/nm0382154/> # Jerry Hey
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002354/> a schema:Person ;
+    schema:name "John Williams" .
+<https://www.imdb.com/name/nm0123785/> a schema:Person ;
+    schema:name "Ben Burtt" .
+<https://www.imdb.com/name/nm0344706/> a schema:Person ;
+    schema:name "Michele Gruska" .
+<https://www.imdb.com/name/nm0382154/> a schema:Person ;
+    schema:name "Jerry Hey" .
+<https://www.imdb.com/name/nm0715018/> a schema:Person ;
+    schema:name "Nick Redman" .
+<https://www.imdb.com/name/nm0930990/> a schema:Person ;
+    schema:name "Joseph Williams" .
+# ==============================================================================

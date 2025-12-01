@@ -1,0 +1,81 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0848228/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "String Quartet No. 13 in a Minor 'Rosamunde' D804" ;
+        schema:byArtist <https://www.imdb.com/name/nm3048780/> ; # The Takács Quartet
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "String Quartet No. 13 in a Minor 'Rosamunde' D804" ;
+            schema:author <https://www.imdb.com/name/nm0006280/> # Franz Schubert
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Shoot to Thrill" ;
+        schema:byArtist <https://www.imdb.com/name/nm0009540/> ; # AC/DC
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shoot to Thrill" ;
+            schema:author <https://www.imdb.com/name/nm0949264/>, # Angus Young
+                       <https://www.imdb.com/name/nm0949850/>, # Malcolm Young
+                       <https://www.imdb.com/name/nm0424657/> # Brian Johnson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Black Dirt" ;
+        schema:byArtist <https://www.imdb.com/name/nm3662416/> ; # Emile Millar
+        schema:producer <https://www.imdb.com/name/nm2514440/> ; # Michael Baiardi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Black Dirt" ;
+            schema:author <https://www.imdb.com/name/nm3662416/>, # Emile Millar
+                       <https://www.imdb.com/name/nm2514440/> # Michael Baiardi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Live to Rise" ;
+        schema:byArtist <https://www.imdb.com/name/nm2929375/> ; # Soundgarden
+        schema:producer <https://www.imdb.com/name/nm2929375/> ; # Soundgarden
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Live to Rise" ;
+            schema:author <https://www.imdb.com/name/nm0180225/> # Chris Cornell
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006280/> a schema:Person ;
+    schema:name "Franz Schubert" .
+<https://www.imdb.com/name/nm0009540/> a schema:Person ;
+    schema:name "AC/DC" .
+<https://www.imdb.com/name/nm0180225/> a schema:Person ;
+    schema:name "Chris Cornell" .
+<https://www.imdb.com/name/nm0424657/> a schema:Person ;
+    schema:name "Brian Johnson" .
+<https://www.imdb.com/name/nm0949264/> a schema:Person ;
+    schema:name "Angus Young" .
+<https://www.imdb.com/name/nm0949850/> a schema:Person ;
+    schema:name "Malcolm Young" .
+<https://www.imdb.com/name/nm2514440/> a schema:Person ;
+    schema:name "Michael Baiardi" .
+<https://www.imdb.com/name/nm2929375/> a schema:Person ;
+    schema:name "Soundgarden" .
+<https://www.imdb.com/name/nm3048780/> a schema:Person ;
+    schema:name "The Takács Quartet" .
+<https://www.imdb.com/name/nm3662416/> a schema:Person ;
+    schema:name "Emile Millar" .
+# ==============================================================================

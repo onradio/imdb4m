@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0661097/> a schema:Person ;
+    schema:name "Fernando Pardo" ;
+    schema:url <https://www.imdb.com/name/nm0661097/> ;
+    schema:jobTitle "Editor", "Actor", "Editorial Department" ;
+    schema:description "Fernando Pardo. Actor: The Secret in Their Eyes. Fernando Pardo is known for The Secret in Their Eyes (2009), The Aura (2005) and Habana Blues (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2224139/>,    # Doppelsauger: El Misterio de Sara
+                       <https://www.imdb.com/title/tt26129482/>,    # Bien de familia
+                       <https://www.imdb.com/title/tt1259570/>,    # Neon Flesh
+                       <https://www.imdb.com/title/tt1305806/>,    # The Secret in Their Eyes
+                       <https://www.imdb.com/title/tt0476197/> ; # Los demonios de Leiva
+
+
+    schema:video <https://www.imdb.com/video/vi230098201/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Doppelsauger: El Misterio de Sara (2014)
+<https://www.imdb.com/title/tt2224139/> a schema:Movie ;
+    schema:name "Doppelsauger: El Misterio de Sara" ;
+    schema:url <https://www.imdb.com/title/tt2224139/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0661097/> ;
+        schema:characterName "Daniel Carrizo 'Testigo'"
+    ] .
+
+# Bien de familia (2014)
+<https://www.imdb.com/title/tt26129482/> a schema:Movie ;
+    schema:name "Bien de familia" ;
+    schema:url <https://www.imdb.com/title/tt26129482/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0661097/> ;
+        schema:characterName "Gimenez"
+    ] .
+
+# Neon Flesh (2010)
+<https://www.imdb.com/title/tt1259570/> a schema:Movie ;
+    schema:name "Neon Flesh" ;
+    schema:url <https://www.imdb.com/title/tt1259570/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0661097/> ;
+        schema:characterName "Taxista"
+    ] .
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0661097/> ;
+        schema:characterName "Sicora"
+    ] .
+
+# Los demonios de Leiva (2004)
+<https://www.imdb.com/title/tt0476197/> a schema:Movie ;
+    schema:name "Los demonios de Leiva" ;
+    schema:url <https://www.imdb.com/title/tt0476197/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0661097/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi230098201/> a schema:VideoObject ;
+        schema:name "UN BUEN HOMBRE trailer" ;
+        schema:description "Vicente, a young law teacher, is very close to his old friend and colleague Fernando. One day, Vicente sees how Fernando kills his wife." ;
+        schema:embedUrl <https://www.imdb.com/video/vi230098201/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTUzNjU0ODUxMl5BMl5BanBnXkFtZTcwNDAwNjI5Mg@@._V1_.jpg" ;
+        schema:duration "PT1M48S"^^xsd:duration ;
+        schema:uploadDate "2009-10-22T07:53:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,203 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0632250/> a schema:Person ;
+    schema:name "Kjell Nilsson" ;
+    schema:url <https://www.imdb.com/name/nm0632250/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kjell Nilsson. Actor: Mad Max 2. Kjell Nilsson was born in 1949 in Gothenburg, Västra Götalands län, Sweden. He is an actor, known for Mad Max 2 (1981), Howlin' Refrain (2023) and The Pirate Movie (1982)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjRlYWNkYWUtYTQzZi00N2M1LTkzMzQtYzliOWQ2OTM1ZThhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Gothenburg, Västra Götalands län, Sweden"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.89"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2½″ (1.89 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0148097/>,    # The Edge of Power
+                       <https://www.imdb.com/title/tt0148256/>,    # Hard Knuckle
+                       <https://www.imdb.com/title/tt0081935/>,    # Sons and Daughters
+                       <https://www.imdb.com/title/tt0338230/>,    # Man of Letters
+                       <https://www.imdb.com/title/tt0088169/>,    # Stanley: Every Home Should Have One
+                       <https://www.imdb.com/title/tt0084504/>,    # The Pirate Movie
+                       <https://www.imdb.com/title/tt0082694/> ; # Mad Max 2
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0632250/mediaviewer/rm2640010241/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm98327553/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm814303744/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm646531584/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm391191808/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm2219842816/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm2287934720/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm2355043584/>,
+                 <https://www.imdb.com/name/nm0632250/mediaviewer/rm1113529600/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Edge of Power (1989)
+<https://www.imdb.com/title/tt0148097/> a schema:Movie ;
+    schema:name "The Edge of Power" ;
+    schema:url <https://www.imdb.com/title/tt0148097/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "Jorma"
+    ] .
+
+# Hard Knuckle (1988)
+<https://www.imdb.com/title/tt0148256/> a schema:Movie ;
+    schema:name "Hard Knuckle" ;
+    schema:url <https://www.imdb.com/title/tt0148256/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "The Bouncer"
+    ] .
+
+# Sons and Daughters (1985)
+<https://www.imdb.com/title/tt0081935/> a schema:Movie ;
+    schema:name "Sons and Daughters" ;
+    schema:url <https://www.imdb.com/title/tt0081935/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "Mike Thurgood"
+    ] .
+
+# Man of Letters (1984)
+<https://www.imdb.com/title/tt0338230/> a schema:Movie ;
+    schema:name "Man of Letters" ;
+    schema:url <https://www.imdb.com/title/tt0338230/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "Male Nurse"
+    ] .
+
+# Stanley: Every Home Should Have One (1984)
+<https://www.imdb.com/title/tt0088169/> a schema:Movie ;
+    schema:name "Stanley: Every Home Should Have One" ;
+    schema:url <https://www.imdb.com/title/tt0088169/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "Athletic Club Attendant"
+    ] .
+
+# The Pirate Movie (1982)
+<https://www.imdb.com/title/tt0084504/> a schema:Movie ;
+    schema:name "The Pirate Movie" ;
+    schema:url <https://www.imdb.com/title/tt0084504/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "Pirate"
+    ] .
+
+# Mad Max 2 (1981)
+<https://www.imdb.com/title/tt0082694/> a schema:Movie ;
+    schema:name "Mad Max 2" ;
+    schema:url <https://www.imdb.com/title/tt0082694/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0632250/> ;
+        schema:characterName "The Humungus"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjRlYWNkYWUtYTQzZi00N2M1LTkzMzQtYzliOWQ2OTM1ZThhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjRlYWNkYWUtYTQzZi00N2M1LTkzMzQtYzliOWQ2OTM1ZThhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kjell Nilsson" ;
+    schema:height "1130"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm2640010241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI4MWJhOWEtNDUwOC00YmE1LWExMDEtN2IyZWJkMTMwMTJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Kristy McNichol, Bill Kerr, and Kjell Nilsson in The Pirate Movie (1982)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1198"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm98327553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWMxOWMzM2UtNzgwNS00Y2Q1LWE3MGYtZjM3Y2M1M2ZlMGI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marc Colombani, Chuck McKinney, and Kjell Nilsson in The Pirate Movie (1982)" ;
+    schema:height "867"^^xsd:integer ;
+    schema:width "1306"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm814303744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGFhMWVlNTctNTMyYy00MmQ2LWFiNmMtYzQ3ZGFhYTRiNGIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Marc Colombani, Tony Deary, Ted Hamilton, Maggie Kirkpatrick, Kjell Nilsson, and Roger Ward in The Pirate Movie (1982)" ;
+    schema:height "796"^^xsd:integer ;
+    schema:width "1198"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm646531584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjNkNzE5MmQtMmQzOS00MzAzLWIxNmYtZDgwNWY3ZTU4NGFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kristy McNichol, Ted Hamilton, Kjell Nilsson, and Roger Ward in The Pirate Movie (1982)" ;
+    schema:height "755"^^xsd:integer ;
+    schema:width "1170"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm391191808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzlkOWRjNDctNWZiMi00NmRkLThlZTAtMWZlMDQxMTBmOGQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Marc Colombani, Chuck McKinney, Kjell Nilsson, and Roger Ward in The Pirate Movie (1982)" ;
+    schema:height "739"^^xsd:integer ;
+    schema:width "1112"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm2219842816/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTdlZTVlM2QtYTk2MS00NGRhLTk2YTYtNjVhNzFmOTUwOGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kristy McNichol, Marc Colombani, Bill Kerr, and Kjell Nilsson in The Pirate Movie (1982)" ;
+    schema:height "737"^^xsd:integer ;
+    schema:width "1129"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm2287934720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWQ1ZTE5ZWQtOGM5Ny00NmY1LWI4OGEtYzMxMTdjZTJmZTViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kristy McNichol, Ted Hamilton, Kjell Nilsson, and Roger Ward in The Pirate Movie (1982)" ;
+    schema:height "748"^^xsd:integer ;
+    schema:width "1120"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm2355043584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg0MWM0YWQtYzVjMC00MDRlLTljNjEtZTIxMGUyOTg2OWI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Marc Colombani, Tony Deary, Ted Hamilton, Maggie Kirkpatrick, Kjell Nilsson, and Roger Ward in The Pirate Movie (1982)" ;
+    schema:height "934"^^xsd:integer ;
+    schema:width "1382"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0632250/mediaviewer/rm1113529600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM3MjY2MjYtNTY3OC00ZTZiLWI5N2EtYjhhZWU3ZmMxY2M2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Bill Kerr, and Kjell Nilsson in The Pirate Movie (1982)" ;
+    schema:height "758"^^xsd:integer ;
+    schema:width "1160"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

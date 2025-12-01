@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0936537/> a schema:Person ;
+    schema:name "William Wisher" ;
+    schema:url <https://www.imdb.com/name/nm0936537/> ;
+    schema:jobTitle "Writer", "Script and Continuity Department", "Actor" ;
+    schema:description "William Wisher. Writer: Terminator 2: Judgment Day. William Wisher is known for Terminator 2: Judgment Day (1991), The Terminator (1984) and Judge Dredd (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0103064/>,    # Terminator 2: Judgment Day
+                       <https://www.imdb.com/title/tt0088247/>,    # The Terminator
+                       <https://www.imdb.com/title/tt0113492/>,    # Judge Dredd
+                       <https://www.imdb.com/title/tt0337978/>,    # Live Free or Die Hard
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0096754/>,    # The Abyss
+                       <https://www.imdb.com/title/tt1612767/>,    # Martini Ranch: Reach
+                       <https://www.imdb.com/title/tt0251488/>,    # Xenogenesis
+                       <https://www.imdb.com/title/tt0314576/> ; # The Reunion
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 4 nominations total"
+    ]  .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0103064/> a schema:Movie ;
+    schema:name "Terminator 2: Judgment Day" ;
+    schema:url <https://www.imdb.com/title/tt0103064/> .
+
+<https://www.imdb.com/title/tt0088247/> a schema:Movie ;
+    schema:name "The Terminator" ;
+    schema:url <https://www.imdb.com/title/tt0088247/> .
+
+<https://www.imdb.com/title/tt0113492/> a schema:Movie ;
+    schema:name "Judge Dredd" ;
+    schema:url <https://www.imdb.com/title/tt0113492/> .
+
+<https://www.imdb.com/title/tt0337978/> a schema:Movie ;
+    schema:name "Live Free or Die Hard" ;
+    schema:url <https://www.imdb.com/title/tt0337978/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Abyss (1989)
+<https://www.imdb.com/title/tt0096754/> a schema:Movie ;
+    schema:name "The Abyss" ;
+    schema:url <https://www.imdb.com/title/tt0096754/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0936537/> ;
+        schema:characterName "Bill Tyler"
+    ] .
+
+# Martini Ranch: Reach (1988)
+<https://www.imdb.com/title/tt1612767/> a schema:Movie ;
+    schema:name "Martini Ranch: Reach" ;
+    schema:url <https://www.imdb.com/title/tt1612767/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0936537/> ;
+        schema:characterName "William Wisher"
+    ] .
+
+# Xenogenesis (1978)
+<https://www.imdb.com/title/tt0251488/> a schema:Movie ;
+    schema:name "Xenogenesis" ;
+    schema:url <https://www.imdb.com/title/tt0251488/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0936537/> ;
+        schema:characterName "Raj"
+    ] .
+
+# The Reunion (1977)
+<https://www.imdb.com/title/tt0314576/> a schema:Movie ;
+    schema:name "The Reunion" ;
+    schema:url <https://www.imdb.com/title/tt0314576/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0936537/> ;
+        schema:characterName "(as William Wisher Jr.)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

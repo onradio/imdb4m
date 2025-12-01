@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6087055/> a schema:Person ;
+    schema:name "Atsuo Omote" ;
+    schema:url <https://www.imdb.com/name/nm6087055/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Atsuo Omote. Actor: Grave of the Fireflies. Atsuo Omote is known for Grave of the Fireflies (1988), Tsuyomushi onna to yowamushi otoko (1968) and Asuka (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0229106/>,    # Asuka
+                       <https://www.imdb.com/title/tt0095327/>,    # Grave of the Fireflies
+                       <https://www.imdb.com/title/tt2934992/>,    # Hissatsu shiokiya kagyô
+                       <https://www.imdb.com/title/tt0204003/> . # Tsuyomushi onna to yowamushi otoko
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Asuka (1999)
+<https://www.imdb.com/title/tt0229106/> a schema:Movie ;
+    schema:name "Asuka" ;
+    schema:url <https://www.imdb.com/title/tt0229106/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6087055/> ;
+        schema:characterName "Keisuke Hayata"
+    ] .
+
+# Grave of the Fireflies (1988)
+<https://www.imdb.com/title/tt0095327/> a schema:Movie ;
+    schema:name "Grave of the Fireflies" ;
+    schema:url <https://www.imdb.com/title/tt0095327/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6087055/> ;
+        schema:characterName "Person in bank"
+    ] .
+
+# Hissatsu shiokiya kagyô (1976)
+<https://www.imdb.com/title/tt2934992/> a schema:Movie ;
+    schema:name "Hissatsu shiokiya kagyô" ;
+    schema:url <https://www.imdb.com/title/tt2934992/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6087055/> ;
+        schema:characterName "Senkichi"
+    ] .
+
+# Tsuyomushi onna to yowamushi otoko (1968)
+<https://www.imdb.com/title/tt0204003/> a schema:Movie ;
+    schema:name "Tsuyomushi onna to yowamushi otoko" ;
+    schema:url <https://www.imdb.com/title/tt0204003/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6087055/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,305 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000004/> a schema:Person ;
+    schema:name "John Belushi" ;
+    schema:url <https://www.imdb.com/name/nm0000004/> ;
+    schema:birthDate "1949-01-24"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Music Department" ;
+    schema:alternateName "America's Guest", "John Adam Belushi" ;
+    schema:description "John Belushi. Actor: Saturday Night Live. John Belushi was born in Chicago, Illinois, USA, on January 24, 1949, to Agnes Demetri (Samaras) and Adam Anastos Belushi, a restaurant owner. His father was an Albanian immigrant, from Qytezë, and his mother was also of Albanian descent. He grew up in Wheaton, where the family moved when he was six. Though a young hellion in grade school, John became the perfect all-American..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODcyMmQwMGItYjA1NC00N2NjLWJmMmMtMmIyMTgzOWQ3NWY1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chicago, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0072562/>,    # Saturday Night Live
+                       <https://www.imdb.com/title/tt0077975/>,    # National Lampoon's Animal House
+                       <https://www.imdb.com/title/tt0078723/>,    # 1941
+                       <https://www.imdb.com/title/tt0080455/>,    # The Blues Brothers
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0082801/>,    # Neighbors
+                       <https://www.imdb.com/title/tt0082200/>,    # Continental Divide
+                       <https://www.imdb.com/title/tt0079660/>,    # Old Boyfriends
+                       <https://www.imdb.com/title/tt37027612/>,    # The Blues Brothers: Soul Man
+                       <https://www.imdb.com/title/tt0076816/>,    # Things We Did Last Summer
+                       <https://www.imdb.com/title/tt0077621/>,    # Goin' South
+                       <https://www.imdb.com/title/tt0077147/>,    # The Rutles: All You Need Is Cash
+                       <https://www.imdb.com/title/tt0775426/>,    # The Beach Boys: It's OK
+                       <https://www.imdb.com/title/tt0073691/>,    # Jungle Burger
+                       <https://www.imdb.com/title/tt0301538/>,    # National Lampoon Television Show: Lemmings Dead in Concert
+                       <https://www.imdb.com/title/tt37548194/> ; # The National Lampoon Radio Hour
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Primetime Emmy"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 6 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Neighbors)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "135"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4269653785/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000004/mediaviewer/rm2222435842/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm3767361537/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm1099331841/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm1132886273/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm2429037825/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm451080193/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm333639681/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm1875433217/>,
+                 <https://www.imdb.com/name/nm0000004/mediaviewer/rm1707661057/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0072562/> a schema:Movie ;
+    schema:name "Saturday Night Live" ;
+    schema:url <https://www.imdb.com/title/tt0072562/> .
+
+<https://www.imdb.com/title/tt0077975/> a schema:Movie ;
+    schema:name "National Lampoon's Animal House" ;
+    schema:url <https://www.imdb.com/title/tt0077975/> .
+
+<https://www.imdb.com/title/tt0078723/> a schema:Movie ;
+    schema:name "1941" ;
+    schema:url <https://www.imdb.com/title/tt0078723/> .
+
+<https://www.imdb.com/title/tt0080455/> a schema:Movie ;
+    schema:name "The Blues Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0080455/> .
+
+<https://www.imdb.com/title/tt0082801/> a schema:Movie ;
+    schema:name "Neighbors" ;
+    schema:url <https://www.imdb.com/title/tt0082801/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Neighbors (1981)
+<https://www.imdb.com/title/tt0082801/> a schema:Movie ;
+    schema:name "Neighbors" ;
+    schema:url <https://www.imdb.com/title/tt0082801/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Earl Keese"
+    ] .
+
+# Continental Divide (1981)
+<https://www.imdb.com/title/tt0082200/> a schema:Movie ;
+    schema:name "Continental Divide" ;
+    schema:url <https://www.imdb.com/title/tt0082200/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Ernie Souchak"
+    ] .
+
+# Old Boyfriends (1979)
+<https://www.imdb.com/title/tt0079660/> a schema:Movie ;
+    schema:name "Old Boyfriends" ;
+    schema:url <https://www.imdb.com/title/tt0079660/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Eric"
+    ] .
+
+# The Blues Brothers: Soul Man (1978)
+<https://www.imdb.com/title/tt37027612/> a schema:Movie ;
+    schema:name "The Blues Brothers: Soul Man" ;
+    schema:url <https://www.imdb.com/title/tt37027612/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Jake Blues"
+    ] .
+
+# Things We Did Last Summer (1978)
+<https://www.imdb.com/title/tt0076816/> a schema:Movie ;
+    schema:name "Things We Did Last Summer" ;
+    schema:url <https://www.imdb.com/title/tt0076816/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Jake Blues"
+    ] .
+
+# Goin' South (1978)
+<https://www.imdb.com/title/tt0077621/> a schema:Movie ;
+    schema:name "Goin' South" ;
+    schema:url <https://www.imdb.com/title/tt0077621/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Hector"
+    ] .
+
+# The Rutles: All You Need Is Cash (1978)
+<https://www.imdb.com/title/tt0077147/> a schema:Movie ;
+    schema:name "The Rutles: All You Need Is Cash" ;
+    schema:url <https://www.imdb.com/title/tt0077147/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Ron Decline"
+    ] .
+
+# The Beach Boys: It's OK (1976)
+<https://www.imdb.com/title/tt0775426/> a schema:Movie ;
+    schema:name "The Beach Boys: It's OK" ;
+    schema:url <https://www.imdb.com/title/tt0775426/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Cop #2"
+    ] .
+
+# Jungle Burger (1975)
+<https://www.imdb.com/title/tt0073691/> a schema:Movie ;
+    schema:name "Jungle Burger" ;
+    schema:url <https://www.imdb.com/title/tt0073691/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Craig Baker"
+    ] .
+
+# National Lampoon Television Show: Lemmings Dead in Concert (1973)
+<https://www.imdb.com/title/tt0301538/> a schema:Movie ;
+    schema:name "National Lampoon Television Show: Lemmings Dead in Concert" ;
+    schema:url <https://www.imdb.com/title/tt0301538/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName "Various"
+    ] .
+
+# The National Lampoon Radio Hour (1973)
+<https://www.imdb.com/title/tt37548194/> a schema:Movie ;
+    schema:name "The National Lampoon Radio Hour" ;
+    schema:url <https://www.imdb.com/title/tt37548194/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000004/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4269653785/> a schema:VideoObject ;
+        schema:name "Neighbors" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4269653785/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzllZTAxNDItYzdiZi00NmVlLWE1ZmYtZmRmMzM5YWIyNTc4XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M35S"^^xsd:duration ;
+        schema:uploadDate "2020-01-15T17:02:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODcyMmQwMGItYjA1NC00N2NjLWJmMmMtMmIyMTgzOWQ3NWY1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODcyMmQwMGItYjA1NC00N2NjLWJmMmMtMmIyMTgzOWQ3NWY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi in National Lampoon's Animal House (1978)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2453"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm2222435842/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjZkMmExZGUtNjE5YS00NDIxLThjNjEtNTc4Njg5NzMwMjBiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi and John Chancellor" ;
+    schema:height "1915"^^xsd:integer ;
+    schema:width "3409"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm3767361537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTgzOTM1ZmQtNjJkMy00MDYwLThjZDYtNWEwYzRiYjJjZTcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi in Saturday Night Live (1975)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1983"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm1099331841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzNhY2ZlZDMtMjQ1MS00N2NmLWI1YzItN2E0NmY5NDM5ODcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi and Bruce McGill in National Lampoon's Animal House (1978)" ;
+    schema:height "525"^^xsd:integer ;
+    schema:width "753"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm1132886273/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjUzYTY1MjYtODU5ZS00YTY5LTg5NDUtMTAyMzE4ZGRjNzcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi and Bruce McGill in National Lampoon's Animal House (1978)" ;
+    schema:height "597"^^xsd:integer ;
+    schema:width "778"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm2429037825/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjFmNWIzYTEtNGY5Yi00YjNiLWE0ZGQtMmQ4NmE3YjRlMDY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi, Dan Aykroyd, Chevy Chase, Jane Curtin, Garrett Morris, Laraine Newman, and Gilda Radner in Saturday Night Live (1975)" ;
+    schema:height "1250"^^xsd:integer ;
+    schema:width "1838"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm451080193/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNjOGZkNjYtZjM2Mi00NzAyLTgyNjYtYTRlNjE1NzM5YjMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi, Chevy Chase, and Akira Yoshimura in Saturday Night Live (1975)" ;
+    schema:height "1436"^^xsd:integer ;
+    schema:width "2165"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm333639681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWMwMTMwNmQtYTg2ZC00YTY1LWE1ODctNzlhODc2ZGQ2ZjE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi, Chevy Chase, and Akira Yoshimura in Saturday Night Live (1975)" ;
+    schema:height "1431"^^xsd:integer ;
+    schema:width "2164"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm1875433217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGMxN2UxYTUtNWRmNC00OTZmLTkwMjEtNzk3NDY3MmUzNDM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi in National Lampoon's Animal House (1978)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "336"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000004/mediaviewer/rm1707661057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGM1YjE0OTEtMWJmOC00MzJjLThkZTItMjRkNDQxMjEzM2E0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Belushi in Continental Divide (1981)" ;
+    schema:height "340"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

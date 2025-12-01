@@ -1,0 +1,198 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5490799/> a schema:Person ;
+    schema:name "Milo Gibson" ;
+    schema:url <https://www.imdb.com/name/nm5490799/> ;
+    schema:birthDate "1990-11-16"^^xsd:date ;
+    schema:jobTitle "Actor", "Production Department" ;
+    schema:description "Milo Gibson. Actor: The Outpost. Milo Gibson, born 16 November 1990. His first leading role is in All the Devil's Men directed by Matthew Hope and co-starring William Fichtner and Sylvia Hoeks will be released later this year. Milo will next be seen starring in the WW II action drama feature Hurricane: Squadron 303, opposite Game Of Thrones' Iwan Rheone. He is the sixth son of Mel Gibson, whom recently..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjhlNTY0NDctNmNlNS00NzNiLTlmZjctYmY5NjQ3NGIyOTU1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3833480/>,    # The Outpost
+                       <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt6285672/>,    # Breaking & Exiting
+                       <https://www.imdb.com/title/tt6384920/>,    # Under the Stadium Lights
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6012244/>,    # All the Devil's Men
+                       <https://www.imdb.com/title/tt7515456/>,    # Hurricane
+                       <https://www.imdb.com/title/tt7241654/>,    # Gangster Land
+                       <https://www.imdb.com/title/tt1507571/> ; # The Tribes of Palos Verdes
+
+
+    schema:video <https://www.imdb.com/video/vi2521350681/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5490799/mediaviewer/rm1443495936/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm2999453440/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm3217557248/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm3200780032/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm3167225600/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm4076798720/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm3721473280/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm4060021504/>,
+                 <https://www.imdb.com/name/nm5490799/mediaviewer/rm973013760/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3833480/> a schema:Movie ;
+    schema:name "The Outpost" ;
+    schema:url <https://www.imdb.com/title/tt3833480/> .
+
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> .
+
+<https://www.imdb.com/title/tt6285672/> a schema:Movie ;
+    schema:name "Breaking & Exiting" ;
+    schema:url <https://www.imdb.com/title/tt6285672/> .
+
+<https://www.imdb.com/title/tt6384920/> a schema:Movie ;
+    schema:name "Under the Stadium Lights" ;
+    schema:url <https://www.imdb.com/title/tt6384920/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# All the Devil's Men (2018)
+<https://www.imdb.com/title/tt6012244/> a schema:Movie ;
+    schema:name "All the Devil's Men" ;
+    schema:url <https://www.imdb.com/title/tt6012244/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5490799/> ;
+        schema:characterName "Collins"
+    ] .
+
+# Hurricane (2018)
+<https://www.imdb.com/title/tt7515456/> a schema:Movie ;
+    schema:name "Hurricane" ;
+    schema:url <https://www.imdb.com/title/tt7515456/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5490799/> ;
+        schema:characterName "John Kent 'Kentowski'"
+    ] .
+
+# Gangster Land (2017)
+<https://www.imdb.com/title/tt7241654/> a schema:Movie ;
+    schema:name "Gangster Land" ;
+    schema:url <https://www.imdb.com/title/tt7241654/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5490799/> ;
+        schema:characterName "Al Capone"
+    ] .
+
+# The Tribes of Palos Verdes (2017)
+<https://www.imdb.com/title/tt1507571/> a schema:Movie ;
+    schema:name "The Tribes of Palos Verdes" ;
+    schema:url <https://www.imdb.com/title/tt1507571/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5490799/> ;
+        schema:characterName "Chad"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2521350681/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A coming of age story told through the eyes of a young girl whose family spirals out of control after they decide to live off the grid." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2521350681/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDI5MDQ3ZDMtODJhMy00NTIwLThiZjctZjIyYzhkOWM5YTdhXkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2022-09-27T19:58:27Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjhlNTY0NDctNmNlNS00NzNiLTlmZjctYmY5NjQ3NGIyOTU1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjhlNTY0NDctNmNlNS00NzNiLTlmZjctYmY5NjQ3NGIyOTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Milo Gibson at the premiere of Hacksaw Ridge " ;
+    schema:height "1424"^^xsd:integer ;
+    schema:width "950"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm1443495936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjhlNTY0NDctNmNlNS00NzNiLTlmZjctYmY5NjQ3NGIyOTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Milo Gibson at the premiere of Hacksaw Ridge " ;
+    schema:height "1424"^^xsd:integer ;
+    schema:width "950"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm2999453440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjg2MjIyNzY0MF5BMl5BanBnXkFtZTgwMjkzMTQ2MDI@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1307"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm3217557248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDQ5OTI5NTQ3M15BMl5BanBnXkFtZTgwNTkzMTQ2MDI@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1638"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm3200780032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzMzM4MDc4OF5BMl5BanBnXkFtZTgwNzkzMTQ2MDI@._V1_.jpg> ;
+    schema:caption "Mel Gibson and Milo Gibson" ;
+    schema:height "1576"^^xsd:integer ;
+    schema:width "1996"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm3167225600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkwNzc1ODg4OF5BMl5BanBnXkFtZTgwMDA0MTQ2MDI@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1477"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm4076798720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDUzYjdmYmQtNzBiOS00NjM1LWJmMzctMGE5YTI0MGI2NDc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "1204"^^xsd:integer ;
+    schema:width "856"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm3721473280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTVhN2RmNzQtNGQ5NC00NTI3LTk4MTgtOWZlMDk4ZTBhMDJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vince Vaughn, Firass Dirani, Nico Cortez, Luke Pegler, Richard Pyros, Ben Mingay, Goran D. Kleut, Luke Bracey, Milo Gibson, and Jacob Warner in Hacksaw Ridge (2016)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm4060021504/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTBhY2ZiZjUtM2NkMC00NmM4LTgyY2YtNjBjYjg3NzdmNDNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "957"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5490799/mediaviewer/rm973013760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTA3MGVmNDAtZTg1Yi00OTMxLWEyMTEtZDljZTUzM2ZmMjY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Milo Gibson" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "426"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

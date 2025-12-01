@@ -1,0 +1,567 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000343/> a schema:Person ;
+    schema:name "David Cronenberg" ;
+    schema:url <https://www.imdb.com/name/nm0000343/> ;
+    schema:birthDate "1943-03-15"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:alternateName "David Paul Cronenberg" ;
+    schema:description "David Cronenberg. Actor: The Fly. David Cronenberg, also known as the King of Venereal Horror or the Baron of Blood, was born in Toronto, Ontario, Canada, in 1943. His father, Milton Cronenberg, was a journalist and editor, and his mother, Esther (Sumberg), was a piano player. After showing an inclination for literature at an early age (he wrote and published eerie short stories, thus following his father's path) and for..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTM5NjM3OTYyMV5BMl5BanBnXkFtZTYwMzcyMzY1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Toronto, Ontario, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091064/>,    # The Fly
+                       <https://www.imdb.com/title/tt0094964/>,    # Dead Ringers
+                       <https://www.imdb.com/title/tt0115964/>,    # Crash
+                       <https://www.imdb.com/title/tt0120907/>,    # eXistenZ
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5919756/>,    # Disappearance at Clifton Hill
+                       <https://www.imdb.com/title/tt1034007/>,    # Alias Grace
+                       <https://www.imdb.com/title/tt3218114/>,    # Pig Goat Banana Cricket
+                       <https://www.imdb.com/title/tt5532868/>,    # Ape Sodom
+                       <https://www.imdb.com/title/tt5527102/>,    # Tomorrow's Shadows
+                       <https://www.imdb.com/title/tt3715254/>,    # Consumed
+                       <https://www.imdb.com/title/tt3831484/>,    # The Nest
+                       <https://www.imdb.com/title/tt2193185/>,    # Rewind
+                       <https://www.imdb.com/title/tt1379722/>,    # Happy Town
+                       <https://www.imdb.com/title/tt1423894/>,    # Barney's Version
+                       <https://www.imdb.com/title/tt14148306/>,    # At the Suicide of the Last Jew in the World in the Last Cinema in the World
+                       <https://www.imdb.com/title/tt0973844/>,    # To Each His Own Cinema
+                       <https://www.imdb.com/title/tt0285333/>,    # Alias
+                       <https://www.imdb.com/title/tt0211443/>,    # Jason X
+                       <https://www.imdb.com/title/tt0271022/>,    # The Judge
+                       <https://www.imdb.com/title/tt0142804/>,    # Resurrection
+                       <https://www.imdb.com/title/tt0209000/>,    # The Grace of God
+                       <https://www.imdb.com/title/tt0156729/>,    # Last Night
+                       <https://www.imdb.com/title/tt0115291/>,    # The Newsroom
+                       <https://www.imdb.com/title/tt0116259/>,    # Extreme Measures
+                       <https://www.imdb.com/title/tt0117768/>,    # The Stupids
+                       <https://www.imdb.com/title/tt0117079/>,    # Moonshine Highway
+                       <https://www.imdb.com/title/tt0112527/>,    # Blood & Donuts
+                       <https://www.imdb.com/title/tt0114681/>,    # To Die For
+                       <https://www.imdb.com/title/tt0109318/>,    # Boozecan
+                       <https://www.imdb.com/title/tt0110013/>,    # Henry & Verlin
+                       <https://www.imdb.com/title/tt0111488/>,    # Trial by Jury
+                       <https://www.imdb.com/title/tt0103844/>,    # Blue
+                       <https://www.imdb.com/title/tt0100260/>,    # Nightbreed
+                       <https://www.imdb.com/title/tt0089346/>,    # Into the Night
+                       <https://www.imdb.com/title/tt0086541/>,    # Videodrome
+                       <https://www.imdb.com/title/tt0073705/>,    # Shivers
+                       <https://www.imdb.com/title/tt31530168/> ; # Buffalo Airport Visions
+
+    schema:award [
+        a schema:Award ;
+        schema:description "81 wins & 92 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (The Fly)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "1000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3505634585/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000343/mediaviewer/rm4089012737/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm3999936513/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm2661544705/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm2186215168/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm926010368/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm2486996480/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm3814262529/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm4228095232/>,
+                 <https://www.imdb.com/name/nm0000343/mediaviewer/rm3273168896/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091064/> a schema:Movie ;
+    schema:name "The Fly" ;
+    schema:url <https://www.imdb.com/title/tt0091064/> .
+
+<https://www.imdb.com/title/tt0094964/> a schema:Movie ;
+    schema:name "Dead Ringers" ;
+    schema:url <https://www.imdb.com/title/tt0094964/> .
+
+<https://www.imdb.com/title/tt0115964/> a schema:Movie ;
+    schema:name "Crash" ;
+    schema:url <https://www.imdb.com/title/tt0115964/> .
+
+<https://www.imdb.com/title/tt0120907/> a schema:Movie ;
+    schema:name "eXistenZ" ;
+    schema:url <https://www.imdb.com/title/tt0120907/> .
+
+<https://www.imdb.com/title/tt0091064/> a schema:Movie ;
+    schema:name "The Fly" ;
+    schema:url <https://www.imdb.com/title/tt0091064/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Disappearance at Clifton Hill (2019)
+<https://www.imdb.com/title/tt5919756/> a schema:Movie ;
+    schema:name "Disappearance at Clifton Hill" ;
+    schema:url <https://www.imdb.com/title/tt5919756/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Walter"
+    ] .
+
+# Alias Grace (2017)
+<https://www.imdb.com/title/tt1034007/> a schema:Movie ;
+    schema:name "Alias Grace" ;
+    schema:url <https://www.imdb.com/title/tt1034007/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Reverend Verringer"
+    ] .
+
+# Pig Goat Banana Cricket (2017)
+<https://www.imdb.com/title/tt3218114/> a schema:Movie ;
+    schema:name "Pig Goat Banana Cricket" ;
+    schema:url <https://www.imdb.com/title/tt3218114/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Cronenbird"
+    ] .
+
+# Ape Sodom (2016)
+<https://www.imdb.com/title/tt5532868/> a schema:Movie ;
+    schema:name "Ape Sodom" ;
+    schema:url <https://www.imdb.com/title/tt5532868/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Tomorrow's Shadows (2016)
+<https://www.imdb.com/title/tt5527102/> a schema:Movie ;
+    schema:name "Tomorrow's Shadows" ;
+    schema:url <https://www.imdb.com/title/tt5527102/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "G.O.D."
+    ] .
+
+# Consumed (2014)
+<https://www.imdb.com/title/tt3715254/> a schema:Movie ;
+    schema:name "Consumed" ;
+    schema:url <https://www.imdb.com/title/tt3715254/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Interviewer"
+    ] .
+
+# The Nest (2013)
+<https://www.imdb.com/title/tt3831484/> a schema:Movie ;
+    schema:name "The Nest" ;
+    schema:url <https://www.imdb.com/title/tt3831484/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Molnar"
+    ] .
+
+# Rewind (2013)
+<https://www.imdb.com/title/tt2193185/> a schema:Movie ;
+    schema:name "Rewind" ;
+    schema:url <https://www.imdb.com/title/tt2193185/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Rourke"
+    ] .
+
+# Happy Town (2010)
+<https://www.imdb.com/title/tt1379722/> a schema:Movie ;
+    schema:name "Happy Town" ;
+    schema:url <https://www.imdb.com/title/tt1379722/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Leichman"
+    ] .
+
+# Barney's Version (2010)
+<https://www.imdb.com/title/tt1423894/> a schema:Movie ;
+    schema:name "Barney's Version" ;
+    schema:url <https://www.imdb.com/title/tt1423894/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "O'Malley Director #2"
+    ] .
+
+# At the Suicide of the Last Jew in the World in the Last Cinema in the World (2007)
+<https://www.imdb.com/title/tt14148306/> a schema:Movie ;
+    schema:name "At the Suicide of the Last Jew in the World in the Last Cinema in the World" ;
+    schema:url <https://www.imdb.com/title/tt14148306/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "The Last Jew"
+    ] .
+
+# To Each His Own Cinema (2007)
+<https://www.imdb.com/title/tt0973844/> a schema:Movie ;
+    schema:name "To Each His Own Cinema" ;
+    schema:url <https://www.imdb.com/title/tt0973844/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "The Suicidal Man"
+    ] .
+
+# Alias (2003)
+<https://www.imdb.com/title/tt0285333/> a schema:Movie ;
+    schema:name "Alias" ;
+    schema:url <https://www.imdb.com/title/tt0285333/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Brezzel"
+    ] .
+
+# Jason X (2001)
+<https://www.imdb.com/title/tt0211443/> a schema:Movie ;
+    schema:name "Jason X" ;
+    schema:url <https://www.imdb.com/title/tt0211443/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Wimmer"
+    ] .
+
+# The Judge (2001)
+<https://www.imdb.com/title/tt0271022/> a schema:Movie ;
+    schema:name "The Judge" ;
+    schema:url <https://www.imdb.com/title/tt0271022/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Det. Stobel"
+    ] .
+
+# Resurrection (1999)
+<https://www.imdb.com/title/tt0142804/> a schema:Movie ;
+    schema:name "Resurrection" ;
+    schema:url <https://www.imdb.com/title/tt0142804/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Father Rousell"
+    ] .
+
+# The Grace of God (1998)
+<https://www.imdb.com/title/tt0209000/> a schema:Movie ;
+    schema:name "The Grace of God" ;
+    schema:url <https://www.imdb.com/title/tt0209000/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Psychiatrist"
+    ] .
+
+# Last Night (1998)
+<https://www.imdb.com/title/tt0156729/> a schema:Movie ;
+    schema:name "Last Night" ;
+    schema:url <https://www.imdb.com/title/tt0156729/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Duncan"
+    ] .
+
+# The Newsroom (1997)
+<https://www.imdb.com/title/tt0115291/> a schema:Movie ;
+    schema:name "The Newsroom" ;
+    schema:url <https://www.imdb.com/title/tt0115291/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "David Cronenberg"
+    ] .
+
+# Extreme Measures (1996)
+<https://www.imdb.com/title/tt0116259/> a schema:Movie ;
+    schema:name "Extreme Measures" ;
+    schema:url <https://www.imdb.com/title/tt0116259/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Hospital Lawyer"
+    ] .
+
+# The Stupids (1996)
+<https://www.imdb.com/title/tt0117768/> a schema:Movie ;
+    schema:name "The Stupids" ;
+    schema:url <https://www.imdb.com/title/tt0117768/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Postal Supervisor"
+    ] .
+
+# Moonshine Highway (1996)
+<https://www.imdb.com/title/tt0117079/> a schema:Movie ;
+    schema:name "Moonshine Highway" ;
+    schema:url <https://www.imdb.com/title/tt0117079/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Clem Clayton"
+    ] .
+
+# Blood & Donuts (1995)
+<https://www.imdb.com/title/tt0112527/> a schema:Movie ;
+    schema:name "Blood & Donuts" ;
+    schema:url <https://www.imdb.com/title/tt0112527/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Crime Boss"
+    ] .
+
+# To Die For (1995)
+<https://www.imdb.com/title/tt0114681/> a schema:Movie ;
+    schema:name "To Die For" ;
+    schema:url <https://www.imdb.com/title/tt0114681/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Man at Lake"
+    ] .
+
+# Boozecan (1994)
+<https://www.imdb.com/title/tt0109318/> a schema:Movie ;
+    schema:name "Boozecan" ;
+    schema:url <https://www.imdb.com/title/tt0109318/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Stan Coleburn"
+    ] .
+
+# Henry & Verlin (1994)
+<https://www.imdb.com/title/tt0110013/> a schema:Movie ;
+    schema:name "Henry & Verlin" ;
+    schema:url <https://www.imdb.com/title/tt0110013/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Doc Fisher"
+    ] .
+
+# Trial by Jury (1994)
+<https://www.imdb.com/title/tt0111488/> a schema:Movie ;
+    schema:name "Trial by Jury" ;
+    schema:url <https://www.imdb.com/title/tt0111488/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Director"
+    ] .
+
+# Blue (1992)
+<https://www.imdb.com/title/tt0103844/> a schema:Movie ;
+    schema:name "Blue" ;
+    schema:url <https://www.imdb.com/title/tt0103844/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName ""
+    ] .
+
+# Nightbreed (1990)
+<https://www.imdb.com/title/tt0100260/> a schema:Movie ;
+    schema:name "Nightbreed" ;
+    schema:url <https://www.imdb.com/title/tt0100260/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Dr. Philip K. Decker"
+    ] .
+
+# Into the Night (1985)
+<https://www.imdb.com/title/tt0089346/> a schema:Movie ;
+    schema:name "Into the Night" ;
+    schema:url <https://www.imdb.com/title/tt0089346/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Group Supervisor"
+    ] .
+
+# Videodrome (1983)
+<https://www.imdb.com/title/tt0086541/> a schema:Movie ;
+    schema:name "Videodrome" ;
+    schema:url <https://www.imdb.com/title/tt0086541/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Max Renn (Helmet Scenes)"
+    ] .
+
+# Shivers (1975)
+<https://www.imdb.com/title/tt0073705/> a schema:Movie ;
+    schema:name "Shivers" ;
+    schema:url <https://www.imdb.com/title/tt0073705/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName "Infected Crowd Member"
+    ] .
+
+# Buffalo Airport Visions (1967)
+<https://www.imdb.com/title/tt31530168/> a schema:Movie ;
+    schema:name "Buffalo Airport Visions" ;
+    schema:url <https://www.imdb.com/title/tt31530168/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000343/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3505634585/> a schema:VideoObject ;
+        schema:name "David Cronenberg | Director Supercut" ;
+        schema:description "From 'The Fly' to 'Dead Ringers,' here's a look at some of our favorite moments from the films of David Cronenberg. Which film is your favorite?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3505634585/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTFlNGMwM2EtZjkxNi00NjFiLTg4MWItN2IzZDJjNjdkNDFmXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M49S"^^xsd:duration ;
+        schema:uploadDate "2019-03-19T15:58:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTM5NjM3OTYyMV5BMl5BanBnXkFtZTYwMzcyMzY1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5NjM3OTYyMV5BMl5BanBnXkFtZTYwMzcyMzY1._V1_.jpg> ;
+    schema:caption "David Cronenberg" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "268"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm4089012737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDEzMWY3Y2YtNmZlZS00MmU5LTg1NjktZWYyY2NiYWRkM2Y3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Cronenberg and Michael Gibson in Star Trek: Discovery (2017)" ;
+    schema:height "2001"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm3999936513/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmRiOTJlOGUtOWU1YS00ZDMyLTg3OGItNjJkNzMwZDY1YzE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Cronenberg in Star Trek: Discovery (2017)" ;
+    schema:height "732"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm2661544705/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzQ2OTIzMWQtOTgyYi00NWE3LTk5MzItYmIyMDk0ZDBiOGZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Cronenberg and Rachael Crawford in Family Ties (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm2186215168/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc3NzQ4NDk1Nl5BMl5BanBnXkFtZTgwNjk2NzM5MzE@._V1_.jpg> ;
+    schema:caption "David Cronenberg and Craig Sheffer in Nightbreed (1990)" ;
+    schema:height "671"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm926010368/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1NDEyNDgzOV5BMl5BanBnXkFtZTgwODExOTIwMjE@._V1_.jpg> ;
+    schema:caption "David Cronenberg, Peter Weller, and William S. Burroughs in Naked Lunch (1991)" ;
+    schema:height "2803"^^xsd:integer ;
+    schema:width "3950"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm2486996480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQ0NjcxNjUyMV5BMl5BanBnXkFtZTcwNTEyNzgwMw@@._V1_.jpg> ;
+    schema:caption "David Cronenberg and Paul Guilfoyle in Extreme Measures (1996)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm3814262529/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5MWI4OWEtNzgzMy00YzY3LWE1ZWYtM2Q1MTU2Y2RmMjMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Cronenberg in Nightbreed (1990)" ;
+    schema:height "5079"^^xsd:integer ;
+    schema:width "3780"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm4228095232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1OTcxNzI2OV5BMl5BanBnXkFtZTcwOTU5MTQzMQ@@._V1_.jpg> ;
+    schema:caption "David Cronenberg directing Peter Weller and Joseph Scorsiani¹ in Naked Lunch(1991)." ;
+    schema:height "355"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000343/mediaviewer/rm3273168896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4MTU5MjYzOF5BMl5BanBnXkFtZTYwODMwNjk2._V1_.jpg> ;
+    schema:caption "David Cronenberg in A History of Violence (2005)" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000343/>
+    schema:sameAs <https://www.facebook.com/David-Cronenberg-20552798428/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

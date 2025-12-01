@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0354016/> a schema:Person ;
+    schema:name "Yan Hai" ;
+    schema:url <https://www.imdb.com/name/nm0354016/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Yan Hai. Actress: Crouching Tiger, Hidden Dragon. Yan Hai is known for Crouching Tiger, Hidden Dragon (2000), Empresses in the Palace (2015) and Empresses in the Palace (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6077258/>,    # Empresses in the Palace
+                       <https://www.imdb.com/title/tt2374683/>,    # Empresses in the Palace
+                       <https://www.imdb.com/title/tt0190332/> ; # Crouching Tiger, Hidden Dragon
+
+
+    schema:video <https://www.imdb.com/video/vi1046455321/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0354016/mediaviewer/rm2488872704/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Empresses in the Palace (2015)
+<https://www.imdb.com/title/tt6077258/> a schema:Movie ;
+    schema:name "Empresses in the Palace" ;
+    schema:url <https://www.imdb.com/title/tt6077258/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0354016/> ;
+        schema:characterName "Jing'an"
+    ] .
+
+# Empresses in the Palace (2012)
+<https://www.imdb.com/title/tt2374683/> a schema:Movie ;
+    schema:name "Empresses in the Palace" ;
+    schema:url <https://www.imdb.com/title/tt2374683/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0354016/> ;
+        schema:characterName "Jing'an"
+    ] .
+
+# Crouching Tiger, Hidden Dragon (2000)
+<https://www.imdb.com/title/tt0190332/> a schema:Movie ;
+    schema:name "Crouching Tiger, Hidden Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0190332/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0354016/> ;
+        schema:characterName "Madame Yu"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1046455321/> a schema:VideoObject ;
+        schema:name "Crouching Tiger, Hidden Dragon" ;
+        schema:description "Trailer for Crouching Tiger, Hidden Dragon" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1046455321/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDY1ZjQ4YzAtODZmNy00M2JhLTkwNzItNjA0NDFmZDM2MzFkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M4S"^^xsd:duration ;
+        schema:uploadDate "2012-11-02T03:08:49Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0354016/mediaviewer/rm2488872704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI2MTM3ZjctNDA2Ni00MjQzLWI5NjAtZGY5MTgzYWNkYjY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Yan Hai and Ziyi Zhang in Crouching Tiger, Hidden Dragon (2000)" ;
+    schema:height "684"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

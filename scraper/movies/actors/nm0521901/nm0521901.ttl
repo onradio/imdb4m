@@ -1,0 +1,103 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0521901/> a schema:Person ;
+    schema:name "Patrick Louis" ;
+    schema:url <https://www.imdb.com/name/nm0521901/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Patrick Louis. Actor: Cinderella Man. Patrick Louis was born in Vancouver, BC on November 12 1996. His first major role was playing Howard Braddock in the Movie Cinderella Man (2005). Since then Patrick has disappeared from the world of acting. Six years later however he is still just as interested in the world of film making as he was at the age of six. In 2011-2012, Patrick enrolled in the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAwNzA2MjI2M15BMl5BanBnXkFtZTYwMzg3MTU0._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0352248/>,    # Cinderella Man
+                       <https://www.imdb.com/title/tt0255312/> ; # Lansdown
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0521901/mediaviewer/rm1467063552/>,
+                 <https://www.imdb.com/name/nm0521901/mediaviewer/rm2613025536/>,
+                 <https://www.imdb.com/name/nm0521901/mediaviewer/rm2596248320/>,
+                 <https://www.imdb.com/name/nm0521901/mediaviewer/rm2629802752/>,
+                 <https://www.imdb.com/name/nm0521901/mediaviewer/rm65769984/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cinderella Man (2005)
+<https://www.imdb.com/title/tt0352248/> a schema:Movie ;
+    schema:name "Cinderella Man" ;
+    schema:url <https://www.imdb.com/title/tt0352248/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0521901/> ;
+        schema:characterName "Howard Braddock"
+    ] .
+
+# Lansdown (2001)
+<https://www.imdb.com/title/tt0255312/> a schema:Movie ;
+    schema:name "Lansdown" ;
+    schema:url <https://www.imdb.com/title/tt0255312/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0521901/> ;
+        schema:characterName "Gendhi"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAwNzA2MjI2M15BMl5BanBnXkFtZTYwMzg3MTU0._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAwNzA2MjI2M15BMl5BanBnXkFtZTYwMzg3MTU0._V1_.jpg> ;
+    schema:caption "Patrick Louis at an event for Cinderella Man (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "266"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521901/mediaviewer/rm1467063552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA5NzI1MjE1Nl5BMl5BanBnXkFtZTcwNjYwMDkyMQ@@._V1_.jpg> ;
+    schema:caption "Russell Crowe, Patrick Louis, Connor Price, and Ariel Waller in Cinderella Man (2005)" ;
+    schema:height "293"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521901/mediaviewer/rm2613025536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwMDg4MTUyOF5BMl5BanBnXkFtZTYwNTg3MTU0._V1_.jpg> ;
+    schema:caption "Patrick Louis at an event for Cinderella Man (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "271"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521901/mediaviewer/rm2596248320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0MDI0NDk4OF5BMl5BanBnXkFtZTYwNzg3MTU0._V1_.jpg> ;
+    schema:caption "Patrick Louis at an event for Cinderella Man (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "271"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521901/mediaviewer/rm2629802752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAwNzA2MjI2M15BMl5BanBnXkFtZTYwMzg3MTU0._V1_.jpg> ;
+    schema:caption "Patrick Louis at an event for Cinderella Man (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "266"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521901/mediaviewer/rm65769984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4NTQzODUzM15BMl5BanBnXkFtZTcwOTgzNDEzMQ@@._V1_.jpg> ;
+    schema:caption "Russell Crowe, Renée Zellweger, Craig Bierko, Patrick Louis, Connor Price, and Ariel Waller in Cinderella Man (2005)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "351"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

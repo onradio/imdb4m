@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0773354/> a schema:Person ;
+    schema:name "Nastassja Schmiedt" ;
+    schema:url <https://www.imdb.com/name/nm0773354/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Nastassja Schmiedt. Actress: The Truman Show. Nastassja Schmiedt is known for The Truman Show (1998), Frasier (1993) and Wet (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0444736/>,    # The Naked Brothers Band: The Movie
+                       <https://www.imdb.com/title/tt0430759/>,    # Wet
+                       <https://www.imdb.com/title/tt0246063/>,    # Maniac Magee
+                       <https://www.imdb.com/title/tt0106004/>,    # Frasier
+                       <https://www.imdb.com/title/tt0120382/> . # The Truman Show
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Naked Brothers Band: The Movie (2005)
+<https://www.imdb.com/title/tt0444736/> a schema:Movie ;
+    schema:name "The Naked Brothers Band: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt0444736/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0773354/> ;
+        schema:characterName "Autograph Girl Fan"
+    ] .
+
+# Wet (2004)
+<https://www.imdb.com/title/tt0430759/> a schema:Movie ;
+    schema:name "Wet" ;
+    schema:url <https://www.imdb.com/title/tt0430759/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0773354/> ;
+        schema:characterName "Sandy"
+    ] .
+
+# Maniac Magee (2003)
+<https://www.imdb.com/title/tt0246063/> a schema:Movie ;
+    schema:name "Maniac Magee" ;
+    schema:url <https://www.imdb.com/title/tt0246063/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0773354/> ;
+        schema:characterName "Hester Beale"
+    ] .
+
+# Frasier (2000)
+<https://www.imdb.com/title/tt0106004/> a schema:Movie ;
+    schema:name "Frasier" ;
+    schema:url <https://www.imdb.com/title/tt0106004/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0773354/> ;
+        schema:characterName "Girl in Line"
+    ] .
+
+# The Truman Show (1998)
+<https://www.imdb.com/title/tt0120382/> a schema:Movie ;
+    schema:name "The Truman Show" ;
+    schema:url <https://www.imdb.com/title/tt0120382/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0773354/> ;
+        schema:characterName "Truman's Neighbor - Truman's World"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

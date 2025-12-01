@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0304141/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Double Trouble" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Double Trouble" ;
+            schema:lyricist <https://www.imdb.com/name/nm0000636/> # William Shakespeare
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Cumparsita" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Cumparsita" ;
+            schema:author <https://www.imdb.com/name/nm0559209/> # Gerardo Matos Rodríguez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Winter's Spell" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Winter's Spell" ;
+            schema:composer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+            schema:lyricist <https://www.imdb.com/name/nm0917941/>, # Cynthia Weil
+                        <https://www.imdb.com/name/nm0724601/> # Jamie Richardson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Raspa" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hot Liquorice" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hot Liquorice" ;
+            schema:author <https://www.imdb.com/name/nm0910011/> # Dick Walter
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000636/> a schema:Person ;
+    schema:name "William Shakespeare" .
+<https://www.imdb.com/name/nm0002354/> a schema:Person ;
+    schema:name "John Williams" .
+<https://www.imdb.com/name/nm0559209/> a schema:Person ;
+    schema:name "Gerardo Matos Rodríguez" .
+<https://www.imdb.com/name/nm0724601/> a schema:Person ;
+    schema:name "Jamie Richardson" .
+<https://www.imdb.com/name/nm0910011/> a schema:Person ;
+    schema:name "Dick Walter" .
+<https://www.imdb.com/name/nm0917941/> a schema:Person ;
+    schema:name "Cynthia Weil" .
+# ==============================================================================

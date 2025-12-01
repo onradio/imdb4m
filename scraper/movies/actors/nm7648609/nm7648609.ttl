@@ -1,0 +1,182 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7648609/> a schema:Person ;
+    schema:name "Mrunal Jadhav" ;
+    schema:url <https://www.imdb.com/name/nm7648609/> ;
+    schema:birthDate "2008-11-26"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Mrunal Jadhav. Actress: Drishyam. Mrunal Jadhav was born on 26 November 2008 in Mumbai, Maharashtra, India. She is an actress, known for Drishyam (2015), Drishyam 2 (2022) and TuHiRe (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTgzZWUyY2EtN2ZmMC00ZDhjLWE0ZmQtNzY0YzE2YjUyNGNiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mumbai, Maharashtra, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt15478010/>,    # Marathi Celebrity Acappella
+                       <https://www.imdb.com/title/tt4846920/>,    # TuHiRe
+                       <https://www.imdb.com/title/tt4430212/>,    # Drishyam
+                       <https://www.imdb.com/title/tt3850798/>,    # Lai Bhaari
+                       <https://www.imdb.com/title/tt14224914/> ; # Radha Hee Bawaree
+
+
+    schema:video <https://www.imdb.com/video/vi2538520345/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7648609/mediaviewer/rm3673045761/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm9430528/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm630187520/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm1431308033/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm2976776449/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm3491799297/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm2264185090/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm412808448/>,
+                 <https://www.imdb.com/name/nm7648609/mediaviewer/rm3895143169/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Marathi Celebrity Acappella (2018)
+<https://www.imdb.com/title/tt15478010/> a schema:Movie ;
+    schema:name "Marathi Celebrity Acappella" ;
+    schema:url <https://www.imdb.com/title/tt15478010/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7648609/> ;
+        schema:characterName ""
+    ] .
+
+# TuHiRe (2015)
+<https://www.imdb.com/title/tt4846920/> a schema:Movie ;
+    schema:name "TuHiRe" ;
+    schema:url <https://www.imdb.com/title/tt4846920/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7648609/> ;
+        schema:characterName "Pihu"
+    ] .
+
+# Drishyam (2015)
+<https://www.imdb.com/title/tt4430212/> a schema:Movie ;
+    schema:name "Drishyam" ;
+    schema:url <https://www.imdb.com/title/tt4430212/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7648609/> ;
+        schema:characterName "Anu Salgaonkar"
+    ] .
+
+# Lai Bhaari (2014)
+<https://www.imdb.com/title/tt3850798/> a schema:Movie ;
+    schema:name "Lai Bhaari" ;
+    schema:url <https://www.imdb.com/title/tt3850798/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7648609/> ;
+        schema:characterName "Rukmani"
+    ] .
+
+# Radha Hee Bawaree (2012)
+<https://www.imdb.com/title/tt14224914/> a schema:Movie ;
+    schema:name "Radha Hee Bawaree" ;
+    schema:url <https://www.imdb.com/title/tt14224914/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7648609/> ;
+        schema:characterName "Jui D'costa"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2538520345/> a schema:VideoObject ;
+        schema:name "Bhaybheet (2020) Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2538520345/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGMwZWI1OTctNTM1Yi00MTE5LWJmZmQtMGI0ZDFkYjllN2ExXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M11S"^^xsd:duration ;
+        schema:uploadDate "2020-02-19T17:18:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTgzZWUyY2EtN2ZmMC00ZDhjLWE0ZmQtNzY0YzE2YjUyNGNiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzZWUyY2EtN2ZmMC00ZDhjLWE0ZmQtNzY0YzE2YjUyNGNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mrunal Jadhav" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "633"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm3673045761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTQwMDUzMGEtOWI0Zi00Zjc5LTk5YjEtNmQ5YjZlNTEzMzlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tabu, Ajay Devgn, Shriya Saran, Ishita Dutta, and Mrunal Jadhav in Drishyam 2 (2022)" ;
+    schema:height "958"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm9430528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmMyN2RjZWYtNDU2Mi00MzRkLTk2ODItZjA5NWYyZWU2MjMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ajay Devgn, Shriya Saran, Ishita Dutta, and Mrunal Jadhav in Drishyam (2015)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm630187520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzkxZDAwNjMtYTQ1Yi00M2Q3LTg3MmYtNzFjNDlkMTZiYTllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mrunal Jadhav in Drishyam (2015)" ;
+    schema:height "791"^^xsd:integer ;
+    schema:width "1406"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm1431308033/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjRlMWNjZDItMDY5Zi00OTQwLWIyYzMtOTBhNGYxYjEyMDUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ajay Devgn, Shriya Saran, Ishita Dutta, and Mrunal Jadhav in Drishyam 2 (2022)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm2976776449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUzOTkxY2YtNWUyMS00NjRkLWIyNmQtOTJiZjJhODQxZmZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ajay Devgn, Shriya Saran, Ishita Dutta, and Mrunal Jadhav in Drishyam 2 (2022)" ;
+    schema:height "3192"^^xsd:integer ;
+    schema:width "6054"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm3491799297/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmY1NzY3NjAtMjVmZS00MDFhLTk0MWYtZWJjNGIxYmJmZDg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tabu, Ajay Devgn, Rajat Kapoor, Shriya Saran, Nishikant Kamat, Ishita Dutta, and Mrunal Jadhav at an event for Drishyam (2015)" ;
+    schema:height "1960"^^xsd:integer ;
+    schema:width "3184"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm2264185090/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWM4NTYyYTAtODM2Yi00Y2FjLTliZWEtM2U2ODk4OWIwYzM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tabu, Ajay Devgn, Rajat Kapoor, Akshaye Khanna, Saurabh Shukla, Shriya Saran, Kamlesh Sawant, Ishita Dutta, and Mrunal Jadhav in Drishyam 3 (2026)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm412808448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYyMjgyNDY3N15BMl5BanBnXkFtZTgwOTMzNTE5NTE@._V1_.jpg> ;
+    schema:caption "Tabu, Ajay Devgn, Shriya Saran, Ishita Dutta, and Mrunal Jadhav in Drishyam (2015)" ;
+    schema:height "1417"^^xsd:integer ;
+    schema:width "981"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7648609/mediaviewer/rm3895143169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzZWUyY2EtN2ZmMC00ZDhjLWE0ZmQtNzY0YzE2YjUyNGNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mrunal Jadhav" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "633"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

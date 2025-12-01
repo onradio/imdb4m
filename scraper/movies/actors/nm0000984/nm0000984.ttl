@@ -1,0 +1,359 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000984/> a schema:Person ;
+    schema:name "Avery Brooks" ;
+    schema:url <https://www.imdb.com/name/nm0000984/> ;
+    schema:birthDate "1948-10-02"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Music Department" ;
+    schema:alternateName "Avery Franklin Brooks" ;
+    schema:description "Avery Brooks. Actor: Star Trek: Deep Space Nine. Avery Franklin Brooks was born on October 2, 1948 in Evansville, Indiana to a musically talented family. His maternal grandfather, Samuel Travis Crawford, was a tenor who graduated from Tougaloo College in Mississippi in 1901. Crawford toured the country singing with the Delta Rhythm Boys in the 1930s. Brooks also is musically inclined having played jazz piano, and has performed as the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTI3ODIyNDI3M15BMl5BanBnXkFtZTYwNjQ3MTcz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Evansville, Indiana, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0106145/>,    # Star Trek: Deep Space Nine
+                       <https://www.imdb.com/title/tt0094213/>,    # Uncle Tom's Cabin
+                       <https://www.imdb.com/title/tt0120586/>,    # American History X
+                       <https://www.imdb.com/title/tt0120609/>,    # The Big Hit
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0844485/>,    # Star Trek: Legacy
+                       <https://www.imdb.com/title/tt3770694/>,    # God Lives Underwater: Fame
+                       <https://www.imdb.com/title/tt0179626/>,    # 15 Minutes
+                       <https://www.imdb.com/title/tt0111996/>,    # Happily Ever After: Fairy Tales for Every Child
+                       <https://www.imdb.com/title/tt0413308/>,    # Star Trek: Deep Space Nine - Harbinger
+                       <https://www.imdb.com/title/tt0108783/>,    # Gargoyles
+                       <https://www.imdb.com/title/tt0114509/>,    # Spenser: A Savage Place
+                       <https://www.imdb.com/title/tt0111259/>,    # Spenser: The Judas Goat
+                       <https://www.imdb.com/title/tt0111258/>,    # Spenser: Pale Kings and Princes
+                       <https://www.imdb.com/title/tt0083452/>,    # Nature
+                       <https://www.imdb.com/title/tt0108202/>,    # Spenser: Ceremony
+                       <https://www.imdb.com/title/tt0106826/>,    # The Ernest Green Story
+                       <https://www.imdb.com/title/tt0096646/>,    # A Man Called Hawk
+                       <https://www.imdb.com/title/tt0096009/>,    # Roots: The Gift
+                       <https://www.imdb.com/title/tt0088612/>,    # Spenser: For Hire
+                       <https://www.imdb.com/title/tt0089145/>,    # Finnegan Begin Again
+                       <https://www.imdb.com/title/tt0176357/> ; # American Playhouse
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 6 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi751552793/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000984/mediaviewer/rm3440745985/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm2305632000/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm1376064256/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm1359287040/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm1342509824/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm5095680/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm843956480/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm810402048/>,
+                 <https://www.imdb.com/name/nm0000984/mediaviewer/rm676184320/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0106145/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine" ;
+    schema:url <https://www.imdb.com/title/tt0106145/> .
+
+<https://www.imdb.com/title/tt0094213/> a schema:Movie ;
+    schema:name "Uncle Tom's Cabin" ;
+    schema:url <https://www.imdb.com/title/tt0094213/> .
+
+<https://www.imdb.com/title/tt0120586/> a schema:Movie ;
+    schema:name "American History X" ;
+    schema:url <https://www.imdb.com/title/tt0120586/> .
+
+<https://www.imdb.com/title/tt0120609/> a schema:Movie ;
+    schema:name "The Big Hit" ;
+    schema:url <https://www.imdb.com/title/tt0120609/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Star Trek: Legacy (2006)
+<https://www.imdb.com/title/tt0844485/> a schema:Movie ;
+    schema:name "Star Trek: Legacy" ;
+    schema:url <https://www.imdb.com/title/tt0844485/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Capt. Benjamin Sisko"
+    ] .
+
+# God Lives Underwater: Fame (2001)
+<https://www.imdb.com/title/tt3770694/> a schema:Movie ;
+    schema:name "God Lives Underwater: Fame" ;
+    schema:url <https://www.imdb.com/title/tt3770694/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Detective Leon Jackson"
+    ] .
+
+# 15 Minutes (2001)
+<https://www.imdb.com/title/tt0179626/> a schema:Movie ;
+    schema:name "15 Minutes" ;
+    schema:url <https://www.imdb.com/title/tt0179626/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Leon Jackson"
+    ] .
+
+# Happily Ever After: Fairy Tales for Every Child (1997)
+<https://www.imdb.com/title/tt0111996/> a schema:Movie ;
+    schema:name "Happily Ever After: Fairy Tales for Every Child" ;
+    schema:url <https://www.imdb.com/title/tt0111996/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "King Maximus"
+    ] .
+
+# Star Trek: Deep Space Nine - Harbinger (1996)
+<https://www.imdb.com/title/tt0413308/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine - Harbinger" ;
+    schema:url <https://www.imdb.com/title/tt0413308/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Capt. Benjamin Sisko"
+    ] .
+
+# Gargoyles (1996)
+<https://www.imdb.com/title/tt0108783/> a schema:Movie ;
+    schema:name "Gargoyles" ;
+    schema:url <https://www.imdb.com/title/tt0108783/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Nokkar"
+    ] .
+
+# Spenser: A Savage Place (1995)
+<https://www.imdb.com/title/tt0114509/> a schema:Movie ;
+    schema:name "Spenser: A Savage Place" ;
+    schema:url <https://www.imdb.com/title/tt0114509/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Spenser: The Judas Goat (1994)
+<https://www.imdb.com/title/tt0111259/> a schema:Movie ;
+    schema:name "Spenser: The Judas Goat" ;
+    schema:url <https://www.imdb.com/title/tt0111259/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Spenser: Pale Kings and Princes (1994)
+<https://www.imdb.com/title/tt0111258/> a schema:Movie ;
+    schema:name "Spenser: Pale Kings and Princes" ;
+    schema:url <https://www.imdb.com/title/tt0111258/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Nature (1993)
+<https://www.imdb.com/title/tt0083452/> a schema:Movie ;
+    schema:name "Nature" ;
+    schema:url <https://www.imdb.com/title/tt0083452/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Spenser: Ceremony (1993)
+<https://www.imdb.com/title/tt0108202/> a schema:Movie ;
+    schema:name "Spenser: Ceremony" ;
+    schema:url <https://www.imdb.com/title/tt0108202/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# The Ernest Green Story (1993)
+<https://www.imdb.com/title/tt0106826/> a schema:Movie ;
+    schema:name "The Ernest Green Story" ;
+    schema:url <https://www.imdb.com/title/tt0106826/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Rev. Lawson"
+    ] .
+
+# A Man Called Hawk (1989)
+<https://www.imdb.com/title/tt0096646/> a schema:Movie ;
+    schema:name "A Man Called Hawk" ;
+    schema:url <https://www.imdb.com/title/tt0096646/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Roots: The Gift (1988)
+<https://www.imdb.com/title/tt0096009/> a schema:Movie ;
+    schema:name "Roots: The Gift" ;
+    schema:url <https://www.imdb.com/title/tt0096009/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Cletus Moyer"
+    ] .
+
+# Spenser: For Hire (1985)
+<https://www.imdb.com/title/tt0088612/> a schema:Movie ;
+    schema:name "Spenser: For Hire" ;
+    schema:url <https://www.imdb.com/title/tt0088612/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Finnegan Begin Again (1984)
+<https://www.imdb.com/title/tt0089145/> a schema:Movie ;
+    schema:name "Finnegan Begin Again" ;
+    schema:url <https://www.imdb.com/title/tt0089145/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Dude on Bus"
+    ] .
+
+# American Playhouse (1984)
+<https://www.imdb.com/title/tt0176357/> a schema:Movie ;
+    schema:name "American Playhouse" ;
+    schema:url <https://www.imdb.com/title/tt0176357/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000984/> ;
+        schema:characterName "Solomon Northup"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi751552793/> a schema:VideoObject ;
+        schema:name "Mysteries of China (Trailer)" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi751552793/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjJiMzJkNmItMTY5Yi00NTdkLWEzZGItMmM1N2RmNDA5MWY1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M42S"^^xsd:duration ;
+        schema:uploadDate "2024-12-24T23:47:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTI3ODIyNDI3M15BMl5BanBnXkFtZTYwNjQ3MTcz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3ODIyNDI3M15BMl5BanBnXkFtZTYwNjQ3MTcz._V1_.jpg> ;
+    schema:caption "Avery Brooks at an event for Star Trek: First Contact (1996)" ;
+    schema:height "664"^^xsd:integer ;
+    schema:width "468"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm3440745985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmM5ZWMyOTAtMTdiZC00MTUwLWI3Y2EtMjEwZjQxNzNkN2E0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Avery Brooks and Robert Urich in Spenser: For Hire (1985)" ;
+    schema:height "2850"^^xsd:integer ;
+    schema:width "1934"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm2305632000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2YxMTUzMDYtMDQyNC00MGEwLWJjODQtNjYyNmM3OTFhMjFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Avery Brooks and Penny Johnson Jerald in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "601"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm1376064256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1OTU1MDAzMF5BMl5BanBnXkFtZTgwNjMwNDA5ODE@._V1_.jpg> ;
+    schema:caption "Avery Brooks in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1858"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm1359287040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwOTQ5ODczMl5BMl5BanBnXkFtZTgwNzMwNDA5ODE@._V1_.jpg> ;
+    schema:caption "Avery Brooks, LeVar Burton, and Louis Gossett Jr. in Roots: The Gift (1988)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1369"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm1342509824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxMjU4MjA5NF5BMl5BanBnXkFtZTgwODMwNDA5ODE@._V1_.jpg> ;
+    schema:caption "Avery Brooks in A Man Called Hawk (1989)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1357"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm5095680/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMDg2NjIzMV5BMl5BanBnXkFtZTgwMjc0NTg0MjE@._V1_.jpg> ;
+    schema:caption "Avery Brooks in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm843956480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwNjgwMjEwNl5BMl5BanBnXkFtZTgwMzM0NTg0MjE@._V1_.jpg> ;
+    schema:caption "Avery Brooks and Deborah Lacey in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm810402048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIzMjU0NzEzNF5BMl5BanBnXkFtZTgwODM0NTg0MjE@._V1_.jpg> ;
+    schema:caption "Avery Brooks and Richard Libertini in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000984/mediaviewer/rm676184320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2OTcxOTYyMl5BMl5BanBnXkFtZTgwNTI0NTg0MjE@._V1_.jpg> ;
+    schema:caption "Avery Brooks and Rene Auberjonois in Star Trek: Deep Space Nine (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

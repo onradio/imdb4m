@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3193736/> a schema:Person ;
+    schema:name "Sanchita Choudhary" ;
+    schema:url <https://www.imdb.com/name/nm3193736/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Sanchita Choudhary. Actress: Slumdog Millionaire. Sanchita Choudhary is known for Slumdog Millionaire (2008), Singh Is Kinng (2008) and Plot No. 666 (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6409494/>,    # Plot No. 666
+                       <https://www.imdb.com/title/tt13132626/>,    # Mohabbat the Taj
+                       <https://www.imdb.com/title/tt1010048/>,    # Slumdog Millionaire
+                       <https://www.imdb.com/title/tt1146325/> . # Singh Is Kinng
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Plot No. 666 (2015)
+<https://www.imdb.com/title/tt6409494/> a schema:Movie ;
+    schema:name "Plot No. 666" ;
+    schema:url <https://www.imdb.com/title/tt6409494/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193736/> ;
+        schema:characterName "Sonia"
+    ] .
+
+# Mohabbat the Taj (2008)
+<https://www.imdb.com/title/tt13132626/> a schema:Movie ;
+    schema:name "Mohabbat the Taj" ;
+    schema:url <https://www.imdb.com/title/tt13132626/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193736/> ;
+        schema:characterName "Mumtaz"
+    ] .
+
+# Slumdog Millionaire (2008)
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193736/> ;
+        schema:characterName "Jamal's Mother"
+    ] .
+
+# Singh Is Kinng (2008)
+<https://www.imdb.com/title/tt1146325/> a schema:Movie ;
+    schema:name "Singh Is Kinng" ;
+    schema:url <https://www.imdb.com/title/tt1146325/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193736/> ;
+        schema:characterName "Tanya"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

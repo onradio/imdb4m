@@ -1,0 +1,198 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2264184/> a schema:Person ;
+    schema:name "Elissa Knight" ;
+    schema:url <https://www.imdb.com/name/nm2264184/> ;
+    schema:birthDate "1975-04-15"^^xsd:date ;
+    schema:jobTitle "Additional Crew", "Actress", "Editor" ;
+    schema:alternateName "El" ;
+    schema:description "Elissa Knight. Actress: WALL·E. Elissa Knight was born on 15 April 1975 in Santa Cruz, California, USA. She is an actress and editor, known for WALL·E (2008), Cars (2006) and Inside Out (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA2NTY0MTAxN15BMl5BanBnXkFtZTcwNjY2MjY3MQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Santa Cruz, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.66"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5½″ (1.66 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0910970/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0317219/>,    # Cars
+                       <https://www.imdb.com/title/tt10298810/>,    # Lightyear
+                       <https://www.imdb.com/title/tt2096673/>,    # Inside Out
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3116154/>,    # Party Central
+                       <https://www.imdb.com/title/tt1453405/>,    # Monsters University
+                       <https://www.imdb.com/title/tt3748256/>,    # Tales from Radiator Springs
+                       <https://www.imdb.com/title/tt1384816/>,    # Mater's Tall Tales
+                       <https://www.imdb.com/title/tt1437330/>,    # Tracy
+                       <https://www.imdb.com/title/tt1671453/>,    # Cars Race-O-Rama
+                       <https://www.imdb.com/title/tt1340049/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0814044/> ; # Cars: The Video Game
+
+
+    schema:video <https://www.imdb.com/video/vi3869941785/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2264184/mediaviewer/rm1046910720/>,
+                 <https://www.imdb.com/name/nm2264184/mediaviewer/rm2198476800/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> .
+
+<https://www.imdb.com/title/tt0317219/> a schema:Movie ;
+    schema:name "Cars" ;
+    schema:url <https://www.imdb.com/title/tt0317219/> .
+
+<https://www.imdb.com/title/tt10298810/> a schema:Movie ;
+    schema:name "Lightyear" ;
+    schema:url <https://www.imdb.com/title/tt10298810/> .
+
+<https://www.imdb.com/title/tt2096673/> a schema:Movie ;
+    schema:name "Inside Out" ;
+    schema:url <https://www.imdb.com/title/tt2096673/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Party Central (2013)
+<https://www.imdb.com/title/tt3116154/> a schema:Movie ;
+    schema:name "Party Central" ;
+    schema:url <https://www.imdb.com/title/tt3116154/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Monsters University (2013)
+<https://www.imdb.com/title/tt1453405/> a schema:Movie ;
+    schema:name "Monsters University" ;
+    schema:url <https://www.imdb.com/title/tt1453405/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Tales from Radiator Springs (2013)
+<https://www.imdb.com/title/tt3748256/> a schema:Movie ;
+    schema:name "Tales from Radiator Springs" ;
+    schema:url <https://www.imdb.com/title/tt3748256/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Additional Voice Talent"
+    ] .
+
+# Mater's Tall Tales (2008)
+<https://www.imdb.com/title/tt1384816/> a schema:Movie ;
+    schema:name "Mater's Tall Tales" ;
+    schema:url <https://www.imdb.com/title/tt1384816/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Tia"
+    ] .
+
+# Tracy (2009)
+<https://www.imdb.com/title/tt1437330/> a schema:Movie ;
+    schema:name "Tracy" ;
+    schema:url <https://www.imdb.com/title/tt1437330/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Ellen Canzini (Junior)"
+    ] .
+
+# Cars Race-O-Rama (2009)
+<https://www.imdb.com/title/tt1671453/> a schema:Movie ;
+    schema:name "Cars Race-O-Rama" ;
+    schema:url <https://www.imdb.com/title/tt1671453/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Tia"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt1340049/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt1340049/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "EVE"
+    ] .
+
+# Cars: The Video Game (2006)
+<https://www.imdb.com/title/tt0814044/> a schema:Movie ;
+    schema:name "Cars: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0814044/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2264184/> ;
+        schema:characterName "Tia"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3869941785/> a schema:VideoObject ;
+        schema:name "Cars Toons: Mater&apos;s Tall Tales" ;
+        schema:description "Interstitial: Moon Mater" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3869941785/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjFhODY2ZjEtNGUwYS00ZTI3LWFjNWItMmY2OWE4YzhkOGJmXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M2S"^^xsd:duration ;
+        schema:uploadDate "2012-03-21T03:09:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA2NTY0MTAxN15BMl5BanBnXkFtZTcwNjY2MjY3MQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA2NTY0MTAxN15BMl5BanBnXkFtZTcwNjY2MjY3MQ@@._V1_.jpg> ;
+    schema:caption "Elissa Knight at an event for WALL·E (2008)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2264184/mediaviewer/rm1046910720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA2NTY0MTAxN15BMl5BanBnXkFtZTcwNjY2MjY3MQ@@._V1_.jpg> ;
+    schema:caption "Elissa Knight at an event for WALL·E (2008)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2264184/mediaviewer/rm2198476800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMThjZjFjNjMtNjNlZC00MWVkLTgwMDctYjgwNWQ0MjFiOTczXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ben Burtt and Elissa Knight in WALL·E (2008)" ;
+    schema:height "1816"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

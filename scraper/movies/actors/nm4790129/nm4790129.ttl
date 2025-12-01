@@ -1,0 +1,391 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4790129/> a schema:Person ;
+    schema:name "Kyla-Drew" ;
+    schema:url <https://www.imdb.com/name/nm4790129/> ;
+    schema:birthDate "2004-04-17"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Kyla Drew Simmons" ;
+    schema:description "Kyla-Drew. Actress: Prisoners. Kyla-Drew was born on 17 April 2004 in Atlanta, Georgia, USA. She is an actress, known for Prisoners (2013), Peppermint (2018) and Nicky, Ricky, Dicky & Dawn (2014)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjQzNmNjMzEtM2EzMC00MzNkLTg1Y2MtNWFhYmJjYjNlOTIwXkEyXkFqcGc@._V1_CR41,61,943,1415_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Atlanta, Georgia, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4¼″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1392214/>,    # Prisoners
+                       <https://www.imdb.com/title/tt0460649/>,    # How I Met Your Mother
+                       <https://www.imdb.com/title/tt3596176/>,    # Nicky, Ricky, Dicky & Dawn
+                       <https://www.imdb.com/title/tt6850820/>,    # Peppermint
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10288224/>,    # Crown Lake
+                       <https://www.imdb.com/title/tt6470478/>,    # The Good Doctor
+                       <https://www.imdb.com/title/tt9039142/>,    # No Good Nick
+                       <https://www.imdb.com/title/tt7053188/>,    # Station 19
+                       <https://www.imdb.com/title/tt6522758/>,    # Wisdom of the Crowd
+                       <https://www.imdb.com/title/tt6917656/>,    # Nickelodeon's Sizzling Summer Camp Special
+                       <https://www.imdb.com/title/tt6428912/>,    # Michael Jackson: Searching for Neverland
+                       <https://www.imdb.com/title/tt2331053/>,    # Santa's Boot Camp
+                       <https://www.imdb.com/title/tt5213744/>,    # Jessica Darling's It List
+                       <https://www.imdb.com/title/tt3533916/>,    # The Veil
+                       <https://www.imdb.com/title/tt1954839/>,    # Soul Ties
+                       <https://www.imdb.com/title/tt3215364/>,    # Battle Creek
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt23725012/>,    # Homeroom
+                       <https://www.imdb.com/title/tt0364845/>,    # NCIS: Naval Criminal Investigative Service
+                       <https://www.imdb.com/title/tt1219024/>,    # Castle
+                       <https://www.imdb.com/title/tt1865769/>,    # Jessie
+                       <https://www.imdb.com/title/tt1225901/>,    # 90210
+                       <https://www.imdb.com/title/tt1047540/>,    # Parental Guidance
+                       <https://www.imdb.com/title/tt2182229/> ; # The Neighbors
+
+
+    schema:video <https://www.imdb.com/video/vi704299033/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4790129/mediaviewer/rm3564748801/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm2417017601/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm3851700993/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm2340471553/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm2920334081/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm1775832833/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm1328333824/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm813350913/>,
+                 <https://www.imdb.com/name/nm4790129/mediaviewer/rm3279536129/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1392214/> a schema:Movie ;
+    schema:name "Prisoners" ;
+    schema:url <https://www.imdb.com/title/tt1392214/> .
+
+<https://www.imdb.com/title/tt0460649/> a schema:Movie ;
+    schema:name "How I Met Your Mother" ;
+    schema:url <https://www.imdb.com/title/tt0460649/> .
+
+<https://www.imdb.com/title/tt3596176/> a schema:Movie ;
+    schema:name "Nicky, Ricky, Dicky & Dawn" ;
+    schema:url <https://www.imdb.com/title/tt3596176/> .
+
+<https://www.imdb.com/title/tt6850820/> a schema:Movie ;
+    schema:name "Peppermint" ;
+    schema:url <https://www.imdb.com/title/tt6850820/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Crown Lake (2019)
+<https://www.imdb.com/title/tt10288224/> a schema:Movie ;
+    schema:name "Crown Lake" ;
+    schema:url <https://www.imdb.com/title/tt10288224/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Tiffany St. Martin"
+    ] .
+
+# The Good Doctor (2019)
+<https://www.imdb.com/title/tt6470478/> a schema:Movie ;
+    schema:name "The Good Doctor" ;
+    schema:url <https://www.imdb.com/title/tt6470478/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Michelle Reynolds"
+    ] .
+
+# No Good Nick (2019)
+<https://www.imdb.com/title/tt9039142/> a schema:Movie ;
+    schema:name "No Good Nick" ;
+    schema:url <https://www.imdb.com/title/tt9039142/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Becky"
+    ] .
+
+# Station 19 (2019)
+<https://www.imdb.com/title/tt7053188/> a schema:Movie ;
+    schema:name "Station 19" ;
+    schema:url <https://www.imdb.com/title/tt7053188/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Ellie"
+    ] .
+
+# Wisdom of the Crowd (2017)
+<https://www.imdb.com/title/tt6522758/> a schema:Movie ;
+    schema:name "Wisdom of the Crowd" ;
+    schema:url <https://www.imdb.com/title/tt6522758/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Donita Smitts"
+    ] .
+
+# Nickelodeon's Sizzling Summer Camp Special (2017)
+<https://www.imdb.com/title/tt6917656/> a schema:Movie ;
+    schema:name "Nickelodeon's Sizzling Summer Camp Special" ;
+    schema:url <https://www.imdb.com/title/tt6917656/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Kyla"
+    ] .
+
+# Michael Jackson: Searching for Neverland (2017)
+<https://www.imdb.com/title/tt6428912/> a schema:Movie ;
+    schema:name "Michael Jackson: Searching for Neverland" ;
+    schema:url <https://www.imdb.com/title/tt6428912/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Aleiya Whitfield"
+    ] .
+
+# Santa's Boot Camp (2016)
+<https://www.imdb.com/title/tt2331053/> a schema:Movie ;
+    schema:name "Santa's Boot Camp" ;
+    schema:url <https://www.imdb.com/title/tt2331053/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Accounting Elf"
+    ] .
+
+# Jessica Darling's It List (2016)
+<https://www.imdb.com/title/tt5213744/> a schema:Movie ;
+    schema:name "Jessica Darling's It List" ;
+    schema:url <https://www.imdb.com/title/tt5213744/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Dori"
+    ] .
+
+# The Veil (2016)
+<https://www.imdb.com/title/tt3533916/> a schema:Movie ;
+    schema:name "The Veil" ;
+    schema:url <https://www.imdb.com/title/tt3533916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Comotose Girl"
+    ] .
+
+# Soul Ties (2015)
+<https://www.imdb.com/title/tt1954839/> a schema:Movie ;
+    schema:name "Soul Ties" ;
+    schema:url <https://www.imdb.com/title/tt1954839/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Young Terry"
+    ] .
+
+# Battle Creek (2015)
+<https://www.imdb.com/title/tt3215364/> a schema:Movie ;
+    schema:name "Battle Creek" ;
+    schema:url <https://www.imdb.com/title/tt3215364/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Katori"
+    ] .
+
+# Grey's Anatomy (2015)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Mia James"
+    ] .
+
+# Homeroom (2014)
+<https://www.imdb.com/title/tt23725012/> a schema:Movie ;
+    schema:name "Homeroom" ;
+    schema:url <https://www.imdb.com/title/tt23725012/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Violet"
+    ] .
+
+# NCIS: Naval Criminal Investigative Service (2014)
+<https://www.imdb.com/title/tt0364845/> a schema:Movie ;
+    schema:name "NCIS: Naval Criminal Investigative Service" ;
+    schema:url <https://www.imdb.com/title/tt0364845/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Greta Staley"
+    ] .
+
+# Castle (2014)
+<https://www.imdb.com/title/tt1219024/> a schema:Movie ;
+    schema:name "Castle" ;
+    schema:url <https://www.imdb.com/title/tt1219024/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Sophie"
+    ] .
+
+# Jessie (2014)
+<https://www.imdb.com/title/tt1865769/> a schema:Movie ;
+    schema:name "Jessie" ;
+    schema:url <https://www.imdb.com/title/tt1865769/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Taylor Harris"
+    ] .
+
+# 90210 (2013)
+<https://www.imdb.com/title/tt1225901/> a schema:Movie ;
+    schema:name "90210" ;
+    schema:url <https://www.imdb.com/title/tt1225901/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# Parental Guidance (2012)
+<https://www.imdb.com/title/tt1047540/> a schema:Movie ;
+    schema:name "Parental Guidance" ;
+    schema:url <https://www.imdb.com/title/tt1047540/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Speech Student"
+    ] .
+
+# The Neighbors (2012)
+<https://www.imdb.com/title/tt2182229/> a schema:Movie ;
+    schema:name "The Neighbors" ;
+    schema:url <https://www.imdb.com/title/tt2182229/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4790129/> ;
+        schema:characterName "Kid #2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi704299033/> a schema:VideoObject ;
+        schema:name "Dad Stop Embarrassing Me (Latin America Market Trailer 1 Subtitled)" ;
+        schema:description "Dad Stop Embarrassing Me (Latin America Market Trailer 1 Subtitled)" ;
+        schema:embedUrl <https://www.imdb.com/video/vi704299033/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjYzYjE0ZmUtMjAwOS00NzAxLTk2ZWEtMDY2N2NiMmI0YTI3XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M5S"^^xsd:duration ;
+        schema:uploadDate "2021-04-15T13:02:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjQzNmNjMzEtM2EzMC00MzNkLTg1Y2MtNWFhYmJjYjNlOTIwXkEyXkFqcGc@._V1_CR41,61,943,1415_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQzNmNjMzEtM2EzMC00MzNkLTg1Y2MtNWFhYmJjYjNlOTIwXkEyXkFqcGc@._V1_CR41,61,943,1415_.jpg> ;
+    schema:caption "Kyla-Drew" ;
+    schema:height "1415"^^xsd:integer ;
+    schema:width "943"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm3564748801/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzM3MDY0NWEtNDc1MC00NDk1LWI1YTEtYzRjNTYwMmI0YzliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dad Stop Embarrassing Me Netflix" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1143"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm2417017601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI1NmYwYTktNjQxMy00NTcxLWFjYzEtNjhkNGNlZmMxMGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jimmy Kimmel Live" ;
+    schema:height "1733"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm3851700993/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA2NDBkZjEtZmExMS00NDBiLTkzNjMtNzNkNWYyOTkyYTMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kyla-Drew" ;
+    schema:height "1532"^^xsd:integer ;
+    schema:width "1242"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm2340471553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmM1MjUwNDktMzAyNC00Mzk1LWE1YTctZGQxZjFkNmZiYTQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Style by Markq" ;
+    schema:height "8272"^^xsd:integer ;
+    schema:width "6200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm2920334081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGNkMWVlODUtMzJhZi00ZDllLTgyMDgtYjQ5NmFiOTBjNDUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jimmy Kimmel Live" ;
+    schema:height "1957"^^xsd:integer ;
+    schema:width "1400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm1775832833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmVmMzQyN2YtZjllMS00MTJjLTg5N2UtYmQyYjIyODg0YTA1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kyla-Drew, Quvenzhané Wallis, Kyanna Simone, and Raven Scott in American Horror Stories (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm1328333824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2MTExMzM5N15BMl5BanBnXkFtZTgwNTgyNjg3MjE@._V1_.jpg> ;
+    schema:caption "Skai Jackson and Kyla-Drew in Jessie (2011)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm813350913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjNjOWFkYzktNmRhZS00Nzg3LThjZDctZTBkYmI1OWI5MDc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kyla-Drew" ;
+    schema:height "2222"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4790129/mediaviewer/rm3279536129/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjg4YjkxNDYtYzNkMC00OTBiLTk3NzItMjc5YWYzYzU4MTc4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kyla-Drew" ;
+    schema:height "781"^^xsd:integer ;
+    schema:width "584"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

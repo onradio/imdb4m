@@ -1,0 +1,265 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0178910/> a schema:Person ;
+    schema:name "Roman Coppola" ;
+    schema:url <https://www.imdb.com/name/nm0178910/> ;
+    schema:birthDate "1965-04-22"^^xsd:date ;
+    schema:jobTitle "Producer", "Director", "Writer" ;
+    schema:description "Roman Coppola. Writer: Moonrise Kingdom. Roman Coppola was born on 22 April 1965 in Neuilly-sur-Seine, Hauts-de-Seine, France. He is a producer and director, known for Moonrise Kingdom (2012), The Darjeeling Limited (2007) and The French Dispatch (2021). He is married to Jennifer Furches. They have one child." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU2OTE2MDkzOF5BMl5BanBnXkFtZTYwOTgyMDgz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Neuilly-sur-Seine, Hauts-de-Seine, France"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1748122/>,    # Moonrise Kingdom
+                       <https://www.imdb.com/title/tt0838221/>,    # The Darjeeling Limited
+                       <https://www.imdb.com/title/tt5104604/>,    # Isle of Dogs
+                       <https://www.imdb.com/title/tt8847712/>,    # The French Dispatch
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1791504/>,    # Beastie Boys: Fight for Your Right Revisited
+                       <https://www.imdb.com/title/tt0432283/>,    # Fantastic Mr. Fox
+                       <https://www.imdb.com/title/tt4283584/>,    # American Express: My Life. My Card.
+                       <https://www.imdb.com/title/tt0120915/>,    # Star Wars: Episode I - The Phantom Menace
+                       <https://www.imdb.com/title/tt0155732/>,    # Gunfighter
+                       <https://www.imdb.com/title/tt0816430/>,    # Bed, Bath and Beyond
+                       <https://www.imdb.com/title/tt0078788/>,    # Apocalypse Now
+                       <https://www.imdb.com/title/tt0071562/>,    # The Godfather Part II
+                       <https://www.imdb.com/title/tt0068646/>,    # The Godfather
+                       <https://www.imdb.com/title/tt0061209/> ; # You're a Big Boy Now
+
+    schema:award [
+        a schema:Award ;
+        schema:description "11 wins & 34 nominations total"
+    ] ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0178910/mediaviewer/rm3848231937/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm3865009153/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm27997696/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm3123445248/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm3106668032/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm2906289408/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm2493744384/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm549566466/>,
+                 <https://www.imdb.com/name/nm0178910/mediaviewer/rm2522889216/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1748122/> a schema:Movie ;
+    schema:name "Moonrise Kingdom" ;
+    schema:url <https://www.imdb.com/title/tt1748122/> .
+
+<https://www.imdb.com/title/tt0838221/> a schema:Movie ;
+    schema:name "The Darjeeling Limited" ;
+    schema:url <https://www.imdb.com/title/tt0838221/> .
+
+<https://www.imdb.com/title/tt5104604/> a schema:Movie ;
+    schema:name "Isle of Dogs" ;
+    schema:url <https://www.imdb.com/title/tt5104604/> .
+
+<https://www.imdb.com/title/tt8847712/> a schema:Movie ;
+    schema:name "The French Dispatch" ;
+    schema:url <https://www.imdb.com/title/tt8847712/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Beastie Boys: Fight for Your Right Revisited (2011)
+<https://www.imdb.com/title/tt1791504/> a schema:Movie ;
+    schema:name "Beastie Boys: Fight for Your Right Revisited" ;
+    schema:url <https://www.imdb.com/title/tt1791504/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Café Patron"
+    ] .
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Squirrel Contractor"
+    ] .
+
+# American Express: My Life. My Card. (2006)
+<https://www.imdb.com/title/tt4283584/> a schema:Movie ;
+    schema:name "American Express: My Life. My Card." ;
+    schema:url <https://www.imdb.com/title/tt4283584/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Roman Coppola"
+    ] .
+
+# Star Wars: Episode I - The Phantom Menace (1999)
+<https://www.imdb.com/title/tt0120915/> a schema:Movie ;
+    schema:name "Star Wars: Episode I - The Phantom Menace" ;
+    schema:url <https://www.imdb.com/title/tt0120915/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Cid Rushing"
+    ] .
+
+# Gunfighter (1999)
+<https://www.imdb.com/title/tt0155732/> a schema:Movie ;
+    schema:name "Gunfighter" ;
+    schema:url <https://www.imdb.com/title/tt0155732/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Bandido"
+    ] .
+
+# Bed, Bath and Beyond (1996)
+<https://www.imdb.com/title/tt0816430/> a schema:Movie ;
+    schema:name "Bed, Bath and Beyond" ;
+    schema:url <https://www.imdb.com/title/tt0816430/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName ""
+    ] .
+
+# Apocalypse Now (1979)
+<https://www.imdb.com/title/tt0078788/> a schema:Movie ;
+    schema:name "Apocalypse Now" ;
+    schema:url <https://www.imdb.com/title/tt0078788/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Francis de Marais (Redux and Final Cut versions only)"
+    ] .
+
+# The Godfather Part II (1974)
+<https://www.imdb.com/title/tt0071562/> a schema:Movie ;
+    schema:name "The Godfather Part II" ;
+    schema:url <https://www.imdb.com/title/tt0071562/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Sonny Corleone - as a Boy"
+    ] .
+
+# The Godfather (1972)
+<https://www.imdb.com/title/tt0068646/> a schema:Movie ;
+    schema:name "The Godfather" ;
+    schema:url <https://www.imdb.com/title/tt0068646/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Boy on Street Who Attended Funeral"
+    ] .
+
+# You're a Big Boy Now (1966)
+<https://www.imdb.com/title/tt0061209/> a schema:Movie ;
+    schema:name "You're a Big Boy Now" ;
+    schema:url <https://www.imdb.com/title/tt0061209/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178910/> ;
+        schema:characterName "Baby Boy in Carriage"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU2OTE2MDkzOF5BMl5BanBnXkFtZTYwOTgyMDgz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2OTE2MDkzOF5BMl5BanBnXkFtZTYwOTgyMDgz._V1_.jpg> ;
+    schema:caption "Roman Coppola at an event for CQ (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "262"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm3848231937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGNhMGYxZTAtMjk2My00YThhLWJkNDMtOTdmZDdhNmM1NzkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro and Roman Coppola in The Godfather Part II (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm3865009153/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGVmNTU2NDEtZjVjNS00NjJiLWEyZTgtNmU5MWU0MThmMjZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro, Roman Coppola, and Francesca De Sapio in The Godfather Part II (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1285"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm27997696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWZhZWIzZjEtMGZjYS00ODMzLWI5OWYtNmU4OTlhYmU5ZGE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jason Schwartzman, Roman Coppola, and Waris Ahluwalia in American Express: My Life. My Card. (2006)" ;
+    schema:height "719"^^xsd:integer ;
+    schema:width "1276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm3123445248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMjkwMDcxNl5BMl5BanBnXkFtZTgwMzkzODA4MzE@._V1_.jpg> ;
+    schema:caption "Jason Schwartzman and Roman Coppola in IMDb: What to Watch (2013)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm3106668032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NTg2NjkzNl5BMl5BanBnXkFtZTgwNTkzODA4MzE@._V1_.jpg> ;
+    schema:caption "Jason Schwartzman and Roman Coppola in IMDb: What to Watch (2013)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm2906289408/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzliNzgxNjMtOTA5NS00ZjE2LWI1NmMtYzU2MTI2YmM0NDhkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Francis Ford Coppola, Gian-Carlo Coppola, and Roman Coppola" ;
+    schema:height "301"^^xsd:integer ;
+    schema:width "612"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm2493744384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3NjczMTM3OF5BMl5BanBnXkFtZTcwMjkwNTIzNA@@._V1_.jpg> ;
+    schema:caption "Roman Coppola in CQ (2001)" ;
+    schema:height "687"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm549566466/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2QzYTMwMWQtNGNjZS00ODg1LTg3YTYtYjhkZjY2MDg5NDViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roman Coppola and Mads Mikkelsen" ;
+    schema:height "6383"^^xsd:integer ;
+    schema:width "4255"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0178910/mediaviewer/rm2522889216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMDQ1ODAxM15BMl5BanBnXkFtZTgwNDcwNTA0MTI@._V1_.jpg> ;
+    schema:caption "Francis Ford Coppola, Carmine Coppola, Eleanor Coppola, Gian-Carlo Coppola, Roman Coppola, and Frank Edwards at an event for The 47th Annual Academy Awards (1975)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "2030"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

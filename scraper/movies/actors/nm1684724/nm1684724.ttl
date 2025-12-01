@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1684724/> a schema:Person ;
+    schema:name "Horton Jupiter" ;
+    schema:url <https://www.imdb.com/name/nm1684724/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Horton Jupiter. Actor: Shaun of the Dead. Horton Jupiter is known for Shaun of the Dead (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0775400/>,    # Snuff Box
+                       <https://www.imdb.com/title/tt0365748/> . # Shaun of the Dead
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Snuff Box (2006)
+<https://www.imdb.com/title/tt0775400/> a schema:Movie ;
+    schema:name "Snuff Box" ;
+    schema:url <https://www.imdb.com/title/tt0775400/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684724/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# Shaun of the Dead (2004)
+<https://www.imdb.com/title/tt0365748/> a schema:Movie ;
+    schema:name "Shaun of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0365748/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684724/> ;
+        schema:characterName "Homeless Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9301789/> a schema:Person ;
+    schema:name "André Lukács Molnár" ;
+    schema:url <https://www.imdb.com/name/nm9301789/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "André Lukács Molnár. Actor: Blade Runner 2049. André Lukács Molnár is known for Blade Runner 2049 (2017), Easy Living (2015) and A fekete emberek (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8824736/>,    # A fekete emberek
+                       <https://www.imdb.com/title/tt5099020/>,    # Easy Living
+                       <https://www.imdb.com/title/tt1856101/> . # Blade Runner 2049
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A fekete emberek (2018)
+<https://www.imdb.com/title/tt8824736/> a schema:Movie ;
+    schema:name "A fekete emberek" ;
+    schema:url <https://www.imdb.com/title/tt8824736/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9301789/> ;
+        schema:characterName "Lacika"
+    ] .
+
+# Easy Living (2018)
+<https://www.imdb.com/title/tt5099020/> a schema:Movie ;
+    schema:name "Easy Living" ;
+    schema:url <https://www.imdb.com/title/tt5099020/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9301789/> ;
+        schema:characterName "Kornél"
+    ] .
+
+# Blade Runner 2049 (2017)
+<https://www.imdb.com/title/tt1856101/> a schema:Movie ;
+    schema:name "Blade Runner 2049" ;
+    schema:url <https://www.imdb.com/title/tt1856101/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9301789/> ;
+        schema:characterName "Memory Child"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

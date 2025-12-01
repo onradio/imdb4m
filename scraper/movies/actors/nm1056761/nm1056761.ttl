@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1056761/> a schema:Person ;
+    schema:name "David M. O&apos;Dell" ;
+    schema:url <https://www.imdb.com/name/nm1056761/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "David M. O'Dell. Actor: E.T. the Extra-Terrestrial. David M. O'Dell is known for E.T. the Extra-Terrestrial (1982)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0083866/> ;    # E.T. the Extra-Terrestrial
+
+
+    schema:video <https://www.imdb.com/video/vi3090130201/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# E.T. the Extra-Terrestrial (1982)
+<https://www.imdb.com/title/tt0083866/> a schema:Movie ;
+    schema:name "E.T. the Extra-Terrestrial" ;
+    schema:url <https://www.imdb.com/title/tt0083866/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1056761/> ;
+        schema:characterName "Schoolboy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3090130201/> a schema:VideoObject ;
+        schema:name "E.T.: The Extra-Terrestrial: Anniversay Edition [Blu-Ray + Digital Copy]" ;
+        schema:description "Trailer 2 for E.T.: The Extra-Terrestrial" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3090130201/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmQ3Yzk1ODAtMzcyYS00Mjg3LWE2NjQtNzY3M2IwOTNjYmMyXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT54S"^^xsd:duration ;
+        schema:uploadDate "2012-08-31T03:14:05Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,157 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0373627/> a schema:Person ;
+    schema:name "Marta Heflin" ;
+    schema:url <https://www.imdb.com/name/nm0373627/> ;
+    schema:birthDate "1945-03-29"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:alternateName "Marta Michelle Heflin" ;
+    schema:description "Marta Heflin. Actress: The King of Comedy. Marta Heflin was born on 29 March 1945 in Washington, District of Columbia, USA. She was an actress, known for The King of Comedy (1982), Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean (1982) and The Doctors (1963). She was married to Peter Link. She died on 18 September 2013 in Manhattan, New York City, New York, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmVlODhmOTctZDEwZS00ZTc0LWI4ODItNjU4ZTMyMDgzYjc5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Washington, District of Columbia, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.60"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3″ (1.60 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0085794/>,    # The King of Comedy
+                       <https://www.imdb.com/title/tt0056752/>,    # The Doctors
+                       <https://www.imdb.com/title/tt0078481/>,    # A Wedding
+                       <https://www.imdb.com/title/tt0083745/>,    # Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0082445/>,    # The Gentleman Bandit
+                       <https://www.imdb.com/title/tt0081344/>,    # Playing for Time
+                       <https://www.imdb.com/title/tt0079710/>,    # A Perfect Couple
+                       <https://www.imdb.com/title/tt0075265/> ; # A Star Is Born
+
+
+    schema:video <https://www.imdb.com/video/vi2349467417/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0373627/mediaviewer/rm4026178048/>,
+                 <https://www.imdb.com/name/nm0373627/mediaviewer/rm1203451136/>,
+                 <https://www.imdb.com/name/nm0373627/mediaviewer/rm4140667648/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0085794/> a schema:Movie ;
+    schema:name "The King of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt0085794/> .
+
+<https://www.imdb.com/title/tt0056752/> a schema:Movie ;
+    schema:name "The Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0056752/> .
+
+<https://www.imdb.com/title/tt0078481/> a schema:Movie ;
+    schema:name "A Wedding" ;
+    schema:url <https://www.imdb.com/title/tt0078481/> .
+
+<https://www.imdb.com/title/tt0083745/> a schema:Movie ;
+    schema:name "Come Back to the 5 & Dime Jimmy Dean, Jimmy Dean" ;
+    schema:url <https://www.imdb.com/title/tt0083745/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Gentleman Bandit (1981)
+<https://www.imdb.com/title/tt0082445/> a schema:Movie ;
+    schema:name "The Gentleman Bandit" ;
+    schema:url <https://www.imdb.com/title/tt0082445/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0373627/> ;
+        schema:characterName "Marie"
+    ] .
+
+# Playing for Time (1980)
+<https://www.imdb.com/title/tt0081344/> a schema:Movie ;
+    schema:name "Playing for Time" ;
+    schema:url <https://www.imdb.com/title/tt0081344/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0373627/> ;
+        schema:characterName "Esther"
+    ] .
+
+# A Perfect Couple (1979)
+<https://www.imdb.com/title/tt0079710/> a schema:Movie ;
+    schema:name "A Perfect Couple" ;
+    schema:url <https://www.imdb.com/title/tt0079710/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0373627/> ;
+        schema:characterName "Sheila Shea"
+    ] .
+
+# A Star Is Born (1976)
+<https://www.imdb.com/title/tt0075265/> a schema:Movie ;
+    schema:name "A Star Is Born" ;
+    schema:url <https://www.imdb.com/title/tt0075265/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0373627/> ;
+        schema:characterName "Quentin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2349467417/> a schema:VideoObject ;
+        schema:name "A Perfect Couple" ;
+        schema:description "Trailer for this romantic comedy" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2349467417/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzQ3MTBkZDAtZGIwMi00Y2M4LWJlNTMtZGJlYTk2YjA2NmJkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2010-05-18T14:49:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmVlODhmOTctZDEwZS00ZTc0LWI4ODItNjU4ZTMyMDgzYjc5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmVlODhmOTctZDEwZS00ZTc0LWI4ODItNjU4ZTMyMDgzYjc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Dooley and Marta Heflin in A Perfect Couple (1979)" ;
+    schema:height "1332"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0373627/mediaviewer/rm4026178048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2NjQ0NTc5NV5BMl5BanBnXkFtZTYwNDYzMTc4._V1_.jpg> ;
+    schema:caption "1 sheet" ;
+    schema:height "348"^^xsd:integer ;
+    schema:width "225"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0373627/mediaviewer/rm1203451136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmVlODhmOTctZDEwZS00ZTc0LWI4ODItNjU4ZTMyMDgzYjc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Dooley and Marta Heflin in A Perfect Couple (1979)" ;
+    schema:height "1332"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0373627/mediaviewer/rm4140667648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIxMjYwOTI5Nl5BMl5BanBnXkFtZTcwNDY1OTQ0MQ@@._V1_.jpg> ;
+    schema:caption "Paul Dooley and Marta Heflin in A Perfect Couple (1979)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "365"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

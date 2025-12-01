@@ -1,0 +1,136 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1384126/> a schema:Person ;
+    schema:name "Nicholas Bird" ;
+    schema:url <https://www.imdb.com/name/nm1384126/> ;
+    schema:birthDate "1994-10-28"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Nicholas Bird. Actor: Finding Nemo. Nicholas Bird was born on 28 October 1994 in Los Angeles, California, USA. He is an actor, known for Finding Nemo (2003), The Incredibles (2004) and Incredibles 2 (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTUyODM0MTM0OF5BMl5BanBnXkFtZTgwMzM0MDQxNDE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8952294/>,    # Auntie Edna
+                       <https://www.imdb.com/title/tt3606756/>,    # Incredibles 2
+                       <https://www.imdb.com/title/tt1319713/>,    # Finding Nemo Submarine Voyage
+                       <https://www.imdb.com/title/tt0317705/>,    # The Incredibles
+                       <https://www.imdb.com/title/tt0266543/>,    # Finding Nemo
+                       <https://www.imdb.com/title/tt18334372/> ; # Finding Nemo: Nemo's Underwater World of Fun
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1384126/mediaviewer/rm1126799360/>,
+                 <https://www.imdb.com/name/nm1384126/mediaviewer/rm844102656/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Auntie Edna (2018)
+<https://www.imdb.com/title/tt8952294/> a schema:Movie ;
+    schema:name "Auntie Edna" ;
+    schema:url <https://www.imdb.com/title/tt8952294/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Monster Jack-Jack Parr"
+    ] .
+
+# Incredibles 2 (2018)
+<https://www.imdb.com/title/tt3606756/> a schema:Movie ;
+    schema:name "Incredibles 2" ;
+    schema:url <https://www.imdb.com/title/tt3606756/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Monster Jack-Jack Parr"
+    ] .
+
+# Finding Nemo Submarine Voyage (2007)
+<https://www.imdb.com/title/tt1319713/> a schema:Movie ;
+    schema:name "Finding Nemo Submarine Voyage" ;
+    schema:url <https://www.imdb.com/title/tt1319713/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Squirt"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Finding Nemo (2003)
+<https://www.imdb.com/title/tt0266543/> a schema:Movie ;
+    schema:name "Finding Nemo" ;
+    schema:url <https://www.imdb.com/title/tt0266543/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Squirt"
+    ] .
+
+# Finding Nemo: Nemo's Underwater World of Fun (2003)
+<https://www.imdb.com/title/tt18334372/> a schema:Movie ;
+    schema:name "Finding Nemo: Nemo's Underwater World of Fun" ;
+    schema:url <https://www.imdb.com/title/tt18334372/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1384126/> ;
+        schema:characterName "Squirt"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTUyODM0MTM0OF5BMl5BanBnXkFtZTgwMzM0MDQxNDE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyODM0MTM0OF5BMl5BanBnXkFtZTgwMzM0MDQxNDE@._V1_.jpg> ;
+    schema:caption "Nicholas Bird in Finding Nemo (2003)" ;
+    schema:height "248"^^xsd:integer ;
+    schema:width "236"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1384126/mediaviewer/rm1126799360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ4ODgyMjE1M15BMl5BanBnXkFtZTYwNjI0ODY2._V1_.jpg> ;
+    schema:caption "Nicholas Bird in Finding Nemo (2003)" ;
+    schema:height "286"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1384126/mediaviewer/rm844102656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyODM0MTM0OF5BMl5BanBnXkFtZTgwMzM0MDQxNDE@._V1_.jpg> ;
+    schema:caption "Nicholas Bird in Finding Nemo (2003)" ;
+    schema:height "248"^^xsd:integer ;
+    schema:width "236"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

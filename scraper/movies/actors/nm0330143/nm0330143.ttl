@@ -1,0 +1,238 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0330143/> a schema:Person ;
+    schema:name "Dexter Gordon" ;
+    schema:url <https://www.imdb.com/name/nm0330143/> ;
+    schema:birthDate "1923-02-27"^^xsd:date ;
+    schema:jobTitle "Actor", "Music Department", "Composer" ;
+    schema:alternateName "Long Tall Dex", "Society Red" ;
+    schema:description "Dexter Gordon. Actor: 'Round Midnight. Dexter Gordon was considered one of the greatest jazz saxophonists ever, During his heyday, namely `45-`80, he played tenor sax with many of the all-time jazz greats, including Lionel Hampton, Louis Armstrong, Billy Eckstine and many others. In the 60s, he left his vices behind and created some wonderful music. He played in Europe extensively where he was very popular and lived there for the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNWYzYmEzOTYtMDFiMy00YjJhLWE0YmMtZDAyY2RkZjc3NjNhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.96"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 5″ (1.96 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0090557/>,    # 'Round Midnight
+                       <https://www.imdb.com/title/tt0099077/>,    # Awakenings
+                       <https://www.imdb.com/title/tt1355683/>,    # Black Mass
+                       <https://www.imdb.com/title/tt1655441/>,    # The Age of Adaline
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0090410/>,    # Crime Story
+                       <https://www.imdb.com/title/tt14239178/>,    # Saxofonen - en kærlighedshistorie
+                       <https://www.imdb.com/title/tt30624727/>,    # Dexter Gordon & Bobby Hutcherson: Cheesecake
+                       <https://www.imdb.com/title/tt0063148/>,    # Jag älskar, du älskar
+                       <https://www.imdb.com/title/tt21429948/>,    # Karin's Mood
+                       <https://www.imdb.com/title/tt0341824/>,    # Jazzorama
+                       <https://www.imdb.com/title/tt0316685/>,    # Stopforbud
+                       <https://www.imdb.com/title/tt14505922/>,    # Jazzland
+                       <https://www.imdb.com/title/tt0049490/>,    # Viva Las Vegas!
+                       <https://www.imdb.com/title/tt0048762/>,    # Unchained
+                       <https://www.imdb.com/title/tt0043153/> ; # Young Man of Music
+
+    schema:award [
+        a schema:Award ;
+        schema:description "5 wins & 9 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2855191321/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0330143/mediaviewer/rm584119297/>,
+                 <https://www.imdb.com/name/nm0330143/mediaviewer/rm2993103104/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0090557/> a schema:Movie ;
+    schema:name "'Round Midnight" ;
+    schema:url <https://www.imdb.com/title/tt0090557/> .
+
+<https://www.imdb.com/title/tt0099077/> a schema:Movie ;
+    schema:name "Awakenings" ;
+    schema:url <https://www.imdb.com/title/tt0099077/> .
+
+<https://www.imdb.com/title/tt1355683/> a schema:Movie ;
+    schema:name "Black Mass" ;
+    schema:url <https://www.imdb.com/title/tt1355683/> .
+
+<https://www.imdb.com/title/tt1655441/> a schema:Movie ;
+    schema:name "The Age of Adaline" ;
+    schema:url <https://www.imdb.com/title/tt1655441/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Crime Story (1988)
+<https://www.imdb.com/title/tt0090410/> a schema:Movie ;
+    schema:name "Crime Story" ;
+    schema:url <https://www.imdb.com/title/tt0090410/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Rollie"
+    ] .
+
+# Saxofonen - en kærlighedshistorie (1980)
+<https://www.imdb.com/title/tt14239178/> a schema:Movie ;
+    schema:name "Saxofonen - en kærlighedshistorie" ;
+    schema:url <https://www.imdb.com/title/tt14239178/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Jazz-solist på Montmartre"
+    ] .
+
+# Dexter Gordon & Bobby Hutcherson: Cheesecake (1979)
+<https://www.imdb.com/title/tt30624727/> a schema:Movie ;
+    schema:name "Dexter Gordon & Bobby Hutcherson: Cheesecake" ;
+    schema:url <https://www.imdb.com/title/tt30624727/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Dexter Gordon"
+    ] .
+
+# Jag älskar, du älskar (1968)
+<https://www.imdb.com/title/tt0063148/> a schema:Movie ;
+    schema:name "Jag älskar, du älskar" ;
+    schema:url <https://www.imdb.com/title/tt0063148/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "John"
+    ] .
+
+# Karin's Mood (1967)
+<https://www.imdb.com/title/tt21429948/> a schema:Movie ;
+    schema:name "Karin's Mood" ;
+    schema:url <https://www.imdb.com/title/tt21429948/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Musician - sax"
+    ] .
+
+# Jazzorama (1964)
+<https://www.imdb.com/title/tt0341824/> a schema:Movie ;
+    schema:name "Jazzorama" ;
+    schema:url <https://www.imdb.com/title/tt0341824/> ;
+    schema:datePublished "1964"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Musician - Saxophone"
+    ] .
+
+# Stopforbud (1963)
+<https://www.imdb.com/title/tt0316685/> a schema:Movie ;
+    schema:name "Stopforbud" ;
+    schema:url <https://www.imdb.com/title/tt0316685/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Jazzland (1963)
+<https://www.imdb.com/title/tt14505922/> a schema:Movie ;
+    schema:name "Jazzland" ;
+    schema:url <https://www.imdb.com/title/tt14505922/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Saxofonist"
+    ] .
+
+# Viva Las Vegas! (1956)
+<https://www.imdb.com/title/tt0049490/> a schema:Movie ;
+    schema:name "Viva Las Vegas!" ;
+    schema:url <https://www.imdb.com/title/tt0049490/> ;
+    schema:datePublished "1956"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Saxophone Player"
+    ] .
+
+# Unchained (1955)
+<https://www.imdb.com/title/tt0048762/> a schema:Movie ;
+    schema:name "Unchained" ;
+    schema:url <https://www.imdb.com/title/tt0048762/> ;
+    schema:datePublished "1955"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Saxophone Player"
+    ] .
+
+# Young Man of Music (1950)
+<https://www.imdb.com/title/tt0043153/> a schema:Movie ;
+    schema:name "Young Man of Music" ;
+    schema:url <https://www.imdb.com/title/tt0043153/> ;
+    schema:datePublished "1950"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0330143/> ;
+        schema:characterName "Saxophone Player"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2855191321/> a schema:VideoObject ;
+        schema:name "Trailer" ;
+        schema:description "A troubled, but talented musician flees the US to escape his problems, finding refuge and support in Paris." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2855191321/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWU5MmQxOWUtMGRiNC00YjlhLWI0OTAtMDhmODYwMWY5ZGZmXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M28S"^^xsd:duration ;
+        schema:uploadDate "2022-01-19T13:31:57Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNWYzYmEzOTYtMDFiMy00YjJhLWE0YmMtZDAyY2RkZjc3NjNhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWYzYmEzOTYtMDFiMy00YjJhLWE0YmMtZDAyY2RkZjc3NjNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dexter Gordon" ;
+    schema:height "1669"^^xsd:integer ;
+    schema:width "1664"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0330143/mediaviewer/rm584119297/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDhmOTA1OTItMWQzMy00NzVhLTg3YTUtOWJjODUxZTIzODAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dexter Gordon" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "393"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0330143/mediaviewer/rm2993103104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWYzYmEzOTYtMDFiMy00YjJhLWE0YmMtZDAyY2RkZjc3NjNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dexter Gordon" ;
+    schema:height "1669"^^xsd:integer ;
+    schema:width "1664"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

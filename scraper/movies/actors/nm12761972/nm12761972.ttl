@@ -1,0 +1,57 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm12761972/> a schema:Person ;
+    schema:name "Dvl 08" ;
+    schema:url <https://www.imdb.com/name/nm12761972/> ;
+    schema:birthDate "2001-03-13"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Abbas" ;
+    schema:description "Dvl 08. Actor: Baahubali 2: The Conclusion. Abbas khan also known as Dvl 08 is an music Artist, music writer and composer and expert who belongs to rajasthan, india. He lives in Alwar. At the age of 20, Dvl 08 was started career in a music independent artist. He is founder and CEO of a music company. Along with this, He has set an example for youth by achieving success..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Alwar Rajasthan India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4849438/> .    # Baahubali 2: The Conclusion
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Baahubali 2: The Conclusion (2017)
+<https://www.imdb.com/title/tt4849438/> a schema:Movie ;
+    schema:name "Baahubali 2: The Conclusion" ;
+    schema:url <https://www.imdb.com/title/tt4849438/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12761972/> ;
+        schema:characterName "Music artist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm12761972/>
+    schema:sameAs <https://www.facebook.com/profile.php?id=100018672994583>,
+                  <https://instagram.com/dvl___08?utm_medium=copy_link> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

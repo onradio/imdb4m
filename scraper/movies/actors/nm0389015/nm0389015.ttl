@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0389015/> a schema:Person ;
+    schema:name "Mark Hoffman" ;
+    schema:url <https://www.imdb.com/name/nm0389015/> ;
+    schema:jobTitle "Camera and Electrical Department", "Production Designer", "Actor" ;
+    schema:description "Mark Hoffman. Actor: Donnie Darko. Mark Hoffman is known for Donnie Darko (2001), Screamers (1995) and Buffy the Vampire Slayer (1992)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0246578/>,    # Donnie Darko
+                       <https://www.imdb.com/title/tt0106254/>,    # America's Deadliest Home Video
+                       <https://www.imdb.com/title/tt0139523/> ; # Passionata
+
+
+    schema:video <https://www.imdb.com/video/vi1835513369/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Donnie Darko (2001)
+<https://www.imdb.com/title/tt0246578/> a schema:Movie ;
+    schema:name "Donnie Darko" ;
+    schema:url <https://www.imdb.com/title/tt0246578/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0389015/> ;
+        schema:characterName "Police Officer"
+    ] .
+
+# America's Deadliest Home Video (1993)
+<https://www.imdb.com/title/tt0106254/> a schema:Movie ;
+    schema:name "America's Deadliest Home Video" ;
+    schema:url <https://www.imdb.com/title/tt0106254/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0389015/> ;
+        schema:characterName "Dead Cop"
+    ] .
+
+# Passionata (1992)
+<https://www.imdb.com/title/tt0139523/> a schema:Movie ;
+    schema:name "Passionata" ;
+    schema:url <https://www.imdb.com/title/tt0139523/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0389015/> ;
+        schema:characterName "Ranger"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1835513369/> a schema:VideoObject ;
+        schema:name "Donnie Darko: 15th Anniversary" ;
+        schema:description "Trailer for Donnie Darko: 15th Anniversary" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1835513369/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODhiOWQ2NTItOTMxMy00NTNlLWFhOWYtMjFiNzdjYjg4NjY2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M37S"^^xsd:duration ;
+        schema:uploadDate "2017-03-02T16:16:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

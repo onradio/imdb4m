@@ -1,0 +1,135 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000823/> a schema:Person ;
+    schema:name "Angelo Badalamenti" ;
+    schema:url <https://www.imdb.com/name/nm0000823/> ;
+    schema:birthDate "1937-03-22"^^xsd:date ;
+    schema:jobTitle "Composer", "Music Department", "Actor" ;
+    schema:alternateName "Oh Angelo!", "Angelo Daniel Badalamenti" ;
+    schema:description "Angelo Badalamenti. Composer: Mulholland Drive. Angelo Badalamenti was born on 22 March 1937 in Brooklyn, New York City, New York, USA. He was a composer and actor, known for Mulholland Drive (2001), Twin Peaks: Fire Walk with Me (1992) and Lost Highway (1997). He was married to Lonny Irgens. He died on 11 December 2022 in Lincoln Park, New Jersey, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0166924/>,    # Mulholland Drive
+                       <https://www.imdb.com/title/tt0105665/>,    # Twin Peaks: Fire Walk with Me
+                       <https://www.imdb.com/title/tt0116922/>,    # Lost Highway
+                       <https://www.imdb.com/title/tt0344510/>,    # A Very Long Engagement
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1619856/>,    # Mulholland Dr.
+                       <https://www.imdb.com/title/tt6966850/>,    # Thought Gang: A Real Indication
+                       <https://www.imdb.com/title/tt0103505/>,    # On the Air
+                       <https://www.imdb.com/title/tt0090756/> ; # Blue Velvet
+
+    schema:award [
+        a schema:Award ;
+        schema:description "13 wins & 31 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3635390745/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000823/mediaviewer/rm2355321856/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0166924/> a schema:Movie ;
+    schema:name "Mulholland Drive" ;
+    schema:url <https://www.imdb.com/title/tt0166924/> .
+
+<https://www.imdb.com/title/tt0105665/> a schema:Movie ;
+    schema:name "Twin Peaks: Fire Walk with Me" ;
+    schema:url <https://www.imdb.com/title/tt0105665/> .
+
+<https://www.imdb.com/title/tt0116922/> a schema:Movie ;
+    schema:name "Lost Highway" ;
+    schema:url <https://www.imdb.com/title/tt0116922/> .
+
+<https://www.imdb.com/title/tt0344510/> a schema:Movie ;
+    schema:name "A Very Long Engagement" ;
+    schema:url <https://www.imdb.com/title/tt0344510/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mulholland Dr. (1999)
+<https://www.imdb.com/title/tt1619856/> a schema:Movie ;
+    schema:name "Mulholland Dr." ;
+    schema:url <https://www.imdb.com/title/tt1619856/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000823/> ;
+        schema:characterName "Luigi Castigliane"
+    ] .
+
+# Thought Gang: A Real Indication (1992)
+<https://www.imdb.com/title/tt6966850/> a schema:Movie ;
+    schema:name "Thought Gang: A Real Indication" ;
+    schema:url <https://www.imdb.com/title/tt6966850/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000823/> ;
+        schema:characterName "Angelo Badalamenti"
+    ] .
+
+# On the Air (1992)
+<https://www.imdb.com/title/tt0103505/> a schema:Movie ;
+    schema:name "On the Air" ;
+    schema:url <https://www.imdb.com/title/tt0103505/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000823/> ;
+        schema:characterName "Piano Player"
+    ] .
+
+# Blue Velvet (1986)
+<https://www.imdb.com/title/tt0090756/> a schema:Movie ;
+    schema:name "Blue Velvet" ;
+    schema:url <https://www.imdb.com/title/tt0090756/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000823/> ;
+        schema:characterName "Piano Player"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3635390745/> a schema:VideoObject ;
+        schema:name "Stalingrad" ;
+        schema:description "A story centered on the battle of Stalingrad during WWII" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3635390745/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTY0NjA3ODA5Ml5BMl5BanBnXkFtZTcwMDY1Mzg3OQ@@._V1_.jpg" ;
+        schema:duration "PT2M13S"^^xsd:duration ;
+        schema:uploadDate "2013-07-02T05:40:19Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0000823/mediaviewer/rm2355321856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTNkNWYwY2YtY2RkYy00MzFkLWI4ZTYtYjBlMTQ5NGUzN2NiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Isabella Rossellini and Angelo Badalamenti in Blue Velvet (1986)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000823/>
+    schema:sameAs <https://www.facebook.com/angelobadalamentimusic/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

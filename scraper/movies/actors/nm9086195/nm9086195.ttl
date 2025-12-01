@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9086195/> a schema:Person ;
+    schema:name "Ahn Seong-bong" ;
+    schema:url <https://www.imdb.com/name/nm9086195/> ;
+    schema:birthDate "1989-01-11"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ahn Seong-bong. Actor: Okja. Ahn Seong-bong was born on 11 January 1989 in South Korea. He is an actor, known for Okja (2017), The Handmaiden (2016) and Parasite (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjMzYTRjMGQtMzE1Yy00NjVjLTg1NzMtMGVmYjZjMWI0NzFlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10726604/>,    # Bad Guys: The Movie
+                       <https://www.imdb.com/title/tt10530286/>,    # The Beast
+                       <https://www.imdb.com/title/tt6751668/>,    # Parasite
+                       <https://www.imdb.com/title/tt10161238/>,    # Miss & Mrs. Cops
+                       <https://www.imdb.com/title/tt9735672/>,    # Doraemon: Nobita's Chronicle of the Moon Exploration
+                       <https://www.imdb.com/title/tt8119844/> ; # Hit-and-Run Squad
+
+
+    schema:video <https://www.imdb.com/video/vi3523790617/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9086195/mediaviewer/rm96275713/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bad Guys: The Movie (2019)
+<https://www.imdb.com/title/tt10726604/> a schema:Movie ;
+    schema:name "Bad Guys: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt10726604/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "No Sang-Sik's subordinate 2"
+    ] .
+
+# The Beast (2019)
+<https://www.imdb.com/title/tt10530286/> a schema:Movie ;
+    schema:name "The Beast" ;
+    schema:url <https://www.imdb.com/title/tt10530286/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "Backup detective"
+    ] .
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "Street Fighting Person 1"
+    ] .
+
+# Miss & Mrs. Cops (2019)
+<https://www.imdb.com/title/tt10161238/> a schema:Movie ;
+    schema:name "Miss & Mrs. Cops" ;
+    schema:url <https://www.imdb.com/title/tt10161238/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "Big man"
+    ] .
+
+# Doraemon: Nobita's Chronicle of the Moon Exploration (2019)
+<https://www.imdb.com/title/tt9735672/> a schema:Movie ;
+    schema:name "Doraemon: Nobita's Chronicle of the Moon Exploration" ;
+    schema:url <https://www.imdb.com/title/tt9735672/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "First Service Crew 3"
+    ] .
+
+# Hit-and-Run Squad (2019)
+<https://www.imdb.com/title/tt8119844/> a schema:Movie ;
+    schema:name "Hit-and-Run Squad" ;
+    schema:url <https://www.imdb.com/title/tt8119844/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9086195/> ;
+        schema:characterName "Suit 3"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3523790617/> a schema:VideoObject ;
+        schema:name "Noryang: Deadly Sea" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3523790617/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjkwOWRlZmMtY2Q5OC00YjA5LTgzN2EtNWQxMjAzOWJiN2I4XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M25S"^^xsd:duration ;
+        schema:uploadDate "2023-12-14T17:04:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjMzYTRjMGQtMzE1Yy00NjVjLTg1NzMtMGVmYjZjMWI0NzFlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzYTRjMGQtMzE1Yy00NjVjLTg1NzMtMGVmYjZjMWI0NzFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ahn Seong-bong" ;
+    schema:height "514"^^xsd:integer ;
+    schema:width "343"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9086195/mediaviewer/rm96275713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzYTRjMGQtMzE1Yy00NjVjLTg1NzMtMGVmYjZjMWI0NzFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ahn Seong-bong" ;
+    schema:height "514"^^xsd:integer ;
+    schema:width "343"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm9086195/>
+    schema:sameAs <https://www.instagram.com/ahn_bong/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

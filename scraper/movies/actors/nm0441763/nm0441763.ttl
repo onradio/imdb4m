@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0441763/> a schema:Person ;
+    schema:name "Kerry Katz" ;
+    schema:url <https://www.imdb.com/name/nm0441763/> ;
+    schema:jobTitle "Music Department", "Actor", "Soundtrack" ;
+    schema:description "Kerry Katz. Actor: The Nightmare Before Christmas. Kerry Katz is known for The Nightmare Before Christmas (1993), Robin Hood: Men in Tights (1993) and Titan A.E. (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0416779/>,    # God of War
+                       <https://www.imdb.com/title/tt0475344/>,    # The Nightmare Before Christmas: Oogie's Revenge
+                       <https://www.imdb.com/title/tt0111333/>,    # The Swan Princess
+                       <https://www.imdb.com/title/tt0107688/> . # The Nightmare Before Christmas
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# God of War (2005)
+<https://www.imdb.com/title/tt0416779/> a schema:Movie ;
+    schema:name "God of War" ;
+    schema:url <https://www.imdb.com/title/tt0416779/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0441763/> ;
+        schema:characterName "Chorus"
+    ] .
+
+# The Nightmare Before Christmas: Oogie's Revenge (2004)
+<https://www.imdb.com/title/tt0475344/> a schema:Movie ;
+    schema:name "The Nightmare Before Christmas: Oogie's Revenge" ;
+    schema:url <https://www.imdb.com/title/tt0475344/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0441763/> ;
+        schema:characterName "Vampire"
+    ] .
+
+# The Swan Princess (1994)
+<https://www.imdb.com/title/tt0111333/> a schema:Movie ;
+    schema:name "The Swan Princess" ;
+    schema:url <https://www.imdb.com/title/tt0111333/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0441763/> ;
+        schema:characterName "Chorus"
+    ] .
+
+# The Nightmare Before Christmas (1993)
+<https://www.imdb.com/title/tt0107688/> a schema:Movie ;
+    schema:name "The Nightmare Before Christmas" ;
+    schema:url <https://www.imdb.com/title/tt0107688/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0441763/> ;
+        schema:characterName "Man Under Stairs"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0084805/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Tootsie" ;
+        schema:byArtist <https://www.imdb.com/name/nm0084196/> ; # Stephen Bishop
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tootsie" ;
+            schema:composer <https://www.imdb.com/name/nm0006115/> ; # Dave Grusin
+            schema:lyricist <https://www.imdb.com/name/nm0074732/>, # Alan Bergman
+                        <https://www.imdb.com/name/nm0004750/> # Marilyn Bergman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "It Might Be You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0084196/> ; # Stephen Bishop
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It Might Be You" ;
+            schema:composer <https://www.imdb.com/name/nm0006115/> ; # Dave Grusin
+            schema:lyricist <https://www.imdb.com/name/nm0074732/>, # Alan Bergman
+                        <https://www.imdb.com/name/nm0004750/> # Marilyn Bergman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday to You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday to You" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "That's All" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "That's All" ;
+            schema:composer <https://www.imdb.com/name/nm0104857/> ; # Alan Brandt
+            schema:lyricist <https://www.imdb.com/name/nm0371374/> # Bob Haymes
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mary's a Grand Old Name" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mary's a Grand Old Name" ;
+            schema:author <https://www.imdb.com/name/nm0169125/> # George M. Cohan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Know" ;
+        schema:byArtist <https://www.imdb.com/name/nm0310960/> ; # George Gaynes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Know" ;
+            schema:composer <https://www.imdb.com/name/nm0004230/> ; # Frank Loesser
+            schema:lyricist <https://www.imdb.com/name/nm0004230/> # Frank Loesser
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004230/> a schema:Person ;
+    schema:name "Frank Loesser" .
+<https://www.imdb.com/name/nm0004750/> a schema:Person ;
+    schema:name "Marilyn Bergman" .
+<https://www.imdb.com/name/nm0006115/> a schema:Person ;
+    schema:name "Dave Grusin" .
+<https://www.imdb.com/name/nm0074732/> a schema:Person ;
+    schema:name "Alan Bergman" .
+<https://www.imdb.com/name/nm0084196/> a schema:Person ;
+    schema:name "Stephen Bishop" .
+<https://www.imdb.com/name/nm0104857/> a schema:Person ;
+    schema:name "Alan Brandt" .
+<https://www.imdb.com/name/nm0169125/> a schema:Person ;
+    schema:name "George M. Cohan" .
+<https://www.imdb.com/name/nm0310960/> a schema:Person ;
+    schema:name "George Gaynes" .
+<https://www.imdb.com/name/nm0371374/> a schema:Person ;
+    schema:name "Bob Haymes" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+# ==============================================================================

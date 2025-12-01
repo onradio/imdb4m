@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3587933/> a schema:Person ;
+    schema:name "Sebastián Blanco" ;
+    schema:url <https://www.imdb.com/name/nm3587933/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sebastián Blanco. Actor: The Secret in Their Eyes. Sebastián Blanco is known for The Secret in Their Eyes (2009), The Year of Fury (2020) and Cites (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8387852/>,    # The Lunnis and the Great Fairy Tales Adventure
+                       <https://www.imdb.com/title/tt1305806/> . # The Secret in Their Eyes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Lunnis and the Great Fairy Tales Adventure (2019)
+<https://www.imdb.com/title/tt8387852/> a schema:Movie ;
+    schema:name "The Lunnis and the Great Fairy Tales Adventure" ;
+    schema:url <https://www.imdb.com/title/tt8387852/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3587933/> ;
+        schema:characterName "Arturo"
+    ] .
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3587933/> ;
+        schema:characterName "Pinche Tino"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

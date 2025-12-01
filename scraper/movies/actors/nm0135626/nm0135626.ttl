@@ -1,0 +1,156 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0135626/> a schema:Person ;
+    schema:name "Danny Capri" ;
+    schema:url <https://www.imdb.com/name/nm0135626/> ;
+    schema:birthDate "1972-10-09"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Danny Capri. Actor: Ernest Goes to Camp. Danny Capri was born on 9 October 1972 in the USA. He is an actor, known for Ernest Goes to Camp (1987), Over the Top (1987) and Who Framed Roger Rabbit (1988). He has been married to J. Scafuto since 17 December 1995. They have four children." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0224983/>,    # ...Where's Rodney?
+                       <https://www.imdb.com/title/tt0103109/>,    # Touch of a Stranger
+                       <https://www.imdb.com/title/tt0096438/>,    # Who Framed Roger Rabbit
+                       <https://www.imdb.com/title/tt0086787/>,    # Punky Brewster
+                       <https://www.imdb.com/title/tt0092326/>,    # The Bronx Zoo
+                       <https://www.imdb.com/title/tt0092319/>,    # Beauty and the Beast
+                       <https://www.imdb.com/title/tt0092974/>,    # Ernest Goes to Camp
+                       <https://www.imdb.com/title/tt0093692/>,    # Over the Top
+                       <https://www.imdb.com/title/tt0286361/> . # Hardesty House
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ...Where's Rodney? (1990)
+<https://www.imdb.com/title/tt0224983/> a schema:Movie ;
+    schema:name "...Where's Rodney?" ;
+    schema:url <https://www.imdb.com/title/tt0224983/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Johnny"
+    ] .
+
+# Touch of a Stranger (1989)
+<https://www.imdb.com/title/tt0103109/> a schema:Movie ;
+    schema:name "Touch of a Stranger" ;
+    schema:url <https://www.imdb.com/title/tt0103109/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Finny"
+    ] .
+
+# Who Framed Roger Rabbit (1988)
+<https://www.imdb.com/title/tt0096438/> a schema:Movie ;
+    schema:name "Who Framed Roger Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt0096438/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Kid #1"
+    ] .
+
+# Punky Brewster (1988)
+<https://www.imdb.com/title/tt0086787/> a schema:Movie ;
+    schema:name "Punky Brewster" ;
+    schema:url <https://www.imdb.com/title/tt0086787/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Billy"
+    ] .
+
+# The Bronx Zoo (1988)
+<https://www.imdb.com/title/tt0092326/> a schema:Movie ;
+    schema:name "The Bronx Zoo" ;
+    schema:url <https://www.imdb.com/title/tt0092326/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Gregory Harris"
+    ] .
+
+# Beauty and the Beast (1987)
+<https://www.imdb.com/title/tt0092319/> a schema:Movie ;
+    schema:name "Beauty and the Beast" ;
+    schema:url <https://www.imdb.com/title/tt0092319/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Boy #1"
+    ] .
+
+# Ernest Goes to Camp (1987)
+<https://www.imdb.com/title/tt0092974/> a schema:Movie ;
+    schema:name "Ernest Goes to Camp" ;
+    schema:url <https://www.imdb.com/title/tt0092974/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Danny"
+    ] .
+
+# Over the Top (1987)
+<https://www.imdb.com/title/tt0093692/> a schema:Movie ;
+    schema:name "Over the Top" ;
+    schema:url <https://www.imdb.com/title/tt0093692/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName "Third Boy"
+    ] .
+
+# Hardesty House (1986)
+<https://www.imdb.com/title/tt0286361/> a schema:Movie ;
+    schema:name "Hardesty House" ;
+    schema:url <https://www.imdb.com/title/tt0286361/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0135626/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

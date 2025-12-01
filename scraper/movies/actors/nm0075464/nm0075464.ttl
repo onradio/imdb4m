@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0075464/> a schema:Person ;
+    schema:name "Al Berkowitz" ;
+    schema:url <https://www.imdb.com/name/nm0075464/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Al Berkowitz. Actor: Clerks. Al Berkowitz is known for Clerks (1994)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109445/> ;    # Clerks
+
+
+    schema:video <https://www.imdb.com/video/vi3706625561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0075464/mediaviewer/rm1656184064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Clerks (1994)
+<https://www.imdb.com/title/tt0109445/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0109445/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0075464/> ;
+        schema:characterName "Old Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3706625561/> a schema:VideoObject ;
+        schema:name "Clerks" ;
+        schema:description "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3706625561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzc2ODIwZTAtYzBiMC00YjI4LWIxOTUtNzFmMjYwNzM0M2UzXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:14:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0075464/mediaviewer/rm1656184064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTFkM2FmZjktNzk3NC00ODY5LTg1YWYtNWZmNGM4MGRkMGY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Al Berkowitz and Brian O'Halloran in Clerks (1994)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6979973/> a schema:Person ;
+    schema:name "Kiyoshi Yanagawa" ;
+    schema:url <https://www.imdb.com/name/nm6979973/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kiyoshi Yanagawa. Actor: Grave of the Fireflies. Kiyoshi Yanagawa is known for Grave of the Fireflies (1988), Hissatsu shikakenin (1972) and Hissatsu shiokinin (1973)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0095327/>,    # Grave of the Fireflies
+                       <https://www.imdb.com/title/tt1933084/>,    # Oinochi choudai!
+                       <https://www.imdb.com/title/tt1375678/>,    # Hissatsu shiokinin
+                       <https://www.imdb.com/title/tt3042074/>,    # Hissatsu shikakenin
+                       <https://www.imdb.com/title/tt0064960/> . # Sengo Saidai no Toba
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Grave of the Fireflies (1988)
+<https://www.imdb.com/title/tt0095327/> a schema:Movie ;
+    schema:name "Grave of the Fireflies" ;
+    schema:url <https://www.imdb.com/title/tt0095327/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6979973/> ;
+        schema:characterName "Patrolman"
+    ] .
+
+# Oinochi choudai! (1981)
+<https://www.imdb.com/title/tt1933084/> a schema:Movie ;
+    schema:name "Oinochi choudai!" ;
+    schema:url <https://www.imdb.com/title/tt1933084/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6979973/> ;
+        schema:characterName "Misuya"
+    ] .
+
+# Hissatsu shiokinin (1973)
+<https://www.imdb.com/title/tt1375678/> a schema:Movie ;
+    schema:name "Hissatsu shiokinin" ;
+    schema:url <https://www.imdb.com/title/tt1375678/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6979973/> ;
+        schema:characterName "Gensai"
+    ] .
+
+# Hissatsu shikakenin (1973)
+<https://www.imdb.com/title/tt3042074/> a schema:Movie ;
+    schema:name "Hissatsu shikakenin" ;
+    schema:url <https://www.imdb.com/title/tt3042074/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6979973/> ;
+        schema:characterName "Gensai"
+    ] .
+
+# Sengo Saidai no Toba (1969)
+<https://www.imdb.com/title/tt0064960/> a schema:Movie ;
+    schema:name "Sengo Saidai no Toba" ;
+    schema:url <https://www.imdb.com/title/tt0064960/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6979973/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

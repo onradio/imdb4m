@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3485153/> a schema:Person ;
+    schema:name "James Northcote" ;
+    schema:url <https://www.imdb.com/name/nm3485153/> ;
+    schema:birthDate "1987-10-10"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Second Unit or Assistant Director" ;
+    schema:description "James Northcote. Actor: The Imitation Game. James Northcote was born on 10 October 1987 in Somerset, England, UK. He is an actor and producer, known for The Imitation Game (2014), Anna Karenina (2012) and Belle (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BY2I4ZjU4OWMtNDIzZi00ZWQ5LTlmMzMtZDU2Njc0MmVhMTQzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Somerset, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4179452/>,    # The Last Kingdom
+                       <https://www.imdb.com/title/tt7243884/>,    # Catherine the Great
+                       <https://www.imdb.com/title/tt3458254/> ; # Patient Zero
+
+
+    schema:video <https://www.imdb.com/video/vi3796871449/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3485153/mediaviewer/rm730425856/>,
+                 <https://www.imdb.com/name/nm3485153/mediaviewer/rm2841244416/>,
+                 <https://www.imdb.com/name/nm3485153/mediaviewer/rm1484323328/>,
+                 <https://www.imdb.com/name/nm3485153/mediaviewer/rm462858496/>,
+                 <https://www.imdb.com/name/nm3485153/mediaviewer/rm594852864/>,
+                 <https://www.imdb.com/name/nm3485153/mediaviewer/rm4054113280/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Last Kingdom (2017)
+<https://www.imdb.com/title/tt4179452/> a schema:Movie ;
+    schema:name "The Last Kingdom" ;
+    schema:url <https://www.imdb.com/title/tt4179452/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3485153/> ;
+        schema:characterName "Aldhelm"
+    ] .
+
+# Catherine the Great (2019)
+<https://www.imdb.com/title/tt7243884/> a schema:Movie ;
+    schema:name "Catherine the Great" ;
+    schema:url <https://www.imdb.com/title/tt7243884/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3485153/> ;
+        schema:characterName "Alexander Bezborodko"
+    ] .
+
+# Patient Zero (2018)
+<https://www.imdb.com/title/tt3458254/> a schema:Movie ;
+    schema:name "Patient Zero" ;
+    schema:url <https://www.imdb.com/title/tt3458254/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3485153/> ;
+        schema:characterName "Pete Townshend"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3796871449/> a schema:VideoObject ;
+        schema:name "&quot;Chapter 4: Delirium&quot;" ;
+        schema:description "Watch the latest chapter of Nymphomaniac." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3796871449/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTg3ODI1MzM2OF5BMl5BanBnXkFtZTgwMzA2NzY3MjI@._V1_.jpg" ;
+        schema:duration "PT1M"^^xsd:duration ;
+        schema:uploadDate "2013-09-28T10:38:05Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BY2I4ZjU4OWMtNDIzZi00ZWQ5LTlmMzMtZDU2Njc0MmVhMTQzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2I4ZjU4OWMtNDIzZi00ZWQ5LTlmMzMtZDU2Njc0MmVhMTQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "photo" ;
+    schema:height "3600"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm730425856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA0ZjNmYTctMTM1YS00NmUyLTk5MTgtMWFiYTI3NWJiYzVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Northcote" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1222"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm2841244416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzZkMDY3MmYtYjZmZS00MWJjLWJhMTUtMjU1YmMyNDk2ZjZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Northcote in The Open" ;
+    schema:height "943"^^xsd:integer ;
+    schema:width "1772"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm1484323328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDRhY2M4MmItYjUxNy00ZDUyLTg4NzgtZTU1ZDM5MGZlNzg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Northcote" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1996"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm462858496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGE1NTg1ZTEtZTVlOS00MzEwLWE1Y2YtMDQ4NzJmMjhkMGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jude Law and James Northcote in Anna Karenina" ;
+    schema:height "435"^^xsd:integer ;
+    schema:width "652"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm594852864/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDYwYmY5ZjctYzYzMy00ZDI4LTk4YjQtNGEzNTg2NjY4YTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still from 'Storm House' by Rose Glass" ;
+    schema:height "1125"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3485153/mediaviewer/rm4054113280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2I4ZjU4OWMtNDIzZi00ZWQ5LTlmMzMtZDU2Njc0MmVhMTQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "photo" ;
+    schema:height "3600"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

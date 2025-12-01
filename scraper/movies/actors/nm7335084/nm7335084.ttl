@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7335084/> a schema:Person ;
+    schema:name "Richard Platt" ;
+    schema:url <https://www.imdb.com/name/nm7335084/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Richard Platt. Additional Crew: Gods of Egypt. Richard Platt is known for Gods of Egypt (2016), Hacksaw Ridge (2016) and Ruben Guthrie (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5789968/>,    # The Knockoffs
+                       <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt4018492/> . # Ruben Guthrie
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Knockoffs (2019)
+<https://www.imdb.com/title/tt5789968/> a schema:Movie ;
+    schema:name "The Knockoffs" ;
+    schema:url <https://www.imdb.com/title/tt5789968/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7335084/> ;
+        schema:characterName "Kenny"
+    ] .
+
+# Hacksaw Ridge (2016)
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7335084/> ;
+        schema:characterName "Flirting Hospital Soldier"
+    ] .
+
+# Ruben Guthrie (2015)
+<https://www.imdb.com/title/tt4018492/> a schema:Movie ;
+    schema:name "Ruben Guthrie" ;
+    schema:url <https://www.imdb.com/title/tt4018492/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7335084/> ;
+        schema:characterName "Tamarama Home Group"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

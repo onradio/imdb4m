@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0671923/> a schema:Person ;
+    schema:name "Cheryl Penland" ;
+    schema:url <https://www.imdb.com/name/nm0671923/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Cheryl Penland. Actress: JFK. Cheryl Penland is known for JFK (1991) and Positive I.D. (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0102138/>,    # JFK
+                       <https://www.imdb.com/title/tt0093763/> . # Positive I.D.
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0671923/> ;
+        schema:characterName "Plaza Witness #2"
+    ] .
+
+# Positive I.D. (1986)
+<https://www.imdb.com/title/tt0093763/> a schema:Movie ;
+    schema:name "Positive I.D." ;
+    schema:url <https://www.imdb.com/title/tt0093763/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0671923/> ;
+        schema:characterName "Switchboard Operator"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

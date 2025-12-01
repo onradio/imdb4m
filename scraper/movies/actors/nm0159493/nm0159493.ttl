@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0159493/> a schema:Person ;
+    schema:name "Po-chun Chow" ;
+    schema:url <https://www.imdb.com/name/nm0159493/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Po-chun Chow. Actor: In the Mood for Love. Po-chun Chow is known for In the Mood for Love (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0118694/> ;    # In the Mood for Love
+
+
+    schema:video <https://www.imdb.com/video/vi3380126745/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# In the Mood for Love (2000)
+<https://www.imdb.com/title/tt0118694/> a schema:Movie ;
+    schema:name "In the Mood for Love" ;
+    schema:url <https://www.imdb.com/title/tt0118694/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0159493/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3380126745/> a schema:VideoObject ;
+        schema:name "In The Mood For Love" ;
+        schema:description "Trailer for In the Mood For Love" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3380126745/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWI2YzI1OWEtOTc1ZS00MTZlLWIyNTgtOGQyYmQ4OGMyMGE3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2012-10-27T03:17:51Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

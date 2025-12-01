@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093389/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Kaiser Walzer (Emperor Waltz) op. 437" ;
+        schema:byArtist <https://www.imdb.com/name/nm1617101/> ; # Berliner Philharmoniker
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kaiser Walzer (Emperor Waltz) op. 437" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Am I Blue" ;
+        schema:byArtist <https://www.imdb.com/name/nm0518821/> ; # John Lone
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Am I Blue" ;
+            schema:composer <https://www.imdb.com/name/nm0005942/> # Harry Akst
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Auld Lang Syne" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "China Boy" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "China Boy" ;
+            schema:composer <https://www.imdb.com/name/nm0100287/> ; # Phil Boutelje
+            schema:lyricist <https://www.imdb.com/name/nm1281711/> # Dick Winfree
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Yankee Doodle" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005942/> a schema:Person ;
+    schema:name "Harry Akst" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0100287/> a schema:Person ;
+    schema:name "Phil Boutelje" .
+<https://www.imdb.com/name/nm0518821/> a schema:Person ;
+    schema:name "John Lone" .
+<https://www.imdb.com/name/nm1281711/> a schema:Person ;
+    schema:name "Dick Winfree" .
+<https://www.imdb.com/name/nm1617101/> a schema:Person ;
+    schema:name "Berliner Philharmoniker" .
+# ==============================================================================

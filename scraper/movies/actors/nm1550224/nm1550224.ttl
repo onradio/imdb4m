@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1550224/> a schema:Person ;
+    schema:name "Lakshmipathi" ;
+    schema:url <https://www.imdb.com/name/nm1550224/> ;
+    schema:jobTitle "Actor", "Production Department" ;
+    schema:description "Lakshmipathi. Actor: K.G.F. Lakshmipathi is known for K.G.F (2018), Rakhwala (1971) and Nazrana (1961)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11390470/>,    # Police Diary 2.0
+                       <https://www.imdb.com/title/tt7838252/> . # K.G.F
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Police Diary 2.0 (2019)
+<https://www.imdb.com/title/tt11390470/> a schema:Movie ;
+    schema:name "Police Diary 2.0" ;
+    schema:url <https://www.imdb.com/title/tt11390470/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1550224/> ;
+        schema:characterName ""
+    ] .
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1550224/> ;
+        schema:characterName "Huccha"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0218540/> a schema:Person ;
+    schema:name "Carolyn DeMirjian" ;
+    schema:url <https://www.imdb.com/name/nm0218540/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Carolyn DeMirjian. Actress: Blade Runner. Carolyn DeMirjian is known for Blade Runner (1982), Enos (1980) and The Drew Carey Show (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0111945/>,    # The Drew Carey Show
+                       <https://www.imdb.com/title/tt0077089/>,    # Taxi
+                       <https://www.imdb.com/title/tt0083658/>,    # Blade Runner
+                       <https://www.imdb.com/title/tt0080213/>,    # Enos
+                       <https://www.imdb.com/title/tt2241056/> . # Killers Matinee
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Drew Carey Show (2000)
+<https://www.imdb.com/title/tt0111945/> a schema:Movie ;
+    schema:name "The Drew Carey Show" ;
+    schema:url <https://www.imdb.com/title/tt0111945/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0218540/> ;
+        schema:characterName "Edna"
+    ] .
+
+# Taxi (1982)
+<https://www.imdb.com/title/tt0077089/> a schema:Movie ;
+    schema:name "Taxi" ;
+    schema:url <https://www.imdb.com/title/tt0077089/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0218540/> ;
+        schema:characterName "The Large Lady"
+    ] .
+
+# Blade Runner (1982)
+<https://www.imdb.com/title/tt0083658/> a schema:Movie ;
+    schema:name "Blade Runner" ;
+    schema:url <https://www.imdb.com/title/tt0083658/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0218540/> ;
+        schema:characterName "Saleslady"
+    ] .
+
+# Enos (1981)
+<https://www.imdb.com/title/tt0080213/> a schema:Movie ;
+    schema:name "Enos" ;
+    schema:url <https://www.imdb.com/title/tt0080213/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0218540/> ;
+        schema:characterName ""
+    ] .
+
+# Killers Matinee (1978)
+<https://www.imdb.com/title/tt2241056/> a schema:Movie ;
+    schema:name "Killers Matinee" ;
+    schema:url <https://www.imdb.com/title/tt2241056/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0218540/> ;
+        schema:characterName "Fat Woman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

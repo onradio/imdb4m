@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0316862/> a schema:Person ;
+    schema:name "Billie Gibson" ;
+    schema:url <https://www.imdb.com/name/nm0316862/> ;
+    schema:birthDate "1928-12-21"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Billie Gibson. Actress: The Shining. Billie Gibson was born on 21 December 1928 in Dike, Hopkins County, Texas, USA. She was an actress, known for The Shining (1980). She died on 8 July 2012 in Dallas, Dallas County, Texas, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dike, Hopkins County, Texas, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0081505/> .    # The Shining
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Shining (1980)
+<https://www.imdb.com/title/tt0081505/> a schema:Movie ;
+    schema:name "The Shining" ;
+    schema:url <https://www.imdb.com/title/tt0081505/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316862/> ;
+        schema:characterName "Old Woman in Bath"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

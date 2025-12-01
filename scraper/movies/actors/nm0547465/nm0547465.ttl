@@ -1,0 +1,212 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0547465/> a schema:Person ;
+    schema:name "Jason Marin" ;
+    schema:url <https://www.imdb.com/name/nm0547465/> ;
+    schema:birthDate "1974-07-25"^^xsd:date ;
+    schema:jobTitle "Actor", "Cinematographer", "Camera and Electrical Department" ;
+    schema:description "Jason Marin. Actor: Back to the Future. Jason Marin was born on 25 July 1974 in New York City, New York, USA. He is an actor and cinematographer, known for Back to the Future (1985), The Little Mermaid (1989) and Moving (1988)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088763/>,    # Back to the Future
+                       <https://www.imdb.com/title/tt0094555/>,    # Starting from Scratch
+                       <https://www.imdb.com/title/tt0095662/>,    # Moving
+                       <https://www.imdb.com/title/tt0097757/>,    # The Little Mermaid
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt13283688/>,    # The Little Mermaid DVD Read-Along
+                       <https://www.imdb.com/title/tt31278401/>,    # Disney Sing-Along Songs: Collection of All-Time Favorites - The Modern Classics
+                       <https://www.imdb.com/title/tt0098749/>,    # Beverly Hills, 90210
+                       <https://www.imdb.com/title/tt0102802/>,    # Rock-A-Doodle
+                       <https://www.imdb.com/title/tt0083455/>,    # Newhart
+                       <https://www.imdb.com/title/tt0095373/>,    # Inherit the Wind
+                       <https://www.imdb.com/title/tt0092469/>,    # The Tracey Ullman Show
+                       <https://www.imdb.com/title/tt0092420/>,    # Once a Hero
+                       <https://www.imdb.com/title/tt0086730/>,    # Highway to Heaven
+                       <https://www.imdb.com/title/tt0090534/>,    # Together We Stand
+                       <https://www.imdb.com/title/tt0078704/> ; # Trapper John, M.D.
+
+
+    schema:video <https://www.imdb.com/video/vi3734022169/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0547465/mediaviewer/rm1889893120/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088763/> a schema:Movie ;
+    schema:name "Back to the Future" ;
+    schema:url <https://www.imdb.com/title/tt0088763/> .
+
+<https://www.imdb.com/title/tt0094555/> a schema:Movie ;
+    schema:name "Starting from Scratch" ;
+    schema:url <https://www.imdb.com/title/tt0094555/> .
+
+<https://www.imdb.com/title/tt0095662/> a schema:Movie ;
+    schema:name "Moving" ;
+    schema:url <https://www.imdb.com/title/tt0095662/> .
+
+<https://www.imdb.com/title/tt0097757/> a schema:Movie ;
+    schema:name "The Little Mermaid" ;
+    schema:url <https://www.imdb.com/title/tt0097757/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Little Mermaid DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13283688/> a schema:Movie ;
+    schema:name "The Little Mermaid DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13283688/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Flounder"
+    ] .
+
+# Disney Sing-Along Songs: Collection of All-Time Favorites - The Modern Classics (1997)
+<https://www.imdb.com/title/tt31278401/> a schema:Movie ;
+    schema:name "Disney Sing-Along Songs: Collection of All-Time Favorites - The Modern Classics" ;
+    schema:url <https://www.imdb.com/title/tt31278401/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Flounder"
+    ] .
+
+# Beverly Hills, 90210 (1993)
+<https://www.imdb.com/title/tt0098749/> a schema:Movie ;
+    schema:name "Beverly Hills, 90210" ;
+    schema:url <https://www.imdb.com/title/tt0098749/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Student #2"
+    ] .
+
+# Rock-A-Doodle (1991)
+<https://www.imdb.com/title/tt0102802/> a schema:Movie ;
+    schema:name "Rock-A-Doodle" ;
+    schema:url <https://www.imdb.com/title/tt0102802/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Mark"
+    ] .
+
+# Newhart (1989)
+<https://www.imdb.com/title/tt0083455/> a schema:Movie ;
+    schema:name "Newhart" ;
+    schema:url <https://www.imdb.com/title/tt0083455/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Georgie"
+    ] .
+
+# Inherit the Wind (1988)
+<https://www.imdb.com/title/tt0095373/> a schema:Movie ;
+    schema:name "Inherit the Wind" ;
+    schema:url <https://www.imdb.com/title/tt0095373/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Howard"
+    ] .
+
+# The Tracey Ullman Show (1988)
+<https://www.imdb.com/title/tt0092469/> a schema:Movie ;
+    schema:name "The Tracey Ullman Show" ;
+    schema:url <https://www.imdb.com/title/tt0092469/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Once a Hero (1987)
+<https://www.imdb.com/title/tt0092420/> a schema:Movie ;
+    schema:name "Once a Hero" ;
+    schema:url <https://www.imdb.com/title/tt0092420/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Paperboy"
+    ] .
+
+# Highway to Heaven (1986)
+<https://www.imdb.com/title/tt0086730/> a schema:Movie ;
+    schema:name "Highway to Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0086730/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Jerry Meyers"
+    ] .
+
+# Together We Stand (1986)
+<https://www.imdb.com/title/tt0090534/> a schema:Movie ;
+    schema:name "Together We Stand" ;
+    schema:url <https://www.imdb.com/title/tt0090534/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName "Bill"
+    ] .
+
+# Trapper John, M.D. (1986)
+<https://www.imdb.com/title/tt0078704/> a schema:Movie ;
+    schema:name "Trapper John, M.D." ;
+    schema:url <https://www.imdb.com/title/tt0078704/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0547465/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3734022169/> a schema:VideoObject ;
+        schema:name "The Little Mermaid: Diamond Edition" ;
+        schema:description "Bonus Clip: Broadway Moments (PR exclusive)" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3734022169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGU0YzZlMWItNWU3Zi00ZDUwLTg4MTItNTBkYTVjZTFlMjAxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M27S"^^xsd:duration ;
+        schema:uploadDate "2013-10-05T05:09:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0547465/mediaviewer/rm1889893120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjg2MzIzYjUtODBiZi00YTNiLWE3M2EtMzk3NzdkN2VmNTdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ivy Bethune, Katherine Britton, Will Hare, and Jason Marin in Back to the Future (1985)" ;
+    schema:height "1437"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

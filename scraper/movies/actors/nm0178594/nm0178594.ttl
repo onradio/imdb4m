@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0178594/> a schema:Person ;
+    schema:name "David Copeland" ;
+    schema:url <https://www.imdb.com/name/nm0178594/> ;
+    schema:birthDate "1935-10-29"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "David Copeland. Actor: October Sky. David Copeland was born on 29 October 1935 in Robertsville, Tennessee, USA. He was an actor, known for October Sky (1999) and Dust: A Tale of the Wired West (1995). He was married to Johnnie . He died on 14 July 2023 in Oak Ridge, Tennessee, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Robertsville, Tennessee, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0132477/>,    # October Sky
+                       <https://www.imdb.com/title/tt0115738/>,    # Box of Moonlight
+                       <https://www.imdb.com/title/tt0243233/> . # Dust: A Tale of the Wired West
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# October Sky (1999)
+<https://www.imdb.com/title/tt0132477/> a schema:Movie ;
+    schema:name "October Sky" ;
+    schema:url <https://www.imdb.com/title/tt0132477/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178594/> ;
+        schema:characterName "Coach Gainer"
+    ] .
+
+# Box of Moonlight (1996)
+<https://www.imdb.com/title/tt0115738/> a schema:Movie ;
+    schema:name "Box of Moonlight" ;
+    schema:url <https://www.imdb.com/title/tt0115738/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178594/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# Dust: A Tale of the Wired West (1995)
+<https://www.imdb.com/title/tt0243233/> a schema:Movie ;
+    schema:name "Dust: A Tale of the Wired West" ;
+    schema:url <https://www.imdb.com/title/tt0243233/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0178594/> ;
+        schema:characterName "Nate Trotter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

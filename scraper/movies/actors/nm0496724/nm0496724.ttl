@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0496724/> a schema:Person ;
+    schema:name "Nathan Lee Chasing His Horse" ;
+    schema:url <https://www.imdb.com/name/nm0496724/> ;
+    schema:birthDate "1976-04-28"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Nathan Lee Chasing His Horse. Actor: Dances with Wolves. Nathan Lee Chasing His Horse was born on 28 April 1976 in Rosebud Reservation, South Dakota, USA. He is an actor and producer, known for Dances with Wolves (1990), Into the West (2005) and DreamKeeper (2003)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rosebud Reservation, South Dakota, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0821638/>,    # Bury My Heart at Wounded Knee
+                       <https://www.imdb.com/title/tt0409572/>,    # Into the West
+                       <https://www.imdb.com/title/tt0309150/>,    # DreamKeeper
+                       <https://www.imdb.com/title/tt0106486/>,    # The Broken Chain
+                       <https://www.imdb.com/title/tt0099348/> ; # Dances with Wolves
+
+
+    schema:video <https://www.imdb.com/video/vi2341967897/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bury My Heart at Wounded Knee (2007)
+<https://www.imdb.com/title/tt0821638/> a schema:Movie ;
+    schema:name "Bury My Heart at Wounded Knee" ;
+    schema:url <https://www.imdb.com/title/tt0821638/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0496724/> ;
+        schema:characterName "One Bull"
+    ] .
+
+# Into the West (2005)
+<https://www.imdb.com/title/tt0409572/> a schema:Movie ;
+    schema:name "Into the West" ;
+    schema:url <https://www.imdb.com/title/tt0409572/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0496724/> ;
+        schema:characterName "Sleeping Bear"
+    ] .
+
+# DreamKeeper (2003)
+<https://www.imdb.com/title/tt0309150/> a schema:Movie ;
+    schema:name "DreamKeeper" ;
+    schema:url <https://www.imdb.com/title/tt0309150/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0496724/> ;
+        schema:characterName "Verdel"
+    ] .
+
+# The Broken Chain (1993)
+<https://www.imdb.com/title/tt0106486/> a schema:Movie ;
+    schema:name "The Broken Chain" ;
+    schema:url <https://www.imdb.com/title/tt0106486/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0496724/> ;
+        schema:characterName "Young Joseph"
+    ] .
+
+# Dances with Wolves (1990)
+<https://www.imdb.com/title/tt0099348/> a schema:Movie ;
+    schema:name "Dances with Wolves" ;
+    schema:url <https://www.imdb.com/title/tt0099348/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0496724/> ;
+        schema:characterName "Smiles A Lot"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2341967897/> a schema:VideoObject ;
+        schema:name "Dances With Wolves: 20th Anniversary Edition" ;
+        schema:description "Trailer for Dances With Wolves" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2341967897/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTMwNTZkOWUtN2VjNS00NzNiLTgzZTgtMWJmZmEwNTBhZmVkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2010-12-11T06:09:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

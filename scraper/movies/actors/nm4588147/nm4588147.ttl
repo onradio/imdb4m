@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4588147/> a schema:Person ;
+    schema:name "Capri Thomas" ;
+    schema:url <https://www.imdb.com/name/nm4588147/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Capri Thomas. Actress: Warrior. Capri Thomas is known for Warrior (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1291584/> ;    # Warrior
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4588147/mediaviewer/rm4094934016/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Warrior (2011)
+<https://www.imdb.com/title/tt1291584/> a schema:Movie ;
+    schema:name "Warrior" ;
+    schema:url <https://www.imdb.com/title/tt1291584/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4588147/> ;
+        schema:characterName "Emily Conlon"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm4588147/mediaviewer/rm4094934016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA5NDcxNTg4NV5BMl5BanBnXkFtZTcwMjUwNzE2Ng@@._V1_.jpg> ;
+    schema:caption "Jennifer Morrison, Lexi Cowan, and Capri Thomas in Warrior (2011)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

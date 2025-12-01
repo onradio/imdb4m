@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0778735/> a schema:Person ;
+    schema:name "Cathy Scorsese" ;
+    schema:url <https://www.imdb.com/name/nm0778735/> ;
+    schema:birthDate "1965-12-07"^^xsd:date ;
+    schema:jobTitle "Additional Crew", "Art Department", "Actress" ;
+    schema:description "Cathy Scorsese. Actress: Casino. Cathy Scorsese was born on 7 December 1965 in New York City, New York, USA. She is an actress, known for Casino (1995), The King of Comedy (1982) and Shutter Island (2010)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWE3NmE3ZjMtZGFkOC00YWU3LTk2MGQtMWMzNTM3YTdkNzA0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112641/>,    # Casino
+                       <https://www.imdb.com/title/tt0110488/>,    # Men Lie
+                       <https://www.imdb.com/title/tt0085794/> ; # The King of Comedy
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0778735/mediaviewer/rm62345728/>,
+                 <https://www.imdb.com/name/nm0778735/mediaviewer/rm799175681/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Casino (1995)
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778735/> ;
+        schema:characterName "Piscano's Daughter"
+    ] .
+
+# Men Lie (1994)
+<https://www.imdb.com/title/tt0110488/> a schema:Movie ;
+    schema:name "Men Lie" ;
+    schema:url <https://www.imdb.com/title/tt0110488/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778735/> ;
+        schema:characterName "Granddaughter Witness"
+    ] .
+
+# The King of Comedy (1982)
+<https://www.imdb.com/title/tt0085794/> a schema:Movie ;
+    schema:name "The King of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt0085794/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778735/> ;
+        schema:characterName "Dolores"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWE3NmE3ZjMtZGFkOC00YWU3LTk2MGQtMWMzNTM3YTdkNzA0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWE3NmE3ZjMtZGFkOC00YWU3LTk2MGQtMWMzNTM3YTdkNzA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cathy Scorsese" ;
+    schema:height "1726"^^xsd:integer ;
+    schema:width "1517"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778735/mediaviewer/rm62345728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWUwNWYyN2YtYThhMS00ZjNhLWExMDgtZDBmZTBiOTEyMzE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro, Jerry Lewis, Richard Baratz, and Cathy Scorsese in The King of Comedy (1982)" ;
+    schema:height "728"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778735/mediaviewer/rm799175681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWE3NmE3ZjMtZGFkOC00YWU3LTk2MGQtMWMzNTM3YTdkNzA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cathy Scorsese" ;
+    schema:height "1726"^^xsd:integer ;
+    schema:width "1517"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

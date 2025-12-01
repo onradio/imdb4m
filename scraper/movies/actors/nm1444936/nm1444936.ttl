@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1444936/> a schema:Person ;
+    schema:name "Sasha Alliel" ;
+    schema:url <https://www.imdb.com/name/nm1444936/> ;
+    schema:birthDate "1994-01-10"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sasha Alliel. Actor: Persepolis. Sasha Alliel was born on 10 January 1994. He is an actor, known for Persepolis (2007), Je reste! (2003) and Ma vie en l'air (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0404664/>,    # S.O.S. 18
+                       <https://www.imdb.com/title/tt0808417/>,    # Persepolis
+                       <https://www.imdb.com/title/tt0922354/>,    # After Him
+                       <https://www.imdb.com/title/tt0436546/>,    # Ma vie en l'air
+                       <https://www.imdb.com/title/tt0432420/>,    # La nuit du meurtre
+                       <https://www.imdb.com/title/tt0348841/> . # Je reste!
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# S.O.S. 18 (2008)
+<https://www.imdb.com/title/tt0404664/> a schema:Movie ;
+    schema:name "S.O.S. 18" ;
+    schema:url <https://www.imdb.com/title/tt0404664/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "Yann"
+    ] .
+
+# Persepolis (2007)
+<https://www.imdb.com/title/tt0808417/> a schema:Movie ;
+    schema:name "Persepolis" ;
+    schema:url <https://www.imdb.com/title/tt0808417/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "(voice, as Sacha Alliel)"
+    ] .
+
+# After Him (2007)
+<https://www.imdb.com/title/tt0922354/> a schema:Movie ;
+    schema:name "After Him" ;
+    schema:url <https://www.imdb.com/title/tt0922354/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "Frère de Franck"
+    ] .
+
+# Ma vie en l'air (2005)
+<https://www.imdb.com/title/tt0436546/> a schema:Movie ;
+    schema:name "Ma vie en l'air" ;
+    schema:url <https://www.imdb.com/title/tt0436546/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "Yann enfant"
+    ] .
+
+# La nuit du meurtre (2004)
+<https://www.imdb.com/title/tt0432420/> a schema:Movie ;
+    schema:name "La nuit du meurtre" ;
+    schema:url <https://www.imdb.com/title/tt0432420/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "Eric Castellano, enfant"
+    ] .
+
+# Je reste! (2003)
+<https://www.imdb.com/title/tt0348841/> a schema:Movie ;
+    schema:name "Je reste!" ;
+    schema:url <https://www.imdb.com/title/tt0348841/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1444936/> ;
+        schema:characterName "Antoine, le fils"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

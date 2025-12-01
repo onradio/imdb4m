@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0467449/> a schema:Person ;
+    schema:name "Vladica Kostic" ;
+    schema:url <https://www.imdb.com/name/nm0467449/> ;
+    schema:birthDate "1985-09-03"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Vladica Kostic. Actor: Dancer in the Dark. Vladica Kostic was born on 3 September 1985 in Denmark. He is an actor, known for Dancer in the Dark (2000) and Von Trier's 100 øjne (2000)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Denmark"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0168629/> .    # Dancer in the Dark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dancer in the Dark (2000)
+<https://www.imdb.com/title/tt0168629/> a schema:Movie ;
+    schema:name "Dancer in the Dark" ;
+    schema:url <https://www.imdb.com/title/tt0168629/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0467449/> ;
+        schema:characterName "Gene Jezek"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

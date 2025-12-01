@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0913872/> a schema:Person ;
+    schema:name "Takashi Watanabe" ;
+    schema:url <https://www.imdb.com/name/nm0913872/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Takashi Watanabe. Actor: Ran. Takashi Watanabe is known for Ran (1985), Kagemusha (1980) and Otoko wa tsurai yo: Torajiro aiaigasa (1975)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0089881/>,    # Ran
+                       <https://www.imdb.com/title/tt0080979/>,    # Kagemusha
+                       <https://www.imdb.com/title/tt0073498/>,    # Otoko wa tsurai yo: Torajiro aiaigasa
+                       <https://www.imdb.com/title/tt0071955/> . # Otoko wa tsurai yo: Torajiro komoriuta
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ran (1985)
+<https://www.imdb.com/title/tt0089881/> a schema:Movie ;
+    schema:name "Ran" ;
+    schema:url <https://www.imdb.com/title/tt0089881/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0913872/> ;
+        schema:characterName "Fujimaki Clan general"
+    ] .
+
+# Kagemusha (1980)
+<https://www.imdb.com/title/tt0080979/> a schema:Movie ;
+    schema:name "Kagemusha" ;
+    schema:url <https://www.imdb.com/title/tt0080979/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0913872/> ;
+        schema:characterName ""
+    ] .
+
+# Otoko wa tsurai yo: Torajiro aiaigasa (1975)
+<https://www.imdb.com/title/tt0073498/> a schema:Movie ;
+    schema:name "Otoko wa tsurai yo: Torajiro aiaigasa" ;
+    schema:url <https://www.imdb.com/title/tt0073498/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0913872/> ;
+        schema:characterName ""
+    ] .
+
+# Otoko wa tsurai yo: Torajiro komoriuta (1974)
+<https://www.imdb.com/title/tt0071955/> a schema:Movie ;
+    schema:name "Otoko wa tsurai yo: Torajiro komoriuta" ;
+    schema:url <https://www.imdb.com/title/tt0071955/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0913872/> ;
+        schema:characterName "Bank Employee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

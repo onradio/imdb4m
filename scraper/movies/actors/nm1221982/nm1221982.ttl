@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1221982/> a schema:Person ;
+    schema:name "Yûko Tsuga" ;
+    schema:url <https://www.imdb.com/name/nm1221982/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Yûko Tsuga. Actress: Kiki's Delivery Service. Yûko Tsuga is known for Kiki's Delivery Service (1989), Kirby's Epic Yarn (2010) and Makiba no shôjo Katori (1984)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4203732/>,    # Rune Factory 4
+                       <https://www.imdb.com/title/tt1957940/>,    # Kirby's Epic Yarn
+                       <https://www.imdb.com/title/tt0288992/>,    # Mahô tsukai Sarî
+                       <https://www.imdb.com/title/tt0097814/>,    # Kiki's Delivery Service
+                       <https://www.imdb.com/title/tt0168346/>,    # Makiba no shôjo Katori
+                       <https://www.imdb.com/title/tt31500104/> . # Manga Hajimete Monogatari
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rune Factory 4 (2012)
+<https://www.imdb.com/title/tt4203732/> a schema:Movie ;
+    schema:name "Rune Factory 4" ;
+    schema:url <https://www.imdb.com/title/tt4203732/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Blossom"
+    ] .
+
+# Kirby's Epic Yarn (2010)
+<https://www.imdb.com/title/tt1957940/> a schema:Movie ;
+    schema:name "Kirby's Epic Yarn" ;
+    schema:url <https://www.imdb.com/title/tt1957940/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Mahô tsukai Sarî (1991)
+<https://www.imdb.com/title/tt0288992/> a schema:Movie ;
+    schema:name "Mahô tsukai Sarî" ;
+    schema:url <https://www.imdb.com/title/tt0288992/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Shine (youth)"
+    ] .
+
+# Kiki's Delivery Service (1989)
+<https://www.imdb.com/title/tt0097814/> a schema:Movie ;
+    schema:name "Kiki's Delivery Service" ;
+    schema:url <https://www.imdb.com/title/tt0097814/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Delivery Pies Girl"
+    ] .
+
+# Makiba no shôjo Katori (1984)
+<https://www.imdb.com/title/tt0168346/> a schema:Movie ;
+    schema:name "Makiba no shôjo Katori" ;
+    schema:url <https://www.imdb.com/title/tt0168346/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Mary"
+    ] .
+
+# Manga Hajimete Monogatari (1978)
+<https://www.imdb.com/title/tt31500104/> a schema:Movie ;
+    schema:name "Manga Hajimete Monogatari" ;
+    schema:url <https://www.imdb.com/title/tt31500104/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1221982/> ;
+        schema:characterName "Mogutan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

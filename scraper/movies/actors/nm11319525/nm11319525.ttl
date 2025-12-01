@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11319525/> a schema:Person ;
+    schema:name "Mohammad Al Abdallah" ;
+    schema:url <https://www.imdb.com/name/nm11319525/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mohammad Al Abdallah. Actor: Capernaum. Mohammad Al Abdallah is known for Capernaum (2018) and Atel Aan Al Hurriya (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8267604/> .    # Capernaum
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Capernaum (2018)
+<https://www.imdb.com/title/tt8267604/> a schema:Movie ;
+    schema:name "Capernaum" ;
+    schema:url <https://www.imdb.com/title/tt8267604/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11319525/> ;
+        schema:characterName "Salah"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

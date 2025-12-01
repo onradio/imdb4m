@@ -1,0 +1,288 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5200476/> a schema:Person ;
+    schema:name "Wyatt Oleff" ;
+    schema:url <https://www.imdb.com/name/nm5200476/> ;
+    schema:birthDate "2003-07-13"^^xsd:date ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director", "Director" ;
+    schema:description "Wyatt Oleff. Actor: I Am Not Okay with This. Wyatt Oleff was born on 13 July 2003 in Chicago, Illinois, USA. He is an actor and assistant director, known for I Am Not Okay with This (2020), It (2017) and Guardians of the Galaxy (2014)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzNkYWI5NmItMDhhNy00ODMxLWFmZTgtNWU3NDM3MTc3MmU4XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chicago, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9446688/>,    # I Am Not Okay with This
+                       <https://www.imdb.com/title/tt1396484/>,    # It
+                       <https://www.imdb.com/title/tt1843230/>,    # Once Upon a Time
+                       <https://www.imdb.com/title/tt2015381/>,    # Guardians of the Galaxy
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7349950/>,    # It: Chapter Two
+                       <https://www.imdb.com/title/tt7664928/>,    # Sia: Santa's Coming for Us
+                       <https://www.imdb.com/title/tt3896198/>,    # Guardians of the Galaxy: Vol. 2
+                       <https://www.imdb.com/title/tt4452620/>,    # The History of Us
+                       <https://www.imdb.com/title/tt5040728/>,    # Crafty: Or (The Unexpected Virtue of the Girl in Charge of Snacks)
+                       <https://www.imdb.com/title/tt3514324/>,    # Scorpion
+                       <https://www.imdb.com/title/tt1978532/>,    # Someone Marry Barry
+                       <https://www.imdb.com/title/tt2739674/>,    # Middle Age Rage
+                       <https://www.imdb.com/title/tt1661326/>,    # Shake It Up
+                       <https://www.imdb.com/title/tt1741256/>,    # Suburgatory
+                       <https://www.imdb.com/title/tt2246569/> ; # Animal Practice
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1296809753/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5200476/mediaviewer/rm1524617729/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm1758182913/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm1243331329/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm802889728/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm2243310848/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm3595124992/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm4283379201/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm4098829825/>,
+                 <https://www.imdb.com/name/nm5200476/mediaviewer/rm4048498177/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt9446688/> a schema:Movie ;
+    schema:name "I Am Not Okay with This" ;
+    schema:url <https://www.imdb.com/title/tt9446688/> .
+
+<https://www.imdb.com/title/tt1396484/> a schema:Movie ;
+    schema:name "It" ;
+    schema:url <https://www.imdb.com/title/tt1396484/> .
+
+<https://www.imdb.com/title/tt1843230/> a schema:Movie ;
+    schema:name "Once Upon a Time" ;
+    schema:url <https://www.imdb.com/title/tt1843230/> .
+
+<https://www.imdb.com/title/tt2015381/> a schema:Movie ;
+    schema:name "Guardians of the Galaxy" ;
+    schema:url <https://www.imdb.com/title/tt2015381/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# It: Chapter Two (2019)
+<https://www.imdb.com/title/tt7349950/> a schema:Movie ;
+    schema:name "It: Chapter Two" ;
+    schema:url <https://www.imdb.com/title/tt7349950/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Young Stanley Uris"
+    ] .
+
+# Sia: Santa's Coming for Us (2017)
+<https://www.imdb.com/title/tt7664928/> a schema:Movie ;
+    schema:name "Sia: Santa's Coming for Us" ;
+    schema:url <https://www.imdb.com/title/tt7664928/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Son"
+    ] .
+
+# Guardians of the Galaxy: Vol. 2 (2017)
+<https://www.imdb.com/title/tt3896198/> a schema:Movie ;
+    schema:name "Guardians of the Galaxy: Vol. 2" ;
+    schema:url <https://www.imdb.com/title/tt3896198/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Young Peter Quill"
+    ] .
+
+# The History of Us (2015)
+<https://www.imdb.com/title/tt4452620/> a schema:Movie ;
+    schema:name "The History of Us" ;
+    schema:url <https://www.imdb.com/title/tt4452620/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Young Andrew"
+    ] .
+
+# Crafty: Or (The Unexpected Virtue of the Girl in Charge of Snacks) (2015)
+<https://www.imdb.com/title/tt5040728/> a schema:Movie ;
+    schema:name "Crafty: Or (The Unexpected Virtue of the Girl in Charge of Snacks)" ;
+    schema:url <https://www.imdb.com/title/tt5040728/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Rocco - Cinematographer"
+    ] .
+
+# Scorpion (2014)
+<https://www.imdb.com/title/tt3514324/> a schema:Movie ;
+    schema:name "Scorpion" ;
+    schema:url <https://www.imdb.com/title/tt3514324/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Owen"
+    ] .
+
+# Someone Marry Barry (2014)
+<https://www.imdb.com/title/tt1978532/> a schema:Movie ;
+    schema:name "Someone Marry Barry" ;
+    schema:url <https://www.imdb.com/title/tt1978532/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "J.T."
+    ] .
+
+# Middle Age Rage (2013)
+<https://www.imdb.com/title/tt2739674/> a schema:Movie ;
+    schema:name "Middle Age Rage" ;
+    schema:url <https://www.imdb.com/title/tt2739674/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Oliver Bobeck"
+    ] .
+
+# Shake It Up (2013)
+<https://www.imdb.com/title/tt1661326/> a schema:Movie ;
+    schema:name "Shake It Up" ;
+    schema:url <https://www.imdb.com/title/tt1661326/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Byron"
+    ] .
+
+# Suburgatory (2013)
+<https://www.imdb.com/title/tt1741256/> a schema:Movie ;
+    schema:name "Suburgatory" ;
+    schema:url <https://www.imdb.com/title/tt1741256/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Kevuel"
+    ] .
+
+# Animal Practice (2012)
+<https://www.imdb.com/title/tt2246569/> a schema:Movie ;
+    schema:name "Animal Practice" ;
+    schema:url <https://www.imdb.com/title/tt2246569/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5200476/> ;
+        schema:characterName "Young George"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1296809753/> a schema:VideoObject ;
+        schema:name "Season 1 Trailer" ;
+        schema:description "Sydney is a teenage girl navigating the trials and tribulations of high school while dealing with the complexities of her family, her budding sexuality, and mysterious superpowers just beginning to awaken deep within her." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1296809753/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTYyMjRmMzktN2UzOS00ZTdjLTkzYmQtZjUzZDYyYmY1YmU5XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M24S"^^xsd:duration ;
+        schema:uploadDate "2020-02-17T16:20:11Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzNkYWI5NmItMDhhNy00ODMxLWFmZTgtNWU3NDM3MTc3MmU4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzNkYWI5NmItMDhhNy00ODMxLWFmZTgtNWU3NDM3MTc3MmU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff" ;
+    schema:height "1720"^^xsd:integer ;
+    schema:width "1327"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm1524617729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNjZWI4MmUtYjQzOS00NzNmLThlNzAtODA3N2Q2NWFlZTQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff" ;
+    schema:height "842"^^xsd:integer ;
+    schema:width "647"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm1758182913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzk1ZDY3ZjAtOTBhMi00NjE5LTkyY2UtZGQ1ZDMzYzk5NjJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "810"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm1243331329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDVkNTVhNDYtZjMwOC00OTUzLTlhYjYtNzYxNGQ4M2VjMTY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff in I Am Not Okay with This (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "4003"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm802889728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjkxOTk1MTg1N15BMl5BanBnXkFtZTgwNDQ1NzMzMzI@._V1_.jpg> ;
+    schema:caption "Bill Skarsgård, Wyatt Oleff, Jeremy Ray Taylor, Finn Wolfhard, and Jack Dylan Grazer in It (2017)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm2243310848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjc0OWM4MGQtOTdlZi00OTJlLWEzN2ItOTZhOTQyYTc3Y2RlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff in It (2017)" ;
+    schema:height "1091"^^xsd:integer ;
+    schema:width "2559"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm3595124992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmEzODQ0MTUtNzk0Yi00MWE4LWJjZTMtM2VlYTUyMWYwY2Q0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff, Jeremy Ray Taylor, Jaeden Martell, Finn Wolfhard, Sophia Lillis, Jack Dylan Grazer, and Chosen Jacobs in It (2017)" ;
+    schema:height "399"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm4283379201/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGE5ODViZTEtNzhkMi00ZjNiLTkwNTYtMWVkMzA2MDkwMWU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff in City on Fire (2023)" ;
+    schema:height "1912"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm4098829825/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjE3NWJjZjktNjRiMC00MTJkLWIyZjYtYTkxNGNmNzg4ZDhkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alexandra Doke, Max Milner, Wyatt Oleff, and Alexander Pineiro in City on Fire (2023)" ;
+    schema:height "5760"^^xsd:integer ;
+    schema:width "8640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5200476/mediaviewer/rm4048498177/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODI5ZDY2OGEtMDVmZC00Y2ZlLWI0ZmYtMWNkNDQ1OTRhYThmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chase Sui Wonders and Wyatt Oleff in City on Fire (2023)" ;
+    schema:height "3744"^^xsd:integer ;
+    schema:width "5616"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5200476/>
+    schema:sameAs <https://www.instagram.com/wyattoleff/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

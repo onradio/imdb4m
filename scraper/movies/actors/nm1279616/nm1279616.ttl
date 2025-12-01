@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1279616/> a schema:Person ;
+    schema:name "Ben Harlan" ;
+    schema:url <https://www.imdb.com/name/nm1279616/> ;
+    schema:jobTitle "Music Department", "Actor", "Composer" ;
+    schema:description "Ben Harlan. Actor: The Pianist. Ben Harlan is known for The Pianist (2002), Room in Rome (2010) and Coming Down the Mountain (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0253474/> .    # The Pianist
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Pianist (2002)
+<https://www.imdb.com/title/tt0253474/> a schema:Movie ;
+    schema:name "The Pianist" ;
+    schema:url <https://www.imdb.com/title/tt0253474/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1279616/> ;
+        schema:characterName "Street Musician"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

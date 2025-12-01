@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8784422/> a schema:Person ;
+    schema:name "Oliver Marks" ;
+    schema:url <https://www.imdb.com/name/nm8784422/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Oliver Marks. Actor: Mary and Max. Oliver Marks is known for Mary and Max (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0978762/> .    # Mary and Max
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mary and Max (2009)
+<https://www.imdb.com/title/tt0978762/> a schema:Movie ;
+    schema:name "Mary and Max" ;
+    schema:url <https://www.imdb.com/title/tt0978762/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8784422/> ;
+        schema:characterName "Alleyway Bully One"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0136999/> a schema:Person ;
+    schema:name "Matt Carey" ;
+    schema:url <https://www.imdb.com/name/nm0136999/> ;
+    schema:jobTitle "Actor", "Composer", "Sound Department" ;
+    schema:description "Matt Carey. Actor: Dead Poets Society. Matt Carey is an American actor, best remembered as the slow and funny student Hopkins in Peter Weir's classic Dead Poets Society (1989). He's the student who composes the poem \"The cat sat on the mat\", which causes a hysterical moment with his schoolmates and gets a funny reaction from the teacher played by Robin Williams. Other than this role, he also appeared on..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0111896/>,    # Bless This House
+                       <https://www.imdb.com/title/tt0097165/> ; # Dead Poets Society
+
+
+    schema:video <https://www.imdb.com/video/vi99090713/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0136999/mediaviewer/rm1186770944/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bless This House (1995)
+<https://www.imdb.com/title/tt0111896/> a schema:Movie ;
+    schema:name "Bless This House" ;
+    schema:url <https://www.imdb.com/title/tt0111896/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0136999/> ;
+        schema:characterName "Matthew"
+    ] .
+
+# Dead Poets Society (1989)
+<https://www.imdb.com/title/tt0097165/> a schema:Movie ;
+    schema:name "Dead Poets Society" ;
+    schema:url <https://www.imdb.com/title/tt0097165/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0136999/> ;
+        schema:characterName "Hopkins"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi99090713/> a schema:VideoObject ;
+        schema:name "The Second Death" ;
+        schema:description "'A Gripping Tale of   Mayhem.... Scary!!!'    Chuck Williams- Bubba   Ho-Tep" ;
+        schema:embedUrl <https://www.imdb.com/video/vi99090713/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTI4MDk4OTE5OV5BMl5BanBnXkFtZTcwNjg5NjU3MQ@@._V1_.jpg" ;
+        schema:duration "PT36S"^^xsd:duration ;
+        schema:uploadDate "2008-06-18T15:29:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0136999/mediaviewer/rm1186770944/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzODEzMjQyMV5BMl5BanBnXkFtZTcwOTM3NjAyNw@@._V1_.jpg> ;
+    schema:caption "Robin Williams, Matt Carey, James J. Christy, Dylan Kussman, and Richard Stites in Dead Poets Society (1989)" ;
+    schema:height "1211"^^xsd:integer ;
+    schema:width "1829"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

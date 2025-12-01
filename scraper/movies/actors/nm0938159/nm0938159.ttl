@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0938159/> a schema:Person ;
+    schema:name "Traci Wolfe" ;
+    schema:url <https://www.imdb.com/name/nm0938159/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Traci Wolfe. Actress: Lethal Weapon. Traci Wolfe was born in Plainfield, New Jersey, USA. She is an actress, known for Lethal Weapon (1987), Lethal Weapon 2 (1989) and Lethal Weapon 3 (1992)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYzBiMGVlZDctZTNhZC00MmMwLWJhMzAtNjkwZDE0ODZjZmFjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Plainfield, New Jersey, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0093409/>,    # Lethal Weapon
+                       <https://www.imdb.com/title/tt0097733/>,    # Lethal Weapon 2
+                       <https://www.imdb.com/title/tt0104714/>,    # Lethal Weapon 3
+                       <https://www.imdb.com/title/tt0122151/>,    # Lethal Weapon 4
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0086687/>,    # The Cosby Show
+                       <https://www.imdb.com/title/tt0094484/> ; # In the Heat of the Night
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1963893785/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0938159/mediaviewer/rm3862940672/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm2654981120/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm719281921/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm3197778433/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm2996451841/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm3216773889/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm2472404481/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm3872771073/>,
+                 <https://www.imdb.com/name/nm0938159/mediaviewer/rm1567471361/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093409/> a schema:Movie ;
+    schema:name "Lethal Weapon" ;
+    schema:url <https://www.imdb.com/title/tt0093409/> .
+
+<https://www.imdb.com/title/tt0097733/> a schema:Movie ;
+    schema:name "Lethal Weapon 2" ;
+    schema:url <https://www.imdb.com/title/tt0097733/> .
+
+<https://www.imdb.com/title/tt0104714/> a schema:Movie ;
+    schema:name "Lethal Weapon 3" ;
+    schema:url <https://www.imdb.com/title/tt0104714/> .
+
+<https://www.imdb.com/title/tt0122151/> a schema:Movie ;
+    schema:name "Lethal Weapon 4" ;
+    schema:url <https://www.imdb.com/title/tt0122151/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Cosby Show (1986)
+<https://www.imdb.com/title/tt0086687/> a schema:Movie ;
+    schema:name "The Cosby Show" ;
+    schema:url <https://www.imdb.com/title/tt0086687/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0938159/> ;
+        schema:characterName "Terri"
+    ] .
+
+# In the Heat of the Night (1989)
+<https://www.imdb.com/title/tt0094484/> a schema:Movie ;
+    schema:name "In the Heat of the Night" ;
+    schema:url <https://www.imdb.com/title/tt0094484/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0938159/> ;
+        schema:characterName "Nicole"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1963893785/> a schema:VideoObject ;
+        schema:name "Lethal Weapon 2" ;
+        schema:description "Trailer 2 for Lethal Weapon 2" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1963893785/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGY0NjYyNWItMTA0ZS00NTA2LWI2ZDctZmNiOGExYzYwOWZkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M28S"^^xsd:duration ;
+        schema:uploadDate "2012-10-22T03:19:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYzBiMGVlZDctZTNhZC00MmMwLWJhMzAtNjkwZDE0ODZjZmFjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzBiMGVlZDctZTNhZC00MmMwLWJhMzAtNjkwZDE0ODZjZmFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Traci Wolfe" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm3862940672/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1Njc1MzAyMl5BMl5BanBnXkFtZTgwNDg2ODIwMjE@._V1_.jpg> ;
+    schema:caption "Danny Glover, Damon Hines, Darlene Love, Ebonie Smith, and Traci Wolfe in Lethal Weapon (1987)" ;
+    schema:height "3410"^^xsd:integer ;
+    schema:width "4890"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm2654981120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ4MTE1MTYzOV5BMl5BanBnXkFtZTgwMDg2ODIwMjE@._V1_.jpg> ;
+    schema:caption "Chad Hayes and Traci Wolfe in Lethal Weapon (1987)" ;
+    schema:height "3285"^^xsd:integer ;
+    schema:width "4900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm719281921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTc1MjczODgtY2Q4ZS00MzA3LWJiN2MtZmYwOTNjMTg1NTM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Traci Wolfe" ;
+    schema:height "1920"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm3197778433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGFiNzk0ODUtYTcxNy00OWI3LWJkZTMtNDZmNDQzYTFlOWVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "She Said" ;
+    schema:height "947"^^xsd:integer ;
+    schema:width "1842"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm2996451841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDM4ODRlYmUtZDhhYS00NTY0LWI5MzYtMjRjZWExMDVhMDVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "She Said" ;
+    schema:height "812"^^xsd:integer ;
+    schema:width "1421"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm3216773889/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM1YmVmMDAtOWQ3OC00MzM2LTk3ZGQtMzJhNzNhNzhiZTNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Law & Order SVU" ;
+    schema:height "1192"^^xsd:integer ;
+    schema:width "2032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm2472404481/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWJmZmQxMWEtMTE3Ny00ZTU1LTkxOWQtNjQwYWI2YjIwZWYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Blue Bloods" ;
+    schema:height "432"^^xsd:integer ;
+    schema:width "649"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm3872771073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWM0MThlZDUtM2RhOS00ZmMxLThlZWItYzQwYjUxZWYwMjEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Saints & Sinners- Judgment Day" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0938159/mediaviewer/rm1567471361/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGU5Mzc0NWUtODE2NC00MzEzLTg1ODItYzU1NWMyNjBhZjA3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Katy Keene" ;
+    schema:height "1064"^^xsd:integer ;
+    schema:width "2024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

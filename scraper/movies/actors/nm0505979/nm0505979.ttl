@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0505979/> a schema:Person ;
+    schema:name "Walter Levine" ;
+    schema:url <https://www.imdb.com/name/nm0505979/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Walter Levine. Actor: Blues Brothers 2000. Walter Levine is known for Blues Brothers 2000 (1998), The Blues Brothers (1980) and Schlock (1973)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0118747/>,    # Blues Brothers 2000
+                       <https://www.imdb.com/title/tt0099984/>,    # The Last Match
+                       <https://www.imdb.com/title/tt0080455/>,    # The Blues Brothers
+                       <https://www.imdb.com/title/tt0067716/> . # Schlock
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blues Brothers 2000 (1998)
+<https://www.imdb.com/title/tt0118747/> a schema:Movie ;
+    schema:name "Blues Brothers 2000" ;
+    schema:url <https://www.imdb.com/title/tt0118747/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505979/> ;
+        schema:characterName "Same Guard"
+    ] .
+
+# The Last Match (1991)
+<https://www.imdb.com/title/tt0099984/> a schema:Movie ;
+    schema:name "The Last Match" ;
+    schema:url <https://www.imdb.com/title/tt0099984/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505979/> ;
+        schema:characterName ""
+    ] .
+
+# The Blues Brothers (1980)
+<https://www.imdb.com/title/tt0080455/> a schema:Movie ;
+    schema:name "The Blues Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0080455/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505979/> ;
+        schema:characterName "Prison Guard"
+    ] .
+
+# Schlock (1973)
+<https://www.imdb.com/title/tt0067716/> a schema:Movie ;
+    schema:name "Schlock" ;
+    schema:url <https://www.imdb.com/title/tt0067716/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505979/> ;
+        schema:characterName "Police Thief"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5052448/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Run Rabbit Run" ;
+        schema:byArtist <https://www.imdb.com/name/nm5476632/> ; # Flanagan and Allen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Run Rabbit Run" ;
+            schema:author <https://www.imdb.com/name/nm1818619/>, # Ralph T. Butler
+                       <https://www.imdb.com/name/nm0310796/> # Noel Gay
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Redbone" ;
+        schema:byArtist <https://www.imdb.com/name/nm2255973/> ; # Donald Glover
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Redbone" ;
+            schema:author <https://www.imdb.com/name/nm2255973/>, # Donald Glover
+                       <https://www.imdb.com/name/nm3234869/> # Ludwig Göransson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "(I've Had) The Time Of My Life" ;
+        schema:byArtist <https://www.imdb.com/name/nm0575830/>, # Bill Medley
+                        <https://www.imdb.com/name/nm0912620/> ; # Jennifer Warnes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "(I've Had) The Time Of My Life" ;
+            schema:author <https://www.imdb.com/name/nm0219096/>, # John DeNicola
+                       <https://www.imdb.com/name/nm0548726/>, # Donald Markowitz
+                       <https://www.imdb.com/name/nm0696665/> # Franke Previte
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0219096/> a schema:Person ;
+    schema:name "John DeNicola" .
+<https://www.imdb.com/name/nm0310796/> a schema:Person ;
+    schema:name "Noel Gay" .
+<https://www.imdb.com/name/nm0548726/> a schema:Person ;
+    schema:name "Donald Markowitz" .
+<https://www.imdb.com/name/nm0575830/> a schema:Person ;
+    schema:name "Bill Medley" .
+<https://www.imdb.com/name/nm0696665/> a schema:Person ;
+    schema:name "Franke Previte" .
+<https://www.imdb.com/name/nm0912620/> a schema:Person ;
+    schema:name "Jennifer Warnes" .
+<https://www.imdb.com/name/nm1818619/> a schema:Person ;
+    schema:name "Ralph T. Butler" .
+<https://www.imdb.com/name/nm2255973/> a schema:Person ;
+    schema:name "Donald Glover" .
+<https://www.imdb.com/name/nm3234869/> a schema:Person ;
+    schema:name "Ludwig Göransson" .
+<https://www.imdb.com/name/nm5476632/> a schema:Person ;
+    schema:name "Flanagan and Allen" .
+# ==============================================================================

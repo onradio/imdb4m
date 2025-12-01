@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0863379/> a schema:Person ;
+    schema:name "James Tillis" ;
+    schema:url <https://www.imdb.com/name/nm0863379/> ;
+    schema:birthDate "1957-07-05"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "The Fighting Cowboy" ;
+    schema:description "James Tillis. Actor: The Color Purple. Boxer contender in the Heavyweight division during the 1980s. Tillis was trained by Muhammad Ali's trainer Angelo Dundee. He fought top contenders including Mike Tyson, Mike Weaver, Earnie Shavers, Pinklon Thomas, Greg Page, Tim Witherspoon, Carl Williams, Gerrie Coetzee, Tyrell Biggs, Frank Bruno, Evander Holyfield, and Tommy Morrison. His first title shot was against WBA heavyweight champion Mike Weaver but he lost to a..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tulsa, Oklahoma, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088939/>,    # The Color Purple
+                       <https://www.imdb.com/title/tt1592798/>,    # Smithfield's Llamaguy
+                       <https://www.imdb.com/title/tt34093639/>,    # I am Tommy Morrison
+                       <https://www.imdb.com/title/tt5273302/>,    # Yo, Jimbo!
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0107804/> . # Percy & Thunder
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088939/> a schema:Movie ;
+    schema:name "The Color Purple" ;
+    schema:url <https://www.imdb.com/title/tt0088939/> .
+
+<https://www.imdb.com/title/tt1592798/> a schema:Movie ;
+    schema:name "Smithfield's Llamaguy" ;
+    schema:url <https://www.imdb.com/title/tt1592798/> .
+
+<https://www.imdb.com/title/tt34093639/> a schema:Movie ;
+    schema:name "I am Tommy Morrison" ;
+    schema:url <https://www.imdb.com/title/tt34093639/> .
+
+<https://www.imdb.com/title/tt5273302/> a schema:Movie ;
+    schema:name "Yo, Jimbo!" ;
+    schema:url <https://www.imdb.com/title/tt5273302/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Percy & Thunder (1993)
+<https://www.imdb.com/title/tt0107804/> a schema:Movie ;
+    schema:name "Percy & Thunder" ;
+    schema:url <https://www.imdb.com/title/tt0107804/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0863379/> ;
+        schema:characterName "Mojo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

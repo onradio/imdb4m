@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1310910/> a schema:Person ;
+    schema:name "Takashi Onozuka" ;
+    schema:url <https://www.imdb.com/name/nm1310910/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Takashi Onozuka. Actor: Your Name.. Takashi Onozuka is known for Your Name. (2016), Ghost in the Shell: Stand Alone Complex (2002) and Ghost in the Shell: S.A.C. 2nd GIG - Individual Eleven (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2560140/>,    # Attack on Titan
+                       <https://www.imdb.com/title/tt3398540/>,    # Haikyuu!!
+                       <https://www.imdb.com/title/tt5626028/>,    # My Hero Academia
+                       <https://www.imdb.com/title/tt9864132/>,    # Aikatsu Friends!
+                       <https://www.imdb.com/title/tt6776712/>,    # Ace Combat 7: Skies Unknown
+                       <https://www.imdb.com/title/tt8515016/> . # Banana Fish
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Attack on Titan (2018)
+<https://www.imdb.com/title/tt2560140/> a schema:Movie ;
+    schema:name "Attack on Titan" ;
+    schema:url <https://www.imdb.com/title/tt2560140/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Roy"
+    ] .
+
+# Haikyuu!! (2014)
+<https://www.imdb.com/title/tt3398540/> a schema:Movie ;
+    schema:name "Haikyuu!!" ;
+    schema:url <https://www.imdb.com/title/tt3398540/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Kaname Moniwa"
+    ] .
+
+# My Hero Academia (2019)
+<https://www.imdb.com/title/tt5626028/> a schema:Movie ;
+    schema:name "My Hero Academia" ;
+    schema:url <https://www.imdb.com/title/tt5626028/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Mirio's Father"
+    ] .
+
+# Aikatsu Friends! (2018)
+<https://www.imdb.com/title/tt9864132/> a schema:Movie ;
+    schema:name "Aikatsu Friends!" ;
+    schema:url <https://www.imdb.com/title/tt9864132/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Monsieur Zacbalin"
+    ] .
+
+# Ace Combat 7: Skies Unknown (2019)
+<https://www.imdb.com/title/tt6776712/> a schema:Movie ;
+    schema:name "Ace Combat 7: Skies Unknown" ;
+    schema:url <https://www.imdb.com/title/tt6776712/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Banana Fish (2018)
+<https://www.imdb.com/title/tt8515016/> a schema:Movie ;
+    schema:name "Banana Fish" ;
+    schema:url <https://www.imdb.com/title/tt8515016/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1310910/> ;
+        schema:characterName "Announcer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

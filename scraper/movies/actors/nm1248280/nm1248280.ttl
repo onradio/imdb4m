@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1248280/> a schema:Person ;
+    schema:name "Emerson Gomes" ;
+    schema:url <https://www.imdb.com/name/nm1248280/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Emerson Gomes. Actor: City of God. Emerson Gomes is known for City of God (2002), Elite Squad (2007) and City of Men (2002)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0861739/>,    # Elite Squad
+                       <https://www.imdb.com/title/tt0364801/>,    # City of Men
+                       <https://www.imdb.com/title/tt0317248/>,    # City of God
+                       <https://www.imdb.com/title/tt0316969/> ; # Brava Gente
+
+
+    schema:video <https://www.imdb.com/video/vi1783208985/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Elite Squad (2007)
+<https://www.imdb.com/title/tt0861739/> a schema:Movie ;
+    schema:name "Elite Squad" ;
+    schema:url <https://www.imdb.com/title/tt0861739/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1248280/> ;
+        schema:characterName "Xaveco"
+    ] .
+
+# City of Men (2002)
+<https://www.imdb.com/title/tt0364801/> a schema:Movie ;
+    schema:name "City of Men" ;
+    schema:url <https://www.imdb.com/title/tt0364801/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1248280/> ;
+        schema:characterName "1st student"
+    ] .
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1248280/> ;
+        schema:characterName "Barbantinho"
+    ] .
+
+# Brava Gente (2000)
+<https://www.imdb.com/title/tt0316969/> a schema:Movie ;
+    schema:name "Brava Gente" ;
+    schema:url <https://www.imdb.com/title/tt0316969/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1248280/> ;
+        schema:characterName "Garoto #4"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1783208985/> a schema:VideoObject ;
+        schema:name "City of God: Blu-Ray" ;
+        schema:description "Trailer for City Of God" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1783208985/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTQzY2M4ZTctZWRjZS00NzlmLWI4YzgtMDUzZGU5YjlmYzkxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT59S"^^xsd:duration ;
+        schema:uploadDate "2011-09-23T03:10:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

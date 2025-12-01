@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6850009/> a schema:Person ;
+    schema:name "María Rosa López Ottonello" ;
+    schema:url <https://www.imdb.com/name/nm6850009/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "María Rosa López Ottonello. Actress: Wild Tales. María Rosa López Ottonello is known for Wild Tales (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3011894/> ;    # Wild Tales
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6850009/mediaviewer/rm3386411521/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6850009/> ;
+        schema:characterName "Madre Pasternak"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm6850009/mediaviewer/rm3386411521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDdhNjJiZmYtOTY2Yi00MGFjLTk3NzItM2VmYTdhYjNlNWM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Héctor Drachtman and María Rosa López Ottonello in Wild Tales (2014)" ;
+    schema:height "536"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

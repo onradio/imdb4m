@@ -1,0 +1,398 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2951768/> a schema:Person ;
+    schema:name "Freida Pinto" ;
+    schema:url <https://www.imdb.com/name/nm2951768/> ;
+    schema:birthDate "1984-10-18"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Fro", "Freida Selena Pinto" ;
+    schema:description "Freida Pinto. Actress: Slumdog Millionaire. Freida Selena Pinto was born in Bombay (now Mumbai), Maharashtra, India, to Sylvia, a school principal, and Frederick Pinto, a senior bank branch manager. She is from a Mangalorean family.\n\nPinto traversed the modeling circuit in Mumbai (represented by Elite Model Management India) for two years before gaining her big break when director Danny Boyle picked her out in the audition process to play the female..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTg5NDI0MzM0NF5BMl5BanBnXkFtZTcwOTQ4NTIwNw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bombay, Maharashtra, India [now Mumbai, Maharashtra, India]"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1010048/>,    # Slumdog Millionaire
+                       <https://www.imdb.com/title/tt1253864/>,    # Immortals
+                       <https://www.imdb.com/title/tt1318514/>,    # Rise of the Planet of the Apes
+                       <https://www.imdb.com/title/tt2101383/>,    # Knight of Cups
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3984356/>,    # Only
+                       <https://www.imdb.com/title/tt9861408/>,    # Mr. Malcolm's List
+                       <https://www.imdb.com/title/tt2388771/>,    # Mowgli: Legend of the Jungle
+                       <https://www.imdb.com/title/tt3823392/>,    # Love Sonia
+                       <https://www.imdb.com/title/tt4789576/>,    # The Path
+                       <https://www.imdb.com/title/tt4191486/>,    # Yamasong: March of the Hollows
+                       <https://www.imdb.com/title/tt5650574/>,    # Guerrilla
+                       <https://www.imdb.com/title/tt6254730/>,    # Past Forward
+                       <https://www.imdb.com/title/tt5161012/>,    # Two Bellmen Two
+                       <https://www.imdb.com/title/tt5274560/>,    # Black Knight Decoded
+                       <https://www.imdb.com/title/tt2211129/>,    # The Mindy Project
+                       <https://www.imdb.com/title/tt3520290/>,    # Blunt Force Trauma
+                       <https://www.imdb.com/title/tt2403393/>,    # Desert Dancer
+                       <https://www.imdb.com/title/tt7017990/>,    # Bruno Mars: Gorilla
+                       <https://www.imdb.com/title/tt2444946/>,    # Girl Rising
+                       <https://www.imdb.com/title/tt1701210/>,    # Black Gold
+                       <https://www.imdb.com/title/tt1836987/>,    # Trishna
+                       <https://www.imdb.com/title/tt1366409/>,    # Miral
+                       <https://www.imdb.com/title/tt1182350/>,    # You Will Meet a Tall Dark Stranger
+                       <https://www.imdb.com/title/tt4930056/> ; # I Promise You
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 8 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1121896473/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2951768/mediaviewer/rm291831041/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm90504449/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm929365249/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm711261441/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm593820929/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm3589847809/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm3405298433/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm2547347456/>,
+                 <https://www.imdb.com/name/nm2951768/mediaviewer/rm2356572928/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> .
+
+<https://www.imdb.com/title/tt1253864/> a schema:Movie ;
+    schema:name "Immortals" ;
+    schema:url <https://www.imdb.com/title/tt1253864/> .
+
+<https://www.imdb.com/title/tt1318514/> a schema:Movie ;
+    schema:name "Rise of the Planet of the Apes" ;
+    schema:url <https://www.imdb.com/title/tt1318514/> .
+
+<https://www.imdb.com/title/tt2101383/> a schema:Movie ;
+    schema:name "Knight of Cups" ;
+    schema:url <https://www.imdb.com/title/tt2101383/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Only (2019)
+<https://www.imdb.com/title/tt3984356/> a schema:Movie ;
+    schema:name "Only" ;
+    schema:url <https://www.imdb.com/title/tt3984356/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Eva"
+    ] .
+
+# Mr. Malcolm's List (2019)
+<https://www.imdb.com/title/tt9861408/> a schema:Movie ;
+    schema:name "Mr. Malcolm's List" ;
+    schema:url <https://www.imdb.com/title/tt9861408/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Selina Dalton"
+    ] .
+
+# Mowgli: Legend of the Jungle (2018)
+<https://www.imdb.com/title/tt2388771/> a schema:Movie ;
+    schema:name "Mowgli: Legend of the Jungle" ;
+    schema:url <https://www.imdb.com/title/tt2388771/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Messua"
+    ] .
+
+# Love Sonia (2018)
+<https://www.imdb.com/title/tt3823392/> a schema:Movie ;
+    schema:name "Love Sonia" ;
+    schema:url <https://www.imdb.com/title/tt3823392/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Rashmi"
+    ] .
+
+# The Path (2018)
+<https://www.imdb.com/title/tt4789576/> a schema:Movie ;
+    schema:name "The Path" ;
+    schema:url <https://www.imdb.com/title/tt4789576/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Vera Stephans"
+    ] .
+
+# Yamasong: March of the Hollows (2017)
+<https://www.imdb.com/title/tt4191486/> a schema:Movie ;
+    schema:name "Yamasong: March of the Hollows" ;
+    schema:url <https://www.imdb.com/title/tt4191486/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Geta"
+    ] .
+
+# Guerrilla (2017)
+<https://www.imdb.com/title/tt5650574/> a schema:Movie ;
+    schema:name "Guerrilla" ;
+    schema:url <https://www.imdb.com/title/tt5650574/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Jas Mitra"
+    ] .
+
+# Past Forward (2016)
+<https://www.imdb.com/title/tt6254730/> a schema:Movie ;
+    schema:name "Past Forward" ;
+    schema:url <https://www.imdb.com/title/tt6254730/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Woman #2"
+    ] .
+
+# Two Bellmen Two (2016)
+<https://www.imdb.com/title/tt5161012/> a schema:Movie ;
+    schema:name "Two Bellmen Two" ;
+    schema:url <https://www.imdb.com/title/tt5161012/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Leila Patel"
+    ] .
+
+# Black Knight Decoded (2015)
+<https://www.imdb.com/title/tt5274560/> a schema:Movie ;
+    schema:name "Black Knight Decoded" ;
+    schema:url <https://www.imdb.com/title/tt5274560/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Ahna"
+    ] .
+
+# The Mindy Project (2015)
+<https://www.imdb.com/title/tt2211129/> a schema:Movie ;
+    schema:name "The Mindy Project" ;
+    schema:url <https://www.imdb.com/title/tt2211129/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Freida Pinto"
+    ] .
+
+# Blunt Force Trauma (2015)
+<https://www.imdb.com/title/tt3520290/> a schema:Movie ;
+    schema:name "Blunt Force Trauma" ;
+    schema:url <https://www.imdb.com/title/tt3520290/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Colt"
+    ] .
+
+# Desert Dancer (2014)
+<https://www.imdb.com/title/tt2403393/> a schema:Movie ;
+    schema:name "Desert Dancer" ;
+    schema:url <https://www.imdb.com/title/tt2403393/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Elaheh"
+    ] .
+
+# Bruno Mars: Gorilla (2013)
+<https://www.imdb.com/title/tt7017990/> a schema:Movie ;
+    schema:name "Bruno Mars: Gorilla" ;
+    schema:url <https://www.imdb.com/title/tt7017990/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Isabella"
+    ] .
+
+# Girl Rising (2013)
+<https://www.imdb.com/title/tt2444946/> a schema:Movie ;
+    schema:name "Girl Rising" ;
+    schema:url <https://www.imdb.com/title/tt2444946/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Black Gold (2011)
+<https://www.imdb.com/title/tt1701210/> a schema:Movie ;
+    schema:name "Black Gold" ;
+    schema:url <https://www.imdb.com/title/tt1701210/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Princess Leyla"
+    ] .
+
+# Trishna (2011)
+<https://www.imdb.com/title/tt1836987/> a schema:Movie ;
+    schema:name "Trishna" ;
+    schema:url <https://www.imdb.com/title/tt1836987/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Trishna"
+    ] .
+
+# Miral (2010)
+<https://www.imdb.com/title/tt1366409/> a schema:Movie ;
+    schema:name "Miral" ;
+    schema:url <https://www.imdb.com/title/tt1366409/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Miral"
+    ] .
+
+# You Will Meet a Tall Dark Stranger (2010)
+<https://www.imdb.com/title/tt1182350/> a schema:Movie ;
+    schema:name "You Will Meet a Tall Dark Stranger" ;
+    schema:url <https://www.imdb.com/title/tt1182350/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName "Dia"
+    ] .
+
+# I Promise You (2007)
+<https://www.imdb.com/title/tt4930056/> a schema:Movie ;
+    schema:name "I Promise You" ;
+    schema:url <https://www.imdb.com/title/tt4930056/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2951768/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1121896473/> a schema:VideoObject ;
+        schema:name "My Mother&apos;s Wedding" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1121896473/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2Y1MmRkM2ItMDkzMC00ZjM5LTlmNWItNzE1NjJiN2Y5NmNiXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M14S"^^xsd:duration ;
+        schema:uploadDate "2025-07-22T17:03:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTg5NDI0MzM0NF5BMl5BanBnXkFtZTcwOTQ4NTIwNw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg5NDI0MzM0NF5BMl5BanBnXkFtZTcwOTQ4NTIwNw@@._V1_.jpg> ;
+    schema:caption "Freida Pinto at an event for Immortals (2011)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1355"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm291831041/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTEwOTAyNGMtZDQzOC00ZWQ1LTlhZGEtMGZmNTI4OTY4MGIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr. and Freida Pinto in Needle in a Timestack (2021)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm90504449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmIwYzNkYjYtZTQzYi00NTIwLTgyZmItNGI3NGU4OTFmMTA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr. and Freida Pinto in Needle in a Timestack (2021)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm929365249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDc3YTI3Y2QtZGNkOC00MjFlLTgzM2MtZDFkZmFmZWM0N2Y0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Freida Pinto in Needle in a Timestack (2021)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm711261441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzZkYjQyM2YtNjQ0Zi00ODBiLWE2MDUtMDMxMDYxODA1Yjc1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr., Jadyn Wong, and Freida Pinto in Needle in a Timestack (2021)" ;
+    schema:height "429"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm593820929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTZiMWVjYjMtMWRlYS00NDcxLWE5ZjctMDM0OTA1M2ZkMjFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Orlando Bloom and Freida Pinto in Needle in a Timestack (2021)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm3589847809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGM2MWViYjUtY2YzOC00ZmU3LTk5MzUtZDViYzA0ZjcyZGEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christian Bale and Freida Pinto in Knight of Cups (2015)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm3405298433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjJmYjEwY2QtYzlhYy00YTgyLWIzNzItNThkMzcyNDY4M2ZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Freida Pinto and Janette Roderick in Knight of Cups (2015)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm2547347456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTE1MDg2Nzc5Ml5BMl5BanBnXkFtZTgwMjU0MjE3NjM@._V1_.jpg> ;
+    schema:caption "Freida Pinto and Rohan Chand in Mowgli: Legend of the Jungle (2018)" ;
+    schema:height "856"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2951768/mediaviewer/rm2356572928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzcyOWE2YTUtMWM2Ny00NzU2LTkzYzUtMDE2ZGViNmU4OTBjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karan Johar, Freida Pinto, and Nargis Fakhri in Koffee with Karan (2004)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2951768/>
+    schema:sameAs <https://www.facebook.com/freidapinto/>,
+                  <https://www.instagram.com/freidapinto/?hl=en> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

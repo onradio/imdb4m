@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1403603/> a schema:Person ;
+    schema:name "Jefechander Suplino" ;
+    schema:url <https://www.imdb.com/name/nm1403603/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jefechander Suplino. Actor: City of God. Jefechander Suplino is known for City of God (2002) and Cidade de Deus: Oficina de Atores (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0317248/> ;    # City of God
+
+
+    schema:video <https://www.imdb.com/video/vi1783208985/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1403603/mediaviewer/rm2144829440/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1403603/> ;
+        schema:characterName "Alicate"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1783208985/> a schema:VideoObject ;
+        schema:name "City of God: Blu-Ray" ;
+        schema:description "Trailer for City Of God" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1783208985/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTQzY2M4ZTctZWRjZS00NzlmLWI4YzgtMDUzZGU5YjlmYzkxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT59S"^^xsd:duration ;
+        schema:uploadDate "2011-09-23T03:10:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1403603/mediaviewer/rm2144829440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4MzAyMjUxNF5BMl5BanBnXkFtZTcwNjIwMTk2Mw@@._V1_.jpg> ;
+    schema:caption "Jonathan Haagensen, Renato de Souza, and Jefechander Suplino in City of God (2002)" ;
+    schema:height "1140"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

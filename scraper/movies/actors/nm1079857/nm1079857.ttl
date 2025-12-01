@@ -1,0 +1,138 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1079857/> a schema:Person ;
+    schema:name "Lee Yong-nyeo" ;
+    schema:url <https://www.imdb.com/name/nm1079857/> ;
+    schema:birthDate "1956-11-30"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lee Yong-nyeo. Actress: I'm a Cyborg. Lee Yong-nyeo was born on 30 November 1956 in South Korea. She is an actress, known for I'm a Cyborg (2006), The Handmaiden (2016) and The Wailing (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjQwYTJlYTctM2NiNS00ZmY2LThiMzYtNWI4MTI1YmUxYzE3XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9014894/>,    # Drama Special
+                       <https://www.imdb.com/title/tt8328460/>,    # Busted!
+                       <https://www.imdb.com/title/tt9674954/>,    # The Fiery Priest
+                       <https://www.imdb.com/title/tt8769302/>,    # Hide and Seek
+                       <https://www.imdb.com/title/tt8801708/>,    # The Beauty Inside
+                       <https://www.imdb.com/title/tt8801670/> ; # The Guest
+
+
+    schema:video <https://www.imdb.com/video/vi3452614681/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1079857/mediaviewer/rm2827034880/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Drama Special (2015)
+<https://www.imdb.com/title/tt9014894/> a schema:Movie ;
+    schema:name "Drama Special" ;
+    schema:url <https://www.imdb.com/title/tt9014894/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Boo Ddeul"
+    ] .
+
+# Busted! (2019)
+<https://www.imdb.com/title/tt8328460/> a schema:Movie ;
+    schema:name "Busted!" ;
+    schema:url <https://www.imdb.com/title/tt8328460/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Head Shaman"
+    ] .
+
+# The Fiery Priest (2019)
+<https://www.imdb.com/title/tt9674954/> a schema:Movie ;
+    schema:name "The Fiery Priest" ;
+    schema:url <https://www.imdb.com/title/tt9674954/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Grandmother playing Go-Stop"
+    ] .
+
+# Hide and Seek (2018)
+<https://www.imdb.com/title/tt8769302/> a schema:Movie ;
+    schema:name "Hide and Seek" ;
+    schema:url <https://www.imdb.com/title/tt8769302/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Buddhist Choi"
+    ] .
+
+# The Beauty Inside (2018)
+<https://www.imdb.com/title/tt8801708/> a schema:Movie ;
+    schema:name "The Beauty Inside" ;
+    schema:url <https://www.imdb.com/title/tt8801708/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Shaman"
+    ] .
+
+# The Guest (2018)
+<https://www.imdb.com/title/tt8801670/> a schema:Movie ;
+    schema:name "The Guest" ;
+    schema:url <https://www.imdb.com/title/tt8801670/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1079857/> ;
+        schema:characterName "Shaman priestess"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3452614681/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Trailer for The Handmaiden" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3452614681/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWI2NDk5ODktNWQ3Zi00N2RkLWEwZWYtYTMyYWNmOGIyN2FkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M8S"^^xsd:duration ;
+        schema:uploadDate "2018-02-17T17:15:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjQwYTJlYTctM2NiNS00ZmY2LThiMzYtNWI4MTI1YmUxYzE3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQwYTJlYTctM2NiNS00ZmY2LThiMzYtNWI4MTI1YmUxYzE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Yong-nyeo" ;
+    schema:height "579"^^xsd:integer ;
+    schema:width "426"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1079857/mediaviewer/rm2827034880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQwYTJlYTctM2NiNS00ZmY2LThiMzYtNWI4MTI1YmUxYzE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Yong-nyeo" ;
+    schema:height "579"^^xsd:integer ;
+    schema:width "426"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

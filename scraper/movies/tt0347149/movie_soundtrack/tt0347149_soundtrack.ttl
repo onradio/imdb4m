@@ -1,0 +1,30 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0347149/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Sekai no Yakusoku" ;
+        schema:byArtist <https://www.imdb.com/name/nm0047962/> ; # Chieko Baishô
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sekai no Yakusoku" ;
+            schema:composer <https://www.imdb.com/name/nm1175835/> ; # Yumi Kimura
+            schema:lyricist <https://www.imdb.com/name/nm0849479/> # Shuntarô Tanikawa
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0047962/> a schema:Person ;
+    schema:name "Chieko Baishô" .
+<https://www.imdb.com/name/nm0849479/> a schema:Person ;
+    schema:name "Shuntarô Tanikawa" .
+<https://www.imdb.com/name/nm1175835/> a schema:Person ;
+    schema:name "Yumi Kimura" .
+# ==============================================================================

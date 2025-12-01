@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8941213/> a schema:Person ;
+    schema:name "Gavin Lyle Foley" ;
+    schema:url <https://www.imdb.com/name/nm8941213/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gavin Lyle Foley. Actor: Green Book. Gavin Lyle Foley is known for Green Book (2018), We All Think We're Special (2021) and Kill Him 'Til He's Dead." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGY1ZjE4NDktYmM2YS00ZTI4LTgyMTYtNDE5MTM3NGI3Y2E4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6966692/>,    # Green Book
+                       <https://www.imdb.com/title/tt6473344/> ; # SEAL Team
+
+
+    schema:video <https://www.imdb.com/video/vi3313809689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8941213/mediaviewer/rm2376214273/>,
+                 <https://www.imdb.com/name/nm8941213/mediaviewer/rm3178110976/>,
+                 <https://www.imdb.com/name/nm8941213/mediaviewer/rm2641240064/>,
+                 <https://www.imdb.com/name/nm8941213/mediaviewer/rm2801436162/>,
+                 <https://www.imdb.com/name/nm8941213/mediaviewer/rm2325882625/>,
+                 <https://www.imdb.com/name/nm8941213/mediaviewer/rm3758191873/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Green Book (2018)
+<https://www.imdb.com/title/tt6966692/> a schema:Movie ;
+    schema:name "Green Book" ;
+    schema:url <https://www.imdb.com/title/tt6966692/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8941213/> ;
+        schema:characterName "Frankie Vallelonga"
+    ] .
+
+# SEAL Team (2017)
+<https://www.imdb.com/title/tt6473344/> a schema:Movie ;
+    schema:name "SEAL Team" ;
+    schema:url <https://www.imdb.com/title/tt6473344/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8941213/> ;
+        schema:characterName "Landon Massey"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3313809689/> a schema:VideoObject ;
+        schema:name "First Look" ;
+        schema:description "Follow the lives of the most elite unit of Navy SEALs as they train, plan and execute the most dangerous missions our country can ask of them." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3313809689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzNhOTQzM2YtZjc1ZC00ODExLTgzODAtNmQyNDI1MjhiMjg3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" ;
+        schema:duration "PT5M19S"^^xsd:duration ;
+        schema:uploadDate "2017-05-19T19:36:29Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGY1ZjE4NDktYmM2YS00ZTI4LTgyMTYtNDE5MTM3NGI3Y2E4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGY1ZjE4NDktYmM2YS00ZTI4LTgyMTYtNDE5MTM3NGI3Y2E4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "791"^^xsd:integer ;
+    schema:width "633"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm2376214273/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTJmOGY0MWItZDIyNS00N2U4LTlhYTQtYTg0ZTFmZjZhMWNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "1776"^^xsd:integer ;
+    schema:width "1125"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm3178110976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmMzMjgwNzUtYWJiMC00ZWFhLThkOGItOGIwN2MwYjliNjY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "2738"^^xsd:integer ;
+    schema:width "1825"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm2641240064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2VjZjZmNTMtOGQ3Yy00MTYxLThlMDMtM2I3Yzg4MzIwZjA1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "2738"^^xsd:integer ;
+    schema:width "1825"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm2801436162/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGIzN2E0NGItNzk1MC00NGU4LWEzOTgtZGQwNzQwYzBlMDJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "1470"^^xsd:integer ;
+    schema:width "1176"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm2325882625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTI5YTk4ZTItNDFhMy00ZjAyLTkzNmYtN2M1YWViYmJmNDQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "1784"^^xsd:integer ;
+    schema:width "1125"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8941213/mediaviewer/rm3758191873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGY1ZjE4NDktYmM2YS00ZTI4LTgyMTYtNDE5MTM3NGI3Y2E4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gavin Lyle Foley" ;
+    schema:height "791"^^xsd:integer ;
+    schema:width "633"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

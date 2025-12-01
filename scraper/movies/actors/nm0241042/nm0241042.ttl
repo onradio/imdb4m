@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0241042/> a schema:Person ;
+    schema:name "François Duhamel" ;
+    schema:url <https://www.imdb.com/name/nm0241042/> ;
+    schema:jobTitle "Camera and Electrical Department", "Actor", "Additional Crew" ;
+    schema:description "François Duhamel. Camera and Electrical Department: Divergent. François Duhamel is known for Divergent (2014), Cast Away (2000) and Ad Astra (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1228705/>,    # Iron Man 2
+                       <https://www.imdb.com/title/tt1176740/>,    # Away We Go
+                       <https://www.imdb.com/title/tt0472062/>,    # Charlie Wilson's War
+                       <https://www.imdb.com/title/tt0339291/>,    # A Series of Unfortunate Events
+                       <https://www.imdb.com/title/tt0162222/>,    # Cast Away
+                       <https://www.imdb.com/title/tt0087644/> ; # Love Streams
+
+
+    schema:video <https://www.imdb.com/video/vi513147161/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Iron Man 2 (2010)
+<https://www.imdb.com/title/tt1228705/> a schema:Movie ;
+    schema:name "Iron Man 2" ;
+    schema:url <https://www.imdb.com/title/tt1228705/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "French Photographer"
+    ] .
+
+# Away We Go (2009)
+<https://www.imdb.com/title/tt1176740/> a schema:Movie ;
+    schema:name "Away We Go" ;
+    schema:url <https://www.imdb.com/title/tt1176740/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "French-Canadian Taxi Driver"
+    ] .
+
+# Charlie Wilson's War (2007)
+<https://www.imdb.com/title/tt0472062/> a schema:Movie ;
+    schema:name "Charlie Wilson's War" ;
+    schema:url <https://www.imdb.com/title/tt0472062/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "French Photographer"
+    ] .
+
+# A Series of Unfortunate Events (2004)
+<https://www.imdb.com/title/tt0339291/> a schema:Movie ;
+    schema:name "A Series of Unfortunate Events" ;
+    schema:url <https://www.imdb.com/title/tt0339291/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "French Radio Reporter"
+    ] .
+
+# Cast Away (2000)
+<https://www.imdb.com/title/tt0162222/> a schema:Movie ;
+    schema:name "Cast Away" ;
+    schema:url <https://www.imdb.com/title/tt0162222/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "French FedEx Loader"
+    ] .
+
+# Love Streams (1984)
+<https://www.imdb.com/title/tt0087644/> a schema:Movie ;
+    schema:name "Love Streams" ;
+    schema:url <https://www.imdb.com/title/tt0087644/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0241042/> ;
+        schema:characterName "Porter (Paris)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi513147161/> a schema:VideoObject ;
+        schema:name "Lemony Snicket&apos;s A Series of Unfortunate Events" ;
+        schema:description "Home Video Trailer from Paramount Home Entertainment" ;
+        schema:embedUrl <https://www.imdb.com/video/vi513147161/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDY4ZWFkZDQtMWFhMC00NzFlLTljMjQtYzI4MzMyMmIyMGQ3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M45S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T14:59:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

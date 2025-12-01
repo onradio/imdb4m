@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0214743/> a schema:Person ;
+    schema:name "Tom Degidon" ;
+    schema:url <https://www.imdb.com/name/nm0214743/> ;
+    schema:birthDate "1928-09-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Sound Department" ;
+    schema:description "Tom Degidon. Actor: Nighthawks. Tom Degidon was born on 17 September 1928 in Trenton, New Jersey, USA. He was an actor, known for Nighthawks (1981), The In-Laws (1979) and The Purple Rose of Cairo (1985). He died on 6 September 2010." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Trenton, New Jersey, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0089853/>,    # The Purple Rose of Cairo
+                       <https://www.imdb.com/title/tt0086464/>,    # Trackdown: Finding the Goodbar Killer
+                       <https://www.imdb.com/title/tt0062595/>,    # One Life to Live
+                       <https://www.imdb.com/title/tt0086465/>,    # Trading Places
+                       <https://www.imdb.com/title/tt0082817/>,    # Nighthawks
+                       <https://www.imdb.com/title/tt0079336/>,    # The In-Laws
+                       <https://www.imdb.com/title/tt0077530/> . # Eyes of Laura Mars
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Purple Rose of Cairo (1985)
+<https://www.imdb.com/title/tt0089853/> a schema:Movie ;
+    schema:name "The Purple Rose of Cairo" ;
+    schema:url <https://www.imdb.com/title/tt0089853/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Ticket Taker"
+    ] .
+
+# Trackdown: Finding the Goodbar Killer (1983)
+<https://www.imdb.com/title/tt0086464/> a schema:Movie ;
+    schema:name "Trackdown: Finding the Goodbar Killer" ;
+    schema:url <https://www.imdb.com/title/tt0086464/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "2nd Reporter"
+    ] .
+
+# One Life to Live (1983)
+<https://www.imdb.com/title/tt0062595/> a schema:Movie ;
+    schema:name "One Life to Live" ;
+    schema:url <https://www.imdb.com/title/tt0062595/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Carl Higgins"
+    ] .
+
+# Trading Places (1983)
+<https://www.imdb.com/title/tt0086465/> a schema:Movie ;
+    schema:name "Trading Places" ;
+    schema:url <https://www.imdb.com/title/tt0086465/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Duke Domestic"
+    ] .
+
+# Nighthawks (1981)
+<https://www.imdb.com/title/tt0082817/> a schema:Movie ;
+    schema:name "Nighthawks" ;
+    schema:url <https://www.imdb.com/title/tt0082817/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Immigration Officer"
+    ] .
+
+# The In-Laws (1979)
+<https://www.imdb.com/title/tt0079336/> a schema:Movie ;
+    schema:name "The In-Laws" ;
+    schema:url <https://www.imdb.com/title/tt0079336/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Bartender"
+    ] .
+
+# Eyes of Laura Mars (1978)
+<https://www.imdb.com/title/tt0077530/> a schema:Movie ;
+    schema:name "Eyes of Laura Mars" ;
+    schema:url <https://www.imdb.com/title/tt0077530/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0214743/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,204 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0606658/> a schema:Person ;
+    schema:name "John Morris" ;
+    schema:url <https://www.imdb.com/name/nm0606658/> ;
+    schema:birthDate "1984-10-02"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:alternateName "John Charles Morris" ;
+    schema:description "John Morris. Actor: Toy Story. John Morris was born on 2 October 1984. He is an actor, known for Toy Story (1995), Toy Story 3 (2010) and Toy Story 2 (1999)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BY2IxOTI2ODItNWZhMS00MzZhLWFhMzEtNmM2OGQxZWRlYzBmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.60"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3″ (1.60 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0114709/>,    # Toy Story
+                       <https://www.imdb.com/title/tt0107688/>,    # The Nightmare Before Christmas
+                       <https://www.imdb.com/title/tt0120363/>,    # Toy Story 2
+                       <https://www.imdb.com/title/tt0435761/>,    # Toy Story 3
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt12681556/>,    # Timon and Pumbaa at the Movies
+                       <https://www.imdb.com/title/tt1979376/>,    # Toy Story 4
+                       <https://www.imdb.com/title/tt1623789/>,    # Toy Story 3: The Video Game
+                       <https://www.imdb.com/title/tt13237030/>,    # Toy Story 2 DVD Read-Along
+                       <https://www.imdb.com/title/tt1893894/>,    # Jason and the Heroes of Mount Olympus
+                       <https://www.imdb.com/title/tt16970334/>,    # Nicktoons Nick Tunes
+                       <https://www.imdb.com/title/tt0290718/> ; # Lego Island
+
+
+    schema:video <https://www.imdb.com/video/vi2864645913/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0606658/mediaviewer/rm4123234561/>,
+                 <https://www.imdb.com/name/nm0606658/mediaviewer/rm2317064192/>,
+                 <https://www.imdb.com/name/nm0606658/mediaviewer/rm2780551680/>,
+                 <https://www.imdb.com/name/nm0606658/mediaviewer/rm2887410689/>,
+                 <https://www.imdb.com/name/nm0606658/mediaviewer/rm2988073985/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114709/> a schema:Movie ;
+    schema:name "Toy Story" ;
+    schema:url <https://www.imdb.com/title/tt0114709/> .
+
+<https://www.imdb.com/title/tt0107688/> a schema:Movie ;
+    schema:name "The Nightmare Before Christmas" ;
+    schema:url <https://www.imdb.com/title/tt0107688/> .
+
+<https://www.imdb.com/title/tt0120363/> a schema:Movie ;
+    schema:name "Toy Story 2" ;
+    schema:url <https://www.imdb.com/title/tt0120363/> .
+
+<https://www.imdb.com/title/tt0435761/> a schema:Movie ;
+    schema:name "Toy Story 3" ;
+    schema:url <https://www.imdb.com/title/tt0435761/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Timon and Pumbaa at the Movies (2019)
+<https://www.imdb.com/title/tt12681556/> a schema:Movie ;
+    schema:name "Timon and Pumbaa at the Movies" ;
+    schema:url <https://www.imdb.com/title/tt12681556/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Andy"
+    ] .
+
+# Toy Story 4 (2019)
+<https://www.imdb.com/title/tt1979376/> a schema:Movie ;
+    schema:name "Toy Story 4" ;
+    schema:url <https://www.imdb.com/title/tt1979376/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Teenage Andy"
+    ] .
+
+# Toy Story 3: The Video Game (2010)
+<https://www.imdb.com/title/tt1623789/> a schema:Movie ;
+    schema:name "Toy Story 3: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt1623789/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Andy"
+    ] .
+
+# Toy Story 2 DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13237030/> a schema:Movie ;
+    schema:name "Toy Story 2 DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13237030/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Andy"
+    ] .
+
+# Jason and the Heroes of Mount Olympus (2001)
+<https://www.imdb.com/title/tt1893894/> a schema:Movie ;
+    schema:name "Jason and the Heroes of Mount Olympus" ;
+    schema:url <https://www.imdb.com/title/tt1893894/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Nicktoons Nick Tunes (2001)
+<https://www.imdb.com/title/tt16970334/> a schema:Movie ;
+    schema:name "Nicktoons Nick Tunes" ;
+    schema:url <https://www.imdb.com/title/tt16970334/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Otto Rocket"
+    ] .
+
+# Lego Island (1997)
+<https://www.imdb.com/title/tt0290718/> a schema:Movie ;
+    schema:name "Lego Island" ;
+    schema:url <https://www.imdb.com/title/tt0290718/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606658/> ;
+        schema:characterName "Pepper"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2864645913/> a schema:VideoObject ;
+        schema:name "&quot;Security Camera&quot; from Toy Story 3" ;
+        schema:description "\"Security Camera\" clip from Toy Story 3" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2864645913/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTU3MTU1OTM2MF5BMl5BanBnXkFtZTgwMDU0ODQ4MjE@._V1_.jpg" ;
+        schema:duration "PT1M12S"^^xsd:duration ;
+        schema:uploadDate "2010-04-15T07:08:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BY2IxOTI2ODItNWZhMS00MzZhLWFhMzEtNmM2OGQxZWRlYzBmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2IxOTI2ODItNWZhMS00MzZhLWFhMzEtNmM2OGQxZWRlYzBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Morris in Toy Story 4 (2019)" ;
+    schema:height "4600"^^xsd:integer ;
+    schema:width "3383"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0606658/mediaviewer/rm4123234561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTk0NjU3ZmEtNzQ3Yi00ZmI4LTk0MTYtNjRmNzZhYTNlZmQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Morris at an event for Toy Story 3 (2010)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2031"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0606658/mediaviewer/rm2317064192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTkxMzU4Mjg1N15BMl5BanBnXkFtZTYwMjE2Nzk2._V1_.jpg> ;
+    schema:caption "John Morris in Toy Story 2 (1999)" ;
+    schema:height "302"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0606658/mediaviewer/rm2780551680/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0MzU3MzkwOV5BMl5BanBnXkFtZTcwMjI0OTI4OQ@@._V1_.jpg> ;
+    schema:caption "John Morris" ;
+    schema:height "299"^^xsd:integer ;
+    schema:width "214"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0606658/mediaviewer/rm2887410689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTkwNDI5ZTUtNDg3MC00N2M0LThiNmYtZDVhYzUyYjk0MGQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Morris" ;
+    schema:height "4600"^^xsd:integer ;
+    schema:width "3383"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0606658/mediaviewer/rm2988073985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2IxOTI2ODItNWZhMS00MzZhLWFhMzEtNmM2OGQxZWRlYzBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Morris in Toy Story 4 (2019)" ;
+    schema:height "4600"^^xsd:integer ;
+    schema:width "3383"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0606658/>
+    schema:sameAs <https://www.facebook.com/JohnMorrisAndy/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,427 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0120483/> a schema:Person ;
+    schema:name "Edward Bunker" ;
+    schema:url <https://www.imdb.com/name/nm0120483/> ;
+    schema:birthDate "1933-12-31"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Additional Crew" ;
+    schema:alternateName "Bunk", "Eddie", "Edward Heward Bunker" ;
+    schema:description "Edward Bunker. Actor: Reservoir Dogs. Edward Bunker was born on 31 December 1933 in Hollywood, Los Angeles, California, USA. He was an actor and writer, known for Reservoir Dogs (1992), Runaway Train (1985) and The Longest Yard (2005). He was married to Jennifer Steele. He died on 19 July 2005 in Burbank, California, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk3OTc4NjI5Nl5BMl5BanBnXkFtZTcwMjkxOTMwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hollywood, Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.87"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1½″ (1.87 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0105236/>,    # Reservoir Dogs
+                       <https://www.imdb.com/title/tt0089941/>,    # Runaway Train
+                       <https://www.imdb.com/title/tt0098439/>,    # Tango & Cash
+                       <https://www.imdb.com/title/tt0398165/>,    # The Longest Yard
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0423474/>,    # Venus & Vegas
+                       <https://www.imdb.com/title/tt0468520/>,    # Nice Guys
+                       <https://www.imdb.com/title/tt0276744/>,    # 13 Moons
+                       <https://www.imdb.com/title/tt0338988/>,    # Family Secrets
+                       <https://www.imdb.com/title/tt0204137/>,    # Animal Factory
+                       <https://www.imdb.com/title/tt0144604/>,    # Shadrach
+                       <https://www.imdb.com/title/tt0115808/>,    # Caméléone
+                       <https://www.imdb.com/title/tt0105994/>,    # Fallen Angels
+                       <https://www.imdb.com/title/tt0111237/>,    # Somebody to Love
+                       <https://www.imdb.com/title/tt0107451/>,    # Love, Cheat and Steal
+                       <https://www.imdb.com/title/tt0107370/>,    # Last Light
+                       <https://www.imdb.com/title/tt0106393/>,    # Best of the Best II
+                       <https://www.imdb.com/title/tt0106732/>,    # Desperate Motive
+                       <https://www.imdb.com/title/tt0086734/>,    # Hunter
+                       <https://www.imdb.com/title/tt0096913/>,    # Best of the Best
+                       <https://www.imdb.com/title/tt0098184/>,    # Relentless
+                       <https://www.imdb.com/title/tt0095143/>,    # Fear
+                       <https://www.imdb.com/title/tt0097889/>,    # Miracle Mile
+                       <https://www.imdb.com/title/tt0093894/>,    # The Running Man
+                       <https://www.imdb.com/title/tt0093964/>,    # Shy People
+                       <https://www.imdb.com/title/tt0091972/>,    # Slow Burn
+                       <https://www.imdb.com/title/tt0081071/>,    # The Long Riders
+                       <https://www.imdb.com/title/tt0078326/> ; # Straight Time
+
+
+    schema:video <https://www.imdb.com/video/vi2946762009/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0120483/mediaviewer/rm2578574593/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm3246785536/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm2438384640/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm2488716288/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm3648632320/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm1147578880/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm1114024448/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm1130801664/>,
+                 <https://www.imdb.com/name/nm0120483/mediaviewer/rm3189549568/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0105236/> a schema:Movie ;
+    schema:name "Reservoir Dogs" ;
+    schema:url <https://www.imdb.com/title/tt0105236/> .
+
+<https://www.imdb.com/title/tt0089941/> a schema:Movie ;
+    schema:name "Runaway Train" ;
+    schema:url <https://www.imdb.com/title/tt0089941/> .
+
+<https://www.imdb.com/title/tt0098439/> a schema:Movie ;
+    schema:name "Tango & Cash" ;
+    schema:url <https://www.imdb.com/title/tt0098439/> .
+
+<https://www.imdb.com/title/tt0398165/> a schema:Movie ;
+    schema:name "The Longest Yard" ;
+    schema:url <https://www.imdb.com/title/tt0398165/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Venus & Vegas (2010)
+<https://www.imdb.com/title/tt0423474/> a schema:Movie ;
+    schema:name "Venus & Vegas" ;
+    schema:url <https://www.imdb.com/title/tt0423474/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Micky the Calc"
+    ] .
+
+# Nice Guys (2006)
+<https://www.imdb.com/title/tt0468520/> a schema:Movie ;
+    schema:name "Nice Guys" ;
+    schema:url <https://www.imdb.com/title/tt0468520/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Big Joe"
+    ] .
+
+# 13 Moons (2002)
+<https://www.imdb.com/title/tt0276744/> a schema:Movie ;
+    schema:name "13 Moons" ;
+    schema:url <https://www.imdb.com/title/tt0276744/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Hoodlum #1"
+    ] .
+
+# Family Secrets (2001)
+<https://www.imdb.com/title/tt0338988/> a schema:Movie ;
+    schema:name "Family Secrets" ;
+    schema:url <https://www.imdb.com/title/tt0338988/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Douglas Marley"
+    ] .
+
+# Animal Factory (2000)
+<https://www.imdb.com/title/tt0204137/> a schema:Movie ;
+    schema:name "Animal Factory" ;
+    schema:url <https://www.imdb.com/title/tt0204137/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Buzzard"
+    ] .
+
+# Shadrach (1998)
+<https://www.imdb.com/title/tt0144604/> a schema:Movie ;
+    schema:name "Shadrach" ;
+    schema:url <https://www.imdb.com/title/tt0144604/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Joe Thorton"
+    ] .
+
+# Caméléone (1996)
+<https://www.imdb.com/title/tt0115808/> a schema:Movie ;
+    schema:name "Caméléone" ;
+    schema:url <https://www.imdb.com/title/tt0115808/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Sid Dembo"
+    ] .
+
+# Fallen Angels (1995)
+<https://www.imdb.com/title/tt0105994/> a schema:Movie ;
+    schema:name "Fallen Angels" ;
+    schema:url <https://www.imdb.com/title/tt0105994/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Sailor"
+    ] .
+
+# Somebody to Love (1994)
+<https://www.imdb.com/title/tt0111237/> a schema:Movie ;
+    schema:name "Somebody to Love" ;
+    schema:url <https://www.imdb.com/title/tt0111237/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# Love, Cheat and Steal (1993)
+<https://www.imdb.com/title/tt0107451/> a schema:Movie ;
+    schema:name "Love, Cheat and Steal" ;
+    schema:url <https://www.imdb.com/title/tt0107451/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Old Con"
+    ] .
+
+# Last Light (1993)
+<https://www.imdb.com/title/tt0107370/> a schema:Movie ;
+    schema:name "Last Light" ;
+    schema:url <https://www.imdb.com/title/tt0107370/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Chess Player"
+    ] .
+
+# Best of the Best II (1993)
+<https://www.imdb.com/title/tt0106393/> a schema:Movie ;
+    schema:name "Best of the Best II" ;
+    schema:url <https://www.imdb.com/title/tt0106393/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Spotlight Operator"
+    ] .
+
+# Desperate Motive (1993)
+<https://www.imdb.com/title/tt0106732/> a schema:Movie ;
+    schema:name "Desperate Motive" ;
+    schema:url <https://www.imdb.com/title/tt0106732/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Mr. Benson"
+    ] .
+
+# Hunter (1990)
+<https://www.imdb.com/title/tt0086734/> a schema:Movie ;
+    schema:name "Hunter" ;
+    schema:url <https://www.imdb.com/title/tt0086734/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Hitman"
+    ] .
+
+# Best of the Best (1989)
+<https://www.imdb.com/title/tt0096913/> a schema:Movie ;
+    schema:name "Best of the Best" ;
+    schema:url <https://www.imdb.com/title/tt0096913/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Stan"
+    ] .
+
+# Relentless (1989)
+<https://www.imdb.com/title/tt0098184/> a schema:Movie ;
+    schema:name "Relentless" ;
+    schema:url <https://www.imdb.com/title/tt0098184/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Cardoza"
+    ] .
+
+# Fear (1988)
+<https://www.imdb.com/title/tt0095143/> a schema:Movie ;
+    schema:name "Fear" ;
+    schema:url <https://www.imdb.com/title/tt0095143/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Lenny"
+    ] .
+
+# Miracle Mile (1988)
+<https://www.imdb.com/title/tt0097889/> a schema:Movie ;
+    schema:name "Miracle Mile" ;
+    schema:url <https://www.imdb.com/title/tt0097889/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Nightwatchman"
+    ] .
+
+# The Running Man (1987)
+<https://www.imdb.com/title/tt0093894/> a schema:Movie ;
+    schema:name "The Running Man" ;
+    schema:url <https://www.imdb.com/title/tt0093894/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Lenny"
+    ] .
+
+# Shy People (1987)
+<https://www.imdb.com/title/tt0093964/> a schema:Movie ;
+    schema:name "Shy People" ;
+    schema:url <https://www.imdb.com/title/tt0093964/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Chuck"
+    ] .
+
+# Slow Burn (1986)
+<https://www.imdb.com/title/tt0091972/> a schema:Movie ;
+    schema:name "Slow Burn" ;
+    schema:url <https://www.imdb.com/title/tt0091972/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "George"
+    ] .
+
+# The Long Riders (1980)
+<https://www.imdb.com/title/tt0081071/> a schema:Movie ;
+    schema:name "The Long Riders" ;
+    schema:url <https://www.imdb.com/title/tt0081071/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Chadwell"
+    ] .
+
+# Straight Time (1978)
+<https://www.imdb.com/title/tt0078326/> a schema:Movie ;
+    schema:name "Straight Time" ;
+    schema:url <https://www.imdb.com/title/tt0078326/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120483/> ;
+        schema:characterName "Mickey"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2946762009/> a schema:VideoObject ;
+        schema:name "Runaway Train" ;
+        schema:description "Theatrical Trailer from MGM/UA" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2946762009/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTIyNWIyYTYtNzgzMC00YTZkLTkzZWQtMDk0NjUyNjM5YTkzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M37S"^^xsd:duration ;
+        schema:uploadDate "2009-10-31T05:25:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk3OTc4NjI5Nl5BMl5BanBnXkFtZTcwMjkxOTMwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3OTc4NjI5Nl5BMl5BanBnXkFtZTcwMjkxOTMwOA@@._V1_.jpg> ;
+    schema:caption "Edward Bunker" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm2578574593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjk1NDA4NmQtMTI5MS00YTdjLTg3ZGYtMDVmMGNkZjNkOTcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dustin Hoffman and Edward Bunker in Straight Time (1978)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1274"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm3246785536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWMyNmQ3NTktMTA0MC00NDRjLWE0NmUtYzc5YjM3MDYzMGJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Steve Buscemi, Harvey Keitel, Quentin Tarantino, Michael Madsen, Tim Roth, Chris Penn, Edward Bunker, and Lawrence Tierney in Reservoir Dogs (1992)" ;
+    schema:height "433"^^xsd:integer ;
+    schema:width "999"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm2438384640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODU3MDYwMTMyMF5BMl5BanBnXkFtZTgwMzg3OTEwMjE@._V1_.jpg> ;
+    schema:caption "Steve Buscemi, Quentin Tarantino, Michael Madsen, Chris Penn, Edward Bunker, and Lawrence Tierney in Reservoir Dogs (1992)" ;
+    schema:height "1093"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm2488716288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNTJiNWYtNzhlZC00MmM4LThhNWUtMDdkMzZlZDBjNjYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Steve Buscemi, Harvey Keitel, Quentin Tarantino, Michael Madsen, Tim Roth, Chris Penn, Edward Bunker, and Lawrence Tierney in Reservoir Dogs (1992)" ;
+    schema:height "1093"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm3648632320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwNzQ4NTU5MF5BMl5BanBnXkFtZTcwOTUzMDg0Nw@@._V1_.jpg> ;
+    schema:caption "Quentin Tarantino, Michael Madsen, and Edward Bunker in Reservoir Dogs (1992)" ;
+    schema:height "819"^^xsd:integer ;
+    schema:width "1919"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm1147578880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1MDY4MDE4M15BMl5BanBnXkFtZTcwMDkxOTMwOA@@._V1_.jpg> ;
+    schema:caption "Edward Bunker" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm1114024448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2NjYwMDU3OV5BMl5BanBnXkFtZTcwMzkxOTMwOA@@._V1_.jpg> ;
+    schema:caption "Edward Bunker" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm1130801664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3OTc4NjI5Nl5BMl5BanBnXkFtZTcwMjkxOTMwOA@@._V1_.jpg> ;
+    schema:caption "Edward Bunker" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0120483/mediaviewer/rm3189549568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjk2ODkyMzI4N15BMl5BanBnXkFtZTcwODA1MTkwOA@@._V1_.jpg> ;
+    schema:caption "Steve Buscemi, Harvey Keitel, Quentin Tarantino, Michael Madsen, Tim Roth, Chris Penn, and Edward Bunker in Reservoir Dogs (1992)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "374"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

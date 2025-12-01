@@ -1,0 +1,236 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0061003/> a schema:Person ;
+    schema:name "Paul Bates" ;
+    schema:url <https://www.imdb.com/name/nm0061003/> ;
+    schema:birthDate "1958-12-24"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Paul Bates. Actor: Coming to America. Paul Bates was born on 24 December 1958 in the USA. He is an actor, known for Coming to America (1988), True Romance (1993) and 8 Mile (2002)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTM5NjM0MzA2Ml5BMl5BanBnXkFtZTcwMzMxMDkwMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.71"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7½″ (1.71 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094898/>,    # Coming to America
+                       <https://www.imdb.com/title/tt0108399/>,    # True Romance
+                       <https://www.imdb.com/title/tt0298203/>,    # 8 Mile
+                       <https://www.imdb.com/title/tt6802400/>,    # Coming 2 America
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt11203018/>,    # Afterparty
+                       <https://www.imdb.com/title/tt10417512/>,    # Call of Duty: Modern Warfare
+                       <https://www.imdb.com/title/tt0367367/>,    # Max and Ruby
+                       <https://www.imdb.com/title/tt8595140/>,    # The Conners
+                       <https://www.imdb.com/title/tt1442437/>,    # Modern Family
+                       <https://www.imdb.com/title/tt6226232/>,    # Young Sheldon
+                       <https://www.imdb.com/title/tt5592146/>,    # Speechless
+                       <https://www.imdb.com/title/tt5706996/> ; # Girlboss
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3037381401/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0061003/mediaviewer/rm2610396672/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm2476178944/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm2543287808/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm2152712449/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm1347933185/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm3129332737/>,
+                 <https://www.imdb.com/name/nm0061003/mediaviewer/rm252218880/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0094898/> a schema:Movie ;
+    schema:name "Coming to America" ;
+    schema:url <https://www.imdb.com/title/tt0094898/> .
+
+<https://www.imdb.com/title/tt0108399/> a schema:Movie ;
+    schema:name "True Romance" ;
+    schema:url <https://www.imdb.com/title/tt0108399/> .
+
+<https://www.imdb.com/title/tt0298203/> a schema:Movie ;
+    schema:name "8 Mile" ;
+    schema:url <https://www.imdb.com/title/tt0298203/> .
+
+<https://www.imdb.com/title/tt6802400/> a schema:Movie ;
+    schema:name "Coming 2 America" ;
+    schema:url <https://www.imdb.com/title/tt6802400/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Afterparty (2019)
+<https://www.imdb.com/title/tt11203018/> a schema:Movie ;
+    schema:name "Afterparty" ;
+    schema:url <https://www.imdb.com/title/tt11203018/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Asmodeus"
+    ] .
+
+# Call of Duty: Modern Warfare (2019)
+<https://www.imdb.com/title/tt10417512/> a schema:Movie ;
+    schema:name "Call of Duty: Modern Warfare" ;
+    schema:url <https://www.imdb.com/title/tt10417512/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Additional Voice"
+    ] .
+
+# Max and Ruby (2018)
+<https://www.imdb.com/title/tt0367367/> a schema:Movie ;
+    schema:name "Max and Ruby" ;
+    schema:url <https://www.imdb.com/title/tt0367367/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Dad"
+    ] .
+
+# The Conners (2018)
+<https://www.imdb.com/title/tt8595140/> a schema:Movie ;
+    schema:name "The Conners" ;
+    schema:url <https://www.imdb.com/title/tt8595140/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Officer Whitcomb"
+    ] .
+
+# Modern Family (2018)
+<https://www.imdb.com/title/tt1442437/> a schema:Movie ;
+    schema:name "Modern Family" ;
+    schema:url <https://www.imdb.com/title/tt1442437/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Thomas"
+    ] .
+
+# Young Sheldon (2018)
+<https://www.imdb.com/title/tt6226232/> a schema:Movie ;
+    schema:name "Young Sheldon" ;
+    schema:url <https://www.imdb.com/title/tt6226232/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Luis"
+    ] .
+
+# Speechless (2016)
+<https://www.imdb.com/title/tt5592146/> a schema:Movie ;
+    schema:name "Speechless" ;
+    schema:url <https://www.imdb.com/title/tt5592146/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Older Cop"
+    ] .
+
+# Girlboss (2017)
+<https://www.imdb.com/title/tt5706996/> a schema:Movie ;
+    schema:name "Girlboss" ;
+    schema:url <https://www.imdb.com/title/tt5706996/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0061003/> ;
+        schema:characterName "Keith"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3037381401/> a schema:VideoObject ;
+        schema:name "Life Ain&apos;t Like The Movies - Trailer" ;
+        schema:description "Life Ain't Like The Movies - Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3037381401/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzRhMGEyODAtN2M5Ni00NmE0LWFjMGQtNmY2NWI3OGY4ODg4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M9S"^^xsd:duration ;
+        schema:uploadDate "2022-02-07T19:13:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTM5NjM0MzA2Ml5BMl5BanBnXkFtZTcwMzMxMDkwMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5NjM0MzA2Ml5BMl5BanBnXkFtZTcwMzMxMDkwMw@@._V1_.jpg> ;
+    schema:caption "Paul Bates in Coming to America (1988)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1514"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm2610396672/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzFhMTg3NDctYmQyMi00NmM0LTk1OGItYTg3NmRjMDJkNDk3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James R. Bagdonas, Paul Bates, and Ed O'Neill in Modern Family (2009)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm2476178944/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDFmZTJlYzMtNWMyNi00ZDdiLWJhYTAtMzRlOWZmMTVlOGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Bates and Ed O'Neill in Modern Family (2009)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm2543287808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzAzNjYwMzAtNmYzNi00ZDJlLWFjYjUtZTQ2MDhkZDdhYmYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Bates and Ed O'Neill in Modern Family (2009)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm2152712449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGExYWU2OWUtNmY0Mi00ZDMxLWI2ZWMtNGUzN2IwNDkyYWI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Earl Jones, Eddie Murphy, Wesley Snipes, Arsenio Hall, John Amos, Paul Bates, Shari Headley, Leslie Jones, Tracy Morgan, Clint Smith, Akiley Love, Bella Murphy, Jermaine Fowler, Teyana Taylor, Rotimi, Nomzamo Mbatha, and KiKi Layne in Coming 2 America (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "729"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm1347933185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTllZTllOTgtNDE4Ny00NDRlLTliNzAtZDYwZmE2MzkyNjM3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Earl Jones, Eddie Murphy, Wesley Snipes, Arsenio Hall, John Amos, Paul Bates, Shari Headley, Leslie Jones, Tracy Morgan, Clint Smith, Akiley Love, Bella Murphy, Jermaine Fowler, Teyana Taylor, Rotimi, Nomzamo Mbatha, and KiKi Layne in Coming 2 America (2021)" ;
+    schema:height "586"^^xsd:integer ;
+    schema:width "396"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm3129332737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2NhODZjMTktOGNmOC00OTllLTk3NWItYzNiNmRlNTYwMTcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Earl Jones, Eddie Murphy, Wesley Snipes, Arsenio Hall, John Amos, Paul Bates, Shari Headley, Leslie Jones, Tracy Morgan, Clint Smith, Akiley Love, Bella Murphy, Jermaine Fowler, Teyana Taylor, Rotimi, Nomzamo Mbatha, and KiKi Layne in Coming 2 America (2021)" ;
+    schema:height "12000"^^xsd:integer ;
+    schema:width "8100"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0061003/mediaviewer/rm252218880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5NjM0MzA2Ml5BMl5BanBnXkFtZTcwMzMxMDkwMw@@._V1_.jpg> ;
+    schema:caption "Paul Bates in Coming to America (1988)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1514"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

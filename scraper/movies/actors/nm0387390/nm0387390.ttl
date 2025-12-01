@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0387390/> a schema:Person ;
+    schema:name "Tony Ho" ;
+    schema:url <https://www.imdb.com/name/nm0387390/> ;
+    schema:birthDate "1964-11-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Tony Ho. Actor: Infernal Affairs. Tony Ho was born on 4 November 1964 in Hong Kong. He is an actor, known for Infernal Affairs (2002), New Police Story (2004) and Around the World in 80 Days (2004)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzY2OTgxMjIwOV5BMl5BanBnXkFtZTcwNTkzNzExNg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hong Kong"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0338564/>,    # Infernal Affairs
+                       <https://www.imdb.com/title/tt0189660/>,    # The Longest Summer
+                       <https://www.imdb.com/title/tt0327437/>,    # Around the World in 80 Days
+                       <https://www.imdb.com/title/tt0386005/> ; # New Police Story
+
+
+    schema:video <https://www.imdb.com/video/vi2429463577/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0387390/mediaviewer/rm441761536/>,
+                 <https://www.imdb.com/name/nm0387390/mediaviewer/rm1649721088/>,
+                 <https://www.imdb.com/name/nm0387390/mediaviewer/rm1616166656/>,
+                 <https://www.imdb.com/name/nm0387390/mediaviewer/rm1683275520/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0338564/> a schema:Movie ;
+    schema:name "Infernal Affairs" ;
+    schema:url <https://www.imdb.com/title/tt0338564/> .
+
+<https://www.imdb.com/title/tt0189660/> a schema:Movie ;
+    schema:name "The Longest Summer" ;
+    schema:url <https://www.imdb.com/title/tt0189660/> .
+
+<https://www.imdb.com/title/tt0327437/> a schema:Movie ;
+    schema:name "Around the World in 80 Days" ;
+    schema:url <https://www.imdb.com/title/tt0327437/> .
+
+<https://www.imdb.com/title/tt0386005/> a schema:Movie ;
+    schema:name "New Police Story" ;
+    schema:url <https://www.imdb.com/title/tt0386005/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2429463577/> a schema:VideoObject ;
+        schema:name "Revenge: A Love Story - Trailer" ;
+        schema:description "Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2429463577/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTUzNjcwODU4Ml5BMl5BanBnXkFtZTgwNDA5MDcyMzE@._V1_.jpg" ;
+        schema:duration "PT1M14S"^^xsd:duration ;
+        schema:uploadDate "2014-07-25T17:48:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzY2OTgxMjIwOV5BMl5BanBnXkFtZTcwNTkzNzExNg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzY2OTgxMjIwOV5BMl5BanBnXkFtZTcwNTkzNzExNg@@._V1_.jpg> ;
+    schema:caption "Tony Ho in 3-D Sex and Zen: Extreme Ecstasy (2011)" ;
+    schema:height "1187"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0387390/mediaviewer/rm441761536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM1NzQwODQ2NF5BMl5BanBnXkFtZTcwOTgzNzExNg@@._V1_.jpg> ;
+    schema:caption "Tony Ho and Hiro Hayama in 3-D Sex and Zen: Extreme Ecstasy (2011)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0387390/mediaviewer/rm1649721088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxNzc5MTE1MV5BMl5BanBnXkFtZTcwMDA0NzExNg@@._V1_.jpg> ;
+    schema:caption "Tony Ho and Yukiko Suô in 3-D Sex and Zen: Extreme Ecstasy (2011)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0387390/mediaviewer/rm1616166656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxMzExNDg1Ml5BMl5BanBnXkFtZTcwMzA0NzExNg@@._V1_.jpg> ;
+    schema:caption "Tony Ho and Hiro Hayama in 3-D Sex and Zen: Extreme Ecstasy (2011)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0387390/mediaviewer/rm1683275520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzY2OTgxMjIwOV5BMl5BanBnXkFtZTcwNTkzNzExNg@@._V1_.jpg> ;
+    schema:caption "Tony Ho in 3-D Sex and Zen: Extreme Ecstasy (2011)" ;
+    schema:height "1187"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

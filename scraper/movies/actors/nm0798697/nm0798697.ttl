@@ -1,0 +1,213 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0798697/> a schema:Person ;
+    schema:name "George Silver" ;
+    schema:url <https://www.imdb.com/name/nm0798697/> ;
+    schema:birthDate "1916-11-14"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "George Silver. Actor: The Meaning of Life. George Silver was born on 14 November 1916 in London, England, UK. He was an actor, known for The Meaning of Life (1983), The Adventure of Sherlock Holmes' Smarter Brother (1975) and The Mirror Crack'd (1980). He died in June 1984." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.91"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 3″ (1.91 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0295103/>,    # Kelly Monteith
+                       <https://www.imdb.com/title/tt0085077/>,    # Reilly: Ace of Spies
+                       <https://www.imdb.com/title/tt0085959/>,    # The Meaning of Life
+                       <https://www.imdb.com/title/tt0084865/>,    # Victor/Victoria
+                       <https://www.imdb.com/title/tt0081163/>,    # The Mirror Crack'd
+                       <https://www.imdb.com/title/tt0076221/>,    # Jabberwocky
+                       <https://www.imdb.com/title/tt0072608/>,    # The Adventure of Sherlock Holmes' Smarter Brother
+                       <https://www.imdb.com/title/tt0071059/>,    # The Sweeney
+                       <https://www.imdb.com/title/tt0071807/>,    # The Man with the Golden Gun
+                       <https://www.imdb.com/title/tt0071877/>,    # Murder on the Orient Express
+                       <https://www.imdb.com/title/tt0165592/>,    # Play for Today
+                       <https://www.imdb.com/title/tt0427972/>,    # Two Women
+                       <https://www.imdb.com/title/tt0068669/> ; # Gumshoe
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0798697/mediaviewer/rm3931802112/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kelly Monteith (1984)
+<https://www.imdb.com/title/tt0295103/> a schema:Movie ;
+    schema:name "Kelly Monteith" ;
+    schema:url <https://www.imdb.com/title/tt0295103/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName ""
+    ] .
+
+# Reilly: Ace of Spies (1983)
+<https://www.imdb.com/title/tt0085077/> a schema:Movie ;
+    schema:name "Reilly: Ace of Spies" ;
+    schema:url <https://www.imdb.com/title/tt0085077/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Hotel Owner"
+    ] .
+
+# The Meaning of Life (1983)
+<https://www.imdb.com/title/tt0085959/> a schema:Movie ;
+    schema:name "The Meaning of Life" ;
+    schema:url <https://www.imdb.com/title/tt0085959/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Diner Eating Howard the Fish"
+    ] .
+
+# Victor/Victoria (1982)
+<https://www.imdb.com/title/tt0084865/> a schema:Movie ;
+    schema:name "Victor/Victoria" ;
+    schema:url <https://www.imdb.com/title/tt0084865/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Fat Man Eating an Eclair"
+    ] .
+
+# The Mirror Crack'd (1980)
+<https://www.imdb.com/title/tt0081163/> a schema:Movie ;
+    schema:name "The Mirror Crack'd" ;
+    schema:url <https://www.imdb.com/title/tt0081163/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Da Silva ('Murder at Midnight')"
+    ] .
+
+# Jabberwocky (1977)
+<https://www.imdb.com/title/tt0076221/> a schema:Movie ;
+    schema:name "Jabberwocky" ;
+    schema:url <https://www.imdb.com/title/tt0076221/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Bandit Leader"
+    ] .
+
+# The Adventure of Sherlock Holmes' Smarter Brother (1975)
+<https://www.imdb.com/title/tt0072608/> a schema:Movie ;
+    schema:name "The Adventure of Sherlock Holmes' Smarter Brother" ;
+    schema:url <https://www.imdb.com/title/tt0072608/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Bruner"
+    ] .
+
+# The Sweeney (1975)
+<https://www.imdb.com/title/tt0071059/> a schema:Movie ;
+    schema:name "The Sweeney" ;
+    schema:url <https://www.imdb.com/title/tt0071059/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Yannos"
+    ] .
+
+# The Man with the Golden Gun (1974)
+<https://www.imdb.com/title/tt0071807/> a schema:Movie ;
+    schema:name "The Man with the Golden Gun" ;
+    schema:url <https://www.imdb.com/title/tt0071807/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Fat Beirut Thug"
+    ] .
+
+# Murder on the Orient Express (1974)
+<https://www.imdb.com/title/tt0071877/> a schema:Movie ;
+    schema:name "Murder on the Orient Express" ;
+    schema:url <https://www.imdb.com/title/tt0071877/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Chef"
+    ] .
+
+# Play for Today (1974)
+<https://www.imdb.com/title/tt0165592/> a schema:Movie ;
+    schema:name "Play for Today" ;
+    schema:url <https://www.imdb.com/title/tt0165592/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Bent"
+    ] .
+
+# Two Women (1973)
+<https://www.imdb.com/title/tt0427972/> a schema:Movie ;
+    schema:name "Two Women" ;
+    schema:url <https://www.imdb.com/title/tt0427972/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "Fat man on train"
+    ] .
+
+# Gumshoe (1971)
+<https://www.imdb.com/title/tt0068669/> a schema:Movie ;
+    schema:name "Gumshoe" ;
+    schema:url <https://www.imdb.com/title/tt0068669/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0798697/> ;
+        schema:characterName "De Fries"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0798697/mediaviewer/rm3931802112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyOTgzMjM2MF5BMl5BanBnXkFtZTcwMjgzMTYyMg@@._V1_.jpg> ;
+    schema:caption "Albert Finney, Janice Rule, and George Silver in Gumshoe (1971)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "347"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

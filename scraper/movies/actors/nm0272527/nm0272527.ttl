@@ -1,0 +1,430 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0272527/> a schema:Person ;
+    schema:name "Mark Ferguson" ;
+    schema:url <https://www.imdb.com/name/nm0272527/> ;
+    schema:birthDate "1961-02-28"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mark Ferguson. Actor: The Lord of the Rings: The Fellowship of the Ring. Mark Ferguson was born on 28 February 1961 in Sydney, Australia. He is an actor, known for The Lord of the Rings: The Fellowship of the Ring (2001), Spooked (2004) and Power Rangers Operation Overdrive (2007)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY2NzM1MTcxN15BMl5BanBnXkFtZTcwOTg4MDkwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sydney, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.94"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4½″ (1.94 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0120737/>,    # The Lord of the Rings: The Fellowship of the Ring
+                       <https://www.imdb.com/title/tt0112230/>,    # Xena: Warrior Princess
+                       <https://www.imdb.com/title/tt0381617/>,    # Spooked
+                       <https://www.imdb.com/title/tt0784920/>,    # Power Rangers Operation Overdrive
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4380324/>,    # 800 Words
+                       <https://www.imdb.com/title/tt2564734/>,    # The Blue Rose
+                       <https://www.imdb.com/title/tt1442449/>,    # Spartacus
+                       <https://www.imdb.com/title/tt1614979/>,    # My Wedding and Other Secrets
+                       <https://www.imdb.com/title/tt0819853/>,    # The Amazing Extraordinary Friends
+                       <https://www.imdb.com/title/tt0451469/>,    # Power Rangers Mystic Force
+                       <https://www.imdb.com/title/tt0434698/>,    # Living the Dream
+                       <https://www.imdb.com/title/tt0167260/>,    # The Lord of the Rings: The Return of the King
+                       <https://www.imdb.com/title/tt0312208/>,    # Spin Doctors
+                       <https://www.imdb.com/title/tt0206476/>,    # Cleopatra 2525
+                       <https://www.imdb.com/title/tt0235117/>,    # Above the Law
+                       <https://www.imdb.com/title/tt0169380/>,    # When Ponds Freeze Over
+                       <https://www.imdb.com/title/tt0116241/>,    # Every Woman's Dream
+                       <https://www.imdb.com/title/tt0098911/>,    # Shortland Street
+                       <https://www.imdb.com/title/tt0111999/>,    # Hercules: The Legendary Journeys
+                       <https://www.imdb.com/title/tt0110019/>,    # Hercules in the Underworld
+                       <https://www.imdb.com/title/tt0110016/>,    # Hercules: The Legendary Journeys - Hercules and the Circle of Fire
+                       <https://www.imdb.com/title/tt0105216/>,    # The Rainbow Warrior
+                       <https://www.imdb.com/title/tt0098754/>,    # The Adventures of Black Stallion
+                       <https://www.imdb.com/title/tt0207901/>,    # Marlin Bay
+                       <https://www.imdb.com/title/tt0086689/>,    # A Country Practice
+                       <https://www.imdb.com/title/tt0182582/>,    # Gloss
+                       <https://www.imdb.com/title/tt0091034/>,    # The Far Country
+                       <https://www.imdb.com/title/tt0088644/>,    # Zoo Family
+                       <https://www.imdb.com/title/tt0081935/>,    # Sons and Daughters
+                       <https://www.imdb.com/title/tt1813654/>,    # The Added Dimension
+                       <https://www.imdb.com/title/tt0165003/> ; # Chopper Squad
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0272527/mediaviewer/rm16643073/>,
+                 <https://www.imdb.com/name/nm0272527/mediaviewer/rm1039809024/>,
+                 <https://www.imdb.com/name/nm0272527/mediaviewer/rm3215910144/>,
+                 <https://www.imdb.com/name/nm0272527/mediaviewer/rm2518329856/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120737/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Fellowship of the Ring" ;
+    schema:url <https://www.imdb.com/title/tt0120737/> .
+
+<https://www.imdb.com/title/tt0112230/> a schema:Movie ;
+    schema:name "Xena: Warrior Princess" ;
+    schema:url <https://www.imdb.com/title/tt0112230/> .
+
+<https://www.imdb.com/title/tt0381617/> a schema:Movie ;
+    schema:name "Spooked" ;
+    schema:url <https://www.imdb.com/title/tt0381617/> .
+
+<https://www.imdb.com/title/tt0784920/> a schema:Movie ;
+    schema:name "Power Rangers Operation Overdrive" ;
+    schema:url <https://www.imdb.com/title/tt0784920/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 800 Words (2017)
+<https://www.imdb.com/title/tt4380324/> a schema:Movie ;
+    schema:name "800 Words" ;
+    schema:url <https://www.imdb.com/title/tt4380324/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Steve"
+    ] .
+
+# The Blue Rose (2013)
+<https://www.imdb.com/title/tt2564734/> a schema:Movie ;
+    schema:name "The Blue Rose" ;
+    schema:url <https://www.imdb.com/title/tt2564734/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Terry"
+    ] .
+
+# Spartacus (2012)
+<https://www.imdb.com/title/tt1442449/> a schema:Movie ;
+    schema:name "Spartacus" ;
+    schema:url <https://www.imdb.com/title/tt1442449/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Dominus"
+    ] .
+
+# My Wedding and Other Secrets (2011)
+<https://www.imdb.com/title/tt1614979/> a schema:Movie ;
+    schema:name "My Wedding and Other Secrets" ;
+    schema:url <https://www.imdb.com/title/tt1614979/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Mr White"
+    ] .
+
+# The Amazing Extraordinary Friends (2008)
+<https://www.imdb.com/title/tt0819853/> a schema:Movie ;
+    schema:name "The Amazing Extraordinary Friends" ;
+    schema:url <https://www.imdb.com/title/tt0819853/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Mr. Terrific"
+    ] .
+
+# Power Rangers Mystic Force (2006)
+<https://www.imdb.com/title/tt0451469/> a schema:Movie ;
+    schema:name "Power Rangers Mystic Force" ;
+    schema:url <https://www.imdb.com/title/tt0451469/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Gekkor"
+    ] .
+
+# Living the Dream (2004)
+<https://www.imdb.com/title/tt0434698/> a schema:Movie ;
+    schema:name "Living the Dream" ;
+    schema:url <https://www.imdb.com/title/tt0434698/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "The Smarmy Host"
+    ] .
+
+# The Lord of the Rings: The Return of the King (2003)
+<https://www.imdb.com/title/tt0167260/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:url <https://www.imdb.com/title/tt0167260/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Witch-King"
+    ] .
+
+# Spin Doctors (2001)
+<https://www.imdb.com/title/tt0312208/> a schema:Movie ;
+    schema:name "Spin Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0312208/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Mark"
+    ] .
+
+# Cleopatra 2525 (2001)
+<https://www.imdb.com/title/tt0206476/> a schema:Movie ;
+    schema:name "Cleopatra 2525" ;
+    schema:url <https://www.imdb.com/title/tt0206476/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "The Confessor"
+    ] .
+
+# Above the Law (2000)
+<https://www.imdb.com/title/tt0235117/> a schema:Movie ;
+    schema:name "Above the Law" ;
+    schema:url <https://www.imdb.com/title/tt0235117/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Andie"
+    ] .
+
+# When Ponds Freeze Over (1998)
+<https://www.imdb.com/title/tt0169380/> a schema:Movie ;
+    schema:name "When Ponds Freeze Over" ;
+    schema:url <https://www.imdb.com/title/tt0169380/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Other"
+    ] .
+
+# Every Woman's Dream (1996)
+<https://www.imdb.com/title/tt0116241/> a schema:Movie ;
+    schema:name "Every Woman's Dream" ;
+    schema:url <https://www.imdb.com/title/tt0116241/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Bank Officer"
+    ] .
+
+# Shortland Street (1992)
+<https://www.imdb.com/title/tt0098911/> a schema:Movie ;
+    schema:name "Shortland Street" ;
+    schema:url <https://www.imdb.com/title/tt0098911/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Darryl Neilson"
+    ] .
+
+# Hercules: The Legendary Journeys (1995)
+<https://www.imdb.com/title/tt0111999/> a schema:Movie ;
+    schema:name "Hercules: The Legendary Journeys" ;
+    schema:url <https://www.imdb.com/title/tt0111999/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Craesus the Centaur"
+    ] .
+
+# Hercules in the Underworld (1994)
+<https://www.imdb.com/title/tt0110019/> a schema:Movie ;
+    schema:name "Hercules in the Underworld" ;
+    schema:url <https://www.imdb.com/title/tt0110019/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Hades"
+    ] .
+
+# Hercules: The Legendary Journeys - Hercules and the Circle of Fire (1994)
+<https://www.imdb.com/title/tt0110016/> a schema:Movie ;
+    schema:name "Hercules: The Legendary Journeys - Hercules and the Circle of Fire" ;
+    schema:url <https://www.imdb.com/title/tt0110016/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Prometheus"
+    ] .
+
+# The Rainbow Warrior (1993)
+<https://www.imdb.com/title/tt0105216/> a schema:Movie ;
+    schema:name "The Rainbow Warrior" ;
+    schema:url <https://www.imdb.com/title/tt0105216/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Det. Neil Morris"
+    ] .
+
+# The Adventures of Black Stallion (1993)
+<https://www.imdb.com/title/tt0098754/> a schema:Movie ;
+    schema:name "The Adventures of Black Stallion" ;
+    schema:url <https://www.imdb.com/title/tt0098754/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "(as Mark Fergusson)"
+    ] .
+
+# Marlin Bay (1992)
+<https://www.imdb.com/title/tt0207901/> a schema:Movie ;
+    schema:name "Marlin Bay" ;
+    schema:url <https://www.imdb.com/title/tt0207901/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Gene Toomey"
+    ] .
+
+# A Country Practice (1982)
+<https://www.imdb.com/title/tt0086689/> a schema:Movie ;
+    schema:name "A Country Practice" ;
+    schema:url <https://www.imdb.com/title/tt0086689/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Andrew McPherson"
+    ] .
+
+# Gloss (1987)
+<https://www.imdb.com/title/tt0182582/> a schema:Movie ;
+    schema:name "Gloss" ;
+    schema:url <https://www.imdb.com/title/tt0182582/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName ""
+    ] .
+
+# The Far Country (1987)
+<https://www.imdb.com/title/tt0091034/> a schema:Movie ;
+    schema:name "The Far Country" ;
+    schema:url <https://www.imdb.com/title/tt0091034/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Harry Peters"
+    ] .
+
+# Zoo Family (1985)
+<https://www.imdb.com/title/tt0088644/> a schema:Movie ;
+    schema:name "Zoo Family" ;
+    schema:url <https://www.imdb.com/title/tt0088644/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Geoff Noble"
+    ] .
+
+# Sons and Daughters (1982)
+<https://www.imdb.com/title/tt0081935/> a schema:Movie ;
+    schema:name "Sons and Daughters" ;
+    schema:url <https://www.imdb.com/title/tt0081935/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Paul Sheppard"
+    ] .
+
+# The Added Dimension (1981)
+<https://www.imdb.com/title/tt1813654/> a schema:Movie ;
+    schema:name "The Added Dimension" ;
+    schema:url <https://www.imdb.com/title/tt1813654/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Man at Party"
+    ] .
+
+# Chopper Squad (1979)
+<https://www.imdb.com/title/tt0165003/> a schema:Movie ;
+    schema:name "Chopper Squad" ;
+    schema:url <https://www.imdb.com/title/tt0165003/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272527/> ;
+        schema:characterName "Andy Docker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY2NzM1MTcxN15BMl5BanBnXkFtZTcwOTg4MDkwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2NzM1MTcxN15BMl5BanBnXkFtZTcwOTg4MDkwOA@@._V1_.jpg> ;
+    schema:caption "Mark Ferguson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0272527/mediaviewer/rm16643073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDc4ZmFkNGMtZTk2NC00OGU2LTkzN2MtMDVjNWNmNTIxNzI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Miranda Otto, Mark Ferguson, Lawrence Makoare, and Brent McIntyre in The Lord of the Rings: The Return of the King (2003)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0272527/mediaviewer/rm1039809024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODBkMzQ5MzAtN2YyNS00MWRhLWE3MjUtMDJlZWIxMmVmMjU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark Ferguson, Lawrence Makoare, and Brent McIntyre in The Lord of the Rings: The Return of the King (2003)" ;
+    schema:height "517"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0272527/mediaviewer/rm3215910144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGIzZTc3OTAtMjRiYy00ZWJkLWEyMWYtNGE4OWM4NmFmN2U1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ian McKellen, Billy Boyd, Mark Ferguson, Lawrence Makoare, and Brent McIntyre in The Lord of the Rings: The Return of the King (2003)" ;
+    schema:height "582"^^xsd:integer ;
+    schema:width "966"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0272527/mediaviewer/rm2518329856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2NzM1MTcxN15BMl5BanBnXkFtZTcwOTg4MDkwOA@@._V1_.jpg> ;
+    schema:caption "Mark Ferguson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

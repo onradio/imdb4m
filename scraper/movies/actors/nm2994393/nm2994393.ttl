@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2994393/> a schema:Person ;
+    schema:name "Pratima Kulkarni" ;
+    schema:url <https://www.imdb.com/name/nm2994393/> ;
+    schema:jobTitle "Actress", "Second Unit or Assistant Director", "Director" ;
+    schema:description "Pratima Kulkarni. Actress: Like Stars on Earth. Pratima Kulkarni is known for Like Stars on Earth (2007), Prapanch (1999) and Muramba (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0986264/>,    # Like Stars on Earth
+                       <https://www.imdb.com/title/tt13960086/>,    # Vadalvaat
+                       <https://www.imdb.com/title/tt13776220/>,    # 405 Anandvan
+                       <https://www.imdb.com/title/tt0251584/> ; # Anantyatra
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2994393/mediaviewer/rm3903371522/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Like Stars on Earth (2007)
+<https://www.imdb.com/title/tt0986264/> a schema:Movie ;
+    schema:name "Like Stars on Earth" ;
+    schema:url <https://www.imdb.com/title/tt0986264/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2994393/> ;
+        schema:characterName "Principal - St. Anthony's School"
+    ] .
+
+# Vadalvaat (2003)
+<https://www.imdb.com/title/tt13960086/> a schema:Movie ;
+    schema:name "Vadalvaat" ;
+    schema:url <https://www.imdb.com/title/tt13960086/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2994393/> ;
+        schema:characterName "Vasundhara Karkhanis"
+    ] .
+
+# 405 Anandvan (2002)
+<https://www.imdb.com/title/tt13776220/> a schema:Movie ;
+    schema:name "405 Anandvan" ;
+    schema:url <https://www.imdb.com/title/tt13776220/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2994393/> ;
+        schema:characterName ""
+    ] .
+
+# Anantyatra (1985)
+<https://www.imdb.com/title/tt0251584/> a schema:Movie ;
+    schema:name "Anantyatra" ;
+    schema:url <https://www.imdb.com/title/tt0251584/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2994393/> ;
+        schema:characterName "Interpreter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2994393/mediaviewer/rm3903371522/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDI4Njg3MjgtNDRjZi00YmY3LTg5OWEtYjUzNDc1ZTZkODIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nishhani Borule, Meera Sarang, Suvedha Desai, Shivani Mundhekar, Shubham Sudhakar Gaikwad, Janhavi Panshikar, Vishwas Navare, Janhavi Panshikar, Vishwas Navare, Abhijeet Chavan, Sulekha Talwalkar, Pratima Kulkarni, Ashish Joshi, Shashwati Pimplikar, and Shashank Ketkar in Muramba (2022)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

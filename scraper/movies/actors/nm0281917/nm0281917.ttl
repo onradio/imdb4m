@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0281917/> a schema:Person ;
+    schema:name "Michael Flessas" ;
+    schema:url <https://www.imdb.com/name/nm0281917/> ;
+    schema:birthDate "1959-06-02"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Michael Flessas. Actor: Dancer in the Dark. Michael Flessas was born on 2 June 1959 in Miami, Florida, USA. He is an actor, known for Dancer in the Dark (2000), Hus i helvete (2002) and Beck (1997)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Miami, Florida, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0907683/>,    # Beck
+                       <https://www.imdb.com/title/tt0271000/>,    # Hus i helvete
+                       <https://www.imdb.com/title/tt0168629/> . # Dancer in the Dark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Beck (2002)
+<https://www.imdb.com/title/tt0907683/> a schema:Movie ;
+    schema:name "Beck" ;
+    schema:url <https://www.imdb.com/title/tt0907683/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281917/> ;
+        schema:characterName "Jurij Rostoff"
+    ] .
+
+# Hus i helvete (2002)
+<https://www.imdb.com/title/tt0271000/> a schema:Movie ;
+    schema:name "Hus i helvete" ;
+    schema:url <https://www.imdb.com/title/tt0271000/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281917/> ;
+        schema:characterName "Videomannen"
+    ] .
+
+# Dancer in the Dark (2000)
+<https://www.imdb.com/title/tt0168629/> a schema:Movie ;
+    schema:name "Dancer in the Dark" ;
+    schema:url <https://www.imdb.com/title/tt0168629/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281917/> ;
+        schema:characterName "Angry Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

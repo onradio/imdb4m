@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0101321/> a schema:Person ;
+    schema:name "Gail Bowman" ;
+    schema:url <https://www.imdb.com/name/nm0101321/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Gail Bowman. Actress: Lethal Weapon. Gail Bowman was an actress, known for Lethal Weapon (1987), M*A*S*H (1972) and 10 (1979). She died on 22 March 2025." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0093409/>,    # Lethal Weapon
+                       <https://www.imdb.com/title/tt0080928/>,    # Inside Moves
+                       <https://www.imdb.com/title/tt0075528/>,    # Lou Grant
+                       <https://www.imdb.com/title/tt0078721/>,    # 10
+                       <https://www.imdb.com/title/tt0075917/>,    # Dead of Night
+                       <https://www.imdb.com/title/tt0140174/>,    # Hitch Hike to Hell
+                       <https://www.imdb.com/title/tt0071032/>,    # Petrocelli
+                       <https://www.imdb.com/title/tt0068098/> . # M*A*S*H
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lethal Weapon (1987)
+<https://www.imdb.com/title/tt0093409/> a schema:Movie ;
+    schema:name "Lethal Weapon" ;
+    schema:url <https://www.imdb.com/title/tt0093409/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Cop"
+    ] .
+
+# Inside Moves (1980)
+<https://www.imdb.com/title/tt0080928/> a schema:Movie ;
+    schema:name "Inside Moves" ;
+    schema:url <https://www.imdb.com/title/tt0080928/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Hospital Personnel"
+    ] .
+
+# Lou Grant (1979)
+<https://www.imdb.com/title/tt0075528/> a schema:Movie ;
+    schema:name "Lou Grant" ;
+    schema:url <https://www.imdb.com/title/tt0075528/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Teacher"
+    ] .
+
+# 10 (1979)
+<https://www.imdb.com/title/tt0078721/> a schema:Movie ;
+    schema:name "10" ;
+    schema:url <https://www.imdb.com/title/tt0078721/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# Dead of Night (1977)
+<https://www.imdb.com/title/tt0075917/> a schema:Movie ;
+    schema:name "Dead of Night" ;
+    schema:url <https://www.imdb.com/title/tt0075917/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Maria"
+    ] .
+
+# Hitch Hike to Hell (1977)
+<https://www.imdb.com/title/tt0140174/> a schema:Movie ;
+    schema:name "Hitch Hike to Hell" ;
+    schema:url <https://www.imdb.com/title/tt0140174/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Lydia Welles"
+    ] .
+
+# Petrocelli (1976)
+<https://www.imdb.com/title/tt0071032/> a schema:Movie ;
+    schema:name "Petrocelli" ;
+    schema:url <https://www.imdb.com/title/tt0071032/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Jackie"
+    ] .
+
+# M*A*S*H (1973)
+<https://www.imdb.com/title/tt0068098/> a schema:Movie ;
+    schema:name "M*A*S*H" ;
+    schema:url <https://www.imdb.com/title/tt0068098/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0101321/> ;
+        schema:characterName "Nurse Powell"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,215 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0758758/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Hard Sun" ;
+        schema:byArtist <https://www.imdb.com/name/nm0891641/> ; # Eddie Vedder
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Society" ;
+        schema:byArtist <https://www.imdb.com/name/nm0891641/>, # Eddie Vedder
+                        <https://www.imdb.com/name/nm2797072/> ; # Jerry Hannan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Society" ;
+            schema:author <https://www.imdb.com/name/nm2797072/> # Jerry Hannan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "No Ceiling" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rise" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Long Nights" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Wolf" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Guaranteed" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Going up the Country" ;
+        schema:byArtist <https://www.imdb.com/name/nm0134078/> ; # Canned Heat
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Going up the Country" ;
+            schema:author <https://www.imdb.com/name/nm1108040/> # Alan Wilson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "King of the Road" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Doing the Wrong Thing" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Frame" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "U Can't Touch This" ;
+        schema:byArtist <https://www.imdb.com/name/nm0358479/> ; # M.C. Hammer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "U Can't Touch This" ;
+            schema:author <https://www.imdb.com/name/nm0358479/>, # M.C. Hammer
+                       <https://www.imdb.com/name/nm0416872/>, # Rick James
+                       <https://www.imdb.com/name/nm1450711/> # Alonzo Miller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Emory and Old St. Andrews March" ;
+        schema:byArtist <https://www.imdb.com/name/nm5308127/> ; # Atlanta Pipe Band
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Water Ran This Way Back and Forth" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Thought I Was You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Thought I Was You" ;
+            schema:author <https://www.imdb.com/name/nm2797072/> # Jerry Hannan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Fork and File" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Fork and File" ;
+            schema:author <https://www.imdb.com/name/nm1974416/> # Erik Pearson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dakota Themes" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Slab Song" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kaa" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Angel from Montgomery" ;
+        schema:byArtist <https://www.imdb.com/name/nm0829576/>, # Kristen Stewart
+                        <https://www.imdb.com/name/nm0386472/> ; # Emile Hirsch
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Angel from Montgomery" ;
+            schema:author <https://www.imdb.com/name/nm0697789/> # John Prine
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Picking Berries" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tracy's Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm0829576/> ; # Kristen Stewart
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tracy's Song" ;
+            schema:author <https://www.imdb.com/name/nm0046412/>, # David Baerwald
+                       <https://www.imdb.com/name/nm0829576/> # Kristen Stewart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Best Unsaid" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Timekeeper" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Carte Noir" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Flood" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Porterville" ;
+        schema:byArtist <https://www.imdb.com/name/nm2045052/> ; # Creedence Clearwater Revival
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Porterville" ;
+            schema:author <https://www.imdb.com/name/nm0004928/> # John Fogerty
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Saw It" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004928/> a schema:Person ;
+    schema:name "John Fogerty" .
+<https://www.imdb.com/name/nm0046412/> a schema:Person ;
+    schema:name "David Baerwald" .
+<https://www.imdb.com/name/nm0134078/> a schema:Person ;
+    schema:name "Canned Heat" .
+<https://www.imdb.com/name/nm0358479/> a schema:Person ;
+    schema:name "M.C. Hammer" .
+<https://www.imdb.com/name/nm0386472/> a schema:Person ;
+    schema:name "Emile Hirsch" .
+<https://www.imdb.com/name/nm0416872/> a schema:Person ;
+    schema:name "Rick James" .
+<https://www.imdb.com/name/nm0697789/> a schema:Person ;
+    schema:name "John Prine" .
+<https://www.imdb.com/name/nm0829576/> a schema:Person ;
+    schema:name "Kristen Stewart" .
+<https://www.imdb.com/name/nm0891641/> a schema:Person ;
+    schema:name "Eddie Vedder" .
+<https://www.imdb.com/name/nm1108040/> a schema:Person ;
+    schema:name "Alan Wilson" .
+<https://www.imdb.com/name/nm1450711/> a schema:Person ;
+    schema:name "Alonzo Miller" .
+<https://www.imdb.com/name/nm1974416/> a schema:Person ;
+    schema:name "Erik Pearson" .
+<https://www.imdb.com/name/nm2045052/> a schema:Person ;
+    schema:name "Creedence Clearwater Revival" .
+<https://www.imdb.com/name/nm2797072/> a schema:Person ;
+    schema:name "Jerry Hannan" .
+<https://www.imdb.com/name/nm5308127/> a schema:Person ;
+    schema:name "Atlanta Pipe Band" .
+# ==============================================================================

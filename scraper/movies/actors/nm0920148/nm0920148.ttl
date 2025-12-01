@@ -1,0 +1,474 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0920148/> a schema:Person ;
+    schema:name "Claudia Wells" ;
+    schema:url <https://www.imdb.com/name/nm0920148/> ;
+    schema:birthDate "1966-07-05"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:alternateName "Claudia Grace Wells" ;
+    schema:description "Claudia Wells. Actress: Back to the Future. Claudia Wells was born on 5 July 1966 in Kuala Lumpur, Malaysia. She is an actress, known for Back to the Future (1985), Back to the Future: The Game - 30th Anniversary Edition (2015) and CBS Schoolbreak Special (1984)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTcxMjM2NTI4NV5BMl5BanBnXkFtZTYwMTg5Mjky._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kuala Lumpur, Malaysia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088763/>,    # Back to the Future
+                       <https://www.imdb.com/title/tt0985040/>,    # CBS Schoolbreak Special
+                       <https://www.imdb.com/title/tt5124786/>,    # Back to the 2015 Future
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3557662/>,    # Vitals
+                       <https://www.imdb.com/title/tt10326660/>,    # System Failure
+                       <https://www.imdb.com/title/tt4360828/>,    # Groove Street
+                       <https://www.imdb.com/title/tt4162580/>,    # EP/Executive Protection
+                       <https://www.imdb.com/title/tt3196168/>,    # The Comeback Kids
+                       <https://www.imdb.com/title/tt4961498/>,    # Back to the Future: The Game - 30th Anniversary Edition
+                       <https://www.imdb.com/title/tt2547942/>,    # Starship: Rising
+                       <https://www.imdb.com/title/tt3827820/>,    # Zero Impact Home
+                       <https://www.imdb.com/title/tt2722094/>,    # Max
+                       <https://www.imdb.com/title/tt3339446/>,    # You Are Not Alone
+                       <https://www.imdb.com/title/tt1196946/>,    # The Mentalist
+                       <https://www.imdb.com/title/tt1910498/>,    # Alien Armageddon
+                       <https://www.imdb.com/title/tt1688659/>,    # Back to the Future: The Game
+                       <https://www.imdb.com/title/tt0117743/>,    # Still Waters Burn
+                       <https://www.imdb.com/title/tt0086677/>,    # Brothers
+                       <https://www.imdb.com/title/tt0090429/>,    # Fast Times
+                       <https://www.imdb.com/title/tt8571360/>,    # Stop the Madness: Stop the Madness
+                       <https://www.imdb.com/title/tt0088662/>,    # Able to Do
+                       <https://www.imdb.com/title/tt0088585/>,    # Off the Rack
+                       <https://www.imdb.com/title/tt0081930/>,    # Simon & Simon
+                       <https://www.imdb.com/title/tt0078704/>,    # Trapper John, M.D.
+                       <https://www.imdb.com/title/tt0086891/>,    # Anatomy of an Illness
+                       <https://www.imdb.com/title/tt0083412/>,    # Fame
+                       <https://www.imdb.com/title/tt0188865/>,    # Lovers and Other Strangers
+                       <https://www.imdb.com/title/tt0083428/>,    # Herbie, the Love Bug
+                       <https://www.imdb.com/title/tt0081940/>,    # Strike Force
+                       <https://www.imdb.com/title/tt0189050/>,    # Rise and Shine
+                       <https://www.imdb.com/title/tt0073992/> ; # Family
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4252152601/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0920148/mediaviewer/rm3550837504/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm3617946368/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm3399842560/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm3433396992/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm3637261568/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm182247936/>,
+                 <https://www.imdb.com/name/nm0920148/mediaviewer/rm3248986624/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088763/> a schema:Movie ;
+    schema:name "Back to the Future" ;
+    schema:url <https://www.imdb.com/title/tt0088763/> .
+
+<https://www.imdb.com/title/tt0985040/> a schema:Movie ;
+    schema:name "CBS Schoolbreak Special" ;
+    schema:url <https://www.imdb.com/title/tt0985040/> .
+
+<https://www.imdb.com/title/tt5124786/> a schema:Movie ;
+    schema:name "Back to the 2015 Future" ;
+    schema:url <https://www.imdb.com/title/tt5124786/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Vitals (2019)
+<https://www.imdb.com/title/tt3557662/> a schema:Movie ;
+    schema:name "Vitals" ;
+    schema:url <https://www.imdb.com/title/tt3557662/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Margaret Parks"
+    ] .
+
+# System Failure (2018)
+<https://www.imdb.com/title/tt10326660/> a schema:Movie ;
+    schema:name "System Failure" ;
+    schema:url <https://www.imdb.com/title/tt10326660/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Mrs. Henderson"
+    ] .
+
+# Groove Street (2018)
+<https://www.imdb.com/title/tt4360828/> a schema:Movie ;
+    schema:name "Groove Street" ;
+    schema:url <https://www.imdb.com/title/tt4360828/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Julie"
+    ] .
+
+# EP/Executive Protection (2015)
+<https://www.imdb.com/title/tt4162580/> a schema:Movie ;
+    schema:name "EP/Executive Protection" ;
+    schema:url <https://www.imdb.com/title/tt4162580/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Pam Travis"
+    ] .
+
+# The Comeback Kids (2015)
+<https://www.imdb.com/title/tt3196168/> a schema:Movie ;
+    schema:name "The Comeback Kids" ;
+    schema:url <https://www.imdb.com/title/tt3196168/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Claudia Wells"
+    ] .
+
+# Back to the Future: The Game - 30th Anniversary Edition (2015)
+<https://www.imdb.com/title/tt4961498/> a schema:Movie ;
+    schema:name "Back to the Future: The Game - 30th Anniversary Edition" ;
+    schema:url <https://www.imdb.com/title/tt4961498/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Jennifer Parker"
+    ] .
+
+# Starship: Rising (2014)
+<https://www.imdb.com/title/tt2547942/> a schema:Movie ;
+    schema:name "Starship: Rising" ;
+    schema:url <https://www.imdb.com/title/tt2547942/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Captain Savage"
+    ] .
+
+# Zero Impact Home (2014)
+<https://www.imdb.com/title/tt3827820/> a schema:Movie ;
+    schema:name "Zero Impact Home" ;
+    schema:url <https://www.imdb.com/title/tt3827820/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Future Petal"
+    ] .
+
+# Max (2013)
+<https://www.imdb.com/title/tt2722094/> a schema:Movie ;
+    schema:name "Max" ;
+    schema:url <https://www.imdb.com/title/tt2722094/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Mom"
+    ] .
+
+# You Are Not Alone (2013)
+<https://www.imdb.com/title/tt3339446/> a schema:Movie ;
+    schema:name "You Are Not Alone" ;
+    schema:url <https://www.imdb.com/title/tt3339446/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Cristina's Mom"
+    ] .
+
+# The Mentalist (2011)
+<https://www.imdb.com/title/tt1196946/> a schema:Movie ;
+    schema:name "The Mentalist" ;
+    schema:url <https://www.imdb.com/title/tt1196946/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Chief Marnie Green"
+    ] .
+
+# Alien Armageddon (2011)
+<https://www.imdb.com/title/tt1910498/> a schema:Movie ;
+    schema:name "Alien Armageddon" ;
+    schema:url <https://www.imdb.com/title/tt1910498/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Eileen Daly"
+    ] .
+
+# Back to the Future: The Game (2010)
+<https://www.imdb.com/title/tt1688659/> a schema:Movie ;
+    schema:name "Back to the Future: The Game" ;
+    schema:url <https://www.imdb.com/title/tt1688659/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Jennifer Parker"
+    ] .
+
+# Still Waters Burn (2008)
+<https://www.imdb.com/title/tt0117743/> a schema:Movie ;
+    schema:name "Still Waters Burn" ;
+    schema:url <https://www.imdb.com/title/tt0117743/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Laura Harper"
+    ] .
+
+# Brothers (1986)
+<https://www.imdb.com/title/tt0086677/> a schema:Movie ;
+    schema:name "Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0086677/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Fast Times (1986)
+<https://www.imdb.com/title/tt0090429/> a schema:Movie ;
+    schema:name "Fast Times" ;
+    schema:url <https://www.imdb.com/title/tt0090429/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Linda Barrett"
+    ] .
+
+# Stop the Madness: Stop the Madness (1986)
+<https://www.imdb.com/title/tt8571360/> a schema:Movie ;
+    schema:name "Stop the Madness: Stop the Madness" ;
+    schema:url <https://www.imdb.com/title/tt8571360/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Claudia Wells"
+    ] .
+
+# Able to Do (1985)
+<https://www.imdb.com/title/tt0088662/> a schema:Movie ;
+    schema:name "Able to Do" ;
+    schema:url <https://www.imdb.com/title/tt0088662/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName ""
+    ] .
+
+# Off the Rack (1984)
+<https://www.imdb.com/title/tt0088585/> a schema:Movie ;
+    schema:name "Off the Rack" ;
+    schema:url <https://www.imdb.com/title/tt0088585/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Shannon Halloran"
+    ] .
+
+# Simon & Simon (1985)
+<https://www.imdb.com/title/tt0081930/> a schema:Movie ;
+    schema:name "Simon & Simon" ;
+    schema:url <https://www.imdb.com/title/tt0081930/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Phoebe Glass"
+    ] .
+
+# Trapper John, M.D. (1985)
+<https://www.imdb.com/title/tt0078704/> a schema:Movie ;
+    schema:name "Trapper John, M.D." ;
+    schema:url <https://www.imdb.com/title/tt0078704/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Candy"
+    ] .
+
+# Anatomy of an Illness (1984)
+<https://www.imdb.com/title/tt0086891/> a schema:Movie ;
+    schema:name "Anatomy of an Illness" ;
+    schema:url <https://www.imdb.com/title/tt0086891/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Sarakit"
+    ] .
+
+# Fame (1984)
+<https://www.imdb.com/title/tt0083412/> a schema:Movie ;
+    schema:name "Fame" ;
+    schema:url <https://www.imdb.com/title/tt0083412/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Marya"
+    ] .
+
+# Lovers and Other Strangers (1983)
+<https://www.imdb.com/title/tt0188865/> a schema:Movie ;
+    schema:name "Lovers and Other Strangers" ;
+    schema:url <https://www.imdb.com/title/tt0188865/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Mary Claire Delvecchio"
+    ] .
+
+# Herbie, the Love Bug (1982)
+<https://www.imdb.com/title/tt0083428/> a schema:Movie ;
+    schema:name "Herbie, the Love Bug" ;
+    schema:url <https://www.imdb.com/title/tt0083428/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Julie MacLane"
+    ] .
+
+# Strike Force (1981)
+<https://www.imdb.com/title/tt0081940/> a schema:Movie ;
+    schema:name "Strike Force" ;
+    schema:url <https://www.imdb.com/title/tt0081940/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Patty"
+    ] .
+
+# Rise and Shine (1981)
+<https://www.imdb.com/title/tt0189050/> a schema:Movie ;
+    schema:name "Rise and Shine" ;
+    schema:url <https://www.imdb.com/title/tt0189050/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName ""
+    ] .
+
+# Family (1979)
+<https://www.imdb.com/title/tt0073992/> a schema:Movie ;
+    schema:name "Family" ;
+    schema:url <https://www.imdb.com/title/tt0073992/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920148/> ;
+        schema:characterName "Denise"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4252152601/> a schema:VideoObject ;
+        schema:name "Back in Time" ;
+        schema:description "Trailer for Back in Time" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4252152601/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWQzMzJjMTMtNjE1Mi00YTY0LWJiZDctMzA1MzgyOWU5ZTczXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M33S"^^xsd:duration ;
+        schema:uploadDate "2015-09-27T04:07:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTcxMjM2NTI4NV5BMl5BanBnXkFtZTYwMTg5Mjky._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxMjM2NTI4NV5BMl5BanBnXkFtZTYwMTg5Mjky._V1_.jpg> ;
+    schema:caption "Claudia Wells" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "373"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3550837504/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTNkYzYwMTgtNThjMy00YTk2LWE4NjQtM2EyYTFmYTcxNDkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael J. Fox, Christopher Lloyd, and Claudia Wells in Back to the Future (1985)" ;
+    schema:height "1437"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3617946368/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjVhNDhlYTUtYzY1Mi00YWYzLThkOWQtZTRiMmRiODk4Y2M1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael J. Fox, Christopher Lloyd, and Claudia Wells in Back to the Future (1985)" ;
+    schema:height "1437"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3399842560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTVlYTdmOTgtOWI5OS00OTBkLTkyMTgtMTYyOTIzM2FjMTU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael J. Fox and Claudia Wells in Back to the Future (1985)" ;
+    schema:height "1437"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3433396992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODYwNTA2YjUtMmNkYi00ODM5LWEyMTctYWM3MzlhODFiM2Q0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Claudia Wells in Back to the Future (1985)" ;
+    schema:height "1437"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3637261568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkwN2MyMjgtMWNhMy00MDE0LTk2YjYtYmI2M2NhZmIzNGJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Claudia Wells in Back to the Future (1985)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm182247936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3ODQxNDAzMF5BMl5BanBnXkFtZTgwNjI5MDAxNzE@._V1_.jpg> ;
+    schema:caption "Claudia Wells at an event for Back to the Future (1985)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920148/mediaviewer/rm3248986624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxMjM2NTI4NV5BMl5BanBnXkFtZTYwMTg5Mjky._V1_.jpg> ;
+    schema:caption "Claudia Wells" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "373"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0920148/>
+    schema:sameAs <http://www.facebook.com/profile.php?id=503421702> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

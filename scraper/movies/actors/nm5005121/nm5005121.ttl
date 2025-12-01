@@ -1,0 +1,172 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5005121/> a schema:Person ;
+    schema:name "Julia Greer" ;
+    schema:url <https://www.imdb.com/name/nm5005121/> ;
+    schema:jobTitle "Actress", "Writer", "Producer" ;
+    schema:description "Julia Greer. Actress: Marriage Story. Julia Greer is known for Marriage Story (2019), A Good Person (2023) and Waiting Period (2022)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWQyZWVmZGItNTJmYi00MGE4LWI1MDktOWRlZjBjZDYwYjZkXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt12791294/>,    # Fresh Apron
+                       <https://www.imdb.com/title/tt8797000/>,    # Lady Liberty
+                       <https://www.imdb.com/title/tt9185066/>,    # Human Capital
+                       <https://www.imdb.com/title/tt7653254/>,    # Marriage Story
+                       <https://www.imdb.com/title/tt5955308/>,    # For Marta
+                       <https://www.imdb.com/title/tt6970554/>,    # Creative Control
+                       <https://www.imdb.com/title/tt2552990/> ; # 4 Bitches and a Gun
+
+
+    schema:video <https://www.imdb.com/video/vi3499409177/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5005121/mediaviewer/rm3319852545/>,
+                 <https://www.imdb.com/name/nm5005121/mediaviewer/rm3692852992/>,
+                 <https://www.imdb.com/name/nm5005121/mediaviewer/rm4002563584/>,
+                 <https://www.imdb.com/name/nm5005121/mediaviewer/rm769781249/>,
+                 <https://www.imdb.com/name/nm5005121/mediaviewer/rm4242599425/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fresh Apron (2019)
+<https://www.imdb.com/title/tt12791294/> a schema:Movie ;
+    schema:name "Fresh Apron" ;
+    schema:url <https://www.imdb.com/title/tt12791294/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Jill"
+    ] .
+
+# Lady Liberty (2019)
+<https://www.imdb.com/title/tt8797000/> a schema:Movie ;
+    schema:name "Lady Liberty" ;
+    schema:url <https://www.imdb.com/title/tt8797000/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Margo"
+    ] .
+
+# Human Capital (2019)
+<https://www.imdb.com/title/tt9185066/> a schema:Movie ;
+    schema:name "Human Capital" ;
+    schema:url <https://www.imdb.com/title/tt9185066/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "WMV Associate"
+    ] .
+
+# Marriage Story (2019)
+<https://www.imdb.com/title/tt7653254/> a schema:Movie ;
+    schema:name "Marriage Story" ;
+    schema:url <https://www.imdb.com/title/tt7653254/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Street Solicitor #1"
+    ] .
+
+# For Marta (2016)
+<https://www.imdb.com/title/tt5955308/> a schema:Movie ;
+    schema:name "For Marta" ;
+    schema:url <https://www.imdb.com/title/tt5955308/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Kathleen"
+    ] .
+
+# Creative Control (2013)
+<https://www.imdb.com/title/tt6970554/> a schema:Movie ;
+    schema:name "Creative Control" ;
+    schema:url <https://www.imdb.com/title/tt6970554/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Maria Rivers"
+    ] .
+
+# 4 Bitches and a Gun (2012)
+<https://www.imdb.com/title/tt2552990/> a schema:Movie ;
+    schema:name "4 Bitches and a Gun" ;
+    schema:url <https://www.imdb.com/title/tt2552990/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5005121/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3499409177/> a schema:VideoObject ;
+        schema:name "Marriage Story" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3499409177/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODhmODExZmItYzk4OS00ZDdmLWIwYmYtNjkxY2QyZDEyMWYyXkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT1M15S"^^xsd:duration ;
+        schema:uploadDate "2019-09-18T17:01:50Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWQyZWVmZGItNTJmYi00MGE4LWI1MDktOWRlZjBjZDYwYjZkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWQyZWVmZGItNTJmYi00MGE4LWI1MDktOWRlZjBjZDYwYjZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "3267"^^xsd:integer ;
+    schema:width "2178"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5005121/mediaviewer/rm3319852545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGRhMDQ2NTEtODU0MC00YjZhLTkzOWItZTA4MTdjNTg3NGUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "982"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5005121/mediaviewer/rm3692852992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzhjMmU5ZjYtM2FkZC00ZGY2LWEzYTYtYzEyNmQyNDk0YmYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "986"^^xsd:integer ;
+    schema:width "739"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5005121/mediaviewer/rm4002563584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA3YTBhMDQtYWQ0ZS00YTgyLThjMTUtMmFhMmFhYzhkOWE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "2850"^^xsd:integer ;
+    schema:width "2138"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5005121/mediaviewer/rm769781249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEzMmFmMzUtN2QyZi00MGI3LThlZTUtNjZiMjNjM2MwYmYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "750"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5005121/mediaviewer/rm4242599425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWQyZWVmZGItNTJmYi00MGE4LWI1MDktOWRlZjBjZDYwYjZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Julia Greer" ;
+    schema:height "3267"^^xsd:integer ;
+    schema:width "2178"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

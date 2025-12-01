@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1508428/> a schema:Person ;
+    schema:name "Perry Walston" ;
+    schema:url <https://www.imdb.com/name/nm1508428/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Perry Walston. Actor: Big Fish. Perry Walston is known for Big Fish (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0319061/> .    # Big Fish
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Big Fish (2003)
+<https://www.imdb.com/title/tt0319061/> a schema:Movie ;
+    schema:name "Big Fish" ;
+    schema:url <https://www.imdb.com/title/tt0319061/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1508428/> ;
+        schema:characterName "Ed Bloom (age 10)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

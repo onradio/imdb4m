@@ -1,0 +1,182 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2492819/> a schema:Person ;
+    schema:name "Rosie Huntington-Whiteley" ;
+    schema:url <https://www.imdb.com/name/nm2492819/> ;
+    schema:birthDate "1987-04-18"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:alternateName "Rose", "Rosie Alice Huntington-Whiteley" ;
+    schema:description "Rosie Huntington-Whiteley. Actress: Transformers: Dark of the Moon. Rosie Alice Huntington-Whiteley is best known for her work as a Victoria's Secrets lingerie model and as a movie actress. She has appeared in five Victoria's Secret Fashion shows from 2006 through 2010 and became a Victoria's Secret Angel in November 2009. She has appeared on the cover of international fashion magazines including Vogue, GQ, Elle, Harper's Bazaar among others. Huntington-Whiteley has..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTM1Nzg4Nzc2NV5BMl5BanBnXkFtZTcwODI2NDY3NQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Plymouth, Devon, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1399103/>,    # Transformers: Dark of the Moon
+                       <https://www.imdb.com/title/tt11516984/>,    # About Face
+                       <https://www.imdb.com/title/tt1392190/>,    # Mad Max: Fury Road
+                       <https://www.imdb.com/title/tt5066660/>,    # Love Me Tender... Or Else
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt15262536/>,    # Marks and Spencer: Believe in Magic and Sparkle
+                       <https://www.imdb.com/title/tt15120348/> ; # DT Spain Photoshoot
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi543989017/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2492819/mediaviewer/rm4182978816/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm4229304064/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm4246081280/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm2148929280/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm2021193472/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm2004416256/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm1803089664/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm1786312448/>,
+                 <https://www.imdb.com/name/nm2492819/mediaviewer/rm3463564288/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1399103/> a schema:Movie ;
+    schema:name "Transformers: Dark of the Moon" ;
+    schema:url <https://www.imdb.com/title/tt1399103/> .
+
+<https://www.imdb.com/title/tt11516984/> a schema:Movie ;
+    schema:name "About Face" ;
+    schema:url <https://www.imdb.com/title/tt11516984/> .
+
+<https://www.imdb.com/title/tt1392190/> a schema:Movie ;
+    schema:name "Mad Max: Fury Road" ;
+    schema:url <https://www.imdb.com/title/tt1392190/> .
+
+<https://www.imdb.com/title/tt5066660/> a schema:Movie ;
+    schema:name "Love Me Tender... Or Else" ;
+    schema:url <https://www.imdb.com/title/tt5066660/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Marks and Spencer: Believe in Magic and Sparkle (2013)
+<https://www.imdb.com/title/tt15262536/> a schema:Movie ;
+    schema:name "Marks and Spencer: Believe in Magic and Sparkle" ;
+    schema:url <https://www.imdb.com/title/tt15262536/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2492819/> ;
+        schema:characterName "Dorothy Gale"
+    ] .
+
+# DT Spain Photoshoot (2010)
+<https://www.imdb.com/title/tt15120348/> a schema:Movie ;
+    schema:name "DT Spain Photoshoot" ;
+    schema:url <https://www.imdb.com/title/tt15120348/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2492819/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi543989017/> a schema:VideoObject ;
+        schema:name "Trailer #3" ;
+        schema:description "The Autobots learn of a Cybertronian spacecraft hidden on the Moon, and race against the Decepticons to reach it and learn its secrets, which could turn the tide in the Transformers' final battle." ;
+        schema:embedUrl <https://www.imdb.com/video/vi543989017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTYyOTgwOTExOF5BMl5BanBnXkFtZTgwMDQ0NzcyMzE@._V1_.jpg" ;
+        schema:duration "PT2M31S"^^xsd:duration ;
+        schema:uploadDate "2011-05-21T09:47:17Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTM1Nzg4Nzc2NV5BMl5BanBnXkFtZTcwODI2NDY3NQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM1Nzg4Nzc2NV5BMl5BanBnXkFtZTcwODI2NDY3NQ@@._V1_.jpg> ;
+    schema:caption "Rosie Huntington-Whiteley at an event for Transformers: Dark of the Moon (2011)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1389"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm4182978816/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmM5NGE3MTEtZDc3Ny00MjFmLThlZTMtYThjMTUzYjg0YzMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rosie Huntington-Whiteley in Transformers: Dark of the Moon (2011)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "943"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm4229304064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjIyNjY1ZmUtMDEzOC00M2U4LWJmZmYtY2FkNWQ2YjQzZTQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rosie Huntington-Whiteley in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm4246081280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDFjOTViODAtNGQwOS00YTNkLThmZDgtYmQ0ZGUyNWQ2NzM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Riley Keough, Zoë Kravitz, and Rosie Huntington-Whiteley in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm2148929280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDU2NjgzN2EtYWFiZS00MzNiLTg5NmMtZjY1NjUzMWE3ZjQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlize Theron, Tom Hardy, Riley Keough, Zoë Kravitz, Rosie Huntington-Whiteley, Abbey Lee, and Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm2021193472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTkxMDU5MzY5OF5BMl5BanBnXkFtZTgwOTI3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Rosie Huntington-Whiteley in Mad Max: Fury Road (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1362"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm2004416256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjgzNTY5NjM1M15BMl5BanBnXkFtZTgwMzE3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Tom Hardy, Riley Keough, Zoë Kravitz, Rosie Huntington-Whiteley, Abbey Lee, and Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "1300"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm1803089664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY1MzUwMjg1Nl5BMl5BanBnXkFtZTgwOTA3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Charlize Theron, Tom Hardy, Nicholas Hoult, Riley Keough, Rosie Huntington-Whiteley, and Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "1312"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm1786312448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM1NjA1MjkxM15BMl5BanBnXkFtZTgwMDE3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Riley Keough, Rosie Huntington-Whiteley, and Courtney Eaton in Mad Max: Fury Road (2015)" ;
+    schema:height "1363"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2492819/mediaviewer/rm3463564288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDI4ODA0OTIwNV5BMl5BanBnXkFtZTgwNDE2NDAwMjE@._V1_.jpg> ;
+    schema:caption "Michael Bay, Shia LaBeouf, and Rosie Huntington-Whiteley in Transformers: Dark of the Moon (2011)" ;
+    schema:height "3600"^^xsd:integer ;
+    schema:width "5400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2492819/>
+    schema:sameAs <https://www.facebook.com/Rosie.H.W>,
+                  <https://www.instagram.com/rosiehw/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

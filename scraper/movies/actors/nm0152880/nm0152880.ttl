@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0152880/> a schema:Person ;
+    schema:name "Doris Leader Charge" ;
+    schema:url <https://www.imdb.com/name/nm0152880/> ;
+    schema:birthDate "1930-05-04"^^xsd:date ;
+    schema:jobTitle "Additional Crew", "Actress" ;
+    schema:description "Doris Leader Charge. Additional Crew: Dances with Wolves. Doris Leader Charge was born on 4 May 1930 in Rosebud Reservation, South Dakota, USA. She was an actress, known for Dances with Wolves (1990), Son of the Morning Star (1991) and The Making of 'Dances with Wolves' (1990). She died on 20 February 2001 in Mission, South Dakota, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rosebud Reservation, South Dakota, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0099348/> .    # Dances with Wolves
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dances with Wolves (1990)
+<https://www.imdb.com/title/tt0099348/> a schema:Movie ;
+    schema:name "Dances with Wolves" ;
+    schema:url <https://www.imdb.com/title/tt0099348/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0152880/> ;
+        schema:characterName "Pretty Shield"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

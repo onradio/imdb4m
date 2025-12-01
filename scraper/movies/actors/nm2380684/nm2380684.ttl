@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2380684/> a schema:Person ;
+    schema:name "Joyful Raven" ;
+    schema:url <https://www.imdb.com/name/nm2380684/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Joyful Raven. Actress: The Pursuit of Happyness. Joyful Raven is known for The Pursuit of Happyness (2006) and Flea (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1690543/>,    # Flea
+                       <https://www.imdb.com/title/tt0454921/> . # The Pursuit of Happyness
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Flea (2018)
+<https://www.imdb.com/title/tt1690543/> a schema:Movie ;
+    schema:name "Flea" ;
+    schema:url <https://www.imdb.com/title/tt1690543/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2380684/> ;
+        schema:characterName "Desiree"
+    ] .
+
+# The Pursuit of Happyness (2006)
+<https://www.imdb.com/title/tt0454921/> a schema:Movie ;
+    schema:name "The Pursuit of Happyness" ;
+    schema:url <https://www.imdb.com/title/tt0454921/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2380684/> ;
+        schema:characterName "Hippie Girl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

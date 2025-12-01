@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10186538/> a schema:Person ;
+    schema:name "Christian Howlings" ;
+    schema:url <https://www.imdb.com/name/nm10186538/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Christian Howlings. Actor: Jojo Rabbit. Christian Howlings was born in Prague. He's a mix of Danish, Czech, and English. His earliest work was on stage - acting, singing and dancing in just about every school show since preschool. At age 11 he summoned demons in Lore 2, and appeared in Knightfall. Films so far include Jojo Rabbit and the historic biopic Medieval." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11251528/>,    # Miss Her
+                       <https://www.imdb.com/title/tt2584384/>,    # Jojo Rabbit
+                       <https://www.imdb.com/title/tt4555364/>,    # Knightfall
+                       <https://www.imdb.com/title/tt6130902/> . # Lore
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Miss Her (2019)
+<https://www.imdb.com/title/tt11251528/> a schema:Movie ;
+    schema:name "Miss Her" ;
+    schema:url <https://www.imdb.com/title/tt11251528/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10186538/> ;
+        schema:characterName ""
+    ] .
+
+# Jojo Rabbit (2019)
+<https://www.imdb.com/title/tt2584384/> a schema:Movie ;
+    schema:name "Jojo Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt2584384/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10186538/> ;
+        schema:characterName "Bazooka Boy"
+    ] .
+
+# Knightfall (2019)
+<https://www.imdb.com/title/tt4555364/> a schema:Movie ;
+    schema:name "Knightfall" ;
+    schema:url <https://www.imdb.com/title/tt4555364/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10186538/> ;
+        schema:characterName "Young Boy"
+    ] .
+
+# Lore (2018)
+<https://www.imdb.com/title/tt6130902/> a schema:Movie ;
+    schema:name "Lore" ;
+    schema:url <https://www.imdb.com/title/tt6130902/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10186538/> ;
+        schema:characterName "Young Jack Parsons"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0459188/> a schema:Person ;
+    schema:name "George Robert Klek" ;
+    schema:url <https://www.imdb.com/name/nm0459188/> ;
+    schema:birthDate "1966-07-03"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "George Robert Klek. Actor: The Abyss. George Robert Klek was born on 3 July 1966 in New York. He was an actor, known for The Abyss (1989), Senior Week (1988) and 21 Jump Street (1987). He died on 6 January 2011 in Las Vegas, Nevada, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0092312/>,    # 21 Jump Street
+                       <https://www.imdb.com/title/tt0096754/>,    # The Abyss
+                       <https://www.imdb.com/title/tt0124869/> . # Senior Week
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 21 Jump Street (1990)
+<https://www.imdb.com/title/tt0092312/> a schema:Movie ;
+    schema:name "21 Jump Street" ;
+    schema:url <https://www.imdb.com/title/tt0092312/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0459188/> ;
+        schema:characterName "Blitz"
+    ] .
+
+# The Abyss (1989)
+<https://www.imdb.com/title/tt0096754/> a schema:Movie ;
+    schema:name "The Abyss" ;
+    schema:url <https://www.imdb.com/title/tt0096754/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0459188/> ;
+        schema:characterName "Wilhite"
+    ] .
+
+# Senior Week (1988)
+<https://www.imdb.com/title/tt0124869/> a schema:Movie ;
+    schema:name "Senior Week" ;
+    schema:url <https://www.imdb.com/title/tt0124869/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0459188/> ;
+        schema:characterName "Jamie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,39 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0119177/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Nuages" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nuages" ;
+            schema:composer <https://www.imdb.com/name/nm0718099/> # Django Reinhardt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "First Song (for Ruth)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0315295/> ; # Stan Getz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "First Song (for Ruth)" ;
+            schema:author <https://www.imdb.com/name/nm0352767/> # Charlie Haden
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0315295/> a schema:Person ;
+    schema:name "Stan Getz" .
+<https://www.imdb.com/name/nm0352767/> a schema:Person ;
+    schema:name "Charlie Haden" .
+<https://www.imdb.com/name/nm0718099/> a schema:Person ;
+    schema:name "Django Reinhardt" .
+# ==============================================================================

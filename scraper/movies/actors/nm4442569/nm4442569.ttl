@@ -1,0 +1,115 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4442569/> a schema:Person ;
+    schema:name "Joy Badlani" ;
+    schema:url <https://www.imdb.com/name/nm4442569/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Joy Badlani. Actor: K.G.F. Joy Badlani is known for K.G.F (2018), Thuppakki (2012) and 2.0 (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNmE5NWI5YzItMzM3Zi00YzI2LWE3MzItNmFlMTczYjRjZmMzXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9680136/>,    # Pati Patni Aur Woh
+                       <https://www.imdb.com/title/tt10636632/>,    # Buro Sadhu
+                       <https://www.imdb.com/title/tt10218838/>,    # Edakkad Battalion 06
+                       <https://www.imdb.com/title/tt8411144/> ; # Kaappaan
+
+
+    schema:video <https://www.imdb.com/video/vi3759520793/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4442569/mediaviewer/rm1436089857/>,
+                 <https://www.imdb.com/name/nm4442569/mediaviewer/rm1516078081/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pati Patni Aur Woh (2019)
+<https://www.imdb.com/title/tt9680136/> a schema:Movie ;
+    schema:name "Pati Patni Aur Woh" ;
+    schema:url <https://www.imdb.com/title/tt9680136/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4442569/> ;
+        schema:characterName "Yamir"
+    ] .
+
+# Buro Sadhu (2019)
+<https://www.imdb.com/title/tt10636632/> a schema:Movie ;
+    schema:name "Buro Sadhu" ;
+    schema:url <https://www.imdb.com/title/tt10636632/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4442569/> ;
+        schema:characterName "Gulatiji"
+    ] .
+
+# Edakkad Battalion 06 (2019)
+<https://www.imdb.com/title/tt10218838/> a schema:Movie ;
+    schema:name "Edakkad Battalion 06" ;
+    schema:url <https://www.imdb.com/title/tt10218838/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4442569/> ;
+        schema:characterName "Vinodh Prabhakar"
+    ] .
+
+# Kaappaan (2019)
+<https://www.imdb.com/title/tt8411144/> a schema:Movie ;
+    schema:name "Kaappaan" ;
+    schema:url <https://www.imdb.com/title/tt8411144/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4442569/> ;
+        schema:characterName "IPS Officer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3759520793/> a schema:VideoObject ;
+        schema:name "Kadaram Kondan (2019) Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3759520793/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjlmYmNlYzUtM2Q0Ny00M2U2LTlkYzQtZDkyMTYxYTQzOWY3XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2019-07-04T15:27:51Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNmE5NWI5YzItMzM3Zi00YzI2LWE3MzItNmFlMTczYjRjZmMzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmE5NWI5YzItMzM3Zi00YzI2LWE3MzItNmFlMTczYjRjZmMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joy Badlani" ;
+    schema:height "1239"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4442569/mediaviewer/rm1436089857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjc0ZDYxODAtODhiYS00OGU5LTlkMTgtNzY1NDczNmFjMTJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Puneet Issar, Sayaji Shinde, Ashish Vidyarthi, Vasanth Kalyan, Chavan Prasad, Ram Pothineni, Joy Badlani, Madhusudhan Rao, Nabha Natesh, Nidhhi Agerwal, Deepak Shetty, and Getup Srinu in iSmart Shankar (2019)" ;
+    schema:height "1273"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4442569/mediaviewer/rm1516078081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmE5NWI5YzItMzM3Zi00YzI2LWE3MzItNmFlMTczYjRjZmMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joy Badlani" ;
+    schema:height "1239"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

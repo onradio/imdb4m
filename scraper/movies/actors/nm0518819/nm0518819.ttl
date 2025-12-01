@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0518819/> a schema:Person ;
+    schema:name "Jason R. Lone Hill" ;
+    schema:url <https://www.imdb.com/name/nm0518819/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jason R. Lone Hill. Actor: Dances with Wolves. Jason R. Lone Hill is known for Dances with Wolves (1990)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0105585/>,    # Thunderheart
+                       <https://www.imdb.com/title/tt0099348/> . # Dances with Wolves
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Thunderheart (1992)
+<https://www.imdb.com/title/tt0105585/> a schema:Movie ;
+    schema:name "Thunderheart" ;
+    schema:url <https://www.imdb.com/title/tt0105585/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0518819/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# Dances with Wolves (1990)
+<https://www.imdb.com/title/tt0099348/> a schema:Movie ;
+    schema:name "Dances with Wolves" ;
+    schema:url <https://www.imdb.com/title/tt0099348/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0518819/> ;
+        schema:characterName "Worm"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

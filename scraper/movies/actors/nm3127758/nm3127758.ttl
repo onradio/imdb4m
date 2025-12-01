@@ -1,0 +1,162 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3127758/> a schema:Person ;
+    schema:name "Karleen Griffin" ;
+    schema:url <https://www.imdb.com/name/nm3127758/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Karleen Griffin. Actress: Everyday Black Man. Born and raised in San Francisco, Karleen Griffin is a talented actress, mental health inspirational speaker, and meditation guru.\n\nThree months after moving to Los Angeles in 2005, Karleen booked her first national commercial campaign, \"Dove, Love the Skin Your In,\" representing curvy freckled-face women from all over the country. The campaign would pave the way for diversity in all shapes, sizes, curves, and freckles..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODM0ZjQxNzEtZTJjOC00MmZmLThkMWQtNWMzMDJmMWRhMWQwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2080374/>,    # Steve Jobs
+                       <https://www.imdb.com/title/tt1289397/>,    # Everyday Black Man
+                       <https://www.imdb.com/title/tt0910970/> ; # WALL·E
+
+
+    schema:video <https://www.imdb.com/video/vi3383073561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3127758/mediaviewer/rm1090946050/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm1158054914/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm2030470146/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm1980138498/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm200354561/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm2634300161/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm2718336002/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm2768667650/>,
+                 <https://www.imdb.com/name/nm3127758/mediaviewer/rm3095279105/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Steve Jobs (2015)
+<https://www.imdb.com/title/tt2080374/> a schema:Movie ;
+    schema:name "Steve Jobs" ;
+    schema:url <https://www.imdb.com/title/tt2080374/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3127758/> ;
+        schema:characterName "Steve's Stage Manager"
+    ] .
+
+# Everyday Black Man (2010)
+<https://www.imdb.com/title/tt1289397/> a schema:Movie ;
+    schema:name "Everyday Black Man" ;
+    schema:url <https://www.imdb.com/title/tt1289397/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3127758/> ;
+        schema:characterName "Prostitute"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3127758/> ;
+        schema:characterName "Mom"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3383073561/> a schema:VideoObject ;
+        schema:name "Everyday Black Man" ;
+        schema:description "Trailer for Everyday Black Man" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3383073561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjE2MTA3NjI5NV5BMl5BanBnXkFtZTcwMjMwODUyNA@@._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2010-12-25T06:12:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODM0ZjQxNzEtZTJjOC00MmZmLThkMWQtNWMzMDJmMWRhMWQwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM0ZjQxNzEtZTJjOC00MmZmLThkMWQtNWMzMDJmMWRhMWQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "8192"^^xsd:integer ;
+    schema:width "5464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm1090946050/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjkzOWJiYmYtMmVlYi00ZTdiLTk5Y2QtOTRiMjY0NjAyOThhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "3875"^^xsd:integer ;
+    schema:width "2592"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm1158054914/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjY1MzE2YzQtN2I3OS00ZDk5LThiYjMtMTcyZWM1NzQ4MmQ2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "2187"^^xsd:integer ;
+    schema:width "1284"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm2030470146/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmE2YjMyZTktM2VjNS00NWQ0LTg0ZWItYTdmODFmZjk0NmM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "1250"^^xsd:integer ;
+    schema:width "1064"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm1980138498/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQxNDA1ZjItOTJhYy00YTFhLTk0N2YtYTQ3MmVhZGI4MWNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Everyday Black Man - Screening" ;
+    schema:height "1436"^^xsd:integer ;
+    schema:width "1061"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm200354561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGMwNWZiMGQtMzVjNy00OWE0LWJjODMtYTA3M2UzYmVmNzhmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Live Action | WALL•E | Disney•Pixar - Karleen Griffin" ;
+    schema:height "723"^^xsd:integer ;
+    schema:width "1284"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm2634300161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTdjYjcyZjEtZmY4MS00MmMyLTgxZjMtMTE3Yjk5OTJmM2IwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tear the Paper Ceiling Campagin" ;
+    schema:height "8192"^^xsd:integer ;
+    schema:width "5464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm2718336002/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGMzMGE4ZjktYTMyNS00Yzk1LWI1ZmItZDk4YmZhNDE0YWEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "8192"^^xsd:integer ;
+    schema:width "5464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm2768667650/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGU0OGExNmQtNmUxOS00MzNjLThlMWItNTNlMTBlZTJjZjYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "8192"^^xsd:integer ;
+    schema:width "5464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3127758/mediaviewer/rm3095279105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDI2ZTE3YzgtZjM4ZC00OWFiLTlmOGYtNGQyOTZiYzk1MmYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karleen Griffin" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm3127758/>
+    schema:sameAs <https://www.facebook.com/karleengriffin>,
+                  <https://www.instagram.com/actresskarleen> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

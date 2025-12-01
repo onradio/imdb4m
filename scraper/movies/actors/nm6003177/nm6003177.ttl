@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6003177/> a schema:Person ;
+    schema:name "Mister Mackey Jr." ;
+    schema:url <https://www.imdb.com/name/nm6003177/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mister Mackey Jr.. Actor: 12 Years a Slave. Mister Mackey Jr. is known for 12 Years a Slave (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2024544/> .    # 12 Years a Slave
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 12 Years a Slave (2013)
+<https://www.imdb.com/title/tt2024544/> a schema:Movie ;
+    schema:name "12 Years a Slave" ;
+    schema:url <https://www.imdb.com/title/tt2024544/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6003177/> ;
+        schema:characterName "Randall"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

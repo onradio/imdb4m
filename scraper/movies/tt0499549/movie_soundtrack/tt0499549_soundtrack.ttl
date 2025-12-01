@@ -1,0 +1,41 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0499549/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "I See You (Theme from Avatar)" ;
+        schema:byArtist <https://www.imdb.com/name/nm2452244/> ; # Leona Lewis
+        schema:producer <https://www.imdb.com/name/nm0290788/>, # Simon Franglen
+                       <https://www.imdb.com/name/nm0000035/> ; # James Horner
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I See You (Theme from Avatar)" ;
+            schema:composer <https://www.imdb.com/name/nm0000035/>, # James Horner
+                        <https://www.imdb.com/name/nm0290788/> ; # Simon Franglen
+            schema:lyricist <https://www.imdb.com/name/nm0290788/>, # Simon Franglen
+                        <https://www.imdb.com/name/nm3854355/>, # Kuk Harrell
+                        <https://www.imdb.com/name/nm0000035/> # James Horner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bless the Plague" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000035/> a schema:Person ;
+    schema:name "James Horner" .
+<https://www.imdb.com/name/nm0290788/> a schema:Person ;
+    schema:name "Simon Franglen" .
+<https://www.imdb.com/name/nm2452244/> a schema:Person ;
+    schema:name "Leona Lewis" .
+<https://www.imdb.com/name/nm3854355/> a schema:Person ;
+    schema:name "Kuk Harrell" .
+# ==============================================================================

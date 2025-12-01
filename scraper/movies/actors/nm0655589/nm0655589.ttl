@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0655589/> a schema:Person ;
+    schema:name "Alyque Padamsee" ;
+    schema:url <https://www.imdb.com/name/nm0655589/> ;
+    schema:birthDate "1928-03-05"^^xsd:date ;
+    schema:jobTitle "Writer", "Director", "Actor" ;
+    schema:description "Alyque Padamsee. Actor: Gandhi. Alyque Padamsee was born on 5 March 1928 in Mumbai, Maharashtra, India. He was a writer and director, known for Gandhi (1982), Liril (Soap Advertisement) (1985) and A Force More Powerful (1999). He was married to Sharon Prabhakar, Dolly Thakore and Pearl Padamsee. He died on 17 November 2018 in Mumbai, India." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDk1M2FhYWYtZTQwZC00ZTA3LTkzM2MtNTRjYjA4NTE4OWYwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mumbai, Maharashtra, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0083987/> ;    # Gandhi
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0655589/mediaviewer/rm2227400960/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gandhi (1982)
+<https://www.imdb.com/title/tt0083987/> a schema:Movie ;
+    schema:name "Gandhi" ;
+    schema:url <https://www.imdb.com/title/tt0083987/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0655589/> ;
+        schema:characterName "Mohamed Ali Jinnah"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDk1M2FhYWYtZTQwZC00ZTA3LTkzM2MtNTRjYjA4NTE4OWYwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk1M2FhYWYtZTQwZC00ZTA3LTkzM2MtNTRjYjA4NTE4OWYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alyque Padamsee" ;
+    schema:height "2212"^^xsd:integer ;
+    schema:width "1732"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0655589/mediaviewer/rm2227400960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk1M2FhYWYtZTQwZC00ZTA3LTkzM2MtNTRjYjA4NTE4OWYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alyque Padamsee" ;
+    schema:height "2212"^^xsd:integer ;
+    schema:width "1732"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

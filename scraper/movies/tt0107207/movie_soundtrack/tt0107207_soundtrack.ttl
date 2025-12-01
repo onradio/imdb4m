@@ -1,0 +1,184 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0107207/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "In the Name of the Father" ;
+        schema:byArtist <https://www.imdb.com/name/nm0095104/>, # Bono
+                        <https://www.imdb.com/name/nm0294859/> ; # Gavin Friday
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "In the Name of the Father" ;
+            schema:author <https://www.imdb.com/name/nm0095104/>, # Bono
+                       <https://www.imdb.com/name/nm0294859/>, # Gavin Friday
+                       <https://www.imdb.com/name/nm0781696/> # Maurice Seezer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Voodoo Child (Slight Return)" ;
+        schema:byArtist <https://www.imdb.com/name/nm3061310/> ; # The Jimi Hendrix Experience
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Voodoo Child (Slight Return)" ;
+            schema:author <https://www.imdb.com/name/nm0001342/> # Jimi Hendrix
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Like a Rolling Stone" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001168/> ; # Bob Dylan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Like a Rolling Stone" ;
+            schema:author <https://www.imdb.com/name/nm0001168/> # Bob Dylan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Billy Boola" ;
+        schema:byArtist <https://www.imdb.com/name/nm0294859/>, # Gavin Friday
+                        <https://www.imdb.com/name/nm0095104/> ; # Bono
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Billy Boola" ;
+            schema:author <https://www.imdb.com/name/nm0095104/>, # Bono
+                       <https://www.imdb.com/name/nm0294859/>, # Gavin Friday
+                       <https://www.imdb.com/name/nm0781696/> # Maurice Seezer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tiger Feet" ;
+        schema:byArtist <https://www.imdb.com/name/nm2353516/> ; # Mud
+        schema:producer <https://www.imdb.com/name/nm1108769/>, # Nicky Chinn
+                       <https://www.imdb.com/name/nm1088720/> ; # Mike Chapman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tiger Feet" ;
+            schema:author <https://www.imdb.com/name/nm1108769/>, # Nicky Chinn
+                       <https://www.imdb.com/name/nm1088720/> # Mike Chapman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dedicated Follower of Fashion" ;
+        schema:byArtist <https://www.imdb.com/name/nm0455661/> ; # The Kinks
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dedicated Follower of Fashion" ;
+            schema:author <https://www.imdb.com/name/nm0203919/> # Ray Davies
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Leader of the Gang" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Leader of the Gang" ;
+            schema:composer <https://www.imdb.com/name/nm0322921/>, # Gary Glitter
+                        <https://www.imdb.com/name/nm0495132/> # Mike Leander
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday" ;
+            schema:author <https://www.imdb.com/name/nm0384558/>, # Patty S. Hill
+                       <https://www.imdb.com/name/nm0384530/> # Mildred J. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Is This Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0002490/> ; # Bob Marley
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In the Name of the Blues" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Godfather" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Godfather" ;
+            schema:composer <https://www.imdb.com/name/nm0000065/> # Nino Rota
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Whiskey in the Jar" ;
+        schema:byArtist <https://www.imdb.com/name/nm2277482/> ; # Thin Lizzy
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "(You Made Me the) Thief of Your Heart" ;
+        schema:byArtist <https://www.imdb.com/name/nm0640521/> ; # Sinéad O'Connor
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "(You Made Me the) Thief of Your Heart" ;
+            schema:author <https://www.imdb.com/name/nm0095104/>, # Bono
+                       <https://www.imdb.com/name/nm0294859/>, # Gavin Friday
+                       <https://www.imdb.com/name/nm0781696/> # Maurice Seezer
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000065/> a schema:Person ;
+    schema:name "Nino Rota" .
+<https://www.imdb.com/name/nm0001168/> a schema:Person ;
+    schema:name "Bob Dylan" .
+<https://www.imdb.com/name/nm0001342/> a schema:Person ;
+    schema:name "Jimi Hendrix" .
+<https://www.imdb.com/name/nm0002490/> a schema:Person ;
+    schema:name "Bob Marley" .
+<https://www.imdb.com/name/nm0095104/> a schema:Person ;
+    schema:name "Bono" .
+<https://www.imdb.com/name/nm0203919/> a schema:Person ;
+    schema:name "Ray Davies" .
+<https://www.imdb.com/name/nm0294859/> a schema:Person ;
+    schema:name "Gavin Friday" .
+<https://www.imdb.com/name/nm0322921/> a schema:Person ;
+    schema:name "Gary Glitter" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0455661/> a schema:Person ;
+    schema:name "The Kinks" .
+<https://www.imdb.com/name/nm0495132/> a schema:Person ;
+    schema:name "Mike Leander" .
+<https://www.imdb.com/name/nm0640521/> a schema:Person ;
+    schema:name "Sinéad O'Connor" .
+<https://www.imdb.com/name/nm0781696/> a schema:Person ;
+    schema:name "Maurice Seezer" .
+<https://www.imdb.com/name/nm1088720/> a schema:Person ;
+    schema:name "Mike Chapman" .
+<https://www.imdb.com/name/nm1108769/> a schema:Person ;
+    schema:name "Nicky Chinn" .
+<https://www.imdb.com/name/nm2277482/> a schema:Person ;
+    schema:name "Thin Lizzy" .
+<https://www.imdb.com/name/nm2353516/> a schema:Person ;
+    schema:name "Mud" .
+<https://www.imdb.com/name/nm3061310/> a schema:Person ;
+    schema:name "The Jimi Hendrix Experience" .
+# ==============================================================================

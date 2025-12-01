@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2402009/> a schema:Person ;
+    schema:name "Théo Sampaio" ;
+    schema:url <https://www.imdb.com/name/nm2402009/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Théo Sampaio. Actor: The Diving Bell and the Butterfly. Théo Sampaio is known for The Diving Bell and the Butterfly (2007) and Persepolis (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0808417/>,    # Persepolis
+                       <https://www.imdb.com/title/tt0401383/> . # The Diving Bell and the Butterfly
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Persepolis (2007)
+<https://www.imdb.com/title/tt0808417/> a schema:Movie ;
+    schema:name "Persepolis" ;
+    schema:url <https://www.imdb.com/title/tt0808417/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2402009/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# The Diving Bell and the Butterfly (2007)
+<https://www.imdb.com/title/tt0401383/> a schema:Movie ;
+    schema:name "The Diving Bell and the Butterfly" ;
+    schema:url <https://www.imdb.com/title/tt0401383/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2402009/> ;
+        schema:characterName "Théophile"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

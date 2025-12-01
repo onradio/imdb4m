@@ -1,0 +1,60 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0445479/> a schema:Person ;
+    schema:name "Chris Kell" ;
+    schema:url <https://www.imdb.com/name/nm0445479/> ;
+    schema:birthDate "1971-09-29"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Chris Kell. Actor: Gladiator. Chris Kell was born on 29 September 1971 in Berkshire, England, UK. He is an actor, known for Gladiator (2000)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Berkshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0172495/> .    # Gladiator
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gladiator (2000)
+<https://www.imdb.com/title/tt0172495/> a schema:Movie ;
+    schema:name "Gladiator" ;
+    schema:url <https://www.imdb.com/title/tt0172495/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0445479/> ;
+        schema:characterName "Scribe"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

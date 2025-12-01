@@ -1,0 +1,525 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0217251/> a schema:Person ;
+    schema:name "Tony O&apos;Dell" ;
+    schema:url <https://www.imdb.com/name/nm0217251/> ;
+    schema:birthDate "1960-01-30"^^xsd:date ;
+    schema:jobTitle "Additional Crew", "Actor", "Production Department" ;
+    schema:description "Tony O'Dell. Actor: The Karate Kid. Tony O'Dell was born on 30 January 1960 in Pasadena, California, USA. He is an actor, known for The Karate Kid (1984), Head of the Class (1986) and The Karate Kid Part II (1986)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTRkZTI2ODctMTljMi00MDRmLTk2YTYtOWJmNjE0NTk0OWFlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pasadena, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7221388/>,    # Cobra Kai
+                       <https://www.imdb.com/title/tt3598030/>,    # K.C. Undercover
+                       <https://www.imdb.com/title/tt1661326/>,    # Shake It Up
+                       <https://www.imdb.com/title/tt14759188/>,    # No More Kings: Sweep the Leg
+                       <https://www.imdb.com/title/tt0310460/>,    # George Lopez
+                       <https://www.imdb.com/title/tt0115376/>,    # Suddenly Susan
+                       <https://www.imdb.com/title/tt0112015/>,    # In the House
+                       <https://www.imdb.com/title/tt0090444/>,    # Head of the Class
+                       <https://www.imdb.com/title/tt0086765/>,    # Murder, She Wrote
+                       <https://www.imdb.com/title/tt0086744/>,    # Kids Incorporated
+                       <https://www.imdb.com/title/tt0091326/>,    # The Karate Kid Part II
+                       <https://www.imdb.com/title/tt0090837/>,    # Chopping Mall
+                       <https://www.imdb.com/title/tt0086662/>,    # Airwolf
+                       <https://www.imdb.com/title/tt0081930/>,    # Simon & Simon
+                       <https://www.imdb.com/title/tt0089109/>,    # Evils of the Night
+                       <https://www.imdb.com/title/tt0088587/>,    # Otherworld
+                       <https://www.imdb.com/title/tt0087538/>,    # The Karate Kid
+                       <https://www.imdb.com/title/tt0085048/>,    # Lottery!
+                       <https://www.imdb.com/title/tt0087378/>,    # Hadley's Rebellion
+                       <https://www.imdb.com/title/tt0283786/>,    # The Puppy's Further Adventures
+                       <https://www.imdb.com/title/tt0083474/>,    # The Scooby and Scrappy-Doo Puppy Hour
+                       <https://www.imdb.com/title/tt0081901/>,    # McClain's Law
+                       <https://www.imdb.com/title/tt0075471/>,    # ABC Weekend Specials
+                       <https://www.imdb.com/title/tt0079811/>,    # Rivals
+                       <https://www.imdb.com/title/tt0081856/>,    # Dynasty
+                       <https://www.imdb.com/title/tt0080444/>,    # Blinded by the Light
+                       <https://www.imdb.com/title/tt0080714/>,    # Falling in Love Again
+                       <https://www.imdb.com/title/tt0073992/>,    # Family
+                       <https://www.imdb.com/title/tt0075500/>,    # Eight Is Enough
+                       <https://www.imdb.com/title/tt0080219/>,    # Fridays
+                       <https://www.imdb.com/title/tt0083475/>,    # Scooby-Doo and Scrappy-Doo
+                       <https://www.imdb.com/title/tt0079228/>,    # Good Luck, Miss Wyckoff
+                       <https://www.imdb.com/title/tt0075488/> ; # CHiPs
+
+
+    schema:video <https://www.imdb.com/video/vi121748505/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0217251/mediaviewer/rm2921740033/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm2787522305/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm4045747969/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm3911530241/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm2433912320/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm1609281536/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm1475063808/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm1256960000/>,
+                 <https://www.imdb.com/name/nm0217251/mediaviewer/rm1273737216/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cobra Kai (2019)
+<https://www.imdb.com/title/tt7221388/> a schema:Movie ;
+    schema:name "Cobra Kai" ;
+    schema:url <https://www.imdb.com/title/tt7221388/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# K.C. Undercover (2015)
+<https://www.imdb.com/title/tt3598030/> a schema:Movie ;
+    schema:name "K.C. Undercover" ;
+    schema:url <https://www.imdb.com/title/tt3598030/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Mr. Hancock"
+    ] .
+
+# Shake It Up (2011)
+<https://www.imdb.com/title/tt1661326/> a schema:Movie ;
+    schema:name "Shake It Up" ;
+    schema:url <https://www.imdb.com/title/tt1661326/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Kelly"
+    ] .
+
+# No More Kings: Sweep the Leg (2007)
+<https://www.imdb.com/title/tt14759188/> a schema:Movie ;
+    schema:name "No More Kings: Sweep the Leg" ;
+    schema:url <https://www.imdb.com/title/tt14759188/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Cobra Kai Member"
+    ] .
+
+# George Lopez (2002)
+<https://www.imdb.com/title/tt0310460/> a schema:Movie ;
+    schema:name "George Lopez" ;
+    schema:url <https://www.imdb.com/title/tt0310460/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Patrick"
+    ] .
+
+# Suddenly Susan (2000)
+<https://www.imdb.com/title/tt0115376/> a schema:Movie ;
+    schema:name "Suddenly Susan" ;
+    schema:url <https://www.imdb.com/title/tt0115376/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Bird"
+    ] .
+
+# In the House (1996)
+<https://www.imdb.com/title/tt0112015/> a schema:Movie ;
+    schema:name "In the House" ;
+    schema:url <https://www.imdb.com/title/tt0112015/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Jonathan"
+    ] .
+
+# Head of the Class (1986)
+<https://www.imdb.com/title/tt0090444/> a schema:Movie ;
+    schema:name "Head of the Class" ;
+    schema:url <https://www.imdb.com/title/tt0090444/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Alan Pinkard"
+    ] .
+
+# Murder, She Wrote (1988)
+<https://www.imdb.com/title/tt0086765/> a schema:Movie ;
+    schema:name "Murder, She Wrote" ;
+    schema:url <https://www.imdb.com/title/tt0086765/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Larry McIver"
+    ] .
+
+# Kids Incorporated (1988)
+<https://www.imdb.com/title/tt0086744/> a schema:Movie ;
+    schema:name "Kids Incorporated" ;
+    schema:url <https://www.imdb.com/title/tt0086744/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Barney"
+    ] .
+
+# The Karate Kid Part II (1986)
+<https://www.imdb.com/title/tt0091326/> a schema:Movie ;
+    schema:name "The Karate Kid Part II" ;
+    schema:url <https://www.imdb.com/title/tt0091326/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# Chopping Mall (1986)
+<https://www.imdb.com/title/tt0090837/> a schema:Movie ;
+    schema:name "Chopping Mall" ;
+    schema:url <https://www.imdb.com/title/tt0090837/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Ferdy Meisel"
+    ] .
+
+# Airwolf (1986)
+<https://www.imdb.com/title/tt0086662/> a schema:Movie ;
+    schema:name "Airwolf" ;
+    schema:url <https://www.imdb.com/title/tt0086662/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Terry Haines"
+    ] .
+
+# Simon & Simon (1985)
+<https://www.imdb.com/title/tt0081930/> a schema:Movie ;
+    schema:name "Simon & Simon" ;
+    schema:url <https://www.imdb.com/title/tt0081930/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Jerry Carton"
+    ] .
+
+# Evils of the Night (1985)
+<https://www.imdb.com/title/tt0089109/> a schema:Movie ;
+    schema:name "Evils of the Night" ;
+    schema:url <https://www.imdb.com/title/tt0089109/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Otherworld (1985)
+<https://www.imdb.com/title/tt0088587/> a schema:Movie ;
+    schema:name "Otherworld" ;
+    schema:url <https://www.imdb.com/title/tt0088587/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Trace Sterling"
+    ] .
+
+# The Karate Kid (1984)
+<https://www.imdb.com/title/tt0087538/> a schema:Movie ;
+    schema:name "The Karate Kid" ;
+    schema:url <https://www.imdb.com/title/tt0087538/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# Lottery! (1984)
+<https://www.imdb.com/title/tt0085048/> a schema:Movie ;
+    schema:name "Lottery!" ;
+    schema:url <https://www.imdb.com/title/tt0085048/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Glen Sawyer"
+    ] .
+
+# Hadley's Rebellion (1983)
+<https://www.imdb.com/title/tt0087378/> a schema:Movie ;
+    schema:name "Hadley's Rebellion" ;
+    schema:url <https://www.imdb.com/title/tt0087378/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Dorm Boy"
+    ] .
+
+# The Puppy's Further Adventures (1982)
+<https://www.imdb.com/title/tt0283786/> a schema:Movie ;
+    schema:name "The Puppy's Further Adventures" ;
+    schema:url <https://www.imdb.com/title/tt0283786/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "(voice, credit only)"
+    ] .
+
+# The Scooby and Scrappy-Doo Puppy Hour (1982)
+<https://www.imdb.com/title/tt0083474/> a schema:Movie ;
+    schema:name "The Scooby and Scrappy-Doo Puppy Hour" ;
+    schema:url <https://www.imdb.com/title/tt0083474/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# McClain's Law (1982)
+<https://www.imdb.com/title/tt0081901/> a schema:Movie ;
+    schema:name "McClain's Law" ;
+    schema:url <https://www.imdb.com/title/tt0081901/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Quinn"
+    ] .
+
+# ABC Weekend Specials (1981)
+<https://www.imdb.com/title/tt0075471/> a schema:Movie ;
+    schema:name "ABC Weekend Specials" ;
+    schema:url <https://www.imdb.com/title/tt0075471/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# Rivals (1981)
+<https://www.imdb.com/title/tt0079811/> a schema:Movie ;
+    schema:name "Rivals" ;
+    schema:url <https://www.imdb.com/title/tt0079811/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "A Student"
+    ] .
+
+# Dynasty (1981)
+<https://www.imdb.com/title/tt0081856/> a schema:Movie ;
+    schema:name "Dynasty" ;
+    schema:url <https://www.imdb.com/title/tt0081856/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Christopher"
+    ] .
+
+# Blinded by the Light (1980)
+<https://www.imdb.com/title/tt0080444/> a schema:Movie ;
+    schema:name "Blinded by the Light" ;
+    schema:url <https://www.imdb.com/title/tt0080444/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName ""
+    ] .
+
+# Falling in Love Again (1980)
+<https://www.imdb.com/title/tt0080714/> a schema:Movie ;
+    schema:name "Falling in Love Again" ;
+    schema:url <https://www.imdb.com/title/tt0080714/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Donny Lewis (Present day)"
+    ] .
+
+# Family (1980)
+<https://www.imdb.com/title/tt0073992/> a schema:Movie ;
+    schema:name "Family" ;
+    schema:url <https://www.imdb.com/title/tt0073992/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Howard"
+    ] .
+
+# Eight Is Enough (1980)
+<https://www.imdb.com/title/tt0075500/> a schema:Movie ;
+    schema:name "Eight Is Enough" ;
+    schema:url <https://www.imdb.com/title/tt0075500/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Scott"
+    ] .
+
+# Fridays (1980)
+<https://www.imdb.com/title/tt0080219/> a schema:Movie ;
+    schema:name "Fridays" ;
+    schema:url <https://www.imdb.com/title/tt0080219/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Scooby-Doo and Scrappy-Doo (1979)
+<https://www.imdb.com/title/tt0083475/> a schema:Movie ;
+    schema:name "Scooby-Doo and Scrappy-Doo" ;
+    schema:url <https://www.imdb.com/title/tt0083475/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Good Luck, Miss Wyckoff (1979)
+<https://www.imdb.com/title/tt0079228/> a schema:Movie ;
+    schema:name "Good Luck, Miss Wyckoff" ;
+    schema:url <https://www.imdb.com/title/tt0079228/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Student"
+    ] .
+
+# CHiPs (1978)
+<https://www.imdb.com/title/tt0075488/> a schema:Movie ;
+    schema:name "CHiPs" ;
+    schema:url <https://www.imdb.com/title/tt0075488/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0217251/> ;
+        schema:characterName "Teenager"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi121748505/> a schema:VideoObject ;
+        schema:name "Chopping Mall" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi121748505/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGQ0N2FlZDgtYjZmYS00YzhmLTg2MDQtMjJhZjgwNDFmOGQyXkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT54S"^^xsd:duration ;
+        schema:uploadDate "2019-08-10T17:15:51Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTRkZTI2ODctMTljMi00MDRmLTk2YTYtOWJmNjE0NTk0OWFlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTRkZTI2ODctMTljMi00MDRmLTk2YTYtOWJmNjE0NTk0OWFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony O'Dell" ;
+    schema:height "2719"^^xsd:integer ;
+    schema:width "2724"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm2921740033/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGYyNDdhOWItMDgxOS00MDg2LTg0YzEtODg4ZjRjYjc4OGU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robin Givens, Brian Robbins, Billy Connolly, Tony O'Dell, Michael DeLorenzo, Dan Frischman, Khrystyne Haje, Lara Piper, Rain Pryor, Ke Huy Quan, Kimberly Russell, Dan Schneider, and De'voreaux White in Head of the Class (1986)" ;
+    schema:height "3371"^^xsd:integer ;
+    schema:width "3354"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm2787522305/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDE4M2M4ZTktZjAzZS00NTk1LWI0ZGItMGRhY2QxYzhjYWQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Connolly, Tony O'Dell, Michael DeLorenzo, Khrystyne Haje, Lara Piper, and Ke Huy Quan in Head of the Class (1986)" ;
+    schema:height "2007"^^xsd:integer ;
+    schema:width "3128"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm4045747969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDEyOTBiNzItYTUwYi00NmYzLWI2M2ItN2E1OWY1YjBjODg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony O'Dell, Ke Huy Quan, and Kimberly Russell in Head of the Class (1986)" ;
+    schema:height "2779"^^xsd:integer ;
+    schema:width "3384"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm3911530241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDRmMDA3OGEtODNkNy00ODBjLWI4OTYtZTMxMDA3YTkyM2RhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brian Robbins, Tony O'Dell, Ke Huy Quan, and Kimberly Russell in Head of the Class (1986)" ;
+    schema:height "2715"^^xsd:integer ;
+    schema:width "2384"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm2433912320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4Mzg5MTg1MV5BMl5BanBnXkFtZTcwMjE2NDAxMw@@._V1_.jpg> ;
+    schema:caption "Robin Givens, Brian Robbins, Tony O'Dell, Michael DeLorenzo, Dan Frischman, Khrystyne Haje, Howard Hesseman, Lara Piper, Rain Pryor, Kimberly Russell, Dan Schneider, and De'voreaux White in Head of the Class (1986)" ;
+    schema:height "1392"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm1609281536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjcyMjY4NmYtOTUzOC00NjljLTg3MTYtYTc5ZmQ2ZTcwMjJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robin Givens and Tony O'Dell" ;
+    schema:height "3057"^^xsd:integer ;
+    schema:width "2035"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm1475063808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWQ1ODQ2YjItZWMxOC00YjgzLWJhZTYtZDQyNmRiNWIxMWYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Cruise, Tony O'Dell, and Ron Thomas" ;
+    schema:height "240"^^xsd:integer ;
+    schema:width "278"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm1256960000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmY3OTQ2NjktYzQ2Yi00MjMyLTlhYzAtMmIyMzg1MmIxNGIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Will Smith and Tony O'Dell" ;
+    schema:height "240"^^xsd:integer ;
+    schema:width "320"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0217251/mediaviewer/rm1273737216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY1NGVlMWMtY2IxOS00ZDVjLTllMzYtYjg3ZTE3ZDc2NzE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony O'Dell, Ron Thomas, and William Zabka" ;
+    schema:height "240"^^xsd:integer ;
+    schema:width "320"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

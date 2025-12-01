@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7621668/> a schema:Person ;
+    schema:name "Zaira Wasim" ;
+    schema:url <https://www.imdb.com/name/nm7621668/> ;
+    schema:birthDate "2000-10-23"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Zaira Wasim. Actress: Dangal. Zaira Wasim was born on 23 October 2000 in Srinagar, Jammu and Kashmir, India. She is an actress, known for Dangal (2016), Secret Superstar (2017) and The Sky Is Pink (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGFiZWJkNTYtOTExYy00YWQ3LTlkYmItMDRjMTIxYzYxMjRhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Srinagar, Jammu and Kashmir, India"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.55"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 1″ (1.55 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8902990/>,    # The Sky Is Pink
+                       <https://www.imdb.com/title/tt6108090/>,    # Secret Superstar
+                       <https://www.imdb.com/title/tt5074352/>,    # Dangal
+                       <https://www.imdb.com/title/tt13782786/> ; # Microsoft Lumia - Sapney Kangana Ranaut TVC
+
+
+    schema:video <https://www.imdb.com/video/vi413712153/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7621668/mediaviewer/rm1079477761/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm1129809409/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm2019001857/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm2070708481/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm2087485697/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm1886159105/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm1919713537/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm1953267969/>,
+                 <https://www.imdb.com/name/nm7621668/mediaviewer/rm1986822401/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Sky Is Pink (2019)
+<https://www.imdb.com/title/tt8902990/> a schema:Movie ;
+    schema:name "The Sky Is Pink" ;
+    schema:url <https://www.imdb.com/title/tt8902990/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621668/> ;
+        schema:characterName "Aisha Chaudhary"
+    ] .
+
+# Secret Superstar (2017)
+<https://www.imdb.com/title/tt6108090/> a schema:Movie ;
+    schema:name "Secret Superstar" ;
+    schema:url <https://www.imdb.com/title/tt6108090/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621668/> ;
+        schema:characterName "Insia"
+    ] .
+
+# Dangal (2016)
+<https://www.imdb.com/title/tt5074352/> a schema:Movie ;
+    schema:name "Dangal" ;
+    schema:url <https://www.imdb.com/title/tt5074352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621668/> ;
+        schema:characterName "Young Geeta"
+    ] .
+
+# Microsoft Lumia - Sapney Kangana Ranaut TVC (2015)
+<https://www.imdb.com/title/tt13782786/> a schema:Movie ;
+    schema:name "Microsoft Lumia - Sapney Kangana Ranaut TVC" ;
+    schema:url <https://www.imdb.com/title/tt13782786/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621668/> ;
+        schema:characterName "Pia Dhirwan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi413712153/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi413712153/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDU4NDE2NTYtZDMwMC00NWQwLTkyYzUtMmQyYWQwNjkyYjhjXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M5S"^^xsd:duration ;
+        schema:uploadDate "2019-09-10T04:42:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGFiZWJkNTYtOTExYy00YWQ3LTlkYmItMDRjMTIxYzYxMjRhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGFiZWJkNTYtOTExYy00YWQ3LTlkYmItMDRjMTIxYzYxMjRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim" ;
+    schema:height "2109"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1079477761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2YxNTY2MTAtNTljYS00NDcyLTlkMmMtNWNjYjU1NDk0NmZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in The Sky Is Pink (2019)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1129809409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTUwYTdhZDctNTY5NS00ZDM1LWI4ZjAtOWYxODg5MjFmNzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in The Sky Is Pink (2019)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm2019001857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODEzMjhlYTEtNmNmYy00NmNlLWJlODMtYjIzNmJmMjhlMWZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in The Sky Is Pink (2019)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm2070708481/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjU4Y2FkNzgtMWFiZC00MThjLThhYmItZTMzODNkYjg5NTU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in Dangal (2016)" ;
+    schema:height "571"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm2087485697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2Y0YjA4ZTQtNGIzMC00NzgwLThjNDctYjJhZmQ0NjA5YzYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in The Sky Is Pink (2019)" ;
+    schema:height "786"^^xsd:integer ;
+    schema:width "964"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1886159105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzc0OWJjZDQtZDU2My00NjdhLTk1NGUtNzRmNjI1MGVmNDhkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in Dangal (2016)" ;
+    schema:height "570"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1919713537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDgxYWUxNWYtMzdmMC00MGJiLWEzYjAtYTI0MDY4NGU4NTU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in Secret Superstar (2017)" ;
+    schema:height "578"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1953267969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2M0ZTgxZDgtNGJhMS00ODIxLTk4ODEtMTEwZGZkOTAyZmE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in Dangal (2016)" ;
+    schema:height "572"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621668/mediaviewer/rm1986822401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTE2N2M0NTctNDg1NC00NTFmLTljOTItMzhiZjI5ZDRjMDY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zaira Wasim in The Sky Is Pink (2019)" ;
+    schema:height "572"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10346131/> a schema:Person ;
+    schema:name "Archana Jois" ;
+    schema:url <https://www.imdb.com/name/nm10346131/> ;
+    schema:birthDate "1994-12-24"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Archana Jois. Actress: K.G.F: Chapter 2. The plot of the film is inspired from the Mahabharata. The character of Rocky resembles Daanveer Karan who was the central protagonist of the epic Mahabharata. The old Suryavardhan resembles Dhritarasthra/ Bhishma. The character sketch of Rocky takes its inspiration from Karna and lord Rama (the protagonist of Ramayana) who were a savior or a messiah, daanveer for the poor subjects and the protector..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ramanathapura, Karnataka,India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10251434/>,    # Vijayaratha
+                       <https://www.imdb.com/title/tt7838252/>,    # K.G.F
+                       <https://www.imdb.com/title/tt10270986/> ; # Mahamayi
+
+
+    schema:video <https://www.imdb.com/video/vi2679687193/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10346131/mediaviewer/rm2323884545/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Vijayaratha (2019)
+<https://www.imdb.com/title/tt10251434/> a schema:Movie ;
+    schema:name "Vijayaratha" ;
+    schema:url <https://www.imdb.com/title/tt10251434/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10346131/> ;
+        schema:characterName ""
+    ] .
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10346131/> ;
+        schema:characterName "Gangamma"
+    ] .
+
+# Mahamayi (2016)
+<https://www.imdb.com/title/tt10270986/> a schema:Movie ;
+    schema:name "Mahamayi" ;
+    schema:url <https://www.imdb.com/title/tt10270986/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10346131/> ;
+        schema:characterName "Sundari"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2679687193/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2679687193/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWU3NjYyMjUtNzgzZC00MjI4LTkwOTItNzMwYWMyNjdlMjMyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M26S"^^xsd:duration ;
+        schema:uploadDate "2025-04-23T13:48:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm10346131/mediaviewer/rm2323884545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2M0YmIxNzItOWI4My00MmQzLWE0NGYtZTM3NjllNjIwZjc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archana Jois and Yash in K.G.F (2018)" ;
+    schema:height "750"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

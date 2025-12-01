@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8198252/> a schema:Person ;
+    schema:name "Madhussneha Upadhyay" ;
+    schema:url <https://www.imdb.com/name/nm8198252/> ;
+    schema:birthDate "1989-01-06"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Madhussneha Upadhyay. Actress: Baahubali: The Beginning. Madhussneha Upadhyay was born on 6 January 1989 in Kolkata, West Bengal, India. She is an actress, known for Baahubali: The Beginning (2015), Ishq Aur Desire (2019) and Not Out (2022)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNmUxMTZmMjItOWUyNC00ZTdhLTliZmEtYWQwMGQyZTA2MzU5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kolkata, West Bengal, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10044800/>,    # Coldd Lassi Aur Chicken Masala
+                       <https://www.imdb.com/title/tt10042260/>,    # Ishq Aur Desire
+                       <https://www.imdb.com/title/tt2631186/> ; # Baahubali: The Beginning
+
+
+    schema:video <https://www.imdb.com/video/vi1924448537/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8198252/mediaviewer/rm433993472/>,
+                 <https://www.imdb.com/name/nm8198252/mediaviewer/rm2621072640/>,
+                 <https://www.imdb.com/name/nm8198252/mediaviewer/rm384394496/>,
+                 <https://www.imdb.com/name/nm8198252/mediaviewer/rm2654627072/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Coldd Lassi Aur Chicken Masala (2019)
+<https://www.imdb.com/title/tt10044800/> a schema:Movie ;
+    schema:name "Coldd Lassi Aur Chicken Masala" ;
+    schema:url <https://www.imdb.com/title/tt10044800/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8198252/> ;
+        schema:characterName "Tanvi"
+    ] .
+
+# Ishq Aur Desire (2019)
+<https://www.imdb.com/title/tt10042260/> a schema:Movie ;
+    schema:name "Ishq Aur Desire" ;
+    schema:url <https://www.imdb.com/title/tt10042260/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8198252/> ;
+        schema:characterName "Anaysha"
+    ] .
+
+# Baahubali: The Beginning (2015)
+<https://www.imdb.com/title/tt2631186/> a schema:Movie ;
+    schema:name "Baahubali: The Beginning" ;
+    schema:url <https://www.imdb.com/title/tt2631186/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8198252/> ;
+        schema:characterName "Dancer in Blue Blouse"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1924448537/> a schema:VideoObject ;
+        schema:name "Bekaaboo Trailer" ;
+        schema:description "Kiyaan Roy's bestselling erotica novel gifts him a life that appears as perfect as a dream. However, the deepest corners of his heart desire for a different kind of pleasure; a wild pleasure that comes with pain. One day he realizes that someone has been watching him and knows his secret. Someone, who is equally obsessed with the pleasure in pain. Surprised at his luck and tempted by the opportunity, he sets out to explore his dark fantasies with her. But things turn out to be wilder than his imagination and he ends up at the verge of losing everything he ever had-right from his reputation and career, to his family and fiancée. Will Kiyaan be able to reclaim his perfect life, or lose it all in this chase for the thrill in pain?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1924448537/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDZkOWRkZmUtMjU5My00MDJjLWI5NmMtMzUyYmIwYWEzNzg0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2020-09-03T04:45:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNmUxMTZmMjItOWUyNC00ZTdhLTliZmEtYWQwMGQyZTA2MzU5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmUxMTZmMjItOWUyNC00ZTdhLTliZmEtYWQwMGQyZTA2MzU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Madhussneha Upadhyay" ;
+    schema:height "2100"^^xsd:integer ;
+    schema:width "1400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8198252/mediaviewer/rm433993472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOThmM2ZkMzQtNjI3ZS00ZGMwLWE3NjctZmMzOTdkNjcwNjUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhas, Scarlett Mellish Wilson, Nora Fatehi, and Madhussneha Upadhyay in Baahubali: The Beginning (2015)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8198252/mediaviewer/rm2621072640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmRiM2Q3NzAtMTIxOS00MGRkLWExZGYtN2U2NWQxZjQwNDZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Madhussneha Upadhyay" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8198252/mediaviewer/rm384394496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2YyOWNhMTctZDUwNy00NjQxLTg3OGMtOTk4ODk0NjRhZjg1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rajeev Siddhartha, Priya Banerjee, and Madhussneha Upadhyay in Ishq Aur Desire (2019)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8198252/mediaviewer/rm2654627072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmUxMTZmMjItOWUyNC00ZTdhLTliZmEtYWQwMGQyZTA2MzU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Madhussneha Upadhyay" ;
+    schema:height "2100"^^xsd:integer ;
+    schema:width "1400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

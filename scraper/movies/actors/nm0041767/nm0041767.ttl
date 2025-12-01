@@ -1,0 +1,137 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0041767/> a schema:Person ;
+    schema:name "Joe Aufiery" ;
+    schema:url <https://www.imdb.com/name/nm0041767/> ;
+    schema:birthDate "1946-09-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Stunts" ;
+    schema:description "Joe Aufiery. Actor: Dead Poets Society. Joe Aufiery was born on 17 September 1946 in Philadelphia, Pennsylvania, USA. He was an actor, known for Dead Poets Society (1989), Fighting Back (1982) and Liebestraum (1991). He died on 10 July 2001 in Philadelphia, Pennsylvania, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Philadelphia, Pennsylvania, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0102299/>,    # Liebestraum
+                       <https://www.imdb.com/title/tt0097165/>,    # Dead Poets Society
+                       <https://www.imdb.com/title/tt0092468/>,    # Tour of Duty
+                       <https://www.imdb.com/title/tt0202179/>,    # ABC Afterschool Specials
+                       <https://www.imdb.com/title/tt0088612/>,    # Spenser: For Hire
+                       <https://www.imdb.com/title/tt0092569/>,    # Anna
+                       <https://www.imdb.com/title/tt0092798/> . # Critical Condition
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Law & Order (1992)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Harold Dwyer"
+    ] .
+
+# Liebestraum (1991)
+<https://www.imdb.com/title/tt0102299/> a schema:Movie ;
+    schema:name "Liebestraum" ;
+    schema:url <https://www.imdb.com/title/tt0102299/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Buddy"
+    ] .
+
+# Dead Poets Society (1989)
+<https://www.imdb.com/title/tt0097165/> a schema:Movie ;
+    schema:name "Dead Poets Society" ;
+    schema:url <https://www.imdb.com/title/tt0097165/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Chemistry Teacher"
+    ] .
+
+# Tour of Duty (1989)
+<https://www.imdb.com/title/tt0092468/> a schema:Movie ;
+    schema:name "Tour of Duty" ;
+    schema:url <https://www.imdb.com/title/tt0092468/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Brady"
+    ] .
+
+# ABC Afterschool Specials (1989)
+<https://www.imdb.com/title/tt0202179/> a schema:Movie ;
+    schema:name "ABC Afterschool Specials" ;
+    schema:url <https://www.imdb.com/title/tt0202179/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Earl"
+    ] .
+
+# Spenser: For Hire (1988)
+<https://www.imdb.com/title/tt0088612/> a schema:Movie ;
+    schema:name "Spenser: For Hire" ;
+    schema:url <https://www.imdb.com/title/tt0088612/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Officer Fielding"
+    ] .
+
+# Anna (1987)
+<https://www.imdb.com/title/tt0092569/> a schema:Movie ;
+    schema:name "Anna" ;
+    schema:url <https://www.imdb.com/title/tt0092569/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Stage Manager"
+    ] .
+
+# Critical Condition (1987)
+<https://www.imdb.com/title/tt0092798/> a schema:Movie ;
+    schema:name "Critical Condition" ;
+    schema:url <https://www.imdb.com/title/tt0092798/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0041767/> ;
+        schema:characterName "Prosecutor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

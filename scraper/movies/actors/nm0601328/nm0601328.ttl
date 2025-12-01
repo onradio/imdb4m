@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0601328/> a schema:Person ;
+    schema:name "Jane Moore" ;
+    schema:url <https://www.imdb.com/name/nm0601328/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jane Moore. Actress: Dead Poets Society. Jane Moore is known for Dead Poets Society (1989), The Upside (2017) and Philadelphia (1993)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1987680/>,    # The Upside
+                       <https://www.imdb.com/title/tt0109784/>,    # A Feast at Midnight
+                       <https://www.imdb.com/title/tt0107818/>,    # Philadelphia
+                       <https://www.imdb.com/title/tt0097165/>,    # Dead Poets Society
+                       <https://www.imdb.com/title/tt0093493/> . # Mannequin
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Upside (2017)
+<https://www.imdb.com/title/tt1987680/> a schema:Movie ;
+    schema:name "The Upside" ;
+    schema:url <https://www.imdb.com/title/tt1987680/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601328/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# A Feast at Midnight (1994)
+<https://www.imdb.com/title/tt0109784/> a schema:Movie ;
+    schema:name "A Feast at Midnight" ;
+    schema:url <https://www.imdb.com/title/tt0109784/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601328/> ;
+        schema:characterName "German Couple"
+    ] .
+
+# Philadelphia (1993)
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601328/> ;
+        schema:characterName "Lydia Glines"
+    ] .
+
+# Dead Poets Society (1989)
+<https://www.imdb.com/title/tt0097165/> a schema:Movie ;
+    schema:name "Dead Poets Society" ;
+    schema:url <https://www.imdb.com/title/tt0097165/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601328/> ;
+        schema:characterName "Mrs. Danburry"
+    ] .
+
+# Mannequin (1987)
+<https://www.imdb.com/title/tt0093493/> a schema:Movie ;
+    schema:name "Mannequin" ;
+    schema:url <https://www.imdb.com/title/tt0093493/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601328/> ;
+        schema:characterName "Tina"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

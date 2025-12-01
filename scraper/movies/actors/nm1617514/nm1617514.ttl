@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1617514/> a schema:Person ;
+    schema:name "Cara D. Briggs" ;
+    schema:url <https://www.imdb.com/name/nm1617514/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Cara D. Briggs. Actress: Sin City. Cara D. Briggs is known for Sin City (2005), Wing Commander: Prophecy (1997) and Wing Commander: Secret Ops (1998)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0401792/>,    # Sin City
+                       <https://www.imdb.com/title/tt0245565/>,    # Wing Commander: Secret Ops
+                       <https://www.imdb.com/title/tt0120519/>,    # Wing Commander: Prophecy
+                       <https://www.imdb.com/title/tt1450744/> ; # BioForge
+
+
+    schema:video <https://www.imdb.com/video/vi667983385/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sin City (2005)
+<https://www.imdb.com/title/tt0401792/> a schema:Movie ;
+    schema:name "Sin City" ;
+    schema:url <https://www.imdb.com/title/tt0401792/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1617514/> ;
+        schema:characterName "Hearing Panel Person"
+    ] .
+
+# Wing Commander: Secret Ops (1998)
+<https://www.imdb.com/title/tt0245565/> a schema:Movie ;
+    schema:name "Wing Commander: Secret Ops" ;
+    schema:url <https://www.imdb.com/title/tt0245565/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1617514/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Wing Commander: Prophecy (1997)
+<https://www.imdb.com/title/tt0120519/> a schema:Movie ;
+    schema:name "Wing Commander: Prophecy" ;
+    schema:url <https://www.imdb.com/title/tt0120519/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1617514/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# BioForge (1995)
+<https://www.imdb.com/title/tt1450744/> a schema:Movie ;
+    schema:name "BioForge" ;
+    schema:url <https://www.imdb.com/title/tt1450744/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1617514/> ;
+        schema:characterName "Dr. Escher"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi667983385/> a schema:VideoObject ;
+        schema:name "Sin City" ;
+        schema:description "Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi667983385/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjQ1YmQ4ZjItZWMyZS00YjUwLTgxYmUtODNhYmIwZWNjYzY1XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M52S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:46:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

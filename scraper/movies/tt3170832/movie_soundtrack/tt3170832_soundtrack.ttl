@@ -1,0 +1,67 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3170832/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Bag Fight" ;
+        schema:byArtist <https://www.imdb.com/name/nm0046004/>, # Klaus Badelt
+                        <https://www.imdb.com/name/nm3908159/>, # Daniel Rojas
+                        <https://www.imdb.com/name/nm1543821/> ; # Andrew Raiher
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bag Fight" ;
+            schema:author <https://www.imdb.com/name/nm0046004/>, # Klaus Badelt
+                       <https://www.imdb.com/name/nm1543821/> # Andrew Raiher
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Big Rock Candy Mountain" ;
+        schema:byArtist <https://www.imdb.com/name/nm0488953/> ; # Brie Larson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Big Rock Candy Mountain" ;
+            schema:author <https://www.imdb.com/name/nm0565860/> # Harry McClintock
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Mighty Rio Grande" ;
+        schema:byArtist <https://www.imdb.com/name/nm4616122/> ; # This Will Destroy You
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Campfire" ;
+        schema:byArtist <https://www.imdb.com/name/nm2096445/> ; # Jon Hopkins
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Campfire" ;
+            schema:author <https://www.imdb.com/name/nm2096445/> # Jon Hopkins
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0046004/> a schema:Person ;
+    schema:name "Klaus Badelt" .
+<https://www.imdb.com/name/nm0488953/> a schema:Person ;
+    schema:name "Brie Larson" .
+<https://www.imdb.com/name/nm0565860/> a schema:Person ;
+    schema:name "Harry McClintock" .
+<https://www.imdb.com/name/nm1543821/> a schema:Person ;
+    schema:name "Andrew Raiher" .
+<https://www.imdb.com/name/nm2096445/> a schema:Person ;
+    schema:name "Jon Hopkins" .
+<https://www.imdb.com/name/nm3908159/> a schema:Person ;
+    schema:name "Daniel Rojas" .
+<https://www.imdb.com/name/nm4616122/> a schema:Person ;
+    schema:name "This Will Destroy You" .
+# ==============================================================================

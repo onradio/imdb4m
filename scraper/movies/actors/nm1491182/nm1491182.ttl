@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1491182/> a schema:Person ;
+    schema:name "Shintaro Wada" ;
+    schema:url <https://www.imdb.com/name/nm1491182/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shintaro Wada. Actor: The Last Samurai. Shintaro Wada is known for The Last Samurai (2003), Shin yôjo densetsu: seirên (2004) and TB-013 (2002)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt29231952/>,    # Pachinko no Zotto Suru Toshi Densetsu
+                       <https://www.imdb.com/title/tt0468862/>,    # Shin yôjo densetsu: seirên
+                       <https://www.imdb.com/title/tt0325710/>,    # The Last Samurai
+                       <https://www.imdb.com/title/tt10598208/> . # TB-013
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pachinko no Zotto Suru Toshi Densetsu (2013)
+<https://www.imdb.com/title/tt29231952/> a schema:Movie ;
+    schema:name "Pachinko no Zotto Suru Toshi Densetsu" ;
+    schema:url <https://www.imdb.com/title/tt29231952/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491182/> ;
+        schema:characterName ""
+    ] .
+
+# Shin yôjo densetsu: seirên (2004)
+<https://www.imdb.com/title/tt0468862/> a schema:Movie ;
+    schema:name "Shin yôjo densetsu: seirên" ;
+    schema:url <https://www.imdb.com/title/tt0468862/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491182/> ;
+        schema:characterName "Chucky Shin"
+    ] .
+
+# The Last Samurai (2003)
+<https://www.imdb.com/title/tt0325710/> a schema:Movie ;
+    schema:name "The Last Samurai" ;
+    schema:url <https://www.imdb.com/title/tt0325710/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491182/> ;
+        schema:characterName "Young Recruit"
+    ] .
+
+# TB-013 (2002)
+<https://www.imdb.com/title/tt10598208/> a schema:Movie ;
+    schema:name "TB-013" ;
+    schema:url <https://www.imdb.com/title/tt10598208/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491182/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

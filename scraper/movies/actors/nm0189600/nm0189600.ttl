@@ -1,0 +1,163 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0189600/> a schema:Person ;
+    schema:name "Alice Marie Crowe" ;
+    schema:url <https://www.imdb.com/name/nm0189600/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Alice Marie Crowe. Actress: Jerry Maguire. Alice Marie Crowe was an actress, known for Jerry Maguire (1996), Almost Famous (2000) and Elizabethtown (2005). She was married to James A. Crowe. She died on 11 September 2019." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1389137/>,    # We Bought a Zoo
+                       <https://www.imdb.com/title/tt0368709/>,    # Elizabethtown
+                       <https://www.imdb.com/title/tt0259711/>,    # Vanilla Sky
+                       <https://www.imdb.com/title/tt0181875/>,    # Almost Famous
+                       <https://www.imdb.com/title/tt0116695/>,    # Jerry Maguire
+                       <https://www.imdb.com/title/tt0105415/>,    # Singles
+                       <https://www.imdb.com/title/tt0098258/> ; # Say Anything...
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0189600/mediaviewer/rm3761374208/>,
+                 <https://www.imdb.com/name/nm0189600/mediaviewer/rm2721820928/>,
+                 <https://www.imdb.com/name/nm0189600/mediaviewer/rm2973544704/>,
+                 <https://www.imdb.com/name/nm0189600/mediaviewer/rm1243788032/>,
+                 <https://www.imdb.com/name/nm0189600/mediaviewer/rm3669530880/>,
+                 <https://www.imdb.com/name/nm0189600/mediaviewer/rm3635976448/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# We Bought a Zoo (2011)
+<https://www.imdb.com/title/tt1389137/> a schema:Movie ;
+    schema:name "We Bought a Zoo" ;
+    schema:url <https://www.imdb.com/title/tt1389137/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Parrot Lady"
+    ] .
+
+# Elizabethtown (2005)
+<https://www.imdb.com/title/tt0368709/> a schema:Movie ;
+    schema:name "Elizabethtown" ;
+    schema:url <https://www.imdb.com/title/tt0368709/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Aunt Lena"
+    ] .
+
+# Vanilla Sky (2001)
+<https://www.imdb.com/title/tt0259711/> a schema:Movie ;
+    schema:name "Vanilla Sky" ;
+    schema:url <https://www.imdb.com/title/tt0259711/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Lucid Dreamer"
+    ] .
+
+# Almost Famous (2000)
+<https://www.imdb.com/title/tt0181875/> a schema:Movie ;
+    schema:name "Almost Famous" ;
+    schema:url <https://www.imdb.com/title/tt0181875/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Mrs. Deegan"
+    ] .
+
+# Jerry Maguire (1996)
+<https://www.imdb.com/title/tt0116695/> a schema:Movie ;
+    schema:name "Jerry Maguire" ;
+    schema:url <https://www.imdb.com/title/tt0116695/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Alice"
+    ] .
+
+# Singles (1992)
+<https://www.imdb.com/title/tt0105415/> a schema:Movie ;
+    schema:name "Singles" ;
+    schema:url <https://www.imdb.com/title/tt0105415/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Dr. Jamison's Nurse"
+    ] .
+
+# Say Anything... (1989)
+<https://www.imdb.com/title/tt0098258/> a schema:Movie ;
+    schema:name "Say Anything..." ;
+    schema:url <https://www.imdb.com/title/tt0098258/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0189600/> ;
+        schema:characterName "Teacher at Graduation"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm3761374208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTgxZmUwNjItMjM4My00MjZjLTkxZTMtZDhlNDk0MDFjZDQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bonnie Hunt, Larina Jean Adamson, Kelly Coffield Park, Alice Marie Crowe, Winnie Holzman, Diana Jordan, Susan Norfleet, Susan Pingleton, Cha Cha Sandoval-McMahon, and Hynden Walch in Jerry Maguire (1996)" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "2430"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm2721820928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4NjAyNDYzN15BMl5BanBnXkFtZTcwNzgzNTgzNw@@._V1_.jpg> ;
+    schema:caption "Dan Biggers, Orlando Bloom, Alice Marie Crowe, Ted Manson, Paul Schneider, Loudon Wainwright III, and Paula Deen in Elizabethtown (2005)" ;
+    schema:height "1347"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm2973544704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM0NTI5NjI3MF5BMl5BanBnXkFtZTcwOTU4NTgzNw@@._V1_.jpg> ;
+    schema:caption "Dan Biggers, Orlando Bloom, Alice Marie Crowe, Patty Griffin, Michael Naughton, Paul Schneider, Loudon Wainwright III, Paula Deen, Reid Thompson Steen, and Maxwell Moss Steen in Elizabethtown (2005)" ;
+    schema:height "1347"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm1243788032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0MDIyNTcxNV5BMl5BanBnXkFtZTcwNTgxOTMxNw@@._V1_.jpg> ;
+    schema:caption "Matt Damon, Thomas Haden Church, Angus Macfadyen, Alice Marie Crowe, Patrick Fugit, Scarlett Johansson, Elle Fanning, Colin Ford, Maggie Elizabeth Jones, Crystal the Monkey, Dustin Ybarra, Ben Seeder, and Sam Fox in We Bought a Zoo (2011)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm3669530880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcyOTY4ODkxMV5BMl5BanBnXkFtZTYwNDg4MjQ3._V1_.jpg> ;
+    schema:caption "Alice Marie Crowe and Paula Deen in Elizabethtown (2005)" ;
+    schema:height "319"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0189600/mediaviewer/rm3635976448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIxMzg4MzY1Nl5BMl5BanBnXkFtZTYwOTg4MjQ3._V1_.jpg> ;
+    schema:caption "Alice Marie Crowe and Paula Deen in Elizabethtown (2005)" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

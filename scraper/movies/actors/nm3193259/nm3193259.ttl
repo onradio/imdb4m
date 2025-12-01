@@ -1,0 +1,99 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3193259/> a schema:Person ;
+    schema:name "Azharuddin Mohammed Ismail" ;
+    schema:url <https://www.imdb.com/name/nm3193259/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Azharuddin Mohammed Ismail. Actor: Slumdog Millionaire. Azharuddin Mohammed Ismail was born in 1998 in Mumbai, India. He is an actor, known for Slumdog Millionaire (2008), Super 30 (2019) and Dukandar (2010)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmI0NTNkNjEtNjMxOC00OWI3LWE4MzgtZmE3MDcyOWEwNjZlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mumbai, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7485048/>,    # Super 30
+                       <https://www.imdb.com/title/tt1494696/>,    # Dukandar
+                       <https://www.imdb.com/title/tt1010048/> ; # Slumdog Millionaire
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3193259/mediaviewer/rm482642688/>,
+                 <https://www.imdb.com/name/nm3193259/mediaviewer/rm2100196608/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Super 30 (2019)
+<https://www.imdb.com/title/tt7485048/> a schema:Movie ;
+    schema:name "Super 30" ;
+    schema:url <https://www.imdb.com/title/tt7485048/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193259/> ;
+        schema:characterName "Keshu"
+    ] .
+
+# Dukandar (2010)
+<https://www.imdb.com/title/tt1494696/> a schema:Movie ;
+    schema:name "Dukandar" ;
+    schema:url <https://www.imdb.com/title/tt1494696/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193259/> ;
+        schema:characterName "Mahesh"
+    ] .
+
+# Slumdog Millionaire (2008)
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3193259/> ;
+        schema:characterName "Youngest Salim"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmI0NTNkNjEtNjMxOC00OWI3LWE4MzgtZmE3MDcyOWEwNjZlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmI0NTNkNjEtNjMxOC00OWI3LWE4MzgtZmE3MDcyOWEwNjZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Azharuddin Mohammed Ismail" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "683"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3193259/mediaviewer/rm482642688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg3OTkzNjExNV5BMl5BanBnXkFtZTcwMjkxODQzMg@@._V1_.jpg> ;
+    schema:caption "Rubina Ali and Azharuddin Mohammed Ismail" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3193259/mediaviewer/rm2100196608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmI0NTNkNjEtNjMxOC00OWI3LWE4MzgtZmE3MDcyOWEwNjZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Azharuddin Mohammed Ismail" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "683"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

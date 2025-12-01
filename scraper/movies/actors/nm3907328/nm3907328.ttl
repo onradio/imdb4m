@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3907328/> a schema:Person ;
+    schema:name "Blake Friedman" ;
+    schema:url <https://www.imdb.com/name/nm3907328/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Blake Friedman. Actor: Hachi: A Dog's Tale. Blake Friedman is known for Hachi: A Dog's Tale (2009), All's Faire in Love (2009) and All Ages (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1780763/>,    # All Ages
+                       <https://www.imdb.com/title/tt1034090/>,    # All's Faire in Love
+                       <https://www.imdb.com/title/tt1028532/> . # Hachi: A Dog's Tale
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# All Ages (2011)
+<https://www.imdb.com/title/tt1780763/> a schema:Movie ;
+    schema:name "All Ages" ;
+    schema:url <https://www.imdb.com/title/tt1780763/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3907328/> ;
+        schema:characterName "Kate"
+    ] .
+
+# All's Faire in Love (2009)
+<https://www.imdb.com/title/tt1034090/> a schema:Movie ;
+    schema:name "All's Faire in Love" ;
+    schema:url <https://www.imdb.com/title/tt1034090/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3907328/> ;
+        schema:characterName "Receptionist"
+    ] .
+
+# Hachi: A Dog's Tale (2009)
+<https://www.imdb.com/title/tt1028532/> a schema:Movie ;
+    schema:name "Hachi: A Dog's Tale" ;
+    schema:url <https://www.imdb.com/title/tt1028532/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3907328/> ;
+        schema:characterName "Student"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

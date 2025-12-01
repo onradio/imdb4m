@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1096480/> a schema:Person ;
+    schema:name "Michael Elsworth" ;
+    schema:url <https://www.imdb.com/name/nm1096480/> ;
+    schema:birthDate "1932-06-12"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Michael Elsworth. Actor: The Lord of the Rings: The Fellowship of the Ring. Michael Elsworth was born on 12 June 1932 in the UK. He is an actor, known for The Lord of the Rings: The Fellowship of the Ring (2001), Dark Knight (2000) and The Illusion (2013)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt28651844/>,    # The Illusion
+                       <https://www.imdb.com/title/tt0167260/>,    # The Lord of the Rings: The Return of the King
+                       <https://www.imdb.com/title/tt0120737/>,    # The Lord of the Rings: The Fellowship of the Ring
+                       <https://www.imdb.com/title/tt0251504/>,    # Dark Knight
+                       <https://www.imdb.com/title/tt0116365/> . # The Frighteners
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Illusion (2013)
+<https://www.imdb.com/title/tt28651844/> a schema:Movie ;
+    schema:name "The Illusion" ;
+    schema:url <https://www.imdb.com/title/tt28651844/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1096480/> ;
+        schema:characterName "Archibald Cardini"
+    ] .
+
+# The Lord of the Rings: The Return of the King (2003)
+<https://www.imdb.com/title/tt0167260/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:url <https://www.imdb.com/title/tt0167260/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1096480/> ;
+        schema:characterName "Cirdan the Shipwright"
+    ] .
+
+# The Lord of the Rings: The Fellowship of the Ring (2001)
+<https://www.imdb.com/title/tt0120737/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Fellowship of the Ring" ;
+    schema:url <https://www.imdb.com/title/tt0120737/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1096480/> ;
+        schema:characterName "Gondorian Archivist"
+    ] .
+
+# Dark Knight (2000)
+<https://www.imdb.com/title/tt0251504/> a schema:Movie ;
+    schema:name "Dark Knight" ;
+    schema:url <https://www.imdb.com/title/tt0251504/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1096480/> ;
+        schema:characterName "Male Courtier"
+    ] .
+
+# The Frighteners (1996)
+<https://www.imdb.com/title/tt0116365/> a schema:Movie ;
+    schema:name "The Frighteners" ;
+    schema:url <https://www.imdb.com/title/tt0116365/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1096480/> ;
+        schema:characterName "Undertaker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

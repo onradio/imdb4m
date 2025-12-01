@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10504250/> a schema:Person ;
+    schema:name "Carrie Louise Putrello" ;
+    schema:url <https://www.imdb.com/name/nm10504250/> ;
+    schema:birthDate "1969-08-01"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Carrie Louise Putrello. Actress: Joker. Carrie Louise Putrello was born on 1 August 1969 in the USA. She is an actress, known for Joker (2019), The Ultimate Playlist of Noise (2021) and My Sister Is Not Someone to Mess With (2025)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.71"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7½″ (1.71 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7286456/> ;    # Joker
+
+
+    schema:video <https://www.imdb.com/video/vi3754084121/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Joker (2019)
+<https://www.imdb.com/title/tt7286456/> a schema:Movie ;
+    schema:name "Joker" ;
+    schema:url <https://www.imdb.com/title/tt7286456/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10504250/> ;
+        schema:characterName "Martha Wayne"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3754084121/> a schema:VideoObject ;
+        schema:name "Just for Showmance - Teaser" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3754084121/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2RiYmMyYzgtNzU3ZS00NzAxLWFhZGUtMzQ2YTY5ODAzYWU2XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2023-10-11T15:15:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

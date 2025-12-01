@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4016934/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Song at the End of the Century" ;
+        schema:byArtist <https://www.imdb.com/name/nm3892241/> ; # Kim Tae-ri
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Old Scars and Fresh Pink Wounds" ;
+        schema:byArtist <https://www.imdb.com/name/nm4272950/> ; # Tim Ribchester
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Saviour Who Came to Tear My Life Apart" ;
+        schema:byArtist <https://www.imdb.com/name/nm1195119/> ; # Kim Min-hee
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ladies are the Dolls of Maids" ;
+        schema:byArtist <https://www.imdb.com/name/nm3892241/> ; # Kim Tae-ri
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "So This was the Scent" ;
+        schema:byArtist <https://www.imdb.com/name/nm3892241/> ; # Kim Tae-ri
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Four Small Silver Balls" ;
+        schema:byArtist <https://www.imdb.com/name/nm1195119/>, # Kim Min-hee
+                        <https://www.imdb.com/name/nm3892241/> ; # Kim Tae-ri
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Footsteps of My Dear Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm3745929/> ; # Son Ga-in
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Handmaiden" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Handmaiden" ;
+            schema:composer <https://www.imdb.com/name/nm0423280/> # Cho Young-wuk
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pieces for Harpsichord: Suite in E minor, Tambourin" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pieces for Harpsichord: Suite in E minor, Tambourin" ;
+            schema:author <https://www.imdb.com/name/nm0708150/> # Jean-Philippe Rameau
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Clarinet Quintet in A major, K581, 2nd movement, Larghetto" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Clarinet Quintet in A major, K581, 2nd movement, Larghetto" ;
+            schema:composer <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0423280/> a schema:Person ;
+    schema:name "Cho Young-wuk" .
+<https://www.imdb.com/name/nm0708150/> a schema:Person ;
+    schema:name "Jean-Philippe Rameau" .
+<https://www.imdb.com/name/nm1195119/> a schema:Person ;
+    schema:name "Kim Min-hee" .
+<https://www.imdb.com/name/nm3745929/> a schema:Person ;
+    schema:name "Son Ga-in" .
+<https://www.imdb.com/name/nm3892241/> a schema:Person ;
+    schema:name "Kim Tae-ri" .
+<https://www.imdb.com/name/nm4272950/> a schema:Person ;
+    schema:name "Tim Ribchester" .
+# ==============================================================================

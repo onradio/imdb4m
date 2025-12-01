@@ -1,0 +1,241 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6384402/> a schema:Person ;
+    schema:name "Mary Wiseman" ;
+    schema:url <https://www.imdb.com/name/nm6384402/> ;
+    schema:birthDate "1985-07-30"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:description "Mary Wiseman. Actress: Star Trek: Discovery. Mary Wiseman was born on 30 July 1985. She is an actress, known for Star Trek: Discovery (2017), Marriage Story (2019) and Baskets (2016). She was previously married to Noah Averbach-Katz." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmQ0MThmMmItMzIyMS00OGIxLThmNDQtNjc2Y2JhYmE3NzU0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.68"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6″ (1.68 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5171438/>,    # Star Trek: Discovery
+                       <https://www.imdb.com/title/tt3468798/>,    # Baskets
+                       <https://www.imdb.com/title/tt6064882/>,    # Room 104
+                       <https://www.imdb.com/title/tt7653254/>,    # Marriage Story
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7904876/>,    # Health to the King
+                       <https://www.imdb.com/title/tt9059594/>,    # Star Trek: Short Treks
+                       <https://www.imdb.com/title/tt1836037/>,    # Longmire
+                       <https://www.imdb.com/title/tt4676574/>,    # Difficult People
+                       <https://www.imdb.com/title/tt5228026/>,    # The Characters
+                       <https://www.imdb.com/title/tt3623828/>,    # Three Dates
+                       <https://www.imdb.com/title/tt4608698/>,    # Craft & Burn
+                       <https://www.imdb.com/title/tt0931112/> ; # Star Trek Online
+
+
+    schema:video <https://www.imdb.com/video/vi2811872025/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6384402/mediaviewer/rm2562803457/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm958148865/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm1361299457/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm1176750081/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm3724990977/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm1287235329/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm3292222976/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm3638120448/>,
+                 <https://www.imdb.com/name/nm6384402/mediaviewer/rm1701139200/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5171438/> a schema:Movie ;
+    schema:name "Star Trek: Discovery" ;
+    schema:url <https://www.imdb.com/title/tt5171438/> .
+
+<https://www.imdb.com/title/tt3468798/> a schema:Movie ;
+    schema:name "Baskets" ;
+    schema:url <https://www.imdb.com/title/tt3468798/> .
+
+<https://www.imdb.com/title/tt6064882/> a schema:Movie ;
+    schema:name "Room 104" ;
+    schema:url <https://www.imdb.com/title/tt6064882/> .
+
+<https://www.imdb.com/title/tt7653254/> a schema:Movie ;
+    schema:name "Marriage Story" ;
+    schema:url <https://www.imdb.com/title/tt7653254/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Health to the King (2018)
+<https://www.imdb.com/title/tt7904876/> a schema:Movie ;
+    schema:name "Health to the King" ;
+    schema:url <https://www.imdb.com/title/tt7904876/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Nurse"
+    ] .
+
+# Star Trek: Short Treks (2018)
+<https://www.imdb.com/title/tt9059594/> a schema:Movie ;
+    schema:name "Star Trek: Short Treks" ;
+    schema:url <https://www.imdb.com/title/tt9059594/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Sylvia Tilly"
+    ] .
+
+# Longmire (2016)
+<https://www.imdb.com/title/tt1836037/> a schema:Movie ;
+    schema:name "Longmire" ;
+    schema:url <https://www.imdb.com/title/tt1836037/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Meg Joyce"
+    ] .
+
+# Difficult People (2016)
+<https://www.imdb.com/title/tt4676574/> a schema:Movie ;
+    schema:name "Difficult People" ;
+    schema:url <https://www.imdb.com/title/tt4676574/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Sarah Nussbaum's Co-Worker"
+    ] .
+
+# The Characters (2016)
+<https://www.imdb.com/title/tt5228026/> a schema:Movie ;
+    schema:name "The Characters" ;
+    schema:url <https://www.imdb.com/title/tt5228026/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Shannon"
+    ] .
+
+# Three Dates (2014)
+<https://www.imdb.com/title/tt3623828/> a schema:Movie ;
+    schema:name "Three Dates" ;
+    schema:url <https://www.imdb.com/title/tt3623828/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Stacey"
+    ] .
+
+# Craft & Burn (2012)
+<https://www.imdb.com/title/tt4608698/> a schema:Movie ;
+    schema:name "Craft & Burn" ;
+    schema:url <https://www.imdb.com/title/tt4608698/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Senior Server"
+    ] .
+
+# Star Trek Online (2010)
+<https://www.imdb.com/title/tt0931112/> a schema:Movie ;
+    schema:name "Star Trek Online" ;
+    schema:url <https://www.imdb.com/title/tt0931112/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6384402/> ;
+        schema:characterName "Sylvia Tilly"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2811872025/> a schema:VideoObject ;
+        schema:name "Official Season 4 Trailer" ;
+        schema:description "Season four of STAR TREK: DISCOVERY finds Captain Burnham and the crew of the U.S.S. Discovery facing a threat unlike any they've ever encountered. With Federation and non-Federation worlds alike feeling the impact, they must confront the unknown and work together to ensure a hopeful future for all." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2811872025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjU2ZTRmZWEtYzIxZS00NzI1LWIxMWYtZDA4ZTViNDE2ZWZhXkEyXkFqcGdeQXNuZXNodQ@@._V1_.jpg" ;
+        schema:duration "PT2M12S"^^xsd:duration ;
+        schema:uploadDate "2021-10-10T07:00:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmQ0MThmMmItMzIyMS00OGIxLThmNDQtNjc2Y2JhYmE3NzU0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmQ0MThmMmItMzIyMS00OGIxLThmNDQtNjc2Y2JhYmE3NzU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mary Wiseman at an event for Star Trek: Discovery (2017)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm2562803457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEyZDI5YTQtYmJlNC00ZDYxLWI3NmUtYTdkZTY2MTM1NTI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wilson Cruz, Doug Jones, Callum Keith Rennie, Blu del Barrio, Sonequa Martin-Green, David Ajala, and Mary Wiseman in Red Directive (2024)" ;
+    schema:height "1440"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm958148865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ4ZDc4ZTAtYWI3OS00MTU0LWE0MDQtZjJkZjAwYmE1YzQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sonequa Martin-Green and Mary Wiseman in Terra Firma, Part 1 (2020)" ;
+    schema:height "758"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm1361299457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzFmZjFhODMtODhjZS00ZjU4LTlhYWMtNDVkMmU4ZTZjZWVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mary Wiseman and Oyin Oladejo in That Hope Is You, Part 2 (2021)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm1176750081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWVjNGNhNGMtNWM3OC00ODUwLWI0NzctYTMyZGZjNTMwM2JjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anthony Rapp, Blu del Barrio, Sonequa Martin-Green, David Ajala, Emily Coutts, Patrick Kwok-Choon, Sara Mitich, Mary Wiseman, and Oyin Oladejo in That Hope Is You, Part 2 (2021)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm3724990977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTFiY2QyYTEtNzQwNS00ZmYwLWI3MDEtMThiMWJkMDY3YWVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jake Weber and Mary Wiseman in Far from Home (2020)" ;
+    schema:height "1069"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm1287235329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDlkOTEwMWUtZWVkOS00Yjk3LTkzMTItOTQ3ZDExOGRlODJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michelle Yeoh, Anthony Rapp, Sonequa Martin-Green, and Mary Wiseman in People of Earth (2020)" ;
+    schema:height "802"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm3292222976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGFlZmUyNmQtYWE4Mi00MWQ2LTkzMGItYTM5Y2NlYzE0MWQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mary Wiseman in Star Trek: Discovery (2017)" ;
+    schema:height "746"^^xsd:integer ;
+    schema:width "550"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm3638120448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWM3Mjg5MWYtYThiOS00ZDM1LWJlZjUtZGNiNTcxMzI3MDcwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Doug Jones, Anthony Rapp, and Mary Wiseman in Star Trek: Discovery (2017)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6384402/mediaviewer/rm1701139200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDA3YWRhMDctNjE4MC00MDJmLWFkY2YtNzM3N2NkZDM0YTljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sonequa Martin-Green, Matt Mira, and Mary Wiseman in After Trek (2017)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

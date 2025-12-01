@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2799207/> a schema:Person ;
+    schema:name "Frank S. Aronson" ;
+    schema:url <https://www.imdb.com/name/nm2799207/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Frank S. Aronson. Actor: Hachi: A Dog's Tale. Frank S. Aronson is known for Hachi: A Dog's Tale (2009), The God Question (2014) and Dribbles (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3120970/>,    # The God Question
+                       <https://www.imdb.com/title/tt1028532/>,    # Hachi: A Dog's Tale
+                       <https://www.imdb.com/title/tt1347157/>,    # Henry
+                       <https://www.imdb.com/title/tt1111786/> ; # Dribbles
+
+
+    schema:video <https://www.imdb.com/video/vi367636249/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The God Question (2014)
+<https://www.imdb.com/title/tt3120970/> a schema:Movie ;
+    schema:name "The God Question" ;
+    schema:url <https://www.imdb.com/title/tt3120970/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2799207/> ;
+        schema:characterName "David Kaplan"
+    ] .
+
+# Hachi: A Dog's Tale (2009)
+<https://www.imdb.com/title/tt1028532/> a schema:Movie ;
+    schema:name "Hachi: A Dog's Tale" ;
+    schema:url <https://www.imdb.com/title/tt1028532/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2799207/> ;
+        schema:characterName "Milton - The Butcher"
+    ] .
+
+# Henry (2008)
+<https://www.imdb.com/title/tt1347157/> a schema:Movie ;
+    schema:name "Henry" ;
+    schema:url <https://www.imdb.com/title/tt1347157/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2799207/> ;
+        schema:characterName "Henry Feld"
+    ] .
+
+# Dribbles (2007)
+<https://www.imdb.com/title/tt1111786/> a schema:Movie ;
+    schema:name "Dribbles" ;
+    schema:url <https://www.imdb.com/title/tt1111786/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2799207/> ;
+        schema:characterName "Bus Driver"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi367636249/> a schema:VideoObject ;
+        schema:name "The God Question" ;
+        schema:description "Trailer for The God Question" ;
+        schema:embedUrl <https://www.imdb.com/video/vi367636249/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTM4OWU3NTQtYzdhMS00NGI0LWEzOTAtYzE1YmFiMDMxMjdmXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M12S"^^xsd:duration ;
+        schema:uploadDate "2014-10-11T05:10:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

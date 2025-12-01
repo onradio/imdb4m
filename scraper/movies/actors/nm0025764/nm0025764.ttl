@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0025764/> a schema:Person ;
+    schema:name "Yano Anaya" ;
+    schema:url <https://www.imdb.com/name/nm0025764/> ;
+    schema:birthDate "1972-05-16"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Additional Crew" ;
+    schema:description "Yano Anaya. Actor: A Christmas Story. Yano Anaya is an American actor, a Body Transformation Expert, and Exercise Science Educator, known for his work as Grover Dill in A Christmas Story (1983). He was one of the paperboys in the film Better Off Dead... (1985) and performed all of the voice-over dialogue for the lead paper boy in the film. He also starred alongside Dylan McDermott and Dean Stockwell in..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Miami, Florida, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094768/>,    # The Blue Iguana
+                       <https://www.imdb.com/title/tt0088794/>,    # Better Off Dead...
+                       <https://www.imdb.com/title/tt5211630/>,    # Van Halen: Hot for Teacher
+                       <https://www.imdb.com/title/tt0085334/> ; # A Christmas Story
+
+
+    schema:video <https://www.imdb.com/video/vi1624491289/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Blue Iguana (1988)
+<https://www.imdb.com/title/tt0094768/> a schema:Movie ;
+    schema:name "The Blue Iguana" ;
+    schema:url <https://www.imdb.com/title/tt0094768/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0025764/> ;
+        schema:characterName "Yano"
+    ] .
+
+# Better Off Dead... (1985)
+<https://www.imdb.com/title/tt0088794/> a schema:Movie ;
+    schema:name "Better Off Dead..." ;
+    schema:url <https://www.imdb.com/title/tt0088794/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0025764/> ;
+        schema:characterName "Paperboy"
+    ] .
+
+# Van Halen: Hot for Teacher (1984)
+<https://www.imdb.com/title/tt5211630/> a schema:Movie ;
+    schema:name "Van Halen: Hot for Teacher" ;
+    schema:url <https://www.imdb.com/title/tt5211630/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0025764/> ;
+        schema:characterName "Young Michael"
+    ] .
+
+# A Christmas Story (1983)
+<https://www.imdb.com/title/tt0085334/> a schema:Movie ;
+    schema:name "A Christmas Story" ;
+    schema:url <https://www.imdb.com/title/tt0085334/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0025764/> ;
+        schema:characterName "Grover Dill"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1624491289/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "During an adventure spanning two years and two countries, two mega-fans of \"A Christmas Story\" set out to discover all the film's shooting locations. Along the way they uncover forgotten facts, discover little-known locations and recover long-lost movie memorabilia." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1624491289/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNThkOGI2Y2QtMzY3Ni00NzMxLWJjMTktMTlkYzFmZDRhNTdkXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT3M4S"^^xsd:duration ;
+        schema:uploadDate "2022-12-30T15:29:11Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

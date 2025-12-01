@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2655195/> a schema:Person ;
+    schema:name "Chip Love" ;
+    schema:url <https://www.imdb.com/name/nm2655195/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Chip Love. Actor: No Country for Old Men. Chip Love is known for No Country for Old Men (2007) and 60 Minutes (1968)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0477348/> .    # No Country for Old Men
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# No Country for Old Men (2007)
+<https://www.imdb.com/title/tt0477348/> a schema:Movie ;
+    schema:name "No Country for Old Men" ;
+    schema:url <https://www.imdb.com/title/tt0477348/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2655195/> ;
+        schema:characterName "Man in Ford"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

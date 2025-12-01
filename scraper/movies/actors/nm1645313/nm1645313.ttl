@@ -1,0 +1,420 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1645313/> a schema:Person ;
+    schema:name "Christopher Lowell" ;
+    schema:url <https://www.imdb.com/name/nm1645313/> ;
+    schema:birthDate "1984-10-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Christopher Lowell. Actor: The Help. Chris Lowell can currently be seen in Emerald Fennell's feature PROMISING YOUNG WOMAN, opposite Carey Mulligan, for Film Nation and Focus Features, which premiered at Sundance 2020, as well as the hit Hulu series HOW I MET YOUR FATHER. He just wrapped a recurring role on Shonda Rhimes's highly anticipated Netflix series INVENTING ANNA, which will premiere February 11th, Damon Thomas's feature MY BEST FRIEND'S..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGM0M2U0MWUtMzFmNC00ZDgxLWFjZTktZTViZDY3MTc0MTdkXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Atlanta, Georgia, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1454029/>,    # The Help
+                       <https://www.imdb.com/title/tt1193138/>,    # Up in the Air
+                       <https://www.imdb.com/title/tt2184398/>,    # Beside Still Waters
+                       <https://www.imdb.com/title/tt9620292/>,    # Promising Young Woman
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5770786/>,    # GLOW
+                       <https://www.imdb.com/title/tt3501584/>,    # iZombie
+                       <https://www.imdb.com/title/tt4866982/>,    # Graves
+                       <https://www.imdb.com/title/tt2543312/>,    # Halt and Catch Fire
+                       <https://www.imdb.com/title/tt4547938/>,    # Katie Says Goodbye
+                       <https://www.imdb.com/title/tt4460854/>,    # Chronically Metropolitan
+                       <https://www.imdb.com/title/tt3378252/>,    # HelLA
+                       <https://www.imdb.com/title/tt4230700/>,    # Complete Unknown
+                       <https://www.imdb.com/title/tt3469916/>,    # Play It Again, Dick
+                       <https://www.imdb.com/title/tt2741950/>,    # Enlisted
+                       <https://www.imdb.com/title/tt2771372/>,    # Veronica Mars
+                       <https://www.imdb.com/title/tt2113408/>,    # Next Time on Lonny
+                       <https://www.imdb.com/title/tt1877688/>,    # Brightest Star
+                       <https://www.imdb.com/title/tt1976989/>,    # Love and Honor
+                       <https://www.imdb.com/title/tt0972412/>,    # Private Practice
+                       <https://www.imdb.com/title/tt38953559/>,    # Private Practice Season 1: Bloopers
+                       <https://www.imdb.com/title/tt38953403/>,    # Private Practice Season 1: Deleted Scenes
+                       <https://www.imdb.com/title/tt0412253/>,    # Veronica Mars
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt0475286/>,    # Graduation
+                       <https://www.imdb.com/title/tt0490701/>,    # Before You Here
+                       <https://www.imdb.com/title/tt0411004/> ; # Life as We Know It
+
+    schema:award [
+        a schema:Award ;
+        schema:description "10 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi51431193/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1645313/mediaviewer/rm789647104/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm1019660800/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm4040685312/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm780126720/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm1024249856/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm2799277056/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm3706322945/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm3723100161/>,
+                 <https://www.imdb.com/name/nm1645313/mediaviewer/rm3739877377/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1454029/> a schema:Movie ;
+    schema:name "The Help" ;
+    schema:url <https://www.imdb.com/title/tt1454029/> .
+
+<https://www.imdb.com/title/tt1193138/> a schema:Movie ;
+    schema:name "Up in the Air" ;
+    schema:url <https://www.imdb.com/title/tt1193138/> .
+
+<https://www.imdb.com/title/tt2184398/> a schema:Movie ;
+    schema:name "Beside Still Waters" ;
+    schema:url <https://www.imdb.com/title/tt2184398/> .
+
+<https://www.imdb.com/title/tt9620292/> a schema:Movie ;
+    schema:name "Promising Young Woman" ;
+    schema:url <https://www.imdb.com/title/tt9620292/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# GLOW (2017)
+<https://www.imdb.com/title/tt5770786/> a schema:Movie ;
+    schema:name "GLOW" ;
+    schema:url <https://www.imdb.com/title/tt5770786/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Bash Howard"
+    ] .
+
+# iZombie (2019)
+<https://www.imdb.com/title/tt3501584/> a schema:Movie ;
+    schema:name "iZombie" ;
+    schema:url <https://www.imdb.com/title/tt3501584/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Byron Deceasey"
+    ] .
+
+# Graves (2016)
+<https://www.imdb.com/title/tt4866982/> a schema:Movie ;
+    schema:name "Graves" ;
+    schema:url <https://www.imdb.com/title/tt4866982/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Jeremy Graves"
+    ] .
+
+# Halt and Catch Fire (2017)
+<https://www.imdb.com/title/tt2543312/> a schema:Movie ;
+    schema:name "Halt and Catch Fire" ;
+    schema:url <https://www.imdb.com/title/tt2543312/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Donna's one-night stand"
+    ] .
+
+# Katie Says Goodbye (2016)
+<https://www.imdb.com/title/tt4547938/> a schema:Movie ;
+    schema:name "Katie Says Goodbye" ;
+    schema:url <https://www.imdb.com/title/tt4547938/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Dirk"
+    ] .
+
+# Chronically Metropolitan (2016)
+<https://www.imdb.com/title/tt4460854/> a schema:Movie ;
+    schema:name "Chronically Metropolitan" ;
+    schema:url <https://www.imdb.com/title/tt4460854/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Victor"
+    ] .
+
+# HelLA (2016)
+<https://www.imdb.com/title/tt3378252/> a schema:Movie ;
+    schema:name "HelLA" ;
+    schema:url <https://www.imdb.com/title/tt3378252/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Chris"
+    ] .
+
+# Complete Unknown (2016)
+<https://www.imdb.com/title/tt4230700/> a schema:Movie ;
+    schema:name "Complete Unknown" ;
+    schema:url <https://www.imdb.com/title/tt4230700/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Brad"
+    ] .
+
+# Play It Again, Dick (2014)
+<https://www.imdb.com/title/tt3469916/> a schema:Movie ;
+    schema:name "Play It Again, Dick" ;
+    schema:url <https://www.imdb.com/title/tt3469916/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Chris Lowell"
+    ] .
+
+# Enlisted (2014)
+<https://www.imdb.com/title/tt2741950/> a schema:Movie ;
+    schema:name "Enlisted" ;
+    schema:url <https://www.imdb.com/title/tt2741950/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Cpl. Derrick Hill"
+    ] .
+
+# Veronica Mars (2014)
+<https://www.imdb.com/title/tt2771372/> a schema:Movie ;
+    schema:name "Veronica Mars" ;
+    schema:url <https://www.imdb.com/title/tt2771372/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Stosh 'Piz' Piznarski"
+    ] .
+
+# Next Time on Lonny (2014)
+<https://www.imdb.com/title/tt2113408/> a schema:Movie ;
+    schema:name "Next Time on Lonny" ;
+    schema:url <https://www.imdb.com/title/tt2113408/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Bethany's Boyfriend"
+    ] .
+
+# Brightest Star (2013)
+<https://www.imdb.com/title/tt1877688/> a schema:Movie ;
+    schema:name "Brightest Star" ;
+    schema:url <https://www.imdb.com/title/tt1877688/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "The Boy"
+    ] .
+
+# Love and Honor (2013)
+<https://www.imdb.com/title/tt1976989/> a schema:Movie ;
+    schema:name "Love and Honor" ;
+    schema:url <https://www.imdb.com/title/tt1976989/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Peter"
+    ] .
+
+# Private Practice (2007)
+<https://www.imdb.com/title/tt0972412/> a schema:Movie ;
+    schema:name "Private Practice" ;
+    schema:url <https://www.imdb.com/title/tt0972412/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "William 'Dell' Parker"
+    ] .
+
+# Private Practice Season 1: Bloopers (2008)
+<https://www.imdb.com/title/tt38953559/> a schema:Movie ;
+    schema:name "Private Practice Season 1: Bloopers" ;
+    schema:url <https://www.imdb.com/title/tt38953559/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "William 'Dell' Parker"
+    ] .
+
+# Private Practice Season 1: Deleted Scenes (2008)
+<https://www.imdb.com/title/tt38953403/> a schema:Movie ;
+    schema:name "Private Practice Season 1: Deleted Scenes" ;
+    schema:url <https://www.imdb.com/title/tt38953403/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "William 'Dell' Parker"
+    ] .
+
+# Veronica Mars (2006)
+<https://www.imdb.com/title/tt0412253/> a schema:Movie ;
+    schema:name "Veronica Mars" ;
+    schema:url <https://www.imdb.com/title/tt0412253/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Stosh 'Piz' Piznarski"
+    ] .
+
+# Grey's Anatomy (2007)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "William 'Dell' Parker"
+    ] .
+
+# Graduation (2007)
+<https://www.imdb.com/title/tt0475286/> a schema:Movie ;
+    schema:name "Graduation" ;
+    schema:url <https://www.imdb.com/title/tt0475286/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Tom Jackson"
+    ] .
+
+# Before You Here (2007)
+<https://www.imdb.com/title/tt0490701/> a schema:Movie ;
+    schema:name "Before You Here" ;
+    schema:url <https://www.imdb.com/title/tt0490701/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Delaney"
+    ] .
+
+# Life as We Know It (2004)
+<https://www.imdb.com/title/tt0411004/> a schema:Movie ;
+    schema:name "Life as We Know It" ;
+    schema:url <https://www.imdb.com/title/tt0411004/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1645313/> ;
+        schema:characterName "Jonathan Fields"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi51431193/> a schema:VideoObject ;
+        schema:name "Perpetrator" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi51431193/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWI2ZTMyNDMtZTg2MS00NzdlLWI4NzctZTdjNzY3MzQwOTQ5XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2023-11-21T17:03:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGM0M2U0MWUtMzFmNC00ZDgxLWFjZTktZTViZDY3MTc0MTdkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGM0M2U0MWUtMzFmNC00ZDgxLWFjZTktZTViZDY3MTc0MTdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Lowell" ;
+    schema:height "1650"^^xsd:integer ;
+    schema:width "1275"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm789647104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NTM3MjYyNF5BMl5BanBnXkFtZTgwOTc0NjAwMDI@._V1_.jpg> ;
+    schema:caption "Christopher Lowell" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm1019660800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY1NTc2NjY2MF5BMl5BanBnXkFtZTgwMjA2NDEzMTE@._V1_.jpg> ;
+    schema:caption "Christopher Lowell in Veronica Mars (2014)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm4040685312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAzNTAyNTU4N15BMl5BanBnXkFtZTgwMzQxNzQ1NTE@._V1_.jpg> ;
+    schema:caption "Christopher Lowell at an event for Welcome to Me (2014)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm780126720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwNzAwNTM1MV5BMl5BanBnXkFtZTgwMTI4NDUzMTE@._V1_.jpg> ;
+    schema:caption "Christopher Lowell at an event for Veronica Mars (2014)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1478"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm1024249856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM4Njk3OTc4Ml5BMl5BanBnXkFtZTgwMTU3OTE4MDE@._V1_.jpg> ;
+    schema:caption "Allison Janney and Christopher Lowell in Brightest Star (2013)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm2799277056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU4Mjg4NTk4MV5BMl5BanBnXkFtZTcwNTgxMzc4MQ@@._V1_.jpg> ;
+    schema:caption "Christopher Lowell in Private Practice (2007)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm3706322945/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTZkMjAxZDktNWM2NS00OTA4LTkzMzktZWFkMWM4ZDBhNDE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Lowell in My Best Friend's Exorcism (2022)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm3723100161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQzNGI4YzktZTMzMy00MWNhLWI0MGQtZTc0NWUxMDU5NjM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Lowell and Amiah Miller in My Best Friend's Exorcism (2022)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1645313/mediaviewer/rm3739877377/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGUzYzliYjItN2NhMC00NjNlLTg4NDQtNTQ3ZDM5NzIxZjlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christopher Lowell, Michael Wayne Foster, and Michael Proctor in My Best Friend's Exorcism (2022)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1645313/>
+    schema:sameAs <https://www.instagram.com/mrchrislowell/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

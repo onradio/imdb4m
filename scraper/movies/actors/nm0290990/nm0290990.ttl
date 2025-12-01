@@ -1,0 +1,194 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0290990/> a schema:Person ;
+    schema:name "Joe Frank" ;
+    schema:url <https://www.imdb.com/name/nm0290990/> ;
+    schema:birthDate "1938-08-19"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:alternateName "Joseph Langermann" ;
+    schema:description "Joe Frank. Actor: Galaxy Quest. Actor, author and radio personality Joe Frank was born in Strasbourg, in Alsace, on the eve of the Second World War, to a prosperous family. His father had traveled to America to re-establish his successful shoe manufacturing business and in 1939 he sent for his wife and infant son, the family thereby escaping Europe and the Holocaust. Frank's father was ill and he died soon..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Strasbourg, Bas-Rhin, France"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0177789/>,    # Galaxy Quest
+                       <https://www.imdb.com/title/tt0119174/>,    # The Game
+                       <https://www.imdb.com/title/tt0205015/>,    # Dirt
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4574708/>,    # W/ Bob and David
+                       <https://www.imdb.com/title/tt1439558/>,    # Max Rose
+                       <https://www.imdb.com/title/tt0443108/>,    # Magda
+                       <https://www.imdb.com/title/tt0409963/>,    # Fish Burglars
+                       <https://www.imdb.com/title/tt0271442/>,    # Chase the Express
+                       <https://www.imdb.com/title/tt0176457/>,    # Apocalypse
+                       <https://www.imdb.com/title/tt0112084/>,    # Mr. Show with Bob and David
+                       <https://www.imdb.com/title/tt0122021/>,    # The Clinic
+                       <https://www.imdb.com/title/tt0238305/>,    # Inside Out IV
+                       <https://www.imdb.com/title/tt0238304/>,    # Inside Out III
+                       <https://www.imdb.com/title/tt0238303/> ; # Double Vision
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ]  .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0177789/> a schema:Movie ;
+    schema:name "Galaxy Quest" ;
+    schema:url <https://www.imdb.com/title/tt0177789/> .
+
+<https://www.imdb.com/title/tt0119174/> a schema:Movie ;
+    schema:name "The Game" ;
+    schema:url <https://www.imdb.com/title/tt0119174/> .
+
+<https://www.imdb.com/title/tt0205015/> a schema:Movie ;
+    schema:name "Dirt" ;
+    schema:url <https://www.imdb.com/title/tt0205015/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# W/ Bob and David (2015)
+<https://www.imdb.com/title/tt4574708/> a schema:Movie ;
+    schema:name "W/ Bob and David" ;
+    schema:url <https://www.imdb.com/title/tt4574708/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Max Rose (2013)
+<https://www.imdb.com/title/tt1439558/> a schema:Movie ;
+    schema:name "Max Rose" ;
+    schema:url <https://www.imdb.com/title/tt1439558/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Angry Old Man"
+    ] .
+
+# Magda (2004)
+<https://www.imdb.com/title/tt0443108/> a schema:Movie ;
+    schema:name "Magda" ;
+    schema:url <https://www.imdb.com/title/tt0443108/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Fish Burglars (2004)
+<https://www.imdb.com/title/tt0409963/> a schema:Movie ;
+    schema:name "Fish Burglars" ;
+    schema:url <https://www.imdb.com/title/tt0409963/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Burroughs"
+    ] .
+
+# Chase the Express (2000)
+<https://www.imdb.com/title/tt0271442/> a schema:Movie ;
+    schema:name "Chase the Express" ;
+    schema:url <https://www.imdb.com/title/tt0271442/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Piere's Wife"
+    ] .
+
+# Apocalypse (1998)
+<https://www.imdb.com/title/tt0176457/> a schema:Movie ;
+    schema:name "Apocalypse" ;
+    schema:url <https://www.imdb.com/title/tt0176457/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "The Reverend"
+    ] .
+
+# Mr. Show with Bob and David (1995)
+<https://www.imdb.com/title/tt0112084/> a schema:Movie ;
+    schema:name "Mr. Show with Bob and David" ;
+    schema:url <https://www.imdb.com/title/tt0112084/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# The Clinic (1995)
+<https://www.imdb.com/title/tt0122021/> a schema:Movie ;
+    schema:name "The Clinic" ;
+    schema:url <https://www.imdb.com/title/tt0122021/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Dr. Rand"
+    ] .
+
+# Inside Out IV (1992)
+<https://www.imdb.com/title/tt0238305/> a schema:Movie ;
+    schema:name "Inside Out IV" ;
+    schema:url <https://www.imdb.com/title/tt0238305/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Marie's Ex"
+    ] .
+
+# Inside Out III (1992)
+<https://www.imdb.com/title/tt0238304/> a schema:Movie ;
+    schema:name "Inside Out III" ;
+    schema:url <https://www.imdb.com/title/tt0238304/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Joe"
+    ] .
+
+# Double Vision (1992)
+<https://www.imdb.com/title/tt0238303/> a schema:Movie ;
+    schema:name "Double Vision" ;
+    schema:url <https://www.imdb.com/title/tt0238303/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290990/> ;
+        schema:characterName "Driver"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

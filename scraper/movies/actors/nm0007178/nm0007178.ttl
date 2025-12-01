@@ -1,0 +1,103 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0007178/> a schema:Person ;
+    schema:name "Walter Lassally" ;
+    schema:url <https://www.imdb.com/name/nm0007178/> ;
+    schema:birthDate "1926-12-18"^^xsd:date ;
+    schema:jobTitle "Cinematographer", "Camera and Electrical Department", "Director" ;
+    schema:description "Walter Lassally. Cinematographer: Zorba the Greek. Walter Lassally was born on 18 December 1926 in Berlin, Germany. He was a cinematographer and director, known for Zorba the Greek (1964), Before Midnight (2013) and Heat and Dust (1983). He was married to Nadia Lassali. He died on 23 October 2017 in Crete, Greece." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU2NTAxNTEyM15BMl5BanBnXkFtZTgwNDQyMTEwNDI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Berlin, Germany"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2209418/> ;    # Before Midnight
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1104413721/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0007178/mediaviewer/rm4011499776/>,
+                 <https://www.imdb.com/name/nm0007178/mediaviewer/rm3200211712/>,
+                 <https://www.imdb.com/name/nm0007178/mediaviewer/rm2727172864/>,
+                 <https://www.imdb.com/name/nm0007178/mediaviewer/rm2743950080/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Midnight (2013)
+<https://www.imdb.com/title/tt2209418/> a schema:Movie ;
+    schema:name "Before Midnight" ;
+    schema:url <https://www.imdb.com/title/tt2209418/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0007178/> ;
+        schema:characterName "Patrick"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1104413721/> a schema:VideoObject ;
+        schema:name "Zorba the Greek" ;
+        schema:description "Trailer for this classic Academy Award winning drama" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1104413721/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWMwMjVkYTQtYmVmYi00YjBjLTg4NDItYjE3NTUxMzI2YmQ5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT3M21S"^^xsd:duration ;
+        schema:uploadDate "2010-01-16T17:27:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU2NTAxNTEyM15BMl5BanBnXkFtZTgwNDQyMTEwNDI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2NTAxNTEyM15BMl5BanBnXkFtZTgwNDQyMTEwNDI@._V1_.jpg> ;
+    schema:caption "Walter Lassally" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0007178/mediaviewer/rm4011499776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDYyMjkwMjUwNF5BMl5BanBnXkFtZTcwMTg2NzkzOQ@@._V1_.jpg> ;
+    schema:caption "Ethan Hawke, Walter Lassally, and Panos Koronis in Before Midnight (2013)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0007178/mediaviewer/rm3200211712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjlmZGY5NzEtMGNlMS00YTA2LWE2YzctMDI5ZDBmYzZmZDQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Walter Lassally in Zorba the Greek (1964)" ;
+    schema:height "2448"^^xsd:integer ;
+    schema:width "3264"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0007178/mediaviewer/rm2727172864/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDgxMTMxOTQ3MV5BMl5BanBnXkFtZTgwNTQyMTEwNDI@._V1_.jpg> ;
+    schema:caption "Walter Lassally" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0007178/mediaviewer/rm2743950080/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2NTAxNTEyM15BMl5BanBnXkFtZTgwNDQyMTEwNDI@._V1_.jpg> ;
+    schema:caption "Walter Lassally" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,163 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097165/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Water Music': Suite III in D 'Allegro" ;
+        schema:byArtist <https://www.imdb.com/name/nm1879524/> ; # Stuttgarter Kammerorchester
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Water Music': Suite III in D 'Allegro" ;
+            schema:composer <https://www.imdb.com/name/nm0005594/> # George Frideric Handel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Symphony No. 9" ;
+        schema:byArtist <https://www.imdb.com/name/nm0717996/>, # Fritz Reiner
+                        <https://www.imdb.com/name/nm2716105/> ; # Chicago Symphony Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Symphony No. 9" ;
+            schema:composer <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Concerto No. 5 in E Flat Major, Op. 73 'Emperor" ;
+        schema:byArtist <https://www.imdb.com/name/nm1567693/>, # Wilhelm Kempff
+                        <https://www.imdb.com/name/nm1617101/> ; # Berliner Philharmoniker
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Concerto No. 5 in E Flat Major, Op. 73 'Emperor" ;
+            schema:composer <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rainbow Voice" ;
+        schema:byArtist <https://www.imdb.com/name/nm0962745/> ; # David Hykes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rainbow Voice" ;
+            schema:author <https://www.imdb.com/name/nm0962745/> # David Hykes
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Fields of Athenry" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Fields of Athenry" ;
+            schema:author <https://www.imdb.com/name/nm2038291/> # Pete St. John
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Battle of New Orleans" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Battle of New Orleans" ;
+            schema:author <https://www.imdb.com/name/nm1216319/> # Jimmie Driftwood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Let's Have a Party" ;
+        schema:byArtist <https://www.imdb.com/name/nm0414138/> ; # Wanda Jackson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Let's Have a Party" ;
+            schema:author <https://www.imdb.com/name/nm0732737/> # Jessie Mae Robinson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ridgeway Fight Song" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sound Off" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sound Off" ;
+            schema:author <https://www.imdb.com/name/nm3160819/>, # Willie Lee Duckworth
+                       <https://www.imdb.com/name/nm5395543/> # Bernard Lentz
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Stranded in the Jungle" ;
+        schema:byArtist <https://www.imdb.com/name/nm7185677/> ; # The Cadets
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Stranded in the Jungle" ;
+            schema:author <https://www.imdb.com/name/nm5293731/>, # James Johnson
+                       <https://www.imdb.com/name/nm7101442/> # Ernestine Smith
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hey Little Girl" ;
+        schema:byArtist <https://www.imdb.com/name/nm2146006/> ; # Professor Longhair
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hey Little Girl" ;
+            schema:author <https://www.imdb.com/name/nm2146006/> # Professor Longhair
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0005594/> a schema:Person ;
+    schema:name "George Frideric Handel" .
+<https://www.imdb.com/name/nm0414138/> a schema:Person ;
+    schema:name "Wanda Jackson" .
+<https://www.imdb.com/name/nm0717996/> a schema:Person ;
+    schema:name "Fritz Reiner" .
+<https://www.imdb.com/name/nm0732737/> a schema:Person ;
+    schema:name "Jessie Mae Robinson" .
+<https://www.imdb.com/name/nm0962745/> a schema:Person ;
+    schema:name "David Hykes" .
+<https://www.imdb.com/name/nm1216319/> a schema:Person ;
+    schema:name "Jimmie Driftwood" .
+<https://www.imdb.com/name/nm1567693/> a schema:Person ;
+    schema:name "Wilhelm Kempff" .
+<https://www.imdb.com/name/nm1617101/> a schema:Person ;
+    schema:name "Berliner Philharmoniker" .
+<https://www.imdb.com/name/nm1879524/> a schema:Person ;
+    schema:name "Stuttgarter Kammerorchester" .
+<https://www.imdb.com/name/nm2038291/> a schema:Person ;
+    schema:name "Pete St. John" .
+<https://www.imdb.com/name/nm2146006/> a schema:Person ;
+    schema:name "Professor Longhair" .
+<https://www.imdb.com/name/nm2716105/> a schema:Person ;
+    schema:name "Chicago Symphony Orchestra" .
+<https://www.imdb.com/name/nm3160819/> a schema:Person ;
+    schema:name "Willie Lee Duckworth" .
+<https://www.imdb.com/name/nm5293731/> a schema:Person ;
+    schema:name "James Johnson" .
+<https://www.imdb.com/name/nm5395543/> a schema:Person ;
+    schema:name "Bernard Lentz" .
+<https://www.imdb.com/name/nm7101442/> a schema:Person ;
+    schema:name "Ernestine Smith" .
+<https://www.imdb.com/name/nm7185677/> a schema:Person ;
+    schema:name "The Cadets" .
+# ==============================================================================

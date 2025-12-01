@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0867666/> a schema:Person ;
+    schema:name "Frank Topham" ;
+    schema:url <https://www.imdb.com/name/nm0867666/> ;
+    schema:birthDate "1918-05-06"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Frank Topham. Actor: Raging Bull. Frank Topham was born on 6 May 1918. He was an actor, known for Raging Bull (1980). He died on 22 February 1986 in Ocean County, New Jersey, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzc3ZTEwYjUtYWVkYi00MzgxLTgzOTAtMjcxY2RiMzY5Y2ZkXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0081398/> ;    # Raging Bull
+
+
+    schema:video <https://www.imdb.com/video/vi3633616921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0867666/mediaviewer/rm2619563265/>,
+                 <https://www.imdb.com/name/nm0867666/mediaviewer/rm1322963969/>,
+                 <https://www.imdb.com/name/nm0867666/mediaviewer/rm2397982720/>,
+                 <https://www.imdb.com/name/nm0867666/mediaviewer/rm2027607041/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0081398/> a schema:Movie ;
+    schema:name "Raging Bull" ;
+    schema:url <https://www.imdb.com/title/tt0081398/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3633616921/> a schema:VideoObject ;
+        schema:name "Raging Bull: 30th Anniversary Edition Blu-Ray" ;
+        schema:description "Trailer for Raging Bull" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3633616921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDY4ODAyNjgtMWY1OC00NzgwLWJjYmItYmY4NzVkYzE0MDA0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2010-12-10T06:21:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzc3ZTEwYjUtYWVkYi00MzgxLTgzOTAtMjcxY2RiMzY5Y2ZkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzc3ZTEwYjUtYWVkYi00MzgxLTgzOTAtMjcxY2RiMzY5Y2ZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Frank Topham in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0867666/mediaviewer/rm2619563265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmFlZjM0NWYtMTc5ZS00MGY3LTkxZjctYWI0NTBmNzJkNjUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro, Joe Pesci, and Frank Topham in Raging Bull (1980)" ;
+    schema:height "681"^^xsd:integer ;
+    schema:width "1259"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0867666/mediaviewer/rm1322963969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTg2NzJiZTgtMjI1NS00OTk2LTk5ODEtY2JlMzVkMTdmMmU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro, Joe Pesci, and Frank Topham in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0867666/mediaviewer/rm2397982720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2ExOTgxOGQtYmIwYi00NjY0LTkyNzMtNzY4MDRiYWFlZmJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro and Frank Topham in Raging Bull (1980)" ;
+    schema:height "458"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0867666/mediaviewer/rm2027607041/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzc3ZTEwYjUtYWVkYi00MzgxLTgzOTAtMjcxY2RiMzY5Y2ZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Frank Topham in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2683881/> a schema:Person ;
+    schema:name "Kai Steel Smith" ;
+    schema:url <https://www.imdb.com/name/nm2683881/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kai Steel Smith. Actor: The Prankster. Kai Steel Smith is known for The Prankster (2010), Love Letter Templates (2021) and Love, Papa (2008)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1268981/>,    # The Prankster
+                       <https://www.imdb.com/title/tt1351246/>,    # Story About a Witch
+                       <https://www.imdb.com/title/tt1381816/>,    # Love, Papa
+                       <https://www.imdb.com/title/tt0910970/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0982929/> . # Shining Force EXA
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Prankster (2010)
+<https://www.imdb.com/title/tt1268981/> a schema:Movie ;
+    schema:name "The Prankster" ;
+    schema:url <https://www.imdb.com/title/tt1268981/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2683881/> ;
+        schema:characterName "Dick Hertz"
+    ] .
+
+# Story About a Witch (2009)
+<https://www.imdb.com/title/tt1351246/> a schema:Movie ;
+    schema:name "Story About a Witch" ;
+    schema:url <https://www.imdb.com/title/tt1351246/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2683881/> ;
+        schema:characterName "Graham"
+    ] .
+
+# Love, Papa (2008)
+<https://www.imdb.com/title/tt1381816/> a schema:Movie ;
+    schema:name "Love, Papa" ;
+    schema:url <https://www.imdb.com/title/tt1381816/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2683881/> ;
+        schema:characterName "Boy"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2683881/> ;
+        schema:characterName "Brunette Boy in Commercial"
+    ] .
+
+# Shining Force EXA (2007)
+<https://www.imdb.com/title/tt0982929/> a schema:Movie ;
+    schema:name "Shining Force EXA" ;
+    schema:url <https://www.imdb.com/title/tt0982929/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2683881/> ;
+        schema:characterName "Faulklin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

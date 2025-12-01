@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1467121/> a schema:Person ;
+    schema:name "Jason Kelly" ;
+    schema:url <https://www.imdb.com/name/nm1467121/> ;
+    schema:birthDate "1991-03-08"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jason Kelly. Actor: Mystic River. Jason Kelly is a first-generation Irish-American actor, born and raised in Dorchester, Massachusetts. His passion for acting started at a young age, being cast alongside Sean Penn in Clint Eastwood's classic Mystic River (2003) at age 11. Later roles included work on the acclaimed Showtime series Brotherhood (2006), and commercial work for the likes of United Way. Jason's lead role in Dive (2011) is his..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dorchester, Massachusetts, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2011190/>,    # Portico
+                       <https://www.imdb.com/title/tt4685296/>,    # Dive
+                       <https://www.imdb.com/title/tt0457229/>,    # Brotherhood
+                       <https://www.imdb.com/title/tt0327056/> ; # Mystic River
+
+
+    schema:video <https://www.imdb.com/video/vi1956118809/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Portico (2014)
+<https://www.imdb.com/title/tt2011190/> a schema:Movie ;
+    schema:name "Portico" ;
+    schema:url <https://www.imdb.com/title/tt2011190/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1467121/> ;
+        schema:characterName "Mike Sullivan"
+    ] .
+
+# Dive (2010)
+<https://www.imdb.com/title/tt4685296/> a schema:Movie ;
+    schema:name "Dive" ;
+    schema:url <https://www.imdb.com/title/tt4685296/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1467121/> ;
+        schema:characterName "Sean Faden"
+    ] .
+
+# Brotherhood (2006)
+<https://www.imdb.com/title/tt0457229/> a schema:Movie ;
+    schema:name "Brotherhood" ;
+    schema:url <https://www.imdb.com/title/tt0457229/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1467121/> ;
+        schema:characterName "Willy"
+    ] .
+
+# Mystic River (2003)
+<https://www.imdb.com/title/tt0327056/> a schema:Movie ;
+    schema:name "Mystic River" ;
+    schema:url <https://www.imdb.com/title/tt0327056/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1467121/> ;
+        schema:characterName "Young Jimmy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1956118809/> a schema:VideoObject ;
+        schema:name "Mystic River" ;
+        schema:description "Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1956118809/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmUwZDBiYjQtM2FkZS00OWMyLWIwNGQtNjg3ZDZmZjZmZjljXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T15:10:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

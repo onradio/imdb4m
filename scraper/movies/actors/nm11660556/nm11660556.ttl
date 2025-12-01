@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11660556/> a schema:Person ;
+    schema:name "Sunit Tandon" ;
+    schema:url <https://www.imdb.com/name/nm11660556/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sunit Tandon. Actor: Dil Bechara. Sunit Tandon is known for Dil Bechara (2020), Bell Bottom (2021) and Axone (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmNjNjgxMzgtMDIyZS00ZDUxLWEyM2ItNmJmYjYzNGViMmQxXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8747548/> ;    # Axone
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm11660556/mediaviewer/rm3983911937/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Axone (2019)
+<https://www.imdb.com/title/tt8747548/> a schema:Movie ;
+    schema:name "Axone" ;
+    schema:url <https://www.imdb.com/title/tt8747548/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11660556/> ;
+        schema:characterName "Guest Appearance"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmNjNjgxMzgtMDIyZS00ZDUxLWEyM2ItNmJmYjYzNGViMmQxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNjNjgxMzgtMDIyZS00ZDUxLWEyM2ItNmJmYjYzNGViMmQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunit Tandon" ;
+    schema:height "462"^^xsd:integer ;
+    schema:width "302"^^xsd:integer .
+
+<https://www.imdb.com/name/nm11660556/mediaviewer/rm3983911937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNjNjgxMzgtMDIyZS00ZDUxLWEyM2ItNmJmYjYzNGViMmQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunit Tandon" ;
+    schema:height "462"^^xsd:integer ;
+    schema:width "302"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

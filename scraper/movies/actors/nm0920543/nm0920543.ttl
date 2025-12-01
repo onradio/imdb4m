@@ -1,0 +1,199 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0920543/> a schema:Person ;
+    schema:name "Irvine Welsh" ;
+    schema:url <https://www.imdb.com/name/nm0920543/> ;
+    schema:birthDate "1958-09-27"^^xsd:date ;
+    schema:jobTitle "Writer", "Producer", "Actor" ;
+    schema:description "Irvine Welsh. Writer: Trainspotting. Welsh's books have made him a cult figure within the writing world since the 1990s. Several of his books have become best sellers and all have a mixture of comedy, drama and hard-hitting issues...the best-known being Trainspotting (1996) which was made into a box-office smash worldwide at the movies in 1996. Of his other works, one other has been brought to screen, The Acid House (1998)..a..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTZkMjgyZGMtMzU3MS00MDRmLTg0ZDItN2VlMTZjNTNhMmExXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Leith, Edinburgh, Scotland, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2763304/>,    # T2 Trainspotting
+                       <https://www.imdb.com/title/tt2243260/>,    # Swung
+                       <https://www.imdb.com/title/tt1027873/>,    # The Magnificent Eleven
+                       <https://www.imdb.com/title/tt0929730/>,    # Anton
+                       <https://www.imdb.com/title/tt1170365/>,    # Nuts
+                       <https://www.imdb.com/title/tt0122515/>,    # The Acid House
+                       <https://www.imdb.com/title/tt0117951/> ; # Trainspotting
+
+
+    schema:video <https://www.imdb.com/video/vi1165084185/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0920543/mediaviewer/rm1991653632/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm3848548352/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm3882102784/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm3747819520/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm946748928/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm711867904/>,
+                 <https://www.imdb.com/name/nm0920543/mediaviewer/rm3798216704/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# T2 Trainspotting (2017)
+<https://www.imdb.com/title/tt2763304/> a schema:Movie ;
+    schema:name "T2 Trainspotting" ;
+    schema:url <https://www.imdb.com/title/tt2763304/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Mikey Forrester"
+    ] .
+
+# Swung (2015)
+<https://www.imdb.com/title/tt2243260/> a schema:Movie ;
+    schema:name "Swung" ;
+    schema:url <https://www.imdb.com/title/tt2243260/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Male Bouncer"
+    ] .
+
+# The Magnificent Eleven (2013)
+<https://www.imdb.com/title/tt1027873/> a schema:Movie ;
+    schema:name "The Magnificent Eleven" ;
+    schema:url <https://www.imdb.com/title/tt1027873/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Disgruntled Diner"
+    ] .
+
+# Anton (2008)
+<https://www.imdb.com/title/tt0929730/> a schema:Movie ;
+    schema:name "Anton" ;
+    schema:url <https://www.imdb.com/title/tt0929730/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Father Freedom"
+    ] .
+
+# Nuts (2007)
+<https://www.imdb.com/title/tt1170365/> a schema:Movie ;
+    schema:name "Nuts" ;
+    schema:url <https://www.imdb.com/title/tt1170365/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Drunk"
+    ] .
+
+# The Acid House (1998)
+<https://www.imdb.com/title/tt0122515/> a schema:Movie ;
+    schema:name "The Acid House" ;
+    schema:url <https://www.imdb.com/title/tt0122515/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Parkie"
+    ] .
+
+# Trainspotting (1996)
+<https://www.imdb.com/title/tt0117951/> a schema:Movie ;
+    schema:name "Trainspotting" ;
+    schema:url <https://www.imdb.com/title/tt0117951/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920543/> ;
+        schema:characterName "Mikey Forrester"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1165084185/> a schema:VideoObject ;
+        schema:name "Underdog - The Andy Swallow Story *Official Trailer*" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1165084185/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDVhYjNkZDgtNDc4Yi00NGM1LWIwN2UtNDc1MzEwNDcxYTBlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT40S"^^xsd:duration ;
+        schema:uploadDate "2024-08-15T11:09:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTZkMjgyZGMtMzU3MS00MDRmLTg0ZDItN2VlMTZjNTNhMmExXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTZkMjgyZGMtMzU3MS00MDRmLTg0ZDItN2VlMTZjNTNhMmExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Irvine Welsh at an event for Filth (2013)" ;
+    schema:height "1000"^^xsd:integer ;
+    schema:width "686"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm1991653632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNzkwNzg1MF5BMl5BanBnXkFtZTgwMTY2MzIxMTI@._V1_.jpg> ;
+    schema:caption "Irvine Welsh in T2 Trainspotting (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm3848548352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDdjMDdmMjYtNDhlYS00OThhLWFiNWMtMjAxYmE5M2U4MzEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James McAvoy and Irvine Welsh at an event for Filth (2013)" ;
+    schema:height "871"^^xsd:integer ;
+    schema:width "634"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm3882102784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmUzY2I2YWItMjMyNy00NzYyLWI5MTItZDU0ZWM0ZTBjZGRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James McAvoy and Irvine Welsh at an event for Filth (2013)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm3747819520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2Y2MjE5YjQtNDFiZS00ODgxLWFlN2MtOTg3OWQzMmI2YTZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joanne Froggatt, Shauna Macdonald, Eddie Marsan, James McAvoy, John Sessions, Irvine Welsh, Jon S. Baird, Joy McAvoy, Imogen Poots, and Emun Elliott at an event for Filth (2013)" ;
+    schema:height "648"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm946748928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5NzA3MDU4NV5BMl5BanBnXkFtZTgwODU5MjIyMTI@._V1_.jpg> ;
+    schema:caption "Irvine Welsh at an event for T2 Trainspotting (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1362"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm711867904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyMTYxNjY1MF5BMl5BanBnXkFtZTgwOTM5MjIyMTI@._V1_.jpg> ;
+    schema:caption "Irvine Welsh at an event for T2 Trainspotting (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920543/mediaviewer/rm3798216704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTZkMjgyZGMtMzU3MS00MDRmLTg0ZDItN2VlMTZjNTNhMmExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Irvine Welsh at an event for Filth (2013)" ;
+    schema:height "1000"^^xsd:integer ;
+    schema:width "686"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,161 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0314870/> a schema:Person ;
+    schema:name "Daniel Gerson" ;
+    schema:url <https://www.imdb.com/name/nm0314870/> ;
+    schema:birthDate "1966-08-01"^^xsd:date ;
+    schema:jobTitle "Writer", "Actor", "Additional Crew" ;
+    schema:description "Daniel Gerson. Writer: Monsters, Inc.. Daniel Gerson, best known for co-writing Disney's \"Big Hero 6\" and Pixar's two \"Monsters\" films died February 6th, 2016 at his home in Los Angeles after battling brain cancer. He was 49 years old. A New York State native, Gerson grew up immersed in the arts and starring in musical theater performances at his high school. Gerson graduated with an English degree from Cornell University..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY3MDU1MDUzOF5BMl5BanBnXkFtZTgwMzAwMjY5NzE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2245084/>,    # Big Hero 6
+                       <https://www.imdb.com/title/tt1453405/>,    # Monsters University
+                       <https://www.imdb.com/title/tt2258493/>,    # Monsters, Inc. Scream Arena
+                       <https://www.imdb.com/title/tt6473652/>,    # Mike's Monstrous Adventure
+                       <https://www.imdb.com/title/tt0338261/>,    # Monsters, Inc.: The Video Game
+                       <https://www.imdb.com/title/tt19638276/>,    # Monsters, Inc.: Pinball Panic
+                       <https://www.imdb.com/title/tt0198781/> ; # Monsters, Inc.
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 BAFTA Children's Award"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2379658777/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0314870/mediaviewer/rm2909988096/>,
+                 <https://www.imdb.com/name/nm0314870/mediaviewer/rm2859656448/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Big Hero 6 (2014)
+<https://www.imdb.com/title/tt2245084/> a schema:Movie ;
+    schema:name "Big Hero 6" ;
+    schema:url <https://www.imdb.com/title/tt2245084/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Desk Sergeant"
+    ] .
+
+# Monsters University (2013)
+<https://www.imdb.com/title/tt1453405/> a schema:Movie ;
+    schema:name "Monsters University" ;
+    schema:url <https://www.imdb.com/title/tt1453405/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Monsters, Inc. Scream Arena (2002)
+<https://www.imdb.com/title/tt2258493/> a schema:Movie ;
+    schema:name "Monsters, Inc. Scream Arena" ;
+    schema:url <https://www.imdb.com/title/tt2258493/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Needleman"
+    ] .
+
+# Mike's Monstrous Adventure (2002)
+<https://www.imdb.com/title/tt6473652/> a schema:Movie ;
+    schema:name "Mike's Monstrous Adventure" ;
+    schema:url <https://www.imdb.com/title/tt6473652/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Smitty"
+    ] .
+
+# Monsters, Inc.: The Video Game (2002)
+<https://www.imdb.com/title/tt0338261/> a schema:Movie ;
+    schema:name "Monsters, Inc.: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0338261/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Needleman"
+    ] .
+
+# Monsters, Inc.: Pinball Panic (2002)
+<https://www.imdb.com/title/tt19638276/> a schema:Movie ;
+    schema:name "Monsters, Inc.: Pinball Panic" ;
+    schema:url <https://www.imdb.com/title/tt19638276/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Needleman"
+    ] .
+
+# Monsters, Inc. (2001)
+<https://www.imdb.com/title/tt0198781/> a schema:Movie ;
+    schema:name "Monsters, Inc." ;
+    schema:url <https://www.imdb.com/title/tt0198781/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0314870/> ;
+        schema:characterName "Needleman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2379658777/> a schema:VideoObject ;
+        schema:name "Teaser Trailer" ;
+        schema:description "From this moment, everything will change." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2379658777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzk2OTc2MjI1Ml5BMl5BanBnXkFtZTgwNzQ5MjY2MDI@._V1_.jpg" ;
+        schema:duration "PT50S"^^xsd:duration ;
+        schema:uploadDate "2016-11-22T01:25:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY3MDU1MDUzOF5BMl5BanBnXkFtZTgwMzAwMjY5NzE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3MDU1MDUzOF5BMl5BanBnXkFtZTgwMzAwMjY5NzE@._V1_.jpg> ;
+    schema:caption "Daniel Gerson at an event for Monsters University (2013)" ;
+    schema:height "1346"^^xsd:integer ;
+    schema:width "871"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0314870/mediaviewer/rm2909988096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjI4NTI2NDE4N15BMl5BanBnXkFtZTgwMDAwMjY5NzE@._V1_.jpg> ;
+    schema:caption "Robert L. Baird and Daniel Gerson at an event for Monsters University (2013)" ;
+    schema:height "1428"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0314870/mediaviewer/rm2859656448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3MDU1MDUzOF5BMl5BanBnXkFtZTgwMzAwMjY5NzE@._V1_.jpg> ;
+    schema:caption "Daniel Gerson at an event for Monsters University (2013)" ;
+    schema:height "1346"^^xsd:integer ;
+    schema:width "871"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

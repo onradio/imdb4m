@@ -1,0 +1,81 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4348361/> a schema:Person ;
+    schema:name "Bradford Cox" ;
+    schema:url <https://www.imdb.com/name/nm4348361/> ;
+    schema:jobTitle "Actor", "Composer", "Soundtrack" ;
+    schema:description "Bradford Cox. Actor: Dallas Buyers Club. Bradford Cox is known for Dallas Buyers Club (2013), Where the Wild Things Are (2009) and Teenage (2013)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0790636/>,    # Dallas Buyers Club
+                       <https://www.imdb.com/title/tt0386117/>,    # Where the Wild Things Are
+                       <https://www.imdb.com/title/tt2196055/>,    # Teenage
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3044562/> ; # SHOT! The Psycho-Spiritual Mantra of Rock
+
+
+    schema:video <https://www.imdb.com/video/vi2249504025/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0790636/> a schema:Movie ;
+    schema:name "Dallas Buyers Club" ;
+    schema:url <https://www.imdb.com/title/tt0790636/> .
+
+<https://www.imdb.com/title/tt0386117/> a schema:Movie ;
+    schema:name "Where the Wild Things Are" ;
+    schema:url <https://www.imdb.com/title/tt0386117/> .
+
+<https://www.imdb.com/title/tt2196055/> a schema:Movie ;
+    schema:name "Teenage" ;
+    schema:url <https://www.imdb.com/title/tt2196055/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# SHOT! The Psycho-Spiritual Mantra of Rock (2016)
+<https://www.imdb.com/title/tt3044562/> a schema:Movie ;
+    schema:name "SHOT! The Psycho-Spiritual Mantra of Rock" ;
+    schema:url <https://www.imdb.com/title/tt3044562/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4348361/> ;
+        schema:characterName "Jesus Christ"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2249504025/> a schema:VideoObject ;
+        schema:name "Sex and Broadcasting" ;
+        schema:description "Trailer for Sex and Broadcasting" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2249504025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDliZWMzZWEtMWM3ZC00YWE4LWIzNmUtODA2Yjc1NTk1NWM1XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT3M29S"^^xsd:duration ;
+        schema:uploadDate "2016-03-06T07:56:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm4348361/>
+    schema:sameAs <https://www.instagram.com/bradfordcox/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,353 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0636218/> a schema:Person ;
+    schema:name "Graham Norton" ;
+    schema:url <https://www.imdb.com/name/nm0636218/> ;
+    schema:birthDate "1963-04-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:alternateName "Graham Walker" ;
+    schema:description "Graham Norton. Self: The Graham Norton Show. Graham Norton was born on 4 April 1963 in County Cork, Ireland. He is an actor and writer, known for The Graham Norton Show (2007), Eurovision Song Contest: The Story of Fire Saga (2020) and So Graham Norton (1998). He has been married to Jono McLeod since 10 July 2022." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTI0MTkzMzgwMF5BMl5BanBnXkFtZTYwNTYyMTA1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "County Cork, Ireland"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0924651/>,    # The Graham Norton Show
+                       <https://www.imdb.com/title/tt0181255/>,    # So Graham Norton
+                       <https://www.imdb.com/title/tt2948372/>,    # Soul
+                       <https://www.imdb.com/title/tt8580274/>,    # Eurovision Song Contest: The Story of Fire Saga
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2112096/>,    # Absolutely Fabulous: The Movie
+                       <https://www.imdb.com/title/tt1152389/>,    # Robbie the Reindeer in Close Encounters of the Herd Kind
+                       <https://www.imdb.com/title/tt0466839/>,    # I Could Never Be Your Woman
+                       <https://www.imdb.com/title/tt8289652/>,    # Sugababes vs. Girls Aloud: Walk This Way
+                       <https://www.imdb.com/title/tt0302103/>,    # Footballers' Wives
+                       <https://www.imdb.com/title/tt0834532/>,    # Sport Relief 2006
+                       <https://www.imdb.com/title/tt0956296/>,    # God and Dave
+                       <https://www.imdb.com/title/tt0443431/>,    # Another Gay Movie
+                       <https://www.imdb.com/title/tt0105929/>,    # Absolutely Fabulous
+                       <https://www.imdb.com/title/tt0135104/>,    # Rex the Runt
+                       <https://www.imdb.com/title/tt0083392/>,    # Brookside
+                       <https://www.imdb.com/title/tt0435414/>,    # Stargay
+                       <https://www.imdb.com/title/tt0111958/>,    # Father Ted
+                       <https://www.imdb.com/title/tt0182642/>,    # Takeover TV
+                       <https://www.imdb.com/title/tt0203256/>,    # Growing Rich
+                       <https://www.imdb.com/title/tt33761509/> ; # The Stingin' Rodger
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 8 BAFTA TV Award"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "17 wins & 26 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2355087129/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0636218/mediaviewer/rm597318913/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm113846017/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm364257537/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm1095951873/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm2032135169/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm1686695681/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm2984660992/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm4165133568/>,
+                 <https://www.imdb.com/name/nm0636218/mediaviewer/rm2046753280/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0924651/> a schema:Movie ;
+    schema:name "The Graham Norton Show" ;
+    schema:url <https://www.imdb.com/title/tt0924651/> .
+
+<https://www.imdb.com/title/tt0181255/> a schema:Movie ;
+    schema:name "So Graham Norton" ;
+    schema:url <https://www.imdb.com/title/tt0181255/> .
+
+<https://www.imdb.com/title/tt2948372/> a schema:Movie ;
+    schema:name "Soul" ;
+    schema:url <https://www.imdb.com/title/tt2948372/> .
+
+<https://www.imdb.com/title/tt8580274/> a schema:Movie ;
+    schema:name "Eurovision Song Contest: The Story of Fire Saga" ;
+    schema:url <https://www.imdb.com/title/tt8580274/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Absolutely Fabulous: The Movie (2016)
+<https://www.imdb.com/title/tt2112096/> a schema:Movie ;
+    schema:name "Absolutely Fabulous: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt2112096/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Graham Norton"
+    ] .
+
+# Robbie the Reindeer in Close Encounters of the Herd Kind (2007)
+<https://www.imdb.com/title/tt1152389/> a schema:Movie ;
+    schema:name "Robbie the Reindeer in Close Encounters of the Herd Kind" ;
+    schema:url <https://www.imdb.com/title/tt1152389/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Computer"
+    ] .
+
+# I Could Never Be Your Woman (2007)
+<https://www.imdb.com/title/tt0466839/> a schema:Movie ;
+    schema:name "I Could Never Be Your Woman" ;
+    schema:url <https://www.imdb.com/title/tt0466839/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Taylor"
+    ] .
+
+# Sugababes vs. Girls Aloud: Walk This Way (2007)
+<https://www.imdb.com/title/tt8289652/> a schema:Movie ;
+    schema:name "Sugababes vs. Girls Aloud: Walk This Way" ;
+    schema:url <https://www.imdb.com/title/tt8289652/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Graham Norton"
+    ] .
+
+# Footballers' Wives (2006)
+<https://www.imdb.com/title/tt0302103/> a schema:Movie ;
+    schema:name "Footballers' Wives" ;
+    schema:url <https://www.imdb.com/title/tt0302103/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Brendan Spunk"
+    ] .
+
+# Sport Relief 2006 (2006)
+<https://www.imdb.com/title/tt0834532/> a schema:Movie ;
+    schema:name "Sport Relief 2006" ;
+    schema:url <https://www.imdb.com/title/tt0834532/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Brendan Spunk"
+    ] .
+
+# God and Dave (2006)
+<https://www.imdb.com/title/tt0956296/> a schema:Movie ;
+    schema:name "God and Dave" ;
+    schema:url <https://www.imdb.com/title/tt0956296/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Cafe Worker"
+    ] .
+
+# Another Gay Movie (2006)
+<https://www.imdb.com/title/tt0443431/> a schema:Movie ;
+    schema:name "Another Gay Movie" ;
+    schema:url <https://www.imdb.com/title/tt0443431/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Mr. Puckov"
+    ] .
+
+# Absolutely Fabulous (2002)
+<https://www.imdb.com/title/tt0105929/> a schema:Movie ;
+    schema:name "Absolutely Fabulous" ;
+    schema:url <https://www.imdb.com/title/tt0105929/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Graham Norton"
+    ] .
+
+# Rex the Runt (2001)
+<https://www.imdb.com/title/tt0135104/> a schema:Movie ;
+    schema:name "Rex the Runt" ;
+    schema:url <https://www.imdb.com/title/tt0135104/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "The Plants"
+    ] .
+
+# Brookside (2000)
+<https://www.imdb.com/title/tt0083392/> a schema:Movie ;
+    schema:name "Brookside" ;
+    schema:url <https://www.imdb.com/title/tt0083392/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Graham Norton"
+    ] .
+
+# Stargay (1999)
+<https://www.imdb.com/title/tt0435414/> a schema:Movie ;
+    schema:name "Stargay" ;
+    schema:url <https://www.imdb.com/title/tt0435414/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Graham Solex"
+    ] .
+
+# Father Ted (1996)
+<https://www.imdb.com/title/tt0111958/> a schema:Movie ;
+    schema:name "Father Ted" ;
+    schema:url <https://www.imdb.com/title/tt0111958/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Father Noel Furlong"
+    ] .
+
+# Takeover TV (1995)
+<https://www.imdb.com/title/tt0182642/> a schema:Movie ;
+    schema:name "Takeover TV" ;
+    schema:url <https://www.imdb.com/title/tt0182642/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Actor"
+    ] .
+
+# Growing Rich (1992)
+<https://www.imdb.com/title/tt0203256/> a schema:Movie ;
+    schema:name "Growing Rich" ;
+    schema:url <https://www.imdb.com/title/tt0203256/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Henry"
+    ] .
+
+# The Stingin' Rodger (1990)
+<https://www.imdb.com/title/tt33761509/> a schema:Movie ;
+    schema:name "The Stingin' Rodger" ;
+    schema:url <https://www.imdb.com/title/tt33761509/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0636218/> ;
+        schema:characterName "Norton"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2355087129/> a schema:VideoObject ;
+        schema:name "Lol: Last One Laughing Ireland (UK)" ;
+        schema:description "Lol: Last One Laughing Ireland (UK)" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2355087129/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGI4Y2I0MjctYjIyYy00ZTIzLWJhOTItODA4MzM5YTI4NjZlXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M40S"^^xsd:duration ;
+        schema:uploadDate "2024-02-01T13:05:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTI0MTkzMzgwMF5BMl5BanBnXkFtZTYwNTYyMTA1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTI0MTkzMzgwMF5BMl5BanBnXkFtZTYwNTYyMTA1._V1_.jpg> ;
+    schema:caption "Graham Norton" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "291"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm597318913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjhlYzQzOWMtZTJjOC00MTVlLWJmYTMtN2E3OTllZTZmZGQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton and Yvonne Orji in Graham Norton & Yvonne Orji (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm113846017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDg4ZWJhMWEtNTNiNy00OTAwLWJlOTktODJlYTE2NjY1ZGVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton in Queen of the Universe (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm364257537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzI5NzM4YmItMTk5ZS00M2UyLThmMjEtNzFmZmU0ZjNlMzM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton in Queen of the Universe (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm1095951873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWI4N2NhYWMtZDQzNC00ZWIxLWE5MDEtNTg1MTIwMDVjODhkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Melanie C, Graham Norton, RuPaul, and Michelle Visage in RuPaul's Drag Race UK vs the World (2022)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm2032135169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWY5OTQ1NjEtNGM1NS00NzBjLTkwMTAtOTgwZTVlMzliMTBiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton in Queen of the Universe (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm1686695681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTM1NmIyNWUtZTgxYS00ZWM0LTkyODUtZWFlMzMzYzY5YTYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton in Queen of the Universe (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm2984660992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQ5MGI5YzMtOGJkNi00NGZmLTk2NzEtNTg5YWEwMzViNDMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks, Graham Norton, Maisie Williams, and Anthony Joshua in The Graham Norton Show (2007)" ;
+    schema:height "664"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm4165133568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTc4YjY2NTQtNmIwYi00ODNkLTg3MjQtOWQ1MDIzOTVjZmMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Graham Norton and Adele in Adele: Live in London (2015)" ;
+    schema:height "2856"^^xsd:integer ;
+    schema:width "4284"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0636218/mediaviewer/rm2046753280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzOTg1NjQzMl5BMl5BanBnXkFtZTgwMDg5Njc5MjE@._V1_.jpg> ;
+    schema:caption "Graham Norton in Would You Rather...? with Graham Norton (2011)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0636218/>
+    schema:sameAs <https://www.instagram.com/grahnort/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0394308/> a schema:Person ;
+    schema:name "Zach Hopkins" ;
+    schema:url <https://www.imdb.com/name/nm0394308/> ;
+    schema:birthDate "1976-02-22"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Zach Hopkins. Actor: No Country for Old Men. Zach Hopkins was born on 22 February 1976 in Graham, Texas, USA. He is an actor, known for No Country for Old Men (2007), Jerry Bruckheimer's Chase (2010) and Blue Suede Wings (2007). He has been married to Sherry Raymond since 13 September 2004. They have two children." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Graham, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1582458/>,    # Jerry Bruckheimer's Chase
+                       <https://www.imdb.com/title/tt1753614/>,    # Cool Wheels
+                       <https://www.imdb.com/title/tt0477348/>,    # No Country for Old Men
+                       <https://www.imdb.com/title/tt0996361/>,    # Blue Suede Wings
+                       <https://www.imdb.com/title/tt0852803/> . # Inspector Mom: Kidnapped in Ten Easy Steps
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Jerry Bruckheimer's Chase (2011)
+<https://www.imdb.com/title/tt1582458/> a schema:Movie ;
+    schema:name "Jerry Bruckheimer's Chase" ;
+    schema:url <https://www.imdb.com/title/tt1582458/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0394308/> ;
+        schema:characterName "Marshal Alex Harding"
+    ] .
+
+# Cool Wheels (2010)
+<https://www.imdb.com/title/tt1753614/> a schema:Movie ;
+    schema:name "Cool Wheels" ;
+    schema:url <https://www.imdb.com/title/tt1753614/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0394308/> ;
+        schema:characterName "Mr. McFuggins"
+    ] .
+
+# No Country for Old Men (2007)
+<https://www.imdb.com/title/tt0477348/> a schema:Movie ;
+    schema:name "No Country for Old Men" ;
+    schema:url <https://www.imdb.com/title/tt0477348/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0394308/> ;
+        schema:characterName "Strangled Deputy"
+    ] .
+
+# Blue Suede Wings (2007)
+<https://www.imdb.com/title/tt0996361/> a schema:Movie ;
+    schema:name "Blue Suede Wings" ;
+    schema:url <https://www.imdb.com/title/tt0996361/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0394308/> ;
+        schema:characterName "Elvis"
+    ] .
+
+# Inspector Mom: Kidnapped in Ten Easy Steps (2007)
+<https://www.imdb.com/title/tt0852803/> a schema:Movie ;
+    schema:name "Inspector Mom: Kidnapped in Ten Easy Steps" ;
+    schema:url <https://www.imdb.com/title/tt0852803/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0394308/> ;
+        schema:characterName "Thief"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

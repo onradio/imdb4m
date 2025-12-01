@@ -1,0 +1,32 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0180093/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Bialy & Lox Conga" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bugs' Got a Devilish Grin Conga" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Summer Overture" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Summer Overture" ;
+            schema:author <https://www.imdb.com/name/nm0543739/> # Clint Mansell
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0543739/> a schema:Person ;
+    schema:name "Clint Mansell" .
+# ==============================================================================

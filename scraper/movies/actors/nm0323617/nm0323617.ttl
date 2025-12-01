@@ -1,0 +1,93 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0323617/> a schema:Person ;
+    schema:name "Dedrick D. Gobert" ;
+    schema:url <https://www.imdb.com/name/nm0323617/> ;
+    schema:birthDate "1971-11-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dedrick D. Gobert. Actor: Boyz n the Hood. Black American supporting actor Dedrick D. Gobert's career was cut short when he was fatally shot during an argument at a drag race at a Southern California racetrack in late 1994. The 22-year-old made his film debut playing Dooky in John Singleton's _Boyz N the Hood (1991)_." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQwOTk5NDU3M15BMl5BanBnXkFtZTcwNTM0NDQyNA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Shreveport, Louisiana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113305/>,    # Higher Learning
+                       <https://www.imdb.com/title/tt0107840/>,    # Poetic Justice
+                       <https://www.imdb.com/title/tt0101507/> ; # Boyz n the Hood
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0323617/mediaviewer/rm2052228096/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Higher Learning (1995)
+<https://www.imdb.com/title/tt0113305/> a schema:Movie ;
+    schema:name "Higher Learning" ;
+    schema:url <https://www.imdb.com/title/tt0113305/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0323617/> ;
+        schema:characterName "Fudge's Homie"
+    ] .
+
+# Poetic Justice (1993)
+<https://www.imdb.com/title/tt0107840/> a schema:Movie ;
+    schema:name "Poetic Justice" ;
+    schema:url <https://www.imdb.com/title/tt0107840/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0323617/> ;
+        schema:characterName "Lloyd"
+    ] .
+
+# Boyz n the Hood (1991)
+<https://www.imdb.com/title/tt0101507/> a schema:Movie ;
+    schema:name "Boyz n the Hood" ;
+    schema:url <https://www.imdb.com/title/tt0101507/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0323617/> ;
+        schema:characterName "Dooky"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQwOTk5NDU3M15BMl5BanBnXkFtZTcwNTM0NDQyNA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQwOTk5NDU3M15BMl5BanBnXkFtZTcwNTM0NDQyNA@@._V1_.jpg> ;
+    schema:caption "Dedrick D. Gobert in Boyz n the Hood (1991)" ;
+    schema:height "1007"^^xsd:integer ;
+    schema:width "1524"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0323617/mediaviewer/rm2052228096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQwOTk5NDU3M15BMl5BanBnXkFtZTcwNTM0NDQyNA@@._V1_.jpg> ;
+    schema:caption "Dedrick D. Gobert in Boyz n the Hood (1991)" ;
+    schema:height "1007"^^xsd:integer ;
+    schema:width "1524"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

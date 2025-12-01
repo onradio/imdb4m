@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0086169/> a schema:Person ;
+    schema:name "Renee Blaine" ;
+    schema:url <https://www.imdb.com/name/nm0086169/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Renee Blaine. Actress: The Shawshank Redemption. Renee C. Blaine. Renee was born in Milwaukee, Wisconsin, but her family's ties to the mountains of Colorado drew them back when she was 3 years old. It was here that she began her career as a fashion model in the mid 1980's, appearing in Self, Ski and Mademoiselle Magazines in ads for Rayban, Obermeyer and Justin Boots. She also appeared in weekly ads..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0111161/> .    # The Shawshank Redemption
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Shawshank Redemption (1994)
+<https://www.imdb.com/title/tt0111161/> a schema:Movie ;
+    schema:name "The Shawshank Redemption" ;
+    schema:url <https://www.imdb.com/title/tt0111161/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0086169/> ;
+        schema:characterName "Andy Dufresne's Wife"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

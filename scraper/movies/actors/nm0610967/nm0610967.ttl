@@ -1,0 +1,174 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0610967/> a schema:Person ;
+    schema:name "Ron Mueck" ;
+    schema:url <https://www.imdb.com/name/nm0610967/> ;
+    schema:jobTitle "Actor", "Additional Crew", "Special Effects" ;
+    schema:description "Ron Mueck. Actor: Labyrinth. Ron Mueck was born in 1958 in Melbourne, Victoria, Australia. He is an actor, known for Labyrinth (1986), Photographing Fairies (1997) and Dreamchild (1985)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Melbourne, Victoria, Australia"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0262987/>,    # Saturday SuperStore
+                       <https://www.imdb.com/title/tt0091369/>,    # Labyrinth
+                       <https://www.imdb.com/title/tt0092046/>,    # The Tale of the Bunny Picnic
+                       <https://www.imdb.com/title/tt0089052/>,    # Dreamchild
+                       <https://www.imdb.com/title/tt3960670/> ; # Shirl's Neighbourhood
+
+
+    schema:video <https://www.imdb.com/video/vi3636961561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0610967/mediaviewer/rm2547757824/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm2497426176/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm1843692800/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm3589183744/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm3555629312/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm3382576384/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm1167272448/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm3041466624/>,
+                 <https://www.imdb.com/name/nm0610967/mediaviewer/rm2649548544/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Saturday SuperStore (1986)
+<https://www.imdb.com/title/tt0262987/> a schema:Movie ;
+    schema:name "Saturday SuperStore" ;
+    schema:url <https://www.imdb.com/title/tt0262987/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0610967/> ;
+        schema:characterName "Ludo"
+    ] .
+
+# Labyrinth (1986)
+<https://www.imdb.com/title/tt0091369/> a schema:Movie ;
+    schema:name "Labyrinth" ;
+    schema:url <https://www.imdb.com/title/tt0091369/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0610967/> ;
+        schema:characterName "Ludo"
+    ] .
+
+# The Tale of the Bunny Picnic (1986)
+<https://www.imdb.com/title/tt0092046/> a schema:Movie ;
+    schema:name "The Tale of the Bunny Picnic" ;
+    schema:url <https://www.imdb.com/title/tt0092046/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0610967/> ;
+        schema:characterName "Storyteller"
+    ] .
+
+# Dreamchild (1985)
+<https://www.imdb.com/title/tt0089052/> a schema:Movie ;
+    schema:name "Dreamchild" ;
+    schema:url <https://www.imdb.com/title/tt0089052/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0610967/> ;
+        schema:characterName "Gryphon"
+    ] .
+
+# Shirl's Neighbourhood (1979)
+<https://www.imdb.com/title/tt3960670/> a schema:Movie ;
+    schema:name "Shirl's Neighbourhood" ;
+    schema:url <https://www.imdb.com/title/tt3960670/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0610967/> ;
+        schema:characterName "Greenfinger the Garden Gnome"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3636961561/> a schema:VideoObject ;
+        schema:name "Labyrinth: Blu-Ray" ;
+        schema:description "Trailer for Labyrinth" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3636961561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjNhMDdjYTEtNjc4Ni00OWQ5LWFiNGUtNTdjODgzNmE1MTY3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M29S"^^xsd:duration ;
+        schema:uploadDate "2012-02-04T06:18:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm2547757824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyNzc2MDM5Nl5BMl5BanBnXkFtZTcwNjM0NTYwNw@@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Rob Mills, and Ron Mueck in Labyrinth (1986)" ;
+    schema:height "332"^^xsd:integer ;
+    schema:width "505"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm2497426176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY1NjcyMjMzM15BMl5BanBnXkFtZTcwOTM0NTYwNw@@._V1_.jpg> ;
+    schema:caption "Brian Henson, Timothy Bateson, Douglas Blackwell, Toby Froud, Anthony Jackson, Ron Mueck, David Shaughnessy, and Mildred Shay in Labyrinth (1986)" ;
+    schema:height "336"^^xsd:integer ;
+    schema:width "505"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm1843692800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEzODIzMDM0N15BMl5BanBnXkFtZTcwNDIzMTkyNA@@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Rob Mills, and Ron Mueck in Labyrinth (1986)" ;
+    schema:height "478"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm3589183744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc3ODQ5NDMyOV5BMl5BanBnXkFtZTYwNjY5ODA3._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Rob Mills, and Ron Mueck in Labyrinth (1986)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm3555629312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzMTM3ODI0OF5BMl5BanBnXkFtZTYwMzc5ODA3._V1_.jpg> ;
+    schema:caption "Jim Henson, Brian Henson, Michael Attwell, Sean Barrett, Timothy Bateson, Douglas Blackwell, John Bluthal, Peter Marinker, Ron Mueck, Steve Nallon, Jan Ravens, Enn Reitel, David Shaughnessy, and Mildred Shay in Labyrinth (1986)" ;
+    schema:height "320"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm3382576384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxODIzMTQyOV5BMl5BanBnXkFtZTgwODEwOTk3MDI@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Rob Mills, and Ron Mueck in Labyrinth (1986)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm1167272448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk4ODUwMDg2M15BMl5BanBnXkFtZTgwMzAxNzUzMjI@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Brian Henson, David Alan Barclay, Robert Beatty, Kevin Clash, Toby Froud, Dave Goelz, Rob Mills, Ron Mueck, Toby Philpott, David Shaughnessy, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm3041466624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY2Mzk5MDktNWIxOS00NjZiLWIxZTEtNzY2NDgyYTQ5YTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Brian Henson, Marc Antona, Charles Augins, Kenny Baker, David Alan Barclay, Robert Beatty, Dave Goelz, Rob Mills, Ron Mueck, David Shaughnessy, Ian Thom, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1433"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0610967/mediaviewer/rm2649548544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM2MDE4OTQwOV5BMl5BanBnXkFtZTgwNjgxMTg2NzE@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Frank Oz, Brian Henson, Marc Antona, Michael Attwell, David Alan Barclay, Sean Barrett, Timothy Bateson, Denise Bryer, Kevin Clash, Dave Goelz, Michael Hordern, Peter Marinker, Rob Mills, Ron Mueck, Toby Philpott, Karen Prell, David Shaughnessy, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1038"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

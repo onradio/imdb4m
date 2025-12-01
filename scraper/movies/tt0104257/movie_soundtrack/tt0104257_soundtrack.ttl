@@ -1,0 +1,98 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0104257/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Hound Dog" ;
+        schema:byArtist <https://www.imdb.com/name/nm1525286/> ; # Big Mama Thornton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hound Dog" ;
+            schema:author <https://www.imdb.com/name/nm0500023/>, # Jerry Leiber
+                       <https://www.imdb.com/name/nm0005469/> # Mike Stoller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Timber I'm Falling in Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0522529/> ; # Patty Loveless
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Timber I'm Falling in Love" ;
+            schema:author <https://www.imdb.com/name/nm2086735/> # Kostas
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Next Time You See Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm1528949/> ; # Jimmy Cotton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Next Time You See Me" ;
+            schema:author <https://www.imdb.com/name/nm1527017/>, # Earl Forest
+                       <https://www.imdb.com/name/nm1523419/> # William G. Harvey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "All I Want to Do" ;
+        schema:byArtist <https://www.imdb.com/name/nm1627929/> ; # UB40
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "All I Want to Do" ;
+            schema:author <https://www.imdb.com/name/nm1627929/> # UB40
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Stars and Stripes Forever" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Stars and Stripes Forever" ;
+            schema:author <https://www.imdb.com/name/nm0815971/> # John Philip Sousa
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Semper Fidelis" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Semper Fidelis" ;
+            schema:author <https://www.imdb.com/name/nm0815971/> # John Philip Sousa
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005469/> a schema:Person ;
+    schema:name "Mike Stoller" .
+<https://www.imdb.com/name/nm0500023/> a schema:Person ;
+    schema:name "Jerry Leiber" .
+<https://www.imdb.com/name/nm0522529/> a schema:Person ;
+    schema:name "Patty Loveless" .
+<https://www.imdb.com/name/nm0815971/> a schema:Person ;
+    schema:name "John Philip Sousa" .
+<https://www.imdb.com/name/nm1523419/> a schema:Person ;
+    schema:name "William G. Harvey" .
+<https://www.imdb.com/name/nm1525286/> a schema:Person ;
+    schema:name "Big Mama Thornton" .
+<https://www.imdb.com/name/nm1527017/> a schema:Person ;
+    schema:name "Earl Forest" .
+<https://www.imdb.com/name/nm1528949/> a schema:Person ;
+    schema:name "Jimmy Cotton" .
+<https://www.imdb.com/name/nm1627929/> a schema:Person ;
+    schema:name "UB40" .
+<https://www.imdb.com/name/nm2086735/> a schema:Person ;
+    schema:name "Kostas" .
+# ==============================================================================

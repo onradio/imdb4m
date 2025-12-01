@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10134362/> a schema:Person ;
+    schema:name "Abhishek Shukla" ;
+    schema:url <https://www.imdb.com/name/nm10134362/> ;
+    schema:jobTitle "Second Unit or Assistant Director", "Actor" ;
+    schema:description "Abhishek Shukla. Second Unit or Assistant Director: Andhadhun. Abhishek Shukla is known for Andhadhun (2018), Chhalaang (2020) and Merry Christmas (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8108198/> .    # Andhadhun
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Andhadhun (2018)
+<https://www.imdb.com/title/tt8108198/> a schema:Movie ;
+    schema:name "Andhadhun" ;
+    schema:url <https://www.imdb.com/title/tt8108198/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10134362/> ;
+        schema:characterName "Hunter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

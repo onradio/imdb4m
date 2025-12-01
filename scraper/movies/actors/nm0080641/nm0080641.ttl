@@ -1,0 +1,121 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0080641/> a schema:Person ;
+    schema:name "Massimo Bianchi" ;
+    schema:url <https://www.imdb.com/name/nm0080641/> ;
+    schema:birthDate "1955-05-08"^^xsd:date ;
+    schema:jobTitle "Actor", "Editor", "Camera and Electrical Department" ;
+    schema:alternateName "Loppa" ;
+    schema:description "Massimo Bianchi. Actor: Life Is Beautiful. Massimo Bianchi was born on 8 May 1955 in Pistoia, Tuscany, Italy. He is an actor and editor, known for Life Is Beautiful (1997), Chi è Tatiana (2001) and The Sopranos (1999)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pistoia, Tuscany, Italy"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.89"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2½″ (1.89 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5159794/>,    # Lastanzaoscura
+                       <https://www.imdb.com/title/tt3262330/>,    # Due sbirri per caso
+                       <https://www.imdb.com/title/tt2891954/>,    # Radio Audience
+                       <https://www.imdb.com/title/tt1523389/>,    # Il mostro di Firenze
+                       <https://www.imdb.com/title/tt0255477/>,    # Pinocchio
+                       <https://www.imdb.com/title/tt0118799/> . # Life Is Beautiful
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lastanzaoscura (2015)
+<https://www.imdb.com/title/tt5159794/> a schema:Movie ;
+    schema:name "Lastanzaoscura" ;
+    schema:url <https://www.imdb.com/title/tt5159794/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName "Massimo"
+    ] .
+
+# Due sbirri per caso (2013)
+<https://www.imdb.com/title/tt3262330/> a schema:Movie ;
+    schema:name "Due sbirri per caso" ;
+    schema:url <https://www.imdb.com/title/tt3262330/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName ""
+    ] .
+
+# Radio Audience (2013)
+<https://www.imdb.com/title/tt2891954/> a schema:Movie ;
+    schema:name "Radio Audience" ;
+    schema:url <https://www.imdb.com/title/tt2891954/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName "Loppa"
+    ] .
+
+# Il mostro di Firenze (2009)
+<https://www.imdb.com/title/tt1523389/> a schema:Movie ;
+    schema:name "Il mostro di Firenze" ;
+    schema:url <https://www.imdb.com/title/tt1523389/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName "Giancarlo Lotti"
+    ] .
+
+# Pinocchio (2002)
+<https://www.imdb.com/title/tt0255477/> a schema:Movie ;
+    schema:name "Pinocchio" ;
+    schema:url <https://www.imdb.com/title/tt0255477/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName "Vinaio"
+    ] .
+
+# Life Is Beautiful (1997)
+<https://www.imdb.com/title/tt0118799/> a schema:Movie ;
+    schema:name "Life Is Beautiful" ;
+    schema:url <https://www.imdb.com/title/tt0118799/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0080641/> ;
+        schema:characterName "Uomo della chiave"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

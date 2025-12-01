@@ -1,0 +1,155 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0710019/> a schema:Person ;
+    schema:name "Jerome Ranft" ;
+    schema:url <https://www.imdb.com/name/nm0710019/> ;
+    schema:birthDate "1966-11-23"^^xsd:date ;
+    schema:jobTitle "Art Department", "Animation Department", "Actor" ;
+    schema:description "Jerome Ranft. Actor: Up. Jerome Ranft was born on 23 November 1966 in Los Angeles County, California, USA. He is an actor, known for Up (2009), Finding Dory (2016) and John Carter (2012)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles County, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2277860/>,    # Finding Dory
+                       <https://www.imdb.com/title/tt3748256/>,    # Tales from Radiator Springs
+                       <https://www.imdb.com/title/tt2267146/>,    # Kinect Rush: A Disney-Pixar Adventure
+                       <https://www.imdb.com/title/tt0435761/>,    # Toy Story 3
+                       <https://www.imdb.com/title/tt1537759/>,    # Dug's Special Mission
+                       <https://www.imdb.com/title/tt1485814/>,    # Up
+                       <https://www.imdb.com/title/tt1049413/>,    # Up
+                       <https://www.imdb.com/title/tt0327597/> ; # Coraline
+
+
+    schema:video <https://www.imdb.com/video/vi4111712025/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0710019/mediaviewer/rm2628720128/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Finding Dory (2016)
+<https://www.imdb.com/title/tt2277860/> a schema:Movie ;
+    schema:name "Finding Dory" ;
+    schema:url <https://www.imdb.com/title/tt2277860/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Jacques"
+    ] .
+
+# Tales from Radiator Springs (2013)
+<https://www.imdb.com/title/tt3748256/> a schema:Movie ;
+    schema:name "Tales from Radiator Springs" ;
+    schema:url <https://www.imdb.com/title/tt3748256/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Red"
+    ] .
+
+# Kinect Rush: A Disney-Pixar Adventure (2012)
+<https://www.imdb.com/title/tt2267146/> a schema:Movie ;
+    schema:name "Kinect Rush: A Disney-Pixar Adventure" ;
+    schema:url <https://www.imdb.com/title/tt2267146/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Gamma"
+    ] .
+
+# Toy Story 3 (2010)
+<https://www.imdb.com/title/tt0435761/> a schema:Movie ;
+    schema:name "Toy Story 3" ;
+    schema:url <https://www.imdb.com/title/tt0435761/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Additional Voice"
+    ] .
+
+# Dug's Special Mission (2009)
+<https://www.imdb.com/title/tt1537759/> a schema:Movie ;
+    schema:name "Dug's Special Mission" ;
+    schema:url <https://www.imdb.com/title/tt1537759/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Gamma"
+    ] .
+
+# Up (2009)
+<https://www.imdb.com/title/tt1485814/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1485814/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Gamma"
+    ] .
+
+# Up (2009)
+<https://www.imdb.com/title/tt1049413/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1049413/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Gamma"
+    ] .
+
+# Coraline (2009)
+<https://www.imdb.com/title/tt0327597/> a schema:Movie ;
+    schema:name "Coraline" ;
+    schema:url <https://www.imdb.com/title/tt0327597/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710019/> ;
+        schema:characterName "Mover"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4111712025/> a schema:VideoObject ;
+        schema:name "One Day At Disney: Season 1" ;
+        schema:description "One Day At Disney: Season 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4111712025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmFkYWQ4YjItOTAwZC00NjhkLWE2NzUtNjZkZmFlYTQyY2U0XkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT35S"^^xsd:duration ;
+        schema:uploadDate "2019-12-12T13:08:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0710019/mediaviewer/rm2628720128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxNTc0MTU1NF5BMl5BanBnXkFtZTgwOTc2NzMxOTE@._V1_.jpg> ;
+    schema:caption "Albert Brooks, Ellen DeGeneres, John Ratzenberger, Andrew Stanton, John Lasseter, Torbin Xan Bullock, Ty Burrell, Lindsey Collins, Alan F. Horn, Eugene Levy, Angus MacLane, Ed O'Neill, Kaitlin Olson, Austin Pendleton, Bob Peterson, Jerome Ranft, Katherine Ringgold, David Sameth, Victoria Strouse, Dominic West, Alexander Gould, Hayden Rolence, Bennett Dammann, Sloane Murray, and Lucia Geddes at an event for Finding Dory (2016)" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

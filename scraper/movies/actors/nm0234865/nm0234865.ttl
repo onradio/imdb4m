@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0234865/> a schema:Person ;
+    schema:name "Marshall Dougherty" ;
+    schema:url <https://www.imdb.com/name/nm0234865/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Marshall Dougherty. Actor: Rain Man. Marshall Dougherty is known for Rain Man (1988) and Dare (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0783500/>,    # Dare
+                       <https://www.imdb.com/title/tt0095953/> ; # Rain Man
+
+
+    schema:video <https://www.imdb.com/video/vi3701539353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dare (2006)
+<https://www.imdb.com/title/tt0783500/> a schema:Movie ;
+    schema:name "Dare" ;
+    schema:url <https://www.imdb.com/title/tt0783500/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0234865/> ;
+        schema:characterName "Male Dancer 1"
+    ] .
+
+# Rain Man (1988)
+<https://www.imdb.com/title/tt0095953/> a schema:Movie ;
+    schema:name "Rain Man" ;
+    schema:url <https://www.imdb.com/title/tt0095953/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0234865/> ;
+        schema:characterName "Farm House Kid"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3701539353/> a schema:VideoObject ;
+        schema:name "DARE" ;
+        schema:description "Everyone's taking about this drug. Will you take a chance on it? I DARE YOU!" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3701539353/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTQyOTg5MTkwNF5BMl5BanBnXkFtZTcwODM2MDQ1Mg@@._V1_.jpg" ;
+        schema:duration "PT2M7S"^^xsd:duration ;
+        schema:uploadDate "2009-05-06T14:39:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

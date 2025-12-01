@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0620242/> a schema:Person ;
+    schema:name "Tatsuhiko Nakamura" ;
+    schema:url <https://www.imdb.com/name/nm0620242/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tatsuhiko Nakamura. Actor: Akira. Tatsuhiko Nakamura is known for Akira (1988), A Woman with a Qualification of 100 - Two Men's Murder Investigation (2008) and Eiga Hanakappa: Hanasake! Pakkân Chou no kuni no daibouken (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3848896/>,    # Eiga Hanakappa: Hanasake! Pakkân Chou no kuni no daibouken
+                       <https://www.imdb.com/title/tt2361115/>,    # A Woman with a Qualification of 100 - Two Men's Murder Investigation
+                       <https://www.imdb.com/title/tt6559578/>,    # Matasaburo the Wind Boy
+                       <https://www.imdb.com/title/tt0094625/>,    # Akira
+                       <https://www.imdb.com/title/tt0093871/> . # Robot Carnival
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Eiga Hanakappa: Hanasake! Pakkân Chou no kuni no daibouken (2013)
+<https://www.imdb.com/title/tt3848896/> a schema:Movie ;
+    schema:name "Eiga Hanakappa: Hanasake! Pakkân Chou no kuni no daibouken" ;
+    schema:url <https://www.imdb.com/title/tt3848896/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0620242/> ;
+        schema:characterName "Carabacho's Father"
+    ] .
+
+# A Woman with a Qualification of 100 - Two Men's Murder Investigation (2008)
+<https://www.imdb.com/title/tt2361115/> a schema:Movie ;
+    schema:name "A Woman with a Qualification of 100 - Two Men's Murder Investigation" ;
+    schema:url <https://www.imdb.com/title/tt2361115/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0620242/> ;
+        schema:characterName ""
+    ] .
+
+# Matasaburo the Wind Boy (1988)
+<https://www.imdb.com/title/tt6559578/> a schema:Movie ;
+    schema:name "Matasaburo the Wind Boy" ;
+    schema:url <https://www.imdb.com/title/tt6559578/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0620242/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Akira (1988)
+<https://www.imdb.com/title/tt0094625/> a schema:Movie ;
+    schema:name "Akira" ;
+    schema:url <https://www.imdb.com/title/tt0094625/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0620242/> ;
+        schema:characterName "Takashi (No. 26)"
+    ] .
+
+# Robot Carnival (1987)
+<https://www.imdb.com/title/tt0093871/> a schema:Movie ;
+    schema:name "Robot Carnival" ;
+    schema:url <https://www.imdb.com/title/tt0093871/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0620242/> ;
+        schema:characterName "Kid"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

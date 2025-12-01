@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2195817/> a schema:Person ;
+    schema:name "Samantha Mahurin" ;
+    schema:url <https://www.imdb.com/name/nm2195817/> ;
+    schema:birthDate "1999-06-21"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Samantha Mahurin. Actress: The Prestige. Samantha Mahurin was born on 21 June 1999. She is an actress, known for The Prestige (2006), Days of Our Lives (1965) and The Young and the Restless (1973)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDY4OWY3ZTAtODU0NC00ZTkwLWJkMzAtMDhiZTU0MDFhMDIzXkEyXkFqcGc@._V1_CR0,0,1023,1535_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0482571/>,    # The Prestige
+                       <https://www.imdb.com/title/tt0058796/>,    # Days of Our Lives
+                       <https://www.imdb.com/title/tt0069658/> ; # The Young and the Restless
+
+
+    schema:video <https://www.imdb.com/video/vi2238908185/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2195817/mediaviewer/rm1869913858/>,
+                 <https://www.imdb.com/name/nm2195817/mediaviewer/rm1685364482/>,
+                 <https://www.imdb.com/name/nm2195817/mediaviewer/rm1045314561/>,
+                 <https://www.imdb.com/name/nm2195817/mediaviewer/rm4182588417/>,
+                 <https://www.imdb.com/name/nm2195817/mediaviewer/rm242523906/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Prestige (2006)
+<https://www.imdb.com/title/tt0482571/> a schema:Movie ;
+    schema:name "The Prestige" ;
+    schema:url <https://www.imdb.com/title/tt0482571/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2195817/> ;
+        schema:characterName "Jess"
+    ] .
+
+# Days of Our Lives (2005)
+<https://www.imdb.com/title/tt0058796/> a schema:Movie ;
+    schema:name "Days of Our Lives" ;
+    schema:url <https://www.imdb.com/title/tt0058796/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2195817/> ;
+        schema:characterName "Belle - Age Six"
+    ] .
+
+# The Young and the Restless (2004)
+<https://www.imdb.com/title/tt0069658/> a schema:Movie ;
+    schema:name "The Young and the Restless" ;
+    schema:url <https://www.imdb.com/title/tt0069658/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2195817/> ;
+        schema:characterName "Young Nikki"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2238908185/> a schema:VideoObject ;
+        schema:name "The Prestige" ;
+        schema:description "Bonus Clip: Screenwriter - :52" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2238908185/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTc2NDkxMjctMmRiYS00YzczLTgwZjEtNTkxYmJjZTQzNzgzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT52S"^^xsd:duration ;
+        schema:uploadDate "2010-05-18T16:07:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDY4OWY3ZTAtODU0NC00ZTkwLWJkMzAtMDhiZTU0MDFhMDIzXkEyXkFqcGc@._V1_CR0,0,1023,1535_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY4OWY3ZTAtODU0NC00ZTkwLWJkMzAtMDhiZTU0MDFhMDIzXkEyXkFqcGc@._V1_CR0,0,1023,1535_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "1535"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2195817/mediaviewer/rm1869913858/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmQ4NDgzMDMtMTNkNC00MDA4LThmZjctYzljNjcxODdlMDE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2195817/mediaviewer/rm1685364482/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmEwMDc5OWMtZTRmOS00YjRjLWFmMmUtYzU0NWQ3YWU5NjVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2195817/mediaviewer/rm1045314561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWZiYjEwNmMtZWVlNy00MGU0LTgxMmMtMGNiNzZiYjM3NWNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1583"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2195817/mediaviewer/rm4182588417/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODRmNzY3NWMtN2E1Yi00MWE1LWE4OWMtMmMyNmZjZTEwNjZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1367"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2195817/mediaviewer/rm242523906/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY4OWY3ZTAtODU0NC00ZTkwLWJkMzAtMDhiZTU0MDFhMDIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Samantha Mahurin" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

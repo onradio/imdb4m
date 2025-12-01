@@ -1,0 +1,46 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt6751668/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Rodelinda: Act 2 - Spietati, io vi giurai" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rodelinda: Act 2 - Spietati, io vi giurai" ;
+            schema:author <https://www.imdb.com/name/nm0005594/> # George Frideric Handel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In Ginocchio Da Te" ;
+        schema:byArtist <https://www.imdb.com/name/nm0603027/> ; # Gianni Morandi
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Glass of Soju" ;
+        schema:byArtist <https://www.imdb.com/name/nm6079248/> ; # Choi Woo-sik
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Glass of Soju" ;
+            schema:lyricist <https://www.imdb.com/name/nm0094435/> # Bong Joon Ho
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005594/> a schema:Person ;
+    schema:name "George Frideric Handel" .
+<https://www.imdb.com/name/nm0094435/> a schema:Person ;
+    schema:name "Bong Joon Ho" .
+<https://www.imdb.com/name/nm0603027/> a schema:Person ;
+    schema:name "Gianni Morandi" .
+<https://www.imdb.com/name/nm6079248/> a schema:Person ;
+    schema:name "Choi Woo-sik" .
+# ==============================================================================

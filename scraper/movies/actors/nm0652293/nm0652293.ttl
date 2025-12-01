@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0652293/> a schema:Person ;
+    schema:name "Jacek Ostaszewski" ;
+    schema:url <https://www.imdb.com/name/nm0652293/> ;
+    schema:birthDate "1944-05-05"^^xsd:date ;
+    schema:jobTitle "Composer", "Music Department", "Actor" ;
+    schema:description "Jacek Ostaszewski. Soundtrack: The Double Life of Véronique. Jacek Ostaszewski was born on 5 May 1944 in Kraków, General Governorate for the Occupied Polish Region [now Kraków, Malopolskie, Poland]. He is a composer and actor, known for The Double Life of Véronique (1991), Three Colors: Blue (1993) and Dreaming of Joseph Lees (1999)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kraków, General Governorate for the Occupied Polish Region [now Kraków, Malopolskie, Poland]"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0441074/>,    # Television Theater
+                       <https://www.imdb.com/title/tt0108394/> . # Three Colors: Blue
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Television Theater (2004)
+<https://www.imdb.com/title/tt0441074/> a schema:Movie ;
+    schema:name "Television Theater" ;
+    schema:url <https://www.imdb.com/title/tt0441074/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0652293/> ;
+        schema:characterName ""
+    ] .
+
+# Three Colors: Blue (1993)
+<https://www.imdb.com/title/tt0108394/> a schema:Movie ;
+    schema:name "Three Colors: Blue" ;
+    schema:url <https://www.imdb.com/title/tt0108394/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0652293/> ;
+        schema:characterName "Le flutiste"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0352248/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Shim-Me-Sha-Wabble" ;
+        schema:byArtist <https://www.imdb.com/name/nm4230551/> ; # Miff Mole and His Molers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shim-Me-Sha-Wabble" ;
+            schema:author <https://www.imdb.com/name/nm0931714/> # Spencer Williams
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Put That Sun Back in the Sky" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Put That Sun Back in the Sky" ;
+            schema:author <https://www.imdb.com/name/nm0434655/>, # Irving Kahal
+                       <https://www.imdb.com/name/nm0583214/> # Joseph Meyer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cheer Up, Smile, Nertz" ;
+        schema:byArtist <https://www.imdb.com/name/nm0134662/>, # Eddie Cantor
+                        <https://www.imdb.com/name/nm0819120/> ; # Phil Spitalny
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cheer Up, Smile, Nertz" ;
+            schema:author <https://www.imdb.com/name/nm4230151/>, # Norman Anthony
+                       <https://www.imdb.com/name/nm4230462/>, # Misha Portnoff
+                       <https://www.imdb.com/name/nm4230622/> # Wesley Portnoff
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tillies Downtown Now" ;
+        schema:byArtist <https://www.imdb.com/name/nm4230348/> ; # Bud Freeman and His Windy City Five
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tillies Downtown Now" ;
+            schema:author <https://www.imdb.com/name/nm0293318/> # Bud Freeman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday to You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday to You" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Don't Be That Way" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Don't Be That Way" ;
+            schema:author <https://www.imdb.com/name/nm0329015/>, # Benny Goodman
+                       <https://www.imdb.com/name/nm0661695/>, # Mitchell Parish
+                       <https://www.imdb.com/name/nm1482249/> # Edgar M. Sampson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Someday Sweetheart" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Someday Sweetheart" ;
+            schema:author <https://www.imdb.com/name/nm1589611/>, # John Spikes
+                       <https://www.imdb.com/name/nm1601819/> # Benjamin Spikes
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Danny Boy/Londonderry Air" ;
+        schema:byArtist <https://www.imdb.com/name/nm0316079/> ; # Paul Giamatti
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Danny Boy/Londonderry Air" ;
+            schema:lyricist <https://www.imdb.com/name/nm1376788/> # Frederick Edward Weatherly
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0134662/> a schema:Person ;
+    schema:name "Eddie Cantor" .
+<https://www.imdb.com/name/nm0293318/> a schema:Person ;
+    schema:name "Bud Freeman" .
+<https://www.imdb.com/name/nm0316079/> a schema:Person ;
+    schema:name "Paul Giamatti" .
+<https://www.imdb.com/name/nm0329015/> a schema:Person ;
+    schema:name "Benny Goodman" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0434655/> a schema:Person ;
+    schema:name "Irving Kahal" .
+<https://www.imdb.com/name/nm0583214/> a schema:Person ;
+    schema:name "Joseph Meyer" .
+<https://www.imdb.com/name/nm0661695/> a schema:Person ;
+    schema:name "Mitchell Parish" .
+<https://www.imdb.com/name/nm0819120/> a schema:Person ;
+    schema:name "Phil Spitalny" .
+<https://www.imdb.com/name/nm0931714/> a schema:Person ;
+    schema:name "Spencer Williams" .
+<https://www.imdb.com/name/nm1376788/> a schema:Person ;
+    schema:name "Frederick Edward Weatherly" .
+<https://www.imdb.com/name/nm1482249/> a schema:Person ;
+    schema:name "Edgar M. Sampson" .
+<https://www.imdb.com/name/nm1589611/> a schema:Person ;
+    schema:name "John Spikes" .
+<https://www.imdb.com/name/nm1601819/> a schema:Person ;
+    schema:name "Benjamin Spikes" .
+<https://www.imdb.com/name/nm4230151/> a schema:Person ;
+    schema:name "Norman Anthony" .
+<https://www.imdb.com/name/nm4230348/> a schema:Person ;
+    schema:name "Bud Freeman and His Windy City Five" .
+<https://www.imdb.com/name/nm4230462/> a schema:Person ;
+    schema:name "Misha Portnoff" .
+<https://www.imdb.com/name/nm4230551/> a schema:Person ;
+    schema:name "Miff Mole and His Molers" .
+<https://www.imdb.com/name/nm4230622/> a schema:Person ;
+    schema:name "Wesley Portnoff" .
+# ==============================================================================

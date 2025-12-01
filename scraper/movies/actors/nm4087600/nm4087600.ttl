@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4087600/> a schema:Person ;
+    schema:name "Alecia Svensen" ;
+    schema:url <https://www.imdb.com/name/nm4087600/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Alecia Svensen. Actress: The Social Network. Alecia Svensen is known for The Social Network (2010) and Bestseller (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3158308/>,    # Bestseller
+                       <https://www.imdb.com/title/tt1285016/> . # The Social Network
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bestseller (2015)
+<https://www.imdb.com/title/tt3158308/> a schema:Movie ;
+    schema:name "Bestseller" ;
+    schema:url <https://www.imdb.com/title/tt3158308/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4087600/> ;
+        schema:characterName "Clerk"
+    ] .
+
+# The Social Network (2010)
+<https://www.imdb.com/title/tt1285016/> a schema:Movie ;
+    schema:name "The Social Network" ;
+    schema:url <https://www.imdb.com/title/tt1285016/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4087600/> ;
+        schema:characterName "Girl at Phoenix Club"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,176 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7790000/> a schema:Person ;
+    schema:name "Arthur RedCloud" ;
+    schema:url <https://www.imdb.com/name/nm7790000/> ;
+    schema:jobTitle "Actor", "Stunts" ;
+    schema:description "Arthur RedCloud. Actor: The Revenant. Arthur RedCloud is a Navajo actor known for his role as \"Hikuc\" in The Revenant (2015). He portrays a helpful Native American who comes to the aid of the main character, \"Hugh Glass\" played by Leonardo DiCaprio. RedCloud attended the film's Los Angeles premiere on December 16, 2015 at the TCL Chinese Theatre in Hollywood, California alongside other stars." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWYzNzhhYzktMTdlYi00ZjkzLWJlZjctYjdhZWU3MTRmYTBmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6924668/>,    # The Adventures of Thomasina Sawyer
+                       <https://www.imdb.com/title/tt2226440/>,    # Dead Men
+                       <https://www.imdb.com/title/tt6040278/>,    # Rotten Riders
+                       <https://www.imdb.com/title/tt1663202/>,    # The Revenant
+                       <https://www.imdb.com/title/tt6841874/> ; # The Buffalo Soldiers, an American Legacy
+
+
+    schema:video <https://www.imdb.com/video/vi2229059353/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7790000/mediaviewer/rm2287761920/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm2170321408/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm1313017600/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm2502498304/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm1697348096/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm3534959872/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm2175743232/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm1429901057/>,
+                 <https://www.imdb.com/name/nm7790000/mediaviewer/rm3785396481/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Adventures of Thomasina Sawyer (2018)
+<https://www.imdb.com/title/tt6924668/> a schema:Movie ;
+    schema:name "The Adventures of Thomasina Sawyer" ;
+    schema:url <https://www.imdb.com/title/tt6924668/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7790000/> ;
+        schema:characterName "Joe"
+    ] .
+
+# Dead Men (2018)
+<https://www.imdb.com/title/tt2226440/> a schema:Movie ;
+    schema:name "Dead Men" ;
+    schema:url <https://www.imdb.com/title/tt2226440/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7790000/> ;
+        schema:characterName "Apache Translator"
+    ] .
+
+# Rotten Riders (2016)
+<https://www.imdb.com/title/tt6040278/> a schema:Movie ;
+    schema:name "Rotten Riders" ;
+    schema:url <https://www.imdb.com/title/tt6040278/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7790000/> ;
+        schema:characterName "Iron Dog"
+    ] .
+
+# The Revenant (2015)
+<https://www.imdb.com/title/tt1663202/> a schema:Movie ;
+    schema:name "The Revenant" ;
+    schema:url <https://www.imdb.com/title/tt1663202/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7790000/> ;
+        schema:characterName "Hikuc"
+    ] .
+
+# The Buffalo Soldiers, an American Legacy (2012)
+<https://www.imdb.com/title/tt6841874/> a schema:Movie ;
+    schema:name "The Buffalo Soldiers, an American Legacy" ;
+    schema:url <https://www.imdb.com/title/tt6841874/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7790000/> ;
+        schema:characterName "Comanche Warrior"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2229059353/> a schema:VideoObject ;
+        schema:name "Copper Bill" ;
+        schema:description "Two thieves attempt to steal 80 million dollars of hidden Texas drug money from the famed ranch belonging to a dead member of the Cowboy Mafia." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2229059353/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjQ1NWMxNzYtMTNlNy00NGYxLWFlMTctMzc4MTNjMWQwMzdkXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M25S"^^xsd:duration ;
+        schema:uploadDate "2019-11-11T14:30:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWYzNzhhYzktMTdlYi00ZjkzLWJlZjctYjdhZWU3MTRmYTBmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWYzNzhhYzktMTdlYi00ZjkzLWJlZjctYjdhZWU3MTRmYTBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arthur RedCloud in The Revenant (2015)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm2287761920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNkYTVmZGEtMGRhMi00MGZlLWI1MDMtMTc2NTRmMWVlNjNmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio and Arthur RedCloud in The Revenant (2015)" ;
+    schema:height "726"^^xsd:integer ;
+    schema:width "1760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm2170321408/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjJkN2ZhNWUtYWFlZi00OTUwLTlmMmMtNzU2ODNmNDAwMjk0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arthur RedCloud in The Revenant (2015)" ;
+    schema:height "726"^^xsd:integer ;
+    schema:width "1760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm1313017600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzEwZmUwNGUtZmFiYS00N2Y1LTk4YmMtZWYxYzZjZWMyYzQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio and Arthur RedCloud in The Revenant (2015)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm2502498304/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGNhNGZjNGUtNTlhNS00NDdkLThmNjktMjFhNGI4N2IyYjlmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio and Arthur RedCloud in The Revenant (2015)" ;
+    schema:height "593"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm1697348096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTNmNzQwYTYtZGM2ZS00YzgxLWJjODQtNzIxNTA2MmMwM2QyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arthur RedCloud" ;
+    schema:height "956"^^xsd:integer ;
+    schema:width "638"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm3534959872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDA3ZjZjMDEtNjJlYi00ZjBkLWI3MjAtMDEyYjZjZWUwYmM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kelsey Corbin and Arthur RedCloud at an event for San Diego Film Awards (2017)" ;
+    schema:height "2848"^^xsd:integer ;
+    schema:width "4288"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm2175743232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDhkNjFlM2ItZTk3NC00ODJiLWE4MmEtYTJhYzlhNzQ0ZDdiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kelsey Corbin, Arthur RedCloud, and Nina Leilani Deering at an event for San Diego Film Awards (2017)" ;
+    schema:height "1728"^^xsd:integer ;
+    schema:width "2592"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm1429901057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGZjYTJiYzItZTNlNC00ZjUxLTkyOTYtMzkyYWU2NGY3NmMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dustin Rhodes, Aaron Noack, Raimey Robinson, Daryl Real, Dalton Brown, Tom Zembrod, Tommy Hallum, Billy Blair, Andy Arrasmith, Mason McEvers, Christopher Vaughan, Katy Harris, and Arthur RedCloud in Copper Bill (2020)" ;
+    schema:height "9820"^^xsd:integer ;
+    schema:width "6546"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7790000/mediaviewer/rm3785396481/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjY0YjlmODYtYzRmYS00MDA5LWJjNjAtOGJmNWIwYjRmNzkwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dustin Rhodes, Billy Blair, Katy Harris, and Arthur RedCloud" ;
+    schema:height "9820"^^xsd:integer ;
+    schema:width "6546"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

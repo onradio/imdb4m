@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3473336/> a schema:Person ;
+    schema:name "Shaji Chaudhary" ;
+    schema:url <https://www.imdb.com/name/nm3473336/> ;
+    schema:birthDate "1972-07-07"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shaji Chaudhary. Actor: Main Hoon Na. Shaji Chaudhary was born on 7 July 1972 in Dodwari, Rajasthan, India. He is an actor, known for Main Hoon Na (2004), Kaabil (2017) and PK (2014)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDY2NzAyYWYtNDM4NC00YjI4LTg2M2QtYWQyOTBmZDcwNmY2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dodwari, Rajasthan, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6473300/> ;    # Mirzapur
+
+
+    schema:video <https://www.imdb.com/video/vi4154837017/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3473336/mediaviewer/rm3399574784/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mirzapur (2018)
+<https://www.imdb.com/title/tt6473300/> a schema:Movie ;
+    schema:name "Mirzapur" ;
+    schema:url <https://www.imdb.com/title/tt6473300/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3473336/> ;
+        schema:characterName "Maqbool"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4154837017/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4154837017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDMxNGY3ZTMtM2NlZi00NzUwLWExMTQtMWVjYzdkYThkNmMwXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M35S"^^xsd:duration ;
+        schema:uploadDate "2025-05-05T11:54:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDY2NzAyYWYtNDM4NC00YjI4LTg2M2QtYWQyOTBmZDcwNmY2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY2NzAyYWYtNDM4NC00YjI4LTg2M2QtYWQyOTBmZDcwNmY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shaji Chaudhary" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "768"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3473336/mediaviewer/rm3399574784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY2NzAyYWYtNDM4NC00YjI4LTg2M2QtYWQyOTBmZDcwNmY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shaji Chaudhary" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "768"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

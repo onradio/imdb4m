@@ -1,0 +1,202 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8803193/> a schema:Person ;
+    schema:name "Teddy Blum" ;
+    schema:url <https://www.imdb.com/name/nm8803193/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Teddy Blum. Actor: Klaus. Teddy Blum is known for Klaus (2019), For All Mankind (2019) and Big Little Lies (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWE4NDE0MzktOTI2Ny00ZWYxLWE4MGEtYWExZTg3ZjcxY2E2XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7772588/>,    # For All Mankind
+                       <https://www.imdb.com/title/tt4729430/>,    # Klaus
+                       <https://www.imdb.com/title/tt0320037/>,    # Jimmy Kimmel Live!
+                       <https://www.imdb.com/title/tt3920596/>,    # Big Little Lies
+                       <https://www.imdb.com/title/tt4384086/>,    # Life in Pieces
+                       <https://www.imdb.com/title/tt5987254/>,    # I'm Sorry.
+                       <https://www.imdb.com/title/tt6513682/> ; # Distefano
+
+
+    schema:video <https://www.imdb.com/video/vi2079569945/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8803193/mediaviewer/rm3753457409/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm3552130817/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm32475393/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm1058767617/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm183470337/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm68911873/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm565851905/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm3438085121/>,
+                 <https://www.imdb.com/name/nm8803193/mediaviewer/rm3038479105/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# For All Mankind (2019)
+<https://www.imdb.com/title/tt7772588/> a schema:Movie ;
+    schema:name "For All Mankind" ;
+    schema:url <https://www.imdb.com/title/tt7772588/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Young Shane Baldwin"
+    ] .
+
+# Klaus (2019)
+<https://www.imdb.com/title/tt4729430/> a schema:Movie ;
+    schema:name "Klaus" ;
+    schema:url <https://www.imdb.com/title/tt4729430/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Small Ellingboe Boy"
+    ] .
+
+# Jimmy Kimmel Live! (2019)
+<https://www.imdb.com/title/tt0320037/> a schema:Movie ;
+    schema:name "Jimmy Kimmel Live!" ;
+    schema:url <https://www.imdb.com/title/tt0320037/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Big Little Lies (2019)
+<https://www.imdb.com/title/tt3920596/> a schema:Movie ;
+    schema:name "Big Little Lies" ;
+    schema:url <https://www.imdb.com/title/tt3920596/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Young Perry"
+    ] .
+
+# Life in Pieces (2017)
+<https://www.imdb.com/title/tt4384086/> a schema:Movie ;
+    schema:name "Life in Pieces" ;
+    schema:url <https://www.imdb.com/title/tt4384086/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Noble"
+    ] .
+
+# I'm Sorry. (2017)
+<https://www.imdb.com/title/tt5987254/> a schema:Movie ;
+    schema:name "I'm Sorry." ;
+    schema:url <https://www.imdb.com/title/tt5987254/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Tyler"
+    ] .
+
+# Distefano (2017)
+<https://www.imdb.com/title/tt6513682/> a schema:Movie ;
+    schema:name "Distefano" ;
+    schema:url <https://www.imdb.com/title/tt6513682/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8803193/> ;
+        schema:characterName "Young Chris"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2079569945/> a schema:VideoObject ;
+        schema:name "Demo Reel 2018" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2079569945/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTg0OGEzNTQtNjkyMi00MmI2LWFjNzMtZTQ1YmEyY2YyMTJkXkEyXkFqcGdeQXVyNzM1MzcwMDg@._V1_.jpg" ;
+        schema:duration "PT37S"^^xsd:duration ;
+        schema:uploadDate "2018-01-10T20:34:52Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWE4NDE0MzktOTI2Ny00ZWYxLWE4MGEtYWExZTg3ZjcxY2E2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWE4NDE0MzktOTI2Ny00ZWYxLWE4MGEtYWExZTg3ZjcxY2E2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum" ;
+    schema:height "7280"^^xsd:integer ;
+    schema:width "5464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm3753457409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzNkZGIyMGYtYmE5Yi00NTJmLThhZjgtMTI5MTdhMDFmNzFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum, Walker: Independence “How We Got Here” (Season 1, Episode 12)" ;
+    schema:height "873"^^xsd:integer ;
+    schema:width "1595"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm3552130817/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTY2MDZkOGItYzYxZi00ZjU5LTllNzktNzNhMDA5MDZiMDlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum and Dylan Silver, Walker: Independence “How We Got Here” (Season 1, Episode 12)" ;
+    schema:height "740"^^xsd:integer ;
+    schema:width "1450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm32475393/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGNiZGE3MGUtYWNlZC00ZDUyLTk3YjgtYTQ5YTIxNGM1MjVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "WESTWOOD, CALIFORNIA - OCTOBER 15: Teddy Blum arrives at the World Premiere of Apple TV+'s \"For All Mankind\" at the Regency Village Theatre on October 15, 2019 in Westwood, California. (Photo by Amanda Edwards/WireImage)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1585"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm1058767617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQwOGExMTItYjhlMy00NDBkLWJhOTMtZjZkZWI2Yzk3NWZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum, Joel Kinnaman, For All Mankind" ;
+    schema:height "765"^^xsd:integer ;
+    schema:width "1541"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm183470337/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0NWMxNmYtNDFhMC00YWE3LTg5MDUtMzZhNWNiNjA0MDQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "WESTWOOD, CALIFORNIA - OCTOBER 15: Tait Blum, Teddy Blum and Mason Thames attend World Premiere of Apple TV+'s \"For All Mankind\" - Red Carpet at Regency Village Theatre on October 15, 2019 in Westwood, California. (Photo by Presley Ann/Getty Images)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1367"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm68911873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTljM2FlYzctNzRmYy00NjdiLWIwZWUtZWQ2MTJkODZmYTdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum, Shantel VanSanten, For All Mankind" ;
+    schema:height "776"^^xsd:integer ;
+    schema:width "1541"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm565851905/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGU3ZWM2YmMtYjJiYy00MTE4LTk5NDEtZWY3ZDE0M2FmMmFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dylan Silver and Teddy Blum, Walker: Independence “How We Got Here” (Season 1, Episode 12)" ;
+    schema:height "779"^^xsd:integer ;
+    schema:width "1541"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm3438085121/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmM4Mzk3YWEtMjU4NS00YzAyLTgwY2ItODgxYmZmMGE1ZjZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Teddy Blum" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8803193/mediaviewer/rm3038479105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzUyYzU2MjMtNjMyYS00NDEyLWJkNjktOTE4NGMyMTJlOWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shantel VanSanten, Teddy Blum, For All Mankind" ;
+    schema:height "778"^^xsd:integer ;
+    schema:width "1553"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm8803193/>
+    schema:sameAs <https://www.instagram.com/teddyblum/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

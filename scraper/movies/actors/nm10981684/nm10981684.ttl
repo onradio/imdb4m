@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10981684/> a schema:Person ;
+    schema:name "Gilby Griffin Davis" ;
+    schema:url <https://www.imdb.com/name/nm10981684/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gilby Griffin Davis. Actor: Silent Night. Gilby Griffin Davis is known for Silent Night (2021) and Jojo Rabbit (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2584384/> ;    # Jojo Rabbit
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10981684/mediaviewer/rm2034232065/>,
+                 <https://www.imdb.com/name/nm10981684/mediaviewer/rm2084563713/>,
+                 <https://www.imdb.com/name/nm10981684/mediaviewer/rm1883237121/>,
+                 <https://www.imdb.com/name/nm10981684/mediaviewer/rm1967123201/>,
+                 <https://www.imdb.com/name/nm10981684/mediaviewer/rm1345383169/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Jojo Rabbit (2019)
+<https://www.imdb.com/title/tt2584384/> a schema:Movie ;
+    schema:name "Jojo Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt2584384/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10981684/> ;
+        schema:characterName "Clone"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm10981684/mediaviewer/rm2034232065/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmVlYzIwNDUtMGMxYi00ZmYzLTgwMzctYjMyN2M0OWQ0Mjg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Goode, Keira Knightley, Lucy Punch, Gilby Griffin Davis, Hardy Griffin Davis, Rufus Jones, Annabelle Wallis, Kirby Howell-Baptiste, Sope Dirisu, Davida McKenzie, and Roman Griffin Davis in Silent Night (2021)" ;
+    schema:height "3799"^^xsd:integer ;
+    schema:width "5699"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10981684/mediaviewer/rm2084563713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWM0NzZiZmItODdjYy00MDVlLWI2YzctMDZjNmU1ZDVjNGFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Goode, Keira Knightley, Gilby Griffin Davis, Hardy Griffin Davis, Rufus Jones, Kirby Howell-Baptiste, Sope Dirisu, and Roman Griffin Davis in Silent Night (2021)" ;
+    schema:height "3870"^^xsd:integer ;
+    schema:width "5805"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10981684/mediaviewer/rm1883237121/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDJhMWI5MTctNjk5Yi00MmEzLWJkNjUtM2ZjY2Y4ZWE5OGY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Goode, Keira Knightley, Gilby Griffin Davis, and Hardy Griffin Davis in Silent Night (2021)" ;
+    schema:height "3767"^^xsd:integer ;
+    schema:width "5650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10981684/mediaviewer/rm1967123201/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc0ZGU1NTktN2UzMi00ODljLWFmMDYtYzRkMTljNzZhNDUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Goode, Keira Knightley, Lucy Punch, Gilby Griffin Davis, Hardy Griffin Davis, Rufus Jones, Annabelle Wallis, Kirby Howell-Baptiste, Sope Dirisu, Lily-Rose Depp, Davida McKenzie, and Roman Griffin Davis in Silent Night (2021)" ;
+    schema:height "3861"^^xsd:integer ;
+    schema:width "5792"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10981684/mediaviewer/rm1345383169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAzYzQzYjUtNTE4Ni00NGNkLThhMTctM2QzZTc3NzNiMDBhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Goode, Keira Knightley, Lucy Punch, Gilby Griffin Davis, Hardy Griffin Davis, Rufus Jones, Annabelle Wallis, Kirby Howell-Baptiste, Sope Dirisu, Lily-Rose Depp, Davida McKenzie, and Roman Griffin Davis in Silent Night (2021)" ;
+    schema:height "4096"^^xsd:integer ;
+    schema:width "2764"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

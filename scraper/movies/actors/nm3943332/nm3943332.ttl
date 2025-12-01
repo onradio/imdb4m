@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3943332/> a schema:Person ;
+    schema:name "Horacio Vay" ;
+    schema:url <https://www.imdb.com/name/nm3943332/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Horacio Vay. Actor: Wild Tales. Horacio Vay is known for Wild Tales (2014), Zenitram (2010) and Verano frío (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5125982/>,    # Verano frío
+                       <https://www.imdb.com/title/tt3011894/>,    # Wild Tales
+                       <https://www.imdb.com/title/tt1890391/>,    # The Dead Man and Being Happy
+                       <https://www.imdb.com/title/tt1756692/>,    # Querida voy a comprar cigarrillos y vuelvo
+                       <https://www.imdb.com/title/tt0861747/> . # Zenitram
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Verano frío (2015)
+<https://www.imdb.com/title/tt5125982/> a schema:Movie ;
+    schema:name "Verano frío" ;
+    schema:url <https://www.imdb.com/title/tt5125982/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3943332/> ;
+        schema:characterName "Osvaldo"
+    ] .
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3943332/> ;
+        schema:characterName "Hombre #2"
+    ] .
+
+# The Dead Man and Being Happy (2012)
+<https://www.imdb.com/title/tt1890391/> a schema:Movie ;
+    schema:name "The Dead Man and Being Happy" ;
+    schema:url <https://www.imdb.com/title/tt1890391/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3943332/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Querida voy a comprar cigarrillos y vuelvo (2011)
+<https://www.imdb.com/title/tt1756692/> a schema:Movie ;
+    schema:name "Querida voy a comprar cigarrillos y vuelvo" ;
+    schema:url <https://www.imdb.com/title/tt1756692/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3943332/> ;
+        schema:characterName "Dueño del Canal"
+    ] .
+
+# Zenitram (2010)
+<https://www.imdb.com/title/tt0861747/> a schema:Movie ;
+    schema:name "Zenitram" ;
+    schema:url <https://www.imdb.com/title/tt0861747/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3943332/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

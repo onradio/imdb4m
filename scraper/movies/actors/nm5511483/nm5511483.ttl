@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5511483/> a schema:Person ;
+    schema:name "Absa Diatou Toure" ;
+    schema:url <https://www.imdb.com/name/nm5511483/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Absa Diatou Toure. Actress: Untouchable. Absa Diatou Toure is known for Untouchable (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1675434/> .    # Untouchable
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Untouchable (2011)
+<https://www.imdb.com/title/tt1675434/> a schema:Movie ;
+    schema:name "Untouchable" ;
+    schema:url <https://www.imdb.com/title/tt1675434/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511483/> ;
+        schema:characterName "Mina"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

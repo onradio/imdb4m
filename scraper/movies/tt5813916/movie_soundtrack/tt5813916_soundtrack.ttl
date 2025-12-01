@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5813916/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Kolay Degildir" ;
+        schema:byArtist <https://www.imdb.com/name/nm1919091/> ; # Duman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kolay Degildir" ;
+            schema:author <https://www.imdb.com/name/nm1919091/> # Duman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ayrilik (Fikrimden Geceler)" ;
+        schema:byArtist <https://www.imdb.com/name/nm2549619/> ; # Selda Bagcan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ayrilik (Fikrimden Geceler)" ;
+            schema:author <https://www.imdb.com/name/nm5463860/> # Farhad Ebrahimi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Affet" ;
+        schema:byArtist <https://www.imdb.com/name/nm1786062/> ; # Müslüm Gürses
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Affet" ;
+            schema:author <https://www.imdb.com/name/nm1785771/> # Tuna Kiremitçi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ayrilik" ;
+        schema:byArtist <https://www.imdb.com/name/nm2549619/> ; # Selda Bagcan
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Affet" ;
+        schema:byArtist <https://www.imdb.com/name/nm1786062/> ; # Müslüm Gürses
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Affet" ;
+            schema:lyricist <https://www.imdb.com/name/nm1785771/> # Tuna Kiremitçi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kolay Degildir" ;
+        schema:byArtist <https://www.imdb.com/name/nm1919091/> ; # Duman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kolay Degildir" ;
+            schema:composer <https://www.imdb.com/name/nm1919091/> ; # Duman
+            schema:lyricist <https://www.imdb.com/name/nm1919091/> # Duman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kalmak Türküsü" ;
+        schema:byArtist <https://www.imdb.com/name/nm1919091/> ; # Duman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kalmak Türküsü" ;
+            schema:lyricist <https://www.imdb.com/name/nm4136130/> # Özdemir Asaf
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm1785771/> a schema:Person ;
+    schema:name "Tuna Kiremitçi" .
+<https://www.imdb.com/name/nm1786062/> a schema:Person ;
+    schema:name "Müslüm Gürses" .
+<https://www.imdb.com/name/nm1919091/> a schema:Person ;
+    schema:name "Duman" .
+<https://www.imdb.com/name/nm2549619/> a schema:Person ;
+    schema:name "Selda Bagcan" .
+<https://www.imdb.com/name/nm4136130/> a schema:Person ;
+    schema:name "Özdemir Asaf" .
+<https://www.imdb.com/name/nm5463860/> a schema:Person ;
+    schema:name "Farhad Ebrahimi" .
+# ==============================================================================

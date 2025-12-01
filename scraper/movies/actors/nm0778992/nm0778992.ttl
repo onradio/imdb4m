@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0778992/> a schema:Person ;
+    schema:name "Cynthia Dale Scott" ;
+    schema:url <https://www.imdb.com/name/nm0778992/> ;
+    schema:jobTitle "Actress", "Costume Department" ;
+    schema:description "Cynthia Dale Scott. Actress: Aliens. Cynthia Dale Scott is known for Aliens (1986), Rush (1991) and Invasion Earth: The Aliens Are Here (1988)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk0MjgxODEzNV5BMl5BanBnXkFtZTcwNjUwMzkxOA@@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116514/>,    # Hellraiser: Bloodline
+                       <https://www.imdb.com/title/tt0102820/>,    # Rush
+                       <https://www.imdb.com/title/tt0093272/>,    # Invasion Earth: The Aliens Are Here
+                       <https://www.imdb.com/title/tt0088576/>,    # Mr. Belvedere
+                       <https://www.imdb.com/title/tt0090605/> ; # Aliens
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0778992/mediaviewer/rm287411968/>,
+                 <https://www.imdb.com/name/nm0778992/mediaviewer/rm1613933312/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hellraiser: Bloodline (1996)
+<https://www.imdb.com/title/tt0116514/> a schema:Movie ;
+    schema:name "Hellraiser: Bloodline" ;
+    schema:url <https://www.imdb.com/title/tt0116514/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778992/> ;
+        schema:characterName "Roscoe"
+    ] .
+
+# Rush (1991)
+<https://www.imdb.com/title/tt0102820/> a schema:Movie ;
+    schema:name "Rush" ;
+    schema:url <https://www.imdb.com/title/tt0102820/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778992/> ;
+        schema:characterName "Yellow Rose Waitress"
+    ] .
+
+# Invasion Earth: The Aliens Are Here (1988)
+<https://www.imdb.com/title/tt0093272/> a schema:Movie ;
+    schema:name "Invasion Earth: The Aliens Are Here" ;
+    schema:url <https://www.imdb.com/title/tt0093272/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778992/> ;
+        schema:characterName "Cashier"
+    ] .
+
+# Mr. Belvedere (1987)
+<https://www.imdb.com/title/tt0088576/> a schema:Movie ;
+    schema:name "Mr. Belvedere" ;
+    schema:url <https://www.imdb.com/title/tt0088576/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778992/> ;
+        schema:characterName "Katrina"
+    ] .
+
+# Aliens (1986)
+<https://www.imdb.com/title/tt0090605/> a schema:Movie ;
+    schema:name "Aliens" ;
+    schema:url <https://www.imdb.com/title/tt0090605/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778992/> ;
+        schema:characterName "Corporal Dietrich"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk0MjgxODEzNV5BMl5BanBnXkFtZTcwNjUwMzkxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0MjgxODEzNV5BMl5BanBnXkFtZTcwNjUwMzkxOA@@._V1_.jpg> ;
+    schema:caption "Cynthia Dale Scott" ;
+    schema:height "1056"^^xsd:integer ;
+    schema:width "901"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778992/mediaviewer/rm287411968/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyMTIyOTQ2OV5BMl5BanBnXkFtZTcwMDA0ODEyMw@@._V1_.jpg> ;
+    schema:caption "Bill Paxton, Sigourney Weaver, Michael Biehn, Lance Henriksen, Jenette Goldstein, Paul Reiser, Mark Rolston, Colette Hiller, William Hope, Daniel Kash, Al Matthews, Ricco Ross, Cynthia Dale Scott, Trevor Steedman, and Tip Tipping in Aliens (1986)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778992/mediaviewer/rm1613933312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0MjgxODEzNV5BMl5BanBnXkFtZTcwNjUwMzkxOA@@._V1_.jpg> ;
+    schema:caption "Cynthia Dale Scott" ;
+    schema:height "1056"^^xsd:integer ;
+    schema:width "901"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

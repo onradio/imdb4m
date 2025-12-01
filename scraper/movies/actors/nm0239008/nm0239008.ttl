@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0239008/> a schema:Person ;
+    schema:name "Zhenxi Du" ;
+    schema:url <https://www.imdb.com/name/nm0239008/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Zhenxi Du. Actor: Crouching Tiger, Hidden Dragon. Zhenxi Du is known for Crouching Tiger, Hidden Dragon (2000), Da lu (1993) and San guo yan yi (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0190332/>,    # Crouching Tiger, Hidden Dragon
+                       <https://www.imdb.com/title/tt0108914/>,    # San guo yan yi
+                       <https://www.imdb.com/title/tt0186015/> . # Da lu
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Crouching Tiger, Hidden Dragon (2000)
+<https://www.imdb.com/title/tt0190332/> a schema:Movie ;
+    schema:name "Crouching Tiger, Hidden Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0190332/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0239008/> ;
+        schema:characterName "Shop Owner"
+    ] .
+
+# San guo yan yi (1995)
+<https://www.imdb.com/title/tt0108914/> a schema:Movie ;
+    schema:name "San guo yan yi" ;
+    schema:url <https://www.imdb.com/title/tt0108914/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0239008/> ;
+        schema:characterName "Jia Kui"
+    ] .
+
+# Da lu (1993)
+<https://www.imdb.com/title/tt0186015/> a schema:Movie ;
+    schema:name "Da lu" ;
+    schema:url <https://www.imdb.com/title/tt0186015/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0239008/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

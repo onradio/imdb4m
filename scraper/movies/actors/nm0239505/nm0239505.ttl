@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0239505/> a schema:Person ;
+    schema:name "Columbia Dubose" ;
+    schema:url <https://www.imdb.com/name/nm0239505/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Columbia Dubose. Actress: JFK. Columbia Dubose is known for JFK (1991) and Barney: Rhyme Time Rhythm (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5065208/>,    # Barney: Rhyme Time Rhythm
+                       <https://www.imdb.com/title/tt0102138/> ; # JFK
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0239505/mediaviewer/rm1184674560/>,
+                 <https://www.imdb.com/name/nm0239505/mediaviewer/rm1201451776/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Barney: Rhyme Time Rhythm (2000)
+<https://www.imdb.com/title/tt5065208/> a schema:Movie ;
+    schema:name "Barney: Rhyme Time Rhythm" ;
+    schema:url <https://www.imdb.com/title/tt5065208/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0239505/> ;
+        schema:characterName "Mrs. Pumpkin Eater"
+    ] .
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0239505/> ;
+        schema:characterName "Nellie Connally - Double"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0239505/mediaviewer/rm1184674560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDU1NDQ4MDA4N15BMl5BanBnXkFtZTcwMTMxNzkwNw@@._V1_.jpg> ;
+    schema:caption "Columbia Dubose, Jodie Farber, Randy Means, and Steve Reed in JFK (1991)" ;
+    schema:height "1263"^^xsd:integer ;
+    schema:width "1878"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0239505/mediaviewer/rm1201451776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkwNDAwNzE3Nl5BMl5BanBnXkFtZTcwMDMxNzkwNw@@._V1_.jpg> ;
+    schema:caption "Columbia Dubose, Jodie Farber, Randy Means, and Steve Reed in JFK (1991)" ;
+    schema:height "1312"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

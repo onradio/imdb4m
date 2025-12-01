@@ -1,0 +1,200 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0641233/> a schema:Person ;
+    schema:name "Chris O&apos;Hara" ;
+    schema:url <https://www.imdb.com/name/nm0641233/> ;
+    schema:jobTitle "Stunts", "Second Unit or Assistant Director", "Actor" ;
+    schema:description "Chris O'Hara. Stunts: Venom. Chris O'Hara was born in Bronx, New York, USA. He is an assistant director and actor, known for Venom (2018), Baby Driver (2017) and Jurassic World (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTJhNGMzNGItZjJhMi00OTJmLTk5MTEtZjEwNWE5YWEzMjAzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bronx, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1270797/>,    # Venom
+                       <https://www.imdb.com/title/tt2873282/>,    # Red Sparrow
+                       <https://www.imdb.com/title/tt2364582/>,    # Agents of S.H.I.E.L.D.
+                       <https://www.imdb.com/title/tt0337887/>,    # Sledge: The Untold Story
+                       <https://www.imdb.com/title/tt0175880/>,    # Magnolia
+                       <https://www.imdb.com/title/tt0317568/> ; # Get the Terrorists
+
+
+    schema:video <https://www.imdb.com/video/vi1270924825/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0641233/mediaviewer/rm827229441/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm4282751234/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm625318146/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm3299971328/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm2202376450/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm3266416896/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm1480956162/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm71670018/>,
+                 <https://www.imdb.com/name/nm0641233/mediaviewer/rm860199170/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Venom (2018)
+<https://www.imdb.com/title/tt1270797/> a schema:Movie ;
+    schema:name "Venom" ;
+    schema:url <https://www.imdb.com/title/tt1270797/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName "Astronaut JJ Jameson, III"
+    ] .
+
+# Red Sparrow (2018)
+<https://www.imdb.com/title/tt2873282/> a schema:Movie ;
+    schema:name "Red Sparrow" ;
+    schema:url <https://www.imdb.com/title/tt2873282/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName "Marine Guard"
+    ] .
+
+# Agents of S.H.I.E.L.D. (2016)
+<https://www.imdb.com/title/tt2364582/> a schema:Movie ;
+    schema:name "Agents of S.H.I.E.L.D." ;
+    schema:url <https://www.imdb.com/title/tt2364582/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName "Watchdog"
+    ] .
+
+# Sledge: The Untold Story (2005)
+<https://www.imdb.com/title/tt0337887/> a schema:Movie ;
+    schema:name "Sledge: The Untold Story" ;
+    schema:url <https://www.imdb.com/title/tt0337887/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName "Frank's Stunt Double"
+    ] .
+
+# Magnolia (1999)
+<https://www.imdb.com/title/tt0175880/> a schema:Movie ;
+    schema:name "Magnolia" ;
+    schema:url <https://www.imdb.com/title/tt0175880/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName "Sydney Barringer"
+    ] .
+
+# Get the Terrorists (1987)
+<https://www.imdb.com/title/tt0317568/> a schema:Movie ;
+    schema:name "Get the Terrorists" ;
+    schema:url <https://www.imdb.com/title/tt0317568/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0641233/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1270924825/> a schema:VideoObject ;
+        schema:name "Action" ;
+        schema:description "Action" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1270924825/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMmM2NTJkNTgtNTFhZS00ZGQxLWI2NTctNTc2ZjNkOWYzY2UxXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2024-05-23T13:04:16Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTJhNGMzNGItZjJhMi00OTJmLTk5MTEtZjEwNWE5YWEzMjAzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTJhNGMzNGItZjJhMi00OTJmLTk5MTEtZjEwNWE5YWEzMjAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris O'Hara" ;
+    schema:height "1122"^^xsd:integer ;
+    schema:width "1420"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm827229441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDkxYTRmOWYtZTU1Yi00YzE3LWE5ZjMtZDI5MjA4YWQ1ZWFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris O'Hara, Bryan Sundstrom, and Andrew Gutu" ;
+    schema:height "4032"^^xsd:integer ;
+    schema:width "3024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm4282751234/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2EwNGJkYzgtZmRjYy00ZjE3LWFiMjEtNjNkZTgzYjIwNWIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "2024 Governors Awards" ;
+    schema:height "2715"^^xsd:integer ;
+    schema:width "2246"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm625318146/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTkyOWUyYjYtZTkwYy00Nzg0LTg5ZTAtYTg0YmY5Y2RlYmIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris O'Hara" ;
+    schema:height "4152"^^xsd:integer ;
+    schema:width "6228"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm3299971328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzMzE3NzU4MV5BMl5BanBnXkFyZXN1bWU@._V1_.jpg> ;
+    schema:caption "\"Pearl Harbor\"" ;
+    schema:height "2550"^^xsd:integer ;
+    schema:width "2663"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm2202376450/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWJlNmNiNTYtMGMwNi00MzE0LTk2MjMtNWU3MjU4MjBjYmY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Brown, David Leitch, Chris O'Hara, and Troy Lindsay Brown" ;
+    schema:height "2792"^^xsd:integer ;
+    schema:width "4184"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm3266416896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU5NTA1ODA4NF5BMl5BanBnXkFtZTYwOTI2NzAy._V1_.jpg> ;
+    schema:caption "Chris O'Hara" ;
+    schema:height "3072"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm1480956162/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNDQ3OTMtMGY1MC00NzNlLTkzYzgtZTdkNDkzZTgxMjBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Keir Beck and Chris O'Hara" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm71670018/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjY0NDI0Y2ItMTEwZC00MDY0LTlkMjAtZjYwNGJkZjY4NmM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Logan Holladay and Chris O'Hara" ;
+    schema:height "4032"^^xsd:integer ;
+    schema:width "3024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0641233/mediaviewer/rm860199170/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTRiN2E4ZjAtMTczYS00ZDI0LTlmNzEtOWUwOGZiZGRiODVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Logan Holladay, David Leitch, Chris O'Hara, and Ben Jenkin" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

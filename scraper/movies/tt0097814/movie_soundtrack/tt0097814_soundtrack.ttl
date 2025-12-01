@@ -1,0 +1,44 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097814/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Soaring" ;
+        schema:byArtist <https://www.imdb.com/name/nm0286144/> ; # Sydney Forest
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Soaring" ;
+            schema:author <https://www.imdb.com/name/nm0286144/> # Sydney Forest
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rouge no Dengon (Message of Rouge)" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'm Gonna Fly" ;
+        schema:byArtist <https://www.imdb.com/name/nm0286144/> ; # Sydney Forest
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'm Gonna Fly" ;
+            schema:author <https://www.imdb.com/name/nm0286144/> # Sydney Forest
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Yasashisa ni Tsutsumareta nara (Wrapped in Kindness)" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0286144/> a schema:Person ;
+    schema:name "Sydney Forest" .
+# ==============================================================================

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0718125/> a schema:Person ;
+    schema:name "Athina Rachel Tsangari" ;
+    schema:url <https://www.imdb.com/name/nm0718125/> ;
+    schema:birthDate "1966-04-02"^^xsd:date ;
+    schema:jobTitle "Producer", "Director", "Writer" ;
+    schema:description "Athina Rachel Tsangari. Producer: Attenberg. Athina Rachel Tsangari was born on 2 April 1966 in Aspra Spitia, Greece. She is a producer and director, known for Attenberg (2010), Chevalier (2015) and The Slow Business of Going (2000)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzYxMDc1MzI4MF5BMl5BanBnXkFtZTcwNTIwNzUzNA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Aspra Spitia, Greece"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2209418/>,    # Before Midnight
+                       <https://www.imdb.com/title/tt0102943/> ; # Slacker
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0718125/mediaviewer/rm3910836480/>,
+                 <https://www.imdb.com/name/nm0718125/mediaviewer/rm2661909250/>,
+                 <https://www.imdb.com/name/nm0718125/mediaviewer/rm794854656/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Midnight (2013)
+<https://www.imdb.com/title/tt2209418/> a schema:Movie ;
+    schema:name "Before Midnight" ;
+    schema:url <https://www.imdb.com/title/tt2209418/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0718125/> ;
+        schema:characterName "Ariadni"
+    ] .
+
+# Slacker (1990)
+<https://www.imdb.com/title/tt0102943/> a schema:Movie ;
+    schema:name "Slacker" ;
+    schema:url <https://www.imdb.com/title/tt0102943/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0718125/> ;
+        schema:characterName "Cousin from Greece"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzYxMDc1MzI4MF5BMl5BanBnXkFtZTcwNTIwNzUzNA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzYxMDc1MzI4MF5BMl5BanBnXkFtZTcwNTIwNzUzNA@@._V1_.jpg> ;
+    schema:caption "Athina Rachel Tsangari in Attenberg (2010)" ;
+    schema:height "1772"^^xsd:integer ;
+    schema:width "1181"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0718125/mediaviewer/rm3910836480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzQzMTAyMjM1Nl5BMl5BanBnXkFtZTcwNzg2NzkzOQ@@._V1_.jpg> ;
+    schema:caption "Athina Rachel Tsangari and Panos Koronis in Before Midnight (2013)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0718125/mediaviewer/rm2661909250/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWJmYmM5MTQtMGNiOC00ZjgyLTg0YmQtYWY5YjQ1ZTBhNGUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Athina Rachel Tsangari and Caleb Landry Jones in Harvest (2024)" ;
+    schema:height "2432"^^xsd:integer ;
+    schema:width "3636"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0718125/mediaviewer/rm794854656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzYxMDc1MzI4MF5BMl5BanBnXkFtZTcwNTIwNzUzNA@@._V1_.jpg> ;
+    schema:caption "Athina Rachel Tsangari in Attenberg (2010)" ;
+    schema:height "1772"^^xsd:integer ;
+    schema:width "1181"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

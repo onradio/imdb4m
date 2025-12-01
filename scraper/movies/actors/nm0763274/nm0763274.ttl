@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0763274/> a schema:Person ;
+    schema:name "Arnaldo Santana" ;
+    schema:url <https://www.imdb.com/name/nm0763274/> ;
+    schema:birthDate "1950-09-01"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Luis Arnaldo Santana" ;
+    schema:description "Arnaldo Santana. Actor: Scarface. Arnaldo Santana was born on 1 September 1950 in El Paso, Texas, USA. He was an actor, known for Scarface (1983), Cruising (1980) and a.k.a. Pablo (1984). He died on 8 October 1987 in New York City, New York, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "El Paso, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086250/>,    # Scarface
+                       <https://www.imdb.com/title/tt0080569/>,    # Cruising
+                       <https://www.imdb.com/title/tt0086832/>,    # a.k.a. Pablo
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0086168/>,    # Rage of Angels
+                       <https://www.imdb.com/title/tt0081909/>,    # Nurse
+                       <https://www.imdb.com/title/tt0056752/>,    # The Doctors
+                       <https://www.imdb.com/title/tt0217409/>,    # Dune Buddies
+                       <https://www.imdb.com/title/tt0253326/>,    # A Night at the Adonis
+                       <https://www.imdb.com/title/tt0972549/> ; # The Boys from Riverside Drive
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0763274/mediaviewer/rm2844807681/>,
+                 <https://www.imdb.com/name/nm0763274/mediaviewer/rm3289861120/>,
+                 <https://www.imdb.com/name/nm0763274/mediaviewer/rm470635008/>,
+                 <https://www.imdb.com/name/nm0763274/mediaviewer/rm2496633088/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086250/> a schema:Movie ;
+    schema:name "Scarface" ;
+    schema:url <https://www.imdb.com/title/tt0086250/> .
+
+<https://www.imdb.com/title/tt0080569/> a schema:Movie ;
+    schema:name "Cruising" ;
+    schema:url <https://www.imdb.com/title/tt0080569/> .
+
+<https://www.imdb.com/title/tt0086832/> a schema:Movie ;
+    schema:name "a.k.a. Pablo" ;
+    schema:url <https://www.imdb.com/title/tt0086832/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rage of Angels (1983)
+<https://www.imdb.com/title/tt0086168/> a schema:Movie ;
+    schema:name "Rage of Angels" ;
+    schema:url <https://www.imdb.com/title/tt0086168/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "Sailor Waiter"
+    ] .
+
+# Nurse (1982)
+<https://www.imdb.com/title/tt0081909/> a schema:Movie ;
+    schema:name "Nurse" ;
+    schema:url <https://www.imdb.com/title/tt0081909/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "Diego Colon"
+    ] .
+
+# The Doctors (1979)
+<https://www.imdb.com/title/tt0056752/> a schema:Movie ;
+    schema:name "The Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0056752/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "Fry Cook"
+    ] .
+
+# Dune Buddies (1978)
+<https://www.imdb.com/title/tt0217409/> a schema:Movie ;
+    schema:name "Dune Buddies" ;
+    schema:url <https://www.imdb.com/title/tt0217409/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "Paul Hazard"
+    ] .
+
+# A Night at the Adonis (1978)
+<https://www.imdb.com/title/tt0253326/> a schema:Movie ;
+    schema:name "A Night at the Adonis" ;
+    schema:url <https://www.imdb.com/title/tt0253326/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "Ray"
+    ] .
+
+# The Boys from Riverside Drive (1977)
+<https://www.imdb.com/title/tt0972549/> a schema:Movie ;
+    schema:name "The Boys from Riverside Drive" ;
+    schema:url <https://www.imdb.com/title/tt0972549/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0763274/> ;
+        schema:characterName "The Ideal Couple"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0763274/mediaviewer/rm2844807681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTQ3NTc1NWUtOGEwNy00ZjYyLWEyYjUtNjM0YTE1OWZhODM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Al Pacino, Robert Loggia, and Arnaldo Santana in Scarface (1983)" ;
+    schema:height "637"^^xsd:integer ;
+    schema:width "1520"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0763274/mediaviewer/rm3289861120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGU4YzljYzctMzczMC00NGQxLTkwMGYtYjY1NWY0NzllZWFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert Loggia and Arnaldo Santana in Scarface (1983)" ;
+    schema:height "403"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0763274/mediaviewer/rm470635008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWQzNDA1NjMtZTk4MC00OWRkLWE5NTYtMjA1NDA2OWJlYjFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Al Pacino, Steven Bauer, Michael P. Moran, Ángel Salazar, and Arnaldo Santana in Scarface (1983)" ;
+    schema:height "385"^^xsd:integer ;
+    schema:width "585"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0763274/mediaviewer/rm2496633088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3MTEzNzcwMl5BMl5BanBnXkFtZTYwNTI3NjI3._V1_.jpg> ;
+    schema:caption "Al Pacino, Steven Bauer, Michael P. Moran, Ángel Salazar, and Arnaldo Santana in Scarface (1983)" ;
+    schema:height "320"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

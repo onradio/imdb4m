@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0098087/> a schema:Person ;
+    schema:name "Sarah Boss" ;
+    schema:url <https://www.imdb.com/name/nm0098087/> ;
+    schema:birthDate "1975-06-15"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:description "Sarah Boss. Actress: Sling Blade. Sarah Boss was born on 15 June 1975 in Fayetteville, Arkansas, USA. She is an actress, known for Sling Blade (1996), The Ernest Green Story (1993) and Date or Disaster (2003)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Fayetteville, Arkansas, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0117666/>,    # Sling Blade
+                       <https://www.imdb.com/title/tt0106826/> . # The Ernest Green Story
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sling Blade (1996)
+<https://www.imdb.com/title/tt0117666/> a schema:Movie ;
+    schema:name "Sling Blade" ;
+    schema:url <https://www.imdb.com/title/tt0117666/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0098087/> ;
+        schema:characterName "Marsha Dwiggins"
+    ] .
+
+# The Ernest Green Story (1993)
+<https://www.imdb.com/title/tt0106826/> a schema:Movie ;
+    schema:name "The Ernest Green Story" ;
+    schema:url <https://www.imdb.com/title/tt0106826/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0098087/> ;
+        schema:characterName "Rhonda"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

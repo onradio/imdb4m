@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3370641/> a schema:Person ;
+    schema:name "Patrick McCabe" ;
+    schema:url <https://www.imdb.com/name/nm3370641/> ;
+    schema:jobTitle "Editor", "Producer", "Writer" ;
+    schema:description "Patrick McCabe. Editor: Flathead. Patrick McCabe is an AACTA award winning and ASE award nominated filmmaker with over 18 years of experience across a diverse array of narrative, documentary, music and art projects. His most recent work includes Flathead (IFFR Tiger Competition Special Jury Award), Because We Have Each Other, Still We Rise and Katele (Mudskipper)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZTdhN2YxN2EtMDRjYi00YTkxLTk0YTEtYWVkN2Y1MWQ3ZGMxXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0978762/> ;    # Mary and Max
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3370641/mediaviewer/rm1948641025/>,
+                 <https://www.imdb.com/name/nm3370641/mediaviewer/rm841437441/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mary and Max (2009)
+<https://www.imdb.com/title/tt0978762/> a schema:Movie ;
+    schema:name "Mary and Max" ;
+    schema:url <https://www.imdb.com/title/tt0978762/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3370641/> ;
+        schema:characterName "Datsun Sunny Driver"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZTdhN2YxN2EtMDRjYi00YTkxLTk0YTEtYWVkN2Y1MWQ3ZGMxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTdhN2YxN2EtMDRjYi00YTkxLTk0YTEtYWVkN2Y1MWQ3ZGMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick McCabe" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "2631"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3370641/mediaviewer/rm1948641025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGFkZjEyZTEtYjMwNy00Yzc1LWEzMDEtZTY3ZDdlNWIwNzMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick McCabe" ;
+    schema:height "1000"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3370641/mediaviewer/rm841437441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTdhN2YxN2EtMDRjYi00YTkxLTk0YTEtYWVkN2Y1MWQ3ZGMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick McCabe" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "2631"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1277591/> a schema:Person ;
+    schema:name "Paris Howe Strewe" ;
+    schema:url <https://www.imdb.com/name/nm1277591/> ;
+    schema:jobTitle "Actor", "Camera and Electrical Department" ;
+    schema:description "Paris Howe Strewe. Actor: The Lord of the Rings: The Two Towers. Paris Howe Strewe is known for The Lord of the Rings: The Two Towers (2002) and Memory & Desire (1998)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjNhMDI0NWItYTQ1Yi00ZDRhLWFlYWUtM2QzYjQwOWNkOTY3XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0167261/> ;    # The Lord of the Rings: The Two Towers
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1277591/mediaviewer/rm3925168128/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Lord of the Rings: The Two Towers (2002)
+<https://www.imdb.com/title/tt0167261/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Two Towers" ;
+    schema:url <https://www.imdb.com/title/tt0167261/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1277591/> ;
+        schema:characterName "Theodred"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjNhMDI0NWItYTQ1Yi00ZDRhLWFlYWUtM2QzYjQwOWNkOTY3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjNhMDI0NWItYTQ1Yi00ZDRhLWFlYWUtM2QzYjQwOWNkOTY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paris Howe Strewe in The Lord of the Rings: The Two Towers (2002)" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "250"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1277591/mediaviewer/rm3925168128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjNhMDI0NWItYTQ1Yi00ZDRhLWFlYWUtM2QzYjQwOWNkOTY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paris Howe Strewe in The Lord of the Rings: The Two Towers (2002)" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "250"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

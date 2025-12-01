@@ -1,0 +1,141 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0226746/> a schema:Person ;
+    schema:name "Frank DiLeo" ;
+    schema:url <https://www.imdb.com/name/nm0226746/> ;
+    schema:birthDate "1947-10-23"^^xsd:date ;
+    schema:jobTitle "Producer", "Actor" ;
+    schema:description "Frank DiLeo. Actor: GoodFellas. Frank DiLeo was born on 23 October 1947 in Pittsburgh, Pennsylvania, USA. He was a producer and actor, known for GoodFellas (1990), Moonwalker (1988) and Wayne's World 2 (1993). He was married to Linda Kae Laughlin. He died on 24 August 2011 in North Lima, Ohio, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pittsburgh, Pennsylvania, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.56"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 1½″ (1.56 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113552/>,    # Kiss of Death
+                       <https://www.imdb.com/title/tt0108876/>,    # New York Undercover
+                       <https://www.imdb.com/title/tt0108525/>,    # Wayne's World 2
+                       <https://www.imdb.com/title/tt0106161/>,    # Tribeca
+                       <https://www.imdb.com/title/tt0105793/>,    # Wayne's World
+                       <https://www.imdb.com/title/tt0099685/>,    # GoodFellas
+                       <https://www.imdb.com/title/tt0095655/> ; # Moonwalker
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0226746/mediaviewer/rm2499512064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kiss of Death (1995)
+<https://www.imdb.com/title/tt0113552/> a schema:Movie ;
+    schema:name "Kiss of Death" ;
+    schema:url <https://www.imdb.com/title/tt0113552/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Big Junior's Friend"
+    ] .
+
+# New York Undercover (1994)
+<https://www.imdb.com/title/tt0108876/> a schema:Movie ;
+    schema:name "New York Undercover" ;
+    schema:url <https://www.imdb.com/title/tt0108876/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Tommy T"
+    ] .
+
+# Wayne's World 2 (1993)
+<https://www.imdb.com/title/tt0108525/> a schema:Movie ;
+    schema:name "Wayne's World 2" ;
+    schema:url <https://www.imdb.com/title/tt0108525/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Frankie 'Mr. Big' Sharp"
+    ] .
+
+# Tribeca (1993)
+<https://www.imdb.com/title/tt0106161/> a schema:Movie ;
+    schema:name "Tribeca" ;
+    schema:url <https://www.imdb.com/title/tt0106161/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Super"
+    ] .
+
+# Wayne's World (1992)
+<https://www.imdb.com/title/tt0105793/> a schema:Movie ;
+    schema:name "Wayne's World" ;
+    schema:url <https://www.imdb.com/title/tt0105793/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Frankie Sharp (Mr. Big)"
+    ] .
+
+# GoodFellas (1990)
+<https://www.imdb.com/title/tt0099685/> a schema:Movie ;
+    schema:name "GoodFellas" ;
+    schema:url <https://www.imdb.com/title/tt0099685/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Tuddy Cicero"
+    ] .
+
+# Moonwalker (1988)
+<https://www.imdb.com/title/tt0095655/> a schema:Movie ;
+    schema:name "Moonwalker" ;
+    schema:url <https://www.imdb.com/title/tt0095655/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0226746/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0226746/mediaviewer/rm2499512064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ0NjM4NzY4OF5BMl5BanBnXkFtZTcwMzMwMjMwNA@@._V1_.jpg> ;
+    schema:caption "Robert De Niro, Paul Sorvino, Anthony Alessandro, Tony Conforti, Joseph D'Onofrio, Frank DiLeo, Ronald Maccone, Christopher Serrone, Tony Sirico, and Philip Suriano in GoodFellas (1990)" ;
+    schema:height "1378"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

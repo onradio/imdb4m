@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0269431/> a schema:Person ;
+    schema:name "Jean-Marc Favorin" ;
+    schema:url <https://www.imdb.com/name/nm0269431/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jean-Marc Favorin. Actor: In Bruges. Jean-Marc Favorin is known for In Bruges (2008), Mr. Morgan's Last Love (2013) and The Spiral (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1838603/>,    # Mr. Morgan's Last Love
+                       <https://www.imdb.com/title/tt2264587/>,    # The Spiral
+                       <https://www.imdb.com/title/tt1381112/>,    # Sister Smile
+                       <https://www.imdb.com/title/tt0780536/>,    # In Bruges
+                       <https://www.imdb.com/title/tt0367158/>,    # La torpille
+                       <https://www.imdb.com/title/tt0252665/>,    # Le vélo de Ghislain Lambert
+                       <https://www.imdb.com/title/tt0174619/> . # Embrasse-moi vite!
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mr. Morgan's Last Love (2013)
+<https://www.imdb.com/title/tt1838603/> a schema:Movie ;
+    schema:name "Mr. Morgan's Last Love" ;
+    schema:url <https://www.imdb.com/title/tt1838603/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Maitre D' Country Restaurant"
+    ] .
+
+# The Spiral (2012)
+<https://www.imdb.com/title/tt2264587/> a schema:Movie ;
+    schema:name "The Spiral" ;
+    schema:url <https://www.imdb.com/title/tt2264587/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Wolf"
+    ] .
+
+# Sister Smile (2009)
+<https://www.imdb.com/title/tt1381112/> a schema:Movie ;
+    schema:name "Sister Smile" ;
+    schema:url <https://www.imdb.com/title/tt1381112/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Eric Destal"
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# La torpille (2002)
+<https://www.imdb.com/title/tt0367158/> a schema:Movie ;
+    schema:name "La torpille" ;
+    schema:url <https://www.imdb.com/title/tt0367158/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Rédacteur 3"
+    ] .
+
+# Le vélo de Ghislain Lambert (2001)
+<https://www.imdb.com/title/tt0252665/> a schema:Movie ;
+    schema:name "Le vélo de Ghislain Lambert" ;
+    schema:url <https://www.imdb.com/title/tt0252665/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName "Le coureur stopodor"
+    ] .
+
+# Embrasse-moi vite! (1993)
+<https://www.imdb.com/title/tt0174619/> a schema:Movie ;
+    schema:name "Embrasse-moi vite!" ;
+    schema:url <https://www.imdb.com/title/tt0174619/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0269431/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

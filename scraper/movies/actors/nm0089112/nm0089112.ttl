@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0089112/> a schema:Person ;
+    schema:name "Willi One Blood" ;
+    schema:url <https://www.imdb.com/name/nm0089112/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Willi One Blood. Actor: Leon. Willi One Blood is known for Leon (1994), Dumb and Dumber (1994) and Joe's Apartment (1996)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZGQyYmI4ZTEtZGFkZi00OTU4LWJmNzAtZWRlMTg1ZTZmNGE4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0128165/>,    # Blazin'
+                       <https://www.imdb.com/title/tt0116707/>,    # Joe's Apartment
+                       <https://www.imdb.com/title/tt0108876/>,    # New York Undercover
+                       <https://www.imdb.com/title/tt0110413/> ; # Leon
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0089112/mediaviewer/rm2883549440/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blazin' (2001)
+<https://www.imdb.com/title/tt0128165/> a schema:Movie ;
+    schema:name "Blazin'" ;
+    schema:url <https://www.imdb.com/title/tt0128165/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089112/> ;
+        schema:characterName ""
+    ] .
+
+# Joe's Apartment (1996)
+<https://www.imdb.com/title/tt0116707/> a schema:Movie ;
+    schema:name "Joe's Apartment" ;
+    schema:url <https://www.imdb.com/title/tt0116707/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089112/> ;
+        schema:characterName "Complaint Handler"
+    ] .
+
+# New York Undercover (1995)
+<https://www.imdb.com/title/tt0108876/> a schema:Movie ;
+    schema:name "New York Undercover" ;
+    schema:url <https://www.imdb.com/title/tt0108876/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089112/> ;
+        schema:characterName "Dread Scott"
+    ] .
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089112/> ;
+        schema:characterName "1st Stansfield Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZGQyYmI4ZTEtZGFkZi00OTU4LWJmNzAtZWRlMTg1ZTZmNGE4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGQyYmI4ZTEtZGFkZi00OTU4LWJmNzAtZWRlMTg1ZTZmNGE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Willi One Blood in Leon (1994)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089112/mediaviewer/rm2883549440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGQyYmI4ZTEtZGFkZi00OTU4LWJmNzAtZWRlMTg1ZTZmNGE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Willi One Blood in Leon (1994)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0089112/>
+    schema:sameAs <https://www.facebook.com/wrharbour> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

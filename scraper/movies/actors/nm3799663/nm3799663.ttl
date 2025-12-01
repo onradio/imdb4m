@@ -1,0 +1,201 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3799663/> a schema:Person ;
+    schema:name "Bedii Akin" ;
+    schema:url <https://www.imdb.com/name/nm3799663/> ;
+    schema:birthDate "1985-04-19"^^xsd:date ;
+    schema:jobTitle "Actor", "Stunts", "Producer" ;
+    schema:description "Bedii Akin. Actor: The Mountain II. Bedii Akin was born on 19 April 1985 in Istanbul. He is an actor and producer, known for The Mountain II (2016), Wolf (2018) and My Friend Erhan (2012)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BM2ZkMjcxNTQtNjc5MC00NjQyLThmMGItYTZiYTRiNWNjYzViXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Istanbul"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8197998/>,    # Wolf
+                       <https://www.imdb.com/title/tt7146600/>,    # Wolf
+                       <https://www.imdb.com/title/tt5813916/>,    # The Mountain II
+                       <https://www.imdb.com/title/tt32447000/>,    # Ask Emek Ister
+                       <https://www.imdb.com/title/tt1648080/>,    # Dreamwild
+                       <https://www.imdb.com/title/tt1756824/> ; # The Situation
+
+
+    schema:video <https://www.imdb.com/video/vi960870681/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3799663/mediaviewer/rm1869373952/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1565595392/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1548818176/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1347491584/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1599149824/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1582372608/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1397823232/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1381046016/>,
+                 <https://www.imdb.com/name/nm3799663/mediaviewer/rm1364268800/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wolf (2018)
+<https://www.imdb.com/title/tt8197998/> a schema:Movie ;
+    schema:name "Wolf" ;
+    schema:url <https://www.imdb.com/title/tt8197998/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName "Ömer Tunç"
+    ] .
+
+# Wolf (2018)
+<https://www.imdb.com/title/tt7146600/> a schema:Movie ;
+    schema:name "Wolf" ;
+    schema:url <https://www.imdb.com/title/tt7146600/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName "Ömer Tunç"
+    ] .
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName "Boran"
+    ] .
+
+# Ask Emek Ister (2013)
+<https://www.imdb.com/title/tt32447000/> a schema:Movie ;
+    schema:name "Ask Emek Ister" ;
+    schema:url <https://www.imdb.com/title/tt32447000/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName ""
+    ] .
+
+# Dreamwild (2010)
+<https://www.imdb.com/title/tt1648080/> a schema:Movie ;
+    schema:name "Dreamwild" ;
+    schema:url <https://www.imdb.com/title/tt1648080/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName "Alex"
+    ] .
+
+# The Situation (2010)
+<https://www.imdb.com/title/tt1756824/> a schema:Movie ;
+    schema:name "The Situation" ;
+    schema:url <https://www.imdb.com/title/tt1756824/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3799663/> ;
+        schema:characterName "Police Officer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi960870681/> a schema:VideoObject ;
+        schema:name "WOLF" ;
+        schema:description "The story of Turkish Police Special Operations assault squad WOLF, sworn to safe keep civilians, caught between flaring terrorism in the region and insidious domestic conspiracies during the tumultuous years of 2014 to 2016." ;
+        schema:embedUrl <https://www.imdb.com/video/vi960870681/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWZhYjRlNTUtYjFjYi00OGVmLTk4YmQtY2E3MTUwNGU5ZTBhXkEyXkFqcGdeQXVyMjMwMjUzNDQ@._V1_.jpg" ;
+        schema:duration "PT2M33S"^^xsd:duration ;
+        schema:uploadDate "2017-10-29T23:01:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BM2ZkMjcxNTQtNjc5MC00NjQyLThmMGItYTZiYTRiNWNjYzViXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2ZkMjcxNTQtNjc5MC00NjQyLThmMGItYTZiYTRiNWNjYzViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bedii Akin" ;
+    schema:height "3861"^^xsd:integer ;
+    schema:width "2574"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1869373952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzU3MTljZGUtZDhiNy00MWU0LTgzMWYtMTQzODAyNjRhMmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murat Arkin, Ahu Türkpençe, Firat Dogruloglu, Ahmet Pinar, Emir Benderlioglu, Bedii Akin, Can Nergis, Ozan Agaç, Serkan Çayoglu, Armagan Oguz, and Melis Hacic in Wolf (2018)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1565595392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWZhYzY2NDQtYjVjYy00MmE3LWFlNjQtMmRhNGIyZDk4ZThmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bedii Akin" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1548818176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmE1ZmNiODAtY2FlMi00ZDk5LThhMzItNGEwY2VmYzBkYjE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "On Set - My Friend Erhan " ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1347491584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDhhYWM4OTItYWM2MC00Njc1LWIzOTItZjVmNjYzZjY0OTZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bedii Akin" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1599149824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjJmM2M2NWEtMzA3ZS00NjI5LWE3NjctY2MzMTc5ZDk2MmY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "On Set - My Friend Erhan " ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1582372608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDJjYjIyMTItYmEzNS00ZDM0LWI0MzAtNWFmZDVlOTMyNjUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Draft Edit Poster of the short film \"Pawn\"" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1397823232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzI1YWJjYTEtZGVkMS00ZmI3LWFhNTYtYTAzYTYxNDYxNWJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bedii Akin" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1381046016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg0ZjQxMGMtYzc2OC00NDAzLThjNzYtZDcxZDMxNDVmMGJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "On Set - My Friend Erhan " ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3799663/mediaviewer/rm1364268800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjYyOWM1Y2EtNDI2NS00MTgxLWFkMTUtZDM1OTA0Y2FjZTdlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bedii Akin" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "320"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

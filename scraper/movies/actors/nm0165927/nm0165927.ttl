@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0165927/> a schema:Person ;
+    schema:name "Cynthia Cleese" ;
+    schema:url <https://www.imdb.com/name/nm0165927/> ;
+    schema:birthDate "1971-02-17"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Cynthia Cleese. Actress: A Fish Called Wanda. Cynthia Cleese was born on 17 February 1971 in Croydon, Surrey, England, UK. She is an actress, known for A Fish Called Wanda (1988), Fierce Creatures (1997) and I'm on Fire (1998). She was previously married to Ed Solomon." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk0NTA2OTQ3NV5BMl5BanBnXkFtZTcwMTIxMDgwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Croydon, Surrey, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0206819/>,    # I'm on Fire
+                       <https://www.imdb.com/title/tt0119115/>,    # Fierce Creatures
+                       <https://www.imdb.com/title/tt0095159/> ; # A Fish Called Wanda
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0165927/mediaviewer/rm959556096/>,
+                 <https://www.imdb.com/name/nm0165927/mediaviewer/rm976333312/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# I'm on Fire (1998)
+<https://www.imdb.com/title/tt0206819/> a schema:Movie ;
+    schema:name "I'm on Fire" ;
+    schema:url <https://www.imdb.com/title/tt0206819/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0165927/> ;
+        schema:characterName ""
+    ] .
+
+# Fierce Creatures (1997)
+<https://www.imdb.com/title/tt0119115/> a schema:Movie ;
+    schema:name "Fierce Creatures" ;
+    schema:url <https://www.imdb.com/title/tt0119115/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0165927/> ;
+        schema:characterName "Pip Small Mammals"
+    ] .
+
+# A Fish Called Wanda (1988)
+<https://www.imdb.com/title/tt0095159/> a schema:Movie ;
+    schema:name "A Fish Called Wanda" ;
+    schema:url <https://www.imdb.com/title/tt0095159/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0165927/> ;
+        schema:characterName "Portia"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk0NTA2OTQ3NV5BMl5BanBnXkFtZTcwMTIxMDgwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0NTA2OTQ3NV5BMl5BanBnXkFtZTcwMTIxMDgwOA@@._V1_.jpg> ;
+    schema:caption "Cynthia Cleese" ;
+    schema:height "792"^^xsd:integer ;
+    schema:width "487"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0165927/mediaviewer/rm959556096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzMjI5OTI3N15BMl5BanBnXkFtZTcwMjIxMDgwOA@@._V1_.jpg> ;
+    schema:caption "John Cleese and Cynthia Cleese" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0165927/mediaviewer/rm976333312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0NTA2OTQ3NV5BMl5BanBnXkFtZTcwMTIxMDgwOA@@._V1_.jpg> ;
+    schema:caption "Cynthia Cleese" ;
+    schema:height "792"^^xsd:integer ;
+    schema:width "487"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

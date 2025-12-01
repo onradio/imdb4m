@@ -1,0 +1,124 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0307638/> a schema:Person ;
+    schema:name "Olatz López Garmendia" ;
+    schema:url <https://www.imdb.com/name/nm0307638/> ;
+    schema:jobTitle "Actress", "Director", "Writer" ;
+    schema:description "Olatz López Garmendia. Actress: Before Night Falls. Olatz López Garmendia is known for Before Night Falls (2000), The Diving Bell and the Butterfly (2007) and Fatherland or Death (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjU3ODYyYzktMTNjOS00MWUyLTg2YzMtODBiM2Y0YTA5MWM3XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0401383/>,    # The Diving Bell and the Butterfly
+                       <https://www.imdb.com/title/tt0247196/>,    # Before Night Falls
+                       <https://www.imdb.com/title/tt0115632/> ; # Basquiat
+
+
+    schema:video <https://www.imdb.com/video/vi2780365081/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0307638/mediaviewer/rm36296705/>,
+                 <https://www.imdb.com/name/nm0307638/mediaviewer/rm4152269568/>,
+                 <https://www.imdb.com/name/nm0307638/mediaviewer/rm2299697920/>,
+                 <https://www.imdb.com/name/nm0307638/mediaviewer/rm2282920704/>,
+                 <https://www.imdb.com/name/nm0307638/mediaviewer/rm724097025/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Diving Bell and the Butterfly (2007)
+<https://www.imdb.com/title/tt0401383/> a schema:Movie ;
+    schema:name "The Diving Bell and the Butterfly" ;
+    schema:url <https://www.imdb.com/title/tt0401383/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0307638/> ;
+        schema:characterName "Marie Lopez"
+    ] .
+
+# Before Night Falls (2000)
+<https://www.imdb.com/title/tt0247196/> a schema:Movie ;
+    schema:name "Before Night Falls" ;
+    schema:url <https://www.imdb.com/title/tt0247196/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0307638/> ;
+        schema:characterName "Reinaldo's Mother"
+    ] .
+
+# Basquiat (1996)
+<https://www.imdb.com/title/tt0115632/> a schema:Movie ;
+    schema:name "Basquiat" ;
+    schema:url <https://www.imdb.com/title/tt0115632/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0307638/> ;
+        schema:characterName "Christine"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2780365081/> a schema:VideoObject ;
+        schema:name "Before Night Falls" ;
+        schema:description "Theatrical Trailer from Fine Line" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2780365081/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWJlOWEyY2MtNjE1Yy00ZWYwLWI1M2YtZGRkNDcyY2Y1ZjBlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M16S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T12:29:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjU3ODYyYzktMTNjOS00MWUyLTg2YzMtODBiM2Y0YTA5MWM3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjU3ODYyYzktMTNjOS00MWUyLTg2YzMtODBiM2Y0YTA5MWM3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia in Before Night Falls (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0307638/mediaviewer/rm36296705/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDU3MWZmNDktODUyZS00Yjk4LWIyOTMtZTM2MTY5YWE0YTRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia in Before Night Falls (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0307638/mediaviewer/rm4152269568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4MTQzMjAyOF5BMl5BanBnXkFtZTYwMjM2OTg0._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia and Julian Schnabel" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "287"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0307638/mediaviewer/rm2299697920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5OTIyMTU5Nl5BMl5BanBnXkFtZTYwNDE4OTQ1._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia and Julian Schnabel at an event for Before Night Falls (2000)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "263"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0307638/mediaviewer/rm2282920704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzMTk1ODEzMF5BMl5BanBnXkFtZTYwNjE4OTQ1._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia and Julian Schnabel at an event for Before Night Falls (2000)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "265"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0307638/mediaviewer/rm724097025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjU3ODYyYzktMTNjOS00MWUyLTg2YzMtODBiM2Y0YTA5MWM3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olatz López Garmendia in Before Night Falls (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

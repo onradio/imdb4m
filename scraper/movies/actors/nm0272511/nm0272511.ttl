@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0272511/> a schema:Person ;
+    schema:name "Larry Ferguson" ;
+    schema:url <https://www.imdb.com/name/nm0272511/> ;
+    schema:jobTitle "Writer", "Script and Continuity Department", "Actor" ;
+    schema:description "Larry Ferguson. Writer: The Hunt for Red October. Larry Ferguson was born in 1940. He is a writer and actor, known for The Hunt for Red October (1990), Alien³ (1992) and Rollerball (2002)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzUxOWRiNGItM2JkMC00MmFjLWE2MDYtMzljYmZjZGZhN2E5XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0099810/>,    # The Hunt for Red October
+                       <https://www.imdb.com/title/tt0092644/>,    # Beverly Hills Cop II
+                       <https://www.imdb.com/title/tt0103644/>,    # Alien³
+                       <https://www.imdb.com/title/tt0246894/>,    # Rollerball
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0107362/>,    # Last Action Hero
+                       <https://www.imdb.com/title/tt0103805/> ; # Beyond the Law
+
+
+    schema:video <https://www.imdb.com/video/vi1935457049/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0272511/mediaviewer/rm3252641793/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099810/> a schema:Movie ;
+    schema:name "The Hunt for Red October" ;
+    schema:url <https://www.imdb.com/title/tt0099810/> .
+
+<https://www.imdb.com/title/tt0092644/> a schema:Movie ;
+    schema:name "Beverly Hills Cop II" ;
+    schema:url <https://www.imdb.com/title/tt0092644/> .
+
+<https://www.imdb.com/title/tt0103644/> a schema:Movie ;
+    schema:name "Alien³" ;
+    schema:url <https://www.imdb.com/title/tt0103644/> .
+
+<https://www.imdb.com/title/tt0246894/> a schema:Movie ;
+    schema:name "Rollerball" ;
+    schema:url <https://www.imdb.com/title/tt0246894/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Last Action Hero (1993)
+<https://www.imdb.com/title/tt0107362/> a schema:Movie ;
+    schema:name "Last Action Hero" ;
+    schema:url <https://www.imdb.com/title/tt0107362/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272511/> ;
+        schema:characterName "Larry Ferguson"
+    ] .
+
+# Beyond the Law (1993)
+<https://www.imdb.com/title/tt0103805/> a schema:Movie ;
+    schema:name "Beyond the Law" ;
+    schema:url <https://www.imdb.com/title/tt0103805/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0272511/> ;
+        schema:characterName "Sheriff Bob Kelly"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1935457049/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1935457049/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzY1ZjkzMjktYTQ2Yy00ODZlLTgwOTYtOWU4N2YwNTRmYWEyXkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M39S"^^xsd:duration ;
+        schema:uploadDate "2018-09-14T21:05:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzUxOWRiNGItM2JkMC00MmFjLWE2MDYtMzljYmZjZGZhN2E5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzUxOWRiNGItM2JkMC00MmFjLWE2MDYtMzljYmZjZGZhN2E5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Larry Ferguson in The Hunt for Red October (1990)" ;
+    schema:height "881"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0272511/mediaviewer/rm3252641793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzUxOWRiNGItM2JkMC00MmFjLWE2MDYtMzljYmZjZGZhN2E5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Larry Ferguson in The Hunt for Red October (1990)" ;
+    schema:height "881"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

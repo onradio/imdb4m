@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0628924/> a schema:Person ;
+    schema:name "Ngo Dinh Diem" ;
+    schema:url <https://www.imdb.com/name/nm0628924/> ;
+    schema:birthDate "1901-01-03"^^xsd:date ;
+    schema:description "Ngo Dinh Diem. Self: This Week. Ngo Dinh Diem was born on 3 January 1901 in Quang Binh, Vietnam. He died on 2 November 1963 in Cho Lon, South Vietnam." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjQ3Njg4NmEtZjRkMi00MjNjLTljODQtZmFjNGQxZTI1MWJlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Quang Binh, Vietnam"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1192690457/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0628924/mediaviewer/rm3482742784/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1192690457/> a schema:VideoObject ;
+        schema:name "Hearts and Minds" ;
+        schema:description "Documentary concerning the atrocities of the Vietnam war" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1192690457/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzJkOTBhZGYtNjI4NS00NmUxLWIzYWYtNWNmYjIwZGFiMDRiXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M18S"^^xsd:duration ;
+        schema:uploadDate "2009-02-28T06:50:18Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjQ3Njg4NmEtZjRkMi00MjNjLTljODQtZmFjNGQxZTI1MWJlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ3Njg4NmEtZjRkMi00MjNjLTljODQtZmFjNGQxZTI1MWJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ngo Dinh Diem" ;
+    schema:height "451"^^xsd:integer ;
+    schema:width "700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0628924/mediaviewer/rm3482742784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ3Njg4NmEtZjRkMi00MjNjLTljODQtZmFjNGQxZTI1MWJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ngo Dinh Diem" ;
+    schema:height "451"^^xsd:integer ;
+    schema:width "700"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

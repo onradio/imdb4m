@@ -1,0 +1,117 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0167260/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Into the West" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005142/> ; # Annie Lennox
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Into the West" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/>, # Howard Shore
+                        <https://www.imdb.com/name/nm0909638/>, # Fran Walsh
+                        <https://www.imdb.com/name/nm0005142/> ; # Annie Lennox
+            schema:lyricist <https://www.imdb.com/name/nm0006290/>, # Howard Shore
+                        <https://www.imdb.com/name/nm0909638/>, # Fran Walsh
+                        <https://www.imdb.com/name/nm0005142/> # Annie Lennox
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Green Dragon" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101710/>, # Billy Boyd
+                        <https://www.imdb.com/name/nm0597480/> ; # Dominic Monaghan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Green Dragon" ;
+            schema:composer <https://www.imdb.com/name/nm0232087/>, # David Donaldson
+                        <https://www.imdb.com/name/nm0518937/>, # David Long
+                        <https://www.imdb.com/name/nm0733981/>, # Steve Roche
+                        <https://www.imdb.com/name/nm0734480/> ; # Janet Roddick
+            schema:lyricist <https://www.imdb.com/name/nm0101991/> # Philippa Boyens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Edge of Night" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101710/> ; # Billy Boyd
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Edge of Night" ;
+            schema:composer <https://www.imdb.com/name/nm0101710/> ; # Billy Boyd
+            schema:lyricist <https://www.imdb.com/name/nm0866058/> # J.R.R. Tolkien
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aragorn's Coronation" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001557/> ; # Viggo Mortensen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Aragorn's Coronation" ;
+            schema:composer <https://www.imdb.com/name/nm0001557/> ; # Viggo Mortensen
+            schema:lyricist <https://www.imdb.com/name/nm0866058/> # J.R.R. Tolkien
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The House of Healing" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000239/> ; # Liv Tyler
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The House of Healing" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> # Howard Shore
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Shadow Lies Between Us" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000239/> ; # Liv Tyler
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Shadow Lies Between Us" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0866058/> # J.R.R. Tolkien
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000239/> a schema:Person ;
+    schema:name "Liv Tyler" .
+<https://www.imdb.com/name/nm0001557/> a schema:Person ;
+    schema:name "Viggo Mortensen" .
+<https://www.imdb.com/name/nm0005142/> a schema:Person ;
+    schema:name "Annie Lennox" .
+<https://www.imdb.com/name/nm0006290/> a schema:Person ;
+    schema:name "Howard Shore" .
+<https://www.imdb.com/name/nm0101710/> a schema:Person ;
+    schema:name "Billy Boyd" .
+<https://www.imdb.com/name/nm0101991/> a schema:Person ;
+    schema:name "Philippa Boyens" .
+<https://www.imdb.com/name/nm0232087/> a schema:Person ;
+    schema:name "David Donaldson" .
+<https://www.imdb.com/name/nm0518937/> a schema:Person ;
+    schema:name "David Long" .
+<https://www.imdb.com/name/nm0597480/> a schema:Person ;
+    schema:name "Dominic Monaghan" .
+<https://www.imdb.com/name/nm0733981/> a schema:Person ;
+    schema:name "Steve Roche" .
+<https://www.imdb.com/name/nm0734480/> a schema:Person ;
+    schema:name "Janet Roddick" .
+<https://www.imdb.com/name/nm0866058/> a schema:Person ;
+    schema:name "J.R.R. Tolkien" .
+<https://www.imdb.com/name/nm0909638/> a schema:Person ;
+    schema:name "Fran Walsh" .
+# ==============================================================================

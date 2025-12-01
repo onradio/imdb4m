@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0363163/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "When I Am Laid In Earth" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "When I Am Laid In Earth" ;
+            schema:composer <https://www.imdb.com/name/nm0700722/> # Henry Purcell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blutrote Rosen" ;
+        schema:byArtist <https://www.imdb.com/name/nm3774977/> ; # Marek Weber and His Orchestra
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Davon geht die Welt nicht unter" ;
+        schema:byArtist <https://www.imdb.com/name/nm0495136/> ; # Zarah Leander
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Davon geht die Welt nicht unter" ;
+            schema:author <https://www.imdb.com/name/nm0419135/>, # Michael Jary
+                       <https://www.imdb.com/name/nm0051300/> # Bruno Balz
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Die Blauen Dragoner Sie Reiten" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Die Blauen Dragoner Sie Reiten" ;
+            schema:author <https://www.imdb.com/name/nm1545074/> # Hans Hertel
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0051300/> a schema:Person ;
+    schema:name "Bruno Balz" .
+<https://www.imdb.com/name/nm0419135/> a schema:Person ;
+    schema:name "Michael Jary" .
+<https://www.imdb.com/name/nm0495136/> a schema:Person ;
+    schema:name "Zarah Leander" .
+<https://www.imdb.com/name/nm0700722/> a schema:Person ;
+    schema:name "Henry Purcell" .
+<https://www.imdb.com/name/nm1545074/> a schema:Person ;
+    schema:name "Hans Hertel" .
+<https://www.imdb.com/name/nm3774977/> a schema:Person ;
+    schema:name "Marek Weber and His Orchestra" .
+# ==============================================================================

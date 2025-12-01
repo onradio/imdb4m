@@ -1,0 +1,371 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0910947/> a schema:Person ;
+    schema:name "Faye Wong" ;
+    schema:url <https://www.imdb.com/name/nm0910947/> ;
+    schema:birthDate "1969-08-08"^^xsd:date ;
+    schema:jobTitle "Actress", "Music Department", "Composer" ;
+    schema:alternateName "Wang Fei" ;
+    schema:description "Faye Wong. Actress: Chungking Express. Her mother (now deceased) was a singer and her father a mining engineer. They moved with her older brother to Hong Kong when she was 18 and she began to take singing lessons. Her teacher introduced her to Cinepoly Records, where she first recorded under the name Wong Jing Man and was given the English name Shirley Wong for three albums. She sang predictable Cantopop..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BN2Q5MmU0NjItMzg4Mi00ZDY0LWE2MWItZjEzMzc0YWJhYjNmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Beijing, China"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.74"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8½″ (1.74 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109424/>,    # Chungking Express
+                       <https://www.imdb.com/title/tt0208988/>,    # Get Carter
+                       <https://www.imdb.com/title/tt0212712/>,    # 2046
+                       <https://www.imdb.com/title/tt0311913/>,    # Chinese Odyssey 2002
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0386590/>,    # Leaving Me, Loving You
+                       <https://www.imdb.com/title/tt0291677/>,    # Usokoi
+                       <https://www.imdb.com/title/tt0287934/>,    # Da wan
+                       <https://www.imdb.com/title/tt0258850/>,    # Lian zhan Chong Cheng
+                       <https://www.imdb.com/title/tt8302252/>,    # Faces
+                       <https://www.imdb.com/title/tt8348326/>,    # Hundred Years of Solitude
+                       <https://www.imdb.com/title/tt8302282/>,    # In Love with Stranger
+                       <https://www.imdb.com/title/tt8302424/>,    # Thou Shalt Not Love
+                       <https://www.imdb.com/title/tt33038655/>,    # Faye Wong: Quitting in Halfway
+                       <https://www.imdb.com/title/tt8348324/>,    # Heaven and Earth
+                       <https://www.imdb.com/title/tt3898684/>,    # Motorola
+                       <https://www.imdb.com/title/tt35678100/>,    # Faye Wong: Fúzào
+                       <https://www.imdb.com/title/tt8302248/>,    # Di Dar
+                       <https://www.imdb.com/title/tt21441136/>,    # Faye Wong: Chess
+                       <https://www.imdb.com/title/tt0110980/>,    # The Returning
+                       <https://www.imdb.com/title/tt0845413/>,    # Yuen Chun Hap
+                       <https://www.imdb.com/title/tt6273084/>,    # The File of Justice I
+                       <https://www.imdb.com/title/tt0101439/> ; # Beyond's Diary
+
+    schema:award [
+        a schema:Award ;
+        schema:description "6 wins & 13 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3635609881/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0910947/mediaviewer/rm3748018432/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm3529914624/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm510821376/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm309494784/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm560699648/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm543922432/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm778803456/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm632533761/>,
+                 <https://www.imdb.com/name/nm0910947/mediaviewer/rm45986561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0109424/> a schema:Movie ;
+    schema:name "Chungking Express" ;
+    schema:url <https://www.imdb.com/title/tt0109424/> .
+
+<https://www.imdb.com/title/tt0208988/> a schema:Movie ;
+    schema:name "Get Carter" ;
+    schema:url <https://www.imdb.com/title/tt0208988/> .
+
+<https://www.imdb.com/title/tt0212712/> a schema:Movie ;
+    schema:name "2046" ;
+    schema:url <https://www.imdb.com/title/tt0212712/> .
+
+<https://www.imdb.com/title/tt0311913/> a schema:Movie ;
+    schema:name "Chinese Odyssey 2002" ;
+    schema:url <https://www.imdb.com/title/tt0311913/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Leaving Me, Loving You (2004)
+<https://www.imdb.com/title/tt0386590/> a schema:Movie ;
+    schema:name "Leaving Me, Loving You" ;
+    schema:url <https://www.imdb.com/title/tt0386590/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Xin Xiaoyue"
+    ] .
+
+# Usokoi (2001)
+<https://www.imdb.com/title/tt0291677/> a schema:Movie ;
+    schema:name "Usokoi" ;
+    schema:url <https://www.imdb.com/title/tt0291677/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Fei Rin"
+    ] .
+
+# Da wan (2001)
+<https://www.imdb.com/title/tt0287934/> a schema:Movie ;
+    schema:name "Da wan" ;
+    schema:url <https://www.imdb.com/title/tt0287934/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Lian zhan Chong Cheng (2000)
+<https://www.imdb.com/title/tt0258850/> a schema:Movie ;
+    schema:name "Lian zhan Chong Cheng" ;
+    schema:url <https://www.imdb.com/title/tt0258850/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Jenny"
+    ] .
+
+# Faces (1999)
+<https://www.imdb.com/title/tt8302252/> a schema:Movie ;
+    schema:name "Faces" ;
+    schema:url <https://www.imdb.com/title/tt8302252/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Hundred Years of Solitude (1999)
+<https://www.imdb.com/title/tt8348326/> a schema:Movie ;
+    schema:name "Hundred Years of Solitude" ;
+    schema:url <https://www.imdb.com/title/tt8348326/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# In Love with Stranger (1999)
+<https://www.imdb.com/title/tt8302282/> a schema:Movie ;
+    schema:name "In Love with Stranger" ;
+    schema:url <https://www.imdb.com/title/tt8302282/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Thou Shalt Not Love (1999)
+<https://www.imdb.com/title/tt8302424/> a schema:Movie ;
+    schema:name "Thou Shalt Not Love" ;
+    schema:url <https://www.imdb.com/title/tt8302424/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Faye Wong: Quitting in Halfway (1998)
+<https://www.imdb.com/title/tt33038655/> a schema:Movie ;
+    schema:name "Faye Wong: Quitting in Halfway" ;
+    schema:url <https://www.imdb.com/title/tt33038655/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Faye Wong"
+    ] .
+
+# Heaven and Earth (1998)
+<https://www.imdb.com/title/tt8348324/> a schema:Movie ;
+    schema:name "Heaven and Earth" ;
+    schema:url <https://www.imdb.com/title/tt8348324/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Motorola (1998)
+<https://www.imdb.com/title/tt3898684/> a schema:Movie ;
+    schema:name "Motorola" ;
+    schema:url <https://www.imdb.com/title/tt3898684/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Faye Wong: Fúzào (1996)
+<https://www.imdb.com/title/tt35678100/> a schema:Movie ;
+    schema:name "Faye Wong: Fúzào" ;
+    schema:url <https://www.imdb.com/title/tt35678100/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Di Dar (1995)
+<https://www.imdb.com/title/tt8302248/> a schema:Movie ;
+    schema:name "Di Dar" ;
+    schema:url <https://www.imdb.com/title/tt8302248/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Faye Wong: Chess (1994)
+<https://www.imdb.com/title/tt21441136/> a schema:Movie ;
+    schema:name "Faye Wong: Chess" ;
+    schema:url <https://www.imdb.com/title/tt21441136/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Faye Wong"
+    ] .
+
+# The Returning (1994)
+<https://www.imdb.com/title/tt0110980/> a schema:Movie ;
+    schema:name "The Returning" ;
+    schema:url <https://www.imdb.com/title/tt0110980/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName ""
+    ] .
+
+# Yuen Chun Hap (1993)
+<https://www.imdb.com/title/tt0845413/> a schema:Movie ;
+    schema:name "Yuen Chun Hap" ;
+    schema:url <https://www.imdb.com/title/tt0845413/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Hoi-tong"
+    ] .
+
+# The File of Justice I (1992)
+<https://www.imdb.com/title/tt6273084/> a schema:Movie ;
+    schema:name "The File of Justice I" ;
+    schema:url <https://www.imdb.com/title/tt6273084/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Prosecutor"
+    ] .
+
+# Beyond's Diary (1991)
+<https://www.imdb.com/title/tt0101439/> a schema:Movie ;
+    schema:name "Beyond's Diary" ;
+    schema:url <https://www.imdb.com/title/tt0101439/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0910947/> ;
+        schema:characterName "Mary"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3635609881/> a schema:VideoObject ;
+        schema:name "2046" ;
+        schema:description "Home Video Trailer from Sony Pictures Home Entertainment" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3635609881/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWYwNWFjMWUtYjhlNS00NjViLWJlYTgtNDliZTVjNjNjMjQ3XkEyXkFqcGdeQWFybm8@._V1_.jpg" ;
+        schema:duration "PT1M48S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T02:49:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BN2Q5MmU0NjItMzg4Mi00ZDY0LWE2MWItZjEzMzc0YWJhYjNmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2Q5MmU0NjItMzg4Mi00ZDY0LWE2MWItZjEzMzc0YWJhYjNmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Faye Wong" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "771"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm3748018432/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ1YTQ2YjUtMDQyZS00MmJkLWEwYzEtYmY3Y2YyOTg2MzMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony Leung Chiu-wai, Faye Wong, and Wei Zhao in Chinese Odyssey 2002 (2002)" ;
+    schema:height "256"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm3529914624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjNlNzkzNjktYjQxNy00OWEwLTk3MTYtOTU5YWI5MDUwOWIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Faye Wong in Chinese Odyssey 2002 (2002)" ;
+    schema:height "1009"^^xsd:integer ;
+    schema:width "700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm510821376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5MDU0NDUyNl5BMl5BanBnXkFtZTcwMzk4NDAyNA@@._V1_.jpg> ;
+    schema:caption "Faye Wong in 2046 (2004)" ;
+    schema:height "897"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm309494784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM3MzY2MjU3M15BMl5BanBnXkFtZTcwODg4NDAyNA@@._V1_.jpg> ;
+    schema:caption "Takuya Kimura and Faye Wong in 2046 (2004)" ;
+    schema:height "988"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm560699648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ0NTczNTczMl5BMl5BanBnXkFtZTYwMzkzMTY3._V1_.jpg> ;
+    schema:caption "Tony Leung Chiu-wai and Faye Wong in 2046 (2004)" ;
+    schema:height "423"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm543922432/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4MTg5NjEzNF5BMl5BanBnXkFtZTYwNjkzMTY3._V1_.jpg> ;
+    schema:caption "Faye Wong in 2046 (2004)" ;
+    schema:height "422"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm778803456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0ODA4NjQ0Ml5BMl5BanBnXkFtZTYwOTkzMTY3._V1_.jpg> ;
+    schema:caption "Takuya Kimura and Faye Wong in 2046 (2004)" ;
+    schema:height "612"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm632533761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmIyOWQzMDYtOTEzZC00MDliLWE1ZWEtOGZhNWQ2YzFiYTc4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Faye Wong in Episode 1 (2018)" ;
+    schema:height "5004"^^xsd:integer ;
+    schema:width "2812"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0910947/mediaviewer/rm45986561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWY4NTA3MzEtYzI5Yy00M2EyLWE5NmYtNGQyOWQxMDFkZmNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Faye Wong in Episode 2 (2018)" ;
+    schema:height "3810"^^xsd:integer ;
+    schema:width "2249"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,187 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099785/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Somewhere In My Memory" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Somewhere In My Memory" ;
+            schema:composer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+            schema:lyricist <https://www.imdb.com/name/nm0108634/> # Leslie Bricusse
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Star Of Bethlehem" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Star Of Bethlehem" ;
+            schema:composer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+            schema:lyricist <https://www.imdb.com/name/nm0108634/> # Leslie Bricusse
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Have Yourself A Merry Little Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0868123/> ; # Mel Tormé
+        schema:producer <https://www.imdb.com/name/nm0002354/> ; # John Williams
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Have Yourself A Merry Little Christmas" ;
+            schema:author <https://www.imdb.com/name/nm0552399/>, # Hugh Martin
+                       <https://www.imdb.com/name/nm0087433/> # Ralph Blane
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Please Come Home For Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0528984/> ; # Southside Johnny Lyon
+        schema:producer <https://www.imdb.com/name/nm0528984/> ; # Southside Johnny Lyon
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Please Come Home For Christmas" ;
+            schema:author <https://www.imdb.com/name/nm0113226/>, # Charles Brown
+                       <https://www.imdb.com/name/nm0714657/> # Gene Redd
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "White Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm1148513/> ; # The Drifters
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "White Christmas" ;
+            schema:author <https://www.imdb.com/name/nm0000927/> # Irving Berlin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rockin' Around The Christmas Tree" ;
+        schema:byArtist <https://www.imdb.com/name/nm0496909/> ; # Brenda Lee
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rockin' Around The Christmas Tree" ;
+            schema:author <https://www.imdb.com/name/nm0548869/> # Johnny Marks
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Run, Rudolph, Run" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001946/> ; # Chuck Berry
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Run, Rudolph, Run" ;
+            schema:author <https://www.imdb.com/name/nm0548869/> # Johnny Marks
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You're a Mean One, Mr. Grinch" ;
+        schema:byArtist <https://www.imdb.com/name/nm0712391/> ; # Thurl Ravenscroft
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You're a Mean One, Mr. Grinch" ;
+            schema:author <https://www.imdb.com/name/nm0317450/>, # Dr. Seuss
+                       <https://www.imdb.com/name/nm0353831/> # Albert Hague
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Santa Claus Is Comin' To Town" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Santa Claus Is Comin' To Town" ;
+            schema:author <https://www.imdb.com/name/nm0318939/>, # Haven Gillespie
+                       <https://www.imdb.com/name/nm0178512/> # J. Fred Coots
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Carol Of The Bells" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Carol Of The Bells" ;
+            schema:author <https://www.imdb.com/name/nm0928998/> # Peter Wilhousky
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Holy Night (Cantique de Noël)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Holy Night (Cantique de Noël)" ;
+            schema:composer <https://www.imdb.com/name/nm0010512/> ; # Adolphe Adam
+            schema:lyricist <https://www.imdb.com/name/nm8668731/> # Placide Cappeau
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rock n Roll Riff" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Deck the Halls" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000927/> a schema:Person ;
+    schema:name "Irving Berlin" .
+<https://www.imdb.com/name/nm0001946/> a schema:Person ;
+    schema:name "Chuck Berry" .
+<https://www.imdb.com/name/nm0002354/> a schema:Person ;
+    schema:name "John Williams" .
+<https://www.imdb.com/name/nm0010512/> a schema:Person ;
+    schema:name "Adolphe Adam" .
+<https://www.imdb.com/name/nm0087433/> a schema:Person ;
+    schema:name "Ralph Blane" .
+<https://www.imdb.com/name/nm0108634/> a schema:Person ;
+    schema:name "Leslie Bricusse" .
+<https://www.imdb.com/name/nm0113226/> a schema:Person ;
+    schema:name "Charles Brown" .
+<https://www.imdb.com/name/nm0178512/> a schema:Person ;
+    schema:name "J. Fred Coots" .
+<https://www.imdb.com/name/nm0317450/> a schema:Person ;
+    schema:name "Dr. Seuss" .
+<https://www.imdb.com/name/nm0318939/> a schema:Person ;
+    schema:name "Haven Gillespie" .
+<https://www.imdb.com/name/nm0353831/> a schema:Person ;
+    schema:name "Albert Hague" .
+<https://www.imdb.com/name/nm0496909/> a schema:Person ;
+    schema:name "Brenda Lee" .
+<https://www.imdb.com/name/nm0528984/> a schema:Person ;
+    schema:name "Southside Johnny Lyon" .
+<https://www.imdb.com/name/nm0548869/> a schema:Person ;
+    schema:name "Johnny Marks" .
+<https://www.imdb.com/name/nm0552399/> a schema:Person ;
+    schema:name "Hugh Martin" .
+<https://www.imdb.com/name/nm0712391/> a schema:Person ;
+    schema:name "Thurl Ravenscroft" .
+<https://www.imdb.com/name/nm0714657/> a schema:Person ;
+    schema:name "Gene Redd" .
+<https://www.imdb.com/name/nm0868123/> a schema:Person ;
+    schema:name "Mel Tormé" .
+<https://www.imdb.com/name/nm0928998/> a schema:Person ;
+    schema:name "Peter Wilhousky" .
+<https://www.imdb.com/name/nm1148513/> a schema:Person ;
+    schema:name "The Drifters" .
+<https://www.imdb.com/name/nm8668731/> a schema:Person ;
+    schema:name "Placide Cappeau" .
+# ==============================================================================

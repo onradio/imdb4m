@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5264881/> a schema:Person ;
+    schema:name "Jennifer Prior" ;
+    schema:url <https://www.imdb.com/name/nm5264881/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jennifer Prior. Actress: Before Midnight. Jennifer Prior is known for Before Midnight (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2209418/> ;    # Before Midnight
+
+
+    schema:video <https://www.imdb.com/video/vi4026246681/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5264881/mediaviewer/rm3977945344/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Midnight (2013)
+<https://www.imdb.com/title/tt2209418/> a schema:Movie ;
+    schema:name "Before Midnight" ;
+    schema:url <https://www.imdb.com/title/tt2209418/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5264881/> ;
+        schema:characterName "Ella"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4026246681/> a schema:VideoObject ;
+        schema:name "Theatrical Version" ;
+        schema:description "We meet Celine and Jesse 9 years on. Almost 2 decades have passed since that first meeting on a train bound for Vienna, and we now find them in their early 40's in Greece. Before the clock strikes midnight, we will again become part of their story." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4026246681/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM4NTEzMjcwOV5BMl5BanBnXkFtZTcwMjU2NzIzOQ@@._V1_.jpg" ;
+        schema:duration "PT1M50S"^^xsd:duration ;
+        schema:uploadDate "2013-04-02T08:33:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5264881/mediaviewer/rm3977945344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0MTQ5NzM4M15BMl5BanBnXkFtZTcwMzg2NzkzOQ@@._V1_.jpg> ;
+    schema:caption "Julie Delpy, Charlotte Prior, and Jennifer Prior in Before Midnight (2013)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

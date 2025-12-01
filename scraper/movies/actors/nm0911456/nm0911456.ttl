@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0911456/> a schema:Person ;
+    schema:name "Christine Renee Ward" ;
+    schema:url <https://www.imdb.com/name/nm0911456/> ;
+    schema:jobTitle "Director", "Writer", "Editor" ;
+    schema:description "Christine Renee Ward. Actress: Sling Blade. Christine Renee Ward is known for Sling Blade (1996), Cabin Fever (2002) and Tree (2012)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ2MDk0NzU2M15BMl5BanBnXkFtZTYwNTU4NzI3._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0457308/>,    # Come Early Morning
+                       <https://www.imdb.com/title/tt0303816/>,    # Cabin Fever
+                       <https://www.imdb.com/title/tt0117666/> ; # Sling Blade
+
+
+    schema:video <https://www.imdb.com/video/vi1573953049/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0911456/mediaviewer/rm398629120/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Come Early Morning (2006)
+<https://www.imdb.com/title/tt0457308/> a schema:Movie ;
+    schema:name "Come Early Morning" ;
+    schema:url <https://www.imdb.com/title/tt0457308/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0911456/> ;
+        schema:characterName "Sue"
+    ] .
+
+# Cabin Fever (2002)
+<https://www.imdb.com/title/tt0303816/> a schema:Movie ;
+    schema:name "Cabin Fever" ;
+    schema:url <https://www.imdb.com/title/tt0303816/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0911456/> ;
+        schema:characterName "The Hog Lady"
+    ] .
+
+# Sling Blade (1996)
+<https://www.imdb.com/title/tt0117666/> a schema:Movie ;
+    schema:name "Sling Blade" ;
+    schema:url <https://www.imdb.com/title/tt0117666/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0911456/> ;
+        schema:characterName "Melinda"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1573953049/> a schema:VideoObject ;
+        schema:name "Sling Blade" ;
+        schema:description "HV" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1573953049/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGM2YjhjMjktYjYzOC00NWM0LTg3NTMtMGNlYTQ1YzlmNjRiXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:46:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ2MDk0NzU2M15BMl5BanBnXkFtZTYwNTU4NzI3._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MDk0NzU2M15BMl5BanBnXkFtZTYwNTU4NzI3._V1_.jpg> ;
+    schema:caption "The Hog Lady" ;
+    schema:height "298"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0911456/mediaviewer/rm398629120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MDk0NzU2M15BMl5BanBnXkFtZTYwNTU4NzI3._V1_.jpg> ;
+    schema:caption "The Hog Lady" ;
+    schema:height "298"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

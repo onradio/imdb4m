@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10767888/> a schema:Person ;
+    schema:name "Clément Bouyssou" ;
+    schema:url <https://www.imdb.com/name/nm10767888/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Clément Bouyssou. Actor: Portrait of a Lady on Fire. Clément Bouyssou is known for Portrait of a Lady on Fire (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8613070/> .    # Portrait of a Lady on Fire
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Portrait of a Lady on Fire (2019)
+<https://www.imdb.com/title/tt8613070/> a schema:Movie ;
+    schema:name "Portrait of a Lady on Fire" ;
+    schema:url <https://www.imdb.com/title/tt8613070/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10767888/> ;
+        schema:characterName "Le batelier"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

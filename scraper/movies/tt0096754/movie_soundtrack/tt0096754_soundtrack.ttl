@@ -1,0 +1,54 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0096754/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Willing" ;
+        schema:byArtist <https://www.imdb.com/name/nm0740168/> ; # Linda Ronstadt
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Willing" ;
+            schema:author <https://www.imdb.com/name/nm0313518/> # Lowell George
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Too Much Pressure" ;
+        schema:byArtist <https://www.imdb.com/name/nm2473059/> ; # The Selecter
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Too Much Pressure" ;
+            schema:author <https://www.imdb.com/name/nm1384660/> # Neol Davies
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Walk To The Gas Chamber" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Walk To The Gas Chamber" ;
+            schema:composer <https://www.imdb.com/name/nm0006217/> # Jack Nitzsche
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006217/> a schema:Person ;
+    schema:name "Jack Nitzsche" .
+<https://www.imdb.com/name/nm0313518/> a schema:Person ;
+    schema:name "Lowell George" .
+<https://www.imdb.com/name/nm0740168/> a schema:Person ;
+    schema:name "Linda Ronstadt" .
+<https://www.imdb.com/name/nm1384660/> a schema:Person ;
+    schema:name "Neol Davies" .
+<https://www.imdb.com/name/nm2473059/> a schema:Person ;
+    schema:name "The Selecter" .
+# ==============================================================================

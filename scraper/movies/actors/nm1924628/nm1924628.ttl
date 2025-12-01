@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1924628/> a schema:Person ;
+    schema:name "Yuka Terasaki" ;
+    schema:url <https://www.imdb.com/name/nm1924628/> ;
+    schema:birthDate "1983-08-04"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:description "Yuka Terasaki. Actress: Your Name.. Yuka Terasaki was born on 4 August 1983 in Kumamoto, Japan. She is an actress, known for Your Name. (2016), The Garden of Words (2013) and Skip and Loafer (2023)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kumamoto, Japan"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1087484697/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1087484697/> a schema:VideoObject ;
+        schema:name "Planzet" ;
+        schema:description "Trailer for Planzet" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1087484697/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWFjZWJjYmEtYzAwOC00ZGQ5LWE4NDQtYTRlYTQzYTRhZGM3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M39S"^^xsd:duration ;
+        schema:uploadDate "2015-08-14T04:46:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

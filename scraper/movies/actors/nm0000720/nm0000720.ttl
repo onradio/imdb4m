@@ -1,0 +1,196 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000720/> a schema:Person ;
+    schema:name "Jim Abrahams" ;
+    schema:url <https://www.imdb.com/name/nm0000720/> ;
+    schema:birthDate "1944-05-10"^^xsd:date ;
+    schema:jobTitle "Writer", "Producer", "Director" ;
+    schema:alternateName "James Steven Abrahams" ;
+    schema:description "Jim Abrahams. Writer: Airplane!. Writer, producer and director James S. 'Jim' Abrahams was born in Shorewood, Wisconsin, to lawyer Norman Sidney Abrahams (1913-1965) and his wife Louise (née Ogens, 1915-2012), a University of Michigan graduate. Along with childhood friends and future collaborators Jerry Zucker and David Zucker, Abrahams studied at the University of Wisconsin-Madison. In 1971, the trio --who would later be known simply as 'ZAZ'-- set up the small..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTg2MDg4NjM3Nl5BMl5BanBnXkFtZTcwNTE3MjIzMQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Shorewood, Wisconsin, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0080339/>,    # Airplane!
+                       <https://www.imdb.com/title/tt0083466/>,    # Police Squad!
+                       <https://www.imdb.com/title/tt0088286/>,    # Top Secret!
+                       <https://www.imdb.com/title/tt0102059/>,    # Hot Shots!
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0102603/>,    # Oscar
+                       <https://www.imdb.com/title/tt0094898/>,    # Coming to America
+                       <https://www.imdb.com/title/tt0076257/>,    # The Kentucky Fried Movie
+                       <https://www.imdb.com/title/tt0055708/> ; # The Tonight Show Starring Johnny Carson
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1972814361/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000720/mediaviewer/rm970064640/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm1020396288/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm819069696/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm2484768256/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm1629654528/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm941788672/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm4020217344/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm3986662912/>,
+                 <https://www.imdb.com/name/nm0000720/mediaviewer/rm3272290048/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0080339/> a schema:Movie ;
+    schema:name "Airplane!" ;
+    schema:url <https://www.imdb.com/title/tt0080339/> .
+
+<https://www.imdb.com/title/tt0083466/> a schema:Movie ;
+    schema:name "Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0083466/> .
+
+<https://www.imdb.com/title/tt0088286/> a schema:Movie ;
+    schema:name "Top Secret!" ;
+    schema:url <https://www.imdb.com/title/tt0088286/> .
+
+<https://www.imdb.com/title/tt0102059/> a schema:Movie ;
+    schema:name "Hot Shots!" ;
+    schema:url <https://www.imdb.com/title/tt0102059/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Oscar (1991)
+<https://www.imdb.com/title/tt0102603/> a schema:Movie ;
+    schema:name "Oscar" ;
+    schema:url <https://www.imdb.com/title/tt0102603/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000720/> ;
+        schema:characterName "Postman"
+    ] .
+
+# Coming to America (1988)
+<https://www.imdb.com/title/tt0094898/> a schema:Movie ;
+    schema:name "Coming to America" ;
+    schema:url <https://www.imdb.com/title/tt0094898/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000720/> ;
+        schema:characterName "Face on Cutting Room Floor"
+    ] .
+
+# The Kentucky Fried Movie (1977)
+<https://www.imdb.com/title/tt0076257/> a schema:Movie ;
+    schema:name "The Kentucky Fried Movie" ;
+    schema:url <https://www.imdb.com/title/tt0076257/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000720/> ;
+        schema:characterName "Technician #1"
+    ] .
+
+# The Tonight Show Starring Johnny Carson (1972)
+<https://www.imdb.com/title/tt0055708/> a schema:Movie ;
+    schema:name "The Tonight Show Starring Johnny Carson" ;
+    schema:url <https://www.imdb.com/title/tt0055708/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000720/> ;
+        schema:characterName "(as Kentucky Fried Theatre)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1972814361/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Health expert Vinnie Tortorich exposes the history behind widespread myths and lies regarding healthy eating, fat and weight loss." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1972814361/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzFiYzc1ODgtMTFmZS00NmNmLTlhNjMtN2NlZDA4ODk4MWZjXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT2M31S"^^xsd:duration ;
+        schema:uploadDate "2022-04-28T18:25:02Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTg2MDg4NjM3Nl5BMl5BanBnXkFtZTcwNTE3MjIzMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2MDg4NjM3Nl5BMl5BanBnXkFtZTcwNTE3MjIzMQ@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams" ;
+    schema:height "225"^^xsd:integer ;
+    schema:width "168"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm970064640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdjM2QyMDctNzc4My00NDRlLWIzNzEtMmI0ZGU0YjU2YzQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, and Jerry Zucker in Airplane! (1980)" ;
+    schema:height "424"^^xsd:integer ;
+    schema:width "636"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm1020396288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTZiNGQ5MGMtMGNlMy00YjA5LTk2OWYtYzMxOGUyNjgwZjdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, and Jerry Zucker in Airplane! (1980)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm819069696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAzMjc5YTktNWUwYi00ODYwLWE1MmYtOGRmYTA1ZWE0YzFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, and Jerry Zucker in Airplane! (1980)" ;
+    schema:height "392"^^xsd:integer ;
+    schema:width "594"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm2484768256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxNjU4NzEyMV5BMl5BanBnXkFtZTcwNzY5MDAxMw@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, David Lloyd Austin, Raye Birk, Charles Gherardi, Prince Hughes, David Katz, Robert K. Weiss, and Robert LuJane in The Naked Gun: From the Files of Police Squad! (1988)" ;
+    schema:height "1245"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm1629654528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0MDQ0MjcyOV5BMl5BanBnXkFtZTcwNzU0NDgwMw@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, Robert K. Weiss, and Jerry Zucker in The Naked Gun 2½: The Smell of Fear (1991)" ;
+    schema:height "1261"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm941788672/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkwODk3MDY4NV5BMl5BanBnXkFtZTcwNjczNDgwMw@@._V1_.jpg> ;
+    schema:caption "Winona Ryder and Jim Abrahams in Welcome Home, Roxy Carmichael (1990)" ;
+    schema:height "1286"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm4020217344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxMjUwMjUyNl5BMl5BanBnXkFtZTcwNTk5ODQ0OQ@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams at an event for Airplane! (1980)" ;
+    schema:height "1584"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm3986662912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzNDk0NjI0OV5BMl5BanBnXkFtZTcwNzk5ODQ0OQ@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, Robert Hays, David Zucker, and Ben Mankiewicz at an event for Airplane! (1980)" ;
+    schema:height "1429"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000720/mediaviewer/rm3272290048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQzOWQ0NTEtN2IzNy00NzNhLWIyMGQtY2JmNGU0MTkzNzRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, and Jerry Zucker in The Directors (1997)" ;
+    schema:height "1398"^^xsd:integer ;
+    schema:width "931"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

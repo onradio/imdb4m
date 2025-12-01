@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0069724/> a schema:Person ;
+    schema:name "Carla Belver" ;
+    schema:url <https://www.imdb.com/name/nm0069724/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Carla Belver. Actress: Dead Poets Society. Carla Belver is best remembered as the memorable Mrs. Perry from Peter Weir's classic film Dead Poets Society (1989), where she plays the mother of Robert Sean Leonard character. A small dramatic role but she had the precise acting in her few scenes. She also appeared in two other movies: Shannon's Deal (1989) and Home of Angels (1995). Belver's presence can also be seen..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0122106/>,    # Home of Angels
+                       <https://www.imdb.com/title/tt0101150/>,    # My Life and Times
+                       <https://www.imdb.com/title/tt0098303/>,    # Shannon's Deal
+                       <https://www.imdb.com/title/tt0097165/>,    # Dead Poets Society
+                       <https://www.imdb.com/title/tt0202179/> ; # ABC Afterschool Specials
+
+
+    schema:video <https://www.imdb.com/video/vi2519834137/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Home of Angels (1995)
+<https://www.imdb.com/title/tt0122106/> a schema:Movie ;
+    schema:name "Home of Angels" ;
+    schema:url <https://www.imdb.com/title/tt0122106/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0069724/> ;
+        schema:characterName "Martha"
+    ] .
+
+# My Life and Times (1991)
+<https://www.imdb.com/title/tt0101150/> a schema:Movie ;
+    schema:name "My Life and Times" ;
+    schema:url <https://www.imdb.com/title/tt0101150/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0069724/> ;
+        schema:characterName "Secretary"
+    ] .
+
+# Shannon's Deal (1989)
+<https://www.imdb.com/title/tt0098303/> a schema:Movie ;
+    schema:name "Shannon's Deal" ;
+    schema:url <https://www.imdb.com/title/tt0098303/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0069724/> ;
+        schema:characterName "Hazel"
+    ] .
+
+# Dead Poets Society (1989)
+<https://www.imdb.com/title/tt0097165/> a schema:Movie ;
+    schema:name "Dead Poets Society" ;
+    schema:url <https://www.imdb.com/title/tt0097165/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0069724/> ;
+        schema:characterName "Mrs. Perry"
+    ] .
+
+# ABC Afterschool Specials (1986)
+<https://www.imdb.com/title/tt0202179/> a schema:Movie ;
+    schema:name "ABC Afterschool Specials" ;
+    schema:url <https://www.imdb.com/title/tt0202179/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0069724/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2519834137/> a schema:VideoObject ;
+        schema:name "Dead Poets Society: Blu-Ray" ;
+        schema:description "Clip: O Captain" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2519834137/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzAwZmZmOWUtMjZhNC00MzM1LTkyOTctZTc4OWM1MjI2YTUxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M17S"^^xsd:duration ;
+        schema:uploadDate "2011-11-05T03:12:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

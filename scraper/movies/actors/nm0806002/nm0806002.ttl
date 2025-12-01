@@ -1,0 +1,443 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0806002/> a schema:Person ;
+    schema:name "Paul Sloan" ;
+    schema:url <https://www.imdb.com/name/nm0806002/> ;
+    schema:birthDate "1970-03-29"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Paul Sloan. Actor: Stiletto. Paul Sloan was born on 29 March 1970 in the USA. He is an actor and writer, known for Stiletto (2008), Vigilante Diaries (2016) and The Scorpion King (2002)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTYxMGU4MmQtNTYwYi00NDc0LWE1YjgtNzRkY2VjMzA0NjQ3XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1027747/>,    # Stiletto
+                       <https://www.imdb.com/title/tt0277296/>,    # The Scorpion King
+                       <https://www.imdb.com/title/tt3903852/>,    # Vigilante Diaries
+                       <https://www.imdb.com/title/tt6966692/>,    # Green Book
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8415352/>,    # The Murder of Nicole Brown Simpson
+                       <https://www.imdb.com/title/tt9419834/>,    # Secret Obsession
+                       <https://www.imdb.com/title/tt10132506/>,    # Alice in Chains: Black Antenna
+                       <https://www.imdb.com/title/tt4501740/>,    # Nation's Fire
+                       <https://www.imdb.com/title/tt8050598/>,    # Blood, Sweat and Terrors
+                       <https://www.imdb.com/title/tt9218434/>,    # Alice in Chains: Never Fade
+                       <https://www.imdb.com/title/tt8372796/>,    # Alice in Chains: The One You Know
+                       <https://www.imdb.com/title/tt5969078/>,    # Unorganized Crime
+                       <https://www.imdb.com/title/tt26862986/>,    # A Fire Inside - Hidden Knives
+                       <https://www.imdb.com/title/tt3212232/>,    # I Am Wrath
+                       <https://www.imdb.com/title/tt4729458/>,    # Thunderland
+                       <https://www.imdb.com/title/tt3323638/>,    # The Night Crew
+                       <https://www.imdb.com/title/tt2802328/>,    # Vigilante Diaries
+                       <https://www.imdb.com/title/tt1598065/>,    # Faded
+                       <https://www.imdb.com/title/tt1714176/>,    # Yellow Rock
+                       <https://www.imdb.com/title/tt1594505/>,    # L.A., I Hate You
+                       <https://www.imdb.com/title/tt1558247/>,    # Air
+                       <https://www.imdb.com/title/tt1332119/>,    # Shoot the Hero
+                       <https://www.imdb.com/title/tt1390404/>,    # The Deported
+                       <https://www.imdb.com/title/tt0874424/>,    # The Prince and the Pauper: The Movie
+                       <https://www.imdb.com/title/tt0345601/>,    # Machine
+                       <https://www.imdb.com/title/tt0475217/>,    # All In
+                       <https://www.imdb.com/title/tt0421983/>,    # B.E.I.N.G.
+                       <https://www.imdb.com/title/tt23181340/>,    # Mind's Eye
+                       <https://www.imdb.com/title/tt0093467/> ; # Made in Heaven
+
+
+    schema:video <https://www.imdb.com/video/vi1663748121/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0806002/mediaviewer/rm1112474625/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm662307841/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm2481067777/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm3881439488/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm2133862912/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm2496657664/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm2472079361/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm3109613569/>,
+                 <https://www.imdb.com/name/nm0806002/mediaviewer/rm1985540097/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1027747/> a schema:Movie ;
+    schema:name "Stiletto" ;
+    schema:url <https://www.imdb.com/title/tt1027747/> .
+
+<https://www.imdb.com/title/tt0277296/> a schema:Movie ;
+    schema:name "The Scorpion King" ;
+    schema:url <https://www.imdb.com/title/tt0277296/> .
+
+<https://www.imdb.com/title/tt3903852/> a schema:Movie ;
+    schema:name "Vigilante Diaries" ;
+    schema:url <https://www.imdb.com/title/tt3903852/> .
+
+<https://www.imdb.com/title/tt6966692/> a schema:Movie ;
+    schema:name "Green Book" ;
+    schema:url <https://www.imdb.com/title/tt6966692/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Murder of Nicole Brown Simpson (2019)
+<https://www.imdb.com/title/tt8415352/> a schema:Movie ;
+    schema:name "The Murder of Nicole Brown Simpson" ;
+    schema:url <https://www.imdb.com/title/tt8415352/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Profiler Ressino"
+    ] .
+
+# Secret Obsession (2019)
+<https://www.imdb.com/title/tt9419834/> a schema:Movie ;
+    schema:name "Secret Obsession" ;
+    schema:url <https://www.imdb.com/title/tt9419834/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Jim Kahn"
+    ] .
+
+# Alice in Chains: Black Antenna (2019)
+<https://www.imdb.com/title/tt10132506/> a schema:Movie ;
+    schema:name "Alice in Chains: Black Antenna" ;
+    schema:url <https://www.imdb.com/title/tt10132506/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Alpha"
+    ] .
+
+# Nation's Fire (2019)
+<https://www.imdb.com/title/tt4501740/> a schema:Movie ;
+    schema:name "Nation's Fire" ;
+    schema:url <https://www.imdb.com/title/tt4501740/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Bailey"
+    ] .
+
+# Blood, Sweat and Terrors (2018)
+<https://www.imdb.com/title/tt8050598/> a schema:Movie ;
+    schema:name "Blood, Sweat and Terrors" ;
+    schema:url <https://www.imdb.com/title/tt8050598/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Sid"
+    ] .
+
+# Alice in Chains: Never Fade (2018)
+<https://www.imdb.com/title/tt9218434/> a schema:Movie ;
+    schema:name "Alice in Chains: Never Fade" ;
+    schema:url <https://www.imdb.com/title/tt9218434/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Alpha"
+    ] .
+
+# Alice in Chains: The One You Know (2018)
+<https://www.imdb.com/title/tt8372796/> a schema:Movie ;
+    schema:name "Alice in Chains: The One You Know" ;
+    schema:url <https://www.imdb.com/title/tt8372796/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Alpha"
+    ] .
+
+# Unorganized Crime (2018)
+<https://www.imdb.com/title/tt5969078/> a schema:Movie ;
+    schema:name "Unorganized Crime" ;
+    schema:url <https://www.imdb.com/title/tt5969078/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# A Fire Inside - Hidden Knives (2017)
+<https://www.imdb.com/title/tt26862986/> a schema:Movie ;
+    schema:name "A Fire Inside - Hidden Knives" ;
+    schema:url <https://www.imdb.com/title/tt26862986/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Taxi Driver"
+    ] .
+
+# I Am Wrath (2016)
+<https://www.imdb.com/title/tt3212232/> a schema:Movie ;
+    schema:name "I Am Wrath" ;
+    schema:url <https://www.imdb.com/title/tt3212232/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Lemi K"
+    ] .
+
+# Thunderland (2015)
+<https://www.imdb.com/title/tt4729458/> a schema:Movie ;
+    schema:name "Thunderland" ;
+    schema:url <https://www.imdb.com/title/tt4729458/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Oats"
+    ] .
+
+# The Night Crew (2015)
+<https://www.imdb.com/title/tt3323638/> a schema:Movie ;
+    schema:name "The Night Crew" ;
+    schema:url <https://www.imdb.com/title/tt3323638/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Ronnie"
+    ] .
+
+# Vigilante Diaries (2013)
+<https://www.imdb.com/title/tt2802328/> a schema:Movie ;
+    schema:name "Vigilante Diaries" ;
+    schema:url <https://www.imdb.com/title/tt2802328/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "The Vigilante"
+    ] .
+
+# Faded (2012)
+<https://www.imdb.com/title/tt1598065/> a schema:Movie ;
+    schema:name "Faded" ;
+    schema:url <https://www.imdb.com/title/tt1598065/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Cop #2"
+    ] .
+
+# Yellow Rock (2011)
+<https://www.imdb.com/title/tt1714176/> a schema:Movie ;
+    schema:name "Yellow Rock" ;
+    schema:url <https://www.imdb.com/title/tt1714176/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Johnson"
+    ] .
+
+# L.A., I Hate You (2011)
+<https://www.imdb.com/title/tt1594505/> a schema:Movie ;
+    schema:name "L.A., I Hate You" ;
+    schema:url <https://www.imdb.com/title/tt1594505/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Jake Tanner"
+    ] .
+
+# Air (2010)
+<https://www.imdb.com/title/tt1558247/> a schema:Movie ;
+    schema:name "Air" ;
+    schema:url <https://www.imdb.com/title/tt1558247/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Engineer"
+    ] .
+
+# Shoot the Hero (2010)
+<https://www.imdb.com/title/tt1332119/> a schema:Movie ;
+    schema:name "Shoot the Hero" ;
+    schema:url <https://www.imdb.com/title/tt1332119/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Franklin"
+    ] .
+
+# The Deported (2009)
+<https://www.imdb.com/title/tt1390404/> a schema:Movie ;
+    schema:name "The Deported" ;
+    schema:url <https://www.imdb.com/title/tt1390404/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "INS Agent Lopez"
+    ] .
+
+# The Prince and the Pauper: The Movie (2007)
+<https://www.imdb.com/title/tt0874424/> a schema:Movie ;
+    schema:name "The Prince and the Pauper: The Movie" ;
+    schema:url <https://www.imdb.com/title/tt0874424/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Dante the D.P."
+    ] .
+
+# Machine (2007)
+<https://www.imdb.com/title/tt0345601/> a schema:Movie ;
+    schema:name "Machine" ;
+    schema:url <https://www.imdb.com/title/tt0345601/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Frank"
+    ] .
+
+# All In (2006)
+<https://www.imdb.com/title/tt0475217/> a schema:Movie ;
+    schema:name "All In" ;
+    schema:url <https://www.imdb.com/title/tt0475217/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Detective Blondell"
+    ] .
+
+# B.E.I.N.G. (2005)
+<https://www.imdb.com/title/tt0421983/> a schema:Movie ;
+    schema:name "B.E.I.N.G." ;
+    schema:url <https://www.imdb.com/title/tt0421983/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Hud Masters"
+    ] .
+
+# Mind's Eye (2003)
+<https://www.imdb.com/title/tt23181340/> a schema:Movie ;
+    schema:name "Mind's Eye" ;
+    schema:url <https://www.imdb.com/title/tt23181340/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName ""
+    ] .
+
+# Made in Heaven (1987)
+<https://www.imdb.com/title/tt0093467/> a schema:Movie ;
+    schema:name "Made in Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0093467/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0806002/> ;
+        schema:characterName "Young Elmo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1663748121/> a schema:VideoObject ;
+        schema:name "Wages of Sin - Trailer" ;
+        schema:description "Thomas Blackwell is plunged into L.A.'s brutal underworld. Hunted by a lethal fentanyl organization and betrayed by corrupt forces profiting from its deadly spread, he must clear his name to save his life and family." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1663748121/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzA4N2IwNGYtZjIyZS00NTcyLTgxMTgtMjhkMDFmOTdiYzhmXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M36S"^^xsd:duration ;
+        schema:uploadDate "2025-08-30T15:30:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTYxMGU4MmQtNTYwYi00NDc0LWE1YjgtNzRkY2VjMzA0NjQ3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYxMGU4MmQtNTYwYi00NDc0LWE1YjgtNzRkY2VjMzA0NjQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan" ;
+    schema:height "631"^^xsd:integer ;
+    schema:width "642"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm1112474625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDBiYjY1YjUtZWEyNi00ZDRmLTg1OTMtNzAxMjE0MTc4YTNmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan in The Greatest Beer Run Ever (2022)" ;
+    schema:height "518"^^xsd:integer ;
+    schema:width "1124"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm662307841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGEwNTk1MGItOGJjYi00N2Y4LThmNDktYWQwZjI1ZmI5ZWI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2751"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm2481067777/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjk4NjZjOWUtNWYwYS00NDlmLWFlNDUtMDI1ODNjMzQwNTk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "still from SONGBIRD" ;
+    schema:height "638"^^xsd:integer ;
+    schema:width "1432"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm3881439488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMwODk5MDY5MV5BMl5BanBnXkFtZTgwOTAzMDgwOTE@._V1_.jpg> ;
+    schema:caption "Paul Sloan in Vigilante Diaries (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm2133862912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTVkOTIwZjUtZTk5OS00MDMwLWJiMjktYTUyMmRkODMxZWQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "1245"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm2496657664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDEyYWE4ZGMtMjg2OC00ZmI4LWI3M2UtYTZiOWE1YmQzM2VmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still from The NIghtCrew" ;
+    schema:height "603"^^xsd:integer ;
+    schema:width "762"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm2472079361/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDNiY2ViZDAtZjM1NS00ZWY1LWJlZjktZGIyYzEwZWE4ZWNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan in Every Last One of Them (2021)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm3109613569/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTkzZDgxYWUtN2RlMy00ZGVjLWJmMDQtZTA3ZGE3Nzk2NTMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan in Every Last One of Them (2021)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0806002/mediaviewer/rm1985540097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGI3Mzc3YmEtMjNlMS00NTYxLWE0NDUtMjdlYjViMmQyNDU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Sloan in Every Last One of Them (2021)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0009318/> a schema:Person ;
+    schema:name "Olga Abrego" ;
+    schema:url <https://www.imdb.com/name/nm0009318/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Olga Abrego. Actress: La haine. Olga Abrego is known for La haine (1995), Crime (2010) and Wild Side (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4517036/>,    # Leftover
+                       <https://www.imdb.com/title/tt1721683/>,    # The Sleeping Beauty
+                       <https://www.imdb.com/title/tt1666158/>,    # Crime
+                       <https://www.imdb.com/title/tt3746814/>,    # Contre nature
+                       <https://www.imdb.com/title/tt0364120/>,    # Wild Side
+                       <https://www.imdb.com/title/tt0113247/>,    # La haine
+                       <https://www.imdb.com/title/tt0429015/> ; # Quel soulagement!
+
+
+    schema:video <https://www.imdb.com/video/vi372810777/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Leftover (2015)
+<https://www.imdb.com/title/tt4517036/> a schema:Movie ;
+    schema:name "Leftover" ;
+    schema:url <https://www.imdb.com/title/tt4517036/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# The Sleeping Beauty (2010)
+<https://www.imdb.com/title/tt1721683/> a schema:Movie ;
+    schema:name "The Sleeping Beauty" ;
+    schema:url <https://www.imdb.com/title/tt1721683/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "La finnoise"
+    ] .
+
+# Crime (2010)
+<https://www.imdb.com/title/tt1666158/> a schema:Movie ;
+    schema:name "Crime" ;
+    schema:url <https://www.imdb.com/title/tt1666158/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName ""
+    ] .
+
+# Contre nature (2008)
+<https://www.imdb.com/title/tt3746814/> a schema:Movie ;
+    schema:name "Contre nature" ;
+    schema:url <https://www.imdb.com/title/tt3746814/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "Josée"
+    ] .
+
+# Wild Side (2004)
+<https://www.imdb.com/title/tt0364120/> a schema:Movie ;
+    schema:name "Wild Side" ;
+    schema:url <https://www.imdb.com/title/tt0364120/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "La matrone du squat"
+    ] .
+
+# La haine (1995)
+<https://www.imdb.com/title/tt0113247/> a schema:Movie ;
+    schema:name "La haine" ;
+    schema:url <https://www.imdb.com/title/tt0113247/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "Tante Vinz"
+    ] .
+
+# Quel soulagement! (1980)
+<https://www.imdb.com/title/tt0429015/> a schema:Movie ;
+    schema:name "Quel soulagement!" ;
+    schema:url <https://www.imdb.com/title/tt0429015/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0009318/> ;
+        schema:characterName "Guide"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi372810777/> a schema:VideoObject ;
+        schema:name "La Haine: The Criterion Collection [Blu-Ray]" ;
+        schema:description "Trailer for La Haine" ;
+        schema:embedUrl <https://www.imdb.com/video/vi372810777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzIxZDA4ZTUtYjA3Yy00OWNmLWFlNmItMTVkNTlhNGM3YTA5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2012-09-26T03:22:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

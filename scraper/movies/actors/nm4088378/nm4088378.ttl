@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4088378/> a schema:Person ;
+    schema:name "Jami Owen" ;
+    schema:url <https://www.imdb.com/name/nm4088378/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jami Owen. Actress: The Social Network. Jami Owen is known for The Social Network (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1285016/> .    # The Social Network
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Social Network (2010)
+<https://www.imdb.com/title/tt1285016/> a schema:Movie ;
+    schema:name "The Social Network" ;
+    schema:url <https://www.imdb.com/title/tt1285016/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4088378/> ;
+        schema:characterName "Student Playing Facemash"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

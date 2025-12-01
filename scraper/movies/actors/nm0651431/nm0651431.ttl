@@ -1,0 +1,151 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0651431/> a schema:Person ;
+    schema:name "Bob Orwig" ;
+    schema:url <https://www.imdb.com/name/nm0651431/> ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Bob Orwig. Actor: Platoon. Bob Orwig is known for Platoon (1986), JFK (1991) and No Justice (1989)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYzdmNGY2YzQtM2NiZi00YThjLTgwNTMtNDcxMzE3NWZkMzE0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116404/>,    # Get on the Bus
+                       <https://www.imdb.com/title/tt0094484/>,    # In the Heat of the Night
+                       <https://www.imdb.com/title/tt0102431/>,    # Memphis
+                       <https://www.imdb.com/title/tt0102138/>,    # JFK
+                       <https://www.imdb.com/title/tt0164595/>,    # Forgotten Heroes
+                       <https://www.imdb.com/title/tt0199870/>,    # No Justice
+                       <https://www.imdb.com/title/tt0091763/> ; # Platoon
+
+
+    schema:video <https://www.imdb.com/video/vi212245529/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0651431/mediaviewer/rm172224513/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Get on the Bus (1996)
+<https://www.imdb.com/title/tt0116404/> a schema:Movie ;
+    schema:name "Get on the Bus" ;
+    schema:url <https://www.imdb.com/title/tt0116404/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Rodney"
+    ] .
+
+# In the Heat of the Night (1992)
+<https://www.imdb.com/title/tt0094484/> a schema:Movie ;
+    schema:name "In the Heat of the Night" ;
+    schema:url <https://www.imdb.com/title/tt0094484/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Leonard Dobbs"
+    ] .
+
+# Memphis (1992)
+<https://www.imdb.com/title/tt0102431/> a schema:Movie ;
+    schema:name "Memphis" ;
+    schema:url <https://www.imdb.com/title/tt0102431/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "White Policeman"
+    ] .
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Officer Poe"
+    ] .
+
+# Forgotten Heroes (1990)
+<https://www.imdb.com/title/tt0164595/> a schema:Movie ;
+    schema:name "Forgotten Heroes" ;
+    schema:url <https://www.imdb.com/title/tt0164595/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Joe 'Cowboy' Geer"
+    ] .
+
+# No Justice (1989)
+<https://www.imdb.com/title/tt0199870/> a schema:Movie ;
+    schema:name "No Justice" ;
+    schema:url <https://www.imdb.com/title/tt0199870/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Virgel Johnson"
+    ] .
+
+# Platoon (1986)
+<https://www.imdb.com/title/tt0091763/> a schema:Movie ;
+    schema:name "Platoon" ;
+    schema:url <https://www.imdb.com/title/tt0091763/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0651431/> ;
+        schema:characterName "Gardner"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi212245529/> a schema:VideoObject ;
+        schema:name "Platoon: Blu-ray Release" ;
+        schema:description "30 second Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi212245529/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDAxOWViMmYtMmI2ZC00YTA0LWIxMzAtNjBmMjgzMTAxN2ViXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2011-06-16T03:26:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYzdmNGY2YzQtM2NiZi00YThjLTgwNTMtNDcxMzE3NWZkMzE0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzdmNGY2YzQtM2NiZi00YThjLTgwNTMtNDcxMzE3NWZkMzE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Orwig" ;
+    schema:height "1243"^^xsd:integer ;
+    schema:width "1007"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0651431/mediaviewer/rm172224513/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzdmNGY2YzQtM2NiZi00YThjLTgwNTMtNDcxMzE3NWZkMzE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Orwig" ;
+    schema:height "1243"^^xsd:integer ;
+    schema:width "1007"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

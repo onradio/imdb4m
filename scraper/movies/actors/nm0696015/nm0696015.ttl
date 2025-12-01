@@ -1,0 +1,585 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0696015/> a schema:Person ;
+    schema:name "Jordan Prentice" ;
+    schema:url <https://www.imdb.com/name/nm0696015/> ;
+    schema:birthDate "1973-01-30"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jordan Prentice. Actor: In Bruges. Jordan Prentice was born on 30 January 1973 in London, Ontario, Canada. He is an actor, known for In Bruges (2008), Howard the Duck (1986) and Mirror Mirror (2012)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTM2ODM5NzMyOV5BMl5BanBnXkFtZTYwNjk3Nzc4._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, Ontario, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.24"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "4′ 1″ (1.24 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0290988/>,    # Trailer Park Boys
+                       <https://www.imdb.com/title/tt10642162/>,    # Dream Boy or the Pursuit of Being
+                       <https://www.imdb.com/title/tt4955338/>,    # Auf Augenhöhe
+                       <https://www.imdb.com/title/tt3668432/>,    # End of the Rainbow
+                       <https://www.imdb.com/title/tt3004746/>,    # I Am Here
+                       <https://www.imdb.com/title/tt2487090/>,    # Sam & Cat
+                       <https://www.imdb.com/title/tt2179035/>,    # Empire of Dirt
+                       <https://www.imdb.com/title/tt0817545/>,    # Bound
+                       <https://www.imdb.com/title/tt2915200/>,    # Ruby Skye P.I.: The Haunted Library
+                       <https://www.imdb.com/title/tt1667353/>,    # Mirror Mirror
+                       <https://www.imdb.com/title/tt1404386/>,    # An Insignificant Harvey
+                       <https://www.imdb.com/title/tt1237961/>,    # Silent But Deadly
+                       <https://www.imdb.com/title/tt1719831/>,    # Good Dog
+                       <https://www.imdb.com/title/tt1429449/>,    # Lost Girl
+                       <https://www.imdb.com/title/tt1786657/>,    # Ruby Skye P.I.: The Spam Scam
+                       <https://www.imdb.com/title/tt1558182/>,    # Call Me Fitz
+                       <https://www.imdb.com/title/tt1567140/>,    # The Night Before the Night Before Christmas
+                       <https://www.imdb.com/title/tt1114708/>,    # Aaron Stone
+                       <https://www.imdb.com/title/tt1253596/>,    # Midgets vs. Mascots
+                       <https://www.imdb.com/title/tt0429422/>,    # ReGenesis
+                       <https://www.imdb.com/title/tt0780536/>,    # In Bruges
+                       <https://www.imdb.com/title/tt0974959/>,    # American Pie Presents: Beta House
+                       <https://www.imdb.com/title/tt0971204/>,    # Long Pigs
+                       <https://www.imdb.com/title/tt0758798/>,    # Weirdsville
+                       <https://www.imdb.com/title/tt0808146/>,    # American Pie Presents: The Naked Mile
+                       <https://www.imdb.com/title/tt0829040/>,    # The Shakespeare Comedy Show
+                       <https://www.imdb.com/title/tt0456778/>,    # G-Spot
+                       <https://www.imdb.com/title/tt0408993/>,    # The Life and Hard Times of Guy Terrifico
+                       <https://www.imdb.com/title/tt0366551/>,    # Harold & Kumar Get the Munchies
+                       <https://www.imdb.com/title/tt0342316/>,    # Love, Sex and Eating the Bones
+                       <https://www.imdb.com/title/tt0348999/>,    # The Seán Cullen Show
+                       <https://www.imdb.com/title/tt0265752/>,    # Wolf Girl
+                       <https://www.imdb.com/title/tt0247108/>,    # The War Next Door
+                       <https://www.imdb.com/title/tt9388452/>,    # Vengaboys: Shalala Lala
+                       <https://www.imdb.com/title/tt6906072/>,    # Bloodhound Gang: The Bad Touch
+                       <https://www.imdb.com/title/tt0267548/>,    # Haseena Maan Jaayegi
+                       <https://www.imdb.com/title/tt0111987/>,    # Goosebumps
+                       <https://www.imdb.com/title/tt0091225/> ; # Howard the Duck
+
+
+    schema:video <https://www.imdb.com/video/vi1619901209/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0696015/mediaviewer/rm1112655616/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1983892480/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1967115264/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm563783424/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1438627328/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1405072896/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1505736192/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1287632384/>,
+                 <https://www.imdb.com/name/nm0696015/mediaviewer/rm1342019072/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Trailer Park Boys (2001)
+<https://www.imdb.com/title/tt0290988/> a schema:Movie ;
+    schema:name "Trailer Park Boys" ;
+    schema:url <https://www.imdb.com/title/tt0290988/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName ""
+    ] .
+
+# Dream Boy or the Pursuit of Being (2019)
+<https://www.imdb.com/title/tt10642162/> a schema:Movie ;
+    schema:name "Dream Boy or the Pursuit of Being" ;
+    schema:url <https://www.imdb.com/title/tt10642162/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "George Smoot"
+    ] .
+
+# Auf Augenhöhe (2016)
+<https://www.imdb.com/title/tt4955338/> a schema:Movie ;
+    schema:name "Auf Augenhöhe" ;
+    schema:url <https://www.imdb.com/title/tt4955338/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Tom Lambrecht"
+    ] .
+
+# End of the Rainbow (2014)
+<https://www.imdb.com/title/tt3668432/> a schema:Movie ;
+    schema:name "End of the Rainbow" ;
+    schema:url <https://www.imdb.com/title/tt3668432/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Hunted"
+    ] .
+
+# I Am Here (2014)
+<https://www.imdb.com/title/tt3004746/> a schema:Movie ;
+    schema:name "I Am Here" ;
+    schema:url <https://www.imdb.com/title/tt3004746/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Petit"
+    ] .
+
+# Sam & Cat (2013)
+<https://www.imdb.com/title/tt2487090/> a schema:Movie ;
+    schema:name "Sam & Cat" ;
+    schema:url <https://www.imdb.com/title/tt2487090/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Hector"
+    ] .
+
+# Empire of Dirt (2013)
+<https://www.imdb.com/title/tt2179035/> a schema:Movie ;
+    schema:name "Empire of Dirt" ;
+    schema:url <https://www.imdb.com/title/tt2179035/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Warren Fensky"
+    ] .
+
+# Bound (2013)
+<https://www.imdb.com/title/tt0817545/> a schema:Movie ;
+    schema:name "Bound" ;
+    schema:url <https://www.imdb.com/title/tt0817545/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Brown"
+    ] .
+
+# Ruby Skye P.I.: The Haunted Library (2012)
+<https://www.imdb.com/title/tt2915200/> a schema:Movie ;
+    schema:name "Ruby Skye P.I.: The Haunted Library" ;
+    schema:url <https://www.imdb.com/title/tt2915200/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Henry O'Henry"
+    ] .
+
+# Mirror Mirror (2012)
+<https://www.imdb.com/title/tt1667353/> a schema:Movie ;
+    schema:name "Mirror Mirror" ;
+    schema:url <https://www.imdb.com/title/tt1667353/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Napoleon"
+    ] .
+
+# An Insignificant Harvey (2011)
+<https://www.imdb.com/title/tt1404386/> a schema:Movie ;
+    schema:name "An Insignificant Harvey" ;
+    schema:url <https://www.imdb.com/title/tt1404386/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Harvey Lippe"
+    ] .
+
+# Silent But Deadly (2011)
+<https://www.imdb.com/title/tt1237961/> a schema:Movie ;
+    schema:name "Silent But Deadly" ;
+    schema:url <https://www.imdb.com/title/tt1237961/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Sheriff Shelby"
+    ] .
+
+# Good Dog (2011)
+<https://www.imdb.com/title/tt1719831/> a schema:Movie ;
+    schema:name "Good Dog" ;
+    schema:url <https://www.imdb.com/title/tt1719831/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Eddy the Carpenter"
+    ] .
+
+# Lost Girl (2010)
+<https://www.imdb.com/title/tt1429449/> a schema:Movie ;
+    schema:name "Lost Girl" ;
+    schema:url <https://www.imdb.com/title/tt1429449/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Valentine"
+    ] .
+
+# Ruby Skye P.I.: The Spam Scam (2010)
+<https://www.imdb.com/title/tt1786657/> a schema:Movie ;
+    schema:name "Ruby Skye P.I.: The Spam Scam" ;
+    schema:url <https://www.imdb.com/title/tt1786657/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Henry O'Henry"
+    ] .
+
+# Call Me Fitz (2010)
+<https://www.imdb.com/title/tt1558182/> a schema:Movie ;
+    schema:name "Call Me Fitz" ;
+    schema:url <https://www.imdb.com/title/tt1558182/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Handsome Dude"
+    ] .
+
+# The Night Before the Night Before Christmas (2010)
+<https://www.imdb.com/title/tt1567140/> a schema:Movie ;
+    schema:name "The Night Before the Night Before Christmas" ;
+    schema:url <https://www.imdb.com/title/tt1567140/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Nigel Thumb"
+    ] .
+
+# Aaron Stone (2010)
+<https://www.imdb.com/title/tt1114708/> a schema:Movie ;
+    schema:name "Aaron Stone" ;
+    schema:url <https://www.imdb.com/title/tt1114708/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Mr. Galapagos"
+    ] .
+
+# Midgets vs. Mascots (2009)
+<https://www.imdb.com/title/tt1253596/> a schema:Movie ;
+    schema:name "Midgets vs. Mascots" ;
+    schema:url <https://www.imdb.com/title/tt1253596/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Jordan"
+    ] .
+
+# ReGenesis (2008)
+<https://www.imdb.com/title/tt0429422/> a schema:Movie ;
+    schema:name "ReGenesis" ;
+    schema:url <https://www.imdb.com/title/tt0429422/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Hallucination"
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# American Pie Presents: Beta House (2007)
+<https://www.imdb.com/title/tt0974959/> a schema:Movie ;
+    schema:name "American Pie Presents: Beta House" ;
+    schema:url <https://www.imdb.com/title/tt0974959/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Rock"
+    ] .
+
+# Long Pigs (2007)
+<https://www.imdb.com/title/tt0971204/> a schema:Movie ;
+    schema:name "Long Pigs" ;
+    schema:url <https://www.imdb.com/title/tt0971204/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName ""
+    ] .
+
+# Weirdsville (2007)
+<https://www.imdb.com/title/tt0758798/> a schema:Movie ;
+    schema:name "Weirdsville" ;
+    schema:url <https://www.imdb.com/title/tt0758798/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Martin"
+    ] .
+
+# American Pie Presents: The Naked Mile (2006)
+<https://www.imdb.com/title/tt0808146/> a schema:Movie ;
+    schema:name "American Pie Presents: The Naked Mile" ;
+    schema:url <https://www.imdb.com/title/tt0808146/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Rock"
+    ] .
+
+# The Shakespeare Comedy Show (2006)
+<https://www.imdb.com/title/tt0829040/> a schema:Movie ;
+    schema:name "The Shakespeare Comedy Show" ;
+    schema:url <https://www.imdb.com/title/tt0829040/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "The Imp"
+    ] .
+
+# G-Spot (2005)
+<https://www.imdb.com/title/tt0456778/> a schema:Movie ;
+    schema:name "G-Spot" ;
+    schema:url <https://www.imdb.com/title/tt0456778/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Small person stand-in"
+    ] .
+
+# The Life and Hard Times of Guy Terrifico (2005)
+<https://www.imdb.com/title/tt0408993/> a schema:Movie ;
+    schema:name "The Life and Hard Times of Guy Terrifico" ;
+    schema:url <https://www.imdb.com/title/tt0408993/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Reggie Moshanski"
+    ] .
+
+# Harold & Kumar Get the Munchies (2004)
+<https://www.imdb.com/title/tt0366551/> a schema:Movie ;
+    schema:name "Harold & Kumar Get the Munchies" ;
+    schema:url <https://www.imdb.com/title/tt0366551/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Giant Bag of Weed"
+    ] .
+
+# Love, Sex and Eating the Bones (2003)
+<https://www.imdb.com/title/tt0342316/> a schema:Movie ;
+    schema:name "Love, Sex and Eating the Bones" ;
+    schema:url <https://www.imdb.com/title/tt0342316/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Vendor"
+    ] .
+
+# The Seán Cullen Show (2003)
+<https://www.imdb.com/title/tt0348999/> a schema:Movie ;
+    schema:name "The Seán Cullen Show" ;
+    schema:url <https://www.imdb.com/title/tt0348999/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Jordan"
+    ] .
+
+# Wolf Girl (2001)
+<https://www.imdb.com/title/tt0265752/> a schema:Movie ;
+    schema:name "Wolf Girl" ;
+    schema:url <https://www.imdb.com/title/tt0265752/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Fingers Finnian"
+    ] .
+
+# The War Next Door (2000)
+<https://www.imdb.com/title/tt0247108/> a schema:Movie ;
+    schema:name "The War Next Door" ;
+    schema:url <https://www.imdb.com/title/tt0247108/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Charlie Soloman"
+    ] .
+
+# Vengaboys: Shalala Lala (2000)
+<https://www.imdb.com/title/tt9388452/> a schema:Movie ;
+    schema:name "Vengaboys: Shalala Lala" ;
+    schema:url <https://www.imdb.com/title/tt9388452/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Jordan Prentice"
+    ] .
+
+# Bloodhound Gang: The Bad Touch (1999)
+<https://www.imdb.com/title/tt6906072/> a schema:Movie ;
+    schema:name "Bloodhound Gang: The Bad Touch" ;
+    schema:url <https://www.imdb.com/title/tt6906072/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Dwarf Mime Artist"
+    ] .
+
+# Haseena Maan Jaayegi (1999)
+<https://www.imdb.com/title/tt0267548/> a schema:Movie ;
+    schema:name "Haseena Maan Jaayegi" ;
+    schema:url <https://www.imdb.com/title/tt0267548/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName ""
+    ] .
+
+# Goosebumps (1996)
+<https://www.imdb.com/title/tt0111987/> a schema:Movie ;
+    schema:name "Goosebumps" ;
+    schema:url <https://www.imdb.com/title/tt0111987/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Rocky"
+    ] .
+
+# Howard the Duck (1986)
+<https://www.imdb.com/title/tt0091225/> a schema:Movie ;
+    schema:name "Howard the Duck" ;
+    schema:url <https://www.imdb.com/title/tt0091225/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696015/> ;
+        schema:characterName "Howard T. Duck"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1619901209/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1619901209/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWNiZTM3NTgtNjA5NS00ZjlkLWJiYTEtMjBhN2M1YzcwZTQ4XkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT2M20S"^^xsd:duration ;
+        schema:uploadDate "2018-06-14T08:16:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTM2ODM5NzMyOV5BMl5BanBnXkFtZTYwNjk3Nzc4._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2ODM5NzMyOV5BMl5BanBnXkFtZTYwNjk3Nzc4._V1_.jpg> ;
+    schema:caption "Jordan Prentice in In Bruges (2008)" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1112655616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwMzEzOTA5M15BMl5BanBnXkFtZTgwMjI4NDc2MjE@._V1_.jpg> ;
+    schema:caption "Kim Basinger and Jordan Prentice in I Am Here (2014)" ;
+    schema:height "1151"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1983892480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIzNzY1ODc0MV5BMl5BanBnXkFtZTgwMDI1ODIwMjE@._V1_.jpg> ;
+    schema:caption "Peter Baird, Ed Gale, Jordan Prentice, Tim Rose, Steve Sleap, Lisa Sturz, Mary Wells, and Chip Zien in Howard the Duck (1986)" ;
+    schema:height "3071"^^xsd:integer ;
+    schema:width "4780"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1967115264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc0NjYzNzgzNF5BMl5BanBnXkFtZTgwMTI1ODIwMjE@._V1_.jpg> ;
+    schema:caption "Tim Robbins, Peter Baird, Ed Gale, Jordan Prentice, Tim Rose, Steve Sleap, Lisa Sturz, Mary Wells, and Chip Zien in Howard the Duck (1986)" ;
+    schema:height "3075"^^xsd:integer ;
+    schema:width "4775"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm563783424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyNzMwNDIzOV5BMl5BanBnXkFtZTcwODcwMjU1OQ@@._V1_.jpg> ;
+    schema:caption "Christopher Walken and Jordan Prentice in Bound (2013)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1438627328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYyMjg2NzI0M15BMl5BanBnXkFtZTcwOTEzMTU0Nw@@._V1_.jpg> ;
+    schema:caption "Jordan Prentice and Armie Hammer in Mirror Mirror (2012)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1405072896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyMzg5NDYwNl5BMl5BanBnXkFtZTcwMjIzMTU0Nw@@._V1_.jpg> ;
+    schema:caption "Martin Klebba, Mark Povinelli, Jordan Prentice, Danny Woodburn, Ronald Lee Clark, Joe Gnoffo, and Sebastian Saraceno in Mirror Mirror (2012)" ;
+    schema:height "1151"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1505736192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM3OTU5MDkwMV5BMl5BanBnXkFtZTcwNjMzMTU0Nw@@._V1_.jpg> ;
+    schema:caption "Martin Klebba, Mark Povinelli, Jordan Prentice, Danny Woodburn, Ronald Lee Clark, Joe Gnoffo, Sebastian Saraceno, and Armie Hammer in Mirror Mirror (2012)" ;
+    schema:height "1294"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1287632384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyNzAwODg5OF5BMl5BanBnXkFtZTcwOTAzMTU0Nw@@._V1_.jpg> ;
+    schema:caption "Martin Klebba, Mark Povinelli, Jordan Prentice, Tarsem Singh, Danny Woodburn, and Ronald Lee Clark in Mirror Mirror (2012)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696015/mediaviewer/rm1342019072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3NjMwNzYzMV5BMl5BanBnXkFtZTcwNDc0Mzg1MQ@@._V1_.jpg> ;
+    schema:caption "Colin Farrell, Jordan Prentice, and Clémence Poésy in In Bruges (2008)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

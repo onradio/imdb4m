@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0927357/> a schema:Person ;
+    schema:name "Donald Wiegert" ;
+    schema:url <https://www.imdb.com/name/nm0927357/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Donald Wiegert. Actor: The Straight Story. Donald Wiegert is known for The Straight Story (1999) and Flourtown (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1296374/>,    # Flourtown
+                       <https://www.imdb.com/title/tt0166896/> ; # The Straight Story
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0927357/mediaviewer/rm3810367488/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Flourtown (2008)
+<https://www.imdb.com/title/tt1296374/> a schema:Movie ;
+    schema:name "Flourtown" ;
+    schema:url <https://www.imdb.com/title/tt1296374/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0927357/> ;
+        schema:characterName "Baloon Crank Operator"
+    ] .
+
+# The Straight Story (1999)
+<https://www.imdb.com/title/tt0166896/> a schema:Movie ;
+    schema:name "The Straight Story" ;
+    schema:url <https://www.imdb.com/title/tt0166896/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0927357/> ;
+        schema:characterName "Sig"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0927357/mediaviewer/rm3810367488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA2Njg2OTc3NV5BMl5BanBnXkFtZTYwMjI5ODk2._V1_.jpg> ;
+    schema:caption "Richard Farnsworth, Joseph A. Carpenter, Ed Grennan, Jack Walsh, and Donald Wiegert in The Straight Story (1999)" ;
+    schema:height "257"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

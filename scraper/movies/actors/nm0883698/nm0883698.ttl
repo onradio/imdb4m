@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0883698/> a schema:Person ;
+    schema:name "Socorro Valdez" ;
+    schema:url <https://www.imdb.com/name/nm0883698/> ;
+    schema:birthDate "1953-12-20"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Socorro Valdez. Actress: Paris, Texas. Socorro Valdez was born on 20 December 1953 in San Jose, California, USA. She is an actress, known for Paris, Texas (1984), The New Adventures of Zorro (1981) and Zoot Suit (1981). She was previously married to Luis Barajas." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "San Jose, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.52"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ (1.52 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0099176/>,    # Break of Dawn
+                       <https://www.imdb.com/title/tt0087884/>,    # Paris, Texas
+                       <https://www.imdb.com/title/tt0149547/>,    # The New Adventures of Zorro
+                       <https://www.imdb.com/title/tt0083365/> . # Zoot Suit
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Break of Dawn (1988)
+<https://www.imdb.com/title/tt0099176/> a schema:Movie ;
+    schema:name "Break of Dawn" ;
+    schema:url <https://www.imdb.com/title/tt0099176/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0883698/> ;
+        schema:characterName "Matilde Gonzalez"
+    ] .
+
+# Paris, Texas (1984)
+<https://www.imdb.com/title/tt0087884/> a schema:Movie ;
+    schema:name "Paris, Texas" ;
+    schema:url <https://www.imdb.com/title/tt0087884/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0883698/> ;
+        schema:characterName "Carmelita"
+    ] .
+
+# The New Adventures of Zorro (1981)
+<https://www.imdb.com/title/tt0149547/> a schema:Movie ;
+    schema:name "The New Adventures of Zorro" ;
+    schema:url <https://www.imdb.com/title/tt0149547/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0883698/> ;
+        schema:characterName "Lucia"
+    ] .
+
+# Zoot Suit (1981)
+<https://www.imdb.com/title/tt0083365/> a schema:Movie ;
+    schema:name "Zoot Suit" ;
+    schema:url <https://www.imdb.com/title/tt0083365/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0883698/> ;
+        schema:characterName "Lowrider's girlfriend"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

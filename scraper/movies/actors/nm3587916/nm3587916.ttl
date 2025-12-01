@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3587916/> a schema:Person ;
+    schema:name "Rudy Romano" ;
+    schema:url <https://www.imdb.com/name/nm3587916/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rudy Romano. Actor: The Secret in Their Eyes. Rudy Romano is known for The Secret in Their Eyes (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1305806/> .    # The Secret in Their Eyes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3587916/> ;
+        schema:characterName "Ordóñez"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

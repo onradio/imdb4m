@@ -1,0 +1,237 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0316701/> a schema:Person ;
+    schema:name "Mary Gibbs" ;
+    schema:url <https://www.imdb.com/name/nm0316701/> ;
+    schema:birthDate "1996-10-05"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew", "Soundtrack" ;
+    schema:alternateName "Mary Morgan Gibbs" ;
+    schema:description "Mary Gibbs. Actress: Monsters, Inc.. Mary Gibbs was born on 5 October 1996 in Pasadena, California, USA. She is an actress, known for Monsters, Inc. (2001), Inside Out (2015) and Tracy (2009)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTMzODg0Nzc5Ml5BMl5BanBnXkFtZTYwNTMwODA3._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pasadena, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0198781/>,    # Monsters, Inc.
+                       <https://www.imdb.com/title/tt1437330/>,    # Tracy
+                       <https://www.imdb.com/title/tt2096673/>,    # Inside Out
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8259916/>,    # The Last Guest
+                       <https://www.imdb.com/title/tt0279967/>,    # Mulan II
+                       <https://www.imdb.com/title/tt32540657/>,    # Monsters, Inc.: Peek-a-Boo: Boo's Door Game
+                       <https://www.imdb.com/title/tt2258493/>,    # Monsters, Inc. Scream Arena
+                       <https://www.imdb.com/title/tt6473652/>,    # Mike's Monstrous Adventure
+                       <https://www.imdb.com/title/tt13237026/>,    # Monsters, Inc. DVD Read-Along
+                       <https://www.imdb.com/title/tt0338261/>,    # Monsters, Inc.: The Video Game
+                       <https://www.imdb.com/title/tt8372970/> ; # Monsters, Inc. Scream Team Training
+
+
+    schema:video <https://www.imdb.com/video/vi518890521/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0316701/mediaviewer/rm1324194048/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3762788864/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm4014447104/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3997669888/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3980892672/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3595016704/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3578239488/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3561462272/>,
+                 <https://www.imdb.com/name/nm0316701/mediaviewer/rm3544685056/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0198781/> a schema:Movie ;
+    schema:name "Monsters, Inc." ;
+    schema:url <https://www.imdb.com/title/tt0198781/> .
+
+<https://www.imdb.com/title/tt1437330/> a schema:Movie ;
+    schema:name "Tracy" ;
+    schema:url <https://www.imdb.com/title/tt1437330/> .
+
+<https://www.imdb.com/title/tt2096673/> a schema:Movie ;
+    schema:name "Inside Out" ;
+    schema:url <https://www.imdb.com/title/tt2096673/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Last Guest (2017)
+<https://www.imdb.com/title/tt8259916/> a schema:Movie ;
+    schema:name "The Last Guest" ;
+    schema:url <https://www.imdb.com/title/tt8259916/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Charlotte"
+    ] .
+
+# Mulan II (2004)
+<https://www.imdb.com/title/tt0279967/> a schema:Movie ;
+    schema:name "Mulan II" ;
+    schema:url <https://www.imdb.com/title/tt0279967/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Girl"
+    ] .
+
+# Monsters, Inc.: Peek-a-Boo: Boo's Door Game (2002)
+<https://www.imdb.com/title/tt32540657/> a schema:Movie ;
+    schema:name "Monsters, Inc.: Peek-a-Boo: Boo's Door Game" ;
+    schema:url <https://www.imdb.com/title/tt32540657/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Monsters, Inc. Scream Arena (2002)
+<https://www.imdb.com/title/tt2258493/> a schema:Movie ;
+    schema:name "Monsters, Inc. Scream Arena" ;
+    schema:url <https://www.imdb.com/title/tt2258493/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Mike's Monstrous Adventure (2002)
+<https://www.imdb.com/title/tt6473652/> a schema:Movie ;
+    schema:name "Mike's Monstrous Adventure" ;
+    schema:url <https://www.imdb.com/title/tt6473652/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Monsters, Inc. DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13237026/> a schema:Movie ;
+    schema:name "Monsters, Inc. DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13237026/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Monsters, Inc.: The Video Game (2002)
+<https://www.imdb.com/title/tt0338261/> a schema:Movie ;
+    schema:name "Monsters, Inc.: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0338261/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Monsters, Inc. Scream Team Training (2001)
+<https://www.imdb.com/title/tt8372970/> a schema:Movie ;
+    schema:name "Monsters, Inc. Scream Team Training" ;
+    schema:url <https://www.imdb.com/title/tt8372970/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0316701/> ;
+        schema:characterName "Boo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi518890521/> a schema:VideoObject ;
+        schema:name "3D Re-release Version" ;
+        schema:description "Monsters generate their city's power by scaring children, but they are terribly afraid themselves of being contaminated by children, so when one enters Monstropolis, top scarer Sulley finds his world disrupted." ;
+        schema:embedUrl <https://www.imdb.com/video/vi518890521/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODc5NTE4OTI3OF5BMl5BanBnXkFtZTgwNDQ4NjMyMzE@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2012-09-07T10:13:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTMzODg0Nzc5Ml5BMl5BanBnXkFtZTYwNTMwODA3._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMzODg0Nzc5Ml5BMl5BanBnXkFtZTYwNTMwODA3._V1_.jpg> ;
+    schema:caption "Mary Gibbs in Monsters, Inc. (2001)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm1324194048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYxNzgwMzI1OV5BMl5BanBnXkFtZTYwNzMwODA3._V1_.jpg> ;
+    schema:caption "Mary Gibbs in Monsters, Inc. (2001)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3762788864/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0Mjc5NzUwOV5BMl5BanBnXkFtZTYwMTI3ODQz._V1_.jpg> ;
+    schema:caption "Billy Crystal and Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "255"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm4014447104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2Njk4NTk3MV5BMl5BanBnXkFtZTYwMzI3ODQz._V1_.jpg> ;
+    schema:caption "Billy Crystal and Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "275"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3997669888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxNzM2OTcxM15BMl5BanBnXkFtZTYwNTI3ODQz._V1_.jpg> ;
+    schema:caption "Billy Crystal and Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "270"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3980892672/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE4NTM1OTUwMl5BMl5BanBnXkFtZTYwNzI3ODQz._V1_.jpg> ;
+    schema:caption "Billy Crystal and Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "272"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3595016704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk2ODA2NTA5MV5BMl5BanBnXkFtZTYwNTA4ODQz._V1_.jpg> ;
+    schema:caption "Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "236"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3578239488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI5OTAwODI5OF5BMl5BanBnXkFtZTYwNzA4ODQz._V1_.jpg> ;
+    schema:caption "Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "270"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3561462272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAxMTQxODUwNF5BMl5BanBnXkFtZTYwOTA4ODQz._V1_.jpg> ;
+    schema:caption "Mary Gibbs, Rob Gibbs, and Susan Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "291"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0316701/mediaviewer/rm3544685056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMzODg1MzYwNF5BMl5BanBnXkFtZTYwMTE4ODQz._V1_.jpg> ;
+    schema:caption "Mary Gibbs at an event for Monsters, Inc. (2001)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "270"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0316701/>
+    schema:sameAs <https://www.instagram.com/visualboo/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

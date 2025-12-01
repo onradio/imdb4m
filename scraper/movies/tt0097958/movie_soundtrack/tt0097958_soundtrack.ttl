@@ -1,0 +1,191 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097958/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Christmas Vacation" ;
+        schema:byArtist <https://www.imdb.com/name/nm0822918/> ; # Mavis Staples
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Christmas Vacation" ;
+            schema:author <https://www.imdb.com/name/nm0917941/>, # Cynthia Weil
+                       <https://www.imdb.com/name/nm0542656/> # Barry Mann
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "That Spirit of Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0153124/> ; # Ray Charles
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "That Spirit of Christmas" ;
+            schema:author <https://www.imdb.com/name/nm2450241/>, # Mable John
+                       <https://www.imdb.com/name/nm0205746/> # Parnell Davison
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mele Kalikimaka" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001078/>, # Bing Crosby
+                        <https://www.imdb.com/name/nm1679536/> ; # The Andrews Sisters
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mele Kalikimaka" ;
+            schema:author <https://www.imdb.com/name/nm0027301/> # R. Alex Anderson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hey, Santa Claus" ;
+        schema:byArtist <https://www.imdb.com/name/nm1717026/> ; # The Moonglows
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hey, Santa Claus" ;
+            schema:author <https://www.imdb.com/name/nm0298810/> # Harvey Fuqua
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Here Comes Santa Claus" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000810/> ; # Gene Autry
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Here Comes Santa Claus" ;
+            schema:author <https://www.imdb.com/name/nm0000810/>, # Gene Autry
+                       <https://www.imdb.com/name/nm1081364/> # Oakley Haldeman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rudolph the Red-Nosed Reindeer" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rudolph the Red-Nosed Reindeer" ;
+            schema:author <https://www.imdb.com/name/nm0548869/> # Johnny Marks
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Star-Spangled Banner" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Star-Spangled Banner" ;
+            schema:composer <https://www.imdb.com/name/nm2397901/> ; # John Stafford Smith
+            schema:lyricist <https://www.imdb.com/name/nm1411746/> # Francis Scott Key
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Come, All Ye Faithful" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000331/>, # Chevy Chase
+                        <https://www.imdb.com/name/nm0000350/> ; # Beverly D'Angelo
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Come, All Ye Faithful" ;
+            schema:lyricist <https://www.imdb.com/name/nm1185869/>, # Frederick Oakeley
+                        <https://www.imdb.com/name/nm1186579/> # John Francis Wade
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Deck the Halls" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000331/>, # Chevy Chase
+                        <https://www.imdb.com/name/nm0000350/> ; # Beverly D'Angelo
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "We Wish You a Merry Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000331/>, # Chevy Chase
+                        <https://www.imdb.com/name/nm0000350/> ; # Beverly D'Angelo
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Silent Night" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Silent Night" ;
+            schema:composer <https://www.imdb.com/name/nm0345045/> ; # Franz Xaver Gruber
+            schema:lyricist <https://www.imdb.com/name/nm0596063/> # Joseph Mohr
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hallelujah Chorus" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hallelujah Chorus" ;
+            schema:author <https://www.imdb.com/name/nm0005594/> # George Frideric Handel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The 12 Days of Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0173908/> ; # Perry Como
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000331/> a schema:Person ;
+    schema:name "Chevy Chase" .
+<https://www.imdb.com/name/nm0000350/> a schema:Person ;
+    schema:name "Beverly D'Angelo" .
+<https://www.imdb.com/name/nm0000810/> a schema:Person ;
+    schema:name "Gene Autry" .
+<https://www.imdb.com/name/nm0001078/> a schema:Person ;
+    schema:name "Bing Crosby" .
+<https://www.imdb.com/name/nm0005594/> a schema:Person ;
+    schema:name "George Frideric Handel" .
+<https://www.imdb.com/name/nm0027301/> a schema:Person ;
+    schema:name "R. Alex Anderson" .
+<https://www.imdb.com/name/nm0153124/> a schema:Person ;
+    schema:name "Ray Charles" .
+<https://www.imdb.com/name/nm0173908/> a schema:Person ;
+    schema:name "Perry Como" .
+<https://www.imdb.com/name/nm0205746/> a schema:Person ;
+    schema:name "Parnell Davison" .
+<https://www.imdb.com/name/nm0298810/> a schema:Person ;
+    schema:name "Harvey Fuqua" .
+<https://www.imdb.com/name/nm0345045/> a schema:Person ;
+    schema:name "Franz Xaver Gruber" .
+<https://www.imdb.com/name/nm0542656/> a schema:Person ;
+    schema:name "Barry Mann" .
+<https://www.imdb.com/name/nm0548869/> a schema:Person ;
+    schema:name "Johnny Marks" .
+<https://www.imdb.com/name/nm0596063/> a schema:Person ;
+    schema:name "Joseph Mohr" .
+<https://www.imdb.com/name/nm0822918/> a schema:Person ;
+    schema:name "Mavis Staples" .
+<https://www.imdb.com/name/nm0917941/> a schema:Person ;
+    schema:name "Cynthia Weil" .
+<https://www.imdb.com/name/nm1081364/> a schema:Person ;
+    schema:name "Oakley Haldeman" .
+<https://www.imdb.com/name/nm1185869/> a schema:Person ;
+    schema:name "Frederick Oakeley" .
+<https://www.imdb.com/name/nm1186579/> a schema:Person ;
+    schema:name "John Francis Wade" .
+<https://www.imdb.com/name/nm1411746/> a schema:Person ;
+    schema:name "Francis Scott Key" .
+<https://www.imdb.com/name/nm1679536/> a schema:Person ;
+    schema:name "The Andrews Sisters" .
+<https://www.imdb.com/name/nm1717026/> a schema:Person ;
+    schema:name "The Moonglows" .
+<https://www.imdb.com/name/nm2397901/> a schema:Person ;
+    schema:name "John Stafford Smith" .
+<https://www.imdb.com/name/nm2450241/> a schema:Person ;
+    schema:name "Mable John" .
+# ==============================================================================

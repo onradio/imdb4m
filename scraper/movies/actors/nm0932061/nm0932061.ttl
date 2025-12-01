@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0932061/> a schema:Person ;
+    schema:name "Jeffrey Williamson" ;
+    schema:url <https://www.imdb.com/name/nm0932061/> ;
+    schema:birthDate "1965-06-10"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Jeff, Sid, J.S." ;
+    schema:description "Jeffrey Williamson. Actor: Philadelphia. Attended LaSalle University, received a BA in Communications. He then worked as a radio broadcaster at WFIL. He took his first acting class at Lasalle, then continued studies at Freedom theatre. Jeffrey then went to seek his fortune, he lived in London for a period until he gained employment as an Actor in Germany, with C.C.Q.Theatre. He returned to The United States and was soon cast..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Philadelphia, Pennsylvania, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0107818/> .    # Philadelphia
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Philadelphia (1993)
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0932061/> ;
+        schema:characterName "Tyrone"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

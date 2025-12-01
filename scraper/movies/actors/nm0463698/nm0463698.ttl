@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0463698/> a schema:Person ;
+    schema:name "Larissa Kokernot" ;
+    schema:url <https://www.imdb.com/name/nm0463698/> ;
+    schema:birthDate "1970-03-19"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Larissa Kokernot. Actress: Fargo. Larissa Kokernot was born on 19 March 1970 in Minneapolis, Minnesota, USA. She is an actress, known for Fargo (1996). She has been married to Karl Gajdusek since 10 August 2002. They have one child." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Minneapolis, Minnesota, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116282/> ;    # Fargo
+
+
+    schema:video <https://www.imdb.com/video/vi2228618777/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fargo (1996)
+<https://www.imdb.com/title/tt0116282/> a schema:Movie ;
+    schema:name "Fargo" ;
+    schema:url <https://www.imdb.com/title/tt0116282/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0463698/> ;
+        schema:characterName "Hooker #1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2228618777/> a schema:VideoObject ;
+        schema:name "Fargo" ;
+        schema:description "Trailer for Fargo Only Be version" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2228618777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmExN2VjZTMtMzhlNi00NDRiLWE0YzAtNDFiNjc2ZTUyZTRkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT32S"^^xsd:duration ;
+        schema:uploadDate "2010-08-17T03:17:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

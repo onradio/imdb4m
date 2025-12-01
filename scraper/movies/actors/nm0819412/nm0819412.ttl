@@ -1,0 +1,158 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0819412/> a schema:Person ;
+    schema:name "Lisa Spoonauer" ;
+    schema:url <https://www.imdb.com/name/nm0819412/> ;
+    schema:birthDate "1972-12-06"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lisa Spoonauer. Actress: Clerks. Lisa Spoonauer was born on 6 December 1972 in Rahway, New Jersey, USA. She was an actress, known for Clerks (1994), Bartender (1997) and Clerks (2000). She was married to Tom Caron and Jeff Anderson. She died on 21 May 2017 in Jackson Township, New Jersey, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzI2Mzk4ZTYtNTJjMi00Y2QwLWE5ZDEtYjk4YzAwZmU5ZDgxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rahway, New Jersey, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0210413/>,    # Clerks
+                       <https://www.imdb.com/title/tt0135791/>,    # Bartender
+                       <https://www.imdb.com/title/tt0109445/> ; # Clerks
+
+
+    schema:video <https://www.imdb.com/video/vi3706625561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0819412/mediaviewer/rm1941396736/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm1974951168/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm672010240/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm87809280/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm2784926208/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm982005248/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm2968893440/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm3220551680/>,
+                 <https://www.imdb.com/name/nm0819412/mediaviewer/rm46176512/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Clerks (2001)
+<https://www.imdb.com/title/tt0210413/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0210413/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0819412/> ;
+        schema:characterName "Caitlin Bree"
+    ] .
+
+# Bartender (1997)
+<https://www.imdb.com/title/tt0135791/> a schema:Movie ;
+    schema:name "Bartender" ;
+    schema:url <https://www.imdb.com/title/tt0135791/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0819412/> ;
+        schema:characterName "Star"
+    ] .
+
+# Clerks (1994)
+<https://www.imdb.com/title/tt0109445/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0109445/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0819412/> ;
+        schema:characterName "Caitlin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3706625561/> a schema:VideoObject ;
+        schema:name "Clerks" ;
+        schema:description "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3706625561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzc2ODIwZTAtYzBiMC00YjI4LWIxOTUtNzFmMjYwNzM0M2UzXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:14:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzI2Mzk4ZTYtNTJjMi00Y2QwLWE5ZDEtYjk4YzAwZmU5ZDgxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzI2Mzk4ZTYtNTJjMi00Y2QwLWE5ZDEtYjk4YzAwZmU5ZDgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brian O'Halloran and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm1941396736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjc2YzNjMDYtZDFjZi00M2YxLWJhNTMtOWM1YjI0ODJhMzFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm1974951168/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzU1MzAzYzMtMWUxMi00ZjY1LWExMmItNGZhMmFhYjBmMzUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeff Anderson and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm672010240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzcwZTU5NzMtMGIxYi00NjRhLThkYTItNjhlYWQ0MjdhYWFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Marilyn Ghigliotti, Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm87809280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg3MTkyMzA0NF5BMl5BanBnXkFtZTgwNTg0NDI1MDE@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Marilyn Ghigliotti, Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "325"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm2784926208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI5NTkyNDUxMl5BMl5BanBnXkFtZTYwOTIzMjc4._V1_.jpg> ;
+    schema:caption "Quad" ;
+    schema:height "144"^^xsd:integer ;
+    schema:width "200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm982005248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzI2Mzk4ZTYtNTJjMi00Y2QwLWE5ZDEtYjk4YzAwZmU5ZDgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brian O'Halloran and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm2968893440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4MTk5MzAzOV5BMl5BanBnXkFtZTcwMjI1ODQ4NA@@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Marilyn Ghigliotti, Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "357"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm3220551680/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0MDE3MjUwOF5BMl5BanBnXkFtZTcwMTI1ODQ4NA@@._V1_.jpg> ;
+    schema:caption "Kevin Smith, Marilyn Ghigliotti, Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "432"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0819412/mediaviewer/rm46176512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NTQ5NjAzMF5BMl5BanBnXkFtZTYwODU1OTc4._V1_.jpg> ;
+    schema:caption "Kevin Smith, Marilyn Ghigliotti, Jeff Anderson, Brian O'Halloran, and Lisa Spoonauer in Clerks (1994)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "335"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

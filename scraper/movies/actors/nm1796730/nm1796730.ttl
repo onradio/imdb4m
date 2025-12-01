@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1796730/> a schema:Person ;
+    schema:name "Xolani Mali" ;
+    schema:url <https://www.imdb.com/name/nm1796730/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Xolani Mali. Actor: Hotel Rwanda. Xolani Mali is known for Hotel Rwanda (2004) and The Man-Eating Lions of Njombe (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0810963/>,    # The Man-Eating Lions of Njombe
+                       <https://www.imdb.com/title/tt0395169/> ; # Hotel Rwanda
+
+
+    schema:video <https://www.imdb.com/video/vi2482292249/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Man-Eating Lions of Njombe (2005)
+<https://www.imdb.com/title/tt0810963/> a schema:Movie ;
+    schema:name "The Man-Eating Lions of Njombe" ;
+    schema:url <https://www.imdb.com/title/tt0810963/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1796730/> ;
+        schema:characterName ""
+    ] .
+
+# Hotel Rwanda (2004)
+<https://www.imdb.com/title/tt0395169/> a schema:Movie ;
+    schema:name "Hotel Rwanda" ;
+    schema:url <https://www.imdb.com/title/tt0395169/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1796730/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2482292249/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2482292249/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTMwYzBmMzctYTg1Yi00NmNhLTgzMGEtMGYxNzUwZWYzMTkwXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M4S"^^xsd:duration ;
+        schema:uploadDate "2024-04-12T17:37:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

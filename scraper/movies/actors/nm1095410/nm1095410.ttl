@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1095410/> a schema:Person ;
+    schema:name "Maya Bond" ;
+    schema:url <https://www.imdb.com/name/nm1095410/> ;
+    schema:birthDate "1931-09-03"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Maya Bond. Actress: Mulholland Drive. Maya Bond was born on 3 September 1931. She is an actress, known for Mulholland Drive (2001) and Mulholland Dr. (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0166924/>,    # Mulholland Drive
+                       <https://www.imdb.com/title/tt1619856/> ; # Mulholland Dr.
+
+
+    schema:video <https://www.imdb.com/video/vi4266178073/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mulholland Drive (2001)
+<https://www.imdb.com/title/tt0166924/> a schema:Movie ;
+    schema:name "Mulholland Drive" ;
+    schema:url <https://www.imdb.com/title/tt0166924/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1095410/> ;
+        schema:characterName "Aunt Ruth"
+    ] .
+
+# Mulholland Dr. (1999)
+<https://www.imdb.com/title/tt1619856/> a schema:Movie ;
+    schema:name "Mulholland Dr." ;
+    schema:url <https://www.imdb.com/title/tt1619856/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1095410/> ;
+        schema:characterName "Aunt Ruth"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4266178073/> a schema:VideoObject ;
+        schema:name "Mulholland Drive" ;
+        schema:description "Trailer for Mulholland Drive" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4266178073/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWViMWY2YmQtODg0MS00ZjMzLThmM2YtZTFlYjM1MGRhMmJiXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M26S"^^xsd:duration ;
+        schema:uploadDate "2017-03-30T07:40:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

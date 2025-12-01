@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1468297/> a schema:Person ;
+    schema:name "Andrew Mackin" ;
+    schema:url <https://www.imdb.com/name/nm1468297/> ;
+    schema:jobTitle "Casting Department", "Actor", "Production Department" ;
+    schema:description "Andrew Mackin. Actor: Mystic River. Andrew Mackin is known for Mystic River (2003), Lone Survivor (2013) and Christopher Columbus Saves the World (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4384140/>,    # Christopher Columbus Saves the World
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt0327056/> . # Mystic River
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Christopher Columbus Saves the World (2015)
+<https://www.imdb.com/title/tt4384140/> a schema:Movie ;
+    schema:name "Christopher Columbus Saves the World" ;
+    schema:url <https://www.imdb.com/title/tt4384140/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1468297/> ;
+        schema:characterName "Christopher Columbus"
+    ] .
+
+# Grey's Anatomy (2009)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1468297/> ;
+        schema:characterName "Frat Guy"
+    ] .
+
+# Mystic River (2003)
+<https://www.imdb.com/title/tt0327056/> a schema:Movie ;
+    schema:name "Mystic River" ;
+    schema:url <https://www.imdb.com/title/tt0327056/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1468297/> ;
+        schema:characterName "John O'Shea"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

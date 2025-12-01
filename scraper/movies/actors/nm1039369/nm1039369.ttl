@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1039369/> a schema:Person ;
+    schema:name "Christel Baras" ;
+    schema:url <https://www.imdb.com/name/nm1039369/> ;
+    schema:jobTitle "Casting Director", "Casting Department", "Actress" ;
+    schema:description "Christel Baras. Casting Director: Emilia Pérez. Christel Baras is known for Emilia Pérez (2024), Portrait of a Lady on Fire (2019) and Titane (2021)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8613070/>,    # Portrait of a Lady on Fire
+                       <https://www.imdb.com/title/tt1847731/>,    # Tomboy
+                       <https://www.imdb.com/title/tt0881233/>,    # Darling
+                       <https://www.imdb.com/title/tt0869977/>,    # Water Lilies
+                       <https://www.imdb.com/title/tt0878702/> . # Novice
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Portrait of a Lady on Fire (2019)
+<https://www.imdb.com/title/tt8613070/> a schema:Movie ;
+    schema:name "Portrait of a Lady on Fire" ;
+    schema:url <https://www.imdb.com/title/tt8613070/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1039369/> ;
+        schema:characterName "La faiseuse d'ange"
+    ] .
+
+# Tomboy (2011)
+<https://www.imdb.com/title/tt1847731/> a schema:Movie ;
+    schema:name "Tomboy" ;
+    schema:url <https://www.imdb.com/title/tt1847731/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1039369/> ;
+        schema:characterName "La mère de Lisa"
+    ] .
+
+# Darling (2007)
+<https://www.imdb.com/title/tt0881233/> a schema:Movie ;
+    schema:name "Darling" ;
+    schema:url <https://www.imdb.com/title/tt0881233/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1039369/> ;
+        schema:characterName "Madame Blanchard"
+    ] .
+
+# Water Lilies (2007)
+<https://www.imdb.com/title/tt0869977/> a schema:Movie ;
+    schema:name "Water Lilies" ;
+    schema:url <https://www.imdb.com/title/tt0869977/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1039369/> ;
+        schema:characterName "L'inspectrice"
+    ] .
+
+# Novice (2006)
+<https://www.imdb.com/title/tt0878702/> a schema:Movie ;
+    schema:name "Novice" ;
+    schema:url <https://www.imdb.com/title/tt0878702/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1039369/> ;
+        schema:characterName "La mère"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

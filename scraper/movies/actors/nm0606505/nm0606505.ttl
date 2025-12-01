@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0606505/> a schema:Person ;
+    schema:name "E.J. Morris" ;
+    schema:url <https://www.imdb.com/name/nm0606505/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "E.J. Morris. Actress: JFK. E.J. Morris is known for JFK (1991) and Acts of Love (1996)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0115837/>,    # Acts of Love
+                       <https://www.imdb.com/title/tt0102138/> . # JFK
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Acts of Love (1996)
+<https://www.imdb.com/title/tt0115837/> a schema:Movie ;
+    schema:name "Acts of Love" ;
+    schema:url <https://www.imdb.com/title/tt0115837/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606505/> ;
+        schema:characterName "School Board Woman"
+    ] .
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0606505/> ;
+        schema:characterName "Plaza Witness #1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

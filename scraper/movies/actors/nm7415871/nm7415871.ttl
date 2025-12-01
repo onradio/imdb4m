@@ -1,0 +1,320 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7415871/> a schema:Person ;
+    schema:name "Noah Jupe" ;
+    schema:url <https://www.imdb.com/name/nm7415871/> ;
+    schema:birthDate "2005-02-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Noah Casford Jupe" ;
+    schema:description "Noah Jupe. Actor: Honey Boy. Noah Jupe is a burgeoning British actor with an impressive filmography and remarkable talent. He gained recognition for his roles in the acclaimed television series \"The Night Manager\" (2016), George Clooney's dark comedy \"Suburbicon\" (2017), and the heartwarming drama \"Wonder\" (2017). Jupe's talent truly shone through in the horror film \"A Quiet Place\" (2018) and its sequel \"A Quiet Place Part II\" (2021).\n\nHis compelling performance..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGVjNjE5ZmQtY2VkNC00YjQxLThkM2YtMmZmZDRmOWVlODc5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Islington, London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8151874/>,    # Honey Boy
+                       <https://www.imdb.com/title/tt1950186/>,    # Ford v Ferrari
+                       <https://www.imdb.com/title/tt6644200/>,    # A Quiet Place
+                       <https://www.imdb.com/title/tt8134470/>,    # The Undoing
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt13034276/>,    # Ian Brown: From Chaos to Harmony
+                       <https://www.imdb.com/title/tt1255919/>,    # Holmes & Watson
+                       <https://www.imdb.com/title/tt4986098/>,    # The Titan
+                       <https://www.imdb.com/title/tt6613412/>,    # My Pretty Pony
+                       <https://www.imdb.com/title/tt2543472/>,    # Wonder
+                       <https://www.imdb.com/title/tt0491175/>,    # Suburbicon
+                       <https://www.imdb.com/title/tt5271794/>,    # That Good Night
+                       <https://www.imdb.com/title/tt3296908/>,    # The Man with the Iron Heart
+                       <https://www.imdb.com/title/tt5807628/>,    # The Last Dragonslayer
+                       <https://www.imdb.com/title/tt4539954/>,    # Houdini and Doyle
+                       <https://www.imdb.com/title/tt1606375/>,    # Downton Abbey
+                       <https://www.imdb.com/title/tt4277308/>,    # A Song for Jenny
+                       <https://www.imdb.com/title/tt2628232/> ; # Penny Dreadful
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 23 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (No Sudden Move)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "840000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1141819417/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7415871/mediaviewer/rm4034937857/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm4102056961/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm3465293313/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm3582404096/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm2261579265/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm3817614849/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm4253041665/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm3717382401/>,
+                 <https://www.imdb.com/name/nm7415871/mediaviewer/rm3516055809/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8151874/> a schema:Movie ;
+    schema:name "Honey Boy" ;
+    schema:url <https://www.imdb.com/title/tt8151874/> .
+
+<https://www.imdb.com/title/tt1950186/> a schema:Movie ;
+    schema:name "Ford v Ferrari" ;
+    schema:url <https://www.imdb.com/title/tt1950186/> .
+
+<https://www.imdb.com/title/tt6644200/> a schema:Movie ;
+    schema:name "A Quiet Place" ;
+    schema:url <https://www.imdb.com/title/tt6644200/> .
+
+<https://www.imdb.com/title/tt8134470/> a schema:Movie ;
+    schema:name "The Undoing" ;
+    schema:url <https://www.imdb.com/title/tt8134470/> .
+
+<https://www.imdb.com/title/tt11525644/> a schema:Movie ;
+    schema:name "No Sudden Move" ;
+    schema:url <https://www.imdb.com/title/tt11525644/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ian Brown: From Chaos to Harmony (2019)
+<https://www.imdb.com/title/tt13034276/> a schema:Movie ;
+    schema:name "Ian Brown: From Chaos to Harmony" ;
+    schema:url <https://www.imdb.com/title/tt13034276/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Noah Jupe"
+    ] .
+
+# Holmes & Watson (2018)
+<https://www.imdb.com/title/tt1255919/> a schema:Movie ;
+    schema:name "Holmes & Watson" ;
+    schema:url <https://www.imdb.com/title/tt1255919/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Doxy"
+    ] .
+
+# The Titan (2018)
+<https://www.imdb.com/title/tt4986098/> a schema:Movie ;
+    schema:name "The Titan" ;
+    schema:url <https://www.imdb.com/title/tt4986098/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Lucas Janssen"
+    ] .
+
+# My Pretty Pony (2017)
+<https://www.imdb.com/title/tt6613412/> a schema:Movie ;
+    schema:name "My Pretty Pony" ;
+    schema:url <https://www.imdb.com/title/tt6613412/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Clive Banning"
+    ] .
+
+# Wonder (2017)
+<https://www.imdb.com/title/tt2543472/> a schema:Movie ;
+    schema:name "Wonder" ;
+    schema:url <https://www.imdb.com/title/tt2543472/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Jack Will"
+    ] .
+
+# Suburbicon (2017)
+<https://www.imdb.com/title/tt0491175/> a schema:Movie ;
+    schema:name "Suburbicon" ;
+    schema:url <https://www.imdb.com/title/tt0491175/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Nicky"
+    ] .
+
+# That Good Night (2017)
+<https://www.imdb.com/title/tt5271794/> a schema:Movie ;
+    schema:name "That Good Night" ;
+    schema:url <https://www.imdb.com/title/tt5271794/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Ronaldo"
+    ] .
+
+# The Man with the Iron Heart (2017)
+<https://www.imdb.com/title/tt3296908/> a schema:Movie ;
+    schema:name "The Man with the Iron Heart" ;
+    schema:url <https://www.imdb.com/title/tt3296908/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Ata Moravek"
+    ] .
+
+# The Last Dragonslayer (2016)
+<https://www.imdb.com/title/tt5807628/> a schema:Movie ;
+    schema:name "The Last Dragonslayer" ;
+    schema:url <https://www.imdb.com/title/tt5807628/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Tiger Prawns"
+    ] .
+
+# Houdini and Doyle (2016)
+<https://www.imdb.com/title/tt4539954/> a schema:Movie ;
+    schema:name "Houdini and Doyle" ;
+    schema:url <https://www.imdb.com/title/tt4539954/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Kingsley Conan Doyle"
+    ] .
+
+# Downton Abbey (2015)
+<https://www.imdb.com/title/tt1606375/> a schema:Movie ;
+    schema:name "Downton Abbey" ;
+    schema:url <https://www.imdb.com/title/tt1606375/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Child"
+    ] .
+
+# A Song for Jenny (2015)
+<https://www.imdb.com/title/tt4277308/> a schema:Movie ;
+    schema:name "A Song for Jenny" ;
+    schema:url <https://www.imdb.com/title/tt4277308/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "William"
+    ] .
+
+# Penny Dreadful (2015)
+<https://www.imdb.com/title/tt2628232/> a schema:Movie ;
+    schema:name "Penny Dreadful" ;
+    schema:url <https://www.imdb.com/title/tt2628232/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7415871/> ;
+        schema:characterName "Charles Chandler"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1141819417/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Family hiding in Roman Egypt. Son known as 'the Boy' doubts guardian 'the Carpenter', rebelling with mysterious powers. As he uses abilities, they face natural and divine horrors." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1141819417/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjRkYmExNjktM2I2MS00MTliLWI4YTUtMWJiMTU4NDNiNWVhXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2025-10-01T15:18:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGVjNjE5ZmQtY2VkNC00YjQxLThkM2YtMmZmZDRmOWVlODc5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGVjNjE5ZmQtY2VkNC00YjQxLThkM2YtMmZmZDRmOWVlODc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Noah Jupe" ;
+    schema:height "1920"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm4034937857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGExNGMwZmMtYjgyZC00ZGY3LTg1YWYtOWZlZjExZTUwNWUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Douglas, Ludivine Sagnier, and Noah Jupe in Franklin (2024)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm4102056961/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjgwZGQ3OWQtYTdjNi00ZmJhLWFjNTItYjA3OTE5NGNmMTQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Noah Jupe" ;
+    schema:height "6426"^^xsd:integer ;
+    schema:width "5141"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm3465293313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTVlNzc5NmQtYTllMy00NjE3LWIxZGYtN2FiYzRmYTNjNTRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Noah Jupe" ;
+    schema:height "853"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm3582404096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWE3ZTMyYjMtNzljNC00YzI2LTllZjQtMmYyOThiMTQwOGRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "TIFF premiere of Suburbicon" ;
+    schema:height "2941"^^xsd:integer ;
+    schema:width "1961"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm2261579265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQyZTQxMGUtOTgxNy00OTcxLWE1MzYtMDI0NDY3MDY4ZjlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Noah Jupe in A Quiet Place Part II (2020)" ;
+    schema:height "874"^^xsd:integer ;
+    schema:width "936"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm3817614849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDQzNmIyYmEtYjIxNy00NmQ1LThiODMtNmQ1MzcwMTcyMzNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Noah Jupe" ;
+    schema:height "1718"^^xsd:integer ;
+    schema:width "924"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm4253041665/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYxMTg0OWItYzJmYy00MTYxLThmYmEtNDhkNjcyY2ZmNzVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Douglas and Noah Jupe in Franklin (2024)" ;
+    schema:height "3385"^^xsd:integer ;
+    schema:width "5679"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm3717382401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2JmNDE3MjAtYzZkYS00NTJhLWFlYjMtNDlhNmViNjJmNjRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cillian Murphy and Noah Jupe in A Quiet Place Part II (2020)" ;
+    schema:height "2080"^^xsd:integer ;
+    schema:width "3120"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7415871/mediaviewer/rm3516055809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQwZDk2NDQtNmNmYy00MDBmLTkzMGUtODc5MzdlZjMxNjk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Blunt, Noah Jupe, and Millicent Simmonds in A Quiet Place Part II (2020)" ;
+    schema:height "3120"^^xsd:integer ;
+    schema:width "2081"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7415871/>
+    schema:sameAs <https://www.instagram.com/noahjupe/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

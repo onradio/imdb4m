@@ -1,0 +1,31 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093773/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Long, Tall Sally" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005153/> ; # Little Richard
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Long, Tall Sally" ;
+            schema:author <https://www.imdb.com/name/nm0005153/>, # Little Richard
+                       <https://www.imdb.com/name/nm8991191/>, # Enotris Johnson
+                       <https://www.imdb.com/name/nm1039469/> # Robert 'Bumps' Blackwell
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005153/> a schema:Person ;
+    schema:name "Little Richard" .
+<https://www.imdb.com/name/nm1039469/> a schema:Person ;
+    schema:name "Robert 'Bumps' Blackwell" .
+<https://www.imdb.com/name/nm8991191/> a schema:Person ;
+    schema:name "Enotris Johnson" .
+# ==============================================================================

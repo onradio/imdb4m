@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001949/> a schema:Person ;
+    schema:name "Andrew Birkin" ;
+    schema:url <https://www.imdb.com/name/nm0001949/> ;
+    schema:birthDate "1945-12-09"^^xsd:date ;
+    schema:jobTitle "Writer", "Director", "Actor" ;
+    schema:description "Andrew Birkin. Writer: The Name of the Rose. Andrew Birkin was born on 9 December 1945 in London, England, UK. He is a writer and director, known for The Name of the Rose (1986), The Cement Garden (1993) and Perfume: The Story of a Murderer (2006)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjQxODFmNDUtZjFiOC00MGZiLTgzZjAtYTY5ZTlkNmZkMTYyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0151137/>,    # Joan of Arc
+                       <https://www.imdb.com/title/tt0093371/>,    # Kung-fu master!
+                       <https://www.imdb.com/title/tt0091605/>,    # The Name of the Rose
+                       <https://www.imdb.com/title/tt0087918/> ; # The Pirate
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001949/mediaviewer/rm4190073344/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Joan of Arc (1999)
+<https://www.imdb.com/title/tt0151137/> a schema:Movie ;
+    schema:name "Joan of Arc" ;
+    schema:url <https://www.imdb.com/title/tt0151137/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001949/> ;
+        schema:characterName "Talbot"
+    ] .
+
+# Kung-fu master! (1988)
+<https://www.imdb.com/title/tt0093371/> a schema:Movie ;
+    schema:name "Kung-fu master!" ;
+    schema:url <https://www.imdb.com/title/tt0093371/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001949/> ;
+        schema:characterName "Le frère"
+    ] .
+
+# The Name of the Rose (1986)
+<https://www.imdb.com/title/tt0091605/> a schema:Movie ;
+    schema:name "The Name of the Rose" ;
+    schema:url <https://www.imdb.com/title/tt0091605/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001949/> ;
+        schema:characterName "Cuthbert of Winchester"
+    ] .
+
+# The Pirate (1984)
+<https://www.imdb.com/title/tt0087918/> a schema:Movie ;
+    schema:name "The Pirate" ;
+    schema:url <https://www.imdb.com/title/tt0087918/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001949/> ;
+        schema:characterName "Le mari"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjQxODFmNDUtZjFiOC00MGZiLTgzZjAtYTY5ZTlkNmZkMTYyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQxODFmNDUtZjFiOC00MGZiLTgzZjAtYTY5ZTlkNmZkMTYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Birkin" ;
+    schema:height "399"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001949/mediaviewer/rm4190073344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQxODFmNDUtZjFiOC00MGZiLTgzZjAtYTY5ZTlkNmZkMTYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Birkin" ;
+    schema:height "399"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

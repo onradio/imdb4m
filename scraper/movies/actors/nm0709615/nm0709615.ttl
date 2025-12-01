@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0709615/> a schema:Person ;
+    schema:name "John Randall" ;
+    schema:url <https://www.imdb.com/name/nm0709615/> ;
+    schema:birthDate "1914-12-06"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "John Randall. Actor: Forrest Gump. Randall was born in New Orleans in 1914 and lived there until moving to Mandeville, Louisiana in 1987. He graduated from LSU and Tulane University Law School and retired as an attorney for the state of Louisiana. He was a member of the Louisiana State Bar Association and a deacon at St. Charles Avenue Baptist Church in New Orleans.\n\nRandall was a Captain in the 88th..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New Orleans, Louisiana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109830/> ;    # Forrest Gump
+
+
+    schema:video <https://www.imdb.com/video/vi677905689/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Forrest Gump (1994)
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0709615/> ;
+        schema:characterName "Crony"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi677905689/> a schema:VideoObject ;
+        schema:name "Forrest Gump" ;
+        schema:description "Clip: Will you marry me?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi677905689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGY0OWRiNDktYzgxYS00MmRmLTliMmItMWQzNTM4NjQwYjI3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT50S"^^xsd:duration ;
+        schema:uploadDate "2009-11-08T06:16:00Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

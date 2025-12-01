@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0122767/> a schema:Person ;
+    schema:name "Lisa Burns" ;
+    schema:url <https://www.imdb.com/name/nm0122767/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lisa Burns. Actress: The Shining. Lisa Burns was born in 1968. She is an actress, known for The Shining (1980), Kids (1979) and From Borehamwood to Hollywood: The Rise and Fall and Rise of Elstree (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0081505/>,    # The Shining
+                       <https://www.imdb.com/title/tt0770578/> ; # Kids
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0122767/mediaviewer/rm297556736/>,
+                 <https://www.imdb.com/name/nm0122767/mediaviewer/rm2723800320/>,
+                 <https://www.imdb.com/name/nm0122767/mediaviewer/rm492823552/>,
+                 <https://www.imdb.com/name/nm0122767/mediaviewer/rm3740207616/>,
+                 <https://www.imdb.com/name/nm0122767/mediaviewer/rm123675392/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Shining (1980)
+<https://www.imdb.com/title/tt0081505/> a schema:Movie ;
+    schema:name "The Shining" ;
+    schema:url <https://www.imdb.com/title/tt0081505/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0122767/> ;
+        schema:characterName "Grady Daughter"
+    ] .
+
+# Kids (1979)
+<https://www.imdb.com/title/tt0770578/> a schema:Movie ;
+    schema:name "Kids" ;
+    schema:url <https://www.imdb.com/title/tt0770578/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0122767/> ;
+        schema:characterName "Lisa Webber"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0122767/mediaviewer/rm297556736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDE0MzNmNGMtNTQzZi00ZWFlLTgwZmQtMDRlZjMyYjk2ZGE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lisa Burns and Louise Burns in The Shining (1980)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0122767/mediaviewer/rm2723800320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmYxZDQ3MGItYjdkNC00ZDIwLTk1YjQtMDQ3ZTZhYWQ3OWNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lisa Burns, Louise Burns, and Danny Lloyd in The Shining (1980)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0122767/mediaviewer/rm492823552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGQ0NTFiNzItMjhhNi00ZTFjLTlhMTktNDc5ZDc2ZWYzZTdiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lisa Burns and Louise Burns in The Shining (1980)" ;
+    schema:height "454"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0122767/mediaviewer/rm3740207616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTNmM2I5NjYtZjFiNy00M2UxLWJhNDUtYTEzNjJlNzIyMWI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lisa Burns and Louise Burns in The Shining (1980)" ;
+    schema:height "378"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0122767/mediaviewer/rm123675392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzNDkwNTgyNV5BMl5BanBnXkFtZTgwMTU2OTgyMzI@._V1_.jpg> ;
+    schema:caption "Lisa Burns and Louise Burns" ;
+    schema:height "817"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

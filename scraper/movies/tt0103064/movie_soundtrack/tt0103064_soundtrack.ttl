@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0103064/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "You Could Be Mine" ;
+        schema:byArtist <https://www.imdb.com/name/nm1655276/> ; # Guns N' Roses
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You Could Be Mine" ;
+            schema:author <https://www.imdb.com/name/nm0833110/>, # Izzy Stradlin
+                       <https://www.imdb.com/name/nm0741730/> # Axl Rose
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bad to the Bone" ;
+        schema:byArtist <https://www.imdb.com/name/nm3170961/> ; # George Thorogood & The Destroyers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bad to the Bone" ;
+            schema:author <https://www.imdb.com/name/nm0973888/> # George Thorogood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Guitars, Cadillacs" ;
+        schema:byArtist <https://www.imdb.com/name/nm0948267/> ; # Dwight Yoakam
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Guitars, Cadillacs" ;
+            schema:author <https://www.imdb.com/name/nm0948267/> # Dwight Yoakam
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0741730/> a schema:Person ;
+    schema:name "Axl Rose" .
+<https://www.imdb.com/name/nm0833110/> a schema:Person ;
+    schema:name "Izzy Stradlin" .
+<https://www.imdb.com/name/nm0948267/> a schema:Person ;
+    schema:name "Dwight Yoakam" .
+<https://www.imdb.com/name/nm0973888/> a schema:Person ;
+    schema:name "George Thorogood" .
+<https://www.imdb.com/name/nm1655276/> a schema:Person ;
+    schema:name "Guns N' Roses" .
+<https://www.imdb.com/name/nm3170961/> a schema:Person ;
+    schema:name "George Thorogood & The Destroyers" .
+# ==============================================================================

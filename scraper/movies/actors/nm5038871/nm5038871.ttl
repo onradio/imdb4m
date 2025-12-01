@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5038871/> a schema:Person ;
+    schema:name "Annika Wedderkopp" ;
+    schema:url <https://www.imdb.com/name/nm5038871/> ;
+    schema:birthDate "2004-12-14"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Annika Wedderkopp. Actress: The Hunt. Annika Wedderkopp was born on 14 December 2004 in Gentofte, Sjælland, Denmark. She is an actress, known for The Hunt (2012) and Man Divided (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTdmY2ZhOWEtMTgwOC00NDk5LTllM2QtYjdlYjIxNDk4MmY0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Gentofte, Sjælland, Denmark"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6041362/>,    # Man Divided
+                       <https://www.imdb.com/title/tt2106476/> ; # The Hunt
+
+
+    schema:video <https://www.imdb.com/video/vi2244519449/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5038871/mediaviewer/rm1563472896/>,
+                 <https://www.imdb.com/name/nm5038871/mediaviewer/rm1366467072/>,
+                 <https://www.imdb.com/name/nm5038871/mediaviewer/rm3340408065/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Man Divided (2017)
+<https://www.imdb.com/title/tt6041362/> a schema:Movie ;
+    schema:name "Man Divided" ;
+    schema:url <https://www.imdb.com/title/tt6041362/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5038871/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# The Hunt (2012)
+<https://www.imdb.com/title/tt2106476/> a schema:Movie ;
+    schema:name "The Hunt" ;
+    schema:url <https://www.imdb.com/title/tt2106476/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5038871/> ;
+        schema:characterName "Klara"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2244519449/> a schema:VideoObject ;
+        schema:name "Theatrical Version" ;
+        schema:description "A teacher lives a lonely life, all the while struggling over his son's custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2244519449/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjIxNTk2MTU1OV5BMl5BanBnXkFtZTgwMjY0MDAzMzE@._V1_.jpg" ;
+        schema:duration "PT2M11S"^^xsd:duration ;
+        schema:uploadDate "2013-04-20T09:32:18Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTdmY2ZhOWEtMTgwOC00NDk5LTllM2QtYjdlYjIxNDk4MmY0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTdmY2ZhOWEtMTgwOC00NDk5LTllM2QtYjdlYjIxNDk4MmY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Annika Wedderkopp" ;
+    schema:height "469"^^xsd:integer ;
+    schema:width "318"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5038871/mediaviewer/rm1563472896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjY5NTkyMjc5OF5BMl5BanBnXkFtZTcwMTA4NTc3Nw@@._V1_.jpg> ;
+    schema:caption "Susse Wold and Annika Wedderkopp in The Hunt (2012)" ;
+    schema:height "2126"^^xsd:integer ;
+    schema:width "3189"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5038871/mediaviewer/rm1366467072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2MTQ1OTgwNF5BMl5BanBnXkFtZTcwODY4ODIwOQ@@._V1_.jpg> ;
+    schema:caption "Morten Kaufmann, Mads Mikkelsen, Alexandra Rapaport, Thomas Vinterberg, Susse Wold, Sisse Graum Jørgensen, and Annika Wedderkopp in The Hunt (2012)" ;
+    schema:height "3112"^^xsd:integer ;
+    schema:width "4652"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5038871/mediaviewer/rm3340408065/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTdmY2ZhOWEtMTgwOC00NDk5LTllM2QtYjdlYjIxNDk4MmY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Annika Wedderkopp" ;
+    schema:height "469"^^xsd:integer ;
+    schema:width "318"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

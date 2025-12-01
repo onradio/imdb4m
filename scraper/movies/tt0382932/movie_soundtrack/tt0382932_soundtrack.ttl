@@ -1,0 +1,28 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0382932/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Le Festin" ;
+        schema:byArtist <https://www.imdb.com/name/nm1722079/> ; # Camille
+        schema:producer <https://www.imdb.com/name/nm0315974/> ; # Michael Giacchino
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Le Festin" ;
+            schema:author <https://www.imdb.com/name/nm0315974/> # Michael Giacchino
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0315974/> a schema:Person ;
+    schema:name "Michael Giacchino" .
+<https://www.imdb.com/name/nm1722079/> a schema:Person ;
+    schema:name "Camille" .
+# ==============================================================================

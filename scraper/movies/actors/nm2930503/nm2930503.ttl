@@ -1,0 +1,394 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2930503/> a schema:Person ;
+    schema:name "Jack Reynor" ;
+    schema:url <https://www.imdb.com/name/nm2930503/> ;
+    schema:birthDate "1992-01-23"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Jack Reynor. Actor: The Peripheral. Jack Reynor is an award-winning Irish-American actor who co-starred opposite Florence Pugh in A24's breakout summer 2019 hit, MIDSOMMAR, directed by Ari Aster. Most recently, he was seen in Anthony and Joe Russo's crime drama film, CHERRY, opposite Tom Holland.\n\nThe multi-hyphenate talent wrote and directed a short film, BAINNE, starring Will Poulter, which won the Best First Short Drama Award at the Galway Film Festival...." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjY0NDBlMjktNDZiYi00Mjg1LTlhNzYtYWMxMjA4MjcwYjU2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Longmont, Colorado, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.86"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1¼″ (1.86 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2109248/>,    # Transformers: Age of Extinction
+                       <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt4158096/>,    # Free Fire
+                       <https://www.imdb.com/title/tt8772262/>,    # Midsommar
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7210448/>,    # Strange Angel
+                       <https://www.imdb.com/title/tt2388771/>,    # Mowgli: Legend of the Jungle
+                       <https://www.imdb.com/title/tt4669788/>,    # On the Basis of Sex
+                       <https://www.imdb.com/title/tt6017942/>,    # Kin
+                       <https://www.imdb.com/title/tt5711280/>,    # Electric Dreams
+                       <https://www.imdb.com/title/tt5390504/>,    # Detroit
+                       <https://www.imdb.com/title/tt3296908/>,    # The Man with the Iron Heart
+                       <https://www.imdb.com/title/tt3344694/>,    # The Secret Scripture
+                       <https://www.imdb.com/title/tt2884018/>,    # Macbeth
+                       <https://www.imdb.com/title/tt1837562/>,    # A Royal Night Out
+                       <https://www.imdb.com/title/tt3407428/>,    # Glassland
+                       <https://www.imdb.com/title/tt2387559/>,    # Delivery Man
+                       <https://www.imdb.com/title/tt2523872/>,    # Cold
+                       <https://www.imdb.com/title/tt2783190/>,    # Car Film
+                       <https://www.imdb.com/title/tt2206050/>,    # Stella
+                       <https://www.imdb.com/title/tt2092011/>,    # What Richard Did
+                       <https://www.imdb.com/title/tt1871241/>,    # Chasing Leprechauns
+                       <https://www.imdb.com/title/tt1930327/>,    # Dollhouse
+                       <https://www.imdb.com/title/tt1785645/>,    # Three Wise Women
+                       <https://www.imdb.com/title/tt0264499/> ; # Country
+
+    schema:award [
+        a schema:Award ;
+        schema:description "8 wins & 11 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi926139673/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2930503/mediaviewer/rm4015156737/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm3780275713/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm3074648321/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm2873321729/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm1095969025/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm1129523457/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm1146300673/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm2269316609/>,
+                 <https://www.imdb.com/name/nm2930503/mediaviewer/rm3410101761/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2109248/> a schema:Movie ;
+    schema:name "Transformers: Age of Extinction" ;
+    schema:url <https://www.imdb.com/title/tt2109248/> .
+
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> .
+
+<https://www.imdb.com/title/tt4158096/> a schema:Movie ;
+    schema:name "Free Fire" ;
+    schema:url <https://www.imdb.com/title/tt4158096/> .
+
+<https://www.imdb.com/title/tt8772262/> a schema:Movie ;
+    schema:name "Midsommar" ;
+    schema:url <https://www.imdb.com/title/tt8772262/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Strange Angel (2018)
+<https://www.imdb.com/title/tt7210448/> a schema:Movie ;
+    schema:name "Strange Angel" ;
+    schema:url <https://www.imdb.com/title/tt7210448/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Jack Parsons"
+    ] .
+
+# Mowgli: Legend of the Jungle (2018)
+<https://www.imdb.com/title/tt2388771/> a schema:Movie ;
+    schema:name "Mowgli: Legend of the Jungle" ;
+    schema:url <https://www.imdb.com/title/tt2388771/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Brother Wolf"
+    ] .
+
+# On the Basis of Sex (2018)
+<https://www.imdb.com/title/tt4669788/> a schema:Movie ;
+    schema:name "On the Basis of Sex" ;
+    schema:url <https://www.imdb.com/title/tt4669788/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Jim Bozarth"
+    ] .
+
+# Kin (2018)
+<https://www.imdb.com/title/tt6017942/> a schema:Movie ;
+    schema:name "Kin" ;
+    schema:url <https://www.imdb.com/title/tt6017942/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Jimmy Solinski"
+    ] .
+
+# Electric Dreams (2017)
+<https://www.imdb.com/title/tt5711280/> a schema:Movie ;
+    schema:name "Electric Dreams" ;
+    schema:url <https://www.imdb.com/title/tt5711280/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Norton"
+    ] .
+
+# Detroit (2017)
+<https://www.imdb.com/title/tt5390504/> a schema:Movie ;
+    schema:name "Detroit" ;
+    schema:url <https://www.imdb.com/title/tt5390504/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Demens"
+    ] .
+
+# The Man with the Iron Heart (2017)
+<https://www.imdb.com/title/tt3296908/> a schema:Movie ;
+    schema:name "The Man with the Iron Heart" ;
+    schema:url <https://www.imdb.com/title/tt3296908/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Jozef Gabcík"
+    ] .
+
+# The Secret Scripture (2016)
+<https://www.imdb.com/title/tt3344694/> a schema:Movie ;
+    schema:name "The Secret Scripture" ;
+    schema:url <https://www.imdb.com/title/tt3344694/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Michael McNulty"
+    ] .
+
+# Macbeth (2015)
+<https://www.imdb.com/title/tt2884018/> a schema:Movie ;
+    schema:name "Macbeth" ;
+    schema:url <https://www.imdb.com/title/tt2884018/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Malcolm"
+    ] .
+
+# A Royal Night Out (2015)
+<https://www.imdb.com/title/tt1837562/> a schema:Movie ;
+    schema:name "A Royal Night Out" ;
+    schema:url <https://www.imdb.com/title/tt1837562/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Jack Hodges"
+    ] .
+
+# Glassland (2014)
+<https://www.imdb.com/title/tt3407428/> a schema:Movie ;
+    schema:name "Glassland" ;
+    schema:url <https://www.imdb.com/title/tt3407428/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "John"
+    ] .
+
+# Delivery Man (2013)
+<https://www.imdb.com/title/tt2387559/> a schema:Movie ;
+    schema:name "Delivery Man" ;
+    schema:url <https://www.imdb.com/title/tt2387559/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Josh"
+    ] .
+
+# Cold (2013)
+<https://www.imdb.com/title/tt2523872/> a schema:Movie ;
+    schema:name "Cold" ;
+    schema:url <https://www.imdb.com/title/tt2523872/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Rory"
+    ] .
+
+# Car Film (2013)
+<https://www.imdb.com/title/tt2783190/> a schema:Movie ;
+    schema:name "Car Film" ;
+    schema:url <https://www.imdb.com/title/tt2783190/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Martin"
+    ] .
+
+# Stella (2012)
+<https://www.imdb.com/title/tt2206050/> a schema:Movie ;
+    schema:name "Stella" ;
+    schema:url <https://www.imdb.com/title/tt2206050/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Michael"
+    ] .
+
+# What Richard Did (2012)
+<https://www.imdb.com/title/tt2092011/> a schema:Movie ;
+    schema:name "What Richard Did" ;
+    schema:url <https://www.imdb.com/title/tt2092011/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Richard Karlsen"
+    ] .
+
+# Chasing Leprechauns (2012)
+<https://www.imdb.com/title/tt1871241/> a schema:Movie ;
+    schema:name "Chasing Leprechauns" ;
+    schema:url <https://www.imdb.com/title/tt1871241/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Tommy Riley"
+    ] .
+
+# Dollhouse (2012)
+<https://www.imdb.com/title/tt1930327/> a schema:Movie ;
+    schema:name "Dollhouse" ;
+    schema:url <https://www.imdb.com/title/tt1930327/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Robbie"
+    ] .
+
+# Three Wise Women (2010)
+<https://www.imdb.com/title/tt1785645/> a schema:Movie ;
+    schema:name "Three Wise Women" ;
+    schema:url <https://www.imdb.com/title/tt1785645/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Colin"
+    ] .
+
+# Country (2000)
+<https://www.imdb.com/title/tt0264499/> a schema:Movie ;
+    schema:name "Country" ;
+    schema:url <https://www.imdb.com/title/tt0264499/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2930503/> ;
+        schema:characterName "Altar Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi926139673/> a schema:VideoObject ;
+        schema:name "Why Joseph Gordon-Levitt Wrote a Letter to Be Cast in &apos;Flora and Son&apos;" ;
+        schema:description "IMDb catches up with 'Flora and Son' director John Carney and stars Eve Hewson, Joseph Gordon-Levitt, and Jack Reynor at the 2023 Sundance Film Festival. Eve, Joseph, and Jack share what they admire most about their characters and John reveals which movie musicals inspired him growing up, including 'Singin' in the Rain.'" ;
+        schema:embedUrl <https://www.imdb.com/video/vi926139673/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BN2I2MDI3NjktNjM2NC00YTc4LWFhNTYtNGE4OGU0YjRlNzRkXkEyXkFqcGdeQXNhcmFocmVi._V1_.jpg" ;
+        schema:duration "PT3M48S"^^xsd:duration ;
+        schema:uploadDate "2023-01-24T02:00:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjY0NDBlMjktNDZiYi00Mjg1LTlhNzYtYWMxMjA4MjcwYjU2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjY0NDBlMjktNDZiYi00Mjg1LTlhNzYtYWMxMjA4MjcwYjU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Reynor" ;
+    schema:height "1606"^^xsd:integer ;
+    schema:width "1958"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm4015156737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjUzZmE5NTItNzVkYS00ZWViLTk1MmEtMjEzZDliOWQzN2JjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Kidman, Jack Reynor, Billy Howle, and Sam Nivola in The Perfect Couple (2024)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm3780275713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDYwYmM5NjMtZDkwMi00ZTFiLWFmM2MtMzQ1MGEyNDAzMGY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eve Hewson, Jack Reynor, and Meghann Fahy in The Perfect Couple (2024)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm3074648321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTRhZjgwNTEtMDk0Ni00MGViLTgzOTAtNzkxNTdhMTU1NGYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Kidman, Liev Schreiber, Dakota Fanning, Eve Hewson, Jack Reynor, Billy Howle, and Sam Nivola in The Perfect Couple (2024)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm2873321729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmQwZjIzNDktODJhOS00NWIzLTllYzItYTBkZDJlNWU4MDhhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dakota Fanning and Jack Reynor in The Perfect Couple (2024)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm1095969025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGRiNWM1Y2QtZWViZi00YTIzLTgxNWYtMjQ5ZGYxYTZmYmIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Reynor and Florence Pugh in Midsommar (2019)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm1129523457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQ1NGU5MzUtZmQxMi00NjY3LWI0YzgtNzA0N2EyN2MzYmEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Reynor and Florence Pugh in Midsommar (2019)" ;
+    schema:height "3549"^^xsd:integer ;
+    schema:width "5323"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm1146300673/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTU2ODg1MjctOWRhYy00ZDJkLWFkOGItYWNjZTNmZjgyNWMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Reynor, Florence Pugh, and Vilhelm Blomgren in Midsommar (2019)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm2269316609/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDk2MGUzMmQtMThlYy00ZDY2LWJmN2QtNWY1OTgyODliMThjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chloë Grace Moretz, Jack Reynor, and Austin Rising in Empathy Bonus (2022)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2930503/mediaviewer/rm3410101761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmZmMzRhOTctNWU2Ny00ZjZjLWFlMzYtZDhjZWY1M2I0ODUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Reynor in Pilot (2022)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

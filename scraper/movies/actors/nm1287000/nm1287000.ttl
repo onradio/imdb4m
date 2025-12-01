@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1287000/> a schema:Person ;
+    schema:name "Lola Daehler" ;
+    schema:url <https://www.imdb.com/name/nm1287000/> ;
+    schema:jobTitle "Actress", "Director", "Editor" ;
+    schema:description "Lola Daehler. Actress: Eternal Sunshine of the Spotless Mind. Lola Daehler is known for Eternal Sunshine of the Spotless Mind (2004), Dragonfly (2021) and Blue Fish - Homade (2024)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTk0YzIzZTAtMDExNC00NzJmLThlOTgtZGE1ZWM2OTg5N2RkXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10713402/>,    # Giants Being Lonely
+                       <https://www.imdb.com/title/tt0338013/>,    # Eternal Sunshine of the Spotless Mind
+                       <https://www.imdb.com/title/tt0343506/> ; # Bun-Bun
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1287000/mediaviewer/rm2040777985/>,
+                 <https://www.imdb.com/name/nm1287000/mediaviewer/rm463719681/>,
+                 <https://www.imdb.com/name/nm1287000/mediaviewer/rm212061441/>,
+                 <https://www.imdb.com/name/nm1287000/mediaviewer/rm1839451393/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Giants Being Lonely (2019)
+<https://www.imdb.com/title/tt10713402/> a schema:Movie ;
+    schema:name "Giants Being Lonely" ;
+    schema:url <https://www.imdb.com/title/tt10713402/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1287000/> ;
+        schema:characterName "Caroline's friend"
+    ] .
+
+# Eternal Sunshine of the Spotless Mind (2004)
+<https://www.imdb.com/title/tt0338013/> a schema:Movie ;
+    schema:name "Eternal Sunshine of the Spotless Mind" ;
+    schema:url <https://www.imdb.com/title/tt0338013/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1287000/> ;
+        schema:characterName "Young Clementine"
+    ] .
+
+# Bun-Bun (2003)
+<https://www.imdb.com/title/tt0343506/> a schema:Movie ;
+    schema:name "Bun-Bun" ;
+    schema:url <https://www.imdb.com/title/tt0343506/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1287000/> ;
+        schema:characterName "Daughter 2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTk0YzIzZTAtMDExNC00NzJmLThlOTgtZGE1ZWM2OTg5N2RkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTk0YzIzZTAtMDExNC00NzJmLThlOTgtZGE1ZWM2OTg5N2RkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lola Daehler" ;
+    schema:height "3171"^^xsd:integer ;
+    schema:width "2537"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1287000/mediaviewer/rm2040777985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGM0MWJmNzktOTk4ZS00NjIxLWJmZGEtMzBlYjJhNWJhNzVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lola Daehler" ;
+    schema:height "3281"^^xsd:integer ;
+    schema:width "2604"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1287000/mediaviewer/rm463719681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM2NDFhODAtNWUwZS00NTc0LTg5YjItZGMxZjljOWE2MzM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lola Daehler" ;
+    schema:height "986"^^xsd:integer ;
+    schema:width "796"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1287000/mediaviewer/rm212061441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWMxNzczNzQtYzk5OS00MjNiLThkMzctN2I5NDhhY2UzYWQ2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lola Daehler" ;
+    schema:height "1596"^^xsd:integer ;
+    schema:width "2132"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1287000/mediaviewer/rm1839451393/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTk0YzIzZTAtMDExNC00NzJmLThlOTgtZGE1ZWM2OTg5N2RkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lola Daehler" ;
+    schema:height "3171"^^xsd:integer ;
+    schema:width "2537"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

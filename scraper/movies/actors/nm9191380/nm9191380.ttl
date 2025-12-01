@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9191380/> a schema:Person ;
+    schema:name "Mike Fallin" ;
+    schema:url <https://www.imdb.com/name/nm9191380/> ;
+    schema:jobTitle "Actor", "Director", "Producer" ;
+    schema:description "Mike Fallin. Actor: La La Land. Mike Fallin is known for La La Land (2016), Bob Trevino Likes It (2024) and Netflix is a joke presents: My Plus One Podcast (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9150638/>,    # Fair Play a Dc Fan Film
+                       <https://www.imdb.com/title/tt6409246/>,    # The Sean Ward Show
+                       <https://www.imdb.com/title/tt3783958/>,    # La La Land
+                       <https://www.imdb.com/title/tt27077734/> . # Cracker Jackson (The White Samuel L. Jackson)
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fair Play a Dc Fan Film (2018)
+<https://www.imdb.com/title/tt9150638/> a schema:Movie ;
+    schema:name "Fair Play a Dc Fan Film" ;
+    schema:url <https://www.imdb.com/title/tt9150638/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9191380/> ;
+        schema:characterName "Static Shock"
+    ] .
+
+# The Sean Ward Show (2017)
+<https://www.imdb.com/title/tt6409246/> a schema:Movie ;
+    schema:name "The Sean Ward Show" ;
+    schema:url <https://www.imdb.com/title/tt6409246/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9191380/> ;
+        schema:characterName "Happy Hogan"
+    ] .
+
+# La La Land (2016)
+<https://www.imdb.com/title/tt3783958/> a schema:Movie ;
+    schema:name "La La Land" ;
+    schema:url <https://www.imdb.com/title/tt3783958/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9191380/> ;
+        schema:characterName "Free way Krump Dancer 'Hat Kid'"
+    ] .
+
+# Cracker Jackson (The White Samuel L. Jackson) (2015)
+<https://www.imdb.com/title/tt27077734/> a schema:Movie ;
+    schema:name "Cracker Jackson (The White Samuel L. Jackson)" ;
+    schema:url <https://www.imdb.com/title/tt27077734/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9191380/> ;
+        schema:characterName "Krumptron"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,117 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9419368/> a schema:Person ;
+    schema:name "Gabriel Akuwudike" ;
+    schema:url <https://www.imdb.com/name/nm9419368/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gabriel Akuwudike. Actor: 1917. Gabriel Akuwudike is known for 1917 (2019), The Lord of the Rings: The Rings of Power (2022) and Berlin Station (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDNkOGVmMjUtODVmZS00ZTY5LWI0OTktMzQ2Nzg3YjMwNjE3XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8579674/>,    # 1917
+                       <https://www.imdb.com/title/tt0944947/>,    # Game of Thrones
+                       <https://www.imdb.com/title/tt5191110/>,    # Berlin Station
+                       <https://www.imdb.com/title/tt8425058/> ; # Brexit: The Uncivil War
+
+
+    schema:video <https://www.imdb.com/video/vi2847916825/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9419368/mediaviewer/rm2698726400/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 1917 (2019)
+<https://www.imdb.com/title/tt8579674/> a schema:Movie ;
+    schema:name "1917" ;
+    schema:url <https://www.imdb.com/title/tt8579674/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9419368/> ;
+        schema:characterName "Private Buchanan"
+    ] .
+
+# Game of Thrones (2019)
+<https://www.imdb.com/title/tt0944947/> a schema:Movie ;
+    schema:name "Game of Thrones" ;
+    schema:url <https://www.imdb.com/title/tt0944947/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9419368/> ;
+        schema:characterName "Unsullied Captain"
+    ] .
+
+# Berlin Station (2019)
+<https://www.imdb.com/title/tt5191110/> a schema:Movie ;
+    schema:name "Berlin Station" ;
+    schema:url <https://www.imdb.com/title/tt5191110/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9419368/> ;
+        schema:characterName "NATO Soldier"
+    ] .
+
+# Brexit: The Uncivil War (2019)
+<https://www.imdb.com/title/tt8425058/> a schema:Movie ;
+    schema:name "Brexit: The Uncivil War" ;
+    schema:url <https://www.imdb.com/title/tt8425058/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9419368/> ;
+        schema:characterName "Robin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2847916825/> a schema:VideoObject ;
+        schema:name "Ridley Road" ;
+        schema:description "Ridley Road" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2847916825/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTA3OTQzMDAtMzkyZi00YzViLThhZWItMTAxZjIyNTk2NzAzXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT41S"^^xsd:duration ;
+        schema:uploadDate "2021-09-17T13:02:18Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDNkOGVmMjUtODVmZS00ZTY5LWI0OTktMzQ2Nzg3YjMwNjE3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDNkOGVmMjUtODVmZS00ZTY5LWI0OTktMzQ2Nzg3YjMwNjE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gabriel Akuwudike" ;
+    schema:height "1619"^^xsd:integer ;
+    schema:width "1295"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9419368/mediaviewer/rm2698726400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDNkOGVmMjUtODVmZS00ZTY5LWI0OTktMzQ2Nzg3YjMwNjE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gabriel Akuwudike" ;
+    schema:height "1619"^^xsd:integer ;
+    schema:width "1295"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm9419368/>
+    schema:sameAs <https://www.instagram.com/gabe_aku/?hl=en> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

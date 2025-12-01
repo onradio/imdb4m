@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1400933/> a schema:Person ;
+    schema:name "Damian O&apos;Hare" ;
+    schema:url <https://www.imdb.com/name/nm1400933/> ;
+    schema:birthDate "1977-08-13"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Damian O'Hare. Actor: Manhunt. Damian O'Hare was born on 13 August 1977 in Belfast, Northern Ireland, UK. He is an actor and producer, known for Manhunt (2024), 1923 (2022) and Perry Mason (2020). He has been married to Georgie Hurford-Jones since 30 December 2014." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTcwOWJiMDQtODZlNy00ZmU2LTgwYTYtN2JiYzNmYmQ2ZTAyXkEyXkFqcGc@._V1_CR289,1,2879,4319_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Belfast, Northern Ireland, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt16912512/>,    # Manhunt
+                       <https://www.imdb.com/title/tt0325980/>,    # Pirates of the Caribbean: The Curse of the Black Pearl
+                       <https://www.imdb.com/title/tt1298650/>,    # Pirates of the Caribbean: On Stranger Tides
+                       <https://www.imdb.com/title/tt1985443/>,    # Hatfields & McCoys
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6404896/>,    # Constantine: City of Demons
+                       <https://www.imdb.com/title/tt9177882/> ; # Constantine: City of Demons
+
+
+    schema:video <https://www.imdb.com/video/vi1461500697/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1400933/mediaviewer/rm2439741185/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm2884661249/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm3692041216/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm2381344769/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm2247127041/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm2498785281/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm950827520/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm2426154752/>,
+                 <https://www.imdb.com/name/nm1400933/mediaviewer/rm1474378240/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt16912512/> a schema:Movie ;
+    schema:name "Manhunt" ;
+    schema:url <https://www.imdb.com/title/tt16912512/> .
+
+<https://www.imdb.com/title/tt0325980/> a schema:Movie ;
+    schema:name "Pirates of the Caribbean: The Curse of the Black Pearl" ;
+    schema:url <https://www.imdb.com/title/tt0325980/> .
+
+<https://www.imdb.com/title/tt1298650/> a schema:Movie ;
+    schema:name "Pirates of the Caribbean: On Stranger Tides" ;
+    schema:url <https://www.imdb.com/title/tt1298650/> .
+
+<https://www.imdb.com/title/tt1985443/> a schema:Movie ;
+    schema:name "Hatfields & McCoys" ;
+    schema:url <https://www.imdb.com/title/tt1985443/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Constantine: City of Demons (2018)
+<https://www.imdb.com/title/tt6404896/> a schema:Movie ;
+    schema:name "Constantine: City of Demons" ;
+    schema:url <https://www.imdb.com/title/tt6404896/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1400933/> ;
+        schema:characterName "Chas Chandler"
+    ] .
+
+# Constantine: City of Demons (2018)
+<https://www.imdb.com/title/tt9177882/> a schema:Movie ;
+    schema:name "Constantine: City of Demons" ;
+    schema:url <https://www.imdb.com/title/tt9177882/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1400933/> ;
+        schema:characterName "Chas Chandler"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1461500697/> a schema:VideoObject ;
+        schema:name "Constantine: City of Demons" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1461500697/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTdlYTM0ZjAtYTcxNy00Yjc4LTk4MTUtZGE4ZGQxNzhkYzgyXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg" ;
+        schema:duration "PT1M58S"^^xsd:duration ;
+        schema:uploadDate "2018-08-24T17:05:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTcwOWJiMDQtODZlNy00ZmU2LTgwYTYtN2JiYzNmYmQ2ZTAyXkEyXkFqcGc@._V1_CR289,1,2879,4319_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwOWJiMDQtODZlNy00ZmU2LTgwYTYtN2JiYzNmYmQ2ZTAyXkEyXkFqcGc@._V1_CR289,1,2879,4319_.jpg> ;
+    schema:caption "Damian O'Hare" ;
+    schema:height "4319"^^xsd:integer ;
+    schema:width "2879"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2439741185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTZmZmIzYmUtNjdlNi00YmM4LWI3MDYtNjhhYjJmNTYzNzJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O'Hare" ;
+    schema:height "4773"^^xsd:integer ;
+    schema:width "3182"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2884661249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjZhYzk2MTQtOTI0MS00Y2E1LWFjZjYtZTE1YzJmMTQ0NWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O'Hare" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "1170"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm3692041216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWNhZDcwYTYtMjEyMC00NTY3LTkzMmItMjRiOThhYmYzZjRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O'Hare" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1012"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2381344769/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTBjZTNmZmUtMDYwNi00ZDgyLWE1ZTktMjQ5YmMyMDAzNjg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O’Hare and Tobias Menzies MANHUNT" ;
+    schema:height "567"^^xsd:integer ;
+    schema:width "1170"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2247127041/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTRhNDBhMjktZGE0NS00ODMyLWExMDAtZTQxNTc1MmZmMDE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tobias Menzies and Damian O’Hare MANHUNT" ;
+    schema:height "519"^^xsd:integer ;
+    schema:width "1170"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2498785281/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmZlMDQ3MzMtNGNlNC00ODM4LWE1MWYtNjE4NWQzMTQxYThlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O’Hare MANHUNT" ;
+    schema:height "538"^^xsd:integer ;
+    schema:width "1170"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm950827520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWNkZjMxNTQtNTRkMi00ZWMzLTk3ODMtMjJmZjYxODQ1NzM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O'Hare in Pirates of the Caribbean: The Curse of the Black Pearl (2003)" ;
+    schema:height "1122"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm2426154752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ4NzkwOGEtMWRlZS00YTNlLWJhYmYtZjg3M2RmNGFkNDY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Damian O'Hare in Fractured (2007)" ;
+    schema:height "526"^^xsd:integer ;
+    schema:width "852"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1400933/mediaviewer/rm1474378240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODg3OTVmMTMtZmI4NS00YTQ5LTk2MTktNWYzYzc2Y2Q0NjcwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Goran Visnjic and Damian O'Hare in Timeless (2016)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

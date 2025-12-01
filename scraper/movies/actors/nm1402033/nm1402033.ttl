@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1402033/> a schema:Person ;
+    schema:name "Gustavo Engrácia" ;
+    schema:url <https://www.imdb.com/name/nm1402033/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gustavo Engrácia. Actor: City of God. Gustavo Engrácia is known for City of God (2002), Salve Geral (2009) and DNA (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1526306/>,    # Salve Geral
+                       <https://www.imdb.com/title/tt1142582/>,    # A Volta do Regresso
+                       <https://www.imdb.com/title/tt0447584/>,    # The Cleaning Lady
+                       <https://www.imdb.com/title/tt0317248/> . # City of God
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Salve Geral (2009)
+<https://www.imdb.com/title/tt1526306/> a schema:Movie ;
+    schema:name "Salve Geral" ;
+    schema:url <https://www.imdb.com/title/tt1526306/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1402033/> ;
+        schema:characterName "Cambista"
+    ] .
+
+# A Volta do Regresso (2007)
+<https://www.imdb.com/title/tt1142582/> a schema:Movie ;
+    schema:name "A Volta do Regresso" ;
+    schema:url <https://www.imdb.com/title/tt1142582/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1402033/> ;
+        schema:characterName "Marciano"
+    ] .
+
+# The Cleaning Lady (2007)
+<https://www.imdb.com/title/tt0447584/> a schema:Movie ;
+    schema:name "The Cleaning Lady" ;
+    schema:url <https://www.imdb.com/title/tt0447584/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1402033/> ;
+        schema:characterName "Lindenbergh"
+    ] .
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1402033/> ;
+        schema:characterName "Editor do Jornal"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,163 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5082535/> a schema:Person ;
+    schema:name "Jenny Rainsford" ;
+    schema:url <https://www.imdb.com/name/nm5082535/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jenny Rainsford. Actress: The Favourite. Jenny Rainsford is known for The Favourite (2018), About Time (2013) and Prometheus (2012)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE1NzMxMDY5NF5BMl5BanBnXkFtZTgwOTg1MDY2OTE@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5687612/>,    # Fleabag
+                       <https://www.imdb.com/title/tt9066034/>,    # Finding Joy
+                       <https://www.imdb.com/title/tt5083738/>,    # The Favourite
+                       <https://www.imdb.com/title/tt6848114/>,    # Royal Shakespeare Company: The Tempest
+                       <https://www.imdb.com/title/tt4449912/>,    # I Think I
+                       <https://www.imdb.com/title/tt3143398/>,    # The Smoke
+                       <https://www.imdb.com/title/tt1166893/>,    # Law & Order: UK
+                       <https://www.imdb.com/title/tt2994642/> ; # Death of a Farmer
+
+
+    schema:video <https://www.imdb.com/video/vi2934816025/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5082535/mediaviewer/rm3622766592/>,
+                 <https://www.imdb.com/name/nm5082535/mediaviewer/rm3387885568/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fleabag (2016)
+<https://www.imdb.com/title/tt5687612/> a schema:Movie ;
+    schema:name "Fleabag" ;
+    schema:url <https://www.imdb.com/title/tt5687612/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Boo"
+    ] .
+
+# Finding Joy (2018)
+<https://www.imdb.com/title/tt9066034/> a schema:Movie ;
+    schema:name "Finding Joy" ;
+    schema:url <https://www.imdb.com/title/tt9066034/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Charlene"
+    ] .
+
+# The Favourite (2018)
+<https://www.imdb.com/title/tt5083738/> a schema:Movie ;
+    schema:name "The Favourite" ;
+    schema:url <https://www.imdb.com/title/tt5083738/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Mae"
+    ] .
+
+# Royal Shakespeare Company: The Tempest (2017)
+<https://www.imdb.com/title/tt6848114/> a schema:Movie ;
+    schema:name "Royal Shakespeare Company: The Tempest" ;
+    schema:url <https://www.imdb.com/title/tt6848114/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Miranda"
+    ] .
+
+# I Think I (2014)
+<https://www.imdb.com/title/tt4449912/> a schema:Movie ;
+    schema:name "I Think I" ;
+    schema:url <https://www.imdb.com/title/tt4449912/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# The Smoke (2014)
+<https://www.imdb.com/title/tt3143398/> a schema:Movie ;
+    schema:name "The Smoke" ;
+    schema:url <https://www.imdb.com/title/tt3143398/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Lisa"
+    ] .
+
+# Law & Order: UK (2014)
+<https://www.imdb.com/title/tt1166893/> a schema:Movie ;
+    schema:name "Law & Order: UK" ;
+    schema:url <https://www.imdb.com/title/tt1166893/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Beth"
+    ] .
+
+# Death of a Farmer (2014)
+<https://www.imdb.com/title/tt2994642/> a schema:Movie ;
+    schema:name "Death of a Farmer" ;
+    schema:url <https://www.imdb.com/title/tt2994642/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5082535/> ;
+        schema:characterName "Florence"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2934816025/> a schema:VideoObject ;
+        schema:name "Season 2 Trailer" ;
+        schema:description "Phoebe Waller-Bridge returns in Season 2 of \"Fleabag.\" Premieres on Prime Video on May 17." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2934816025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BN2RiZDY1MjItZDdjMC00ODQyLTljMGQtYTEzOTQyYWMxYTk2XkEyXkFqcGdeQWpnYW1i._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2019-04-04T23:46:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE1NzMxMDY5NF5BMl5BanBnXkFtZTgwOTg1MDY2OTE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1NzMxMDY5NF5BMl5BanBnXkFtZTgwOTg1MDY2OTE@._V1_.jpg> ;
+    schema:caption "Jenny Rainsford in Fleabag (2016)" ;
+    schema:height "2456"^^xsd:integer ;
+    schema:width "3680"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5082535/mediaviewer/rm3622766592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzgxMzAyOTE4Ml5BMl5BanBnXkFtZTgwMjk1MDY2OTE@._V1_.jpg> ;
+    schema:caption "Phoebe Waller-Bridge and Jenny Rainsford in Fleabag (2016)" ;
+    schema:height "2688"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5082535/mediaviewer/rm3387885568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1NzMxMDY5NF5BMl5BanBnXkFtZTgwOTg1MDY2OTE@._V1_.jpg> ;
+    schema:caption "Jenny Rainsford in Fleabag (2016)" ;
+    schema:height "2456"^^xsd:integer ;
+    schema:width "3680"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4729430/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Invisible" ;
+        schema:byArtist <https://www.imdb.com/name/nm3706357/> ; # Zara Larsson
+        schema:producer <https://www.imdb.com/name/nm10989006/> ; # Jussifer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Invisible" ;
+            schema:author <https://www.imdb.com/name/nm3267790/>, # Justin Tranter
+                       <https://www.imdb.com/name/nm10989006/>, # Jussifer
+                       <https://www.imdb.com/name/nm5984349/> # Caroline Pennell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Don't Mess With The Postman" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Don't Mess With The Postman" ;
+            schema:composer <https://www.imdb.com/name/nm5322576/> ; # Alfonso G. Aguilar
+            schema:lyricist <https://www.imdb.com/name/nm0655053/> # Sergio Pablos
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "How You Like Me Now" ;
+        schema:byArtist <https://www.imdb.com/name/nm3337593/> ; # The Heavy
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "How You Like Me Now" ;
+            schema:author <https://www.imdb.com/name/nm6769700/>, # Daniel Taylor
+                       <https://www.imdb.com/name/nm6984690/>, # Kelvin Swaby
+                       <https://www.imdb.com/name/nm6984689/>, # Spencer Page
+                       <https://www.imdb.com/name/nm6984688/>, # Chris Ellul
+                       <https://www.imdb.com/name/nm3054415/> # Arlester Christian
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One, Two, Three" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hochzeitsmarch" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hochzeitsmarch" ;
+            schema:author <https://www.imdb.com/name/nm0006196/> # Felix Mendelssohn
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Silent Night" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Silent Night" ;
+            schema:author <https://www.imdb.com/name/nm0345045/> # Franz Xaver Gruber
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006196/> a schema:Person ;
+    schema:name "Felix Mendelssohn" .
+<https://www.imdb.com/name/nm0345045/> a schema:Person ;
+    schema:name "Franz Xaver Gruber" .
+<https://www.imdb.com/name/nm0655053/> a schema:Person ;
+    schema:name "Sergio Pablos" .
+<https://www.imdb.com/name/nm10989006/> a schema:Person ;
+    schema:name "Jussifer" .
+<https://www.imdb.com/name/nm3054415/> a schema:Person ;
+    schema:name "Arlester Christian" .
+<https://www.imdb.com/name/nm3267790/> a schema:Person ;
+    schema:name "Justin Tranter" .
+<https://www.imdb.com/name/nm3337593/> a schema:Person ;
+    schema:name "The Heavy" .
+<https://www.imdb.com/name/nm3706357/> a schema:Person ;
+    schema:name "Zara Larsson" .
+<https://www.imdb.com/name/nm5322576/> a schema:Person ;
+    schema:name "Alfonso G. Aguilar" .
+<https://www.imdb.com/name/nm5984349/> a schema:Person ;
+    schema:name "Caroline Pennell" .
+<https://www.imdb.com/name/nm6769700/> a schema:Person ;
+    schema:name "Daniel Taylor" .
+<https://www.imdb.com/name/nm6984688/> a schema:Person ;
+    schema:name "Chris Ellul" .
+<https://www.imdb.com/name/nm6984689/> a schema:Person ;
+    schema:name "Spencer Page" .
+<https://www.imdb.com/name/nm6984690/> a schema:Person ;
+    schema:name "Kelvin Swaby" .
+# ==============================================================================

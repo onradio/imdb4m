@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0542647/> a schema:Person ;
+    schema:name "Angela Mann" ;
+    schema:url <https://www.imdb.com/name/nm0542647/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Angela Mann. Actress: The Meaning of Life. Angela Mann is known for The Meaning of Life (1983)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0085959/> .    # The Meaning of Life
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Meaning of Life (1983)
+<https://www.imdb.com/title/tt0085959/> a schema:Movie ;
+    schema:name "The Meaning of Life" ;
+    schema:url <https://www.imdb.com/title/tt0085959/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0542647/> ;
+        schema:characterName "Wife of Guest #2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

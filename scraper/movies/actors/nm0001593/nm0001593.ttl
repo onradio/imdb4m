@@ -1,0 +1,727 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001593/> a schema:Person ;
+    schema:name "Anna Paquin" ;
+    schema:url <https://www.imdb.com/name/nm0001593/> ;
+    schema:birthDate "1982-07-24"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Anna Helene Paquin" ;
+    schema:description "Anna Paquin. Actress: The Piano. Anna Paquin is the first millennial to have received an Academy Award nomination for acting, and the first to win.\n\nShe was born in Winnipeg, Manitoba, Canada, to Mary (Brophy), an English teacher from Wellington, New Zealand, and Brian Paquin, a Canadian phys-ed teacher. Anna moved to her mother's native country when she was four years old. Her first acting job ever was at age nine..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTcxNzM2NjMzNl5BMl5BanBnXkFtZTgwOTE2Njk0MjE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Winnipeg, Manitoba, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0107822/>,    # The Piano
+                       <https://www.imdb.com/title/tt0120903/>,    # X-Men
+                       <https://www.imdb.com/title/tt0290334/>,    # X2: X-Men United
+                       <https://www.imdb.com/title/tt0367089/>,    # The Squid and the Whale
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8128344/>,    # Flack
+                       <https://www.imdb.com/title/tt2699110/>,    # The Affair
+                       <https://www.imdb.com/title/tt1302006/>,    # The Irishman
+                       <https://www.imdb.com/title/tt7241926/>,    # Tell It to the Bees
+                       <https://www.imdb.com/title/tt6446550/>,    # The Parting Glass
+                       <https://www.imdb.com/title/tt5291792/>,    # Time Out
+                       <https://www.imdb.com/title/tt1034007/>,    # Alias Grace
+                       <https://www.imdb.com/title/tt5711280/>,    # Electric Dreams
+                       <https://www.imdb.com/title/tt6082618/>,    # Bellevue
+                       <https://www.imdb.com/title/tt5432616/>,    # Broken
+                       <https://www.imdb.com/title/tt3315386/>,    # Roots
+                       <https://www.imdb.com/title/tt1979388/>,    # The Good Dinosaur
+                       <https://www.imdb.com/title/tt0844441/>,    # True Blood
+                       <https://www.imdb.com/title/tt1877832/>,    # X-Men: Days of Future Past
+                       <https://www.imdb.com/title/tt1839482/>,    # Free Ride
+                       <https://www.imdb.com/title/tt2967060/>,    # Susanna
+                       <https://www.imdb.com/title/tt2024506/>,    # Straight A's
+                       <https://www.imdb.com/title/tt1854349/>,    # The Carrier
+                       <https://www.imdb.com/title/tt0852863/>,    # Phineas and Ferb
+                       <https://www.imdb.com/title/tt0466893/>,    # Margaret
+                       <https://www.imdb.com/title/tt1262416/>,    # Scream 4
+                       <https://www.imdb.com/title/tt1654842/>,    # A Drop of True Blood
+                       <https://www.imdb.com/title/tt1448762/>,    # Open House
+                       <https://www.imdb.com/title/tt1403988/>,    # The Romantics
+                       <https://www.imdb.com/title/tt1010278/>,    # The Courageous Heart of Irena Sendler
+                       <https://www.imdb.com/title/tt0862856/>,    # Trick 'r Treat
+                       <https://www.imdb.com/title/tt0821638/>,    # Bury My Heart at Wounded Knee
+                       <https://www.imdb.com/title/tt0780486/>,    # Blue State
+                       <https://www.imdb.com/title/tt0942896/>,    # Mosaic
+                       <https://www.imdb.com/title/tt0376994/>,    # X-Men: The Last Stand
+                       <https://www.imdb.com/title/tt0421212/>,    # Joan of Arc
+                       <https://www.imdb.com/title/tt0348121/>,    # Steamboy
+                       <https://www.imdb.com/title/tt0307901/>,    # 25th Hour
+                       <https://www.imdb.com/title/tt0273517/>,    # Darkness
+                       <https://www.imdb.com/title/tt0252299/>,    # Buffalo Soldiers
+                       <https://www.imdb.com/title/tt0181536/>,    # Finding Forrester
+                       <https://www.imdb.com/title/tt0181875/>,    # Almost Famous
+                       <https://www.imdb.com/title/tt0176426/>,    # All the Rage
+                       <https://www.imdb.com/title/tt0120613/>,    # A Walk on the Moon
+                       <https://www.imdb.com/title/tt0160862/>,    # She's All That
+                       <https://www.imdb.com/title/tt0119336/>,    # Hurlyburly
+                       <https://www.imdb.com/title/tt0118607/>,    # Amistad
+                       <https://www.imdb.com/title/tt0119649/>,    # The Member of the Wedding
+                       <https://www.imdb.com/title/tt0116329/>,    # Fly Away Home
+                       <https://www.imdb.com/title/tt0116684/>,    # Jane Eyre
+                       <https://www.imdb.com/title/tt0092067/> ; # Laputa: Castle in the Sky
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "18 wins & 60 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (True Blood)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "75000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3521037593/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001593/mediaviewer/rm915475713/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm932252929/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm730926337/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm3952277505/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm54103553/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm4148926209/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm1338872577/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm661417216/>,
+                 <https://www.imdb.com/name/nm0001593/mediaviewer/rm3396958976/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0107822/> a schema:Movie ;
+    schema:name "The Piano" ;
+    schema:url <https://www.imdb.com/title/tt0107822/> .
+
+<https://www.imdb.com/title/tt0120903/> a schema:Movie ;
+    schema:name "X-Men" ;
+    schema:url <https://www.imdb.com/title/tt0120903/> .
+
+<https://www.imdb.com/title/tt0290334/> a schema:Movie ;
+    schema:name "X2: X-Men United" ;
+    schema:url <https://www.imdb.com/title/tt0290334/> .
+
+<https://www.imdb.com/title/tt0367089/> a schema:Movie ;
+    schema:name "The Squid and the Whale" ;
+    schema:url <https://www.imdb.com/title/tt0367089/> .
+
+<https://www.imdb.com/title/tt0844441/> a schema:Movie ;
+    schema:name "True Blood" ;
+    schema:url <https://www.imdb.com/title/tt0844441/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Flack (2019)
+<https://www.imdb.com/title/tt8128344/> a schema:Movie ;
+    schema:name "Flack" ;
+    schema:url <https://www.imdb.com/title/tt8128344/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Robyn"
+    ] .
+
+# The Affair (2019)
+<https://www.imdb.com/title/tt2699110/> a schema:Movie ;
+    schema:name "The Affair" ;
+    schema:url <https://www.imdb.com/title/tt2699110/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Joanie Lockhart"
+    ] .
+
+# The Irishman (2019)
+<https://www.imdb.com/title/tt1302006/> a schema:Movie ;
+    schema:name "The Irishman" ;
+    schema:url <https://www.imdb.com/title/tt1302006/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Older Peggy Sheeran"
+    ] .
+
+# Tell It to the Bees (2018)
+<https://www.imdb.com/title/tt7241926/> a schema:Movie ;
+    schema:name "Tell It to the Bees" ;
+    schema:url <https://www.imdb.com/title/tt7241926/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Dr. Jean Markham"
+    ] .
+
+# The Parting Glass (2018)
+<https://www.imdb.com/title/tt6446550/> a schema:Movie ;
+    schema:name "The Parting Glass" ;
+    schema:url <https://www.imdb.com/title/tt6446550/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Colleen"
+    ] .
+
+# Time Out (2018)
+<https://www.imdb.com/title/tt5291792/> a schema:Movie ;
+    schema:name "Time Out" ;
+    schema:url <https://www.imdb.com/title/tt5291792/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Lily Benson"
+    ] .
+
+# Alias Grace (2017)
+<https://www.imdb.com/title/tt1034007/> a schema:Movie ;
+    schema:name "Alias Grace" ;
+    schema:url <https://www.imdb.com/title/tt1034007/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Nancy Montgomery"
+    ] .
+
+# Electric Dreams (2017)
+<https://www.imdb.com/title/tt5711280/> a schema:Movie ;
+    schema:name "Electric Dreams" ;
+    schema:url <https://www.imdb.com/title/tt5711280/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Bellevue (2017)
+<https://www.imdb.com/title/tt6082618/> a schema:Movie ;
+    schema:name "Bellevue" ;
+    schema:url <https://www.imdb.com/title/tt6082618/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Annie Ryder"
+    ] .
+
+# Broken (2016)
+<https://www.imdb.com/title/tt5432616/> a schema:Movie ;
+    schema:name "Broken" ;
+    schema:url <https://www.imdb.com/title/tt5432616/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Gemma"
+    ] .
+
+# Roots (2016)
+<https://www.imdb.com/title/tt3315386/> a schema:Movie ;
+    schema:name "Roots" ;
+    schema:url <https://www.imdb.com/title/tt3315386/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Nancy Holt"
+    ] .
+
+# The Good Dinosaur (2015)
+<https://www.imdb.com/title/tt1979388/> a schema:Movie ;
+    schema:name "The Good Dinosaur" ;
+    schema:url <https://www.imdb.com/title/tt1979388/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Ramsey"
+    ] .
+
+# True Blood (2008)
+<https://www.imdb.com/title/tt0844441/> a schema:Movie ;
+    schema:name "True Blood" ;
+    schema:url <https://www.imdb.com/title/tt0844441/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Sookie Stackhouse"
+    ] .
+
+# X-Men: Days of Future Past (2014)
+<https://www.imdb.com/title/tt1877832/> a schema:Movie ;
+    schema:name "X-Men: Days of Future Past" ;
+    schema:url <https://www.imdb.com/title/tt1877832/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Rogue"
+    ] .
+
+# Free Ride (2013)
+<https://www.imdb.com/title/tt1839482/> a schema:Movie ;
+    schema:name "Free Ride" ;
+    schema:url <https://www.imdb.com/title/tt1839482/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Christina"
+    ] .
+
+# Susanna (2013)
+<https://www.imdb.com/title/tt2967060/> a schema:Movie ;
+    schema:name "Susanna" ;
+    schema:url <https://www.imdb.com/title/tt2967060/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Katie"
+    ] .
+
+# Straight A's (2013)
+<https://www.imdb.com/title/tt2024506/> a schema:Movie ;
+    schema:name "Straight A's" ;
+    schema:url <https://www.imdb.com/title/tt2024506/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Katherine"
+    ] .
+
+# The Carrier (2012)
+<https://www.imdb.com/title/tt1854349/> a schema:Movie ;
+    schema:name "The Carrier" ;
+    schema:url <https://www.imdb.com/title/tt1854349/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Kim"
+    ] .
+
+# Phineas and Ferb (2011)
+<https://www.imdb.com/title/tt0852863/> a schema:Movie ;
+    schema:name "Phineas and Ferb" ;
+    schema:url <https://www.imdb.com/title/tt0852863/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Kristen"
+    ] .
+
+# Margaret (2011)
+<https://www.imdb.com/title/tt0466893/> a schema:Movie ;
+    schema:name "Margaret" ;
+    schema:url <https://www.imdb.com/title/tt0466893/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Lisa Cohen"
+    ] .
+
+# Scream 4 (2011)
+<https://www.imdb.com/title/tt1262416/> a schema:Movie ;
+    schema:name "Scream 4" ;
+    schema:url <https://www.imdb.com/title/tt1262416/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Rachel"
+    ] .
+
+# A Drop of True Blood (2010)
+<https://www.imdb.com/title/tt1654842/> a schema:Movie ;
+    schema:name "A Drop of True Blood" ;
+    schema:url <https://www.imdb.com/title/tt1654842/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Sookie Stackhouse"
+    ] .
+
+# Open House (2010)
+<https://www.imdb.com/title/tt1448762/> a schema:Movie ;
+    schema:name "Open House" ;
+    schema:url <https://www.imdb.com/title/tt1448762/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Jennie"
+    ] .
+
+# The Romantics (2010)
+<https://www.imdb.com/title/tt1403988/> a schema:Movie ;
+    schema:name "The Romantics" ;
+    schema:url <https://www.imdb.com/title/tt1403988/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Lila Hayes"
+    ] .
+
+# The Courageous Heart of Irena Sendler (2009)
+<https://www.imdb.com/title/tt1010278/> a schema:Movie ;
+    schema:name "The Courageous Heart of Irena Sendler" ;
+    schema:url <https://www.imdb.com/title/tt1010278/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Irena Sendler"
+    ] .
+
+# Trick 'r Treat (2007)
+<https://www.imdb.com/title/tt0862856/> a schema:Movie ;
+    schema:name "Trick 'r Treat" ;
+    schema:url <https://www.imdb.com/title/tt0862856/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Laurie"
+    ] .
+
+# Bury My Heart at Wounded Knee (2007)
+<https://www.imdb.com/title/tt0821638/> a schema:Movie ;
+    schema:name "Bury My Heart at Wounded Knee" ;
+    schema:url <https://www.imdb.com/title/tt0821638/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Elaine Goodale"
+    ] .
+
+# Blue State (2007)
+<https://www.imdb.com/title/tt0780486/> a schema:Movie ;
+    schema:name "Blue State" ;
+    schema:url <https://www.imdb.com/title/tt0780486/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Chloe Hamon"
+    ] .
+
+# Mosaic (2007)
+<https://www.imdb.com/title/tt0942896/> a schema:Movie ;
+    schema:name "Mosaic" ;
+    schema:url <https://www.imdb.com/title/tt0942896/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Maggie"
+    ] .
+
+# X-Men: The Last Stand (2006)
+<https://www.imdb.com/title/tt0376994/> a schema:Movie ;
+    schema:name "X-Men: The Last Stand" ;
+    schema:url <https://www.imdb.com/title/tt0376994/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Marie"
+    ] .
+
+# Joan of Arc (2005)
+<https://www.imdb.com/title/tt0421212/> a schema:Movie ;
+    schema:name "Joan of Arc" ;
+    schema:url <https://www.imdb.com/title/tt0421212/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Joan"
+    ] .
+
+# Steamboy (2004)
+<https://www.imdb.com/title/tt0348121/> a schema:Movie ;
+    schema:name "Steamboy" ;
+    schema:url <https://www.imdb.com/title/tt0348121/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "James Ray Steam"
+    ] .
+
+# 25th Hour (2002)
+<https://www.imdb.com/title/tt0307901/> a schema:Movie ;
+    schema:name "25th Hour" ;
+    schema:url <https://www.imdb.com/title/tt0307901/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Mary D'Annuzio"
+    ] .
+
+# Darkness (2002)
+<https://www.imdb.com/title/tt0273517/> a schema:Movie ;
+    schema:name "Darkness" ;
+    schema:url <https://www.imdb.com/title/tt0273517/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Regina"
+    ] .
+
+# Buffalo Soldiers (2001)
+<https://www.imdb.com/title/tt0252299/> a schema:Movie ;
+    schema:name "Buffalo Soldiers" ;
+    schema:url <https://www.imdb.com/title/tt0252299/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Robyn Lee"
+    ] .
+
+# Finding Forrester (2000)
+<https://www.imdb.com/title/tt0181536/> a schema:Movie ;
+    schema:name "Finding Forrester" ;
+    schema:url <https://www.imdb.com/title/tt0181536/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Claire"
+    ] .
+
+# Almost Famous (2000)
+<https://www.imdb.com/title/tt0181875/> a schema:Movie ;
+    schema:name "Almost Famous" ;
+    schema:url <https://www.imdb.com/title/tt0181875/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Polexia Aphrodisia"
+    ] .
+
+# All the Rage (1999)
+<https://www.imdb.com/title/tt0176426/> a schema:Movie ;
+    schema:name "All the Rage" ;
+    schema:url <https://www.imdb.com/title/tt0176426/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Annabel Lee"
+    ] .
+
+# A Walk on the Moon (1999)
+<https://www.imdb.com/title/tt0120613/> a schema:Movie ;
+    schema:name "A Walk on the Moon" ;
+    schema:url <https://www.imdb.com/title/tt0120613/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Alison Kantrowitz"
+    ] .
+
+# She's All That (1999)
+<https://www.imdb.com/title/tt0160862/> a schema:Movie ;
+    schema:name "She's All That" ;
+    schema:url <https://www.imdb.com/title/tt0160862/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Mackenzie Siler"
+    ] .
+
+# Hurlyburly (1998)
+<https://www.imdb.com/title/tt0119336/> a schema:Movie ;
+    schema:name "Hurlyburly" ;
+    schema:url <https://www.imdb.com/title/tt0119336/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Donna"
+    ] .
+
+# Amistad (1997)
+<https://www.imdb.com/title/tt0118607/> a schema:Movie ;
+    schema:name "Amistad" ;
+    schema:url <https://www.imdb.com/title/tt0118607/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Queen Isabella"
+    ] .
+
+# The Member of the Wedding (1997)
+<https://www.imdb.com/title/tt0119649/> a schema:Movie ;
+    schema:name "The Member of the Wedding" ;
+    schema:url <https://www.imdb.com/title/tt0119649/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Frankie Addams"
+    ] .
+
+# Fly Away Home (1996)
+<https://www.imdb.com/title/tt0116329/> a schema:Movie ;
+    schema:name "Fly Away Home" ;
+    schema:url <https://www.imdb.com/title/tt0116329/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Amy Alden"
+    ] .
+
+# Jane Eyre (1996)
+<https://www.imdb.com/title/tt0116684/> a schema:Movie ;
+    schema:name "Jane Eyre" ;
+    schema:url <https://www.imdb.com/title/tt0116684/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Young Jane Eyre"
+    ] .
+
+# Laputa: Castle in the Sky (1986)
+<https://www.imdb.com/title/tt0092067/> a schema:Movie ;
+    schema:name "Laputa: Castle in the Sky" ;
+    schema:url <https://www.imdb.com/title/tt0092067/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001593/> ;
+        schema:characterName "Sheeta (Disney dub)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3521037593/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "The story of Australian teenager, Jessica Watson, the youngest person ever to sail solo, non-stop around the world." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3521037593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDM1OGRlMTctOTU2Yy00MGNkLTljNDktMjNiNzViMzVkYWZlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M12S"^^xsd:duration ;
+        schema:uploadDate "2023-01-09T18:11:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTcxNzM2NjMzNl5BMl5BanBnXkFtZTgwOTE2Njk0MjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxNzM2NjMzNl5BMl5BanBnXkFtZTgwOTE2Njk0MjE@._V1_.jpg> ;
+    schema:caption "Anna Paquin" ;
+    schema:height "482"^^xsd:integer ;
+    schema:width "634"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm915475713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwYzhiYzItMjc3Mi00ZWExLWFmMWYtNjEyNjg3NmI5YTAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin in A Friend of the Family (2022)" ;
+    schema:height "538"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm932252929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWMzMjY2ZWYtZGU1MC00MzY4LTg4M2YtN2ZiYThkMGMzYzgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin in A Friend of the Family (2022)" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm730926337/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2M1NWNmMGQtNzhkZC00M2RmLWI2MjctODBiNThlNmE0NDBhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin and Jake Lacy in A Friend of the Family (2022)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm3952277505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzg4NzcxN2ItZDMzZC00NTZlLTk3Y2UtYzkwZTczOGVhY2NlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin and Zachary Levi in American Underdog (2021)" ;
+    schema:height "2666"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm54103553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWVmODIwOTItMGNmYS00N2RiLWFkYTItMmZlMjZkZjZiNmYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin and Lola Ogunnaike in Couch Surfing (2018)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm4148926209/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODZkNGQyMjEtMjg5Ni00NDc4LWI4Y2EtNWUyMjljNDQ3MGZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin, Lyriq Bent, Jaidyn Triplett, and Mykal-Michelle Harris in The Affair (2014)" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm1338872577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzAyYmRkNGMtYzRhNS00ZjNjLWI2MDktZDE4NGE5ZWY3MzQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin in Flack (2019)" ;
+    schema:height "1376"^^xsd:integer ;
+    schema:width "2064"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm661417216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDUzMWI5YmMtNzlkNC00YjA5LTg4MWYtZmI0NTJkN2ZjMDI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin in The IMDb Show (2017)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001593/mediaviewer/rm3396958976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmM2YTY3NDItODVmZS00NDZjLTliOGItYTNlMTA5YjAzNDViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anna Paquin, Helen Sadler, Adrian Winther, and Giles Matthey in True Blood (2008)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0001593/>
+    schema:sameAs <https://www.instagram.com/_annapaquin/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

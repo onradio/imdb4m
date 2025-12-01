@@ -1,0 +1,146 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0146055/> a schema:Person ;
+    schema:name "Darlene Cates" ;
+    schema:url <https://www.imdb.com/name/nm0146055/> ;
+    schema:birthDate "1947-12-13"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Rita Darlene Guthrie" ;
+    schema:description "Darlene Cates. Actress: What's Eating Gilbert Grape. Cates' acting career ignited after she appeared on an episode of Sally Jessy Raphael (1983), titled \"Too Heavy to Leave Their House\". Shortly after, author and screenwriter Peter Hedges proposed to her that she play Johnny Depp and Leonardo DiCaprio's morbidly obese and housebound mother in What's Eating Gilbert Grape (1993)--Cates accepted. Her performance earned stellar reviews; Roger Ebert said about the actress,..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU3NTUzNjE5MF5BMl5BanBnXkFtZTYwOTc3NDk2._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Borger, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0108550/>,    # What's Eating Gilbert Grape
+                       <https://www.imdb.com/title/tt0103512/>,    # Picket Fences
+                       <https://www.imdb.com/title/tt0265752/>,    # Wolf Girl
+                       <https://www.imdb.com/title/tt3275262/>,    # Mother
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0108968/> ; # Touched by an Angel
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi840940057/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0146055/mediaviewer/rm2758594048/>,
+                 <https://www.imdb.com/name/nm0146055/mediaviewer/rm2836430848/>,
+                 <https://www.imdb.com/name/nm0146055/mediaviewer/rm2819653632/>,
+                 <https://www.imdb.com/name/nm0146055/mediaviewer/rm4027736320/>,
+                 <https://www.imdb.com/name/nm0146055/mediaviewer/rm929111808/>,
+                 <https://www.imdb.com/name/nm0146055/mediaviewer/rm2869336064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0108550/> a schema:Movie ;
+    schema:name "What's Eating Gilbert Grape" ;
+    schema:url <https://www.imdb.com/title/tt0108550/> .
+
+<https://www.imdb.com/title/tt0103512/> a schema:Movie ;
+    schema:name "Picket Fences" ;
+    schema:url <https://www.imdb.com/title/tt0103512/> .
+
+<https://www.imdb.com/title/tt0265752/> a schema:Movie ;
+    schema:name "Wolf Girl" ;
+    schema:url <https://www.imdb.com/title/tt0265752/> .
+
+<https://www.imdb.com/title/tt3275262/> a schema:Movie ;
+    schema:name "Mother" ;
+    schema:url <https://www.imdb.com/title/tt3275262/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Touched by an Angel (1996)
+<https://www.imdb.com/title/tt0108968/> a schema:Movie ;
+    schema:name "Touched by an Angel" ;
+    schema:url <https://www.imdb.com/title/tt0108968/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0146055/> ;
+        schema:characterName "Claudia Bell"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi840940057/> a schema:VideoObject ;
+        schema:name "Billboard" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi840940057/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjI5ZjI3OTktYWU5NC00NGQ2LWIwNDctMmM4ZDE1ZGZiMzZhXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg" ;
+        schema:duration "PT2M5S"^^xsd:duration ;
+        schema:uploadDate "2019-01-19T17:03:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU3NTUzNjE5MF5BMl5BanBnXkFtZTYwOTc3NDk2._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3NTUzNjE5MF5BMl5BanBnXkFtZTYwOTc3NDk2._V1_.jpg> ;
+    schema:caption "Darlene Cates as Athena the World's Fattest Woman in Thom Fitzgerald's \"Wolf Girl\"." ;
+    schema:height "270"^^xsd:integer ;
+    schema:width "378"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm2758594048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ2OTY0OTQwNF5BMl5BanBnXkFtZTgwMTAzNjY3MTE@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Leonardo DiCaprio, Darlene Cates, Laura Harrington, and Mary Kate Schellhardt in What's Eating Gilbert Grape (1993)" ;
+    schema:height "2840"^^xsd:integer ;
+    schema:width "4276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm2836430848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NjYzNTI1MV5BMl5BanBnXkFtZTcwNjQzNTY3Mw@@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Leonardo DiCaprio, Juliette Lewis, Darlene Cates, Laura Harrington, and Mary Kate Schellhardt in What's Eating Gilbert Grape (1993)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1390"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm2819653632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEzNTMwODYxNV5BMl5BanBnXkFtZTcwNzQzNTY3Mw@@._V1_.jpg> ;
+    schema:caption "Johnny Depp and Darlene Cates in What's Eating Gilbert Grape (1993)" ;
+    schema:height "1414"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm4027736320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWVkMjI1MDUtMmM4MC00OGYyLWEwZmUtMWY2ZTAyMjYwYjFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Leonardo DiCaprio, Juliette Lewis, and Darlene Cates in What's Eating Gilbert Grape (1993)" ;
+    schema:height "915"^^xsd:integer ;
+    schema:width "420"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm929111808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzJmOGJhMGYtZTFjOC00ZjMxLTk4NDQtNzJhMGM1ZTU3OTVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darlene Cates in No Small Parts (2014)" ;
+    schema:height "822"^^xsd:integer ;
+    schema:width "1452"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0146055/mediaviewer/rm2869336064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3NTUzNjE5MF5BMl5BanBnXkFtZTYwOTc3NDk2._V1_.jpg> ;
+    schema:caption "Darlene Cates as Athena the World's Fattest Woman in Thom Fitzgerald's \"Wolf Girl\"." ;
+    schema:height "270"^^xsd:integer ;
+    schema:width "378"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3638213/> a schema:Person ;
+    schema:name "Johnathan Geare" ;
+    schema:url <https://www.imdb.com/name/nm3638213/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Johnathan Geare. Actor: Inception. Johnathan Geare is known for Inception (2010), The Young and the Restless (1973) and Enlightened (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1509004/>,    # Enlightened
+                       <https://www.imdb.com/title/tt0069658/>,    # The Young and the Restless
+                       <https://www.imdb.com/title/tt1375666/> . # Inception
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Enlightened (2011)
+<https://www.imdb.com/title/tt1509004/> a schema:Movie ;
+    schema:name "Enlightened" ;
+    schema:url <https://www.imdb.com/title/tt1509004/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3638213/> ;
+        schema:characterName "Boy"
+    ] .
+
+# The Young and the Restless (2010)
+<https://www.imdb.com/title/tt0069658/> a schema:Movie ;
+    schema:name "The Young and the Restless" ;
+    schema:url <https://www.imdb.com/title/tt0069658/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3638213/> ;
+        schema:characterName "Georgie"
+    ] .
+
+# Inception (2010)
+<https://www.imdb.com/title/tt1375666/> a schema:Movie ;
+    schema:name "Inception" ;
+    schema:url <https://www.imdb.com/title/tt1375666/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3638213/> ;
+        schema:characterName "James (3 Years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

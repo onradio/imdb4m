@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1684741/> a schema:Person ;
+    schema:name "Nicola Cunningham" ;
+    schema:url <https://www.imdb.com/name/nm1684741/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Nicola Cunningham. Actress: Shaun of the Dead. Nicola Cunningham is known for Shaun of the Dead (2004), Trauma (2004) and Look Around You (2002)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1213663/>,    # The World's End
+                       <https://www.imdb.com/title/tt10432472/>,    # Don't
+                       <https://www.imdb.com/title/tt0358323/>,    # Look Around You
+                       <https://www.imdb.com/title/tt0365748/>,    # Shaun of the Dead
+                       <https://www.imdb.com/title/tt0363143/> ; # Trauma
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1684741/mediaviewer/rm4080635648/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The World's End (2013)
+<https://www.imdb.com/title/tt1213663/> a schema:Movie ;
+    schema:name "The World's End" ;
+    schema:url <https://www.imdb.com/title/tt1213663/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684741/> ;
+        schema:characterName "Girl in Meeting"
+    ] .
+
+# Don't (2007)
+<https://www.imdb.com/title/tt10432472/> a schema:Movie ;
+    schema:name "Don't" ;
+    schema:url <https://www.imdb.com/title/tt10432472/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684741/> ;
+        schema:characterName ""
+    ] .
+
+# Look Around You (2005)
+<https://www.imdb.com/title/tt0358323/> a schema:Movie ;
+    schema:name "Look Around You" ;
+    schema:url <https://www.imdb.com/title/tt0358323/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684741/> ;
+        schema:characterName "Housewife"
+    ] .
+
+# Shaun of the Dead (2004)
+<https://www.imdb.com/title/tt0365748/> a schema:Movie ;
+    schema:name "Shaun of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0365748/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684741/> ;
+        schema:characterName "Mary"
+    ] .
+
+# Trauma (2004)
+<https://www.imdb.com/title/tt0363143/> a schema:Movie ;
+    schema:name "Trauma" ;
+    schema:url <https://www.imdb.com/title/tt0363143/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1684741/> ;
+        schema:characterName "Reception Nurse"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1684741/mediaviewer/rm4080635648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk1MzIzODA0MV5BMl5BanBnXkFtZTcwMzUwMzIyMw@@._V1_.jpg> ;
+    schema:caption "Mark Donovan, Nick Frost, Simon Pegg, and Nicola Cunningham in Shaun of the Dead (2004)" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

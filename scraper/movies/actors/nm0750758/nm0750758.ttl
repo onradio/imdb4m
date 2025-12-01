@@ -1,0 +1,403 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0750758/> a schema:Person ;
+    schema:name "Jared Rushton" ;
+    schema:url <https://www.imdb.com/name/nm0750758/> ;
+    schema:birthDate "1974-03-03"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Jared Michael Rushton" ;
+    schema:description "Jared Rushton. Actor: Big. Jared Michael Rushton is an American musician and former actor. He is best known for his roles in several films from the late 1980s, including Honey, I Shrunk the Kids, Big, and Overboard. He has been nominated for two Saturn Awards and two Young Artist Awards. He is also known for his roles in Pet Sematary Two and as Chip on the sitcom Roseanne. Rushton also..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTc4NzAxOTMxM15BMl5BanBnXkFtZTcwOTU2NTcxOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Provo, Utah, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094737/>,    # Big
+                       <https://www.imdb.com/title/tt0093693/>,    # Overboard
+                       <https://www.imdb.com/title/tt0097523/>,    # Honey, I Shrunk the Kids
+                       <https://www.imdb.com/title/tt0099327/>,    # A Cry in the Wild
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0233491/>,    # Cover Me: Based on the True Life of an FBI Family
+                       <https://www.imdb.com/title/tt0118290/>,    # Fitz
+                       <https://www.imdb.com/title/tt0115238/>,    # Dead Man's Walk
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0111790/>,    # The Yarn Princess
+                       <https://www.imdb.com/title/tt0098878/>,    # Northern Exposure
+                       <https://www.imdb.com/title/tt0985040/>,    # CBS Schoolbreak Special
+                       <https://www.imdb.com/title/tt0103405/>,    # Dr. Quinn, Medicine Woman
+                       <https://www.imdb.com/title/tt0096635/>,    # Life Goes On
+                       <https://www.imdb.com/title/tt0103382/>,    # Camp Wilder
+                       <https://www.imdb.com/title/tt3980622/>,    # Haunted Lives: True Ghost Stories
+                       <https://www.imdb.com/title/tt0105128/>,    # Pet Sematary II
+                       <https://www.imdb.com/title/tt0224983/>,    # ...Where's Rodney?
+                       <https://www.imdb.com/title/tt0094510/>,    # Midnight Caller
+                       <https://www.imdb.com/title/tt0201546/>,    # Cranium Command
+                       <https://www.imdb.com/title/tt0094540/>,    # Roseanne
+                       <https://www.imdb.com/title/tt0086765/>,    # Murder, She Wrote
+                       <https://www.imdb.com/title/tt0095484/>,    # Lady in White
+                       <https://www.imdb.com/title/tt0094166/>,    # Top Kids
+                       <https://www.imdb.com/title/tt0083395/>,    # Cagney & Lacey
+                       <https://www.imdb.com/title/tt0086814/> ; # Tales from the Darkside
+
+
+    schema:video <https://www.imdb.com/video/vi161004057/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0750758/mediaviewer/rm3812441600/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm3829218816/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm2554150400/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm2587704832/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm2906471936/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm37568000/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm993869312/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm1010646528/>,
+                 <https://www.imdb.com/name/nm0750758/mediaviewer/rm1027423744/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0094737/> a schema:Movie ;
+    schema:name "Big" ;
+    schema:url <https://www.imdb.com/title/tt0094737/> .
+
+<https://www.imdb.com/title/tt0093693/> a schema:Movie ;
+    schema:name "Overboard" ;
+    schema:url <https://www.imdb.com/title/tt0093693/> .
+
+<https://www.imdb.com/title/tt0097523/> a schema:Movie ;
+    schema:name "Honey, I Shrunk the Kids" ;
+    schema:url <https://www.imdb.com/title/tt0097523/> .
+
+<https://www.imdb.com/title/tt0099327/> a schema:Movie ;
+    schema:name "A Cry in the Wild" ;
+    schema:url <https://www.imdb.com/title/tt0099327/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cover Me: Based on the True Life of an FBI Family (2000)
+<https://www.imdb.com/title/tt0233491/> a schema:Movie ;
+    schema:name "Cover Me: Based on the True Life of an FBI Family" ;
+    schema:url <https://www.imdb.com/title/tt0233491/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Seth Kesseling"
+    ] .
+
+# Fitz (1999)
+<https://www.imdb.com/title/tt0118290/> a schema:Movie ;
+    schema:name "Fitz" ;
+    schema:url <https://www.imdb.com/title/tt0118290/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Bill Lane"
+    ] .
+
+# Dead Man's Walk (1996)
+<https://www.imdb.com/title/tt0115238/> a schema:Movie ;
+    schema:name "Dead Man's Walk" ;
+    schema:url <https://www.imdb.com/title/tt0115238/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Wesley Buttons"
+    ] .
+
+# ER (1994)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Andy Bohlmeyer"
+    ] .
+
+# The Yarn Princess (1994)
+<https://www.imdb.com/title/tt0111790/> a schema:Movie ;
+    schema:name "The Yarn Princess" ;
+    schema:url <https://www.imdb.com/title/tt0111790/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Peter Thomas"
+    ] .
+
+# Northern Exposure (1993)
+<https://www.imdb.com/title/tt0098878/> a schema:Movie ;
+    schema:name "Northern Exposure" ;
+    schema:url <https://www.imdb.com/title/tt0098878/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Phil"
+    ] .
+
+# CBS Schoolbreak Special (1993)
+<https://www.imdb.com/title/tt0985040/> a schema:Movie ;
+    schema:name "CBS Schoolbreak Special" ;
+    schema:url <https://www.imdb.com/title/tt0985040/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Alex Raymond"
+    ] .
+
+# Dr. Quinn, Medicine Woman (1993)
+<https://www.imdb.com/title/tt0103405/> a schema:Movie ;
+    schema:name "Dr. Quinn, Medicine Woman" ;
+    schema:url <https://www.imdb.com/title/tt0103405/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Calvin Harding"
+    ] .
+
+# Life Goes On (1992)
+<https://www.imdb.com/title/tt0096635/> a schema:Movie ;
+    schema:name "Life Goes On" ;
+    schema:url <https://www.imdb.com/title/tt0096635/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Ziggy"
+    ] .
+
+# Camp Wilder (1992)
+<https://www.imdb.com/title/tt0103382/> a schema:Movie ;
+    schema:name "Camp Wilder" ;
+    schema:url <https://www.imdb.com/title/tt0103382/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "David"
+    ] .
+
+# Haunted Lives: True Ghost Stories (1992)
+<https://www.imdb.com/title/tt3980622/> a schema:Movie ;
+    schema:name "Haunted Lives: True Ghost Stories" ;
+    schema:url <https://www.imdb.com/title/tt3980622/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Steve Johnson ('Motel Hell')"
+    ] .
+
+# Pet Sematary II (1992)
+<https://www.imdb.com/title/tt0105128/> a schema:Movie ;
+    schema:name "Pet Sematary II" ;
+    schema:url <https://www.imdb.com/title/tt0105128/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Clyde Parker"
+    ] .
+
+# ...Where's Rodney? (1990)
+<https://www.imdb.com/title/tt0224983/> a schema:Movie ;
+    schema:name "...Where's Rodney?" ;
+    schema:url <https://www.imdb.com/title/tt0224983/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Rodney Barnes"
+    ] .
+
+# Midnight Caller (1990)
+<https://www.imdb.com/title/tt0094510/> a schema:Movie ;
+    schema:name "Midnight Caller" ;
+    schema:url <https://www.imdb.com/title/tt0094510/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Sylver Jensen"
+    ] .
+
+# Cranium Command (1989)
+<https://www.imdb.com/title/tt0201546/> a schema:Movie ;
+    schema:name "Cranium Command" ;
+    schema:url <https://www.imdb.com/title/tt0201546/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Buzzy - pre-show"
+    ] .
+
+# Roseanne (1988)
+<https://www.imdb.com/title/tt0094540/> a schema:Movie ;
+    schema:name "Roseanne" ;
+    schema:url <https://www.imdb.com/title/tt0094540/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Chip Lang"
+    ] .
+
+# Murder, She Wrote (1988)
+<https://www.imdb.com/title/tt0086765/> a schema:Movie ;
+    schema:name "Murder, She Wrote" ;
+    schema:url <https://www.imdb.com/title/tt0086765/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Travis Harmon"
+    ] .
+
+# Lady in White (1988)
+<https://www.imdb.com/title/tt0095484/> a schema:Movie ;
+    schema:name "Lady in White" ;
+    schema:url <https://www.imdb.com/title/tt0095484/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Donald"
+    ] .
+
+# Top Kids (1987)
+<https://www.imdb.com/title/tt0094166/> a schema:Movie ;
+    schema:name "Top Kids" ;
+    schema:url <https://www.imdb.com/title/tt0094166/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Peter"
+    ] .
+
+# Cagney & Lacey (1986)
+<https://www.imdb.com/title/tt0083395/> a schema:Movie ;
+    schema:name "Cagney & Lacey" ;
+    schema:url <https://www.imdb.com/title/tt0083395/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Peter Wade"
+    ] .
+
+# Tales from the Darkside (1986)
+<https://www.imdb.com/title/tt0086814/> a schema:Movie ;
+    schema:name "Tales from the Darkside" ;
+    schema:url <https://www.imdb.com/title/tt0086814/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0750758/> ;
+        schema:characterName "Richie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi161004057/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi161004057/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjk0MjUxMzItOGZjMy00YjU2LTgyZjQtNzI0YjExNjIwNzk3XkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M25S"^^xsd:duration ;
+        schema:uploadDate "2018-10-15T21:28:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTc4NzAxOTMxM15BMl5BanBnXkFtZTcwOTU2NTcxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc4NzAxOTMxM15BMl5BanBnXkFtZTcwOTU2NTcxOA@@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Roseanne (1988)" ;
+    schema:height "1128"^^xsd:integer ;
+    schema:width "807"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm3812441600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGUwYmFiMmUtYWFlNi00MjgyLThjMDUtZWU1MTc5YTNkOTEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm3829218816/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjcwNjQxYTQtZDJlMy00OTMxLTg0MzctMjU0MTNkZWVlZjVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm2554150400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjYxNjU2ZGEtNDI3OC00NDgxLTg1MTktZDAxMDRiNDNhYTFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Furlong and Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm2587704832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFlNjJiZDgtNDIyMS00OGQwLWFjYmEtMTYyNjFmNmY2ODYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Furlong and Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm2906471936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIzNDM4OTgtYTI4OC00MThiLTlhMGUtMmYyZjE5M2RkZGU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm37568000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWY4OTljMjUtMDlhZS00NGYzLWJhMGEtYjE1ZTk3Njg1MzkzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm993869312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI0Y2ZlYjEtMWFhZS00NzFlLWI5ZjMtN2Y5OGY4ZGY0NTg2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm1010646528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTljZDI5MTktZDc4Yy00YmRiLTg4NDItMTZlOTUwOTA4ZDBhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0750758/mediaviewer/rm1027423744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmNlYTNiMmQtM2VhNy00OGVmLWEyOTUtZjdmNjJiZWUxNzllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Rushton in Pet Sematary II (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

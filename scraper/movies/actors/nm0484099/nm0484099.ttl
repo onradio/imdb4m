@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0484099/> a schema:Person ;
+    schema:name "Madison Lanc" ;
+    schema:url <https://www.imdb.com/name/nm0484099/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Madison Lanc. Actress: X-Men. Madison Lanc is known for X-Men (2000), Being John Malkovich (1999) and The King of Queens (1998)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0165581/>,    # The King of Queens
+                       <https://www.imdb.com/title/tt0285383/>,    # Maybe It's Me
+                       <https://www.imdb.com/title/tt0200337/>,    # Family Law
+                       <https://www.imdb.com/title/tt0272255/>,    # The Princess & the Marine
+                       <https://www.imdb.com/title/tt0120903/>,    # X-Men
+                       <https://www.imdb.com/title/tt0120601/> . # Being John Malkovich
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The King of Queens (2000)
+<https://www.imdb.com/title/tt0165581/> a schema:Movie ;
+    schema:name "The King of Queens" ;
+    schema:url <https://www.imdb.com/title/tt0165581/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "Little Carrie"
+    ] .
+
+# Maybe It's Me (2001)
+<https://www.imdb.com/title/tt0285383/> a schema:Movie ;
+    schema:name "Maybe It's Me" ;
+    schema:url <https://www.imdb.com/title/tt0285383/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "Beauty Pageant Contestant"
+    ] .
+
+# Family Law (2001)
+<https://www.imdb.com/title/tt0200337/> a schema:Movie ;
+    schema:name "Family Law" ;
+    schema:url <https://www.imdb.com/title/tt0200337/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "Emma Thompkins"
+    ] .
+
+# The Princess & the Marine (2001)
+<https://www.imdb.com/title/tt0272255/> a schema:Movie ;
+    schema:name "The Princess & the Marine" ;
+    schema:url <https://www.imdb.com/title/tt0272255/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# X-Men (2000)
+<https://www.imdb.com/title/tt0120903/> a schema:Movie ;
+    schema:name "X-Men" ;
+    schema:url <https://www.imdb.com/title/tt0120903/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "Tommy's Sister"
+    ] .
+
+# Being John Malkovich (1999)
+<https://www.imdb.com/title/tt0120601/> a schema:Movie ;
+    schema:name "Being John Malkovich" ;
+    schema:url <https://www.imdb.com/title/tt0120601/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0484099/> ;
+        schema:characterName "Daughter at Puppet Show"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

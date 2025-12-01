@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1491167/> a schema:Person ;
+    schema:name "Satoshi Nikaido" ;
+    schema:url <https://www.imdb.com/name/nm1491167/> ;
+    schema:birthDate "1966-03-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Satoshi Nikaido. Actor: The Last Samurai. Satoshi Nikaido was born on 25 March 1966 in Tokyo, Japan. He is an actor, known for The Last Samurai (2003), Babel (2006) and Space Battleship Yamato (2010)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tokyo, Japan"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11¾″ (1.82 m)"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1023460377/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1491167/mediaviewer/rm3221383937/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1023460377/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A woman discovers the world's greatest wine collection that's left by her estranged father and competes against a Japanese man to claim her inheritance." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1023460377/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGMzNjEzNGItOTI4Yy00MGRmLTkwMWItZTAxOGY3NDZkNWVlXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M10S"^^xsd:duration ;
+        schema:uploadDate "2023-04-04T14:16:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1491167/mediaviewer/rm3221383937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTlkMzMyZmQtYWVhMS00ZTQ0LTk0NDctNDExOWYxZDcyYWE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Satoshi Nikaido in Kono Basho (2024)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0119698/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Mononoke-Hime/Princess Mononoke Theme Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm1176102/>, # Yoshikazu Mera
+                        <https://www.imdb.com/name/nm8581334/>, # Tokyo City Philharmonic Orchestra
+                        <https://www.imdb.com/name/nm1673912/> ; # Hiroshi Kumagai
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mononoke-Hime/Princess Mononoke Theme Song" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> ; # Joe Hisaishi
+            schema:lyricist <https://www.imdb.com/name/nm0594503/> # Hayao Miyazaki
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Princess Mononoke Theme Song (Mononoke-Hime)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0493702/> ; # Sasha Lazard
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Princess Mononoke Theme Song (Mononoke-Hime)" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> ; # Joe Hisaishi
+            schema:lyricist <https://www.imdb.com/name/nm0594503/> # Hayao Miyazaki
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Tatara Women Work Song (Tatara Fumu Onnatachi)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Tatara Women Work Song (Tatara Fumu Onnatachi)" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> ; # Joe Hisaishi
+            schema:lyricist <https://www.imdb.com/name/nm0594503/> # Hayao Miyazaki
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0386749/> a schema:Person ;
+    schema:name "Joe Hisaishi" .
+<https://www.imdb.com/name/nm0493702/> a schema:Person ;
+    schema:name "Sasha Lazard" .
+<https://www.imdb.com/name/nm0594503/> a schema:Person ;
+    schema:name "Hayao Miyazaki" .
+<https://www.imdb.com/name/nm1176102/> a schema:Person ;
+    schema:name "Yoshikazu Mera" .
+<https://www.imdb.com/name/nm1673912/> a schema:Person ;
+    schema:name "Hiroshi Kumagai" .
+<https://www.imdb.com/name/nm8581334/> a schema:Person ;
+    schema:name "Tokyo City Philharmonic Orchestra" .
+# ==============================================================================

@@ -1,0 +1,163 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0726900/> a schema:Person ;
+    schema:name "Lucia Rijker" ;
+    schema:url <https://www.imdb.com/name/nm0726900/> ;
+    schema:birthDate "1967-12-07"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Additional Crew" ;
+    schema:alternateName "The Dutch Destroyer", "Lady Tyson" ;
+    schema:description "Lucia Rijker. Actress: Million Dollar Baby. Lucia Rijker was born on 7 December 1967 in Amsterdam, Noord-Holland, Netherlands. She is an actress and producer, known for Million Dollar Baby (2004), Star Trek (2009) and Rollerball (2002)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Amsterdam, Noord-Holland, Netherlands"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.69"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6½″ (1.69 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6235026/>,    # Eng
+                       <https://www.imdb.com/title/tt0796366/>,    # Star Trek
+                       <https://www.imdb.com/title/tt0330251/>,    # The L Word
+                       <https://www.imdb.com/title/tt0970939/>,    # I Love You Mommy
+                       <https://www.imdb.com/title/tt0112022/>,    # JAG
+                       <https://www.imdb.com/title/tt0405159/>,    # Million Dollar Baby
+                       <https://www.imdb.com/title/tt0246894/>,    # Rollerball
+                       <https://www.imdb.com/title/tt0292061/> ; # Knockout Kings 2001
+
+
+    schema:video <https://www.imdb.com/video/vi1729167897/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0726900/mediaviewer/rm2935262208/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Eng (2016)
+<https://www.imdb.com/title/tt6235026/> a schema:Movie ;
+    schema:name "Eng" ;
+    schema:url <https://www.imdb.com/title/tt6235026/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Trainer"
+    ] .
+
+# Star Trek (2009)
+<https://www.imdb.com/title/tt0796366/> a schema:Movie ;
+    schema:name "Star Trek" ;
+    schema:url <https://www.imdb.com/title/tt0796366/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Romulan Communications Officer"
+    ] .
+
+# The L Word (2005)
+<https://www.imdb.com/title/tt0330251/> a schema:Movie ;
+    schema:name "The L Word" ;
+    schema:url <https://www.imdb.com/title/tt0330251/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Dusty"
+    ] .
+
+# I Love You Mommy (2007)
+<https://www.imdb.com/title/tt0970939/> a schema:Movie ;
+    schema:name "I Love You Mommy" ;
+    schema:url <https://www.imdb.com/title/tt0970939/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Grim Reaper"
+    ] .
+
+# JAG (2004)
+<https://www.imdb.com/title/tt0112022/> a schema:Movie ;
+    schema:name "JAG" ;
+    schema:url <https://www.imdb.com/title/tt0112022/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Sgt. Maria Hoyos"
+    ] .
+
+# Million Dollar Baby (2004)
+<https://www.imdb.com/title/tt0405159/> a schema:Movie ;
+    schema:name "Million Dollar Baby" ;
+    schema:url <https://www.imdb.com/title/tt0405159/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Billie 'The Blue Bear'"
+    ] .
+
+# Rollerball (2002)
+<https://www.imdb.com/title/tt0246894/> a schema:Movie ;
+    schema:name "Rollerball" ;
+    schema:url <https://www.imdb.com/title/tt0246894/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Red Team #9"
+    ] .
+
+# Knockout Kings 2001 (2000)
+<https://www.imdb.com/title/tt0292061/> a schema:Movie ;
+    schema:name "Knockout Kings 2001" ;
+    schema:url <https://www.imdb.com/title/tt0292061/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0726900/> ;
+        schema:characterName "Boxer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1729167897/> a schema:VideoObject ;
+        schema:name "I Love You Mommy" ;
+        schema:description "Seven year old Manny is closer to his dead grandparents than to his Mommy, whom he adores." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1729167897/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk2OTgwOTQyN15BMl5BanBnXkFtZTcwNDI4MTA4Mg@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2009-08-28T10:01:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0726900/mediaviewer/rm2935262208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc0NzA3NTM5M15BMl5BanBnXkFtZTcwMzU3NTUyMw@@._V1_.jpg> ;
+    schema:caption "Hilary Swank and Lucia Rijker in Million Dollar Baby (2004)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0668858/> a schema:Person ;
+    schema:name "John Peakes" ;
+    schema:url <https://www.imdb.com/name/nm0668858/> ;
+    schema:birthDate "1933-07-01"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "John Peakes. Actor: Evil Dead II. John Peakes was born on 1 July 1933. He was an actor, known for Evil Dead II (1987), Shelter (2010) and Cold Case (2003). He was married to Judith Gentry and Connie Villiers. He died on 26 January 2017 in the USA." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1179069/>,    # Shelter
+                       <https://www.imdb.com/title/tt1034324/>,    # The Mighty Macs
+                       <https://www.imdb.com/title/tt0368479/>,    # Cold Case
+                       <https://www.imdb.com/title/tt0092991/> . # Evil Dead II
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shelter (2010)
+<https://www.imdb.com/title/tt1179069/> a schema:Movie ;
+    schema:name "Shelter" ;
+    schema:url <https://www.imdb.com/title/tt1179069/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0668858/> ;
+        schema:characterName "Dr. Charles Foster"
+    ] .
+
+# The Mighty Macs (2009)
+<https://www.imdb.com/title/tt1034324/> a schema:Movie ;
+    schema:name "The Mighty Macs" ;
+    schema:url <https://www.imdb.com/title/tt1034324/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0668858/> ;
+        schema:characterName "Harry McHale"
+    ] .
+
+# Cold Case (2005)
+<https://www.imdb.com/title/tt0368479/> a schema:Movie ;
+    schema:name "Cold Case" ;
+    schema:url <https://www.imdb.com/title/tt0368479/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0668858/> ;
+        schema:characterName "Witherspoon (05)"
+    ] .
+
+# Evil Dead II (1987)
+<https://www.imdb.com/title/tt0092991/> a schema:Movie ;
+    schema:name "Evil Dead II" ;
+    schema:url <https://www.imdb.com/title/tt0092991/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0668858/> ;
+        schema:characterName "Professor Knowby"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

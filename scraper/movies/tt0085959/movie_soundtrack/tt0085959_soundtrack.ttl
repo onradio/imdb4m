@@ -1,0 +1,159 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0085959/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Meaning of Life" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Meaning of Life" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/>, # Eric Idle
+                        <https://www.imdb.com/name/nm0006047/> ; # John Du Prez
+            schema:lyricist <https://www.imdb.com/name/nm0001385/> # Eric Idle
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Oh Lord Please Don't Burn Us" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001589/>, # Michael Palin
+                        <https://www.imdb.com/name/nm0000092/> ; # John Cleese
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Oh Lord Please Don't Burn Us" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/>, # Eric Idle
+                        <https://www.imdb.com/name/nm0006047/> ; # John Du Prez
+            schema:lyricist <https://www.imdb.com/name/nm0000092/>, # John Cleese
+                        <https://www.imdb.com/name/nm0001037/> # Graham Chapman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Every Sperm is Sacred" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001589/>, # Michael Palin
+                        <https://www.imdb.com/name/nm0001402/>, # Terry Jones
+                        <https://www.imdb.com/name/nm0533665/>, # Andrew MacLachlan
+                        <https://www.imdb.com/name/nm1775696/>, # Jennie Franks
+                        <https://www.imdb.com/name/nm0001037/>, # Graham Chapman
+                        <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Every Sperm is Sacred" ;
+            schema:composer <https://www.imdb.com/name/nm0415114/>, # André Jacquemin
+                        <https://www.imdb.com/name/nm0398252/> ; # Dave Howman
+            schema:lyricist <https://www.imdb.com/name/nm0001589/>, # Michael Palin
+                        <https://www.imdb.com/name/nm0001402/> # Terry Jones
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Galaxy Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Galaxy Song" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/>, # Eric Idle
+                        <https://www.imdb.com/name/nm0006047/> # John Du Prez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Accountancy Shanty" ;
+        schema:byArtist <https://www.imdb.com/name/nm0453263/> ; # Russell Kilmister
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Accountancy Shanty" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/>, # Eric Idle
+                        <https://www.imdb.com/name/nm0006047/> ; # John Du Prez
+            schema:lyricist <https://www.imdb.com/name/nm0001385/>, # Eric Idle
+                        <https://www.imdb.com/name/nm0006047/> # John Du Prez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Penis Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Penis Song" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+            schema:lyricist <https://www.imdb.com/name/nm0001385/> # Eric Idle
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Christmas in Heaven" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001037/> ; # Graham Chapman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Christmas in Heaven" ;
+            schema:composer <https://www.imdb.com/name/nm0001385/> ; # Eric Idle
+            schema:lyricist <https://www.imdb.com/name/nm0001402/> # Terry Jones
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Toccata und Fuge in d-Moll, BWV 565" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Toccata und Fuge in d-Moll, BWV 565" ;
+            schema:author <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Liberty Bell" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Liberty Bell" ;
+            schema:author <https://www.imdb.com/name/nm0815971/> # John Philip Sousa
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Salute to Greatness" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000092/> a schema:Person ;
+    schema:name "John Cleese" .
+<https://www.imdb.com/name/nm0001037/> a schema:Person ;
+    schema:name "Graham Chapman" .
+<https://www.imdb.com/name/nm0001385/> a schema:Person ;
+    schema:name "Eric Idle" .
+<https://www.imdb.com/name/nm0001402/> a schema:Person ;
+    schema:name "Terry Jones" .
+<https://www.imdb.com/name/nm0001589/> a schema:Person ;
+    schema:name "Michael Palin" .
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0006047/> a schema:Person ;
+    schema:name "John Du Prez" .
+<https://www.imdb.com/name/nm0398252/> a schema:Person ;
+    schema:name "Dave Howman" .
+<https://www.imdb.com/name/nm0415114/> a schema:Person ;
+    schema:name "André Jacquemin" .
+<https://www.imdb.com/name/nm0453263/> a schema:Person ;
+    schema:name "Russell Kilmister" .
+<https://www.imdb.com/name/nm0533665/> a schema:Person ;
+    schema:name "Andrew MacLachlan" .
+<https://www.imdb.com/name/nm0815971/> a schema:Person ;
+    schema:name "John Philip Sousa" .
+<https://www.imdb.com/name/nm1775696/> a schema:Person ;
+    schema:name "Jennie Franks" .
+# ==============================================================================

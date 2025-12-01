@@ -1,0 +1,551 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000309/> a schema:Person ;
+    schema:name "David Bowie" ;
+    schema:url <https://www.imdb.com/name/nm0000309/> ;
+    schema:birthDate "1947-01-08"^^xsd:date ;
+    schema:jobTitle "Music Artist", "Composer", "Actor" ;
+    schema:alternateName "The Thin White Duke", "Ziggy Stardust", "The Picasso of Pop", "The Dame", "The Master of Reinvention", "The Chameleon of Rock", "Aladdin Sane", "Major Tom", "The Starman", "David Robert Haywood Jones" ;
+    schema:description "David Bowie. Actor: Labyrinth. David Bowie was one of the most influential and prolific writers and performers of popular music, but he was much more than that; he was also an accomplished actor, a mime and an intellectual, as well as an art lover whose appreciation and knowledge of it had led to him amassing one of the biggest collections of 20th century art.\n\nBorn David Jones, he changed his name..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ4NTE3MTYzOF5BMl5BanBnXkFtZTcwNDM4OTcyMg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brixton, London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.79"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10½″ (1.79 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091369/>,    # Labyrinth
+                       <https://www.imdb.com/title/tt0074851/>,    # The Man Who Fell to Earth
+                       <https://www.imdb.com/title/tt0196229/>,    # Zoolander
+                       <https://www.imdb.com/title/tt0482571/>,    # The Prestige
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5334704/>,    # Twin Peaks: The Missing Pieces
+                       <https://www.imdb.com/title/tt0976222/>,    # Bandslam
+                       <https://www.imdb.com/title/tt0470679/>,    # August
+                       <https://www.imdb.com/title/tt0206512/>,    # SpongeBob SquarePants
+                       <https://www.imdb.com/title/tt0344854/>,    # Arthur and the Invisibles
+                       <https://www.imdb.com/title/tt0445114/>,    # Extras
+                       <https://www.imdb.com/title/tt0426654/>,    # Nathan Barley
+                       <https://www.imdb.com/title/tt2396477/>,    # Empty
+                       <https://www.imdb.com/title/tt0118346/>,    # The Hunger
+                       <https://www.imdb.com/title/tt0226243/>,    # The Nomad Soul
+                       <https://www.imdb.com/title/tt0166601/>,    # Mr. Rice's Secret
+                       <https://www.imdb.com/title/tt0148508/>,    # Il mio West
+                       <https://www.imdb.com/title/tt0150488/>,    # Everybody Loves Sunshine
+                       <https://www.imdb.com/title/tt0115632/>,    # Basquiat
+                       <https://www.imdb.com/title/tt0106007/>,    # Full Stretch
+                       <https://www.imdb.com/title/tt0105665/>,    # Twin Peaks: Fire Walk with Me
+                       <https://www.imdb.com/title/tt0102313/>,    # The Linguini Incident
+                       <https://www.imdb.com/title/tt0098780/>,    # Dream On
+                       <https://www.imdb.com/title/tt0095497/>,    # The Last Temptation of Christ
+                       <https://www.imdb.com/title/tt0090585/>,    # Absolute Beginners
+                       <https://www.imdb.com/title/tt0089346/>,    # Into the Night
+                       <https://www.imdb.com/title/tt0086618/>,    # Yellowbeard
+                       <https://www.imdb.com/title/tt0085933/>,    # Merry Christmas Mr. Lawrence
+                       <https://www.imdb.com/title/tt0085701/>,    # The Hunger
+                       <https://www.imdb.com/title/tt0084701/>,    # The Snowman
+                       <https://www.imdb.com/title/tt0288436/>,    # Baal
+                       <https://www.imdb.com/title/tt0082176/>,    # Christiane F.
+                       <https://www.imdb.com/title/tt0079867/>,    # Just a Gigolo
+                       <https://www.imdb.com/title/tt1529317/>,    # Pierrot in Turquoise or the Looking Glass Murders
+                       <https://www.imdb.com/title/tt0197641/>,    # Love You Till Tuesday
+                       <https://www.imdb.com/title/tt0065182/>,    # The Virgin Soldiers
+                       <https://www.imdb.com/title/tt0314196/>,    # The Image
+                       <https://www.imdb.com/title/tt0212698/> ; # Theatre 625
+
+    schema:award [
+        a schema:Award ;
+        schema:description "20 wins & 35 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi776979225/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000309/mediaviewer/rm2714710273/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm603404289/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm3110936321/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm1559680769/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm418830081/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm3560167937/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm1681565697/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm840143873/>,
+                 <https://www.imdb.com/name/nm0000309/mediaviewer/rm1856608513/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091369/> a schema:Movie ;
+    schema:name "Labyrinth" ;
+    schema:url <https://www.imdb.com/title/tt0091369/> .
+
+<https://www.imdb.com/title/tt0074851/> a schema:Movie ;
+    schema:name "The Man Who Fell to Earth" ;
+    schema:url <https://www.imdb.com/title/tt0074851/> .
+
+<https://www.imdb.com/title/tt0196229/> a schema:Movie ;
+    schema:name "Zoolander" ;
+    schema:url <https://www.imdb.com/title/tt0196229/> .
+
+<https://www.imdb.com/title/tt0482571/> a schema:Movie ;
+    schema:name "The Prestige" ;
+    schema:url <https://www.imdb.com/title/tt0482571/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Twin Peaks: The Missing Pieces (2014)
+<https://www.imdb.com/title/tt5334704/> a schema:Movie ;
+    schema:name "Twin Peaks: The Missing Pieces" ;
+    schema:url <https://www.imdb.com/title/tt5334704/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Phillip Jeffries"
+    ] .
+
+# Bandslam (2009)
+<https://www.imdb.com/title/tt0976222/> a schema:Movie ;
+    schema:name "Bandslam" ;
+    schema:url <https://www.imdb.com/title/tt0976222/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# August (2008)
+<https://www.imdb.com/title/tt0470679/> a schema:Movie ;
+    schema:name "August" ;
+    schema:url <https://www.imdb.com/title/tt0470679/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Cyrus Ogilvie"
+    ] .
+
+# SpongeBob SquarePants (2007)
+<https://www.imdb.com/title/tt0206512/> a schema:Movie ;
+    schema:name "SpongeBob SquarePants" ;
+    schema:url <https://www.imdb.com/title/tt0206512/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Lord Royal Highness"
+    ] .
+
+# Arthur and the Invisibles (2006)
+<https://www.imdb.com/title/tt0344854/> a schema:Movie ;
+    schema:name "Arthur and the Invisibles" ;
+    schema:url <https://www.imdb.com/title/tt0344854/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Maltazard"
+    ] .
+
+# Extras (2006)
+<https://www.imdb.com/title/tt0445114/> a schema:Movie ;
+    schema:name "Extras" ;
+    schema:url <https://www.imdb.com/title/tt0445114/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# Nathan Barley (2005)
+<https://www.imdb.com/title/tt0426654/> a schema:Movie ;
+    schema:name "Nathan Barley" ;
+    schema:url <https://www.imdb.com/title/tt0426654/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# Empty (2000)
+<https://www.imdb.com/title/tt2396477/> a schema:Movie ;
+    schema:name "Empty" ;
+    schema:url <https://www.imdb.com/title/tt2396477/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Man"
+    ] .
+
+# The Hunger (1999)
+<https://www.imdb.com/title/tt0118346/> a schema:Movie ;
+    schema:name "The Hunger" ;
+    schema:url <https://www.imdb.com/title/tt0118346/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "The Host"
+    ] .
+
+# The Nomad Soul (1999)
+<https://www.imdb.com/title/tt0226243/> a schema:Movie ;
+    schema:name "The Nomad Soul" ;
+    schema:url <https://www.imdb.com/title/tt0226243/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Boz"
+    ] .
+
+# Mr. Rice's Secret (1999)
+<https://www.imdb.com/title/tt0166601/> a schema:Movie ;
+    schema:name "Mr. Rice's Secret" ;
+    schema:url <https://www.imdb.com/title/tt0166601/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Mr. Rice"
+    ] .
+
+# Il mio West (1998)
+<https://www.imdb.com/title/tt0148508/> a schema:Movie ;
+    schema:name "Il mio West" ;
+    schema:url <https://www.imdb.com/title/tt0148508/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Jack Sikora"
+    ] .
+
+# Everybody Loves Sunshine (1998)
+<https://www.imdb.com/title/tt0150488/> a schema:Movie ;
+    schema:name "Everybody Loves Sunshine" ;
+    schema:url <https://www.imdb.com/title/tt0150488/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Bernie"
+    ] .
+
+# Basquiat (1996)
+<https://www.imdb.com/title/tt0115632/> a schema:Movie ;
+    schema:name "Basquiat" ;
+    schema:url <https://www.imdb.com/title/tt0115632/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Andy Warhol"
+    ] .
+
+# Full Stretch (1993)
+<https://www.imdb.com/title/tt0106007/> a schema:Movie ;
+    schema:name "Full Stretch" ;
+    schema:url <https://www.imdb.com/title/tt0106007/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# Twin Peaks: Fire Walk with Me (1992)
+<https://www.imdb.com/title/tt0105665/> a schema:Movie ;
+    schema:name "Twin Peaks: Fire Walk with Me" ;
+    schema:url <https://www.imdb.com/title/tt0105665/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Phillip Jeffries"
+    ] .
+
+# The Linguini Incident (1991)
+<https://www.imdb.com/title/tt0102313/> a schema:Movie ;
+    schema:name "The Linguini Incident" ;
+    schema:url <https://www.imdb.com/title/tt0102313/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Monte"
+    ] .
+
+# Dream On (1991)
+<https://www.imdb.com/title/tt0098780/> a schema:Movie ;
+    schema:name "Dream On" ;
+    schema:url <https://www.imdb.com/title/tt0098780/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Sir Roland Moorecock"
+    ] .
+
+# The Last Temptation of Christ (1988)
+<https://www.imdb.com/title/tt0095497/> a schema:Movie ;
+    schema:name "The Last Temptation of Christ" ;
+    schema:url <https://www.imdb.com/title/tt0095497/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Pontius Pilate"
+    ] .
+
+# Absolute Beginners (1986)
+<https://www.imdb.com/title/tt0090585/> a schema:Movie ;
+    schema:name "Absolute Beginners" ;
+    schema:url <https://www.imdb.com/title/tt0090585/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Vendice Partners"
+    ] .
+
+# Into the Night (1985)
+<https://www.imdb.com/title/tt0089346/> a schema:Movie ;
+    schema:name "Into the Night" ;
+    schema:url <https://www.imdb.com/title/tt0089346/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Colin Morris"
+    ] .
+
+# Yellowbeard (1983)
+<https://www.imdb.com/title/tt0086618/> a schema:Movie ;
+    schema:name "Yellowbeard" ;
+    schema:url <https://www.imdb.com/title/tt0086618/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "The Shark"
+    ] .
+
+# Merry Christmas Mr. Lawrence (1983)
+<https://www.imdb.com/title/tt0085933/> a schema:Movie ;
+    schema:name "Merry Christmas Mr. Lawrence" ;
+    schema:url <https://www.imdb.com/title/tt0085933/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Celliers"
+    ] .
+
+# The Hunger (1983)
+<https://www.imdb.com/title/tt0085701/> a schema:Movie ;
+    schema:name "The Hunger" ;
+    schema:url <https://www.imdb.com/title/tt0085701/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "John Blaylock"
+    ] .
+
+# The Snowman (1982)
+<https://www.imdb.com/title/tt0084701/> a schema:Movie ;
+    schema:name "The Snowman" ;
+    schema:url <https://www.imdb.com/title/tt0084701/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Older James (re-released version)"
+    ] .
+
+# Baal (1982)
+<https://www.imdb.com/title/tt0288436/> a schema:Movie ;
+    schema:name "Baal" ;
+    schema:url <https://www.imdb.com/title/tt0288436/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Baal"
+    ] .
+
+# Christiane F. (1981)
+<https://www.imdb.com/title/tt0082176/> a schema:Movie ;
+    schema:name "Christiane F." ;
+    schema:url <https://www.imdb.com/title/tt0082176/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# Just a Gigolo (1978)
+<https://www.imdb.com/title/tt0079867/> a schema:Movie ;
+    schema:name "Just a Gigolo" ;
+    schema:url <https://www.imdb.com/title/tt0079867/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Paul Ambrosius von Przygodski"
+    ] .
+
+# Pierrot in Turquoise or the Looking Glass Murders (1970)
+<https://www.imdb.com/title/tt1529317/> a schema:Movie ;
+    schema:name "Pierrot in Turquoise or the Looking Glass Murders" ;
+    schema:url <https://www.imdb.com/title/tt1529317/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Cloud"
+    ] .
+
+# Love You Till Tuesday (1969)
+<https://www.imdb.com/title/tt0197641/> a schema:Movie ;
+    schema:name "Love You Till Tuesday" ;
+    schema:url <https://www.imdb.com/title/tt0197641/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "David Bowie"
+    ] .
+
+# The Virgin Soldiers (1969)
+<https://www.imdb.com/title/tt0065182/> a schema:Movie ;
+    schema:name "The Virgin Soldiers" ;
+    schema:url <https://www.imdb.com/title/tt0065182/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "Soldier"
+    ] .
+
+# The Image (1969)
+<https://www.imdb.com/title/tt0314196/> a schema:Movie ;
+    schema:name "The Image" ;
+    schema:url <https://www.imdb.com/title/tt0314196/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName "The Boy"
+    ] .
+
+# Theatre 625 (1968)
+<https://www.imdb.com/title/tt0212698/> a schema:Movie ;
+    schema:name "Theatre 625" ;
+    schema:url <https://www.imdb.com/title/tt0212698/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000309/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi776979225/> a schema:VideoObject ;
+        schema:name "David Bowie | Career Retrospective" ;
+        schema:description "We take a look at the eclectic career of David Bowie, one of the most influential and accomplished performers of popular music and the arts." ;
+        schema:embedUrl <https://www.imdb.com/video/vi776979225/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTM4MzViZDQtNmVmYS00ODIzLWFiMGMtMjVkZDFlYThhZjNlXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M25S"^^xsd:duration ;
+        schema:uploadDate "2022-03-26T12:36:00Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ4NTE3MTYzOF5BMl5BanBnXkFtZTcwNDM4OTcyMg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ4NTE3MTYzOF5BMl5BanBnXkFtZTcwNDM4OTcyMg@@._V1_.jpg> ;
+    schema:caption "David Bowie" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "288"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm2714710273/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTIwNDAyOGItMDQ3Mi00MjFhLWIzNWItMWM4ZjZlMGU2ZmI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michelle Pfeiffer and David Bowie in Into the Night (1985)" ;
+    schema:height "5287"^^xsd:integer ;
+    schema:width "3681"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm603404289/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTk5NDgwYWUtYjE5MS00ZTMwLWI2NTctODE0YmM3M2ZkOWE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie and Eddie O'Connell in Absolute Beginners (1986)" ;
+    schema:height "769"^^xsd:integer ;
+    schema:width "1087"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm3110936321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTc0MzI4NDItOGE0NC00YTY1LWJkNzQtM2JlMTM2M2JmZWJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in Moonage Daydream (2022)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3996"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm1559680769/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmYyMGQ4MDEtNDViYS00ODUzLTk0ZmUtODJiYjhiOGE3MWIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in The Man Who Fell to Earth (1976)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "339"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm418830081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODk3M2YwZWUtNmYxNy00OGZjLWJiNjAtODk1YjY0NGY3MmRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in The Man Who Fell to Earth (1976)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "497"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm3560167937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FmMWU1YjMtNDA4NC00MzA4LTkyZjQtYTYzODg0YjkxM2JiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in The Last Temptation of Christ (1988)" ;
+    schema:height "686"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm1681565697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTFjMGIyNmUtZjczZS00YzI1LTlmMzQtZTEyODdlYWM4NmI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "319"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm840143873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODkzMGI3YmMtNzZjNC00MWIzLWJjMGItNTMxYjEwNmFkY2FmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in Twenty Feet from Stardom (2013)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000309/mediaviewer/rm1856608513/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTk2NzVlOGItODE1Mi00MGZiLTgwMGQtNTgwYzdiNTMzYjE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "David Bowie in Merry Christmas Mr. Lawrence (1983)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

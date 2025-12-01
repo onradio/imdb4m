@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1159336/> a schema:Person ;
+    schema:name "Rhodessa Jones" ;
+    schema:url <https://www.imdb.com/name/nm1159336/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rhodessa Jones. Actress: Soul. Rhodessa Jones is known for Soul (2020), Nocturnal Jake (2009) and Ay Jose! (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4454490/>,    # Ay Jose!
+                       <https://www.imdb.com/title/tt1338649/>,    # Nocturnal Jake
+                       <https://www.imdb.com/title/tt0195481/> . # Out of Order
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ay Jose! (2015)
+<https://www.imdb.com/title/tt4454490/> a schema:Movie ;
+    schema:name "Ay Jose!" ;
+    schema:url <https://www.imdb.com/title/tt4454490/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1159336/> ;
+        schema:characterName "Rhodessa"
+    ] .
+
+# Nocturnal Jake (2009)
+<https://www.imdb.com/title/tt1338649/> a schema:Movie ;
+    schema:name "Nocturnal Jake" ;
+    schema:url <https://www.imdb.com/title/tt1338649/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1159336/> ;
+        schema:characterName "Kamilah"
+    ] .
+
+# Out of Order (1995)
+<https://www.imdb.com/title/tt0195481/> a schema:Movie ;
+    schema:name "Out of Order" ;
+    schema:url <https://www.imdb.com/title/tt0195481/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1159336/> ;
+        schema:characterName "Rose"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

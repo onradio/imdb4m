@@ -1,0 +1,460 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2167957/> a schema:Person ;
+    schema:name "Paul Anderson" ;
+    schema:url <https://www.imdb.com/name/nm2167957/> ;
+    schema:birthDate "1978-02-12"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Boycey" ;
+    schema:description "Paul Anderson. Actor: Peaky Blinders. Paul Anderson is an English actor of film and stage. He is best known for portraying Arthur Shelby in the BBC series Peaky Blinders.\n\nAnderson began his acting career by appearing in plays written by friend Gregory Burke. His first leading role in a film was in The Firm (2009).\n\nHe also has appeared in many major films including Legend (2015), and The Revenant (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTcyNDk4MDEyNl5BMl5BanBnXkFtZTgwMjU5NzM4MjE@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.77"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9½″ (1.77 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1313113/>,    # The Firm
+                       <https://www.imdb.com/title/tt1515091/>,    # Sherlock Holmes: A Game of Shadows
+                       <https://www.imdb.com/title/tt2614684/>,    # '71
+                       <https://www.imdb.com/title/tt3569230/>,    # Legend
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2442560/>,    # Peaky Blinders
+                       <https://www.imdb.com/title/tt6393296/>,    # Tijuana Bible
+                       <https://www.imdb.com/title/tt7857374/>,    # Feedback
+                       <https://www.imdb.com/title/tt4532826/>,    # Robin Hood
+                       <https://www.imdb.com/title/tt5442456/>,    # 24 Hours to Live
+                       <https://www.imdb.com/title/tt5478478/>,    # Hostiles
+                       <https://www.imdb.com/title/tt1895315/>,    # Brimstone
+                       <https://www.imdb.com/title/tt1663202/>,    # The Revenant
+                       <https://www.imdb.com/title/tt1390411/>,    # In the Heart of the Sea
+                       <https://www.imdb.com/title/tt2936470/>,    # Electricity
+                       <https://www.imdb.com/title/tt3136068/>,    # Chandide
+                       <https://www.imdb.com/title/tt2763296/>,    # The Great Train Robbery
+                       <https://www.imdb.com/title/tt2395417/>,    # Still Life
+                       <https://www.imdb.com/title/tt1830379/>,    # Top Boy
+                       <https://www.imdb.com/title/tt1829012/>,    # Passion
+                       <https://www.imdb.com/title/tt0857190/>,    # The Sweeney
+                       <https://www.imdb.com/title/tt1951218/>,    # Piggy
+                       <https://www.imdb.com/title/tt0874608/>,    # Lewis
+                       <https://www.imdb.com/title/tt1422136/>,    # A Lonely Place to Die
+                       <https://www.imdb.com/title/tt1692202/>,    # The Promise
+                       <https://www.imdb.com/title/tt1872854/>,    # The Basement
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt1169271/>,    # Frankie Howerd: Rather You Than Me
+                       <https://www.imdb.com/title/tt1008108/>,    # Ashes to Ashes
+                       <https://www.imdb.com/title/tt0115355/>,    # Silent Witness
+                       <https://www.imdb.com/title/tt0436992/> ; # Doctor Who
+
+
+    schema:video <https://www.imdb.com/video/vi574342937/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2167957/mediaviewer/rm1996788737/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm2216790016/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm2358579200/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm3290455808/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm3928120320/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm3107984896/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm230061057/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm3234151425/>,
+                 <https://www.imdb.com/name/nm2167957/mediaviewer/rm84382977/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1313113/> a schema:Movie ;
+    schema:name "The Firm" ;
+    schema:url <https://www.imdb.com/title/tt1313113/> .
+
+<https://www.imdb.com/title/tt1515091/> a schema:Movie ;
+    schema:name "Sherlock Holmes: A Game of Shadows" ;
+    schema:url <https://www.imdb.com/title/tt1515091/> .
+
+<https://www.imdb.com/title/tt2614684/> a schema:Movie ;
+    schema:name "'71" ;
+    schema:url <https://www.imdb.com/title/tt2614684/> .
+
+<https://www.imdb.com/title/tt3569230/> a schema:Movie ;
+    schema:name "Legend" ;
+    schema:url <https://www.imdb.com/title/tt3569230/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Peaky Blinders (2013)
+<https://www.imdb.com/title/tt2442560/> a schema:Movie ;
+    schema:name "Peaky Blinders" ;
+    schema:url <https://www.imdb.com/title/tt2442560/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Arthur Shelby"
+    ] .
+
+# Tijuana Bible (2019)
+<https://www.imdb.com/title/tt6393296/> a schema:Movie ;
+    schema:name "Tijuana Bible" ;
+    schema:url <https://www.imdb.com/title/tt6393296/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Nick"
+    ] .
+
+# Feedback (2019)
+<https://www.imdb.com/title/tt7857374/> a schema:Movie ;
+    schema:name "Feedback" ;
+    schema:url <https://www.imdb.com/title/tt7857374/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Andrew Wilde"
+    ] .
+
+# Robin Hood (2018)
+<https://www.imdb.com/title/tt4532826/> a schema:Movie ;
+    schema:name "Robin Hood" ;
+    schema:url <https://www.imdb.com/title/tt4532826/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Guy of Gisbourne"
+    ] .
+
+# 24 Hours to Live (2017)
+<https://www.imdb.com/title/tt5442456/> a schema:Movie ;
+    schema:name "24 Hours to Live" ;
+    schema:url <https://www.imdb.com/title/tt5442456/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Jim Morrow"
+    ] .
+
+# Hostiles (2017)
+<https://www.imdb.com/title/tt5478478/> a schema:Movie ;
+    schema:name "Hostiles" ;
+    schema:url <https://www.imdb.com/title/tt5478478/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Corp. Tommy Thomas"
+    ] .
+
+# Brimstone (2016)
+<https://www.imdb.com/title/tt1895315/> a schema:Movie ;
+    schema:name "Brimstone" ;
+    schema:url <https://www.imdb.com/title/tt1895315/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Frank"
+    ] .
+
+# The Revenant (2015)
+<https://www.imdb.com/title/tt1663202/> a schema:Movie ;
+    schema:name "The Revenant" ;
+    schema:url <https://www.imdb.com/title/tt1663202/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Anderson"
+    ] .
+
+# In the Heart of the Sea (2015)
+<https://www.imdb.com/title/tt1390411/> a schema:Movie ;
+    schema:name "In the Heart of the Sea" ;
+    schema:url <https://www.imdb.com/title/tt1390411/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Caleb Chappel"
+    ] .
+
+# Electricity (2014)
+<https://www.imdb.com/title/tt2936470/> a schema:Movie ;
+    schema:name "Electricity" ;
+    schema:url <https://www.imdb.com/title/tt2936470/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Barry O'Connor"
+    ] .
+
+# Chandide (2014)
+<https://www.imdb.com/title/tt3136068/> a schema:Movie ;
+    schema:name "Chandide" ;
+    schema:url <https://www.imdb.com/title/tt3136068/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Dervish"
+    ] .
+
+# The Great Train Robbery (2013)
+<https://www.imdb.com/title/tt2763296/> a schema:Movie ;
+    schema:name "The Great Train Robbery" ;
+    schema:url <https://www.imdb.com/title/tt2763296/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Gordon Goody"
+    ] .
+
+# Still Life (2013)
+<https://www.imdb.com/title/tt2395417/> a schema:Movie ;
+    schema:name "Still Life" ;
+    schema:url <https://www.imdb.com/title/tt2395417/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Homeless Man"
+    ] .
+
+# Top Boy (2013)
+<https://www.imdb.com/title/tt1830379/> a schema:Movie ;
+    schema:name "Top Boy" ;
+    schema:url <https://www.imdb.com/title/tt1830379/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Mike"
+    ] .
+
+# Passion (2012)
+<https://www.imdb.com/title/tt1829012/> a schema:Movie ;
+    schema:name "Passion" ;
+    schema:url <https://www.imdb.com/title/tt1829012/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Dirk"
+    ] .
+
+# The Sweeney (2012)
+<https://www.imdb.com/title/tt0857190/> a schema:Movie ;
+    schema:name "The Sweeney" ;
+    schema:url <https://www.imdb.com/title/tt0857190/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Francis Allen"
+    ] .
+
+# Piggy (2012)
+<https://www.imdb.com/title/tt1951218/> a schema:Movie ;
+    schema:name "Piggy" ;
+    schema:url <https://www.imdb.com/title/tt1951218/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Piggy"
+    ] .
+
+# Lewis (2008)
+<https://www.imdb.com/title/tt0874608/> a schema:Movie ;
+    schema:name "Lewis" ;
+    schema:url <https://www.imdb.com/title/tt0874608/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Alastair Darlow"
+    ] .
+
+# A Lonely Place to Die (2011)
+<https://www.imdb.com/title/tt1422136/> a schema:Movie ;
+    schema:name "A Lonely Place to Die" ;
+    schema:url <https://www.imdb.com/title/tt1422136/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Chris"
+    ] .
+
+# The Promise (2011)
+<https://www.imdb.com/title/tt1692202/> a schema:Movie ;
+    schema:name "The Promise" ;
+    schema:url <https://www.imdb.com/title/tt1692202/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Sergeant Frank Nash"
+    ] .
+
+# The Basement (2010)
+<https://www.imdb.com/title/tt1872854/> a schema:Movie ;
+    schema:name "The Basement" ;
+    schema:url <https://www.imdb.com/title/tt1872854/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Jake"
+    ] .
+
+# Midsomer Murders (2009)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Graham Spate"
+    ] .
+
+# Frankie Howerd: Rather You Than Me (2008)
+<https://www.imdb.com/title/tt1169271/> a schema:Movie ;
+    schema:name "Frankie Howerd: Rather You Than Me" ;
+    schema:url <https://www.imdb.com/title/tt1169271/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Roger"
+    ] .
+
+# Ashes to Ashes (2008)
+<https://www.imdb.com/title/tt1008108/> a schema:Movie ;
+    schema:name "Ashes to Ashes" ;
+    schema:url <https://www.imdb.com/title/tt1008108/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "PC Murder Suspect"
+    ] .
+
+# Silent Witness (2007)
+<https://www.imdb.com/title/tt0115355/> a schema:Movie ;
+    schema:name "Silent Witness" ;
+    schema:url <https://www.imdb.com/title/tt0115355/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "DS Dave Leeson"
+    ] .
+
+# Doctor Who (2005)
+<https://www.imdb.com/title/tt0436992/> a schema:Movie ;
+    schema:name "Doctor Who" ;
+    schema:url <https://www.imdb.com/title/tt0436992/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2167957/> ;
+        schema:characterName "Jason"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi574342937/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "An international heist crew, led by Cyrus Whitaker (Kevin Hart), race to lift $500 million in gold from a passenger plane at 40,000 feet. Directed by F. Gary Gray and starring Kevin Hart, Gugu Mbatha-Raw, Vincent D'Onofrio, Úrsula Corberó, Billy Magnussen, Viveik Kalra, Yun Jee Kim, and Sam Worthington. Lift lands on Netflix, January 12." ;
+        schema:embedUrl <https://www.imdb.com/video/vi574342937/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTRjZTJjOWYtMGFhYi00ZjMxLWJkMTctY2UxZGY2OTFkMGUwXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2023-11-06T00:00:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTcyNDk4MDEyNl5BMl5BanBnXkFtZTgwMjU5NzM4MjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcyNDk4MDEyNl5BMl5BanBnXkFtZTgwMjU5NzM4MjE@._V1_.jpg> ;
+    schema:caption "Paul Anderson in Peaky Blinders (2013)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm1996788737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGY0MTRhMWYtMGEwNS00ZTM5LWI5NDAtMWE4MzA4YTAxZDEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Anderson in Peaky Blinders (2013)" ;
+    schema:height "4043"^^xsd:integer ;
+    schema:width "6065"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm2216790016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTA5MDkyNzQ2OV5BMl5BanBnXkFtZTcwNDk4MzA3Mg@@._V1_.jpg> ;
+    schema:caption "Paul Anderson in The Firm (2009)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "876"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm2358579200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjgyOTIyZDItNDhkYy00NmE3LTk0YjItOTE1OTc5MDZlYzVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Anderson in Peaky Blinders (2013)" ;
+    schema:height "859"^^xsd:integer ;
+    schema:width "1288"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm3290455808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2JlMGZhNGMtZWU3OC00N2ZhLWExM2MtMzA0NjQ2MjA5MmUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hardy, Paul Anderson, and Joe Cole in Peaky Blinders (2013)" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "623"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm3928120320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTEwMzIwNTQ2NDVeQTJeQWpwZ15BbWU4MDgxMDk4MzQz._V1_.jpg> ;
+    schema:caption "Paul Anderson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1360"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm3107984896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTEzMWY0Y2MtNWE5MC00MWNlLWFmNGUtNjdmYzdlMjhiNjY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Anderson" ;
+    schema:height "253"^^xsd:integer ;
+    schema:width "199"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm230061057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWM1YzIzN2YtNGI4Ny00NWMwLTgyZDYtOGU4YTg3NWI2NWQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Anderson in Nightmare Alley (2021)" ;
+    schema:height "503"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm3234151425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzI4YTczNGMtY2QyNS00YzNkLWEzM2MtMmQ5NGM5ZGY1NWUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Anderson in Peaky Blinders: The King's Ransom (2022)" ;
+    schema:height "1746"^^xsd:integer ;
+    schema:width "3102"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2167957/mediaviewer/rm84382977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0ZGQxZTgtM2M1Ny00N2RiLTk0OGMtYWMwZmJlNDg2MDdiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Calum MacNab and Paul Anderson in The Firm (2009)" ;
+    schema:height "892"^^xsd:integer ;
+    schema:width "1134"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2167957/>
+    schema:sameAs <https://www.instagram.com/boyceyboycey/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

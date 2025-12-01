@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4857264/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Nadie va a venir a buscarte" ;
+        schema:byArtist <https://www.imdb.com/name/nm3497073/>, # Zahara
+                        <https://www.imdb.com/name/nm8670721/> ; # Basque Symphony Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nadie va a venir a buscarte" ;
+            schema:author <https://www.imdb.com/name/nm3497073/>, # Zahara
+                       <https://www.imdb.com/name/nm1302939/> # Fernando Velázquez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chumba-Chumba" ;
+        schema:byArtist <https://www.imdb.com/name/nm1302939/> ; # Fernando Velázquez
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chumba-Chumba" ;
+            schema:author <https://www.imdb.com/name/nm1302939/> # Fernando Velázquez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "...¿Y Bien?" ;
+        schema:byArtist <https://www.imdb.com/name/nm4388366/> ; # Jaime Gutiérrez Domínguez
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "...¿Y Bien?" ;
+            schema:author <https://www.imdb.com/name/nm1302939/> # Fernando Velázquez
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm1302939/> a schema:Person ;
+    schema:name "Fernando Velázquez" .
+<https://www.imdb.com/name/nm3497073/> a schema:Person ;
+    schema:name "Zahara" .
+<https://www.imdb.com/name/nm4388366/> a schema:Person ;
+    schema:name "Jaime Gutiérrez Domínguez" .
+<https://www.imdb.com/name/nm8670721/> a schema:Person ;
+    schema:name "Basque Symphony Orchestra" .
+# ==============================================================================

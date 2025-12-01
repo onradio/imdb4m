@@ -1,0 +1,129 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1920144/> a schema:Person ;
+    schema:name "Troy Amos-Ross" ;
+    schema:url <https://www.imdb.com/name/nm1920144/> ;
+    schema:birthDate "1975-07-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Stunts" ;
+    schema:description "Troy Amos-Ross. Stunts: Suicide Squad. Troy Ross is a distinguished Canadian professional boxer and former national champion, renowned for his exceptional achievements in the sport and his commitment to community service. As a two-time Olympian and Commonwealth professional champion, Ross has demonstrated outstanding skill, discipline, and a relentless pursuit of excellence. He gained notable recognition on The Contender Season 4, where he won the title. Beyond his boxing career, Ross..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Georgetown, Guyana"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1386697/>,    # Suicide Squad
+                       <https://www.imdb.com/title/tt0352248/>,    # Cinderella Man
+                       <https://www.imdb.com/title/tt1131747/>,    # Phantom Punch
+                       <https://www.imdb.com/title/tt1293847/>,    # xXx: Return of Xander Cage
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1632701/>,    # Suits
+                       <https://www.imdb.com/title/tt4118466/>,    # Incorporated
+                       <https://www.imdb.com/title/tt2150135/>,    # 8 Count
+                       <https://www.imdb.com/title/tt1630564/>,    # Sacrifice
+                       <https://www.imdb.com/title/tt0416185/> . # Resurrecting the Champ
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1386697/> a schema:Movie ;
+    schema:name "Suicide Squad" ;
+    schema:url <https://www.imdb.com/title/tt1386697/> .
+
+<https://www.imdb.com/title/tt0352248/> a schema:Movie ;
+    schema:name "Cinderella Man" ;
+    schema:url <https://www.imdb.com/title/tt0352248/> .
+
+<https://www.imdb.com/title/tt1131747/> a schema:Movie ;
+    schema:name "Phantom Punch" ;
+    schema:url <https://www.imdb.com/title/tt1131747/> .
+
+<https://www.imdb.com/title/tt1293847/> a schema:Movie ;
+    schema:name "xXx: Return of Xander Cage" ;
+    schema:url <https://www.imdb.com/title/tt1293847/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Suits (2019)
+<https://www.imdb.com/title/tt1632701/> a schema:Movie ;
+    schema:name "Suits" ;
+    schema:url <https://www.imdb.com/title/tt1632701/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1920144/> ;
+        schema:characterName "Ring Boxer #2"
+    ] .
+
+# Incorporated (2017)
+<https://www.imdb.com/title/tt4118466/> a schema:Movie ;
+    schema:name "Incorporated" ;
+    schema:url <https://www.imdb.com/title/tt4118466/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1920144/> ;
+        schema:characterName "Bowie"
+    ] .
+
+# 8 Count (2011)
+<https://www.imdb.com/title/tt2150135/> a schema:Movie ;
+    schema:name "8 Count" ;
+    schema:url <https://www.imdb.com/title/tt2150135/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1920144/> ;
+        schema:characterName "Troy"
+    ] .
+
+# Sacrifice (2011)
+<https://www.imdb.com/title/tt1630564/> a schema:Movie ;
+    schema:name "Sacrifice" ;
+    schema:url <https://www.imdb.com/title/tt1630564/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1920144/> ;
+        schema:characterName "Kurt"
+    ] .
+
+# Resurrecting the Champ (2007)
+<https://www.imdb.com/title/tt0416185/> a schema:Movie ;
+    schema:name "Resurrecting the Champ" ;
+    schema:url <https://www.imdb.com/title/tt0416185/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1920144/> ;
+        schema:characterName "Young Champ"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

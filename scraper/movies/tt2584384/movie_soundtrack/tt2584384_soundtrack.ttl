@@ -1,0 +1,200 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2584384/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Komm, gib mir deine Hand" ;
+        schema:byArtist <https://www.imdb.com/name/nm1397313/> ; # The Beatles
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Komm, gib mir deine Hand" ;
+            schema:author <https://www.imdb.com/name/nm0006168/>, # John Lennon
+                       <https://www.imdb.com/name/nm0005200/> # Paul McCartney
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Don't Want to Grow Up" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001823/> ; # Tom Waits
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Don't Want to Grow Up" ;
+            schema:author <https://www.imdb.com/name/nm0001823/>, # Tom Waits
+                       <https://www.imdb.com/name/nm0107333/> # Kathleen Brennan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Frühlingsstimmen, Op. 410" ;
+        schema:byArtist <https://www.imdb.com/name/nm0845287/>, # Wiener Sängerknaben
+                        <https://www.imdb.com/name/nm3811688/> ; # Gerald Wirth
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Frühlingsstimmen, Op. 410" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Waltz & Chorus from Faust" ;
+        schema:byArtist <https://www.imdb.com/name/nm1133460/> ; # Roger Wagner Chorale
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Waltz & Chorus from Faust" ;
+            schema:composer <https://www.imdb.com/name/nm0006111/> ; # Charles Gounod
+            schema:lyricist <https://www.imdb.com/name/nm0053623/>, # Jules Barbier
+                        <https://www.imdb.com/name/nm0141151/> # Michel Carré
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tabú" ;
+        schema:byArtist <https://www.imdb.com/name/nm1979521/> ; # Los Lecuona Cuban Boys
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tabú" ;
+            schema:author <https://www.imdb.com/name/nm0496370/> # Margarita Lecuona
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Dipsy Doodle" ;
+        schema:byArtist <https://www.imdb.com/name/nm0280228/>, # Ella Fitzgerald
+                        <https://www.imdb.com/name/nm1352264/> ; # Chick Webb
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Dipsy Doodle" ;
+            schema:author <https://www.imdb.com/name/nm0166927/> # Larry Clinton
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mama" ;
+        schema:byArtist <https://www.imdb.com/name/nm0649413/> ; # Roy Orbison
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mama" ;
+            schema:author <https://www.imdb.com/name/nm1342989/>, # Joe Melson
+                       <https://www.imdb.com/name/nm0649413/>, # Roy Orbison
+                       <https://www.imdb.com/name/nm13022578/> # Ray Rush
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Everybody's Gotta Live" ;
+        schema:byArtist <https://www.imdb.com/name/nm2070351/> ; # Love
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Everybody's Gotta Live" ;
+            schema:author <https://www.imdb.com/name/nm1411958/> # Arthur Lee
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "People Like You and Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm1375171/> ; # Glenn Miller and His Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "People Like You and Me" ;
+            schema:composer <https://www.imdb.com/name/nm0912851/> ; # Harry Warren
+            schema:lyricist <https://www.imdb.com/name/nm0330418/> # Mack Gordon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Heroes" ;
+        schema:byArtist <https://www.imdb.com/name/nm2041871/> ; # The Ten Tenors
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Heroes" ;
+            schema:author <https://www.imdb.com/name/nm0000309/>, # David Bowie
+                       <https://www.imdb.com/name/nm0006061/> # Brian Eno
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Helden" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000309/> ; # David Bowie
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Helden" ;
+            schema:author <https://www.imdb.com/name/nm0000309/>, # David Bowie
+                       <https://www.imdb.com/name/nm0006061/> # Brian Eno
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000309/> a schema:Person ;
+    schema:name "David Bowie" .
+<https://www.imdb.com/name/nm0001823/> a schema:Person ;
+    schema:name "Tom Waits" .
+<https://www.imdb.com/name/nm0005200/> a schema:Person ;
+    schema:name "Paul McCartney" .
+<https://www.imdb.com/name/nm0006061/> a schema:Person ;
+    schema:name "Brian Eno" .
+<https://www.imdb.com/name/nm0006111/> a schema:Person ;
+    schema:name "Charles Gounod" .
+<https://www.imdb.com/name/nm0006168/> a schema:Person ;
+    schema:name "John Lennon" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0053623/> a schema:Person ;
+    schema:name "Jules Barbier" .
+<https://www.imdb.com/name/nm0107333/> a schema:Person ;
+    schema:name "Kathleen Brennan" .
+<https://www.imdb.com/name/nm0141151/> a schema:Person ;
+    schema:name "Michel Carré" .
+<https://www.imdb.com/name/nm0166927/> a schema:Person ;
+    schema:name "Larry Clinton" .
+<https://www.imdb.com/name/nm0280228/> a schema:Person ;
+    schema:name "Ella Fitzgerald" .
+<https://www.imdb.com/name/nm0330418/> a schema:Person ;
+    schema:name "Mack Gordon" .
+<https://www.imdb.com/name/nm0496370/> a schema:Person ;
+    schema:name "Margarita Lecuona" .
+<https://www.imdb.com/name/nm0649413/> a schema:Person ;
+    schema:name "Roy Orbison" .
+<https://www.imdb.com/name/nm0845287/> a schema:Person ;
+    schema:name "Wiener Sängerknaben" .
+<https://www.imdb.com/name/nm0912851/> a schema:Person ;
+    schema:name "Harry Warren" .
+<https://www.imdb.com/name/nm1133460/> a schema:Person ;
+    schema:name "Roger Wagner Chorale" .
+<https://www.imdb.com/name/nm13022578/> a schema:Person ;
+    schema:name "Ray Rush" .
+<https://www.imdb.com/name/nm1342989/> a schema:Person ;
+    schema:name "Joe Melson" .
+<https://www.imdb.com/name/nm1352264/> a schema:Person ;
+    schema:name "Chick Webb" .
+<https://www.imdb.com/name/nm1375171/> a schema:Person ;
+    schema:name "Glenn Miller and His Orchestra" .
+<https://www.imdb.com/name/nm1397313/> a schema:Person ;
+    schema:name "The Beatles" .
+<https://www.imdb.com/name/nm1411958/> a schema:Person ;
+    schema:name "Arthur Lee" .
+<https://www.imdb.com/name/nm1979521/> a schema:Person ;
+    schema:name "Los Lecuona Cuban Boys" .
+<https://www.imdb.com/name/nm2041871/> a schema:Person ;
+    schema:name "The Ten Tenors" .
+<https://www.imdb.com/name/nm2070351/> a schema:Person ;
+    schema:name "Love" .
+<https://www.imdb.com/name/nm3811688/> a schema:Person ;
+    schema:name "Gerald Wirth" .
+# ==============================================================================

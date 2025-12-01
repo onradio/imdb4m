@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0556977/> a schema:Person ;
+    schema:name "Thomas B. Mason" ;
+    schema:url <https://www.imdb.com/name/nm0556977/> ;
+    schema:birthDate "1919-01-12"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Thomas B. Mason. Actor: Mississippi Burning. Thomas B. Mason was born on 12 January 1919 in Lynchburg, Virginia, USA. He was an actor, known for Mississippi Burning (1988), In a Shallow Grave (1988) and Gods and Generals (2003). He died on 8 March 2007 in Roanoke, Virginia, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Lynchburg, Virginia, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0279111/>,    # Gods and Generals
+                       <https://www.imdb.com/title/tt0095647/>,    # Mississippi Burning
+                       <https://www.imdb.com/title/tt0095364/> . # In a Shallow Grave
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gods and Generals (2003)
+<https://www.imdb.com/title/tt0279111/> a schema:Movie ;
+    schema:name "Gods and Generals" ;
+    schema:url <https://www.imdb.com/title/tt0279111/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0556977/> ;
+        schema:characterName "Old Man in Fredericksburg"
+    ] .
+
+# Mississippi Burning (1988)
+<https://www.imdb.com/title/tt0095647/> a schema:Movie ;
+    schema:name "Mississippi Burning" ;
+    schema:url <https://www.imdb.com/title/tt0095647/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0556977/> ;
+        schema:characterName "Judge"
+    ] .
+
+# In a Shallow Grave (1988)
+<https://www.imdb.com/title/tt0095364/> a schema:Movie ;
+    schema:name "In a Shallow Grave" ;
+    schema:url <https://www.imdb.com/title/tt0095364/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0556977/> ;
+        schema:characterName "Edgar Doust"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

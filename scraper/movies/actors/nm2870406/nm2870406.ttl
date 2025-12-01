@@ -1,0 +1,421 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2870406/> a schema:Person ;
+    schema:name "Ian Harding" ;
+    schema:url <https://www.imdb.com/name/nm2870406/> ;
+    schema:birthDate "1986-09-16"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Ian Harding. Actor: Pretty Little Liars. Ian Harding was born on 16 September 1986 in Heidelberg, Baden-Württemberg, Germany. He is an actor and producer, known for Pretty Little Liars (2010), Le Mans '66 (2019) and Adventureland (2009). He has been married to Sophie Hart since October 2019." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjExNTk4MzI0OV5BMl5BanBnXkFtZTgwODkzODE0MjE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Heidelberg, Baden-Württemberg, Germany"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1578873/>,    # Pretty Little Liars
+                       <https://www.imdb.com/title/tt1950186/>,    # Ford v Ferrari
+                       <https://www.imdb.com/title/tt31022050/>,    # Our Little Secret
+                       <https://www.imdb.com/title/tt4655480/>,    # Chicago Med
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7413448/>,    # Pretty Little Liars: The Perfectionists
+                       <https://www.imdb.com/title/tt7769464/>,    # No Apologies
+                       <https://www.imdb.com/title/tt9028396/>,    # Shatterbox
+                       <https://www.imdb.com/title/tt6251024/>,    # Office Uprising
+                       <https://www.imdb.com/title/tt6314412/>,    # Thin Ice
+                       <https://www.imdb.com/title/tt6582446/>,    # Flip the Script
+                       <https://www.imdb.com/title/tt5318534/>,    # People You May Know
+                       <https://www.imdb.com/title/tt4397372/>,    # Break: The Musical
+                       <https://www.imdb.com/title/tt4126006/>,    # Super Novas
+                       <https://www.imdb.com/title/tt5424256/>,    # Pale Blue
+                       <https://www.imdb.com/title/tt3250284/>,    # Minimum Wage
+                       <https://www.imdb.com/title/tt3328924/>,    # Addiction: A 60's Love Story
+                       <https://www.imdb.com/title/tt2957618/>,    # Immediately Afterlife
+                       <https://www.imdb.com/title/tt3116694/>,    # Business Card on the Rocks
+                       <https://www.imdb.com/title/tt5596296/>,    # I'm Not a DJ
+                       <https://www.imdb.com/title/tt2553686/>,    # Christmas Without You
+                       <https://www.imdb.com/title/tt1156300/>,    # Deadtime Stories 2
+                       <https://www.imdb.com/title/tt0758752/>,    # Love & Other Drugs
+                       <https://www.imdb.com/title/tt1721547/>,    # Hollywood Is Like High School with Money
+                       <https://www.imdb.com/title/tt1378167/>,    # NCIS: Los Angeles
+                       <https://www.imdb.com/title/tt1091722/>,    # Adventureland
+                       <https://www.imdb.com/title/tt1086702/> ; # Groom with a View
+
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2159921433/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2870406/mediaviewer/rm2207540993/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm3858575104/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm3841797888/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2482843392/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2432511744/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2684169984/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2667392768/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2633838336/>,
+                 <https://www.imdb.com/name/nm2870406/mediaviewer/rm2617061120/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1578873/> a schema:Movie ;
+    schema:name "Pretty Little Liars" ;
+    schema:url <https://www.imdb.com/title/tt1578873/> .
+
+<https://www.imdb.com/title/tt1950186/> a schema:Movie ;
+    schema:name "Ford v Ferrari" ;
+    schema:url <https://www.imdb.com/title/tt1950186/> .
+
+<https://www.imdb.com/title/tt31022050/> a schema:Movie ;
+    schema:name "Our Little Secret" ;
+    schema:url <https://www.imdb.com/title/tt31022050/> .
+
+<https://www.imdb.com/title/tt4655480/> a schema:Movie ;
+    schema:name "Chicago Med" ;
+    schema:url <https://www.imdb.com/title/tt4655480/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pretty Little Liars: The Perfectionists (2019)
+<https://www.imdb.com/title/tt7413448/> a schema:Movie ;
+    schema:name "Pretty Little Liars: The Perfectionists" ;
+    schema:url <https://www.imdb.com/title/tt7413448/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Ezra Fitz"
+    ] .
+
+# No Apologies (2018)
+<https://www.imdb.com/title/tt7769464/> a schema:Movie ;
+    schema:name "No Apologies" ;
+    schema:url <https://www.imdb.com/title/tt7769464/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Sam Gerard"
+    ] .
+
+# Shatterbox (2018)
+<https://www.imdb.com/title/tt9028396/> a schema:Movie ;
+    schema:name "Shatterbox" ;
+    schema:url <https://www.imdb.com/title/tt9028396/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Tim"
+    ] .
+
+# Office Uprising (2018)
+<https://www.imdb.com/title/tt6251024/> a schema:Movie ;
+    schema:name "Office Uprising" ;
+    schema:url <https://www.imdb.com/title/tt6251024/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Nicholas Frohm"
+    ] .
+
+# Thin Ice (2017)
+<https://www.imdb.com/title/tt6314412/> a schema:Movie ;
+    schema:name "Thin Ice" ;
+    schema:url <https://www.imdb.com/title/tt6314412/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Andrew"
+    ] .
+
+# Flip the Script (2017)
+<https://www.imdb.com/title/tt6582446/> a schema:Movie ;
+    schema:name "Flip the Script" ;
+    schema:url <https://www.imdb.com/title/tt6582446/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "The Producer"
+    ] .
+
+# People You May Know (2017)
+<https://www.imdb.com/title/tt5318534/> a schema:Movie ;
+    schema:name "People You May Know" ;
+    schema:url <https://www.imdb.com/title/tt5318534/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Phillip"
+    ] .
+
+# Break: The Musical (2016)
+<https://www.imdb.com/title/tt4397372/> a schema:Movie ;
+    schema:name "Break: The Musical" ;
+    schema:url <https://www.imdb.com/title/tt4397372/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Rockstar"
+    ] .
+
+# Super Novas (2016)
+<https://www.imdb.com/title/tt4126006/> a schema:Movie ;
+    schema:name "Super Novas" ;
+    schema:url <https://www.imdb.com/title/tt4126006/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Alex"
+    ] .
+
+# Pale Blue (2016)
+<https://www.imdb.com/title/tt5424256/> a schema:Movie ;
+    schema:name "Pale Blue" ;
+    schema:url <https://www.imdb.com/title/tt5424256/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Ben"
+    ] .
+
+# Minimum Wage (2015)
+<https://www.imdb.com/title/tt3250284/> a schema:Movie ;
+    schema:name "Minimum Wage" ;
+    schema:url <https://www.imdb.com/title/tt3250284/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Tim"
+    ] .
+
+# Addiction: A 60's Love Story (2015)
+<https://www.imdb.com/title/tt3328924/> a schema:Movie ;
+    schema:name "Addiction: A 60's Love Story" ;
+    schema:url <https://www.imdb.com/title/tt3328924/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Max Bornstein"
+    ] .
+
+# Immediately Afterlife (2014)
+<https://www.imdb.com/title/tt2957618/> a schema:Movie ;
+    schema:name "Immediately Afterlife" ;
+    schema:url <https://www.imdb.com/title/tt2957618/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Elder Paul Fields"
+    ] .
+
+# Business Card on the Rocks (2013)
+<https://www.imdb.com/title/tt3116694/> a schema:Movie ;
+    schema:name "Business Card on the Rocks" ;
+    schema:url <https://www.imdb.com/title/tt3116694/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Ben"
+    ] .
+
+# I'm Not a DJ (2012)
+<https://www.imdb.com/title/tt5596296/> a schema:Movie ;
+    schema:name "I'm Not a DJ" ;
+    schema:url <https://www.imdb.com/title/tt5596296/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Matt"
+    ] .
+
+# Christmas Without You (2012)
+<https://www.imdb.com/title/tt2553686/> a schema:Movie ;
+    schema:name "Christmas Without You" ;
+    schema:url <https://www.imdb.com/title/tt2553686/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Nathan Stewart"
+    ] .
+
+# Deadtime Stories 2 (2011)
+<https://www.imdb.com/title/tt1156300/> a schema:Movie ;
+    schema:name "Deadtime Stories 2" ;
+    schema:url <https://www.imdb.com/title/tt1156300/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Ryan"
+    ] .
+
+# Love & Other Drugs (2010)
+<https://www.imdb.com/title/tt0758752/> a schema:Movie ;
+    schema:name "Love & Other Drugs" ;
+    schema:url <https://www.imdb.com/title/tt0758752/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Pfizer Trainee #1"
+    ] .
+
+# Hollywood Is Like High School with Money (2010)
+<https://www.imdb.com/title/tt1721547/> a schema:Movie ;
+    schema:name "Hollywood Is Like High School with Money" ;
+    schema:url <https://www.imdb.com/title/tt1721547/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Jamie Hunter"
+    ] .
+
+# NCIS: Los Angeles (2010)
+<https://www.imdb.com/title/tt1378167/> a schema:Movie ;
+    schema:name "NCIS: Los Angeles" ;
+    schema:url <https://www.imdb.com/title/tt1378167/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Curtis Lacross"
+    ] .
+
+# Adventureland (2009)
+<https://www.imdb.com/title/tt1091722/> a schema:Movie ;
+    schema:name "Adventureland" ;
+    schema:url <https://www.imdb.com/title/tt1091722/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Wealthy Prepster"
+    ] .
+
+# Groom with a View (2007)
+<https://www.imdb.com/title/tt1086702/> a schema:Movie ;
+    schema:name "Groom with a View" ;
+    schema:url <https://www.imdb.com/title/tt1086702/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2870406/> ;
+        schema:characterName "Teen Lincoln"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2159921433/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Two resentful exes must awkwardly spend Christmas together after learning their new partners are siblings." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2159921433/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjBiNmNmZWUtN2JhNi00ZDc4LWE5ZDktYzdkMTNiMTZiYjQ5XkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg" ;
+        schema:duration "PT2M4S"^^xsd:duration ;
+        schema:uploadDate "2024-10-25T14:17:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjExNTk4MzI0OV5BMl5BanBnXkFtZTgwODkzODE0MjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjExNTk4MzI0OV5BMl5BanBnXkFtZTgwODkzODE0MjE@._V1_.jpg> ;
+    schema:caption "Ian Harding at an event for Teen Choice Awards 2014 (2014)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2207540993/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGU1ZmFjMDAtMmFlYy00ZTE2LThmMmYtZTM0MzM3OWM2MDM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lindsay Lohan, Ian Harding, and Jon Rudnitsky in Our Little Secret (2024)" ;
+    schema:height "3560"^^xsd:integer ;
+    schema:width "5340"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm3858575104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGY5NGQ5ZTQtMzY3Zi00MDkzLWI3MWQtNDFmYzFiZmNmYTZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Hale and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm3841797888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmU4OTBkMTktZjMwZi00NDc4LWFkMzYtNzNhMTRkYWFhMjRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Keegan Allen, Lucy Hale, Tyler Blackburn, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2482843392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAzZjNlZGMtOTU4ZC00MmI1LTk3ODUtOTU4MDhhZGZhMDhiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lucy Hale, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2432511744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDFkZTJjMmYtYTBiYi00OWM0LWI1MjEtYTZjNWVmOTNmOTJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lesley Fera, Lucy Hale, Tyler Blackburn, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2684169984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQ4YzZmMjQtMDdjZS00NjBmLWJlZmEtNDUxNmE4ZjBjOGFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lucy Hale, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2667392768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGViYmJmZWItN2E0Zi00NTMxLTkxYWEtNmFkMTljYzliMjdiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lucy Hale, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2633838336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzcwZWZmM2MtMmM4My00ODQyLTk5ZDUtMGFjYzY1OGY4OGY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lucy Hale, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "2004"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2870406/mediaviewer/rm2617061120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjFjMDk2NDctMDRiZC00MmRkLWIwMmItMGE3NDFmNzMyZTc4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murphy Dunne, Lucy Hale, and Ian Harding in Pretty Little Liars (2010)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2004"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2870406/>
+    schema:sameAs <https://www.facebook.com/ianmharding/>,
+                  <https://www.instagram.com/ianmharding/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

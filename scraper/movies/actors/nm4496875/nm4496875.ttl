@@ -1,0 +1,395 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4496875/> a schema:Person ;
+    schema:name "Mackenzie Davis" ;
+    schema:url <https://www.imdb.com/name/nm4496875/> ;
+    schema:jobTitle "Actress", "Producer", "Director" ;
+    schema:description "Mackenzie Davis. Actress: Terminator: Dark Fate. Mackenzie Davis was born in Vancouver, British Columbia, Canada. She is an actress and producer, known for Terminator: Dark Fate (2019), Black Mirror (2011) and Blade Runner 2049 (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzcwZTQ2MmYtYzE5Ny00ZmFiLWFhZjMtMGU2OTk0ZmFjZTQxXkEyXkFqcGc@._V1_CR641,0,876,1313_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Vancouver, British Columbia, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.79"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10½″ (1.79 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6450804/>,    # Terminator: Dark Fate
+                       <https://www.imdb.com/title/tt1856101/>,    # Blade Runner 2049
+                       <https://www.imdb.com/title/tt2085059/>,    # Black Mirror
+                       <https://www.imdb.com/title/tt5610554/>,    # Tully
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8801880/>,    # Gears 5
+                       <https://www.imdb.com/title/tt8521684/>,    # Boomerang
+                       <https://www.imdb.com/title/tt7230846/>,    # No Activity
+                       <https://www.imdb.com/title/tt2543312/>,    # Halt and Catch Fire
+                       <https://www.imdb.com/title/tt5198796/>,    # Izzy Gets the Fuck Across Town
+                       <https://www.imdb.com/title/tt4282808/>,    # Memory Box
+                       <https://www.imdb.com/title/tt4392770/>,    # Always Shine
+                       <https://www.imdb.com/title/tt1817771/>,    # Freaks of Nature
+                       <https://www.imdb.com/title/tt3659388/>,    # The Martian
+                       <https://www.imdb.com/title/tt3953626/>,    # A Country Called Home
+                       <https://www.imdb.com/title/tt1800246/>,    # That Awkward Moment
+                       <https://www.imdb.com/title/tt2975946/>,    # Moontown
+                       <https://www.imdb.com/title/tt2040470/>,    # Plato's Reality Machine
+                       <https://www.imdb.com/title/tt2873214/>,    # Bad Turn Worse
+                       <https://www.imdb.com/title/tt1486834/>,    # What If
+                       <https://www.imdb.com/title/tt1999987/>,    # Breathe In
+                       <https://www.imdb.com/title/tt2145548/>,    # The Hat Goes Wild
+                       <https://www.imdb.com/title/tt2008890/>,    # I Just Want My Pants Back
+                       <https://www.imdb.com/title/tt2063781/>,    # Smashed
+                       <https://www.imdb.com/title/tt1957839/> ; # Alex
+
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 9 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi760202009/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4496875/mediaviewer/rm2729919488/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm2746841089/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm810819841/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm1062478081/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm4290333696/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm2090608384/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm2416942850/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm3510790145/>,
+                 <https://www.imdb.com/name/nm4496875/mediaviewer/rm4047952897/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt6450804/> a schema:Movie ;
+    schema:name "Terminator: Dark Fate" ;
+    schema:url <https://www.imdb.com/title/tt6450804/> .
+
+<https://www.imdb.com/title/tt1856101/> a schema:Movie ;
+    schema:name "Blade Runner 2049" ;
+    schema:url <https://www.imdb.com/title/tt1856101/> .
+
+<https://www.imdb.com/title/tt2085059/> a schema:Movie ;
+    schema:name "Black Mirror" ;
+    schema:url <https://www.imdb.com/title/tt2085059/> .
+
+<https://www.imdb.com/title/tt5610554/> a schema:Movie ;
+    schema:name "Tully" ;
+    schema:url <https://www.imdb.com/title/tt5610554/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gears 5 (2019)
+<https://www.imdb.com/title/tt8801880/> a schema:Movie ;
+    schema:name "Gears 5" ;
+    schema:url <https://www.imdb.com/title/tt8801880/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Grace"
+    ] .
+
+# Boomerang (2018)
+<https://www.imdb.com/title/tt8521684/> a schema:Movie ;
+    schema:name "Boomerang" ;
+    schema:url <https://www.imdb.com/title/tt8521684/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Jenifer"
+    ] .
+
+# No Activity (2017)
+<https://www.imdb.com/title/tt7230846/> a schema:Movie ;
+    schema:name "No Activity" ;
+    schema:url <https://www.imdb.com/title/tt7230846/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Patricia"
+    ] .
+
+# Halt and Catch Fire (2014)
+<https://www.imdb.com/title/tt2543312/> a schema:Movie ;
+    schema:name "Halt and Catch Fire" ;
+    schema:url <https://www.imdb.com/title/tt2543312/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Cameron Howe"
+    ] .
+
+# Izzy Gets the Fuck Across Town (2017)
+<https://www.imdb.com/title/tt5198796/> a schema:Movie ;
+    schema:name "Izzy Gets the Fuck Across Town" ;
+    schema:url <https://www.imdb.com/title/tt5198796/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Izzy"
+    ] .
+
+# Memory Box (2016)
+<https://www.imdb.com/title/tt4282808/> a schema:Movie ;
+    schema:name "Memory Box" ;
+    schema:url <https://www.imdb.com/title/tt4282808/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Isabelle"
+    ] .
+
+# Always Shine (2016)
+<https://www.imdb.com/title/tt4392770/> a schema:Movie ;
+    schema:name "Always Shine" ;
+    schema:url <https://www.imdb.com/title/tt4392770/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Anna"
+    ] .
+
+# Freaks of Nature (2015)
+<https://www.imdb.com/title/tt1817771/> a schema:Movie ;
+    schema:name "Freaks of Nature" ;
+    schema:url <https://www.imdb.com/title/tt1817771/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Petra"
+    ] .
+
+# The Martian (2015)
+<https://www.imdb.com/title/tt3659388/> a schema:Movie ;
+    schema:name "The Martian" ;
+    schema:url <https://www.imdb.com/title/tt3659388/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Mindy Park"
+    ] .
+
+# A Country Called Home (2015)
+<https://www.imdb.com/title/tt3953626/> a schema:Movie ;
+    schema:name "A Country Called Home" ;
+    schema:url <https://www.imdb.com/title/tt3953626/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Reno"
+    ] .
+
+# That Awkward Moment (2014)
+<https://www.imdb.com/title/tt1800246/> a schema:Movie ;
+    schema:name "That Awkward Moment" ;
+    schema:url <https://www.imdb.com/title/tt1800246/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Chelsea"
+    ] .
+
+# Moontown (2013)
+<https://www.imdb.com/title/tt2975946/> a schema:Movie ;
+    schema:name "Moontown" ;
+    schema:url <https://www.imdb.com/title/tt2975946/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Shayna"
+    ] .
+
+# Plato's Reality Machine (2013)
+<https://www.imdb.com/title/tt2040470/> a schema:Movie ;
+    schema:name "Plato's Reality Machine" ;
+    schema:url <https://www.imdb.com/title/tt2040470/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Sophia"
+    ] .
+
+# Bad Turn Worse (2013)
+<https://www.imdb.com/title/tt2873214/> a schema:Movie ;
+    schema:name "Bad Turn Worse" ;
+    schema:url <https://www.imdb.com/title/tt2873214/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Sue"
+    ] .
+
+# What If (2013)
+<https://www.imdb.com/title/tt1486834/> a schema:Movie ;
+    schema:name "What If" ;
+    schema:url <https://www.imdb.com/title/tt1486834/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Nicole"
+    ] .
+
+# Breathe In (2013)
+<https://www.imdb.com/title/tt1999987/> a schema:Movie ;
+    schema:name "Breathe In" ;
+    schema:url <https://www.imdb.com/title/tt1999987/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Lauren Reynolds"
+    ] .
+
+# The Hat Goes Wild (2012)
+<https://www.imdb.com/title/tt2145548/> a schema:Movie ;
+    schema:name "The Hat Goes Wild" ;
+    schema:url <https://www.imdb.com/title/tt2145548/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Cathy"
+    ] .
+
+# I Just Want My Pants Back (2012)
+<https://www.imdb.com/title/tt2008890/> a schema:Movie ;
+    schema:name "I Just Want My Pants Back" ;
+    schema:url <https://www.imdb.com/title/tt2008890/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Lucie"
+    ] .
+
+# Smashed (2012)
+<https://www.imdb.com/title/tt2063781/> a schema:Movie ;
+    schema:name "Smashed" ;
+    schema:url <https://www.imdb.com/title/tt2063781/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Millie"
+    ] .
+
+# Alex (2011)
+<https://www.imdb.com/title/tt1957839/> a schema:Movie ;
+    schema:name "Alex" ;
+    schema:url <https://www.imdb.com/title/tt1957839/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4496875/> ;
+        schema:characterName "Teri"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi760202009/> a schema:VideoObject ;
+        schema:name "Mackenzie Davis | Career Retrospective" ;
+        schema:description "Take a closer look at the various roles Mackenzie Davis has played throughout her acting career." ;
+        schema:embedUrl <https://www.imdb.com/video/vi760202009/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTQxMDlhM2EtNGE4My00ZjNlLTlmNmQtZDM3NTNlOWQ2ZDQxXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M28S"^^xsd:duration ;
+        schema:uploadDate "2022-03-26T12:35:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzcwZTQ2MmYtYzE5Ny00ZmFiLWFhZjMtMGU2OTk0ZmFjZTQxXkEyXkFqcGc@._V1_CR641,0,876,1313_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzcwZTQ2MmYtYzE5Ny00ZmFiLWFhZjMtMGU2OTk0ZmFjZTQxXkEyXkFqcGc@._V1_CR641,0,876,1313_.jpg> ;
+    schema:caption "Mackenzie Davis" ;
+    schema:height "1313"^^xsd:integer ;
+    schema:width "876"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm2729919488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGE5MTIxNDgtNjY1ZC00YTI0LTgzYjAtNDM2MmMyOTVhZjdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mackenzie Davis in Blade Runner 2049 (2017)" ;
+    schema:height "796"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm2746841089/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMyZTdmMzgtOWZiOC00NTRmLTgxZjgtYWMzNGZlZGUyZGI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Scoot McNairy, Alix West Lefler, and Mackenzie Davis in Speak No Evil (2024)" ;
+    schema:height "3417"^^xsd:integer ;
+    schema:width "5129"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm810819841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDA0MmVmMjctNGM5MS00MzFmLThmZGUtNGNiNGZmZjIxODQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mackenzie Davis in Station Eleven (2021)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm1062478081/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGE1OTBhNzQtMzcwNi00YWZjLTgxNTQtZjcyM2FlM2M5M2Q1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mackenzie Davis in Station Eleven (2021)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm4290333696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjBmMDgxNWItYzNhZi00YjY1LWE0OGMtMjU0YzVkNTg0M2MxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chelsea Clinton, Mark Ruffalo, and Mackenzie Davis in The Late Late Show with James Corden (2015)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm2090608384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM4MDc0MDI1OF5BMl5BanBnXkFtZTgwODM5MjY2MzI@._V1_.jpg> ;
+    schema:caption "Krista Kosonen, Elarica Johnson, and Mackenzie Davis in Blade Runner 2049 (2017)" ;
+    schema:height "856"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm2416942850/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWVkZDcyYjAtMjI2My00OWQzLTgwZTMtZTAyZThmOWFkY2E1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alix West Lefler and Mackenzie Davis in Speak No Evil (2024)" ;
+    schema:height "781"^^xsd:integer ;
+    schema:width "798"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm3510790145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxODRlNmYtMmYxMS00NjZlLWJiMTgtNWVmYTdmY2NiYTlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James McAvoy and Mackenzie Davis in How James McAvoy and Mackenzie Davis Blend Humor With Horror in 'Speak No Evil' (2024)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4496875/mediaviewer/rm4047952897/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjZmYTM2NjQtN2Q3OC00MTE3LWIwMGMtMzk4NzAzYTc3NGUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kristen Stewart, Jillian Bell, and Mackenzie Davis in What to Watch (2020)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm4496875/>
+    schema:sameAs <https://www.instagram.com/mackenziedavis?igsh=MWQyeXNkdmI3YW4zOA==> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,473 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000358/> a schema:Person ;
+    schema:name "Daniel Day-Lewis" ;
+    schema:url <https://www.imdb.com/name/nm0000358/> ;
+    schema:birthDate "1957-04-29"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Music Department" ;
+    schema:alternateName "DDL", "Daniel Michael Blake Day-Lewis" ;
+    schema:description "Daniel Day-Lewis. Actor: There Will Be Blood. Born in London, England, Daniel Michael Blake Day-Lewis is the second child of Cecil Day-Lewis, Poet Laureate of the U.K., and his second wife, actress Jill Balcon. His maternal grandfather was Sir Michael Balcon, an important figure in the history of British cinema and head of the famous Ealing Studios. His older sister, Tamasin Day-Lewis, is a documentarian. His father was of Northern..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE2NDY2NDc1Ml5BMl5BanBnXkFtZTcwNjAyMjkwOQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Greenwich, London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.86"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1¼″ (1.86 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0469494/>,    # There Will Be Blood
+                       <https://www.imdb.com/title/tt0104691/>,    # The Last of the Mohicans
+                       <https://www.imdb.com/title/tt0443272/>,    # Lincoln
+                       <https://www.imdb.com/title/tt5776858/>,    # Phantom Thread
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0875034/>,    # Nine
+                       <https://www.imdb.com/title/tt0357110/>,    # The Ballad of Jack and Rose
+                       <https://www.imdb.com/title/tt0217505/>,    # Gangs of New York
+                       <https://www.imdb.com/title/tt0118760/>,    # The Boxer
+                       <https://www.imdb.com/title/tt0115988/>,    # The Crucible
+                       <https://www.imdb.com/title/tt0107207/>,    # In the Name of the Father
+                       <https://www.imdb.com/title/tt0106226/>,    # The Age of Innocence
+                       <https://www.imdb.com/title/tt0097302/>,    # Eversmile, New Jersey
+                       <https://www.imdb.com/title/tt0097937/>,    # My Left Foot
+                       <https://www.imdb.com/title/tt0096166/>,    # Stars and Bars
+                       <https://www.imdb.com/title/tt0096332/>,    # The Unbearable Lightness of Being
+                       <https://www.imdb.com/title/tt0091608/>,    # Nanou
+                       <https://www.imdb.com/title/tt0297626/>,    # Screen Two
+                       <https://www.imdb.com/title/tt0091867/>,    # A Room with a View
+                       <https://www.imdb.com/title/tt0244086/>,    # My Brother Jonathan
+                       <https://www.imdb.com/title/tt0091578/>,    # My Beautiful Laundrette
+                       <https://www.imdb.com/title/tt0086993/>,    # The Bounty
+                       <https://www.imdb.com/title/tt0165593/>,    # BBC Play of the Month
+                       <https://www.imdb.com/title/tt0083987/>,    # Gandhi
+                       <https://www.imdb.com/title/tt0233760/>,    # Frost in May
+                       <https://www.imdb.com/title/tt0762803/>,    # BBC2 Playhouse
+                       <https://www.imdb.com/title/tt0082030/>,    # Artemis 81
+                       <https://www.imdb.com/title/tt1533751/>,    # Thank You, P.G. Wodehouse
+                       <https://www.imdb.com/title/tt0078690/>,    # Shoestring
+                       <https://www.imdb.com/title/tt0067805/> ; # Sunday Bloody Sunday
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 3 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "146 wins & 94 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (The Crucible)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "8000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2598879257/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000358/mediaviewer/rm2091757314/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm2125311746/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm1890430722/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm2175903746/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm1580184578/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm2865639681/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm2381127425/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm1191044609/>,
+                 <https://www.imdb.com/name/nm0000358/mediaviewer/rm1644029441/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0469494/> a schema:Movie ;
+    schema:name "There Will Be Blood" ;
+    schema:url <https://www.imdb.com/title/tt0469494/> .
+
+<https://www.imdb.com/title/tt0104691/> a schema:Movie ;
+    schema:name "The Last of the Mohicans" ;
+    schema:url <https://www.imdb.com/title/tt0104691/> .
+
+<https://www.imdb.com/title/tt0443272/> a schema:Movie ;
+    schema:name "Lincoln" ;
+    schema:url <https://www.imdb.com/title/tt0443272/> .
+
+<https://www.imdb.com/title/tt5776858/> a schema:Movie ;
+    schema:name "Phantom Thread" ;
+    schema:url <https://www.imdb.com/title/tt5776858/> .
+
+<https://www.imdb.com/title/tt0115988/> a schema:Movie ;
+    schema:name "The Crucible" ;
+    schema:url <https://www.imdb.com/title/tt0115988/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Nine (2009)
+<https://www.imdb.com/title/tt0875034/> a schema:Movie ;
+    schema:name "Nine" ;
+    schema:url <https://www.imdb.com/title/tt0875034/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Guido Contini"
+    ] .
+
+# The Ballad of Jack and Rose (2005)
+<https://www.imdb.com/title/tt0357110/> a schema:Movie ;
+    schema:name "The Ballad of Jack and Rose" ;
+    schema:url <https://www.imdb.com/title/tt0357110/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Jack Slavin"
+    ] .
+
+# Gangs of New York (2002)
+<https://www.imdb.com/title/tt0217505/> a schema:Movie ;
+    schema:name "Gangs of New York" ;
+    schema:url <https://www.imdb.com/title/tt0217505/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Bill 'The Butcher' Cutting"
+    ] .
+
+# The Boxer (1997)
+<https://www.imdb.com/title/tt0118760/> a schema:Movie ;
+    schema:name "The Boxer" ;
+    schema:url <https://www.imdb.com/title/tt0118760/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Danny Flynn"
+    ] .
+
+# The Crucible (1996)
+<https://www.imdb.com/title/tt0115988/> a schema:Movie ;
+    schema:name "The Crucible" ;
+    schema:url <https://www.imdb.com/title/tt0115988/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "John Proctor"
+    ] .
+
+# In the Name of the Father (1993)
+<https://www.imdb.com/title/tt0107207/> a schema:Movie ;
+    schema:name "In the Name of the Father" ;
+    schema:url <https://www.imdb.com/title/tt0107207/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Gerry Conlon"
+    ] .
+
+# The Age of Innocence (1993)
+<https://www.imdb.com/title/tt0106226/> a schema:Movie ;
+    schema:name "The Age of Innocence" ;
+    schema:url <https://www.imdb.com/title/tt0106226/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Newland Archer"
+    ] .
+
+# Eversmile, New Jersey (1989)
+<https://www.imdb.com/title/tt0097302/> a schema:Movie ;
+    schema:name "Eversmile, New Jersey" ;
+    schema:url <https://www.imdb.com/title/tt0097302/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Fergus O'Connell"
+    ] .
+
+# My Left Foot (1989)
+<https://www.imdb.com/title/tt0097937/> a schema:Movie ;
+    schema:name "My Left Foot" ;
+    schema:url <https://www.imdb.com/title/tt0097937/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Christy Brown"
+    ] .
+
+# Stars and Bars (1988)
+<https://www.imdb.com/title/tt0096166/> a schema:Movie ;
+    schema:name "Stars and Bars" ;
+    schema:url <https://www.imdb.com/title/tt0096166/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Henderson Dores"
+    ] .
+
+# The Unbearable Lightness of Being (1988)
+<https://www.imdb.com/title/tt0096332/> a schema:Movie ;
+    schema:name "The Unbearable Lightness of Being" ;
+    schema:url <https://www.imdb.com/title/tt0096332/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Tomas"
+    ] .
+
+# Nanou (1986)
+<https://www.imdb.com/title/tt0091608/> a schema:Movie ;
+    schema:name "Nanou" ;
+    schema:url <https://www.imdb.com/title/tt0091608/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Max"
+    ] .
+
+# Screen Two (1986)
+<https://www.imdb.com/title/tt0297626/> a schema:Movie ;
+    schema:name "Screen Two" ;
+    schema:url <https://www.imdb.com/title/tt0297626/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Kafka"
+    ] .
+
+# A Room with a View (1985)
+<https://www.imdb.com/title/tt0091867/> a schema:Movie ;
+    schema:name "A Room with a View" ;
+    schema:url <https://www.imdb.com/title/tt0091867/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Cecil Vyse"
+    ] .
+
+# My Brother Jonathan (1985)
+<https://www.imdb.com/title/tt0244086/> a schema:Movie ;
+    schema:name "My Brother Jonathan" ;
+    schema:url <https://www.imdb.com/title/tt0244086/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Jonathan Dakers"
+    ] .
+
+# My Beautiful Laundrette (1985)
+<https://www.imdb.com/title/tt0091578/> a schema:Movie ;
+    schema:name "My Beautiful Laundrette" ;
+    schema:url <https://www.imdb.com/title/tt0091578/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Johnny"
+    ] .
+
+# The Bounty (1984)
+<https://www.imdb.com/title/tt0086993/> a schema:Movie ;
+    schema:name "The Bounty" ;
+    schema:url <https://www.imdb.com/title/tt0086993/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Fryer"
+    ] .
+
+# BBC Play of the Month (1983)
+<https://www.imdb.com/title/tt0165593/> a schema:Movie ;
+    schema:name "BBC Play of the Month" ;
+    schema:url <https://www.imdb.com/title/tt0165593/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Gordon Whitehouse"
+    ] .
+
+# Gandhi (1982)
+<https://www.imdb.com/title/tt0083987/> a schema:Movie ;
+    schema:name "Gandhi" ;
+    schema:url <https://www.imdb.com/title/tt0083987/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Colin"
+    ] .
+
+# Frost in May (1982)
+<https://www.imdb.com/title/tt0233760/> a schema:Movie ;
+    schema:name "Frost in May" ;
+    schema:url <https://www.imdb.com/title/tt0233760/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Archie Hughes-Follett"
+    ] .
+
+# BBC2 Playhouse (1982)
+<https://www.imdb.com/title/tt0762803/> a schema:Movie ;
+    schema:name "BBC2 Playhouse" ;
+    schema:url <https://www.imdb.com/title/tt0762803/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Alex"
+    ] .
+
+# Artemis 81 (1981)
+<https://www.imdb.com/title/tt0082030/> a schema:Movie ;
+    schema:name "Artemis 81" ;
+    schema:url <https://www.imdb.com/title/tt0082030/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Library Student"
+    ] .
+
+# Thank You, P.G. Wodehouse (1981)
+<https://www.imdb.com/title/tt1533751/> a schema:Movie ;
+    schema:name "Thank You, P.G. Wodehouse" ;
+    schema:url <https://www.imdb.com/title/tt1533751/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Psmith"
+    ] .
+
+# Shoestring (1980)
+<https://www.imdb.com/title/tt0078690/> a schema:Movie ;
+    schema:name "Shoestring" ;
+    schema:url <https://www.imdb.com/title/tt0078690/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "DJ"
+    ] .
+
+# Sunday Bloody Sunday (1971)
+<https://www.imdb.com/title/tt0067805/> a schema:Movie ;
+    schema:name "Sunday Bloody Sunday" ;
+    schema:url <https://www.imdb.com/title/tt0067805/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000358/> ;
+        schema:characterName "Child Vandal"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2598879257/> a schema:VideoObject ;
+        schema:name "Daniel Day-Lewis | Career Retrospective" ;
+        schema:description "From 'My Left Foot' to 'Phantom Thread,' we take a look back at Daniel Day-Lewis's acting career. Which role is your favorite?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2598879257/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTgzNzU3N2QtYTM0OC00MjBmLWFiOGQtNWQ4ZTQwYjA3MjZmXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2021-04-24T19:32:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE2NDY2NDc1Ml5BMl5BanBnXkFtZTcwNjAyMjkwOQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE2NDY2NDc1Ml5BMl5BanBnXkFtZTcwNjAyMjkwOQ@@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1556"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm2091757314/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTZjYzQ2YWQtZjJlYS00OThmLTg0Y2EtODJkYzllN2NlYjIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis in Anemone (2025)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1278"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm2125311746/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTNlOGNmOTctYWViOS00MWZiLThkYTYtN2UwMDg3MDJiMGYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis in Anemone (2025)" ;
+    schema:height "530"^^xsd:integer ;
+    schema:width "1286"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm1890430722/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWM0ZWYwNjYtY2RjMi00NGFkLWI3NmItMTIyNGNhOTgwOWFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis in Anemone (2025)" ;
+    schema:height "522"^^xsd:integer ;
+    schema:width "1288"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm2175903746/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzE4ZTQ2MzktZDA4MC00ZGIzLTlmMDEtODY0OTQyMTRlY2MzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis in There Will Be Blood (2007)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1290"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm1580184578/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODJlOTFjYTktNTg5ZC00Y2UyLThjNWQtYzM5NDFkNmJmMjMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sean Bean and Daniel Day-Lewis in Anemone (2025)" ;
+    schema:height "1716"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm2865639681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzBjYzM3ZDUtM2JlNS00YmZhLTkzMmUtM2VhNDU3M2QyNjRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michelle Pfeiffer and Daniel Day-Lewis in The Age of Innocence (1993)" ;
+    schema:height "3753"^^xsd:integer ;
+    schema:width "5566"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm2381127425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTRkNDZhNDAtMWIwOS00NWQxLWI3YzEtMzk5ZmJkM2IyMjRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis and Eric Schweig in The Last of the Mohicans (1992)" ;
+    schema:height "681"^^xsd:integer ;
+    schema:width "758"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm1191044609/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmI0ZjgxMjctYzM4NC00ZDFjLThiMTMtMzFkZDkxZjIwZjA1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis and Gordon Warnecke in My Beautiful Laundrette (1985)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000358/mediaviewer/rm1644029441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODRmMzIwMWItYjRhMC00ZDliLTkzY2YtZTIxNTk3ZDFmYTFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Day-Lewis and Gordon Warnecke in My Beautiful Laundrette (1985)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

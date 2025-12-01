@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1716305/> a schema:Person ;
+    schema:name "Denis Evrard" ;
+    schema:url <https://www.imdb.com/name/nm1716305/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Denis Evrard. Actor: Before Sunset. Denis Evrard is known for Before Sunset (2004), Femme Fatale (2002) and Le personnage (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1726681/>,    # Le personnage
+                       <https://www.imdb.com/title/tt0381681/> . # Before Sunset
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Le personnage (2005)
+<https://www.imdb.com/title/tt1726681/> a schema:Movie ;
+    schema:name "Le personnage" ;
+    schema:url <https://www.imdb.com/title/tt1726681/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1716305/> ;
+        schema:characterName "Acteur 1ere scène de The Hunter"
+    ] .
+
+# Before Sunset (2004)
+<https://www.imdb.com/title/tt0381681/> a schema:Movie ;
+    schema:name "Before Sunset" ;
+    schema:url <https://www.imdb.com/title/tt0381681/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1716305/> ;
+        schema:characterName "Boat Attendant"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

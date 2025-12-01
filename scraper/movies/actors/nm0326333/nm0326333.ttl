@@ -1,0 +1,205 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0326333/> a schema:Person ;
+    schema:name "Steven Goldstein" ;
+    schema:url <https://www.imdb.com/name/nm0326333/> ;
+    schema:birthDate "1963-10-22"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Steven Goldstein. Actor: The Untouchables. Steven Goldstein was born on 22 October 1963 in Matawan, New Jersey, USA. He is an actor, known for The Untouchables (1987), The Spanish Prisoner (1997) and The Night We Never Met (1993)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTM1NTU2NzEyMl5BMl5BanBnXkFtZTgwMzQ0NDcyODE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Matawan, New Jersey, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1019690/>,    # The Metropolitan Opera HD Live
+                       <https://www.imdb.com/title/tt0263671/>,    # Love the Hard Way
+                       <https://www.imdb.com/title/tt0230783/>,    # Signs & Wonders
+                       <https://www.imdb.com/title/tt0120176/>,    # The Spanish Prisoner
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0107685/>,    # The Night We Never Met
+                       <https://www.imdb.com/title/tt0102048/>,    # Homicide
+                       <https://www.imdb.com/title/tt0159876/>,    # Great Performances
+                       <https://www.imdb.com/title/tt0096259/>,    # Things Change
+                       <https://www.imdb.com/title/tt0093223/>,    # House of Games
+                       <https://www.imdb.com/title/tt0094226/> ; # The Untouchables
+
+
+    schema:video <https://www.imdb.com/video/vi1275987737/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0326333/mediaviewer/rm3355121920/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Metropolitan Opera HD Live (2011)
+<https://www.imdb.com/title/tt1019690/> a schema:Movie ;
+    schema:name "The Metropolitan Opera HD Live" ;
+    schema:url <https://www.imdb.com/title/tt1019690/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Servants"
+    ] .
+
+# Love the Hard Way (2001)
+<https://www.imdb.com/title/tt0263671/> a schema:Movie ;
+    schema:name "Love the Hard Way" ;
+    schema:url <https://www.imdb.com/title/tt0263671/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "The John in Street"
+    ] .
+
+# Signs & Wonders (2000)
+<https://www.imdb.com/title/tt0230783/> a schema:Movie ;
+    schema:name "Signs & Wonders" ;
+    schema:url <https://www.imdb.com/title/tt0230783/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName ""
+    ] .
+
+# The Spanish Prisoner (1997)
+<https://www.imdb.com/title/tt0120176/> a schema:Movie ;
+    schema:name "The Spanish Prisoner" ;
+    schema:url <https://www.imdb.com/title/tt0120176/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Lawyer"
+    ] .
+
+# Law & Order (1997)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Rabbi Kornstein"
+    ] .
+
+# The Night We Never Met (1993)
+<https://www.imdb.com/title/tt0107685/> a schema:Movie ;
+    schema:name "The Night We Never Met" ;
+    schema:url <https://www.imdb.com/title/tt0107685/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "3rd Cheese Man"
+    ] .
+
+# Homicide (1991)
+<https://www.imdb.com/title/tt0102048/> a schema:Movie ;
+    schema:name "Homicide" ;
+    schema:url <https://www.imdb.com/title/tt0102048/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Librarian"
+    ] .
+
+# Great Performances (1989)
+<https://www.imdb.com/title/tt0159876/> a schema:Movie ;
+    schema:name "Great Performances" ;
+    schema:url <https://www.imdb.com/title/tt0159876/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Belligerent man"
+    ] .
+
+# Things Change (1988)
+<https://www.imdb.com/title/tt0096259/> a schema:Movie ;
+    schema:name "Things Change" ;
+    schema:url <https://www.imdb.com/title/tt0096259/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Randy"
+    ] .
+
+# House of Games (1987)
+<https://www.imdb.com/title/tt0093223/> a schema:Movie ;
+    schema:name "House of Games" ;
+    schema:url <https://www.imdb.com/title/tt0093223/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Billy Hahn"
+    ] .
+
+# The Untouchables (1987)
+<https://www.imdb.com/title/tt0094226/> a schema:Movie ;
+    schema:name "The Untouchables" ;
+    schema:url <https://www.imdb.com/title/tt0094226/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0326333/> ;
+        schema:characterName "Scoop"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1275987737/> a schema:VideoObject ;
+        schema:name "House of Games" ;
+        schema:description "Trailer for this suspense thriller" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1275987737/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWZmZDJmOTAtOTQ0Zi00M2UxLWJhMDgtM2IyODE2ZTE3MmM2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2010-05-18T15:23:47Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTM1NTU2NzEyMl5BMl5BanBnXkFtZTgwMzQ0NDcyODE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM1NTU2NzEyMl5BMl5BanBnXkFtZTgwMzQ0NDcyODE@._V1_.jpg> ;
+    schema:caption "Steven Goldstein" ;
+    schema:height "2333"^^xsd:integer ;
+    schema:width "3500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0326333/mediaviewer/rm3355121920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM1NTU2NzEyMl5BMl5BanBnXkFtZTgwMzQ0NDcyODE@._V1_.jpg> ;
+    schema:caption "Steven Goldstein" ;
+    schema:height "2333"^^xsd:integer ;
+    schema:width "3500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

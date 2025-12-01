@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1203041/> a schema:Person ;
+    schema:name "Ji Dae-han" ;
+    schema:url <https://www.imdb.com/name/nm1203041/> ;
+    schema:birthDate "1969-01-01"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Ji Dae-han. Actor: Oldboy. Ji Dae-han was born on 1 January 1969 in South Korea. He is an actor and producer, known for Oldboy (2003), Spring, Summer, Fall, Winter... And Spring (2003) and Sympathy for Mr. Vengeance (2002)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8254292/>,    # Borderliners
+                       <https://www.imdb.com/title/tt8648696/>,    # Still 17
+                       <https://www.imdb.com/title/tt9143942/>,    # The Goose Goes South
+                       <https://www.imdb.com/title/tt7473040/>,    # America Town
+                       <https://www.imdb.com/title/tt6516076/>,    # Chicago Typewriter
+                       <https://www.imdb.com/title/tt6239298/>,    # Outdoor Begins
+                       <https://www.imdb.com/title/tt6388082/> ; # My Annoying Brother
+
+
+    schema:video <https://www.imdb.com/video/vi119519257/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1203041/mediaviewer/rm4278409217/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Borderliners (2019)
+<https://www.imdb.com/title/tt8254292/> a schema:Movie ;
+    schema:name "Borderliners" ;
+    schema:url <https://www.imdb.com/title/tt8254292/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Gun Woong Park"
+    ] .
+
+# Still 17 (2018)
+<https://www.imdb.com/title/tt8648696/> a schema:Movie ;
+    schema:name "Still 17" ;
+    schema:url <https://www.imdb.com/title/tt8648696/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Police Station Officer"
+    ] .
+
+# The Goose Goes South (2018)
+<https://www.imdb.com/title/tt9143942/> a schema:Movie ;
+    schema:name "The Goose Goes South" ;
+    schema:url <https://www.imdb.com/title/tt9143942/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Dae-Jung"
+    ] .
+
+# America Town (2017)
+<https://www.imdb.com/title/tt7473040/> a schema:Movie ;
+    schema:name "America Town" ;
+    schema:url <https://www.imdb.com/title/tt7473040/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Night club boss"
+    ] .
+
+# Chicago Typewriter (2017)
+<https://www.imdb.com/title/tt6516076/> a schema:Movie ;
+    schema:name "Chicago Typewriter" ;
+    schema:url <https://www.imdb.com/title/tt6516076/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Won Man-hae"
+    ] .
+
+# Outdoor Begins (2017)
+<https://www.imdb.com/title/tt6239298/> a schema:Movie ;
+    schema:name "Outdoor Begins" ;
+    schema:url <https://www.imdb.com/title/tt6239298/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Mr. Hwang"
+    ] .
+
+# My Annoying Brother (2016)
+<https://www.imdb.com/title/tt6388082/> a schema:Movie ;
+    schema:name "My Annoying Brother" ;
+    schema:url <https://www.imdb.com/title/tt6388082/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1203041/> ;
+        schema:characterName "Director of the National athletes"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi119519257/> a schema:VideoObject ;
+        schema:name "The Accidental Detective" ;
+        schema:description "Trailer for The Accidental Detective" ;
+        schema:embedUrl <https://www.imdb.com/video/vi119519257/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGJmNjEyNzktYzg2ZS00YjdhLWI1ZGYtOGZiYThkNmE2MmRkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M21S"^^xsd:duration ;
+        schema:uploadDate "2018-03-21T18:33:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1203041/mediaviewer/rm4278409217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTE1NWJmYzctZGU0OC00MTI1LThkNTYtOTBkZTQzMDZjYjZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Choi Min-sik, Oh Tae-kyung, Yoo Ji-tae, Kim Young Ae, Lee Young-hee, Chae-soo Jang, Seol-a Im, Chang-hak Choi, Bi-Joon Shin, Ji Dae-han, Kim Byeong-Ok, Kang Hye-jeong, Syd Lim, Oh Dal-su, Yoon Jin-seo, Seok-jae Seong, Seon-bok Mun, Mi Mi Lee, Lee Seung-shin, Il-han Oo, Yoo Yeon-seok, Jin-Yool Yoon, Jung Ae Kwak, San Kim, Park Jae-woong, Choi Jae-sup, and Jae-Duk Han" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

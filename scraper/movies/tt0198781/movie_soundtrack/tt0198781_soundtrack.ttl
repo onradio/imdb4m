@@ -1,0 +1,73 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0198781/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "If I Didn't Have You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000345/>, # Billy Crystal
+                        <https://www.imdb.com/name/nm0000422/> ; # John Goodman
+        schema:producer <https://www.imdb.com/name/nm0005271/>, # Randy Newman
+                       <https://www.imdb.com/name/nm0598895/>, # Chris Montan
+                       <https://www.imdb.com/name/nm0937745/> ; # Frank Wolf
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "If I Didn't Have You" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+            schema:lyricist <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bintang Kecil" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Posidrive 1" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Posidrive 1" ;
+            schema:composer <https://www.imdb.com/name/nm0621429/>, # Gerhard Narholz
+                        <https://www.imdb.com/name/nm0275735/> # John Fiddy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Station News" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Station News" ;
+            schema:composer <https://www.imdb.com/name/nm0003417/> # David Arnold
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Huttenjodler" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000345/> a schema:Person ;
+    schema:name "Billy Crystal" .
+<https://www.imdb.com/name/nm0000422/> a schema:Person ;
+    schema:name "John Goodman" .
+<https://www.imdb.com/name/nm0003417/> a schema:Person ;
+    schema:name "David Arnold" .
+<https://www.imdb.com/name/nm0005271/> a schema:Person ;
+    schema:name "Randy Newman" .
+<https://www.imdb.com/name/nm0275735/> a schema:Person ;
+    schema:name "John Fiddy" .
+<https://www.imdb.com/name/nm0598895/> a schema:Person ;
+    schema:name "Chris Montan" .
+<https://www.imdb.com/name/nm0621429/> a schema:Person ;
+    schema:name "Gerhard Narholz" .
+<https://www.imdb.com/name/nm0937745/> a schema:Person ;
+    schema:name "Frank Wolf" .
+# ==============================================================================

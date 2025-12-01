@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0420188/> a schema:Person ;
+    schema:name "David Jefferson" ;
+    schema:url <https://www.imdb.com/name/nm0420188/> ;
+    schema:jobTitle "Actor", "Director", "Editor" ;
+    schema:description "David Jefferson. Editorial Department: Inside Man. David Jefferson is known for Inside Man (2006), Remember the Titans (2000) and The Christmas Story Through Music (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0313792/>,    # Anything Else
+                       <https://www.imdb.com/title/tt0252076/>,    # Maid in Manhattan
+                       <https://www.imdb.com/title/tt0313737/>,    # Two Weeks Notice
+                       <https://www.imdb.com/title/tt0331321/>,    # Porn 'n Chicken
+                       <https://www.imdb.com/title/tt0297037/>,    # Brown Sugar
+                       <https://www.imdb.com/title/tt0250797/>,    # Unfaithful
+                       <https://www.imdb.com/title/tt0210945/> . # Remember the Titans
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Anything Else (2003)
+<https://www.imdb.com/title/tt0313792/> a schema:Movie ;
+    schema:name "Anything Else" ;
+    schema:url <https://www.imdb.com/title/tt0313792/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "College Student"
+    ] .
+
+# Maid in Manhattan (2002)
+<https://www.imdb.com/title/tt0252076/> a schema:Movie ;
+    schema:name "Maid in Manhattan" ;
+    schema:url <https://www.imdb.com/title/tt0252076/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "Subway Commuter"
+    ] .
+
+# Two Weeks Notice (2002)
+<https://www.imdb.com/title/tt0313737/> a schema:Movie ;
+    schema:name "Two Weeks Notice" ;
+    schema:url <https://www.imdb.com/title/tt0313737/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "Baseball Player"
+    ] .
+
+# Porn 'n Chicken (2002)
+<https://www.imdb.com/title/tt0331321/> a schema:Movie ;
+    schema:name "Porn 'n Chicken" ;
+    schema:url <https://www.imdb.com/title/tt0331321/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "College Student"
+    ] .
+
+# Brown Sugar (2002)
+<https://www.imdb.com/title/tt0297037/> a schema:Movie ;
+    schema:name "Brown Sugar" ;
+    schema:url <https://www.imdb.com/title/tt0297037/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "Manager"
+    ] .
+
+# Unfaithful (2002)
+<https://www.imdb.com/title/tt0250797/> a schema:Movie ;
+    schema:name "Unfaithful" ;
+    schema:url <https://www.imdb.com/title/tt0250797/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "Waiter"
+    ] .
+
+# Remember the Titans (2000)
+<https://www.imdb.com/title/tt0210945/> a schema:Movie ;
+    schema:name "Remember the Titans" ;
+    schema:url <https://www.imdb.com/title/tt0210945/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0420188/> ;
+        schema:characterName "Cook"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

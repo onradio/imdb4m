@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2999980/> a schema:Person ;
+    schema:name "Joanne Gordon" ;
+    schema:url <https://www.imdb.com/name/nm2999980/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Joanne Gordon. Actress: Pi. Joanne Gordon is known for Pi (1998), Requiem for a Dream (2000) and Meredith Willson's the Music Man (2003)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0293437/>,    # Meredith Willson's the Music Man
+                       <https://www.imdb.com/title/tt0180093/>,    # Requiem for a Dream
+                       <https://www.imdb.com/title/tt0138704/> ; # Pi
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2999980/mediaviewer/rm3252517632/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Meredith Willson's the Music Man (2003)
+<https://www.imdb.com/title/tt0293437/> a schema:Movie ;
+    schema:name "Meredith Willson's the Music Man" ;
+    schema:url <https://www.imdb.com/title/tt0293437/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2999980/> ;
+        schema:characterName ""
+    ] .
+
+# Requiem for a Dream (2000)
+<https://www.imdb.com/title/tt0180093/> a schema:Movie ;
+    schema:name "Requiem for a Dream" ;
+    schema:url <https://www.imdb.com/title/tt0180093/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2999980/> ;
+        schema:characterName "Mrs. Ovadia"
+    ] .
+
+# Pi (1998)
+<https://www.imdb.com/title/tt0138704/> a schema:Movie ;
+    schema:name "Pi" ;
+    schema:url <https://www.imdb.com/title/tt0138704/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2999980/> ;
+        schema:characterName "Mrs. Ovadia"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2999980/mediaviewer/rm3252517632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDI5MTg1ZjctM2UxNS00ZTk4LWFlNjgtYzRiNWE2NTEyYjdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Leto, Marlon Wayans, Charlotte Aronofsky, Marcia Jean Kurtz, Louise Lasser, Janet Sarno, Suzanne Shepherd, and Joanne Gordon in Requiem for a Dream (2000)" ;
+    schema:height "1430"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

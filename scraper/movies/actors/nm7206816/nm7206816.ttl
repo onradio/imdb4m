@@ -1,0 +1,111 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7206816/> a schema:Person ;
+    schema:name "Ishika Gagneja" ;
+    schema:url <https://www.imdb.com/name/nm7206816/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Ishika Gagneja. Actress: Dangal. Ishika Gagneja is an Indian actress born in Punjab, who currently resides in Mumbai. She began her career as a child actor, gaining initial recognition for her role in Dangal, which marked the beginning of her journey in the Hindi film industry. Over the years, she has worked on a diverse range of projects, showcasing her versatility across various roles. Notable works include Amber Girls School,..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mumbai, Maharashtra, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt17625870/>,    # Banarasi Jasoos
+                       <https://www.imdb.com/title/tt7638344/>,    # Dhadak
+                       <https://www.imdb.com/title/tt1806913/>,    # Golmaal Again
+                       <https://www.imdb.com/title/tt5074352/>,    # Dangal
+                       <https://www.imdb.com/title/tt4219300/> ; # Gollu Aur Pappu
+
+
+    schema:video <https://www.imdb.com/video/vi1038468633/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Banarasi Jasoos (2019)
+<https://www.imdb.com/title/tt17625870/> a schema:Movie ;
+    schema:name "Banarasi Jasoos" ;
+    schema:url <https://www.imdb.com/title/tt17625870/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7206816/> ;
+        schema:characterName "Riya"
+    ] .
+
+# Dhadak (2018)
+<https://www.imdb.com/title/tt7638344/> a schema:Movie ;
+    schema:name "Dhadak" ;
+    schema:url <https://www.imdb.com/title/tt7638344/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7206816/> ;
+        schema:characterName "Ambika"
+    ] .
+
+# Golmaal Again (2017)
+<https://www.imdb.com/title/tt1806913/> a schema:Movie ;
+    schema:name "Golmaal Again" ;
+    schema:url <https://www.imdb.com/title/tt1806913/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7206816/> ;
+        schema:characterName "Teenage Khushi"
+    ] .
+
+# Dangal (2016)
+<https://www.imdb.com/title/tt5074352/> a schema:Movie ;
+    schema:name "Dangal" ;
+    schema:url <https://www.imdb.com/title/tt5074352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7206816/> ;
+        schema:characterName "Sunita"
+    ] .
+
+# Gollu Aur Pappu (2014)
+<https://www.imdb.com/title/tt4219300/> a schema:Movie ;
+    schema:name "Gollu Aur Pappu" ;
+    schema:url <https://www.imdb.com/title/tt4219300/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7206816/> ;
+        schema:characterName "Muskaan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1038468633/> a schema:VideoObject ;
+        schema:name "Amber Girls School - Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1038468633/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM0NWFiYTktYzIyZi00YTg4LTg3MzctMmE3MjBkYmE2YmMyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M35S"^^xsd:duration ;
+        schema:uploadDate "2024-04-28T06:13:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7206816/>
+    schema:sameAs <https://www.instagram.com/ishika.gagneja/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

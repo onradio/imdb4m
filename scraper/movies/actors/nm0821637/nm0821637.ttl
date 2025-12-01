@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0821637/> a schema:Person ;
+    schema:name "Marion Stalens" ;
+    schema:url <https://www.imdb.com/name/nm0821637/> ;
+    schema:jobTitle "Camera and Electrical Department", "Director", "Actress" ;
+    schema:description "Marion Stalens. Actress: Three Colours: Red. Marion Stalens is known for Three Colours: Red (1994), Hidden (Caché) (2005) and Les Amants du Pont-Neuf (1991)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0111495/>,    # Three Colours: Red
+                       <https://www.imdb.com/title/tt0110171/>,    # I Can't Sleep
+                       <https://www.imdb.com/title/tt0422144/>,    # Drôle d'immeuble
+                       <https://www.imdb.com/title/tt0101318/>,    # Les Amants du Pont-Neuf
+                       <https://www.imdb.com/title/tt0100102/>,    # The Man Inside
+                       <https://www.imdb.com/title/tt0092131/> ; # Roundabout
+
+
+    schema:video <https://www.imdb.com/video/vi3436160025/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Three Colours: Red (1994)
+<https://www.imdb.com/title/tt0111495/> a schema:Movie ;
+    schema:name "Three Colours: Red" ;
+    schema:url <https://www.imdb.com/title/tt0111495/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName "Le vétérinaire"
+    ] .
+
+# I Can't Sleep (1994)
+<https://www.imdb.com/title/tt0110171/> a schema:Movie ;
+    schema:name "I Can't Sleep" ;
+    schema:url <https://www.imdb.com/title/tt0110171/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName "Neighbor"
+    ] .
+
+# Drôle d'immeuble (1992)
+<https://www.imdb.com/title/tt0422144/> a schema:Movie ;
+    schema:name "Drôle d'immeuble" ;
+    schema:url <https://www.imdb.com/title/tt0422144/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName ""
+    ] .
+
+# Les Amants du Pont-Neuf (1991)
+<https://www.imdb.com/title/tt0101318/> a schema:Movie ;
+    schema:name "Les Amants du Pont-Neuf" ;
+    schema:url <https://www.imdb.com/title/tt0101318/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName "Marion"
+    ] .
+
+# The Man Inside (1990)
+<https://www.imdb.com/title/tt0100102/> a schema:Movie ;
+    schema:name "The Man Inside" ;
+    schema:url <https://www.imdb.com/title/tt0100102/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Roundabout (1989)
+<https://www.imdb.com/title/tt0092131/> a schema:Movie ;
+    schema:name "Roundabout" ;
+    schema:url <https://www.imdb.com/title/tt0092131/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0821637/> ;
+        schema:characterName "Woman at Party"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3436160025/> a schema:VideoObject ;
+        schema:name "Red: The Criterion Collection Blu-Ray" ;
+        schema:description "Trailer for Red" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3436160025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTBhODI2MTQtY2MyMi00NDY5LWI3YjYtODk3NjJhMmNkOTQ2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2012-09-23T03:29:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

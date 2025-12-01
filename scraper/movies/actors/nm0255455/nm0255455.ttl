@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0255455/> a schema:Person ;
+    schema:name "Frank Elmore" ;
+    schema:url <https://www.imdb.com/name/nm0255455/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Frank Elmore. Actor: Magnolia. Frank Elmore is known for Magnolia (1999), H.E.L.P. (1990) and 21st Century Romance (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3281822/>,    # 21st Century Romance
+                       <https://www.imdb.com/title/tt0857378/>,    # Hide & Seek
+                       <https://www.imdb.com/title/tt0252019/>,    # Strong Medicine
+                       <https://www.imdb.com/title/tt0175880/>,    # Magnolia
+                       <https://www.imdb.com/title/tt0098815/> . # H.E.L.P.
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 21st Century Romance (2014)
+<https://www.imdb.com/title/tt3281822/> a schema:Movie ;
+    schema:name "21st Century Romance" ;
+    schema:url <https://www.imdb.com/title/tt3281822/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0255455/> ;
+        schema:characterName "Wedding guest"
+    ] .
+
+# Hide & Seek (2006)
+<https://www.imdb.com/title/tt0857378/> a schema:Movie ;
+    schema:name "Hide & Seek" ;
+    schema:url <https://www.imdb.com/title/tt0857378/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0255455/> ;
+        schema:characterName "Cop 2"
+    ] .
+
+# Strong Medicine (2004)
+<https://www.imdb.com/title/tt0252019/> a schema:Movie ;
+    schema:name "Strong Medicine" ;
+    schema:url <https://www.imdb.com/title/tt0252019/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0255455/> ;
+        schema:characterName "Show Host"
+    ] .
+
+# Magnolia (1999)
+<https://www.imdb.com/title/tt0175880/> a schema:Movie ;
+    schema:name "Magnolia" ;
+    schema:url <https://www.imdb.com/title/tt0175880/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0255455/> ;
+        schema:characterName "1958 Detective"
+    ] .
+
+# H.E.L.P. (1990)
+<https://www.imdb.com/title/tt0098815/> a schema:Movie ;
+    schema:name "H.E.L.P." ;
+    schema:url <https://www.imdb.com/title/tt0098815/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0255455/> ;
+        schema:characterName "Roger Palomino"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

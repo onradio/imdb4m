@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0065489/> a schema:Person ;
+    schema:name "Konrad Becker" ;
+    schema:url <https://www.imdb.com/name/nm0065489/> ;
+    schema:birthDate "1959-01-09"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Konrad Becker. Actor: Das Boot. Konrad Becker was born on 9 January 1959 in Vienna, Austria. He is an actor, known for Das Boot (1981), Das Boot (1985) and Exit... nur keine Panik (1980)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Vienna, Austria"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0167606/>,    # L'heure Simenon
+                       <https://www.imdb.com/title/tt0081834/>,    # Das Boot
+                       <https://www.imdb.com/title/tt0083438/>,    # Kottan ermittelt
+                       <https://www.imdb.com/title/tt0082096/>,    # Das Boot
+                       <https://www.imdb.com/title/tt0080705/>,    # Exit... nur keine Panik
+                       <https://www.imdb.com/title/tt0079390/> . # Kassbach - Ein Portrait
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# L'heure Simenon (1988)
+<https://www.imdb.com/title/tt0167606/> a schema:Movie ;
+    schema:name "L'heure Simenon" ;
+    schema:url <https://www.imdb.com/title/tt0167606/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName "Peter Pollak"
+    ] .
+
+# Das Boot (1985)
+<https://www.imdb.com/title/tt0081834/> a schema:Movie ;
+    schema:name "Das Boot" ;
+    schema:url <https://www.imdb.com/title/tt0081834/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName "Bockstiegel"
+    ] .
+
+# Kottan ermittelt (1978)
+<https://www.imdb.com/title/tt0083438/> a schema:Movie ;
+    schema:name "Kottan ermittelt" ;
+    schema:url <https://www.imdb.com/title/tt0083438/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName "Peter Bertalan"
+    ] .
+
+# Das Boot (1981)
+<https://www.imdb.com/title/tt0082096/> a schema:Movie ;
+    schema:name "Das Boot" ;
+    schema:url <https://www.imdb.com/title/tt0082096/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName "Bockstiegel"
+    ] .
+
+# Exit... nur keine Panik (1980)
+<https://www.imdb.com/title/tt0080705/> a schema:Movie ;
+    schema:name "Exit... nur keine Panik" ;
+    schema:url <https://www.imdb.com/title/tt0080705/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName ""
+    ] .
+
+# Kassbach - Ein Portrait (1979)
+<https://www.imdb.com/title/tt0079390/> a schema:Movie ;
+    schema:name "Kassbach - Ein Portrait" ;
+    schema:url <https://www.imdb.com/title/tt0079390/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0065489/> ;
+        schema:characterName "Sein Sohn"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

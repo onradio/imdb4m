@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7852444/> a schema:Person ;
+    schema:name "Jadyn Malone" ;
+    schema:url <https://www.imdb.com/name/nm7852444/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jadyn Malone. Actress: Arrival. Jadyn was born on January 10, 2010 in Canada. Jadyn is a young English and French speaking actress who began acting at the young age of 4. She is known for her appearances in Denis Villeneuve's Feature Film Arrival (2016). Turn on your television to watch Jadyn as Kaylee Davis in Curtis Crawford's Mommy's Little Secrets (2017) featured on the Lifetime channel. When Jadyn is off..." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.48"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "4′ 10¼″ (1.48 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7969836/>,    # The 20th Century
+                       <https://www.imdb.com/title/tt7561776/>,    # A Daughter's Revenge
+                       <https://www.imdb.com/title/tt4702826/>,    # Birthmarked
+                       <https://www.imdb.com/title/tt5769006/>,    # Mommy's Little Secrets
+                       <https://www.imdb.com/title/tt2543164/>,    # Arrival
+                       <https://www.imdb.com/title/tt5299008/> ; # Real Detective
+
+
+    schema:video <https://www.imdb.com/video/vi3169368345/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The 20th Century (2019)
+<https://www.imdb.com/title/tt7969836/> a schema:Movie ;
+    schema:name "The 20th Century" ;
+    schema:url <https://www.imdb.com/title/tt7969836/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "Smoking Street Child"
+    ] .
+
+# A Daughter's Revenge (2018)
+<https://www.imdb.com/title/tt7561776/> a schema:Movie ;
+    schema:name "A Daughter's Revenge" ;
+    schema:url <https://www.imdb.com/title/tt7561776/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "Elle Spencer-Child"
+    ] .
+
+# Birthmarked (2018)
+<https://www.imdb.com/title/tt4702826/> a schema:Movie ;
+    schema:name "Birthmarked" ;
+    schema:url <https://www.imdb.com/title/tt4702826/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "Maya 8 years old"
+    ] .
+
+# Mommy's Little Secrets (2017)
+<https://www.imdb.com/title/tt5769006/> a schema:Movie ;
+    schema:name "Mommy's Little Secrets" ;
+    schema:url <https://www.imdb.com/title/tt5769006/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "Kaylee Davis"
+    ] .
+
+# Arrival (2016)
+<https://www.imdb.com/title/tt2543164/> a schema:Movie ;
+    schema:name "Arrival" ;
+    schema:url <https://www.imdb.com/title/tt2543164/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "6-Year-Old-Hannah"
+    ] .
+
+# Real Detective (2016)
+<https://www.imdb.com/title/tt5299008/> a schema:Movie ;
+    schema:name "Real Detective" ;
+    schema:url <https://www.imdb.com/title/tt5299008/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7852444/> ;
+        schema:characterName "Anna Jensen"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3169368345/> a schema:VideoObject ;
+        schema:name "Jadyn Malone &amp; Amy Adams-  ARRIVAL" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3169368345/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDM2ZGI5ZDMtZjlkYS00MTY2LWFiOGEtZTVhMWM1ZDRmNzU2XkEyXkFqcGdeQXVyNjQ5MTE4NTg@._V1_.jpg" ;
+        schema:duration "PT33S"^^xsd:duration ;
+        schema:uploadDate "2017-06-17T14:02:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

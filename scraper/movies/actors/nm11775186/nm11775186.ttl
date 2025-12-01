@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11775186/> a schema:Person ;
+    schema:name "Ignace De Groote" ;
+    schema:url <https://www.imdb.com/name/nm11775186/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ignace De Groote. Actor: PK. Ignace De Groote is known for PK (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2338151/> .    # PK
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# PK (2014)
+<https://www.imdb.com/title/tt2338151/> a schema:Movie ;
+    schema:name "PK" ;
+    schema:url <https://www.imdb.com/title/tt2338151/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11775186/> ;
+        schema:characterName "Belgium security guard"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

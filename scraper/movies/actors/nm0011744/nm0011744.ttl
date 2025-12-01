@@ -1,0 +1,192 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0011744/> a schema:Person ;
+    schema:name "Ade" ;
+    schema:url <https://www.imdb.com/name/nm0011744/> ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:description "Ade. Actor: Casino Royale. Born in London, in the early seventies, Ade tried his hand at various trades; from selling shoes, tickets for concerts, managing bands, to publishing an international horse racing magazine. Ade was known by Guy Ritchie who cast him as Tyrone the getaway driver in Snatch (2000). He then set off on the European press jaunt & traveled to the United States to preview the movie, addressing..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTMwNDgxMDQ5Nl5BMl5BanBnXkFtZTcwMTIwODg5Nw@@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11½″ (1.82 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0381061/>,    # Casino Royale
+                       <https://www.imdb.com/title/tt0208092/>,    # Snatch
+                       <https://www.imdb.com/title/tt0227984/>,    # Formula 51
+                       <https://www.imdb.com/title/tt2041354/>,    # Geezas
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1490657/>,    # Fetch
+                       <https://www.imdb.com/title/tt1042499/>,    # Filth and Wisdom
+                       <https://www.imdb.com/title/tt0847526/>,    # Sugarhouse
+                       <https://www.imdb.com/title/tt0318390/> ; # Keen Eddie
+
+
+    schema:video <https://www.imdb.com/video/vi2882863897/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0011744/mediaviewer/rm1042659584/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm321815552/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm2103936000/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm4109210112/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm3656556801/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm3337460224/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm3397888512/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm3478493440/>,
+                 <https://www.imdb.com/name/nm0011744/mediaviewer/rm3492252416/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0381061/> a schema:Movie ;
+    schema:name "Casino Royale" ;
+    schema:url <https://www.imdb.com/title/tt0381061/> .
+
+<https://www.imdb.com/title/tt0208092/> a schema:Movie ;
+    schema:name "Snatch" ;
+    schema:url <https://www.imdb.com/title/tt0208092/> .
+
+<https://www.imdb.com/title/tt0227984/> a schema:Movie ;
+    schema:name "Formula 51" ;
+    schema:url <https://www.imdb.com/title/tt0227984/> .
+
+<https://www.imdb.com/title/tt2041354/> a schema:Movie ;
+    schema:name "Geezas" ;
+    schema:url <https://www.imdb.com/title/tt2041354/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fetch (2009)
+<https://www.imdb.com/title/tt1490657/> a schema:Movie ;
+    schema:name "Fetch" ;
+    schema:url <https://www.imdb.com/title/tt1490657/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0011744/> ;
+        schema:characterName "Cesear"
+    ] .
+
+# Filth and Wisdom (2008)
+<https://www.imdb.com/title/tt1042499/> a schema:Movie ;
+    schema:name "Filth and Wisdom" ;
+    schema:url <https://www.imdb.com/title/tt1042499/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0011744/> ;
+        schema:characterName "DJ"
+    ] .
+
+# Sugarhouse (2007)
+<https://www.imdb.com/title/tt0847526/> a schema:Movie ;
+    schema:name "Sugarhouse" ;
+    schema:url <https://www.imdb.com/title/tt0847526/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0011744/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Keen Eddie (2004)
+<https://www.imdb.com/title/tt0318390/> a schema:Movie ;
+    schema:name "Keen Eddie" ;
+    schema:url <https://www.imdb.com/title/tt0318390/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0011744/> ;
+        schema:characterName "Russell the Pig"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2882863897/> a schema:VideoObject ;
+        schema:name "Sugarhouse" ;
+        schema:description "Movie Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2882863897/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTgxNDA2Mjg2MF5BMl5BanBnXkFtZTcwODAzNTMyMg@@._V1_.jpg" ;
+        schema:duration "PT2M2S"^^xsd:duration ;
+        schema:uploadDate "2009-01-03T08:06:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTMwNDgxMDQ5Nl5BMl5BanBnXkFtZTcwMTIwODg5Nw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMwNDgxMDQ5Nl5BMl5BanBnXkFtZTcwMTIwODg5Nw@@._V1_.jpg> ;
+    schema:caption "Ade" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1282"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm1042659584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxNTIyNzMxMV5BMl5BanBnXkFtZTcwMTQ3OTczNQ@@._V1_.jpg> ;
+    schema:caption "Ade, Robbie Gee, and Lennie James in Snatch (2000)" ;
+    schema:height "1377"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm321815552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2OTExOTA3NF5BMl5BanBnXkFtZTcwMjY2MTUyNA@@._V1_.jpg> ;
+    schema:caption "Ade, Urbano Barberini, Tsai Chin, Daniel Craig, Mads Mikkelsen, Lazar Ristovski, Veruschka von Lehndorff, Jeffrey Wright, Carlos Leal, Charlie Levi Leroy, Tom So, and Andreas Daniel in Casino Royale (2006)" ;
+    schema:height "1359"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm2103936000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzMTE0MzQwNF5BMl5BanBnXkFtZTcwOTM2NDkxNA@@._V1_.jpg> ;
+    schema:caption "Ade, Robbie Gee, and Lennie James in Snatch (2000)" ;
+    schema:height "1026"^^xsd:integer ;
+    schema:width "1524"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm4109210112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTkwNTYxMjk0N15BMl5BanBnXkFtZTcwNTcyNTEzMQ@@._V1_.jpg> ;
+    schema:caption "Tom Delmar Stunt Coordinator & Action Director. Robbie Gee, Ade & Lennie James ( Vincent, Tyrone & Sol ) in Guy Ritchie's 'Snatch'.jpg" ;
+    schema:height "298"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm3656556801/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMThmZGY1MDYtNGJlNC00NWU2LWFmZDMtZWY0NTgzMDIxZTRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brad Pitt, Benicio Del Toro, Dennis Farina, Vinnie Jones, Jason Statham, and Ade in Snatch (2000)" ;
+    schema:height "2525"^^xsd:integer ;
+    schema:width "1748"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm3337460224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg0OTg0MDU3OF5BMl5BanBnXkFtZTYwODc5NzY4._V1_.jpg> ;
+    schema:caption "Quad Movie Poster, 40\" x 30\"" ;
+    schema:height "216"^^xsd:integer ;
+    schema:width "301"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm3397888512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMwNDgxMDQ5Nl5BMl5BanBnXkFtZTcwMTIwODg5Nw@@._V1_.jpg> ;
+    schema:caption "Ade" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1282"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm3478493440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxMzE0MDA4OF5BMl5BanBnXkFtZTYwOTM5Mzk4._V1_.jpg> ;
+    schema:caption "Brad Pitt, Benicio Del Toro, Dennis Farina, Vinnie Jones, Jason Statham, and Ade in Snatch (2000)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "260"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0011744/mediaviewer/rm3492252416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI2NjkxNTQ2OV5BMl5BanBnXkFtZTcwODU0Mjg0Mg@@._V1_.jpg> ;
+    schema:caption "Brad Pitt, Vinnie Jones, Jason Statham, Ade, and Alan Ford in Snatch (2000)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "395"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

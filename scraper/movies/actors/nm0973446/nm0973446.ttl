@@ -1,0 +1,184 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0973446/> a schema:Person ;
+    schema:name "Gary Lundy" ;
+    schema:url <https://www.imdb.com/name/nm0973446/> ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Gary Lundy. Actor: Donnie Darko. Gary Lundy was born in December 1981 in Los Angeles, California, USA. He is an actor and writer, known for Donnie Darko (2001), Cross (2024) and Connoisseur." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTA3MWVkZjItODZlMC00OWVkLWJlNzctYzk1NjIzOGYwNDlhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1059887/>,    # The Legend of Awesomest Maximus
+                       <https://www.imdb.com/title/tt1288585/>,    # Climbing Downward
+                       <https://www.imdb.com/title/tt0849470/>,    # Senior Skip Day
+                       <https://www.imdb.com/title/tt0421045/>,    # Bickford Shmeckler's Cool Ideas
+                       <https://www.imdb.com/title/tt0404802/>,    # The Notorious Bettie Page
+                       <https://www.imdb.com/title/tt0307879/>,    # Burning Annie
+                       <https://www.imdb.com/title/tt0246578/> ; # Donnie Darko
+
+
+    schema:video <https://www.imdb.com/video/vi2768283161/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0973446/mediaviewer/rm1762826240/>,
+                 <https://www.imdb.com/name/nm0973446/mediaviewer/rm973288704/>,
+                 <https://www.imdb.com/name/nm0973446/mediaviewer/rm3937774336/>,
+                 <https://www.imdb.com/name/nm0973446/mediaviewer/rm2617218816/>,
+                 <https://www.imdb.com/name/nm0973446/mediaviewer/rm3161713920/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Legend of Awesomest Maximus (2011)
+<https://www.imdb.com/title/tt1059887/> a schema:Movie ;
+    schema:name "The Legend of Awesomest Maximus" ;
+    schema:url <https://www.imdb.com/title/tt1059887/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Orlando"
+    ] .
+
+# Climbing Downward (2008)
+<https://www.imdb.com/title/tt1288585/> a schema:Movie ;
+    schema:name "Climbing Downward" ;
+    schema:url <https://www.imdb.com/title/tt1288585/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Keith Silverman"
+    ] .
+
+# Senior Skip Day (2008)
+<https://www.imdb.com/title/tt0849470/> a schema:Movie ;
+    schema:name "Senior Skip Day" ;
+    schema:url <https://www.imdb.com/title/tt0849470/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Adam Harris"
+    ] .
+
+# Bickford Shmeckler's Cool Ideas (2006)
+<https://www.imdb.com/title/tt0421045/> a schema:Movie ;
+    schema:name "Bickford Shmeckler's Cool Ideas" ;
+    schema:url <https://www.imdb.com/title/tt0421045/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Mellow Guy"
+    ] .
+
+# The Notorious Bettie Page (2005)
+<https://www.imdb.com/title/tt0404802/> a schema:Movie ;
+    schema:name "The Notorious Bettie Page" ;
+    schema:url <https://www.imdb.com/title/tt0404802/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Guy #2 at Party"
+    ] .
+
+# Burning Annie (2004)
+<https://www.imdb.com/title/tt0307879/> a schema:Movie ;
+    schema:name "Burning Annie" ;
+    schema:url <https://www.imdb.com/title/tt0307879/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Max"
+    ] .
+
+# Donnie Darko (2001)
+<https://www.imdb.com/title/tt0246578/> a schema:Movie ;
+    schema:name "Donnie Darko" ;
+    schema:url <https://www.imdb.com/title/tt0246578/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0973446/> ;
+        schema:characterName "Sean Smith"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2768283161/> a schema:VideoObject ;
+        schema:name "Official Version" ;
+        schema:description "When Adam accidentally gives up the location for the senior skip day party to his school's principal, he offers up his house as a new location. But for it to be a success, he needs to get his senior class to his house and stop the principal from crashing the party." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2768283161/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ2NDk0ODcxNV5BMl5BanBnXkFtZTcwMDM0ODE1OQ@@._V1_.jpg" ;
+        schema:duration "PT1M2S"^^xsd:duration ;
+        schema:uploadDate "2013-05-15T14:35:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTA3MWVkZjItODZlMC00OWVkLWJlNzctYzk1NjIzOGYwNDlhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTA3MWVkZjItODZlMC00OWVkLWJlNzctYzk1NjIzOGYwNDlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gary Lundy" ;
+    schema:height "1934"^^xsd:integer ;
+    schema:width "1934"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0973446/mediaviewer/rm1762826240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzM5MjYzMTYwMl5BMl5BanBnXkFtZTYwOTY1MTA3._V1_.jpg> ;
+    schema:caption "Jake Gyllenhaal, Stuart Stone, and Gary Lundy in Donnie Darko (2001)" ;
+    schema:height "289"^^xsd:integer ;
+    schema:width "427"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0973446/mediaviewer/rm973288704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDk4ZWYwZDYtZWQ3ZC00NzE0LWIyODctMDM1NzZlOGRlZTY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sara Downing and Gary Lundy in Burning Annie (2004)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "1350"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0973446/mediaviewer/rm3937774336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzMDY2NDg4NV5BMl5BanBnXkFtZTcwMjk1ODMxOA@@._V1_.jpg> ;
+    schema:caption "Gary Lundy" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1423"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0973446/mediaviewer/rm2617218816/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMwMjg1MDUxOV5BMl5BanBnXkFtZTcwNjkwOTA3MQ@@._V1_.jpg> ;
+    schema:caption "Lea Thompson, Tara Reid, Larry Miller, and Gary Lundy in Senior Skip Day (2008)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "333"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0973446/mediaviewer/rm3161713920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTA3MWVkZjItODZlMC00OWVkLWJlNzctYzk1NjIzOGYwNDlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gary Lundy" ;
+    schema:height "1934"^^xsd:integer ;
+    schema:width "1934"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

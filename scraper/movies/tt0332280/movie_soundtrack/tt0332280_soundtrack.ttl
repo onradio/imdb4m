@@ -1,0 +1,139 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0332280/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Be Seeing You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0390507/>, # Billie Holiday
+                        <https://www.imdb.com/name/nm0002051/> ; # Jimmy Durante
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Be Seeing You" ;
+            schema:author <https://www.imdb.com/name/nm0006066/>, # Sammy Fain
+                       <https://www.imdb.com/name/nm0434655/> # Irving Kahal
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Alabamy Home" ;
+        schema:byArtist <https://www.imdb.com/name/nm0956374/> ; # Aaron Zigman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Alabamy Home" ;
+            schema:author <https://www.imdb.com/name/nm0254153/>, # Duke Ellington
+                       <https://www.imdb.com/name/nm0727626/> # Dave Ringle
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Prelude for Piano, Op. 28, No. 4" ;
+        schema:byArtist <https://www.imdb.com/name/nm2268430/> ; # Robert Thies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Prelude for Piano, Op. 28, No. 4" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Where or When" ;
+        schema:byArtist <https://www.imdb.com/name/nm0956374/> ; # Aaron Zigman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Where or When" ;
+            schema:author <https://www.imdb.com/name/nm0006256/>, # Richard Rodgers
+                       <https://www.imdb.com/name/nm0366414/> # Lorenz Hart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Opus One" ;
+        schema:byArtist <https://www.imdb.com/name/nm0956374/> ; # Aaron Zigman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Opus One" ;
+            schema:author <https://www.imdb.com/name/nm0647011/> # Sy Oliver
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sonata No. 19 in G Minor for Piano, Op. 49, No. 1" ;
+        schema:byArtist <https://www.imdb.com/name/nm2268430/> ; # Robert Thies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sonata No. 19 in G Minor for Piano, Op. 49, No. 1" ;
+            schema:author <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Be Seeing You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0002051/> ; # Jimmy Durante
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Be Seeing You" ;
+            schema:author <https://www.imdb.com/name/nm0006066/>, # Sammy Fain
+                       <https://www.imdb.com/name/nm0434655/> # Irving Kahal
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Always and Always" ;
+        schema:byArtist <https://www.imdb.com/name/nm0329015/> ; # Benny Goodman
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One O'Clock Jump" ;
+        schema:byArtist <https://www.imdb.com/name/nm0329015/> ; # Benny Goodman
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Diga Diga Doo" ;
+        schema:byArtist <https://www.imdb.com/name/nm0829754/> ; # Rex Stewart
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002051/> a schema:Person ;
+    schema:name "Jimmy Durante" .
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0006066/> a schema:Person ;
+    schema:name "Sammy Fain" .
+<https://www.imdb.com/name/nm0006256/> a schema:Person ;
+    schema:name "Richard Rodgers" .
+<https://www.imdb.com/name/nm0254153/> a schema:Person ;
+    schema:name "Duke Ellington" .
+<https://www.imdb.com/name/nm0329015/> a schema:Person ;
+    schema:name "Benny Goodman" .
+<https://www.imdb.com/name/nm0366414/> a schema:Person ;
+    schema:name "Lorenz Hart" .
+<https://www.imdb.com/name/nm0390507/> a schema:Person ;
+    schema:name "Billie Holiday" .
+<https://www.imdb.com/name/nm0434655/> a schema:Person ;
+    schema:name "Irving Kahal" .
+<https://www.imdb.com/name/nm0647011/> a schema:Person ;
+    schema:name "Sy Oliver" .
+<https://www.imdb.com/name/nm0727626/> a schema:Person ;
+    schema:name "Dave Ringle" .
+<https://www.imdb.com/name/nm0829754/> a schema:Person ;
+    schema:name "Rex Stewart" .
+<https://www.imdb.com/name/nm0956374/> a schema:Person ;
+    schema:name "Aaron Zigman" .
+<https://www.imdb.com/name/nm2268430/> a schema:Person ;
+    schema:name "Robert Thies" .
+# ==============================================================================

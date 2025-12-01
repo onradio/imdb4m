@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0538259/> a schema:Person ;
+    schema:name "Rachel Majorowski" ;
+    schema:url <https://www.imdb.com/name/nm0538259/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rachel Majorowski. Actress: Good Will Hunting. Rachel Majorowski is known for Good Will Hunting (1997)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119217/> ;    # Good Will Hunting
+
+
+    schema:video <https://www.imdb.com/video/vi1575984665/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Good Will Hunting (1997)
+<https://www.imdb.com/title/tt0119217/> a schema:Movie ;
+    schema:name "Good Will Hunting" ;
+    schema:url <https://www.imdb.com/title/tt0119217/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0538259/> ;
+        schema:characterName "Krystyn"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1575984665/> a schema:VideoObject ;
+        schema:name "Good Will Hunting" ;
+        schema:description "Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1575984665/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzA4ZTY4YWItY2JkMS00NjQ1LTg4MDQtM2NkNWQ2ZTU5YmYxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT33S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:24:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

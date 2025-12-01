@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1585140/> a schema:Person ;
+    schema:name "Vishnudutt Gaur" ;
+    schema:url <https://www.imdb.com/name/nm1585140/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Vishnudutt Gaur. Actor: Swades: We, the People. Vishnudutt Gaur is known for Swades: We, the People (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0367110/> .    # Swades: We, the People
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Swades: We, the People (2004)
+<https://www.imdb.com/title/tt0367110/> a schema:Movie ;
+    schema:name "Swades: We, the People" ;
+    schema:url <https://www.imdb.com/title/tt0367110/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1585140/> ;
+        schema:characterName "Mr. Vishnu Dutt (Village Panchayat Member)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

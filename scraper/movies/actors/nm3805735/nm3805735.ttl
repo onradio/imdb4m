@@ -1,0 +1,120 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3805735/> a schema:Person ;
+    schema:name "Freya Wilson" ;
+    schema:url <https://www.imdb.com/name/nm3805735/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Freya Wilson. Actress: The King's Speech. Freya Wilson is known for The King's Speech (2010), Jane Eyre (2011) and Mr Selfridge (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODE1MTg2MTIyMl5BMl5BanBnXkFtZTcwMDk0OTMxOA@@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2876936/>,    # The Date
+                       <https://www.imdb.com/title/tt2310212/>,    # Mr Selfridge
+                       <https://www.imdb.com/title/tt1229822/>,    # Jane Eyre
+                       <https://www.imdb.com/title/tt1504320/> ; # The King's Speech
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3805735/mediaviewer/rm875367425/>,
+                 <https://www.imdb.com/name/nm3805735/mediaviewer/rm3313054464/>,
+                 <https://www.imdb.com/name/nm3805735/mediaviewer/rm3917034240/>,
+                 <https://www.imdb.com/name/nm3805735/mediaviewer/rm4122454784/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Date (2013)
+<https://www.imdb.com/title/tt2876936/> a schema:Movie ;
+    schema:name "The Date" ;
+    schema:url <https://www.imdb.com/title/tt2876936/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3805735/> ;
+        schema:characterName "Jean"
+    ] .
+
+# Mr Selfridge (2013)
+<https://www.imdb.com/title/tt2310212/> a schema:Movie ;
+    schema:name "Mr Selfridge" ;
+    schema:url <https://www.imdb.com/title/tt2310212/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3805735/> ;
+        schema:characterName "Violette Selfridge"
+    ] .
+
+# Jane Eyre (2011)
+<https://www.imdb.com/title/tt1229822/> a schema:Movie ;
+    schema:name "Jane Eyre" ;
+    schema:url <https://www.imdb.com/title/tt1229822/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3805735/> ;
+        schema:characterName "Eliza Reed"
+    ] .
+
+# The King's Speech (2010)
+<https://www.imdb.com/title/tt1504320/> a schema:Movie ;
+    schema:name "The King's Speech" ;
+    schema:url <https://www.imdb.com/title/tt1504320/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3805735/> ;
+        schema:characterName "Princess Elizabeth"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODE1MTg2MTIyMl5BMl5BanBnXkFtZTcwMDk0OTMxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODE1MTg2MTIyMl5BMl5BanBnXkFtZTcwMDk0OTMxOA@@._V1_.jpg> ;
+    schema:caption "Freya Wilson" ;
+    schema:height "970"^^xsd:integer ;
+    schema:width "770"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3805735/mediaviewer/rm875367425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjdkNzc0NDMtYTA5Ny00NGY5LTljNTctNjViYzM1YTI2OTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Freya Wilson in The King's Speech (2010)" ;
+    schema:height "797"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3805735/mediaviewer/rm3313054464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWMyMzBkOGQtZTg3ZC00MzNlLTliMzItYWIwZDJmMjNkZTVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Colin Firth, Helena Bonham Carter, Derek Jacobi, Ramona Marquez, and Freya Wilson in The King's Speech (2010)" ;
+    schema:height "553"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3805735/mediaviewer/rm3917034240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWYzYTgwZGEtMmFmYS00MmMwLTlkNzItMDM2N2NjMWJiMmE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Colin Firth, Ramona Marquez, and Freya Wilson in The King's Speech (2010)" ;
+    schema:height "553"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3805735/mediaviewer/rm4122454784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODE1MTg2MTIyMl5BMl5BanBnXkFtZTcwMDk0OTMxOA@@._V1_.jpg> ;
+    schema:caption "Freya Wilson" ;
+    schema:height "970"^^xsd:integer ;
+    schema:width "770"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

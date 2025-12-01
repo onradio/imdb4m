@@ -1,0 +1,291 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0291068/> a schema:Person ;
+    schema:name "Richard Frank" ;
+    schema:url <https://www.imdb.com/name/nm0291068/> ;
+    schema:birthDate "1953-01-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Richard Edward Frank" ;
+    schema:description "Richard Frank. Actor: Amadeus. Richard Frank was born on 4 January 1953 in Boston, Massachusetts, USA. He was an actor, known for Amadeus (1984), Remington Steele (1982) and Falcon Crest (1981). He died on 27 August 1995 in Los Angeles, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Boston, Massachusetts, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086879/>,    # Amadeus
+                       <https://www.imdb.com/title/tt0081858/>,    # Falcon Crest
+                       <https://www.imdb.com/title/tt0083470/>,    # Remington Steele
+                       <https://www.imdb.com/title/tt0096534/>,    # Anything But Love
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0103484/>,    # Mad About You
+                       <https://www.imdb.com/title/tt0090481/>,    # Matlock
+                       <https://www.imdb.com/title/tt0106132/>,    # Sinbad
+                       <https://www.imdb.com/title/tt0103466/>,    # The Larry Sanders Show
+                       <https://www.imdb.com/title/tt0096635/>,    # Life Goes On
+                       <https://www.imdb.com/title/tt0103450/>,    # The Jackie Thomas Show
+                       <https://www.imdb.com/title/tt0101199/>,    # Sisters
+                       <https://www.imdb.com/title/tt0149757/>,    # Baby Brown
+                       <https://www.imdb.com/title/tt0121953/>,    # Room for Romance
+                       <https://www.imdb.com/title/tt0090540/>,    # Valerie
+                       <https://www.imdb.com/title/tt0090501/>,    # Perfect Strangers
+                       <https://www.imdb.com/title/tt0092402/>,    # Max Headroom
+                       <https://www.imdb.com/title/tt0086770/>,    # Night Court
+                       <https://www.imdb.com/title/tt0092792/>,    # Cracked Up
+                       <https://www.imdb.com/title/tt0088513/>,    # The Equalizer
+                       <https://www.imdb.com/title/tt0083395/>,    # Cagney & Lacey
+                       <https://www.imdb.com/title/tt0088617/>,    # Stir Crazy
+                       <https://www.imdb.com/title/tt0084884/>,    # The Wall
+                       <https://www.imdb.com/title/tt6648216/> . # Ninguem
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086879/> a schema:Movie ;
+    schema:name "Amadeus" ;
+    schema:url <https://www.imdb.com/title/tt0086879/> .
+
+<https://www.imdb.com/title/tt0081858/> a schema:Movie ;
+    schema:name "Falcon Crest" ;
+    schema:url <https://www.imdb.com/title/tt0081858/> .
+
+<https://www.imdb.com/title/tt0083470/> a schema:Movie ;
+    schema:name "Remington Steele" ;
+    schema:url <https://www.imdb.com/title/tt0083470/> .
+
+<https://www.imdb.com/title/tt0096534/> a schema:Movie ;
+    schema:name "Anything But Love" ;
+    schema:url <https://www.imdb.com/title/tt0096534/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mad About You (1995)
+<https://www.imdb.com/title/tt0103484/> a schema:Movie ;
+    schema:name "Mad About You" ;
+    schema:url <https://www.imdb.com/title/tt0103484/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Director"
+    ] .
+
+# Matlock (1994)
+<https://www.imdb.com/title/tt0090481/> a schema:Movie ;
+    schema:name "Matlock" ;
+    schema:url <https://www.imdb.com/title/tt0090481/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Wally McDaniel"
+    ] .
+
+# Sinbad (1994)
+<https://www.imdb.com/title/tt0106132/> a schema:Movie ;
+    schema:name "Sinbad" ;
+    schema:url <https://www.imdb.com/title/tt0106132/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName ""
+    ] .
+
+# The Larry Sanders Show (1993)
+<https://www.imdb.com/title/tt0103466/> a schema:Movie ;
+    schema:name "The Larry Sanders Show" ;
+    schema:url <https://www.imdb.com/title/tt0103466/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Thomas"
+    ] .
+
+# Life Goes On (1993)
+<https://www.imdb.com/title/tt0096635/> a schema:Movie ;
+    schema:name "Life Goes On" ;
+    schema:url <https://www.imdb.com/title/tt0096635/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Chester"
+    ] .
+
+# The Jackie Thomas Show (1992)
+<https://www.imdb.com/title/tt0103450/> a schema:Movie ;
+    schema:name "The Jackie Thomas Show" ;
+    schema:url <https://www.imdb.com/title/tt0103450/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Otto"
+    ] .
+
+# Sisters (1992)
+<https://www.imdb.com/title/tt0101199/> a schema:Movie ;
+    schema:name "Sisters" ;
+    schema:url <https://www.imdb.com/title/tt0101199/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Marcus DeWitt"
+    ] .
+
+# Baby Brown (1990)
+<https://www.imdb.com/title/tt0149757/> a schema:Movie ;
+    schema:name "Baby Brown" ;
+    schema:url <https://www.imdb.com/title/tt0149757/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "FBI #2"
+    ] .
+
+# Room for Romance (1990)
+<https://www.imdb.com/title/tt0121953/> a schema:Movie ;
+    schema:name "Room for Romance" ;
+    schema:url <https://www.imdb.com/title/tt0121953/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName ""
+    ] .
+
+# Valerie (1988)
+<https://www.imdb.com/title/tt0090540/> a schema:Movie ;
+    schema:name "Valerie" ;
+    schema:url <https://www.imdb.com/title/tt0090540/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Mr. Standish"
+    ] .
+
+# Perfect Strangers (1987)
+<https://www.imdb.com/title/tt0090501/> a schema:Movie ;
+    schema:name "Perfect Strangers" ;
+    schema:url <https://www.imdb.com/title/tt0090501/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Frank Peterson"
+    ] .
+
+# Max Headroom (1987)
+<https://www.imdb.com/title/tt0092402/> a schema:Movie ;
+    schema:name "Max Headroom" ;
+    schema:url <https://www.imdb.com/title/tt0092402/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Biller"
+    ] .
+
+# Night Court (1987)
+<https://www.imdb.com/title/tt0086770/> a schema:Movie ;
+    schema:name "Night Court" ;
+    schema:url <https://www.imdb.com/title/tt0086770/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Gary Fenton"
+    ] .
+
+# Cracked Up (1987)
+<https://www.imdb.com/title/tt0092792/> a schema:Movie ;
+    schema:name "Cracked Up" ;
+    schema:url <https://www.imdb.com/title/tt0092792/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Resident Doctor"
+    ] .
+
+# The Equalizer (1985)
+<https://www.imdb.com/title/tt0088513/> a schema:Movie ;
+    schema:name "The Equalizer" ;
+    schema:url <https://www.imdb.com/title/tt0088513/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "1st Client"
+    ] .
+
+# Cagney & Lacey (1985)
+<https://www.imdb.com/title/tt0083395/> a schema:Movie ;
+    schema:name "Cagney & Lacey" ;
+    schema:url <https://www.imdb.com/title/tt0083395/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Eli Leavitt"
+    ] .
+
+# Stir Crazy (1985)
+<https://www.imdb.com/title/tt0088617/> a schema:Movie ;
+    schema:name "Stir Crazy" ;
+    schema:url <https://www.imdb.com/title/tt0088617/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Jess Morgan"
+    ] .
+
+# The Wall (1982)
+<https://www.imdb.com/title/tt0084884/> a schema:Movie ;
+    schema:name "The Wall" ;
+    schema:url <https://www.imdb.com/title/tt0084884/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Stefan Mazor"
+    ] .
+
+# Ninguem (1981)
+<https://www.imdb.com/title/tt6648216/> a schema:Movie ;
+    schema:name "Ninguem" ;
+    schema:url <https://www.imdb.com/title/tt6648216/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0291068/> ;
+        schema:characterName "Ninguem"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

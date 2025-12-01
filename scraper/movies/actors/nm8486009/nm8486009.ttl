@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8486009/> a schema:Person ;
+    schema:name "Dilip Ambekar" ;
+    schema:url <https://www.imdb.com/name/nm8486009/> ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director" ;
+    schema:description "Dilip Ambekar. Actor: Swades: We, the People. Dilip Ambekar is known for Swades: We, the People (2004), Anna (2016) and Anna, Kisan Baburao Hazare (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0367110/>,    # Swades: We, the People
+                       <https://www.imdb.com/title/tt12741978/> . # Sasar Maher
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Swades: We, the People (2004)
+<https://www.imdb.com/title/tt0367110/> a schema:Movie ;
+    schema:name "Swades: We, the People" ;
+    schema:url <https://www.imdb.com/title/tt0367110/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8486009/> ;
+        schema:characterName "Panch Hariya"
+    ] .
+
+# Sasar Maher (1994)
+<https://www.imdb.com/title/tt12741978/> a schema:Movie ;
+    schema:name "Sasar Maher" ;
+    schema:url <https://www.imdb.com/title/tt12741978/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8486009/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

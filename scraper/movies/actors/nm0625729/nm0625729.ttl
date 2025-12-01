@@ -1,0 +1,208 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0625729/> a schema:Person ;
+    schema:name "Sandy Nelson" ;
+    schema:url <https://www.imdb.com/name/nm0625729/> ;
+    schema:birthDate "1970-12-02"^^xsd:date ;
+    schema:jobTitle "Actor", "Composer" ;
+    schema:description "Sandy Nelson. Actor: Braveheart. Sandy Nelson was born on 2 December 1970 in Glasgow, Scotland, UK. He is an actor and composer, known for Braveheart (1995), Dancer (2003) and Still Game (2002)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWUyNmNhNzYtN2I5ZS00MDI5LTgyOTUtOTVjNWQ4OGJhMWRmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Glasgow, Scotland, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0281491/>,    # Still Game
+                       <https://www.imdb.com/title/tt3792220/>,    # Glasgow Girls
+                       <https://www.imdb.com/title/tt1383294/>,    # Himmelblå
+                       <https://www.imdb.com/title/tt1102770/>,    # Legit
+                       <https://www.imdb.com/title/tt0414160/>,    # Instant Credit
+                       <https://www.imdb.com/title/tt0357379/>,    # The Karen Dunbar Show
+                       <https://www.imdb.com/title/tt0407711/>,    # Dancer
+                       <https://www.imdb.com/title/tt0276650/>,    # The Book Group
+                       <https://www.imdb.com/title/tt1000529/>,    # Snoddy
+                       <https://www.imdb.com/title/tt0129709/>,    # Rab C. Nesbitt
+                       <https://www.imdb.com/title/tt0388578/>,    # Atletico Partick
+                       <https://www.imdb.com/title/tt0112573/> ; # Braveheart
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0625729/mediaviewer/rm2075362049/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Still Game (2002)
+<https://www.imdb.com/title/tt0281491/> a schema:Movie ;
+    schema:name "Still Game" ;
+    schema:url <https://www.imdb.com/title/tt0281491/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Chris the Postie"
+    ] .
+
+# Glasgow Girls (2014)
+<https://www.imdb.com/title/tt3792220/> a schema:Movie ;
+    schema:name "Glasgow Girls" ;
+    schema:url <https://www.imdb.com/title/tt3792220/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Colin"
+    ] .
+
+# Himmelblå (2010)
+<https://www.imdb.com/title/tt1383294/> a schema:Movie ;
+    schema:name "Himmelblå" ;
+    schema:url <https://www.imdb.com/title/tt1383294/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Mann på offentlig kontor"
+    ] .
+
+# Legit (2007)
+<https://www.imdb.com/title/tt1102770/> a schema:Movie ;
+    schema:name "Legit" ;
+    schema:url <https://www.imdb.com/title/tt1102770/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Wee Paul"
+    ] .
+
+# Instant Credit (2004)
+<https://www.imdb.com/title/tt0414160/> a schema:Movie ;
+    schema:name "Instant Credit" ;
+    schema:url <https://www.imdb.com/title/tt0414160/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Alec"
+    ] .
+
+# The Karen Dunbar Show (2004)
+<https://www.imdb.com/title/tt0357379/> a schema:Movie ;
+    schema:name "The Karen Dunbar Show" ;
+    schema:url <https://www.imdb.com/title/tt0357379/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Office Staff"
+    ] .
+
+# Dancer (2003)
+<https://www.imdb.com/title/tt0407711/> a schema:Movie ;
+    schema:name "Dancer" ;
+    schema:url <https://www.imdb.com/title/tt0407711/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Brian"
+    ] .
+
+# The Book Group (2003)
+<https://www.imdb.com/title/tt0276650/> a schema:Movie ;
+    schema:name "The Book Group" ;
+    schema:url <https://www.imdb.com/title/tt0276650/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "DJ"
+    ] .
+
+# Snoddy (2002)
+<https://www.imdb.com/title/tt1000529/> a schema:Movie ;
+    schema:name "Snoddy" ;
+    schema:url <https://www.imdb.com/title/tt1000529/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Young Guy"
+    ] .
+
+# Rab C. Nesbitt (1996)
+<https://www.imdb.com/title/tt0129709/> a schema:Movie ;
+    schema:name "Rab C. Nesbitt" ;
+    schema:url <https://www.imdb.com/title/tt0129709/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Job Applicant"
+    ] .
+
+# Atletico Partick (1996)
+<https://www.imdb.com/title/tt0388578/> a schema:Movie ;
+    schema:name "Atletico Partick" ;
+    schema:url <https://www.imdb.com/title/tt0388578/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "Mr. Forbes"
+    ] .
+
+# Braveheart (1995)
+<https://www.imdb.com/title/tt0112573/> a schema:Movie ;
+    schema:name "Braveheart" ;
+    schema:url <https://www.imdb.com/title/tt0112573/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0625729/> ;
+        schema:characterName "John Wallace"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWUyNmNhNzYtN2I5ZS00MDI5LTgyOTUtOTVjNWQ4OGJhMWRmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWUyNmNhNzYtN2I5ZS00MDI5LTgyOTUtOTVjNWQ4OGJhMWRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sandy Nelson" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "210"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0625729/mediaviewer/rm2075362049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWUyNmNhNzYtN2I5ZS00MDI5LTgyOTUtOTVjNWQ4OGJhMWRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sandy Nelson" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "210"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

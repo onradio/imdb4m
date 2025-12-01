@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0914348/> a schema:Person ;
+    schema:name "Leonard Watkins" ;
+    schema:url <https://www.imdb.com/name/nm0914348/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Leonard Watkins. Actor: Blue Velvet. Leonard Watkins is known for Blue Velvet (1986), Other Voices, Other Rooms (1995) and American Gothic (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119845/>,    # Other Voices, Other Rooms
+                       <https://www.imdb.com/title/tt0111880/>,    # American Gothic
+                       <https://www.imdb.com/title/tt0090756/> . # Blue Velvet
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Other Voices, Other Rooms (1995)
+<https://www.imdb.com/title/tt0119845/> a schema:Movie ;
+    schema:name "Other Voices, Other Rooms" ;
+    schema:url <https://www.imdb.com/title/tt0119845/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914348/> ;
+        schema:characterName "Jesus Fever"
+    ] .
+
+# American Gothic (1995)
+<https://www.imdb.com/title/tt0111880/> a schema:Movie ;
+    schema:name "American Gothic" ;
+    schema:url <https://www.imdb.com/title/tt0111880/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914348/> ;
+        schema:characterName "Blind Man"
+    ] .
+
+# Blue Velvet (1986)
+<https://www.imdb.com/title/tt0090756/> a schema:Movie ;
+    schema:name "Blue Velvet" ;
+    schema:url <https://www.imdb.com/title/tt0090756/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914348/> ;
+        schema:characterName "Double Ed"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

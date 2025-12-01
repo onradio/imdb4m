@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0481115/> a schema:Person ;
+    schema:name "Nellina Laganà" ;
+    schema:url <https://www.imdb.com/name/nm0481115/> ;
+    schema:birthDate "1947-04-10"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Nellina Laganà. Actress: Cinema Paradiso. Nellina Laganà was born on 10 April 1947 in Syracuse, Sicily, Italy. She was an actress, known for Cinema Paradiso (1988), Inspector Montalbano (1999) and La divina Dolzedia (2017). She died on 8 January 2020 in Catania, Sicily, Italy." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Syracuse, Sicily, Italy"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0920489/>,    # Inspector Montalbano
+                       <https://www.imdb.com/title/tt10833614/>,    # La divina Dolzedia
+                       <https://www.imdb.com/title/tt2097890/>,    # Mi chiamo Paoluccio
+                       <https://www.imdb.com/title/tt0095765/> . # Cinema Paradiso
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Inspector Montalbano (2008)
+<https://www.imdb.com/title/tt0920489/> a schema:Movie ;
+    schema:name "Inspector Montalbano" ;
+    schema:url <https://www.imdb.com/title/tt0920489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0481115/> ;
+        schema:characterName "Zina Carciofolo"
+    ] .
+
+# La divina Dolzedia (2017)
+<https://www.imdb.com/title/tt10833614/> a schema:Movie ;
+    schema:name "La divina Dolzedia" ;
+    schema:url <https://www.imdb.com/title/tt10833614/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0481115/> ;
+        schema:characterName ""
+    ] .
+
+# Mi chiamo Paoluccio (2009)
+<https://www.imdb.com/title/tt2097890/> a schema:Movie ;
+    schema:name "Mi chiamo Paoluccio" ;
+    schema:url <https://www.imdb.com/title/tt2097890/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0481115/> ;
+        schema:characterName "Paoluccio's mother - Adult"
+    ] .
+
+# Cinema Paradiso (1988)
+<https://www.imdb.com/title/tt0095765/> a schema:Movie ;
+    schema:name "Cinema Paradiso" ;
+    schema:url <https://www.imdb.com/title/tt0095765/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0481115/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

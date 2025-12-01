@@ -1,0 +1,431 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1738172/> a schema:Person ;
+    schema:name "Toby Hemingway" ;
+    schema:url <https://www.imdb.com/name/nm1738172/> ;
+    schema:birthDate "1983-05-28"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Toby Michael C.A. Hemingway" ;
+    schema:description "Toby Hemingway. Actor: The Covenant. Toby Hemingway was born on 28 May 1983 in Brighton, England, UK. He is an actor, known for The Covenant (2006), Black Swan (2010) and In Time (2011)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTY4MDQ2MDY0Nl5BMl5BanBnXkFtZTcwNDA0MTkwNA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brighton, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10¾″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0475944/>,    # The Covenant
+                       <https://www.imdb.com/title/tt0947798/>,    # Black Swan
+                       <https://www.imdb.com/title/tt1637688/>,    # In Time
+                       <https://www.imdb.com/title/tt1972803/>,    # The Silent Thief
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6461824/>,    # The Crossing
+                       <https://www.imdb.com/title/tt1880415/>,    # Battlecreek
+                       <https://www.imdb.com/title/tt5164196/>,    # Lethal Weapon
+                       <https://www.imdb.com/title/tt4537888/>,    # The Monster Project
+                       <https://www.imdb.com/title/tt2492344/>,    # Division 19
+                       <https://www.imdb.com/title/tt5547566/>,    # Prototype
+                       <https://www.imdb.com/title/tt3172126/>,    # Undrafted
+                       <https://www.imdb.com/title/tt1699748/>,    # Hell on Wheels
+                       <https://www.imdb.com/title/tt3826866/>,    # The Girl in the Photographs
+                       <https://www.imdb.com/title/tt2450056/>,    # Charlie, Trevor and a Girl Savannah
+                       <https://www.imdb.com/title/tt3759840/>,    # Front
+                       <https://www.imdb.com/title/tt3697960/>,    # Good Samaritan
+                       <https://www.imdb.com/title/tt1956655/>,    # The Ganzfeld Possession
+                       <https://www.imdb.com/title/tt0762138/>,    # Syrup
+                       <https://www.imdb.com/title/tt1943524/>,    # The Finder
+                       <https://www.imdb.com/title/tt1682940/>,    # Playback
+                       <https://www.imdb.com/title/tt1523987/>,    # 1 Out of 7
+                       <https://www.imdb.com/title/tt12465382/>,    # Taylor Swift: Mine
+                       <https://www.imdb.com/title/tt0313043/>,    # CSI: Miami
+                       <https://www.imdb.com/title/tt0800027/>,    # Feast of Love
+                       <https://www.imdb.com/title/tt0460627/>,    # Bones
+                       <https://www.imdb.com/title/tt0400037/>,    # Summerland
+                       <https://www.imdb.com/title/tt0431145/> ; # Indio, USA
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi992524569/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1738172/mediaviewer/rm2393996032/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm2243001088/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm1404140288/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm3569882624/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm3251115520/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm3284669952/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm4056421888/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm1884534016/>,
+                 <https://www.imdb.com/name/nm1738172/mediaviewer/rm2119415040/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0475944/> a schema:Movie ;
+    schema:name "The Covenant" ;
+    schema:url <https://www.imdb.com/title/tt0475944/> .
+
+<https://www.imdb.com/title/tt0947798/> a schema:Movie ;
+    schema:name "Black Swan" ;
+    schema:url <https://www.imdb.com/title/tt0947798/> .
+
+<https://www.imdb.com/title/tt1637688/> a schema:Movie ;
+    schema:name "In Time" ;
+    schema:url <https://www.imdb.com/title/tt1637688/> .
+
+<https://www.imdb.com/title/tt1972803/> a schema:Movie ;
+    schema:name "The Silent Thief" ;
+    schema:url <https://www.imdb.com/title/tt1972803/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Crossing (2018)
+<https://www.imdb.com/title/tt6461824/> a schema:Movie ;
+    schema:name "The Crossing" ;
+    schema:url <https://www.imdb.com/title/tt6461824/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Gabe"
+    ] .
+
+# Battlecreek (2017)
+<https://www.imdb.com/title/tt1880415/> a schema:Movie ;
+    schema:name "Battlecreek" ;
+    schema:url <https://www.imdb.com/title/tt1880415/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Cy"
+    ] .
+
+# Lethal Weapon (2017)
+<https://www.imdb.com/title/tt5164196/> a schema:Movie ;
+    schema:name "Lethal Weapon" ;
+    schema:url <https://www.imdb.com/title/tt5164196/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Bobby Claypool"
+    ] .
+
+# The Monster Project (2017)
+<https://www.imdb.com/title/tt4537888/> a schema:Movie ;
+    schema:name "The Monster Project" ;
+    schema:url <https://www.imdb.com/title/tt4537888/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Bryan"
+    ] .
+
+# Division 19 (2017)
+<https://www.imdb.com/title/tt2492344/> a schema:Movie ;
+    schema:name "Division 19" ;
+    schema:url <https://www.imdb.com/title/tt2492344/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Barca"
+    ] .
+
+# Prototype (2016)
+<https://www.imdb.com/title/tt5547566/> a schema:Movie ;
+    schema:name "Prototype" ;
+    schema:url <https://www.imdb.com/title/tt5547566/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Forde"
+    ] .
+
+# Undrafted (2016)
+<https://www.imdb.com/title/tt3172126/> a schema:Movie ;
+    schema:name "Undrafted" ;
+    schema:url <https://www.imdb.com/title/tt3172126/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Palacco"
+    ] .
+
+# Hell on Wheels (2016)
+<https://www.imdb.com/title/tt1699748/> a schema:Movie ;
+    schema:name "Hell on Wheels" ;
+    schema:url <https://www.imdb.com/title/tt1699748/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Isaac Vinson"
+    ] .
+
+# The Girl in the Photographs (2015)
+<https://www.imdb.com/title/tt3826866/> a schema:Movie ;
+    schema:name "The Girl in the Photographs" ;
+    schema:url <https://www.imdb.com/title/tt3826866/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Ben"
+    ] .
+
+# Charlie, Trevor and a Girl Savannah (2015)
+<https://www.imdb.com/title/tt2450056/> a schema:Movie ;
+    schema:name "Charlie, Trevor and a Girl Savannah" ;
+    schema:url <https://www.imdb.com/title/tt2450056/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Trevor"
+    ] .
+
+# Front (2014)
+<https://www.imdb.com/title/tt3759840/> a schema:Movie ;
+    schema:name "Front" ;
+    schema:url <https://www.imdb.com/title/tt3759840/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Bosher"
+    ] .
+
+# Good Samaritan (2014)
+<https://www.imdb.com/title/tt3697960/> a schema:Movie ;
+    schema:name "Good Samaritan" ;
+    schema:url <https://www.imdb.com/title/tt3697960/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Nathan Rome"
+    ] .
+
+# The Ganzfeld Possession (2014)
+<https://www.imdb.com/title/tt1956655/> a schema:Movie ;
+    schema:name "The Ganzfeld Possession" ;
+    schema:url <https://www.imdb.com/title/tt1956655/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Graves"
+    ] .
+
+# Syrup (2013)
+<https://www.imdb.com/title/tt0762138/> a schema:Movie ;
+    schema:name "Syrup" ;
+    schema:url <https://www.imdb.com/title/tt0762138/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# The Finder (2012)
+<https://www.imdb.com/title/tt1943524/> a schema:Movie ;
+    schema:name "The Finder" ;
+    schema:url <https://www.imdb.com/title/tt1943524/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Timo Proud"
+    ] .
+
+# Playback (2012)
+<https://www.imdb.com/title/tt1682940/> a schema:Movie ;
+    schema:name "Playback" ;
+    schema:url <https://www.imdb.com/title/tt1682940/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Quinn"
+    ] .
+
+# 1 Out of 7 (2011)
+<https://www.imdb.com/title/tt1523987/> a schema:Movie ;
+    schema:name "1 Out of 7" ;
+    schema:url <https://www.imdb.com/title/tt1523987/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Eric"
+    ] .
+
+# Taylor Swift: Mine (2010)
+<https://www.imdb.com/title/tt12465382/> a schema:Movie ;
+    schema:name "Taylor Swift: Mine" ;
+    schema:url <https://www.imdb.com/title/tt12465382/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Waiter"
+    ] .
+
+# CSI: Miami (2008)
+<https://www.imdb.com/title/tt0313043/> a schema:Movie ;
+    schema:name "CSI: Miami" ;
+    schema:url <https://www.imdb.com/title/tt0313043/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Trey Holt"
+    ] .
+
+# Feast of Love (2007)
+<https://www.imdb.com/title/tt0800027/> a schema:Movie ;
+    schema:name "Feast of Love" ;
+    schema:url <https://www.imdb.com/title/tt0800027/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Oscar"
+    ] .
+
+# Bones (2005)
+<https://www.imdb.com/title/tt0460627/> a schema:Movie ;
+    schema:name "Bones" ;
+    schema:url <https://www.imdb.com/title/tt0460627/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Tucker Pattison"
+    ] .
+
+# Summerland (2005)
+<https://www.imdb.com/title/tt0400037/> a schema:Movie ;
+    schema:name "Summerland" ;
+    schema:url <https://www.imdb.com/title/tt0400037/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Jason Warner"
+    ] .
+
+# Indio, USA (2004)
+<https://www.imdb.com/title/tt0431145/> a schema:Movie ;
+    schema:name "Indio, USA" ;
+    schema:url <https://www.imdb.com/title/tt0431145/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1738172/> ;
+        schema:characterName "Ricky"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi992524569/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A recovering drug addict takes a job with a documentary crew who plans to interview three subjects who claim to be real life monsters." ;
+        schema:embedUrl <https://www.imdb.com/video/vi992524569/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGNjOTlhZDYtMGQxMS00NmMzLWIyMGUtZWY1NDQ4YzBiYjM2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" ;
+        schema:duration "PT1M53S"^^xsd:duration ;
+        schema:uploadDate "2017-08-10T20:30:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTY4MDQ2MDY0Nl5BMl5BanBnXkFtZTcwNDA0MTkwNA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTY4MDQ2MDY0Nl5BMl5BanBnXkFtZTcwNDA0MTkwNA@@._V1_.jpg> ;
+    schema:caption "Toby Hemingway at an event for Black Swan (2010)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "315"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm2393996032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGY2YTVjZWQtOWY3MS00MDYyLTk0MWQtZmQ2MWFjNzdlZmYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Collins Pennie and Toby Hemingway in In Time (2011)" ;
+    schema:height "748"^^xsd:integer ;
+    schema:width "1760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm2243001088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzc1Y2NhYTctZGViNC00MjhjLWI0MzgtMzVlMmYwNmE5NTg5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Collins Pennie and Toby Hemingway in In Time (2011)" ;
+    schema:height "748"^^xsd:integer ;
+    schema:width "1760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm1404140288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDc0ZmFmMDUtOWZmNy00Njk2LWFiY2EtMTczZTM2ZmUzMTYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Justin Timberlake, Cillian Murphy, Collins Pennie, and Toby Hemingway in In Time (2011)" ;
+    schema:height "748"^^xsd:integer ;
+    schema:width "1760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm3569882624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjExNjQ3MzY3MV5BMl5BanBnXkFtZTgwMTQwMzIxOTE@._V1_.jpg> ;
+    schema:caption "Tyler Hoechlin, Philip Winchester, Toby Hemingway, Chace Crawford, Michael Consiglio, Jay Hayden, and David Del Rio in Undrafted (2016)" ;
+    schema:height "943"^^xsd:integer ;
+    schema:width "1678"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm3251115520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ5Nzg1NzYyM15BMl5BanBnXkFtZTgwODIwMzIxOTE@._V1_.jpg> ;
+    schema:caption "Joseph Mazzello, Tyler Hoechlin, Philip Winchester, Ryan Pinkston, Toby Hemingway, Matt Bush, Chace Crawford, Jay Hayden, Manny Montana, David Del Rio, Aaron Tveit, and Duke Davis Roberts in Undrafted (2016)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm3284669952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3Njc4NTM3N15BMl5BanBnXkFtZTgwMTEwMzIxOTE@._V1_.jpg> ;
+    schema:caption "Toby Hemingway, Matt Bush, and Chace Crawford in Undrafted (2016)" ;
+    schema:height "942"^^xsd:integer ;
+    schema:width "1675"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm4056421888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ5NDgzMjY5NV5BMl5BanBnXkFtZTgwMjg5MjIxOTE@._V1_.jpg> ;
+    schema:caption "Toby Hemingway, Matt Bush, and Chace Crawford in Undrafted (2016)" ;
+    schema:height "940"^^xsd:integer ;
+    schema:width "1675"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm1884534016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzMyODkwNzMxNF5BMl5BanBnXkFtZTcwNDU1Mzg4Nw@@._V1_.jpg> ;
+    schema:caption "Toby Hemingway in 1 Out of 7 (2011)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1738172/mediaviewer/rm2119415040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg5NzMzNzAyOV5BMl5BanBnXkFtZTcwNjU1Mzg4Nw@@._V1_.jpg> ;
+    schema:caption "Laura Ramsey and Toby Hemingway in 1 Out of 7 (2011)" ;
+    schema:height "532"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

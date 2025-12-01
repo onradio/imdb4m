@@ -1,0 +1,587 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1663252/> a schema:Person ;
+    schema:name "Chris Chalk" ;
+    schema:url <https://www.imdb.com/name/nm1663252/> ;
+    schema:birthDate "1977-12-07"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Chris Chalk. Actor: IT: Welcome to Derry. Chris Chalk was born on 7 December 1977 in Asheville, North Carolina, USA. He is an actor and director, known for IT: Welcome to Derry (2025), Perry Mason (2020) and Our Deadly Vows (2023). He is married to Kimberley Dalton Mitchell." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNmVjZjY0ZjMtNzUzYi00ZTAyLTg1ZWUtYTliOTQzNjZhYTIyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Asheville, North Carolina, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4995776/>,    # The Red Sea Diving Resort
+                       <https://www.imdb.com/title/tt7137906/>,    # When They See Us
+                       <https://www.imdb.com/title/tt3749900/>,    # Gotham
+                       <https://www.imdb.com/title/tt6116172/>,    # Blank Canvas
+                       <https://www.imdb.com/title/tt5390504/>,    # Detroit
+                       <https://www.imdb.com/title/tt4522400/>,    # Underground
+                       <https://www.imdb.com/title/tt5740630/>,    # 4 Pounds of Flowers
+                       <https://www.imdb.com/title/tt2597768/>,    # Come and Find Me
+                       <https://www.imdb.com/title/tt2741602/>,    # The Blacklist
+                       <https://www.imdb.com/title/tt3410350/>,    # Complications
+                       <https://www.imdb.com/title/tt3442990/>,    # Lila & Eve
+                       <https://www.imdb.com/title/tt1870479/>,    # The Newsroom
+                       <https://www.imdb.com/title/tt1124373/>,    # Sons of Anarchy
+                       <https://www.imdb.com/title/tt1842530/>,    # Unforgettable
+                       <https://www.imdb.com/title/tt1796960/>,    # Homeland
+                       <https://www.imdb.com/title/tt2024544/>,    # 12 Years a Slave
+                       <https://www.imdb.com/title/tt1811307/>,    # Burning Blue
+                       <https://www.imdb.com/title/tt1489428/>,    # Justified
+                       <https://www.imdb.com/title/tt3348360/>,    # Lost It
+                       <https://www.imdb.com/title/tt0455323/>,    # Being Flynn
+                       <https://www.imdb.com/title/tt1653072/>,    # Stoop Sale
+                       <https://www.imdb.com/title/tt1839578/>,    # Person of Interest
+                       <https://www.imdb.com/title/tt1190689/>,    # Nurse Jackie
+                       <https://www.imdb.com/title/tt0275140/>,    # Law & Order: Criminal Intent
+                       <https://www.imdb.com/title/tt0203259/>,    # Law & Order: Special Victims Unit
+                       <https://www.imdb.com/title/tt1442462/>,    # The Good Wife
+                       <https://www.imdb.com/title/tt1304851/>,    # Michael Stahl-David: Behind the Star
+                       <https://www.imdb.com/title/tt0802999/>,    # Grand Theft Auto IV
+                       <https://www.imdb.com/title/tt0292963/>,    # Before the Devil Knows You're Dead
+                       <https://www.imdb.com/title/tt0455805/>,    # Then She Found Me
+                       <https://www.imdb.com/title/tt0801427/>,    # Six Degrees
+                       <https://www.imdb.com/title/tt0478088/>,    # 508 Nelson
+                       <https://www.imdb.com/title/tt0381798/>,    # Rescue Me
+                       <https://www.imdb.com/title/tt0800173/>,    # Recalled
+                       <https://www.imdb.com/title/tt0466665/>,    # The Architect
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0294870/>,    # Rent
+                       <https://www.imdb.com/title/tt0427038/> ; # Carlito's Way: Rise to Power
+
+
+    schema:video <https://www.imdb.com/video/vi107464729/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1663252/mediaviewer/rm4243481601/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm308982274/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm2927811840/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm423380480/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm3062029568/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm2212022017/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm752557313/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm342741761/>,
+                 <https://www.imdb.com/name/nm1663252/mediaviewer/rm2436065024/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Red Sea Diving Resort (2019)
+<https://www.imdb.com/title/tt4995776/> a schema:Movie ;
+    schema:name "The Red Sea Diving Resort" ;
+    schema:url <https://www.imdb.com/title/tt4995776/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Colonel Abdel Ahmed"
+    ] .
+
+# When They See Us (2019)
+<https://www.imdb.com/title/tt7137906/> a schema:Movie ;
+    schema:name "When They See Us" ;
+    schema:url <https://www.imdb.com/title/tt7137906/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Yusef Salaam - Adult"
+    ] .
+
+# Gotham (2015)
+<https://www.imdb.com/title/tt3749900/> a schema:Movie ;
+    schema:name "Gotham" ;
+    schema:url <https://www.imdb.com/title/tt3749900/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Lucius Fox"
+    ] .
+
+# Blank Canvas (2017)
+<https://www.imdb.com/title/tt6116172/> a schema:Movie ;
+    schema:name "Blank Canvas" ;
+    schema:url <https://www.imdb.com/title/tt6116172/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Riley"
+    ] .
+
+# Detroit (2017)
+<https://www.imdb.com/title/tt5390504/> a schema:Movie ;
+    schema:name "Detroit" ;
+    schema:url <https://www.imdb.com/title/tt5390504/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Officer Frank"
+    ] .
+
+# Underground (2016)
+<https://www.imdb.com/title/tt4522400/> a schema:Movie ;
+    schema:name "Underground" ;
+    schema:url <https://www.imdb.com/title/tt4522400/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "William Still"
+    ] .
+
+# 4 Pounds of Flowers (2016)
+<https://www.imdb.com/title/tt5740630/> a schema:Movie ;
+    schema:name "4 Pounds of Flowers" ;
+    schema:url <https://www.imdb.com/title/tt5740630/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Trevor"
+    ] .
+
+# Come and Find Me (2016)
+<https://www.imdb.com/title/tt2597768/> a schema:Movie ;
+    schema:name "Come and Find Me" ;
+    schema:url <https://www.imdb.com/title/tt2597768/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Buck Cameron"
+    ] .
+
+# The Blacklist (2016)
+<https://www.imdb.com/title/tt2741602/> a schema:Movie ;
+    schema:name "The Blacklist" ;
+    schema:url <https://www.imdb.com/title/tt2741602/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "John Addison"
+    ] .
+
+# Complications (2015)
+<https://www.imdb.com/title/tt3410350/> a schema:Movie ;
+    schema:name "Complications" ;
+    schema:url <https://www.imdb.com/title/tt3410350/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Darius Bishop"
+    ] .
+
+# Lila & Eve (2015)
+<https://www.imdb.com/title/tt3442990/> a schema:Movie ;
+    schema:name "Lila & Eve" ;
+    schema:url <https://www.imdb.com/title/tt3442990/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Alonzo"
+    ] .
+
+# The Newsroom (2012)
+<https://www.imdb.com/title/tt1870479/> a schema:Movie ;
+    schema:name "The Newsroom" ;
+    schema:url <https://www.imdb.com/title/tt1870479/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Gary Cooper"
+    ] .
+
+# Sons of Anarchy (2014)
+<https://www.imdb.com/title/tt1124373/> a schema:Movie ;
+    schema:name "Sons of Anarchy" ;
+    schema:url <https://www.imdb.com/title/tt1124373/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Flint"
+    ] .
+
+# Unforgettable (2014)
+<https://www.imdb.com/title/tt1842530/> a schema:Movie ;
+    schema:name "Unforgettable" ;
+    schema:url <https://www.imdb.com/title/tt1842530/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Shawn Manning"
+    ] .
+
+# Homeland (2011)
+<https://www.imdb.com/title/tt1796960/> a schema:Movie ;
+    schema:name "Homeland" ;
+    schema:url <https://www.imdb.com/title/tt1796960/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Tom Walker"
+    ] .
+
+# 12 Years a Slave (2013)
+<https://www.imdb.com/title/tt2024544/> a schema:Movie ;
+    schema:name "12 Years a Slave" ;
+    schema:url <https://www.imdb.com/title/tt2024544/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Clemens"
+    ] .
+
+# Burning Blue (2013)
+<https://www.imdb.com/title/tt1811307/> a schema:Movie ;
+    schema:name "Burning Blue" ;
+    schema:url <https://www.imdb.com/title/tt1811307/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Special Agent Jones"
+    ] .
+
+# Justified (2013)
+<https://www.imdb.com/title/tt1489428/> a schema:Movie ;
+    schema:name "Justified" ;
+    schema:url <https://www.imdb.com/title/tt1489428/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Jody Adair"
+    ] .
+
+# Lost It (2013)
+<https://www.imdb.com/title/tt3348360/> a schema:Movie ;
+    schema:name "Lost It" ;
+    schema:url <https://www.imdb.com/title/tt3348360/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Rob"
+    ] .
+
+# Being Flynn (2012)
+<https://www.imdb.com/title/tt0455323/> a schema:Movie ;
+    schema:name "Being Flynn" ;
+    schema:url <https://www.imdb.com/title/tt0455323/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Ivan"
+    ] .
+
+# Stoop Sale (2011)
+<https://www.imdb.com/title/tt1653072/> a schema:Movie ;
+    schema:name "Stoop Sale" ;
+    schema:url <https://www.imdb.com/title/tt1653072/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Boyfriend of the Year"
+    ] .
+
+# Person of Interest (2011)
+<https://www.imdb.com/title/tt1839578/> a schema:Movie ;
+    schema:name "Person of Interest" ;
+    schema:url <https://www.imdb.com/title/tt1839578/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Lawrence Pope"
+    ] .
+
+# Nurse Jackie (2010)
+<https://www.imdb.com/title/tt1190689/> a schema:Movie ;
+    schema:name "Nurse Jackie" ;
+    schema:url <https://www.imdb.com/title/tt1190689/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "EMT"
+    ] .
+
+# Law & Order: Criminal Intent (2010)
+<https://www.imdb.com/title/tt0275140/> a schema:Movie ;
+    schema:name "Law & Order: Criminal Intent" ;
+    schema:url <https://www.imdb.com/title/tt0275140/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Austin Darvis"
+    ] .
+
+# Law & Order: Special Victims Unit (2003)
+<https://www.imdb.com/title/tt0203259/> a schema:Movie ;
+    schema:name "Law & Order: Special Victims Unit" ;
+    schema:url <https://www.imdb.com/title/tt0203259/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Neal Douglas"
+    ] .
+
+# The Good Wife (2009)
+<https://www.imdb.com/title/tt1442462/> a schema:Movie ;
+    schema:name "The Good Wife" ;
+    schema:url <https://www.imdb.com/title/tt1442462/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Third Year Associate"
+    ] .
+
+# Michael Stahl-David: Behind the Star (2008)
+<https://www.imdb.com/title/tt1304851/> a schema:Movie ;
+    schema:name "Michael Stahl-David: Behind the Star" ;
+    schema:url <https://www.imdb.com/title/tt1304851/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Chris Wahl"
+    ] .
+
+# Grand Theft Auto IV (2008)
+<https://www.imdb.com/title/tt0802999/> a schema:Movie ;
+    schema:name "Grand Theft Auto IV" ;
+    schema:url <https://www.imdb.com/title/tt0802999/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "The Crowd of Liberty City"
+    ] .
+
+# Before the Devil Knows You're Dead (2007)
+<https://www.imdb.com/title/tt0292963/> a schema:Movie ;
+    schema:name "Before the Devil Knows You're Dead" ;
+    schema:url <https://www.imdb.com/title/tt0292963/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Officer"
+    ] .
+
+# Then She Found Me (2007)
+<https://www.imdb.com/title/tt0455805/> a schema:Movie ;
+    schema:name "Then She Found Me" ;
+    schema:url <https://www.imdb.com/title/tt0455805/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Orderly"
+    ] .
+
+# Six Degrees (2006)
+<https://www.imdb.com/title/tt0801427/> a schema:Movie ;
+    schema:name "Six Degrees" ;
+    schema:url <https://www.imdb.com/title/tt0801427/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "John-O"
+    ] .
+
+# 508 Nelson (2006)
+<https://www.imdb.com/title/tt0478088/> a schema:Movie ;
+    schema:name "508 Nelson" ;
+    schema:url <https://www.imdb.com/title/tt0478088/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Lou"
+    ] .
+
+# Rescue Me (2006)
+<https://www.imdb.com/title/tt0381798/> a schema:Movie ;
+    schema:name "Rescue Me" ;
+    schema:url <https://www.imdb.com/title/tt0381798/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Young Black Male"
+    ] .
+
+# Recalled (2006)
+<https://www.imdb.com/title/tt0800173/> a schema:Movie ;
+    schema:name "Recalled" ;
+    schema:url <https://www.imdb.com/title/tt0800173/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Private Reyes"
+    ] .
+
+# The Architect (2006)
+<https://www.imdb.com/title/tt0466665/> a schema:Movie ;
+    schema:name "The Architect" ;
+    schema:url <https://www.imdb.com/title/tt0466665/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Drug Dealer"
+    ] .
+
+# Law & Order (2004)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Alfred Biso"
+    ] .
+
+# Rent (2005)
+<https://www.imdb.com/title/tt0294870/> a schema:Movie ;
+    schema:name "Rent" ;
+    schema:url <https://www.imdb.com/title/tt0294870/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Street Vendor Who Sells Coats"
+    ] .
+
+# Carlito's Way: Rise to Power (2005)
+<https://www.imdb.com/title/tt0427038/> a schema:Movie ;
+    schema:name "Carlito's Way: Rise to Power" ;
+    schema:url <https://www.imdb.com/title/tt0427038/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1663252/> ;
+        schema:characterName "Shad"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi107464729/> a schema:VideoObject ;
+        schema:name "&quot;It: Welcome to Derry&quot; Cast, Crew Talk Childhood Nightmares and Weaponizing Fear" ;
+        schema:description "IMDb catches up with the powerhouse team behind \"It: Welcome to Derry.\" Stars Jovan Adepo, Taylour Paige, Chris Chalk, Stephen Rider, James Remar, and Kimberly Guerrero join executive producers Andy and Barbara Muschietti and writers Jason Fuchs and Brad Caleb Kane to discuss expanding the iconic Stephen King universe. Muschietti shares how the prequel explores the novel's \"interludes\" while weaving new enigmas into the narrative. Kane delves into the show's central themes, particularly how fear can be weaponized to control populations. The cast share their reactions to Bill Skarsgård's Pennywise on set and reminisces about their own childhood nightmares." ;
+        schema:embedUrl <https://www.imdb.com/video/vi107464729/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzY0MzE3MjctYTViYS00YWI5LWIyMWMtMzgxNDFlMGFlZDRjXkEyXkFqcGdeQXRyZXdlcw@@._V1_.jpg" ;
+        schema:duration "PT8M4S"^^xsd:duration ;
+        schema:uploadDate "2025-10-24T01:37:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNmVjZjY0ZjMtNzUzYi00ZTAyLTg1ZWUtYTliOTQzNjZhYTIyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmVjZjY0ZjMtNzUzYi00ZTAyLTg1ZWUtYTliOTQzNjZhYTIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk in IT: Welcome to Derry (2025)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm4243481601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjU1ZGYzNWUtMjM5Ni00YjI1LWJjNTYtZDZiYWQwNzM0Njc4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "683"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm308982274/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTYxMGU1NTItMGM4ZS00MThjLTliMTYtYTcwNGI1MDMwYzVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk in IT: Welcome to Derry (2025)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm2927811840/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzk4MDYyNzktMGEyYy00YTQ4LTk4NDctNzE5ZmMyOGE4OGE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Fences on Broadway" ;
+    schema:height "316"^^xsd:integer ;
+    schema:width "460"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm423380480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDJiMDk5ZDAtNTA2OC00YjM1LWE3NDgtZmFiOWFhZDE2OTYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk" ;
+    schema:height "2100"^^xsd:integer ;
+    schema:width "1516"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm3062029568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTM5MGQ4NzUtNzc2Yy00MmQ3LWI3NWItMjEzZTc5ZmNkZTllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk recieving Theatre World Award for his work as Cory in August Wilson's Fences Starring Denzel Washington and Viola Davis" ;
+    schema:height "549"^^xsd:integer ;
+    schema:width "366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm2212022017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzI2NDM0ZGItNGFhMC00NGEwLTk5MTYtNWQzYzQ3ZmNjMzQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2304"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm752557313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGNlZGY2YTctNjNmMy00YjgzLTkzZmUtODIzZWExYTQwYmRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk in Cutline (2022)" ;
+    schema:height "1910"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm342741761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDlkYmQzNDAtMDU4OS00ZjNmLThiYTUtZDgzN2ExYTdhOTEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Chalk in Detroit (2017)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1663252/mediaviewer/rm2436065024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzIyZmViNGItNTRjYy00NTczLTljOTgtYTBiZTM2NTY0ZDUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sean Pertwee, Morena Baccarin, Ben McKenzie, Chris Chalk, Erin Richards, and Lili Simmons in Gotham (2014)" ;
+    schema:height "1072"^^xsd:integer ;
+    schema:width "1912"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1663252/>
+    schema:sameAs <https://www.instagram.com/mynameischrischalk/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

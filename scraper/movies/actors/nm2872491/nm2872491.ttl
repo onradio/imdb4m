@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2872491/> a schema:Person ;
+    schema:name "Martin Stringer" ;
+    schema:url <https://www.imdb.com/name/nm2872491/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Martin Stringer. Actor: There Will Be Blood. Martin Stringer is known for There Will Be Blood (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0469494/> ;    # There Will Be Blood
+
+
+    schema:video <https://www.imdb.com/video/vi1341980953/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# There Will Be Blood (2007)
+<https://www.imdb.com/title/tt0469494/> a schema:Movie ;
+    schema:name "There Will Be Blood" ;
+    schema:url <https://www.imdb.com/title/tt0469494/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2872491/> ;
+        schema:characterName "Silver Assay Worker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1341980953/> a schema:VideoObject ;
+        schema:name "There Will Be Blood" ;
+        schema:description "Home Video Trailer from Miramax" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1341980953/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMmRhOWY5N2EtYzk0NS00ZTFlLTk4MTktMzdhYWM5OGFmMDM3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M14S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T17:23:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

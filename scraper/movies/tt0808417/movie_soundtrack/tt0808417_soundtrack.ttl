@@ -1,0 +1,52 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0808417/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Eye of the Tiger" ;
+        schema:byArtist <https://www.imdb.com/name/nm0557859/> ; # Chiara Mastroianni
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Eye of the Tiger" ;
+            schema:author <https://www.imdb.com/name/nm1221512/>, # Jim Peterik
+                       <https://www.imdb.com/name/nm0838071/> # Frankie Sullivan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Marche Persanne" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Marche Persanne" ;
+            schema:composer <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Roses du Sud" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Roses du Sud" ;
+            schema:composer <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0557859/> a schema:Person ;
+    schema:name "Chiara Mastroianni" .
+<https://www.imdb.com/name/nm0838071/> a schema:Person ;
+    schema:name "Frankie Sullivan" .
+<https://www.imdb.com/name/nm1221512/> a schema:Person ;
+    schema:name "Jim Peterik" .
+# ==============================================================================

@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2808008/> a schema:Person ;
+    schema:name "Bader Alami" ;
+    schema:url <https://www.imdb.com/name/nm2808008/> ;
+    schema:jobTitle "Casting Department", "Production Department", "Actor" ;
+    schema:description "Bader Alami. Production Department: Transformers: Revenge of the Fallen. Bader Alami is known for Transformers: Revenge of the Fallen (2009), The Hurt Locker (2008) and Fair Game (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1255953/>,    # Incendies
+                       <https://www.imdb.com/title/tt1145529/> . # The Shooting of Thomas Hurndall
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Incendies (2010)
+<https://www.imdb.com/title/tt1255953/> a schema:Movie ;
+    schema:name "Incendies" ;
+    schema:url <https://www.imdb.com/title/tt1255953/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2808008/> ;
+        schema:characterName "Nicolas Marwan"
+    ] .
+
+# The Shooting of Thomas Hurndall (2008)
+<https://www.imdb.com/title/tt1145529/> a schema:Movie ;
+    schema:name "The Shooting of Thomas Hurndall" ;
+    schema:url <https://www.imdb.com/title/tt1145529/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2808008/> ;
+        schema:characterName "Anis"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

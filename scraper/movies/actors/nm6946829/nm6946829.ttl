@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6946829/> a schema:Person ;
+    schema:name "Shigeru Wakita" ;
+    schema:url <https://www.imdb.com/name/nm6946829/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shigeru Wakita. Actor: Ponyo. Shigeru Wakita is known for Ponyo (2008), Spirited Away (2001) and Mushi-Shi (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0876563/>,    # Ponyo
+                       <https://www.imdb.com/title/tt0807832/>,    # Mushi-Shi
+                       <https://www.imdb.com/title/tt2208539/>,    # Windy Tales
+                       <https://www.imdb.com/title/tt0245429/>,    # Spirited Away
+                       <https://www.imdb.com/title/tt27645617/>,    # Oshishousan wa meitantei Part 2: Karamiau otoko to onna no ayashii yûwaku renzoku satsujin
+                       <https://www.imdb.com/title/tt2160323/> . # Oshishousan wa meitantei: Shamisen satsujin jiken
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ponyo (2008)
+<https://www.imdb.com/title/tt0876563/> a schema:Movie ;
+    schema:name "Ponyo" ;
+    schema:url <https://www.imdb.com/title/tt0876563/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName ""
+    ] .
+
+# Mushi-Shi (2006)
+<https://www.imdb.com/title/tt0807832/> a schema:Movie ;
+    schema:name "Mushi-Shi" ;
+    schema:url <https://www.imdb.com/title/tt0807832/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName "Seijiro's Father"
+    ] .
+
+# Windy Tales (2004)
+<https://www.imdb.com/title/tt2208539/> a schema:Movie ;
+    schema:name "Windy Tales" ;
+    schema:url <https://www.imdb.com/title/tt2208539/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName "Gouda-sensei"
+    ] .
+
+# Spirited Away (2001)
+<https://www.imdb.com/title/tt0245429/> a schema:Movie ;
+    schema:name "Spirited Away" ;
+    schema:url <https://www.imdb.com/title/tt0245429/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Oshishousan wa meitantei Part 2: Karamiau otoko to onna no ayashii yûwaku renzoku satsujin (1984)
+<https://www.imdb.com/title/tt27645617/> a schema:Movie ;
+    schema:name "Oshishousan wa meitantei Part 2: Karamiau otoko to onna no ayashii yûwaku renzoku satsujin" ;
+    schema:url <https://www.imdb.com/title/tt27645617/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName ""
+    ] .
+
+# Oshishousan wa meitantei: Shamisen satsujin jiken (1983)
+<https://www.imdb.com/title/tt2160323/> a schema:Movie ;
+    schema:name "Oshishousan wa meitantei: Shamisen satsujin jiken" ;
+    schema:url <https://www.imdb.com/title/tt2160323/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6946829/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

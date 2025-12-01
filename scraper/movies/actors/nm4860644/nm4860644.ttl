@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4860644/> a schema:Person ;
+    schema:name "Dolores Mullally" ;
+    schema:url <https://www.imdb.com/name/nm4860644/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Dolores Mullally. Actress: Sing Street. Dolores Mullally is known for Sing Street (2016), Albert Nobbs (2011) and The Bright Side (2020)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt1602098/> ; # Albert Nobbs
+
+
+    schema:video <https://www.imdb.com/video/vi3004213017/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4860644/> ;
+        schema:characterName "Dinner Lady"
+    ] .
+
+# Albert Nobbs (2011)
+<https://www.imdb.com/title/tt1602098/> a schema:Movie ;
+    schema:name "Albert Nobbs" ;
+    schema:url <https://www.imdb.com/title/tt1602098/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4860644/> ;
+        schema:characterName "Milady"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3004213017/> a schema:VideoObject ;
+        schema:name "Albert Nobbs" ;
+        schema:description "Trailer for Albert Nobbs" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3004213017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTU4MDY3MjYxOV5BMl5BanBnXkFtZTcwNjI1NTEwOQ@@._V1_.jpg" ;
+        schema:duration "PT1M29S"^^xsd:duration ;
+        schema:uploadDate "2013-01-27T06:02:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

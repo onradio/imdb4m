@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0083987/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "God Save the King!" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001426/> ; # Ben Kingsley
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Raghupati Raghava Raja Ram" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Raghupati Raghava Raja Ram" ;
+            schema:author <https://www.imdb.com/name/nm0003987/> # Mohandas K. Gandhi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vaishnava Janato" ;
+        schema:byArtist <https://www.imdb.com/name/nm0542196/> ; # Lata Mangeshkar
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vaishnava Janato" ;
+            schema:author <https://www.imdb.com/name/nm11672684/> # Narsinh Mehta
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Marche Militaire" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Marche Militaire" ;
+            schema:composer <https://www.imdb.com/name/nm0006280/> # Franz Schubert
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001426/> a schema:Person ;
+    schema:name "Ben Kingsley" .
+<https://www.imdb.com/name/nm0003987/> a schema:Person ;
+    schema:name "Mohandas K. Gandhi" .
+<https://www.imdb.com/name/nm0006280/> a schema:Person ;
+    schema:name "Franz Schubert" .
+<https://www.imdb.com/name/nm0542196/> a schema:Person ;
+    schema:name "Lata Mangeshkar" .
+<https://www.imdb.com/name/nm11672684/> a schema:Person ;
+    schema:name "Narsinh Mehta" .
+# ==============================================================================

@@ -1,0 +1,335 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1862960/> a schema:Person ;
+    schema:name "Chris Jackson" ;
+    schema:url <https://www.imdb.com/name/nm1862960/> ;
+    schema:birthDate "1975-09-30"^^xsd:date ;
+    schema:jobTitle "Actor", "Composer", "Music Department" ;
+    schema:alternateName "Christopher Neal Jackson" ;
+    schema:description "Chris Jackson. Actor: Hamilton. Chris Jackson was born on 30 September 1975 in Cairo, Illinois, USA. He is an actor and composer, known for Hamilton (2020), In the Heights (2021) and Moana (2016). He has been married to Veronica Vazquez since 13 September 2004. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAyNTAxNDA2MV5BMl5BanBnXkFtZTgwMTE0NTMwMDI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Cairo, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.84"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 0½″ (1.84 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8503618/>,    # Hamilton
+                       <https://www.imdb.com/title/tt0063951/>,    # Sesame Street
+                       <https://www.imdb.com/title/tt1321510/>,    # In the Heights
+                       <https://www.imdb.com/title/tt3521164/>,    # Moana
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5827228/>,    # Bull
+                       <https://www.imdb.com/title/tt3793630/>,    # The Lion Guard
+                       <https://www.imdb.com/title/tt7137906/>,    # When They See Us
+                       <https://www.imdb.com/title/tt38055196/>,    # Have A Nice Day
+                       <https://www.imdb.com/title/tt8253064/>,    # Be Washington: It's Your Turn to Lead
+                       <https://www.imdb.com/title/tt33094386/>,    # 1776: The World Turned Upside Down
+                       <https://www.imdb.com/title/tt2401097/>,    # Tracers
+                       <https://www.imdb.com/title/tt1442462/>,    # The Good Wife
+                       <https://www.imdb.com/title/tt1839578/>,    # Person of Interest
+                       <https://www.imdb.com/title/tt1820742/>,    # A Gifted Man
+                       <https://www.imdb.com/title/tt1358522/>,    # White Collar
+                       <https://www.imdb.com/title/tt1190689/>,    # Nurse Jackie
+                       <https://www.imdb.com/title/tt0838247/>,    # After.Life
+                       <https://www.imdb.com/title/tt1119644/>,    # Fringe
+                       <https://www.imdb.com/title/tt0118421/> ; # Oz
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 5 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi892386841/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1862960/mediaviewer/rm4063668225/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm1650764545/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm3512838913/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm4218387712/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm2816947712/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm2843947264/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm1201028096/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm1818689536/>,
+                 <https://www.imdb.com/name/nm1862960/mediaviewer/rm1869021184/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8503618/> a schema:Movie ;
+    schema:name "Hamilton" ;
+    schema:url <https://www.imdb.com/title/tt8503618/> .
+
+<https://www.imdb.com/title/tt0063951/> a schema:Movie ;
+    schema:name "Sesame Street" ;
+    schema:url <https://www.imdb.com/title/tt0063951/> .
+
+<https://www.imdb.com/title/tt1321510/> a schema:Movie ;
+    schema:name "In the Heights" ;
+    schema:url <https://www.imdb.com/title/tt1321510/> .
+
+<https://www.imdb.com/title/tt3521164/> a schema:Movie ;
+    schema:name "Moana" ;
+    schema:url <https://www.imdb.com/title/tt3521164/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bull (2016)
+<https://www.imdb.com/title/tt5827228/> a schema:Movie ;
+    schema:name "Bull" ;
+    schema:url <https://www.imdb.com/title/tt5827228/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Chunk Palmer"
+    ] .
+
+# The Lion Guard (2018)
+<https://www.imdb.com/title/tt3793630/> a schema:Movie ;
+    schema:name "The Lion Guard" ;
+    schema:url <https://www.imdb.com/title/tt3793630/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Shujaa"
+    ] .
+
+# When They See Us (2019)
+<https://www.imdb.com/title/tt7137906/> a schema:Movie ;
+    schema:name "When They See Us" ;
+    schema:url <https://www.imdb.com/title/tt7137906/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Peter Rivera"
+    ] .
+
+# Have A Nice Day (2018)
+<https://www.imdb.com/title/tt38055196/> a schema:Movie ;
+    schema:name "Have A Nice Day" ;
+    schema:url <https://www.imdb.com/title/tt38055196/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName ""
+    ] .
+
+# Be Washington: It's Your Turn to Lead (2018)
+<https://www.imdb.com/title/tt8253064/> a schema:Movie ;
+    schema:name "Be Washington: It's Your Turn to Lead" ;
+    schema:url <https://www.imdb.com/title/tt8253064/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# 1776: The World Turned Upside Down (2018)
+<https://www.imdb.com/title/tt33094386/> a schema:Movie ;
+    schema:name "1776: The World Turned Upside Down" ;
+    schema:url <https://www.imdb.com/title/tt33094386/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "George Washington"
+    ] .
+
+# Tracers (2015)
+<https://www.imdb.com/title/tt2401097/> a schema:Movie ;
+    schema:name "Tracers" ;
+    schema:url <https://www.imdb.com/title/tt2401097/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Lonnie"
+    ] .
+
+# The Good Wife (2014)
+<https://www.imdb.com/title/tt1442462/> a schema:Movie ;
+    schema:name "The Good Wife" ;
+    schema:url <https://www.imdb.com/title/tt1442462/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Michael Wood"
+    ] .
+
+# Person of Interest (2014)
+<https://www.imdb.com/title/tt1839578/> a schema:Movie ;
+    schema:name "Person of Interest" ;
+    schema:url <https://www.imdb.com/title/tt1839578/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Farrow"
+    ] .
+
+# A Gifted Man (2011)
+<https://www.imdb.com/title/tt1820742/> a schema:Movie ;
+    schema:name "A Gifted Man" ;
+    schema:url <https://www.imdb.com/title/tt1820742/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Rafael Douglas"
+    ] .
+
+# White Collar (2010)
+<https://www.imdb.com/title/tt1358522/> a schema:Movie ;
+    schema:name "White Collar" ;
+    schema:url <https://www.imdb.com/title/tt1358522/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Nico"
+    ] .
+
+# Nurse Jackie (2010)
+<https://www.imdb.com/title/tt1190689/> a schema:Movie ;
+    schema:name "Nurse Jackie" ;
+    schema:url <https://www.imdb.com/title/tt1190689/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Trey"
+    ] .
+
+# After.Life (2009)
+<https://www.imdb.com/title/tt0838247/> a schema:Movie ;
+    schema:name "After.Life" ;
+    schema:url <https://www.imdb.com/title/tt0838247/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Neal"
+    ] .
+
+# Fringe (2009)
+<https://www.imdb.com/title/tt1119644/> a schema:Movie ;
+    schema:name "Fringe" ;
+    schema:url <https://www.imdb.com/title/tt1119644/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "EMT #1"
+    ] .
+
+# Oz (2003)
+<https://www.imdb.com/title/tt0118421/> a schema:Movie ;
+    schema:name "Oz" ;
+    schema:url <https://www.imdb.com/title/tt0118421/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1862960/> ;
+        schema:characterName "Perry Loftus"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi892386841/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Before the world knew of the Broadway musicals In The Heights and Hamilton, Lin-Manuel Miranda started an improv hip-hop group called Freestyle Love Supreme. This film chronicles the group's 15-year journey, culminating with performances in 2019." ;
+        schema:embedUrl <https://www.imdb.com/video/vi892386841/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMWEzNjk0ZWQtYjJmYy00YjEwLWFmZDYtYmRiMjgzNzIwNDZjXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg" ;
+        schema:duration "PT2M21S"^^xsd:duration ;
+        schema:uploadDate "2020-05-28T17:30:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAyNTAxNDA2MV5BMl5BanBnXkFtZTgwMTE0NTMwMDI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyNTAxNDA2MV5BMl5BanBnXkFtZTgwMTE0NTMwMDI@._V1_.jpg> ;
+    schema:caption "Chris Jackson in The Necklace (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "534"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm4063668225/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTMxYWI5NGItYTdhMC00NmViLWExYzgtYzY5YWRhY2Q5ZDMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lin-Manuel Miranda and Chris Jackson in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm1650764545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGI4ZmQ5YjQtZjg2ZS00ZDBhLWFiMzctOGI5ODBjYmU4YzgwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Jackson in The 70th Annual Tony Awards (2016)" ;
+    schema:height "2119"^^xsd:integer ;
+    schema:width "1408"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm3512838913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2EyMzY5NmEtNDY0ZC00ZjQzLTg2NzctZmZhM2M5ZDM4NDRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Jackson in Bull (2016)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "857"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm4218387712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjE1ZDA3OGYtYjE0ZS00YmUxLTliMDMtMTEwYjA4NDhhYjZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Freddy Rodríguez, Michael Weatherly, Lauren Hodges, and Chris Jackson in Bull (2016)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm2816947712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZThhNjg5ZTgtZDZjZC00YmJmLWIwM2UtYjRkYTViMDY3M2NiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Weatherly and Chris Jackson in Bull (2016)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm2843947264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2RlZTIwNjMtNmUyYS00M2U5LWFjZDMtOGYwNjI2MTQ1ZmY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Weatherly and Chris Jackson in Bull (2016)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm1201028096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODM1YjkyOGUtNjRiOS00YzIyLWI5NzktODk4ZDY5NWY2YjZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Weatherly and Chris Jackson in Bull (2016)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm1818689536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0ODUzMTE3MF5BMl5BanBnXkFtZTgwODE5ODE0MDI@._V1_.jpg> ;
+    schema:caption "Freddy Rodríguez, Michael Weatherly, Geneva Carr, Annabelle Attanasio, Jaime Lee Kirchner, and Chris Jackson in Bull (2016)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1862960/mediaviewer/rm1869021184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjk0MDk0ODQyMF5BMl5BanBnXkFtZTgwOTE5ODE0MDI@._V1_.jpg> ;
+    schema:caption "Annabelle Attanasio and Chris Jackson in Bull (2016)" ;
+    schema:height "533"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099077/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "I'm Always Chasing Rainbows" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'm Always Chasing Rainbows" ;
+            schema:author <https://www.imdb.com/name/nm0140830/>, # Harry Carroll
+                       <https://www.imdb.com/name/nm0565169/> # Joseph McCarthy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Soave Fanciulla" ;
+        schema:byArtist <https://www.imdb.com/name/nm0294262/>, # Mirella Freni
+                        <https://www.imdb.com/name/nm0311443/> ; # Nicolai Gedda
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Soave Fanciulla" ;
+            schema:author <https://www.imdb.com/name/nm0006242/> # Giacomo Puccini
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Purple Haze" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Shanghai Shuffle" ;
+        schema:byArtist <https://www.imdb.com/name/nm1486849/> ; # Fletcher Henderson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shanghai Shuffle" ;
+            schema:author <https://www.imdb.com/name/nm1213860/>, # Gene Rodemich
+                       <https://www.imdb.com/name/nm0174788/> # Larry Conley
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sing, Sing, Sing" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sing, Sing, Sing" ;
+            schema:author <https://www.imdb.com/name/nm0697515/> # Louis Prima
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Time of the Season" ;
+        schema:byArtist <https://www.imdb.com/name/nm3000193/> ; # The Zombies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Time of the Season" ;
+            schema:author <https://www.imdb.com/name/nm0034469/> # Rod Argent
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You Made Me Love You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You Made Me Love You" ;
+            schema:author <https://www.imdb.com/name/nm0565169/>, # Joseph McCarthy
+                       <https://www.imdb.com/name/nm0597444/> # James V. Monaco
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006242/> a schema:Person ;
+    schema:name "Giacomo Puccini" .
+<https://www.imdb.com/name/nm0034469/> a schema:Person ;
+    schema:name "Rod Argent" .
+<https://www.imdb.com/name/nm0140830/> a schema:Person ;
+    schema:name "Harry Carroll" .
+<https://www.imdb.com/name/nm0174788/> a schema:Person ;
+    schema:name "Larry Conley" .
+<https://www.imdb.com/name/nm0294262/> a schema:Person ;
+    schema:name "Mirella Freni" .
+<https://www.imdb.com/name/nm0311443/> a schema:Person ;
+    schema:name "Nicolai Gedda" .
+<https://www.imdb.com/name/nm0565169/> a schema:Person ;
+    schema:name "Joseph McCarthy" .
+<https://www.imdb.com/name/nm0597444/> a schema:Person ;
+    schema:name "James V. Monaco" .
+<https://www.imdb.com/name/nm0697515/> a schema:Person ;
+    schema:name "Louis Prima" .
+<https://www.imdb.com/name/nm1213860/> a schema:Person ;
+    schema:name "Gene Rodemich" .
+<https://www.imdb.com/name/nm1486849/> a schema:Person ;
+    schema:name "Fletcher Henderson" .
+<https://www.imdb.com/name/nm3000193/> a schema:Person ;
+    schema:name "The Zombies" .
+# ==============================================================================

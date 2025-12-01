@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0236148/> a schema:Person ;
+    schema:name "Dierdre Downing-Jackson" ;
+    schema:url <https://www.imdb.com/name/nm0236148/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Dierdre Downing-Jackson. Actress: Fight Club. Dierdre Downing-Jackson is known for Fight Club (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0137523/> .    # Fight Club
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fight Club (1999)
+<https://www.imdb.com/title/tt0137523/> a schema:Movie ;
+    schema:name "Fight Club" ;
+    schema:url <https://www.imdb.com/title/tt0137523/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236148/> ;
+        schema:characterName "Business Woman on Plane"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1801406/> a schema:Person ;
+    schema:name "Kgomotso Seitshohlo" ;
+    schema:url <https://www.imdb.com/name/nm1801406/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Kgomotso Seitshohlo. Actress: Hotel Rwanda. Kgomotso Seitshohlo is known for Hotel Rwanda (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0395169/> .    # Hotel Rwanda
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hotel Rwanda (2004)
+<https://www.imdb.com/title/tt0395169/> a schema:Movie ;
+    schema:name "Hotel Rwanda" ;
+    schema:url <https://www.imdb.com/title/tt0395169/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1801406/> ;
+        schema:characterName "Anais"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

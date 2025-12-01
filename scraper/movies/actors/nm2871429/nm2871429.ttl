@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2871429/> a schema:Person ;
+    schema:name "Sydney McCallister" ;
+    schema:url <https://www.imdb.com/name/nm2871429/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Sydney McCallister. Actress: There Will Be Blood. Sydney McCallister is known for There Will Be Blood (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0469494/> .    # There Will Be Blood
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# There Will Be Blood (2007)
+<https://www.imdb.com/title/tt0469494/> a schema:Movie ;
+    schema:name "There Will Be Blood" ;
+    schema:url <https://www.imdb.com/title/tt0469494/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2871429/> ;
+        schema:characterName "Mary Sunday"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3146363/> a schema:Person ;
+    schema:name "Chee Thao" ;
+    schema:url <https://www.imdb.com/name/nm3146363/> ;
+    schema:jobTitle "Actor", "Location Management" ;
+    schema:description "Chee Thao. Actor: Gran Torino. Chee Thao is known for Gran Torino (2008), Love and Monsters (2020) and Gran Torino: Next Door (2009)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTYwZmUwY2QtNTRmNi00ZWYxLWJhZjMtYjNlN2QxYWQxMDlkXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1205489/> ;    # Gran Torino
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3146363/mediaviewer/rm3774121729/>,
+                 <https://www.imdb.com/name/nm3146363/mediaviewer/rm1166027264/>,
+                 <https://www.imdb.com/name/nm3146363/mediaviewer/rm970754560/>,
+                 <https://www.imdb.com/name/nm3146363/mediaviewer/rm4143220481/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gran Torino (2008)
+<https://www.imdb.com/title/tt1205489/> a schema:Movie ;
+    schema:name "Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt1205489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3146363/> ;
+        schema:characterName "Grandma"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTYwZmUwY2QtNTRmNi00ZWYxLWJhZjMtYjNlN2QxYWQxMDlkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYwZmUwY2QtNTRmNi00ZWYxLWJhZjMtYjNlN2QxYWQxMDlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chee Thao in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3146363/mediaviewer/rm3774121729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjVmN2QzOGMtMTNiZi00MWEzLWJhZTEtZGFiYjg0MzMwNzkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chee Thao in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3146363/mediaviewer/rm1166027264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4ODc4MDQ2OV5BMl5BanBnXkFtZTgwNzg5OTQzMjI@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, Brooke Chia Thao, and Chee Thao in Gran Torino (2008)" ;
+    schema:height "1664"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3146363/mediaviewer/rm970754560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjMyMzU5MjIwNl5BMl5BanBnXkFtZTcwOTYwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, Brooke Chia Thao, and Chee Thao in Gran Torino (2008)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "615"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3146363/mediaviewer/rm4143220481/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYwZmUwY2QtNTRmNi00ZWYxLWJhZjMtYjNlN2QxYWQxMDlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chee Thao in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

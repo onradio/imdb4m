@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0114352/> a schema:Person ;
+    schema:name "Nicole Brown" ;
+    schema:url <https://www.imdb.com/name/nm0114352/> ;
+    schema:birthDate "1980-08-09"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Executive" ;
+    schema:description "Nicole Brown. Actress: Boyz n the Hood. Nicole Brown was born to parents Nancy and Roosevelt. She is best known for her role as Nicole on \"Kids Incorporated\". She has one sister, Rochelle, who is six years younger. Nicole started out in show business in a commercial for a L.A. children's museum. She auditioned for \"Kids Incorporated\" in 1991 and didn't get the job, but auditioned again and joined the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmJjNjM0NDItNDM4MC00MTU0LTgzNGEtNDA3ZDJmMGMzZjU2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0118466/>,    # Smart Guy
+                       <https://www.imdb.com/title/tt0108888/>,    # On Our Own
+                       <https://www.imdb.com/title/tt0086744/>,    # Kids Incorporated
+                       <https://www.imdb.com/title/tt0198254/>,    # Tom & Jerry Kids Show
+                       <https://www.imdb.com/title/tt0096661/>,    # The New Lassie
+                       <https://www.imdb.com/title/tt0101507/> ; # Boyz n the Hood
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0114352/mediaviewer/rm2078217217/>,
+                 <https://www.imdb.com/name/nm0114352/mediaviewer/rm312553728/>,
+                 <https://www.imdb.com/name/nm0114352/mediaviewer/rm339591425/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Smart Guy (1997)
+<https://www.imdb.com/title/tt0118466/> a schema:Movie ;
+    schema:name "Smart Guy" ;
+    schema:url <https://www.imdb.com/title/tt0118466/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "Michelle"
+    ] .
+
+# On Our Own (1995)
+<https://www.imdb.com/title/tt0108888/> a schema:Movie ;
+    schema:name "On Our Own" ;
+    schema:url <https://www.imdb.com/title/tt0108888/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "Yolanda"
+    ] .
+
+# Kids Incorporated (1992)
+<https://www.imdb.com/title/tt0086744/> a schema:Movie ;
+    schema:name "Kids Incorporated" ;
+    schema:url <https://www.imdb.com/title/tt0086744/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "Nicole"
+    ] .
+
+# Tom & Jerry Kids Show (1992)
+<https://www.imdb.com/title/tt0198254/> a schema:Movie ;
+    schema:name "Tom & Jerry Kids Show" ;
+    schema:url <https://www.imdb.com/title/tt0198254/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# The New Lassie (1991)
+<https://www.imdb.com/title/tt0096661/> a schema:Movie ;
+    schema:name "The New Lassie" ;
+    schema:url <https://www.imdb.com/title/tt0096661/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "Nikki"
+    ] .
+
+# Boyz n the Hood (1991)
+<https://www.imdb.com/title/tt0101507/> a schema:Movie ;
+    schema:name "Boyz n the Hood" ;
+    schema:url <https://www.imdb.com/title/tt0101507/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114352/> ;
+        schema:characterName "Brandi - Age 10"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmJjNjM0NDItNDM4MC00MTU0LTgzNGEtNDA3ZDJmMGMzZjU2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmJjNjM0NDItNDM4MC00MTU0LTgzNGEtNDA3ZDJmMGMzZjU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Brown" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0114352/mediaviewer/rm2078217217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQ0Zjk0MTQtMGMxMy00MzM2LTgxOGEtOWYwM2QzODgzMmMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Brown, Jeff Friday, and Gina Prince-Bythewood" ;
+    schema:height "2221"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0114352/mediaviewer/rm312553728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3MDU0MDY4MV5BMl5BanBnXkFtZTgwMTc3MDY4MTI@._V1_.jpg> ;
+    schema:caption "Nicole Brown, Jon Hamm, Edgar Wright, Hannah Minghella, and Ansel Elgort at an event for Baby Driver (2017)" ;
+    schema:height "1333"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0114352/mediaviewer/rm339591425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmJjNjM0NDItNDM4MC00MTU0LTgzNGEtNDA3ZDJmMGMzZjU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Brown" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

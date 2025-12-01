@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2338151/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Tharki Chokro" ;
+        schema:byArtist <https://www.imdb.com/name/nm2155726/> ; # Swaroop Khan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tharki Chokro" ;
+            schema:composer <https://www.imdb.com/name/nm10072530/> ; # Ajay-Atul
+            schema:lyricist <https://www.imdb.com/name/nm1618886/> # Swanand Kirkire
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Is a Waste of Time" ;
+        schema:byArtist <https://www.imdb.com/name/nm0631415/>, # Sonu Nigam
+                        <https://www.imdb.com/name/nm1304975/> ; # Shreya Ghoshal
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Is a Waste of Time" ;
+            schema:composer <https://www.imdb.com/name/nm0596240/> ; # Shantanu Moitra
+            schema:lyricist <https://www.imdb.com/name/nm1242454/> # Amitabh Verma
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nanga Punga Dost" ;
+        schema:byArtist <https://www.imdb.com/name/nm1304975/> ; # Shreya Ghoshal
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nanga Punga Dost" ;
+            schema:composer <https://www.imdb.com/name/nm0596240/> ; # Shantanu Moitra
+            schema:lyricist <https://www.imdb.com/name/nm1618886/> # Swanand Kirkire
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chaar Kadam" ;
+        schema:byArtist <https://www.imdb.com/name/nm1034805/>, # Shaan
+                        <https://www.imdb.com/name/nm1304975/> ; # Shreya Ghoshal
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chaar Kadam" ;
+            schema:composer <https://www.imdb.com/name/nm0596240/> ; # Shantanu Moitra
+            schema:lyricist <https://www.imdb.com/name/nm1618886/> # Swanand Kirkire
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bhagwan Hai Kahan Re Tu" ;
+        schema:byArtist <https://www.imdb.com/name/nm0631415/> ; # Sonu Nigam
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bhagwan Hai Kahan Re Tu" ;
+            schema:composer <https://www.imdb.com/name/nm0596240/> ; # Shantanu Moitra
+            schema:lyricist <https://www.imdb.com/name/nm1618886/> # Swanand Kirkire
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dil Darbadar" ;
+        schema:byArtist <https://www.imdb.com/name/nm4699972/> ; # Ankit Tiwari
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dil Darbadar" ;
+            schema:composer <https://www.imdb.com/name/nm4699972/> ; # Ankit Tiwari
+            schema:lyricist <https://www.imdb.com/name/nm4191232/> # Manoj Muntashir
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "PK Dance Theme (Instrumental)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "PK Dance Theme (Instrumental)" ;
+            schema:composer <https://www.imdb.com/name/nm0596240/> # Shantanu Moitra
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0596240/> a schema:Person ;
+    schema:name "Shantanu Moitra" .
+<https://www.imdb.com/name/nm0631415/> a schema:Person ;
+    schema:name "Sonu Nigam" .
+<https://www.imdb.com/name/nm10072530/> a schema:Person ;
+    schema:name "Ajay-Atul" .
+<https://www.imdb.com/name/nm1034805/> a schema:Person ;
+    schema:name "Shaan" .
+<https://www.imdb.com/name/nm1242454/> a schema:Person ;
+    schema:name "Amitabh Verma" .
+<https://www.imdb.com/name/nm1304975/> a schema:Person ;
+    schema:name "Shreya Ghoshal" .
+<https://www.imdb.com/name/nm1618886/> a schema:Person ;
+    schema:name "Swanand Kirkire" .
+<https://www.imdb.com/name/nm2155726/> a schema:Person ;
+    schema:name "Swaroop Khan" .
+<https://www.imdb.com/name/nm4191232/> a schema:Person ;
+    schema:name "Manoj Muntashir" .
+<https://www.imdb.com/name/nm4699972/> a schema:Person ;
+    schema:name "Ankit Tiwari" .
+# ==============================================================================

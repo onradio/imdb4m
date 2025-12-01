@@ -1,0 +1,135 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0290581/> a schema:Person ;
+    schema:name "Larry Franco" ;
+    schema:url <https://www.imdb.com/name/nm0290581/> ;
+    schema:birthDate "1949-04-05"^^xsd:date ;
+    schema:jobTitle "Producer", "Second Unit or Assistant Director", "Actor" ;
+    schema:description "Larry Franco. Producer: The Thing. Larry Franco was born on 5 April 1949 in Sonora, California, USA. He is a producer and assistant director, known for The Thing (1982), Mars Attacks! (1996) and Anonymous (2011). He has been married to Cindy Leung since 29 June 1991. He was previously married to Jill Russell." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTIyNjI4MDkxOV5BMl5BanBnXkFtZTYwNjg0ODA0._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sonora, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0096256/>,    # They Live
+                       <https://www.imdb.com/title/tt0084787/>,    # The Thing
+                       <https://www.imdb.com/title/tt0078788/>,    # Apocalypse Now
+                       <https://www.imdb.com/title/tt0073760/> ; # The Strongest Man in the World
+
+
+    schema:video <https://www.imdb.com/video/vi2298151193/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0290581/mediaviewer/rm1694079744/>,
+                 <https://www.imdb.com/name/nm0290581/mediaviewer/rm650156032/>,
+                 <https://www.imdb.com/name/nm0290581/mediaviewer/rm79730688/>,
+                 <https://www.imdb.com/name/nm0290581/mediaviewer/rm1190763264/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# They Live (1988)
+<https://www.imdb.com/title/tt0096256/> a schema:Movie ;
+    schema:name "They Live" ;
+    schema:url <https://www.imdb.com/title/tt0096256/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290581/> ;
+        schema:characterName "Neighbor"
+    ] .
+
+# The Thing (1982)
+<https://www.imdb.com/title/tt0084787/> a schema:Movie ;
+    schema:name "The Thing" ;
+    schema:url <https://www.imdb.com/title/tt0084787/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290581/> ;
+        schema:characterName "Norwegian Passenger with Rifle"
+    ] .
+
+# Apocalypse Now (1979)
+<https://www.imdb.com/title/tt0078788/> a schema:Movie ;
+    schema:name "Apocalypse Now" ;
+    schema:url <https://www.imdb.com/title/tt0078788/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290581/> ;
+        schema:characterName "Soldier Clinging to Helicopter"
+    ] .
+
+# The Strongest Man in the World (1975)
+<https://www.imdb.com/title/tt0073760/> a schema:Movie ;
+    schema:name "The Strongest Man in the World" ;
+    schema:url <https://www.imdb.com/title/tt0073760/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0290581/> ;
+        schema:characterName "Larry - Student"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2298151193/> a schema:VideoObject ;
+        schema:name "The Thing" ;
+        schema:description "Scientists in the Antarctic are confronted by a shape-shifting alien that assumes the appearance of the people that it kills." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2298151193/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzBhZmNmYzgtMmZkMC00ODYxLWJiYjctOGFkOTYwMWZhZDk4XkEyXkFqcGdeQWpvaG5oYXJ0._V1_.jpg" ;
+        schema:duration "PT1M54S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T17:15:47Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTIyNjI4MDkxOV5BMl5BanBnXkFtZTYwNjg0ODA0._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIyNjI4MDkxOV5BMl5BanBnXkFtZTYwNjg0ODA0._V1_.jpg> ;
+    schema:caption "Larry Franco at an event for Batman Begins (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "278"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0290581/mediaviewer/rm1694079744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1MDE0NDI5M15BMl5BanBnXkFtZTYwNTI0ODA0._V1_.jpg> ;
+    schema:caption "Larry Franco and Charles Roven at an event for Batman Begins (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "322"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0290581/mediaviewer/rm650156032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0MDYzMjYwNl5BMl5BanBnXkFtZTYwNjU4Nzc1._V1_.jpg> ;
+    schema:caption "Gale Anne Hurd, Avi Arad, and Larry Franco at an event for Hulk (2003)" ;
+    schema:height "257"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0290581/mediaviewer/rm79730688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIwODExOTkxNV5BMl5BanBnXkFtZTYwNjI5Nzc1._V1_.jpg> ;
+    schema:caption "Larry Franco at an event for Hulk (2003)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "265"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0290581/mediaviewer/rm1190763264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIyNjI4MDkxOV5BMl5BanBnXkFtZTYwNjg0ODA0._V1_.jpg> ;
+    schema:caption "Larry Franco at an event for Batman Begins (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "278"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10208813/> a schema:Person ;
+    schema:name "Jugal Popat" ;
+    schema:url <https://www.imdb.com/name/nm10208813/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jugal Popat. Actor: Dil Bechara. Jugal Popat is known for Dil Bechara (2020) and Gulabi! (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8476294/> .    # Gulabi!
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gulabi! (2018)
+<https://www.imdb.com/title/tt8476294/> a schema:Movie ;
+    schema:name "Gulabi!" ;
+    schema:url <https://www.imdb.com/title/tt8476294/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10208813/> ;
+        schema:characterName "Adult Manish"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

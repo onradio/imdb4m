@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1591159/> a schema:Person ;
+    schema:name "Tim Baggaley" ;
+    schema:url <https://www.imdb.com/name/nm1591159/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tim Baggaley. Actor: Shaun of the Dead. Tim Baggaley is known for Shaun of the Dead (2004), Strange (2002) and Doctor Who (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3238502/>,    # Ibiza Undead
+                       <https://www.imdb.com/title/tt0436992/>,    # Doctor Who
+                       <https://www.imdb.com/title/tt2354186/>,    # I'm Spazticus
+                       <https://www.imdb.com/title/tt0364844/>,    # Murder City
+                       <https://www.imdb.com/title/tt0365748/>,    # Shaun of the Dead
+                       <https://www.imdb.com/title/tt0312209/> . # Strange
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ibiza Undead (2016)
+<https://www.imdb.com/title/tt3238502/> a schema:Movie ;
+    schema:name "Ibiza Undead" ;
+    schema:url <https://www.imdb.com/title/tt3238502/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "Stage Zombie"
+    ] .
+
+# Doctor Who (2014)
+<https://www.imdb.com/title/tt0436992/> a schema:Movie ;
+    schema:name "Doctor Who" ;
+    schema:url <https://www.imdb.com/title/tt0436992/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "Knight"
+    ] .
+
+# I'm Spazticus (2012)
+<https://www.imdb.com/title/tt2354186/> a schema:Movie ;
+    schema:name "I'm Spazticus" ;
+    schema:url <https://www.imdb.com/title/tt2354186/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "Various Roles"
+    ] .
+
+# Murder City (2004)
+<https://www.imdb.com/title/tt0364844/> a schema:Movie ;
+    schema:name "Murder City" ;
+    schema:url <https://www.imdb.com/title/tt0364844/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "Reverend Peter Skipper"
+    ] .
+
+# Shaun of the Dead (2004)
+<https://www.imdb.com/title/tt0365748/> a schema:Movie ;
+    schema:name "Shaun of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0365748/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "The Usher"
+    ] .
+
+# Strange (2003)
+<https://www.imdb.com/title/tt0312209/> a schema:Movie ;
+    schema:name "Strange" ;
+    schema:url <https://www.imdb.com/title/tt0312209/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1591159/> ;
+        schema:characterName "Kaa-Jinn"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

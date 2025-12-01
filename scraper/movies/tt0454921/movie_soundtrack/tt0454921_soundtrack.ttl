@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0454921/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "When the Saints Go Marching In" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Know It's a Sin" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Know It's a Sin" ;
+            schema:author <https://www.imdb.com/name/nm1203947/>, # Jimmy Reed
+                       <https://www.imdb.com/name/nm3811527/> # Mary Reed
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "This Masquerade" ;
+        schema:byArtist <https://www.imdb.com/name/nm1050796/> ; # George Benson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "This Masquerade" ;
+            schema:author <https://www.imdb.com/name/nm0751287/> # Leon Russell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jesus Children of America" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005567/> ; # Stevie Wonder
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jesus Children of America" ;
+            schema:author <https://www.imdb.com/name/nm0005567/> # Stevie Wonder
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Higher Ground" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005567/> ; # Stevie Wonder
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Higher Ground" ;
+            schema:author <https://www.imdb.com/name/nm0005567/> # Stevie Wonder
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Morning, Morning" ;
+        schema:byArtist <https://www.imdb.com/name/nm0369784/> ; # Richie Havens
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Morning, Morning" ;
+            schema:author <https://www.imdb.com/name/nm0475476/> # Tuli Kupferberg
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Young Man" ;
+        schema:byArtist <https://www.imdb.com/name/nm0472458/>, # Peter Kruder
+                        <https://www.imdb.com/name/nm1773834/>, # Richard Dorfmeister
+                        <https://www.imdb.com/name/nm1016246/> ; # Mose Allison
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Young Man" ;
+            schema:author <https://www.imdb.com/name/nm1016246/>, # Mose Allison
+                       <https://www.imdb.com/name/nm1773834/>, # Richard Dorfmeister
+                       <https://www.imdb.com/name/nm0472458/> # Peter Kruder
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Feelin' Alright" ;
+        schema:byArtist <https://www.imdb.com/name/nm0168312/> ; # Joe Cocker
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Feelin' Alright" ;
+            schema:author <https://www.imdb.com/name/nm0556666/> # Dave Mason
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lord, Don't Move That Mountain" ;
+        schema:byArtist <https://www.imdb.com/name/nm2716644/> ; # The Glide Ensemble
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lord, Don't Move That Mountain" ;
+            schema:author <https://www.imdb.com/name/nm3811459/>, # Doris Akers
+                       <https://www.imdb.com/name/nm0413810/> # Mahalia Jackson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bridge Over Troubled Water" ;
+        schema:byArtist <https://www.imdb.com/name/nm0280808/> ; # Roberta Flack
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bridge Over Troubled Water" ;
+            schema:author <https://www.imdb.com/name/nm0800328/> # Paul Simon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Father's Way" ;
+        schema:byArtist <https://www.imdb.com/name/nm0780499/> ; # Seal
+        schema:producer <https://www.imdb.com/name/nm1384186/> ; # Bill Bottrell
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Father's Way" ;
+            schema:author <https://www.imdb.com/name/nm0780499/> # Seal
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "She'll Be Coming 'Round the Mountain" ;
+        schema:byArtist <https://www.imdb.com/name/nm1535523/> ; # Jaden Smith
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005567/> a schema:Person ;
+    schema:name "Stevie Wonder" .
+<https://www.imdb.com/name/nm0168312/> a schema:Person ;
+    schema:name "Joe Cocker" .
+<https://www.imdb.com/name/nm0280808/> a schema:Person ;
+    schema:name "Roberta Flack" .
+<https://www.imdb.com/name/nm0369784/> a schema:Person ;
+    schema:name "Richie Havens" .
+<https://www.imdb.com/name/nm0413810/> a schema:Person ;
+    schema:name "Mahalia Jackson" .
+<https://www.imdb.com/name/nm0472458/> a schema:Person ;
+    schema:name "Peter Kruder" .
+<https://www.imdb.com/name/nm0475476/> a schema:Person ;
+    schema:name "Tuli Kupferberg" .
+<https://www.imdb.com/name/nm0556666/> a schema:Person ;
+    schema:name "Dave Mason" .
+<https://www.imdb.com/name/nm0751287/> a schema:Person ;
+    schema:name "Leon Russell" .
+<https://www.imdb.com/name/nm0780499/> a schema:Person ;
+    schema:name "Seal" .
+<https://www.imdb.com/name/nm0800328/> a schema:Person ;
+    schema:name "Paul Simon" .
+<https://www.imdb.com/name/nm1016246/> a schema:Person ;
+    schema:name "Mose Allison" .
+<https://www.imdb.com/name/nm1050796/> a schema:Person ;
+    schema:name "George Benson" .
+<https://www.imdb.com/name/nm1203947/> a schema:Person ;
+    schema:name "Jimmy Reed" .
+<https://www.imdb.com/name/nm1384186/> a schema:Person ;
+    schema:name "Bill Bottrell" .
+<https://www.imdb.com/name/nm1535523/> a schema:Person ;
+    schema:name "Jaden Smith" .
+<https://www.imdb.com/name/nm1773834/> a schema:Person ;
+    schema:name "Richard Dorfmeister" .
+<https://www.imdb.com/name/nm2716644/> a schema:Person ;
+    schema:name "The Glide Ensemble" .
+<https://www.imdb.com/name/nm3811459/> a schema:Person ;
+    schema:name "Doris Akers" .
+<https://www.imdb.com/name/nm3811527/> a schema:Person ;
+    schema:name "Mary Reed" .
+# ==============================================================================

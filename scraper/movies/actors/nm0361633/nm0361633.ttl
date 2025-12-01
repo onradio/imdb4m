@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0361633/> a schema:Person ;
+    schema:name "Ed Hapstak" ;
+    schema:url <https://www.imdb.com/name/nm0361633/> ;
+    schema:birthDate "1968-03-12"^^xsd:date ;
+    schema:jobTitle "Camera and Electrical Department", "Actor", "Additional Crew" ;
+    schema:description "Ed Hapstak. Camera and Electrical Department: Clerks. Ed Hapstak was born on 12 March 1968. He is an actor, known for Clerks (1994), Mallrats (1995) and Snowball Effect. The Story of Clerks (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113749/>,    # Mallrats
+                       <https://www.imdb.com/title/tt0109445/> ; # Clerks
+
+
+    schema:video <https://www.imdb.com/video/vi3706625561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mallrats (1995)
+<https://www.imdb.com/title/tt0113749/> a schema:Movie ;
+    schema:name "Mallrats" ;
+    schema:url <https://www.imdb.com/title/tt0113749/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0361633/> ;
+        schema:characterName "Guy Contestant #2"
+    ] .
+
+# Clerks (1994)
+<https://www.imdb.com/title/tt0109445/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0109445/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0361633/> ;
+        schema:characterName "Sanford"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3706625561/> a schema:VideoObject ;
+        schema:name "Clerks" ;
+        schema:description "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3706625561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzc2ODIwZTAtYzBiMC00YjI4LWIxOTUtNzFmMjYwNzM0M2UzXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2011-10-26T03:14:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

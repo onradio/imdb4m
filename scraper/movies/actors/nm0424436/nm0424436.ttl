@@ -1,0 +1,425 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0424436/> a schema:Person ;
+    schema:name "Mel Johnson Jr." ;
+    schema:url <https://www.imdb.com/name/nm0424436/> ;
+    schema:birthDate "1953-01-01"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Soundtrack" ;
+    schema:description "Mel Johnson Jr.. Actor: Total Recall. Among his best-known roles, Johnson portrays the mutant cab driver Benny in the 1990 hit science fiction film, Total Recall. He also starred in the Broadway musical, On the Twentieth Century and appeared in the Public Theater's \"Shakespeare in the Park\" 2005 revival of Two Gentlemen of Verona. He was also in the musical The Rink.\n\nJohnson is also well known to Star Trek fans..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzUxMzMwNTcxN15BMl5BanBnXkFtZTcwNzcyNDgwMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Long Island City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0100802/>,    # Total Recall
+                       <https://www.imdb.com/title/tt0106145/>,    # Star Trek: Deep Space Nine
+                       <https://www.imdb.com/title/tt0119288/>,    # Hideous!
+                       <https://www.imdb.com/title/tt11469578/>,    # Stagg Road
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2357547/>,    # Jessica Jones
+                       <https://www.imdb.com/title/tt3696610/>,    # Stuck
+                       <https://www.imdb.com/title/tt0290219/>,    # In the Shadow of the Cobra
+                       <https://www.imdb.com/title/tt0261492/>,    # Sheena
+                       <https://www.imdb.com/title/tt0244820/>,    # Star Patrol!
+                       <https://www.imdb.com/title/tt0118484/>,    # Sunset Beach
+                       <https://www.imdb.com/title/tt0118437/>,    # The Practice
+                       <https://www.imdb.com/title/tt0143113/>,    # Archibald the Rainbow Painter
+                       <https://www.imdb.com/title/tt0129692/>,    # Liberty! The American Revolution
+                       <https://www.imdb.com/title/tt0108876/>,    # New York Undercover
+                       <https://www.imdb.com/title/tt0098800/>,    # The Fresh Prince of Bel-Air
+                       <https://www.imdb.com/title/tt0107841/>,    # The Poetry Hall of Fame
+                       <https://www.imdb.com/title/tt0103505/>,    # On the Air
+                       <https://www.imdb.com/title/tt0104519/>,    # Intimate Stranger
+                       <https://www.imdb.com/title/tt0198266/>,    # De zomer van '45
+                       <https://www.imdb.com/title/tt0094518/>,    # The Munsters Today
+                       <https://www.imdb.com/title/tt0096635/>,    # Life Goes On
+                       <https://www.imdb.com/title/tt0096671/>,    # Open House
+                       <https://www.imdb.com/title/tt0100206/>,    # Murder by Numbers
+                       <https://www.imdb.com/title/tt0096800/>,    # American Blue Note
+                       <https://www.imdb.com/title/tt0090418/>,    # Designing Women
+                       <https://www.imdb.com/title/tt0095887/>,    # Police Story: The Watch Commander
+                       <https://www.imdb.com/title/tt0092410/>,    # My Two Dads
+                       <https://www.imdb.com/title/tt0091669/>,    # Crazy Legs
+                       <https://www.imdb.com/title/tt0086760/>,    # Mike Hammer
+                       <https://www.imdb.com/title/tt0081869/>,    # Gimme a Break!
+                       <https://www.imdb.com/title/tt0082344/> ; # Eubie!
+
+
+    schema:video <https://www.imdb.com/video/vi936165913/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0424436/mediaviewer/rm4011953664/>,
+                 <https://www.imdb.com/name/nm0424436/mediaviewer/rm3978399232/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0100802/> a schema:Movie ;
+    schema:name "Total Recall" ;
+    schema:url <https://www.imdb.com/title/tt0100802/> .
+
+<https://www.imdb.com/title/tt0106145/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine" ;
+    schema:url <https://www.imdb.com/title/tt0106145/> .
+
+<https://www.imdb.com/title/tt0119288/> a schema:Movie ;
+    schema:name "Hideous!" ;
+    schema:url <https://www.imdb.com/title/tt0119288/> .
+
+<https://www.imdb.com/title/tt11469578/> a schema:Movie ;
+    schema:name "Stagg Road" ;
+    schema:url <https://www.imdb.com/title/tt11469578/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Jessica Jones (2018)
+<https://www.imdb.com/title/tt2357547/> a schema:Movie ;
+    schema:name "Jessica Jones" ;
+    schema:url <https://www.imdb.com/title/tt2357547/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Justis Ambrose"
+    ] .
+
+# Stuck (2017)
+<https://www.imdb.com/title/tt3696610/> a schema:Movie ;
+    schema:name "Stuck" ;
+    schema:url <https://www.imdb.com/title/tt3696610/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Conductor"
+    ] .
+
+# In the Shadow of the Cobra (2004)
+<https://www.imdb.com/title/tt0290219/> a schema:Movie ;
+    schema:name "In the Shadow of the Cobra" ;
+    schema:url <https://www.imdb.com/title/tt0290219/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Russell"
+    ] .
+
+# Sheena (2001)
+<https://www.imdb.com/title/tt0261492/> a schema:Movie ;
+    schema:name "Sheena" ;
+    schema:url <https://www.imdb.com/title/tt0261492/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Rabul"
+    ] .
+
+# Star Patrol! (2000)
+<https://www.imdb.com/title/tt0244820/> a schema:Movie ;
+    schema:name "Star Patrol!" ;
+    schema:url <https://www.imdb.com/title/tt0244820/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Sunset Beach (1999)
+<https://www.imdb.com/title/tt0118484/> a schema:Movie ;
+    schema:name "Sunset Beach" ;
+    schema:url <https://www.imdb.com/title/tt0118484/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Dr. Paul Manning"
+    ] .
+
+# The Practice (1998)
+<https://www.imdb.com/title/tt0118437/> a schema:Movie ;
+    schema:name "The Practice" ;
+    schema:url <https://www.imdb.com/title/tt0118437/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Dr. Cadney"
+    ] .
+
+# Archibald the Rainbow Painter (1998)
+<https://www.imdb.com/title/tt0143113/> a schema:Movie ;
+    schema:name "Archibald the Rainbow Painter" ;
+    schema:url <https://www.imdb.com/title/tt0143113/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Benny"
+    ] .
+
+# Liberty! The American Revolution (1997)
+<https://www.imdb.com/title/tt0129692/> a schema:Movie ;
+    schema:name "Liberty! The American Revolution" ;
+    schema:url <https://www.imdb.com/title/tt0129692/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Jehu Grant"
+    ] .
+
+# New York Undercover (1997)
+<https://www.imdb.com/title/tt0108876/> a schema:Movie ;
+    schema:name "New York Undercover" ;
+    schema:url <https://www.imdb.com/title/tt0108876/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Manager"
+    ] .
+
+# The Fresh Prince of Bel-Air (1994)
+<https://www.imdb.com/title/tt0098800/> a schema:Movie ;
+    schema:name "The Fresh Prince of Bel-Air" ;
+    schema:url <https://www.imdb.com/title/tt0098800/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Harrison"
+    ] .
+
+# The Poetry Hall of Fame (1993)
+<https://www.imdb.com/title/tt0107841/> a schema:Movie ;
+    schema:name "The Poetry Hall of Fame" ;
+    schema:url <https://www.imdb.com/title/tt0107841/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName ""
+    ] .
+
+# On the Air (1992)
+<https://www.imdb.com/title/tt0103505/> a schema:Movie ;
+    schema:name "On the Air" ;
+    schema:url <https://www.imdb.com/title/tt0103505/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Mickey"
+    ] .
+
+# Intimate Stranger (1991)
+<https://www.imdb.com/title/tt0104519/> a schema:Movie ;
+    schema:name "Intimate Stranger" ;
+    schema:url <https://www.imdb.com/title/tt0104519/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Billy"
+    ] .
+
+# De zomer van '45 (1991)
+<https://www.imdb.com/title/tt0198266/> a schema:Movie ;
+    schema:name "De zomer van '45" ;
+    schema:url <https://www.imdb.com/title/tt0198266/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Kok bij Eva"
+    ] .
+
+# The Munsters Today (1991)
+<https://www.imdb.com/title/tt0094518/> a schema:Movie ;
+    schema:name "The Munsters Today" ;
+    schema:url <https://www.imdb.com/title/tt0094518/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Boris"
+    ] .
+
+# Life Goes On (1989)
+<https://www.imdb.com/title/tt0096635/> a schema:Movie ;
+    schema:name "Life Goes On" ;
+    schema:url <https://www.imdb.com/title/tt0096635/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Coach Morrison"
+    ] .
+
+# Open House (1989)
+<https://www.imdb.com/title/tt0096671/> a schema:Movie ;
+    schema:name "Open House" ;
+    schema:url <https://www.imdb.com/title/tt0096671/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "The Croupier"
+    ] .
+
+# Murder by Numbers (1989)
+<https://www.imdb.com/title/tt0100206/> a schema:Movie ;
+    schema:name "Murder by Numbers" ;
+    schema:url <https://www.imdb.com/title/tt0100206/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Mayor's Assistant"
+    ] .
+
+# American Blue Note (1989)
+<https://www.imdb.com/title/tt0096800/> a schema:Movie ;
+    schema:name "American Blue Note" ;
+    schema:url <https://www.imdb.com/title/tt0096800/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Ron"
+    ] .
+
+# Designing Women (1989)
+<https://www.imdb.com/title/tt0090418/> a schema:Movie ;
+    schema:name "Designing Women" ;
+    schema:url <https://www.imdb.com/title/tt0090418/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Sergeant"
+    ] .
+
+# Police Story: The Watch Commander (1988)
+<https://www.imdb.com/title/tt0095887/> a schema:Movie ;
+    schema:name "Police Story: The Watch Commander" ;
+    schema:url <https://www.imdb.com/title/tt0095887/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Johnson"
+    ] .
+
+# My Two Dads (1988)
+<https://www.imdb.com/title/tt0092410/> a schema:Movie ;
+    schema:name "My Two Dads" ;
+    schema:url <https://www.imdb.com/title/tt0092410/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Vince"
+    ] .
+
+# Crazy Legs (1987)
+<https://www.imdb.com/title/tt0091669/> a schema:Movie ;
+    schema:name "Crazy Legs" ;
+    schema:url <https://www.imdb.com/title/tt0091669/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "James B. White's Father"
+    ] .
+
+# Mike Hammer (1986)
+<https://www.imdb.com/title/tt0086760/> a schema:Movie ;
+    schema:name "Mike Hammer" ;
+    schema:url <https://www.imdb.com/title/tt0086760/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName "Amos"
+    ] .
+
+# Gimme a Break! (1985)
+<https://www.imdb.com/title/tt0081869/> a schema:Movie ;
+    schema:name "Gimme a Break!" ;
+    schema:url <https://www.imdb.com/title/tt0081869/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName ""
+    ] .
+
+# Eubie! (1981)
+<https://www.imdb.com/title/tt0082344/> a schema:Movie ;
+    schema:name "Eubie!" ;
+    schema:url <https://www.imdb.com/title/tt0082344/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0424436/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi936165913/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Dr. Lorca, a collector of biological oddities, fights another curator of horrors over a mutant. But their clash is cut short when the mutant comes to life and resurrects an angry, oozing army." ;
+        schema:embedUrl <https://www.imdb.com/video/vi936165913/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTQ4YzRlODgtNzJhZS00MjkwLWI4N2UtYWM0Yzk5YmQxNzc3XkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M48S"^^xsd:duration ;
+        schema:uploadDate "2022-06-30T21:24:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzUxMzMwNTcxN15BMl5BanBnXkFtZTcwNzcyNDgwMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzUxMzMwNTcxN15BMl5BanBnXkFtZTcwNzcyNDgwMw@@._V1_.jpg> ;
+    schema:caption "Mel Johnson Jr. in Total Recall (1990)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1932"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0424436/mediaviewer/rm4011953664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYyNzY0NTk5NF5BMl5BanBnXkFtZTcwODYyNDgwMw@@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger and Mel Johnson Jr. in Total Recall (1990)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0424436/mediaviewer/rm3978399232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzUxMzMwNTcxN15BMl5BanBnXkFtZTcwNzcyNDgwMw@@._V1_.jpg> ;
+    schema:caption "Mel Johnson Jr. in Total Recall (1990)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1932"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

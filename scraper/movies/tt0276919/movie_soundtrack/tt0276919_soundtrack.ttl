@@ -1,0 +1,40 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0276919/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Young Americans" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000309/> ; # David Bowie
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Young Americans" ;
+            schema:author <https://www.imdb.com/name/nm0000309/> # David Bowie
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "America the Beautiful" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "America the Beautiful" ;
+            schema:composer <https://www.imdb.com/name/nm1123571/> ; # Samuel A. Ward
+            schema:lyricist <https://www.imdb.com/name/nm1330078/> # Katharine Lee Bates
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000309/> a schema:Person ;
+    schema:name "David Bowie" .
+<https://www.imdb.com/name/nm1123571/> a schema:Person ;
+    schema:name "Samuel A. Ward" .
+<https://www.imdb.com/name/nm1330078/> a schema:Person ;
+    schema:name "Katharine Lee Bates" .
+# ==============================================================================

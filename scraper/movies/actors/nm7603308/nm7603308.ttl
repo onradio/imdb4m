@@ -1,0 +1,150 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7603308/> a schema:Person ;
+    schema:name "Mark McKenna" ;
+    schema:url <https://www.imdb.com/name/nm7603308/> ;
+    schema:birthDate "1996-05-05"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mark McKenna. Actor: Sing Street. Mark McKenna was born on 5 May 1996. He is an actor, known for Sing Street (2016), Overlord (2018) and Small Things Like These (2024)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjhiNzQxNzYtNWM5Yi00MjY4LThjMjQtOWZiZjdiYTQ3N2U4XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt27196021/>,    # Small Things Like These
+                       <https://www.imdb.com/title/tt4530422/>,    # Overlord
+                       <https://www.imdb.com/title/tt7765404/>,    # Wayne
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5620424/> ; # Kat and Alfie: Redwater
+
+
+    schema:video <https://www.imdb.com/video/vi844415257/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7603308/mediaviewer/rm1158997249/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm1088297984/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm1339956224/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm1121852416/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm3799834880/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm189085696/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm2958846720/>,
+                 <https://www.imdb.com/name/nm7603308/mediaviewer/rm3829532673/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> .
+
+<https://www.imdb.com/title/tt27196021/> a schema:Movie ;
+    schema:name "Small Things Like These" ;
+    schema:url <https://www.imdb.com/title/tt27196021/> .
+
+<https://www.imdb.com/title/tt4530422/> a schema:Movie ;
+    schema:name "Overlord" ;
+    schema:url <https://www.imdb.com/title/tt4530422/> .
+
+<https://www.imdb.com/title/tt7765404/> a schema:Movie ;
+    schema:name "Wayne" ;
+    schema:url <https://www.imdb.com/title/tt7765404/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kat and Alfie: Redwater (2017)
+<https://www.imdb.com/title/tt5620424/> a schema:Movie ;
+    schema:name "Kat and Alfie: Redwater" ;
+    schema:url <https://www.imdb.com/title/tt5620424/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7603308/> ;
+        schema:characterName "Jimmy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi844415257/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "When Holly's dark secret is accidentally uncovered by her new emotionally unstable neighbor Tom, they are pulled into a violent confrontation with her father, who will do anything to keep the secret hidden." ;
+        schema:embedUrl <https://www.imdb.com/video/vi844415257/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWRlM2U0YjAtMzgwNS00OThlLTg0NmQtMjEwNTQwMjg0OGE2XkEyXkFqcGdeQWFybm8@._V1_.jpg" ;
+        schema:duration "PT2M1S"^^xsd:duration ;
+        schema:uploadDate "2021-02-04T16:12:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjhiNzQxNzYtNWM5Yi00MjY4LThjMjQtOWZiZjdiYTQ3N2U4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjhiNzQxNzYtNWM5Yi00MjY4LThjMjQtOWZiZjdiYTQ3N2U4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark McKenna" ;
+    schema:height "2500"^^xsd:integer ;
+    schema:width "1667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm1158997249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTMyZDc3YzYtNWY3NC00ODBjLWIzOWItMmRhNTgxZTFhYjI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark McKenna in One of Us Is Lying (2021)" ;
+    schema:height "694"^^xsd:integer ;
+    schema:width "1147"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm1088297984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODUyNjcxODc0Ml5BMl5BanBnXkFtZTgwMDQ2MjU1ODE@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo and Mark McKenna in Sing Street (2016)" ;
+    schema:height "1049"^^xsd:integer ;
+    schema:width "1353"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm1339956224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMDIwNzc2Ml5BMl5BanBnXkFtZTgwMTQ2MjU1ODE@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo and Mark McKenna in Sing Street (2016)" ;
+    schema:height "1049"^^xsd:integer ;
+    schema:width "1141"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm1121852416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAwMjMwMzMzMl5BMl5BanBnXkFtZTgwODM2MjU1ODE@._V1_.jpg> ;
+    schema:caption "Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1049"^^xsd:integer ;
+    schema:width "1236"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm3799834880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4OTM3MjIyNF5BMl5BanBnXkFtZTgwOTU3OTA1NzE@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1343"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm189085696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDNjODY3ZTYtMzNmMS00MjgzLTg4NmItNmViNzVjYTVhNDQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark McKenna at an event for Sing Street (2016)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "399"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm2958846720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODVmNGYzZDQtYTdjZi00NGJjLTkxODYtYWQ5M2ExNWZlNmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "290"^^xsd:integer ;
+    schema:width "215"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7603308/mediaviewer/rm3829532673/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjhiNzQxNzYtNWM5Yi00MjY4LThjMjQtOWZiZjdiYTQ3N2U4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark McKenna" ;
+    schema:height "2500"^^xsd:integer ;
+    schema:width "1667"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

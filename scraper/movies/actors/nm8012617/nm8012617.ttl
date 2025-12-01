@@ -1,0 +1,120 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8012617/> a schema:Person ;
+    schema:name "Typhoon" ;
+    schema:url <https://www.imdb.com/name/nm8012617/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Typhoon. Actor: Shakma. Typhoon is known for Shakma (1990), Unmasking the Idol (1986) and The Order of the Black Eagle (1987)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTlkMDQ2MGEtM2ViZC00NTcyLWIyZTctNDkyY2U2YTUxMmY2XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0100589/>,    # Shakma
+                       <https://www.imdb.com/title/tt0199912/>,    # The Order of the Black Eagle
+                       <https://www.imdb.com/title/tt0202046/>,    # Unmasking the Idol
+                       <https://www.imdb.com/title/tt0091064/> ; # The Fly
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8012617/mediaviewer/rm3719682048/>,
+                 <https://www.imdb.com/name/nm8012617/mediaviewer/rm2259203584/>,
+                 <https://www.imdb.com/name/nm8012617/mediaviewer/rm3560550400/>,
+                 <https://www.imdb.com/name/nm8012617/mediaviewer/rm213948674/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shakma (1990)
+<https://www.imdb.com/title/tt0100589/> a schema:Movie ;
+    schema:name "Shakma" ;
+    schema:url <https://www.imdb.com/title/tt0100589/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8012617/> ;
+        schema:characterName "Shakma"
+    ] .
+
+# The Order of the Black Eagle (1987)
+<https://www.imdb.com/title/tt0199912/> a schema:Movie ;
+    schema:name "The Order of the Black Eagle" ;
+    schema:url <https://www.imdb.com/title/tt0199912/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8012617/> ;
+        schema:characterName "Boon"
+    ] .
+
+# Unmasking the Idol (1986)
+<https://www.imdb.com/title/tt0202046/> a schema:Movie ;
+    schema:name "Unmasking the Idol" ;
+    schema:url <https://www.imdb.com/title/tt0202046/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8012617/> ;
+        schema:characterName "Boon"
+    ] .
+
+# The Fly (1986)
+<https://www.imdb.com/title/tt0091064/> a schema:Movie ;
+    schema:name "The Fly" ;
+    schema:url <https://www.imdb.com/title/tt0091064/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8012617/> ;
+        schema:characterName "Baboon"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTlkMDQ2MGEtM2ViZC00NTcyLWIyZTctNDkyY2U2YTUxMmY2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTlkMDQ2MGEtM2ViZC00NTcyLWIyZTctNDkyY2U2YTUxMmY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Typhoon in The Fly (1986)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "1247"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8012617/mediaviewer/rm3719682048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzNDQ4MzMyMl5BMl5BanBnXkFtZTgwMzk5ODEwMDE@._V1_.jpg> ;
+    schema:caption "Christopher Atkins, Roddy McDowall, Ari Meyers, Amanda Wyss, and Typhoon in Shakma (1990)" ;
+    schema:height "828"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8012617/mediaviewer/rm2259203584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE1MzAwMDMwOV5BMl5BanBnXkFtZTcwNjk4OTM0Nw@@._V1_.jpg> ;
+    schema:caption "Typhoon in Shakma (1990)" ;
+    schema:height "517"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8012617/mediaviewer/rm3560550400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0OTc0NjcxNV5BMl5BanBnXkFtZTcwMjk1MzYyNw@@._V1_.jpg> ;
+    schema:caption "Typhoon in Shakma (1990)" ;
+    schema:height "846"^^xsd:integer ;
+    schema:width "580"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8012617/mediaviewer/rm213948674/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTlkMDQ2MGEtM2ViZC00NTcyLWIyZTctNDkyY2U2YTUxMmY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Typhoon in The Fly (1986)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "1247"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

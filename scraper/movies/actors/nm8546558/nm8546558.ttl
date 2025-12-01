@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8546558/> a schema:Person ;
+    schema:name "Callum Blake" ;
+    schema:url <https://www.imdb.com/name/nm8546558/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Callum Blake. Actor: Dunkirk. Callum Blake is known for Dunkirk (2017), Medici (2016) and Longbarn." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5057130/>,    # Medici
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt5013056/> ; # Dunkirk
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8546558/mediaviewer/rm3661594625/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Medici (2018)
+<https://www.imdb.com/title/tt5057130/> a schema:Movie ;
+    schema:name "Medici" ;
+    schema:url <https://www.imdb.com/title/tt5057130/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8546558/> ;
+        schema:characterName "Carlo de' Medici"
+    ] .
+
+# Midsomer Murders (2017)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8546558/> ;
+        schema:characterName "Jacob Wheeler"
+    ] .
+
+# Dunkirk (2017)
+<https://www.imdb.com/title/tt5013056/> a schema:Movie ;
+    schema:name "Dunkirk" ;
+    schema:url <https://www.imdb.com/title/tt5013056/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8546558/> ;
+        schema:characterName "Stretcher Bearer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm8546558/mediaviewer/rm3661594625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjg4NDFiMTEtYjVlMi00MzBjLWFhMTItYTU3NjVmNTYwNWRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Callum Blake" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

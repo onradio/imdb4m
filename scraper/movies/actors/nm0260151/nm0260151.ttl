@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0260151/> a schema:Person ;
+    schema:name "Bernard Escalon" ;
+    schema:url <https://www.imdb.com/name/nm0260151/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Bernard Escalon. Actor: Three Colours: Red. Bernard Escalon is known for Three Colours: Red (1994), Faux rapports (1992) and Tenderness (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9692012/>,    # Tenderness
+                       <https://www.imdb.com/title/tt0482113/>,    # Henry Dunant: Red on the Cross
+                       <https://www.imdb.com/title/tt0430206/>,    # L'héritier
+                       <https://www.imdb.com/title/tt0111495/>,    # Three Colours: Red
+                       <https://www.imdb.com/title/tt0106603/>,    # Connections
+                       <https://www.imdb.com/title/tt0220362/>,    # Le ciel pour témoin
+                       <https://www.imdb.com/title/tt0104241/>,    # Faux rapports
+                       <https://www.imdb.com/title/tt0887970/> ; # Visa pour nulle part
+
+
+    schema:video <https://www.imdb.com/video/vi3436160025/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tenderness (2018)
+<https://www.imdb.com/title/tt9692012/> a schema:Movie ;
+    schema:name "Tenderness" ;
+    schema:url <https://www.imdb.com/title/tt9692012/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName ""
+    ] .
+
+# Henry Dunant: Red on the Cross (2006)
+<https://www.imdb.com/title/tt0482113/> a schema:Movie ;
+    schema:name "Henry Dunant: Red on the Cross" ;
+    schema:url <https://www.imdb.com/title/tt0482113/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName "Le fonctionnaire à Paris"
+    ] .
+
+# L'héritier (2001)
+<https://www.imdb.com/title/tt0430206/> a schema:Movie ;
+    schema:name "L'héritier" ;
+    schema:url <https://www.imdb.com/title/tt0430206/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName "Schmidt"
+    ] .
+
+# Three Colours: Red (1994)
+<https://www.imdb.com/title/tt0111495/> a schema:Movie ;
+    schema:name "Three Colours: Red" ;
+    schema:url <https://www.imdb.com/title/tt0111495/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName "Le disquaire"
+    ] .
+
+# Connections (1993)
+<https://www.imdb.com/title/tt0106603/> a schema:Movie ;
+    schema:name "Connections" ;
+    schema:url <https://www.imdb.com/title/tt0106603/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName ""
+    ] .
+
+# Le ciel pour témoin (1993)
+<https://www.imdb.com/title/tt0220362/> a schema:Movie ;
+    schema:name "Le ciel pour témoin" ;
+    schema:url <https://www.imdb.com/title/tt0220362/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName "Bernard"
+    ] .
+
+# Faux rapports (1992)
+<https://www.imdb.com/title/tt0104241/> a schema:Movie ;
+    schema:name "Faux rapports" ;
+    schema:url <https://www.imdb.com/title/tt0104241/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName ""
+    ] .
+
+# Visa pour nulle part (1985)
+<https://www.imdb.com/title/tt0887970/> a schema:Movie ;
+    schema:name "Visa pour nulle part" ;
+    schema:url <https://www.imdb.com/title/tt0887970/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0260151/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3436160025/> a schema:VideoObject ;
+        schema:name "Red: The Criterion Collection Blu-Ray" ;
+        schema:description "Trailer for Red" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3436160025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTBhODI2MTQtY2MyMi00NDY5LWI3YjYtODk3NjJhMmNkOTQ2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2012-09-23T03:29:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

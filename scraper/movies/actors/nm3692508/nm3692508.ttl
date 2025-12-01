@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3692508/> a schema:Person ;
+    schema:name "María Laura Caccamo" ;
+    schema:url <https://www.imdb.com/name/nm3692508/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "María Laura Caccamo. Actress: Wild Tales. María Laura Caccamo is known for Wild Tales (2014) and La mosca en la ceniza (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3011894/>,    # Wild Tales
+                       <https://www.imdb.com/title/tt1546005/> . # La mosca en la ceniza
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3692508/> ;
+        schema:characterName "Empleada Aerolínea"
+    ] .
+
+# La mosca en la ceniza (2009)
+<https://www.imdb.com/title/tt1546005/> a schema:Movie ;
+    schema:name "La mosca en la ceniza" ;
+    schema:url <https://www.imdb.com/title/tt1546005/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3692508/> ;
+        schema:characterName "Nancy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

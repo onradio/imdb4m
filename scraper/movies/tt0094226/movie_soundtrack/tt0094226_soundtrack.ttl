@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0094226/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "MOOD INDIGO" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "MOOD INDIGO" ;
+            schema:author <https://www.imdb.com/name/nm0254153/>, # Duke Ellington
+                       <https://www.imdb.com/name/nm0590030/>, # Irving Mills
+                       <https://www.imdb.com/name/nm0081708/> # Barney Bigard
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vesti la giubba" ;
+        schema:byArtist <https://www.imdb.com/name/nm0215648/>, # Mario Del Monaco
+                        <https://www.imdb.com/name/nm3105495/> ; # Orchestra dell'Accademia Nazionale di Santa Cecilia
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vesti la giubba" ;
+            schema:author <https://www.imdb.com/name/nm0502851/> # Ruggero Leoncavallo
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0081708/> a schema:Person ;
+    schema:name "Barney Bigard" .
+<https://www.imdb.com/name/nm0215648/> a schema:Person ;
+    schema:name "Mario Del Monaco" .
+<https://www.imdb.com/name/nm0254153/> a schema:Person ;
+    schema:name "Duke Ellington" .
+<https://www.imdb.com/name/nm0502851/> a schema:Person ;
+    schema:name "Ruggero Leoncavallo" .
+<https://www.imdb.com/name/nm0590030/> a schema:Person ;
+    schema:name "Irving Mills" .
+<https://www.imdb.com/name/nm3105495/> a schema:Person ;
+    schema:name "Orchestra dell'Accademia Nazionale di Santa Cecilia" .
+# ==============================================================================

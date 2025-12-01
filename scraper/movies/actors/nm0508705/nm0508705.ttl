@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0508705/> a schema:Person ;
+    schema:name "James Liautaud" ;
+    schema:url <https://www.imdb.com/name/nm0508705/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "James Liautaud. Actor: The Fugitive. James Liautaud is known for The Fugitive (1993) and Diary of a Champion (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2411288/>,    # Diary of a Champion
+                       <https://www.imdb.com/title/tt0106977/> . # The Fugitive
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Diary of a Champion (2013)
+<https://www.imdb.com/title/tt2411288/> a schema:Movie ;
+    schema:name "Diary of a Champion" ;
+    schema:url <https://www.imdb.com/title/tt2411288/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508705/> ;
+        schema:characterName "Reporter #4"
+    ] .
+
+# The Fugitive (1993)
+<https://www.imdb.com/title/tt0106977/> a schema:Movie ;
+    schema:name "The Fugitive" ;
+    schema:url <https://www.imdb.com/title/tt0106977/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508705/> ;
+        schema:characterName "Paul"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

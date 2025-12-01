@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4227286/> a schema:Person ;
+    schema:name "Mark Finn" ;
+    schema:url <https://www.imdb.com/name/nm4227286/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mark Finn. Actor: Boyhood. Mark Finn is an actor, an author, a pop culture critic, and a playwright. His biography, Blood and Thunder: The Life and Art of Robert E. Howard, was nominated for a World Fantasy award in 2007 and he is a nationally recognized authority on the Texas author. His articles, essays, and introductions about Robert E. Howard and his works have appeared in publications for the Robert..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1065073/> .    # Boyhood
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyhood (2014)
+<https://www.imdb.com/title/tt1065073/> a schema:Movie ;
+    schema:name "Boyhood" ;
+    schema:url <https://www.imdb.com/title/tt1065073/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4227286/> ;
+        schema:characterName "Book Release Emcee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

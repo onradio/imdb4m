@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0572597/> a schema:Person ;
+    schema:name "Lenny McLean" ;
+    schema:url <https://www.imdb.com/name/nm0572597/> ;
+    schema:birthDate "1949-04-09"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:alternateName "\"The Guv'nor\"" ;
+    schema:description "Lenny McLean. Actor: Lock, Stock and Two Smoking Barrels. Lenny McLean was born in London in 1949. He was arrested for petty crimes while in his teens and served 18 months in prison. After his release he worked as a professional boxer and bouncer. McLean was again arrested in 1992 after a man he ejected from a club died of injuries which were later determined to be caused by mishandling..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjUxMDEwZWYtZTMwOC00OTUwLTgyZGItOGNiYTEwNjU5OGZkXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.91"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 3″ (1.91 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0120735/>,    # Lock, Stock and Two Smoking Barrels
+                       <https://www.imdb.com/title/tt0119116/>,    # The Fifth Element
+                       <https://www.imdb.com/title/tt0155436/>,    # The Knock
+                       <https://www.imdb.com/title/tt5495740/>,    # The Guv'nor
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0282372/>,    # Bare Fist: The Sport That Wouldn't Die
+                       <https://www.imdb.com/title/tt0099951/>,    # The Krays
+                       <https://www.imdb.com/title/tt0215580/> ; # Box On
+
+
+    schema:video <https://www.imdb.com/video/vi3070673689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0572597/mediaviewer/rm681795328/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120735/> a schema:Movie ;
+    schema:name "Lock, Stock and Two Smoking Barrels" ;
+    schema:url <https://www.imdb.com/title/tt0120735/> .
+
+<https://www.imdb.com/title/tt0119116/> a schema:Movie ;
+    schema:name "The Fifth Element" ;
+    schema:url <https://www.imdb.com/title/tt0119116/> .
+
+<https://www.imdb.com/title/tt0155436/> a schema:Movie ;
+    schema:name "The Knock" ;
+    schema:url <https://www.imdb.com/title/tt0155436/> .
+
+<https://www.imdb.com/title/tt5495740/> a schema:Movie ;
+    schema:name "The Guv'nor" ;
+    schema:url <https://www.imdb.com/title/tt5495740/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bare Fist: The Sport That Wouldn't Die (1997)
+<https://www.imdb.com/title/tt0282372/> a schema:Movie ;
+    schema:name "Bare Fist: The Sport That Wouldn't Die" ;
+    schema:url <https://www.imdb.com/title/tt0282372/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0572597/> ;
+        schema:characterName ""
+    ] .
+
+# The Krays (1990)
+<https://www.imdb.com/title/tt0099951/> a schema:Movie ;
+    schema:name "The Krays" ;
+    schema:url <https://www.imdb.com/title/tt0099951/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0572597/> ;
+        schema:characterName "Spectator at Ringside"
+    ] .
+
+# Box On (1980)
+<https://www.imdb.com/title/tt0215580/> a schema:Movie ;
+    schema:name "Box On" ;
+    schema:url <https://www.imdb.com/title/tt0215580/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0572597/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3070673689/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A feature documentary about the life of Lenny McLean, as seen through the eyes of his only son, Jamie." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3070673689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWFmYzgyZTQtYWE4Ny00NWM0LWEwY2EtNGIwZGFmNjk0OTc0XkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M20S"^^xsd:duration ;
+        schema:uploadDate "2022-02-04T02:11:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjUxMDEwZWYtZTMwOC00OTUwLTgyZGItOGNiYTEwNjU5OGZkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUxMDEwZWYtZTMwOC00OTUwLTgyZGItOGNiYTEwNjU5OGZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lenny McLean in Lock, Stock and Two Smoking Barrels (1998)" ;
+    schema:height "694"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0572597/mediaviewer/rm681795328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUxMDEwZWYtZTMwOC00OTUwLTgyZGItOGNiYTEwNjU5OGZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lenny McLean in Lock, Stock and Two Smoking Barrels (1998)" ;
+    schema:height "694"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

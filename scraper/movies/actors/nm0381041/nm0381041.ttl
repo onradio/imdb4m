@@ -1,0 +1,176 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0381041/> a schema:Person ;
+    schema:name "Harold G. Herthum" ;
+    schema:url <https://www.imdb.com/name/nm0381041/> ;
+    schema:birthDate "1929-04-11"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Harold G. Herthum. Actor: Forrest Gump. Harold G. Herthum was born on 11 April 1929 in Baton Rouge, Louisiana, USA. He was an actor, known for Forrest Gump (1994), Tin Cup (1996) and JFK (1991). He was married to Thelma Cowart Herthum. He died on 4 July 1998 in Baton Rouge, Louisiana, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Baton Rouge, Louisiana, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109830/>,    # Forrest Gump
+                       <https://www.imdb.com/title/tt0102138/>,    # JFK
+                       <https://www.imdb.com/title/tt0117918/>,    # Tin Cup
+                       <https://www.imdb.com/title/tt0158609/>,    # Fait Accompli
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0140688/>,    # Whatever
+                       <https://www.imdb.com/title/tt0148043/>,    # Dangerous Proposition
+                       <https://www.imdb.com/title/tt0171317/>,    # Favorite Son
+                       <https://www.imdb.com/title/tt0115111/>,    # The Big Easy
+                       <https://www.imdb.com/title/tt0118416/>,    # Orleans
+                       <https://www.imdb.com/title/tt0109450/>,    # Cobb
+                       <https://www.imdb.com/title/tt0096943/>,    # Blaze
+                       <https://www.imdb.com/title/tt0084809/> ; # The Toy
+
+
+    schema:video <https://www.imdb.com/video/vi677905689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0381041/mediaviewer/rm730167808/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> .
+
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> .
+
+<https://www.imdb.com/title/tt0117918/> a schema:Movie ;
+    schema:name "Tin Cup" ;
+    schema:url <https://www.imdb.com/title/tt0117918/> .
+
+<https://www.imdb.com/title/tt0158609/> a schema:Movie ;
+    schema:name "Fait Accompli" ;
+    schema:url <https://www.imdb.com/title/tt0158609/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Whatever (1998)
+<https://www.imdb.com/title/tt0140688/> a schema:Movie ;
+    schema:name "Whatever" ;
+    schema:url <https://www.imdb.com/title/tt0140688/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Howard"
+    ] .
+
+# Dangerous Proposition (1998)
+<https://www.imdb.com/title/tt0148043/> a schema:Movie ;
+    schema:name "Dangerous Proposition" ;
+    schema:url <https://www.imdb.com/title/tt0148043/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Patient #1"
+    ] .
+
+# Favorite Son (1997)
+<https://www.imdb.com/title/tt0171317/> a schema:Movie ;
+    schema:name "Favorite Son" ;
+    schema:url <https://www.imdb.com/title/tt0171317/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Harold"
+    ] .
+
+# The Big Easy (1997)
+<https://www.imdb.com/title/tt0115111/> a schema:Movie ;
+    schema:name "The Big Easy" ;
+    schema:url <https://www.imdb.com/title/tt0115111/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Ed LeClaire"
+    ] .
+
+# Orleans (1997)
+<https://www.imdb.com/title/tt0118416/> a schema:Movie ;
+    schema:name "Orleans" ;
+    schema:url <https://www.imdb.com/title/tt0118416/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Gambler"
+    ] .
+
+# Cobb (1994)
+<https://www.imdb.com/title/tt0109450/> a schema:Movie ;
+    schema:name "Cobb" ;
+    schema:url <https://www.imdb.com/title/tt0109450/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# Blaze (1989)
+<https://www.imdb.com/title/tt0096943/> a schema:Movie ;
+    schema:name "Blaze" ;
+    schema:url <https://www.imdb.com/title/tt0096943/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Earls Crony"
+    ] .
+
+# The Toy (1982)
+<https://www.imdb.com/title/tt0084809/> a schema:Movie ;
+    schema:name "The Toy" ;
+    schema:url <https://www.imdb.com/title/tt0084809/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0381041/> ;
+        schema:characterName "Extra"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi677905689/> a schema:VideoObject ;
+        schema:name "Forrest Gump" ;
+        schema:description "Clip: Will you marry me?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi677905689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGY0OWRiNDktYzgxYS00MmRmLTliMmItMWQzNTM4NjQwYjI3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT50S"^^xsd:duration ;
+        schema:uploadDate "2009-11-08T06:16:00Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0381041/mediaviewer/rm730167808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk2ZDY4MTctMDBhZC00OTllLWE4NjMtMTIzMmQ4MTU5ZjNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Harold G. Herthum and Michael Conner Humphreys in Forrest Gump (1994)" ;
+    schema:height "792"^^xsd:integer ;
+    schema:width "1917"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

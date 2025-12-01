@@ -1,0 +1,31 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095327/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Home Sweet Home" ;
+        schema:byArtist <https://www.imdb.com/name/nm0301108/> ; # Amelita Galli-Curci
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Home Sweet Home" ;
+            schema:author <https://www.imdb.com/name/nm0084060/> # H.R. Bishop
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Gunkan kôshinkyoku" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0084060/> a schema:Person ;
+    schema:name "H.R. Bishop" .
+<https://www.imdb.com/name/nm0301108/> a schema:Person ;
+    schema:name "Amelita Galli-Curci" .
+# ==============================================================================

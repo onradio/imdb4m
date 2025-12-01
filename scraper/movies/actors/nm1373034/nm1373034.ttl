@@ -1,0 +1,309 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1373034/> a schema:Person ;
+    schema:name "Simon Woods" ;
+    schema:url <https://www.imdb.com/name/nm1373034/> ;
+    schema:jobTitle "Actor", "Writer", "Director" ;
+    schema:description "Simon Woods. Actor: Pride & Prejudice. Simon Woods was born in 1980 in England, UK. He is an actor and writer, known for Pride & Prejudice (2005), Penelope (2006) and Such A Lovely Day (2023). He has been married to Christopher Bailey since 2012." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTcyNDU0MjI0NF5BMl5BanBnXkFtZTcwODQ3OTQzMQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0414387/>,    # Pride & Prejudice
+                       <https://www.imdb.com/title/tt0384766/>,    # Rome
+                       <https://www.imdb.com/title/tt0472160/>,    # Penelope
+                       <https://www.imdb.com/title/tt20779716/>,    # Such A Lovely Day
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1346315/>,    # Sunny et l'éléphant
+                       <https://www.imdb.com/title/tt0411234/>,    # A Previous Engagement
+                       <https://www.imdb.com/title/tt0974077/>,    # Cranford
+                       <https://www.imdb.com/title/tt0791309/>,    # I Want Candy
+                       <https://www.imdb.com/title/tt0783767/>,    # Angel
+                       <https://www.imdb.com/title/tt0160904/>,    # Spooks
+                       <https://www.imdb.com/title/tt0477095/>,    # Starter for 10
+                       <https://www.imdb.com/title/tt0464165/>,    # The Queen's Sister
+                       <https://www.imdb.com/title/tt0465326/>,    # Elizabeth I
+                       <https://www.imdb.com/title/tt0442648/>,    # Twisted Tales
+                       <https://www.imdb.com/title/tt0310455/>,    # Foyle's War
+                       <https://www.imdb.com/title/tt0364800/>,    # Charles II: The Power & the Passion
+                       <https://www.imdb.com/title/tt0346223/> ; # Cambridge Spies
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3180725017/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1373034/mediaviewer/rm3790900482/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm3554908416/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm3521353984/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm3554121216/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm578788096/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm562010880/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm995923456/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm3806695424/>,
+                 <https://www.imdb.com/name/nm1373034/mediaviewer/rm4026965248/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0414387/> a schema:Movie ;
+    schema:name "Pride & Prejudice" ;
+    schema:url <https://www.imdb.com/title/tt0414387/> .
+
+<https://www.imdb.com/title/tt0384766/> a schema:Movie ;
+    schema:name "Rome" ;
+    schema:url <https://www.imdb.com/title/tt0384766/> .
+
+<https://www.imdb.com/title/tt0472160/> a schema:Movie ;
+    schema:name "Penelope" ;
+    schema:url <https://www.imdb.com/title/tt0472160/> .
+
+<https://www.imdb.com/title/tt20779716/> a schema:Movie ;
+    schema:name "Such A Lovely Day" ;
+    schema:url <https://www.imdb.com/title/tt20779716/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sunny et l'éléphant (2008)
+<https://www.imdb.com/title/tt1346315/> a schema:Movie ;
+    schema:name "Sunny et l'éléphant" ;
+    schema:url <https://www.imdb.com/title/tt1346315/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Nicolas"
+    ] .
+
+# A Previous Engagement (2008)
+<https://www.imdb.com/title/tt0411234/> a schema:Movie ;
+    schema:name "A Previous Engagement" ;
+    schema:url <https://www.imdb.com/title/tt0411234/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Tyler"
+    ] .
+
+# Cranford (2007)
+<https://www.imdb.com/title/tt0974077/> a schema:Movie ;
+    schema:name "Cranford" ;
+    schema:url <https://www.imdb.com/title/tt0974077/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Dr Harrison"
+    ] .
+
+# I Want Candy (2007)
+<https://www.imdb.com/title/tt0791309/> a schema:Movie ;
+    schema:name "I Want Candy" ;
+    schema:url <https://www.imdb.com/title/tt0791309/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Film Actor"
+    ] .
+
+# Angel (2007)
+<https://www.imdb.com/title/tt0783767/> a schema:Movie ;
+    schema:name "Angel" ;
+    schema:url <https://www.imdb.com/title/tt0783767/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Clive Fennelly"
+    ] .
+
+# Spooks (2006)
+<https://www.imdb.com/title/tt0160904/> a schema:Movie ;
+    schema:name "Spooks" ;
+    schema:url <https://www.imdb.com/title/tt0160904/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Rowan"
+    ] .
+
+# Starter for 10 (2006)
+<https://www.imdb.com/title/tt0477095/> a schema:Movie ;
+    schema:name "Starter for 10" ;
+    schema:url <https://www.imdb.com/title/tt0477095/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Josh"
+    ] .
+
+# The Queen's Sister (2005)
+<https://www.imdb.com/title/tt0464165/> a schema:Movie ;
+    schema:name "The Queen's Sister" ;
+    schema:url <https://www.imdb.com/title/tt0464165/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Roddy Llewellyn"
+    ] .
+
+# Elizabeth I (2005)
+<https://www.imdb.com/title/tt0465326/> a schema:Movie ;
+    schema:name "Elizabeth I" ;
+    schema:url <https://www.imdb.com/title/tt0465326/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Gifford"
+    ] .
+
+# Twisted Tales (2005)
+<https://www.imdb.com/title/tt0442648/> a schema:Movie ;
+    schema:name "Twisted Tales" ;
+    schema:url <https://www.imdb.com/title/tt0442648/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Zak"
+    ] .
+
+# Foyle's War (2004)
+<https://www.imdb.com/title/tt0310455/> a schema:Movie ;
+    schema:name "Foyle's War" ;
+    schema:url <https://www.imdb.com/title/tt0310455/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Greville Woods"
+    ] .
+
+# Charles II: The Power & the Passion (2003)
+<https://www.imdb.com/title/tt0364800/> a schema:Movie ;
+    schema:name "Charles II: The Power & the Passion" ;
+    schema:url <https://www.imdb.com/title/tt0364800/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Captain Churchill"
+    ] .
+
+# Cambridge Spies (2003)
+<https://www.imdb.com/title/tt0346223/> a schema:Movie ;
+    schema:name "Cambridge Spies" ;
+    schema:url <https://www.imdb.com/title/tt0346223/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1373034/> ;
+        schema:characterName "Charlie Givens"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3180725017/> a schema:VideoObject ;
+        schema:name "A Previous Engagement" ;
+        schema:description "Some vacations can change your life." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3180725017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk3ODQ2OTU4OV5BMl5BanBnXkFtZTcwMzQ0NTcwMg@@._V1_.jpg" ;
+        schema:duration "PT2M34S"^^xsd:duration ;
+        schema:uploadDate "2008-12-03T19:21:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTcyNDU0MjI0NF5BMl5BanBnXkFtZTcwODQ3OTQzMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcyNDU0MjI0NF5BMl5BanBnXkFtZTcwODQ3OTQzMQ@@._V1_.jpg> ;
+    schema:caption "Simon Woods" ;
+    schema:height "563"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm3790900482/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGUwYzc3NTUtZGI3MC00ODNlLTg1MzgtMDkwNjY0MDc5NWY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew Macfadyen, Kelly Reilly, and Simon Woods in Pride & Prejudice (2005)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "6944"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm3554908416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIyNDgzNjg4MV5BMl5BanBnXkFtZTYwODAwMjE3._V1_.jpg> ;
+    schema:caption "Christina Ricci and Simon Woods in Penelope (2006)" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm3521353984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxOTkzODY3M15BMl5BanBnXkFtZTYwNjEwMjE3._V1_.jpg> ;
+    schema:caption "Simon Woods in Penelope (2006)" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm3554121216/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcyMTk0ODkxMF5BMl5BanBnXkFtZTcwOTY3MDA2MQ@@._V1_.jpg> ;
+    schema:caption "Simon Woods at an event for Penelope (2006)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "254"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm578788096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIxODM5OTU3M15BMl5BanBnXkFtZTYwNjU3OTg0._V1_.jpg> ;
+    schema:caption "Simon Woods at an event for Pride & Prejudice (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "287"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm562010880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzMTY2ODcxN15BMl5BanBnXkFtZTYwOTU3OTg0._V1_.jpg> ;
+    schema:caption "Simon Woods at an event for Pride & Prejudice (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "266"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm995923456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4ODcwOTc5MF5BMl5BanBnXkFtZTcwOTIzNjQ2MQ@@._V1_.jpg> ;
+    schema:caption "Tchéky Karyo, Valerie Mahaffey, Daniel Stern, Juliet Stevenson, Elizabeth Whitmere, Simon Woods, and Claire Brosseau in A Previous Engagement (2008)" ;
+    schema:height "792"^^xsd:integer ;
+    schema:width "536"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm3806695424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI1MDg5OTg2MF5BMl5BanBnXkFtZTcwODMzMTU1MQ@@._V1_.jpg> ;
+    schema:caption "Daniel Stern, Juliet Stevenson, Elizabeth Whitmere, Simon Woods, and Claire Brosseau in A Previous Engagement (2008)" ;
+    schema:height "253"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1373034/mediaviewer/rm4026965248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcyNDU0MjI0NF5BMl5BanBnXkFtZTcwODQ3OTQzMQ@@._V1_.jpg> ;
+    schema:caption "Simon Woods" ;
+    schema:height "563"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

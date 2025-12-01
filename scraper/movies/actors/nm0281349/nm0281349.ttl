@@ -1,0 +1,72 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0281349/> a schema:Person ;
+    schema:name "Lori Anne Flax" ;
+    schema:url <https://www.imdb.com/name/nm0281349/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lori Anne Flax. Actress: Raging Bull. Lori Anne Flax is known for Raging Bull (1980)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMDJhNGFkMTYtNGU2Zi00OGRiLTliYzctNzNiMDE4MmFjY2EzXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0081398/> ;    # Raging Bull
+
+
+    schema:video <https://www.imdb.com/video/vi3633616921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0281349/mediaviewer/rm416928769/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Raging Bull (1980)
+<https://www.imdb.com/title/tt0081398/> a schema:Movie ;
+    schema:name "Raging Bull" ;
+    schema:url <https://www.imdb.com/title/tt0081398/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281349/> ;
+        schema:characterName "Irma"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3633616921/> a schema:VideoObject ;
+        schema:name "Raging Bull: 30th Anniversary Edition Blu-Ray" ;
+        schema:description "Trailer for Raging Bull" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3633616921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDY4ODAyNjgtMWY1OC00NzgwLWJjYmItYmY4NzVkYzE0MDA0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2010-12-10T06:21:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMDJhNGFkMTYtNGU2Zi00OGRiLTliYzctNzNiMDE4MmFjY2EzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDJhNGFkMTYtNGU2Zi00OGRiLTliYzctNzNiMDE4MmFjY2EzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lori Anne Flax in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0281349/mediaviewer/rm416928769/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDJhNGFkMTYtNGU2Zi00OGRiLTliYzctNzNiMDE4MmFjY2EzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lori Anne Flax in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,200 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3363398/> a schema:Person ;
+    schema:name "Hunter Burke" ;
+    schema:url <https://www.imdb.com/name/nm3363398/> ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Hunter Burke. Actor: Sweet Magnolias. Hunter Burke was born in the USA. He is an actor and writer, known for Sweet Magnolias (2020), The Big Short (2015) and Claws (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjVmZDdhNGQtNDQ2Ni00NzhiLTk5YTUtNmEwY2M0YzlhNWZlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7974156/>,    # Lost Bayou
+                       <https://www.imdb.com/title/tt8613908/>,    # The Christmas Contract
+                       <https://www.imdb.com/title/tt5640558/>,    # Claws
+                       <https://www.imdb.com/title/tt28662157/>,    # Talking Like Normal People
+                       <https://www.imdb.com/title/tt4454078/>,    # Supercon
+                       <https://www.imdb.com/title/tt2776878/> ; # Thank You for Your Service
+
+
+    schema:video <https://www.imdb.com/video/vi749713689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3363398/mediaviewer/rm660100865/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm3829880577/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm4609793/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm225308929/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm2983900929/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm2147926273/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm325562626/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm960911105/>,
+                 <https://www.imdb.com/name/nm3363398/mediaviewer/rm2722447617/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lost Bayou (2019)
+<https://www.imdb.com/title/tt7974156/> a schema:Movie ;
+    schema:name "Lost Bayou" ;
+    schema:url <https://www.imdb.com/title/tt7974156/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Stranger"
+    ] .
+
+# The Christmas Contract (2018)
+<https://www.imdb.com/title/tt8613908/> a schema:Movie ;
+    schema:name "The Christmas Contract" ;
+    schema:url <https://www.imdb.com/title/tt8613908/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Foster"
+    ] .
+
+# Claws (2017)
+<https://www.imdb.com/title/tt5640558/> a schema:Movie ;
+    schema:name "Claws" ;
+    schema:url <https://www.imdb.com/title/tt5640558/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Hank"
+    ] .
+
+# Talking Like Normal People (2018)
+<https://www.imdb.com/title/tt28662157/> a schema:Movie ;
+    schema:name "Talking Like Normal People" ;
+    schema:url <https://www.imdb.com/title/tt28662157/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Guest"
+    ] .
+
+# Supercon (2018)
+<https://www.imdb.com/title/tt4454078/> a schema:Movie ;
+    schema:name "Supercon" ;
+    schema:url <https://www.imdb.com/title/tt4454078/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Sean"
+    ] .
+
+# Thank You for Your Service (2017)
+<https://www.imdb.com/title/tt2776878/> a schema:Movie ;
+    schema:name "Thank You for Your Service" ;
+    schema:url <https://www.imdb.com/title/tt2776878/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3363398/> ;
+        schema:characterName "Jake Schumann"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi749713689/> a schema:VideoObject ;
+        schema:name "Camera Store" ;
+        schema:description "Trailer for Camera Store" ;
+        schema:embedUrl <https://www.imdb.com/video/vi749713689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGJlM2JjNzktNTJmMC00NWNkLTljYTItN2YyZDhmZDYyZTJlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M33S"^^xsd:duration ;
+        schema:uploadDate "2017-05-02T07:10:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjVmZDdhNGQtNDQ2Ni00NzhiLTk5YTUtNmEwY2M0YzlhNWZlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjVmZDdhNGQtNDQ2Ni00NzhiLTk5YTUtNmEwY2M0YzlhNWZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "6501"^^xsd:integer ;
+    schema:width "4334"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm660100865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQ0YmYyMWItOGMyMS00OWYwLWJiZGItMTc1N2UyN2JlMDBhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "5168"^^xsd:integer ;
+    schema:width "3448"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm3829880577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDQwNjA3ZDktZWZkZS00MTIwLWJkYjAtZTA2NWQ1YjNmNzRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "3072"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm4609793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGU4YWVjMjMtYzQ4YS00NjMyLTlmOTQtNjA4MzhhOWEwMjI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "9504"^^xsd:integer ;
+    schema:width "6336"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm225308929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmMzOTdhNDgtZDQ2NC00ZWY1LThjNWMtOGUxNzFkOWViMDUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Debby Ryan, Hunter Burke, Lucy Fry, and Jorge Lendeborg Jr. in Night Teeth (2021)" ;
+    schema:height "918"^^xsd:integer ;
+    schema:width "3043"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm2983900929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTcyZTI3ZmQtOWFmZC00MDcyLTk3YWQtNGZkMTNiZTBmYmVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "2316"^^xsd:integer ;
+    schema:width "3088"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm2147926273/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjFjNmZmMTItYjQ0MC00YTc3LWJiYjEtMjYyOTMzOGExN2E1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Amy Aquino, Valerie Dillman, Hunter Burke, and Jonathan Ohye in The Greater Good (2021)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm325562626/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDVjM2FlYTQtNWViMS00ZTI5LTg4YjktMWEzMWE0OTdjMTFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "6501"^^xsd:integer ;
+    schema:width "4334"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm960911105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAxMGEyMGYtYTVkMy00MjVkLWFjNDItZmNjMjQ0YzcwM2UyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "3759"^^xsd:integer ;
+    schema:width "3394"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3363398/mediaviewer/rm2722447617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjVmZDdhNGQtNDQ2Ni00NzhiLTk5YTUtNmEwY2M0YzlhNWZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Burke" ;
+    schema:height "6501"^^xsd:integer ;
+    schema:width "4334"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

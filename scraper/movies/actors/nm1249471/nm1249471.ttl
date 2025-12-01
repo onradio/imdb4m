@@ -1,0 +1,230 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1249471/> a schema:Person ;
+    schema:name "Michel Gomes" ;
+    schema:url <https://www.imdb.com/name/nm1249471/> ;
+    schema:birthDate "1989-02-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Michel Gomes. Actor: City of God. Michel Gomes was born on 4 February 1989 in Rio de Janeiro, Rio de Janeiro, Brazil. He is an actor, known for City of God (2002), 3% (2016) and Última Parada 174 (2008)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rio de Janeiro, Rio de Janeiro, Brazil"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.68"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6¼″ (1.68 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt33519277/>,    # Quero Ser Feliz
+                       <https://www.imdb.com/title/tt4922804/>,    # 3%
+                       <https://www.imdb.com/title/tt4228810/>,    # Au nom de ma fille
+                       <https://www.imdb.com/title/tt4690052/>,    # Through the Shadow
+                       <https://www.imdb.com/title/tt4050298/>,    # Sexo e as Negas
+                       <https://www.imdb.com/title/tt3220864/>,    # Precious Pearl
+                       <https://www.imdb.com/title/tt1960787/>,    # Rebel Rio!
+                       <https://www.imdb.com/title/tt1484897/>,    # Seize the Day
+                       <https://www.imdb.com/title/tt1526306/>,    # Salve Geral
+                       <https://www.imdb.com/title/tt1459990/>,    # Internal Affairs
+                       <https://www.imdb.com/title/tt1280567/>,    # Última Parada 174
+                       <https://www.imdb.com/title/tt0870090/>,    # City of Men
+                       <https://www.imdb.com/title/tt0364801/>,    # City of Men
+                       <https://www.imdb.com/title/tt0317248/>,    # City of God
+                       <https://www.imdb.com/title/tt0316969/> . # Brava Gente
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Quero Ser Feliz (2019)
+<https://www.imdb.com/title/tt33519277/> a schema:Movie ;
+    schema:name "Quero Ser Feliz" ;
+    schema:url <https://www.imdb.com/title/tt33519277/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Miguel"
+    ] .
+
+# 3% (2016)
+<https://www.imdb.com/title/tt4922804/> a schema:Movie ;
+    schema:name "3%" ;
+    schema:url <https://www.imdb.com/title/tt4922804/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Fernando Carvalho"
+    ] .
+
+# Au nom de ma fille (2016)
+<https://www.imdb.com/title/tt4228810/> a schema:Movie ;
+    schema:name "Au nom de ma fille" ;
+    schema:url <https://www.imdb.com/title/tt4228810/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "L'entrepreneur"
+    ] .
+
+# Through the Shadow (2015)
+<https://www.imdb.com/title/tt4690052/> a schema:Movie ;
+    schema:name "Through the Shadow" ;
+    schema:url <https://www.imdb.com/title/tt4690052/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName ""
+    ] .
+
+# Sexo e as Negas (2014)
+<https://www.imdb.com/title/tt4050298/> a schema:Movie ;
+    schema:name "Sexo e as Negas" ;
+    schema:url <https://www.imdb.com/title/tt4050298/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Pindoba (José Francisco de Deus)"
+    ] .
+
+# Precious Pearl (2013)
+<https://www.imdb.com/title/tt3220864/> a schema:Movie ;
+    schema:name "Precious Pearl" ;
+    schema:url <https://www.imdb.com/title/tt3220864/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Curió"
+    ] .
+
+# Rebel Rio! (2011)
+<https://www.imdb.com/title/tt1960787/> a schema:Movie ;
+    schema:name "Rebel Rio!" ;
+    schema:url <https://www.imdb.com/title/tt1960787/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "João Alves"
+    ] .
+
+# Seize the Day (2009)
+<https://www.imdb.com/title/tt1484897/> a schema:Movie ;
+    schema:name "Seize the Day" ;
+    schema:url <https://www.imdb.com/title/tt1484897/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Paulo Toledo"
+    ] .
+
+# Salve Geral (2009)
+<https://www.imdb.com/title/tt1526306/> a schema:Movie ;
+    schema:name "Salve Geral" ;
+    schema:url <https://www.imdb.com/title/tt1526306/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Xizão"
+    ] .
+
+# Internal Affairs (2009)
+<https://www.imdb.com/title/tt1459990/> a schema:Movie ;
+    schema:name "Internal Affairs" ;
+    schema:url <https://www.imdb.com/title/tt1459990/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Hulk"
+    ] .
+
+# Última Parada 174 (2008)
+<https://www.imdb.com/title/tt1280567/> a schema:Movie ;
+    schema:name "Última Parada 174" ;
+    schema:url <https://www.imdb.com/title/tt1280567/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Sandro do Nascimento"
+    ] .
+
+# City of Men (2007)
+<https://www.imdb.com/title/tt0870090/> a schema:Movie ;
+    schema:name "City of Men" ;
+    schema:url <https://www.imdb.com/title/tt0870090/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Fininho"
+    ] .
+
+# City of Men (2002)
+<https://www.imdb.com/title/tt0364801/> a schema:Movie ;
+    schema:name "City of Men" ;
+    schema:url <https://www.imdb.com/title/tt0364801/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Amigo do Babão"
+    ] .
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Bené Criança"
+    ] .
+
+# Brava Gente (2000)
+<https://www.imdb.com/title/tt0316969/> a schema:Movie ;
+    schema:name "Brava Gente" ;
+    schema:url <https://www.imdb.com/title/tt0316969/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1249471/> ;
+        schema:characterName "Garoto #3"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1249471/>
+    schema:sameAs <https://www.instagram.com/michelgome.s/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

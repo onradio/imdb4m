@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095647/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Take My Hand Precious Lord" ;
+        schema:byArtist <https://www.imdb.com/name/nm0413810/> ; # Mahalia Jackson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Take My Hand Precious Lord" ;
+            schema:composer <https://www.imdb.com/name/nm0234185/> ; # Thomas A. Dorsey
+            schema:lyricist <https://www.imdb.com/name/nm0234185/> # Thomas A. Dorsey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Making Believe" ;
+        schema:byArtist <https://www.imdb.com/name/nm0920299/> ; # Kitty Wells
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Making Believe" ;
+            schema:composer <https://www.imdb.com/name/nm0941479/> ; # Jimmy Work
+            schema:lyricist <https://www.imdb.com/name/nm0941479/> # Jimmy Work
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Try Jesus" ;
+        schema:byArtist <https://www.imdb.com/name/nm0931876/> ; # Vesta Williams
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Try Jesus" ;
+            schema:composer <https://www.imdb.com/name/nm0552991/> ; # Roberta Martin
+            schema:lyricist <https://www.imdb.com/name/nm0552991/> # Roberta Martin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "When We All Get to Heaven" ;
+        schema:byArtist <https://www.imdb.com/name/nm0564339/>, # Lannie Spann McBride
+                        <https://www.imdb.com/name/nm0316850/>, # Barbara Gibson
+                        <https://www.imdb.com/name/nm0665810/> ; # Alisa R. Patrick
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "When We All Get to Heaven" ;
+            schema:composer <https://www.imdb.com/name/nm0933370/> # Emily D. Wilson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Walk on by Faith" ;
+        schema:byArtist <https://www.imdb.com/name/nm0564339/> ; # Lannie Spann McBride
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Walk on by Faith" ;
+            schema:composer <https://www.imdb.com/name/nm0166482/> ; # James Cleveland
+            schema:lyricist <https://www.imdb.com/name/nm0166482/> # James Cleveland
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0166482/> a schema:Person ;
+    schema:name "James Cleveland" .
+<https://www.imdb.com/name/nm0234185/> a schema:Person ;
+    schema:name "Thomas A. Dorsey" .
+<https://www.imdb.com/name/nm0316850/> a schema:Person ;
+    schema:name "Barbara Gibson" .
+<https://www.imdb.com/name/nm0413810/> a schema:Person ;
+    schema:name "Mahalia Jackson" .
+<https://www.imdb.com/name/nm0552991/> a schema:Person ;
+    schema:name "Roberta Martin" .
+<https://www.imdb.com/name/nm0564339/> a schema:Person ;
+    schema:name "Lannie Spann McBride" .
+<https://www.imdb.com/name/nm0665810/> a schema:Person ;
+    schema:name "Alisa R. Patrick" .
+<https://www.imdb.com/name/nm0920299/> a schema:Person ;
+    schema:name "Kitty Wells" .
+<https://www.imdb.com/name/nm0931876/> a schema:Person ;
+    schema:name "Vesta Williams" .
+<https://www.imdb.com/name/nm0933370/> a schema:Person ;
+    schema:name "Emily D. Wilson" .
+<https://www.imdb.com/name/nm0941479/> a schema:Person ;
+    schema:name "Jimmy Work" .
+# ==============================================================================

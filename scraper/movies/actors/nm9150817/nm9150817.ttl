@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9150817/> a schema:Person ;
+    schema:name "Yuka Kato" ;
+    schema:url <https://www.imdb.com/name/nm9150817/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Yuka Kato. Actor: Your Name.. Yuka Kato is known for Your Name. (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5311514/> .    # Your Name.
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Your Name. (2016)
+<https://www.imdb.com/title/tt5311514/> a schema:Movie ;
+    schema:name "Your Name." ;
+    schema:url <https://www.imdb.com/title/tt5311514/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9150817/> ;
+        schema:characterName "Teshigawara's Mother"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

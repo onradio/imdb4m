@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0861739/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Tropa de Elite" ;
+        schema:byArtist <https://www.imdb.com/name/nm6056847/> ; # Tihuana
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rap Das Armas" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Morro do Dendê" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Shiny Happy People" ;
+        schema:byArtist <https://www.imdb.com/name/nm1032121/> ; # R.E.M.
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shiny Happy People" ;
+            schema:author <https://www.imdb.com/name/nm0077494/>, # Bill Berry
+                       <https://www.imdb.com/name/nm0118407/>, # Peter Buck
+                       <https://www.imdb.com/name/nm0590121/>, # Mike Mills
+                       <https://www.imdb.com/name/nm0005468/> # Michael Stipe
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Polícia" ;
+        schema:byArtist <https://www.imdb.com/name/nm3077564/> ; # Titãs
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Polícia" ;
+            schema:author <https://www.imdb.com/name/nm1131913/> # Tony Bellotto
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Katia Flavia A Godiva Do Iraja" ;
+        schema:byArtist <https://www.imdb.com/name/nm1118051/> ; # Fausto Fawcett
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Katia Flavia A Godiva Do Iraja" ;
+            schema:author <https://www.imdb.com/name/nm1118051/>, # Fausto Fawcett
+                       <https://www.imdb.com/name/nm1350968/> # Carlos Laufer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lado B Lado A" ;
+        schema:byArtist <https://www.imdb.com/name/nm5755848/> ; # O Rappa
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005468/> a schema:Person ;
+    schema:name "Michael Stipe" .
+<https://www.imdb.com/name/nm0077494/> a schema:Person ;
+    schema:name "Bill Berry" .
+<https://www.imdb.com/name/nm0118407/> a schema:Person ;
+    schema:name "Peter Buck" .
+<https://www.imdb.com/name/nm0590121/> a schema:Person ;
+    schema:name "Mike Mills" .
+<https://www.imdb.com/name/nm1032121/> a schema:Person ;
+    schema:name "R.E.M." .
+<https://www.imdb.com/name/nm1118051/> a schema:Person ;
+    schema:name "Fausto Fawcett" .
+<https://www.imdb.com/name/nm1131913/> a schema:Person ;
+    schema:name "Tony Bellotto" .
+<https://www.imdb.com/name/nm1350968/> a schema:Person ;
+    schema:name "Carlos Laufer" .
+<https://www.imdb.com/name/nm3077564/> a schema:Person ;
+    schema:name "Titãs" .
+<https://www.imdb.com/name/nm5755848/> a schema:Person ;
+    schema:name "O Rappa" .
+<https://www.imdb.com/name/nm6056847/> a schema:Person ;
+    schema:name "Tihuana" .
+# ==============================================================================

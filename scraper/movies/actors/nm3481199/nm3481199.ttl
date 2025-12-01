@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3481199/> a schema:Person ;
+    schema:name "Shu Chen" ;
+    schema:url <https://www.imdb.com/name/nm3481199/> ;
+    schema:jobTitle "Actress", "Stunts" ;
+    schema:description "Shu Chen. Actress: Cloudy Mountain. Shu Chen is known for Cloudy Mountain (2021), Tie Li Hua (2010) and The Martian (2015)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTgzMDY3ODM1OV5BMl5BanBnXkFtZTgwNjM3NDg4NjE@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.68"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6″ (1.68 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11203678/>,    # Hunt Down
+                       <https://www.imdb.com/title/tt10218664/>,    # The Captain
+                       <https://www.imdb.com/title/tt9568012/>,    # Mu hou zhi wang
+                       <https://www.imdb.com/title/tt7402546/>,    # Peace Hotel
+                       <https://www.imdb.com/title/tt6283378/>,    # Ze tian ji
+                       <https://www.imdb.com/title/tt5281626/> ; # A Love for Separation
+
+
+    schema:video <https://www.imdb.com/video/vi4070490905/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3481199/mediaviewer/rm1955297280/>,
+                 <https://www.imdb.com/name/nm3481199/mediaviewer/rm747337728/>,
+                 <https://www.imdb.com/name/nm3481199/mediaviewer/rm2466453760/>,
+                 <https://www.imdb.com/name/nm3481199/mediaviewer/rm2583894272/>,
+                 <https://www.imdb.com/name/nm3481199/mediaviewer/rm2877549568/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hunt Down (2019)
+<https://www.imdb.com/title/tt11203678/> a schema:Movie ;
+    schema:name "Hunt Down" ;
+    schema:url <https://www.imdb.com/title/tt11203678/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Lin Baiyu"
+    ] .
+
+# The Captain (2019)
+<https://www.imdb.com/title/tt10218664/> a schema:Movie ;
+    schema:name "The Captain" ;
+    schema:url <https://www.imdb.com/title/tt10218664/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Liu Changjian's Wife"
+    ] .
+
+# Mu hou zhi wang (2019)
+<https://www.imdb.com/title/tt9568012/> a schema:Movie ;
+    schema:name "Mu hou zhi wang" ;
+    schema:url <https://www.imdb.com/title/tt9568012/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Yu Hailun"
+    ] .
+
+# Peace Hotel (2018)
+<https://www.imdb.com/title/tt7402546/> a schema:Movie ;
+    schema:name "Peace Hotel" ;
+    schema:url <https://www.imdb.com/title/tt7402546/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Chen Jiaoying"
+    ] .
+
+# Ze tian ji (2017)
+<https://www.imdb.com/title/tt6283378/> a schema:Movie ;
+    schema:name "Ze tian ji" ;
+    schema:url <https://www.imdb.com/title/tt6283378/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Queen Sheng"
+    ] .
+
+# A Love for Separation (2016)
+<https://www.imdb.com/title/tt5281626/> a schema:Movie ;
+    schema:name "A Love for Separation" ;
+    schema:url <https://www.imdb.com/title/tt5281626/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3481199/> ;
+        schema:characterName "Chen Jie (2016)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4070490905/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A father and son try to save a small town and its newly-built tunnel that is threatened by natural disasters." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4070490905/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMmI0OWFkYTAtZDI1Zi00NDNlLWI5NmQtYzViZTRiNWM2Nzk4XkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M3S"^^xsd:duration ;
+        schema:uploadDate "2021-10-14T03:23:44Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTgzMDY3ODM1OV5BMl5BanBnXkFtZTgwNjM3NDg4NjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMDY3ODM1OV5BMl5BanBnXkFtZTgwNjM3NDg4NjE@._V1_.jpg> ;
+    schema:caption "Shu Chen at an event for The Martian (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3481199/mediaviewer/rm1955297280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDM2NjhiYmQtY2VjNy00MGJkLWE2YTUtYTIwNGUxMGE1YzQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shu Chen in The Martian (2015)" ;
+    schema:height "1095"^^xsd:integer ;
+    schema:width "2635"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3481199/mediaviewer/rm747337728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTMwNjJiZTMtNDU5OS00N2I5LWE2ODctNjRiZmJiMDU4MTBiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeff Daniels, Eddy Ko, and Shu Chen in The Martian (2015)" ;
+    schema:height "1095"^^xsd:integer ;
+    schema:width "2635"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3481199/mediaviewer/rm2466453760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDIxNDE5Y2EtOTM3Ny00YmNlLTljNWQtYjUxYTQ5YWQ1YWU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shu Chen in Zheng zhe wu di (2012)" ;
+    schema:height "399"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3481199/mediaviewer/rm2583894272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMwYmI4N2ItNGE1MS00YWExLTkwOTItMjgwOTNhZmE0ZjBhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Baoguo Chen, Zongdi Xiu, Gang Yao, Yifei Tang, Shu Chen, Meng Yang, Yuemo Chen, and Xuedng Mi in Zheng zhe wu di (2012)" ;
+    schema:height "672"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3481199/mediaviewer/rm2877549568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzMDY3ODM1OV5BMl5BanBnXkFtZTgwNjM3NDg4NjE@._V1_.jpg> ;
+    schema:caption "Shu Chen at an event for The Martian (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

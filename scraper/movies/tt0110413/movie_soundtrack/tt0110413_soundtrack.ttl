@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0110413/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Shape Of My Heart" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001776/> ; # Sting
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Shape Of My Heart" ;
+            schema:author <https://www.imdb.com/name/nm0001776/>, # Sting
+                       <https://www.imdb.com/name/nm0588244/> # Dominic Miller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Experience of Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0785385/> ; # Éric Serra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Experience of Love" ;
+            schema:author <https://www.imdb.com/name/nm0785385/> # Éric Serra
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Venus As A Boy" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001951/> ; # Björk
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Venus As A Boy" ;
+            schema:author <https://www.imdb.com/name/nm0001951/> # Björk
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Like Myself" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000037/> ; # Gene Kelly
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Like Myself" ;
+            schema:composer <https://www.imdb.com/name/nm0006238/> ; # André Previn
+            schema:lyricist <https://www.imdb.com/name/nm0173679/>, # Betty Comden
+                        <https://www.imdb.com/name/nm0337582/> # Adolph Green
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Like a Virgin" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000204/> ; # Natalie Portman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Like a Virgin" ;
+            schema:author <https://www.imdb.com/name/nm1392723/>, # Billy Steinberg
+                       <https://www.imdb.com/name/nm1223096/> # Tom Kelly
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000204/> ; # Natalie Portman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Singing in the Rain" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000204/> ; # Natalie Portman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Singing in the Rain" ;
+            schema:author <https://www.imdb.com/name/nm0005978/>, # Nacio Herb Brown
+                       <https://www.imdb.com/name/nm0006085/> # Arthur Freed
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000037/> a schema:Person ;
+    schema:name "Gene Kelly" .
+<https://www.imdb.com/name/nm0000204/> a schema:Person ;
+    schema:name "Natalie Portman" .
+<https://www.imdb.com/name/nm0001776/> a schema:Person ;
+    schema:name "Sting" .
+<https://www.imdb.com/name/nm0001951/> a schema:Person ;
+    schema:name "Björk" .
+<https://www.imdb.com/name/nm0005978/> a schema:Person ;
+    schema:name "Nacio Herb Brown" .
+<https://www.imdb.com/name/nm0006085/> a schema:Person ;
+    schema:name "Arthur Freed" .
+<https://www.imdb.com/name/nm0006238/> a schema:Person ;
+    schema:name "André Previn" .
+<https://www.imdb.com/name/nm0173679/> a schema:Person ;
+    schema:name "Betty Comden" .
+<https://www.imdb.com/name/nm0337582/> a schema:Person ;
+    schema:name "Adolph Green" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0588244/> a schema:Person ;
+    schema:name "Dominic Miller" .
+<https://www.imdb.com/name/nm0785385/> a schema:Person ;
+    schema:name "Éric Serra" .
+<https://www.imdb.com/name/nm1223096/> a schema:Person ;
+    schema:name "Tom Kelly" .
+<https://www.imdb.com/name/nm1392723/> a schema:Person ;
+    schema:name "Billy Steinberg" .
+# ==============================================================================

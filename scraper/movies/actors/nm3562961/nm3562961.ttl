@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3562961/> a schema:Person ;
+    schema:name "Shin&apos;ya Hamazoe" ;
+    schema:url <https://www.imdb.com/name/nm3562961/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shin'ya Hamazoe. Actor: Your Name.. Shin'ya Hamazoe is known for Your Name. (2016), Space Dandy (2014) and Boruto: Naruto Next Generations (2017)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10233448/>,    # Vinland Saga
+                       <https://www.imdb.com/title/tt6342474/> . # Boruto: Naruto Next Generations
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Vinland Saga (2019)
+<https://www.imdb.com/title/tt10233448/> a schema:Movie ;
+    schema:name "Vinland Saga" ;
+    schema:url <https://www.imdb.com/title/tt10233448/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3562961/> ;
+        schema:characterName "Lizard"
+    ] .
+
+# Boruto: Naruto Next Generations (2017)
+<https://www.imdb.com/title/tt6342474/> a schema:Movie ;
+    schema:name "Boruto: Naruto Next Generations" ;
+    schema:url <https://www.imdb.com/title/tt6342474/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3562961/> ;
+        schema:characterName "Namua"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,182 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0371746/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Back In Black" ;
+        schema:byArtist <https://www.imdb.com/name/nm0009540/> ; # AC/DC
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Back In Black" ;
+            schema:author <https://www.imdb.com/name/nm0424657/>, # Brian Johnson
+                       <https://www.imdb.com/name/nm0949850/>, # Malcolm Young
+                       <https://www.imdb.com/name/nm0949264/> # Angus Young
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Damn Kid" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Damn Kid" ;
+            schema:author <https://www.imdb.com/name/nm1672576/>, # Ali Dee
+                       <https://www.imdb.com/name/nm0200775/>, # Zach Danziger
+                       <https://www.imdb.com/name/nm4368525/> # Vincent Alfieri
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Iron Man (Theme from the Animated Series)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1180173/>, # John O'Brien
+                        <https://www.imdb.com/name/nm0098275/> ; # Rick Boston
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Iron Man (Theme from the Animated Series)" ;
+            schema:composer <https://www.imdb.com/name/nm0881709/> # Jack Urbont
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Institutionalized" ;
+        schema:byArtist <https://www.imdb.com/name/nm1971611/> ; # Suicidal Tendencies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Institutionalized" ;
+            schema:author <https://www.imdb.com/name/nm1580577/>, # Louiche Mayorga
+                       <https://www.imdb.com/name/nm0611386/> # Mike Muir
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Slept on Tony with Dirt" ;
+        schema:byArtist <https://www.imdb.com/name/nm0315932/> ; # Ghostface Killah
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Slept on Tony with Dirt" ;
+            schema:author <https://www.imdb.com/name/nm0315932/> # Ghostface Killah
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Concerto In Do Maggiore Per Pianoforte Ed Orchestra: Larghetto" ;
+        schema:byArtist <https://www.imdb.com/name/nm1014697/> ; # Ramin Djawadi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Concerto In Do Maggiore Per Pianoforte Ed Orchestra: Larghetto" ;
+            schema:author <https://www.imdb.com/name/nm0758283/> # Antonio Salieri
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Groovetronic" ;
+        schema:byArtist <https://www.imdb.com/name/nm2122852/> ; # Terry Devine-King
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Groovetronic" ;
+            schema:author <https://www.imdb.com/name/nm2122852/> # Terry Devine-King
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kool Katz" ;
+        schema:byArtist <https://www.imdb.com/name/nm0580327/> ; # Chucho Merchán
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kool Katz" ;
+            schema:author <https://www.imdb.com/name/nm0580327/> # Chucho Merchán
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Licorice" ;
+        schema:byArtist <https://www.imdb.com/name/nm1097645/>, # Emanuel Kallins
+                        <https://www.imdb.com/name/nm0804322/> ; # Steve Skinner
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Licorice" ;
+            schema:author <https://www.imdb.com/name/nm1097645/>, # Emanuel Kallins
+                       <https://www.imdb.com/name/nm0804322/> # Steve Skinner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Iron Man" ;
+        schema:byArtist <https://www.imdb.com/name/nm1277292/> ; # Black Sabbath
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Iron Man" ;
+            schema:author <https://www.imdb.com/name/nm0005285/>, # Ozzy Osbourne
+                       <https://www.imdb.com/name/nm0409546/>, # Tony Iommi
+                       <https://www.imdb.com/name/nm0960657/>, # Geezer Butler
+                       <https://www.imdb.com/name/nm0962449/> # Bill Ward
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005285/> a schema:Person ;
+    schema:name "Ozzy Osbourne" .
+<https://www.imdb.com/name/nm0009540/> a schema:Person ;
+    schema:name "AC/DC" .
+<https://www.imdb.com/name/nm0098275/> a schema:Person ;
+    schema:name "Rick Boston" .
+<https://www.imdb.com/name/nm0200775/> a schema:Person ;
+    schema:name "Zach Danziger" .
+<https://www.imdb.com/name/nm0315932/> a schema:Person ;
+    schema:name "Ghostface Killah" .
+<https://www.imdb.com/name/nm0409546/> a schema:Person ;
+    schema:name "Tony Iommi" .
+<https://www.imdb.com/name/nm0424657/> a schema:Person ;
+    schema:name "Brian Johnson" .
+<https://www.imdb.com/name/nm0580327/> a schema:Person ;
+    schema:name "Chucho Merchán" .
+<https://www.imdb.com/name/nm0611386/> a schema:Person ;
+    schema:name "Mike Muir" .
+<https://www.imdb.com/name/nm0758283/> a schema:Person ;
+    schema:name "Antonio Salieri" .
+<https://www.imdb.com/name/nm0804322/> a schema:Person ;
+    schema:name "Steve Skinner" .
+<https://www.imdb.com/name/nm0881709/> a schema:Person ;
+    schema:name "Jack Urbont" .
+<https://www.imdb.com/name/nm0949264/> a schema:Person ;
+    schema:name "Angus Young" .
+<https://www.imdb.com/name/nm0949850/> a schema:Person ;
+    schema:name "Malcolm Young" .
+<https://www.imdb.com/name/nm0960657/> a schema:Person ;
+    schema:name "Geezer Butler" .
+<https://www.imdb.com/name/nm0962449/> a schema:Person ;
+    schema:name "Bill Ward" .
+<https://www.imdb.com/name/nm1014697/> a schema:Person ;
+    schema:name "Ramin Djawadi" .
+<https://www.imdb.com/name/nm1097645/> a schema:Person ;
+    schema:name "Emanuel Kallins" .
+<https://www.imdb.com/name/nm1180173/> a schema:Person ;
+    schema:name "John O'Brien" .
+<https://www.imdb.com/name/nm1277292/> a schema:Person ;
+    schema:name "Black Sabbath" .
+<https://www.imdb.com/name/nm1580577/> a schema:Person ;
+    schema:name "Louiche Mayorga" .
+<https://www.imdb.com/name/nm1672576/> a schema:Person ;
+    schema:name "Ali Dee" .
+<https://www.imdb.com/name/nm1971611/> a schema:Person ;
+    schema:name "Suicidal Tendencies" .
+<https://www.imdb.com/name/nm2122852/> a schema:Person ;
+    schema:name "Terry Devine-King" .
+<https://www.imdb.com/name/nm4368525/> a schema:Person ;
+    schema:name "Vincent Alfieri" .
+# ==============================================================================

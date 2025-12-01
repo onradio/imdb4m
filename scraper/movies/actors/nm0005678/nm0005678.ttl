@@ -1,0 +1,158 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0005678/> a schema:Person ;
+    schema:name "Dean Cundey" ;
+    schema:url <https://www.imdb.com/name/nm0005678/> ;
+    schema:birthDate "1946-03-12"^^xsd:date ;
+    schema:jobTitle "Cinematographer", "Camera and Electrical Department", "Additional Crew" ;
+    schema:description "Dean Cundey. Cinematographer: Jurassic Park. Multiple award-winning cinematographer Dean Cundey, ASC, CSC who was nominated for an Oscar for \"Who Framed Roger Rabbit\" and took home the BAFTA for the same film, has a career spanning decades with awards and nominations including a Primetime Emmy (2023 \"The Mandalorian\") a Daytime Emmy (2001 \"The Face: Jesus in Art\"), a Chicago Film Critics Association award (\"Apollo 13\"), to American Society of Cinematographers..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BN2M4OGZlNjktN2JhMS00NGRjLWJjZGQtM2UwN2ZlOWY5Y2FkXkEyXkFqcGc@._V1_CR37,98,353,529_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Alhambra, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109813/>,    # The Flintstones
+                       <https://www.imdb.com/title/tt0107290/>,    # Jurassic Park
+                       <https://www.imdb.com/title/tt0099088/> ; # Back to the Future Part III
+
+
+    schema:video <https://www.imdb.com/video/vi2383460377/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0005678/mediaviewer/rm1757865728/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm220152321/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm1489053952/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm2180065536/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm2263951616/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm3035703552/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm3052480768/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm2834376960/>,
+                 <https://www.imdb.com/name/nm0005678/mediaviewer/rm2700159232/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Flintstones (1994)
+<https://www.imdb.com/title/tt0109813/> a schema:Movie ;
+    schema:name "The Flintstones" ;
+    schema:url <https://www.imdb.com/title/tt0109813/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0005678/> ;
+        schema:characterName "Technician"
+    ] .
+
+# Jurassic Park (1993)
+<https://www.imdb.com/title/tt0107290/> a schema:Movie ;
+    schema:name "Jurassic Park" ;
+    schema:url <https://www.imdb.com/title/tt0107290/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0005678/> ;
+        schema:characterName "Mate"
+    ] .
+
+# Back to the Future Part III (1990)
+<https://www.imdb.com/title/tt0099088/> a schema:Movie ;
+    schema:name "Back to the Future Part III" ;
+    schema:url <https://www.imdb.com/title/tt0099088/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0005678/> ;
+        schema:characterName "Photographer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2383460377/> a schema:VideoObject ;
+        schema:name "Dreams and Memories: Where the Red Fern Grows" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2383460377/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjU2MmY3YTYtYTI4OS00NTkwLWJiZTAtYzNjMmNjYWMyODIzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M43S"^^xsd:duration ;
+        schema:uploadDate "2018-03-14T17:06:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BN2M4OGZlNjktN2JhMS00NGRjLWJjZGQtM2UwN2ZlOWY5Y2FkXkEyXkFqcGc@._V1_CR37,98,353,529_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2M4OGZlNjktN2JhMS00NGRjLWJjZGQtM2UwN2ZlOWY5Y2FkXkEyXkFqcGc@._V1_CR37,98,353,529_.jpg> ;
+    schema:caption "Dean Cundey" ;
+    schema:height "529"^^xsd:integer ;
+    schema:width "353"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm1757865728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM0MjcwNzcyOV5BMl5BanBnXkFtZTgwMTk3MDA3NzE@._V1_.jpg> ;
+    schema:caption "DP Dean Cundey with Director India Dupre on the set of STRIPPED" ;
+    schema:height "2730"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm220152321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmU5MDdlYWMtYzFiZS00N2I5LTkzZjQtYWI5YzQwZDZhMDBkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dean Cundey and Jay Woelfel in Battlestar Galactica: The Second Coming (1999)" ;
+    schema:height "2267"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm1489053952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTZkYmU5NDItNGMwNy00OWEwLTgzNmQtOTIyYThiZTNmM2ViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter, Dean Cundey, Clyde E. Bryan, and Raymond Stella in The Thing (1982)" ;
+    schema:height "1028"^^xsd:integer ;
+    schema:width "2042"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm2180065536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTRlNjI5ZjItNWM0My00YTM5LWFiODYtMDIyMTIzODdjMjkyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dean Cundey" ;
+    schema:height "518"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm2263951616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYzNDcwNzItOTBjMS00NmExLWEyNGItNWY1MjljMmE3N2Y0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Steven Spielberg and Dean Cundey in Jurassic Park (1993)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "625"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm3035703552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzNjMzZmZGItY2UxMC00NjIyLWFkYTQtYzQ1MTQxNjEzOTViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dean Cundey" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "750"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm3052480768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODIxZTdjYmItNTZiNC00NGU3LTg1YjAtMGU3NmE3NDQ1YTZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dean Cundey" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm2834376960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTZlMmM0MGQtNWU2ZC00NDY4LTkzNmYtNGEyNjlkNjZhYzQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Donald Pleasence, Dean Cundey, and Steven Ford in Escape from New York (1981)" ;
+    schema:height "1144"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0005678/mediaviewer/rm2700159232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmNjYjYwNmEtZTllMi00MzQ4LTg0YTUtOWFlZjhhMTRhNzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter, Dean Cundey, Clyde E. Bryan, and Raymond Stella in The Thing (1982)" ;
+    schema:height "1256"^^xsd:integer ;
+    schema:width "2042"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

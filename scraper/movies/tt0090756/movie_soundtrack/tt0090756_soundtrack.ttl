@@ -1,0 +1,135 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0090756/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Velvet" ;
+        schema:byArtist <https://www.imdb.com/name/nm0899130/> ; # Bobby Vinton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Velvet" ;
+            schema:author <https://www.imdb.com/name/nm0606726/>, # Lee Morris
+                       <https://www.imdb.com/name/nm0915517/> # Bernie Wayne
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Star" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000618/> ; # Isabella Rossellini
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Star" ;
+            schema:composer <https://www.imdb.com/name/nm0000823/> ; # Angelo Badalamenti
+            schema:lyricist <https://www.imdb.com/name/nm0000186/> # David Lynch
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Letters" ;
+        schema:byArtist <https://www.imdb.com/name/nm0504480/> ; # Ketty Lester
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Letters" ;
+            schema:author <https://www.imdb.com/name/nm0000082/>, # Victor Young
+                       <https://www.imdb.com/name/nm0382269/> # Edward Heyman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Livin' For Your Lover" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Gone Ridin" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mysteries of Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm0190023/> ; # Julee Cruise
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mysteries of Love" ;
+            schema:composer <https://www.imdb.com/name/nm0000823/> ; # Angelo Badalamenti
+            schema:lyricist <https://www.imdb.com/name/nm0000186/> # David Lynch
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In Dreams" ;
+        schema:byArtist <https://www.imdb.com/name/nm0649413/> ; # Roy Orbison
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "In Dreams" ;
+            schema:author <https://www.imdb.com/name/nm0649413/> # Roy Orbison
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Honky Tonk (Part I)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0230499/> ; # Bill Doggett
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Honky Tonk (Part I)" ;
+            schema:author <https://www.imdb.com/name/nm13799860/>, # Shep Shepherd
+                       <https://www.imdb.com/name/nm13799861/>, # Clifford Scott
+                       <https://www.imdb.com/name/nm0230499/>, # Bill Doggett
+                       <https://www.imdb.com/name/nm13799862/> # Billy Butler
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Velvet" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000618/> ; # Isabella Rossellini
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Velvet" ;
+            schema:author <https://www.imdb.com/name/nm0606726/>, # Lee Morris
+                       <https://www.imdb.com/name/nm0915517/> # Bernie Wayne
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000082/> a schema:Person ;
+    schema:name "Victor Young" .
+<https://www.imdb.com/name/nm0000186/> a schema:Person ;
+    schema:name "David Lynch" .
+<https://www.imdb.com/name/nm0000618/> a schema:Person ;
+    schema:name "Isabella Rossellini" .
+<https://www.imdb.com/name/nm0000823/> a schema:Person ;
+    schema:name "Angelo Badalamenti" .
+<https://www.imdb.com/name/nm0190023/> a schema:Person ;
+    schema:name "Julee Cruise" .
+<https://www.imdb.com/name/nm0230499/> a schema:Person ;
+    schema:name "Bill Doggett" .
+<https://www.imdb.com/name/nm0382269/> a schema:Person ;
+    schema:name "Edward Heyman" .
+<https://www.imdb.com/name/nm0504480/> a schema:Person ;
+    schema:name "Ketty Lester" .
+<https://www.imdb.com/name/nm0606726/> a schema:Person ;
+    schema:name "Lee Morris" .
+<https://www.imdb.com/name/nm0649413/> a schema:Person ;
+    schema:name "Roy Orbison" .
+<https://www.imdb.com/name/nm0899130/> a schema:Person ;
+    schema:name "Bobby Vinton" .
+<https://www.imdb.com/name/nm0915517/> a schema:Person ;
+    schema:name "Bernie Wayne" .
+<https://www.imdb.com/name/nm13799860/> a schema:Person ;
+    schema:name "Shep Shepherd" .
+<https://www.imdb.com/name/nm13799861/> a schema:Person ;
+    schema:name "Clifford Scott" .
+<https://www.imdb.com/name/nm13799862/> a schema:Person ;
+    schema:name "Billy Butler" .
+# ==============================================================================

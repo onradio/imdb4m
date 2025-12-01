@@ -1,0 +1,136 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2132818/> a schema:Person ;
+    schema:name "Ahmet Pinar" ;
+    schema:url <https://www.imdb.com/name/nm2132818/> ;
+    schema:birthDate "1972-08-20"^^xsd:date ;
+    schema:jobTitle "Actor", "Production Designer", "Additional Crew" ;
+    schema:description "Ahmet Pinar. Actor: The Mountain II. Ahmet Pinar was born on 20 August 1972 in Istanbul, Turkey. He is an actor and production designer, known for The Mountain II (2016), Wolf (2018) and Karanlik Madde (2022)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Istanbul, Turkey"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0845088/>,    # Arka Sokaklar
+                       <https://www.imdb.com/title/tt8197998/>,    # Wolf
+                       <https://www.imdb.com/title/tt7146600/>,    # Wolf
+                       <https://www.imdb.com/title/tt6453088/>,    # Cesur Yürek
+                       <https://www.imdb.com/title/tt5813916/>,    # The Mountain II
+                       <https://www.imdb.com/title/tt4688048/> ; # Milat
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2132818/mediaviewer/rm1869373952/>,
+                 <https://www.imdb.com/name/nm2132818/mediaviewer/rm2675469056/>,
+                 <https://www.imdb.com/name/nm2132818/mediaviewer/rm3916128768/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Arka Sokaklar (2019)
+<https://www.imdb.com/title/tt0845088/> a schema:Movie ;
+    schema:name "Arka Sokaklar" ;
+    schema:url <https://www.imdb.com/title/tt0845088/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName "Firaz"
+    ] .
+
+# Wolf (2018)
+<https://www.imdb.com/title/tt8197998/> a schema:Movie ;
+    schema:name "Wolf" ;
+    schema:url <https://www.imdb.com/title/tt8197998/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName "Barbaros Çepni"
+    ] .
+
+# Wolf (2018)
+<https://www.imdb.com/title/tt7146600/> a schema:Movie ;
+    schema:name "Wolf" ;
+    schema:url <https://www.imdb.com/title/tt7146600/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName "Barbaros Çepni"
+    ] .
+
+# Cesur Yürek (2016)
+<https://www.imdb.com/title/tt6453088/> a schema:Movie ;
+    schema:name "Cesur Yürek" ;
+    schema:url <https://www.imdb.com/title/tt6453088/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName ""
+    ] .
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName "Master Sergeant Esref Cullu"
+    ] .
+
+# Milat (2015)
+<https://www.imdb.com/title/tt4688048/> a schema:Movie ;
+    schema:name "Milat" ;
+    schema:url <https://www.imdb.com/title/tt4688048/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2132818/> ;
+        schema:characterName "Ahmet Yildiz"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2132818/mediaviewer/rm1869373952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzU3MTljZGUtZDhiNy00MWU0LTgzMWYtMTQzODAyNjRhMmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Murat Arkin, Ahu Türkpençe, Firat Dogruloglu, Ahmet Pinar, Emir Benderlioglu, Bedii Akin, Can Nergis, Ozan Agaç, Serkan Çayoglu, Armagan Oguz, and Melis Hacic in Wolf (2018)" ;
+    schema:height "607"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2132818/mediaviewer/rm2675469056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWEzZjJiZmYtZGQyMi00OWMzLThjZmYtYTIyMTMzM2E5NDhlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ahmet Pinar, Emir Benderlioglu, and Serkan Çayoglu in Wolf (2018)" ;
+    schema:height "625"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2132818/mediaviewer/rm3916128768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTY0MGNkMGItYjc2Ni00N2U5LWJmNTctOGE1OGE2MGZhNGVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zafer Algöz, Murat Arkin, Mesut Akusta, Ahmet Pinar, Emir Benderlioglu, Bedii Akin, Can Nergis, Ozan Agaç, Özge Gürel, Serkan Çayoglu, and Melis Hacic at an event for Wolf (2018)" ;
+    schema:height "810"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

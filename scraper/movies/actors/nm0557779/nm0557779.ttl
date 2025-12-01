@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0557779/> a schema:Person ;
+    schema:name "Chas Mastin" ;
+    schema:url <https://www.imdb.com/name/nm0557779/> ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:description "Chas Mastin. Actor: Requiem for a Dream. Chas Mastin is known for Requiem for a Dream (2000), No Time (1994) and Standard Deviants (1996)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0180093/>,    # Requiem for a Dream
+                       <https://www.imdb.com/title/tt0401986/>,    # Standard Deviants
+                       <https://www.imdb.com/title/tt0816479/>,    # The Dissected World of Biology
+                       <https://www.imdb.com/title/tt1735215/> . # No Time
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Requiem for a Dream (2000)
+<https://www.imdb.com/title/tt0180093/> a schema:Movie ;
+    schema:name "Requiem for a Dream" ;
+    schema:url <https://www.imdb.com/title/tt0180093/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0557779/> ;
+        schema:characterName "Lyle Russel"
+    ] .
+
+# Standard Deviants (1996)
+<https://www.imdb.com/title/tt0401986/> a schema:Movie ;
+    schema:name "Standard Deviants" ;
+    schema:url <https://www.imdb.com/title/tt0401986/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0557779/> ;
+        schema:characterName "Chas Mastin"
+    ] .
+
+# The Dissected World of Biology (1996)
+<https://www.imdb.com/title/tt0816479/> a schema:Movie ;
+    schema:name "The Dissected World of Biology" ;
+    schema:url <https://www.imdb.com/title/tt0816479/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0557779/> ;
+        schema:characterName ""
+    ] .
+
+# No Time (1994)
+<https://www.imdb.com/title/tt1735215/> a schema:Movie ;
+    schema:name "No Time" ;
+    schema:url <https://www.imdb.com/title/tt1735215/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0557779/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

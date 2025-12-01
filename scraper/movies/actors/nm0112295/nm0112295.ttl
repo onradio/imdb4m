@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0112295/> a schema:Person ;
+    schema:name "Van Brooks" ;
+    schema:url <https://www.imdb.com/name/nm0112295/> ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director", "Production Department" ;
+    schema:description "Van Brooks. Actor: Blood Simple. Van Brooks is known for Blood Simple (1984), Inhumanity (2017) and Trespasses (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3654052/>,    # Inhumanity
+                       <https://www.imdb.com/title/tt2829274/>,    # Abogado Avocado Law Firm Commercial
+                       <https://www.imdb.com/title/tt0758745/>,    # Friday Night Lights
+                       <https://www.imdb.com/title/tt0334542/>,    # Trespasses
+                       <https://www.imdb.com/title/tt0089997/>,    # Seven Minutes in Heaven
+                       <https://www.imdb.com/title/tt0086979/> ; # Blood Simple
+
+
+    schema:video <https://www.imdb.com/video/vi2174465817/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Inhumanity (2017)
+<https://www.imdb.com/title/tt3654052/> a schema:Movie ;
+    schema:name "Inhumanity" ;
+    schema:url <https://www.imdb.com/title/tt3654052/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Murdered Homeowner"
+    ] .
+
+# Abogado Avocado Law Firm Commercial (2013)
+<https://www.imdb.com/title/tt2829274/> a schema:Movie ;
+    schema:name "Abogado Avocado Law Firm Commercial" ;
+    schema:url <https://www.imdb.com/title/tt2829274/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Client #1"
+    ] .
+
+# Friday Night Lights (2009)
+<https://www.imdb.com/title/tt0758745/> a schema:Movie ;
+    schema:name "Friday Night Lights" ;
+    schema:url <https://www.imdb.com/title/tt0758745/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Emcee"
+    ] .
+
+# Trespasses (1986)
+<https://www.imdb.com/title/tt0334542/> a schema:Movie ;
+    schema:name "Trespasses" ;
+    schema:url <https://www.imdb.com/title/tt0334542/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Richard"
+    ] .
+
+# Seven Minutes in Heaven (1986)
+<https://www.imdb.com/title/tt0089997/> a schema:Movie ;
+    schema:name "Seven Minutes in Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0089997/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Stadium Cop"
+    ] .
+
+# Blood Simple (1984)
+<https://www.imdb.com/title/tt0086979/> a schema:Movie ;
+    schema:name "Blood Simple" ;
+    schema:url <https://www.imdb.com/title/tt0086979/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0112295/> ;
+        schema:characterName "Man from Lubbock"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2174465817/> a schema:VideoObject ;
+        schema:name "Blood Simple" ;
+        schema:description "Trailer for Blood Simple" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2174465817/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmQzOWM4ZmMtYjRhNy00ZWY3LWJkMmItMGRhMjg3ZmQ0ODAxXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2016-06-30T14:07:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

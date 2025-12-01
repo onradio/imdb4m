@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0227600/> a schema:Person ;
+    schema:name "Lars Michael Dinesen" ;
+    schema:url <https://www.imdb.com/name/nm0227600/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Lars Michael Dinesen. Actor: Dancer in the Dark. Lars Michael Dinesen is known for Dancer in the Dark (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0168629/> .    # Dancer in the Dark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dancer in the Dark (2000)
+<https://www.imdb.com/title/tt0168629/> a schema:Movie ;
+    schema:name "Dancer in the Dark" ;
+    schema:url <https://www.imdb.com/title/tt0168629/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0227600/> ;
+        schema:characterName "Defense Attorney"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,301 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0534085/> a schema:Person ;
+    schema:name "Robert MacNaughton" ;
+    schema:url <https://www.imdb.com/name/nm0534085/> ;
+    schema:birthDate "1966-12-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Robert MacNaughton. Actor: E.T. the Extra-Terrestrial. Robert MacNaughton was born on 19 December 1966 in New York City, New York, USA. He is an actor, known for E.T. the Extra-Terrestrial (1982), I Am the Cheese (1983) and The Electric Grandmother (1982). He has been married to Bianca Hunter since 2 July 2012." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTI3NjgxNDg3MV5BMl5BanBnXkFtZTYwNjEyNjE0._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.90"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2¾″ (1.90 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3326880/>,    # Laugh Killer Laugh
+                       <https://www.imdb.com/title/tt3295482/>,    # Frankenstein vs. the Mummy
+                       <https://www.imdb.com/title/tt0092475/>,    # Vietnam War Story
+                       <https://www.imdb.com/title/tt0090395/>,    # Amen
+                       <https://www.imdb.com/title/tt0083455/>,    # Newhart
+                       <https://www.imdb.com/title/tt0297626/>,    # Screen Two
+                       <https://www.imdb.com/title/tt0093746/>,    # A Place to Call Home
+                       <https://www.imdb.com/title/tt0985040/>,    # CBS Schoolbreak Special
+                       <https://www.imdb.com/title/tt0085706/>,    # I Am the Cheese
+                       <https://www.imdb.com/title/tt0083866/>,    # E.T. the Extra-Terrestrial
+                       <https://www.imdb.com/title/tt0083876/>,    # The Electric Grandmother
+                       <https://www.imdb.com/title/tt0408573/>,    # Big Bend Country
+                       <https://www.imdb.com/title/tt0080370/> ; # Angel City
+
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (E.T. the Extra-Terrestrial)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "15000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi315404569/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0534085/mediaviewer/rm143729408/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm332866048/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm1972896000/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm1939341568/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm3398290432/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm3482176512/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm2928253184/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm3012139264/>,
+                 <https://www.imdb.com/name/nm0534085/mediaviewer/rm3096025344/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0083866/> a schema:Movie ;
+    schema:name "E.T. the Extra-Terrestrial" ;
+    schema:url <https://www.imdb.com/title/tt0083866/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Laugh Killer Laugh (2015)
+<https://www.imdb.com/title/tt3326880/> a schema:Movie ;
+    schema:name "Laugh Killer Laugh" ;
+    schema:url <https://www.imdb.com/title/tt3326880/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Creative Writing Teacher"
+    ] .
+
+# Frankenstein vs. the Mummy (2015)
+<https://www.imdb.com/title/tt3295482/> a schema:Movie ;
+    schema:name "Frankenstein vs. the Mummy" ;
+    schema:url <https://www.imdb.com/title/tt3295482/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Isaac"
+    ] .
+
+# Vietnam War Story (1988)
+<https://www.imdb.com/title/tt0092475/> a schema:Movie ;
+    schema:name "Vietnam War Story" ;
+    schema:url <https://www.imdb.com/title/tt0092475/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Wagoner"
+    ] .
+
+# Amen (1987)
+<https://www.imdb.com/title/tt0090395/> a schema:Movie ;
+    schema:name "Amen" ;
+    schema:url <https://www.imdb.com/title/tt0090395/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Michael"
+    ] .
+
+# Newhart (1987)
+<https://www.imdb.com/title/tt0083455/> a schema:Movie ;
+    schema:name "Newhart" ;
+    schema:url <https://www.imdb.com/title/tt0083455/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Andy"
+    ] .
+
+# Screen Two (1987)
+<https://www.imdb.com/title/tt0297626/> a schema:Movie ;
+    schema:name "Screen Two" ;
+    schema:url <https://www.imdb.com/title/tt0297626/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Clayton"
+    ] .
+
+# A Place to Call Home (1987)
+<https://www.imdb.com/title/tt0093746/> a schema:Movie ;
+    schema:name "A Place to Call Home" ;
+    schema:url <https://www.imdb.com/title/tt0093746/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Michael"
+    ] .
+
+# CBS Schoolbreak Special (1984)
+<https://www.imdb.com/title/tt0985040/> a schema:Movie ;
+    schema:name "CBS Schoolbreak Special" ;
+    schema:url <https://www.imdb.com/title/tt0985040/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Craig Parsons"
+    ] .
+
+# I Am the Cheese (1983)
+<https://www.imdb.com/title/tt0085706/> a schema:Movie ;
+    schema:name "I Am the Cheese" ;
+    schema:url <https://www.imdb.com/title/tt0085706/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Adam Farmer"
+    ] .
+
+# E.T. the Extra-Terrestrial (1982)
+<https://www.imdb.com/title/tt0083866/> a schema:Movie ;
+    schema:name "E.T. the Extra-Terrestrial" ;
+    schema:url <https://www.imdb.com/title/tt0083866/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Michael"
+    ] .
+
+# The Electric Grandmother (1982)
+<https://www.imdb.com/title/tt0083876/> a schema:Movie ;
+    schema:name "The Electric Grandmother" ;
+    schema:url <https://www.imdb.com/title/tt0083876/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Tom"
+    ] .
+
+# Big Bend Country (1981)
+<https://www.imdb.com/title/tt0408573/> a schema:Movie ;
+    schema:name "Big Bend Country" ;
+    schema:url <https://www.imdb.com/title/tt0408573/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Dave McGregor"
+    ] .
+
+# Angel City (1980)
+<https://www.imdb.com/title/tt0080370/> a schema:Movie ;
+    schema:name "Angel City" ;
+    schema:url <https://www.imdb.com/title/tt0080370/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0534085/> ;
+        schema:characterName "Bennie Teeter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi315404569/> a schema:VideoObject ;
+        schema:name "Laugh Killer Laugh" ;
+        schema:description "Trailer for Laugh Killer Laugh" ;
+        schema:embedUrl <https://www.imdb.com/video/vi315404569/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGU2MDlkNjktMjY1Mi00OTYyLWI2NTQtZDM3NDViNGNjZmNjXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M9S"^^xsd:duration ;
+        schema:uploadDate "2015-03-26T04:37:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTI3NjgxNDg3MV5BMl5BanBnXkFtZTYwNjEyNjE0._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3NjgxNDg3MV5BMl5BanBnXkFtZTYwNjEyNjE0._V1_.jpg> ;
+    schema:caption "Robert MacNaughton at an event for E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "272"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm143729408/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyNTExNTI5OV5BMl5BanBnXkFtZTgwNjM0NjYyMzI@._V1_.jpg> ;
+    schema:caption "C. Thomas Howell, Sean Frye, Robert MacNaughton, and K.C. Martel in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "1380"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm332866048/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQyZjg4NTQtN2RkYy00MzY1LWI2NmMtYTI2ZmY5NDZmYTUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "C. Thomas Howell, Henry Thomas, Robert MacNaughton, K.C. Martel, John M. Stephens, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "757"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm1972896000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5MDU4OTI2MV5BMl5BanBnXkFtZTgwMTc0MDk0MDI@._V1_.jpg> ;
+    schema:caption "Henry Thomas, Robert MacNaughton, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm1939341568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzNjY3OTA2OF5BMl5BanBnXkFtZTgwNDc0MDk0MDI@._V1_.jpg> ;
+    schema:caption "C. Thomas Howell, Henry Thomas, Sean Frye, Robert MacNaughton, K.C. Martel, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "1388"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm3398290432/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjU5MTg4MDUyNF5BMl5BanBnXkFtZTgwNTA3MTg5MTE@._V1_.jpg> ;
+    schema:caption "C. Thomas Howell, Henry Thomas, Robert MacNaughton, K.C. Martel, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "4182"^^xsd:integer ;
+    schema:width "6218"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm3482176512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2ODU2NDk4N15BMl5BanBnXkFtZTgwMzA3MTg5MTE@._V1_.jpg> ;
+    schema:caption "Drew Barrymore, Henry Thomas, and Robert MacNaughton in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "869"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm2928253184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwNTcwMTE2NV5BMl5BanBnXkFtZTYwMDE5ODQ3._V1_.jpg> ;
+    schema:caption "Henry Thomas, Robert MacNaughton, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "321"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm3012139264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0ODA4Nzg2M15BMl5BanBnXkFtZTYwNjI5ODQ3._V1_.jpg> ;
+    schema:caption "Henry Thomas, Robert MacNaughton, and Pat Welsh in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "307"^^xsd:integer ;
+    schema:width "473"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0534085/mediaviewer/rm3096025344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ1MTA1OTkzMl5BMl5BanBnXkFtZTYwMjQ5ODQ3._V1_.jpg> ;
+    schema:caption "C. Thomas Howell, Sean Frye, Robert MacNaughton, and K.C. Martel in E.T. the Extra-Terrestrial (1982)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "478"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0534085/>
+    schema:sameAs <https://www.facebook.com/breakjaw> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

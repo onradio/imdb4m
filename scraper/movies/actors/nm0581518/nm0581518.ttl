@@ -1,0 +1,611 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0581518/> a schema:Person ;
+    schema:name "Susan Merson" ;
+    schema:url <https://www.imdb.com/name/nm0581518/> ;
+    schema:birthDate "1950-04-25"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Susan Merson. Actress: Terminator 3: Rise of the Machines. Susan Merson was born on 25 April 1950 in Detroit, Michigan, USA. She is an actress, known for Terminator 3: Rise of the Machines (2003), Phenomenon (1996) and Tootsie (1982)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE3NjY1MDg3N15BMl5BanBnXkFtZTcwNDI3ODE4Mg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Detroit, Michigan, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.66"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5½″ (1.66 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1658801/>,    # Freeheld
+                       <https://www.imdb.com/title/tt1837576/>,    # Scandal
+                       <https://www.imdb.com/title/tt1337662/>,    # Me, You, a Bag & Bamboo
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt0844441/>,    # True Blood
+                       <https://www.imdb.com/title/tt0312172/>,    # Monk
+                       <https://www.imdb.com/title/tt0406158/>,    # The Prize Winner of Defiance, Ohio
+                       <https://www.imdb.com/title/tt0452718/>,    # Surface
+                       <https://www.imdb.com/title/tt0433309/>,    # Numb3rs
+                       <https://www.imdb.com/title/tt0321021/>,    # Without a Trace
+                       <https://www.imdb.com/title/tt0401224/>,    # Meltdown
+                       <https://www.imdb.com/title/tt0409507/>,    # Young Artie Feldman
+                       <https://www.imdb.com/title/tt0181852/>,    # Terminator 3: Rise of the Machines
+                       <https://www.imdb.com/title/tt0307101/>,    # Little John
+                       <https://www.imdb.com/title/tt0248654/>,    # Six Feet Under
+                       <https://www.imdb.com/title/tt0118437/>,    # The Practice
+                       <https://www.imdb.com/title/tt0106079/>,    # NYPD Blue
+                       <https://www.imdb.com/title/tt0255994/>,    # A Family in Crisis: The Elian Gonzales Story
+                       <https://www.imdb.com/title/tt0106004/>,    # Frasier
+                       <https://www.imdb.com/title/tt0158423/>,    # NetForce
+                       <https://www.imdb.com/title/tt0108894/>,    # Party of Five
+                       <https://www.imdb.com/title/tt0118254/>,    # Ally McBeal
+                       <https://www.imdb.com/title/tt0115322/>,    # Profiler
+                       <https://www.imdb.com/title/tt0115149/>,    # Dangerous Minds
+                       <https://www.imdb.com/title/tt0117333/>,    # Phenomenon
+                       <https://www.imdb.com/title/tt0112086/>,    # Murder One
+                       <https://www.imdb.com/title/tt0114660/>,    # Things to Do in Denver When You're Dead
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0112218/>,    # The Watcher
+                       <https://www.imdb.com/title/tt0108862/>,    # Models Inc.
+                       <https://www.imdb.com/title/tt0107443/>,    # Lost in Yonkers
+                       <https://www.imdb.com/title/tt0101175/>,    # Reasonable Doubts
+                       <https://www.imdb.com/title/tt0090466/>,    # L.A. Law
+                       <https://www.imdb.com/title/tt0101265/>,    # Absolute Strangers
+                       <https://www.imdb.com/title/tt0098789/>,    # Equal Justice
+                       <https://www.imdb.com/title/tt0098932/>,    # The Trials of Rosie O'Neill
+                       <https://www.imdb.com/title/tt0096635/>,    # Life Goes On
+                       <https://www.imdb.com/title/tt0098801/>,    # Gabriel's Fire
+                       <https://www.imdb.com/title/tt0100299/>,    # The Operation
+                       <https://www.imdb.com/title/tt0096579/>,    # Family Matters
+                       <https://www.imdb.com/title/tt0092492/>,    # Thirtysomething
+                       <https://www.imdb.com/title/tt0081873/>,    # Hill Street Blues
+                       <https://www.imdb.com/title/tt0083483/>,    # St. Elsewhere
+                       <https://www.imdb.com/title/tt0084805/>,    # Tootsie
+                       <https://www.imdb.com/title/tt0081635/> ; # Times Square
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0581518/mediaviewer/rm3835463936/>,
+                 <https://www.imdb.com/name/nm0581518/mediaviewer/rm3852241152/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Freeheld (2015)
+<https://www.imdb.com/title/tt1658801/> a schema:Movie ;
+    schema:name "Freeheld" ;
+    schema:url <https://www.imdb.com/title/tt1658801/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Harriet"
+    ] .
+
+# Scandal (2012)
+<https://www.imdb.com/title/tt1837576/> a schema:Movie ;
+    schema:name "Scandal" ;
+    schema:url <https://www.imdb.com/title/tt1837576/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Judge Thompson"
+    ] .
+
+# Me, You, a Bag & Bamboo (2009)
+<https://www.imdb.com/title/tt1337662/> a schema:Movie ;
+    schema:name "Me, You, a Bag & Bamboo" ;
+    schema:url <https://www.imdb.com/title/tt1337662/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Chun Li's Mother"
+    ] .
+
+# Grey's Anatomy (2009)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Lorraine"
+    ] .
+
+# True Blood (2008)
+<https://www.imdb.com/title/tt0844441/> a schema:Movie ;
+    schema:name "True Blood" ;
+    schema:url <https://www.imdb.com/title/tt0844441/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Woman in Booth"
+    ] .
+
+# Monk (2008)
+<https://www.imdb.com/title/tt0312172/> a schema:Movie ;
+    schema:name "Monk" ;
+    schema:url <https://www.imdb.com/title/tt0312172/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Mrs. Sheckman"
+    ] .
+
+# The Prize Winner of Defiance, Ohio (2005)
+<https://www.imdb.com/title/tt0406158/> a schema:Movie ;
+    schema:name "The Prize Winner of Defiance, Ohio" ;
+    schema:url <https://www.imdb.com/title/tt0406158/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Mrs. Bidlack"
+    ] .
+
+# Surface (2005)
+<https://www.imdb.com/title/tt0452718/> a schema:Movie ;
+    schema:name "Surface" ;
+    schema:url <https://www.imdb.com/title/tt0452718/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Gov't Panel Suit #3"
+    ] .
+
+# Numb3rs (2005)
+<https://www.imdb.com/title/tt0433309/> a schema:Movie ;
+    schema:name "Numb3rs" ;
+    schema:url <https://www.imdb.com/title/tt0433309/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Brenda Aronson"
+    ] .
+
+# Without a Trace (2004)
+<https://www.imdb.com/title/tt0321021/> a schema:Movie ;
+    schema:name "Without a Trace" ;
+    schema:url <https://www.imdb.com/title/tt0321021/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Sheila"
+    ] .
+
+# Meltdown (2004)
+<https://www.imdb.com/title/tt0401224/> a schema:Movie ;
+    schema:name "Meltdown" ;
+    schema:url <https://www.imdb.com/title/tt0401224/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Attorney General Zutrow"
+    ] .
+
+# Young Artie Feldman (2004)
+<https://www.imdb.com/title/tt0409507/> a schema:Movie ;
+    schema:name "Young Artie Feldman" ;
+    schema:url <https://www.imdb.com/title/tt0409507/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Artie's mom"
+    ] .
+
+# Terminator 3: Rise of the Machines (2003)
+<https://www.imdb.com/title/tt0181852/> a schema:Movie ;
+    schema:name "Terminator 3: Rise of the Machines" ;
+    schema:url <https://www.imdb.com/title/tt0181852/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Roadhouse Clubgoer #1"
+    ] .
+
+# Little John (2002)
+<https://www.imdb.com/title/tt0307101/> a schema:Movie ;
+    schema:name "Little John" ;
+    schema:url <https://www.imdb.com/title/tt0307101/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Ms. Connors"
+    ] .
+
+# Six Feet Under (2002)
+<https://www.imdb.com/title/tt0248654/> a schema:Movie ;
+    schema:name "Six Feet Under" ;
+    schema:url <https://www.imdb.com/title/tt0248654/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Realtor"
+    ] .
+
+# The Practice (2002)
+<https://www.imdb.com/title/tt0118437/> a schema:Movie ;
+    schema:name "The Practice" ;
+    schema:url <https://www.imdb.com/title/tt0118437/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Mrs. Green"
+    ] .
+
+# NYPD Blue (2001)
+<https://www.imdb.com/title/tt0106079/> a schema:Movie ;
+    schema:name "NYPD Blue" ;
+    schema:url <https://www.imdb.com/title/tt0106079/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Pam Del Porto"
+    ] .
+
+# A Family in Crisis: The Elian Gonzales Story (2000)
+<https://www.imdb.com/title/tt0255994/> a schema:Movie ;
+    schema:name "A Family in Crisis: The Elian Gonzales Story" ;
+    schema:url <https://www.imdb.com/title/tt0255994/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Janet Reno"
+    ] .
+
+# Frasier (1999)
+<https://www.imdb.com/title/tt0106004/> a schema:Movie ;
+    schema:name "Frasier" ;
+    schema:url <https://www.imdb.com/title/tt0106004/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Woman In Cafe"
+    ] .
+
+# NetForce (1999)
+<https://www.imdb.com/title/tt0158423/> a schema:Movie ;
+    schema:name "NetForce" ;
+    schema:url <https://www.imdb.com/title/tt0158423/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Senator Dondridge"
+    ] .
+
+# Party of Five (1998)
+<https://www.imdb.com/title/tt0108894/> a schema:Movie ;
+    schema:name "Party of Five" ;
+    schema:url <https://www.imdb.com/title/tt0108894/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Airplane Woman"
+    ] .
+
+# Ally McBeal (1998)
+<https://www.imdb.com/title/tt0118254/> a schema:Movie ;
+    schema:name "Ally McBeal" ;
+    schema:url <https://www.imdb.com/title/tt0118254/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Judge Stoller"
+    ] .
+
+# Profiler (1998)
+<https://www.imdb.com/title/tt0115322/> a schema:Movie ;
+    schema:name "Profiler" ;
+    schema:url <https://www.imdb.com/title/tt0115322/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Violet Preston"
+    ] .
+
+# Dangerous Minds (1996)
+<https://www.imdb.com/title/tt0115149/> a schema:Movie ;
+    schema:name "Dangerous Minds" ;
+    schema:url <https://www.imdb.com/title/tt0115149/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Norma Joelson"
+    ] .
+
+# Phenomenon (1996)
+<https://www.imdb.com/title/tt0117333/> a schema:Movie ;
+    schema:name "Phenomenon" ;
+    schema:url <https://www.imdb.com/title/tt0117333/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Nurse"
+    ] .
+
+# Murder One (1996)
+<https://www.imdb.com/title/tt0112086/> a schema:Movie ;
+    schema:name "Murder One" ;
+    schema:url <https://www.imdb.com/title/tt0112086/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Caller"
+    ] .
+
+# Things to Do in Denver When You're Dead (1995)
+<https://www.imdb.com/title/tt0114660/> a schema:Movie ;
+    schema:name "Things to Do in Denver When You're Dead" ;
+    schema:url <https://www.imdb.com/title/tt0114660/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Woman with Cancer"
+    ] .
+
+# ER (1995)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Mrs. Blum"
+    ] .
+
+# The Watcher (1995)
+<https://www.imdb.com/title/tt0112218/> a schema:Movie ;
+    schema:name "The Watcher" ;
+    schema:url <https://www.imdb.com/title/tt0112218/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Rulenska"
+    ] .
+
+# Models Inc. (1994)
+<https://www.imdb.com/title/tt0108862/> a schema:Movie ;
+    schema:name "Models Inc." ;
+    schema:url <https://www.imdb.com/title/tt0108862/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Dr. Alicia Bentson"
+    ] .
+
+# Lost in Yonkers (1993)
+<https://www.imdb.com/title/tt0107443/> a schema:Movie ;
+    schema:name "Lost in Yonkers" ;
+    schema:url <https://www.imdb.com/title/tt0107443/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Gert"
+    ] .
+
+# Reasonable Doubts (1993)
+<https://www.imdb.com/title/tt0101175/> a schema:Movie ;
+    schema:name "Reasonable Doubts" ;
+    schema:url <https://www.imdb.com/title/tt0101175/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Rose Stepke"
+    ] .
+
+# L.A. Law (1992)
+<https://www.imdb.com/title/tt0090466/> a schema:Movie ;
+    schema:name "L.A. Law" ;
+    schema:url <https://www.imdb.com/title/tt0090466/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Dr. Elise Naiman"
+    ] .
+
+# Absolute Strangers (1991)
+<https://www.imdb.com/title/tt0101265/> a schema:Movie ;
+    schema:name "Absolute Strangers" ;
+    schema:url <https://www.imdb.com/title/tt0101265/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Dr. Natalie Kay"
+    ] .
+
+# Equal Justice (1991)
+<https://www.imdb.com/title/tt0098789/> a schema:Movie ;
+    schema:name "Equal Justice" ;
+    schema:url <https://www.imdb.com/title/tt0098789/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Catherine Abbott"
+    ] .
+
+# The Trials of Rosie O'Neill (1990)
+<https://www.imdb.com/title/tt0098932/> a schema:Movie ;
+    schema:name "The Trials of Rosie O'Neill" ;
+    schema:url <https://www.imdb.com/title/tt0098932/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Harriet Meyer"
+    ] .
+
+# Life Goes On (1990)
+<https://www.imdb.com/title/tt0096635/> a schema:Movie ;
+    schema:name "Life Goes On" ;
+    schema:url <https://www.imdb.com/title/tt0096635/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Lucy"
+    ] .
+
+# Gabriel's Fire (1990)
+<https://www.imdb.com/title/tt0098801/> a schema:Movie ;
+    schema:name "Gabriel's Fire" ;
+    schema:url <https://www.imdb.com/title/tt0098801/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Dr. Rayne"
+    ] .
+
+# The Operation (1990)
+<https://www.imdb.com/title/tt0100299/> a schema:Movie ;
+    schema:name "The Operation" ;
+    schema:url <https://www.imdb.com/title/tt0100299/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Bank VP"
+    ] .
+
+# Family Matters (1989)
+<https://www.imdb.com/title/tt0096579/> a schema:Movie ;
+    schema:name "Family Matters" ;
+    schema:url <https://www.imdb.com/title/tt0096579/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Sylvia"
+    ] .
+
+# Thirtysomething (1988)
+<https://www.imdb.com/title/tt0092492/> a schema:Movie ;
+    schema:name "Thirtysomething" ;
+    schema:url <https://www.imdb.com/title/tt0092492/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Admissions Nurse"
+    ] .
+
+# Hill Street Blues (1986)
+<https://www.imdb.com/title/tt0081873/> a schema:Movie ;
+    schema:name "Hill Street Blues" ;
+    schema:url <https://www.imdb.com/title/tt0081873/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Resident"
+    ] .
+
+# St. Elsewhere (1985)
+<https://www.imdb.com/title/tt0083483/> a schema:Movie ;
+    schema:name "St. Elsewhere" ;
+    schema:url <https://www.imdb.com/title/tt0083483/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Dr. Gail Perry"
+    ] .
+
+# Tootsie (1982)
+<https://www.imdb.com/title/tt0084805/> a schema:Movie ;
+    schema:name "Tootsie" ;
+    schema:url <https://www.imdb.com/title/tt0084805/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Page"
+    ] .
+
+# Times Square (1980)
+<https://www.imdb.com/title/tt0081635/> a schema:Movie ;
+    schema:name "Times Square" ;
+    schema:url <https://www.imdb.com/title/tt0081635/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0581518/> ;
+        schema:characterName "Nurse May"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE3NjY1MDg3N15BMl5BanBnXkFtZTcwNDI3ODE4Mg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3NjY1MDg3N15BMl5BanBnXkFtZTcwNDI3ODE4Mg@@._V1_.jpg> ;
+    schema:caption "Susan Merson" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0581518/mediaviewer/rm3835463936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwOTEzNDMzOV5BMl5BanBnXkFtZTcwNzI3ODE4Mg@@._V1_.jpg> ;
+    schema:caption "Susan Merson" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0581518/mediaviewer/rm3852241152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3NjY1MDg3N15BMl5BanBnXkFtZTcwNDI3ODE4Mg@@._V1_.jpg> ;
+    schema:caption "Susan Merson" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

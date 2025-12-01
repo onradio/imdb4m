@@ -1,0 +1,162 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093058/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Hello Vietnam" ;
+        schema:byArtist <https://www.imdb.com/name/nm0942525/> ; # Johnny Wright
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hello Vietnam" ;
+            schema:author <https://www.imdb.com/name/nm0356171/> # Tom T. Hall
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "These Boots Are Made For Walkin" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005434/> ; # Nancy Sinatra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "These Boots Are Made For Walkin" ;
+            schema:author <https://www.imdb.com/name/nm0372040/> # Lee Hazlewood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wooly Bully" ;
+        schema:byArtist <https://www.imdb.com/name/nm1870655/> ; # Sam the Sham and The Pharaohs
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Wooly Bully" ;
+            schema:author <https://www.imdb.com/name/nm0760375/> # Domingo Samudio
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Marines Hymn" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Marines Hymn" ;
+            schema:composer <https://www.imdb.com/name/nm0006220/> # Jacques Offenbach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chapel Of Love" ;
+        schema:byArtist <https://www.imdb.com/name/nm1827481/> ; # The Dixie Cups
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chapel Of Love" ;
+            schema:author <https://www.imdb.com/name/nm0058033/>, # Jeff Barry
+                       <https://www.imdb.com/name/nm1220830/>, # Ellie Greenwich
+                       <https://www.imdb.com/name/nm0817489/> # Phil Spector
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Surfin' Bird" ;
+        schema:byArtist <https://www.imdb.com/name/nm3174460/> ; # The Trashmen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Surfin' Bird" ;
+            schema:author <https://www.imdb.com/name/nm0292553/>, # Al Frazier
+                       <https://www.imdb.com/name/nm7741823/>, # Carl White
+                       <https://www.imdb.com/name/nm1861520/>, # Turner Wilson Jr.
+                       <https://www.imdb.com/name/nm0364877/> # John Harris
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Paint It, Black" ;
+        schema:byArtist <https://www.imdb.com/name/nm1213869/> ; # The Rolling Stones
+        schema:producer <https://www.imdb.com/name/nm0646141/> ; # Andrew Loog Oldham
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Paint It, Black" ;
+            schema:author <https://www.imdb.com/name/nm0001396/>, # Mick Jagger
+                       <https://www.imdb.com/name/nm0724189/> # Keith Richards
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mickey Mouse Club March" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mickey Mouse Club March" ;
+            schema:author <https://www.imdb.com/name/nm0230082/> # Jimmie Dodd
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001396/> a schema:Person ;
+    schema:name "Mick Jagger" .
+<https://www.imdb.com/name/nm0005434/> a schema:Person ;
+    schema:name "Nancy Sinatra" .
+<https://www.imdb.com/name/nm0006220/> a schema:Person ;
+    schema:name "Jacques Offenbach" .
+<https://www.imdb.com/name/nm0058033/> a schema:Person ;
+    schema:name "Jeff Barry" .
+<https://www.imdb.com/name/nm0230082/> a schema:Person ;
+    schema:name "Jimmie Dodd" .
+<https://www.imdb.com/name/nm0292553/> a schema:Person ;
+    schema:name "Al Frazier" .
+<https://www.imdb.com/name/nm0356171/> a schema:Person ;
+    schema:name "Tom T. Hall" .
+<https://www.imdb.com/name/nm0364877/> a schema:Person ;
+    schema:name "John Harris" .
+<https://www.imdb.com/name/nm0372040/> a schema:Person ;
+    schema:name "Lee Hazlewood" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0646141/> a schema:Person ;
+    schema:name "Andrew Loog Oldham" .
+<https://www.imdb.com/name/nm0724189/> a schema:Person ;
+    schema:name "Keith Richards" .
+<https://www.imdb.com/name/nm0760375/> a schema:Person ;
+    schema:name "Domingo Samudio" .
+<https://www.imdb.com/name/nm0817489/> a schema:Person ;
+    schema:name "Phil Spector" .
+<https://www.imdb.com/name/nm0942525/> a schema:Person ;
+    schema:name "Johnny Wright" .
+<https://www.imdb.com/name/nm1213869/> a schema:Person ;
+    schema:name "The Rolling Stones" .
+<https://www.imdb.com/name/nm1220830/> a schema:Person ;
+    schema:name "Ellie Greenwich" .
+<https://www.imdb.com/name/nm1827481/> a schema:Person ;
+    schema:name "The Dixie Cups" .
+<https://www.imdb.com/name/nm1861520/> a schema:Person ;
+    schema:name "Turner Wilson Jr." .
+<https://www.imdb.com/name/nm1870655/> a schema:Person ;
+    schema:name "Sam the Sham and The Pharaohs" .
+<https://www.imdb.com/name/nm3174460/> a schema:Person ;
+    schema:name "The Trashmen" .
+<https://www.imdb.com/name/nm7741823/> a schema:Person ;
+    schema:name "Carl White" .
+# ==============================================================================

@@ -1,0 +1,142 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0443344/> a schema:Person ;
+    schema:name "Linda Kaye" ;
+    schema:url <https://www.imdb.com/name/nm0443344/> ;
+    schema:jobTitle "Actress", "Stunts" ;
+    schema:description "Linda Kaye. Actress: Reservoir Dogs. Linda Kaye is known for Reservoir Dogs (1992), Pulp Fiction (1994) and Shocker (1989)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTUxNjMxNzU1OV5BMl5BanBnXkFtZTcwNDEyNzcyMQ@@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110912/>,    # Pulp Fiction
+                       <https://www.imdb.com/title/tt0105236/>,    # Reservoir Dogs
+                       <https://www.imdb.com/title/tt0098320/>,    # Shocker
+                       <https://www.imdb.com/title/tt0094701/>,    # Bad Dreams
+                       <https://www.imdb.com/title/tt0093831/>,    # Red Riding Hood
+                       <https://www.imdb.com/title/tt0093999/>,    # Snow White & the 7 Dwarfs
+                       <https://www.imdb.com/title/tt0359715/> ; # My Best Friend's Birthday
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0443344/mediaviewer/rm1873058304/>,
+                 <https://www.imdb.com/name/nm0443344/mediaviewer/rm3701382400/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pulp Fiction (1994)
+<https://www.imdb.com/title/tt0110912/> a schema:Movie ;
+    schema:name "Pulp Fiction" ;
+    schema:url <https://www.imdb.com/title/tt0110912/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Shot Lady"
+    ] .
+
+# Reservoir Dogs (1992)
+<https://www.imdb.com/title/tt0105236/> a schema:Movie ;
+    schema:name "Reservoir Dogs" ;
+    schema:url <https://www.imdb.com/title/tt0105236/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Shocked Woman"
+    ] .
+
+# Shocker (1989)
+<https://www.imdb.com/title/tt0098320/> a schema:Movie ;
+    schema:name "Shocker" ;
+    schema:url <https://www.imdb.com/title/tt0098320/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Woman at Stairs"
+    ] .
+
+# Bad Dreams (1988)
+<https://www.imdb.com/title/tt0094701/> a schema:Movie ;
+    schema:name "Bad Dreams" ;
+    schema:url <https://www.imdb.com/title/tt0094701/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Unity Woman on Fire"
+    ] .
+
+# Red Riding Hood (1987)
+<https://www.imdb.com/title/tt0093831/> a schema:Movie ;
+    schema:name "Red Riding Hood" ;
+    schema:url <https://www.imdb.com/title/tt0093831/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Badger Kate"
+    ] .
+
+# Snow White & the 7 Dwarfs (1987)
+<https://www.imdb.com/title/tt0093999/> a schema:Movie ;
+    schema:name "Snow White & the 7 Dwarfs" ;
+    schema:url <https://www.imdb.com/title/tt0093999/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "3rd Lady in Waiting"
+    ] .
+
+# My Best Friend's Birthday (1987)
+<https://www.imdb.com/title/tt0359715/> a schema:Movie ;
+    schema:name "My Best Friend's Birthday" ;
+    schema:url <https://www.imdb.com/title/tt0359715/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443344/> ;
+        schema:characterName "Ex-Girlfriend"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTUxNjMxNzU1OV5BMl5BanBnXkFtZTcwNDEyNzcyMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxNjMxNzU1OV5BMl5BanBnXkFtZTcwNDEyNzcyMQ@@._V1_.jpg> ;
+    schema:caption "Linda Kaye" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "358"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0443344/mediaviewer/rm1873058304/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM3NjQwMjYwOV5BMl5BanBnXkFtZTYwMTQ5MDky._V1_.jpg> ;
+    schema:caption "Linda Kaye" ;
+    schema:height "612"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0443344/mediaviewer/rm3701382400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxNjMxNzU1OV5BMl5BanBnXkFtZTcwNDEyNzcyMQ@@._V1_.jpg> ;
+    schema:caption "Linda Kaye" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "358"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5183595/> a schema:Person ;
+    schema:name "Shravanthi Sainath" ;
+    schema:url <https://www.imdb.com/name/nm5183595/> ;
+    schema:jobTitle "Producer", "Actress" ;
+    schema:description "Shravanthi Sainath. Actress: Life of Pi. Shravanthi Sainath was born in Chennai, Tamil Nadu, India. She is known for Life of Pi (2012), Mr. X and Dhruva Natchathiram Chapter 1: Yuddha Kaandam. She is married to Sameer Bharat Ram." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTg2NzgzNTMtMjljYS00M2MyLWJkYTEtNGM4YmI3ZTUxYmJmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chennai, Tamil Nadu, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5201164/>,    # Care of Footpath 2
+                       <https://www.imdb.com/title/tt0454876/> ; # Life of Pi
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5183595/mediaviewer/rm3982887424/>,
+                 <https://www.imdb.com/name/nm5183595/mediaviewer/rm3865446912/>,
+                 <https://www.imdb.com/name/nm5183595/mediaviewer/rm3617065472/>,
+                 <https://www.imdb.com/name/nm5183595/mediaviewer/rm1922632192/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Care of Footpath 2 (2015)
+<https://www.imdb.com/title/tt5201164/> a schema:Movie ;
+    schema:name "Care of Footpath 2" ;
+    schema:url <https://www.imdb.com/title/tt5201164/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5183595/> ;
+        schema:characterName "T.V. Reporter"
+    ] .
+
+# Life of Pi (2012)
+<https://www.imdb.com/title/tt0454876/> a schema:Movie ;
+    schema:name "Life of Pi" ;
+    schema:url <https://www.imdb.com/title/tt0454876/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5183595/> ;
+        schema:characterName "Anandi"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTg2NzgzNTMtMjljYS00M2MyLWJkYTEtNGM4YmI3ZTUxYmJmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NzgzNTMtMjljYS00M2MyLWJkYTEtNGM4YmI3ZTUxYmJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shravanthi Sainath at an event for Life of Pi (2012)" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "692"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5183595/mediaviewer/rm3982887424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmQ3OWRmMzktNDBhYi00YjE3LTljMjEtOTg0MWIyNTNhZmRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shravanthi Sainath in Life of Pi (2012)" ;
+    schema:height "466"^^xsd:integer ;
+    schema:width "700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5183595/mediaviewer/rm3865446912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI1ZmVkZTYtZmFiYy00OTZkLTk4NTMtNGMxM2UwYzhjNjk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shravanthi Sainath in Life of Pi (2012)" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "957"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5183595/mediaviewer/rm3617065472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDgzMzViYTQtYzQ1Mi00NjBjLThjNjYtYzAwZGVjOTM3MTk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ang Lee, Kamal Haasan, Irrfan Khan, Suraj Sharma, and Shravanthi Sainath at an event for Life of Pi (2012)" ;
+    schema:height "448"^^xsd:integer ;
+    schema:width "770"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5183595/mediaviewer/rm1922632192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NzgzNTMtMjljYS00M2MyLWJkYTEtNGM4YmI3ZTUxYmJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shravanthi Sainath at an event for Life of Pi (2012)" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "692"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

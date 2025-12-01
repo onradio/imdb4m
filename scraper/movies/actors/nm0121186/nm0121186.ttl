@@ -1,0 +1,171 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0121186/> a schema:Person ;
+    schema:name "Cody Burger" ;
+    schema:url <https://www.imdb.com/name/nm0121186/> ;
+    schema:birthDate "1983-08-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Cody Burger. Actor: Heavyweights. Cody Burger was born on 4 August 1983 in Los Angeles County, California, USA. He is an actor, known for Heavyweights (1995), Forever Young (1992) and National Lampoon's Christmas Vacation (1989)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzlhM2Q1NDktNGMwMy00MWUxLWE1MzEtZWU5MTM1OWI5MjQ3XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles County, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110006/>,    # Heavyweights
+                       <https://www.imdb.com/title/tt0110818/>,    # Pet Shop
+                       <https://www.imdb.com/title/tt0104291/>,    # Forever Young
+                       <https://www.imdb.com/title/tt0101751/>,    # Dollman
+                       <https://www.imdb.com/title/tt0101120/>,    # Home Improvement
+                       <https://www.imdb.com/title/tt0096534/>,    # Anything But Love
+                       <https://www.imdb.com/title/tt0097958/> ; # National Lampoon's Christmas Vacation
+
+
+    schema:video <https://www.imdb.com/video/vi2150474777/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0121186/mediaviewer/rm101813760/>,
+                 <https://www.imdb.com/name/nm0121186/mediaviewer/rm110270720/>,
+                 <https://www.imdb.com/name/nm0121186/mediaviewer/rm59939072/>,
+                 <https://www.imdb.com/name/nm0121186/mediaviewer/rm3627937025/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Heavyweights (1995)
+<https://www.imdb.com/title/tt0110006/> a schema:Movie ;
+    schema:name "Heavyweights" ;
+    schema:url <https://www.imdb.com/title/tt0110006/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Cody"
+    ] .
+
+# Pet Shop (1994)
+<https://www.imdb.com/title/tt0110818/> a schema:Movie ;
+    schema:name "Pet Shop" ;
+    schema:url <https://www.imdb.com/title/tt0110818/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Nicky"
+    ] .
+
+# Forever Young (1992)
+<https://www.imdb.com/title/tt0104291/> a schema:Movie ;
+    schema:name "Forever Young" ;
+    schema:url <https://www.imdb.com/title/tt0104291/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Boy at Picnic"
+    ] .
+
+# Dollman (1991)
+<https://www.imdb.com/title/tt0101751/> a schema:Movie ;
+    schema:name "Dollman" ;
+    schema:url <https://www.imdb.com/title/tt0101751/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Boy in Laundromat"
+    ] .
+
+# Home Improvement (1991)
+<https://www.imdb.com/title/tt0101120/> a schema:Movie ;
+    schema:name "Home Improvement" ;
+    schema:url <https://www.imdb.com/title/tt0101120/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Cub Scout #3"
+    ] .
+
+# Anything But Love (1990)
+<https://www.imdb.com/title/tt0096534/> a schema:Movie ;
+    schema:name "Anything But Love" ;
+    schema:url <https://www.imdb.com/title/tt0096534/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName ""
+    ] .
+
+# National Lampoon's Christmas Vacation (1989)
+<https://www.imdb.com/title/tt0097958/> a schema:Movie ;
+    schema:name "National Lampoon's Christmas Vacation" ;
+    schema:url <https://www.imdb.com/title/tt0097958/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0121186/> ;
+        schema:characterName "Rocky Johnson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2150474777/> a schema:VideoObject ;
+        schema:name "Heavyweights: Blu-Ray" ;
+        schema:description "Clip: Perkis Pep Talk" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2150474777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmVkYmFkYzAtZGUzYy00MTU5LTk2NTgtMjZmNThmZWQ0Mzc3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT59S"^^xsd:duration ;
+        schema:uploadDate "2012-10-06T03:24:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzlhM2Q1NDktNGMwMy00MWUxLWE1MzEtZWU5MTM1OWI5MjQ3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzlhM2Q1NDktNGMwMy00MWUxLWE1MzEtZWU5MTM1OWI5MjQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cody Burger" ;
+    schema:height "588"^^xsd:integer ;
+    schema:width "471"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0121186/mediaviewer/rm101813760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAxNzgwOTE2MzheQTJeQWpwZ15BbWU3MDQ5MTQwMTM@._V1_.jpg> ;
+    schema:caption "Ben Stiller, Cody Burger, Allen Covert, Max Goldblatt, David Goldman, Patrick LaBrecque, Joseph Wayne Miller, Aaron Schwartz, Kenan Thompson, Shaun Weiss, and Robert Zalkind in Heavyweights (1995)" ;
+    schema:height "1253"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0121186/mediaviewer/rm110270720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzY3NjMxNDU2MV5BMl5BanBnXkFtZTYwOTgyODU3._V1_.jpg> ;
+    schema:caption "Cody Burger, Max Goldblatt, David Goldman, Joseph Wayne Miller, Aaron Schwartz, Kenan Thompson, and Robert Zalkind in Heavyweights (1995)" ;
+    schema:height "286"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0121186/mediaviewer/rm59939072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4MzMzNjI5N15BMl5BanBnXkFtZTYwMTkyODU3._V1_.jpg> ;
+    schema:caption "Cody Burger, David Goldman, Tom McGowan, Joseph Wayne Miller, Aaron Schwartz, Seth St. Laurent, Kenan Thompson, and Shaun Weiss in Heavyweights (1995)" ;
+    schema:height "281"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0121186/mediaviewer/rm3627937025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzlhM2Q1NDktNGMwMy00MWUxLWE1MzEtZWU5MTM1OWI5MjQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cody Burger" ;
+    schema:height "588"^^xsd:integer ;
+    schema:width "471"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

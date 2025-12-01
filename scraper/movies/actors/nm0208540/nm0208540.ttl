@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0208540/> a schema:Person ;
+    schema:name "Charles de Gaulle" ;
+    schema:url <https://www.imdb.com/name/nm0208540/> ;
+    schema:birthDate "1890-11-22"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Soundtrack" ;
+    schema:alternateName "The Great Asparagus", "Le Grand Charles", "Mon Général", "L'Homme du 18 Juin", "Charles André Joseph Marie de Gaulle" ;
+    schema:description "Charles de Gaulle. Writer: Une mauvaise rencontre. Charles André Joseph Marie DE Gaulle (22 November 1890 - 9 November 1970) was a French army officer and statesman who led Free France against Nazi Germany in World War II and chaired the Provisional Government of the French Republic from 1944 to 1946 in order to restore democracy in France. In 1958, he came out of retirement when appointed President of the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmY5ZjYzYzAtN2U4Yi00ZGQyLTk1OTAtZjI5N2FlNDg4YTQxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Lille, Nord, France"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.94"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4½″ (1.94 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0852711/>,    # Une mauvaise rencontre
+                       <https://www.imdb.com/title/tt0062450/>,    # La visite du général de Gaulle au Québec
+                       <https://www.imdb.com/title/tt2240892/>,    # Grenoble 1968: X Olympic Winter Games
+                       <https://www.imdb.com/title/tt7716988/>,    # Les manifestations du 18 Juin
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0062964/> ; # Fenomenal and the Treasure of Tutankamen
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0208540/mediaviewer/rm255161089/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm3448047617/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm2972993792/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm1323640064/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm1811895552/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm1845449984/>,
+                 <https://www.imdb.com/name/nm0208540/mediaviewer/rm1778341120/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0852711/> a schema:Movie ;
+    schema:name "Une mauvaise rencontre" ;
+    schema:url <https://www.imdb.com/title/tt0852711/> .
+
+<https://www.imdb.com/title/tt0062450/> a schema:Movie ;
+    schema:name "La visite du général de Gaulle au Québec" ;
+    schema:url <https://www.imdb.com/title/tt0062450/> .
+
+<https://www.imdb.com/title/tt2240892/> a schema:Movie ;
+    schema:name "Grenoble 1968: X Olympic Winter Games" ;
+    schema:url <https://www.imdb.com/title/tt2240892/> .
+
+<https://www.imdb.com/title/tt7716988/> a schema:Movie ;
+    schema:name "Les manifestations du 18 Juin" ;
+    schema:url <https://www.imdb.com/title/tt7716988/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fenomenal and the Treasure of Tutankamen (1968)
+<https://www.imdb.com/title/tt0062964/> a schema:Movie ;
+    schema:name "Fenomenal and the Treasure of Tutankamen" ;
+    schema:url <https://www.imdb.com/title/tt0062964/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0208540/> ;
+        schema:characterName "Extra as French President on Military Parade"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmY5ZjYzYzAtN2U4Yi00ZGQyLTk1OTAtZjI5N2FlNDg4YTQxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmY5ZjYzYzAtN2U4Yi00ZGQyLTk1OTAtZjI5N2FlNDg4YTQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm255161089/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODkxMmE3MjEtNGMyOC00MDI1LTg3NjktNDMzZjczOGUwZDFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Omar N. Bradley and Charles de Gaulle in D-Day: The Color Footage (1999)" ;
+    schema:height "567"^^xsd:integer ;
+    schema:width "745"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm3448047617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDljZjk1N2UtMzhmNC00Yjk4LWIzOWEtMWY5OWIyYTRhZTM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle" ;
+    schema:height "1296"^^xsd:integer ;
+    schema:width "1180"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm2972993792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDc0NmQ0MDYtZDQxMC00ZmM3LTkxNzAtN2JjM2Q0ZjRjNmFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle in History's Verdict (2013)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm1323640064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2IwMmM0NDktNDc4ZC00MzZlLWE5YzAtMDg1YWUyOTMzMTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle in History's Verdict (2013)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm1811895552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTNiZTUyMWYtYzQ3OC00N2ZlLWFhOTUtN2QyY2M4ZDM5ZTAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "869"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm1845449984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODUyNmIyOGMtNGI0OS00MzI2LTllODEtYzI5NWYwODBmZjJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle" ;
+    schema:height "496"^^xsd:integer ;
+    schema:width "667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0208540/mediaviewer/rm1778341120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmY5ZjYzYzAtN2U4Yi00ZGQyLTk1OTAtZjI5N2FlNDg4YTQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles de Gaulle" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

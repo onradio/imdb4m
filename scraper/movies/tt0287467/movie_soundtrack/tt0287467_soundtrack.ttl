@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0287467/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Por toda a minha vida" ;
+        schema:byArtist <https://www.imdb.com/name/nm1153318/> ; # Elis Regina
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Por toda a minha vida" ;
+            schema:author <https://www.imdb.com/name/nm0423388/>, # Antonio Carlos Jobim
+                       <https://www.imdb.com/name/nm0210460/> # Vinicius de Moraes
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Raquel" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Raquel" ;
+            schema:author <https://www.imdb.com/name/nm0021861/> # Rufino Almeida
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cucurrucucú Paloma" ;
+        schema:byArtist <https://www.imdb.com/name/nm0892669/> ; # Caetano Veloso
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cucurrucucú Paloma" ;
+            schema:author <https://www.imdb.com/name/nm0617697/> # Tomás Méndez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Let Me Weep, For Ever Weep" ;
+        schema:byArtist <https://www.imdb.com/name/nm0904593/>, # Jennifer Vyvyan
+                        <https://www.imdb.com/name/nm1688436/> ; # English Chamber Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Let Me Weep, For Ever Weep" ;
+            schema:composer <https://www.imdb.com/name/nm0700722/> # Henry Purcell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hain't It Funny" ;
+        schema:byArtist <https://www.imdb.com/name/nm0485807/> ; # k.d. lang
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Study Waltz" ;
+        schema:byArtist <https://www.imdb.com/name/nm2107102/> ; # Víctor Matos
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0021861/> a schema:Person ;
+    schema:name "Rufino Almeida" .
+<https://www.imdb.com/name/nm0210460/> a schema:Person ;
+    schema:name "Vinicius de Moraes" .
+<https://www.imdb.com/name/nm0423388/> a schema:Person ;
+    schema:name "Antonio Carlos Jobim" .
+<https://www.imdb.com/name/nm0485807/> a schema:Person ;
+    schema:name "k.d. lang" .
+<https://www.imdb.com/name/nm0617697/> a schema:Person ;
+    schema:name "Tomás Méndez" .
+<https://www.imdb.com/name/nm0700722/> a schema:Person ;
+    schema:name "Henry Purcell" .
+<https://www.imdb.com/name/nm0892669/> a schema:Person ;
+    schema:name "Caetano Veloso" .
+<https://www.imdb.com/name/nm0904593/> a schema:Person ;
+    schema:name "Jennifer Vyvyan" .
+<https://www.imdb.com/name/nm1153318/> a schema:Person ;
+    schema:name "Elis Regina" .
+<https://www.imdb.com/name/nm1688436/> a schema:Person ;
+    schema:name "English Chamber Orchestra" .
+<https://www.imdb.com/name/nm2107102/> a schema:Person ;
+    schema:name "Víctor Matos" .
+# ==============================================================================

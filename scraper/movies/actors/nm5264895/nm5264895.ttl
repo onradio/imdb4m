@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5264895/> a schema:Person ;
+    schema:name "Serafeim Radis" ;
+    schema:url <https://www.imdb.com/name/nm5264895/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Serafeim Radis. Actor: Before Midnight. Serafeim Radis is known for Before Midnight (2013), Ilektra 7 (2025) and Oi lykoi epistrefoun (2025)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2209418/>,    # Before Midnight
+                       <https://www.imdb.com/title/tt14720532/> . # Ola mazi
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Midnight (2013)
+<https://www.imdb.com/title/tt2209418/> a schema:Movie ;
+    schema:name "Before Midnight" ;
+    schema:url <https://www.imdb.com/title/tt2209418/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5264895/> ;
+        schema:characterName "Hotel Clerk"
+    ] .
+
+# Ola mazi (2008)
+<https://www.imdb.com/title/tt14720532/> a schema:Movie ;
+    schema:name "Ola mazi" ;
+    schema:url <https://www.imdb.com/title/tt14720532/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5264895/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

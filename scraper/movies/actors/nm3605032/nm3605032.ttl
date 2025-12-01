@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3605032/> a schema:Person ;
+    schema:name "T.M. Karthik Srinivasan" ;
+    schema:url <https://www.imdb.com/name/nm3605032/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "T.M. Karthik Srinivasan. Actor: Life of Pi. T.M. Karthik Srinivasan is known for Life of Pi (2012), Bigil (2019) and Chekka Chivantha Vaanam (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9260636/>,    # Bigil
+                       <https://www.imdb.com/title/tt10958336/>,    # Zombie
+                       <https://www.imdb.com/title/tt8944398/>,    # Aadai
+                       <https://www.imdb.com/title/tt9104664/>,    # Gurkha
+                       <https://www.imdb.com/title/tt9615016/>,    # Dhilluku Dhuddu 2
+                       <https://www.imdb.com/title/tt7725626/> ; # Viswasam
+
+
+    schema:video <https://www.imdb.com/video/vi431343129/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3605032/mediaviewer/rm1383951872/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bigil (2019)
+<https://www.imdb.com/title/tt9260636/> a schema:Movie ;
+    schema:name "Bigil" ;
+    schema:url <https://www.imdb.com/title/tt9260636/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName "(as T.M. Karthik)"
+    ] .
+
+# Zombie (2019)
+<https://www.imdb.com/title/tt10958336/> a schema:Movie ;
+    schema:name "Zombie" ;
+    schema:url <https://www.imdb.com/title/tt10958336/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName ""
+    ] .
+
+# Aadai (2019)
+<https://www.imdb.com/title/tt8944398/> a schema:Movie ;
+    schema:name "Aadai" ;
+    schema:url <https://www.imdb.com/title/tt8944398/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName ""
+    ] .
+
+# Gurkha (2019)
+<https://www.imdb.com/title/tt9104664/> a schema:Movie ;
+    schema:name "Gurkha" ;
+    schema:url <https://www.imdb.com/title/tt9104664/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName "Q TV Owner"
+    ] .
+
+# Dhilluku Dhuddu 2 (2019)
+<https://www.imdb.com/title/tt9615016/> a schema:Movie ;
+    schema:name "Dhilluku Dhuddu 2" ;
+    schema:url <https://www.imdb.com/title/tt9615016/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName "Doctor Karthik"
+    ] .
+
+# Viswasam (2019)
+<https://www.imdb.com/title/tt7725626/> a schema:Movie ;
+    schema:name "Viswasam" ;
+    schema:url <https://www.imdb.com/title/tt7725626/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3605032/> ;
+        schema:characterName "(as T.M. Karthik)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi431343129/> a schema:VideoObject ;
+        schema:name "Glassmates - Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi431343129/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWRiMjAzMDYtMzEyNi00Mjg0LWE1MDktMGFjZGJlZjZjZmYxXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M4S"^^xsd:duration ;
+        schema:uploadDate "2024-02-19T01:53:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm3605032/mediaviewer/rm1383951872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY1ZjVlODQtOTc1NS00ZmRhLWE0OGEtMTUxOGVhNjExMDg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "T.M. Karthik Srinivasan in Dhilluku Dhuddu 2 (2019)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "938"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

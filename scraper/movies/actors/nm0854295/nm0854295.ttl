@@ -1,0 +1,60 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0854295/> a schema:Person ;
+    schema:name "Ione M. Telech" ;
+    schema:url <https://www.imdb.com/name/nm0854295/> ;
+    schema:birthDate "1922-04-10"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Ione M. Telech. Actress: Forrest Gump. Ione M. Telech was born on 10 April 1922 in Beaufort, South Carolina, USA. She was an actress, known for Forrest Gump (1994). She was married to Michael Hanville Sr. She died on 23 October 2015 in Beaufort, South Carolina, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Beaufort, South Carolina, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0109830/> .    # Forrest Gump
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Forrest Gump (1994)
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0854295/> ;
+        schema:characterName "Elderly Woman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0957983/> a schema:Person ;
+    schema:name "Mario Zorrilla" ;
+    schema:url <https://www.imdb.com/name/nm0957983/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mario Zorrilla. Actor: Pan's Labyrinth. Mario Zorrilla was born in 1965 in Bilbao, Vizcaya, País Vasco, Spain. He is an actor, known for Pan's Labyrinth (2006), Mikaela (2025) and Guante blanco (2008)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bilbao, Vizcaya, País Vasco, Spain"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1847905/>,    # El secreto de Puente Viejo
+                       <https://www.imdb.com/title/tt8490738/>,    # Lope enamorado
+                       <https://www.imdb.com/title/tt10480464/>,    # Sancho
+                       <https://www.imdb.com/title/tt10889066/>,    # El nadador
+                       <https://www.imdb.com/title/tt7069040/> ; # A sweet man
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0957983/mediaviewer/rm1232271617/>,
+                 <https://www.imdb.com/name/nm0957983/mediaviewer/rm1316157697/>,
+                 <https://www.imdb.com/name/nm0957983/mediaviewer/rm1282603265/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# El secreto de Puente Viejo (2011)
+<https://www.imdb.com/title/tt1847905/> a schema:Movie ;
+    schema:name "El secreto de Puente Viejo" ;
+    schema:url <https://www.imdb.com/title/tt1847905/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0957983/> ;
+        schema:characterName "Mauricio Godoy"
+    ] .
+
+# Lope enamorado (2019)
+<https://www.imdb.com/title/tt8490738/> a schema:Movie ;
+    schema:name "Lope enamorado" ;
+    schema:url <https://www.imdb.com/title/tt8490738/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0957983/> ;
+        schema:characterName "Roque"
+    ] .
+
+# Sancho (2019)
+<https://www.imdb.com/title/tt10480464/> a schema:Movie ;
+    schema:name "Sancho" ;
+    schema:url <https://www.imdb.com/title/tt10480464/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0957983/> ;
+        schema:characterName "Gigante"
+    ] .
+
+# El nadador (2018)
+<https://www.imdb.com/title/tt10889066/> a schema:Movie ;
+    schema:name "El nadador" ;
+    schema:url <https://www.imdb.com/title/tt10889066/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0957983/> ;
+        schema:characterName "Manuel"
+    ] .
+
+# A sweet man (2017)
+<https://www.imdb.com/title/tt7069040/> a schema:Movie ;
+    schema:name "A sweet man" ;
+    schema:url <https://www.imdb.com/title/tt7069040/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0957983/> ;
+        schema:characterName "Voz tele"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0957983/mediaviewer/rm1232271617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWUzOTMzOWYtNjQwZi00ODdhLTk0OWEtYTU0NTU2MjFjZDU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mario Zorrilla and Emma Caballero in Monesterio Somos Naturaleza (2021)" ;
+    schema:height "899"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0957983/mediaviewer/rm1316157697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGY5MjIyYjQtM2M4ZC00OTBiLTk0MjMtMzU1MjFlYTY3ZGUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mario Zorrilla and Emma Caballero in Monesterio Somos Naturaleza (2021)" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0957983/mediaviewer/rm1282603265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGE4ODEwNTItMDI3My00MDk1LWI4ODAtODQ3NzdiZjZiYTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mario Zorrilla and Emma Caballero in Monesterio Somos Naturaleza (2021)" ;
+    schema:height "495"^^xsd:integer ;
+    schema:width "880"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

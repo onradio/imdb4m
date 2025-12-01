@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6916321/> a schema:Person ;
+    schema:name "Ferdia Walsh-Peelo" ;
+    schema:url <https://www.imdb.com/name/nm6916321/> ;
+    schema:birthDate "1999-10-12"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Ferdia Walsh-Peelo. Actor: Sing Street. Ferdia Walsh-Peelo was born on 12 October 1999 in Ashford, County Wicklow, Ireland. He is an actor, known for Sing Street (2016), CODA (2021) and Love Gets a Room (2021)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjc2NDZlNmItNzRkYi00MjFjLWExZjMtMDkwNGE3OTJkOGMwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ashford, County Wicklow, Ireland"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.89"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2½″ (1.89 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2306299/>,    # Vikings
+                       <https://www.imdb.com/title/tt11338878/>,    # Kitt Phillipa: You
+                       <https://www.imdb.com/title/tt7912316/>,    # Dave Allen at Peace
+                       <https://www.imdb.com/title/tt3544112/> ; # Sing Street
+
+
+    schema:video <https://www.imdb.com/video/vi2484322329/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6916321/mediaviewer/rm1072358400/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm4140946433/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm2467692289/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm1511390977/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm4252333824/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm1628831489/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm3274059777/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm1106926848/>,
+                 <https://www.imdb.com/name/nm6916321/mediaviewer/rm3425197824/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Vikings (2017)
+<https://www.imdb.com/title/tt2306299/> a schema:Movie ;
+    schema:name "Vikings" ;
+    schema:url <https://www.imdb.com/title/tt2306299/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6916321/> ;
+        schema:characterName "Alfred the Great"
+    ] .
+
+# Kitt Phillipa: You (2019)
+<https://www.imdb.com/title/tt11338878/> a schema:Movie ;
+    schema:name "Kitt Phillipa: You" ;
+    schema:url <https://www.imdb.com/title/tt11338878/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6916321/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Dave Allen at Peace (2018)
+<https://www.imdb.com/title/tt7912316/> a schema:Movie ;
+    schema:name "Dave Allen at Peace" ;
+    schema:url <https://www.imdb.com/title/tt7912316/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6916321/> ;
+        schema:characterName "Dave aged 18"
+    ] .
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6916321/> ;
+        schema:characterName "Conor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2484322329/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Gifted with a voice that her parents can’t hear, seventeen-year-old Ruby (Emilia Jones), is the sole hearing member of a deaf family—a CODA, Child of Deaf Adults. Her life revolves around acting as interpreter for her parents (Marlee Matlin, Troy Kotsur) and working on the family’s struggling fishing boat every day before school with her father and older brother (Daniel Durant). But when Ruby joins her high school’s choir club, she discovers a gift for singing and finds herself drawn to her duet partner Miles (Ferdia Walsh-Peelo). Encouraged by her enthusiastic, tough-love choirmaster (Eugenio Derbez) to apply to a prestigious music school, Ruby finds herself torn between the obligations she feels to her family and the pursuit of her own dreams.\n\nScreenplay by Siân Heder.\n\nDirected by Siân Heder." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2484322329/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDA2MzAwMjUtODhlYS00ZjQ1LWJmNDAtNDFhZjAyNTE1YzM0XkEyXkFqcGdeQXNuZXNodQ@@._V1_.jpg" ;
+        schema:duration "PT2M35S"^^xsd:duration ;
+        schema:uploadDate "2021-06-24T16:55:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjc2NDZlNmItNzRkYi00MjFjLWExZjMtMDkwNGE3OTJkOGMwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjc2NDZlNmItNzRkYi00MjFjLWExZjMtMDkwNGE3OTJkOGMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo" ;
+    schema:height "935"^^xsd:integer ;
+    schema:width "784"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm1072358400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEzODA3MDcxMl5BMl5BanBnXkFtZTgwODgxNDk3NzE@._V1_.jpg> ;
+    schema:caption "Lucy Boynton and Ferdia Walsh-Peelo in Sing Street (2016)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2025"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm4140946433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWEwOGEzZDYtN2I1MC00ODRmLTgzMmYtZmJhMTM5MWQyMzNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo and Lucy Johnson in Vikings (2013)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm2467692289/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzgyOThlYmUtYWUwOC00MjQzLWEyN2MtZWE3MmMzODkyODE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Travis Fimmel, Dean-Charles Chapman, Anya Taylor-Joy, Finn Cole, and Ferdia Walsh-Peelo in Here Are the Young Men (2020)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm1511390977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmQyYzZjNjYtNWI1Ny00Mzk2LTlhMGUtNDU0OTU1NzgzYzgwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sian Heder, Emilia Jones, and Ferdia Walsh-Peelo in CODA (2021)" ;
+    schema:height "563"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm4252333824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzU1YjcwYjYtZDRlMi00YWFlLWIyZDAtZWNmNjA1NjcyZmUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo in Vikings (2013)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm1628831489/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWJlMWZhNzgtYWM0Mi00ZGViLThmY2ItYzRlYzhiMTk2YTYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo in Vikings (2013)" ;
+    schema:height "447"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm3274059777/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmZlNWQ3ZmQtOTI2OS00MjVjLTgwNGEtMmI5N2IxYzNjN2ZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo in CODA (2021)" ;
+    schema:height "971"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm1106926848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FmZTcyOWQtNTA1MC00NTZhLTk5NzItNmMyNGQ3YTEwNmY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennie Jacques, Moe Dunford, Darren Cahill, and Ferdia Walsh-Peelo in Vikings (2013)" ;
+    schema:height "3840"^^xsd:integer ;
+    schema:width "5760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6916321/mediaviewer/rm3425197824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmEyYjBmMGMtODkwZS00ZTM2LWE0ZTItODMwNjE4MWQwMzA3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ferdia Walsh-Peelo in Vikings (2013)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

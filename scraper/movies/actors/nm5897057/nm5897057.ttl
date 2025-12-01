@@ -1,0 +1,301 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5897057/> a schema:Person ;
+    schema:name "Jaeden Martell" ;
+    schema:url <https://www.imdb.com/name/nm5897057/> ;
+    schema:birthDate "2003-01-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Art Department" ;
+    schema:alternateName "Jaeden Wesley Lieberher" ;
+    schema:description "Jaeden Martell. Actor: St. Vincent. Jaeden Martell is an American actor known for his compelling performances in both film and television. He first gained recognition for his role as Bill Denbrough in the 2017 film adaptation of Stephen King's novel It (2017) and reprised this character in the 2019 sequel It Chapter Two (2019) . His other notable work includes a role in the mystery film Knives Out (2019) (2019)..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNWRiYjk4MTItNWMzMC00ZjE1LWFlNDItNDI2MmI4MDZlZjlkXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Philadelphia, Pennsylvania, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2170593/>,    # St. Vincent
+                       <https://www.imdb.com/title/tt1396484/>,    # It
+                       <https://www.imdb.com/title/tt2649554/>,    # Midnight Special
+                       <https://www.imdb.com/title/tt8946378/>,    # Knives Out
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7349950/>,    # It: Chapter Two
+                       <https://www.imdb.com/title/tt7262384/>,    # The True Adventures of Wolfboy
+                       <https://www.imdb.com/title/tt7434324/>,    # Low Tide
+                       <https://www.imdb.com/title/tt7347846/>,    # The Lodge
+                       <https://www.imdb.com/title/tt4572792/>,    # The Book of Henry
+                       <https://www.imdb.com/title/tt2137109/>,    # Masters of Sex
+                       <https://www.imdb.com/title/tt4210080/>,    # The Confirmation
+                       <https://www.imdb.com/title/tt4965104/>,    # Framed: The Adventures of Zion Man
+                       <https://www.imdb.com/title/tt1243974/>,    # Aloha
+                       <https://www.imdb.com/title/tt0397306/>,    # American Dad!
+                       <https://www.imdb.com/title/tt2139555/>,    # Playing It Cool
+                       <https://www.imdb.com/title/tt3790618/> ; # Grief
+
+    schema:award [
+        a schema:Award ;
+        schema:description "5 wins & 6 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3890594329/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5897057/mediaviewer/rm2450099457/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm601563136/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm973192961/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm3420972288/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm1877932544/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm3459703552/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm2274785793/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm3163978241/>,
+                 <https://www.imdb.com/name/nm5897057/mediaviewer/rm3180755457/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2170593/> a schema:Movie ;
+    schema:name "St. Vincent" ;
+    schema:url <https://www.imdb.com/title/tt2170593/> .
+
+<https://www.imdb.com/title/tt1396484/> a schema:Movie ;
+    schema:name "It" ;
+    schema:url <https://www.imdb.com/title/tt1396484/> .
+
+<https://www.imdb.com/title/tt2649554/> a schema:Movie ;
+    schema:name "Midnight Special" ;
+    schema:url <https://www.imdb.com/title/tt2649554/> .
+
+<https://www.imdb.com/title/tt8946378/> a schema:Movie ;
+    schema:name "Knives Out" ;
+    schema:url <https://www.imdb.com/title/tt8946378/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# It: Chapter Two (2019)
+<https://www.imdb.com/title/tt7349950/> a schema:Movie ;
+    schema:name "It: Chapter Two" ;
+    schema:url <https://www.imdb.com/title/tt7349950/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Young Bill Denbrough"
+    ] .
+
+# The True Adventures of Wolfboy (2019)
+<https://www.imdb.com/title/tt7262384/> a schema:Movie ;
+    schema:name "The True Adventures of Wolfboy" ;
+    schema:url <https://www.imdb.com/title/tt7262384/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Low Tide (2019)
+<https://www.imdb.com/title/tt7434324/> a schema:Movie ;
+    schema:name "Low Tide" ;
+    schema:url <https://www.imdb.com/title/tt7434324/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Peter"
+    ] .
+
+# The Lodge (2019)
+<https://www.imdb.com/title/tt7347846/> a schema:Movie ;
+    schema:name "The Lodge" ;
+    schema:url <https://www.imdb.com/title/tt7347846/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Aiden Hall"
+    ] .
+
+# The Book of Henry (2017)
+<https://www.imdb.com/title/tt4572792/> a schema:Movie ;
+    schema:name "The Book of Henry" ;
+    schema:url <https://www.imdb.com/title/tt4572792/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Henry Carpenter"
+    ] .
+
+# Masters of Sex (2015)
+<https://www.imdb.com/title/tt2137109/> a schema:Movie ;
+    schema:name "Masters of Sex" ;
+    schema:url <https://www.imdb.com/title/tt2137109/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Johnny Masters"
+    ] .
+
+# The Confirmation (2016)
+<https://www.imdb.com/title/tt4210080/> a schema:Movie ;
+    schema:name "The Confirmation" ;
+    schema:url <https://www.imdb.com/title/tt4210080/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Anthony"
+    ] .
+
+# Framed: The Adventures of Zion Man (2016)
+<https://www.imdb.com/title/tt4965104/> a schema:Movie ;
+    schema:name "Framed: The Adventures of Zion Man" ;
+    schema:url <https://www.imdb.com/title/tt4965104/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Walter"
+    ] .
+
+# Aloha (2015)
+<https://www.imdb.com/title/tt1243974/> a schema:Movie ;
+    schema:name "Aloha" ;
+    schema:url <https://www.imdb.com/title/tt1243974/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Mitchell"
+    ] .
+
+# American Dad! (2015)
+<https://www.imdb.com/title/tt0397306/> a schema:Movie ;
+    schema:name "American Dad!" ;
+    schema:url <https://www.imdb.com/title/tt0397306/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "Peter Junior"
+    ] .
+
+# Playing It Cool (2014)
+<https://www.imdb.com/title/tt2139555/> a schema:Movie ;
+    schema:name "Playing It Cool" ;
+    schema:url <https://www.imdb.com/title/tt2139555/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "6 Year Old Me"
+    ] .
+
+# Grief (2013)
+<https://www.imdb.com/title/tt3790618/> a schema:Movie ;
+    schema:name "Grief" ;
+    schema:url <https://www.imdb.com/title/tt3790618/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5897057/> ;
+        schema:characterName "The Child"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3890594329/> a schema:VideoObject ;
+        schema:name "All About Jaeden Martell" ;
+        schema:description "You know Jaeden Martell from 'Metal Lords,' 'Knives Out,' or 'It' and 'It Chapter Two.' So, IMDb presents this peek behind the scenes of his career." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3890594329/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjIzNDY3ZDYtN2FjZS00NmFkLTlmNTgtNGQ4Y2IxOGIxYjgxXkEyXkFqcGdeQWpoZWZ0bGVy._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2022-06-03T21:00:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNWRiYjk4MTItNWMzMC00ZjE1LWFlNDItNDI2MmI4MDZlZjlkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWRiYjk4MTItNWMzMC00ZjE1LWFlNDItNDI2MmI4MDZlZjlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jaeden Martell at an event for Knives Out (2019)" ;
+    schema:height "4841"^^xsd:integer ;
+    schema:width "3227"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm2450099457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzA5OTM4ODAtMjJiMS00ZTBkLWFmYmItZjI5Mzg3MWJhMTA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jamie Lee Curtis, Don Johnson, Toni Collette, Christopher Plummer, Daniel Craig, Chris Evans, Michael Shannon, Ana de Armas, LaKeith Stanfield, Jaeden Martell, and Katherine Langford in Knives Out (2019)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "763"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm601563136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyMzM3NjM0NF5BMl5BanBnXkFtZTgwMDQ1NzMzMzI@._V1_.jpg> ;
+    schema:caption "Wyatt Oleff, Jeremy Ray Taylor, Jaeden Martell, Finn Wolfhard, Sophia Lillis, Jack Dylan Grazer, and Chosen Jacobs in It (2017)" ;
+    schema:height "1363"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm973192961/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2ZjNTdlOTEtODNmNi00NjBjLWIxYWEtYzBiNzYzMDEyOWRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Evans, Michelle Dockery, and Jaeden Martell in Defending Jacob (2020)" ;
+    schema:height "1000"^^xsd:integer ;
+    schema:width "675"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm3420972288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzI3OTY5NDU0NV5BMl5BanBnXkFtZTgwNjY2NDA5NzE@._V1_.jpg> ;
+    schema:caption "Clive Owen and Jaeden Martell in The Confirmation (2016)" ;
+    schema:height "550"^^xsd:integer ;
+    schema:width "390"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm1877932544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjIwYTIzYjEtMDcyNS00YTEwLTk3OTYtODRjMjgyZTA4ZDRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Murray, Jaeden Lieberher, Naomi Watts, and Ted Melfi" ;
+    schema:height "374"^^xsd:integer ;
+    schema:width "594"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm3459703552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNDcyNzkyOV5BMl5BanBnXkFtZTgwNzI1NzkyNzE@._V1_.jpg> ;
+    schema:caption "Jaeden Martell in Midnight Special (2016)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1012"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm2274785793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGYwNTFkMzEtMGI4Yy00MmFkLWFiODItMmIwZjVmYmFhNmZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicolas Cage, Maxwell Jenkins, and Jaeden Martell in Arcadian (2024)" ;
+    schema:height "4860"^^xsd:integer ;
+    schema:width "8640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm3163978241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQwYjlhYmEtZTYzOC00NjMyLWI5M2YtY2UxNjAyYmU0NGVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Maxwell Jenkins and Jaeden Martell in Arcadian (2024)" ;
+    schema:height "1619"^^xsd:integer ;
+    schema:width "3831"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5897057/mediaviewer/rm3180755457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzBmMmY0MDktYmQ5Ny00NDIwLWIwOTAtMjRhZGFlNDBiMmM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Maxwell Jenkins and Jaeden Martell in Arcadian (2024)" ;
+    schema:height "1621"^^xsd:integer ;
+    schema:width "3827"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5897057/>
+    schema:sameAs <https://www.instagram.com/jaedenwesley/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

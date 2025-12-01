@@ -1,0 +1,262 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0948742/> a schema:Person ;
+    schema:name "Marty York" ;
+    schema:url <https://www.imdb.com/name/nm0948742/> ;
+    schema:birthDate "1980-08-23"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Marty York. Actor: The Sandlot Kids. Marty York was born on 23 August 1980 in Auburn, California, USA. He is an actor and writer, known for The Sandlot Kids (1993), The Sandlot Legend and Boy Meets World (1993)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTc2MDE4MjgyMV5BMl5BanBnXkFtZTYwMDUxMTEz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Auburn, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0105958/>,    # Boy Meets World
+                       <https://www.imdb.com/title/tt0108037/>,    # The Sandlot
+                       <https://www.imdb.com/title/tt32483272/>,    # The Sandlot Legend
+                       <https://www.imdb.com/title/tt5892412/>,    # Due Justice
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6274614/>,    # SMILF
+                       <https://www.imdb.com/title/tt2244495/>,    # The Eric Andre Show
+                       <https://www.imdb.com/title/tt1865519/>,    # The Brothers Sinclair
+                       <https://www.imdb.com/title/tt1603421/>,    # The Trainer
+                       <https://www.imdb.com/title/tt0115200/>,    # Hey Arnold!
+                       <https://www.imdb.com/title/tt0112167/>,    # Sliders
+                       <https://www.imdb.com/title/tt0108755/>,    # Duckman: Private Dick/Family Man
+                       <https://www.imdb.com/title/tt0098948/>,    # Wings
+                       <https://www.imdb.com/title/tt0106122/> ; # Saved by the Bell: The College Years
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1665729561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0948742/mediaviewer/rm1752514816/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm1802846464/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm1853178112/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm1668628736/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm1685405952/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm2116147200/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm2082592768/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm2065815552/>,
+                 <https://www.imdb.com/name/nm0948742/mediaviewer/rm2049038336/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0105958/> a schema:Movie ;
+    schema:name "Boy Meets World" ;
+    schema:url <https://www.imdb.com/title/tt0105958/> .
+
+<https://www.imdb.com/title/tt0108037/> a schema:Movie ;
+    schema:name "The Sandlot" ;
+    schema:url <https://www.imdb.com/title/tt0108037/> .
+
+<https://www.imdb.com/title/tt32483272/> a schema:Movie ;
+    schema:name "The Sandlot Legend" ;
+    schema:url <https://www.imdb.com/title/tt32483272/> .
+
+<https://www.imdb.com/title/tt5892412/> a schema:Movie ;
+    schema:name "Due Justice" ;
+    schema:url <https://www.imdb.com/title/tt5892412/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# SMILF (2017)
+<https://www.imdb.com/title/tt6274614/> a schema:Movie ;
+    schema:name "SMILF" ;
+    schema:url <https://www.imdb.com/title/tt6274614/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Creep"
+    ] .
+
+# The Eric Andre Show (2015)
+<https://www.imdb.com/title/tt2244495/> a schema:Movie ;
+    schema:name "The Eric Andre Show" ;
+    schema:url <https://www.imdb.com/title/tt2244495/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Pauly D"
+    ] .
+
+# The Brothers Sinclair (2011)
+<https://www.imdb.com/title/tt1865519/> a schema:Movie ;
+    schema:name "The Brothers Sinclair" ;
+    schema:url <https://www.imdb.com/title/tt1865519/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Guido Calypso"
+    ] .
+
+# The Trainer (2010)
+<https://www.imdb.com/title/tt1603421/> a schema:Movie ;
+    schema:name "The Trainer" ;
+    schema:url <https://www.imdb.com/title/tt1603421/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Michael Pfeiffer"
+    ] .
+
+# Hey Arnold! (1997)
+<https://www.imdb.com/title/tt0115200/> a schema:Movie ;
+    schema:name "Hey Arnold!" ;
+    schema:url <https://www.imdb.com/title/tt0115200/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Mickey"
+    ] .
+
+# Sliders (1996)
+<https://www.imdb.com/title/tt0112167/> a schema:Movie ;
+    schema:name "Sliders" ;
+    schema:url <https://www.imdb.com/title/tt0112167/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Brady Oaks"
+    ] .
+
+# Duckman: Private Dick/Family Man (1996)
+<https://www.imdb.com/title/tt0108755/> a schema:Movie ;
+    schema:name "Duckman: Private Dick/Family Man" ;
+    schema:url <https://www.imdb.com/title/tt0108755/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Wings (1994)
+<https://www.imdb.com/title/tt0098948/> a schema:Movie ;
+    schema:name "Wings" ;
+    schema:url <https://www.imdb.com/title/tt0098948/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Kenny"
+    ] .
+
+# Saved by the Bell: The College Years (1993)
+<https://www.imdb.com/title/tt0106122/> a schema:Movie ;
+    schema:name "Saved by the Bell: The College Years" ;
+    schema:url <https://www.imdb.com/title/tt0106122/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0948742/> ;
+        schema:characterName "Boy #1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1665729561/> a schema:VideoObject ;
+        schema:name "The Trainer" ;
+        schema:description "Can a dog training manual work on a man? Attorney Luke Ashton is in the doghouse with his girlfriend, Donna, until Luke's insightful young client teaches them that even old dogs can learn new tricks, and warm hearts and cold noses are what life is all about." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1665729561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTc3MDk2NDc5MV5BMl5BanBnXkFtZTcwMDU1NTAzMw@@._V1_.jpg" ;
+        schema:duration "PT1M33S"^^xsd:duration ;
+        schema:uploadDate "2010-04-01T09:12:27Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTc2MDE4MjgyMV5BMl5BanBnXkFtZTYwMDUxMTEz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2MDE4MjgyMV5BMl5BanBnXkFtZTYwMDUxMTEz._V1_.jpg> ;
+    schema:caption "Marty York" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm1752514816/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDQyM2M0MGEtYjk4Yy00ZDI5LWE3MGMtMWZjYWRmYmNlNDVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "1812"^^xsd:integer ;
+    schema:width "2736"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm1802846464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjMyNjA5Y2YtM2Y2Ny00ZGZkLTlkNDMtYTJhNzU1YWRkYjZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Tom Guiry, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "1886"^^xsd:integer ;
+    schema:width "2606"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm1853178112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDkxYzRiZjgtYTdmNC00ZGZkLThkYzQtY2ZhNDkzMDU5NjFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "1827"^^xsd:integer ;
+    schema:width "2758"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm1668628736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTFiYWM1ZGItMGZiYy00ZWIwLTg0MmQtNWM4OTdkYWI4NmZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marty York in The Sandlot Kids (1993)" ;
+    schema:height "2735"^^xsd:integer ;
+    schema:width "1799"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm1685405952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWRjNzdmYzItNjdiOS00NWM0LThjMTAtZjIyODBhYTZkMDNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Tom Guiry, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "2015"^^xsd:integer ;
+    schema:width "2701"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm2116147200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5ODI1MTA3Nl5BMl5BanBnXkFtZTgwMzQ3MzUwMDE@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Tom Guiry, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "266"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm2082592768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzMjkzOTMyN15BMl5BanBnXkFtZTgwNTQ3MzUwMDE@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "550"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm2065815552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5NTQxODA1NF5BMl5BanBnXkFtZTgwNjQ3MzUwMDE@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "530"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0948742/mediaviewer/rm2049038336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjk2NTY5OTc4Nl5BMl5BanBnXkFtZTgwNzQ3MzUwMDE@._V1_.jpg> ;
+    schema:caption "Brandon Quintin Adams, Victor DiMattia, Grant Gelt, Tom Guiry, Chauncey Leopardi, Shane Obedzinski, Patrick Renna, Mike Vitar, and Marty York in The Sandlot Kids (1993)" ;
+    schema:height "700"^^xsd:integer ;
+    schema:width "700"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

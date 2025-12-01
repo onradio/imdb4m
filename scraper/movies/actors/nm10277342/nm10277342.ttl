@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10277342/> a schema:Person ;
+    schema:name "Mohini Kewalramani" ;
+    schema:url <https://www.imdb.com/name/nm10277342/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Mohini Kewalramani. Actress: Andhadhun. Mohini Kewalramani is known for Andhadhun (2018), Brahmastra Part One: Shiva (2022) and Gehraiyaan (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10351232/>,    # Kahaan Hum Kahaan Tum
+                       <https://www.imdb.com/title/tt8108198/> . # Andhadhun
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kahaan Hum Kahaan Tum (2019)
+<https://www.imdb.com/title/tt10351232/> a schema:Movie ;
+    schema:name "Kahaan Hum Kahaan Tum" ;
+    schema:url <https://www.imdb.com/title/tt10351232/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10277342/> ;
+        schema:characterName "Sukmani Sippy"
+    ] .
+
+# Andhadhun (2018)
+<https://www.imdb.com/title/tt8108198/> a schema:Movie ;
+    schema:name "Andhadhun" ;
+    schema:url <https://www.imdb.com/title/tt8108198/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10277342/> ;
+        schema:characterName "Mrs. D'Sa"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

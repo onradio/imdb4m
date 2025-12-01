@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0385701/> a schema:Person ;
+    schema:name "Patrick Hines" ;
+    schema:url <https://www.imdb.com/name/nm0385701/> ;
+    schema:birthDate "1930-03-17"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Patrick Hines. Actor: 1776. Patrick Hines was born on 17 March 1930 in Burkeville, Texas, USA. He was an actor, known for 1776 (1972), Amadeus (1984) and King (1978). He died on 12 August 1985 in New York City, New York, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Burkeville, Texas, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086879/>,    # Amadeus
+                       <https://www.imdb.com/title/tt0078880/>,    # Bloodrage
+                       <https://www.imdb.com/title/tt0077275/>,    # The Brink's Job
+                       <https://www.imdb.com/title/tt0077038/>,    # King
+                       <https://www.imdb.com/title/tt1896718/>,    # Bartleby the Scrivener
+                       <https://www.imdb.com/title/tt0073952/>,    # The Adams Chronicles
+                       <https://www.imdb.com/title/tt0068156/> . # 1776
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Amadeus (1984)
+<https://www.imdb.com/title/tt0086879/> a schema:Movie ;
+    schema:name "Amadeus" ;
+    schema:url <https://www.imdb.com/title/tt0086879/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Kappelmeister Bonno"
+    ] .
+
+# Bloodrage (1980)
+<https://www.imdb.com/title/tt0078880/> a schema:Movie ;
+    schema:name "Bloodrage" ;
+    schema:url <https://www.imdb.com/title/tt0078880/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Gus"
+    ] .
+
+# The Brink's Job (1978)
+<https://www.imdb.com/title/tt0077275/> a schema:Movie ;
+    schema:name "The Brink's Job" ;
+    schema:url <https://www.imdb.com/title/tt0077275/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "H. H. Rightmire"
+    ] .
+
+# King (1978)
+<https://www.imdb.com/title/tt0077038/> a schema:Movie ;
+    schema:name "King" ;
+    schema:url <https://www.imdb.com/title/tt0077038/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Mayor Richard Daley"
+    ] .
+
+# Bartleby the Scrivener (1977)
+<https://www.imdb.com/title/tt1896718/> a schema:Movie ;
+    schema:name "Bartleby the Scrivener" ;
+    schema:url <https://www.imdb.com/title/tt1896718/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Turkey"
+    ] .
+
+# The Adams Chronicles (1976)
+<https://www.imdb.com/title/tt0073952/> a schema:Movie ;
+    schema:name "The Adams Chronicles" ;
+    schema:url <https://www.imdb.com/title/tt0073952/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Alexander Alison"
+    ] .
+
+# 1776 (1972)
+<https://www.imdb.com/title/tt0068156/> a schema:Movie ;
+    schema:name "1776" ;
+    schema:url <https://www.imdb.com/title/tt0068156/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0385701/> ;
+        schema:characterName "Samuel Chase (MD)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

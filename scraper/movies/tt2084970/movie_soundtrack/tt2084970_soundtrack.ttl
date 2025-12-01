@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2084970/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Opportunity" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Opportunity" ;
+            schema:author <https://www.imdb.com/name/nm1722040/>, # Stuart Hart
+                       <https://www.imdb.com/name/nm4492833/> # Scott Lean
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Eddie's Boogie" ;
+        schema:byArtist <https://www.imdb.com/name/nm3860298/> ; # Ed Palermo
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Eddie's Boogie" ;
+            schema:author <https://www.imdb.com/name/nm3860298/> # Ed Palermo
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Time To Go" ;
+        schema:byArtist <https://www.imdb.com/name/nm0811176/> ; # Andrew Snitzer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Time To Go" ;
+            schema:author <https://www.imdb.com/name/nm0811176/> # Andrew Snitzer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Coffee Meditation" ;
+        schema:byArtist <https://www.imdb.com/name/nm0841346/> ; # Milan Svoboda
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Coffee Meditation" ;
+            schema:author <https://www.imdb.com/name/nm0841346/> # Milan Svoboda
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jive Time" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0811176/> a schema:Person ;
+    schema:name "Andrew Snitzer" .
+<https://www.imdb.com/name/nm0841346/> a schema:Person ;
+    schema:name "Milan Svoboda" .
+<https://www.imdb.com/name/nm1722040/> a schema:Person ;
+    schema:name "Stuart Hart" .
+<https://www.imdb.com/name/nm3860298/> a schema:Person ;
+    schema:name "Ed Palermo" .
+<https://www.imdb.com/name/nm4492833/> a schema:Person ;
+    schema:name "Scott Lean" .
+# ==============================================================================

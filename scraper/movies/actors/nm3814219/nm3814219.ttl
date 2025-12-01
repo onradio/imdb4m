@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3814219/> a schema:Person ;
+    schema:name "Elizabeth Judd" ;
+    schema:url <https://www.imdb.com/name/nm3814219/> ;
+    schema:birthDate "1989-12-31"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Elizabeth Judd. Actress: Hamilton. Elizabeth Judd was born on 31 December 1989 in Dallas, Texas, USA. She is an actress, known for Hamilton (2020), Younger (2015) and A Love Not Standing (2009)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dallas, Texas, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8503618/>,    # Hamilton
+                       <https://www.imdb.com/title/tt1605613/>,    # A Love Not Standing
+                       <https://www.imdb.com/title/tt1708490/>,    # Loonacy
+                       <https://www.imdb.com/title/tt3288518/>,    # Younger
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt13117306/>,    # ABC-Disney Discovers: New York Talent Showcase
+                       <https://www.imdb.com/title/tt14397680/>,    # Bare: The Musical
+                       <https://www.imdb.com/title/tt1756562/> ; # Inebriation
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3814219/mediaviewer/rm4264994817/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8503618/> a schema:Movie ;
+    schema:name "Hamilton" ;
+    schema:url <https://www.imdb.com/title/tt8503618/> .
+
+<https://www.imdb.com/title/tt1605613/> a schema:Movie ;
+    schema:name "A Love Not Standing" ;
+    schema:url <https://www.imdb.com/title/tt1605613/> .
+
+<https://www.imdb.com/title/tt1708490/> a schema:Movie ;
+    schema:name "Loonacy" ;
+    schema:url <https://www.imdb.com/title/tt1708490/> .
+
+<https://www.imdb.com/title/tt3288518/> a schema:Movie ;
+    schema:name "Younger" ;
+    schema:url <https://www.imdb.com/title/tt3288518/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ABC-Disney Discovers: New York Talent Showcase (2016)
+<https://www.imdb.com/title/tt13117306/> a schema:Movie ;
+    schema:name "ABC-Disney Discovers: New York Talent Showcase" ;
+    schema:url <https://www.imdb.com/title/tt13117306/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3814219/> ;
+        schema:characterName ""
+    ] .
+
+# Bare: The Musical (2012)
+<https://www.imdb.com/title/tt14397680/> a schema:Movie ;
+    schema:name "Bare: The Musical" ;
+    schema:url <https://www.imdb.com/title/tt14397680/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3814219/> ;
+        schema:characterName "Ivy"
+    ] .
+
+# Inebriation (2010)
+<https://www.imdb.com/title/tt1756562/> a schema:Movie ;
+    schema:name "Inebriation" ;
+    schema:url <https://www.imdb.com/title/tt1756562/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3814219/> ;
+        schema:characterName "Ariadne"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm3814219/mediaviewer/rm4264994817/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDA0YTllOWQtNGUwMy00MjAzLThlODUtMzFiN2MwYmIwYmZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Seth Stewart, Thayne Jasperson, Jon Rua, Ephraim Sykes, Ariana DeBose, Elizabeth Judd, Austin Smith, Daveed Diggs, Sasha Hutchings, Sydney James Harcourt, and Carleigh Bettiol in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

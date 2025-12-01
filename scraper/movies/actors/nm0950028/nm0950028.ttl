@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0950028/> a schema:Person ;
+    schema:name "Rozwill Young" ;
+    schema:url <https://www.imdb.com/name/nm0950028/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rozwill Young. Actor: Twelve Monkeys. Rozwill Young is known for Twelve Monkeys (1995), Witness (1985) and Fallen (1998)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0224853/>,    # The Corner
+                       <https://www.imdb.com/title/tt0106028/>,    # Homicide: Life on the Street
+                       <https://www.imdb.com/title/tt0119099/>,    # Fallen
+                       <https://www.imdb.com/title/tt0114746/>,    # Twelve Monkeys
+                       <https://www.imdb.com/title/tt0108560/>,    # Who's the Man?
+                       <https://www.imdb.com/title/tt0090329/> . # Witness
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Corner (2000)
+<https://www.imdb.com/title/tt0224853/> a schema:Movie ;
+    schema:name "The Corner" ;
+    schema:url <https://www.imdb.com/title/tt0224853/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "Vitamin Salesman"
+    ] .
+
+# Homicide: Life on the Street (1998)
+<https://www.imdb.com/title/tt0106028/> a schema:Movie ;
+    schema:name "Homicide: Life on the Street" ;
+    schema:url <https://www.imdb.com/title/tt0106028/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "Swami Prabhunanda"
+    ] .
+
+# Fallen (1998)
+<https://www.imdb.com/title/tt0119099/> a schema:Movie ;
+    schema:name "Fallen" ;
+    schema:url <https://www.imdb.com/title/tt0119099/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "Prison Guard"
+    ] .
+
+# Twelve Monkeys (1995)
+<https://www.imdb.com/title/tt0114746/> a schema:Movie ;
+    schema:name "Twelve Monkeys" ;
+    schema:url <https://www.imdb.com/title/tt0114746/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "Billings"
+    ] .
+
+# Who's the Man? (1993)
+<https://www.imdb.com/title/tt0108560/> a schema:Movie ;
+    schema:name "Who's the Man?" ;
+    schema:url <https://www.imdb.com/title/tt0108560/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "Sgt. Bo Griles"
+    ] .
+
+# Witness (1985)
+<https://www.imdb.com/title/tt0090329/> a schema:Movie ;
+    schema:name "Witness" ;
+    schema:url <https://www.imdb.com/title/tt0090329/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950028/> ;
+        schema:characterName "T-Bone"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

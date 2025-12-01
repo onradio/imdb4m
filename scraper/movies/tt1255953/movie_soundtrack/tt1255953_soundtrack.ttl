@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1255953/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "You and Whose Army?" ;
+        schema:byArtist <https://www.imdb.com/name/nm1955602/> ; # Radiohead
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You and Whose Army?" ;
+            schema:author <https://www.imdb.com/name/nm0339313/>, # Colin Greenwood
+                       <https://www.imdb.com/name/nm0339351/>, # Jonny Greenwood
+                       <https://www.imdb.com/name/nm0639526/>, # Ed O'Brien
+                       <https://www.imdb.com/name/nm0783621/>, # Phil Selway
+                       <https://www.imdb.com/name/nm0948810/> # Thom Yorke
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Like Spinning Plates" ;
+        schema:byArtist <https://www.imdb.com/name/nm1955602/> ; # Radiohead
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Like Spinning Plates" ;
+            schema:author <https://www.imdb.com/name/nm0339313/>, # Colin Greenwood
+                       <https://www.imdb.com/name/nm0339351/>, # Jonny Greenwood
+                       <https://www.imdb.com/name/nm0639526/>, # Ed O'Brien
+                       <https://www.imdb.com/name/nm0783621/>, # Phil Selway
+                       <https://www.imdb.com/name/nm0948810/> # Thom Yorke
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nami Nami" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0339313/> a schema:Person ;
+    schema:name "Colin Greenwood" .
+<https://www.imdb.com/name/nm0339351/> a schema:Person ;
+    schema:name "Jonny Greenwood" .
+<https://www.imdb.com/name/nm0639526/> a schema:Person ;
+    schema:name "Ed O'Brien" .
+<https://www.imdb.com/name/nm0783621/> a schema:Person ;
+    schema:name "Phil Selway" .
+<https://www.imdb.com/name/nm0948810/> a schema:Person ;
+    schema:name "Thom Yorke" .
+<https://www.imdb.com/name/nm1955602/> a schema:Person ;
+    schema:name "Radiohead" .
+# ==============================================================================

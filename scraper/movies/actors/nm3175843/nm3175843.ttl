@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3175843/> a schema:Person ;
+    schema:name "Choua Kue" ;
+    schema:url <https://www.imdb.com/name/nm3175843/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Choua Kue. Actress: Gran Torino. Choua Kue is known for Gran Torino (2008) and Red Dawn (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1234719/>,    # Red Dawn
+                       <https://www.imdb.com/title/tt1205489/> . # Gran Torino
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Red Dawn (2012)
+<https://www.imdb.com/title/tt1234719/> a schema:Movie ;
+    schema:name "Red Dawn" ;
+    schema:url <https://www.imdb.com/title/tt1234719/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3175843/> ;
+        schema:characterName "Female Soldier"
+    ] .
+
+# Gran Torino (2008)
+<https://www.imdb.com/title/tt1205489/> a schema:Movie ;
+    schema:name "Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt1205489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3175843/> ;
+        schema:characterName "Youa"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

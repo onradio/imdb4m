@@ -1,0 +1,169 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2498053/> a schema:Person ;
+    schema:name "Ian Kenny" ;
+    schema:url <https://www.imdb.com/name/nm2498053/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ian Kenny. Actor: Solo: A Star Wars Story. Ian Kenny is known for Solo: A Star Wars Story (2018), Sing Street (2016) and The Owners (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BN2FiZjAwOTYtODEzNy00MmE1LTk1OGEtNGRjODJhYjVhOGMxXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7768192/>,    # Dublin Murders
+                       <https://www.imdb.com/title/tt3778644/>,    # Solo: A Star Wars Story
+                       <https://www.imdb.com/title/tt6768146/>,    # Rellik
+                       <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt3316550/>,    # Poxy
+                       <https://www.imdb.com/title/tt0170930/> ; # Fair City
+
+
+    schema:video <https://www.imdb.com/video/vi1030733337/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2498053/mediaviewer/rm3799834880/>,
+                 <https://www.imdb.com/name/nm2498053/mediaviewer/rm3663614464/>,
+                 <https://www.imdb.com/name/nm2498053/mediaviewer/rm3063859201/>,
+                 <https://www.imdb.com/name/nm2498053/mediaviewer/rm1136176385/>,
+                 <https://www.imdb.com/name/nm2498053/mediaviewer/rm2958846720/>,
+                 <https://www.imdb.com/name/nm2498053/mediaviewer/rm2060539648/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dublin Murders (2019)
+<https://www.imdb.com/title/tt7768192/> a schema:Movie ;
+    schema:name "Dublin Murders" ;
+    schema:url <https://www.imdb.com/title/tt7768192/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "Garda Phelan"
+    ] .
+
+# Solo: A Star Wars Story (2018)
+<https://www.imdb.com/title/tt3778644/> a schema:Movie ;
+    schema:name "Solo: A Star Wars Story" ;
+    schema:url <https://www.imdb.com/title/tt3778644/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "Rebolt"
+    ] .
+
+# Rellik (2017)
+<https://www.imdb.com/title/tt6768146/> a schema:Movie ;
+    schema:name "Rellik" ;
+    schema:url <https://www.imdb.com/title/tt6768146/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "Young Gabriel"
+    ] .
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "Barry"
+    ] .
+
+# Poxy (2014)
+<https://www.imdb.com/title/tt3316550/> a schema:Movie ;
+    schema:name "Poxy" ;
+    schema:url <https://www.imdb.com/title/tt3316550/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "Stevie"
+    ] .
+
+# Fair City (2006)
+<https://www.imdb.com/title/tt0170930/> a schema:Movie ;
+    schema:name "Fair City" ;
+    schema:url <https://www.imdb.com/title/tt0170930/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2498053/> ;
+        schema:characterName "T.J. Deegan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1030733337/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A group of friends think they found the perfect easy score: an empty house with a safe full of cash. But when the elderly couple that lives there comes home early the tables are suddenly turned. As a deadly game of cat and mouse ensues the would-be thieves are left to fight to save themselves from a nightmare they could never have imagined." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1030733337/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzhjZDk4YzgtNmQzOC00M2M5LWE3NmEtZTY1OTg3YThkOGJiXkEyXkFqcGdeQWFybm8@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2020-08-07T20:44:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BN2FiZjAwOTYtODEzNy00MmE1LTk1OGEtNGRjODJhYjVhOGMxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FiZjAwOTYtODEzNy00MmE1LTk1OGEtNGRjODJhYjVhOGMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ian Kenny" ;
+    schema:height "3333"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm3799834880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4OTM3MjIyNF5BMl5BanBnXkFtZTgwOTU3OTA1NzE@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1343"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm3663614464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDdlMWNhOGUtZDMzNi00NmU0LWFkMTMtNDAxM2U3ZWE3NWFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ian Kenny" ;
+    schema:height "796"^^xsd:integer ;
+    schema:width "657"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm3063859201/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWU1M2YwNGEtNWRmMy00MGJjLWEzYTAtNDk4ZjIxZjEwNWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ian Kenny and Maisie Williams in The Owners (2020)" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "448"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm1136176385/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjYzYzFlYWQtNGE3OS00OGRjLWFiZjQtNmZmM2Y3NjE0MDNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jake Curran, Sylvester McCoy, Rita Tushingham, Ian Kenny, and Maisie Williams in The Owners (2020)" ;
+    schema:height "4096"^^xsd:integer ;
+    schema:width "2764"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm2958846720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODVmNGYzZDQtYTdjZi00NGJjLTkxODYtYWQ5M2ExNWZlNmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "290"^^xsd:integer ;
+    schema:width "215"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2498053/mediaviewer/rm2060539648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FiZjAwOTYtODEzNy00MmE1LTk1OGEtNGRjODJhYjVhOGMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ian Kenny" ;
+    schema:height "3333"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2498053/>
+    schema:sameAs <https://www.instagram.com/iankenny1/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

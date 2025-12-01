@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120586/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Battle Hymn of the Republic" ;
+        schema:byArtist <https://www.imdb.com/name/nm0839486/> ; # Ethan Suplee
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Battle Hymn of the Republic" ;
+            schema:composer <https://www.imdb.com/name/nm1156464/> ; # William Steffe
+            schema:lyricist <https://www.imdb.com/name/nm0397856/> # Julia Ward Howe
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The White Man Marches On" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The White Man Marches On" ;
+            schema:author <https://www.imdb.com/name/nm8203645/> # Johnny Rebel
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0397856/> a schema:Person ;
+    schema:name "Julia Ward Howe" .
+<https://www.imdb.com/name/nm0839486/> a schema:Person ;
+    schema:name "Ethan Suplee" .
+<https://www.imdb.com/name/nm1156464/> a schema:Person ;
+    schema:name "William Steffe" .
+<https://www.imdb.com/name/nm8203645/> a schema:Person ;
+    schema:name "Johnny Rebel" .
+# ==============================================================================

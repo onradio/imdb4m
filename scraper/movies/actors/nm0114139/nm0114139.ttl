@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0114139/> a schema:Person ;
+    schema:name "Lou Brown" ;
+    schema:url <https://www.imdb.com/name/nm0114139/> ;
+    schema:birthDate "1912-05-04"^^xsd:date ;
+    schema:jobTitle "Music Department", "Composer", "Actor" ;
+    schema:alternateName "Louis Yule Brown" ;
+    schema:description "Lou Brown. Actor: The King of Comedy. Lou Brown was born on 4 May 1912 in Brooklyn, New York, USA. He was a composer and actor, known for The King of Comedy (1982), The Nutty Professor (1963) and Reservation Road (2007). He died on 7 January 2007 in Los Angeles, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0085794/>,    # The King of Comedy
+                       <https://www.imdb.com/title/tt0057372/>,    # The Nutty Professor
+                       <https://www.imdb.com/title/tt0071531/>,    # Gabriella, Gabriella
+                       <https://www.imdb.com/title/tt0831884/>,    # Reservation Road
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0120930/> . # TV's Bloopers & Practical Jokes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0085794/> a schema:Movie ;
+    schema:name "The King of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt0085794/> .
+
+<https://www.imdb.com/title/tt0057372/> a schema:Movie ;
+    schema:name "The Nutty Professor" ;
+    schema:url <https://www.imdb.com/title/tt0057372/> .
+
+<https://www.imdb.com/title/tt0071531/> a schema:Movie ;
+    schema:name "Gabriella, Gabriella" ;
+    schema:url <https://www.imdb.com/title/tt0071531/> .
+
+<https://www.imdb.com/title/tt0831884/> a schema:Movie ;
+    schema:name "Reservation Road" ;
+    schema:url <https://www.imdb.com/title/tt0831884/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# TV's Bloopers & Practical Jokes (1988)
+<https://www.imdb.com/title/tt0120930/> a schema:Movie ;
+    schema:name "TV's Bloopers & Practical Jokes" ;
+    schema:url <https://www.imdb.com/title/tt0120930/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0114139/> ;
+        schema:characterName "Pianist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0903092/> a schema:Person ;
+    schema:name "Erika von Tagen" ;
+    schema:url <https://www.imdb.com/name/nm0903092/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Erika von Tagen. Actress: Casino. Erika von Tagen is known for Casino (1995) and Duets (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0134630/>,    # Duets
+                       <https://www.imdb.com/title/tt0112641/> . # Casino
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Duets (2000)
+<https://www.imdb.com/title/tt0134630/> a schema:Movie ;
+    schema:name "Duets" ;
+    schema:url <https://www.imdb.com/title/tt0134630/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0903092/> ;
+        schema:characterName "Julie"
+    ] .
+
+# Casino (1995)
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0903092/> ;
+        schema:characterName "Amy Rothstein (Older)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

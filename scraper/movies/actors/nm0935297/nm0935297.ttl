@@ -1,0 +1,332 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0935297/> a schema:Person ;
+    schema:name "Robert Winley" ;
+    schema:url <https://www.imdb.com/name/nm0935297/> ;
+    schema:birthDate "1952-12-09"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Robert Winley. Actor: Terminator 2: Judgment Day. Robert Winley was born on 9 December 1952 in Boston, Massachusetts, USA. He was an actor, known for Terminator 2: Judgment Day (1991), Near Dark (1987) and Joy Ride (2001). He died on 21 October 2001 in Costa Mesa, California, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjQxZWEwZDItNzk4Zi00MWJjLWI1YmItODgzNGZhYjJhM2NkXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Boston, Massachusetts, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0103064/>,    # Terminator 2: Judgment Day
+                       <https://www.imdb.com/title/tt0089767/>,    # Pale Rider
+                       <https://www.imdb.com/title/tt0093605/>,    # Near Dark
+                       <https://www.imdb.com/title/tt0206314/>,    # Joy Ride
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0119233/>,    # Guarded Secrets
+                       <https://www.imdb.com/title/tt0106168/>,    # Walker, Texas Ranger
+                       <https://www.imdb.com/title/tt0112167/>,    # Sliders
+                       <https://www.imdb.com/title/tt0117342/>,    # Pinocchio's Revenge
+                       <https://www.imdb.com/title/tt0111299/>,    # The Stranger
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0105932/>,    # The Adventures of Brisco County, Jr.
+                       <https://www.imdb.com/title/tt0103436/>,    # The Hat Squad
+                       <https://www.imdb.com/title/tt0101093/>,    # FBI: The Untold Stories
+                       <https://www.imdb.com/title/tt0102984/>,    # Stone Cold
+                       <https://www.imdb.com/title/tt0099385/>,    # Death Warrant
+                       <https://www.imdb.com/title/tt0097700/>,    # L.A. Takedown
+                       <https://www.imdb.com/title/tt0096708/>,    # Tales from the Crypt
+                       <https://www.imdb.com/title/tt0095344/>,    # I Saw What You Did
+                       <https://www.imdb.com/title/tt0090498/>,    # Outlaws
+                       <https://www.imdb.com/title/tt0090525/>,    # Sledge Hammer!
+                       <https://www.imdb.com/title/tt0091282/>,    # Jake Speed
+                       <https://www.imdb.com/title/tt0091973/>,    # Smart Alec
+                       <https://www.imdb.com/title/tt0081858/>,    # Falcon Crest
+                       <https://www.imdb.com/title/tt0088606/> ; # Shadow Chasers
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0935297/mediaviewer/rm1164294912/>,
+                 <https://www.imdb.com/name/nm0935297/mediaviewer/rm26623488/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0103064/> a schema:Movie ;
+    schema:name "Terminator 2: Judgment Day" ;
+    schema:url <https://www.imdb.com/title/tt0103064/> .
+
+<https://www.imdb.com/title/tt0089767/> a schema:Movie ;
+    schema:name "Pale Rider" ;
+    schema:url <https://www.imdb.com/title/tt0089767/> .
+
+<https://www.imdb.com/title/tt0093605/> a schema:Movie ;
+    schema:name "Near Dark" ;
+    schema:url <https://www.imdb.com/title/tt0093605/> .
+
+<https://www.imdb.com/title/tt0206314/> a schema:Movie ;
+    schema:name "Joy Ride" ;
+    schema:url <https://www.imdb.com/title/tt0206314/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Guarded Secrets (1997)
+<https://www.imdb.com/title/tt0119233/> a schema:Movie ;
+    schema:name "Guarded Secrets" ;
+    schema:url <https://www.imdb.com/title/tt0119233/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Biker"
+    ] .
+
+# Walker, Texas Ranger (1997)
+<https://www.imdb.com/title/tt0106168/> a schema:Movie ;
+    schema:name "Walker, Texas Ranger" ;
+    schema:url <https://www.imdb.com/title/tt0106168/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Luke Babbich"
+    ] .
+
+# Sliders (1996)
+<https://www.imdb.com/title/tt0112167/> a schema:Movie ;
+    schema:name "Sliders" ;
+    schema:url <https://www.imdb.com/title/tt0112167/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Bull"
+    ] .
+
+# Pinocchio's Revenge (1996)
+<https://www.imdb.com/title/tt0117342/> a schema:Movie ;
+    schema:name "Pinocchio's Revenge" ;
+    schema:url <https://www.imdb.com/title/tt0117342/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Biker"
+    ] .
+
+# The Stranger (1995)
+<https://www.imdb.com/title/tt0111299/> a schema:Movie ;
+    schema:name "The Stranger" ;
+    schema:url <https://www.imdb.com/title/tt0111299/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Garrett Katz"
+    ] .
+
+# ER (1994)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Ace"
+    ] .
+
+# The Adventures of Brisco County, Jr. (1994)
+<https://www.imdb.com/title/tt0105932/> a schema:Movie ;
+    schema:name "The Adventures of Brisco County, Jr." ;
+    schema:url <https://www.imdb.com/title/tt0105932/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Earl Snakeskinner"
+    ] .
+
+# The Hat Squad (1992)
+<https://www.imdb.com/title/tt0103436/> a schema:Movie ;
+    schema:name "The Hat Squad" ;
+    schema:url <https://www.imdb.com/title/tt0103436/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Koontz"
+    ] .
+
+# FBI: The Untold Stories (1991)
+<https://www.imdb.com/title/tt0101093/> a schema:Movie ;
+    schema:name "FBI: The Untold Stories" ;
+    schema:url <https://www.imdb.com/title/tt0101093/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Biker"
+    ] .
+
+# Stone Cold (1991)
+<https://www.imdb.com/title/tt0102984/> a schema:Movie ;
+    schema:name "Stone Cold" ;
+    schema:url <https://www.imdb.com/title/tt0102984/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Mudfish"
+    ] .
+
+# Death Warrant (1990)
+<https://www.imdb.com/title/tt0099385/> a schema:Movie ;
+    schema:name "Death Warrant" ;
+    schema:url <https://www.imdb.com/title/tt0099385/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Tall Convict"
+    ] .
+
+# L.A. Takedown (1989)
+<https://www.imdb.com/title/tt0097700/> a schema:Movie ;
+    schema:name "L.A. Takedown" ;
+    schema:url <https://www.imdb.com/title/tt0097700/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Nate"
+    ] .
+
+# Tales from the Crypt (1989)
+<https://www.imdb.com/title/tt0096708/> a schema:Movie ;
+    schema:name "Tales from the Crypt" ;
+    schema:url <https://www.imdb.com/title/tt0096708/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Jimmy Flood"
+    ] .
+
+# I Saw What You Did (1988)
+<https://www.imdb.com/title/tt0095344/> a schema:Movie ;
+    schema:name "I Saw What You Did" ;
+    schema:url <https://www.imdb.com/title/tt0095344/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Randy"
+    ] .
+
+# Outlaws (1986)
+<https://www.imdb.com/title/tt0090498/> a schema:Movie ;
+    schema:name "Outlaws" ;
+    schema:url <https://www.imdb.com/title/tt0090498/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Doug"
+    ] .
+
+# Sledge Hammer! (1986)
+<https://www.imdb.com/title/tt0090525/> a schema:Movie ;
+    schema:name "Sledge Hammer!" ;
+    schema:url <https://www.imdb.com/title/tt0090525/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "George M. Nazar"
+    ] .
+
+# Jake Speed (1986)
+<https://www.imdb.com/title/tt0091282/> a schema:Movie ;
+    schema:name "Jake Speed" ;
+    schema:url <https://www.imdb.com/title/tt0091282/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Rowdy #2"
+    ] .
+
+# Smart Alec (1986)
+<https://www.imdb.com/title/tt0091973/> a schema:Movie ;
+    schema:name "Smart Alec" ;
+    schema:url <https://www.imdb.com/title/tt0091973/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Gate Guard"
+    ] .
+
+# Falcon Crest (1986)
+<https://www.imdb.com/title/tt0081858/> a schema:Movie ;
+    schema:name "Falcon Crest" ;
+    schema:url <https://www.imdb.com/title/tt0081858/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Butch"
+    ] .
+
+# Shadow Chasers (1985)
+<https://www.imdb.com/title/tt0088606/> a schema:Movie ;
+    schema:name "Shadow Chasers" ;
+    schema:url <https://www.imdb.com/title/tt0088606/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0935297/> ;
+        schema:characterName "Henry Jones"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjQxZWEwZDItNzk4Zi00MWJjLWI1YmItODgzNGZhYjJhM2NkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQxZWEwZDItNzk4Zi00MWJjLWI1YmItODgzNGZhYjJhM2NkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger, Robert Winley, and Ron Young in Terminator 2: Judgment Day (1991)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0935297/mediaviewer/rm1164294912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxODUyNjg1MF5BMl5BanBnXkFtZTcwMTU4MjM3NA@@._V1_.jpg> ;
+    schema:caption "Lance Henriksen and Robert Winley in Stone Cold (1991)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "676"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0935297/mediaviewer/rm26623488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQxZWEwZDItNzk4Zi00MWJjLWI1YmItODgzNGZhYjJhM2NkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger, Robert Winley, and Ron Young in Terminator 2: Judgment Day (1991)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

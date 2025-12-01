@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3781979/> a schema:Person ;
+    schema:name "Rafael d&apos;Avila" ;
+    schema:url <https://www.imdb.com/name/nm3781979/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rafael d'Avila. Actor: Elite Squad. Rafael d'Avila is known for Elite Squad (2007), Praça Paris (2017) and Streets of Gloria (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8140518/>,    # Bem-Aventurados
+                       <https://www.imdb.com/title/tt6206880/>,    # Praça Paris
+                       <https://www.imdb.com/title/tt0861739/> . # Elite Squad
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bem-Aventurados (2019)
+<https://www.imdb.com/title/tt8140518/> a schema:Movie ;
+    schema:name "Bem-Aventurados" ;
+    schema:url <https://www.imdb.com/title/tt8140518/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3781979/> ;
+        schema:characterName "Empregado"
+    ] .
+
+# Praça Paris (2017)
+<https://www.imdb.com/title/tt6206880/> a schema:Movie ;
+    schema:name "Praça Paris" ;
+    schema:url <https://www.imdb.com/title/tt6206880/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3781979/> ;
+        schema:characterName ""
+    ] .
+
+# Elite Squad (2007)
+<https://www.imdb.com/title/tt0861739/> a schema:Movie ;
+    schema:name "Elite Squad" ;
+    schema:url <https://www.imdb.com/title/tt0861739/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3781979/> ;
+        schema:characterName "Xuxa"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

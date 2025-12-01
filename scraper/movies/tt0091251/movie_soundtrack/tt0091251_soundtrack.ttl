@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091251/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Die Walküre" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Die Walküre" ;
+            schema:author <https://www.imdb.com/name/nm0003471/> # Richard Wagner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lacrimosa" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lacrimosa" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Korobushka (Korobeyniki)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Korobushka (Korobeyniki)" ;
+            schema:lyricist <https://www.imdb.com/name/nm0624968/> # Nikolai A. Nekrasov
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Im Wald im grünen Walde" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Danube" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Danube" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tannhäuser" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tannhäuser" ;
+            schema:author <https://www.imdb.com/name/nm0003471/> # Richard Wagner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Moya Marusechka" ;
+        schema:byArtist <https://www.imdb.com/name/nm1749453/> ; # Pyotr Leshchenko
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Moya Marusechka" ;
+            schema:lyricist <https://www.imdb.com/name/nm1749453/> # Pyotr Leshchenko
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Svyashchennaya voyna (The Sacred War)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1819887/> ; # The Red Army Choir
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Svyashchennaya voyna (The Sacred War)" ;
+            schema:composer <https://www.imdb.com/name/nm2087716/> ; # Aleksandr Aleksandrov
+            schema:lyricist <https://www.imdb.com/name/nm3269025/> # Vasiliy Lebedev-Kumach
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003471/> a schema:Person ;
+    schema:name "Richard Wagner" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0624968/> a schema:Person ;
+    schema:name "Nikolai A. Nekrasov" .
+<https://www.imdb.com/name/nm1749453/> a schema:Person ;
+    schema:name "Pyotr Leshchenko" .
+<https://www.imdb.com/name/nm1819887/> a schema:Person ;
+    schema:name "The Red Army Choir" .
+<https://www.imdb.com/name/nm2087716/> a schema:Person ;
+    schema:name "Aleksandr Aleksandrov" .
+<https://www.imdb.com/name/nm3269025/> a schema:Person ;
+    schema:name "Vasiliy Lebedev-Kumach" .
+# ==============================================================================

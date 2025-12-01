@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11432327/> a schema:Person ;
+    schema:name "Hwang In-kyung" ;
+    schema:url <https://www.imdb.com/name/nm11432327/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Hwang In-kyung. Actor: Parasite. Hwang In-kyung is known for Parasite (2019), Throw the Cross Away (2006) and SuperBand 2 (2021)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6751668/>,    # Parasite
+                       <https://www.imdb.com/title/tt32880193/> . # Throw the Cross Away
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11432327/> ;
+        schema:characterName "Internet Cafe Staff"
+    ] .
+
+# Throw the Cross Away (2006)
+<https://www.imdb.com/title/tt32880193/> a schema:Movie ;
+    schema:name "Throw the Cross Away" ;
+    schema:url <https://www.imdb.com/title/tt32880193/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11432327/> ;
+        schema:characterName "Yoon-seo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

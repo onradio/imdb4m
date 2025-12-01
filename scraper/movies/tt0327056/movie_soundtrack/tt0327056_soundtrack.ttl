@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0327056/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Mystic River" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mystic River" ;
+            schema:composer <https://www.imdb.com/name/nm0000142/> # Clint Eastwood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cosmo" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cosmo" ;
+            schema:author <https://www.imdb.com/name/nm0247762/>, # Kyle Eastwood
+                       <https://www.imdb.com/name/nm0828630/> # Michael Stevens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Black Emerald Blues" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Black Emerald Blues" ;
+            schema:author <https://www.imdb.com/name/nm0247762/>, # Kyle Eastwood
+                       <https://www.imdb.com/name/nm0828630/> # Michael Stevens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Semper Fidelis" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Semper Fidelis" ;
+            schema:composer <https://www.imdb.com/name/nm0815971/> # John Philip Sousa
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000142/> a schema:Person ;
+    schema:name "Clint Eastwood" .
+<https://www.imdb.com/name/nm0247762/> a schema:Person ;
+    schema:name "Kyle Eastwood" .
+<https://www.imdb.com/name/nm0815971/> a schema:Person ;
+    schema:name "John Philip Sousa" .
+<https://www.imdb.com/name/nm0828630/> a schema:Person ;
+    schema:name "Michael Stevens" .
+# ==============================================================================

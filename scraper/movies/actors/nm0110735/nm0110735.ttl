@@ -1,0 +1,330 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0110735/> a schema:Person ;
+    schema:name "Roy Brocksmith" ;
+    schema:url <https://www.imdb.com/name/nm0110735/> ;
+    schema:birthDate "1945-09-15"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Roy Brocksmith. Actor: Total Recall. Roy Brocksmith began his career on the bar at Hap Kuhl's Tavern in his native Quincy, Illinois, at the age of three. As a boy soprano, he performed in churches, schools, and appeared regularly on local radio and television programs. At 16, he taught at the local children's theater. Two years later he married his high-school girlfriend.\n\nHe left Quincy, touring the US for two years..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODIyMDQxMDYtY2Q3Ni00NmY1LTllZDctNzk5NWQ4MDM2YmE0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Quincy, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0100802/>,    # Total Recall
+                       <https://www.imdb.com/title/tt0098439/>,    # Tango & Cash
+                       <https://www.imdb.com/title/tt0098621/>,    # The War of the Roses
+                       <https://www.imdb.com/title/tt0101452/>,    # Bill & Ted's Bogus Journey
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0118254/>,    # Ally McBeal
+                       <https://www.imdb.com/title/tt0182623/>,    # Payne
+                       <https://www.imdb.com/title/tt0155975/>,    # Psycho
+                       <https://www.imdb.com/title/tt0138956/>,    # Beyond Belief: Fact or Fiction
+                       <https://www.imdb.com/title/tt0105946/>,    # Babylon 5
+                       <https://www.imdb.com/title/tt0119484/>,    # Kull: The Conqueror
+                       <https://www.imdb.com/title/tt0106017/>,    # Grace Under Fire
+                       <https://www.imdb.com/title/tt0305966/>,    # Pistol Pete
+                       <https://www.imdb.com/title/tt0112104/>,    # Nowhere Man
+                       <https://www.imdb.com/title/tt0103512/>,    # Picket Fences
+                       <https://www.imdb.com/title/tt0112086/>,    # Murder One
+                       <https://www.imdb.com/title/tt0106145/>,    # Star Trek: Deep Space Nine
+                       <https://www.imdb.com/title/tt0114926/>,    # White Dwarf
+                       <https://www.imdb.com/title/tt0114889/>,    # A Walton Wedding
+                       <https://www.imdb.com/title/tt0108684/> ; # Aaahh!!! Real Monsters
+
+
+    schema:video <https://www.imdb.com/video/vi948437273/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0110735/mediaviewer/rm1072884225/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm42251009/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm3733172993/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm3229856513/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm1753395969/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm327267073/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm25277185/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm42054401/>,
+                 <https://www.imdb.com/name/nm0110735/mediaviewer/rm3380654849/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0100802/> a schema:Movie ;
+    schema:name "Total Recall" ;
+    schema:url <https://www.imdb.com/title/tt0100802/> .
+
+<https://www.imdb.com/title/tt0098439/> a schema:Movie ;
+    schema:name "Tango & Cash" ;
+    schema:url <https://www.imdb.com/title/tt0098439/> .
+
+<https://www.imdb.com/title/tt0098621/> a schema:Movie ;
+    schema:name "The War of the Roses" ;
+    schema:url <https://www.imdb.com/title/tt0098621/> .
+
+<https://www.imdb.com/title/tt0101452/> a schema:Movie ;
+    schema:name "Bill & Ted's Bogus Journey" ;
+    schema:url <https://www.imdb.com/title/tt0101452/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ally McBeal (2000)
+<https://www.imdb.com/title/tt0118254/> a schema:Movie ;
+    schema:name "Ally McBeal" ;
+    schema:url <https://www.imdb.com/title/tt0118254/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Judge Raymond Norway"
+    ] .
+
+# Payne (1999)
+<https://www.imdb.com/title/tt0182623/> a schema:Movie ;
+    schema:name "Payne" ;
+    schema:url <https://www.imdb.com/title/tt0182623/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Henry Jambon"
+    ] .
+
+# Psycho (1998)
+<https://www.imdb.com/title/tt0155975/> a schema:Movie ;
+    schema:name "Psycho" ;
+    schema:url <https://www.imdb.com/title/tt0155975/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Man in Cowboy Hat outside Realty Office"
+    ] .
+
+# Beyond Belief: Fact or Fiction (1998)
+<https://www.imdb.com/title/tt0138956/> a schema:Movie ;
+    schema:name "Beyond Belief: Fact or Fiction" ;
+    schema:url <https://www.imdb.com/title/tt0138956/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Casket Salesman"
+    ] .
+
+# Babylon 5 (1997)
+<https://www.imdb.com/title/tt0105946/> a schema:Movie ;
+    schema:name "Babylon 5" ;
+    schema:url <https://www.imdb.com/title/tt0105946/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Brother Alwyn Macomber"
+    ] .
+
+# Kull: The Conqueror (1997)
+<https://www.imdb.com/title/tt0119484/> a schema:Movie ;
+    schema:name "Kull: The Conqueror" ;
+    schema:url <https://www.imdb.com/title/tt0119484/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Tu"
+    ] .
+
+# Grace Under Fire (1997)
+<https://www.imdb.com/title/tt0106017/> a schema:Movie ;
+    schema:name "Grace Under Fire" ;
+    schema:url <https://www.imdb.com/title/tt0106017/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Carl Huber"
+    ] .
+
+# Pistol Pete (1996)
+<https://www.imdb.com/title/tt0305966/> a schema:Movie ;
+    schema:name "Pistol Pete" ;
+    schema:url <https://www.imdb.com/title/tt0305966/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Pawnee Bob"
+    ] .
+
+# Nowhere Man (1996)
+<https://www.imdb.com/title/tt0112104/> a schema:Movie ;
+    schema:name "Nowhere Man" ;
+    schema:url <https://www.imdb.com/title/tt0112104/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Bud Atkins"
+    ] .
+
+# Picket Fences (1992)
+<https://www.imdb.com/title/tt0103512/> a schema:Movie ;
+    schema:name "Picket Fences" ;
+    schema:url <https://www.imdb.com/title/tt0103512/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Principal Michael Oslo"
+    ] .
+
+# Murder One (1995)
+<https://www.imdb.com/title/tt0112086/> a schema:Movie ;
+    schema:name "Murder One" ;
+    schema:url <https://www.imdb.com/title/tt0112086/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Dr. Elliott Matheson"
+    ] .
+
+# Star Trek: Deep Space Nine (1995)
+<https://www.imdb.com/title/tt0106145/> a schema:Movie ;
+    schema:name "Star Trek: Deep Space Nine" ;
+    schema:url <https://www.imdb.com/title/tt0106145/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Razka Karn"
+    ] .
+
+# White Dwarf (1995)
+<https://www.imdb.com/title/tt0114926/> a schema:Movie ;
+    schema:name "White Dwarf" ;
+    schema:url <https://www.imdb.com/title/tt0114926/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Guv'ner Twist"
+    ] .
+
+# A Walton Wedding (1995)
+<https://www.imdb.com/title/tt0114889/> a schema:Movie ;
+    schema:name "A Walton Wedding" ;
+    schema:url <https://www.imdb.com/title/tt0114889/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Professor Trumbell"
+    ] .
+
+# Aaahh!!! Real Monsters (1995)
+<https://www.imdb.com/title/tt0108684/> a schema:Movie ;
+    schema:name "Aaahh!!! Real Monsters" ;
+    schema:url <https://www.imdb.com/title/tt0108684/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0110735/> ;
+        schema:characterName "Footoo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi948437273/> a schema:VideoObject ;
+        schema:name "Tales from the Crypt: The Complete Seasons 1&amp;2" ;
+        schema:description "Home Video Trailer from Warner Home Video" ;
+        schema:embedUrl <https://www.imdb.com/video/vi948437273/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWI2YzM4MmQtOTlhOS00ZTUwLWE4ZjctMWIzMGNjZTk2MmFhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT58S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T16:06:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODIyMDQxMDYtY2Q3Ni00NmY1LTllZDctNzk5NWQ4MDM2YmE0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODIyMDQxMDYtY2Q3Ni00NmY1LTllZDctNzk5NWQ4MDM2YmE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roy Brocksmith" ;
+    schema:height "1047"^^xsd:integer ;
+    schema:width "795"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm1072884225/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmExZTE0MDgtNTBkNy00Y2I4LWEzZDQtMDdhZTNkZjQ3MjJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roy Brocksmith and Marian Seldes in Good & Evil (1991)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm42251009/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWQ1OTliZjQtYThjYy00YzhmLThjYmQtZDY0MzFhZjA4NWNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kevin Sorbo and Roy Brocksmith in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm3733172993/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDc0OGE1NzMtMjE2Ny00YjY4LWFhNGEtOGExZWNmNDI2MjkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kevin Sorbo and Roy Brocksmith in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm3229856513/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmFjNjk1ZjMtNGIxOS00MzRmLTgyNTAtNjExNjI0MjMzN2RlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roy Brocksmith in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm1753395969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTFiNGVhNzQtYTFjYy00MDQ4LWE1ZTgtOGIzNzhiNzA2YmEzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tia Carrere, Roy Brocksmith, and Douglas Henshall in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm327267073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmMyY2VkM2YtMjU5Yi00ZTRjLTgxMjQtNmI1NWUwNTA1NTljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roy Brocksmith in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm25277185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWU2ODRhOGMtODE4Zi00ODkxLWIxZmQtNTNkMzUxZjU5Yjc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tia Carrere, Kevin Sorbo, Roy Brocksmith, and Douglas Henshall in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm42054401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI5ZGFlNjMtNzA3MC00MjFjLWE1MDMtNWZjZDZmNGRjNjllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kevin Sorbo and Roy Brocksmith in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0110735/mediaviewer/rm3380654849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzViNjA3MGQtYmIxMy00YjI3LWI2Y2UtOWJmM2E3ZTU4M2Q5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Thomas Ian Griffith, Roy Brocksmith, and Douglas Henshall in Kull: The Conqueror (1997)" ;
+    schema:height "604"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

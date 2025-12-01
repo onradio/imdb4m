@@ -1,0 +1,149 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1632389/> a schema:Person ;
+    schema:name "Chris Waitt" ;
+    schema:url <https://www.imdb.com/name/nm1632389/> ;
+    schema:jobTitle "Director", "Writer", "Composer" ;
+    schema:description "Chris Waitt. Director: A Complete History of My Sexual Failures. Chris Waitt was born in 1975 in the UK. He is a director and writer, known for A Complete History of My Sexual Failures (2008), Jurassic World: The Ride (2019) and Hot Fuzz (2007)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDcwOWU1NDQtODljNC00OTNkLTkyOGItZGQwZDM2N2U4MTM5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1667102/>,    # Up There
+                       <https://www.imdb.com/title/tt0425112/>,    # Hot Fuzz
+                       <https://www.imdb.com/title/tt0816087/>,    # Laid Off
+                       <https://www.imdb.com/title/tt0431414/>,    # St. Mathurin's School of Practical Joking
+                       <https://www.imdb.com/title/tt0480529/>,    # Dupe
+                       <https://www.imdb.com/title/tt0819655/>,    # How to Cope with Rejection
+                       <https://www.imdb.com/title/tt0402201/> ; # Fur TV
+
+
+    schema:video <https://www.imdb.com/video/vi1020176665/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1632389/mediaviewer/rm1268730368/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Up There (2011)
+<https://www.imdb.com/title/tt1667102/> a schema:Movie ;
+    schema:name "Up There" ;
+    schema:url <https://www.imdb.com/title/tt1667102/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Counsellor"
+    ] .
+
+# Hot Fuzz (2007)
+<https://www.imdb.com/title/tt0425112/> a schema:Movie ;
+    schema:name "Hot Fuzz" ;
+    schema:url <https://www.imdb.com/title/tt0425112/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Dave"
+    ] .
+
+# Laid Off (2006)
+<https://www.imdb.com/title/tt0816087/> a schema:Movie ;
+    schema:name "Laid Off" ;
+    schema:url <https://www.imdb.com/title/tt0816087/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Counsellor"
+    ] .
+
+# St. Mathurin's School of Practical Joking (2005)
+<https://www.imdb.com/title/tt0431414/> a schema:Movie ;
+    schema:name "St. Mathurin's School of Practical Joking" ;
+    schema:url <https://www.imdb.com/title/tt0431414/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Mr. Fraser"
+    ] .
+
+# Dupe (2005)
+<https://www.imdb.com/title/tt0480529/> a schema:Movie ;
+    schema:name "Dupe" ;
+    schema:url <https://www.imdb.com/title/tt0480529/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Adam Dokey"
+    ] .
+
+# How to Cope with Rejection (2005)
+<https://www.imdb.com/title/tt0819655/> a schema:Movie ;
+    schema:name "How to Cope with Rejection" ;
+    schema:url <https://www.imdb.com/title/tt0819655/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Adam"
+    ] .
+
+# Fur TV (2004)
+<https://www.imdb.com/title/tt0402201/> a schema:Movie ;
+    schema:name "Fur TV" ;
+    schema:url <https://www.imdb.com/title/tt0402201/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1632389/> ;
+        schema:characterName "Mervin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1020176665/> a schema:VideoObject ;
+        schema:name "Hot Fuzz" ;
+        schema:description "Trailer 2 for Hot Fuzz" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1020176665/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTJhNzg2NjMtYTUzZS00M2NkLTg4NjQtYWU0YWU2MDMwMDRmXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT34S"^^xsd:duration ;
+        schema:uploadDate "2013-08-04T04:26:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDcwOWU1NDQtODljNC00OTNkLTkyOGItZGQwZDM2N2U4MTM5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDcwOWU1NDQtODljNC00OTNkLTkyOGItZGQwZDM2N2U4MTM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Waitt in A Complete History of My Sexual Failures (2008)" ;
+    schema:height "666"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1632389/mediaviewer/rm1268730368/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDcwOWU1NDQtODljNC00OTNkLTkyOGItZGQwZDM2N2U4MTM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Waitt in A Complete History of My Sexual Failures (2008)" ;
+    schema:height "666"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

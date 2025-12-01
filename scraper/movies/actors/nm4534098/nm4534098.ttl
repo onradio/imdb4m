@@ -1,0 +1,385 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4534098/> a schema:Person ;
+    schema:name "Ed Skrein" ;
+    schema:url <https://www.imdb.com/name/nm4534098/> ;
+    schema:birthDate "1983-03-29"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:alternateName "Edward George Skrein" ;
+    schema:description "Ed Skrein. Actor: Deadpool. Ed Skrein grew up in North London, graduated with a degree in Fine Arts from Central Saint Martins, and is one of the most highly versatile artists of his generation. He was selected by Screen International as one of their \"Stars of Tomorrow\" in 2013, which showcases the next generation of talent from the UK.\n\nMost recently, Skrein starred as the villain Ajax in Marvel's and Twentieth..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDQ2MTUzMTktYTY0My00ODRlLTg0MWQtMDQwYzY4ZTQxNGViXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Camden, London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1431045/>,    # Deadpool
+                       <https://www.imdb.com/title/tt14998742/>,    # Rebel Moon - Part One: A Child of Fire
+                       <https://www.imdb.com/title/tt2938956/>,    # The Transporter Refueled
+                       <https://www.imdb.com/title/tt6924650/>,    # Midway
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4777008/>,    # Maleficent: Mistress of Evil
+                       <https://www.imdb.com/title/tt6718730/>,    # Born a King
+                       <https://www.imdb.com/title/tt0437086/>,    # Alita: Battle Angel
+                       <https://www.imdb.com/title/tt7125860/>,    # If Beale Street Could Talk
+                       <https://www.imdb.com/title/tt4357394/>,    # Tau
+                       <https://www.imdb.com/title/tt6542108/>,    # Patrick
+                       <https://www.imdb.com/title/tt5164184/>,    # In Darkness
+                       <https://www.imdb.com/title/tt4074364/>,    # The Model
+                       <https://www.imdb.com/title/tt2474958/>,    # Kill Your Friends
+                       <https://www.imdb.com/title/tt2911674/>,    # Tiger House
+                       <https://www.imdb.com/title/tt3622332/>,    # Sword of Vengeance
+                       <https://www.imdb.com/title/tt2290553/>,    # Northmen: A Viking Saga
+                       <https://www.imdb.com/title/tt3579816/>,    # Screaming Soul: Poverty
+                       <https://www.imdb.com/title/tt3265590/>,    # Black Swan Theory
+                       <https://www.imdb.com/title/tt2711738/>,    # The Tunnel
+                       <https://www.imdb.com/title/tt0944947/>,    # Game of Thrones
+                       <https://www.imdb.com/title/tt0857190/>,    # The Sweeney
+                       <https://www.imdb.com/title/tt1760967/>,    # Ill Manors
+                       <https://www.imdb.com/title/tt1951218/> ; # Piggy
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3122317593/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4534098/mediaviewer/rm3226164737/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm3343605249/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm4243726593/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm4075954433/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm2365984257/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm2382761473/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm2399538689/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm3146007808/>,
+                 <https://www.imdb.com/name/nm4534098/mediaviewer/rm3062121728/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1431045/> a schema:Movie ;
+    schema:name "Deadpool" ;
+    schema:url <https://www.imdb.com/title/tt1431045/> .
+
+<https://www.imdb.com/title/tt14998742/> a schema:Movie ;
+    schema:name "Rebel Moon - Part One: A Child of Fire" ;
+    schema:url <https://www.imdb.com/title/tt14998742/> .
+
+<https://www.imdb.com/title/tt2938956/> a schema:Movie ;
+    schema:name "The Transporter Refueled" ;
+    schema:url <https://www.imdb.com/title/tt2938956/> .
+
+<https://www.imdb.com/title/tt6924650/> a schema:Movie ;
+    schema:name "Midway" ;
+    schema:url <https://www.imdb.com/title/tt6924650/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Maleficent: Mistress of Evil (2019)
+<https://www.imdb.com/title/tt4777008/> a schema:Movie ;
+    schema:name "Maleficent: Mistress of Evil" ;
+    schema:url <https://www.imdb.com/title/tt4777008/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Borra"
+    ] .
+
+# Born a King (2019)
+<https://www.imdb.com/title/tt6718730/> a schema:Movie ;
+    schema:name "Born a King" ;
+    schema:url <https://www.imdb.com/title/tt6718730/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Philby"
+    ] .
+
+# Alita: Battle Angel (2019)
+<https://www.imdb.com/title/tt0437086/> a schema:Movie ;
+    schema:name "Alita: Battle Angel" ;
+    schema:url <https://www.imdb.com/title/tt0437086/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Zapan"
+    ] .
+
+# If Beale Street Could Talk (2018)
+<https://www.imdb.com/title/tt7125860/> a schema:Movie ;
+    schema:name "If Beale Street Could Talk" ;
+    schema:url <https://www.imdb.com/title/tt7125860/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Officer Bell"
+    ] .
+
+# Tau (2018)
+<https://www.imdb.com/title/tt4357394/> a schema:Movie ;
+    schema:name "Tau" ;
+    schema:url <https://www.imdb.com/title/tt4357394/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Alex"
+    ] .
+
+# Patrick (2018)
+<https://www.imdb.com/title/tt6542108/> a schema:Movie ;
+    schema:name "Patrick" ;
+    schema:url <https://www.imdb.com/title/tt6542108/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Oliver"
+    ] .
+
+# In Darkness (2018)
+<https://www.imdb.com/title/tt5164184/> a schema:Movie ;
+    schema:name "In Darkness" ;
+    schema:url <https://www.imdb.com/title/tt5164184/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Marc"
+    ] .
+
+# The Model (2016)
+<https://www.imdb.com/title/tt4074364/> a schema:Movie ;
+    schema:name "The Model" ;
+    schema:url <https://www.imdb.com/title/tt4074364/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Shane White"
+    ] .
+
+# Kill Your Friends (2015)
+<https://www.imdb.com/title/tt2474958/> a schema:Movie ;
+    schema:name "Kill Your Friends" ;
+    schema:url <https://www.imdb.com/title/tt2474958/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Rent"
+    ] .
+
+# Tiger House (2015)
+<https://www.imdb.com/title/tt2911674/> a schema:Movie ;
+    schema:name "Tiger House" ;
+    schema:url <https://www.imdb.com/title/tt2911674/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Callum"
+    ] .
+
+# Sword of Vengeance (2015)
+<https://www.imdb.com/title/tt3622332/> a schema:Movie ;
+    schema:name "Sword of Vengeance" ;
+    schema:url <https://www.imdb.com/title/tt3622332/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Treden"
+    ] .
+
+# Northmen: A Viking Saga (2014)
+<https://www.imdb.com/title/tt2290553/> a schema:Movie ;
+    schema:name "Northmen: A Viking Saga" ;
+    schema:url <https://www.imdb.com/title/tt2290553/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Hjorr"
+    ] .
+
+# Screaming Soul: Poverty (2014)
+<https://www.imdb.com/title/tt3579816/> a schema:Movie ;
+    schema:name "Screaming Soul: Poverty" ;
+    schema:url <https://www.imdb.com/title/tt3579816/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Ed Skrein"
+    ] .
+
+# Black Swan Theory (2018)
+<https://www.imdb.com/title/tt3265590/> a schema:Movie ;
+    schema:name "Black Swan Theory" ;
+    schema:url <https://www.imdb.com/title/tt3265590/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Vincent"
+    ] .
+
+# The Tunnel (2013)
+<https://www.imdb.com/title/tt2711738/> a schema:Movie ;
+    schema:name "The Tunnel" ;
+    schema:url <https://www.imdb.com/title/tt2711738/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Anthony Walsh"
+    ] .
+
+# Game of Thrones (2013)
+<https://www.imdb.com/title/tt0944947/> a schema:Movie ;
+    schema:name "Game of Thrones" ;
+    schema:url <https://www.imdb.com/title/tt0944947/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Daario Naharis"
+    ] .
+
+# The Sweeney (2012)
+<https://www.imdb.com/title/tt0857190/> a schema:Movie ;
+    schema:name "The Sweeney" ;
+    schema:url <https://www.imdb.com/title/tt0857190/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "David"
+    ] .
+
+# Ill Manors (2012)
+<https://www.imdb.com/title/tt1760967/> a schema:Movie ;
+    schema:name "Ill Manors" ;
+    schema:url <https://www.imdb.com/title/tt1760967/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Ed"
+    ] .
+
+# Piggy (2012)
+<https://www.imdb.com/title/tt1951218/> a schema:Movie ;
+    schema:name "Piggy" ;
+    schema:url <https://www.imdb.com/title/tt1951218/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4534098/> ;
+        schema:characterName "Jamie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3122317593/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Five years post-Jurassic World Dominion, an expedition braves isolated equatorial regions to extract DNA from three massive prehistoric creatures for a groundbreaking medical breakthrough." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3122317593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGEzMDgwNWItOWI3Yi00ZGYzLTk5ZGEtM2QyZmNkZTM5NWE5XkEyXkFqcGdeQWFybm8@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2025-02-05T13:53:28Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDQ2MTUzMTktYTY0My00ODRlLTg0MWQtMDQwYzY4ZTQxNGViXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDQ2MTUzMTktYTY0My00ODRlLTg0MWQtMDQwYzY4ZTQxNGViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein at an event for Mona Lisa and the Blood Moon (2021)" ;
+    schema:height "5253"^^xsd:integer ;
+    schema:width "3502"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm3226164737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ1YjM3MzUtZDhkYy00MjA5LThjMmMtYjQ2ZThmNjE4OTliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein in Rebel Moon - Part One: A Child of Fire (2023)" ;
+    schema:height "7200"^^xsd:integer ;
+    schema:width "4800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm3343605249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGEwMzgwMTYtOTkzOC00NGI3LTg2MTktNTE1NjNmZGMyNzRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Justin M. Lubin and Ed Skrein in Rebel Moon - Part One: A Child of Fire (2023)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm4243726593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTI1YzI4MWQtZDFkMy00MmNiLWE2MjItMzVmNzhkNDY1NjUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein in Rebel Moon - Part One: A Child of Fire (2023)" ;
+    schema:height "7200"^^xsd:integer ;
+    schema:width "4800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm4075954433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDQ0YmU3MmQtZjA5ZS00YWM2LWFiNjktYWQ5OWJiZjFkMDk3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein in Rebel Moon - Part One: A Child of Fire (2023)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm2365984257/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjdmZTFkZWUtMzQyNi00Mjg5LWI3YzYtNzY2Mjc5MWFlNTc2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein in I Used to Be Famous (2022)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm2382761473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTI1ZGYwNzQtYmY4My00MzkyLTllMWMtZTk5YWJmMjRiN2Q5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leo Long and Ed Skrein in I Used to Be Famous (2022)" ;
+    schema:height "2398"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm2399538689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDJmOTA2MDMtZDczNy00ZTFkLWFhZTgtNjJlNDIyZjM1MDIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leo Long and Ed Skrein in I Used to Be Famous (2022)" ;
+    schema:height "1506"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm3146007808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzViMDg3YmMtMWExOC00MWE3LTk5MjYtNjJhYmFkYTVjZDdhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Skrein in Deadpool (2016)" ;
+    schema:height "1103"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4534098/mediaviewer/rm3062121728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWI0YTM1NTEtOTA1Ni00YmI3LTlkNDktMjEwZDYxMzQwNmYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ryan Reynolds and Ed Skrein in Deadpool (2016)" ;
+    schema:height "1103"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm4534098/>
+    schema:sameAs <https://www.instagram.com/edskrein/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

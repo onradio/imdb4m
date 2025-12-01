@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0548373/> a schema:Person ;
+    schema:name "Philip Markert" ;
+    schema:url <https://www.imdb.com/name/nm0548373/> ;
+    schema:birthDate "1932-01-14"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Phil" ;
+    schema:description "Philip Markert. Actor: Blue Velvet. Philip Markert was born on 14 January 1932 in Massachusetts, USA. He was an actor, known for Blue Velvet (1986), Marie (1985) and Unsolved Mysteries with Dennis Farina (1987). He was married to Deborah Dye. He died on 29 May 2024 in Syracuse, New York, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Massachusetts, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094574/>,    # Unsolved Mysteries with Dennis Farina
+                       <https://www.imdb.com/title/tt0090756/>,    # Blue Velvet
+                       <https://www.imdb.com/title/tt0089555/> . # Marie
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Unsolved Mysteries with Dennis Farina (1990)
+<https://www.imdb.com/title/tt0094574/> a schema:Movie ;
+    schema:name "Unsolved Mysteries with Dennis Farina" ;
+    schema:url <https://www.imdb.com/title/tt0094574/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0548373/> ;
+        schema:characterName "Bernard"
+    ] .
+
+# Blue Velvet (1986)
+<https://www.imdb.com/title/tt0090756/> a schema:Movie ;
+    schema:name "Blue Velvet" ;
+    schema:url <https://www.imdb.com/title/tt0090756/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0548373/> ;
+        schema:characterName "Dr. Gynde"
+    ] .
+
+# Marie (1985)
+<https://www.imdb.com/title/tt0089555/> a schema:Movie ;
+    schema:name "Marie" ;
+    schema:url <https://www.imdb.com/title/tt0089555/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0548373/> ;
+        schema:characterName "Judge"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

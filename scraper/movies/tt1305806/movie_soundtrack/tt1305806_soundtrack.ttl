@@ -1,0 +1,54 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1305806/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Tema de Liliana" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tema de Liliana" ;
+            schema:author <https://www.imdb.com/name/nm0441985/> # Emilio Kauderer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Réquiem" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Réquiem" ;
+            schema:author <https://www.imdb.com/name/nm0441985/> # Emilio Kauderer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Morales" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Morales" ;
+            schema:author <https://www.imdb.com/name/nm0441985/> # Emilio Kauderer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tema de Irene" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tema de Irene" ;
+            schema:author <https://www.imdb.com/name/nm0441985/> # Emilio Kauderer
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0441985/> a schema:Person ;
+    schema:name "Emilio Kauderer" .
+# ==============================================================================

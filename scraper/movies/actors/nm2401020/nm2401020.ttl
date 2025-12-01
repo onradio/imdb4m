@@ -1,0 +1,385 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2401020/> a schema:Person ;
+    schema:name "Will Poulter" ;
+    schema:url <https://www.imdb.com/name/nm2401020/> ;
+    schema:birthDate "1993-01-28"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:alternateName "William Jack Poulter" ;
+    schema:description "Will Poulter. Actor: We're the Millers. Will Poulter is an English actor, recognized for his performances as Lee Carter in Son of Rambow (2007), Eustace Scrubb in The Chronicles of Narnia: The Voyage of the Dawn Treader (2010), and Kenny Rossmore in We're the Millers (2013). Will was born in Hammersmith, London, the son of Caroline (Barrah), a nurse, and Neil Poulter, a professor of cardiology. His mother was raised..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzIwYWY0MzgtNGMxYS00NWFjLTkwZmEtYmJhMWViNWFmZjQwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1723121/>,    # We're the Millers
+                       <https://www.imdb.com/title/tt0980970/>,    # The Chronicles of Narnia: The Voyage of the Dawn Treader
+                       <https://www.imdb.com/title/tt1790864/>,    # The Maze Runner
+                       <https://www.imdb.com/title/tt5390504/>,    # Detroit
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt9344180/>,    # Bainne
+                       <https://www.imdb.com/title/tt8772262/>,    # Midsommar
+                       <https://www.imdb.com/title/tt9495224/>,    # Black Mirror: Bandersnatch
+                       <https://www.imdb.com/title/tt6859762/>,    # The Little Stranger
+                       <https://www.imdb.com/title/tt4500922/>,    # Maze Runner: The Death Cure
+                       <https://www.imdb.com/title/tt4758646/>,    # War Machine
+                       <https://www.imdb.com/title/tt3215826/>,    # Kids in Love
+                       <https://www.imdb.com/title/tt1663202/>,    # The Revenant
+                       <https://www.imdb.com/title/tt4011642/>,    # A Plea for Grimsby
+                       <https://www.imdb.com/title/tt3407428/>,    # Glassland
+                       <https://www.imdb.com/title/tt2556874/>,    # Plastic
+                       <https://www.imdb.com/title/tt30801717/>,    # Rizzle Kicks: Skip to the Good Bit
+                       <https://www.imdb.com/title/tt1795702/>,    # Wild Bill
+                       <https://www.imdb.com/title/tt1772379/>,    # The Fades
+                       <https://www.imdb.com/title/tt1450002/>,    # School of Comedy
+                       <https://www.imdb.com/title/tt0757084/>,    # Lead Balloon
+                       <https://www.imdb.com/title/tt0178131/>,    # Comedy Lab
+                       <https://www.imdb.com/title/tt0908201/>,    # Comedy: Shuffle
+                       <https://www.imdb.com/title/tt0845046/> ; # Son of Rambow
+
+    schema:award [
+        a schema:Award ;
+        schema:description "5 wins & 26 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1919206425/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2401020/mediaviewer/rm3224868865/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm3291977729/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm1890874624/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm2142532864/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm2125755648/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm4171855104/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm789948418/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm2265758722/>,
+                 <https://www.imdb.com/name/nm2401020/mediaviewer/rm4164257282/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1723121/> a schema:Movie ;
+    schema:name "We're the Millers" ;
+    schema:url <https://www.imdb.com/title/tt1723121/> .
+
+<https://www.imdb.com/title/tt0980970/> a schema:Movie ;
+    schema:name "The Chronicles of Narnia: The Voyage of the Dawn Treader" ;
+    schema:url <https://www.imdb.com/title/tt0980970/> .
+
+<https://www.imdb.com/title/tt1790864/> a schema:Movie ;
+    schema:name "The Maze Runner" ;
+    schema:url <https://www.imdb.com/title/tt1790864/> .
+
+<https://www.imdb.com/title/tt5390504/> a schema:Movie ;
+    schema:name "Detroit" ;
+    schema:url <https://www.imdb.com/title/tt5390504/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bainne (2019)
+<https://www.imdb.com/title/tt9344180/> a schema:Movie ;
+    schema:name "Bainne" ;
+    schema:url <https://www.imdb.com/title/tt9344180/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName ""
+    ] .
+
+# Midsommar (2019)
+<https://www.imdb.com/title/tt8772262/> a schema:Movie ;
+    schema:name "Midsommar" ;
+    schema:url <https://www.imdb.com/title/tt8772262/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Mark"
+    ] .
+
+# Black Mirror: Bandersnatch (2018)
+<https://www.imdb.com/title/tt9495224/> a schema:Movie ;
+    schema:name "Black Mirror: Bandersnatch" ;
+    schema:url <https://www.imdb.com/title/tt9495224/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Colin Ritman"
+    ] .
+
+# The Little Stranger (2018)
+<https://www.imdb.com/title/tt6859762/> a schema:Movie ;
+    schema:name "The Little Stranger" ;
+    schema:url <https://www.imdb.com/title/tt6859762/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Roderick Ayres"
+    ] .
+
+# Maze Runner: The Death Cure (2018)
+<https://www.imdb.com/title/tt4500922/> a schema:Movie ;
+    schema:name "Maze Runner: The Death Cure" ;
+    schema:url <https://www.imdb.com/title/tt4500922/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Gally"
+    ] .
+
+# War Machine (2017)
+<https://www.imdb.com/title/tt4758646/> a schema:Movie ;
+    schema:name "War Machine" ;
+    schema:url <https://www.imdb.com/title/tt4758646/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Ricky Ortega"
+    ] .
+
+# Kids in Love (2016)
+<https://www.imdb.com/title/tt3215826/> a schema:Movie ;
+    schema:name "Kids in Love" ;
+    schema:url <https://www.imdb.com/title/tt3215826/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Jack"
+    ] .
+
+# The Revenant (2015)
+<https://www.imdb.com/title/tt1663202/> a schema:Movie ;
+    schema:name "The Revenant" ;
+    schema:url <https://www.imdb.com/title/tt1663202/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Bridger"
+    ] .
+
+# A Plea for Grimsby (2015)
+<https://www.imdb.com/title/tt4011642/> a schema:Movie ;
+    schema:name "A Plea for Grimsby" ;
+    schema:url <https://www.imdb.com/title/tt4011642/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Jone"
+    ] .
+
+# Glassland (2014)
+<https://www.imdb.com/title/tt3407428/> a schema:Movie ;
+    schema:name "Glassland" ;
+    schema:url <https://www.imdb.com/title/tt3407428/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Shane"
+    ] .
+
+# Plastic (2014)
+<https://www.imdb.com/title/tt2556874/> a schema:Movie ;
+    schema:name "Plastic" ;
+    schema:url <https://www.imdb.com/title/tt2556874/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Fordy"
+    ] .
+
+# Rizzle Kicks: Skip to the Good Bit (2013)
+<https://www.imdb.com/title/tt30801717/> a schema:Movie ;
+    schema:name "Rizzle Kicks: Skip to the Good Bit" ;
+    schema:url <https://www.imdb.com/title/tt30801717/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "School Janitor"
+    ] .
+
+# Wild Bill (2011)
+<https://www.imdb.com/title/tt1795702/> a schema:Movie ;
+    schema:name "Wild Bill" ;
+    schema:url <https://www.imdb.com/title/tt1795702/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Dean"
+    ] .
+
+# The Fades (2011)
+<https://www.imdb.com/title/tt1772379/> a schema:Movie ;
+    schema:name "The Fades" ;
+    schema:url <https://www.imdb.com/title/tt1772379/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Mac"
+    ] .
+
+# School of Comedy (2009)
+<https://www.imdb.com/title/tt1450002/> a schema:Movie ;
+    schema:name "School of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt1450002/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Various"
+    ] .
+
+# Lead Balloon (2008)
+<https://www.imdb.com/title/tt0757084/> a schema:Movie ;
+    schema:name "Lead Balloon" ;
+    schema:url <https://www.imdb.com/title/tt0757084/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Sweet Throwing Boy"
+    ] .
+
+# Comedy Lab (2008)
+<https://www.imdb.com/title/tt0178131/> a schema:Movie ;
+    schema:name "Comedy Lab" ;
+    schema:url <https://www.imdb.com/title/tt0178131/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Various"
+    ] .
+
+# Comedy: Shuffle (2007)
+<https://www.imdb.com/title/tt0908201/> a schema:Movie ;
+    schema:name "Comedy: Shuffle" ;
+    schema:url <https://www.imdb.com/title/tt0908201/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Latvian Father"
+    ] .
+
+# Son of Rambow (2007)
+<https://www.imdb.com/title/tt0845046/> a schema:Movie ;
+    schema:name "Son of Rambow" ;
+    schema:url <https://www.imdb.com/title/tt0845046/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401020/> ;
+        schema:characterName "Lee Carter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1919206425/> a schema:VideoObject ;
+        schema:name "How Well Do Chris Pratt and the &apos;Guardians&apos; Really Know One Another?" ;
+        schema:description "'Guardians of the Galaxy Vol. 3' stars Chris Pratt, Karen Gillan, Pom Klementieff, Will Poulter, and Chukwudi Iwuji join writer-director James Gunn to test one another's knowledge of their personal cinematic universes. Find out who has a series of celebrity impersonations up their sleeve, which cast member was slated to play Pennywise in 'It,' and who rocked out in the nude on \"The O.C.\"" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1919206425/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTYzNTZlMjYtYjg1ZS00YzRiLTg5MWYtNzE1NDM0M2VmMTQ0XkEyXkFqcGdeQWplZmZscA@@._V1_.jpg" ;
+        schema:duration "PT4M1S"^^xsd:duration ;
+        schema:uploadDate "2023-05-03T19:55:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzIwYWY0MzgtNGMxYS00NWFjLTkwZmEtYmJhMWViNWFmZjQwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzIwYWY0MzgtNGMxYS00NWFjLTkwZmEtYmJhMWViNWFmZjQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Will Poulter" ;
+    schema:height "430"^^xsd:integer ;
+    schema:width "527"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm3224868865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDZjNWQ4YzUtZjdiNy00ZTBiLWIyODEtNjA1YzdiMTkzYmI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Will Poulter, William Jackson Harper, and Jack Reynor in Midsommar (2019)" ;
+    schema:height "2832"^^xsd:integer ;
+    schema:width "4240"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm3291977729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWJlYzUzNTMtNGU3ZS00YWY3LWI2NWMtYmYzM2QzMjc2MGYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mats Blomgren, Julia Ragnarsson, Will Poulter, William Jackson Harper, Jack Reynor, Ellora Torchia, Anders Back, Archie Madekwe, Hampus Hallberg, and Vilhelm Blomgren in Midsommar (2019)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm1890874624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzNDk3MDM3MV5BMl5BanBnXkFtZTgwNDQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Will Poulter and Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm2142532864/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMyMDA1OTY3N15BMl5BanBnXkFtZTgwNTQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Will Poulter, Asim Chaudhry, and Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1357"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm2125755648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI4NjE4NjQ0NV5BMl5BanBnXkFtZTgwNjQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Will Poulter in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm4171855104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQ4Mzg1ODYwMF5BMl5BanBnXkFtZTgwODYyMTQwNzM@._V1_.jpg> ;
+    schema:caption "Will Poulter, Asim Chaudhry, and Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm789948418/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTYwMzNjYmEtNWEwNi00MzE3LTk2ZTQtZWQ3YmYyM2M3YWEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Will Poulter in Death of a Unicorn (2025)" ;
+    schema:height "1400"^^xsd:integer ;
+    schema:width "1400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm2265758722/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAxMWY2NDQtNDc0Zi00NDc5LWEyYzgtZDZmMzBiNjYyNTlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Téa Leoni, Paul Rudd, Jessica Hynes, Will Poulter, Anthony Carrigan, and Jenna Ortega in Death of a Unicorn (2025)" ;
+    schema:height "3960"^^xsd:integer ;
+    schema:width "5939"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2401020/mediaviewer/rm4164257282/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzM4ZGY1OTItMjYzOS00ZmE5LTg3N2MtMWUxODliYjQ0YTk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Téa Leoni, Richard E. Grant, Paul Rudd, and Will Poulter in Death of a Unicorn (2025)" ;
+    schema:height "673"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2401020/>
+    schema:sameAs <https://www.instagram.com/willpoulter> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

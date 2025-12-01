@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0435761/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "We Belong Together" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+        schema:producer <https://www.imdb.com/name/nm0296434/> ; # Mitchell Froom
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "We Belong Together" ;
+            schema:author <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got A Friend In Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You've Got A Friend In Me" ;
+            schema:author <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got A Friend In Me (para Buzz Español)" ;
+        schema:byArtist <https://www.imdb.com/name/nm2437054/> ; # Gipsy Kings
+        schema:producer <https://www.imdb.com/name/nm2903315/>, # Tonino Baliardo
+                       <https://www.imdb.com/name/nm1399988/> ; # Nicolas Reyes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You've Got A Friend In Me (para Buzz Español)" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+            schema:lyricist <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dream Weaver" ;
+        schema:byArtist <https://www.imdb.com/name/nm1134495/> ; # Gary Wright
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dream Weaver" ;
+            schema:author <https://www.imdb.com/name/nm1134495/> # Gary Wright
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Le Freak" ;
+        schema:byArtist <https://www.imdb.com/name/nm1379581/> ; # Chic
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Le Freak" ;
+            schema:author <https://www.imdb.com/name/nm0249821/>, # Bernard Edwards
+                       <https://www.imdb.com/name/nm0734755/> # Nile Rodgers
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Will Go Sailing No More" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Will Go Sailing No More" ;
+            schema:composer <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005271/> a schema:Person ;
+    schema:name "Randy Newman" .
+<https://www.imdb.com/name/nm0249821/> a schema:Person ;
+    schema:name "Bernard Edwards" .
+<https://www.imdb.com/name/nm0296434/> a schema:Person ;
+    schema:name "Mitchell Froom" .
+<https://www.imdb.com/name/nm0734755/> a schema:Person ;
+    schema:name "Nile Rodgers" .
+<https://www.imdb.com/name/nm1134495/> a schema:Person ;
+    schema:name "Gary Wright" .
+<https://www.imdb.com/name/nm1379581/> a schema:Person ;
+    schema:name "Chic" .
+<https://www.imdb.com/name/nm1399988/> a schema:Person ;
+    schema:name "Nicolas Reyes" .
+<https://www.imdb.com/name/nm2437054/> a schema:Person ;
+    schema:name "Gipsy Kings" .
+<https://www.imdb.com/name/nm2903315/> a schema:Person ;
+    schema:name "Tonino Baliardo" .
+# ==============================================================================

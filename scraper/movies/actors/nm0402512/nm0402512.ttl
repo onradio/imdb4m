@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0402512/> a schema:Person ;
+    schema:name "Joseph Hunt" ;
+    schema:url <https://www.imdb.com/name/nm0402512/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Joseph Hunt. Actor: When Harry Met Sally. Joseph Hunt is known for When Harry Met Sally (1989), Monk (2002) and Room Serviced (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1697716/>,    # Room Serviced
+                       <https://www.imdb.com/title/tt0312172/>,    # Monk
+                       <https://www.imdb.com/title/tt0098635/> . # When Harry Met Sally
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Room Serviced (2010)
+<https://www.imdb.com/title/tt1697716/> a schema:Movie ;
+    schema:name "Room Serviced" ;
+    schema:url <https://www.imdb.com/title/tt1697716/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0402512/> ;
+        schema:characterName "Drug Thug Driver"
+    ] .
+
+# Monk (2007)
+<https://www.imdb.com/title/tt0312172/> a schema:Movie ;
+    schema:name "Monk" ;
+    schema:url <https://www.imdb.com/title/tt0312172/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0402512/> ;
+        schema:characterName "Michael"
+    ] .
+
+# When Harry Met Sally (1989)
+<https://www.imdb.com/title/tt0098635/> a schema:Movie ;
+    schema:name "When Harry Met Sally" ;
+    schema:url <https://www.imdb.com/title/tt0098635/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0402512/> ;
+        schema:characterName "Waiter at Wedding"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

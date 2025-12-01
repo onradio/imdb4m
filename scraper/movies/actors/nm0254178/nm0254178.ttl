@@ -1,0 +1,136 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0254178/> a schema:Person ;
+    schema:name "Adam Elliot" ;
+    schema:url <https://www.imdb.com/name/nm0254178/> ;
+    schema:birthDate "1972-01-02"^^xsd:date ;
+    schema:jobTitle "Director", "Writer", "Animation Department" ;
+    schema:description "Adam Elliot. Director: Mary and Max. Grew up on a shrimp farm in southern Australia together with two brothers, one sister and two parrots. He discerned his artistic abilities at an early age and spent five years studying photography, painting, pottery etc. In 1996 he began his studies at the Victorian College of the Arts where Uncle (1996), the first part of his trilogy, was made. After he graduated in..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjIwNzg2MDYzOF5BMl5BanBnXkFtZTcwMjAyMDYyMg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Australia, Australia"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0978762/>,    # Mary and Max
+                       <https://www.imdb.com/title/tt36475882/> ; # Human Behavioural Case Studies, Series One
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi784205081/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0254178/mediaviewer/rm1277205760/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2153286144/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2388167168/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2371389952/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2337835520/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2539162112/>,
+                 <https://www.imdb.com/name/nm0254178/mediaviewer/rm2404944384/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mary and Max (2009)
+<https://www.imdb.com/title/tt0978762/> a schema:Movie ;
+    schema:name "Mary and Max" ;
+    schema:url <https://www.imdb.com/title/tt0978762/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0254178/> ;
+        schema:characterName "Dr. Bernard Hazelhof"
+    ] .
+
+# Human Behavioural Case Studies, Series One (1996)
+<https://www.imdb.com/title/tt36475882/> a schema:Movie ;
+    schema:name "Human Behavioural Case Studies, Series One" ;
+    schema:url <https://www.imdb.com/title/tt36475882/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0254178/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi784205081/> a schema:VideoObject ;
+        schema:name "Mary and Max" ;
+        schema:description "A tale of friendship between two unlikely pen pals: Mary, a lonely, eight-year-old girl living in the suburbs of Melbourne, and Max, a forty-four-year old, severely obese man living in New York." ;
+        schema:embedUrl <https://www.imdb.com/video/vi784205081/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk1NDgwMzk5NV5BMl5BanBnXkFtZTcwNjc0ODM5Mg@@._V1_.jpg" ;
+        schema:duration "PT2M32S"^^xsd:duration ;
+        schema:uploadDate "2009-10-27T07:37:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjIwNzg2MDYzOF5BMl5BanBnXkFtZTcwMjAyMDYyMg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNzg2MDYzOF5BMl5BanBnXkFtZTcwMjAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "292"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm1277205760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDg2NTU4MTQzMl5BMl5BanBnXkFtZTcwMzE2NTAzMQ@@._V1_.jpg> ;
+    schema:caption "Adam Elliot" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2153286144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjYwNTg5MDI0Ml5BMl5BanBnXkFtZTcwMTAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Melanie Coombs and Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "301"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2388167168/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg5OTgyNzQ1Nl5BMl5BanBnXkFtZTcwMzAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Melanie Coombs and Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "280"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2371389952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMDc4MTA1NV5BMl5BanBnXkFtZTcwNDAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Melanie Coombs and Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "273"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2337835520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzE4MDg4ODIzM15BMl5BanBnXkFtZTcwNjAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Robert Redford, Melanie Coombs, and Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "263"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2539162112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0OTQ1NTczMF5BMl5BanBnXkFtZTcwMDEyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Robert Redford and Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "275"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0254178/mediaviewer/rm2404944384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNzg2MDYzOF5BMl5BanBnXkFtZTcwMjAyMDYyMg@@._V1_.jpg> ;
+    schema:caption "Adam Elliot at an event for Mary and Max (2009)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "292"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

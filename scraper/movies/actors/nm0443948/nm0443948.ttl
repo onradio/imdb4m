@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0443948/> a schema:Person ;
+    schema:name "Joseph Kearney" ;
+    schema:url <https://www.imdb.com/name/nm0443948/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Joseph Kearney. Actor: Mulholland Drive. Joseph Kearney is known for Mulholland Drive (2001), Mulholland Dr. (1999) and Playboy: Girls Next Door, Naughty and Nice (1997)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYzJlYjhmMjMtYmI0ZC00MDdlLTk0Y2UtNGY1NjU3MmQ2MzU0XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0166924/>,    # Mulholland Drive
+                       <https://www.imdb.com/title/tt1619856/> ; # Mulholland Dr.
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0443948/mediaviewer/rm826054656/>,
+                 <https://www.imdb.com/name/nm0443948/mediaviewer/rm831267328/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mulholland Drive (2001)
+<https://www.imdb.com/title/tt0166924/> a schema:Movie ;
+    schema:name "Mulholland Drive" ;
+    schema:url <https://www.imdb.com/title/tt0166924/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443948/> ;
+        schema:characterName "Roque's Manservant"
+    ] .
+
+# Mulholland Dr. (1999)
+<https://www.imdb.com/title/tt1619856/> a schema:Movie ;
+    schema:name "Mulholland Dr." ;
+    schema:url <https://www.imdb.com/title/tt1619856/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0443948/> ;
+        schema:characterName "Roque's Manservant"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYzJlYjhmMjMtYmI0ZC00MDdlLTk0Y2UtNGY1NjU3MmQ2MzU0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzJlYjhmMjMtYmI0ZC00MDdlLTk0Y2UtNGY1NjU3MmQ2MzU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael J. Anderson and Joseph Kearney in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0443948/mediaviewer/rm826054656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxNTg1MzMzOF5BMl5BanBnXkFtZTYwMjAzOTc2._V1_.jpg> ;
+    schema:caption "Michael J. Anderson and Joseph Kearney in Mulholland Drive (2001)" ;
+    schema:height "305"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0443948/mediaviewer/rm831267328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzJlYjhmMjMtYmI0ZC00MDdlLTk0Y2UtNGY1NjU3MmQ2MzU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael J. Anderson and Joseph Kearney in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

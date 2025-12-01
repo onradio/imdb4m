@@ -1,0 +1,401 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1200692/> a schema:Person ;
+    schema:name "Eva Green" ;
+    schema:url <https://www.imdb.com/name/nm1200692/> ;
+    schema:birthDate "1980-07-06"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Production Department" ;
+    schema:alternateName "Eva Gaëlle Green" ;
+    schema:description "Eva Green. Actress: Casino Royale. French actress and model Eva Gaëlle Green was born on July 6, 1980, in Paris, France. Her father, Walter Green, is a dentist who appeared in the 1966 film Au hasard Balthazar (1966). Her mother, Marlène Jobert, is an actress turned children's book writer. Eva's mother was born in Algeria, of French, Spanish, and Sephardic Jewish heritage (during that time, Algeria was part of France),..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ0MDA2ODE2Ml5BMl5BanBnXkFtZTcwMjI0Nzc3Nw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Paris, France"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0381061/>,    # Casino Royale
+                       <https://www.imdb.com/title/tt0320661/>,    # Kingdom of Heaven
+                       <https://www.imdb.com/title/tt0458481/>,    # Sin City: A Dame to Kill For
+                       <https://www.imdb.com/title/tt2628232/>,    # Penny Dreadful
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7374926/>,    # Proxima
+                       <https://www.imdb.com/title/tt3861390/>,    # Dumbo
+                       <https://www.imdb.com/title/tt5698320/>,    # Euphoria
+                       <https://www.imdb.com/title/tt5893264/>,    # Based on a True Story
+                       <https://www.imdb.com/title/tt1935859/>,    # Miss Peregrine's Home for Peculiar Children
+                       <https://www.imdb.com/title/tt2720680/>,    # The Salvation
+                       <https://www.imdb.com/title/tt1253863/>,    # 300: Rise of an Empire
+                       <https://www.imdb.com/title/tt2238050/>,    # White Bird in a Blizzard
+                       <https://www.imdb.com/title/tt1077368/>,    # Dark Shadows
+                       <https://www.imdb.com/title/tt1672189/>,    # Camelot
+                       <https://www.imdb.com/title/tt1439572/>,    # Perfect Sense
+                       <https://www.imdb.com/title/tt1216520/>,    # Clone
+                       <https://www.imdb.com/title/tt1183665/>,    # Cracks
+                       <https://www.imdb.com/title/tt1139644/>,    # 007: Quantum of Solace
+                       <https://www.imdb.com/title/tt0893402/>,    # Franklyn
+                       <https://www.imdb.com/title/tt0385752/>,    # The Golden Compass
+                       <https://www.imdb.com/title/tt11891806/>,    # Heineken 'Casino Royale' Television Commercial
+                       <https://www.imdb.com/title/tt0373690/>,    # Adventures of Arsene Lupin
+                       <https://www.imdb.com/title/tt0309987/>,    # The Dreamers
+                       <https://www.imdb.com/title/tt0254686/> ; # The Piano Teacher
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Rising Star Award"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "6 wins & 24 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1708178201/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1200692/mediaviewer/rm975076865/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm1042185729/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm1058962945/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm648030977/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm2928489473/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm2743940097/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm1586312193/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm4205327361/>,
+                 <https://www.imdb.com/name/nm1200692/mediaviewer/rm212154113/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0381061/> a schema:Movie ;
+    schema:name "Casino Royale" ;
+    schema:url <https://www.imdb.com/title/tt0381061/> .
+
+<https://www.imdb.com/title/tt0320661/> a schema:Movie ;
+    schema:name "Kingdom of Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0320661/> .
+
+<https://www.imdb.com/title/tt0458481/> a schema:Movie ;
+    schema:name "Sin City: A Dame to Kill For" ;
+    schema:url <https://www.imdb.com/title/tt0458481/> .
+
+<https://www.imdb.com/title/tt2628232/> a schema:Movie ;
+    schema:name "Penny Dreadful" ;
+    schema:url <https://www.imdb.com/title/tt2628232/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Proxima (2019)
+<https://www.imdb.com/title/tt7374926/> a schema:Movie ;
+    schema:name "Proxima" ;
+    schema:url <https://www.imdb.com/title/tt7374926/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Sarah Loreau"
+    ] .
+
+# Dumbo (2019)
+<https://www.imdb.com/title/tt3861390/> a schema:Movie ;
+    schema:name "Dumbo" ;
+    schema:url <https://www.imdb.com/title/tt3861390/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Colette Marchant"
+    ] .
+
+# Euphoria (2017)
+<https://www.imdb.com/title/tt5698320/> a schema:Movie ;
+    schema:name "Euphoria" ;
+    schema:url <https://www.imdb.com/title/tt5698320/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Emilie"
+    ] .
+
+# Based on a True Story (2017)
+<https://www.imdb.com/title/tt5893264/> a schema:Movie ;
+    schema:name "Based on a True Story" ;
+    schema:url <https://www.imdb.com/title/tt5893264/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Elle"
+    ] .
+
+# Miss Peregrine's Home for Peculiar Children (2016)
+<https://www.imdb.com/title/tt1935859/> a schema:Movie ;
+    schema:name "Miss Peregrine's Home for Peculiar Children" ;
+    schema:url <https://www.imdb.com/title/tt1935859/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Miss Peregrine"
+    ] .
+
+# The Salvation (2014)
+<https://www.imdb.com/title/tt2720680/> a schema:Movie ;
+    schema:name "The Salvation" ;
+    schema:url <https://www.imdb.com/title/tt2720680/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Madelaine"
+    ] .
+
+# 300: Rise of an Empire (2014)
+<https://www.imdb.com/title/tt1253863/> a schema:Movie ;
+    schema:name "300: Rise of an Empire" ;
+    schema:url <https://www.imdb.com/title/tt1253863/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Artemisia"
+    ] .
+
+# White Bird in a Blizzard (2014)
+<https://www.imdb.com/title/tt2238050/> a schema:Movie ;
+    schema:name "White Bird in a Blizzard" ;
+    schema:url <https://www.imdb.com/title/tt2238050/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Eve Connors"
+    ] .
+
+# Dark Shadows (2012)
+<https://www.imdb.com/title/tt1077368/> a schema:Movie ;
+    schema:name "Dark Shadows" ;
+    schema:url <https://www.imdb.com/title/tt1077368/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Angelique Bouchard"
+    ] .
+
+# Camelot (2011)
+<https://www.imdb.com/title/tt1672189/> a schema:Movie ;
+    schema:name "Camelot" ;
+    schema:url <https://www.imdb.com/title/tt1672189/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Morgan"
+    ] .
+
+# Perfect Sense (2011)
+<https://www.imdb.com/title/tt1439572/> a schema:Movie ;
+    schema:name "Perfect Sense" ;
+    schema:url <https://www.imdb.com/title/tt1439572/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Susan"
+    ] .
+
+# Clone (2010)
+<https://www.imdb.com/title/tt1216520/> a schema:Movie ;
+    schema:name "Clone" ;
+    schema:url <https://www.imdb.com/title/tt1216520/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Rebecca"
+    ] .
+
+# Cracks (2009)
+<https://www.imdb.com/title/tt1183665/> a schema:Movie ;
+    schema:name "Cracks" ;
+    schema:url <https://www.imdb.com/title/tt1183665/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Miss G"
+    ] .
+
+# 007: Quantum of Solace (2008)
+<https://www.imdb.com/title/tt1139644/> a schema:Movie ;
+    schema:name "007: Quantum of Solace" ;
+    schema:url <https://www.imdb.com/title/tt1139644/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Vesper Lynd"
+    ] .
+
+# Franklyn (2008)
+<https://www.imdb.com/title/tt0893402/> a schema:Movie ;
+    schema:name "Franklyn" ;
+    schema:url <https://www.imdb.com/title/tt0893402/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Emilia"
+    ] .
+
+# The Golden Compass (2007)
+<https://www.imdb.com/title/tt0385752/> a schema:Movie ;
+    schema:name "The Golden Compass" ;
+    schema:url <https://www.imdb.com/title/tt0385752/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Serafina Pekkala"
+    ] .
+
+# Heineken 'Casino Royale' Television Commercial (2006)
+<https://www.imdb.com/title/tt11891806/> a schema:Movie ;
+    schema:name "Heineken 'Casino Royale' Television Commercial" ;
+    schema:url <https://www.imdb.com/title/tt11891806/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Vesper Lynd"
+    ] .
+
+# Adventures of Arsene Lupin (2004)
+<https://www.imdb.com/title/tt0373690/> a schema:Movie ;
+    schema:name "Adventures of Arsene Lupin" ;
+    schema:url <https://www.imdb.com/title/tt0373690/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Clarisse de Dreux-Soubise"
+    ] .
+
+# The Dreamers (2003)
+<https://www.imdb.com/title/tt0309987/> a schema:Movie ;
+    schema:name "The Dreamers" ;
+    schema:url <https://www.imdb.com/title/tt0309987/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "Isabelle"
+    ] .
+
+# The Piano Teacher (2001)
+<https://www.imdb.com/title/tt0254686/> a schema:Movie ;
+    schema:name "The Piano Teacher" ;
+    schema:url <https://www.imdb.com/title/tt0254686/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1200692/> ;
+        schema:characterName "La petite amie de Walter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1708178201/> a schema:VideoObject ;
+        schema:name "Eva Green: Movie and TV Moments" ;
+        schema:description "Take a closer look at the various roles Eva Green has played throughout her acting career." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1708178201/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTE2ZTFkYWEtYWUwMS00NzhiLThkOTQtOTNlYmY3Mjg5MGUxXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M40S"^^xsd:duration ;
+        schema:uploadDate "2018-07-09T15:19:57Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ0MDA2ODE2Ml5BMl5BanBnXkFtZTcwMjI0Nzc3Nw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0MDA2ODE2Ml5BMl5BanBnXkFtZTcwMjI0Nzc3Nw@@._V1_.jpg> ;
+    schema:caption "Michelle Pfeiffer and Eva Green at an event for Dark Shadows (2012)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1307"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm975076865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FkNDZhYTktN2Q1NS00NmEyLWJiOWYtZTJlYTkwNTJlYTYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eva Green in Proxima (2019)" ;
+    schema:height "596"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm1042185729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjVjYmZlZDUtOTUwZi00NTliLWI4MDEtODI0MmI1OTA3MDZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eva Green in Proxima (2019)" ;
+    schema:height "674"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm1058962945/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTlmYmFhNzQtNmM5MS00ZjU1LWFmMmMtZGJjMzMwZjYzMGZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eva Green in Proxima (2019)" ;
+    schema:height "547"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm648030977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjk5ODE4YWEtNTQyZS00YjBmLTgxZjAtYjQ5M2UxODc0ZjllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vincent Cassel and Eva Green in Liaison (2023)" ;
+    schema:height "565"^^xsd:integer ;
+    schema:width "1039"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm2928489473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQ1N2FjYTgtOGExNC00Mjc0LWIyNTUtMjNiM2VkMWIyNGI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Francis & Eva Green - Liaison (AppleTV)" ;
+    schema:height "631"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm2743940097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjRkZDgxOGMtMmQ2MC00ZDliLTkzOGQtM2QzYTJlNDQyMTIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Francis & Eva Green - Liaison (AppleTV)" ;
+    schema:height "854"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm1586312193/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDU1MzNiMjctYWQ0OC00N2Q5LTlmOWYtMTAzNDdiYmU2ZGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Francis & Eva Green - Liaison" ;
+    schema:height "854"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm4205327361/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjAwNTMxODMtMWRkZC00ZjRkLWIxMzAtNGUzYTBjOTEzZGFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Patrick Kennedy and Eva Green in Liaison (2023)" ;
+    schema:height "574"^^xsd:integer ;
+    schema:width "1035"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1200692/mediaviewer/rm212154113/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjExODQ1ZWYtOTQxNy00NjJkLThmYTYtMjY0YmNhNDFiZTE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eva Green in Liaison (2023)" ;
+    schema:height "589"^^xsd:integer ;
+    schema:width "1021"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1200692/>
+    schema:sameAs <https://www.instagram.com/evagreenweb/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

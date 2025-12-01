@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3912874/> a schema:Person ;
+    schema:name "Kian Murphy" ;
+    schema:url <https://www.imdb.com/name/nm3912874/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kian Murphy. Actor: Sing Street. Kian Murphy is known for Sing Street (2016), Glassland (2014) and Portrait of a Zombie (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7390284/>,    # Darklands
+                       <https://www.imdb.com/title/tt3544112/>,    # Sing Street
+                       <https://www.imdb.com/title/tt1319688/>,    # Roy
+                       <https://www.imdb.com/title/tt3407428/>,    # Glassland
+                       <https://www.imdb.com/title/tt2750168/>,    # Horse in the Hole
+                       <https://www.imdb.com/title/tt1566938/> . # Portrait of a Zombie
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Darklands (2019)
+<https://www.imdb.com/title/tt7390284/> a schema:Movie ;
+    schema:name "Darklands" ;
+    schema:url <https://www.imdb.com/title/tt7390284/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Ste Whelan"
+    ] .
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Mick Mahon"
+    ] .
+
+# Roy (2014)
+<https://www.imdb.com/title/tt1319688/> a schema:Movie ;
+    schema:name "Roy" ;
+    schema:url <https://www.imdb.com/title/tt1319688/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Deco"
+    ] .
+
+# Glassland (2014)
+<https://www.imdb.com/title/tt3407428/> a schema:Movie ;
+    schema:name "Glassland" ;
+    schema:url <https://www.imdb.com/title/tt3407428/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Bike Kid"
+    ] .
+
+# Horse in the Hole (2013)
+<https://www.imdb.com/title/tt2750168/> a schema:Movie ;
+    schema:name "Horse in the Hole" ;
+    schema:url <https://www.imdb.com/title/tt2750168/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Portrait of a Zombie (2012)
+<https://www.imdb.com/title/tt1566938/> a schema:Movie ;
+    schema:name "Portrait of a Zombie" ;
+    schema:url <https://www.imdb.com/title/tt1566938/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3912874/> ;
+        schema:characterName "Young Billy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

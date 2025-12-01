@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4492383/> a schema:Person ;
+    schema:name "Emily Marie Callaway" ;
+    schema:url <https://www.imdb.com/name/nm4492383/> ;
+    schema:jobTitle "Actress", "Production Department" ;
+    schema:description "Emily Marie Callaway. Actress: The Perks of Being a Wallflower. Emily Marie Callaway is known for The Perks of Being a Wallflower (2012), Emily (2015) and Trip (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3950842/>,    # Emily
+                       <https://www.imdb.com/title/tt3166484/>,    # Trip
+                       <https://www.imdb.com/title/tt1659337/> ; # The Perks of Being a Wallflower
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4492383/mediaviewer/rm1713230592/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Emily (2015)
+<https://www.imdb.com/title/tt3950842/> a schema:Movie ;
+    schema:name "Emily" ;
+    schema:url <https://www.imdb.com/title/tt3950842/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4492383/> ;
+        schema:characterName "Emily"
+    ] .
+
+# Trip (2014)
+<https://www.imdb.com/title/tt3166484/> a schema:Movie ;
+    schema:name "Trip" ;
+    schema:url <https://www.imdb.com/title/tt3166484/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4492383/> ;
+        schema:characterName "Tessa"
+    ] .
+
+# The Perks of Being a Wallflower (2012)
+<https://www.imdb.com/title/tt1659337/> a schema:Movie ;
+    schema:name "The Perks of Being a Wallflower" ;
+    schema:url <https://www.imdb.com/title/tt1659337/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4492383/> ;
+        schema:characterName "Mean Freshman Girl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm4492383/mediaviewer/rm1713230592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYxMDg4MzgyN15BMl5BanBnXkFtZTgwODMwNTI3MDE@._V1_.jpg> ;
+    schema:caption "Emily Marie Callaway as Tessa with Channing Sebetich as Jack." ;
+    schema:height "1333"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

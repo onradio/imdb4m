@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8610127/> a schema:Person ;
+    schema:name "Keshav Jadhav" ;
+    schema:url <https://www.imdb.com/name/nm8610127/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Keshav Jadhav. Actor: Lion. Keshav Jadhav is known for Lion (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3741834/> ;    # Lion
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8610127/mediaviewer/rm844172288/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lion (2016)
+<https://www.imdb.com/title/tt3741834/> a schema:Movie ;
+    schema:name "Lion" ;
+    schema:url <https://www.imdb.com/title/tt3741834/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8610127/> ;
+        schema:characterName "Young Mantosh"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm8610127/mediaviewer/rm844172288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIxMjNiZGMtMWY1MC00MTgxLTlmZGQtNmEyN2UyMjFiYWM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicole Kidman, David Wenham, and Keshav Jadhav in Lion (2016)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

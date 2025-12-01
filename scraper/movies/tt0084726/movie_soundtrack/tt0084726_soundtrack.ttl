@@ -1,0 +1,36 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0084726/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Theme From Star Trek (TV Series)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Theme From Star Trek (TV Series)" ;
+            schema:composer <https://www.imdb.com/name/nm0006021/> # Alexander Courage
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Amazing Grace (Scottish Bagpipes)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Amazing Grace (Scottish Bagpipes)" ;
+            schema:author <https://www.imdb.com/name/nm2677065/> # John Newton
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006021/> a schema:Person ;
+    schema:name "Alexander Courage" .
+<https://www.imdb.com/name/nm2677065/> a schema:Person ;
+    schema:name "John Newton" .
+# ==============================================================================

@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0315513/> a schema:Person ;
+    schema:name "Neal Ghant" ;
+    schema:url <https://www.imdb.com/name/nm0315513/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Neal Ghant. Actor: Remember the Titans. Neal Ghant is known for Remember the Titans (2000), Aftermath (2017) and Being Mary Jane (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4581576/>,    # Aftermath
+                       <https://www.imdb.com/title/tt4421578/>,    # Containment
+                       <https://www.imdb.com/title/tt2345481/>,    # Being Mary Jane
+                       <https://www.imdb.com/title/tt4043488/>,    # DayBlack
+                       <https://www.imdb.com/title/tt2214819/>,    # Audio-Technica: Audio 911
+                       <https://www.imdb.com/title/tt0210945/> . # Remember the Titans
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Aftermath (2017)
+<https://www.imdb.com/title/tt4581576/> a schema:Movie ;
+    schema:name "Aftermath" ;
+    schema:url <https://www.imdb.com/title/tt4581576/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Steve"
+    ] .
+
+# Containment (2016)
+<https://www.imdb.com/title/tt4421578/> a schema:Movie ;
+    schema:name "Containment" ;
+    schema:url <https://www.imdb.com/title/tt4421578/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Faith Healer Coates"
+    ] .
+
+# Being Mary Jane (2015)
+<https://www.imdb.com/title/tt2345481/> a schema:Movie ;
+    schema:name "Being Mary Jane" ;
+    schema:url <https://www.imdb.com/title/tt2345481/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Dorian"
+    ] .
+
+# DayBlack (2014)
+<https://www.imdb.com/title/tt4043488/> a schema:Movie ;
+    schema:name "DayBlack" ;
+    schema:url <https://www.imdb.com/title/tt4043488/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Bryce"
+    ] .
+
+# Audio-Technica: Audio 911 (2012)
+<https://www.imdb.com/title/tt2214819/> a schema:Movie ;
+    schema:name "Audio-Technica: Audio 911" ;
+    schema:url <https://www.imdb.com/title/tt2214819/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Physician Assitant"
+    ] .
+
+# Remember the Titans (2000)
+<https://www.imdb.com/title/tt0210945/> a schema:Movie ;
+    schema:name "Remember the Titans" ;
+    schema:url <https://www.imdb.com/title/tt0210945/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315513/> ;
+        schema:characterName "Frankie Glascoe"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

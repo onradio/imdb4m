@@ -1,0 +1,584 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0468697/> a schema:Person ;
+    schema:name "John Koyama" ;
+    schema:url <https://www.imdb.com/name/nm0468697/> ;
+    schema:birthDate "1973-02-03"^^xsd:date ;
+    schema:jobTitle "Second Unit or Assistant Director", "Stunts", "Actor" ;
+    schema:description "John Koyama. Second Unit or Assistant Director: The Boys. John got his start in the film business as a stunt man in 1990 on the film The Perfect Weapon. At the age of 9, he started studying boxing, kickboxing, gung fu, kali and escrima and eventually Bruce Lee's art of Jeet Kune Do under Dan Inosanto and Richard Bustillo at the original Filipino Kali Academy in Torrance, California. With over..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzMyMzk1ZWMtM2FiOS00MWNkLWFkYTMtZTAzNTUxZDQ3NjRlXkEyXkFqcGc@._V1_CR275,75,752,1128_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7406334/>,    # Black Monday
+                       <https://www.imdb.com/title/tt2477230/>,    # The Night Shift
+                       <https://www.imdb.com/title/tt4264894/>,    # Jia
+                       <https://www.imdb.com/title/tt12273140/>,    # Geico James Bond Parody Television Commercial
+                       <https://www.imdb.com/title/tt2820852/>,    # Fast & Furious 7
+                       <https://www.imdb.com/title/tt2321451/>,    # Out
+                       <https://www.imdb.com/title/tt1082577/>,    # Deadly Impact
+                       <https://www.imdb.com/title/tt1037705/>,    # The Book of Eli
+                       <https://www.imdb.com/title/tt0368479/>,    # Cold Case
+                       <https://www.imdb.com/title/tt0935095/>,    # Plain Sight
+                       <https://www.imdb.com/title/tt1345127/>,    # Katana
+                       <https://www.imdb.com/title/tt1117385/>,    # Felon
+                       <https://www.imdb.com/title/tt1229764/>,    # Ring of Death
+                       <https://www.imdb.com/title/tt0772137/>,    # The Game
+                       <https://www.imdb.com/title/tt0903747/>,    # Breaking Bad
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt0915755/>,    # 24 Season 6 Prequel
+                       <https://www.imdb.com/title/tt0410403/>,    # Only the Brave
+                       <https://www.imdb.com/title/tt0325710/>,    # The Last Samurai
+                       <https://www.imdb.com/title/tt0285333/>,    # Alias
+                       <https://www.imdb.com/title/tt0268695/>,    # The Time Machine
+                       <https://www.imdb.com/title/tt0240468/>,    # Kung Pow: Enter the Fist
+                       <https://www.imdb.com/title/tt0243327/>,    # Ides of March
+                       <https://www.imdb.com/title/tt0199931/>,    # Partners
+                       <https://www.imdb.com/title/tt0242259/>,    # Alien Fury: Countdown to Invasion
+                       <https://www.imdb.com/title/tt0175059/>,    # Power Rangers Lost Galaxy
+                       <https://www.imdb.com/title/tt0168785/>,    # Final Voyage
+                       <https://www.imdb.com/title/tt0134974/>,    # Soundman
+                       <https://www.imdb.com/title/tt0120828/>,    # Six Days Seven Nights
+                       <https://www.imdb.com/title/tt0118748/>,    # Boogie Boy
+                       <https://www.imdb.com/title/tt0120008/>,    # The Replacement Killers
+                       <https://www.imdb.com/title/tt0129992/>,    # High Voltage
+                       <https://www.imdb.com/title/tt0120177/>,    # Spawn
+                       <https://www.imdb.com/title/tt0118859/>,    # City of Industry
+                       <https://www.imdb.com/title/tt0116225/>,    # Escape from L.A.
+                       <https://www.imdb.com/title/tt0113261/>,    # Hard Justice
+                       <https://www.imdb.com/title/tt0107969/>,    # Rising Sun
+                       <https://www.imdb.com/title/tt0102655/> ; # The Perfect Weapon
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 2 Primetime Emmy"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi607060761/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0468697/mediaviewer/rm1923039489/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm3116077312/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm3473511936/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm81304064/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm249076224/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm2277216512/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm64526848/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm47749632/>,
+                 <https://www.imdb.com/name/nm0468697/mediaviewer/rm265853440/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Black Monday (2019)
+<https://www.imdb.com/title/tt7406334/> a schema:Movie ;
+    schema:name "Black Monday" ;
+    schema:url <https://www.imdb.com/title/tt7406334/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Yakuza Member"
+    ] .
+
+# The Night Shift (2016)
+<https://www.imdb.com/title/tt2477230/> a schema:Movie ;
+    schema:name "The Night Shift" ;
+    schema:url <https://www.imdb.com/title/tt2477230/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Big Bar Guy #1"
+    ] .
+
+# Jia (2015)
+<https://www.imdb.com/title/tt4264894/> a schema:Movie ;
+    schema:name "Jia" ;
+    schema:url <https://www.imdb.com/title/tt4264894/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Takeshi"
+    ] .
+
+# Geico James Bond Parody Television Commercial (2015)
+<https://www.imdb.com/title/tt12273140/> a schema:Movie ;
+    schema:name "Geico James Bond Parody Television Commercial" ;
+    schema:url <https://www.imdb.com/title/tt12273140/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Henchman"
+    ] .
+
+# Fast & Furious 7 (2015)
+<https://www.imdb.com/title/tt2820852/> a schema:Movie ;
+    schema:name "Fast & Furious 7" ;
+    schema:url <https://www.imdb.com/title/tt2820852/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Audi R8 Racer"
+    ] .
+
+# Out (2011)
+<https://www.imdb.com/title/tt2321451/> a schema:Movie ;
+    schema:name "Out" ;
+    schema:url <https://www.imdb.com/title/tt2321451/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Nick"
+    ] .
+
+# Deadly Impact (2010)
+<https://www.imdb.com/title/tt1082577/> a schema:Movie ;
+    schema:name "Deadly Impact" ;
+    schema:url <https://www.imdb.com/title/tt1082577/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "X-Ray Agent"
+    ] .
+
+# The Book of Eli (2010)
+<https://www.imdb.com/title/tt1037705/> a schema:Movie ;
+    schema:name "The Book of Eli" ;
+    schema:url <https://www.imdb.com/title/tt1037705/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Sniper"
+    ] .
+
+# Cold Case (2009)
+<https://www.imdb.com/title/tt0368479/> a schema:Movie ;
+    schema:name "Cold Case" ;
+    schema:url <https://www.imdb.com/title/tt0368479/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Chinese Gangster"
+    ] .
+
+# Plain Sight (2009)
+<https://www.imdb.com/title/tt0935095/> a schema:Movie ;
+    schema:name "Plain Sight" ;
+    schema:url <https://www.imdb.com/title/tt0935095/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Asian Man"
+    ] .
+
+# Katana (2009)
+<https://www.imdb.com/title/tt1345127/> a schema:Movie ;
+    schema:name "Katana" ;
+    schema:url <https://www.imdb.com/title/tt1345127/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Toshiro"
+    ] .
+
+# Felon (2008)
+<https://www.imdb.com/title/tt1117385/> a schema:Movie ;
+    schema:name "Felon" ;
+    schema:url <https://www.imdb.com/title/tt1117385/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Asian Fighter"
+    ] .
+
+# Ring of Death (2008)
+<https://www.imdb.com/title/tt1229764/> a schema:Movie ;
+    schema:name "Ring of Death" ;
+    schema:url <https://www.imdb.com/title/tt1229764/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Crying Man"
+    ] .
+
+# The Game (2008)
+<https://www.imdb.com/title/tt0772137/> a schema:Movie ;
+    schema:name "The Game" ;
+    schema:url <https://www.imdb.com/title/tt0772137/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Tattoo Artist"
+    ] .
+
+# Breaking Bad (2008)
+<https://www.imdb.com/title/tt0903747/> a schema:Movie ;
+    schema:name "Breaking Bad" ;
+    schema:url <https://www.imdb.com/title/tt0903747/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Emilio"
+    ] .
+
+# Grey's Anatomy (2007)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Search & Rescue #2"
+    ] .
+
+# 24 Season 6 Prequel (2006)
+<https://www.imdb.com/title/tt0915755/> a schema:Movie ;
+    schema:name "24 Season 6 Prequel" ;
+    schema:url <https://www.imdb.com/title/tt0915755/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Hong Wai"
+    ] .
+
+# Only the Brave (2006)
+<https://www.imdb.com/title/tt0410403/> a schema:Movie ;
+    schema:name "Only the Brave" ;
+    schema:url <https://www.imdb.com/title/tt0410403/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Lt. Hank Hayashi"
+    ] .
+
+# The Last Samurai (2003)
+<https://www.imdb.com/title/tt0325710/> a schema:Movie ;
+    schema:name "The Last Samurai" ;
+    schema:url <https://www.imdb.com/title/tt0325710/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Omura's Bodyguard"
+    ] .
+
+# Alias (2002)
+<https://www.imdb.com/title/tt0285333/> a schema:Movie ;
+    schema:name "Alias" ;
+    schema:url <https://www.imdb.com/title/tt0285333/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Patient Zero"
+    ] .
+
+# The Time Machine (2002)
+<https://www.imdb.com/title/tt0268695/> a schema:Movie ;
+    schema:name "The Time Machine" ;
+    schema:url <https://www.imdb.com/title/tt0268695/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Eloi"
+    ] .
+
+# Kung Pow: Enter the Fist (2002)
+<https://www.imdb.com/title/tt0240468/> a schema:Movie ;
+    schema:name "Kung Pow: Enter the Fist" ;
+    schema:url <https://www.imdb.com/title/tt0240468/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Gang Fighter #4"
+    ] .
+
+# Ides of March (2000)
+<https://www.imdb.com/title/tt0243327/> a schema:Movie ;
+    schema:name "Ides of March" ;
+    schema:url <https://www.imdb.com/title/tt0243327/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Eddie Chin"
+    ] .
+
+# Partners (2000)
+<https://www.imdb.com/title/tt0199931/> a schema:Movie ;
+    schema:name "Partners" ;
+    schema:url <https://www.imdb.com/title/tt0199931/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Mee Hwa"
+    ] .
+
+# Alien Fury: Countdown to Invasion (2000)
+<https://www.imdb.com/title/tt0242259/> a schema:Movie ;
+    schema:name "Alien Fury: Countdown to Invasion" ;
+    schema:url <https://www.imdb.com/title/tt0242259/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Eddie Yamada"
+    ] .
+
+# Power Rangers Lost Galaxy (1999)
+<https://www.imdb.com/title/tt0175059/> a schema:Movie ;
+    schema:name "Power Rangers Lost Galaxy" ;
+    schema:url <https://www.imdb.com/title/tt0175059/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Colby"
+    ] .
+
+# Final Voyage (1999)
+<https://www.imdb.com/title/tt0168785/> a schema:Movie ;
+    schema:name "Final Voyage" ;
+    schema:url <https://www.imdb.com/title/tt0168785/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Chang"
+    ] .
+
+# Soundman (1998)
+<https://www.imdb.com/title/tt0134974/> a schema:Movie ;
+    schema:name "Soundman" ;
+    schema:url <https://www.imdb.com/title/tt0134974/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Butch"
+    ] .
+
+# Six Days Seven Nights (1998)
+<https://www.imdb.com/title/tt0120828/> a schema:Movie ;
+    schema:name "Six Days Seven Nights" ;
+    schema:url <https://www.imdb.com/title/tt0120828/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Pirate"
+    ] .
+
+# Boogie Boy (1998)
+<https://www.imdb.com/title/tt0118748/> a schema:Movie ;
+    schema:name "Boogie Boy" ;
+    schema:url <https://www.imdb.com/title/tt0118748/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Lawrence Wong"
+    ] .
+
+# The Replacement Killers (1998)
+<https://www.imdb.com/title/tt0120008/> a schema:Movie ;
+    schema:name "The Replacement Killers" ;
+    schema:url <https://www.imdb.com/title/tt0120008/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Terence Wei Gunmen"
+    ] .
+
+# High Voltage (1997)
+<https://www.imdb.com/title/tt0129992/> a schema:Movie ;
+    schema:name "High Voltage" ;
+    schema:url <https://www.imdb.com/title/tt0129992/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Tran"
+    ] .
+
+# Spawn (1997)
+<https://www.imdb.com/title/tt0120177/> a schema:Movie ;
+    schema:name "Spawn" ;
+    schema:url <https://www.imdb.com/title/tt0120177/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Hong Kong Military Air Base Security Officer"
+    ] .
+
+# City of Industry (1997)
+<https://www.imdb.com/title/tt0118859/> a schema:Movie ;
+    schema:name "City of Industry" ;
+    schema:url <https://www.imdb.com/title/tt0118859/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Two Gun"
+    ] .
+
+# Escape from L.A. (1996)
+<https://www.imdb.com/title/tt0116225/> a schema:Movie ;
+    schema:name "Escape from L.A." ;
+    schema:url <https://www.imdb.com/title/tt0116225/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Hershe Gang Member"
+    ] .
+
+# Hard Justice (1995)
+<https://www.imdb.com/title/tt0113261/> a schema:Movie ;
+    schema:name "Hard Justice" ;
+    schema:url <https://www.imdb.com/title/tt0113261/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Chow"
+    ] .
+
+# Rising Sun (1993)
+<https://www.imdb.com/title/tt0107969/> a schema:Movie ;
+    schema:name "Rising Sun" ;
+    schema:url <https://www.imdb.com/title/tt0107969/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Yakuza"
+    ] .
+
+# The Perfect Weapon (1991)
+<https://www.imdb.com/title/tt0102655/> a schema:Movie ;
+    schema:name "The Perfect Weapon" ;
+    schema:url <https://www.imdb.com/title/tt0102655/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468697/> ;
+        schema:characterName "Porsche"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi607060761/> a schema:VideoObject ;
+        schema:name "Cat&apos;s In the Bag" ;
+        schema:description "A clip from the episode Cat's In the Bag, from season one of the series Breaking Bad" ;
+        schema:embedUrl <https://www.imdb.com/video/vi607060761/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjI3ODAyMjE0NV5BMl5BanBnXkFtZTgwODk5MTM4MjE@._V1_.jpg" ;
+        schema:duration "PT1M58S"^^xsd:duration ;
+        schema:uploadDate "2009-02-23T15:54:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzMyMzk1ZWMtM2FiOS00MWNkLWFkYTMtZTAzNTUxZDQ3NjRlXkEyXkFqcGc@._V1_CR275,75,752,1128_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzMyMzk1ZWMtM2FiOS00MWNkLWFkYTMtZTAzNTUxZDQ3NjRlXkEyXkFqcGc@._V1_CR275,75,752,1128_.jpg> ;
+    schema:caption "John Koyama" ;
+    schema:height "1128"^^xsd:integer ;
+    schema:width "752"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm1923039489/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjhhYzJhNzgtY2EyYS00Mjc3LWFiN2YtMTlmYzhkMDcxYTc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Koyama" ;
+    schema:height "1706"^^xsd:integer ;
+    schema:width "1142"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm3116077312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTE4MjUxODU2N15BMl5BanBnXkFyZXN1bWU@._V1_.jpg> ;
+    schema:caption "John Koyama" ;
+    schema:height "4368"^^xsd:integer ;
+    schema:width "2912"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm3473511936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3ODAzMjEwOV5BMl5BanBnXkFtZTcwMzI4NTg2MQ@@._V1_.jpg> ;
+    schema:caption "John Koyama in Breaking Bad (2008)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm81304064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3NzkwNDg0NV5BMl5BanBnXkFtZTYwNzM4NTcy._V1_.jpg> ;
+    schema:caption "John Koyama in \"The Last Samurai\"" ;
+    schema:height "729"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm249076224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2MzUyMjIwMl5BMl5BanBnXkFtZTYwMTU4NTcy._V1_.jpg> ;
+    schema:caption "John Koyama in \"The Last Samurai\"" ;
+    schema:height "729"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm2277216512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI1OTQ1MjEzM15BMl5BanBnXkFyZXN1bWU@._V1_.jpg> ;
+    schema:caption "John Koyama" ;
+    schema:height "4368"^^xsd:integer ;
+    schema:width "2912"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm64526848/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3MjYxODA3MV5BMl5BanBnXkFtZTYwOTM4NTcy._V1_.jpg> ;
+    schema:caption "John Koyama in \"The Last Samurai\"" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm47749632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwNzcyNzA1MV5BMl5BanBnXkFtZTYwMTQ4NTcy._V1_.jpg> ;
+    schema:caption "John Koyama in \"The Last Samurai\"" ;
+    schema:height "729"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468697/mediaviewer/rm265853440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5MDQ1MDAzOF5BMl5BanBnXkFtZTYwOTQ4NTcy._V1_.jpg> ;
+    schema:caption "John Koyama in \"The Last Samurai\"" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

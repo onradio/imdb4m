@@ -1,0 +1,70 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1800621/> a schema:Person ;
+    schema:name "Lebo Mashile" ;
+    schema:url <https://www.imdb.com/name/nm1800621/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lebo Mashile. Actress: Hotel Rwanda. Lebo Mashile is known for Hotel Rwanda (2004), Gereza (2022) and Classified (2023)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAxODYwMjI3M15BMl5BanBnXkFtZTcwOTYxNjMyNA@@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0395169/> ;    # Hotel Rwanda
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1800621/mediaviewer/rm457278464/>,
+                 <https://www.imdb.com/name/nm1800621/mediaviewer/rm440501248/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hotel Rwanda (2004)
+<https://www.imdb.com/title/tt0395169/> a schema:Movie ;
+    schema:name "Hotel Rwanda" ;
+    schema:url <https://www.imdb.com/title/tt0395169/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1800621/> ;
+        schema:characterName "Odette"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAxODYwMjI3M15BMl5BanBnXkFtZTcwOTYxNjMyNA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxODYwMjI3M15BMl5BanBnXkFtZTcwOTYxNjMyNA@@._V1_.jpg> ;
+    schema:caption "Thulani Nyembe and Lebo Mashile in Hotel Rwanda (2004)" ;
+    schema:height "670"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1800621/mediaviewer/rm457278464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyNTI2NDQxNF5BMl5BanBnXkFtZTcwODYxNjMyNA@@._V1_.jpg> ;
+    schema:caption "Don Cheadle, Mosa Kaiser, Sophie Okonedo, Ofentse Modiselle, Lebo Mashile, and Mathabo Pieterson in Hotel Rwanda (2004)" ;
+    schema:height "674"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1800621/mediaviewer/rm440501248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxODYwMjI3M15BMl5BanBnXkFtZTcwOTYxNjMyNA@@._V1_.jpg> ;
+    schema:caption "Thulani Nyembe and Lebo Mashile in Hotel Rwanda (2004)" ;
+    schema:height "670"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

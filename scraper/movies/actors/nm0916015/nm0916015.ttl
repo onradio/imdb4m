@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0916015/> a schema:Person ;
+    schema:name "Anastasia Webb" ;
+    schema:url <https://www.imdb.com/name/nm0916015/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Anastasia Webb. Actress: The Straight Story. Anastasia Webb is known for The Straight Story (1999), ER (1994) and Imbroglio (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0887144/>,    # Imbroglio
+                       <https://www.imdb.com/title/tt0166896/>,    # The Straight Story
+                       <https://www.imdb.com/title/tt0108757/> . # ER
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Imbroglio (2006)
+<https://www.imdb.com/title/tt0887144/> a schema:Movie ;
+    schema:name "Imbroglio" ;
+    schema:url <https://www.imdb.com/title/tt0887144/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916015/> ;
+        schema:characterName "Elisabetta"
+    ] .
+
+# The Straight Story (1999)
+<https://www.imdb.com/title/tt0166896/> a schema:Movie ;
+    schema:name "The Straight Story" ;
+    schema:url <https://www.imdb.com/title/tt0166896/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916015/> ;
+        schema:characterName "Crystal"
+    ] .
+
+# ER (1999)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916015/> ;
+        schema:characterName "Juliet"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

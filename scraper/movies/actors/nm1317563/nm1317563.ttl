@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1317563/> a schema:Person ;
+    schema:name "Jean-Philippe Callet" ;
+    schema:url <https://www.imdb.com/name/nm1317563/> ;
+    schema:jobTitle "Sound Department", "Actor" ;
+    schema:description "Jean-Philippe Callet. Sound Department: Persepolis. Jean-Philippe Callet is known for Persepolis (2007), Balzac and the Little Chinese Seamstress (2002) and Filles perdues, cheveux gras (2002)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0808417/> .    # Persepolis
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Persepolis (2007)
+<https://www.imdb.com/title/tt0808417/> a schema:Movie ;
+    schema:name "Persepolis" ;
+    schema:url <https://www.imdb.com/title/tt0808417/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1317563/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

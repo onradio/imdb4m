@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5680799/> a schema:Person ;
+    schema:name "Takuya Masumoto" ;
+    schema:url <https://www.imdb.com/name/nm5680799/> ;
+    schema:birthDate "1977-03-07"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Takuya Masumoto. Actor: A Silent Voice. Takuya Masumoto was born on 7 March 1977 in Osaka Prefecture, Japan. He is an actor, known for A Silent Voice (2016), The Legend of Zelda: Breath of the Wild (2017) and Days Gone (2019)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Osaka Prefecture, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8228732/> .    # Kakuriyo no Yadomeshi
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kakuriyo no Yadomeshi (2018)
+<https://www.imdb.com/title/tt8228732/> a schema:Movie ;
+    schema:name "Kakuriyo no Yadomeshi" ;
+    schema:url <https://www.imdb.com/title/tt8228732/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5680799/> ;
+        schema:characterName "Nuinoin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

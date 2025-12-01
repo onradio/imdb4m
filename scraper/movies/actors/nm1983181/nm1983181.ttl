@@ -1,0 +1,137 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1983181/> a schema:Person ;
+    schema:name "Donna Sorbello" ;
+    schema:url <https://www.imdb.com/name/nm1983181/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Donna Sorbello. Actress: The Invention of Lying. Donna Sorbello is known for The Invention of Lying (2009), Hachi: A Dog's Tale (2009) and Tax Day (1998)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4794814/>,    # The House Sitter
+                       <https://www.imdb.com/title/tt2377132/>,    # The Makeover
+                       <https://www.imdb.com/title/tt1482461/>,    # The Mulberry Tree
+                       <https://www.imdb.com/title/tt1422750/>,    # See Kate Run
+                       <https://www.imdb.com/title/tt1058017/>,    # The Invention of Lying
+                       <https://www.imdb.com/title/tt1028532/>,    # Hachi: A Dog's Tale
+                       <https://www.imdb.com/title/tt0163867/> ; # Tax Day
+
+
+    schema:video <https://www.imdb.com/video/vi1852879897/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1983181/mediaviewer/rm3179323904/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The House Sitter (2015)
+<https://www.imdb.com/title/tt4794814/> a schema:Movie ;
+    schema:name "The House Sitter" ;
+    schema:url <https://www.imdb.com/title/tt4794814/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Eloise"
+    ] .
+
+# The Makeover (2013)
+<https://www.imdb.com/title/tt2377132/> a schema:Movie ;
+    schema:name "The Makeover" ;
+    schema:url <https://www.imdb.com/title/tt2377132/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Elysse"
+    ] .
+
+# The Mulberry Tree (2010)
+<https://www.imdb.com/title/tt1482461/> a schema:Movie ;
+    schema:name "The Mulberry Tree" ;
+    schema:url <https://www.imdb.com/title/tt1482461/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Dianna"
+    ] .
+
+# See Kate Run (2009)
+<https://www.imdb.com/title/tt1422750/> a schema:Movie ;
+    schema:name "See Kate Run" ;
+    schema:url <https://www.imdb.com/title/tt1422750/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Judge Brugano"
+    ] .
+
+# The Invention of Lying (2009)
+<https://www.imdb.com/title/tt1058017/> a schema:Movie ;
+    schema:name "The Invention of Lying" ;
+    schema:url <https://www.imdb.com/title/tt1058017/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Anna's Mother"
+    ] .
+
+# Hachi: A Dog's Tale (2009)
+<https://www.imdb.com/title/tt1028532/> a schema:Movie ;
+    schema:name "Hachi: A Dog's Tale" ;
+    schema:url <https://www.imdb.com/title/tt1028532/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Myra"
+    ] .
+
+# Tax Day (1998)
+<https://www.imdb.com/title/tt0163867/> a schema:Movie ;
+    schema:name "Tax Day" ;
+    schema:url <https://www.imdb.com/title/tt0163867/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1983181/> ;
+        schema:characterName "Paula"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1852879897/> a schema:VideoObject ;
+        schema:name "The House Sitter" ;
+        schema:description "Trailer for The House Sitter" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1852879897/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjY0MGVkMDctODI0OS00ZmQwLWEyMjEtYzYzZDk5MzU2YTMwXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M35S"^^xsd:duration ;
+        schema:uploadDate "2016-06-03T22:08:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1983181/mediaviewer/rm3179323904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMTkwODc2OV5BMl5BanBnXkFtZTcwMDYzODAwOQ@@._V1_.jpg> ;
+    schema:caption "Camryn Manheim, Julia Stiles, David Walton, and Donna Sorbello in The Makeover (2013)" ;
+    schema:height "426"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

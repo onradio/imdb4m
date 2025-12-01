@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1240453/> a schema:Person ;
+    schema:name "Popeye" ;
+    schema:url <https://www.imdb.com/name/nm1240453/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Popeye. Actor: Stand by Me. Popeye is known for Stand by Me (1986), The War of the Roses (1989) and Out of Bounds (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0098621/>,    # The War of the Roses
+                       <https://www.imdb.com/title/tt0091669/>,    # Crazy Legs
+                       <https://www.imdb.com/title/tt0092005/>,    # Stand by Me
+                       <https://www.imdb.com/title/tt0091706/>,    # Out of Bounds
+                       <https://www.imdb.com/title/tt0086789/> . # Riptide
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The War of the Roses (1989)
+<https://www.imdb.com/title/tt0098621/> a schema:Movie ;
+    schema:name "The War of the Roses" ;
+    schema:url <https://www.imdb.com/title/tt0098621/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1240453/> ;
+        schema:characterName "Benny"
+    ] .
+
+# Crazy Legs (1987)
+<https://www.imdb.com/title/tt0091669/> a schema:Movie ;
+    schema:name "Crazy Legs" ;
+    schema:url <https://www.imdb.com/title/tt0091669/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1240453/> ;
+        schema:characterName "Shep"
+    ] .
+
+# Stand by Me (1986)
+<https://www.imdb.com/title/tt0092005/> a schema:Movie ;
+    schema:name "Stand by Me" ;
+    schema:url <https://www.imdb.com/title/tt0092005/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1240453/> ;
+        schema:characterName "Chopper"
+    ] .
+
+# Out of Bounds (1986)
+<https://www.imdb.com/title/tt0091706/> a schema:Movie ;
+    schema:name "Out of Bounds" ;
+    schema:url <https://www.imdb.com/title/tt0091706/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1240453/> ;
+        schema:characterName "Barney the Dog"
+    ] .
+
+# Riptide (1985)
+<https://www.imdb.com/title/tt0086789/> a schema:Movie ;
+    schema:name "Riptide" ;
+    schema:url <https://www.imdb.com/title/tt0086789/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1240453/> ;
+        schema:characterName "Bucky"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

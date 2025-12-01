@@ -1,0 +1,44 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2119532/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "To God be the Glory" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "To God be the Glory" ;
+            schema:composer <https://www.imdb.com/name/nm4851340/> ; # Howard Doane
+            schema:author <https://www.imdb.com/name/nm4851945/> # Fanny Crosby
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "We're Gonna Have To Slap The Dirty Little Jap" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "We're Gonna Have To Slap The Dirty Little Jap" ;
+            schema:composer <https://www.imdb.com/name/nm2220941/> ; # Bob Miller
+            schema:lyricist <https://www.imdb.com/name/nm2220941/> # Bob Miller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Why We Fight: Prelude to War" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm2220941/> a schema:Person ;
+    schema:name "Bob Miller" .
+<https://www.imdb.com/name/nm4851340/> a schema:Person ;
+    schema:name "Howard Doane" .
+<https://www.imdb.com/name/nm4851945/> a schema:Person ;
+    schema:name "Fanny Crosby" .
+# ==============================================================================

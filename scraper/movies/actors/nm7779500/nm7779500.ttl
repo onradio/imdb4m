@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7779500/> a schema:Person ;
+    schema:name "Darcy Bryce" ;
+    schema:url <https://www.imdb.com/name/nm7779500/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Darcy Bryce. Actor: Hacksaw Ridge. Darcy Bryce is known for Hacksaw Ridge (2016), Furiosa: A Mad Max Saga (2024) and Jack Irish (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTNiMGQ3NWUtNzNjNi00Zjc5LTlhMjctYjcyMDI1ODlhNmM1XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt4905554/> ; # Jack Irish
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7779500/mediaviewer/rm1775316224/>,
+                 <https://www.imdb.com/name/nm7779500/mediaviewer/rm3103804417/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hacksaw Ridge (2016)
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7779500/> ;
+        schema:characterName "Young Desmond"
+    ] .
+
+# Jack Irish (2016)
+<https://www.imdb.com/title/tt4905554/> a schema:Movie ;
+    schema:name "Jack Irish" ;
+    schema:url <https://www.imdb.com/title/tt4905554/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7779500/> ;
+        schema:characterName "Rob's Son"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTNiMGQ3NWUtNzNjNi00Zjc5LTlhMjctYjcyMDI1ODlhNmM1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTNiMGQ3NWUtNzNjNi00Zjc5LTlhMjctYjcyMDI1ODlhNmM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darcy Bryce" ;
+    schema:height "2867"^^xsd:integer ;
+    schema:width "1912"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7779500/mediaviewer/rm1775316224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4YmJhMTgtYTU4Zi00ZTVjLTgyNWYtNjEzNzg1MWRkYjE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darcy Bryce in Hacksaw Ridge (2016)" ;
+    schema:height "808"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7779500/mediaviewer/rm3103804417/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTNiMGQ3NWUtNzNjNi00Zjc5LTlhMjctYjcyMDI1ODlhNmM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darcy Bryce" ;
+    schema:height "2867"^^xsd:integer ;
+    schema:width "1912"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

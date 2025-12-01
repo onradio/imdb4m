@@ -1,0 +1,179 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000455/> a schema:Person ;
+    schema:name "John Hughes" ;
+    schema:url <https://www.imdb.com/name/nm0000455/> ;
+    schema:birthDate "1950-02-18"^^xsd:date ;
+    schema:jobTitle "Writer", "Producer", "Director" ;
+    schema:alternateName "John Wilden Hughes Jr." ;
+    schema:description "John Hughes. Writer: Planes, Trains & Automobiles. John Hughes was an American film director, film producer, and screenwriter. He was credited for creating some of the most memorable comedy films of the 1980s and the 1990s, when he was at the height of his career. He had a talent for writing coming-of-age stories, and for depicting fairly realistic adolescent characters.\n\nIn 1950, Hughes was born in Lansing, Michigan. The city's main..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYTVjMjVmYmQtNDA3Ni00MGMxLWIwZDctNTFjMDRiMTNkZDY0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Lansing, Michigan, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0093748/>,    # Planes, Trains & Automobiles
+                       <https://www.imdb.com/title/tt0088847/>,    # The Breakfast Club
+                       <https://www.imdb.com/title/tt0090305/>,    # Weird Science
+                       <https://www.imdb.com/title/tt0098554/>,    # Uncle Buck
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0091042/>,    # Ferris Bueller's Day Off
+                       <https://www.imdb.com/title/tt0084395/> ; # Class Reunion
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1197259545/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000455/mediaviewer/rm544714242/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm1462726913/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm1227845889/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm1110405377/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm4195891457/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm517972992/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm1675600896/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm641699328/>,
+                 <https://www.imdb.com/name/nm0000455/mediaviewer/rm3100215552/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093748/> a schema:Movie ;
+    schema:name "Planes, Trains & Automobiles" ;
+    schema:url <https://www.imdb.com/title/tt0093748/> .
+
+<https://www.imdb.com/title/tt0088847/> a schema:Movie ;
+    schema:name "The Breakfast Club" ;
+    schema:url <https://www.imdb.com/title/tt0088847/> .
+
+<https://www.imdb.com/title/tt0090305/> a schema:Movie ;
+    schema:name "Weird Science" ;
+    schema:url <https://www.imdb.com/title/tt0090305/> .
+
+<https://www.imdb.com/title/tt0098554/> a schema:Movie ;
+    schema:name "Uncle Buck" ;
+    schema:url <https://www.imdb.com/title/tt0098554/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ferris Bueller's Day Off (1986)
+<https://www.imdb.com/title/tt0091042/> a schema:Movie ;
+    schema:name "Ferris Bueller's Day Off" ;
+    schema:url <https://www.imdb.com/title/tt0091042/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000455/> ;
+        schema:characterName "Guy Running Between Cabs"
+    ] .
+
+# Class Reunion (1982)
+<https://www.imdb.com/title/tt0084395/> a schema:Movie ;
+    schema:name "Class Reunion" ;
+    schema:url <https://www.imdb.com/title/tt0084395/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000455/> ;
+        schema:characterName "'Girl' with Paper Bag on Head"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1197259545/> a schema:VideoObject ;
+        schema:name "Sing Along Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1197259545/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmQ5NGM1NmItNzQ0Zi00NDRkLWJlMDAtNDBiMDIyZjQ0YzRjXkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M10S"^^xsd:duration ;
+        schema:uploadDate "2018-09-14T20:56:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYTVjMjVmYmQtNDA3Ni00MGMxLWIwZDctNTFjMDRiMTNkZDY0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTVjMjVmYmQtNDA3Ni00MGMxLWIwZDctNTFjMDRiMTNkZDY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes" ;
+    schema:height "2785"^^xsd:integer ;
+    schema:width "2837"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm544714242/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFhZDNjYmQtZTk1ZS00NDIwLWJkMzgtZDBiY2YzNzc4Yjk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes and John Candy in John Candy: I Like Me (2025)" ;
+    schema:height "1913"^^xsd:integer ;
+    schema:width "2531"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm1462726913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTMxZDg0YzUtOWUxNy00ZTMzLThlNzItNzQxNmZiYjBkOWJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes and Ally Sheedy in The Breakfast Club (1985)" ;
+    schema:height "1895"^^xsd:integer ;
+    schema:width "3365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm1227845889/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDg2ZDc1OTktMmQzMS00M2VlLWE4MjUtMTJiYTlkNWRmM2NhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes, Andrew McCarthy, and Jon Cryer in Brats (2024)" ;
+    schema:height "1894"^^xsd:integer ;
+    schema:width "3361"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm1110405377/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGU2YjFjZjYtZmUxZC00OTE4LTg1MWQtNzYwZmJjZjkzMDIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes, Howard Deutch, and Alan Hunter in Brats (2024)" ;
+    schema:height "1914"^^xsd:integer ;
+    schema:width "3407"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm4195891457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ2OGVjYWQtMGUyMS00ZDM5LThlNjgtMGIyNzExZTU4MDU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Hughes and Nancy Hughes in Home Alone 2: Lost in New York (1992)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1897"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm517972992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzNzQ1OTE2NF5BMl5BanBnXkFtZTcwNjUzOTI2OQ@@._V1_.jpg> ;
+    schema:caption "Matthew Broderick, John Hughes, and Lee Ann Marie in Ferris Bueller's Day Off (1986)" ;
+    schema:height "1381"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm1675600896/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3MTc0MzA5NV5BMl5BanBnXkFtZTcwODYzOTI2OQ@@._V1_.jpg> ;
+    schema:caption "John Hughes in Ferris Bueller's Day Off (1986)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1371"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm641699328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyODM1MTU1MF5BMl5BanBnXkFtZTcwODM5NzgwMw@@._V1_.jpg> ;
+    schema:caption "John Hughes in Miracle on 34th Street (1994)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1529"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000455/mediaviewer/rm3100215552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI0MjYwNzg5MV5BMl5BanBnXkFtZTcwODk2MjY3Mg@@._V1_.jpg> ;
+    schema:caption "\"The Breakfast Club\" Judd Nelson, Molly Ringwald, Emilio Estevez, Ally Sheedy, director John Hughes, Anthony Michael Hall" ;
+    schema:height "390"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0171277/> a schema:Person ;
+    schema:name "Alison Coleridge" ;
+    schema:url <https://www.imdb.com/name/nm0171277/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Alison Coleridge. Actress: The Shining. Alison Coleridge is known for The Shining (1980), Tales of the Unexpected (1979) and Some Mothers Do 'Ave 'Em (1973)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0075592/>,    # Tales of the Unexpected
+                       <https://www.imdb.com/title/tt0081505/>,    # The Shining
+                       <https://www.imdb.com/title/tt0149484/>,    # Life at Stake
+                       <https://www.imdb.com/title/tt0069634/>,    # Some Mothers Do 'Ave 'Em
+                       <https://www.imdb.com/title/tt0828622/> ; # Armchair 30
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0171277/mediaviewer/rm1827361536/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tales of the Unexpected (1981)
+<https://www.imdb.com/title/tt0075592/> a schema:Movie ;
+    schema:name "Tales of the Unexpected" ;
+    schema:url <https://www.imdb.com/title/tt0075592/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0171277/> ;
+        schema:characterName "Mildred"
+    ] .
+
+# The Shining (1980)
+<https://www.imdb.com/title/tt0081505/> a schema:Movie ;
+    schema:name "The Shining" ;
+    schema:url <https://www.imdb.com/title/tt0081505/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0171277/> ;
+        schema:characterName "Secretary"
+    ] .
+
+# Life at Stake (1978)
+<https://www.imdb.com/title/tt0149484/> a schema:Movie ;
+    schema:name "Life at Stake" ;
+    schema:url <https://www.imdb.com/title/tt0149484/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0171277/> ;
+        schema:characterName "Marilyn Lovell"
+    ] .
+
+# Some Mothers Do 'Ave 'Em (1973)
+<https://www.imdb.com/title/tt0069634/> a schema:Movie ;
+    schema:name "Some Mothers Do 'Ave 'Em" ;
+    schema:url <https://www.imdb.com/title/tt0069634/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0171277/> ;
+        schema:characterName "Nurse Moore"
+    ] .
+
+# Armchair 30 (1973)
+<https://www.imdb.com/title/tt0828622/> a schema:Movie ;
+    schema:name "Armchair 30" ;
+    schema:url <https://www.imdb.com/title/tt0828622/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0171277/> ;
+        schema:characterName "Woman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0171277/mediaviewer/rm1827361536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGQ5NDNiNmItNTZhOS00ODMwLTk4NTItZWRlNzUwNDNkYmY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Nicholson, Alison Coleridge, and Barry Nelson in The Shining (1980)" ;
+    schema:height "495"^^xsd:integer ;
+    schema:width "660"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

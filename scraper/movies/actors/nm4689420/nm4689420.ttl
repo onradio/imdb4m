@@ -1,0 +1,376 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4689420/> a schema:Person ;
+    schema:name "Carrie Coon" ;
+    schema:url <https://www.imdb.com/name/nm4689420/> ;
+    schema:birthDate "1981-01-24"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Visual Effects" ;
+    schema:alternateName "Carrie Alexandra Coon" ;
+    schema:description "Carrie Coon. Actress: Gone Girl. Originally from Copley, OH, Carrie Coon is a Chicago-based theatre, television and film actress. She received a BA in English and Spanish from the University of Mount Union, followed by her MFA in Acting at the University of Wisconsin, Madison. Coon was nominated for a Tony Award in the Best Featured Actress category for her Broadway debut as Honey in the transfer of Steppenwolf Theatre's..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDFmNWQzZWYtZDBlNS00ZTlhLWI0YzctODYwZGY5YWI3ZWMxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Copley, Ohio, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2267998/>,    # Gone Girl
+                       <https://www.imdb.com/title/tt4154756/>,    # Avengers: Infinity War
+                       <https://www.imdb.com/title/tt4513678/>,    # Ghostbusters: Afterlife
+                       <https://www.imdb.com/title/tt6294822/>,    # The Post
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt12098132/>,    # Motherhacker
+                       <https://www.imdb.com/title/tt4154796/>,    # Avengers: Endgame
+                       <https://www.imdb.com/title/tt6048596/>,    # The Sinner
+                       <https://www.imdb.com/title/tt4218572/>,    # Widows
+                       <https://www.imdb.com/title/tt6017942/>,    # Kin
+                       <https://www.imdb.com/title/tt4762824/>,    # The Legacy of a Whitetail Deer Hunter
+                       <https://www.imdb.com/title/tt2802850/>,    # Fargo
+                       <https://www.imdb.com/title/tt5198796/>,    # Izzy Gets the Fuck Across Town
+                       <https://www.imdb.com/title/tt5114154/>,    # The Keeping Hours
+                       <https://www.imdb.com/title/tt2699128/>,    # The Leftovers
+                       <https://www.imdb.com/title/tt6952952/>,    # Great Choice
+                       <https://www.imdb.com/title/tt5205210/>,    # Strange Weather
+                       <https://www.imdb.com/title/tt2693776/>,    # Intelligence
+                       <https://www.imdb.com/title/tt2787278/>,    # Ironside
+                       <https://www.imdb.com/title/tt0203259/>,    # Law & Order: Special Victims Unit
+                       <https://www.imdb.com/title/tt2069063/>,    # One in a Million
+                       <https://www.imdb.com/title/tt1797475/> ; # The Playboy Club
+
+    schema:award [
+        a schema:Award ;
+        schema:description "8 wins & 57 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (The White Lotus)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "40000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi54708505/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4689420/mediaviewer/rm3460346370/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm739097346/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm2484572418/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm2710478594/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm3353895937/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm3337118721/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm4243088385/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm4209533953/>,
+                 <https://www.imdb.com/name/nm4689420/mediaviewer/rm4192756737/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2267998/> a schema:Movie ;
+    schema:name "Gone Girl" ;
+    schema:url <https://www.imdb.com/title/tt2267998/> .
+
+<https://www.imdb.com/title/tt4154756/> a schema:Movie ;
+    schema:name "Avengers: Infinity War" ;
+    schema:url <https://www.imdb.com/title/tt4154756/> .
+
+<https://www.imdb.com/title/tt4513678/> a schema:Movie ;
+    schema:name "Ghostbusters: Afterlife" ;
+    schema:url <https://www.imdb.com/title/tt4513678/> .
+
+<https://www.imdb.com/title/tt6294822/> a schema:Movie ;
+    schema:name "The Post" ;
+    schema:url <https://www.imdb.com/title/tt6294822/> .
+
+<https://www.imdb.com/title/tt13406094/> a schema:Movie ;
+    schema:name "The White Lotus" ;
+    schema:url <https://www.imdb.com/title/tt13406094/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Motherhacker (2019)
+<https://www.imdb.com/title/tt12098132/> a schema:Movie ;
+    schema:name "Motherhacker" ;
+    schema:url <https://www.imdb.com/title/tt12098132/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Bridget"
+    ] .
+
+# Avengers: Endgame (2019)
+<https://www.imdb.com/title/tt4154796/> a schema:Movie ;
+    schema:name "Avengers: Endgame" ;
+    schema:url <https://www.imdb.com/title/tt4154796/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Proxima Midnight"
+    ] .
+
+# The Sinner (2018)
+<https://www.imdb.com/title/tt6048596/> a schema:Movie ;
+    schema:name "The Sinner" ;
+    schema:url <https://www.imdb.com/title/tt6048596/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Vera Walker"
+    ] .
+
+# Widows (2018)
+<https://www.imdb.com/title/tt4218572/> a schema:Movie ;
+    schema:name "Widows" ;
+    schema:url <https://www.imdb.com/title/tt4218572/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Amanda"
+    ] .
+
+# Kin (2018)
+<https://www.imdb.com/title/tt6017942/> a schema:Movie ;
+    schema:name "Kin" ;
+    schema:url <https://www.imdb.com/title/tt6017942/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Morgan Hunter"
+    ] .
+
+# The Legacy of a Whitetail Deer Hunter (2018)
+<https://www.imdb.com/title/tt4762824/> a schema:Movie ;
+    schema:name "The Legacy of a Whitetail Deer Hunter" ;
+    schema:url <https://www.imdb.com/title/tt4762824/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Linda"
+    ] .
+
+# Fargo (2017)
+<https://www.imdb.com/title/tt2802850/> a schema:Movie ;
+    schema:name "Fargo" ;
+    schema:url <https://www.imdb.com/title/tt2802850/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Gloria Burgle"
+    ] .
+
+# Izzy Gets the Fuck Across Town (2017)
+<https://www.imdb.com/title/tt5198796/> a schema:Movie ;
+    schema:name "Izzy Gets the Fuck Across Town" ;
+    schema:url <https://www.imdb.com/title/tt5198796/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Virginia"
+    ] .
+
+# The Keeping Hours (2017)
+<https://www.imdb.com/title/tt5114154/> a schema:Movie ;
+    schema:name "The Keeping Hours" ;
+    schema:url <https://www.imdb.com/title/tt5114154/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Elizabeth"
+    ] .
+
+# The Leftovers (2014)
+<https://www.imdb.com/title/tt2699128/> a schema:Movie ;
+    schema:name "The Leftovers" ;
+    schema:url <https://www.imdb.com/title/tt2699128/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Nora Durst"
+    ] .
+
+# Great Choice (2017)
+<https://www.imdb.com/title/tt6952952/> a schema:Movie ;
+    schema:name "Great Choice" ;
+    schema:url <https://www.imdb.com/title/tt6952952/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Jen"
+    ] .
+
+# Strange Weather (2016)
+<https://www.imdb.com/title/tt5205210/> a schema:Movie ;
+    schema:name "Strange Weather" ;
+    schema:url <https://www.imdb.com/title/tt5205210/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Byrd Ritt"
+    ] .
+
+# Intelligence (2014)
+<https://www.imdb.com/title/tt2693776/> a schema:Movie ;
+    schema:name "Intelligence" ;
+    schema:url <https://www.imdb.com/title/tt2693776/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Luanne Vick"
+    ] .
+
+# Ironside (2013)
+<https://www.imdb.com/title/tt2787278/> a schema:Movie ;
+    schema:name "Ironside" ;
+    schema:url <https://www.imdb.com/title/tt2787278/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Rachel Ryan"
+    ] .
+
+# Law & Order: Special Victims Unit (2013)
+<https://www.imdb.com/title/tt0203259/> a schema:Movie ;
+    schema:name "Law & Order: Special Victims Unit" ;
+    schema:url <https://www.imdb.com/title/tt0203259/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Talia Blaine"
+    ] .
+
+# One in a Million (2012)
+<https://www.imdb.com/title/tt2069063/> a schema:Movie ;
+    schema:name "One in a Million" ;
+    schema:url <https://www.imdb.com/title/tt2069063/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Bix"
+    ] .
+
+# The Playboy Club (2011)
+<https://www.imdb.com/title/tt1797475/> a schema:Movie ;
+    schema:name "The Playboy Club" ;
+    schema:url <https://www.imdb.com/title/tt1797475/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4689420/> ;
+        schema:characterName "Doris Hall"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi54708505/> a schema:VideoObject ;
+        schema:name "Carrie Coon Through the Years" ;
+        schema:description "IMDb highlights the acting career of Carrie Coon, including The White Lotus, The Playboy Club, Gone Girl, The Leftovers, and more." ;
+        schema:embedUrl <https://www.imdb.com/video/vi54708505/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjJiYjk1YjItNGU2Yi00ZjM4LThjOGItNmI3ZGE4YTkxZjBhXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT41S"^^xsd:duration ;
+        schema:uploadDate "2025-04-03T21:11:29Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDFmNWQzZWYtZDBlNS00ZTlhLWI0YzctODYwZGY5YWI3ZWMxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDFmNWQzZWYtZDBlNS00ZTlhLWI0YzctODYwZGY5YWI3ZWMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon" ;
+    schema:height "8011"^^xsd:integer ;
+    schema:width "5343"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm3460346370/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2Q4ZmViNjUtZjRjZC00ZGM0LTliM2MtNzI3MzYxM2M1OWQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon in Marriage Is a Gamble (2025)" ;
+    schema:height "1440"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm739097346/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmFlZjIyNmQtOWE0MS00YWUwLWExNGEtMDBhOGJiMmU3OGNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon in The Gilded Age (2022)" ;
+    schema:height "1920"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm2484572418/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTUxYzA2MjctMDY2OS00Zjg3LWIyNmEtOTBlNDIzOTgyYWIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon in The White Lotus (2021)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm2710478594/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTc3NjdhYzgtNDIxNi00MjFlLThiMjQtYjg2YzEwZWJjYmY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Bibb, Michelle Monaghan, and Carrie Coon in The White Lotus (2021)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm3353895937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTA5ZDdhMDUtNDY2MC00NDMxLTlmMWUtYWI4ODQyYjg3OWFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shea Whigham and Carrie Coon in Lake George (2024)" ;
+    schema:height "1134"^^xsd:integer ;
+    schema:width "2870"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm3337118721/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODg4YjRjZWItNDUwYy00MTM4LWFhOGItYmJiODFmNzY2YTVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shea Whigham and Carrie Coon in Lake George (2024)" ;
+    schema:height "1590"^^xsd:integer ;
+    schema:width "3820"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm4243088385/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmJiZDMxNWEtNDhiOC00MzY4LWE4NzQtNGRjYjFiNWE0NDMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon in Lake George (2024)" ;
+    schema:height "910"^^xsd:integer ;
+    schema:width "2180"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm4209533953/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWEyMjMzYjQtMTc0ZC00NDRkLTk1NTctNzJlZjQzYzVkZTFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Coon in Lake George (2024)" ;
+    schema:height "1146"^^xsd:integer ;
+    schema:width "2872"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4689420/mediaviewer/rm4192756737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjcxMmE2NjctZjYxYy00MmE0LWFhMjItNzRkYWNkNjI1NTg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shea Whigham and Carrie Coon in Lake George (2024)" ;
+    schema:height "1584"^^xsd:integer ;
+    schema:width "3802"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm4689420/>
+    schema:sameAs <https://www.facebook.com/actresscarriecoon>,
+                  <https://www.instagram.com/carriecoon/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

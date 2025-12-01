@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0156263/> a schema:Person ;
+    schema:name "Vic Chesnutt" ;
+    schema:url <https://www.imdb.com/name/nm0156263/> ;
+    schema:birthDate "1964-11-12"^^xsd:date ;
+    schema:jobTitle "Composer", "Actor", "Writer" ;
+    schema:description "Vic Chesnutt. Actor: Sling Blade. Vic Chesnutt was born on 12 November 1964 in Jacksonville, Florida, USA. He was a composer and actor, known for Sling Blade (1996), This Must Be the Place (2011) and Bringing Rain (2003). He was married to Tina Whatley Chesnutt. He died on 25 December 2009 in Athens, Georgia, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Jacksonville, Florida, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0117666/> .    # Sling Blade
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sling Blade (1996)
+<https://www.imdb.com/title/tt0117666/> a schema:Movie ;
+    schema:name "Sling Blade" ;
+    schema:url <https://www.imdb.com/title/tt0117666/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0156263/> ;
+        schema:characterName "Terence"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

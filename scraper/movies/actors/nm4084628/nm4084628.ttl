@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4084628/> a schema:Person ;
+    schema:name "Ben Wimsett" ;
+    schema:url <https://www.imdb.com/name/nm4084628/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ben Wimsett. Actor: The King's Speech. Ben Wimsett is known for The King's Speech (2010), Ginger and Rosa (2012) and Wee King of Nowhere (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6290664/>,    # Wee King of Nowhere
+                       <https://www.imdb.com/title/tt2115295/>,    # Ginger and Rosa
+                       <https://www.imdb.com/title/tt1504320/> . # The King's Speech
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wee King of Nowhere (2016)
+<https://www.imdb.com/title/tt6290664/> a schema:Movie ;
+    schema:name "Wee King of Nowhere" ;
+    schema:url <https://www.imdb.com/title/tt6290664/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4084628/> ;
+        schema:characterName "Yob"
+    ] .
+
+# Ginger and Rosa (2012)
+<https://www.imdb.com/title/tt2115295/> a schema:Movie ;
+    schema:name "Ginger and Rosa" ;
+    schema:url <https://www.imdb.com/title/tt2115295/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4084628/> ;
+        schema:characterName "YCND Boy"
+    ] .
+
+# The King's Speech (2010)
+<https://www.imdb.com/title/tt1504320/> a schema:Movie ;
+    schema:name "The King's Speech" ;
+    schema:url <https://www.imdb.com/title/tt1504320/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4084628/> ;
+        schema:characterName "Anthony Logue"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

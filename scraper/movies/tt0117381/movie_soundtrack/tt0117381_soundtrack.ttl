@@ -1,0 +1,108 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0117381/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Introitus: Cibavit Eos" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Introitus: Cibavit Eos" ;
+            schema:author <https://www.imdb.com/name/nm0126077/> # William Byrd
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "As Time Goes By" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "As Time Goes By" ;
+            schema:author <https://www.imdb.com/name/nm0403259/> # Herman Hupfeld
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lacrimosa" ;
+        schema:byArtist <https://www.imdb.com/name/nm0845287/> ; # Wiener Sängerknaben
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lacrimosa" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Canção Do Mar" ;
+        schema:byArtist <https://www.imdb.com/name/nm1487930/> ; # Dulce Pontes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Canção Do Mar" ;
+            schema:author <https://www.imdb.com/name/nm0207599/>, # Frederico de Brito
+                       <https://www.imdb.com/name/nm1413855/> # Ferrer Trindade
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chez What" ;
+        schema:byArtist <https://www.imdb.com/name/nm0691667/> ; # Steve Porcaro
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chez What" ;
+            schema:author <https://www.imdb.com/name/nm0691667/> # Steve Porcaro
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pammy Slam" ;
+        schema:byArtist <https://www.imdb.com/name/nm0691667/> ; # Steve Porcaro
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pammy Slam" ;
+            schema:author <https://www.imdb.com/name/nm0691667/> # Steve Porcaro
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Don't Deceive Me (Please Don't Go)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0652906/> ; # Johnny Otis
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Don't Deceive Me (Please Don't Go)" ;
+            schema:author <https://www.imdb.com/name/nm2238205/> # Chuck Willis
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0126077/> a schema:Person ;
+    schema:name "William Byrd" .
+<https://www.imdb.com/name/nm0207599/> a schema:Person ;
+    schema:name "Frederico de Brito" .
+<https://www.imdb.com/name/nm0403259/> a schema:Person ;
+    schema:name "Herman Hupfeld" .
+<https://www.imdb.com/name/nm0652906/> a schema:Person ;
+    schema:name "Johnny Otis" .
+<https://www.imdb.com/name/nm0691667/> a schema:Person ;
+    schema:name "Steve Porcaro" .
+<https://www.imdb.com/name/nm0845287/> a schema:Person ;
+    schema:name "Wiener Sängerknaben" .
+<https://www.imdb.com/name/nm1413855/> a schema:Person ;
+    schema:name "Ferrer Trindade" .
+<https://www.imdb.com/name/nm1487930/> a schema:Person ;
+    schema:name "Dulce Pontes" .
+<https://www.imdb.com/name/nm2238205/> a schema:Person ;
+    schema:name "Chuck Willis" .
+# ==============================================================================

@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0109424/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Dream Person" ;
+        schema:byArtist <https://www.imdb.com/name/nm0910947/> ; # Faye Wong
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dream Person" ;
+            schema:author <https://www.imdb.com/name/nm0642512/>, # Dolores O'Riordan
+                       <https://www.imdb.com/name/nm0389590/> # Noel Hogan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Know Oneself and Each Other" ;
+        schema:byArtist <https://www.imdb.com/name/nm0910947/> ; # Faye Wong
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Know Oneself and Each Other" ;
+            schema:author <https://www.imdb.com/name/nm2239755/> # Cocteau Twins
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "California Dreamin" ;
+        schema:byArtist <https://www.imdb.com/name/nm2135108/> ; # The Mamas and the Papas
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "California Dreamin" ;
+            schema:author <https://www.imdb.com/name/nm0680512/>, # John Phillips
+                       <https://www.imdb.com/name/nm0680645/> # Michelle Phillips
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Things In Life" ;
+        schema:byArtist <https://www.imdb.com/name/nm0113396/> ; # Dennis Brown
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Things In Life" ;
+            schema:author <https://www.imdb.com/name/nm0113396/> # Dennis Brown
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "What a Difference a Day Makes" ;
+        schema:byArtist <https://www.imdb.com/name/nm0913423/> ; # Dinah Washington
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "What a Difference a Day Makes" ;
+            schema:author <https://www.imdb.com/name/nm0011367/>, # Stanley Adams
+                       <https://www.imdb.com/name/nm0340472/> # María Grever
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Baroque" ;
+        schema:byArtist <https://www.imdb.com/name/nm0301704/> ; # Michael Galasso
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Baroque" ;
+            schema:author <https://www.imdb.com/name/nm0301704/> # Michael Galasso
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0011367/> a schema:Person ;
+    schema:name "Stanley Adams" .
+<https://www.imdb.com/name/nm0113396/> a schema:Person ;
+    schema:name "Dennis Brown" .
+<https://www.imdb.com/name/nm0301704/> a schema:Person ;
+    schema:name "Michael Galasso" .
+<https://www.imdb.com/name/nm0340472/> a schema:Person ;
+    schema:name "María Grever" .
+<https://www.imdb.com/name/nm0389590/> a schema:Person ;
+    schema:name "Noel Hogan" .
+<https://www.imdb.com/name/nm0642512/> a schema:Person ;
+    schema:name "Dolores O'Riordan" .
+<https://www.imdb.com/name/nm0680512/> a schema:Person ;
+    schema:name "John Phillips" .
+<https://www.imdb.com/name/nm0680645/> a schema:Person ;
+    schema:name "Michelle Phillips" .
+<https://www.imdb.com/name/nm0910947/> a schema:Person ;
+    schema:name "Faye Wong" .
+<https://www.imdb.com/name/nm0913423/> a schema:Person ;
+    schema:name "Dinah Washington" .
+<https://www.imdb.com/name/nm2135108/> a schema:Person ;
+    schema:name "The Mamas and the Papas" .
+<https://www.imdb.com/name/nm2239755/> a schema:Person ;
+    schema:name "Cocteau Twins" .
+# ==============================================================================

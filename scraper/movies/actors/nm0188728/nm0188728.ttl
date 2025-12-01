@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0188728/> a schema:Person ;
+    schema:name "Christie Cronenweth" ;
+    schema:url <https://www.imdb.com/name/nm0188728/> ;
+    schema:birthDate "1968-08-01"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Christie Cronenweth. Actress: Fight Club. Christie Cronenweth was born on 1 August 1968 in Los Angeles, California, USA. She is an actress, known for Fight Club (1999) and Down with Love (2003)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0309530/>,    # Down with Love
+                       <https://www.imdb.com/title/tt0137523/> . # Fight Club
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Down with Love (2003)
+<https://www.imdb.com/title/tt0309530/> a schema:Movie ;
+    schema:name "Down with Love" ;
+    schema:url <https://www.imdb.com/title/tt0309530/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0188728/> ;
+        schema:characterName "CBS Switchboard Operator #2"
+    ] .
+
+# Fight Club (1999)
+<https://www.imdb.com/title/tt0137523/> a schema:Movie ;
+    schema:name "Fight Club" ;
+    schema:url <https://www.imdb.com/title/tt0137523/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0188728/> ;
+        schema:characterName "Airline Check-In Attendant"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

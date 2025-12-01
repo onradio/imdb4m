@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0529147/> a schema:Person ;
+    schema:name "Rob Lyons" ;
+    schema:url <https://www.imdb.com/name/nm0529147/> ;
+    schema:jobTitle "Actor", "Producer", "Additional Crew" ;
+    schema:description "Rob Lyons. Actor: Good Will Hunting. Rob Lyons is known for Good Will Hunting (1997), Dick Baby (1999) and Adventures in Appletown (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2455692/>,    # The Dickie Dick Show
+                       <https://www.imdb.com/title/tt0850719/>,    # Walter and the Terrible, Horrible, No Good, Very Bad Life
+                       <https://www.imdb.com/title/tt0119217/>,    # Good Will Hunting
+                       <https://www.imdb.com/title/tt0209032/> . # Hunting Earl
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Dickie Dick Show (2008)
+<https://www.imdb.com/title/tt2455692/> a schema:Movie ;
+    schema:name "The Dickie Dick Show" ;
+    schema:url <https://www.imdb.com/title/tt2455692/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0529147/> ;
+        schema:characterName "Director (2008)"
+    ] .
+
+# Walter and the Terrible, Horrible, No Good, Very Bad Life (2003)
+<https://www.imdb.com/title/tt0850719/> a schema:Movie ;
+    schema:name "Walter and the Terrible, Horrible, No Good, Very Bad Life" ;
+    schema:url <https://www.imdb.com/title/tt0850719/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0529147/> ;
+        schema:characterName "Rand-Man"
+    ] .
+
+# Good Will Hunting (1997)
+<https://www.imdb.com/title/tt0119217/> a schema:Movie ;
+    schema:name "Good Will Hunting" ;
+    schema:url <https://www.imdb.com/title/tt0119217/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0529147/> ;
+        schema:characterName "Carmine Scarpaglia"
+    ] .
+
+# Hunting Earl (1996)
+<https://www.imdb.com/title/tt0209032/> a schema:Movie ;
+    schema:name "Hunting Earl" ;
+    schema:url <https://www.imdb.com/title/tt0209032/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0529147/> ;
+        schema:characterName "Predator"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

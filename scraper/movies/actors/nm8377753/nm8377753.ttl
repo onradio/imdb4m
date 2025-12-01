@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8377753/> a schema:Person ;
+    schema:name "Vishalini" ;
+    schema:url <https://www.imdb.com/name/nm8377753/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Vishalini. Actress: Master. Vishalini is known for Master (2021), Soorarai Pottru (2020) and Mahaan (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10709232/>,    # Hero
+                       <https://www.imdb.com/title/tt6929642/>,    # Kaala
+                       <https://www.imdb.com/title/tt6201292/>,    # Bairavaa
+                       <https://www.imdb.com/title/tt5934894/>,    # Dharma Durai
+                       <https://www.imdb.com/title/tt6262762/>,    # Angali Pangali
+                       <https://www.imdb.com/title/tt4448310/> . # Orange Mittai
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hero (2019)
+<https://www.imdb.com/title/tt10709232/> a schema:Movie ;
+    schema:name "Hero" ;
+    schema:url <https://www.imdb.com/title/tt10709232/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName "Madhi Mother"
+    ] .
+
+# Kaala (2018)
+<https://www.imdb.com/title/tt6929642/> a schema:Movie ;
+    schema:name "Kaala" ;
+    schema:url <https://www.imdb.com/title/tt6929642/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName ""
+    ] .
+
+# Bairavaa (2017)
+<https://www.imdb.com/title/tt6201292/> a schema:Movie ;
+    schema:name "Bairavaa" ;
+    schema:url <https://www.imdb.com/title/tt6201292/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName "Kottai Veeran's wife"
+    ] .
+
+# Dharma Durai (2016)
+<https://www.imdb.com/title/tt5934894/> a schema:Movie ;
+    schema:name "Dharma Durai" ;
+    schema:url <https://www.imdb.com/title/tt5934894/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName "Dharmadurai's Niece"
+    ] .
+
+# Angali Pangali (2016)
+<https://www.imdb.com/title/tt6262762/> a schema:Movie ;
+    schema:name "Angali Pangali" ;
+    schema:url <https://www.imdb.com/title/tt6262762/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName ""
+    ] .
+
+# Orange Mittai (2015)
+<https://www.imdb.com/title/tt4448310/> a schema:Movie ;
+    schema:name "Orange Mittai" ;
+    schema:url <https://www.imdb.com/title/tt4448310/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8377753/> ;
+        schema:characterName "Lady Doctor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

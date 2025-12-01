@@ -1,0 +1,31 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099348/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Fire Dance" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Fire Dance" ;
+            schema:author <https://www.imdb.com/name/nm0119368/> # Peter Buffett
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Soldier Soldier Won't You Marry Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000126/> ; # Kevin Costner
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000126/> a schema:Person ;
+    schema:name "Kevin Costner" .
+<https://www.imdb.com/name/nm0119368/> a schema:Person ;
+    schema:name "Peter Buffett" .
+# ==============================================================================

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5969751/> a schema:Person ;
+    schema:name "Anandita Sarkar" ;
+    schema:url <https://www.imdb.com/name/nm5969751/> ;
+    schema:jobTitle "Actress", "Art Department", "Producer" ;
+    schema:description "Anandita Sarkar. Actress: Dil Bechara. Anandita Sarkar is known for Dil Bechara (2020), Delhi Belly (2011) and Masaan (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8890504/> .    # Bhutu
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bhutu (2016)
+<https://www.imdb.com/title/tt8890504/> a schema:Movie ;
+    schema:name "Bhutu" ;
+    schema:url <https://www.imdb.com/title/tt8890504/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5969751/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

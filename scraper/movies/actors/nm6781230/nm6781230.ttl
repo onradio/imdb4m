@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6781230/> a schema:Person ;
+    schema:name "Bénédicte Battesti" ;
+    schema:url <https://www.imdb.com/name/nm6781230/> ;
+    schema:jobTitle "Visual Effects", "Actress", "Animation Department" ;
+    schema:description "Bénédicte Battesti. Actress: Persepolis. Bénédicte Battesti is known for Persepolis (2007), Arcane (2021) and Mune: Guardian of the Moon (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0808417/> .    # Persepolis
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Persepolis (2007)
+<https://www.imdb.com/title/tt0808417/> a schema:Movie ;
+    schema:name "Persepolis" ;
+    schema:url <https://www.imdb.com/title/tt0808417/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6781230/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

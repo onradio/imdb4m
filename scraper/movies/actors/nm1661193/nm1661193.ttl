@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1661193/> a schema:Person ;
+    schema:name "Renée Amber" ;
+    schema:url <https://www.imdb.com/name/nm1661193/> ;
+    schema:jobTitle "Actress", "Writer", "Producer" ;
+    schema:description "Renée Amber. Actress: The Notebook. Renée Amber is known for The Notebook (2004), Retail! (2025) and Drop (2023)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4899190/>,    # Cowtown
+                       <https://www.imdb.com/title/tt3799024/>,    # Let's Talk English
+                       <https://www.imdb.com/title/tt1650023/>,    # Western Confidential
+                       <https://www.imdb.com/title/tt0427430/>,    # Karroll's Christmas
+                       <https://www.imdb.com/title/tt0332280/>,    # The Notebook
+                       <https://www.imdb.com/title/tt0378337/> . # Family Sins
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cowtown (2015)
+<https://www.imdb.com/title/tt4899190/> a schema:Movie ;
+    schema:name "Cowtown" ;
+    schema:url <https://www.imdb.com/title/tt4899190/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "(2015-2017)"
+    ] .
+
+# Let's Talk English (2014)
+<https://www.imdb.com/title/tt3799024/> a schema:Movie ;
+    schema:name "Let's Talk English" ;
+    schema:url <https://www.imdb.com/title/tt3799024/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "Renée"
+    ] .
+
+# Western Confidential (2011)
+<https://www.imdb.com/title/tt1650023/> a schema:Movie ;
+    schema:name "Western Confidential" ;
+    schema:url <https://www.imdb.com/title/tt1650023/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "Dutch Explorer"
+    ] .
+
+# Karroll's Christmas (2004)
+<https://www.imdb.com/title/tt0427430/> a schema:Movie ;
+    schema:name "Karroll's Christmas" ;
+    schema:url <https://www.imdb.com/title/tt0427430/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "Ellen Williams"
+    ] .
+
+# The Notebook (2004)
+<https://www.imdb.com/title/tt0332280/> a schema:Movie ;
+    schema:name "The Notebook" ;
+    schema:url <https://www.imdb.com/title/tt0332280/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "Nurse at Counter"
+    ] .
+
+# Family Sins (2004)
+<https://www.imdb.com/title/tt0378337/> a schema:Movie ;
+    schema:name "Family Sins" ;
+    schema:url <https://www.imdb.com/title/tt0378337/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1661193/> ;
+        schema:characterName "Young Woman in Jail"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

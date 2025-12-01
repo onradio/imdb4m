@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0712592/> a schema:Person ;
+    schema:name "Peter Rawley" ;
+    schema:url <https://www.imdb.com/name/nm0712592/> ;
+    schema:jobTitle "Producer", "Actor" ;
+    schema:description "Peter Rawley. Actor: Swades: We, the People. Born in London in 1938 and educated at Oxford University. Entered industry in 1961 and joined CMA (now ICM Partners) in 1966. In 1972 became head of production MGM (Europe) and produced Ransom (1974) with Sean Connery in 1975.\n\nRelocated to USA in 1978 and in 1980, rejoined ICM Partners as executive vice-president and head of international department. In 1996 re-entered production. He has..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1379651/>,    # The Gertrude Stein Mystery or Some Like It Art
+                       <https://www.imdb.com/title/tt0367110/> . # Swades: We, the People
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Gertrude Stein Mystery or Some Like It Art (2010)
+<https://www.imdb.com/title/tt1379651/> a schema:Movie ;
+    schema:name "The Gertrude Stein Mystery or Some Like It Art" ;
+    schema:url <https://www.imdb.com/title/tt1379651/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0712592/> ;
+        schema:characterName "Stein's agent"
+    ] .
+
+# Swades: We, the People (2004)
+<https://www.imdb.com/title/tt0367110/> a schema:Movie ;
+    schema:name "Swades: We, the People" ;
+    schema:url <https://www.imdb.com/title/tt0367110/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0712592/> ;
+        schema:characterName "John Stockton"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

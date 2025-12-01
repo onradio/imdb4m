@@ -1,0 +1,363 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1431940/> a schema:Person ;
+    schema:name "Evangeline Lilly" ;
+    schema:url <https://www.imdb.com/name/nm1431940/> ;
+    schema:birthDate "1979-08-03"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:alternateName "Evi", "Monkey", "Nicole Evangeline Lilly" ;
+    schema:description "Evangeline Lilly. Actress: The Hobbit: The Desolation of Smaug. Evangeline Lilly, born in Fort Saskatchewan, Alberta, in 1979, was discovered on the streets of Kelowna, British Columbia, by the famous Ford modeling agency. Although she initially decided to pass on a modeling career, she went ahead and signed with Ford anyway, to help pay for her University of British Columbia tuition and expenses." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Fort Saskatchewan, Alberta, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1170358/>,    # The Hobbit: The Desolation of Smaug
+                       <https://www.imdb.com/title/tt0478970/>,    # Ant-Man
+                       <https://www.imdb.com/title/tt2310332/>,    # The Hobbit: The Battle of the Five Armies
+                       <https://www.imdb.com/title/tt5095030/>,    # Ant-Man and the Wasp
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt11083974/>,    # Avengers: Damage Control
+                       <https://www.imdb.com/title/tt4154796/>,    # Avengers: Endgame
+                       <https://www.imdb.com/title/tt8295516/>,    # Call of Duty: Black Ops 4
+                       <https://www.imdb.com/title/tt2937366/>,    # Little Evil
+                       <https://www.imdb.com/title/tt0433035/>,    # Real Steel
+                       <https://www.imdb.com/title/tt0411008/>,    # Lost
+                       <https://www.imdb.com/title/tt0940580/>,    # Afterwards
+                       <https://www.imdb.com/title/tt0887912/>,    # The Hurt Locker
+                       <https://www.imdb.com/title/tt0385057/>,    # The Long Weekend
+                       <https://www.imdb.com/title/tt0381707/>,    # White Chicks
+                       <https://www.imdb.com/title/tt0324864/>,    # Kingdom Hospital
+                       <https://www.imdb.com/title/tt0279600/>,    # Smallville
+                       <https://www.imdb.com/title/tt0364817/>,    # Tru Calling
+                       <https://www.imdb.com/title/tt0329101/>,    # Freddy vs. Jason
+                       <https://www.imdb.com/title/tt0306841/>,    # The Lizzie McGuire Movie
+                       <https://www.imdb.com/title/tt0311863/> ; # Stealing Sinatra
+
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 46 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Lost)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "80000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1063372057/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1431940/mediaviewer/rm2411343617/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm851062529/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm1229469185/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm1279800833/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm21509633/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm994588161/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm877147649/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm2751017729/>,
+                 <https://www.imdb.com/name/nm1431940/mediaviewer/rm1593389825/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1170358/> a schema:Movie ;
+    schema:name "The Hobbit: The Desolation of Smaug" ;
+    schema:url <https://www.imdb.com/title/tt1170358/> .
+
+<https://www.imdb.com/title/tt0478970/> a schema:Movie ;
+    schema:name "Ant-Man" ;
+    schema:url <https://www.imdb.com/title/tt0478970/> .
+
+<https://www.imdb.com/title/tt2310332/> a schema:Movie ;
+    schema:name "The Hobbit: The Battle of the Five Armies" ;
+    schema:url <https://www.imdb.com/title/tt2310332/> .
+
+<https://www.imdb.com/title/tt5095030/> a schema:Movie ;
+    schema:name "Ant-Man and the Wasp" ;
+    schema:url <https://www.imdb.com/title/tt5095030/> .
+
+<https://www.imdb.com/title/tt0411008/> a schema:Movie ;
+    schema:name "Lost" ;
+    schema:url <https://www.imdb.com/title/tt0411008/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Avengers: Damage Control (2019)
+<https://www.imdb.com/title/tt11083974/> a schema:Movie ;
+    schema:name "Avengers: Damage Control" ;
+    schema:url <https://www.imdb.com/title/tt11083974/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Wasp"
+    ] .
+
+# Avengers: Endgame (2019)
+<https://www.imdb.com/title/tt4154796/> a schema:Movie ;
+    schema:name "Avengers: Endgame" ;
+    schema:url <https://www.imdb.com/title/tt4154796/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Hope Van Dyne"
+    ] .
+
+# Call of Duty: Black Ops 4 (2018)
+<https://www.imdb.com/title/tt8295516/> a schema:Movie ;
+    schema:name "Call of Duty: Black Ops 4" ;
+    schema:url <https://www.imdb.com/title/tt8295516/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Savannah Mason"
+    ] .
+
+# Little Evil (2017)
+<https://www.imdb.com/title/tt2937366/> a schema:Movie ;
+    schema:name "Little Evil" ;
+    schema:url <https://www.imdb.com/title/tt2937366/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Samantha"
+    ] .
+
+# Real Steel (2011)
+<https://www.imdb.com/title/tt0433035/> a schema:Movie ;
+    schema:name "Real Steel" ;
+    schema:url <https://www.imdb.com/title/tt0433035/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Bailey Tallet"
+    ] .
+
+# Lost (2004)
+<https://www.imdb.com/title/tt0411008/> a schema:Movie ;
+    schema:name "Lost" ;
+    schema:url <https://www.imdb.com/title/tt0411008/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Kate Austen"
+    ] .
+
+# Afterwards (2008)
+<https://www.imdb.com/title/tt0940580/> a schema:Movie ;
+    schema:name "Afterwards" ;
+    schema:url <https://www.imdb.com/title/tt0940580/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Claire"
+    ] .
+
+# The Hurt Locker (2008)
+<https://www.imdb.com/title/tt0887912/> a schema:Movie ;
+    schema:name "The Hurt Locker" ;
+    schema:url <https://www.imdb.com/title/tt0887912/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Connie James"
+    ] .
+
+# The Long Weekend (2005)
+<https://www.imdb.com/title/tt0385057/> a schema:Movie ;
+    schema:name "The Long Weekend" ;
+    schema:url <https://www.imdb.com/title/tt0385057/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Simone"
+    ] .
+
+# White Chicks (2004)
+<https://www.imdb.com/title/tt0381707/> a schema:Movie ;
+    schema:name "White Chicks" ;
+    schema:url <https://www.imdb.com/title/tt0381707/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# Kingdom Hospital (2004)
+<https://www.imdb.com/title/tt0324864/> a schema:Movie ;
+    schema:name "Kingdom Hospital" ;
+    schema:url <https://www.imdb.com/title/tt0324864/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Benton's Girlfriend"
+    ] .
+
+# Smallville (2002)
+<https://www.imdb.com/title/tt0279600/> a schema:Movie ;
+    schema:name "Smallville" ;
+    schema:url <https://www.imdb.com/title/tt0279600/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "School Girl"
+    ] .
+
+# Tru Calling (2003)
+<https://www.imdb.com/title/tt0364817/> a schema:Movie ;
+    schema:name "Tru Calling" ;
+    schema:url <https://www.imdb.com/title/tt0364817/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# Freddy vs. Jason (2003)
+<https://www.imdb.com/title/tt0329101/> a schema:Movie ;
+    schema:name "Freddy vs. Jason" ;
+    schema:url <https://www.imdb.com/title/tt0329101/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "School Student - Next to Locker"
+    ] .
+
+# The Lizzie McGuire Movie (2003)
+<https://www.imdb.com/title/tt0306841/> a schema:Movie ;
+    schema:name "The Lizzie McGuire Movie" ;
+    schema:url <https://www.imdb.com/title/tt0306841/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Police Officer"
+    ] .
+
+# Stealing Sinatra (2003)
+<https://www.imdb.com/title/tt0311863/> a schema:Movie ;
+    schema:name "Stealing Sinatra" ;
+    schema:url <https://www.imdb.com/title/tt0311863/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1431940/> ;
+        schema:characterName "Model in commercial"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1063372057/> a schema:VideoObject ;
+        schema:name "&apos;Ant-Man and the Wasp: Quantumania&apos; Cast Answer Burning Questions" ;
+        schema:description "Stars Paul Rudd, Jonathan Majors, Evangeline Lilly, Kathryn Newton, Michael Douglas, Michelle Pfeiffer, and director Peyton Reed tackle topics for all IMDb fans, including whether there's an active Avengers group text, why Paul Rudd's obsessed with hotel slippers, what music Jonathan Majors uses to get hyped to play Kang, how Kathryn Newton's golf game stacks up in the MCU, which question Evangeline Lilly gets from fans the most, and what director Peyton Reed did on set to embarrass People Magazine's Sexiest Man Alive of 2021." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1063372057/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWM1MzRiNjQtN2U5ZC00ZmFhLWFmYTMtN2I4NWFiNTU4YTRiXkEyXkFqcGdeQWZlZGVyaWdh._V1_.jpg" ;
+        schema:duration "PT4M49S"^^xsd:duration ;
+        schema:uploadDate "2023-02-12T22:50:27Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2MDMzODU0OV5BMl5BanBnXkFtZTgwODIwOTAxMzI@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly at an event for Ant-Man (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1779"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm2411343617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzViYTUyMjgtMDIwYS00ZmQ5LWE4MTMtNjFlY2U4MjcyNjQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michelle Pfeiffer and Evangeline Lilly in Ant-Man and the Wasp (2018)" ;
+    schema:height "520"^^xsd:integer ;
+    schema:width "959"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm851062529/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjJlYTY1ZGItNTQ2OC00ZTAyLTk3OTktMTM4MTlkN2MwYjM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michelle Pfeiffer and Evangeline Lilly in Ant-Man and the Wasp (2018)" ;
+    schema:height "502"^^xsd:integer ;
+    schema:width "1055"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm1229469185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGE2ZGM3Y2UtYzY4My00ZjI2LWE3MzAtNjFhNWFmMTM3Mjk3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in The Hurt Locker (2008)" ;
+    schema:height "886"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm1279800833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDEyMjRmNTktMDkyYy00MGNlLThjNjEtMjNhMWRkNWRmMzBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeremy Renner and Evangeline Lilly in The Hurt Locker (2008)" ;
+    schema:height "861"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm21509633/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTI4MzVjNTQtZjMwNC00MzIyLTg5YjktOGZmNWFhNTkzZmYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in South of Heaven (2021)" ;
+    schema:height "586"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm994588161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTZlNjVlN2UtOTAyOC00YzcwLWEwNDItMjEyMzJjNjUwNzhkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in Real Steel (2011)" ;
+    schema:height "761"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm877147649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTVmZWE0MDctZTY2YS00MGJmLTlmMmYtMGZiYWVkYjY3ZGQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in Little Evil (2017)" ;
+    schema:height "847"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm2751017729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODc0Mjc5ZjctOGEyZC00YTA2LWFhMzYtYjRjYzMzODYyYzkyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in Lost (2004)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1431940/mediaviewer/rm1593389825/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjRmYzJjM2UtODFjYi00MTJjLWFjMzItYzUxODEzNzAyYWIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evangeline Lilly in Lost (2004)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1431940/>
+    schema:sameAs <https://www.facebook.com/EvangelineLilly/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

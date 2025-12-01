@@ -1,0 +1,148 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0129127/> a schema:Person ;
+    schema:name "Pasquale Cajano" ;
+    schema:url <https://www.imdb.com/name/nm0129127/> ;
+    schema:birthDate "1921-08-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Pasquale Cajano. Actor: Casino. One of the most recognizable mob-boss faces in the movies, even though he only appeared on a handful of films, Pasquale Cajano was born in Italy in 1921. A friend of the Scorsese family, he made his screen debut on a bit part in The Age of Innocence (1993), followed by the memorable mob boss Remo Gaggi in Casino (1995).\n\nCajano also appeared on Where Evil Lies..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmMwZjc1M2ItZDViOS00YjE5LTk4MWItMzhmYThiNDJlZWU1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Italy"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.77"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9½″ (1.77 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0122933/>,    # Analyze This
+                       <https://www.imdb.com/title/tt0120823/>,    # The Impostors
+                       <https://www.imdb.com/title/tt0117665/>,    # Sleepers
+                       <https://www.imdb.com/title/tt0115678/>,    # Big Night
+                       <https://www.imdb.com/title/tt0112641/>,    # Casino
+                       <https://www.imdb.com/title/tt0114921/>,    # Where Evil Lies
+                       <https://www.imdb.com/title/tt0106226/> ; # The Age of Innocence
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0129127/mediaviewer/rm1494758912/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Analyze This (1999)
+<https://www.imdb.com/title/tt0122933/> a schema:Movie ;
+    schema:name "Analyze This" ;
+    schema:url <https://www.imdb.com/title/tt0122933/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Joe Baldassare"
+    ] .
+
+# The Impostors (1998)
+<https://www.imdb.com/title/tt0120823/> a schema:Movie ;
+    schema:name "The Impostors" ;
+    schema:url <https://www.imdb.com/title/tt0120823/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Shipmate"
+    ] .
+
+# Sleepers (1996)
+<https://www.imdb.com/title/tt0117665/> a schema:Movie ;
+    schema:name "Sleepers" ;
+    schema:url <https://www.imdb.com/title/tt0117665/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Superintendent"
+    ] .
+
+# Big Night (1996)
+<https://www.imdb.com/title/tt0115678/> a schema:Movie ;
+    schema:name "Big Night" ;
+    schema:url <https://www.imdb.com/title/tt0115678/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Alberto"
+    ] .
+
+# Casino (1995)
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Remo Gaggi"
+    ] .
+
+# Where Evil Lies (1995)
+<https://www.imdb.com/title/tt0114921/> a schema:Movie ;
+    schema:name "Where Evil Lies" ;
+    schema:url <https://www.imdb.com/title/tt0114921/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Albert"
+    ] .
+
+# The Age of Innocence (1993)
+<https://www.imdb.com/title/tt0106226/> a schema:Movie ;
+    schema:name "The Age of Innocence" ;
+    schema:url <https://www.imdb.com/title/tt0106226/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0129127/> ;
+        schema:characterName "Man in Crowd"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmMwZjc1M2ItZDViOS00YjE5LTk4MWItMzhmYThiNDJlZWU1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmMwZjc1M2ItZDViOS00YjE5LTk4MWItMzhmYThiNDJlZWU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vinny Vella, Pasquale Cajano, Dominick Grieco, Joseph Rigano, and Gene Ruffini in Casino (1995)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0129127/mediaviewer/rm1494758912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmMwZjc1M2ItZDViOS00YjE5LTk4MWItMzhmYThiNDJlZWU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vinny Vella, Pasquale Cajano, Dominick Grieco, Joseph Rigano, and Gene Ruffini in Casino (1995)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

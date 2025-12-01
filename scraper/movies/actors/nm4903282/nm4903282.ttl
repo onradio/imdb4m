@@ -1,0 +1,114 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4903282/> a schema:Person ;
+    schema:name "Tyler Kimball" ;
+    schema:url <https://www.imdb.com/name/nm4903282/> ;
+    schema:jobTitle "Actor", "Script and Continuity Department" ;
+    schema:description "Tyler Kimball. Actor: Whiplash. Tyler Kimball is known for Whiplash (2014), Full Circle (2013) and Miss D (2012)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.87"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1½″ (1.87 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4446036/>,    # DogGone It!
+                       <https://www.imdb.com/title/tt3986038/>,    # The Date
+                       <https://www.imdb.com/title/tt2582802/>,    # Whiplash
+                       <https://www.imdb.com/title/tt3145404/>,    # The Funeez
+                       <https://www.imdb.com/title/tt2574662/>,    # Brothers
+                       <https://www.imdb.com/title/tt2244849/> . # Fallen Comrade
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# DogGone It! (2017)
+<https://www.imdb.com/title/tt4446036/> a schema:Movie ;
+    schema:name "DogGone It!" ;
+    schema:url <https://www.imdb.com/title/tt4446036/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName "Camera Guy"
+    ] .
+
+# The Date (2014)
+<https://www.imdb.com/title/tt3986038/> a schema:Movie ;
+    schema:name "The Date" ;
+    schema:url <https://www.imdb.com/title/tt3986038/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName "Michael"
+    ] .
+
+# Whiplash (2014)
+<https://www.imdb.com/title/tt2582802/> a schema:Movie ;
+    schema:name "Whiplash" ;
+    schema:url <https://www.imdb.com/title/tt2582802/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName "Saxophonist #2 (Studio Band)"
+    ] .
+
+# The Funeez (2013)
+<https://www.imdb.com/title/tt3145404/> a schema:Movie ;
+    schema:name "The Funeez" ;
+    schema:url <https://www.imdb.com/title/tt3145404/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName ""
+    ] .
+
+# Brothers (2012)
+<https://www.imdb.com/title/tt2574662/> a schema:Movie ;
+    schema:name "Brothers" ;
+    schema:url <https://www.imdb.com/title/tt2574662/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName "Jay"
+    ] .
+
+# Fallen Comrade (2012)
+<https://www.imdb.com/title/tt2244849/> a schema:Movie ;
+    schema:name "Fallen Comrade" ;
+    schema:url <https://www.imdb.com/title/tt2244849/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4903282/> ;
+        schema:characterName "Alexander Ward"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

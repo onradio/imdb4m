@@ -1,0 +1,589 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1502434/> a schema:Person ;
+    schema:name "Leslie Odom Jr." ;
+    schema:url <https://www.imdb.com/name/nm1502434/> ;
+    schema:birthDate "1981-08-06"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Director" ;
+    schema:description "Leslie Odom Jr.. Actor: Hamilton. Leslie Odom Jr. was born on 6 August 1981 in New York City, New York, USA. He is an actor and producer, known for Hamilton (2020), One Night in Miami (2020) and Murder on the Orient Express (2017). He has been married to Nicolette Robinson since 1 December 2012. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjRlMGE1NmEtZjliZi00OWNkLWFlYWUtZDZhN2Y1MDMzNzMzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8503618/>,    # Hamilton
+                       <https://www.imdb.com/title/tt10612922/>,    # One Night in Miami...
+                       <https://www.imdb.com/title/tt3402236/>,    # Murder on the Orient Express
+                       <https://www.imdb.com/title/tt8129006/>,    # Central Park
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt9272322/>,    # Untitled Leslie Odom Jr./Kerry Washington Project
+                       <https://www.imdb.com/title/tt11781374/>,    # Leslie Odom Jr.: Under Pressure
+                       <https://www.imdb.com/title/tt4648786/>,    # Harriet
+                       <https://www.imdb.com/title/tt9909186/>,    # Stucco
+                       <https://www.imdb.com/title/tt3984356/>,    # Only
+                       <https://www.imdb.com/title/tt7230898/>,    # One Dollar
+                       <https://www.imdb.com/title/tt4839610/>,    # We Bare Bears
+                       <https://www.imdb.com/title/tt8093852/>,    # P!nk: Whatever You Want
+                       <https://www.imdb.com/title/tt6986764/>,    # Cabiria, Charity, Chastity
+                       <https://www.imdb.com/title/tt8218936/>,    # Leslie Odom Jr.: Autumn Leaves
+                       <https://www.imdb.com/title/tt7380262/>,    # Sanders Shorts
+                       <https://www.imdb.com/title/tt1442462/>,    # The Good Wife
+                       <https://www.imdb.com/title/tt0203259/>,    # Law & Order: Special Victims Unit
+                       <https://www.imdb.com/title/tt9590668/>,    # Got Hamilton?
+                       <https://www.imdb.com/title/tt4791218/>,    # Luna Goes Cruising
+                       <https://www.imdb.com/title/tt3749900/>,    # Gotham
+                       <https://www.imdb.com/title/tt1839578/>,    # Person of Interest
+                       <https://www.imdb.com/title/tt1825133/>,    # Smash
+                       <https://www.imdb.com/title/tt1797404/>,    # House of Lies
+                       <https://www.imdb.com/title/tt0485985/>,    # Red Tails
+                       <https://www.imdb.com/title/tt1826816/>,    # Poe
+                       <https://www.imdb.com/title/tt0460681/>,    # Supernatural
+                       <https://www.imdb.com/title/tt2006344/>,    # Bandwagon: The Series
+                       <https://www.imdb.com/title/tt1189346/>,    # Zeke and Luther
+                       <https://www.imdb.com/title/tt1378167/>,    # NCIS: Los Angeles
+                       <https://www.imdb.com/title/tt0413573/>,    # Grey's Anatomy
+                       <https://www.imdb.com/title/tt0805660/>,    # Big Day
+                       <https://www.imdb.com/title/tt0959350/>,    # Supreme Courtships
+                       <https://www.imdb.com/title/tt0926732/>,    # The Bill Engvall Show
+                       <https://www.imdb.com/title/tt1608583/>,    # Scarecrow Joe
+                       <https://www.imdb.com/title/tt0460631/>,    # Close to Home
+                       <https://www.imdb.com/title/tt0499591/>,    # Vanished
+                       <https://www.imdb.com/title/tt0313043/>,    # CSI: Miami
+                       <https://www.imdb.com/title/tt0238784/>,    # Gilmore Girls
+                       <https://www.imdb.com/title/tt0460686/>,    # Threshold
+                       <https://www.imdb.com/title/tt0403728/> ; # The Big House
+
+    schema:award [
+        a schema:Award ;
+        schema:description "29 wins & 58 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2975843353/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1502434/mediaviewer/rm3739310849/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm2450472449/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm1747269889/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm556087553/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm4129793/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm2605583617/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm2655915265/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm3024686849/>,
+                 <https://www.imdb.com/name/nm1502434/mediaviewer/rm409271553/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8503618/> a schema:Movie ;
+    schema:name "Hamilton" ;
+    schema:url <https://www.imdb.com/title/tt8503618/> .
+
+<https://www.imdb.com/title/tt10612922/> a schema:Movie ;
+    schema:name "One Night in Miami..." ;
+    schema:url <https://www.imdb.com/title/tt10612922/> .
+
+<https://www.imdb.com/title/tt3402236/> a schema:Movie ;
+    schema:name "Murder on the Orient Express" ;
+    schema:url <https://www.imdb.com/title/tt3402236/> .
+
+<https://www.imdb.com/title/tt8129006/> a schema:Movie ;
+    schema:name "Central Park" ;
+    schema:url <https://www.imdb.com/title/tt8129006/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Untitled Leslie Odom Jr./Kerry Washington Project (2019)
+<https://www.imdb.com/title/tt9272322/> a schema:Movie ;
+    schema:name "Untitled Leslie Odom Jr./Kerry Washington Project" ;
+    schema:url <https://www.imdb.com/title/tt9272322/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Omari"
+    ] .
+
+# Leslie Odom Jr.: Under Pressure (2019)
+<https://www.imdb.com/title/tt11781374/> a schema:Movie ;
+    schema:name "Leslie Odom Jr.: Under Pressure" ;
+    schema:url <https://www.imdb.com/title/tt11781374/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Leslie Odom Jr."
+    ] .
+
+# Harriet (2019)
+<https://www.imdb.com/title/tt4648786/> a schema:Movie ;
+    schema:name "Harriet" ;
+    schema:url <https://www.imdb.com/title/tt4648786/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "William Still"
+    ] .
+
+# Stucco (2019)
+<https://www.imdb.com/title/tt9909186/> a schema:Movie ;
+    schema:name "Stucco" ;
+    schema:url <https://www.imdb.com/title/tt9909186/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Throne"
+    ] .
+
+# Only (2019)
+<https://www.imdb.com/title/tt3984356/> a schema:Movie ;
+    schema:name "Only" ;
+    schema:url <https://www.imdb.com/title/tt3984356/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Will"
+    ] .
+
+# One Dollar (2018)
+<https://www.imdb.com/title/tt7230898/> a schema:Movie ;
+    schema:name "One Dollar" ;
+    schema:url <https://www.imdb.com/title/tt7230898/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Rand"
+    ] .
+
+# We Bare Bears (2018)
+<https://www.imdb.com/title/tt4839610/> a schema:Movie ;
+    schema:name "We Bare Bears" ;
+    schema:url <https://www.imdb.com/title/tt4839610/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Dr. Leslie"
+    ] .
+
+# P!nk: Whatever You Want (2018)
+<https://www.imdb.com/title/tt8093852/> a schema:Movie ;
+    schema:name "P!nk: Whatever You Want" ;
+    schema:url <https://www.imdb.com/title/tt8093852/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Leslie Odom Jr."
+    ] .
+
+# Cabiria, Charity, Chastity (2017)
+<https://www.imdb.com/title/tt6986764/> a schema:Movie ;
+    schema:name "Cabiria, Charity, Chastity" ;
+    schema:url <https://www.imdb.com/title/tt6986764/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Jack the Juggler"
+    ] .
+
+# Leslie Odom Jr.: Autumn Leaves (2016)
+<https://www.imdb.com/title/tt8218936/> a schema:Movie ;
+    schema:name "Leslie Odom Jr.: Autumn Leaves" ;
+    schema:url <https://www.imdb.com/title/tt8218936/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Leslie Odom Jr."
+    ] .
+
+# Sanders Shorts (2016)
+<https://www.imdb.com/title/tt7380262/> a schema:Movie ;
+    schema:name "Sanders Shorts" ;
+    schema:url <https://www.imdb.com/title/tt7380262/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Leslie Odom Jr."
+    ] .
+
+# The Good Wife (2016)
+<https://www.imdb.com/title/tt1442462/> a schema:Movie ;
+    schema:name "The Good Wife" ;
+    schema:url <https://www.imdb.com/title/tt1442462/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Barry Pert"
+    ] .
+
+# Law & Order: Special Victims Unit (2013)
+<https://www.imdb.com/title/tt0203259/> a schema:Movie ;
+    schema:name "Law & Order: Special Victims Unit" ;
+    schema:url <https://www.imdb.com/title/tt0203259/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Reverend Curtis Scott"
+    ] .
+
+# Got Hamilton? (2015)
+<https://www.imdb.com/title/tt9590668/> a schema:Movie ;
+    schema:name "Got Hamilton?" ;
+    schema:url <https://www.imdb.com/title/tt9590668/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Contestant"
+    ] .
+
+# Luna Goes Cruising (2015)
+<https://www.imdb.com/title/tt4791218/> a schema:Movie ;
+    schema:name "Luna Goes Cruising" ;
+    schema:url <https://www.imdb.com/title/tt4791218/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Oscar"
+    ] .
+
+# Gotham (2014)
+<https://www.imdb.com/title/tt3749900/> a schema:Movie ;
+    schema:name "Gotham" ;
+    schema:url <https://www.imdb.com/title/tt3749900/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Ian Hargrove"
+    ] .
+
+# Person of Interest (2013)
+<https://www.imdb.com/title/tt1839578/> a schema:Movie ;
+    schema:name "Person of Interest" ;
+    schema:url <https://www.imdb.com/title/tt1839578/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Peter Collier"
+    ] .
+
+# Smash (2012)
+<https://www.imdb.com/title/tt1825133/> a schema:Movie ;
+    schema:name "Smash" ;
+    schema:url <https://www.imdb.com/title/tt1825133/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Sam Strickland"
+    ] .
+
+# House of Lies (2012)
+<https://www.imdb.com/title/tt1797404/> a schema:Movie ;
+    schema:name "House of Lies" ;
+    schema:url <https://www.imdb.com/title/tt1797404/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "James"
+    ] .
+
+# Red Tails (2012)
+<https://www.imdb.com/title/tt0485985/> a schema:Movie ;
+    schema:name "Red Tails" ;
+    schema:url <https://www.imdb.com/title/tt0485985/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Declan 'Winky' Hall"
+    ] .
+
+# Poe (2011)
+<https://www.imdb.com/title/tt1826816/> a schema:Movie ;
+    schema:name "Poe" ;
+    schema:url <https://www.imdb.com/title/tt1826816/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Julian 'Jupiter' Noble"
+    ] .
+
+# Supernatural (2011)
+<https://www.imdb.com/title/tt0460681/> a schema:Movie ;
+    schema:name "Supernatural" ;
+    schema:url <https://www.imdb.com/title/tt0460681/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Guy"
+    ] .
+
+# Bandwagon: The Series (2011)
+<https://www.imdb.com/title/tt2006344/> a schema:Movie ;
+    schema:name "Bandwagon: The Series" ;
+    schema:url <https://www.imdb.com/title/tt2006344/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Urban Glee performer"
+    ] .
+
+# Zeke and Luther (2011)
+<https://www.imdb.com/title/tt1189346/> a schema:Movie ;
+    schema:name "Zeke and Luther" ;
+    schema:url <https://www.imdb.com/title/tt1189346/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Mr. Arliss Bunnyson"
+    ] .
+
+# NCIS: Los Angeles (2011)
+<https://www.imdb.com/title/tt1378167/> a schema:Movie ;
+    schema:name "NCIS: Los Angeles" ;
+    schema:url <https://www.imdb.com/title/tt1378167/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "FBI Agent Duane Lausten"
+    ] .
+
+# Grey's Anatomy (2008)
+<https://www.imdb.com/title/tt0413573/> a schema:Movie ;
+    schema:name "Grey's Anatomy" ;
+    schema:url <https://www.imdb.com/title/tt0413573/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "P.J. Walling"
+    ] .
+
+# Big Day (2006)
+<https://www.imdb.com/title/tt0805660/> a schema:Movie ;
+    schema:name "Big Day" ;
+    schema:url <https://www.imdb.com/title/tt0805660/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Freddy"
+    ] .
+
+# Supreme Courtships (2007)
+<https://www.imdb.com/title/tt0959350/> a schema:Movie ;
+    schema:name "Supreme Courtships" ;
+    schema:url <https://www.imdb.com/title/tt0959350/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Marcus"
+    ] .
+
+# The Bill Engvall Show (2007)
+<https://www.imdb.com/title/tt0926732/> a schema:Movie ;
+    schema:name "The Bill Engvall Show" ;
+    schema:url <https://www.imdb.com/title/tt0926732/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Mr. Pratt"
+    ] .
+
+# Scarecrow Joe (2007)
+<https://www.imdb.com/title/tt1608583/> a schema:Movie ;
+    schema:name "Scarecrow Joe" ;
+    schema:url <https://www.imdb.com/title/tt1608583/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Joe"
+    ] .
+
+# Close to Home (2006)
+<https://www.imdb.com/title/tt0460631/> a schema:Movie ;
+    schema:name "Close to Home" ;
+    schema:url <https://www.imdb.com/title/tt0460631/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Jordan Carter"
+    ] .
+
+# Vanished (2006)
+<https://www.imdb.com/title/tt0499591/> a schema:Movie ;
+    schema:name "Vanished" ;
+    schema:url <https://www.imdb.com/title/tt0499591/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Malik Christo"
+    ] .
+
+# CSI: Miami (2003)
+<https://www.imdb.com/title/tt0313043/> a schema:Movie ;
+    schema:name "CSI: Miami" ;
+    schema:url <https://www.imdb.com/title/tt0313043/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Joseph Kayle"
+    ] .
+
+# Gilmore Girls (2006)
+<https://www.imdb.com/title/tt0238784/> a schema:Movie ;
+    schema:name "Gilmore Girls" ;
+    schema:url <https://www.imdb.com/title/tt0238784/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Quentin Walsh"
+    ] .
+
+# Threshold (2006)
+<https://www.imdb.com/title/tt0460686/> a schema:Movie ;
+    schema:name "Threshold" ;
+    schema:url <https://www.imdb.com/title/tt0460686/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Sergeant Adams"
+    ] .
+
+# The Big House (2004)
+<https://www.imdb.com/title/tt0403728/> a schema:Movie ;
+    schema:name "The Big House" ;
+    schema:url <https://www.imdb.com/title/tt0403728/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1502434/> ;
+        schema:characterName "Lamont"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2975843353/> a schema:VideoObject ;
+        schema:name "All About The Exorcist: Believer" ;
+        schema:description "50 years after the original, 'The Exorcist' is revived with this direct sequel to the first film. Ellen Burstyn is confirmed to return as Chris MacNeil, mother of the possessed Regan and keep your head on a swivel for a potential surprise cameo from Linda Blair. Filmmaker David Gordon Green is planning a trilogy that ignores the existing sequels and series that followed 'The Exorcist' (1973), much like Green did with his 'Halloween' legacy sequels that brought Jamie Lee Curtis back to that franchise. Green, who broke out with raunchy comedies and stirring indie dramas, sees 'The Exorcist' as a brand new challenge. \"To me, it's as different as making 'Stronger' and 'Pineapple Express.' ['Halloween' and 'The Exorcist'] are just so unbelievably different. One is very primal and the other is very academic,\" says Green. Leslie Odom Jr. ('Glass Onion,' 'Hamilton') stars as the father of a possessed child, who seeks out Burstyn's character for support since she's been there, done that. Lidya Jewett ('Vivo,' \"Good Girls\") plays the bedeviled young daughter, and Ann Dowd (\"The Handmaid's Tale,\" 'Hereditary') plays her nurse. 'The Exorcist: Believer' haunts your local theater in October 2023." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2975843353/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGIxY2ViNWEtNzFiNi00ZTA5LTljZGItMTYyZDFkOGJjMzdlXkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg" ;
+        schema:duration "PT1M38S"^^xsd:duration ;
+        schema:uploadDate "2023-05-26T18:32:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjRlMGE1NmEtZjliZi00OWNkLWFlYWUtZDZhN2Y1MDMzNzMzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjRlMGE1NmEtZjliZi00OWNkLWFlYWUtZDZhN2Y1MDMzNzMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr." ;
+    schema:height "3840"^^xsd:integer ;
+    schema:width "2160"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm3739310849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWFmMzc2OTAtM2M4Ny00NjQ5LWIxZGMtOTU0YTYzZWI1ZDA4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ellen Burstyn and Leslie Odom Jr. in The Exorcist: Believer (2023)" ;
+    schema:height "2065"^^xsd:integer ;
+    schema:width "3098"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm2450472449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWZhY2IyNTMtZTBkNC00OWQ3LTlmZGItMWU3ZjJiODE2ZjZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr. in Glass Onion (2022)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm1747269889/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGQ4ZjRkODAtYjRiMi00YjE2LWE3MjctOWU3OGIyNTg4MTM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kate Hudson, Daniel Craig, Leslie Odom Jr., and Jessica Henwick in Glass Onion (2022)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm556087553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODNhZmQ5YTMtODhlNC00MGVlLTgzNTctNmFjYjg1NWU1NzkyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kate Hudson, Kathryn Hahn, and Leslie Odom Jr. in Glass Onion (2022)" ;
+    schema:height "2200"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm4129793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjY5MTc1M2MtMzdkNi00ODNhLWJhMmUtMGYxMmNkZTExYTE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kate Hudson, Kathryn Hahn, and Leslie Odom Jr. in Glass Onion (2022)" ;
+    schema:height "1582"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm2605583617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWQxOTUwMmEtMWE1Ni00NzllLTkxNDgtNDJhYzc4ODg2YzcyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Norton, Kate Hudson, Kathryn Hahn, Dave Bautista, Leslie Odom Jr., Madelyn Cline, and Jessica Henwick in Glass Onion (2022)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3989"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm2655915265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDM1MGIwZTItMzE5ZS00ZTk3LTg4MDAtOGU2ZjJmNTkyOWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Norton, Kate Hudson, Kathryn Hahn, Leslie Odom Jr., and Madelyn Cline in Glass Onion (2022)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm3024686849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjhjMTJhMzItZDA0OC00OTZhLTk1YzItN2E5MDc5MmYwNzNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edward Norton, Kate Hudson, Daniel Craig, Kathryn Hahn, Dave Bautista, Leslie Odom Jr., Janelle Monáe, Madelyn Cline, and Jessica Henwick in Glass Onion (2022)" ;
+    schema:height "3900"^^xsd:integer ;
+    schema:width "9316"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1502434/mediaviewer/rm409271553/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmI5YjM2YzktYzA5NS00NGQzLTg4ZjgtZWRmNGY4YzJjN2RhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Odom Jr. in Needle in a Timestack (2021)" ;
+    schema:height "683"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1502434/>
+    schema:sameAs <https://www.facebook.com/TheLeslieOdomJr/>,
+                  <https://www.instagram.com/leslieodomjr/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0384280/> a schema:Person ;
+    schema:name "Gilbert R. Hill" ;
+    schema:url <https://www.imdb.com/name/nm0384280/> ;
+    schema:birthDate "1931-11-06"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Gil", "Gilbert Roland Hill" ;
+    schema:description "Gilbert R. Hill. Actor: Beverly Hills Cop. Gilbert R. Hill was born on 6 November 1931 in Birmingham, Alabama, USA. He was an actor, known for Beverly Hills Cop (1984), Beverly Hills Cop II (1987) and Beverly Hills Cop III (1994). He was married to Delores Hooks. He died on 29 February 2016 in Detroit, Michigan, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTgzNDE3MDI5NF5BMl5BanBnXkFtZTcwNjU3ODgwMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Birmingham, Alabama, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11¾″ (1.82 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086960/>,    # Beverly Hills Cop
+                       <https://www.imdb.com/title/tt0092644/>,    # Beverly Hills Cop II
+                       <https://www.imdb.com/title/tt0109254/> ; # Beverly Hills Cop III
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0384280/mediaviewer/rm3806278145/>,
+                 <https://www.imdb.com/name/nm0384280/mediaviewer/rm1598737409/>,
+                 <https://www.imdb.com/name/nm0384280/mediaviewer/rm2737999360/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086960/> a schema:Movie ;
+    schema:name "Beverly Hills Cop" ;
+    schema:url <https://www.imdb.com/title/tt0086960/> .
+
+<https://www.imdb.com/title/tt0092644/> a schema:Movie ;
+    schema:name "Beverly Hills Cop II" ;
+    schema:url <https://www.imdb.com/title/tt0092644/> .
+
+<https://www.imdb.com/title/tt0109254/> a schema:Movie ;
+    schema:name "Beverly Hills Cop III" ;
+    schema:url <https://www.imdb.com/title/tt0109254/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTgzNDE3MDI5NF5BMl5BanBnXkFtZTcwNjU3ODgwMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzNDE3MDI5NF5BMl5BanBnXkFtZTcwNjU3ODgwMw@@._V1_.jpg> ;
+    schema:caption "Gilbert R. Hill in Beverly Hills Cop (1984)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1347"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0384280/mediaviewer/rm3806278145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzYyODE0ZTctMGQzNi00ZTRhLTk3YjYtMTEzNGFmYTkxOTBjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eddie Murphy and Gilbert R. Hill in Beverly Hills Cop (1984)" ;
+    schema:height "2100"^^xsd:integer ;
+    schema:width "3722"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0384280/mediaviewer/rm1598737409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMyMjQyN2ItNzRlMS00YTVmLThiOTQtMjk2ZTkyMjJiMmJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gilbert R. Hill" ;
+    schema:height "1436"^^xsd:integer ;
+    schema:width "1255"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0384280/mediaviewer/rm2737999360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzNDE3MDI5NF5BMl5BanBnXkFtZTcwNjU3ODgwMw@@._V1_.jpg> ;
+    schema:caption "Gilbert R. Hill in Beverly Hills Cop (1984)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1347"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

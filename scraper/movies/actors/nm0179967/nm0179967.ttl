@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0179967/> a schema:Person ;
+    schema:name "Darneicea Corley" ;
+    schema:url <https://www.imdb.com/name/nm0179967/> ;
+    schema:birthDate "1979-11-17"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Darneicea Corley. Actress: Boyz n the Hood. Darneicea Corley was born on 17 November 1979 in California, USA. She is an actress, known for Boyz n the Hood (1991) and The Fresh Prince of Bel-Air (1990)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0101507/>,    # Boyz n the Hood
+                       <https://www.imdb.com/title/tt0098800/> . # The Fresh Prince of Bel-Air
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyz n the Hood (1991)
+<https://www.imdb.com/title/tt0101507/> a schema:Movie ;
+    schema:name "Boyz n the Hood" ;
+    schema:url <https://www.imdb.com/title/tt0101507/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0179967/> ;
+        schema:characterName "Keisha"
+    ] .
+
+# The Fresh Prince of Bel-Air (1990)
+<https://www.imdb.com/title/tt0098800/> a schema:Movie ;
+    schema:name "The Fresh Prince of Bel-Air" ;
+    schema:url <https://www.imdb.com/title/tt0098800/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0179967/> ;
+        schema:characterName "Caroler #6"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

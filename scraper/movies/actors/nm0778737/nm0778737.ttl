@@ -1,0 +1,250 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0778737/> a schema:Person ;
+    schema:name "Charles Scorsese" ;
+    schema:url <https://www.imdb.com/name/nm0778737/> ;
+    schema:birthDate "1913-05-08"^^xsd:date ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director", "Costume Department" ;
+    schema:alternateName "Charlie", "Luciano Charles Scorsese" ;
+    schema:description "Charles Scorsese. Actor: GoodFellas. Charles Scorsese was born on 8 May 1913 in Manhattan, New York City, New York, USA. He was an actor and assistant director, known for GoodFellas (1990), Cape Fear (1991) and After Hours (1985). He was married to Catherine Scorsese. He died on 23 August 1993 in Kips Bay, Manhattan, New York City, New York, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjIyNjM5OTg4OF5BMl5BanBnXkFtZTcwNjM3MjkxOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Manhattan, New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0085794/>,    # The King of Comedy
+                       <https://www.imdb.com/title/tt0088680/>,    # After Hours
+                       <https://www.imdb.com/title/tt0099685/>,    # Goodfellas
+                       <https://www.imdb.com/title/tt0101540/>,    # Cape Fear
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0106226/>,    # The Age of Innocence
+                       <https://www.imdb.com/title/tt0102004/>,    # The Hard Way
+                       <https://www.imdb.com/title/tt0093565/>,    # Moonstruck
+                       <https://www.imdb.com/title/tt0092751/>,    # China Girl
+                       <https://www.imdb.com/title/tt0090863/>,    # The Color of Money
+                       <https://www.imdb.com/title/tt0092226/>,    # Wise Guys
+                       <https://www.imdb.com/title/tt0087755/>,    # The Muppets Take Manhattan
+                       <https://www.imdb.com/title/tt0081398/>,    # Raging Bull
+                       <https://www.imdb.com/title/tt0075314/> ; # Taxi Driver
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0778737/mediaviewer/rm3722867713/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm922239233/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm737689857/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm788021505/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm603472129/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm637026561/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm3803994880/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm1827677184/>,
+                 <https://www.imdb.com/name/nm0778737/mediaviewer/rm2972822272/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0085794/> a schema:Movie ;
+    schema:name "The King of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt0085794/> .
+
+<https://www.imdb.com/title/tt0088680/> a schema:Movie ;
+    schema:name "After Hours" ;
+    schema:url <https://www.imdb.com/title/tt0088680/> .
+
+<https://www.imdb.com/title/tt0099685/> a schema:Movie ;
+    schema:name "Goodfellas" ;
+    schema:url <https://www.imdb.com/title/tt0099685/> .
+
+<https://www.imdb.com/title/tt0101540/> a schema:Movie ;
+    schema:name "Cape Fear" ;
+    schema:url <https://www.imdb.com/title/tt0101540/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Age of Innocence (1993)
+<https://www.imdb.com/title/tt0106226/> a schema:Movie ;
+    schema:name "The Age of Innocence" ;
+    schema:url <https://www.imdb.com/title/tt0106226/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Elderly Man at Jersey City Station"
+    ] .
+
+# The Hard Way (1991)
+<https://www.imdb.com/title/tt0102004/> a schema:Movie ;
+    schema:name "The Hard Way" ;
+    schema:url <https://www.imdb.com/title/tt0102004/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Senior Citizen"
+    ] .
+
+# Moonstruck (1987)
+<https://www.imdb.com/title/tt0093565/> a schema:Movie ;
+    schema:name "Moonstruck" ;
+    schema:url <https://www.imdb.com/title/tt0093565/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Customer in Bakery"
+    ] .
+
+# China Girl (1987)
+<https://www.imdb.com/title/tt0092751/> a schema:Movie ;
+    schema:name "China Girl" ;
+    schema:url <https://www.imdb.com/title/tt0092751/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Old man at the bar"
+    ] .
+
+# The Color of Money (1986)
+<https://www.imdb.com/title/tt0090863/> a schema:Movie ;
+    schema:name "The Color of Money" ;
+    schema:url <https://www.imdb.com/title/tt0090863/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "High Roller #1"
+    ] .
+
+# Wise Guys (1986)
+<https://www.imdb.com/title/tt0092226/> a schema:Movie ;
+    schema:name "Wise Guys" ;
+    schema:url <https://www.imdb.com/title/tt0092226/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Birthday Guest"
+    ] .
+
+# The Muppets Take Manhattan (1984)
+<https://www.imdb.com/title/tt0087755/> a schema:Movie ;
+    schema:name "The Muppets Take Manhattan" ;
+    schema:url <https://www.imdb.com/title/tt0087755/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Extra"
+    ] .
+
+# Raging Bull (1980)
+<https://www.imdb.com/title/tt0081398/> a schema:Movie ;
+    schema:name "Raging Bull" ;
+    schema:url <https://www.imdb.com/title/tt0081398/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Charlie - Man with Como"
+    ] .
+
+# Taxi Driver (1976)
+<https://www.imdb.com/title/tt0075314/> a schema:Movie ;
+    schema:name "Taxi Driver" ;
+    schema:url <https://www.imdb.com/title/tt0075314/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0778737/> ;
+        schema:characterName "Iris' Father (newspaper article)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjIyNjM5OTg4OF5BMl5BanBnXkFtZTcwNjM3MjkxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyNjM5OTg4OF5BMl5BanBnXkFtZTcwNjM3MjkxOA@@._V1_.jpg> ;
+    schema:caption "Charles Scorsese" ;
+    schema:height "775"^^xsd:integer ;
+    schema:width "483"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm3722867713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzFhMjUyNTAtNjY0My00OGFjLWEwMzEtNGZlZDczZjQyNGYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Martin Scorsese, Michael Powell, Catherine Scorsese, and Charles Scorsese in Made in England: The Films of Powell and Pressburger (2024)" ;
+    schema:height "1836"^^xsd:integer ;
+    schema:width "3404"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm922239233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTIzYTdhNzctN2ZkNy00NWZlLTlkODMtMWU4NWNlZDgxZjUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Scorsese in Italianamerican (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "946"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm737689857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDJlY2EyZWUtMWNiNy00Yzg3LTllZjktM2JkYTJlNjUzZjQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Scorsese in Italianamerican (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "956"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm788021505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTQ3NThjZjAtNjVlZS00MDA4LTgzMjctODc4NzVmZWM5MmFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Catherine Scorsese and Charles Scorsese in Italianamerican (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "952"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm603472129/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzFmZTUyMmEtNjAxOS00Nzg5LWJlYjctMmI4NDg3NjFjNjMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Catherine Scorsese and Charles Scorsese in Italianamerican (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "952"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm637026561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2FjN2VkYjktMTkzNS00YjNmLWFhZjItMzY0ZjY0MjY2Yzk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Catherine Scorsese and Charles Scorsese in Italianamerican (1974)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "950"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm3803994880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRiYmM3ZjAtYjQzMi00MjdmLTk5MGUtZDk4YWU1ZjIyMmJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Scorsese in GoodFellas (1990)" ;
+    schema:height "1110"^^xsd:integer ;
+    schema:width "1973"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm1827677184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWMwMTUxYTgtNjc5NS00YTdkLWI2MzYtYTI5YzY5MTQzYzhmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Catherine Scorsese and Charles Scorsese in Taxi Driver (1976)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0778737/mediaviewer/rm2972822272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI2OTc5OTUwMF5BMl5BanBnXkFtZTcwNTM3MjkxOA@@._V1_.jpg> ;
+    schema:caption "Martin Scorsese, Barbara De Fina, Catherine Scorsese, and Charles Scorsese in After Hours (1985)" ;
+    schema:height "1312"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,549 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0755556/> a schema:Person ;
+    schema:name "Nicholas Sadler" ;
+    schema:url <https://www.imdb.com/name/nm0755556/> ;
+    schema:birthDate "1967-02-09"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Nicholas Sadler. Actor: Scent of a Woman. Nicholas Sadler was born on 9 February 1967 in Minneapolis, Minnesota, USA. He is an actor and director, known for Scent of a Woman (1992), Twister (1996) and Disclosure (1994). He has been married to GiGi New since 2003." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGFjZTcwMjgtZjIyMy00YmJiLTkxNmUtZjdhYTA2NDIwNGIyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Minneapolis, Minnesota, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1632701/>,    # Suits
+                       <https://www.imdb.com/title/tt2388986/>,    # Paterno
+                       <https://www.imdb.com/title/tt4030600/>,    # The Bye Bye Man
+                       <https://www.imdb.com/title/tt1544603/>,    # Are We There Yet?
+                       <https://www.imdb.com/title/tt2258381/>,    # Harold's Bad Day
+                       <https://www.imdb.com/title/tt1403865/>,    # True Grit
+                       <https://www.imdb.com/title/tt0977855/>,    # Fair Game
+                       <https://www.imdb.com/title/tt1242441/>,    # Men of a Certain Age
+                       <https://www.imdb.com/title/tt0460650/>,    # In Justice
+                       <https://www.imdb.com/title/tt0158552/>,    # Charmed
+                       <https://www.imdb.com/title/tt0247082/>,    # CSI: Crime Scene Investigation
+                       <https://www.imdb.com/title/tt0229440/>,    # Hellraiser: Inferno
+                       <https://www.imdb.com/title/tt0195462/>,    # G vs E
+                       <https://www.imdb.com/title/tt0159396/>,    # Civility
+                       <https://www.imdb.com/title/tt0197063/>,    # Turkey. Cake.
+                       <https://www.imdb.com/title/tt0160182/>,    # Desperate But Not Serious
+                       <https://www.imdb.com/title/tt0138510/>,    # Idle Hands
+                       <https://www.imdb.com/title/tt0120187/>,    # Spoiler
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0119791/>,    # Nightwatch
+                       <https://www.imdb.com/title/tt0117998/>,    # Twister
+                       <https://www.imdb.com/title/tt0119663/>,    # The Method
+                       <https://www.imdb.com/title/tt0105994/>,    # Fallen Angels
+                       <https://www.imdb.com/title/tt0113613/>,    # The Last Supper
+                       <https://www.imdb.com/title/tt0114343/>,    # Sawbones
+                       <https://www.imdb.com/title/tt0108758/>,    # Earth 2
+                       <https://www.imdb.com/title/tt0109635/>,    # Disclosure
+                       <https://www.imdb.com/title/tt0109835/>,    # Frank & Jesse
+                       <https://www.imdb.com/title/tt0106216/>,    # Secret Lies
+                       <https://www.imdb.com/title/tt0105323/>,    # Scent of a Woman
+                       <https://www.imdb.com/title/tt0105477/>,    # Stop! Or My Mom Will Shoot
+                       <https://www.imdb.com/title/tt0102460/>,    # Mobsters
+                       <https://www.imdb.com/title/tt0102960/>,    # Sometimes They Come Back
+                       <https://www.imdb.com/title/tt0086687/>,    # The Cosby Show
+                       <https://www.imdb.com/title/tt0202179/> ; # ABC Afterschool Specials
+
+
+    schema:video <https://www.imdb.com/video/vi2979633177/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0755556/mediaviewer/rm383541248/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm4227413760/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm2046208512/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm2334171136/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm3966352128/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm1207938818/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm2113908482/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm2096540160/>,
+                 <https://www.imdb.com/name/nm0755556/mediaviewer/rm2130094592/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Suits (2019)
+<https://www.imdb.com/title/tt1632701/> a schema:Movie ;
+    schema:name "Suits" ;
+    schema:url <https://www.imdb.com/title/tt1632701/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Frank DiBiase"
+    ] .
+
+# Paterno (2018)
+<https://www.imdb.com/title/tt2388986/> a schema:Movie ;
+    schema:name "Paterno" ;
+    schema:url <https://www.imdb.com/title/tt2388986/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Todd - Press Photographer"
+    ] .
+
+# The Bye Bye Man (2017)
+<https://www.imdb.com/title/tt4030600/> a schema:Movie ;
+    schema:name "The Bye Bye Man" ;
+    schema:url <https://www.imdb.com/title/tt4030600/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Professor Cooper"
+    ] .
+
+# Are We There Yet? (2012)
+<https://www.imdb.com/title/tt1544603/> a schema:Movie ;
+    schema:name "Are We There Yet?" ;
+    schema:url <https://www.imdb.com/title/tt1544603/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "George"
+    ] .
+
+# Harold's Bad Day (2012)
+<https://www.imdb.com/title/tt2258381/> a schema:Movie ;
+    schema:name "Harold's Bad Day" ;
+    schema:url <https://www.imdb.com/title/tt2258381/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Marty"
+    ] .
+
+# True Grit (2010)
+<https://www.imdb.com/title/tt1403865/> a schema:Movie ;
+    schema:name "True Grit" ;
+    schema:url <https://www.imdb.com/title/tt1403865/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Repentant Condemned Man"
+    ] .
+
+# Fair Game (2010)
+<https://www.imdb.com/title/tt0977855/> a schema:Movie ;
+    schema:name "Fair Game" ;
+    schema:url <https://www.imdb.com/title/tt0977855/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "CIA Tour Leader"
+    ] .
+
+# Men of a Certain Age (2010)
+<https://www.imdb.com/title/tt1242441/> a schema:Movie ;
+    schema:name "Men of a Certain Age" ;
+    schema:url <https://www.imdb.com/title/tt1242441/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Repairman"
+    ] .
+
+# In Justice (2006)
+<https://www.imdb.com/title/tt0460650/> a schema:Movie ;
+    schema:name "In Justice" ;
+    schema:url <https://www.imdb.com/title/tt0460650/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Larry Duffy"
+    ] .
+
+# Charmed (2003)
+<https://www.imdb.com/title/tt0158552/> a schema:Movie ;
+    schema:name "Charmed" ;
+    schema:url <https://www.imdb.com/title/tt0158552/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Leech"
+    ] .
+
+# CSI: Crime Scene Investigation (2002)
+<https://www.imdb.com/title/tt0247082/> a schema:Movie ;
+    schema:name "CSI: Crime Scene Investigation" ;
+    schema:url <https://www.imdb.com/title/tt0247082/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Dwight Kelso"
+    ] .
+
+# Hellraiser: Inferno (2000)
+<https://www.imdb.com/title/tt0229440/> a schema:Movie ;
+    schema:name "Hellraiser: Inferno" ;
+    schema:url <https://www.imdb.com/title/tt0229440/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Bernie"
+    ] .
+
+# G vs E (1999)
+<https://www.imdb.com/title/tt0195462/> a schema:Movie ;
+    schema:name "G vs E" ;
+    schema:url <https://www.imdb.com/title/tt0195462/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Luis Rivera"
+    ] .
+
+# Civility (2000)
+<https://www.imdb.com/title/tt0159396/> a schema:Movie ;
+    schema:name "Civility" ;
+    schema:url <https://www.imdb.com/title/tt0159396/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Joe McPhillips"
+    ] .
+
+# Turkey. Cake. (1999)
+<https://www.imdb.com/title/tt0197063/> a schema:Movie ;
+    schema:name "Turkey. Cake." ;
+    schema:url <https://www.imdb.com/title/tt0197063/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Rob"
+    ] .
+
+# Desperate But Not Serious (1999)
+<https://www.imdb.com/title/tt0160182/> a schema:Movie ;
+    schema:name "Desperate But Not Serious" ;
+    schema:url <https://www.imdb.com/title/tt0160182/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Jonathan Gold"
+    ] .
+
+# Idle Hands (1999)
+<https://www.imdb.com/title/tt0138510/> a schema:Movie ;
+    schema:name "Idle Hands" ;
+    schema:url <https://www.imdb.com/title/tt0138510/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Ruck"
+    ] .
+
+# Spoiler (1998)
+<https://www.imdb.com/title/tt0120187/> a schema:Movie ;
+    schema:name "Spoiler" ;
+    schema:url <https://www.imdb.com/title/tt0120187/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Renny"
+    ] .
+
+# ER (1997)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Ricky Melgato"
+    ] .
+
+# Nightwatch (1997)
+<https://www.imdb.com/title/tt0119791/> a schema:Movie ;
+    schema:name "Nightwatch" ;
+    schema:url <https://www.imdb.com/title/tt0119791/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Theater Director"
+    ] .
+
+# Twister (1996)
+<https://www.imdb.com/title/tt0117998/> a schema:Movie ;
+    schema:name "Twister" ;
+    schema:url <https://www.imdb.com/title/tt0117998/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Kubrick"
+    ] .
+
+# The Method (1996)
+<https://www.imdb.com/title/tt0119663/> a schema:Movie ;
+    schema:name "The Method" ;
+    schema:url <https://www.imdb.com/title/tt0119663/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Jack"
+    ] .
+
+# Fallen Angels (1995)
+<https://www.imdb.com/title/tt0105994/> a schema:Movie ;
+    schema:name "Fallen Angels" ;
+    schema:url <https://www.imdb.com/title/tt0105994/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Al"
+    ] .
+
+# The Last Supper (1995)
+<https://www.imdb.com/title/tt0113613/> a schema:Movie ;
+    schema:name "The Last Supper" ;
+    schema:url <https://www.imdb.com/title/tt0113613/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Homeless Basher"
+    ] .
+
+# Sawbones (1995)
+<https://www.imdb.com/title/tt0114343/> a schema:Movie ;
+    schema:name "Sawbones" ;
+    schema:url <https://www.imdb.com/title/tt0114343/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Brad Fraser"
+    ] .
+
+# Earth 2 (1995)
+<https://www.imdb.com/title/tt0108758/> a schema:Movie ;
+    schema:name "Earth 2" ;
+    schema:url <https://www.imdb.com/title/tt0108758/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Max"
+    ] .
+
+# Disclosure (1994)
+<https://www.imdb.com/title/tt0109635/> a schema:Movie ;
+    schema:name "Disclosure" ;
+    schema:url <https://www.imdb.com/title/tt0109635/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Don Cherry"
+    ] .
+
+# Frank & Jesse (1994)
+<https://www.imdb.com/title/tt0109835/> a schema:Movie ;
+    schema:name "Frank & Jesse" ;
+    schema:url <https://www.imdb.com/title/tt0109835/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Arch Clements"
+    ] .
+
+# Secret Lies (1993)
+<https://www.imdb.com/title/tt0106216/> a schema:Movie ;
+    schema:name "Secret Lies" ;
+    schema:url <https://www.imdb.com/title/tt0106216/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# Scent of a Woman (1992)
+<https://www.imdb.com/title/tt0105323/> a schema:Movie ;
+    schema:name "Scent of a Woman" ;
+    schema:url <https://www.imdb.com/title/tt0105323/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Harry Havemeyer"
+    ] .
+
+# Stop! Or My Mom Will Shoot (1992)
+<https://www.imdb.com/title/tt0105477/> a schema:Movie ;
+    schema:name "Stop! Or My Mom Will Shoot" ;
+    schema:url <https://www.imdb.com/title/tt0105477/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Suicide"
+    ] .
+
+# Mobsters (1991)
+<https://www.imdb.com/title/tt0102460/> a schema:Movie ;
+    schema:name "Mobsters" ;
+    schema:url <https://www.imdb.com/title/tt0102460/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Mad Dog Coll"
+    ] .
+
+# Sometimes They Come Back (1991)
+<https://www.imdb.com/title/tt0102960/> a schema:Movie ;
+    schema:name "Sometimes They Come Back" ;
+    schema:url <https://www.imdb.com/title/tt0102960/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Vinnie"
+    ] .
+
+# The Cosby Show (1990)
+<https://www.imdb.com/title/tt0086687/> a schema:Movie ;
+    schema:name "The Cosby Show" ;
+    schema:url <https://www.imdb.com/title/tt0086687/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Thief"
+    ] .
+
+# ABC Afterschool Specials (1989)
+<https://www.imdb.com/title/tt0202179/> a schema:Movie ;
+    schema:name "ABC Afterschool Specials" ;
+    schema:url <https://www.imdb.com/title/tt0202179/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755556/> ;
+        schema:characterName "Billy Dryer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2979633177/> a schema:VideoObject ;
+        schema:name "Idle Hands" ;
+        schema:description "Trailer for Idle Hands" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2979633177/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODFiNTE4ZDYtMzY0Ny00Y2VjLTk5OTQtODYwM2YzZWQyOWNmXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M25S"^^xsd:duration ;
+        schema:uploadDate "2010-12-12T06:15:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGFjZTcwMjgtZjIyMy00YmJiLTkxNmUtZjdhYTA2NDIwNGIyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGFjZTcwMjgtZjIyMy00YmJiLTkxNmUtZjdhYTA2NDIwNGIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler" ;
+    schema:height "2989"^^xsd:integer ;
+    schema:width "2391"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm383541248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDVlNjRiOTAtMWRhOS00NmQ3LTliYTUtMTliYWFhYTMyYTVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler in Scent of a Woman (1992)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm4227413760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2EwNTg4OWMtYTlkMS00YTBlLWE2YzktMGNlNGY2OWMwMDlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Philip Seymour Hoffman, Todd Louiso, Nicholas Sadler, and Matt Smith in Scent of a Woman (1992)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm2046208512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM4NjQ5NTAyN15BMl5BanBnXkFtZTcwMDU0NzI5Nw@@._V1_.jpg> ;
+    schema:caption "True Grit" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm2334171136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0MjI5NTQzMV5BMl5BanBnXkFtZTcwMzk5OTYyOQ@@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler" ;
+    schema:height "2120"^^xsd:integer ;
+    schema:width "3184"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm3966352128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyMjc0Mzc3Ml5BMl5BanBnXkFtZTcwNDY0MjI3NA@@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler in Sometimes They Come Back (1991)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "687"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm1207938818/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTJkZTcyMWEtMzU2ZC00ZmZkLWJjY2MtMTkzYjJlMTE0N2UwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler" ;
+    schema:height "4752"^^xsd:integer ;
+    schema:width "3168"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm2113908482/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzU3YzBkYTQtNmJjNC00Y2UyLTk3M2MtMzYyMWUwNzFmZmY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nicholas Sadler" ;
+    schema:height "4752"^^xsd:integer ;
+    schema:width "3168"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm2096540160/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0NDA3NzI3MF5BMl5BanBnXkFtZTcwNzQ0NzI5Nw@@._V1_.jpg> ;
+    schema:caption "Disclosure" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0755556/mediaviewer/rm2130094592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM4MTMzNDg0NV5BMl5BanBnXkFtZTcwNTQ0NzI5Nw@@._V1_.jpg> ;
+    schema:caption "HAROLD'S BAD DAY" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

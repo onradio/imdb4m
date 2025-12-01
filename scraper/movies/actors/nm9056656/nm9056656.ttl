@@ -1,0 +1,91 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9056656/> a schema:Person ;
+    schema:name "Aashish Maske" ;
+    schema:url <https://www.imdb.com/name/nm9056656/> ;
+    schema:jobTitle "Actor", "Art Department" ;
+    schema:alternateName "Max" ;
+    schema:description "Aashish Maske. Actor: Baahubali 2: The Conclusion. Aashish Maske is known for Baahubali 2: The Conclusion (2017), Faulen (2017) and Life Syndrome (2017)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7001192/>,    # Life Syndrome
+                       <https://www.imdb.com/title/tt7476950/>,    # FootSteps
+                       <https://www.imdb.com/title/tt4849438/>,    # Baahubali 2: The Conclusion
+                       <https://www.imdb.com/title/tt7018370/> . # Swacch Bharat Mission
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Life Syndrome (2017)
+<https://www.imdb.com/title/tt7001192/> a schema:Movie ;
+    schema:name "Life Syndrome" ;
+    schema:url <https://www.imdb.com/title/tt7001192/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9056656/> ;
+        schema:characterName "Friend 1"
+    ] .
+
+# FootSteps (2017)
+<https://www.imdb.com/title/tt7476950/> a schema:Movie ;
+    schema:name "FootSteps" ;
+    schema:url <https://www.imdb.com/title/tt7476950/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9056656/> ;
+        schema:characterName "Sportsmen"
+    ] .
+
+# Baahubali 2: The Conclusion (2017)
+<https://www.imdb.com/title/tt4849438/> a schema:Movie ;
+    schema:name "Baahubali 2: The Conclusion" ;
+    schema:url <https://www.imdb.com/title/tt4849438/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9056656/> ;
+        schema:characterName "Srinu"
+    ] .
+
+# Swacch Bharat Mission (2017)
+<https://www.imdb.com/title/tt7018370/> a schema:Movie ;
+    schema:name "Swacch Bharat Mission" ;
+    schema:url <https://www.imdb.com/title/tt7018370/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9056656/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

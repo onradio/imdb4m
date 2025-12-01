@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10128406/> a schema:Person ;
+    schema:name "Sam Haygarth" ;
+    schema:url <https://www.imdb.com/name/nm10128406/> ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:description "Sam Haygarth. Actor: The French Dispatch. Sam Haygarth is known for The French Dispatch (2021), Jojo Rabbit (2019) and Vandals." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYzU3YzA5ZjEtN2Y2NC00N2U2LTkxZjUtZDdlMzY3MWY2MjFjXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2584384/>,    # Jojo Rabbit
+                       <https://www.imdb.com/title/tt7466820/> ; # Alex's Dream
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10128406/mediaviewer/rm4267505409/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm739741954/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm3663525633/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm2573006593/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm2774333185/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm3227318017/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm818620161/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm902506241/>,
+                 <https://www.imdb.com/name/nm10128406/mediaviewer/rm392034049/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Jojo Rabbit (2019)
+<https://www.imdb.com/title/tt2584384/> a schema:Movie ;
+    schema:name "Jojo Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt2584384/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10128406/> ;
+        schema:characterName "Hans"
+    ] .
+
+# Alex's Dream (2018)
+<https://www.imdb.com/title/tt7466820/> a schema:Movie ;
+    schema:name "Alex's Dream" ;
+    schema:url <https://www.imdb.com/title/tt7466820/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10128406/> ;
+        schema:characterName "Archie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYzU3YzA5ZjEtN2Y2NC00N2U2LTkxZjUtZDdlMzY3MWY2MjFjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzU3YzA5ZjEtN2Y2NC00N2U2LTkxZjUtZDdlMzY3MWY2MjFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm4267505409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWU2NmQzODMtYjhkZS00MTE0LWE5NjctNzdhODI4NWRjZWQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2050"^^xsd:integer ;
+    schema:width "1361"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm739741954/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2Q1NThjM2EtZGY5Zi00MDMwLTg4OWUtMWQzZWI1N2VjYjdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "3376"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm3663525633/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODBkZTc4YWItYmM1YS00ODc4LWE3MWYtNjU5OTc4ZDc0Yjk5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "944"^^xsd:integer ;
+    schema:width "1417"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm2573006593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTBkNDFmZjMtOTkyYy00NjAyLThiZTUtMGZkZDExMGM0YzQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2808"^^xsd:integer ;
+    schema:width "1872"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm2774333185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmIxZWVlYjAtY2I1OC00ZWY4LTk0NTEtMTI0ODE1YzM5Y2M2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm3227318017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzRlNDZiM2QtNjNiYS00MDRhLTkxZjUtNjE0MDQ3Mzg0YjA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "5616"^^xsd:integer ;
+    schema:width "3744"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm818620161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmJiMTRjMjItODkyMC00ZTlkLWIzN2EtZGM0NjA2ZGEzZGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "1499"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm902506241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWQwYmU3MjctOTk1OS00YmU4LTgzMWQtNjM3ZjQ2YWQxNDI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "1501"^^xsd:integer ;
+    schema:width "1124"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10128406/mediaviewer/rm392034049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzBkZjgxYTgtNzY4OC00YzUzLWJkYTMtZjFhNDI2NmMyMWM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sam Haygarth" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

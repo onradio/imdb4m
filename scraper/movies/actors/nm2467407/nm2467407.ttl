@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2467407/> a schema:Person ;
+    schema:name "Bouba Badiane" ;
+    schema:url <https://www.imdb.com/name/nm2467407/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Bouba Badiane. Actor: Blood Diamond. Bouba Badiane is known for Blood Diamond (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0450259/> .    # Blood Diamond
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blood Diamond (2006)
+<https://www.imdb.com/title/tt0450259/> a schema:Movie ;
+    schema:name "Blood Diamond" ;
+    schema:url <https://www.imdb.com/title/tt0450259/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2467407/> ;
+        schema:characterName "Tupac T-Shirt"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

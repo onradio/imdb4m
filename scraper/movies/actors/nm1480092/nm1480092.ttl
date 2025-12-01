@@ -1,0 +1,74 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1480092/> a schema:Person ;
+    schema:name "Sadwyn Brophy" ;
+    schema:url <https://www.imdb.com/name/nm1480092/> ;
+    schema:birthDate "1996-09-13"^^xsd:date ;
+    schema:jobTitle "Actor", "Art Department" ;
+    schema:description "Sadwyn Brophy. Actor: The Lord of the Rings: The Return of the King. Sadwyn Brophy was born on 13 September 1996 in New Zealand. He is an actor, known for The Lord of the Rings: The Return of the King (2003), Morning Hate (2024) and Catching the Black Widow (2017). He has been married to Kelly Kim Harrouk since 21 November 2017." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New Zealand"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5771256/>,    # Catching the Black Widow
+                       <https://www.imdb.com/title/tt0167260/> ; # The Lord of the Rings: The Return of the King
+
+
+    schema:video <https://www.imdb.com/video/vi402694937/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Catching the Black Widow (2017)
+<https://www.imdb.com/title/tt5771256/> a schema:Movie ;
+    schema:name "Catching the Black Widow" ;
+    schema:url <https://www.imdb.com/title/tt5771256/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480092/> ;
+        schema:characterName "Aaron"
+    ] .
+
+# The Lord of the Rings: The Return of the King (2003)
+<https://www.imdb.com/title/tt0167260/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:url <https://www.imdb.com/title/tt0167260/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1480092/> ;
+        schema:characterName "Eldarion"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi402694937/> a schema:VideoObject ;
+        schema:name "The Lord of the Rings: The Return of the King" ;
+        schema:description "Clip: The Way is Shut" ;
+        schema:embedUrl <https://www.imdb.com/video/vi402694937/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTg0M2RhYjYtMTI1OC00YWI4LWFiYWQtMTc2NjZkODViOGI1XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M9S"^^xsd:duration ;
+        schema:uploadDate "2012-04-20T03:45:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

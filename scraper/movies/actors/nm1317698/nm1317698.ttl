@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1317698/> a schema:Person ;
+    schema:name "Robert Washington" ;
+    schema:url <https://www.imdb.com/name/nm1317698/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Robert Washington. Actor: The Notebook. Robert Washington is known for The Notebook (2004), Almost Elvis (2001) and Baby Let's Play House (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0332280/> ;    # The Notebook
+
+
+    schema:video <https://www.imdb.com/video/vi85197593/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Notebook (2004)
+<https://www.imdb.com/title/tt0332280/> a schema:Movie ;
+    schema:name "The Notebook" ;
+    schema:url <https://www.imdb.com/title/tt0332280/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1317698/> ;
+        schema:characterName "Elgin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi85197593/> a schema:VideoObject ;
+        schema:name "Baby Let&apos;s Play House" ;
+        schema:description "Glenn is a heartbroken science teacher who's spending his summer vacation breaking things. Irv, the aspiring Elvis impersonator and his wife June move in next door." ;
+        schema:embedUrl <https://www.imdb.com/video/vi85197593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjAwMTM3MzA3OF5BMl5BanBnXkFtZTcwOTA1NjUzMg@@._V1_.jpg" ;
+        schema:duration "PT1M57S"^^xsd:duration ;
+        schema:uploadDate "2009-02-26T18:01:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

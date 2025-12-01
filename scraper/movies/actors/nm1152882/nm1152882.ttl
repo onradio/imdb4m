@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1152882/> a schema:Person ;
+    schema:name "Ryan Power" ;
+    schema:url <https://www.imdb.com/name/nm1152882/> ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director" ;
+    schema:description "Ryan Power. Actor: Boyhood. Ryan Power was born in 1986. He is known for Boyhood (2014), Waking Life (2001) and Lost on Purpose (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1065073/>,    # Boyhood
+                       <https://www.imdb.com/title/tt0243017/> . # Waking Life
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyhood (2014)
+<https://www.imdb.com/title/tt1065073/> a schema:Movie ;
+    schema:name "Boyhood" ;
+    schema:url <https://www.imdb.com/title/tt1065073/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1152882/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Waking Life (2001)
+<https://www.imdb.com/title/tt0243017/> a schema:Movie ;
+    schema:name "Waking Life" ;
+    schema:url <https://www.imdb.com/title/tt0243017/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1152882/> ;
+        schema:characterName "Young Disappearing Guy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

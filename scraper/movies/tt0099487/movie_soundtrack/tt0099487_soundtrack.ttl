@@ -1,0 +1,129 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099487/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Hawaii" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Hawaii" ;
+            schema:composer <https://www.imdb.com/name/nm0732209/>, # Leo Robin
+                        <https://www.imdb.com/name/nm0006247/> # Ralph Rainger
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "It's Not Unusual" ;
+        schema:byArtist <https://www.imdb.com/name/nm0429367/> ; # Tom Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It's Not Unusual" ;
+            schema:composer <https://www.imdb.com/name/nm0590011/>, # Gordon Mills
+                        <https://www.imdb.com/name/nm0715552/> # Les Reed
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Delilah" ;
+        schema:byArtist <https://www.imdb.com/name/nm0429367/> ; # Tom Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Delilah" ;
+            schema:composer <https://www.imdb.com/name/nm0715552/>, # Les Reed
+                        <https://www.imdb.com/name/nm1056959/> # Barry Mason
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "With These Hands" ;
+        schema:byArtist <https://www.imdb.com/name/nm0429367/> ; # Tom Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "With These Hands" ;
+            schema:composer <https://www.imdb.com/name/nm0204226/>, # Benny Davis
+                        <https://www.imdb.com/name/nm0798636/> # Abner Silver
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aloha Oe" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Aloha Oe" ;
+            schema:author <https://www.imdb.com/name/nm0510253/> # Queen Liliuokalani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Saw Three Ships" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000273/> ; # Alan Arkin
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Little Town of Bethlehem" ;
+        schema:byArtist <https://www.imdb.com/name/nm0428952/> ; # O-Lan Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Little Town of Bethlehem" ;
+            schema:author <https://www.imdb.com/name/nm2273363/>, # Phillips Brooks
+                       <https://www.imdb.com/name/nm2278633/> # Lewis H. Redner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "We Three Kings" ;
+        schema:byArtist <https://www.imdb.com/name/nm0428952/> ; # O-Lan Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "We Three Kings" ;
+            schema:author <https://www.imdb.com/name/nm1703913/> # John H. Hopkins
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Little Town of Bethlehem" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000273/> a schema:Person ;
+    schema:name "Alan Arkin" .
+<https://www.imdb.com/name/nm0006247/> a schema:Person ;
+    schema:name "Ralph Rainger" .
+<https://www.imdb.com/name/nm0204226/> a schema:Person ;
+    schema:name "Benny Davis" .
+<https://www.imdb.com/name/nm0428952/> a schema:Person ;
+    schema:name "O-Lan Jones" .
+<https://www.imdb.com/name/nm0429367/> a schema:Person ;
+    schema:name "Tom Jones" .
+<https://www.imdb.com/name/nm0510253/> a schema:Person ;
+    schema:name "Queen Liliuokalani" .
+<https://www.imdb.com/name/nm0590011/> a schema:Person ;
+    schema:name "Gordon Mills" .
+<https://www.imdb.com/name/nm0715552/> a schema:Person ;
+    schema:name "Les Reed" .
+<https://www.imdb.com/name/nm0732209/> a schema:Person ;
+    schema:name "Leo Robin" .
+<https://www.imdb.com/name/nm0798636/> a schema:Person ;
+    schema:name "Abner Silver" .
+<https://www.imdb.com/name/nm1056959/> a schema:Person ;
+    schema:name "Barry Mason" .
+<https://www.imdb.com/name/nm1703913/> a schema:Person ;
+    schema:name "John H. Hopkins" .
+<https://www.imdb.com/name/nm2273363/> a schema:Person ;
+    schema:name "Phillips Brooks" .
+<https://www.imdb.com/name/nm2278633/> a schema:Person ;
+    schema:name "Lewis H. Redner" .
+# ==============================================================================

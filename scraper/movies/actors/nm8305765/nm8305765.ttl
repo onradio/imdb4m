@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8305765/> a schema:Person ;
+    schema:name "James A Hughes" ;
+    schema:url <https://www.imdb.com/name/nm8305765/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "James A Hughes. Actor: Wonder. James A Hughes is known for Wonder (2017) and Hit the Road (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGViOWJkMWMtOWUwZC00Y2Y2LThlYTQtZDIyZDI4NWRmYjU4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6905468/>,    # Hit the Road
+                       <https://www.imdb.com/title/tt2543472/> ; # Wonder
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8305765/mediaviewer/rm521097472/>,
+                 <https://www.imdb.com/name/nm8305765/mediaviewer/rm2309577984/>,
+                 <https://www.imdb.com/name/nm8305765/mediaviewer/rm1303272960/>,
+                 <https://www.imdb.com/name/nm8305765/mediaviewer/rm3568131584/>,
+                 <https://www.imdb.com/name/nm8305765/mediaviewer/rm2611830272/>,
+                 <https://www.imdb.com/name/nm8305765/mediaviewer/rm264243200/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hit the Road (2017)
+<https://www.imdb.com/title/tt6905468/> a schema:Movie ;
+    schema:name "Hit the Road" ;
+    schema:url <https://www.imdb.com/title/tt6905468/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8305765/> ;
+        schema:characterName "Robby"
+    ] .
+
+# Wonder (2017)
+<https://www.imdb.com/title/tt2543472/> a schema:Movie ;
+    schema:name "Wonder" ;
+    schema:url <https://www.imdb.com/title/tt2543472/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8305765/> ;
+        schema:characterName "Henry"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGViOWJkMWMtOWUwZC00Y2Y2LThlYTQtZDIyZDI4NWRmYjU4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGViOWJkMWMtOWUwZC00Y2Y2LThlYTQtZDIyZDI4NWRmYjU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James A Hughes" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm521097472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTdiYzQ4NDAtZDViYS00ZWE1LTg5ZWMtYWQxYzc3NTdjMzUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jacob Tremblay, Noah Jupe, Ty Consiglio, and James A Hughes in Wonder (2017)" ;
+    schema:height "309"^^xsd:integer ;
+    schema:width "736"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm2309577984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmY1YTZkZTItN2VhZS00NWMzLWI0ZTItZjk2ZjE0MDA0MzdhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kyle Breitkopf, Bryce Gheisar, Ty Consiglio, and James A Hughes in Wonder (2017)" ;
+    schema:height "3200"^^xsd:integer ;
+    schema:width "4800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm1303272960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjRkZGNjZjktMmVmZS00OTczLWE2Y2MtZTcwOWYyMDgyZjNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James and members of the cast of Wonder along with Director Stephen Chbosky and Author R.J. Palacio" ;
+    schema:height "3072"^^xsd:integer ;
+    schema:width "4608"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm3568131584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQyNDg4Y2QtMjJiOC00ZGM3LThmMWEtZjNiOTU3ZWFiZjIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wonder Premier Noah Jupe, Ty Consiglio, James Hughes, Elle McKinnon, Kyle Breitkopf, Millie Davis" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm2611830272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWI3ZjQ4YjItMWI4Yi00ZjJhLTgwZGUtZDA1YTAwM2I0ZTMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wonder Kids Ty Consiglio, Noah Jupe, Elle McKinnon, Bryce Gheisar, James Hughes, Millie Davis" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8305765/mediaviewer/rm264243200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGViOWJkMWMtOWUwZC00Y2Y2LThlYTQtZDIyZDI4NWRmYjU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James A Hughes" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10520267/> a schema:Person ;
+    schema:name "Neda Margrethe Labba" ;
+    schema:url <https://www.imdb.com/name/nm10520267/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Neda Margrethe Labba. Actress: Klaus. Neda Margrethe Labba is known for Klaus (2019) and Beaivvi nieida (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4729430/>,    # Klaus
+                       <https://www.imdb.com/title/tt9875862/> . # Beaivvi nieida
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Klaus (2019)
+<https://www.imdb.com/title/tt4729430/> a schema:Movie ;
+    schema:name "Klaus" ;
+    schema:url <https://www.imdb.com/title/tt4729430/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10520267/> ;
+        schema:characterName "Márgu"
+    ] .
+
+# Beaivvi nieida (2018)
+<https://www.imdb.com/title/tt9875862/> a schema:Movie ;
+    schema:name "Beaivvi nieida" ;
+    schema:url <https://www.imdb.com/title/tt9875862/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10520267/> ;
+        schema:characterName "Ánne som ung"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

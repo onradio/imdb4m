@@ -1,0 +1,112 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0663198/> a schema:Person ;
+    schema:name "R.J. Parnell" ;
+    schema:url <https://www.imdb.com/name/nm0663198/> ;
+    schema:birthDate "1951-08-13"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Music Department" ;
+    schema:description "R.J. Parnell. Actor: This Is Spinal Tap. R.J. Parnell was born on 13 August 1951 in Hammersmith, London, England, UK. He was an actor and writer, known for This Is Spinal Tap (1984), Saving for the Day (2023) and Un (pequeño) Paseo por Japón (2017). He died on 1 May 2022 in Missoula, Montana, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hammersmith, London, England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0374614/>,    # The Devil's Due at Midnight
+                       <https://www.imdb.com/title/tt0123278/>,    # A Spinal Tap Reunion
+                       <https://www.imdb.com/title/tt0088258/>,    # This Is Spinal Tap
+                       <https://www.imdb.com/title/tt0439825/> ; # Spinal Tap: The Final Tour
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0663198/mediaviewer/rm2319629056/>,
+                 <https://www.imdb.com/name/nm0663198/mediaviewer/rm4265401600/>,
+                 <https://www.imdb.com/name/nm0663198/mediaviewer/rm3108158208/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Devil's Due at Midnight (2004)
+<https://www.imdb.com/title/tt0374614/> a schema:Movie ;
+    schema:name "The Devil's Due at Midnight" ;
+    schema:url <https://www.imdb.com/title/tt0374614/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0663198/> ;
+        schema:characterName "Drummer"
+    ] .
+
+# A Spinal Tap Reunion (1992)
+<https://www.imdb.com/title/tt0123278/> a schema:Movie ;
+    schema:name "A Spinal Tap Reunion" ;
+    schema:url <https://www.imdb.com/title/tt0123278/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0663198/> ;
+        schema:characterName "Drums"
+    ] .
+
+# This Is Spinal Tap (1984)
+<https://www.imdb.com/title/tt0088258/> a schema:Movie ;
+    schema:name "This Is Spinal Tap" ;
+    schema:url <https://www.imdb.com/title/tt0088258/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0663198/> ;
+        schema:characterName "Mick Shrimpton"
+    ] .
+
+# Spinal Tap: The Final Tour (1981)
+<https://www.imdb.com/title/tt0439825/> a schema:Movie ;
+    schema:name "Spinal Tap: The Final Tour" ;
+    schema:url <https://www.imdb.com/title/tt0439825/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0663198/> ;
+        schema:characterName "Mick Shrimpton"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0663198/mediaviewer/rm2319629056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQxNDk1NTYzNF5BMl5BanBnXkFtZTcwMjAzMzY3NA@@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Patrick Macnee, Tony Hendra, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0663198/mediaviewer/rm4265401600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MTIzMzg5Nl5BMl5BanBnXkFtZTgwOTc5NDI1MDE@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "979"^^xsd:integer ;
+    schema:width "653"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0663198/mediaviewer/rm3108158208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxNDgzMzc2MF5BMl5BanBnXkFtZTcwNzgyMzY3NA@@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "708"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

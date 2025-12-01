@@ -1,0 +1,385 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000751/> a schema:Person ;
+    schema:name "Suzy Amis" ;
+    schema:url <https://www.imdb.com/name/nm0000751/> ;
+    schema:birthDate "1962-01-05"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Susan Elizabeth Amis" ;
+    schema:description "Suzy Amis. Actress: The Usual Suspects. Born on January 5, 1962 in Oklahoma City, Oklahoma, Susan Elizabeth \"Suzy\" Amis first worked as a Ford model before she began acting in the 1980s. She made her film debut in the comedy film Fandango (1985), opposite Kevin Costner. After that, Amis next had roles in Rocket Gibraltar (1988), Where the Heart Is (1990), Rich in Love (1992) and The Ballad of Little..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjEwNDU4ODI5N15BMl5BanBnXkFtZTcwNjM4NTgwMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Oklahoma City, Oklahoma, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0114814/>,    # The Usual Suspects
+                       <https://www.imdb.com/title/tt0106350/>,    # The Ballad of Little Jo
+                       <https://www.imdb.com/title/tt0109303/>,    # Blown Away
+                       <https://www.imdb.com/title/tt0120338/>,    # Titanic
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0221309/>,    # Judgment Day
+                       <https://www.imdb.com/title/tt0120670/>,    # Firestorm
+                       <https://www.imdb.com/title/tt0131352/>,    # Dead by Midnight
+                       <https://www.imdb.com/title/tt0119501/>,    # Last Stand at Saber River
+                       <https://www.imdb.com/title/tt0118697/>,    # The Beneficiary
+                       <https://www.imdb.com/title/tt0119084/>,    # The Ex
+                       <https://www.imdb.com/title/tt0114041/>,    # One Good Turn
+                       <https://www.imdb.com/title/tt0115801/>,    # Cadillac Ranch
+                       <https://www.imdb.com/title/tt0110620/>,    # Nadja
+                       <https://www.imdb.com/title/tt0108420/>,    # Two Small Bodies
+                       <https://www.imdb.com/title/tt0108521/>,    # Watch It
+                       <https://www.imdb.com/title/tt0105256/>,    # Rich in Love
+                       <https://www.imdb.com/title/tt0100924/>,    # Where the Heart Is
+                       <https://www.imdb.com/title/tt0096321/>,    # Twister
+                       <https://www.imdb.com/title/tt0096003/>,    # Rocket Gibraltar
+                       <https://www.imdb.com/title/tt0095875/>,    # Plain Clothes
+                       <https://www.imdb.com/title/tt0092656/>,    # The Big Town
+                       <https://www.imdb.com/title/tt0089126/>,    # Fandango
+                       <https://www.imdb.com/title/tt0086759/> ; # Miami Vice
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3536371993/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000751/mediaviewer/rm829883648/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm3459823104/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm1272953344/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm2533786624/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm2483454976/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm122913792/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm1376816640/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm1141935616/>,
+                 <https://www.imdb.com/name/nm0000751/mediaviewer/rm1143377408/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114814/> a schema:Movie ;
+    schema:name "The Usual Suspects" ;
+    schema:url <https://www.imdb.com/title/tt0114814/> .
+
+<https://www.imdb.com/title/tt0106350/> a schema:Movie ;
+    schema:name "The Ballad of Little Jo" ;
+    schema:url <https://www.imdb.com/title/tt0106350/> .
+
+<https://www.imdb.com/title/tt0109303/> a schema:Movie ;
+    schema:name "Blown Away" ;
+    schema:url <https://www.imdb.com/title/tt0109303/> .
+
+<https://www.imdb.com/title/tt0120338/> a schema:Movie ;
+    schema:name "Titanic" ;
+    schema:url <https://www.imdb.com/title/tt0120338/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Judgment Day (1999)
+<https://www.imdb.com/title/tt0221309/> a schema:Movie ;
+    schema:name "Judgment Day" ;
+    schema:url <https://www.imdb.com/title/tt0221309/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Jeanine Tyrell"
+    ] .
+
+# Firestorm (1998)
+<https://www.imdb.com/title/tt0120670/> a schema:Movie ;
+    schema:name "Firestorm" ;
+    schema:url <https://www.imdb.com/title/tt0120670/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Jennifer"
+    ] .
+
+# Dead by Midnight (1997)
+<https://www.imdb.com/title/tt0131352/> a schema:Movie ;
+    schema:name "Dead by Midnight" ;
+    schema:url <https://www.imdb.com/title/tt0131352/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Lisa Larkin"
+    ] .
+
+# Last Stand at Saber River (1997)
+<https://www.imdb.com/title/tt0119501/> a schema:Movie ;
+    schema:name "Last Stand at Saber River" ;
+    schema:url <https://www.imdb.com/title/tt0119501/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Martha Cable"
+    ] .
+
+# The Beneficiary (1997)
+<https://www.imdb.com/title/tt0118697/> a schema:Movie ;
+    schema:name "The Beneficiary" ;
+    schema:url <https://www.imdb.com/title/tt0118697/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Connie Roos"
+    ] .
+
+# The Ex (1996)
+<https://www.imdb.com/title/tt0119084/> a schema:Movie ;
+    schema:name "The Ex" ;
+    schema:url <https://www.imdb.com/title/tt0119084/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Molly Kenyon"
+    ] .
+
+# One Good Turn (1996)
+<https://www.imdb.com/title/tt0114041/> a schema:Movie ;
+    schema:name "One Good Turn" ;
+    schema:url <https://www.imdb.com/title/tt0114041/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Laura Forrest"
+    ] .
+
+# Cadillac Ranch (1996)
+<https://www.imdb.com/title/tt0115801/> a schema:Movie ;
+    schema:name "Cadillac Ranch" ;
+    schema:url <https://www.imdb.com/title/tt0115801/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "C.J. Crowley"
+    ] .
+
+# Nadja (1994)
+<https://www.imdb.com/title/tt0110620/> a schema:Movie ;
+    schema:name "Nadja" ;
+    schema:url <https://www.imdb.com/title/tt0110620/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Cassandra"
+    ] .
+
+# Two Small Bodies (1993)
+<https://www.imdb.com/title/tt0108420/> a schema:Movie ;
+    schema:name "Two Small Bodies" ;
+    schema:url <https://www.imdb.com/title/tt0108420/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Eileen Mahoney"
+    ] .
+
+# Watch It (1993)
+<https://www.imdb.com/title/tt0108521/> a schema:Movie ;
+    schema:name "Watch It" ;
+    schema:url <https://www.imdb.com/title/tt0108521/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Anne"
+    ] .
+
+# Rich in Love (1992)
+<https://www.imdb.com/title/tt0105256/> a schema:Movie ;
+    schema:name "Rich in Love" ;
+    schema:url <https://www.imdb.com/title/tt0105256/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Rae Odom"
+    ] .
+
+# Where the Heart Is (1990)
+<https://www.imdb.com/title/tt0100924/> a schema:Movie ;
+    schema:name "Where the Heart Is" ;
+    schema:url <https://www.imdb.com/title/tt0100924/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Chloe McBain"
+    ] .
+
+# Twister (1989)
+<https://www.imdb.com/title/tt0096321/> a schema:Movie ;
+    schema:name "Twister" ;
+    schema:url <https://www.imdb.com/title/tt0096321/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Maureen Cleveland"
+    ] .
+
+# Rocket Gibraltar (1988)
+<https://www.imdb.com/title/tt0096003/> a schema:Movie ;
+    schema:name "Rocket Gibraltar" ;
+    schema:url <https://www.imdb.com/title/tt0096003/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Aggie Rockwell"
+    ] .
+
+# Plain Clothes (1988)
+<https://www.imdb.com/title/tt0095875/> a schema:Movie ;
+    schema:name "Plain Clothes" ;
+    schema:url <https://www.imdb.com/title/tt0095875/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Robin Torrence"
+    ] .
+
+# The Big Town (1987)
+<https://www.imdb.com/title/tt0092656/> a schema:Movie ;
+    schema:name "The Big Town" ;
+    schema:url <https://www.imdb.com/title/tt0092656/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Aggie Donaldson"
+    ] .
+
+# Fandango (1985)
+<https://www.imdb.com/title/tt0089126/> a schema:Movie ;
+    schema:name "Fandango" ;
+    schema:url <https://www.imdb.com/title/tt0089126/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "The Girl"
+    ] .
+
+# Miami Vice (1984)
+<https://www.imdb.com/title/tt0086759/> a schema:Movie ;
+    schema:name "Miami Vice" ;
+    schema:url <https://www.imdb.com/title/tt0086759/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000751/> ;
+        schema:characterName "Penny McGraw"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3536371993/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3536371993/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWY3MjRkZWMtNmQwNy00YzUwLTgzMWItOWIwYWUwYmFiZGQ2XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT21S"^^xsd:duration ;
+        schema:uploadDate "2020-11-18T13:26:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjEwNDU4ODI5N15BMl5BanBnXkFtZTcwNjM4NTgwMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwNDU4ODI5N15BMl5BanBnXkFtZTcwNjM4NTgwMw@@._V1_.jpg> ;
+    schema:caption "Suzy Amis in Blown Away (1994)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1100"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm829883648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmZiZjQ2OTQtNTQ3ZC00M2U2LWE1ZTItMTBjMWQ2MjQzNzA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matt Dillon and Suzy Amis in The Big Town (1987)" ;
+    schema:height "930"^^xsd:integer ;
+    schema:width "1390"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm3459823104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxMjkxMjk2NF5BMl5BanBnXkFtZTcwOTk4MjE1Nw@@._V1_.jpg> ;
+    schema:caption "Bill Paxton, Suzy Amis, and Gloria Stuart in Titanic (1997)" ;
+    schema:height "1385"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm1272953344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMyMTcwOTY5Nl5BMl5BanBnXkFtZTcwNzIxNDQ0NA@@._V1_.jpg> ;
+    schema:caption "Suzy Amis in The Ballad of Little Jo (1993)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm2533786624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDUwNDQ3MTA1Ml5BMl5BanBnXkFtZTcwMTM3NDcyNA@@._V1_.jpg> ;
+    schema:caption "Suzy Amis in Blown Away (1994)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "687"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm2483454976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0NjU4NjQ2OF5BMl5BanBnXkFtZTcwNDM3NDcyNA@@._V1_.jpg> ;
+    schema:caption "Jeff Bridges and Suzy Amis in Blown Away (1994)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "669"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm122913792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5MTQ1NjE0M15BMl5BanBnXkFtZTcwNDU3NDQyNA@@._V1_.jpg> ;
+    schema:caption "Matt Dillon and Suzy Amis in The Big Town (1987)" ;
+    schema:height "1168"^^xsd:integer ;
+    schema:width "1512"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm1376816640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk1MTg4MzM0OF5BMl5BanBnXkFtZTcwOTgwNDAxMw@@._V1_.jpg> ;
+    schema:caption "Suzy Amis, Jill Clayburgh, Albert Finney, and Kathryn Erbe in Rich in Love (1992)" ;
+    schema:height "1314"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm1141935616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNjIxNTI3OV5BMl5BanBnXkFtZTcwMTYwNDAxMw@@._V1_.jpg> ;
+    schema:caption "Uma Thurman, Suzy Amis, Joanna Cassidy, Dabney Coleman, Christopher Plummer, David Hewlett, and Sheila Kelley in Where the Heart Is (1990)" ;
+    schema:height "1354"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000751/mediaviewer/rm1143377408/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI2NDQ2MDgzMF5BMl5BanBnXkFtZTcwOTI2NTgwMw@@._V1_.jpg> ;
+    schema:caption "Suzy Amis and Rene Auberjonois in The Ballad of Little Jo (1993)" ;
+    schema:height "1347"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000751/>
+    schema:sameAs <https://www.instagram.com/suzyamiscameron/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

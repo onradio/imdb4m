@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9418741/> a schema:Person ;
+    schema:name "Jennifer March" ;
+    schema:url <https://www.imdb.com/name/nm9418741/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jennifer March. Actress: Tully. Jennifer March is known for Tully (2018) and Wonder (2017)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5610554/>,    # Tully
+                       <https://www.imdb.com/title/tt2543472/> . # Wonder
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tully (2018)
+<https://www.imdb.com/title/tt5610554/> a schema:Movie ;
+    schema:name "Tully" ;
+    schema:url <https://www.imdb.com/title/tt5610554/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9418741/> ;
+        schema:characterName "Delivery Room Nurse"
+    ] .
+
+# Wonder (2017)
+<https://www.imdb.com/title/tt2543472/> a schema:Movie ;
+    schema:name "Wonder" ;
+    schema:url <https://www.imdb.com/title/tt2543472/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9418741/> ;
+        schema:characterName "Neonatologist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

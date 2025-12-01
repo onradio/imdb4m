@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0167261/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Gollum's Song" ;
+        schema:byArtist <https://www.imdb.com/name/nm1288763/> ; # Emiliana Torrini
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gollum's Song" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0909638/> # Fran Walsh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Evenstar" ;
+        schema:byArtist <https://www.imdb.com/name/nm1291084/> ; # Isabel Bayrakdarian
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Evenstar" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0909638/> # Fran Walsh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Breath of Life" ;
+        schema:byArtist <https://www.imdb.com/name/nm1291550/> ; # Sheila Chandra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Breath of Life" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0909638/> # Fran Walsh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Isengard Unleashed" ;
+        schema:byArtist <https://www.imdb.com/name/nm1154342/>, # Elizabeth Fraser
+                        <https://www.imdb.com/name/nm1291863/> ; # Ben Del Maestro
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Isengard Unleashed" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0909638/> # Fran Walsh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Farewell to Lorien" ;
+        schema:byArtist <https://www.imdb.com/name/nm2598616/> ; # Hilary Summers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Farewell to Lorien" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0909638/> # Fran Walsh
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006290/> a schema:Person ;
+    schema:name "Howard Shore" .
+<https://www.imdb.com/name/nm0909638/> a schema:Person ;
+    schema:name "Fran Walsh" .
+<https://www.imdb.com/name/nm1154342/> a schema:Person ;
+    schema:name "Elizabeth Fraser" .
+<https://www.imdb.com/name/nm1288763/> a schema:Person ;
+    schema:name "Emiliana Torrini" .
+<https://www.imdb.com/name/nm1291084/> a schema:Person ;
+    schema:name "Isabel Bayrakdarian" .
+<https://www.imdb.com/name/nm1291550/> a schema:Person ;
+    schema:name "Sheila Chandra" .
+<https://www.imdb.com/name/nm1291863/> a schema:Person ;
+    schema:name "Ben Del Maestro" .
+<https://www.imdb.com/name/nm2598616/> a schema:Person ;
+    schema:name "Hilary Summers" .
+# ==============================================================================

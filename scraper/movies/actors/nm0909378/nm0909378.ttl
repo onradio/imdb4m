@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0909378/> a schema:Person ;
+    schema:name "H. Michael Walls" ;
+    schema:url <https://www.imdb.com/name/nm0909378/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "H. Michael Walls. Actor: Twelve Monkeys. H. Michael Walls is known for Twelve Monkeys (1995), The Paradigm Shift (2008) and Universal Signs (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0494285/>,    # Universal Signs
+                       <https://www.imdb.com/title/tt1214978/>,    # The Paradigm Shift
+                       <https://www.imdb.com/title/tt0320022/>,    # Hack
+                       <https://www.imdb.com/title/tt0106028/>,    # Homicide: Life on the Street
+                       <https://www.imdb.com/title/tt1539150/>,    # The Turtle Stone: The Legacy of Abbott Farm
+                       <https://www.imdb.com/title/tt0114746/> ; # Twelve Monkeys
+
+
+    schema:video <https://www.imdb.com/video/vi1584463897/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Universal Signs (2008)
+<https://www.imdb.com/title/tt0494285/> a schema:Movie ;
+    schema:name "Universal Signs" ;
+    schema:url <https://www.imdb.com/title/tt0494285/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName "Conductor"
+    ] .
+
+# The Paradigm Shift (2008)
+<https://www.imdb.com/title/tt1214978/> a schema:Movie ;
+    schema:name "The Paradigm Shift" ;
+    schema:url <https://www.imdb.com/title/tt1214978/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName "Arthur Collins"
+    ] .
+
+# Hack (2003)
+<https://www.imdb.com/title/tt0320022/> a schema:Movie ;
+    schema:name "Hack" ;
+    schema:url <https://www.imdb.com/title/tt0320022/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName ""
+    ] .
+
+# Homicide: Life on the Street (1997)
+<https://www.imdb.com/title/tt0106028/> a schema:Movie ;
+    schema:name "Homicide: Life on the Street" ;
+    schema:url <https://www.imdb.com/title/tt0106028/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName "Anders Corolli"
+    ] .
+
+# The Turtle Stone: The Legacy of Abbott Farm (1995)
+<https://www.imdb.com/title/tt1539150/> a schema:Movie ;
+    schema:name "The Turtle Stone: The Legacy of Abbott Farm" ;
+    schema:url <https://www.imdb.com/title/tt1539150/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName "Charles Abbott"
+    ] .
+
+# Twelve Monkeys (1995)
+<https://www.imdb.com/title/tt0114746/> a schema:Movie ;
+    schema:name "Twelve Monkeys" ;
+    schema:url <https://www.imdb.com/title/tt0114746/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0909378/> ;
+        schema:characterName "Botanist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1584463897/> a schema:VideoObject ;
+        schema:name "The Paradigm Shift" ;
+        schema:description "The repercussions are immediate when an activist professor assigns his class to assassinate the President.  Life becomes just as tough for the professor's teaching assistant, who is stuck in the middle." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1584463897/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjIxOTIyMjgyOF5BMl5BanBnXkFtZTcwMTM3NzY5MQ@@._V1_.jpg" ;
+        schema:duration "PT1M54S"^^xsd:duration ;
+        schema:uploadDate "2008-10-01T05:29:05Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

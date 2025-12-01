@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1439297/> a schema:Person ;
+    schema:name "Ryan Whitney" ;
+    schema:url <https://www.imdb.com/name/nm1439297/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ryan Whitney. Actor: Eternal Sunshine of the Spotless Mind. Ryan Whitney is known for Eternal Sunshine of the Spotless Mind (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0338013/> .    # Eternal Sunshine of the Spotless Mind
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Eternal Sunshine of the Spotless Mind (2004)
+<https://www.imdb.com/title/tt0338013/> a schema:Movie ;
+    schema:name "Eternal Sunshine of the Spotless Mind" ;
+    schema:url <https://www.imdb.com/title/tt0338013/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1439297/> ;
+        schema:characterName "Young Joel"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

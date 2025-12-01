@@ -1,0 +1,258 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0601619/> a schema:Person ;
+    schema:name "Michael Moore" ;
+    schema:url <https://www.imdb.com/name/nm0601619/> ;
+    schema:birthDate "1954-04-23"^^xsd:date ;
+    schema:jobTitle "Director", "Producer", "Writer" ;
+    schema:alternateName "The Big Man", "Michael Francis Moore" ;
+    schema:description "Michael Moore. Director: Bowling for Columbine. Michael Francis Moore was born in Flint, Michigan on April 23, 1954, and was raised in its Davison suburb. He is the son of Helen Veronica (Wall), a secretary, and Francis Richard Moore, who worked on an auto assembly line. He has Irish, as well as English and Scottish, ancestry.\n\nMoore studied journalism at the University of Michigan-Flint, and also pursued other hobbies such as..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTkyMDEwNjk1OF5BMl5BanBnXkFtZTcwOTI4NDA2MQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Flint, Michigan, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0310793/>,    # Bowling for Columbine
+                       <https://www.imdb.com/title/tt0361596/>,    # Fahrenheit 9/11
+                       <https://www.imdb.com/title/tt0386032/>,    # Sicko
+                       <https://www.imdb.com/title/tt1232207/>,    # Capitalism: A Love Story
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt32880907/>,    # Why I March
+                       <https://www.imdb.com/title/tt4877736/>,    # BrainDead
+                       <https://www.imdb.com/title/tt0368725/>,    # The Fever
+                       <https://www.imdb.com/title/tt0096697/>,    # The Simpsons
+                       <https://www.imdb.com/title/tt0219952/>,    # Lucky Numbers
+                       <https://www.imdb.com/title/tt0131369/>,    # Edtv
+                       <https://www.imdb.com/title/tt0103484/>,    # Mad About You
+                       <https://www.imdb.com/title/tt0109370/> ; # Canadian Bacon
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "72 wins & 34 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2250423065/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0601619/mediaviewer/rm2094571777/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm3473499648/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm498098688/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm1824481792/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm364864000/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm264200704/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm918512128/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm3074910464/>,
+                 <https://www.imdb.com/name/nm0601619/mediaviewer/rm3649927936/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0310793/> a schema:Movie ;
+    schema:name "Bowling for Columbine" ;
+    schema:url <https://www.imdb.com/title/tt0310793/> .
+
+<https://www.imdb.com/title/tt0361596/> a schema:Movie ;
+    schema:name "Fahrenheit 9/11" ;
+    schema:url <https://www.imdb.com/title/tt0361596/> .
+
+<https://www.imdb.com/title/tt0386032/> a schema:Movie ;
+    schema:name "Sicko" ;
+    schema:url <https://www.imdb.com/title/tt0386032/> .
+
+<https://www.imdb.com/title/tt1232207/> a schema:Movie ;
+    schema:name "Capitalism: A Love Story" ;
+    schema:url <https://www.imdb.com/title/tt1232207/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Why I March (2017)
+<https://www.imdb.com/title/tt32880907/> a schema:Movie ;
+    schema:name "Why I March" ;
+    schema:url <https://www.imdb.com/title/tt32880907/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName ""
+    ] .
+
+# BrainDead (2016)
+<https://www.imdb.com/title/tt4877736/> a schema:Movie ;
+    schema:name "BrainDead" ;
+    schema:url <https://www.imdb.com/title/tt4877736/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Michael Moore"
+    ] .
+
+# The Fever (2004)
+<https://www.imdb.com/title/tt0368725/> a schema:Movie ;
+    schema:name "The Fever" ;
+    schema:url <https://www.imdb.com/title/tt0368725/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "The War Correspondent"
+    ] .
+
+# The Simpsons (2003)
+<https://www.imdb.com/title/tt0096697/> a schema:Movie ;
+    schema:name "The Simpsons" ;
+    schema:url <https://www.imdb.com/title/tt0096697/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Michael Moore"
+    ] .
+
+# Lucky Numbers (2000)
+<https://www.imdb.com/title/tt0219952/> a schema:Movie ;
+    schema:name "Lucky Numbers" ;
+    schema:url <https://www.imdb.com/title/tt0219952/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Walter"
+    ] .
+
+# Edtv (1999)
+<https://www.imdb.com/title/tt0131369/> a schema:Movie ;
+    schema:name "Edtv" ;
+    schema:url <https://www.imdb.com/title/tt0131369/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Panel Member"
+    ] .
+
+# Mad About You (1997)
+<https://www.imdb.com/title/tt0103484/> a schema:Movie ;
+    schema:name "Mad About You" ;
+    schema:url <https://www.imdb.com/title/tt0103484/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Michael Moore"
+    ] .
+
+# Canadian Bacon (1995)
+<https://www.imdb.com/title/tt0109370/> a schema:Movie ;
+    schema:name "Canadian Bacon" ;
+    schema:url <https://www.imdb.com/title/tt0109370/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0601619/> ;
+        schema:characterName "Redneck Guy #2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2250423065/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Michael Moore's \"Fahrenheit 11/9\" is a provocative and comedic look at the times in which we live." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2250423065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWY5ZDRlNWEtNDdhZS00M2IwLWE5YzctOWU4NmU4NjJhZjU3XkEyXkFqcGdeQWpnYW1i._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2018-08-09T19:38:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTkyMDEwNjk1OF5BMl5BanBnXkFtZTcwOTI4NDA2MQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyMDEwNjk1OF5BMl5BanBnXkFtZTcwOTI4NDA2MQ@@._V1_.jpg> ;
+    schema:caption "Michael Moore at an event for The 80th Annual Academy Awards (2008)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "275"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm2094571777/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzIyYmY5YmQtYzgzYy00N2FhLTk5ZjEtNmNlNGQ0NDNhNTBkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Roseanne Barr, Michael Moore, and Donald Trump in The Roseanne Show (1997)" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm3473499648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzI4YWRlNzktZmVhOC00YzJlLTg4ZDMtYmE2MmU3ZmJlNDE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore and Abdul Henderson in Fahrenheit 9/11 (2004)" ;
+    schema:height "1202"^^xsd:integer ;
+    schema:width "2138"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm498098688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjBlNDYyYTctMTg0NC00MmFkLWIzZjgtODNjZWNmMmI3NDUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore and Donald Trump in Fahrenheit 11/9 (2018)" ;
+    schema:height "1370"^^xsd:integer ;
+    schema:width "1873"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm1824481792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDEwMzQ3M2QtNjI3ZC00OTc3LTk2YWUtN2FjOTY2MDVlYzcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore and April Cook-Hawkins in Fahrenheit 11/9 (2018)" ;
+    schema:height "1351"^^xsd:integer ;
+    schema:width "2504"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm364864000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjczNmY4ODEtOWYzMC00ZTliLWExZDgtNTZlMDNkMDE5MTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore and Jared Kushner in Fahrenheit 11/9 (2018)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm264200704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDg1MjEzN2QtNThmYy00ZDkyLThmMDEtMWM0NjhjYjQzNzYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore and Richard Ojeda in Fahrenheit 11/9 (2018)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm918512128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGY0ZTIyYzctOTk4My00Njc4LTg0MDUtZTBjYjgwNGRiMTMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Michael Moore in Fahrenheit 11/9 (2018)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1421"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm3074910464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGZlNTZiMmEtYzRiMC00YTIwLTlkNGQtMGExMzdjNTJkMmNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Stephen Colbert and Michael Moore in The Late Show with Stephen Colbert (2015)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0601619/mediaviewer/rm3649927936/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjY2YzU4MTktMWUyNC00NWRmLWJjM2QtZGFiMGFiNTFhMzE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Maher and Michael Moore in Real Time with Bill Maher (2003)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0601619/>
+    schema:sameAs <https://www.facebook.com/mmflint/>,
+                  <https://www.instagram.com/michaelfmoore/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

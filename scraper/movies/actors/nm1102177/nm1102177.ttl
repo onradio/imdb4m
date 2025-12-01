@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1102177/> a schema:Person ;
+    schema:name "Stéphane Roux" ;
+    schema:url <https://www.imdb.com/name/nm1102177/> ;
+    schema:jobTitle "Actor", "Director", "Animation Department" ;
+    schema:description "Stéphane Roux. Actor: Ratatouille. Stéphane Roux is known for Ratatouille (2007), A Goofy Movie (1995) and Arthur and the Invisibles (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6795336/>,    # Days Gone
+                       <https://www.imdb.com/title/tt9616928/>,    # Bienvenue
+                       <https://www.imdb.com/title/tt6057606/>,    # Blaise
+                       <https://www.imdb.com/title/tt0382932/>,    # Ratatouille
+                       <https://www.imdb.com/title/tt0390163/>,    # Kingdom Hearts II
+                       <https://www.imdb.com/title/tt0462670/> . # Cold Fear
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Days Gone (2019)
+<https://www.imdb.com/title/tt6795336/> a schema:Movie ;
+    schema:name "Days Gone" ;
+    schema:url <https://www.imdb.com/title/tt6795336/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "Voix additionnelles"
+    ] .
+
+# Bienvenue (2017)
+<https://www.imdb.com/title/tt9616928/> a schema:Movie ;
+    schema:name "Bienvenue" ;
+    schema:url <https://www.imdb.com/title/tt9616928/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "Docteur"
+    ] .
+
+# Blaise (2016)
+<https://www.imdb.com/title/tt6057606/> a schema:Movie ;
+    schema:name "Blaise" ;
+    schema:url <https://www.imdb.com/title/tt6057606/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "Francis"
+    ] .
+
+# Ratatouille (2007)
+<https://www.imdb.com/title/tt0382932/> a schema:Movie ;
+    schema:name "Ratatouille" ;
+    schema:url <https://www.imdb.com/title/tt0382932/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "TV Narrator"
+    ] .
+
+# Kingdom Hearts II (2005)
+<https://www.imdb.com/title/tt0390163/> a schema:Movie ;
+    schema:name "Kingdom Hearts II" ;
+    schema:url <https://www.imdb.com/title/tt0390163/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "Xigbar"
+    ] .
+
+# Cold Fear (2005)
+<https://www.imdb.com/title/tt0462670/> a schema:Movie ;
+    schema:name "Cold Fear" ;
+    schema:url <https://www.imdb.com/title/tt0462670/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1102177/> ;
+        schema:characterName "(voice: French version)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

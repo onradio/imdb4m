@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0564349/> a schema:Person ;
+    schema:name "Maureen McBride" ;
+    schema:url <https://www.imdb.com/name/nm0564349/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Maureen McBride. Actress: In the Name of the Father. Maureen McBride is known for In the Name of the Father (1993) and The Hanging Gale (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0111995/>,    # The Hanging Gale
+                       <https://www.imdb.com/title/tt0107207/> . # In the Name of the Father
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Hanging Gale (1995)
+<https://www.imdb.com/title/tt0111995/> a schema:Movie ;
+    schema:name "The Hanging Gale" ;
+    schema:url <https://www.imdb.com/title/tt0111995/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0564349/> ;
+        schema:characterName "Mrs. Brogan"
+    ] .
+
+# In the Name of the Father (1993)
+<https://www.imdb.com/title/tt0107207/> a schema:Movie ;
+    schema:name "In the Name of the Father" ;
+    schema:url <https://www.imdb.com/title/tt0107207/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0564349/> ;
+        schema:characterName "Mother"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

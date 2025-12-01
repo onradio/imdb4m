@@ -1,0 +1,72 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6130314/> a schema:Person ;
+    schema:name "May Lindstrom" ;
+    schema:url <https://www.imdb.com/name/nm6130314/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "May Lindstrom. Actress: Her. May Lindstrom is known for Her (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMWU3NDE5NmQtMjcxZS00NjVjLTk0NjgtYjA1MmY2MDVlZmE3XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1798709/> ;    # Her
+
+
+    schema:video <https://www.imdb.com/video/vi4199131161/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6130314/mediaviewer/rm355446785/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Her (2013)
+<https://www.imdb.com/title/tt1798709/> a schema:Movie ;
+    schema:name "Her" ;
+    schema:url <https://www.imdb.com/title/tt1798709/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6130314/> ;
+        schema:characterName "Sexy Pregnant TV Star"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4199131161/> a schema:VideoObject ;
+        schema:name "Her" ;
+        schema:description "Clip: You're Dating an OS?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4199131161/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMThmZjU5ZmUtNjRmZi00Mzk3LWE0MTktYWZkMjIyMTBhY2Q3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M12S"^^xsd:duration ;
+        schema:uploadDate "2014-01-11T07:40:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMWU3NDE5NmQtMjcxZS00NjVjLTk0NjgtYjA1MmY2MDVlZmE3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWU3NDE5NmQtMjcxZS00NjVjLTk0NjgtYjA1MmY2MDVlZmE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "May Lindstrom" ;
+    schema:height "1099"^^xsd:integer ;
+    schema:width "748"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6130314/mediaviewer/rm355446785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWU3NDE5NmQtMjcxZS00NjVjLTk0NjgtYjA1MmY2MDVlZmE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "May Lindstrom" ;
+    schema:height "1099"^^xsd:integer ;
+    schema:width "748"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0070548/> a schema:Person ;
+    schema:name "Lee Bendick" ;
+    schema:url <https://www.imdb.com/name/nm0070548/> ;
+    schema:birthDate "1934-12-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Lee Bendick. Actor: Clerks. Lee Bendick was born on 25 December 1934 in Perth Amboy, New Jersey, USA. He was an actor, known for Clerks (1994), A Better Place (1997) and Shooting Clerks (2019). He died on 8 January 2025 in Hazlet, New Jersey, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Perth Amboy, New Jersey, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3449200/>,    # Shooting Clerks
+                       <https://www.imdb.com/title/tt0118705/>,    # A Better Place
+                       <https://www.imdb.com/title/tt0109445/> . # Clerks
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shooting Clerks (2019)
+<https://www.imdb.com/title/tt3449200/> a schema:Movie ;
+    schema:name "Shooting Clerks" ;
+    schema:url <https://www.imdb.com/title/tt3449200/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0070548/> ;
+        schema:characterName "Man Who Lost His Keys"
+    ] .
+
+# A Better Place (1997)
+<https://www.imdb.com/title/tt0118705/> a schema:Movie ;
+    schema:name "A Better Place" ;
+    schema:url <https://www.imdb.com/title/tt0118705/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0070548/> ;
+        schema:characterName "Whipporwill Asshole"
+    ] .
+
+# Clerks (1994)
+<https://www.imdb.com/title/tt0109445/> a schema:Movie ;
+    schema:name "Clerks" ;
+    schema:url <https://www.imdb.com/title/tt0109445/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0070548/> ;
+        schema:characterName "#812 Wynarski"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

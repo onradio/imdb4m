@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2474363/> a schema:Person ;
+    schema:name "Rebecca Howard" ;
+    schema:url <https://www.imdb.com/name/nm2474363/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rebecca Howard. Actress: Children of Men. Rebecca Howard is known for Children of Men (2006), Indecent Proposal (1993) and First Dog (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1400335/>,    # First Dog
+                       <https://www.imdb.com/title/tt0206634/>,    # Children of Men
+                       <https://www.imdb.com/title/tt0408403/>,    # Murphy's Law
+                       <https://www.imdb.com/title/tt0107211/> ; # Indecent Proposal
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2474363/mediaviewer/rm736312064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# First Dog (2010)
+<https://www.imdb.com/title/tt1400335/> a schema:Movie ;
+    schema:name "First Dog" ;
+    schema:url <https://www.imdb.com/title/tt1400335/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474363/> ;
+        schema:characterName "Social Worker"
+    ] .
+
+# Children of Men (2006)
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474363/> ;
+        schema:characterName "Café Customer"
+    ] .
+
+# Murphy's Law (2003)
+<https://www.imdb.com/title/tt0408403/> a schema:Movie ;
+    schema:name "Murphy's Law" ;
+    schema:url <https://www.imdb.com/title/tt0408403/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474363/> ;
+        schema:characterName "Mitzi"
+    ] .
+
+# Indecent Proposal (1993)
+<https://www.imdb.com/title/tt0107211/> a schema:Movie ;
+    schema:name "Indecent Proposal" ;
+    schema:url <https://www.imdb.com/title/tt0107211/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474363/> ;
+        schema:characterName "Architecture Student"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2474363/mediaviewer/rm736312064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDIxZjRlMWQtNGE1NC00MmNkLThjOTQtZmFjZmM4M2M0NmUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rita Davies, Kim Fenton, Clive Owen, Atalanta White, Phoebe Hawthorne, Chris Gilbert, Jon Chevalier, Rebecca Howard, and Laurence Woodbridge in Children of Men (2006)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

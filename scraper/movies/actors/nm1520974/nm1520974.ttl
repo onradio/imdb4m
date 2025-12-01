@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1520974/> a schema:Person ;
+    schema:name "Michael Bird" ;
+    schema:url <https://www.imdb.com/name/nm1520974/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Michael Bird. Actor: Incredibles 2. Michael Bird is known for Incredibles 2 (2018), The Incredibles (2004) and The Iron Giant (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8205060/>,    # LEGO the Incredibles
+                       <https://www.imdb.com/title/tt3606756/>,    # Incredibles 2
+                       <https://www.imdb.com/title/tt0433576/>,    # The Incredibles: The Video Game
+                       <https://www.imdb.com/title/tt0317705/>,    # The Incredibles
+                       <https://www.imdb.com/title/tt0129167/> . # The Iron Giant
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# LEGO the Incredibles (2018)
+<https://www.imdb.com/title/tt8205060/> a schema:Movie ;
+    schema:name "LEGO the Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt8205060/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1520974/> ;
+        schema:characterName "Tony Rydinger"
+    ] .
+
+# Incredibles 2 (2018)
+<https://www.imdb.com/title/tt3606756/> a schema:Movie ;
+    schema:name "Incredibles 2" ;
+    schema:url <https://www.imdb.com/title/tt3606756/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1520974/> ;
+        schema:characterName "Tony Rydinger"
+    ] .
+
+# The Incredibles: The Video Game (2004)
+<https://www.imdb.com/title/tt0433576/> a schema:Movie ;
+    schema:name "The Incredibles: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0433576/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1520974/> ;
+        schema:characterName "Tony Rydinger"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1520974/> ;
+        schema:characterName "Tony Rydinger"
+    ] .
+
+# The Iron Giant (1999)
+<https://www.imdb.com/title/tt0129167/> a schema:Movie ;
+    schema:name "The Iron Giant" ;
+    schema:url <https://www.imdb.com/title/tt0129167/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1520974/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

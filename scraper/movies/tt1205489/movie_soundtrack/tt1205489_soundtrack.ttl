@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1205489/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Gran Torino" ;
+        schema:byArtist <https://www.imdb.com/name/nm1490226/> ; # Jamie Cullum
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gran Torino" ;
+            schema:author <https://www.imdb.com/name/nm0000142/>, # Clint Eastwood
+                       <https://www.imdb.com/name/nm1490226/>, # Jamie Cullum
+                       <https://www.imdb.com/name/nm0247762/>, # Kyle Eastwood
+                       <https://www.imdb.com/name/nm0828630/> # Michael Stevens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Psalm XVIII" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Psalm XVIII" ;
+            schema:author <https://www.imdb.com/name/nm0545227/> # Benedetto Marcello
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Esto Es Guerra" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Esto Es Guerra" ;
+            schema:author <https://www.imdb.com/name/nm4733336/>, # Neiver Alvarez
+                       <https://www.imdb.com/name/nm8737193/> # Jesus A. Perez-Alvarez
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "We Don't F* Around" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Bartender" ;
+        schema:byArtist <https://www.imdb.com/name/nm3342405/>, # Renzo Mantovani
+                        <https://www.imdb.com/name/nm1668198/> ; # Doug Webb
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Bartender" ;
+            schema:author <https://www.imdb.com/name/nm3342405/> # Renzo Mantovani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Maybe So" ;
+        schema:byArtist <https://www.imdb.com/name/nm3342405/>, # Renzo Mantovani
+                        <https://www.imdb.com/name/nm1668198/> ; # Doug Webb
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Maybe So" ;
+            schema:author <https://www.imdb.com/name/nm3342405/> # Renzo Mantovani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Appreciation" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hmoob Tuag Nthi" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hmoob Tuag Nthi" ;
+            schema:author <https://www.imdb.com/name/nm3146137/> # Elvis Thao
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "All My Hmong Mutha F*kaz" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Gran Torino" ;
+        schema:byArtist <https://www.imdb.com/name/nm1490226/>, # Jamie Cullum
+                        <https://www.imdb.com/name/nm0000142/> ; # Clint Eastwood
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gran Torino" ;
+            schema:author <https://www.imdb.com/name/nm0000142/>, # Clint Eastwood
+                       <https://www.imdb.com/name/nm1490226/>, # Jamie Cullum
+                       <https://www.imdb.com/name/nm0247762/>, # Kyle Eastwood
+                       <https://www.imdb.com/name/nm0828630/> # Michael Stevens
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000142/> a schema:Person ;
+    schema:name "Clint Eastwood" .
+<https://www.imdb.com/name/nm0247762/> a schema:Person ;
+    schema:name "Kyle Eastwood" .
+<https://www.imdb.com/name/nm0545227/> a schema:Person ;
+    schema:name "Benedetto Marcello" .
+<https://www.imdb.com/name/nm0828630/> a schema:Person ;
+    schema:name "Michael Stevens" .
+<https://www.imdb.com/name/nm1490226/> a schema:Person ;
+    schema:name "Jamie Cullum" .
+<https://www.imdb.com/name/nm1668198/> a schema:Person ;
+    schema:name "Doug Webb" .
+<https://www.imdb.com/name/nm3146137/> a schema:Person ;
+    schema:name "Elvis Thao" .
+<https://www.imdb.com/name/nm3342405/> a schema:Person ;
+    schema:name "Renzo Mantovani" .
+<https://www.imdb.com/name/nm4733336/> a schema:Person ;
+    schema:name "Neiver Alvarez" .
+<https://www.imdb.com/name/nm8737193/> a schema:Person ;
+    schema:name "Jesus A. Perez-Alvarez" .
+# ==============================================================================

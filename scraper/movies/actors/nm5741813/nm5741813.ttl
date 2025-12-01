@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5741813/> a schema:Person ;
+    schema:name "Dinesh Mangaluru" ;
+    schema:url <https://www.imdb.com/name/nm5741813/> ;
+    schema:jobTitle "Actor", "Art Director" ;
+    schema:description "Dinesh Mangaluru. Actor: K.G.F. Dinesh Mangaluru was born in Kundapur, Udupi district, India. He was an actor and art director, known for K.G.F (2018), K.G.F: Chapter 2 (2022) and 777 Charlie (2022). He died on 25 August 2025 in Kundapura, Karnataka, India." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kundapur, Udupi district, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11344598/> ;    # Alidu Ulidavaru
+
+
+    schema:video <https://www.imdb.com/video/vi3778922265/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Alidu Ulidavaru (2019)
+<https://www.imdb.com/title/tt11344598/> a schema:Movie ;
+    schema:name "Alidu Ulidavaru" ;
+    schema:url <https://www.imdb.com/title/tt11344598/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5741813/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3778922265/> a schema:VideoObject ;
+        schema:name "Teaser [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3778922265/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYmYyNzdjODktMjU5YS00NTA3LTkyY2UtNmVlZmNlNTVjODU3XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M19S"^^xsd:duration ;
+        schema:uploadDate "2023-11-08T13:21:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

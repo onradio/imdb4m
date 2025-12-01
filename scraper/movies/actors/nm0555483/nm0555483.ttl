@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0555483/> a schema:Person ;
+    schema:name "Yûko Maruyama" ;
+    schema:url <https://www.imdb.com/name/nm0555483/> ;
+    schema:birthDate "1946-10-22"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Yûko Maruyama. Actress: Kiki's Delivery Service. Yûko Maruyama was born on 22 October 1946 in Tokyo, Japan. She is an actress, known for Kiki's Delivery Service (1989), Niko niko nikki (2003) and Yami-baito kazoku (2024)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tokyo, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt14038042/>,    # 100% Pascal-sensei
+                       <https://www.imdb.com/title/tt5503288/>,    # Hen Zemi
+                       <https://www.imdb.com/title/tt1133474/>,    # Niko niko nikki
+                       <https://www.imdb.com/title/tt0097814/> . # Kiki's Delivery Service
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 100% Pascal-sensei (2017)
+<https://www.imdb.com/title/tt14038042/> a schema:Movie ;
+    schema:name "100% Pascal-sensei" ;
+    schema:url <https://www.imdb.com/title/tt14038042/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0555483/> ;
+        schema:characterName "Hikaru Tachibana"
+    ] .
+
+# Hen Zemi (2011)
+<https://www.imdb.com/title/tt5503288/> a schema:Movie ;
+    schema:name "Hen Zemi" ;
+    schema:url <https://www.imdb.com/title/tt5503288/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0555483/> ;
+        schema:characterName "Ichikawa's Mother"
+    ] .
+
+# Niko niko nikki (2003)
+<https://www.imdb.com/title/tt1133474/> a schema:Movie ;
+    schema:name "Niko niko nikki" ;
+    schema:url <https://www.imdb.com/title/tt1133474/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0555483/> ;
+        schema:characterName ""
+    ] .
+
+# Kiki's Delivery Service (1989)
+<https://www.imdb.com/title/tt0097814/> a schema:Movie ;
+    schema:name "Kiki's Delivery Service" ;
+    schema:url <https://www.imdb.com/title/tt0097814/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0555483/> ;
+        schema:characterName "Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

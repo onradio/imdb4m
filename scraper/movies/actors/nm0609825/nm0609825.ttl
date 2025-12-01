@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0609825/> a schema:Person ;
+    schema:name "Louis Charles Mounicou III" ;
+    schema:url <https://www.imdb.com/name/nm0609825/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Louis Charles Mounicou III. Actor: Miller's Crossing. Louis Charles Mounicou III is known for Miller's Crossing (1990)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0100150/> .    # Miller's Crossing
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Miller's Crossing (1990)
+<https://www.imdb.com/title/tt0100150/> a schema:Movie ;
+    schema:name "Miller's Crossing" ;
+    schema:url <https://www.imdb.com/title/tt0100150/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0609825/> ;
+        schema:characterName "Johnny Caspar, Jr."
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

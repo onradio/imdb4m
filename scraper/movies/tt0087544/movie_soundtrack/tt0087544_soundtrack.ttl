@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087544/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Kaze no Tani no Naushika (Symbolic Theme Song)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0946642/> ; # Narumi Yasuda
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kaze no Tani no Naushika (Symbolic Theme Song)" ;
+            schema:composer <https://www.imdb.com/name/nm0396100/> ; # Haruomi Hosono
+            schema:lyricist <https://www.imdb.com/name/nm1191929/> # Takashi Matsumoto
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Saranbande" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Saranbande" ;
+            schema:author <https://www.imdb.com/name/nm0005594/> # George Frideric Handel
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005594/> a schema:Person ;
+    schema:name "George Frideric Handel" .
+<https://www.imdb.com/name/nm0396100/> a schema:Person ;
+    schema:name "Haruomi Hosono" .
+<https://www.imdb.com/name/nm0946642/> a schema:Person ;
+    schema:name "Narumi Yasuda" .
+<https://www.imdb.com/name/nm1191929/> a schema:Person ;
+    schema:name "Takashi Matsumoto" .
+# ==============================================================================

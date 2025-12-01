@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0710858/> a schema:Person ;
+    schema:name "Larry Rapp" ;
+    schema:url <https://www.imdb.com/name/nm0710858/> ;
+    schema:birthDate "1948-02-20"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Larry Rapp. Actor: Once Upon a Time in America. Larry Rapp was born on 20 February 1948. He is an actor, known for Once Upon a Time in America (1984) and Dear Mr. Wonderful (1982)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmRlYzE1OTctZWVhYi00MmEzLTg1ZmItZWRjMTFiMDg2MGU0XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0099128/>,    # Betsy's Wedding
+                       <https://www.imdb.com/title/tt0089246/>,    # Half Nelson
+                       <https://www.imdb.com/title/tt0090217/>,    # Turk 182
+                       <https://www.imdb.com/title/tt0087843/>,    # Once Upon a Time in America
+                       <https://www.imdb.com/title/tt0083804/> ; # Dear Mr. Wonderful
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0710858/mediaviewer/rm2819785984/>,
+                 <https://www.imdb.com/name/nm0710858/mediaviewer/rm35070464/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Betsy's Wedding (1990)
+<https://www.imdb.com/title/tt0099128/> a schema:Movie ;
+    schema:name "Betsy's Wedding" ;
+    schema:url <https://www.imdb.com/title/tt0099128/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710858/> ;
+        schema:characterName "Man Outside Restaurant"
+    ] .
+
+# Half Nelson (1985)
+<https://www.imdb.com/title/tt0089246/> a schema:Movie ;
+    schema:name "Half Nelson" ;
+    schema:url <https://www.imdb.com/title/tt0089246/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710858/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# Turk 182 (1985)
+<https://www.imdb.com/title/tt0090217/> a schema:Movie ;
+    schema:name "Turk 182" ;
+    schema:url <https://www.imdb.com/title/tt0090217/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710858/> ;
+        schema:characterName "Football Fan"
+    ] .
+
+# Once Upon a Time in America (1984)
+<https://www.imdb.com/title/tt0087843/> a schema:Movie ;
+    schema:name "Once Upon a Time in America" ;
+    schema:url <https://www.imdb.com/title/tt0087843/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710858/> ;
+        schema:characterName "Fat Moe"
+    ] .
+
+# Dear Mr. Wonderful (1982)
+<https://www.imdb.com/title/tt0083804/> a schema:Movie ;
+    schema:name "Dear Mr. Wonderful" ;
+    schema:url <https://www.imdb.com/title/tt0083804/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710858/> ;
+        schema:characterName "Arnold"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmRlYzE1OTctZWVhYi00MmEzLTg1ZmItZWRjMTFiMDg2MGU0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmRlYzE1OTctZWVhYi00MmEzLTg1ZmItZWRjMTFiMDg2MGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Larry Rapp in Once Upon a Time in America (1984)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710858/mediaviewer/rm2819785984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODEzNjAyNjk0OV5BMl5BanBnXkFtZTcwMDEyMzE0NA@@._V1_.jpg> ;
+    schema:caption "Robert De Niro, James Woods, William Forsythe, James Hayden, and Larry Rapp in Once Upon a Time in America (1984)" ;
+    schema:height "1284"^^xsd:integer ;
+    schema:width "1797"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710858/mediaviewer/rm35070464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmRlYzE1OTctZWVhYi00MmEzLTg1ZmItZWRjMTFiMDg2MGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Larry Rapp in Once Upon a Time in America (1984)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0568958/> a schema:Person ;
+    schema:name "Tim McGarry" ;
+    schema:url <https://www.imdb.com/name/nm0568958/> ;
+    schema:birthDate "1964-06-23"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tim McGarry. Actor: Hacksaw Ridge. Tim McGarry was born on 23 June 1964 in Belfast, Co. Antrim, Northern Ireland, UK. He is an actor, known for Hacksaw Ridge (2016), Underbelly (2008) and Home and Away (1988)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Belfast, Co. Antrim, Northern Ireland, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1587000/>,    # Rake
+                       <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt0094481/>,    # Home and Away
+                       <https://www.imdb.com/title/tt1119176/>,    # Underbelly
+                       <https://www.imdb.com/title/tt0163924/>,    # All Saints
+                       <https://www.imdb.com/title/tt0113658/> . # Lilian's Story
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rake (2018)
+<https://www.imdb.com/title/tt1587000/> a schema:Movie ;
+    schema:name "Rake" ;
+    schema:url <https://www.imdb.com/title/tt1587000/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "Seth Gilbert"
+    ] .
+
+# Hacksaw Ridge (2016)
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "Local Man"
+    ] .
+
+# Home and Away (2016)
+<https://www.imdb.com/title/tt0094481/> a schema:Movie ;
+    schema:name "Home and Away" ;
+    schema:url <https://www.imdb.com/title/tt0094481/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "Celebrant"
+    ] .
+
+# Underbelly (2010)
+<https://www.imdb.com/title/tt1119176/> a schema:Movie ;
+    schema:name "Underbelly" ;
+    schema:url <https://www.imdb.com/title/tt1119176/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "Peter Thompson"
+    ] .
+
+# All Saints (2004)
+<https://www.imdb.com/title/tt0163924/> a schema:Movie ;
+    schema:name "All Saints" ;
+    schema:url <https://www.imdb.com/title/tt0163924/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "Garth Wilkinson"
+    ] .
+
+# Lilian's Story (1996)
+<https://www.imdb.com/title/tt0113658/> a schema:Movie ;
+    schema:name "Lilian's Story" ;
+    schema:url <https://www.imdb.com/title/tt0113658/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568958/> ;
+        schema:characterName "First Bus Driver"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

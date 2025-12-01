@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10635577/> a schema:Person ;
+    schema:name "Michael Muthu" ;
+    schema:url <https://www.imdb.com/name/nm10635577/> ;
+    schema:jobTitle "Actor", "Director" ;
+    schema:description "Michael Muthu. Actor: Dil Bechara. Michael Muthu is known for Dil Bechara (2020), 2.0 (2018) and Theeviram (2020)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5080556/> .    # 2.0
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 2.0 (2018)
+<https://www.imdb.com/title/tt5080556/> a schema:Movie ;
+    schema:name "2.0" ;
+    schema:url <https://www.imdb.com/title/tt5080556/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10635577/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

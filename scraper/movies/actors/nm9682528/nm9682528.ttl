@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9682528/> a schema:Person ;
+    schema:name "Seth Hurwitz" ;
+    schema:url <https://www.imdb.com/name/nm9682528/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Seth Hurwitz. Actor: Green Book. Seth Hurwitz is known for Green Book (2018), Treme (2010) and We Own This City (2022)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmQ1OWY5YjgtNjlkMS00OWM0LWE5ZGUtMTdmY2QxZDQwZDE4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4998350/>,    # The Deuce
+                       <https://www.imdb.com/title/tt6966692/>,    # Green Book
+                       <https://www.imdb.com/title/tt1279972/>,    # Treme
+                       <https://www.imdb.com/title/tt1548899/>,    # Babylon Central
+                       <https://www.imdb.com/title/tt0306414/> ; # The Wire
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9682528/mediaviewer/rm4097184001/>,
+                 <https://www.imdb.com/name/nm9682528/mediaviewer/rm509350657/>,
+                 <https://www.imdb.com/name/nm9682528/mediaviewer/rm2981711616/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Deuce (2019)
+<https://www.imdb.com/title/tt4998350/> a schema:Movie ;
+    schema:name "The Deuce" ;
+    schema:url <https://www.imdb.com/title/tt4998350/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9682528/> ;
+        schema:characterName ""
+    ] .
+
+# Green Book (2018)
+<https://www.imdb.com/title/tt6966692/> a schema:Movie ;
+    schema:name "Green Book" ;
+    schema:url <https://www.imdb.com/title/tt6966692/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9682528/> ;
+        schema:characterName "Johnny Randazzo"
+    ] .
+
+# Treme (2010)
+<https://www.imdb.com/title/tt1279972/> a schema:Movie ;
+    schema:name "Treme" ;
+    schema:url <https://www.imdb.com/title/tt1279972/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9682528/> ;
+        schema:characterName "Bartender"
+    ] .
+
+# Babylon Central (2010)
+<https://www.imdb.com/title/tt1548899/> a schema:Movie ;
+    schema:name "Babylon Central" ;
+    schema:url <https://www.imdb.com/title/tt1548899/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9682528/> ;
+        schema:characterName "Corporate Henchman"
+    ] .
+
+# The Wire (2006)
+<https://www.imdb.com/title/tt0306414/> a schema:Movie ;
+    schema:name "The Wire" ;
+    schema:url <https://www.imdb.com/title/tt0306414/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9682528/> ;
+        schema:characterName "Poker Player"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmQ1OWY5YjgtNjlkMS00OWM0LWE5ZGUtMTdmY2QxZDQwZDE4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQ1OWY5YjgtNjlkMS00OWM0LWE5ZGUtMTdmY2QxZDQwZDE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Seth Hurwitz" ;
+    schema:height "747"^^xsd:integer ;
+    schema:width "631"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9682528/mediaviewer/rm4097184001/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDg1YzA2NDgtNmI2Zi00OGNjLTkwYTktYmYwNzhkMzcxN2UzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Seth Hurwitz in We Own This City (2022)" ;
+    schema:height "427"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9682528/mediaviewer/rm509350657/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjQwZDBiMDYtMGU5ZC00MmI3LTg4NDEtYjJiMDcwMzk1ZjA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jon Bernthal and Seth Hurwitz in We Own This City (2022)" ;
+    schema:height "427"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9682528/mediaviewer/rm2981711616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQ1OWY5YjgtNjlkMS00OWM0LWE5ZGUtMTdmY2QxZDQwZDE4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Seth Hurwitz" ;
+    schema:height "747"^^xsd:integer ;
+    schema:width "631"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1508029/> a schema:Person ;
+    schema:name "Jeffrie Lane" ;
+    schema:url <https://www.imdb.com/name/nm1508029/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jeffrie Lane. Actor: The Silence of the Lambs. Jeffrie Lane is an American actor known for his role as Clarice Starling's father in the Oscar winning classic film The Silence of the Lambs (1991) directed by Jonathan Demme. His appearance is quite brief and presented through a series of flashbacks when Starling (Jodie Foster) remembers her childhood in a farm - young Clarice is played by Maria Skorobogatov." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0102926/> .    # The Silence of the Lambs
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Silence of the Lambs (1991)
+<https://www.imdb.com/title/tt0102926/> a schema:Movie ;
+    schema:name "The Silence of the Lambs" ;
+    schema:url <https://www.imdb.com/title/tt0102926/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1508029/> ;
+        schema:characterName "Clarice's Father"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

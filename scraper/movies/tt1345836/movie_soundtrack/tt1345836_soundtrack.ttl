@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1345836/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Pavane pour une infante défunte" ;
+        schema:byArtist <https://www.imdb.com/name/nm3600055/>, # Minnesota Orchestra
+                        <https://www.imdb.com/name/nm0804891/> ; # Stanislaw Skrowaczewski
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pavane pour une infante défunte" ;
+            schema:author <https://www.imdb.com/name/nm0712315/> # Maurice Ravel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Star-Spangled Banner" ;
+        schema:byArtist <https://www.imdb.com/name/nm5168962/> ; # Charles Jackson Coyne
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Star-Spangled Banner" ;
+            schema:author <https://www.imdb.com/name/nm1411746/>, # Francis Scott Key
+                       <https://www.imdb.com/name/nm2397901/> # John Stafford Smith
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Like a Dog Chasing Cars" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Like a Dog Chasing Cars" ;
+            schema:author <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Barbastella" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Barbastella" ;
+            schema:author <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Molossus" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Molossus" ;
+            schema:author <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Artibeus" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Artibeus" ;
+            schema:author <https://www.imdb.com/name/nm0001877/> # Hans Zimmer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rosen aus dem Süden, Op. 388" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rosen aus dem Süden, Op. 388" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001877/> a schema:Person ;
+    schema:name "Hans Zimmer" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0712315/> a schema:Person ;
+    schema:name "Maurice Ravel" .
+<https://www.imdb.com/name/nm0804891/> a schema:Person ;
+    schema:name "Stanislaw Skrowaczewski" .
+<https://www.imdb.com/name/nm1411746/> a schema:Person ;
+    schema:name "Francis Scott Key" .
+<https://www.imdb.com/name/nm2397901/> a schema:Person ;
+    schema:name "John Stafford Smith" .
+<https://www.imdb.com/name/nm3600055/> a schema:Person ;
+    schema:name "Minnesota Orchestra" .
+<https://www.imdb.com/name/nm5168962/> a schema:Person ;
+    schema:name "Charles Jackson Coyne" .
+# ==============================================================================

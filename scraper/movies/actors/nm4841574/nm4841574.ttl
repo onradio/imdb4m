@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4841574/> a schema:Person ;
+    schema:name "Majida Hussein" ;
+    schema:url <https://www.imdb.com/name/nm4841574/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Majida Hussein. Actress: Incendies. Majida Hussein is known for Incendies (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1255953/> .    # Incendies
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Incendies (2010)
+<https://www.imdb.com/title/tt1255953/> a schema:Movie ;
+    schema:name "Incendies" ;
+    schema:url <https://www.imdb.com/title/tt1255953/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4841574/> ;
+        schema:characterName "Grand-mére de Nawal"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

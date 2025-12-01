@@ -1,0 +1,28 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0091064/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Help Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0275069/> ; # Bryan Ferry
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Help Me" ;
+            schema:author <https://www.imdb.com/name/nm0734755/>, # Nile Rodgers
+                       <https://www.imdb.com/name/nm0275069/> # Bryan Ferry
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0275069/> a schema:Person ;
+    schema:name "Bryan Ferry" .
+<https://www.imdb.com/name/nm0734755/> a schema:Person ;
+    schema:name "Nile Rodgers" .
+# ==============================================================================

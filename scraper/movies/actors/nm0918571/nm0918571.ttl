@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0918571/> a schema:Person ;
+    schema:name "Andrew Weir" ;
+    schema:url <https://www.imdb.com/name/nm0918571/> ;
+    schema:birthDate "1980-12-26"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Droid" ;
+    schema:description "Andrew Weir. Actor: Braveheart. Away from the stage and silver screen this versatile actor is a keen follower of Ayr Utd FC and the Scotland National Team. He is also one of the founders of the highly successful company \"3rd Degrees Burns\" His work in this field has been appreciated by audience worldwide and various festivals and events. In all Andrew Weir is a true champion of all things Scottish...." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjg1YzlkZjgtOGVjNi00MjA2LTgzMGYtNGU3ODdiMDIzNmQxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ayr, Scotland, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0203255/>,    # G Force
+                       <https://www.imdb.com/title/tt0112573/> ; # Braveheart
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0918571/mediaviewer/rm2025901056/>,
+                 <https://www.imdb.com/name/nm0918571/mediaviewer/rm1001685761/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# G Force (1998)
+<https://www.imdb.com/title/tt0203255/> a schema:Movie ;
+    schema:name "G Force" ;
+    schema:url <https://www.imdb.com/title/tt0203255/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918571/> ;
+        schema:characterName ""
+    ] .
+
+# Braveheart (1995)
+<https://www.imdb.com/title/tt0112573/> a schema:Movie ;
+    schema:name "Braveheart" ;
+    schema:url <https://www.imdb.com/title/tt0112573/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918571/> ;
+        schema:characterName "Young Hamish"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjg1YzlkZjgtOGVjNi00MjA2LTgzMGYtNGU3ODdiMDIzNmQxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjg1YzlkZjgtOGVjNi00MjA2LTgzMGYtNGU3ODdiMDIzNmQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Weir" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "290"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918571/mediaviewer/rm2025901056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxNjg2MDA2MF5BMl5BanBnXkFtZTgwOTAyNzU5MTE@._V1_.jpg> ;
+    schema:caption "Andrew Weir in Braveheart (1995)" ;
+    schema:height "5223"^^xsd:integer ;
+    schema:width "3383"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918571/mediaviewer/rm1001685761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjg1YzlkZjgtOGVjNi00MjA2LTgzMGYtNGU3ODdiMDIzNmQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Andrew Weir" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "290"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

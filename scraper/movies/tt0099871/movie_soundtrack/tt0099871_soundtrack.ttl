@@ -1,0 +1,121 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0099871/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Lady Marmalade" ;
+        schema:byArtist <https://www.imdb.com/name/nm3067905/> ; # LaBelle
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lady Marmalade" ;
+            schema:author <https://www.imdb.com/name/nm0187685/>, # Bob Crewe
+                       <https://www.imdb.com/name/nm1213647/> # Kenny Nolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "My Thang" ;
+        schema:byArtist <https://www.imdb.com/name/nm0113768/> ; # James Brown
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "My Thang" ;
+            schema:author <https://www.imdb.com/name/nm0113768/> # James Brown
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Please Mr. Postman" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Please Mr. Postman" ;
+            schema:author <https://www.imdb.com/name/nm0060819/>, # Robert Bateman
+                       <https://www.imdb.com/name/nm3134730/>, # Georgia Dobbins
+                       <https://www.imdb.com/name/nm3134131/>, # William Garrett
+                       <https://www.imdb.com/name/nm0390622/>, # Brian Holland
+                       <https://www.imdb.com/name/nm3133312/> # Freddie Gorman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sonny Boy" ;
+        schema:byArtist <https://www.imdb.com/name/nm0427231/> ; # Al Jolson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sonny Boy" ;
+            schema:author <https://www.imdb.com/name/nm0221865/>, # Buddy G. DeSylva
+                       <https://www.imdb.com/name/nm0114095/>, # Lew Brown
+                       <https://www.imdb.com/name/nm0376575/>, # Ray Henderson
+                       <https://www.imdb.com/name/nm0427231/> # Al Jolson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "What's Going On" ;
+        schema:byArtist <https://www.imdb.com/name/nm0310848/> ; # Marvin Gaye
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "What's Going On" ;
+            schema:author <https://www.imdb.com/name/nm1247768/>, # Renaldo Benson
+                       <https://www.imdb.com/name/nm4206485/>, # Al Cleveland
+                       <https://www.imdb.com/name/nm0310848/> # Marvin Gaye
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hearing Solar Winds/Part 3: Arc Descents" ;
+        schema:byArtist <https://www.imdb.com/name/nm0962745/> ; # David Hykes
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hearing Solar Winds/Part 3: Arc Descents" ;
+            schema:author <https://www.imdb.com/name/nm0962745/> # David Hykes
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0060819/> a schema:Person ;
+    schema:name "Robert Bateman" .
+<https://www.imdb.com/name/nm0113768/> a schema:Person ;
+    schema:name "James Brown" .
+<https://www.imdb.com/name/nm0114095/> a schema:Person ;
+    schema:name "Lew Brown" .
+<https://www.imdb.com/name/nm0187685/> a schema:Person ;
+    schema:name "Bob Crewe" .
+<https://www.imdb.com/name/nm0221865/> a schema:Person ;
+    schema:name "Buddy G. DeSylva" .
+<https://www.imdb.com/name/nm0310848/> a schema:Person ;
+    schema:name "Marvin Gaye" .
+<https://www.imdb.com/name/nm0376575/> a schema:Person ;
+    schema:name "Ray Henderson" .
+<https://www.imdb.com/name/nm0390622/> a schema:Person ;
+    schema:name "Brian Holland" .
+<https://www.imdb.com/name/nm0427231/> a schema:Person ;
+    schema:name "Al Jolson" .
+<https://www.imdb.com/name/nm0962745/> a schema:Person ;
+    schema:name "David Hykes" .
+<https://www.imdb.com/name/nm1213647/> a schema:Person ;
+    schema:name "Kenny Nolan" .
+<https://www.imdb.com/name/nm1247768/> a schema:Person ;
+    schema:name "Renaldo Benson" .
+<https://www.imdb.com/name/nm3067905/> a schema:Person ;
+    schema:name "LaBelle" .
+<https://www.imdb.com/name/nm3133312/> a schema:Person ;
+    schema:name "Freddie Gorman" .
+<https://www.imdb.com/name/nm3134131/> a schema:Person ;
+    schema:name "William Garrett" .
+<https://www.imdb.com/name/nm3134730/> a schema:Person ;
+    schema:name "Georgia Dobbins" .
+<https://www.imdb.com/name/nm4206485/> a schema:Person ;
+    schema:name "Al Cleveland" .
+# ==============================================================================

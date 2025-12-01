@@ -1,0 +1,398 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1179580/> a schema:Person ;
+    schema:name "Seu Jorge" ;
+    schema:url <https://www.imdb.com/name/nm1179580/> ;
+    schema:birthDate "1970-06-08"^^xsd:date ;
+    schema:jobTitle "Music Artist", "Music Department", "Actor" ;
+    schema:alternateName "Jorge Mário da Silva" ;
+    schema:description "Seu Jorge. Actor: Marighella. Jorge Mário da Silva, more commonly known by his stage name Seu Jorge, born June 8, 1970, is a Brazilian musical artist, songwriter, and actor. He is considered by many a renewer of Brazilian pop samba. Seu Jorge cites samba schools and American soul singer Stevie Wonder as major musical influences. Jorge is also known for his film roles as Mané Galinha in the 2002 film..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTczOTc4NjkwMF5BMl5BanBnXkFtZTcwNjU2NzIwNw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Belford Roxo, Rio de Janeiro, Brazil"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7825208/>,    # Marighella
+                       <https://www.imdb.com/title/tt0317248/>,    # City of God
+                       <https://www.imdb.com/title/tt0362270/>,    # The Life Aquatic with Steve Zissou
+                       <https://www.imdb.com/title/tt1555149/>,    # Elite Squad 2: The Enemy Within
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8905964/>,    # Brotherhood
+                       <https://www.imdb.com/title/tt5805768/>,    # Abe
+                       <https://www.imdb.com/title/tt8513302/>,    # Paradise Lost
+                       <https://www.imdb.com/title/tt30051067/>,    # M, Toumani Diabaté, Sidiki Diabaté, Fatoumata Diawara - Solidarité (Extended Version)
+                       <https://www.imdb.com/title/tt30050809/>,    # M, Toumani & Sidiki Diabaté, Fatoumata Diawara - Solidarité
+                       <https://www.imdb.com/title/tt3332372/>,    # Soundtrack
+                       <https://www.imdb.com/title/tt0995868/>,    # Pelé: Birth of a Legend
+                       <https://www.imdb.com/title/tt8810022/>,    # Seu Jorge: Arena Brasileira
+                       <https://www.imdb.com/title/tt2209400/>,    # Did You... Score?
+                       <https://www.imdb.com/title/tt2182085/>,    # Kings & Rats
+                       <https://www.imdb.com/title/tt0842675/>,    # Carmo
+                       <https://www.imdb.com/title/tt0961728/>,    # The Escapist
+                       <https://www.imdb.com/title/tt0970544/>,    # Sleepwalkers
+                       <https://www.imdb.com/title/tt1828308/>,    # Tarantino's Mind
+                       <https://www.imdb.com/title/tt0499467/>,    # Elipsis
+                       <https://www.imdb.com/title/tt0466351/>,    # Mandrake
+                       <https://www.imdb.com/title/tt0373747/>,    # Casa de Areia
+                       <https://www.imdb.com/title/tt26659110/>,    # Seu Jorge: Tive Razão
+                       <https://www.imdb.com/title/tt11506958/>,    # Ed Motta: Tem Espaço na Van
+                       <https://www.imdb.com/title/tt0287254/> ; # Normal People
+
+    schema:award [
+        a schema:Award ;
+        schema:description "12 wins & 9 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3031089689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1179580/mediaviewer/rm1647939328/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm1094291200/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm1278840576/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm2872676096/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm3074002688/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm3057225472/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm863800064/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm3757152000/>,
+                 <https://www.imdb.com/name/nm1179580/mediaviewer/rm3661207552/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt7825208/> a schema:Movie ;
+    schema:name "Marighella" ;
+    schema:url <https://www.imdb.com/title/tt7825208/> .
+
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> .
+
+<https://www.imdb.com/title/tt0362270/> a schema:Movie ;
+    schema:name "The Life Aquatic with Steve Zissou" ;
+    schema:url <https://www.imdb.com/title/tt0362270/> .
+
+<https://www.imdb.com/title/tt1555149/> a schema:Movie ;
+    schema:name "Elite Squad 2: The Enemy Within" ;
+    schema:url <https://www.imdb.com/title/tt1555149/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Brotherhood (2019)
+<https://www.imdb.com/title/tt8905964/> a schema:Movie ;
+    schema:name "Brotherhood" ;
+    schema:url <https://www.imdb.com/title/tt8905964/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Edison"
+    ] .
+
+# Abe (2019)
+<https://www.imdb.com/title/tt5805768/> a schema:Movie ;
+    schema:name "Abe" ;
+    schema:url <https://www.imdb.com/title/tt5805768/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Chico Catuaba"
+    ] .
+
+# Paradise Lost (2018)
+<https://www.imdb.com/title/tt8513302/> a schema:Movie ;
+    schema:name "Paradise Lost" ;
+    schema:url <https://www.imdb.com/title/tt8513302/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Teylor"
+    ] .
+
+# M, Toumani Diabaté, Sidiki Diabaté, Fatoumata Diawara - Solidarité (Extended Version) (2017)
+<https://www.imdb.com/title/tt30051067/> a schema:Movie ;
+    schema:name "M, Toumani Diabaté, Sidiki Diabaté, Fatoumata Diawara - Solidarité (Extended Version)" ;
+    schema:url <https://www.imdb.com/title/tt30051067/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName ""
+    ] .
+
+# M, Toumani & Sidiki Diabaté, Fatoumata Diawara - Solidarité (2017)
+<https://www.imdb.com/title/tt30050809/> a schema:Movie ;
+    schema:name "M, Toumani & Sidiki Diabaté, Fatoumata Diawara - Solidarité" ;
+    schema:url <https://www.imdb.com/title/tt30050809/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName ""
+    ] .
+
+# Soundtrack (2017)
+<https://www.imdb.com/title/tt3332372/> a schema:Movie ;
+    schema:name "Soundtrack" ;
+    schema:url <https://www.imdb.com/title/tt3332372/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Cao"
+    ] .
+
+# Pelé: Birth of a Legend (2016)
+<https://www.imdb.com/title/tt0995868/> a schema:Movie ;
+    schema:name "Pelé: Birth of a Legend" ;
+    schema:url <https://www.imdb.com/title/tt0995868/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Dondinho"
+    ] .
+
+# Seu Jorge: Arena Brasileira (2013)
+<https://www.imdb.com/title/tt8810022/> a schema:Movie ;
+    schema:name "Seu Jorge: Arena Brasileira" ;
+    schema:url <https://www.imdb.com/title/tt8810022/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Seu Jorge"
+    ] .
+
+# Did You... Score? (2012)
+<https://www.imdb.com/title/tt2209400/> a schema:Movie ;
+    schema:name "Did You... Score?" ;
+    schema:url <https://www.imdb.com/title/tt2209400/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Seu Jorge, o Garçom"
+    ] .
+
+# Kings & Rats (2012)
+<https://www.imdb.com/title/tt2182085/> a schema:Movie ;
+    schema:name "Kings & Rats" ;
+    schema:url <https://www.imdb.com/title/tt2182085/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Américo Vilarinho"
+    ] .
+
+# Carmo (2008)
+<https://www.imdb.com/title/tt0842675/> a schema:Movie ;
+    schema:name "Carmo" ;
+    schema:url <https://www.imdb.com/title/tt0842675/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Amparo de Jesús"
+    ] .
+
+# The Escapist (2008)
+<https://www.imdb.com/title/tt0961728/> a schema:Movie ;
+    schema:name "The Escapist" ;
+    schema:url <https://www.imdb.com/title/tt0961728/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Viv Batista"
+    ] .
+
+# Sleepwalkers (2007)
+<https://www.imdb.com/title/tt0970544/> a schema:Movie ;
+    schema:name "Sleepwalkers" ;
+    schema:url <https://www.imdb.com/title/tt0970544/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Lasso Dancer who works as an Electrician"
+    ] .
+
+# Tarantino's Mind (2006)
+<https://www.imdb.com/title/tt1828308/> a schema:Movie ;
+    schema:name "Tarantino's Mind" ;
+    schema:url <https://www.imdb.com/title/tt1828308/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName ""
+    ] .
+
+# Elipsis (2006)
+<https://www.imdb.com/title/tt0499467/> a schema:Movie ;
+    schema:name "Elipsis" ;
+    schema:url <https://www.imdb.com/title/tt0499467/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Coyote"
+    ] .
+
+# Mandrake (2005)
+<https://www.imdb.com/title/tt0466351/> a schema:Movie ;
+    schema:name "Mandrake" ;
+    schema:url <https://www.imdb.com/title/tt0466351/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Marido Traído"
+    ] .
+
+# Casa de Areia (2005)
+<https://www.imdb.com/title/tt0373747/> a schema:Movie ;
+    schema:name "Casa de Areia" ;
+    schema:url <https://www.imdb.com/title/tt0373747/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Massu - 1910-1919"
+    ] .
+
+# Seu Jorge: Tive Razão (2004)
+<https://www.imdb.com/title/tt26659110/> a schema:Movie ;
+    schema:name "Seu Jorge: Tive Razão" ;
+    schema:url <https://www.imdb.com/title/tt26659110/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Seu Jorge"
+    ] .
+
+# Ed Motta: Tem Espaço na Van (2003)
+<https://www.imdb.com/title/tt11506958/> a schema:Movie ;
+    schema:name "Ed Motta: Tem Espaço na Van" ;
+    schema:url <https://www.imdb.com/title/tt11506958/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Seu Jorge"
+    ] .
+
+# Normal People (2002)
+<https://www.imdb.com/title/tt0287254/> a schema:Movie ;
+    schema:name "Normal People" ;
+    schema:url <https://www.imdb.com/title/tt0287254/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1179580/> ;
+        schema:characterName "Babu"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3031089689/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "In a dystopian near future in Brazil, an authoritarian government orders all citizens of African descent to move to Africa - creating chaos, protests, and an underground resistance movement that inspires the nation." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3031089689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGJhMDRiZGUtZDkxMS00NGNjLWFiNmYtMzMyZmQxYTQ2M2ZiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M23S"^^xsd:duration ;
+        schema:uploadDate "2022-04-19T19:51:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTczOTc4NjkwMF5BMl5BanBnXkFtZTcwNjU2NzIwNw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczOTc4NjkwMF5BMl5BanBnXkFtZTcwNjU2NzIwNw@@._V1_.jpg> ;
+    schema:caption "Seu Jorge in Elite Squad 2: The Enemy Within (2010)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm1647939328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNDA4MTExMl5BMl5BanBnXkFtZTcwMjQ4MjIyMw@@._V1_.jpg> ;
+    schema:caption "Noah Taylor and Seu Jorge in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1372"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm1094291200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0OTY5Nzk3N15BMl5BanBnXkFtZTcwNzk4MjIyMw@@._V1_.jpg> ;
+    schema:caption "Seu Jorge in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm1278840576/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzNjMwMzE1MF5BMl5BanBnXkFtZTcwMjA5MjIyMw@@._V1_.jpg> ;
+    schema:caption "Bill Murray, Willem Dafoe, Anjelica Huston, Noah Taylor, Seu Jorge, and Waris Ahluwalia in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1371"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm2872676096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTEwMjU2MzQxODJeQTJeQWpwZ15BbWU3MDg2OTIyMjM@._V1_.jpg> ;
+    schema:caption "Willem Dafoe, Owen Wilson, Noah Taylor, Pawel Wdowczak, Seu Jorge, Waris Ahluwalia, and Niels Koizumi in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1374"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm3074002688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2ODQ3ODA2Ml5BMl5BanBnXkFtZTcwMjc5MjIyMw@@._V1_.jpg> ;
+    schema:caption "Bill Murray, Cate Blanchett, Bud Cort, Owen Wilson, Robyn Cohen, Niccolò Senni, Seu Jorge, and Niels Koizumi in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1363"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm3057225472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA0Njk5NTMwMTReQTJeQWpwZ15BbWU3MDM3OTIyMjM@._V1_.jpg> ;
+    schema:caption "Jeff Goldblum, Bill Murray, Willem Dafoe, Cate Blanchett, Bud Cort, Anjelica Huston, Michael Gambon, Noah Taylor, Matthew Gray Gubler, Seu Jorge, and Waris Ahluwalia in The Life Aquatic with Steve Zissou (2004)" ;
+    schema:height "1371"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm863800064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMwMTkyMzc0N15BMl5BanBnXkFtZTcwMjc2MTM0Mg@@._V1_.jpg> ;
+    schema:caption "Joseph Fiennes, Brian Cox, Liam Cunningham, and Seu Jorge in The Escapist (2008)" ;
+    schema:height "361"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm3757152000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI5OTAzMzE3N15BMl5BanBnXkFtZTcwNjc5OTA3MQ@@._V1_.jpg> ;
+    schema:caption "Joseph Fiennes, Brian Cox, Liam Cunningham, Dominic Cooper, and Seu Jorge in The Escapist (2008)" ;
+    schema:height "273"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1179580/mediaviewer/rm3661207552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxMDcxNTg4Ml5BMl5BanBnXkFtZTYwNDQxODc2._V1_.jpg> ;
+    schema:caption "Fernanda Torres and Seu Jorge in Casa de Areia (2005)" ;
+    schema:height "310"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1179580/>
+    schema:sameAs <https://www.facebook.com/SeuJorgeOficial>,
+                  <https://www.instagram.com/seujorge/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

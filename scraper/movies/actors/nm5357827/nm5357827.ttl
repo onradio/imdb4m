@@ -1,0 +1,142 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5357827/> a schema:Person ;
+    schema:name "Justyn Shippelt" ;
+    schema:url <https://www.imdb.com/name/nm5357827/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Justyn Shippelt. Actor: Deadpool. Justyn Shippelt is known for Deadpool (2016), Grave Encounters 2 (2012) and Cult (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNWFmZGU1OGUtNjljMy00MTc3LThjNzgtMjJkZmE0MzAyNzljXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6746058/>,    # The Roxy
+                       <https://www.imdb.com/title/tt5214224/>,    # Love in the Vineyard
+                       <https://www.imdb.com/title/tt1431045/>,    # Deadpool
+                       <https://www.imdb.com/title/tt2912100/>,    # Cheat
+                       <https://www.imdb.com/title/tt3576220/>,    # After Film School
+                       <https://www.imdb.com/title/tt2193053/>,    # Cult
+                       <https://www.imdb.com/title/tt2231554/> ; # Grave Encounters 2
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5357827/mediaviewer/rm1049445632/>,
+                 <https://www.imdb.com/name/nm5357827/mediaviewer/rm915227904/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Roxy (2017)
+<https://www.imdb.com/title/tt6746058/> a schema:Movie ;
+    schema:name "The Roxy" ;
+    schema:url <https://www.imdb.com/title/tt6746058/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName ""
+    ] .
+
+# Love in the Vineyard (2016)
+<https://www.imdb.com/title/tt5214224/> a schema:Movie ;
+    schema:name "Love in the Vineyard" ;
+    schema:url <https://www.imdb.com/title/tt5214224/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "Rick"
+    ] .
+
+# Deadpool (2016)
+<https://www.imdb.com/title/tt1431045/> a schema:Movie ;
+    schema:name "Deadpool" ;
+    schema:url <https://www.imdb.com/title/tt1431045/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "Arcade Ticket Taker"
+    ] .
+
+# Cheat (2014)
+<https://www.imdb.com/title/tt2912100/> a schema:Movie ;
+    schema:name "Cheat" ;
+    schema:url <https://www.imdb.com/title/tt2912100/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "Griller"
+    ] .
+
+# After Film School (2014)
+<https://www.imdb.com/title/tt3576220/> a schema:Movie ;
+    schema:name "After Film School" ;
+    schema:url <https://www.imdb.com/title/tt3576220/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "Cheeseburger Guy"
+    ] .
+
+# Cult (2013)
+<https://www.imdb.com/title/tt2193053/> a schema:Movie ;
+    schema:name "Cult" ;
+    schema:url <https://www.imdb.com/title/tt2193053/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "Faux Billy Roleplayer"
+    ] .
+
+# Grave Encounters 2 (2012)
+<https://www.imdb.com/title/tt2231554/> a schema:Movie ;
+    schema:name "Grave Encounters 2" ;
+    schema:url <https://www.imdb.com/title/tt2231554/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5357827/> ;
+        schema:characterName "The Dentist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNWFmZGU1OGUtNjljMy00MTc3LThjNzgtMjJkZmE0MzAyNzljXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWFmZGU1OGUtNjljMy00MTc3LThjNzgtMjJkZmE0MzAyNzljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ryan Reynolds, Morena Baccarin, and Justyn Shippelt in Deadpool (2016)" ;
+    schema:height "1103"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5357827/mediaviewer/rm1049445632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzNjZjc1ODMtNjJhYi00MGE0LWFhY2QtYjkyNWRlMTA0NDllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ryan Reynolds, Morena Baccarin, and Justyn Shippelt in Deadpool (2016)" ;
+    schema:height "1103"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5357827/mediaviewer/rm915227904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWFmZGU1OGUtNjljMy00MTc3LThjNzgtMjJkZmE0MzAyNzljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ryan Reynolds, Morena Baccarin, and Justyn Shippelt in Deadpool (2016)" ;
+    schema:height "1103"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

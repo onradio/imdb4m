@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0839532/> a schema:Person ;
+    schema:name "Semion Sudarikov" ;
+    schema:url <https://www.imdb.com/name/nm0839532/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Semion Sudarikov. Actor: Cast Away. Semion Sudarikov is known for Cast Away (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0162222/> .    # Cast Away
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cast Away (2000)
+<https://www.imdb.com/title/tt0162222/> a schema:Movie ;
+    schema:name "Cast Away" ;
+    schema:url <https://www.imdb.com/title/tt0162222/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0839532/> ;
+        schema:characterName "Nicolai"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

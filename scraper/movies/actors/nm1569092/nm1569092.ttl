@@ -1,0 +1,130 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1569092/> a schema:Person ;
+    schema:name "Mukund Bhatt" ;
+    schema:url <https://www.imdb.com/name/nm1569092/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mukund Bhatt. Actor: 3 Idiots. Mukund Bhatt is known for 3 Idiots (2009), Monsoon Shootout (2013) and Taal (1999)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGNkYzM3OTktNmU4Yy00YWRjLTkzZmItZjMzNDU4NTUxMTRmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6120548/>,    # Ventilator
+                       <https://www.imdb.com/title/tt2198235/>,    # Monsoon Shootout
+                       <https://www.imdb.com/title/tt2621000/>,    # Jolly LLB
+                       <https://www.imdb.com/title/tt1187043/>,    # 3 Idiots
+                       <https://www.imdb.com/title/tt0152836/>,    # Taal
+                       <https://www.imdb.com/title/tt0229193/> ; # Aastha: In the Prison of Spring
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1569092/mediaviewer/rm2255382272/>,
+                 <https://www.imdb.com/name/nm1569092/mediaviewer/rm1752000256/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ventilator (2016)
+<https://www.imdb.com/title/tt6120548/> a schema:Movie ;
+    schema:name "Ventilator" ;
+    schema:url <https://www.imdb.com/title/tt6120548/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Decorater who comes with decorations in hospital"
+    ] .
+
+# Monsoon Shootout (2013)
+<https://www.imdb.com/title/tt2198235/> a schema:Movie ;
+    schema:name "Monsoon Shootout" ;
+    schema:url <https://www.imdb.com/title/tt2198235/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Clay Helper"
+    ] .
+
+# Jolly LLB (2013)
+<https://www.imdb.com/title/tt2621000/> a schema:Movie ;
+    schema:name "Jolly LLB" ;
+    schema:url <https://www.imdb.com/title/tt2621000/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Jolly's Security Gaurd"
+    ] .
+
+# 3 Idiots (2009)
+<https://www.imdb.com/title/tt1187043/> a schema:Movie ;
+    schema:name "3 Idiots" ;
+    schema:url <https://www.imdb.com/title/tt1187043/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Raju's Father"
+    ] .
+
+# Taal (1999)
+<https://www.imdb.com/title/tt0152836/> a schema:Movie ;
+    schema:name "Taal" ;
+    schema:url <https://www.imdb.com/title/tt0152836/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Shiva"
+    ] .
+
+# Aastha: In the Prison of Spring (1997)
+<https://www.imdb.com/title/tt0229193/> a schema:Movie ;
+    schema:name "Aastha: In the Prison of Spring" ;
+    schema:url <https://www.imdb.com/title/tt0229193/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1569092/> ;
+        schema:characterName "Professor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGNkYzM3OTktNmU4Yy00YWRjLTkzZmItZjMzNDU4NTUxMTRmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGNkYzM3OTktNmU4Yy00YWRjLTkzZmItZjMzNDU4NTUxMTRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mukund Bhatt" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1569092/mediaviewer/rm2255382272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmRlYTdiZTMtNmE0Ny00ZmQzLWI3NTktMjY4ZWZlMTIyNGU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mukund Bhatt" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1569092/mediaviewer/rm1752000256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGNkYzM3OTktNmU4Yy00YWRjLTkzZmItZjMzNDU4NTUxMTRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mukund Bhatt" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

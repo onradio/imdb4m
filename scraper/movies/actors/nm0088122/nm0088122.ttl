@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0088122/> a schema:Person ;
+    schema:name "Ross Bleckner" ;
+    schema:url <https://www.imdb.com/name/nm0088122/> ;
+    schema:birthDate "1949-05-12"^^xsd:date ;
+    schema:jobTitle "Actor", "Art Department" ;
+    schema:description "Ross Bleckner. Actor: As Good as It Gets. An American contemporary artist. Grew up in Hewlett, Long Island, graduated in 1971 from New York University and earned an M.F.A. from the California Institute of the Arts in 1973.\n\nFor the last 20 years, his art has been largely an investigation of change, loss, and memory, often addressing the subject of AIDS. Mr. Bleckner uses symbolic imagery rather than direct representation, and..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119822/> .    # As Good as It Gets
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# As Good as It Gets (1997)
+<https://www.imdb.com/title/tt0119822/> a schema:Movie ;
+    schema:name "As Good as It Gets" ;
+    schema:url <https://www.imdb.com/title/tt0119822/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0088122/> ;
+        schema:characterName "Carl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

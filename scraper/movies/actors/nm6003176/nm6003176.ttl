@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6003176/> a schema:Person ;
+    schema:name "Dickie Gravois" ;
+    schema:url <https://www.imdb.com/name/nm6003176/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dickie Gravois. Actor: 12 Years a Slave. Dickie Gravois is known for 12 Years a Slave (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2024544/> ;    # 12 Years a Slave
+
+
+    schema:video <https://www.imdb.com/video/vi302032921/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 12 Years a Slave (2013)
+<https://www.imdb.com/title/tt2024544/> a schema:Movie ;
+    schema:name "12 Years a Slave" ;
+    schema:url <https://www.imdb.com/title/tt2024544/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6003176/> ;
+        schema:characterName "Overseer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi302032921/> a schema:VideoObject ;
+        schema:name "UK Trailer" ;
+        schema:description "In the antebellum United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery." ;
+        schema:embedUrl <https://www.imdb.com/video/vi302032921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ4MjI1OTI2Nl5BMl5BanBnXkFtZTgwNDMwODQ3MDE@._V1_.jpg" ;
+        schema:duration "PT2M27S"^^xsd:duration ;
+        schema:uploadDate "2013-12-06T15:14:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

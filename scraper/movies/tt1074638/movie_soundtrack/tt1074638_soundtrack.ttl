@@ -1,0 +1,114 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1074638/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Skyfall" ;
+        schema:byArtist <https://www.imdb.com/name/nm2233157/> ; # Adele
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Skyfall" ;
+            schema:composer <https://www.imdb.com/name/nm2233157/> ; # Adele
+            schema:lyricist <https://www.imdb.com/name/nm2059375/> # Paul Epworth
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Konyali" ;
+        schema:byArtist <https://www.imdb.com/name/nm5469150/> ; # Ensemble Hüseyin Türkmenler
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Konyali" ;
+            schema:author <https://www.imdb.com/name/nm5469150/> # Ensemble Hüseyin Türkmenler
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "CNN Breaking News Theme #2" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "CNN Breaking News Theme #2" ;
+            schema:author <https://www.imdb.com/name/nm1998673/> # Herb Avery
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Moonlight" ;
+        schema:byArtist <https://www.imdb.com/name/nm4420868/> ; # Jun Chen
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Boum" ;
+        schema:byArtist <https://www.imdb.com/name/nm0872081/> ; # Charles Trenet
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Boum" ;
+            schema:composer <https://www.imdb.com/name/nm0872081/> ; # Charles Trenet
+            schema:lyricist <https://www.imdb.com/name/nm0872081/> # Charles Trenet
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Boom Boom" ;
+        schema:byArtist <https://www.imdb.com/name/nm1135151/> ; # The Animals
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Boom Boom" ;
+            schema:author <https://www.imdb.com/name/nm0393630/> # John Lee Hooker
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Name's Bond... James Bond" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Name's Bond... James Bond" ;
+            schema:composer <https://www.imdb.com/name/nm0635578/>, # Monty Norman
+                        <https://www.imdb.com/name/nm0003417/> # David Arnold
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "James Bond Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "James Bond Theme" ;
+            schema:composer <https://www.imdb.com/name/nm0635578/> # Monty Norman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003417/> a schema:Person ;
+    schema:name "David Arnold" .
+<https://www.imdb.com/name/nm0393630/> a schema:Person ;
+    schema:name "John Lee Hooker" .
+<https://www.imdb.com/name/nm0635578/> a schema:Person ;
+    schema:name "Monty Norman" .
+<https://www.imdb.com/name/nm0872081/> a schema:Person ;
+    schema:name "Charles Trenet" .
+<https://www.imdb.com/name/nm1135151/> a schema:Person ;
+    schema:name "The Animals" .
+<https://www.imdb.com/name/nm1998673/> a schema:Person ;
+    schema:name "Herb Avery" .
+<https://www.imdb.com/name/nm2059375/> a schema:Person ;
+    schema:name "Paul Epworth" .
+<https://www.imdb.com/name/nm2233157/> a schema:Person ;
+    schema:name "Adele" .
+<https://www.imdb.com/name/nm4420868/> a schema:Person ;
+    schema:name "Jun Chen" .
+<https://www.imdb.com/name/nm5469150/> a schema:Person ;
+    schema:name "Ensemble Hüseyin Türkmenler" .
+# ==============================================================================

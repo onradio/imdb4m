@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5264888/> a schema:Person ;
+    schema:name "Anouk Servera" ;
+    schema:url <https://www.imdb.com/name/nm5264888/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Anouk Servera. Actress: Before Midnight. Anouk Servera is known for Before Midnight (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2209418/> .    # Before Midnight
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Before Midnight (2013)
+<https://www.imdb.com/title/tt2209418/> a schema:Movie ;
+    schema:name "Before Midnight" ;
+    schema:url <https://www.imdb.com/title/tt2209418/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5264888/> ;
+        schema:characterName "Child"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

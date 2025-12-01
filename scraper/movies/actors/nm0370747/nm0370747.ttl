@@ -1,0 +1,137 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0370747/> a schema:Person ;
+    schema:name "James Hayden" ;
+    schema:url <https://www.imdb.com/name/nm0370747/> ;
+    schema:birthDate "1953-11-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "James Hayden. Actor: Once Upon a Time in America. James Hayden was born on 25 November 1953 in Brooklyn, New York, USA. He was an actor, known for Once Upon a Time in America (1984), The Nesting (1981) and The First Deadly Sin (1980). He was married to Barbara Daniels. He died on 8 November 1983 in New York City, New York, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOWY1NWYyMzYtZGEwZS00MzQ4LWE5NGUtZWQ2NzEyMGY2MDM5XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0087843/>,    # Once Upon a Time in America
+                       <https://www.imdb.com/title/tt0080738/>,    # The First Deadly Sin
+                       <https://www.imdb.com/title/tt0082565/>,    # The Intruder Within
+                       <https://www.imdb.com/title/tt0082804/>,    # The Nesting
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0082887/>,    # The Patricia Neal Story
+                       <https://www.imdb.com/title/tt0081126/>,    # Marilyn: The Untold Story
+                       <https://www.imdb.com/title/tt0080569/> ; # Cruising
+
+
+    schema:video <https://www.imdb.com/video/vi2777395225/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0370747/mediaviewer/rm222778112/>,
+                 <https://www.imdb.com/name/nm0370747/mediaviewer/rm2819785984/>,
+                 <https://www.imdb.com/name/nm0370747/mediaviewer/rm2085028352/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087843/> a schema:Movie ;
+    schema:name "Once Upon a Time in America" ;
+    schema:url <https://www.imdb.com/title/tt0087843/> .
+
+<https://www.imdb.com/title/tt0080738/> a schema:Movie ;
+    schema:name "The First Deadly Sin" ;
+    schema:url <https://www.imdb.com/title/tt0080738/> .
+
+<https://www.imdb.com/title/tt0082565/> a schema:Movie ;
+    schema:name "The Intruder Within" ;
+    schema:url <https://www.imdb.com/title/tt0082565/> .
+
+<https://www.imdb.com/title/tt0082804/> a schema:Movie ;
+    schema:name "The Nesting" ;
+    schema:url <https://www.imdb.com/title/tt0082804/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Patricia Neal Story (1981)
+<https://www.imdb.com/title/tt0082887/> a schema:Movie ;
+    schema:name "The Patricia Neal Story" ;
+    schema:url <https://www.imdb.com/title/tt0082887/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0370747/> ;
+        schema:characterName "Martin Sheen"
+    ] .
+
+# Marilyn: The Untold Story (1980)
+<https://www.imdb.com/title/tt0081126/> a schema:Movie ;
+    schema:name "Marilyn: The Untold Story" ;
+    schema:url <https://www.imdb.com/title/tt0081126/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0370747/> ;
+        schema:characterName ""
+    ] .
+
+# Cruising (1980)
+<https://www.imdb.com/title/tt0080569/> a schema:Movie ;
+    schema:name "Cruising" ;
+    schema:url <https://www.imdb.com/title/tt0080569/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0370747/> ;
+        schema:characterName "Cockpit Coke Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2777395225/> a schema:VideoObject ;
+        schema:name "Once Upon a Time in America" ;
+        schema:description "Trailer 2 for Once Upon A Time In America" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2777395225/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BM2FkYzkxNDctNTFhZi00M2Y2LTg1MzUtYTFlMTU2NzVmMmJlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M41S"^^xsd:duration ;
+        schema:uploadDate "2015-05-13T04:49:15Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOWY1NWYyMzYtZGEwZS00MzQ4LWE5NGUtZWQ2NzEyMGY2MDM5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWY1NWYyMzYtZGEwZS00MzQ4LWE5NGUtZWQ2NzEyMGY2MDM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Hayden in The Intruder Within (1981)" ;
+    schema:height "1136"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0370747/mediaviewer/rm222778112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzg2ZjJiZTMtODRjYi00Y2RiLTk0MWItYzNiYjMwNmM5ZWJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert De Niro, James Woods, William Forsythe, Tuesday Weld, and James Hayden in Once Upon a Time in America (1984)" ;
+    schema:height "450"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0370747/mediaviewer/rm2819785984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODEzNjAyNjk0OV5BMl5BanBnXkFtZTcwMDEyMzE0NA@@._V1_.jpg> ;
+    schema:caption "Robert De Niro, James Woods, William Forsythe, James Hayden, and Larry Rapp in Once Upon a Time in America (1984)" ;
+    schema:height "1284"^^xsd:integer ;
+    schema:width "1797"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0370747/mediaviewer/rm2085028352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWY1NWYyMzYtZGEwZS00MzQ4LWE5NGUtZWQ2NzEyMGY2MDM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Hayden in The Intruder Within (1981)" ;
+    schema:height "1136"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114709/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got a Friend in Me" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Strange Things" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Will Go Sailing No More" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pop Goes the Weasel" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hakuna Matata" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001447/>, # Nathan Lane
+                        <https://www.imdb.com/name/nm0754676/> ; # Ernie Sabella
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hakuna Matata" ;
+            schema:composer <https://www.imdb.com/name/nm0005056/> ; # Elton John
+            schema:lyricist <https://www.imdb.com/name/nm0005358/> # Tim Rice
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "You've Got a Friend in Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005271/>, # Randy Newman
+                        <https://www.imdb.com/name/nm0005164/> ; # Lyle Lovett
+        schema:producer <https://www.imdb.com/name/nm0005271/>, # Randy Newman
+                       <https://www.imdb.com/name/nm0005537/> ; # Don Was
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "You've Got a Friend in Me" ;
+            schema:author <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001447/> a schema:Person ;
+    schema:name "Nathan Lane" .
+<https://www.imdb.com/name/nm0005056/> a schema:Person ;
+    schema:name "Elton John" .
+<https://www.imdb.com/name/nm0005164/> a schema:Person ;
+    schema:name "Lyle Lovett" .
+<https://www.imdb.com/name/nm0005271/> a schema:Person ;
+    schema:name "Randy Newman" .
+<https://www.imdb.com/name/nm0005358/> a schema:Person ;
+    schema:name "Tim Rice" .
+<https://www.imdb.com/name/nm0005537/> a schema:Person ;
+    schema:name "Don Was" .
+<https://www.imdb.com/name/nm0754676/> a schema:Person ;
+    schema:name "Ernie Sabella" .
+# ==============================================================================

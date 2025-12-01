@@ -1,0 +1,169 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001051/> a schema:Person ;
+    schema:name "Bill Clinton" ;
+    schema:url <https://www.imdb.com/name/nm0001051/> ;
+    schema:birthDate "1946-08-19"^^xsd:date ;
+    schema:jobTitle "Writer", "Producer", "Actor" ;
+    schema:alternateName "The Man From Hope", "Bubba", "the Compromiser in Chief", "Secretariat", "The Wizard of \"Is\"", "The Comeback Kid", "Slick Willie", "The first black president", "Wild Bill", "William Jefferson Blythe III" ;
+    schema:description "Bill Clinton. Writer: The Great Irish Potato Famine. His father, a sales representative, died in a car accident a few months before his birth. His mother then moved to New Orleans. Bill Clinton initially grew up with his grandparents. In 1950 his mother returned to Hope. That same year she married car dealer Roger Clinton. As a member of a student delegation from the patriotic American Legion, Clinton met in..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzYwMjc3ODEzOV5BMl5BanBnXkFtZTYwNTI1NDM1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hope, Arkansas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.89"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2½″ (1.89 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt27941351/>,    # The Great Irish Potato Famine
+                       <https://www.imdb.com/title/tt12660626/>,    # Untitled American Presidency Project
+                       <https://www.imdb.com/title/tt16756412/>,    # Anneka's Problem
+                       <https://www.imdb.com/title/tt7466880/>,    # The President Is Missing
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0116311/> ; # First Kid
+
+    schema:award [
+        a schema:Award ;
+        schema:description "6 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3680421913/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001051/mediaviewer/rm2915659521/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm887701249/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm3622321921/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm3454549761/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm4159192833/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm3256761857/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm4229840385/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm3290119681/>,
+                 <https://www.imdb.com/name/nm0001051/mediaviewer/rm4162534913/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt27941351/> a schema:Movie ;
+    schema:name "The Great Irish Potato Famine" ;
+    schema:url <https://www.imdb.com/title/tt27941351/> .
+
+<https://www.imdb.com/title/tt12660626/> a schema:Movie ;
+    schema:name "Untitled American Presidency Project" ;
+    schema:url <https://www.imdb.com/title/tt12660626/> .
+
+<https://www.imdb.com/title/tt16756412/> a schema:Movie ;
+    schema:name "Anneka's Problem" ;
+    schema:url <https://www.imdb.com/title/tt16756412/> .
+
+<https://www.imdb.com/title/tt7466880/> a schema:Movie ;
+    schema:name "The President Is Missing" ;
+    schema:url <https://www.imdb.com/title/tt7466880/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# First Kid (1996)
+<https://www.imdb.com/title/tt0116311/> a schema:Movie ;
+    schema:name "First Kid" ;
+    schema:url <https://www.imdb.com/title/tt0116311/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001051/> ;
+        schema:characterName "Bill Clinton"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3680421913/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "An immersive archival documentary that reanimates the clash between the then-emerging World Trade Organization (WTO) and the more than 40,000 people who took to the streets of Seattle to protest the WTO's impact on human rights, labor, and the environment." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3680421913/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjYyMzEwYTAtNTI0Yy00Zjc3LWJlOTUtODJjMzE0Y2IxNTVhXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg" ;
+        schema:duration "PT1M13S"^^xsd:duration ;
+        schema:uploadDate "2025-11-13T20:05:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzYwMjc3ODEzOV5BMl5BanBnXkFtZTYwNTI1NDM1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzYwMjc3ODEzOV5BMl5BanBnXkFtZTYwNTI1NDM1._V1_.jpg> ;
+    schema:caption "Bill Clinton" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "293"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm2915659521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDk1OTg4ZDItNTQyOC00ZWY0LWIxZTktZTViOWMwMTA2OTQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton, Christopher Reeve, and Hillary Clinton in Super/Man: The Christopher Reeve Story (2024)" ;
+    schema:height "634"^^xsd:integer ;
+    schema:width "1265"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm887701249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTg1NmRlMWUtYjI5ZC00ZjM5LWFlMDQtNjFlOGRkMmVmZTliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton and Hillary Clinton in The Clinton Affair (2018)" ;
+    schema:height "1429"^^xsd:integer ;
+    schema:width "2547"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm3622321921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzIzNmFlMDEtYTc2NC00NTJmLTg4ZmYtNDFkZTM5MDAzMmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton in The Clinton Affair (2018)" ;
+    schema:height "1454"^^xsd:integer ;
+    schema:width "2540"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm3454549761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWE3MjNlN2UtMjVhZC00MGE3LThiMmUtYjEyMzVkMjQ0NTM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton in The Clinton Affair (2018)" ;
+    schema:height "1435"^^xsd:integer ;
+    schema:width "2547"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm4159192833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjExMDEzOWEtZTA2MC00MjAxLTg3MzAtMTA5ODdkOGM3OWEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton in The Clinton Affair (2018)" ;
+    schema:height "1434"^^xsd:integer ;
+    schema:width "2546"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm3256761857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzY5MmE3NTktMTk1NS00NzkxLTkxODctNzBmOGI1NWE1Y2JiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton in The Clinton Affair (2018)" ;
+    schema:height "1436"^^xsd:integer ;
+    schema:width "2550"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm4229840385/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjUwOTJjZmQtODIwMy00NjYxLWJjODQtYzEwMjcyY2IyYTliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton and Monica Lewinsky in The Clinton Affair (2018)" ;
+    schema:height "1434"^^xsd:integer ;
+    schema:width "2551"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm3290119681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdlNTY2NGUtYWQwNS00YzQ4LTg3MTEtY2JjNWNiMzZhMjA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton, Paula Jones, and Monica Lewinsky in The Clinton Affair (2018)" ;
+    schema:height "1426"^^xsd:integer ;
+    schema:width "2548"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001051/mediaviewer/rm4162534913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDViZmMxODMtOGI2ZC00N2ViLWI5YzgtNDE2M2E1MTkwZjJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Clinton in The Clinton Affair (2018)" ;
+    schema:height "1436"^^xsd:integer ;
+    schema:width "2549"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0001051/>
+    schema:sameAs <https://www.facebook.com/billclinton> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

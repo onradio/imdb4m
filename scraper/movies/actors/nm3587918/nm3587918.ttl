@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3587918/> a schema:Person ;
+    schema:name "Kiko Cerone" ;
+    schema:url <https://www.imdb.com/name/nm3587918/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kiko Cerone. Actor: The Secret in Their Eyes. Kiko Cerone is known for The Secret in Their Eyes (2009) and The Cat Vanishes (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1841584/>,    # The Cat Vanishes
+                       <https://www.imdb.com/title/tt1305806/> . # The Secret in Their Eyes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Cat Vanishes (2011)
+<https://www.imdb.com/title/tt1841584/> a schema:Movie ;
+    schema:name "The Cat Vanishes" ;
+    schema:url <https://www.imdb.com/title/tt1841584/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3587918/> ;
+        schema:characterName "Secretario Juzgado"
+    ] .
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3587918/> ;
+        schema:characterName "Molinari"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

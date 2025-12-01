@@ -1,0 +1,158 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7616095/> a schema:Person ;
+    schema:name "Jung Ji-so" ;
+    schema:url <https://www.imdb.com/name/nm7616095/> ;
+    schema:birthDate "1999-09-17"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:description "Jung Ji-so. Actress: Parasite. Jung Ji-so was born on 17 September 1999 in Seoul, South Korea. She is an actress, known for Parasite (2019), Keoteunkol (2022) and The Cursed (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmJkZDlkMGUtMGIyYS00MzIzLTlkNWQtMWZkZWU0ZTYwMjdjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Seoul, South Korea"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6751668/>,    # Parasite
+                       <https://www.imdb.com/title/tt5066556/>,    # The Tiger
+                       <https://www.imdb.com/title/tt13249848/>,    # Daughter
+                       <https://www.imdb.com/title/tt9014894/> ; # Drama Special
+
+
+    schema:video <https://www.imdb.com/video/vi2810037017/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7616095/mediaviewer/rm761583617/>,
+                 <https://www.imdb.com/name/nm7616095/mediaviewer/rm3030427649/>,
+                 <https://www.imdb.com/name/nm7616095/mediaviewer/rm3383732225/>,
+                 <https://www.imdb.com/name/nm7616095/mediaviewer/rm2729085441/>,
+                 <https://www.imdb.com/name/nm7616095/mediaviewer/rm3194916865/>,
+                 <https://www.imdb.com/name/nm7616095/mediaviewer/rm4159803393/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7616095/> ;
+        schema:characterName "Da Hye"
+    ] .
+
+# The Tiger (2015)
+<https://www.imdb.com/title/tt5066556/> a schema:Movie ;
+    schema:name "The Tiger" ;
+    schema:url <https://www.imdb.com/title/tt5066556/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7616095/> ;
+        schema:characterName "Sun-yi"
+    ] .
+
+# Daughter (2014)
+<https://www.imdb.com/title/tt13249848/> a schema:Movie ;
+    schema:name "Daughter" ;
+    schema:url <https://www.imdb.com/title/tt13249848/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7616095/> ;
+        schema:characterName "San-yi (young)"
+    ] .
+
+# Drama Special (2013)
+<https://www.imdb.com/title/tt9014894/> a schema:Movie ;
+    schema:name "Drama Special" ;
+    schema:url <https://www.imdb.com/title/tt9014894/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7616095/> ;
+        schema:characterName "Eun-soo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2810037017/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A mysterious serial murder cases take place by jaechaui (dead bodies which have risen from the dead and able to talk). These bodies are manipulated by someone." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2810037017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWFlM2UwMTYtNDI5Ny00NDg4LWJiNWMtZTE2ZjExZDE3M2QxXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M20S"^^xsd:duration ;
+        schema:uploadDate "2022-02-19T17:07:11Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmJkZDlkMGUtMGIyYS00MzIzLTlkNWQtMWZkZWU0ZTYwMjdjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmJkZDlkMGUtMGIyYS00MzIzLTlkNWQtMWZkZWU0ZTYwMjdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ji-so" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm761583617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTE0MTVmZDctMGVjNC00MzVmLWJiZWYtMDkxODMyZTAwYmFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Jeong-eun, Choi Woo-sik, and Jung Ji-so in Parasite (2019)" ;
+    schema:height "1821"^^xsd:integer ;
+    schema:width "2732"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm3030427649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDkwYmZmNTgtNDBjNC00YTE4LTk0YzgtYWM0ZWFhYjM3OGZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cho Yeo-jeong and Jung Ji-so in Parasite (2019)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm3383732225/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWVhMGRlZTctMDkzYi00ZmVhLTk4MDMtMmMzMTcyMDJmYTZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ji-so in Parasite (2019)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm2729085441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTVlMmEwZTEtN2IwNy00NmYyLWIwZTEtY2NjNGNiOWQwYjUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Song Kang-ho, Jung Hyun-jun, Lee Sun-kyun, Cho Yeo-jeong, Jang Hye-jin, Choi Woo-sik, Park So-dam, and Jung Ji-so in Parasite (2019)" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm3194916865/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjk1Y2U4MjQtY2ZiNS00OWQyLWI3MmYtZWUwNmRjYWRiNWNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Song Kang-ho, Jung Ik-han, Jung Hyun-jun, Lee Joo-hyung, Lee Ji-hye, Lee Sun-kyun, Cho Yeo-jeong, Park Myeong-hoon, Park Keun-rok, Jang Hye-jin, Lee Jeong-eun, Choi Woo-sik, Park Seo-joon, Park So-dam, and Jung Ji-so in Parasite (2019)" ;
+    schema:height "3556"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7616095/mediaviewer/rm4159803393/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmJkZDlkMGUtMGIyYS00MzIzLTlkNWQtMWZkZWU0ZTYwMjdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Ji-so" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7616095/>
+    schema:sameAs <https://www.instagram.com/mint_ziso> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

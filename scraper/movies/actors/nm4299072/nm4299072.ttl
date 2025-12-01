@@ -1,0 +1,115 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4299072/> a schema:Person ;
+    schema:name "Sarina Farhadi" ;
+    schema:url <https://www.imdb.com/name/nm4299072/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Sarina Farhadi. Actress: A Separation. Award-winning actress, Sarina Farhadi was born in Tehran, Iran. She is the daughter of Parisa Bakhtavar and Oscar-winning Iranian writer/director, Asghar Farhadi. She appeared in two film and a TV Series. She appeared in her father's Oscar-winning film \"Jodaeiye Nader az Simin\" and won Best Actress Silver Berlin Bear Shared with Sareh Bayat, Leila Hatami in 2011." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMWI0ZTc4MDYtMDdjZi00NTk2LWE2Y2EtYjljYWQxZTUzYTg2XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1832382/>,    # A Separation
+                       <https://www.imdb.com/title/tt1170393/>,    # Tambourine
+                       <https://www.imdb.com/title/tt0845439/>,    # Fireworks Wednesday
+                       <https://www.imdb.com/title/tt10570018/> ; # Poshte Konkooriha
+
+
+    schema:video <https://www.imdb.com/video/vi747619097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm4299072/mediaviewer/rm2669329664/>,
+                 <https://www.imdb.com/name/nm4299072/mediaviewer/rm3990593537/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Separation (2011)
+<https://www.imdb.com/title/tt1832382/> a schema:Movie ;
+    schema:name "A Separation" ;
+    schema:url <https://www.imdb.com/title/tt1832382/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4299072/> ;
+        schema:characterName "Termeh"
+    ] .
+
+# Tambourine (2008)
+<https://www.imdb.com/title/tt1170393/> a schema:Movie ;
+    schema:name "Tambourine" ;
+    schema:url <https://www.imdb.com/title/tt1170393/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4299072/> ;
+        schema:characterName "Mr. Razzaaghi's Duaghter"
+    ] .
+
+# Fireworks Wednesday (2006)
+<https://www.imdb.com/title/tt0845439/> a schema:Movie ;
+    schema:name "Fireworks Wednesday" ;
+    schema:url <https://www.imdb.com/title/tt0845439/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4299072/> ;
+        schema:characterName ""
+    ] .
+
+# Poshte Konkooriha (2002)
+<https://www.imdb.com/title/tt10570018/> a schema:Movie ;
+    schema:name "Poshte Konkooriha" ;
+    schema:url <https://www.imdb.com/title/tt10570018/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4299072/> ;
+        schema:characterName "Dokhtar Ramin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi747619097/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Rahim (Amir Jadidi) is in prison because of a debt he was unable to repay. During a two-day leave, he tries to convince his creditor (Mohsen Tanabandeh) to withdraw his complaint against the payment of part of the sum. But things don't go as planned." ;
+        schema:embedUrl <https://www.imdb.com/video/vi747619097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGRjMTE4MzEtYWFkNC00NjkzLWE0ZTUtZGNlZGJmYjZmYTVjXkEyXkFqcGdeQXN3aWZ0dw@@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2021-10-28T13:06:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMWI0ZTc4MDYtMDdjZi00NTk2LWE2Y2EtYjljYWQxZTUzYTg2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWI0ZTc4MDYtMDdjZi00NTk2LWE2Y2EtYjljYWQxZTUzYTg2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sarina Farhadi" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "429"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4299072/mediaviewer/rm2669329664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2MDYxOTg3M15BMl5BanBnXkFtZTcwNzUxNzk4Ng@@._V1_.jpg> ;
+    schema:caption "Payman Maadi and Sarina Farhadi in A Separation (2011)" ;
+    schema:height "1370"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm4299072/mediaviewer/rm3990593537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWI0ZTc4MDYtMDdjZi00NTk2LWE2Y2EtYjljYWQxZTUzYTg2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sarina Farhadi" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "429"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

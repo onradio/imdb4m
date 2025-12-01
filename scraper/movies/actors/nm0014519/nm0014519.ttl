@@ -1,0 +1,247 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0014519/> a schema:Person ;
+    schema:name "Rick Aiello" ;
+    schema:url <https://www.imdb.com/name/nm0014519/> ;
+    schema:birthDate "1955-09-21"^^xsd:date ;
+    schema:jobTitle "Actor", "Stunts" ;
+    schema:description "Rick Aiello. Actor: Do the Right Thing. Rick Aiello was born on 21 September 1955 in New York City, New York, USA. He was an actor, known for Do the Right Thing (1989), Twin Peaks: Fire Walk with Me (1992) and Sex and the City (2008). He was married to Arlene Ann Urichich. He died on 26 July 2021 in Warwick, New York, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTUwNjM3MzM2Nl5BMl5BanBnXkFtZTcwNjQ2ODMzMQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0097216/>,    # Do the Right Thing
+                       <https://www.imdb.com/title/tt0105665/>,    # Twin Peaks: Fire Walk with Me
+                       <https://www.imdb.com/title/tt0118782/>,    # A Brooklyn State of Mind
+                       <https://www.imdb.com/title/tt1000774/>,    # Sex and the City
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2410290/>,    # Nobody's Perfect
+                       <https://www.imdb.com/title/tt0959306/>,    # Collection
+                       <https://www.imdb.com/title/tt5334704/>,    # Twin Peaks: The Missing Pieces
+                       <https://www.imdb.com/title/tt0419681/>,    # Destination Fame
+                       <https://www.imdb.com/title/tt0805669/>,    # Ugly Betty
+                       <https://www.imdb.com/title/tt0275140/>,    # Law & Order: Criminal Intent
+                       <https://www.imdb.com/title/tt0141842/>,    # The Sopranos
+                       <https://www.imdb.com/title/tt0375008/>,    # Remedy
+                       <https://www.imdb.com/title/tt0401591/>,    # Brooklyn Lobster
+                       <https://www.imdb.com/title/tt0441875/>,    # Jimmy Whispers Returns to Mulberry Street
+                       <https://www.imdb.com/title/tt0384533/>,    # She Hate Me
+                       <https://www.imdb.com/title/tt0386616/> ; # Manhunt
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0014519/mediaviewer/rm1473653248/>,
+                 <https://www.imdb.com/name/nm0014519/mediaviewer/rm3703869952/>,
+                 <https://www.imdb.com/name/nm0014519/mediaviewer/rm12947968/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097216/> a schema:Movie ;
+    schema:name "Do the Right Thing" ;
+    schema:url <https://www.imdb.com/title/tt0097216/> .
+
+<https://www.imdb.com/title/tt0105665/> a schema:Movie ;
+    schema:name "Twin Peaks: Fire Walk with Me" ;
+    schema:url <https://www.imdb.com/title/tt0105665/> .
+
+<https://www.imdb.com/title/tt0118782/> a schema:Movie ;
+    schema:name "A Brooklyn State of Mind" ;
+    schema:url <https://www.imdb.com/title/tt0118782/> .
+
+<https://www.imdb.com/title/tt1000774/> a schema:Movie ;
+    schema:name "Sex and the City" ;
+    schema:url <https://www.imdb.com/title/tt1000774/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Nobody's Perfect (2016)
+<https://www.imdb.com/title/tt2410290/> a schema:Movie ;
+    schema:name "Nobody's Perfect" ;
+    schema:url <https://www.imdb.com/title/tt2410290/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Dr. Drummond"
+    ] .
+
+# Collection (2014)
+<https://www.imdb.com/title/tt0959306/> a schema:Movie ;
+    schema:name "Collection" ;
+    schema:url <https://www.imdb.com/title/tt0959306/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Maitre D'"
+    ] .
+
+# Twin Peaks: The Missing Pieces (2014)
+<https://www.imdb.com/title/tt5334704/> a schema:Movie ;
+    schema:name "Twin Peaks: The Missing Pieces" ;
+    schema:url <https://www.imdb.com/title/tt5334704/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Cliff Howard"
+    ] .
+
+# Destination Fame (2012)
+<https://www.imdb.com/title/tt0419681/> a schema:Movie ;
+    schema:name "Destination Fame" ;
+    schema:url <https://www.imdb.com/title/tt0419681/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Mr. Perry"
+    ] .
+
+# Ugly Betty (2010)
+<https://www.imdb.com/title/tt0805669/> a schema:Movie ;
+    schema:name "Ugly Betty" ;
+    schema:url <https://www.imdb.com/title/tt0805669/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Bouncer #1"
+    ] .
+
+# Law & Order: Criminal Intent (2006)
+<https://www.imdb.com/title/tt0275140/> a schema:Movie ;
+    schema:name "Law & Order: Criminal Intent" ;
+    schema:url <https://www.imdb.com/title/tt0275140/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Thug Boyfriend"
+    ] .
+
+# The Sopranos (2007)
+<https://www.imdb.com/title/tt0141842/> a schema:Movie ;
+    schema:name "The Sopranos" ;
+    schema:url <https://www.imdb.com/title/tt0141842/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Ray-Ray D'Abaldo"
+    ] .
+
+# Remedy (2006)
+<https://www.imdb.com/title/tt0375008/> a schema:Movie ;
+    schema:name "Remedy" ;
+    schema:url <https://www.imdb.com/title/tt0375008/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Tom"
+    ] .
+
+# Brooklyn Lobster (2005)
+<https://www.imdb.com/title/tt0401591/> a schema:Movie ;
+    schema:name "Brooklyn Lobster" ;
+    schema:url <https://www.imdb.com/title/tt0401591/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Tommy C."
+    ] .
+
+# Jimmy Whispers Returns to Mulberry Street (2004)
+<https://www.imdb.com/title/tt0441875/> a schema:Movie ;
+    schema:name "Jimmy Whispers Returns to Mulberry Street" ;
+    schema:url <https://www.imdb.com/title/tt0441875/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Bobby Bars"
+    ] .
+
+# She Hate Me (2004)
+<https://www.imdb.com/title/tt0384533/> a schema:Movie ;
+    schema:name "She Hate Me" ;
+    schema:url <https://www.imdb.com/title/tt0384533/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Rocco Bonasera"
+    ] .
+
+# Manhunt (2003)
+<https://www.imdb.com/title/tt0386616/> a schema:Movie ;
+    schema:name "Manhunt" ;
+    schema:url <https://www.imdb.com/title/tt0386616/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0014519/> ;
+        schema:characterName "Wardog"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTUwNjM3MzM2Nl5BMl5BanBnXkFtZTcwNjQ2ODMzMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNjM3MzM2Nl5BMl5BanBnXkFtZTcwNjQ2ODMzMQ@@._V1_.jpg> ;
+    schema:caption "Rick Aiello" ;
+    schema:height "568"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0014519/mediaviewer/rm1473653248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQwM2RjYTUtNTkyNC00OTg2LWJkMTktZmUzMTRiMmYzMmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Isaak and Rick Aiello in Twin Peaks: Fire Walk with Me (1992)" ;
+    schema:height "867"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0014519/mediaviewer/rm3703869952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgzNTA1NTAzNF5BMl5BanBnXkFtZTcwMzUwODMzMQ@@._V1_.jpg> ;
+    schema:caption "Rick Aiello" ;
+    schema:height "567"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0014519/mediaviewer/rm12947968/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNjM3MzM2Nl5BMl5BanBnXkFtZTcwNjQ2ODMzMQ@@._V1_.jpg> ;
+    schema:caption "Rick Aiello" ;
+    schema:height "568"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,64 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0100802/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Mutant Dancing" ;
+        schema:byArtist <https://www.imdb.com/name/nm0521644/> ; # Bruno Louchouarn
+        schema:producer <https://www.imdb.com/name/nm0478738/> ; # Joe La Mont
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mutant Dancing" ;
+            schema:author <https://www.imdb.com/name/nm0521644/> # Bruno Louchouarn
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rubble City" ;
+        schema:byArtist <https://www.imdb.com/name/nm0521644/> ; # Bruno Louchouarn
+        schema:producer <https://www.imdb.com/name/nm0478738/> ; # Joe La Mont
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rubble City" ;
+            schema:author <https://www.imdb.com/name/nm0521644/> # Bruno Louchouarn
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Running Out of Air" ;
+        schema:byArtist <https://www.imdb.com/name/nm0521644/> ; # Bruno Louchouarn
+        schema:producer <https://www.imdb.com/name/nm0478738/> ; # Joe La Mont
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Running Out of Air" ;
+            schema:author <https://www.imdb.com/name/nm0521644/> # Bruno Louchouarn
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ja, Vi Elsker Dette Landet" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ja, Vi Elsker Dette Landet" ;
+            schema:author <https://www.imdb.com/name/nm0085085/> # Bjørnstjerne Bjørnson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0085085/> a schema:Person ;
+    schema:name "Bjørnstjerne Bjørnson" .
+<https://www.imdb.com/name/nm0478738/> a schema:Person ;
+    schema:name "Joe La Mont" .
+<https://www.imdb.com/name/nm0521644/> a schema:Person ;
+    schema:name "Bruno Louchouarn" .
+# ==============================================================================

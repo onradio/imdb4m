@@ -1,0 +1,146 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0411790/> a schema:Person ;
+    schema:name "Shigesato Itoi" ;
+    schema:url <https://www.imdb.com/name/nm0411790/> ;
+    schema:birthDate "1948-11-10"^^xsd:date ;
+    schema:jobTitle "Additional Crew", "Actor", "Writer" ;
+    schema:description "Shigesato Itoi. Actor: My Neighbour Totoro. Shigesato Itoi was born on 10 November 1948 in Maebashi, Gunma, Japan. He is an actor and writer, known for My Neighbour Totoro (1988), Mother 2: Gîgu no gyakushuu (1994) and Mother (1988). He has been married to Kanako Higuchi since 1993." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Maebashi, Gunma, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2188562/>,    # Amachan
+                       <https://www.imdb.com/title/tt1270842/>,    # Norwegian Wood
+                       <https://www.imdb.com/title/tt1754794/>,    # Tsuki ni shizumu
+                       <https://www.imdb.com/title/tt0208332/>,    # Mother 2: Gîgu no gyakushuu
+                       <https://www.imdb.com/title/tt0143332/>,    # Kamitsukitai/Dorakiyura yori ai-0
+                       <https://www.imdb.com/title/tt0096283/>,    # My Neighbour Totoro
+                       <https://www.imdb.com/title/tt0326921/>,    # Hei no naka no korinai menmen
+                       <https://www.imdb.com/title/tt0227583/> ; # Scrap: A Love Story
+
+
+    schema:video <https://www.imdb.com/video/vi3871916313/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Amachan (2013)
+<https://www.imdb.com/title/tt2188562/> a schema:Movie ;
+    schema:name "Amachan" ;
+    schema:url <https://www.imdb.com/title/tt2188562/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName ""
+    ] .
+
+# Norwegian Wood (2010)
+<https://www.imdb.com/title/tt1270842/> a schema:Movie ;
+    schema:name "Norwegian Wood" ;
+    schema:url <https://www.imdb.com/title/tt1270842/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "University Professor"
+    ] .
+
+# Tsuki ni shizumu (2002)
+<https://www.imdb.com/title/tt1754794/> a schema:Movie ;
+    schema:name "Tsuki ni shizumu" ;
+    schema:url <https://www.imdb.com/title/tt1754794/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Mother 2: Gîgu no gyakushuu (1994)
+<https://www.imdb.com/title/tt0208332/> a schema:Movie ;
+    schema:name "Mother 2: Gîgu no gyakushuu" ;
+    schema:url <https://www.imdb.com/title/tt0208332/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "Sampling Voice"
+    ] .
+
+# Kamitsukitai/Dorakiyura yori ai-0 (1991)
+<https://www.imdb.com/title/tt0143332/> a schema:Movie ;
+    schema:name "Kamitsukitai/Dorakiyura yori ai-0" ;
+    schema:url <https://www.imdb.com/title/tt0143332/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "Inohara"
+    ] .
+
+# My Neighbour Totoro (1988)
+<https://www.imdb.com/title/tt0096283/> a schema:Movie ;
+    schema:name "My Neighbour Totoro" ;
+    schema:url <https://www.imdb.com/title/tt0096283/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "Tatsuo Kusakabe"
+    ] .
+
+# Hei no naka no korinai menmen (1987)
+<https://www.imdb.com/title/tt0326921/> a schema:Movie ;
+    schema:name "Hei no naka no korinai menmen" ;
+    schema:url <https://www.imdb.com/title/tt0326921/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName ""
+    ] .
+
+# Scrap: A Love Story (1984)
+<https://www.imdb.com/title/tt0227583/> a schema:Movie ;
+    schema:name "Scrap: A Love Story" ;
+    schema:url <https://www.imdb.com/title/tt0227583/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0411790/> ;
+        schema:characterName "Detective"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3871916313/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3871916313/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzcwY2E2YTItMjFkZS00OTdjLTkyZTQtOTMxYzc3MGYyNmFkXkEyXkFqcGdeQXN3aWZ0dw@@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2020-11-18T13:28:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

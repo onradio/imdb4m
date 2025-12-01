@@ -1,0 +1,443 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1765073/> a schema:Person ;
+    schema:name "Jonas Armstrong" ;
+    schema:url <https://www.imdb.com/name/nm1765073/> ;
+    schema:birthDate "1981-01-01"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Monas" ;
+    schema:description "Jonas Armstrong. Actor: Edge of Tomorrow. Jonas Armstrong was born on 1 January 1981 in Dublin, Ireland. He is an actor, known for Edge of Tomorrow (2014), Book of Blood (2009) and Walking with the Enemy (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjAyOTU5ODM0M15BMl5BanBnXkFtZTcwMTMxMzA5Nw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dublin, Ireland"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1631867/>,    # Edge of Tomorrow
+                       <https://www.imdb.com/title/tt0787985/>,    # Robin Hood
+                       <https://www.imdb.com/title/tt1169809/>,    # Book of Blood
+                       <https://www.imdb.com/title/tt1515208/>,    # Walking with the Enemy
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8425404/>,    # The Bay
+                       <https://www.imdb.com/title/tt9257652/>,    # Boiling Point
+                       <https://www.imdb.com/title/tt1888075/>,    # Death in Paradise
+                       <https://www.imdb.com/title/tt6413094/>,    # Urban Myths
+                       <https://www.imdb.com/title/tt5103758/>,    # Troy: Fall of a City
+                       <https://www.imdb.com/title/tt2183641/>,    # Ripper Street
+                       <https://www.imdb.com/title/tt4742700/>,    # Dark Angel
+                       <https://www.imdb.com/title/tt2303687/>,    # Line of Duty
+                       <https://www.imdb.com/title/tt3656138/>,    # The Dovekeepers
+                       <https://www.imdb.com/title/tt2943068/>,    # The Whale
+                       <https://www.imdb.com/title/tt1833885/>,    # Twenty8k
+                       <https://www.imdb.com/title/tt2232345/>,    # Hit & Miss
+                       <https://www.imdb.com/title/tt2188249/>,    # Prisoners Wives
+                       <https://www.imdb.com/title/tt10226816/>,    # Life Outside
+                       <https://www.imdb.com/title/tt2082408/>,    # Rage of the Yeti
+                       <https://www.imdb.com/title/tt1842973/>,    # The Body Farm
+                       <https://www.imdb.com/title/tt1830332/>,    # The Field of Blood
+                       <https://www.imdb.com/title/tt1734537/>,    # Marple
+                       <https://www.imdb.com/title/tt0472984/>,    # The Street
+                       <https://www.imdb.com/title/tt31987783/>,    # Robin Hood
+                       <https://www.imdb.com/title/tt0772138/>,    # Losing Gemma
+                       <https://www.imdb.com/title/tt7840782/>,    # Robin Hood Cinema Commercial
+                       <https://www.imdb.com/title/tt0479612/>,    # The Ghost Squad
+                       <https://www.imdb.com/title/tt0280330/> ; # Teachers
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3246769689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1765073/mediaviewer/rm652173824/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm649551104/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm1196736768/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm3277504768/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm1264173312/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm1314504960/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm2019148032/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm2035925248/>,
+                 <https://www.imdb.com/name/nm1765073/mediaviewer/rm1968816384/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1631867/> a schema:Movie ;
+    schema:name "Edge of Tomorrow" ;
+    schema:url <https://www.imdb.com/title/tt1631867/> .
+
+<https://www.imdb.com/title/tt0787985/> a schema:Movie ;
+    schema:name "Robin Hood" ;
+    schema:url <https://www.imdb.com/title/tt0787985/> .
+
+<https://www.imdb.com/title/tt1169809/> a schema:Movie ;
+    schema:name "Book of Blood" ;
+    schema:url <https://www.imdb.com/title/tt1169809/> .
+
+<https://www.imdb.com/title/tt1515208/> a schema:Movie ;
+    schema:name "Walking with the Enemy" ;
+    schema:url <https://www.imdb.com/title/tt1515208/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Bay (2019)
+<https://www.imdb.com/title/tt8425404/> a schema:Movie ;
+    schema:name "The Bay" ;
+    schema:url <https://www.imdb.com/title/tt8425404/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Sean Meredith"
+    ] .
+
+# Boiling Point (2019)
+<https://www.imdb.com/title/tt9257652/> a schema:Movie ;
+    schema:name "Boiling Point" ;
+    schema:url <https://www.imdb.com/title/tt9257652/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Freeman"
+    ] .
+
+# Death in Paradise (2019)
+<https://www.imdb.com/title/tt1888075/> a schema:Movie ;
+    schema:name "Death in Paradise" ;
+    schema:url <https://www.imdb.com/title/tt1888075/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Dylan Shepherd"
+    ] .
+
+# Urban Myths (2018)
+<https://www.imdb.com/title/tt6413094/> a schema:Movie ;
+    schema:name "Urban Myths" ;
+    schema:url <https://www.imdb.com/title/tt6413094/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Bob Geldof"
+    ] .
+
+# Troy: Fall of a City (2018)
+<https://www.imdb.com/title/tt5103758/> a schema:Movie ;
+    schema:name "Troy: Fall of a City" ;
+    schema:url <https://www.imdb.com/title/tt5103758/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Menelaus"
+    ] .
+
+# Ripper Street (2016)
+<https://www.imdb.com/title/tt2183641/> a schema:Movie ;
+    schema:name "Ripper Street" ;
+    schema:url <https://www.imdb.com/title/tt2183641/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Nathaniel"
+    ] .
+
+# Dark Angel (2016)
+<https://www.imdb.com/title/tt4742700/> a schema:Movie ;
+    schema:name "Dark Angel" ;
+    schema:url <https://www.imdb.com/title/tt4742700/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Joe Nattrass"
+    ] .
+
+# Line of Duty (2016)
+<https://www.imdb.com/title/tt2303687/> a schema:Movie ;
+    schema:name "Line of Duty" ;
+    schema:url <https://www.imdb.com/title/tt2303687/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Joe Nash"
+    ] .
+
+# The Dovekeepers (2015)
+<https://www.imdb.com/title/tt3656138/> a schema:Movie ;
+    schema:name "The Dovekeepers" ;
+    schema:url <https://www.imdb.com/title/tt3656138/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Yoav"
+    ] .
+
+# The Whale (2013)
+<https://www.imdb.com/title/tt2943068/> a schema:Movie ;
+    schema:name "The Whale" ;
+    schema:url <https://www.imdb.com/title/tt2943068/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Owen Chase"
+    ] .
+
+# Twenty8k (2012)
+<https://www.imdb.com/title/tt1833885/> a schema:Movie ;
+    schema:name "Twenty8k" ;
+    schema:url <https://www.imdb.com/title/tt1833885/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Clint"
+    ] .
+
+# Hit & Miss (2012)
+<https://www.imdb.com/title/tt2232345/> a schema:Movie ;
+    schema:name "Hit & Miss" ;
+    schema:url <https://www.imdb.com/title/tt2232345/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Ben"
+    ] .
+
+# Prisoners Wives (2012)
+<https://www.imdb.com/title/tt2188249/> a schema:Movie ;
+    schema:name "Prisoners Wives" ;
+    schema:url <https://www.imdb.com/title/tt2188249/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Steve"
+    ] .
+
+# Life Outside (2011)
+<https://www.imdb.com/title/tt10226816/> a schema:Movie ;
+    schema:name "Life Outside" ;
+    schema:url <https://www.imdb.com/title/tt10226816/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Daniel"
+    ] .
+
+# Rage of the Yeti (2011)
+<https://www.imdb.com/title/tt2082408/> a schema:Movie ;
+    schema:name "Rage of the Yeti" ;
+    schema:url <https://www.imdb.com/title/tt2082408/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Bill"
+    ] .
+
+# The Body Farm (2011)
+<https://www.imdb.com/title/tt1842973/> a schema:Movie ;
+    schema:name "The Body Farm" ;
+    schema:url <https://www.imdb.com/title/tt1842973/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Nick Warner"
+    ] .
+
+# The Field of Blood (2011)
+<https://www.imdb.com/title/tt1830332/> a schema:Movie ;
+    schema:name "The Field of Blood" ;
+    schema:url <https://www.imdb.com/title/tt1830332/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Terry Hewitt"
+    ] .
+
+# Marple (2010)
+<https://www.imdb.com/title/tt1734537/> a schema:Movie ;
+    schema:name "Marple" ;
+    schema:url <https://www.imdb.com/title/tt1734537/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Cade"
+    ] .
+
+# The Street (2009)
+<https://www.imdb.com/title/tt0472984/> a schema:Movie ;
+    schema:name "The Street" ;
+    schema:url <https://www.imdb.com/title/tt0472984/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Nick"
+    ] .
+
+# Robin Hood (2009)
+<https://www.imdb.com/title/tt31987783/> a schema:Movie ;
+    schema:name "Robin Hood" ;
+    schema:url <https://www.imdb.com/title/tt31987783/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Losing Gemma (2006)
+<https://www.imdb.com/title/tt0772138/> a schema:Movie ;
+    schema:name "Losing Gemma" ;
+    schema:url <https://www.imdb.com/title/tt0772138/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Steve"
+    ] .
+
+# Robin Hood Cinema Commercial (2006)
+<https://www.imdb.com/title/tt7840782/> a schema:Movie ;
+    schema:name "Robin Hood Cinema Commercial" ;
+    schema:url <https://www.imdb.com/title/tt7840782/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Robin Hood"
+    ] .
+
+# The Ghost Squad (2005)
+<https://www.imdb.com/title/tt0479612/> a schema:Movie ;
+    schema:name "The Ghost Squad" ;
+    schema:url <https://www.imdb.com/title/tt0479612/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Pete Maitland"
+    ] .
+
+# Teachers (2004)
+<https://www.imdb.com/title/tt0280330/> a schema:Movie ;
+    schema:name "Teachers" ;
+    schema:url <https://www.imdb.com/title/tt0280330/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1765073/> ;
+        schema:characterName "Anthony Millington"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3246769689/> a schema:VideoObject ;
+        schema:name "Coma" ;
+        schema:description "Coma" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3246769689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDkzNDNjZTEtZThhMS00MzE4LWI1M2QtMTkxMDhkZmUyODQxXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2024-03-29T13:19:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjAyOTU5ODM0M15BMl5BanBnXkFtZTcwMTMxMzA5Nw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyOTU5ODM0M15BMl5BanBnXkFtZTcwMTMxMzA5Nw@@._V1_.jpg> ;
+    schema:caption "Jonas Armstrong" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1347"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm652173824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2E2MDEwNTEtMGEyNi00YjAzLThjNjktNmU4ZmJhNjA2MTA5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Ryan, Morven Christie, Jonas Armstrong, Chanel Cresswell, and Taheen Modak in The Bay (2019)" ;
+    schema:height "3931"^^xsd:integer ;
+    schema:width "5896"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm649551104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDZjNjQ1YjktODIxNi00NGNhLThmNDAtMzc3YTk5MDM4ZmUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Johnny Harris and Jonas Armstrong in Troy: Fall of a City (2018)" ;
+    schema:height "2856"^^xsd:integer ;
+    schema:width "4284"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm1196736768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyMDM4ODAyNl5BMl5BanBnXkFtZTgwNDAxMjk0MjE@._V1_.jpg> ;
+    schema:caption "Gordon Kennedy, Harry Lloyd, Joe Armstrong, Anjali Jay, and Jonas Armstrong in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm3277504768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAxMDgyMzM1NV5BMl5BanBnXkFtZTgwOTEyOTg0MjE@._V1_.jpg> ;
+    schema:caption "Sean Murray and Jonas Armstrong in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm1264173312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk4MTY0NjI4OV5BMl5BanBnXkFtZTgwNzA4ODg0MjE@._V1_.jpg> ;
+    schema:caption "Jonas Armstrong and Lara Pulver in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm1314504960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzA4MzMwOTc2OF5BMl5BanBnXkFtZTgwNDA4ODg0MjE@._V1_.jpg> ;
+    schema:caption "David Harewood, Jonas Armstrong, and Lara Pulver in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm2019148032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzUzMTY3OTA1N15BMl5BanBnXkFtZTgwNDk3ODg0MjE@._V1_.jpg> ;
+    schema:caption "Jonas Armstrong in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm2035925248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwNDExMzE3N15BMl5BanBnXkFtZTgwMzk3ODg0MjE@._V1_.jpg> ;
+    schema:caption "Joanne Froggatt and Jonas Armstrong in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1765073/mediaviewer/rm1968816384/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM5OTIxNDQ4Ml5BMl5BanBnXkFtZTgwMTg3ODg0MjE@._V1_.jpg> ;
+    schema:caption "Jonas Armstrong in Robin Hood (2006)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

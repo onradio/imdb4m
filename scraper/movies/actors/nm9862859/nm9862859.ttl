@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9862859/> a schema:Person ;
+    schema:name "Yordanos Shiferaw" ;
+    schema:url <https://www.imdb.com/name/nm9862859/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Yordanos Shiferaw. Actress: Capernaum. Yordanos Shiferaw is known for Capernaum (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8267604/> ;    # Capernaum
+
+
+    schema:video <https://www.imdb.com/video/vi1667873305/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Capernaum (2018)
+<https://www.imdb.com/title/tt8267604/> a schema:Movie ;
+    schema:name "Capernaum" ;
+    schema:url <https://www.imdb.com/title/tt8267604/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9862859/> ;
+        schema:characterName "Rahil"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1667873305/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1667873305/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjE4N2I3MGItYjNjYy00N2ZhLTlmNDItNDg1ZmViOWFmZDdhXkEyXkFqcGdeQUlNRGJWaWRlb1RodW1ibmFpbFNlcnZpY2U@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2019-02-15T17:11:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

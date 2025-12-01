@@ -1,0 +1,46 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0096283/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Tonari no Totoro" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tonari no Totoro" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> ; # Joe Hisaishi
+            schema:lyricist <https://www.imdb.com/name/nm0594503/> # Hayao Miyazaki
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sampo" ;
+        schema:byArtist <https://www.imdb.com/name/nm1710521/>, # Azumi Inoue
+                        <https://www.imdb.com/name/nm0125977/>, # Cassie Byram
+                        <https://www.imdb.com/name/nm2175900/> ; # Sonya Isaacs
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sampo" ;
+            schema:composer <https://www.imdb.com/name/nm0386749/> # Joe Hisaishi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0125977/> a schema:Person ;
+    schema:name "Cassie Byram" .
+<https://www.imdb.com/name/nm0386749/> a schema:Person ;
+    schema:name "Joe Hisaishi" .
+<https://www.imdb.com/name/nm0594503/> a schema:Person ;
+    schema:name "Hayao Miyazaki" .
+<https://www.imdb.com/name/nm1710521/> a schema:Person ;
+    schema:name "Azumi Inoue" .
+<https://www.imdb.com/name/nm2175900/> a schema:Person ;
+    schema:name "Sonya Isaacs" .
+# ==============================================================================

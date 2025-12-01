@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3115704/> a schema:Person ;
+    schema:name "Ahney Her" ;
+    schema:url <https://www.imdb.com/name/nm3115704/> ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Whitney" ;
+    schema:description "Ahney Her. Actress: Gran Torino. Ahney Her was born in Lansing, Michigan, USA. She is known for Gran Torino (2008), Batman v Superman: Dawn of Justice (2016) and Night Club (2011)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTkwNjQyNTMwMF5BMl5BanBnXkFtZTcwNTk3MjYxMg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Lansing, Michigan, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.60"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3″ (1.60 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2975590/>,    # Batman v Superman: Dawn of Justice
+                       <https://www.imdb.com/title/tt3702580/>,    # Comfort Girls
+                       <https://www.imdb.com/title/tt1623280/>,    # Night Club
+                       <https://www.imdb.com/title/tt1205489/> ; # Gran Torino
+
+
+    schema:video <https://www.imdb.com/video/vi517604121/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3115704/mediaviewer/rm4109666049/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm3734927104/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm3600709376/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm1166027264/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm1376111616/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm970754560/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm953977344/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm115116544/>,
+                 <https://www.imdb.com/name/nm3115704/mediaviewer/rm1101761024/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Batman v Superman: Dawn of Justice (2016)
+<https://www.imdb.com/title/tt2975590/> a schema:Movie ;
+    schema:name "Batman v Superman: Dawn of Justice" ;
+    schema:url <https://www.imdb.com/title/tt2975590/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3115704/> ;
+        schema:characterName "Hostage Girl"
+    ] .
+
+# Comfort Girls (2014)
+<https://www.imdb.com/title/tt3702580/> a schema:Movie ;
+    schema:name "Comfort Girls" ;
+    schema:url <https://www.imdb.com/title/tt3702580/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3115704/> ;
+        schema:characterName "Kayagum Player"
+    ] .
+
+# Night Club (2011)
+<https://www.imdb.com/title/tt1623280/> a schema:Movie ;
+    schema:name "Night Club" ;
+    schema:url <https://www.imdb.com/title/tt1623280/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3115704/> ;
+        schema:characterName "Nikki"
+    ] .
+
+# Gran Torino (2008)
+<https://www.imdb.com/title/tt1205489/> a schema:Movie ;
+    schema:name "Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt1205489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3115704/> ;
+        schema:characterName "Sue"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi517604121/> a schema:VideoObject ;
+        schema:name "Gran Torino music video" ;
+        schema:description "A music video for the song \"Gran Torino\" by Jamie Cullum, from the Gran Torino motion picture soundtrack." ;
+        schema:embedUrl <https://www.imdb.com/video/vi517604121/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ2OTE5MjQyM15BMl5BanBnXkFtZTgwNTc5ODIyMzE@._V1_.jpg" ;
+        schema:duration "PT4M31S"^^xsd:duration ;
+        schema:uploadDate "2009-01-06T17:01:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTkwNjQyNTMwMF5BMl5BanBnXkFtZTcwNTk3MjYxMg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkwNjQyNTMwMF5BMl5BanBnXkFtZTcwNTk3MjYxMg@@._V1_.jpg> ;
+    schema:caption "Ahney Her at an event for Gran Torino (2008)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "267"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm4109666049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjdiMjZkNmEtNjM1OS00YjE4LWIxMTYtZDFmZTFkOWM5MDhiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ahney Her in Gran Torino (2008)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm3734927104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjI5OTljZDUtZjAzZi00ZDY2LTllZmEtZDNmOTUxYzc5NzdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Ahney Her in Gran Torino (2008)" ;
+    schema:height "555"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm3600709376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjhhNTEyYzUtMmU4NS00ZGYxLWFmYWItZDgzNTFhNmRjNzczXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Ahney Her in Gran Torino (2008)" ;
+    schema:height "545"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm1166027264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY4ODc4MDQ2OV5BMl5BanBnXkFtZTgwNzg5OTQzMjI@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, Brooke Chia Thao, and Chee Thao in Gran Torino (2008)" ;
+    schema:height "1664"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm1376111616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM1Njc1NDMzMl5BMl5BanBnXkFtZTgwOTgwNjMwMjE@._V1_.jpg> ;
+    schema:caption "Ahney Her in Gran Torino (2008)" ;
+    schema:height "444"^^xsd:integer ;
+    schema:width "504"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm970754560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjMyMzU5MjIwNl5BMl5BanBnXkFtZTcwOTYwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, Brooke Chia Thao, and Chee Thao in Gran Torino (2008)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "615"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm953977344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY2MzkyMTk2M15BMl5BanBnXkFtZTcwMDcwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, Ahney Her, and Brooke Chia Thao in Gran Torino (2008)" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "725"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm115116544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4MzA5MzExMl5BMl5BanBnXkFtZTcwMjcwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood and Ahney Her in Gran Torino (2008)" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "725"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3115704/mediaviewer/rm1101761024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxNDA2MDk0NF5BMl5BanBnXkFtZTcwNjk3MjYxMg@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Bee Vang, and Ahney Her at an event for Gran Torino (2008)" ;
+    schema:height "367"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

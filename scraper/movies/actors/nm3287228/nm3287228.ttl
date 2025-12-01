@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3287228/> a schema:Person ;
+    schema:name "Anthony Rizzo" ;
+    schema:url <https://www.imdb.com/name/nm3287228/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anthony Rizzo. Actor: Hacksaw Ridge. Anthony Rizzo is known for Hacksaw Ridge (2016), The Bronxville Affair (2014) and Dreams of Lydia (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt3796832/>,    # The Bronxville Affair
+                       <https://www.imdb.com/title/tt1361858/> . # Dreams of Lydia
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hacksaw Ridge (2016)
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3287228/> ;
+        schema:characterName "Cinema Kissing Soldier"
+    ] .
+
+# The Bronxville Affair (2014)
+<https://www.imdb.com/title/tt3796832/> a schema:Movie ;
+    schema:name "The Bronxville Affair" ;
+    schema:url <https://www.imdb.com/title/tt3796832/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3287228/> ;
+        schema:characterName "Phil"
+    ] .
+
+# Dreams of Lydia (2009)
+<https://www.imdb.com/title/tt1361858/> a schema:Movie ;
+    schema:name "Dreams of Lydia" ;
+    schema:url <https://www.imdb.com/title/tt1361858/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3287228/> ;
+        schema:characterName "Cop #2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

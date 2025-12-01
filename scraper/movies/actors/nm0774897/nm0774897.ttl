@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0774897/> a schema:Person ;
+    schema:name "Daniel Schorr" ;
+    schema:url <https://www.imdb.com/name/nm0774897/> ;
+    schema:birthDate "1916-08-31"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer" ;
+    schema:description "Daniel Schorr. Actor: The Game. Daniel Schorr was born on 31 August 1916 in New York City, New York, USA. He was an actor and writer, known for The Game (1997), The Net (1995) and The Siege (1998). He was married to Lisbeth Bamberger. He died on 23 July 2010 in Washington, District of Columbia, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTMyMjI1ZDQtNDYxMS00NTM0LTk0NTctMjM4MjI4ZDczOWRiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0180657/>,    # Der 3. Weltkrieg
+                       <https://www.imdb.com/title/tt0133952/>,    # The Siege
+                       <https://www.imdb.com/title/tt0119174/>,    # The Game
+                       <https://www.imdb.com/title/tt0113957/> ; # The Net
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0774897/mediaviewer/rm3772344064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Der 3. Weltkrieg (1998)
+<https://www.imdb.com/title/tt0180657/> a schema:Movie ;
+    schema:name "Der 3. Weltkrieg" ;
+    schema:url <https://www.imdb.com/title/tt0180657/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0774897/> ;
+        schema:characterName "Daniel Shorr"
+    ] .
+
+# The Siege (1998)
+<https://www.imdb.com/title/tt0133952/> a schema:Movie ;
+    schema:name "The Siege" ;
+    schema:url <https://www.imdb.com/title/tt0133952/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0774897/> ;
+        schema:characterName "Newscaster"
+    ] .
+
+# The Game (1997)
+<https://www.imdb.com/title/tt0119174/> a schema:Movie ;
+    schema:name "The Game" ;
+    schema:url <https://www.imdb.com/title/tt0119174/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0774897/> ;
+        schema:characterName "Daniel Schorr"
+    ] .
+
+# The Net (1995)
+<https://www.imdb.com/title/tt0113957/> a schema:Movie ;
+    schema:name "The Net" ;
+    schema:url <https://www.imdb.com/title/tt0113957/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0774897/> ;
+        schema:characterName "WNN Anchor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTMyMjI1ZDQtNDYxMS00NTM0LTk0NTctMjM4MjI4ZDczOWRiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMyMjI1ZDQtNDYxMS00NTM0LTk0NTctMjM4MjI4ZDczOWRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Schorr" ;
+    schema:height "1439"^^xsd:integer ;
+    schema:width "2287"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0774897/mediaviewer/rm3772344064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMyMjI1ZDQtNDYxMS00NTM0LTk0NTctMjM4MjI4ZDczOWRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Daniel Schorr" ;
+    schema:height "1439"^^xsd:integer ;
+    schema:width "2287"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

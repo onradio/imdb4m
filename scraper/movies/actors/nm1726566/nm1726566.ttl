@@ -1,0 +1,57 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1726566/> a schema:Person ;
+    schema:name "Sachiko Kojima" ;
+    schema:url <https://www.imdb.com/name/nm1726566/> ;
+    schema:birthDate "1979-01-18"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:description "Sachiko Kojima. Actress: A Silent Voice. Sachiko Kojima was born on 18 January 1979 in Chiba, Japan. She is an actress, known for A Silent Voice (2016), Only Yesterday (1991) and Soulcalibur Legends (2007)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chiba, Japan"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi140557593/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1726566/mediaviewer/rm3555594240/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi140557593/> a schema:VideoObject ;
+        schema:name "Denno Koiru" ;
+        schema:description "Denno Koiru" ;
+        schema:embedUrl <https://www.imdb.com/video/vi140557593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BM2U2MWE0MzAtM2VjZS00YjU2LTg4ZDgtZmIxMzBhMWUxMGZkXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M25S"^^xsd:duration ;
+        schema:uploadDate "2019-04-13T20:03:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1726566/mediaviewer/rm3555594240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTI2YjA5ZTEtOGM3ZS00MjYxLTkxZDEtYjJhMDdkNWNlODNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shigeru Chiba, Kazuhiko Inoue, Richard McGonagle, Yûko Nagashima, Nolan North, Naoya Uchida, Hiroki Tôchi, Laura Bailey, Warren Kole, Troy Baker, Sachiko Kojima, and Emily Rose in Uncharted 4: A Thief's End (2016)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

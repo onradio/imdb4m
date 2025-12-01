@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120815/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Solitude" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Solitude" ;
+            schema:composer <https://www.imdb.com/name/nm0254153/> ; # Duke Ellington
+            schema:lyricist <https://www.imdb.com/name/nm0590030/>, # Irving Mills
+                        <https://www.imdb.com/name/nm0209512/> # Edgar De Lange
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tu es Partout" ;
+        schema:byArtist <https://www.imdb.com/name/nm0681191/> ; # Édith Piaf
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tu es Partout" ;
+            schema:composer <https://www.imdb.com/name/nm0598378/> ; # Marguerite Monnot
+            schema:lyricist <https://www.imdb.com/name/nm0681191/> # Édith Piaf
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "C'était une Histoire d'Amour" ;
+        schema:byArtist <https://www.imdb.com/name/nm0681191/> ; # Édith Piaf
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "C'était une Histoire d'Amour" ;
+            schema:composer <https://www.imdb.com/name/nm2276530/> ; # Jean Jal
+            schema:lyricist <https://www.imdb.com/name/nm0176300/> # Henri Contet
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0176300/> a schema:Person ;
+    schema:name "Henri Contet" .
+<https://www.imdb.com/name/nm0209512/> a schema:Person ;
+    schema:name "Edgar De Lange" .
+<https://www.imdb.com/name/nm0254153/> a schema:Person ;
+    schema:name "Duke Ellington" .
+<https://www.imdb.com/name/nm0590030/> a schema:Person ;
+    schema:name "Irving Mills" .
+<https://www.imdb.com/name/nm0598378/> a schema:Person ;
+    schema:name "Marguerite Monnot" .
+<https://www.imdb.com/name/nm0681191/> a schema:Person ;
+    schema:name "Édith Piaf" .
+<https://www.imdb.com/name/nm2276530/> a schema:Person ;
+    schema:name "Jean Jal" .
+# ==============================================================================

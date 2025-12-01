@@ -1,0 +1,127 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0116282/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Do You Know the Way to San Jose" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Do You Know the Way to San Jose" ;
+            schema:author <https://www.imdb.com/name/nm0000820/>, # Burt Bacharach
+                       <https://www.imdb.com/name/nm0202910/> # Hal David
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Up, Up and Away" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Up, Up and Away" ;
+            schema:author <https://www.imdb.com/name/nm0916158/> # Jimmy Webb
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tie a Yellow Ribbon Round the Ole Oak Tree" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tie a Yellow Ribbon Round the Ole Oak Tree" ;
+            schema:author <https://www.imdb.com/name/nm0505820/>, # Irwin Levine
+                       <https://www.imdb.com/name/nm0114046/> # L. Russell Brown
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sometimes in Winter" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Feels So Good" ;
+        schema:byArtist <https://www.imdb.com/name/nm0542246/> ; # Chuck Mangione
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Feels So Good" ;
+            schema:author <https://www.imdb.com/name/nm0542246/> # Chuck Mangione
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Big City" ;
+        schema:byArtist <https://www.imdb.com/name/nm0353588/> ; # Merle Haggard
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Big City" ;
+            schema:author <https://www.imdb.com/name/nm0353588/> # Merle Haggard
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "These Boots Are Made for Walkin" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004954/> ; # Boy George
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "These Boots Are Made for Walkin" ;
+            schema:author <https://www.imdb.com/name/nm0372040/> # Lee Hazlewood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Let's Find Each Other Tonight" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004913/> ; # José Feliciano
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Let's Find Each Other Tonight" ;
+            schema:author <https://www.imdb.com/name/nm0004913/> # José Feliciano
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Johnny's Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Johnny's Theme" ;
+            schema:author <https://www.imdb.com/name/nm0001912/>, # Paul Anka
+                       <https://www.imdb.com/name/nm0001992/> # Johnny Carson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000820/> a schema:Person ;
+    schema:name "Burt Bacharach" .
+<https://www.imdb.com/name/nm0001912/> a schema:Person ;
+    schema:name "Paul Anka" .
+<https://www.imdb.com/name/nm0001992/> a schema:Person ;
+    schema:name "Johnny Carson" .
+<https://www.imdb.com/name/nm0004913/> a schema:Person ;
+    schema:name "José Feliciano" .
+<https://www.imdb.com/name/nm0004954/> a schema:Person ;
+    schema:name "Boy George" .
+<https://www.imdb.com/name/nm0114046/> a schema:Person ;
+    schema:name "L. Russell Brown" .
+<https://www.imdb.com/name/nm0202910/> a schema:Person ;
+    schema:name "Hal David" .
+<https://www.imdb.com/name/nm0353588/> a schema:Person ;
+    schema:name "Merle Haggard" .
+<https://www.imdb.com/name/nm0372040/> a schema:Person ;
+    schema:name "Lee Hazlewood" .
+<https://www.imdb.com/name/nm0505820/> a schema:Person ;
+    schema:name "Irwin Levine" .
+<https://www.imdb.com/name/nm0542246/> a schema:Person ;
+    schema:name "Chuck Mangione" .
+<https://www.imdb.com/name/nm0916158/> a schema:Person ;
+    schema:name "Jimmy Webb" .
+# ==============================================================================

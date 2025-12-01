@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0660528/> a schema:Person ;
+    schema:name "Yelena Popovic" ;
+    schema:url <https://www.imdb.com/name/nm0660528/> ;
+    schema:jobTitle "Producer", "Director", "Writer" ;
+    schema:description "Yelena Popovic. Producer: Man of God. Yelena Popovic is known for Man of God (2021), L.A. Superheroes (2013) and Cast Away (2000)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BN2I4MzU3M2UtOTg4Mi00MmNmLWJmNmUtOWI4YjU2MWUyMjVmXkEyXkFqcGc@._V1_CR881,0,1111,1667_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2515476/>,    # L.A. Superheroes
+                       <https://www.imdb.com/title/tt0162222/>,    # Cast Away
+                       <https://www.imdb.com/title/tt0083507/> ; # 13. jul
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0660528/mediaviewer/rm4103436545/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# L.A. Superheroes (2013)
+<https://www.imdb.com/title/tt2515476/> a schema:Movie ;
+    schema:name "L.A. Superheroes" ;
+    schema:url <https://www.imdb.com/title/tt2515476/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660528/> ;
+        schema:characterName "Helena"
+    ] .
+
+# Cast Away (2000)
+<https://www.imdb.com/title/tt0162222/> a schema:Movie ;
+    schema:name "Cast Away" ;
+    schema:url <https://www.imdb.com/title/tt0162222/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660528/> ;
+        schema:characterName "Beautiful Russian Woman"
+    ] .
+
+# 13. jul (1982)
+<https://www.imdb.com/title/tt0083507/> a schema:Movie ;
+    schema:name "13. jul" ;
+    schema:url <https://www.imdb.com/title/tt0083507/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0660528/> ;
+        schema:characterName "(as Jelena Papovic)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BN2I4MzU3M2UtOTg4Mi00MmNmLWJmNmUtOWI4YjU2MWUyMjVmXkEyXkFqcGc@._V1_CR881,0,1111,1667_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2I4MzU3M2UtOTg4Mi00MmNmLWJmNmUtOWI4YjU2MWUyMjVmXkEyXkFqcGc@._V1_CR881,0,1111,1667_.jpg> ;
+    schema:caption "Yelena Popovic" ;
+    schema:height "1667"^^xsd:integer ;
+    schema:width "1111"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0660528/mediaviewer/rm4103436545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2I4MzU3M2UtOTg4Mi00MmNmLWJmNmUtOWI4YjU2MWUyMjVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Yelena Popovic" ;
+    schema:height "1667"^^xsd:integer ;
+    schema:width "2500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

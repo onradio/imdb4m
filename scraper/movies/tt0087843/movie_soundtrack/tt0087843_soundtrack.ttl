@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087843/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "God Bless America" ;
+        schema:byArtist <https://www.imdb.com/name/nm0808889/> ; # Kate Smith
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "God Bless America" ;
+            schema:composer <https://www.imdb.com/name/nm0000927/> # Irving Berlin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Summertime' from 'Porgy and Bess" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Summertime' from 'Porgy and Bess" ;
+            schema:composer <https://www.imdb.com/name/nm0006097/> ; # George Gershwin
+            schema:lyricist <https://www.imdb.com/name/nm0371738/>, # DuBose Heyward
+                        <https://www.imdb.com/name/nm0314857/> # Ira Gershwin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Night and Day" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Night and Day" ;
+            schema:composer <https://www.imdb.com/name/nm0006234/> ; # Cole Porter
+            schema:lyricist <https://www.imdb.com/name/nm0006234/> # Cole Porter
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Yesterday" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Yesterday" ;
+            schema:composer <https://www.imdb.com/name/nm0006168/>, # John Lennon
+                        <https://www.imdb.com/name/nm0005200/> ; # Paul McCartney
+            schema:lyricist <https://www.imdb.com/name/nm0006168/>, # John Lennon
+                        <https://www.imdb.com/name/nm0005200/> # Paul McCartney
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Amapola" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Amapola" ;
+            schema:composer <https://www.imdb.com/name/nm0479793/> ; # José María Lacalle
+            schema:lyricist <https://www.imdb.com/name/nm0304039/> # Albert Gamse
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Gazza Ladra" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Gazza Ladra" ;
+            schema:composer <https://www.imdb.com/name/nm0006261/> # Gioachino Rossini
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "St. James Infirmary Blues" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cockeye's Song/Childhood Memories" ;
+        schema:byArtist <https://www.imdb.com/name/nm0952621/> ; # Gheorghe Zamfir
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cockeye's Song/Childhood Memories" ;
+            schema:composer <https://www.imdb.com/name/nm0001553/> # Ennio Morricone
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Poverty" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Poverty" ;
+            schema:composer <https://www.imdb.com/name/nm0001553/> # Ennio Morricone
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000927/> a schema:Person ;
+    schema:name "Irving Berlin" .
+<https://www.imdb.com/name/nm0001553/> a schema:Person ;
+    schema:name "Ennio Morricone" .
+<https://www.imdb.com/name/nm0005200/> a schema:Person ;
+    schema:name "Paul McCartney" .
+<https://www.imdb.com/name/nm0006097/> a schema:Person ;
+    schema:name "George Gershwin" .
+<https://www.imdb.com/name/nm0006168/> a schema:Person ;
+    schema:name "John Lennon" .
+<https://www.imdb.com/name/nm0006234/> a schema:Person ;
+    schema:name "Cole Porter" .
+<https://www.imdb.com/name/nm0006261/> a schema:Person ;
+    schema:name "Gioachino Rossini" .
+<https://www.imdb.com/name/nm0304039/> a schema:Person ;
+    schema:name "Albert Gamse" .
+<https://www.imdb.com/name/nm0314857/> a schema:Person ;
+    schema:name "Ira Gershwin" .
+<https://www.imdb.com/name/nm0371738/> a schema:Person ;
+    schema:name "DuBose Heyward" .
+<https://www.imdb.com/name/nm0479793/> a schema:Person ;
+    schema:name "José María Lacalle" .
+<https://www.imdb.com/name/nm0808889/> a schema:Person ;
+    schema:name "Kate Smith" .
+<https://www.imdb.com/name/nm0952621/> a schema:Person ;
+    schema:name "Gheorghe Zamfir" .
+# ==============================================================================

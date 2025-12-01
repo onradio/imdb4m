@@ -1,0 +1,177 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7621667/> a schema:Person ;
+    schema:name "Sanya Malhotra" ;
+    schema:url <https://www.imdb.com/name/nm7621667/> ;
+    schema:birthDate "1992-02-25"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:description "Sanya Malhotra. Actress: Ludo. Sanya Malhotra was born on February 25, 1992 in Delhi. She is an Indian actress and a trained contemporary and ballet dancer. She is recognized for her noteworthy debut as Babita Kumari in a sports biopic film 'Dangal (2016)' starring alongside Aamir Khan and Fatima Sana Shaikh which ranks among the highest-grossing Indian films. Malhotra has also choreographed Khan in the song 'Sexy Baliye' from the..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzUzNjQ4MTE2OF5BMl5BanBnXkFtZTgwNTk0NjcyNzM@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Delhi, India"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.52"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ (1.52 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7778680/>,    # Photograph
+                       <https://www.imdb.com/title/tt7725596/>,    # Badhaai Ho
+                       <https://www.imdb.com/title/tt8396128/>,    # Pataakha
+                       <https://www.imdb.com/title/tt5074352/> ; # Dangal
+
+
+    schema:video <https://www.imdb.com/video/vi2619066393/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7621667/mediaviewer/rm181291777/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm2253675265/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm1673667841/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm2621178625/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm2654733057/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm2453406465/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm3917018369/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm3967350017/>,
+                 <https://www.imdb.com/name/nm7621667/mediaviewer/rm3984127233/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Photograph (2019)
+<https://www.imdb.com/title/tt7778680/> a schema:Movie ;
+    schema:name "Photograph" ;
+    schema:url <https://www.imdb.com/title/tt7778680/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621667/> ;
+        schema:characterName "Miloni"
+    ] .
+
+# Badhaai Ho (2018)
+<https://www.imdb.com/title/tt7725596/> a schema:Movie ;
+    schema:name "Badhaai Ho" ;
+    schema:url <https://www.imdb.com/title/tt7725596/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621667/> ;
+        schema:characterName "Renee Sharma"
+    ] .
+
+# Pataakha (2018)
+<https://www.imdb.com/title/tt8396128/> a schema:Movie ;
+    schema:name "Pataakha" ;
+    schema:url <https://www.imdb.com/title/tt8396128/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621667/> ;
+        schema:characterName "Genda Kumari 'Chhutki'"
+    ] .
+
+# Dangal (2016)
+<https://www.imdb.com/title/tt5074352/> a schema:Movie ;
+    schema:name "Dangal" ;
+    schema:url <https://www.imdb.com/title/tt5074352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7621667/> ;
+        schema:characterName "Babita Kumari"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2619066393/> a schema:VideoObject ;
+        schema:name "Official Teaser" ;
+        schema:description "Murder and chaos erupt when a miser becomes obsessed with a toaster he gave as a wedding gift." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2619066393/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTRjZWNiNmMtMTliMy00MDNjLWI1MGItMjNlNWE4YmIzNTRlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M9S"^^xsd:duration ;
+        schema:uploadDate "2025-09-15T03:59:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzUzNjQ4MTE2OF5BMl5BanBnXkFtZTgwNTk0NjcyNzM@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzUzNjQ4MTE2OF5BMl5BanBnXkFtZTgwNTk0NjcyNzM@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra at an event for The IMDb Studio at Sundance (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm181291777/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI0NGZmYWQtNTIwNS00MjVmLWJlYjktNWU0YWRlZmY2MTdlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vicky Kaushal and Sanya Malhotra in Sam Bahadur (2023)" ;
+    schema:height "768"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm2253675265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDhmMjg2NjQtMmIxNi00YjhhLWFjNTktMzkyNjBiNjM2NzRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shah Rukh Khan, Priyamani, and Sanya Malhotra in Jawan (2023)" ;
+    schema:height "5760"^^xsd:integer ;
+    schema:width "8640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm1673667841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzM3N2E1YzQtYjZmNi00M2NlLWFmZTYtNTg3YmJjZDUyZTYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra in Jawan (2023)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm2621178625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDMwZDcyYWItYTExNi00MTExLTliNjItY2VkNzM3NDZmY2VlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shashi Ranjan, Govind Pandey, Neha Saraf, and Sanya Malhotra in Kathal: A Jackfruit Mystery (2023)" ;
+    schema:height "5274"^^xsd:integer ;
+    schema:width "7907"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm2654733057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTRjZWQ2ZWMtMTBkZi00MThkLTk3YjktNzJjZDk2M2NiYTU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shashi Ranjan, Govind Pandey, Neha Saraf, and Sanya Malhotra in Kathal: A Jackfruit Mystery (2023)" ;
+    schema:height "5134"^^xsd:integer ;
+    schema:width "7697"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm2453406465/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDZmYTllZjEtNWZmOC00YWUyLWE2MzEtMGQ1ZjJkYmEwYmU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra in Kathal: A Jackfruit Mystery (2023)" ;
+    schema:height "3945"^^xsd:integer ;
+    schema:width "5917"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm3917018369/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmNkNmM3M2MtNWE0ZS00ODBkLWFkYmMtZDIzMDkyNmM4ODcwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm3967350017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjdlNmY0NmQtMjlmNy00MTAwLWI5NzgtNzZmM2M4ZWUxNDEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7621667/mediaviewer/rm3984127233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGI5MTIwOTAtZjQxOS00OTIyLThhM2YtMTNhMTNkM2NhM2M1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sanya Malhotra" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

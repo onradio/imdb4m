@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0059240/> a schema:Person ;
+    schema:name "Robert Barton" ;
+    schema:url <https://www.imdb.com/name/nm0059240/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Robert Barton. Actor: E.T. the Extra-Terrestrial. Robert Barton is known for E.T. the Extra-Terrestrial (1982), The Lost Treasure of Sawtooth Island (1999) and Torchwood (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0485301/>,    # Torchwood
+                       <https://www.imdb.com/title/tt0436992/>,    # Doctor Who
+                       <https://www.imdb.com/title/tt0096555/>,    # Casualty
+                       <https://www.imdb.com/title/tt0228968/>,    # The Lost Treasure of Sawtooth Island
+                       <https://www.imdb.com/title/tt0083866/>,    # E.T. the Extra-Terrestrial
+                       <https://www.imdb.com/title/tt0078585/>,    # The Chisholms
+                       <https://www.imdb.com/title/tt0173571/> . # Lizzie Dripping
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Torchwood (2006)
+<https://www.imdb.com/title/tt0485301/> a schema:Movie ;
+    schema:name "Torchwood" ;
+    schema:url <https://www.imdb.com/title/tt0485301/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Martin"
+    ] .
+
+# Doctor Who (2005)
+<https://www.imdb.com/title/tt0436992/> a schema:Movie ;
+    schema:name "Doctor Who" ;
+    schema:url <https://www.imdb.com/title/tt0436992/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Registrar"
+    ] .
+
+# Casualty (2004)
+<https://www.imdb.com/title/tt0096555/> a schema:Movie ;
+    schema:name "Casualty" ;
+    schema:url <https://www.imdb.com/title/tt0096555/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Frank Smith"
+    ] .
+
+# The Lost Treasure of Sawtooth Island (1999)
+<https://www.imdb.com/title/tt0228968/> a schema:Movie ;
+    schema:name "The Lost Treasure of Sawtooth Island" ;
+    schema:url <https://www.imdb.com/title/tt0228968/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Mourner"
+    ] .
+
+# E.T. the Extra-Terrestrial (1982)
+<https://www.imdb.com/title/tt0083866/> a schema:Movie ;
+    schema:name "E.T. the Extra-Terrestrial" ;
+    schema:url <https://www.imdb.com/title/tt0083866/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Ultra Sound Man"
+    ] .
+
+# The Chisholms (1979)
+<https://www.imdb.com/title/tt0078585/> a schema:Movie ;
+    schema:name "The Chisholms" ;
+    schema:url <https://www.imdb.com/title/tt0078585/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "Sheriff"
+    ] .
+
+# Lizzie Dripping (1975)
+<https://www.imdb.com/title/tt0173571/> a schema:Movie ;
+    schema:name "Lizzie Dripping" ;
+    schema:url <https://www.imdb.com/title/tt0173571/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0059240/> ;
+        schema:characterName "1st Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,94 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5481013/> a schema:Person ;
+    schema:name "Kaito Ishikawa" ;
+    schema:url <https://www.imdb.com/name/nm5481013/> ;
+    schema:birthDate "1993-10-13"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:alternateName "Kaijin" ;
+    schema:description "Kaito Ishikawa. Actor: Your Name.. Kaito Ishikawa was born on 13 October 1993 in Tokyo, Japan. He is an actor, known for Your Name. (2016), One Punch Man (2015) and Dandadan (2024). He has been married to Maaya Uchida since 2025." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tokyo, Japan"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4508902/>,    # One Punch Man
+                       <https://www.imdb.com/title/tt8228732/>,    # Kakuriyo no Yadomeshi
+                       <https://www.imdb.com/title/tt9529546/> ; # The Rising of the Shield Hero
+
+
+    schema:video <https://www.imdb.com/video/vi3975858201/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# One Punch Man (2015)
+<https://www.imdb.com/title/tt4508902/> a schema:Movie ;
+    schema:name "One Punch Man" ;
+    schema:url <https://www.imdb.com/title/tt4508902/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5481013/> ;
+        schema:characterName "Genos"
+    ] .
+
+# Kakuriyo no Yadomeshi (2018)
+<https://www.imdb.com/title/tt8228732/> a schema:Movie ;
+    schema:name "Kakuriyo no Yadomeshi" ;
+    schema:url <https://www.imdb.com/title/tt8228732/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5481013/> ;
+        schema:characterName "Ranmaru"
+    ] .
+
+# The Rising of the Shield Hero (2019)
+<https://www.imdb.com/title/tt9529546/> a schema:Movie ;
+    schema:name "The Rising of the Shield Hero" ;
+    schema:url <https://www.imdb.com/title/tt9529546/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5481013/> ;
+        schema:characterName "Naofumi Iwatani"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3975858201/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A first-year statistical science student at a university in Yokohama. He's an odd-ball who doesn't own a smartphone in this day and age." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3975858201/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDFlZWRmMDAtZDg0MS00ZDkwLTg3NDAtMTc2NTE0ZTNkZTZiXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2025-06-19T23:12:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,97 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10860732/> a schema:Person ;
+    schema:name "Jung Yi-seo" ;
+    schema:url <https://www.imdb.com/name/nm10860732/> ;
+    schema:birthDate "1993-08-13"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jung Yi-seo. Actress: Decision to Leave. Jung Yi-seo was born on 13 August 1993 in South Korea. She is an actress, known for Decision to Leave (2022), Parasite (2019) and All of Us Are Dead (2022)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTE3NjY1MjQtY2FlNS00NTA1LTgwZDQtMjdhYzRlNDdjMmFiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "South Korea"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.61"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3½″ (1.61 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9014894/>,    # Drama Special
+                       <https://www.imdb.com/title/tt6751668/> ; # Parasite
+
+
+    schema:video <https://www.imdb.com/video/vi716227865/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10860732/mediaviewer/rm3669757185/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Drama Special (2019)
+<https://www.imdb.com/title/tt9014894/> a schema:Movie ;
+    schema:name "Drama Special" ;
+    schema:url <https://www.imdb.com/title/tt9014894/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10860732/> ;
+        schema:characterName "Woo Hyeong-joo"
+    ] .
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10860732/> ;
+        schema:characterName "CEO of Pizza Place"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi716227865/> a schema:VideoObject ;
+        schema:name "Watch the Official Trailer" ;
+        schema:description "From a mountain peak in South Korea, a man plummets to his death. Did he jump, or was he pushed? When detective Hae-joon arrives on the scene, he begins to suspect the dead man's wife Seo-rae. But as he digs deeper into the investigation, he finds himself trapped in a web of deception and desire." ;
+        schema:embedUrl <https://www.imdb.com/video/vi716227865/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWE5NmM3ZTgtZDg1MC00YWZlLTkzMzEtODNkNDQwMzc5MzM3XkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg" ;
+        schema:duration "PT1M47S"^^xsd:duration ;
+        schema:uploadDate "2022-10-04T20:05:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTE3NjY1MjQtY2FlNS00NTA1LTgwZDQtMjdhYzRlNDdjMmFiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTE3NjY1MjQtY2FlNS00NTA1LTgwZDQtMjdhYzRlNDdjMmFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Yi-seo" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "435"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10860732/mediaviewer/rm3669757185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTE3NjY1MjQtY2FlNS00NTA1LTgwZDQtMjdhYzRlNDdjMmFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jung Yi-seo" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "435"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0468569/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Balmoral" ;
+        schema:byArtist <https://www.imdb.com/name/nm4350804/> ; # The Pipes and Drums of the Chicago Police Department
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Scatterin' Monkey" ;
+        schema:byArtist <https://www.imdb.com/name/nm3519935/> ; # Boom Boom Satellites
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Scatterin' Monkey" ;
+            schema:author <https://www.imdb.com/name/nm4350035/>, # Masayuki Nakano
+                       <https://www.imdb.com/name/nm4350060/> # Michiyuki Kawashima
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "4 A Moment of Silence" ;
+        schema:byArtist <https://www.imdb.com/name/nm3519935/> ; # Boom Boom Satellites
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "4 A Moment of Silence" ;
+            schema:author <https://www.imdb.com/name/nm4350035/>, # Masayuki Nakano
+                       <https://www.imdb.com/name/nm4350060/> # Michiyuki Kawashima
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Andante from String Quartet in a minor D. 804, 'Rosamunde" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Andante from String Quartet in a minor D. 804, 'Rosamunde" ;
+            schema:author <https://www.imdb.com/name/nm0006280/> # Franz Schubert
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006280/> a schema:Person ;
+    schema:name "Franz Schubert" .
+<https://www.imdb.com/name/nm3519935/> a schema:Person ;
+    schema:name "Boom Boom Satellites" .
+<https://www.imdb.com/name/nm4350035/> a schema:Person ;
+    schema:name "Masayuki Nakano" .
+<https://www.imdb.com/name/nm4350060/> a schema:Person ;
+    schema:name "Michiyuki Kawashima" .
+<https://www.imdb.com/name/nm4350804/> a schema:Person ;
+    schema:name "The Pipes and Drums of the Chicago Police Department" .
+# ==============================================================================

@@ -1,0 +1,442 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000931/> a schema:Person ;
+    schema:name "Elizabeth Berridge" ;
+    schema:url <https://www.imdb.com/name/nm0000931/> ;
+    schema:birthDate "1962-05-02"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:description "Elizabeth Berridge. Actress: Amadeus. Elizabeth Berridge was born on 2 May 1962 in Larchmont, New York, USA. She is an actress and producer, known for Amadeus (1984), Hidalgo (2004) and The Funhouse (1981). She has been married to Kevin Corrigan since 10 March 2001. They have one child." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU2MDg1OTg3Nl5BMl5BanBnXkFtZTcwOTgxMTg5Nw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Larchmont, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.57"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 2″ (1.57 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0086879/>,    # Amadeus
+                       <https://www.imdb.com/title/tt0082427/>,    # The Funhouse
+                       <https://www.imdb.com/title/tt0106039/>,    # The John Larroquette Show
+                       <https://www.imdb.com/title/tt0317648/>,    # Hidalgo
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3824412/>,    # Results
+                       <https://www.imdb.com/title/tt0878835/>,    # Please Give
+                       <https://www.imdb.com/title/tt0315323/>,    # Break a Leg
+                       <https://www.imdb.com/title/tt0255734/>,    # Grounded for Life
+                       <https://www.imdb.com/title/tt0247144/>,    # Yes, Dear
+                       <https://www.imdb.com/title/tt0320970/>,    # Still Standing
+                       <https://www.imdb.com/title/tt0258446/>,    # When Billie Beat Bobby
+                       <https://www.imdb.com/title/tt0208017/>,    # Broke Even
+                       <https://www.imdb.com/title/tt0120784/>,    # Payback
+                       <https://www.imdb.com/title/tt0108968/>,    # Touched by an Angel
+                       <https://www.imdb.com/title/tt0103515/>,    # The Powers That Be
+                       <https://www.imdb.com/title/tt0105807/>,    # When the Party's Over
+                       <https://www.imdb.com/title/tt0100180/>,    # Montana
+                       <https://www.imdb.com/title/tt0088513/>,    # The Equalizer
+                       <https://www.imdb.com/title/tt0086759/>,    # Miami Vice
+                       <https://www.imdb.com/title/tt0097520/>,    # Home Fires Burning
+                       <https://www.imdb.com/title/tt0092393/>,    # Leg Work
+                       <https://www.imdb.com/title/tt0093029/>,    # Five Corners
+                       <https://www.imdb.com/title/tt0090037/>,    # Smooth Talk
+                       <https://www.imdb.com/title/tt0088115/>,    # Silence of the Heart
+                       <https://www.imdb.com/title/tt0080290/>,    # Texas
+                       <https://www.imdb.com/title/tt0083460/>,    # One of the Boys
+                       <https://www.imdb.com/title/tt0044265/>,    # The Guiding Light
+                       <https://www.imdb.com/title/tt0079613/> ; # Natural Enemies
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi568459545/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000931/mediaviewer/rm928765185/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm2560924929/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm2292489473/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm4174945537/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm2966985985/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm1791466753/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm3890388225/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm534945025/>,
+                 <https://www.imdb.com/name/nm0000931/mediaviewer/rm216177921/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086879/> a schema:Movie ;
+    schema:name "Amadeus" ;
+    schema:url <https://www.imdb.com/title/tt0086879/> .
+
+<https://www.imdb.com/title/tt0082427/> a schema:Movie ;
+    schema:name "The Funhouse" ;
+    schema:url <https://www.imdb.com/title/tt0082427/> .
+
+<https://www.imdb.com/title/tt0106039/> a schema:Movie ;
+    schema:name "The John Larroquette Show" ;
+    schema:url <https://www.imdb.com/title/tt0106039/> .
+
+<https://www.imdb.com/title/tt0317648/> a schema:Movie ;
+    schema:name "Hidalgo" ;
+    schema:url <https://www.imdb.com/title/tt0317648/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Results (2015)
+<https://www.imdb.com/title/tt3824412/> a schema:Movie ;
+    schema:name "Results" ;
+    schema:url <https://www.imdb.com/title/tt3824412/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Christine"
+    ] .
+
+# Please Give (2010)
+<https://www.imdb.com/title/tt0878835/> a schema:Movie ;
+    schema:name "Please Give" ;
+    schema:url <https://www.imdb.com/title/tt0878835/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Elyse"
+    ] .
+
+# Break a Leg (2005)
+<https://www.imdb.com/title/tt0315323/> a schema:Movie ;
+    schema:name "Break a Leg" ;
+    schema:url <https://www.imdb.com/title/tt0315323/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "NY Girl"
+    ] .
+
+# Grounded for Life (2001)
+<https://www.imdb.com/title/tt0255734/> a schema:Movie ;
+    schema:name "Grounded for Life" ;
+    schema:url <https://www.imdb.com/title/tt0255734/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Amy"
+    ] .
+
+# Yes, Dear (2004)
+<https://www.imdb.com/title/tt0247144/> a schema:Movie ;
+    schema:name "Yes, Dear" ;
+    schema:url <https://www.imdb.com/title/tt0247144/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Wedding guest on videotape"
+    ] .
+
+# Still Standing (2003)
+<https://www.imdb.com/title/tt0320970/> a schema:Movie ;
+    schema:name "Still Standing" ;
+    schema:url <https://www.imdb.com/title/tt0320970/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Sandy Hartwick"
+    ] .
+
+# When Billie Beat Bobby (2001)
+<https://www.imdb.com/title/tt0258446/> a schema:Movie ;
+    schema:name "When Billie Beat Bobby" ;
+    schema:url <https://www.imdb.com/title/tt0258446/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Rosie Casals"
+    ] .
+
+# Broke Even (2000)
+<https://www.imdb.com/title/tt0208017/> a schema:Movie ;
+    schema:name "Broke Even" ;
+    schema:url <https://www.imdb.com/title/tt0208017/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Leslie"
+    ] .
+
+# Payback (1999)
+<https://www.imdb.com/title/tt0120784/> a schema:Movie ;
+    schema:name "Payback" ;
+    schema:url <https://www.imdb.com/title/tt0120784/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Hooker in Bar"
+    ] .
+
+# Touched by an Angel (1998)
+<https://www.imdb.com/title/tt0108968/> a schema:Movie ;
+    schema:name "Touched by an Angel" ;
+    schema:url <https://www.imdb.com/title/tt0108968/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Holly"
+    ] .
+
+# The Powers That Be (1992)
+<https://www.imdb.com/title/tt0103515/> a schema:Movie ;
+    schema:name "The Powers That Be" ;
+    schema:url <https://www.imdb.com/title/tt0103515/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Charlotte"
+    ] .
+
+# When the Party's Over (1992)
+<https://www.imdb.com/title/tt0105807/> a schema:Movie ;
+    schema:name "When the Party's Over" ;
+    schema:url <https://www.imdb.com/title/tt0105807/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Frankie"
+    ] .
+
+# Montana (1990)
+<https://www.imdb.com/title/tt0100180/> a schema:Movie ;
+    schema:name "Montana" ;
+    schema:url <https://www.imdb.com/title/tt0100180/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Lavetta"
+    ] .
+
+# The Equalizer (1989)
+<https://www.imdb.com/title/tt0088513/> a schema:Movie ;
+    schema:name "The Equalizer" ;
+    schema:url <https://www.imdb.com/title/tt0088513/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Susan Wilhite"
+    ] .
+
+# Miami Vice (1989)
+<https://www.imdb.com/title/tt0086759/> a schema:Movie ;
+    schema:name "Miami Vice" ;
+    schema:url <https://www.imdb.com/title/tt0086759/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Julia Scianti"
+    ] .
+
+# Home Fires Burning (1989)
+<https://www.imdb.com/title/tt0097520/> a schema:Movie ;
+    schema:name "Home Fires Burning" ;
+    schema:url <https://www.imdb.com/title/tt0097520/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Francine Tibbetts"
+    ] .
+
+# Leg Work (1987)
+<https://www.imdb.com/title/tt0092393/> a schema:Movie ;
+    schema:name "Leg Work" ;
+    schema:url <https://www.imdb.com/title/tt0092393/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Peaches Malone"
+    ] .
+
+# Five Corners (1987)
+<https://www.imdb.com/title/tt0093029/> a schema:Movie ;
+    schema:name "Five Corners" ;
+    schema:url <https://www.imdb.com/title/tt0093029/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Melanie"
+    ] .
+
+# Smooth Talk (1985)
+<https://www.imdb.com/title/tt0090037/> a schema:Movie ;
+    schema:name "Smooth Talk" ;
+    schema:url <https://www.imdb.com/title/tt0090037/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "June"
+    ] .
+
+# Silence of the Heart (1984)
+<https://www.imdb.com/title/tt0088115/> a schema:Movie ;
+    schema:name "Silence of the Heart" ;
+    schema:url <https://www.imdb.com/title/tt0088115/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Penny"
+    ] .
+
+# Texas (1981)
+<https://www.imdb.com/title/tt0080290/> a schema:Movie ;
+    schema:name "Texas" ;
+    schema:url <https://www.imdb.com/title/tt0080290/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Allison Linden #1"
+    ] .
+
+# One of the Boys (1982)
+<https://www.imdb.com/title/tt0083460/> a schema:Movie ;
+    schema:name "One of the Boys" ;
+    schema:url <https://www.imdb.com/title/tt0083460/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Debbie"
+    ] .
+
+# The Guiding Light (1981)
+<https://www.imdb.com/title/tt0044265/> a schema:Movie ;
+    schema:name "The Guiding Light" ;
+    schema:url <https://www.imdb.com/title/tt0044265/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Morgan Richards"
+    ] .
+
+# Natural Enemies (1979)
+<https://www.imdb.com/title/tt0079613/> a schema:Movie ;
+    schema:name "Natural Enemies" ;
+    schema:url <https://www.imdb.com/title/tt0079613/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000931/> ;
+        schema:characterName "Sheila Steward"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi568459545/> a schema:VideoObject ;
+        schema:name "When The Party&apos;s Over" ;
+        schema:description "Home Video Trailer from Lionsgate Home Entertainment" ;
+        schema:embedUrl <https://www.imdb.com/video/vi568459545/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODNlZDk1NTMtMzk1My00ODhjLTgxNGUtNDQwMzkwMThlMGQwXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT34S"^^xsd:duration ;
+        schema:uploadDate "2008-04-18T12:05:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU2MDg1OTg3Nl5BMl5BanBnXkFtZTcwOTgxMTg5Nw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2MDg1OTg3Nl5BMl5BanBnXkFtZTcwOTgxMTg5Nw@@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge at an event for Amadeus (1984)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm928765185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjIwZDg5OWItNmMwZS00OGMwLWJjNGItODlmNjc4NmJjNWI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge, Dana Carvey, and Nathan Lane in One of the Boys (1982)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "696"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm2560924929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWJlYTFhM2YtMTY1ZC00OGYzLThjMWEtMzg4OWYxZGYwZmUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robin Bartlett, Elizabeth Berridge, John Forsythe, and Holland Taylor in The Powers That Be (1992)" ;
+    schema:height "478"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm2292489473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTZlOTk0ZGItNGM0MS00ZDEzLWJiMWQtMmM4OGQyMzEzMzllXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge in The Powers That Be (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm4174945537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRlYWQ2MmQtNTQ4My00N2JiLWJhNGItNDVjNGJhZDMyOWQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge, John Forsythe, David Hyde Pierce, and Valerie Mahaffey in The Powers That Be (1992)" ;
+    schema:height "470"^^xsd:integer ;
+    schema:width "694"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm2966985985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjgyODM3ZGQtNjRiMS00NzEzLTkxZTUtNzFmOWRlYjQxMzM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge and Peter MacNicol in The Powers That Be (1992)" ;
+    schema:height "469"^^xsd:integer ;
+    schema:width "697"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm1791466753/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGJlNzQyNGYtZDJiMC00ZWY1LWE1NjktYTQ5OTJhMTUzNmMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge in The Powers That Be (1992)" ;
+    schema:height "468"^^xsd:integer ;
+    schema:width "692"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm3890388225/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzc1NTkyNzEtZDZlNy00OWNjLTgwMzYtYzVhMGE2MzMxZTg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robin Bartlett, Elizabeth Berridge, John Forsythe, David Hyde Pierce, Peter MacNicol, Eve Gordon, Joseph Gordon-Levitt, and Holland Taylor in The Powers That Be (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm534945025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI0ODc4ZjAtODQ1Yy00MTYwLThjYmEtZDU3NzMxMWNkMmU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge in The Powers That Be (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000931/mediaviewer/rm216177921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjg2Njc4MWYtZjE4OS00OWFiLThiZTEtZmJlYWNjODQ5NjhlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elizabeth Berridge in The Powers That Be (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "704"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

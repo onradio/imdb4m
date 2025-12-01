@@ -1,0 +1,88 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0108107/> a schema:Person ;
+    schema:name "Captain Kidd Brewer Jr." ;
+    schema:url <https://www.imdb.com/name/nm0108107/> ;
+    schema:birthDate "1948-08-27"^^xsd:date ;
+    schema:jobTitle "Actor", "Camera and Electrical Department" ;
+    schema:description "Captain Kidd Brewer Jr.. Actor: The Abyss. Captain Kidd Brewer Jr. was born on 27 August 1948 in Raleigh, North Carolina, USA. He was an actor, known for The Abyss (1989), Piranha Part Two: The Spawning (1982) and Under Pressure: Making 'The Abyss' (1993). He died on 22 May 1990 in Raleigh, North Carolina, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmIwZGVkN2ItZTEzMS00YjhkLWEyZGYtNDhhMDA4YWIyZDY2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Raleigh, North Carolina, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0096754/>,    # The Abyss
+                       <https://www.imdb.com/title/tt0082910/> ; # Piranha Part Two: The Spawning
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0108107/mediaviewer/rm4057037312/>,
+                 <https://www.imdb.com/name/nm0108107/mediaviewer/rm3922950656/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Abyss (1989)
+<https://www.imdb.com/title/tt0096754/> a schema:Movie ;
+    schema:name "The Abyss" ;
+    schema:url <https://www.imdb.com/title/tt0096754/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0108107/> ;
+        schema:characterName "Lew Finler"
+    ] .
+
+# Piranha Part Two: The Spawning (1982)
+<https://www.imdb.com/title/tt0082910/> a schema:Movie ;
+    schema:name "Piranha Part Two: The Spawning" ;
+    schema:url <https://www.imdb.com/title/tt0082910/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0108107/> ;
+        schema:characterName "Lou"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmIwZGVkN2ItZTEzMS00YjhkLWEyZGYtNDhhMDA4YWIyZDY2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIwZGVkN2ItZTEzMS00YjhkLWEyZGYtNDhhMDA4YWIyZDY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Captain Kidd Brewer Jr." ;
+    schema:height "797"^^xsd:integer ;
+    schema:width "504"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0108107/mediaviewer/rm4057037312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDIxZjRkODctYmE1Yy00ODM3LWEzZGQtNzM2MmI3MTE2YmVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ed Harris, John Bedford Lloyd, Captain Kidd Brewer Jr., Leo Burmester, Todd Graff, J.C. Quinn, and Kimberly Scott in The Abyss (1989)" ;
+    schema:height "935"^^xsd:integer ;
+    schema:width "2188"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0108107/mediaviewer/rm3922950656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIwZGVkN2ItZTEzMS00YjhkLWEyZGYtNDhhMDA4YWIyZDY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Captain Kidd Brewer Jr." ;
+    schema:height "797"^^xsd:integer ;
+    schema:width "504"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

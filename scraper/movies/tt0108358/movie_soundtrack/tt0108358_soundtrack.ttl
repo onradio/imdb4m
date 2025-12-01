@@ -1,0 +1,51 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0108358/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Le Danse Macabre" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Le Danse Macabre" ;
+            schema:author <https://www.imdb.com/name/nm0006269/> # Camille Saint-Saëns
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Red River Valley" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001127/> ; # Dana Delany
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Red River Valley" ;
+            schema:author <https://www.imdb.com/name/nm1680727/> # James Kerrigen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nocturne in E minor, Op. 72, No. 1" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nocturne in E minor, Op. 72, No. 1" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001127/> a schema:Person ;
+    schema:name "Dana Delany" .
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0006269/> a schema:Person ;
+    schema:name "Camille Saint-Saëns" .
+<https://www.imdb.com/name/nm1680727/> a schema:Person ;
+    schema:name "James Kerrigen" .
+# ==============================================================================

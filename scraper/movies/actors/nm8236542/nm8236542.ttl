@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8236542/> a schema:Person ;
+    schema:name "Ferhat Türker" ;
+    schema:url <https://www.imdb.com/name/nm8236542/> ;
+    schema:jobTitle "Additional Crew", "Art Department", "Stunts" ;
+    schema:description "Ferhat Türker. Stunts: The Amateur. Ferhat Türker is known for The Amateur (2025), The Ministry of Ungentlemanly Warfare (2024) and Karakomik Filmler: Kacamak (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5813916/>,    # The Mountain II
+                       <https://www.imdb.com/title/tt4688048/> . # Milat
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8236542/> ;
+        schema:characterName "Enemy wearing a C4 Vest"
+    ] .
+
+# Milat (2015)
+<https://www.imdb.com/title/tt4688048/> a schema:Movie ;
+    schema:name "Milat" ;
+    schema:url <https://www.imdb.com/title/tt4688048/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8236542/> ;
+        schema:characterName "Ferhat"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

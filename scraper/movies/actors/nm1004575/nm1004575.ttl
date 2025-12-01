@@ -1,0 +1,141 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1004575/> a schema:Person ;
+    schema:name "Aditya Lakhia" ;
+    schema:url <https://www.imdb.com/name/nm1004575/> ;
+    schema:jobTitle "Actor", "Second Unit or Assistant Director", "Producer" ;
+    schema:description "Aditya Lakhia. Actor: Jo Jeeta Wohi Sikandar. Aditya Lakhia is known for Jo Jeeta Wohi Sikandar (1992), Lagaan: Once Upon a Time in India (2001) and Shootout at Lokhandwala (2007)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNGYzOTk3NjAtM2Y1Ni00OGY2LTlhNTktZDNlMmYxZWYxMTc5XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10011102/>,    # The Sholay Girl
+                       <https://www.imdb.com/title/tt6892028/>,    # Bhog
+                       <https://www.imdb.com/title/tt8585748/>,    # Let them play
+                       <https://www.imdb.com/title/tt5185044/>,    # Holding Back
+                       <https://www.imdb.com/title/tt2357489/> ; # Zanjeer
+
+
+    schema:video <https://www.imdb.com/video/vi2883632665/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1004575/mediaviewer/rm185393152/>,
+                 <https://www.imdb.com/name/nm1004575/mediaviewer/rm4183241728/>,
+                 <https://www.imdb.com/name/nm1004575/mediaviewer/rm859700480/>,
+                 <https://www.imdb.com/name/nm1004575/mediaviewer/rm4250350592/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Sholay Girl (2019)
+<https://www.imdb.com/title/tt10011102/> a schema:Movie ;
+    schema:name "The Sholay Girl" ;
+    schema:url <https://www.imdb.com/title/tt10011102/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1004575/> ;
+        schema:characterName "Reshma's father"
+    ] .
+
+# Bhog (2017)
+<https://www.imdb.com/title/tt6892028/> a schema:Movie ;
+    schema:name "Bhog" ;
+    schema:url <https://www.imdb.com/title/tt6892028/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1004575/> ;
+        schema:characterName "Manoj Uncle"
+    ] .
+
+# Let them play (2016)
+<https://www.imdb.com/title/tt8585748/> a schema:Movie ;
+    schema:name "Let them play" ;
+    schema:url <https://www.imdb.com/title/tt8585748/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1004575/> ;
+        schema:characterName ""
+    ] .
+
+# Holding Back (2015)
+<https://www.imdb.com/title/tt5185044/> a schema:Movie ;
+    schema:name "Holding Back" ;
+    schema:url <https://www.imdb.com/title/tt5185044/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1004575/> ;
+        schema:characterName "Porter"
+    ] .
+
+# Zanjeer (2013)
+<https://www.imdb.com/title/tt2357489/> a schema:Movie ;
+    schema:name "Zanjeer" ;
+    schema:url <https://www.imdb.com/title/tt2357489/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1004575/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2883632665/> a schema:VideoObject ;
+        schema:name "Om Dar-B-Dar (1988) Trailer" ;
+        schema:description "A carefully constructed nonsense about a teenage boy named Om in a small Indian village." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2883632665/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWQxNjNhM2EtOTkzNy00YzY5LTg3NzktNTMyNGEwMGY2NmE1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M21S"^^xsd:duration ;
+        schema:uploadDate "2020-04-22T06:32:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNGYzOTk3NjAtM2Y1Ni00OGY2LTlhNTktZDNlMmYxZWYxMTc5XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGYzOTk3NjAtM2Y1Ni00OGY2LTlhNTktZDNlMmYxZWYxMTc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aamir Khan, Javed Khan Amrohi, Akhilendra Mishra, Rajesh Vivek, Shri Vallabh Vyas, Raghubir Yadav, Raj Zutshi, Amin Hajee, Aditya Lakhia, Dayashankar Pandey, and Yashpal Sharma in Lagaan: Once Upon a Time in India (2001)" ;
+    schema:height "700"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004575/mediaviewer/rm185393152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWEyNzgyODQtY2M4Yi00MDIyLTlkYmItZDBhZjc0MGEwYjc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aamir Khan, Javed Khan Amrohi, Akhilendra Mishra, Rajesh Vivek, Shri Vallabh Vyas, Raghubir Yadav, Raj Zutshi, Amin Hajee, Aditya Lakhia, Dayashankar Pandey, and Yashpal Sharma in Lagaan: Once Upon a Time in India (2001)" ;
+    schema:height "1016"^^xsd:integer ;
+    schema:width "2100"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004575/mediaviewer/rm4183241728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzZjZWZlMDQtZWJjNS00NWMxLThjY2QtNTlmMDJiYjM4MGNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aamir Khan, Javed Khan Amrohi, Akhilendra Mishra, Rajesh Vivek, Shri Vallabh Vyas, Raghubir Yadav, Raj Zutshi, Amin Hajee, Aditya Lakhia, Dayashankar Pandey, and Yashpal Sharma in Lagaan: Once Upon a Time in India (2001)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1050"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004575/mediaviewer/rm859700480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3NDM2ODk2M15BMl5BanBnXkFtZTgwMjg3OTczNDE@._V1_.jpg> ;
+    schema:caption "Tusshar Kapoor, Aditya Lakhia, Vivek Oberoi, Rohit Roy, and Shabbir Ahluwalia in Shootout at Lokhandwala (2007)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "375"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1004575/mediaviewer/rm4250350592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGYzOTk3NjAtM2Y1Ni00OGY2LTlhNTktZDNlMmYxZWYxMTc5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Aamir Khan, Javed Khan Amrohi, Akhilendra Mishra, Rajesh Vivek, Shri Vallabh Vyas, Raghubir Yadav, Raj Zutshi, Amin Hajee, Aditya Lakhia, Dayashankar Pandey, and Yashpal Sharma in Lagaan: Once Upon a Time in India (2001)" ;
+    schema:height "700"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

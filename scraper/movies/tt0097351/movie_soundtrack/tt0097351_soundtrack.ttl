@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097351/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Crazy" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000350/> ; # Beverly D'Angelo
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Crazy" ;
+            schema:author <https://www.imdb.com/name/nm0005268/> # Willie Nelson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Daydream" ;
+        schema:byArtist <https://www.imdb.com/name/nm0522722/> ; # The Lovin' Spoonful
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Daydream" ;
+            schema:author <https://www.imdb.com/name/nm0780949/> # John Sebastian
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jessica" ;
+        schema:byArtist <https://www.imdb.com/name/nm1876655/> ; # The Allman Brothers Band
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jessica" ;
+            schema:author <https://www.imdb.com/name/nm0079420/> # Dickey Betts
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "China Grove" ;
+        schema:byArtist <https://www.imdb.com/name/nm1665121/> ; # The Doobie Brothers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "China Grove" ;
+            schema:author <https://www.imdb.com/name/nm1157474/> # Tom Johnston
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lotus Blossom" ;
+        schema:byArtist <https://www.imdb.com/name/nm0254153/> ; # Duke Ellington
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lotus Blossom" ;
+            schema:author <https://www.imdb.com/name/nm0833968/> # Billy Strayhorn
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000350/> a schema:Person ;
+    schema:name "Beverly D'Angelo" .
+<https://www.imdb.com/name/nm0005268/> a schema:Person ;
+    schema:name "Willie Nelson" .
+<https://www.imdb.com/name/nm0079420/> a schema:Person ;
+    schema:name "Dickey Betts" .
+<https://www.imdb.com/name/nm0254153/> a schema:Person ;
+    schema:name "Duke Ellington" .
+<https://www.imdb.com/name/nm0522722/> a schema:Person ;
+    schema:name "The Lovin' Spoonful" .
+<https://www.imdb.com/name/nm0780949/> a schema:Person ;
+    schema:name "John Sebastian" .
+<https://www.imdb.com/name/nm0833968/> a schema:Person ;
+    schema:name "Billy Strayhorn" .
+<https://www.imdb.com/name/nm1157474/> a schema:Person ;
+    schema:name "Tom Johnston" .
+<https://www.imdb.com/name/nm1665121/> a schema:Person ;
+    schema:name "The Doobie Brothers" .
+<https://www.imdb.com/name/nm1876655/> a schema:Person ;
+    schema:name "The Allman Brothers Band" .
+# ==============================================================================

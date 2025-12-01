@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0387533/> a schema:Person ;
+    schema:name "Jerome Patrick Hoban" ;
+    schema:url <https://www.imdb.com/name/nm0387533/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jerome Patrick Hoban. Actor: Pulp Fiction. Jerome Patrick Hoban is known for Pulp Fiction (1994), Dark Skies (1996) and Growing Pains (1985)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0115151/>,    # Dark Skies
+                       <https://www.imdb.com/title/tt0110912/>,    # Pulp Fiction
+                       <https://www.imdb.com/title/tt0088527/> . # Growing Pains
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dark Skies (1996)
+<https://www.imdb.com/title/tt0115151/> a schema:Movie ;
+    schema:name "Dark Skies" ;
+    schema:url <https://www.imdb.com/title/tt0115151/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0387533/> ;
+        schema:characterName "Ed Sullivan"
+    ] .
+
+# Pulp Fiction (1994)
+<https://www.imdb.com/title/tt0110912/> a schema:Movie ;
+    schema:name "Pulp Fiction" ;
+    schema:url <https://www.imdb.com/title/tt0110912/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0387533/> ;
+        schema:characterName "Ed Sullivan"
+    ] .
+
+# Growing Pains (1990)
+<https://www.imdb.com/title/tt0088527/> a schema:Movie ;
+    schema:name "Growing Pains" ;
+    schema:url <https://www.imdb.com/title/tt0088527/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0387533/> ;
+        schema:characterName "Ed Sullivan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

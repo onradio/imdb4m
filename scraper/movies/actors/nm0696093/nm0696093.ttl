@@ -1,0 +1,165 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0696093/> a schema:Person ;
+    schema:name "Darrin Prescott" ;
+    schema:url <https://www.imdb.com/name/nm0696093/> ;
+    schema:jobTitle "Director", "Second Unit or Assistant Director", "Stunts" ;
+    schema:description "Darrin Prescott. Second Unit or Assistant Director: Baby Driver. Well-respected and sought after Action Director Darrin Prescott, known for his stylized and visceral action in films such as Ford v Ferrari, Baby Driver, Black Panther, the John Wick series, Drive, and his Screen Actors Guild award-winning car chase work in The Bourne Ultimatum, got his start in the film business in 1994.\n\nA stunt double for actors such as Arnold Schwarzenegger..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODA4NWI1NzgtY2Q1ZS00YjFlLTgxODUtYmViZDUzNzkyMjY0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Massachusetts, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1950186/>,    # Le Mans '66
+                       <https://www.imdb.com/title/tt1728860/>,    # Eagleheart
+                       <https://www.imdb.com/title/tt1037705/>,    # The Book of Eli
+                       <https://www.imdb.com/title/tt0167150/>,    # Restraining Order
+                       <https://www.imdb.com/title/tt0119508/>,    # Leather Jacket Love Story
+                       <https://www.imdb.com/title/tt0117803/> ; # Sworn to Justice
+
+
+    schema:video <https://www.imdb.com/video/vi1454618905/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0696093/mediaviewer/rm2278467586/>,
+                 <https://www.imdb.com/name/nm0696093/mediaviewer/rm3155336448/>,
+                 <https://www.imdb.com/name/nm0696093/mediaviewer/rm2403895040/>,
+                 <https://www.imdb.com/name/nm0696093/mediaviewer/rm2261690370/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Le Mans '66 (2019)
+<https://www.imdb.com/title/tt1950186/> a schema:Movie ;
+    schema:name "Le Mans '66" ;
+    schema:url <https://www.imdb.com/title/tt1950186/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Bob Bondurant"
+    ] .
+
+# Eagleheart (2011)
+<https://www.imdb.com/title/tt1728860/> a schema:Movie ;
+    schema:name "Eagleheart" ;
+    schema:url <https://www.imdb.com/title/tt1728860/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Hitman"
+    ] .
+
+# The Book of Eli (2010)
+<https://www.imdb.com/title/tt1037705/> a schema:Movie ;
+    schema:name "The Book of Eli" ;
+    schema:url <https://www.imdb.com/title/tt1037705/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Suburban Driver"
+    ] .
+
+# Restraining Order (1999)
+<https://www.imdb.com/title/tt0167150/> a schema:Movie ;
+    schema:name "Restraining Order" ;
+    schema:url <https://www.imdb.com/title/tt0167150/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Phil"
+    ] .
+
+# Leather Jacket Love Story (1997)
+<https://www.imdb.com/title/tt0119508/> a schema:Movie ;
+    schema:name "Leather Jacket Love Story" ;
+    schema:url <https://www.imdb.com/title/tt0119508/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Thug #2"
+    ] .
+
+# Sworn to Justice (1996)
+<https://www.imdb.com/title/tt0117803/> a schema:Movie ;
+    schema:name "Sworn to Justice" ;
+    schema:url <https://www.imdb.com/title/tt0117803/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0696093/> ;
+        schema:characterName "Officer Clark"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1454618905/> a schema:VideoObject ;
+        schema:name "Director Reel - Action" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1454618905/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2RmZDI2ZGEtY2E1NC00OTA5LTg5MjMtY2JkZDY0MDg5NjM4XkEyXkFqcGdeQXVyMjcwMzU1OTM@._V1_.jpg" ;
+        schema:duration "PT1M43S"^^xsd:duration ;
+        schema:uploadDate "2017-04-07T17:54:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODA4NWI1NzgtY2Q1ZS00YjFlLTgxODUtYmViZDUzNzkyMjY0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA4NWI1NzgtY2Q1ZS00YjFlLTgxODUtYmViZDUzNzkyMjY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darrin Prescott" ;
+    schema:height "966"^^xsd:integer ;
+    schema:width "750"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696093/mediaviewer/rm2278467586/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmYyOGJhYWYtYzFhMS00MzZjLTkzYmEtNDU3MTBhZDZlODdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "The Last Stand" ;
+    schema:height "564"^^xsd:integer ;
+    schema:width "947"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696093/mediaviewer/rm3155336448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIwNjYxOTM0M15BMl5BanBnXkFtZTcwMzk1NTczMQ@@._V1_.jpg> ;
+    schema:caption "Darrin Prescott" ;
+    schema:height "506"^^xsd:integer ;
+    schema:width "391"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696093/mediaviewer/rm2403895040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg1Mjg4NjcxNV5BMl5BanBnXkFtZTcwNDMwNzgwNA@@._V1_.jpg> ;
+    schema:caption "Billy Bob Thornton, Darrin Prescott, and George Tillman in Faster (2010)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0696093/mediaviewer/rm2261690370/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA4NWI1NzgtY2Q1ZS00YjFlLTgxODUtYmViZDUzNzkyMjY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Darrin Prescott" ;
+    schema:height "966"^^xsd:integer ;
+    schema:width "750"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm12214776/> a schema:Person ;
+    schema:name "Kim Ri-woo" ;
+    schema:url <https://www.imdb.com/name/nm12214776/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kim Ri-woo. Actor: The Handmaiden. Kim Ri-woo is known for The Handmaiden (2016), XO, Kitty (2023) and Pachinko (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4016934/> .    # The Handmaiden
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12214776/> ;
+        schema:characterName "Japanese Officer 1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

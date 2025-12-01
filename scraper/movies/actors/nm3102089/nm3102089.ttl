@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3102089/> a schema:Person ;
+    schema:name "Rob Degnan" ;
+    schema:url <https://www.imdb.com/name/nm3102089/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rob Degnan. Actor: Hachi: A Dog's Tale. Rob Degnan is known for Hachi: A Dog's Tale (2009) and Transfiguration (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10278340/>,    # Transfiguration
+                       <https://www.imdb.com/title/tt1028532/> . # Hachi: A Dog's Tale
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Transfiguration (2019)
+<https://www.imdb.com/title/tt10278340/> a schema:Movie ;
+    schema:name "Transfiguration" ;
+    schema:url <https://www.imdb.com/title/tt10278340/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3102089/> ;
+        schema:characterName "Roland Israel"
+    ] .
+
+# Hachi: A Dog's Tale (2009)
+<https://www.imdb.com/title/tt1028532/> a schema:Movie ;
+    schema:name "Hachi: A Dog's Tale" ;
+    schema:url <https://www.imdb.com/title/tt1028532/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3102089/> ;
+        schema:characterName "Teddy Barnes"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

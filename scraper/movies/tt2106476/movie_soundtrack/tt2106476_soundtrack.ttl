@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2106476/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Moondance" ;
+        schema:byArtist <https://www.imdb.com/name/nm0607341/> ; # Van Morrison
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Moondance" ;
+            schema:author <https://www.imdb.com/name/nm0607341/> # Van Morrison
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Julen har bragt velsignet bud" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Julen har bragt velsignet bud" ;
+            schema:composer <https://www.imdb.com/name/nm0923433/> ; # C.E.F. Weyse
+            schema:lyricist <https://www.imdb.com/name/nm1206972/> # B.S. Ingemann
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jingle Bells" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jingle Bells" ;
+            schema:author <https://www.imdb.com/name/nm0682602/> # James Pierpont
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mit Hjerte altid vanker" ;
+        schema:byArtist <https://www.imdb.com/name/nm4825991/> ; # Musica Ficta
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mit Hjerte altid vanker" ;
+            schema:author <https://www.imdb.com/name/nm0630753/> # Carl Nielsen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In the Bleak Midwinter" ;
+        schema:byArtist <https://www.imdb.com/name/nm2514007/> ; # The Worcester Cathedral Choir
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "In the Bleak Midwinter" ;
+            schema:composer <https://www.imdb.com/name/nm0392304/> ; # Gustav Holst
+            schema:lyricist <https://www.imdb.com/name/nm1966526/> # Christina Georgina Rossetti
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Was Not To You What You Were To Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm3081106/> ; # Andi Almqvist
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Was Not To You What You Were To Me" ;
+            schema:author <https://www.imdb.com/name/nm3081106/> # Andi Almqvist
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Es ist ein Ros' entsprungen" ;
+        schema:byArtist <https://www.imdb.com/name/nm0845287/> ; # Wiener Sängerknaben
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Es ist ein Ros' entsprungen" ;
+            schema:author <https://www.imdb.com/name/nm1680758/> # Michael Praetorius
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Et barn er født i Betlehem" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Et barn er født i Betlehem" ;
+            schema:lyricist <https://www.imdb.com/name/nm5437953/> # Nikolai Frederik Severin Grundtvig
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0392304/> a schema:Person ;
+    schema:name "Gustav Holst" .
+<https://www.imdb.com/name/nm0607341/> a schema:Person ;
+    schema:name "Van Morrison" .
+<https://www.imdb.com/name/nm0630753/> a schema:Person ;
+    schema:name "Carl Nielsen" .
+<https://www.imdb.com/name/nm0682602/> a schema:Person ;
+    schema:name "James Pierpont" .
+<https://www.imdb.com/name/nm0845287/> a schema:Person ;
+    schema:name "Wiener Sängerknaben" .
+<https://www.imdb.com/name/nm0923433/> a schema:Person ;
+    schema:name "C.E.F. Weyse" .
+<https://www.imdb.com/name/nm1206972/> a schema:Person ;
+    schema:name "B.S. Ingemann" .
+<https://www.imdb.com/name/nm1680758/> a schema:Person ;
+    schema:name "Michael Praetorius" .
+<https://www.imdb.com/name/nm1966526/> a schema:Person ;
+    schema:name "Christina Georgina Rossetti" .
+<https://www.imdb.com/name/nm2514007/> a schema:Person ;
+    schema:name "The Worcester Cathedral Choir" .
+<https://www.imdb.com/name/nm3081106/> a schema:Person ;
+    schema:name "Andi Almqvist" .
+<https://www.imdb.com/name/nm4825991/> a schema:Person ;
+    schema:name "Musica Ficta" .
+<https://www.imdb.com/name/nm5437953/> a schema:Person ;
+    schema:name "Nikolai Frederik Severin Grundtvig" .
+# ==============================================================================

@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0597042/> a schema:Person ;
+    schema:name "Clotilde Mollet" ;
+    schema:url <https://www.imdb.com/name/nm0597042/> ;
+    schema:jobTitle "Actress", "Music Department" ;
+    schema:description "Clotilde Mollet. Actress: Amélie. Clotilde Mollet is known for Amélie (2001), The Red Violin (1998) and Untouchable (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11469918/>,    # Laetitia
+                       <https://www.imdb.com/title/tt7543930/> ; # In Safe Hands
+
+
+    schema:video <https://www.imdb.com/video/vi289190937/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Laetitia (2019)
+<https://www.imdb.com/title/tt11469918/> a schema:Movie ;
+    schema:name "Laetitia" ;
+    schema:url <https://www.imdb.com/title/tt11469918/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0597042/> ;
+        schema:characterName "Michelle Patron"
+    ] .
+
+# In Safe Hands (2018)
+<https://www.imdb.com/title/tt7543930/> a schema:Movie ;
+    schema:name "In Safe Hands" ;
+    schema:url <https://www.imdb.com/title/tt7543930/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0597042/> ;
+        schema:characterName "Mathilde"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi289190937/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A scheming servant works for a wealthy couple in France during the late 19th century." ;
+        schema:embedUrl <https://www.imdb.com/video/vi289190937/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjE3MjU1Nzc0OF5BMl5BanBnXkFtZTgwMTM5MDk5ODE@._V1_.jpg" ;
+        schema:duration "PT2M9S"^^xsd:duration ;
+        schema:uploadDate "2016-05-24T10:53:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,190 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0040012/> a schema:Person ;
+    schema:name "Ali Astin" ;
+    schema:url <https://www.imdb.com/name/nm0040012/> ;
+    schema:birthDate "1996-11-27"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:alternateName "Ali" ;
+    schema:description "Ali Astin. Actress: The Lord of the Rings: The Return of the King. Ali Astin was born on 27 November 1996 in California, USA. She is an actress, known for The Lord of the Rings: The Return of the King (2003), Bad Kids of Crestview Academy (2017) and Matter of Time." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjE5NjA5NmEtNjhiNC00YzRjLTlhMTktM2IzODlkMTUxYjFmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10922542/>,    # Two Rings
+                       <https://www.imdb.com/title/tt12381750/>,    # Apocalypse Society
+                       <https://www.imdb.com/title/tt3349578/>,    # Bad Kids of Crestview Academy
+                       <https://www.imdb.com/title/tt2066048/>,    # Ribbit
+                       <https://www.imdb.com/title/tt0167260/> ; # The Lord of the Rings: The Return of the King
+
+
+    schema:video <https://www.imdb.com/video/vi640267801/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0040012/mediaviewer/rm2729026306/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm3853099778/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm1554621186/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm374408960/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm2745803522/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm4205355778/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm1834223360/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm391382784/>,
+                 <https://www.imdb.com/name/nm0040012/mediaviewer/rm575932160/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Two Rings (2019)
+<https://www.imdb.com/title/tt10922542/> a schema:Movie ;
+    schema:name "Two Rings" ;
+    schema:url <https://www.imdb.com/title/tt10922542/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0040012/> ;
+        schema:characterName "Alice"
+    ] .
+
+# Apocalypse Society (2018)
+<https://www.imdb.com/title/tt12381750/> a schema:Movie ;
+    schema:name "Apocalypse Society" ;
+    schema:url <https://www.imdb.com/title/tt12381750/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0040012/> ;
+        schema:characterName "Marie"
+    ] .
+
+# Bad Kids of Crestview Academy (2017)
+<https://www.imdb.com/title/tt3349578/> a schema:Movie ;
+    schema:name "Bad Kids of Crestview Academy" ;
+    schema:url <https://www.imdb.com/title/tt3349578/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0040012/> ;
+        schema:characterName "Ethel"
+    ] .
+
+# Ribbit (2014)
+<https://www.imdb.com/title/tt2066048/> a schema:Movie ;
+    schema:name "Ribbit" ;
+    schema:url <https://www.imdb.com/title/tt2066048/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0040012/> ;
+        schema:characterName "Princess"
+    ] .
+
+# The Lord of the Rings: The Return of the King (2003)
+<https://www.imdb.com/title/tt0167260/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Return of the King" ;
+    schema:url <https://www.imdb.com/title/tt0167260/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0040012/> ;
+        schema:characterName "Elanor Gamgee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi640267801/> a schema:VideoObject ;
+        schema:name "Bad Kids of Crestview Academy 30 Second Audience Reaction Trailer" ;
+        schema:description "Bad Kids of Crestview Academy 30 Second Audience Reaction Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi640267801/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMzMyMzE5MzAyM15BMl5BanBnXkFtZTgwOTcxMjIxMTI@._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2017-01-14T01:31:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjE5NjA5NmEtNjhiNC00YzRjLTlhMTktM2IzODlkMTUxYjFmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjE5NjA5NmEtNjhiNC00YzRjLTlhMTktM2IzODlkMTUxYjFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ali Astin" ;
+    schema:height "6085"^^xsd:integer ;
+    schema:width "4058"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm2729026306/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzBkNmQ2YmItZDJmOS00Yjk2LThjZTUtNDA1MDQyMzFkODNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ali Astin and Pete Gardner in Miss Valentine (2025)" ;
+    schema:height "1684"^^xsd:integer ;
+    schema:width "2990"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm3853099778/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2I3Njk1MGYtMTFiMC00NzNkLTlmOWItZmExMTBhN2Y1ODVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "TIFF 2025" ;
+    schema:height "1634"^^xsd:integer ;
+    schema:width "1188"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm1554621186/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjAyNGViNGMtZTQzZi00NWViLWI3NjEtMDFkOTZkNDE0NWI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ali Astin in The Morning Show (2019)" ;
+    schema:height "1406"^^xsd:integer ;
+    schema:width "2536"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm374408960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODE1NzY1NjgwMV5BMl5BanBnXkFtZTgwMjMyMTg2MDI@._V1_.jpg> ;
+    schema:caption "Sean Astin and Ali Astin in Bad Kids of Crestview Academy (2017)" ;
+    schema:height "1418"^^xsd:integer ;
+    schema:width "2058"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm2745803522/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzkzZGMxNzctNDVjNi00NDMyLThmMTgtZjZkMjgzZjNjYjAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ali Astin" ;
+    schema:height "1276"^^xsd:integer ;
+    schema:width "3018"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm4205355778/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTdjMzRiMWUtZGU3My00NmViLWJiM2YtZjQ4MmI5N2FkYzYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sean Astin and Ali Astin" ;
+    schema:height "791"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm1834223360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGRjOThhZDktMzAwMS00MWM5LTlmMmItYjUxODM5ODg2MDVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sean Astin and Ali Astin in Bad Kids of Crestview Academy (2017)" ;
+    schema:height "3744"^^xsd:integer ;
+    schema:width "5616"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm391382784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDZkZmMwZGYtOTU2NS00ZWU3LTg2YmItZDg1MzFmOWY1NGE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sean Astin and Ali Astin in Bad Kids of Crestview Academy (2017)" ;
+    schema:height "3648"^^xsd:integer ;
+    schema:width "5472"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0040012/mediaviewer/rm575932160/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQ4MWMyZmUtZTRiNS00NTFhLTkxNTQtZDNkNDcxNjhiN2UwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ali Astin in Bad Kids of Crestview Academy (2017)" ;
+    schema:height "360"^^xsd:integer ;
+    schema:width "550"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

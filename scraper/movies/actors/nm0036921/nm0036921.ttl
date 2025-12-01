@@ -1,0 +1,86 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0036921/> a schema:Person ;
+    schema:name "Charlotte Aronofsky" ;
+    schema:url <https://www.imdb.com/name/nm0036921/> ;
+    schema:birthDate "1941-01-24"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:description "Charlotte Aronofsky. Actress: Requiem for a Dream. Charlotte Aronofsky was born on 24 January 1941 in Brooklyn, New York City, New York, USA. She is an actress, known for Requiem for a Dream (2000), Pi (1998) and Black Swan (2010). She is married to Abraham Aronofsky." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0947798/>,    # Black Swan
+                       <https://www.imdb.com/title/tt1125849/>,    # The Wrestler
+                       <https://www.imdb.com/title/tt0180093/> ; # Requiem for a Dream
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0036921/mediaviewer/rm3252517632/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Black Swan (2010)
+<https://www.imdb.com/title/tt0947798/> a schema:Movie ;
+    schema:name "Black Swan" ;
+    schema:url <https://www.imdb.com/title/tt0947798/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0036921/> ;
+        schema:characterName "Mrs. Stein"
+    ] .
+
+# The Wrestler (2008)
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0036921/> ;
+        schema:characterName "Annoyed Woman at Deli Counter"
+    ] .
+
+# Requiem for a Dream (2000)
+<https://www.imdb.com/title/tt0180093/> a schema:Movie ;
+    schema:name "Requiem for a Dream" ;
+    schema:url <https://www.imdb.com/title/tt0180093/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0036921/> ;
+        schema:characterName "Mrs. Miles"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0036921/mediaviewer/rm3252517632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDI5MTg1ZjctM2UxNS00ZTk4LWFlNjgtYzRiNWE2NTEyYjdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jared Leto, Marlon Wayans, Charlotte Aronofsky, Marcia Jean Kurtz, Louise Lasser, Janet Sarno, Suzanne Shepherd, and Joanne Gordon in Requiem for a Dream (2000)" ;
+    schema:height "1430"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

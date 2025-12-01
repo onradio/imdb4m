@@ -1,0 +1,66 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3596017/> a schema:Person ;
+    schema:name "Alejandro Abelenda" ;
+    schema:url <https://www.imdb.com/name/nm3596017/> ;
+    schema:birthDate "1988-06-25"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:alternateName "Ale Abelenda" ;
+    schema:description "Alejandro Abelenda. Actor: The Secret in Their Eyes. Alejandro Abelenda was born on 25 June 1988 in Corrientes, Argentina. He is an actor and director, known for The Secret in Their Eyes (2009) and Una de Cuarón (2014)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Corrientes, Argentina"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4102936/>,    # Una de Cuarón
+                       <https://www.imdb.com/title/tt1305806/> . # The Secret in Their Eyes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Una de Cuarón (2014)
+<https://www.imdb.com/title/tt4102936/> a schema:Movie ;
+    schema:name "Una de Cuarón" ;
+    schema:url <https://www.imdb.com/title/tt4102936/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3596017/> ;
+        schema:characterName ""
+    ] .
+
+# The Secret in Their Eyes (2009)
+<https://www.imdb.com/title/tt1305806/> a schema:Movie ;
+    schema:name "The Secret in Their Eyes" ;
+    schema:url <https://www.imdb.com/title/tt1305806/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3596017/> ;
+        schema:characterName "Pinche Mariano"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

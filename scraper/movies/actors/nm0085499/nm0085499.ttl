@@ -1,0 +1,121 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0085499/> a schema:Person ;
+    schema:name "Samuel Lord Black" ;
+    schema:url <https://www.imdb.com/name/nm0085499/> ;
+    schema:birthDate "1962-05-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Visual Effects" ;
+    schema:alternateName "The Enlightened Penguin", "The Fire Breathing Penguin" ;
+    schema:description "Samuel Lord Black. Actor: Monsters, Inc.. Samuel Lord Black was born on 4 May 1962 in Windsor, Ontario, Canada. He is an actor, known for Monsters, Inc. (2001), The Incredibles (2004) and Finding Nemo (2003). He has been married to Kathleen Lord Black since 4 July 2003." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Windsor, Ontario, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1437330/>,    # Tracy
+                       <https://www.imdb.com/title/tt2258493/>,    # Monsters, Inc. Scream Arena
+                       <https://www.imdb.com/title/tt6473652/>,    # Mike's Monstrous Adventure
+                       <https://www.imdb.com/title/tt13237026/>,    # Monsters, Inc. DVD Read-Along
+                       <https://www.imdb.com/title/tt0198781/>,    # Monsters, Inc.
+                       <https://www.imdb.com/title/tt12494574/> . # M.U.G.E.N
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tracy (2009)
+<https://www.imdb.com/title/tt1437330/> a schema:Movie ;
+    schema:name "Tracy" ;
+    schema:url <https://www.imdb.com/title/tt1437330/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName "CBM Executive"
+    ] .
+
+# Monsters, Inc. Scream Arena (2002)
+<https://www.imdb.com/title/tt2258493/> a schema:Movie ;
+    schema:name "Monsters, Inc. Scream Arena" ;
+    schema:url <https://www.imdb.com/title/tt2258493/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName "George"
+    ] .
+
+# Mike's Monstrous Adventure (2002)
+<https://www.imdb.com/title/tt6473652/> a schema:Movie ;
+    schema:name "Mike's Monstrous Adventure" ;
+    schema:url <https://www.imdb.com/title/tt6473652/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName "George Sanderson"
+    ] .
+
+# Monsters, Inc. DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13237026/> a schema:Movie ;
+    schema:name "Monsters, Inc. DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13237026/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName "George"
+    ] .
+
+# Monsters, Inc. (2001)
+<https://www.imdb.com/title/tt0198781/> a schema:Movie ;
+    schema:name "Monsters, Inc." ;
+    schema:url <https://www.imdb.com/title/tt0198781/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName "George"
+    ] .
+
+# M.U.G.E.N (1999)
+<https://www.imdb.com/title/tt12494574/> a schema:Movie ;
+    schema:name "M.U.G.E.N" ;
+    schema:url <https://www.imdb.com/title/tt12494574/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0085499/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

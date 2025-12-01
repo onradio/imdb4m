@@ -1,0 +1,281 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0141246/> a schema:Person ;
+    schema:name "Hunter Carson" ;
+    schema:url <https://www.imdb.com/name/nm0141246/> ;
+    schema:birthDate "1975-12-26"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Writer" ;
+    schema:description "Hunter Carson. Actor: Paris, Texas. Hunter Carson was born on 26 December 1975 in Culver City, California, USA. He is an actor and producer, known for Paris, Texas (1984), Invaders from Mars (1986) and With It (2004). He has been married to Elyse Tyler since 16 May 2011. They have three children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA4NjI5NTA5MV5BMl5BanBnXkFtZTYwNjU4MjU5._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Culver City, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0087884/>,    # Paris, Texas
+                       <https://www.imdb.com/title/tt0091276/>,    # Invaders from Mars
+                       <https://www.imdb.com/title/tt0399896/>,    # With It
+                       <https://www.imdb.com/title/tt7125570/>,    # Scaramouch
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1803158/>,    # For Rent
+                       <https://www.imdb.com/title/tt1309183/>,    # The Locker
+                       <https://www.imdb.com/title/tt1819534/>,    # Grand Prix: The Winning Tale
+                       <https://www.imdb.com/title/tt1192621/>,    # Crushed
+                       <https://www.imdb.com/title/tt0455956/>,    # Godless.
+                       <https://www.imdb.com/title/tt0245356/>,    # Perfume
+                       <https://www.imdb.com/title/tt0176579/>,    # Bullfighter
+                       <https://www.imdb.com/title/tt0139649/>,    # Too Tired to Die
+                       <https://www.imdb.com/title/tt0095665/>,    # Mr. North
+                       <https://www.imdb.com/title/tt0092400/>,    # Married with Children
+                       <https://www.imdb.com/title/tt0199214/> ; # Faerie Tale Theatre
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3060860697/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0141246/mediaviewer/rm1016606976/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm1066938624/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm2905800960/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm2939355392/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm1698680320/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm3777419264/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm3535804161/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm2327844609/>,
+                 <https://www.imdb.com/name/nm0141246/mediaviewer/rm3168767233/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087884/> a schema:Movie ;
+    schema:name "Paris, Texas" ;
+    schema:url <https://www.imdb.com/title/tt0087884/> .
+
+<https://www.imdb.com/title/tt0091276/> a schema:Movie ;
+    schema:name "Invaders from Mars" ;
+    schema:url <https://www.imdb.com/title/tt0091276/> .
+
+<https://www.imdb.com/title/tt0399896/> a schema:Movie ;
+    schema:name "With It" ;
+    schema:url <https://www.imdb.com/title/tt0399896/> .
+
+<https://www.imdb.com/title/tt7125570/> a schema:Movie ;
+    schema:name "Scaramouch" ;
+    schema:url <https://www.imdb.com/title/tt7125570/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# For Rent (2011)
+<https://www.imdb.com/title/tt1803158/> a schema:Movie ;
+    schema:name "For Rent" ;
+    schema:url <https://www.imdb.com/title/tt1803158/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Kevin Jones"
+    ] .
+
+# The Locker (2011)
+<https://www.imdb.com/title/tt1309183/> a schema:Movie ;
+    schema:name "The Locker" ;
+    schema:url <https://www.imdb.com/title/tt1309183/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Killer - on TV"
+    ] .
+
+# Grand Prix: The Winning Tale (2011)
+<https://www.imdb.com/title/tt1819534/> a schema:Movie ;
+    schema:name "Grand Prix: The Winning Tale" ;
+    schema:url <https://www.imdb.com/title/tt1819534/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Dad"
+    ] .
+
+# Crushed (2009)
+<https://www.imdb.com/title/tt1192621/> a schema:Movie ;
+    schema:name "Crushed" ;
+    schema:url <https://www.imdb.com/title/tt1192621/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Tortured Girl's Boyfriend"
+    ] .
+
+# Godless. (2005)
+<https://www.imdb.com/title/tt0455956/> a schema:Movie ;
+    schema:name "Godless." ;
+    schema:url <https://www.imdb.com/title/tt0455956/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Perfume (2001)
+<https://www.imdb.com/title/tt0245356/> a schema:Movie ;
+    schema:name "Perfume" ;
+    schema:url <https://www.imdb.com/title/tt0245356/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Peter McMichaels"
+    ] .
+
+# Bullfighter (2000)
+<https://www.imdb.com/title/tt0176579/> a schema:Movie ;
+    schema:name "Bullfighter" ;
+    schema:url <https://www.imdb.com/title/tt0176579/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Mary's Brother"
+    ] .
+
+# Too Tired to Die (1998)
+<https://www.imdb.com/title/tt0139649/> a schema:Movie ;
+    schema:name "Too Tired to Die" ;
+    schema:url <https://www.imdb.com/title/tt0139649/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Man on the Pier"
+    ] .
+
+# Mr. North (1988)
+<https://www.imdb.com/title/tt0095665/> a schema:Movie ;
+    schema:name "Mr. North" ;
+    schema:url <https://www.imdb.com/title/tt0095665/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Galloper Skeel"
+    ] .
+
+# Married with Children (1987)
+<https://www.imdb.com/title/tt0092400/> a schema:Movie ;
+    schema:name "Married with Children" ;
+    schema:url <https://www.imdb.com/title/tt0092400/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Bud Bundy"
+    ] .
+
+# Faerie Tale Theatre (1987)
+<https://www.imdb.com/title/tt0199214/> a schema:Movie ;
+    schema:name "Faerie Tale Theatre" ;
+    schema:url <https://www.imdb.com/title/tt0199214/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0141246/> ;
+        schema:characterName "Little Rip"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3060860697/> a schema:VideoObject ;
+        schema:name "She&apos;s Crushed" ;
+        schema:description "Trailer for this stalker thriller" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3060860697/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM1MDc3MDgxMV5BMl5BanBnXkFtZTcwOTY3Mzg0Mw@@._V1_.jpg" ;
+        schema:duration "PT47S"^^xsd:duration ;
+        schema:uploadDate "2010-05-18T15:50:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA4NjI5NTA5MV5BMl5BanBnXkFtZTYwNjU4MjU5._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4NjI5NTA5MV5BMl5BanBnXkFtZTYwNjU4MjU5._V1_.jpg> ;
+    schema:caption "Hunter Carson in Invaders from Mars (1986)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "334"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm1016606976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjI5NjViMmYtYzVkNy00MmRjLThjOTYtZjNlNTQ1OTdkMDRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Carson in For Rent (2011)" ;
+    schema:height "479"^^xsd:integer ;
+    schema:width "712"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm1066938624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ4OGJlY2YtZmI0YS00OWRlLWI0NDgtZjdlZmYzZGIyNDZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hunter Carson and R. Bruce Elliott in For Rent (2011)" ;
+    schema:height "482"^^xsd:integer ;
+    schema:width "701"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm2905800960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2YwODg2MTktODIxZS00MmY4LWJlODgtY2Q0MjRiYjhhZTdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Louise Fletcher and Hunter Carson in Invaders from Mars (1986)" ;
+    schema:height "2442"^^xsd:integer ;
+    schema:width "3015"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm2939355392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjdmZTJlOWEtOTI5ZC00MThkLWFjYzgtYTBmYmI3YmI4NTcyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Black and Hunter Carson in Invaders from Mars (1986)" ;
+    schema:height "2430"^^xsd:integer ;
+    schema:width "3013"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm1698680320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzNjg1NjUyN15BMl5BanBnXkFtZTgwMTgxMDA4MTE@._V1_.jpg> ;
+    schema:caption "Harry Dean Stanton and Hunter Carson in Paris, Texas (1984)" ;
+    schema:height "1485"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm3777419264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk1OTk1MTQ2M15BMl5BanBnXkFtZTgwMDU1NTUwMDE@._V1_.jpg> ;
+    schema:caption "karenblack" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "341"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm3535804161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWI5OGUzMGQtOGUxZS00MGNmLTgzY2MtZTFhZmRiMWYwYjMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Black and Hunter Carson" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "350"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm2327844609/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODI0NzgwMDMtMWI3Zi00ODg5LWEyYzgtY2RlYmQwODU0ZTQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Black, Hunter Carson, and L.M. Kit Carson" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0141246/mediaviewer/rm3168767233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWY1YTY4YzAtYWVhMS00ZmNhLWI1ZWYtMmMzNjc4OGViNDIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Karen Black and Hunter Carson in Invaders from Mars (1986)" ;
+    schema:height "999"^^xsd:integer ;
+    schema:width "701"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0141246/>
+    schema:sameAs <https://www.instagram.com/huntermcarson/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

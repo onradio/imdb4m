@@ -1,0 +1,198 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7887725/> a schema:Person ;
+    schema:name "Fionn Whitehead" ;
+    schema:url <https://www.imdb.com/name/nm7887725/> ;
+    schema:birthDate "1997-07-18"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Fionn Whitehead. Actor: Dunkirk. From a family of Londoners, Fionn Whitehead was born and raised in Richmond upon Thames, Surrey (southwest England and also one of the home counties bordering Greater London). He is the son of Tim and Linda Whitehead, and has three older siblings: sisters Maisie and Hattie, and brother Sonny. Maisie, the eldest of the four, is a dancer and an Aerialist-Yoga enthusiast, while Hattie is a..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTA2OTI5MTYyOTdeQTJeQWpwZ15BbWU4MDY0MzkwOTIy._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Richmond upon Thames, London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5013056/>,    # Dunkirk
+                       <https://www.imdb.com/title/tt6040662/>,    # The Children Act
+                       <https://www.imdb.com/title/tt9495224/>,    # Black Mirror: Bandersnatch
+                       <https://www.imdb.com/title/tt9664108/>,    # Voyagers
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7587282/>,    # Port Authority
+                       <https://www.imdb.com/title/tt7303530/>,    # Roads
+                       <https://www.imdb.com/title/tt7230406/>,    # Queers
+                       <https://www.imdb.com/title/tt5214372/> ; # Him
+
+
+    schema:video <https://www.imdb.com/video/vi4151428889/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7887725/mediaviewer/rm2318611969/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm1899181569/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm1915958785/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm2375339521/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm2157235713/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm4264351745/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm1924429056/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm1907651840/>,
+                 <https://www.imdb.com/name/nm7887725/mediaviewer/rm1890874624/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5013056/> a schema:Movie ;
+    schema:name "Dunkirk" ;
+    schema:url <https://www.imdb.com/title/tt5013056/> .
+
+<https://www.imdb.com/title/tt6040662/> a schema:Movie ;
+    schema:name "The Children Act" ;
+    schema:url <https://www.imdb.com/title/tt6040662/> .
+
+<https://www.imdb.com/title/tt9495224/> a schema:Movie ;
+    schema:name "Black Mirror: Bandersnatch" ;
+    schema:url <https://www.imdb.com/title/tt9495224/> .
+
+<https://www.imdb.com/title/tt9664108/> a schema:Movie ;
+    schema:name "Voyagers" ;
+    schema:url <https://www.imdb.com/title/tt9664108/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Port Authority (2019)
+<https://www.imdb.com/title/tt7587282/> a schema:Movie ;
+    schema:name "Port Authority" ;
+    schema:url <https://www.imdb.com/title/tt7587282/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7887725/> ;
+        schema:characterName "Paul"
+    ] .
+
+# Roads (2019)
+<https://www.imdb.com/title/tt7303530/> a schema:Movie ;
+    schema:name "Roads" ;
+    schema:url <https://www.imdb.com/title/tt7303530/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7887725/> ;
+        schema:characterName "Gyllen"
+    ] .
+
+# Queers (2017)
+<https://www.imdb.com/title/tt7230406/> a schema:Movie ;
+    schema:name "Queers" ;
+    schema:url <https://www.imdb.com/title/tt7230406/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7887725/> ;
+        schema:characterName "Andrew"
+    ] .
+
+# Him (2016)
+<https://www.imdb.com/title/tt5214372/> a schema:Movie ;
+    schema:name "Him" ;
+    schema:url <https://www.imdb.com/title/tt5214372/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7887725/> ;
+        schema:characterName "Him"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4151428889/> a schema:VideoObject ;
+        schema:name "Great Expectations: Olivia Colman Transformed Into Miss Havisham" ;
+        schema:description "Great Expectations: Olivia Colman Transformed Into Miss Havisham" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4151428889/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDVkYjE3YmQtYTlkMC00YTZmLThkNDEtOGI3YjE1ODUzZTY4XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M7S"^^xsd:duration ;
+        schema:uploadDate "2023-12-23T13:27:39Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTA2OTI5MTYyOTdeQTJeQWpwZ15BbWU4MDY0MzkwOTIy._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA2OTI5MTYyOTdeQTJeQWpwZ15BbWU4MDY0MzkwOTIy._V1_.jpg> ;
+    schema:caption "Fionn Whitehead at an event for Dunkirk (2017)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm2318611969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY4MDQ4MzYtNDIzNi00NjZjLWI4ZjktNDg1OTcwNWRhNzEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Fionn Whitehead in Great Expectations (2023)" ;
+    schema:height "2250"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm1899181569/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEyYjU1NDEtMzZhNi00YTU0LTkwYjctN2JjYjAxZmY1MGY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Olivia Colman and Fionn Whitehead in Great Expectations (2023)" ;
+    schema:height "2250"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm1915958785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTE0NjMzMTktZWM1Yi00ZTI4LTgxMzUtMzRjZWIwOTQ4NmMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shalom Brune-Franklin and Fionn Whitehead in Great Expectations (2023)" ;
+    schema:height "2045"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm2375339521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTg5YzkxMWItMTE1NC00MDliLTg5NjItNjJkNzc3ZTFhMTYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lily-Rose Depp and Fionn Whitehead in Voyagers (2021)" ;
+    schema:height "4024"^^xsd:integer ;
+    schema:width "6048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm2157235713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzI3NDYyZjUtMmNiZS00YjVkLTk5ODYtOWQ4YjRiOGJlNWI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tye Sheridan and Fionn Whitehead in Voyagers (2021)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm4264351745/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzBlNTZkMzQtZTQ1MS00M2M0LWFkODctMDQzMmQ2NDBmYWUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Fionn Whitehead in Dunkirk (2017)" ;
+    schema:height "612"^^xsd:integer ;
+    schema:width "1364"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm1924429056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM1OTg3MjQ2N15BMl5BanBnXkFtZTgwMDQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1152"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm1907651840/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQxMTM5ODc1NF5BMl5BanBnXkFtZTgwMTQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1364"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7887725/mediaviewer/rm1890874624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzNDk3MDM3MV5BMl5BanBnXkFtZTgwNDQwODQwNzM@._V1_.jpg> ;
+    schema:caption "Will Poulter and Fionn Whitehead in Black Mirror: Bandersnatch (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

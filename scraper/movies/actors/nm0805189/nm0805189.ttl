@@ -1,0 +1,234 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0805189/> a schema:Person ;
+    schema:name "Max Elliott Slade" ;
+    schema:url <https://www.imdb.com/name/nm0805189/> ;
+    schema:birthDate "1980-07-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Max Elliott Slade. Actor: 3 Ninja Kids. Born into a family of actors, Max Slade scored his first acting role at the age of eight, as the child version of Steve Martin's character, Gil Buckman, in director Ron Howard's hit comedy Parenthood (1989). The following year, he took a role in the short-lived Parenthood (1990) TV series (alongside young Leonardo DiCaprio and Thora Birch), this time playing Gil Buckman's son,..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmNhOTZjNWYtOWMxMy00ZTk1LWIzMzQtZmIxNjIwOGE2NzIwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pasadena, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0098067/>,    # Parenthood
+                       <https://www.imdb.com/title/tt0103596/>,    # 3 Ninjas
+                       <https://www.imdb.com/title/tt0109015/>,    # 3 Ninjas Kick Back
+                       <https://www.imdb.com/title/tt0112384/>,    # Apollo 13
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8989508/>,    # We Are Love
+                       <https://www.imdb.com/title/tt0870111/>,    # Frost/Nixon
+                       <https://www.imdb.com/title/tt0114590/>,    # The Sweeper
+                       <https://www.imdb.com/title/tt0112255/>,    # 3 Ninjas: Knuckle Up
+                       <https://www.imdb.com/title/tt0098932/>,    # The Trials of Rosie O'Neill
+                       <https://www.imdb.com/title/tt0098887/>,    # Parenthood
+                       <https://www.imdb.com/title/tt0168228/> ; # To the Moon, Alice
+
+
+    schema:video <https://www.imdb.com/video/vi4241802009/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0805189/mediaviewer/rm7043584/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm4019681792/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm2500644352/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm269274624/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm439008000/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm405453568/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm1697299200/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm1680521984/>,
+                 <https://www.imdb.com/name/nm0805189/mediaviewer/rm1630190336/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0098067/> a schema:Movie ;
+    schema:name "Parenthood" ;
+    schema:url <https://www.imdb.com/title/tt0098067/> .
+
+<https://www.imdb.com/title/tt0103596/> a schema:Movie ;
+    schema:name "3 Ninjas" ;
+    schema:url <https://www.imdb.com/title/tt0103596/> .
+
+<https://www.imdb.com/title/tt0109015/> a schema:Movie ;
+    schema:name "3 Ninjas Kick Back" ;
+    schema:url <https://www.imdb.com/title/tt0109015/> .
+
+<https://www.imdb.com/title/tt0112384/> a schema:Movie ;
+    schema:name "Apollo 13" ;
+    schema:url <https://www.imdb.com/title/tt0112384/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# We Are Love (2019)
+<https://www.imdb.com/title/tt8989508/> a schema:Movie ;
+    schema:name "We Are Love" ;
+    schema:url <https://www.imdb.com/title/tt8989508/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Bobby"
+    ] .
+
+# Frost/Nixon (2008)
+<https://www.imdb.com/title/tt0870111/> a schema:Movie ;
+    schema:name "Frost/Nixon" ;
+    schema:url <https://www.imdb.com/title/tt0870111/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Camera Operator (Smith crew)"
+    ] .
+
+# The Sweeper (1996)
+<https://www.imdb.com/title/tt0114590/> a schema:Movie ;
+    schema:name "The Sweeper" ;
+    schema:url <https://www.imdb.com/title/tt0114590/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Young Mark"
+    ] .
+
+# 3 Ninjas: Knuckle Up (1995)
+<https://www.imdb.com/title/tt0112255/> a schema:Movie ;
+    schema:name "3 Ninjas: Knuckle Up" ;
+    schema:url <https://www.imdb.com/title/tt0112255/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Colt"
+    ] .
+
+# The Trials of Rosie O'Neill (1991)
+<https://www.imdb.com/title/tt0098932/> a schema:Movie ;
+    schema:name "The Trials of Rosie O'Neill" ;
+    schema:url <https://www.imdb.com/title/tt0098932/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName ""
+    ] .
+
+# Parenthood (1990)
+<https://www.imdb.com/title/tt0098887/> a schema:Movie ;
+    schema:name "Parenthood" ;
+    schema:url <https://www.imdb.com/title/tt0098887/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Kevin Buckman"
+    ] .
+
+# To the Moon, Alice (1990)
+<https://www.imdb.com/title/tt0168228/> a schema:Movie ;
+    schema:name "To the Moon, Alice" ;
+    schema:url <https://www.imdb.com/title/tt0168228/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0805189/> ;
+        schema:characterName "Willy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4241802009/> a schema:VideoObject ;
+        schema:name "Trailer" ;
+        schema:description "Rocky, Colt and Tum Tum are back in an all new adventure everyone will fall for." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4241802009/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTJlOTlhM2YtMTNkNS00NGQwLWIzZjUtNWY3YWY1YjA4OWY5XkEyXkFqcGdeQWxiaWFtb250._V1_.jpg" ;
+        schema:duration "PT1M53S"^^xsd:duration ;
+        schema:uploadDate "2021-11-26T15:48:42Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmNhOTZjNWYtOWMxMy00ZTk1LWIzMzQtZmIxNjIwOGE2NzIwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmNhOTZjNWYtOWMxMy00ZTk1LWIzMzQtZmIxNjIwOGE2NzIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Max Elliott Slade" ;
+    schema:height "956"^^xsd:integer ;
+    schema:width "848"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm7043584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGZlMjhjYWYtODNlYy00MDBkLTgzOGMtNDM3YTg2ZWNjMTM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Max Elliott Slade in Apollo 13 (1995)" ;
+    schema:height "816"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm4019681792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGEwZjhkMDgtNzZiYS00OTEyLTllMTUtMmI5Mjc4YWJjYmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Max Elliott Slade in Apollo 13 (1995)" ;
+    schema:height "816"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm2500644352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5MDExMzI2NF5BMl5BanBnXkFtZTgwMjkyNTA4MTE@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, and Michael Treanor in 3 Ninjas: Knuckle Up (1995)" ;
+    schema:height "1173"^^xsd:integer ;
+    schema:width "1728"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm269274624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYzNDI5NDExNl5BMl5BanBnXkFtZTgwNzQwNTA4MTE@._V1_.jpg> ;
+    schema:caption "J. Evan Bonifant, Sean Fox, and Max Elliott Slade in 3 Ninjas Kick Back (1994)" ;
+    schema:height "3971"^^xsd:integer ;
+    schema:width "2700"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm439008000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxNjE4OTU4MV5BMl5BanBnXkFtZTcwOTg2Mjg3NA@@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, and Michael Treanor in 3 Ninja Kids (1992)" ;
+    schema:height "676"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm405453568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2MzI3NTE0OV5BMl5BanBnXkFtZTcwMTk2Mjg3NA@@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, Michael Treanor, and Victor Wong in 3 Ninja Kids (1992)" ;
+    schema:height "674"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm1697299200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDIxNTg5MzcyN15BMl5BanBnXkFtZTcwNDk2Mjg3NA@@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, and Michael Treanor in 3 Ninja Kids (1992)" ;
+    schema:height "676"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm1680521984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzEyNDU0NTM3NV5BMl5BanBnXkFtZTcwNTk2Mjg3NA@@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, and Michael Treanor in 3 Ninja Kids (1992)" ;
+    schema:height "676"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0805189/mediaviewer/rm1630190336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyOTA1MjQzNV5BMl5BanBnXkFtZTcwODk2Mjg3NA@@._V1_.jpg> ;
+    schema:caption "Chad Power, Max Elliott Slade, and Michael Treanor in 3 Ninja Kids (1992)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "673"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

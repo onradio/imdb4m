@@ -1,0 +1,139 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1295765/> a schema:Person ;
+    schema:name "Alex Abbad" ;
+    schema:url <https://www.imdb.com/name/nm1295765/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Alex Abbad. Actor: The Raid 2. Alex Abbad is an Actor, Poet, Host, Musician, Visual Artist, and Music Producer, with two decades of experience in the Creative and Entertainment Industry. He started off his career as MTV Asia VJ in the 90's and rose to become Indonesia's leading actor. He is very well regarded as a character actor who takes exceptionally challenging roles. He starred in an HBO Original Series..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ0NzM1MTI5NF5BMl5BanBnXkFtZTgwMzc2MjYyMTE@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10039468/>,    # My Stupid Boss 2
+                       <https://www.imdb.com/title/tt9420576/>,    # Perjanjian dengan Iblis
+                       <https://www.imdb.com/title/tt9044128/>,    # Suzzanna: Buried Alive
+                       <https://www.imdb.com/title/tt9165634/>,    # Hanum & Rangga
+                       <https://www.imdb.com/title/tt8960204/>,    # Asih
+                       <https://www.imdb.com/title/tt8297042/> ; # Gila Lu Ndro
+
+
+    schema:video <https://www.imdb.com/video/vi2055783961/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1295765/mediaviewer/rm2792672000/>,
+                 <https://www.imdb.com/name/nm1295765/mediaviewer/rm1817040128/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# My Stupid Boss 2 (2019)
+<https://www.imdb.com/title/tt10039468/> a schema:Movie ;
+    schema:name "My Stupid Boss 2" ;
+    schema:url <https://www.imdb.com/title/tt10039468/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Dika"
+    ] .
+
+# Perjanjian dengan Iblis (2019)
+<https://www.imdb.com/title/tt9420576/> a schema:Movie ;
+    schema:name "Perjanjian dengan Iblis" ;
+    schema:url <https://www.imdb.com/title/tt9420576/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Salim"
+    ] .
+
+# Suzzanna: Buried Alive (2018)
+<https://www.imdb.com/title/tt9044128/> a schema:Movie ;
+    schema:name "Suzzanna: Buried Alive" ;
+    schema:url <https://www.imdb.com/title/tt9044128/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Dudun"
+    ] .
+
+# Hanum & Rangga (2018)
+<https://www.imdb.com/title/tt9165634/> a schema:Movie ;
+    schema:name "Hanum & Rangga" ;
+    schema:url <https://www.imdb.com/title/tt9165634/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Sam"
+    ] .
+
+# Asih (2018)
+<https://www.imdb.com/title/tt8960204/> a schema:Movie ;
+    schema:name "Asih" ;
+    schema:url <https://www.imdb.com/title/tt8960204/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Mbah Marwan"
+    ] .
+
+# Gila Lu Ndro (2018)
+<https://www.imdb.com/title/tt8297042/> a schema:Movie ;
+    schema:name "Gila Lu Ndro" ;
+    schema:url <https://www.imdb.com/title/tt8297042/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1295765/> ;
+        schema:characterName "Sutradara"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2055783961/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2055783961/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYmIxNzU0NzAtMmY1YS00ZjNhLTkwYzctNjkxMmJjNmIwZGUzXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M15S"^^xsd:duration ;
+        schema:uploadDate "2024-04-01T07:05:55Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ0NzM1MTI5NF5BMl5BanBnXkFtZTgwMzc2MjYyMTE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NzM1MTI5NF5BMl5BanBnXkFtZTgwMzc2MjYyMTE@._V1_.jpg> ;
+    schema:caption "Alex Abbad in The Raid 2 (2014)" ;
+    schema:height "2391"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1295765/mediaviewer/rm2792672000/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyOTEwODcyN15BMl5BanBnXkFtZTgwMjM0MDY0MTE@._V1_.jpg> ;
+    schema:caption "Alex Abbad and Cecep Arif Rahman in The Raid 2 (2014)" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1295765/mediaviewer/rm1817040128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0NzM1MTI5NF5BMl5BanBnXkFtZTgwMzc2MjYyMTE@._V1_.jpg> ;
+    schema:caption "Alex Abbad in The Raid 2 (2014)" ;
+    schema:height "2391"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

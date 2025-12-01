@@ -1,0 +1,114 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0100150/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Danny Boy" ;
+        schema:byArtist <https://www.imdb.com/name/nm0666208/> ; # Frank Patterson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Danny Boy" ;
+            schema:composer <https://www.imdb.com/name/nm1455393/> ; # Rory Dall O'Cahan
+            schema:lyricist <https://www.imdb.com/name/nm1376788/> # Frederick Edward Weatherly
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Decatur Street Tutti" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Come Back To Erin" ;
+        schema:byArtist <https://www.imdb.com/name/nm0566451/> ; # John McCormack
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Come Back To Erin" ;
+            schema:author <https://www.imdb.com/name/nm2060951/> # Claribel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "King Porter Stomp" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "King Porter Stomp" ;
+            schema:author <https://www.imdb.com/name/nm0607974/>, # Ferdinand 'Jelly Roll' Morton
+                       <https://www.imdb.com/name/nm0121870/>, # Sonny Burke
+                       <https://www.imdb.com/name/nm0730274/> # Sid Robin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Runnin' Wild" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Runnin' Wild" ;
+            schema:composer <https://www.imdb.com/name/nm0316613/> ; # A.H. Gibbs
+            schema:lyricist <https://www.imdb.com/name/nm1361898/>, # Joe Grey
+                        <https://www.imdb.com/name/nm1023226/> # Leo Wood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Goodnight, Sweetheart" ;
+        schema:byArtist <https://www.imdb.com/name/nm0666208/> ; # Frank Patterson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Goodnight, Sweetheart" ;
+            schema:author <https://www.imdb.com/name/nm0884964/>, # Rudy Vallee
+                       <https://www.imdb.com/name/nm0633656/>, # Ray Noble
+                       <https://www.imdb.com/name/nm1755921/>, # Jimmy Campbell
+                       <https://www.imdb.com/name/nm1868164/> # Reginald Connelly
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ghirlandeina, Veta Mia" ;
+        schema:byArtist <https://www.imdb.com/name/nm0823563/> ; # Mike Starr
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0121870/> a schema:Person ;
+    schema:name "Sonny Burke" .
+<https://www.imdb.com/name/nm0316613/> a schema:Person ;
+    schema:name "A.H. Gibbs" .
+<https://www.imdb.com/name/nm0566451/> a schema:Person ;
+    schema:name "John McCormack" .
+<https://www.imdb.com/name/nm0607974/> a schema:Person ;
+    schema:name "Ferdinand 'Jelly Roll' Morton" .
+<https://www.imdb.com/name/nm0633656/> a schema:Person ;
+    schema:name "Ray Noble" .
+<https://www.imdb.com/name/nm0666208/> a schema:Person ;
+    schema:name "Frank Patterson" .
+<https://www.imdb.com/name/nm0730274/> a schema:Person ;
+    schema:name "Sid Robin" .
+<https://www.imdb.com/name/nm0823563/> a schema:Person ;
+    schema:name "Mike Starr" .
+<https://www.imdb.com/name/nm0884964/> a schema:Person ;
+    schema:name "Rudy Vallee" .
+<https://www.imdb.com/name/nm1023226/> a schema:Person ;
+    schema:name "Leo Wood" .
+<https://www.imdb.com/name/nm1361898/> a schema:Person ;
+    schema:name "Joe Grey" .
+<https://www.imdb.com/name/nm1376788/> a schema:Person ;
+    schema:name "Frederick Edward Weatherly" .
+<https://www.imdb.com/name/nm1455393/> a schema:Person ;
+    schema:name "Rory Dall O'Cahan" .
+<https://www.imdb.com/name/nm1755921/> a schema:Person ;
+    schema:name "Jimmy Campbell" .
+<https://www.imdb.com/name/nm1868164/> a schema:Person ;
+    schema:name "Reginald Connelly" .
+<https://www.imdb.com/name/nm2060951/> a schema:Person ;
+    schema:name "Claribel" .
+# ==============================================================================

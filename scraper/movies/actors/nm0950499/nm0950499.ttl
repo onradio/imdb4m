@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0950499/> a schema:Person ;
+    schema:name "Hsien Yu" ;
+    schema:url <https://www.imdb.com/name/nm0950499/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Hsien Yu. Actor: In the Mood for Love. Hsien Yu is known for In the Mood for Love (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0118694/> .    # In the Mood for Love
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# In the Mood for Love (2000)
+<https://www.imdb.com/title/tt0118694/> a schema:Movie ;
+    schema:name "In the Mood for Love" ;
+    schema:url <https://www.imdb.com/title/tt0118694/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0950499/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

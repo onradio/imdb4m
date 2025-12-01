@@ -1,0 +1,145 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0095114/> a schema:Person ;
+    schema:name "Joseph Bono" ;
+    schema:url <https://www.imdb.com/name/nm0095114/> ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Raging Bono" ;
+    schema:description "Joseph Bono. Actor: GoodFellas. Joseph Bono is known for GoodFellas (1990), Raging Bull (1980) and The Irishman (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1302006/>,    # The Irishman
+                       <https://www.imdb.com/title/tt0289848/>,    # Analyze That
+                       <https://www.imdb.com/title/tt0128165/>,    # Blazin'
+                       <https://www.imdb.com/title/tt0181734/>,    # One Deadly Road
+                       <https://www.imdb.com/title/tt0112641/>,    # Casino
+                       <https://www.imdb.com/title/tt0099685/>,    # GoodFellas
+                       <https://www.imdb.com/title/tt0081398/> ; # Raging Bull
+
+
+    schema:video <https://www.imdb.com/video/vi3633616921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0095114/mediaviewer/rm1876546561/>,
+                 <https://www.imdb.com/name/nm0095114/mediaviewer/rm2449180416/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Irishman (2019)
+<https://www.imdb.com/title/tt1302006/> a schema:Movie ;
+    schema:name "The Irishman" ;
+    schema:url <https://www.imdb.com/title/tt1302006/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Frank Sindone"
+    ] .
+
+# Analyze That (2002)
+<https://www.imdb.com/title/tt0289848/> a schema:Movie ;
+    schema:name "Analyze That" ;
+    schema:url <https://www.imdb.com/title/tt0289848/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Wiseguy"
+    ] .
+
+# Blazin' (2001)
+<https://www.imdb.com/title/tt0128165/> a schema:Movie ;
+    schema:name "Blazin'" ;
+    schema:url <https://www.imdb.com/title/tt0128165/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Hunter"
+    ] .
+
+# One Deadly Road (1998)
+<https://www.imdb.com/title/tt0181734/> a schema:Movie ;
+    schema:name "One Deadly Road" ;
+    schema:url <https://www.imdb.com/title/tt0181734/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName ""
+    ] .
+
+# Casino (1995)
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Moosh"
+    ] .
+
+# GoodFellas (1990)
+<https://www.imdb.com/title/tt0099685/> a schema:Movie ;
+    schema:name "GoodFellas" ;
+    schema:url <https://www.imdb.com/title/tt0099685/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Mikey Franzese"
+    ] .
+
+# Raging Bull (1980)
+<https://www.imdb.com/title/tt0081398/> a schema:Movie ;
+    schema:name "Raging Bull" ;
+    schema:url <https://www.imdb.com/title/tt0081398/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0095114/> ;
+        schema:characterName "Guido"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3633616921/> a schema:VideoObject ;
+        schema:name "Raging Bull: 30th Anniversary Edition Blu-Ray" ;
+        schema:description "Trailer for Raging Bull" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3633616921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDY4ODAyNjgtMWY1OC00NzgwLWJjYmItYmY4NzVkYzE0MDA0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M41S"^^xsd:duration ;
+        schema:uploadDate "2010-12-10T06:21:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0095114/mediaviewer/rm1876546561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmFjNDJiZGItYzZkNy00Njc3LWJiMTAtNGQxZWQ3ZjMzNjYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Frank Adonis, Joseph Bono, and Frank Vincent in Raging Bull (1980)" ;
+    schema:height "1040"^^xsd:integer ;
+    schema:width "1916"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0095114/mediaviewer/rm2449180416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwODA1OTQ3N15BMl5BanBnXkFtZTcwNjMwMjMwNA@@._V1_.jpg> ;
+    schema:caption "Ray Liotta, Joe Pesci, and Joseph Bono in GoodFellas (1990)" ;
+    schema:height "1382"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

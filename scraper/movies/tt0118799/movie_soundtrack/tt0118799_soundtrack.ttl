@@ -1,0 +1,45 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0118799/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Marcia Reale" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Marcia Reale" ;
+            schema:author <https://www.imdb.com/name/nm5505885/> # Giuseppe Gabetti
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Belle nuit (Barcarolle)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0127481/>, # Montserrat Caballé
+                        <https://www.imdb.com/name/nm0894854/> ; # Shirley Verrett
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Belle nuit (Barcarolle)" ;
+            schema:composer <https://www.imdb.com/name/nm0006220/> ; # Jacques Offenbach
+            schema:lyricist <https://www.imdb.com/name/nm0053623/> # Jules Barbier
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006220/> a schema:Person ;
+    schema:name "Jacques Offenbach" .
+<https://www.imdb.com/name/nm0053623/> a schema:Person ;
+    schema:name "Jules Barbier" .
+<https://www.imdb.com/name/nm0127481/> a schema:Person ;
+    schema:name "Montserrat Caballé" .
+<https://www.imdb.com/name/nm0894854/> a schema:Person ;
+    schema:name "Shirley Verrett" .
+<https://www.imdb.com/name/nm5505885/> a schema:Person ;
+    schema:name "Giuseppe Gabetti" .
+# ==============================================================================

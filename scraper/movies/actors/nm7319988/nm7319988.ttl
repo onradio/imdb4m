@@ -1,0 +1,88 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7319988/> a schema:Person ;
+    schema:name "Prabhakar" ;
+    schema:url <https://www.imdb.com/name/nm7319988/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Prabhakar. Actor: Baahubali: The Beginning. Prabhakar is known for Baahubali: The Beginning (2015), Dear Zindagi (2016) and Baahubali 2: The Conclusion (2017)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGMxM2VhYjgtNDBmNy00OWRlLWI5YTEtNjg5Yzc1NzRhMDY2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi291882009/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7319988/mediaviewer/rm366884608/>,
+                 <https://www.imdb.com/name/nm7319988/mediaviewer/rm2150021122/>,
+                 <https://www.imdb.com/name/nm7319988/mediaviewer/rm3213736706/>,
+                 <https://www.imdb.com/name/nm7319988/mediaviewer/rm383661824/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi291882009/> a schema:VideoObject ;
+        schema:name "Weekend Party - Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi291882009/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWQ4NzFkMDAtNDQ3NC00MGMwLWJkM2MtMDQ2N2ZkMWZmZTdlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M52S"^^xsd:duration ;
+        schema:uploadDate "2023-05-04T07:45:27Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGMxM2VhYjgtNDBmNy00OWRlLWI5YTEtNjg5Yzc1NzRhMDY2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGMxM2VhYjgtNDBmNy00OWRlLWI5YTEtNjg5Yzc1NzRhMDY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhakar in Baahubali: The Beginning (2015)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7319988/mediaviewer/rm366884608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWMxYTU3ZGUtN2M4Yy00MzU0LWIyZGQtMzkzOWRmZjVlZjFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhakar in Baahubali: The Beginning (2015)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7319988/mediaviewer/rm2150021122/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjcyNTI4NmEtNzEzOC00Y2FhLWE1NjEtNDY1MmUzNWI3OTEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhakar in Paderu 12Mile (2025)" ;
+    schema:height "1137"^^xsd:integer ;
+    schema:width "1253"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7319988/mediaviewer/rm3213736706/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTc1YTc4ZjEtZGVhMi00OTc4LTgyZmUtNjNlZGIwY2UwM2IwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhakar in Paderu 12Mile (2025)" ;
+    schema:height "1137"^^xsd:integer ;
+    schema:width "1253"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7319988/mediaviewer/rm383661824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGMxM2VhYjgtNDBmNy00OWRlLWI5YTEtNjg5Yzc1NzRhMDY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Prabhakar in Baahubali: The Beginning (2015)" ;
+    schema:height "804"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7319988/>
+    schema:sameAs <https://facebook.com/PrabhakarOfficial> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

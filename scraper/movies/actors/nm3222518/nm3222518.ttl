@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3222518/> a schema:Person ;
+    schema:name "Sachet Engineer" ;
+    schema:url <https://www.imdb.com/name/nm3222518/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sachet Engineer. Actor: Like Stars on Earth. Sachet Engineer is known for Like Stars on Earth (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0986264/> ;    # Like Stars on Earth
+
+
+    schema:video <https://www.imdb.com/video/vi1834943001/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Like Stars on Earth (2007)
+<https://www.imdb.com/title/tt0986264/> a schema:Movie ;
+    schema:name "Like Stars on Earth" ;
+    schema:url <https://www.imdb.com/title/tt0986264/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3222518/> ;
+        schema:characterName "Yohan Nandkishore Awasthi"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1834943001/> a schema:VideoObject ;
+        schema:name "Like Stars On Earth" ;
+        schema:description "Home Video Trailer from Buena Vista Home Entertainment" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1834943001/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjU1NThkYzgtNDFiNy00YmJjLWI4NGQtNmM2YjA3ZTRhM2VlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M15S"^^xsd:duration ;
+        schema:uploadDate "2009-10-09T12:52:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

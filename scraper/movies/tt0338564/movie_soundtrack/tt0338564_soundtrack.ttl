@@ -1,0 +1,32 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0338564/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Infernal Affairs" ;
+        schema:byArtist <https://www.imdb.com/name/nm0490489/>, # Andy Lau
+                        <https://www.imdb.com/name/nm0504897/> ; # Tony Leung Chiu-wai
+        schema:producer <https://www.imdb.com/name/nm1821628/> ; # Kwok-Leung Chan
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Forgotten Time" ;
+        schema:byArtist <https://www.imdb.com/name/nm0157796/> ; # Tsai Chin
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0157796/> a schema:Person ;
+    schema:name "Tsai Chin" .
+<https://www.imdb.com/name/nm0490489/> a schema:Person ;
+    schema:name "Andy Lau" .
+<https://www.imdb.com/name/nm0504897/> a schema:Person ;
+    schema:name "Tony Leung Chiu-wai" .
+<https://www.imdb.com/name/nm1821628/> a schema:Person ;
+    schema:name "Kwok-Leung Chan" .
+# ==============================================================================

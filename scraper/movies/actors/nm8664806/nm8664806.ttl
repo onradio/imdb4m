@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8664806/> a schema:Person ;
+    schema:name "Anmol Charan" ;
+    schema:url <https://www.imdb.com/name/nm8664806/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anmol Charan. Actor: Dangal. Anmol Charan is known for Dangal (2016), Haterz (2022) and Kohrra (2023)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5074352/> .    # Dangal
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dangal (2016)
+<https://www.imdb.com/title/tt5074352/> a schema:Movie ;
+    schema:name "Dangal" ;
+    schema:url <https://www.imdb.com/title/tt5074352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8664806/> ;
+        schema:characterName "Little Omkar"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

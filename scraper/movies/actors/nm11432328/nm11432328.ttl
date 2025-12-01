@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11432328/> a schema:Person ;
+    schema:name "Kim Jin-hyung" ;
+    schema:url <https://www.imdb.com/name/nm11432328/> ;
+    schema:jobTitle "Director", "Actor" ;
+    schema:description "Kim Jin-hyung. Actor: Parasite. Kim Jin-hyung is known for Parasite (2019) and The Woman Who Swallowed the Sun (2025)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6751668/> .    # Parasite
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Parasite (2019)
+<https://www.imdb.com/title/tt6751668/> a schema:Movie ;
+    schema:name "Parasite" ;
+    schema:url <https://www.imdb.com/title/tt6751668/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11432328/> ;
+        schema:characterName "Street Fighting Person 2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

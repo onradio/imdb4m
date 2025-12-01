@@ -1,0 +1,402 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0128360/> a schema:Person ;
+    schema:name "Adolph Caesar" ;
+    schema:url <https://www.imdb.com/name/nm0128360/> ;
+    schema:birthDate "1933-12-05"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Adolph Caesar. Actor: A Soldier's Story. Born in the Harlem section of New York City, joined the Navy, then studied drama at New York University; was an announcer for then joined the Negro Ensemble Co. in 1970 for such productions as \"The River Niger\", \"Square Root of the Soul\" and \"The Brownsville Raid\"; worked with repertory groups such as the Minnesota Theater Co., Inner City Repertory Co., and the American..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTUwMjM2MzE3M15BMl5BanBnXkFtZTgwNDkyNTQwMjE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088146/>,    # A Soldier's Story
+                       <https://www.imdb.com/title/tt0064158/>,    # Che!
+                       <https://www.imdb.com/title/tt0088939/>,    # The Color Purple
+                       <https://www.imdb.com/title/tt0179219/>,    # The Hitter
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0090520/>,    # SilverHawkes
+                       <https://www.imdb.com/title/tt0090856/>,    # Club Paradise
+                       <https://www.imdb.com/title/tt0202179/>,    # ABC Afterschool Specials
+                       <https://www.imdb.com/title/tt0090433/>,    # Fortune Dane
+                       <https://www.imdb.com/title/tt0088634/>,    # The Twilight Zone
+                       <https://www.imdb.com/title/tt0086814/>,    # Tales from the Darkside
+                       <https://www.imdb.com/title/tt0088993/>,    # Day of the Dead
+                       <https://www.imdb.com/title/tt0086320/>,    # Sleepaway Camp
+                       <https://www.imdb.com/title/tt0080290/>,    # Texas
+                       <https://www.imdb.com/title/tt0783444/>,    # Watch Your Mouth
+                       <https://www.imdb.com/title/tt0077402/>,    # Dawn of the Dead
+                       <https://www.imdb.com/title/tt0074703/>,    # J.D.'s Revenge
+                       <https://www.imdb.com/title/tt0073691/>,    # Jungle Burger
+                       <https://www.imdb.com/title/tt0073714/>,    # Sister Street Fighter
+                       <https://www.imdb.com/title/tt0164699/>,    # Bodigâdo Kiba
+                       <https://www.imdb.com/title/tt0070656/>,    # Scream Blacula Scream
+                       <https://www.imdb.com/title/tt0068673/>,    # Hammer
+                       <https://www.imdb.com/title/tt0068284/>,    # Blacula
+                       <https://www.imdb.com/title/tt0065534/>,    # The Challenge
+                       <https://www.imdb.com/title/tt0059977/>,    # Daktari
+                       <https://www.imdb.com/title/tt0058855/>,    # The Wild Wild West
+                       <https://www.imdb.com/title/tt0056758/>,    # General Hospital
+                       <https://www.imdb.com/title/tt0044265/> ; # The Guiding Light
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3617232921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0128360/mediaviewer/rm1097449217/>,
+                 <https://www.imdb.com/name/nm0128360/mediaviewer/rm2060005888/>,
+                 <https://www.imdb.com/name/nm0128360/mediaviewer/rm1412203776/>,
+                 <https://www.imdb.com/name/nm0128360/mediaviewer/rm3739995392/>,
+                 <https://www.imdb.com/name/nm0128360/mediaviewer/rm3756772608/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0088146/> a schema:Movie ;
+    schema:name "A Soldier's Story" ;
+    schema:url <https://www.imdb.com/title/tt0088146/> .
+
+<https://www.imdb.com/title/tt0064158/> a schema:Movie ;
+    schema:name "Che!" ;
+    schema:url <https://www.imdb.com/title/tt0064158/> .
+
+<https://www.imdb.com/title/tt0088939/> a schema:Movie ;
+    schema:name "The Color Purple" ;
+    schema:url <https://www.imdb.com/title/tt0088939/> .
+
+<https://www.imdb.com/title/tt0179219/> a schema:Movie ;
+    schema:name "The Hitter" ;
+    schema:url <https://www.imdb.com/title/tt0179219/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# SilverHawkes (1986)
+<https://www.imdb.com/title/tt0090520/> a schema:Movie ;
+    schema:name "SilverHawkes" ;
+    schema:url <https://www.imdb.com/title/tt0090520/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Seymour"
+    ] .
+
+# Club Paradise (1986)
+<https://www.imdb.com/title/tt0090856/> a schema:Movie ;
+    schema:name "Club Paradise" ;
+    schema:url <https://www.imdb.com/title/tt0090856/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Prime Minister Solomon Gundy"
+    ] .
+
+# ABC Afterschool Specials (1986)
+<https://www.imdb.com/title/tt0202179/> a schema:Movie ;
+    schema:name "ABC Afterschool Specials" ;
+    schema:url <https://www.imdb.com/title/tt0202179/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Dr. Rancid"
+    ] .
+
+# Fortune Dane (1986)
+<https://www.imdb.com/title/tt0090433/> a schema:Movie ;
+    schema:name "Fortune Dane" ;
+    schema:url <https://www.imdb.com/title/tt0090433/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Charles Dane"
+    ] .
+
+# The Twilight Zone (1986)
+<https://www.imdb.com/title/tt0088634/> a schema:Movie ;
+    schema:name "The Twilight Zone" ;
+    schema:url <https://www.imdb.com/title/tt0088634/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Supervisor"
+    ] .
+
+# Tales from the Darkside (1985)
+<https://www.imdb.com/title/tt0086814/> a schema:Movie ;
+    schema:name "Tales from the Darkside" ;
+    schema:url <https://www.imdb.com/title/tt0086814/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Mars Gillis"
+    ] .
+
+# Day of the Dead (1985)
+<https://www.imdb.com/title/tt0088993/> a schema:Movie ;
+    schema:name "Day of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0088993/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Sleepaway Camp (1983)
+<https://www.imdb.com/title/tt0086320/> a schema:Movie ;
+    schema:name "Sleepaway Camp" ;
+    schema:url <https://www.imdb.com/title/tt0086320/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Texas (1982)
+<https://www.imdb.com/title/tt0080290/> a schema:Movie ;
+    schema:name "Texas" ;
+    schema:url <https://www.imdb.com/title/tt0080290/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Sgt. Albertson"
+    ] .
+
+# Watch Your Mouth (1978)
+<https://www.imdb.com/title/tt0783444/> a schema:Movie ;
+    schema:name "Watch Your Mouth" ;
+    schema:url <https://www.imdb.com/title/tt0783444/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Jeff Cremer"
+    ] .
+
+# Dawn of the Dead (1978)
+<https://www.imdb.com/title/tt0077402/> a schema:Movie ;
+    schema:name "Dawn of the Dead" ;
+    schema:url <https://www.imdb.com/title/tt0077402/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# J.D.'s Revenge (1976)
+<https://www.imdb.com/title/tt0074703/> a schema:Movie ;
+    schema:name "J.D.'s Revenge" ;
+    schema:url <https://www.imdb.com/title/tt0074703/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Jungle Burger (1975)
+<https://www.imdb.com/title/tt0073691/> a schema:Movie ;
+    schema:name "Jungle Burger" ;
+    schema:url <https://www.imdb.com/title/tt0073691/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Brutish"
+    ] .
+
+# Sister Street Fighter (1974)
+<https://www.imdb.com/title/tt0073714/> a schema:Movie ;
+    schema:name "Sister Street Fighter" ;
+    schema:url <https://www.imdb.com/title/tt0073714/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Bodigâdo Kiba (1973)
+<https://www.imdb.com/title/tt0164699/> a schema:Movie ;
+    schema:name "Bodigâdo Kiba" ;
+    schema:url <https://www.imdb.com/title/tt0164699/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Scream Blacula Scream (1973)
+<https://www.imdb.com/title/tt0070656/> a schema:Movie ;
+    schema:name "Scream Blacula Scream" ;
+    schema:url <https://www.imdb.com/title/tt0070656/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Hammer (1972)
+<https://www.imdb.com/title/tt0068673/> a schema:Movie ;
+    schema:name "Hammer" ;
+    schema:url <https://www.imdb.com/title/tt0068673/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# Blacula (1972)
+<https://www.imdb.com/title/tt0068284/> a schema:Movie ;
+    schema:name "Blacula" ;
+    schema:url <https://www.imdb.com/title/tt0068284/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Narrator of Theatrical Trailer"
+    ] .
+
+# The Challenge (1970)
+<https://www.imdb.com/title/tt0065534/> a schema:Movie ;
+    schema:name "The Challenge" ;
+    schema:url <https://www.imdb.com/title/tt0065534/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Clarence Opano"
+    ] .
+
+# Daktari (1968)
+<https://www.imdb.com/title/tt0059977/> a schema:Movie ;
+    schema:name "Daktari" ;
+    schema:url <https://www.imdb.com/title/tt0059977/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Nyanza"
+    ] .
+
+# The Wild Wild West (1968)
+<https://www.imdb.com/title/tt0058855/> a schema:Movie ;
+    schema:name "The Wild Wild West" ;
+    schema:url <https://www.imdb.com/title/tt0058855/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Vidoq"
+    ] .
+
+# General Hospital (1963)
+<https://www.imdb.com/title/tt0056758/> a schema:Movie ;
+    schema:name "General Hospital" ;
+    schema:url <https://www.imdb.com/title/tt0056758/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Douglas Burke"
+    ] .
+
+# The Guiding Light (1952)
+<https://www.imdb.com/title/tt0044265/> a schema:Movie ;
+    schema:name "The Guiding Light" ;
+    schema:url <https://www.imdb.com/title/tt0044265/> ;
+    schema:datePublished "1952"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0128360/> ;
+        schema:characterName "Zamana (1984)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3617232921/> a schema:VideoObject ;
+        schema:name "A Soldier&apos;s Story" ;
+        schema:description "Trailer for A Soldier's Story" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3617232921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjU0MDBlN2EtMjNlZC00YTkwLTk1MDctMGZjYTdkMmI1MTg0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2010-12-13T06:05:01Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTUwMjM2MzE3M15BMl5BanBnXkFtZTgwNDkyNTQwMjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwMjM2MzE3M15BMl5BanBnXkFtZTgwNDkyNTQwMjE@._V1_.jpg> ;
+    schema:caption "Adolph Caesar in The Color Purple (1985)" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0128360/mediaviewer/rm1097449217/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDM1ODdmODEtM2M5Ni00Mjg5LWI1ODUtMDU3ODkwYTJkZTgwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adolph Caesar in Fist of Fear, Touch of Death (1980)" ;
+    schema:height "1556"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0128360/mediaviewer/rm2060005888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmI0MTE0MTktMGU0Yy00ZmRhLTg4MzUtMjkzYTViM2JiOTA4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adolph Caesar in A Soldier's Story (1984)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0128360/mediaviewer/rm1412203776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0MTU4NjAzNF5BMl5BanBnXkFtZTcwODgxNTgzNA@@._V1_.jpg> ;
+    schema:caption "Danny Glover, Adolph Caesar, and Willard E. Pugh in The Color Purple (1985)" ;
+    schema:height "1363"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0128360/mediaviewer/rm3739995392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODY0OTUzMzM0OV5BMl5BanBnXkFtZTgwNTkyNTQwMjE@._V1_.jpg> ;
+    schema:caption "Adolph Caesar in A Soldier's Story (1984)" ;
+    schema:height "1494"^^xsd:integer ;
+    schema:width "1194"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0128360/mediaviewer/rm3756772608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwMjM2MzE3M15BMl5BanBnXkFtZTgwNDkyNTQwMjE@._V1_.jpg> ;
+    schema:caption "Adolph Caesar in The Color Purple (1985)" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

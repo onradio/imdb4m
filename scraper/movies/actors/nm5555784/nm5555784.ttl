@@ -1,0 +1,183 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5555784/> a schema:Person ;
+    schema:name "Finn Carr" ;
+    schema:url <https://www.imdb.com/name/nm5555784/> ;
+    schema:birthDate "2008-11-14"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Finn Carr. Actor: Alexa & Katie. Finn Carr was born on 14 November 2008. He is an actor, known for Alexa & Katie (2018), Fuller House (2016) and Criminal Minds (2005)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNThiMmJjZmMtODUxOC00MWZhLWI0OTYtODM2Mjc0MTdlZGUzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6916746/>,    # Alexa & Katie
+                       <https://www.imdb.com/title/tt0452046/>,    # Criminal Minds
+                       <https://www.imdb.com/title/tt1583607/>,    # Hot in Cleveland
+                       <https://www.imdb.com/title/tt3986586/>,    # Fuller House
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4729430/>,    # Klaus
+                       <https://www.imdb.com/title/tt5772554/>,    # Peanuts
+                       <https://www.imdb.com/title/tt2620136/> ; # Crowned
+
+
+    schema:video <https://www.imdb.com/video/vi3277895705/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5555784/mediaviewer/rm3740237569/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm3299495424/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm875248128/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm2128641793/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm2448391937/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm1009465856/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm3079514882/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm3032657922/>,
+                 <https://www.imdb.com/name/nm5555784/mediaviewer/rm4004799744/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt6916746/> a schema:Movie ;
+    schema:name "Alexa & Katie" ;
+    schema:url <https://www.imdb.com/title/tt6916746/> .
+
+<https://www.imdb.com/title/tt0452046/> a schema:Movie ;
+    schema:name "Criminal Minds" ;
+    schema:url <https://www.imdb.com/title/tt0452046/> .
+
+<https://www.imdb.com/title/tt1583607/> a schema:Movie ;
+    schema:name "Hot in Cleveland" ;
+    schema:url <https://www.imdb.com/title/tt1583607/> .
+
+<https://www.imdb.com/title/tt3986586/> a schema:Movie ;
+    schema:name "Fuller House" ;
+    schema:url <https://www.imdb.com/title/tt3986586/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Klaus (2019)
+<https://www.imdb.com/title/tt4729430/> a schema:Movie ;
+    schema:name "Klaus" ;
+    schema:url <https://www.imdb.com/title/tt4729430/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5555784/> ;
+        schema:characterName "Ellingboe Boy 1"
+    ] .
+
+# Peanuts (2016)
+<https://www.imdb.com/title/tt5772554/> a schema:Movie ;
+    schema:name "Peanuts" ;
+    schema:url <https://www.imdb.com/title/tt5772554/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5555784/> ;
+        schema:characterName "Rerun VanPelt"
+    ] .
+
+# Crowned (2013)
+<https://www.imdb.com/title/tt2620136/> a schema:Movie ;
+    schema:name "Crowned" ;
+    schema:url <https://www.imdb.com/title/tt2620136/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5555784/> ;
+        schema:characterName "Tucker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3277895705/> a schema:VideoObject ;
+        schema:name "Alexa &amp; Katie [Official Trailer]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3277895705/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTFjYzJhMDItMjU4NS00NjNmLTlhZTQtNWI5YmJlYzZkN2RmXkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M53S"^^xsd:duration ;
+        schema:uploadDate "2018-04-12T14:00:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNThiMmJjZmMtODUxOC00MWZhLWI0OTYtODM2Mjc0MTdlZGUzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNThiMmJjZmMtODUxOC00MWZhLWI0OTYtODM2Mjc0MTdlZGUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn Carr" ;
+    schema:height "1926"^^xsd:integer ;
+    schema:width "1290"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm3740237569/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzVmMWI3YzAtOWEwYy00NzI1LWJlZWQtZTJiYWQ5ODgwZjk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn as Rocco Falconeri on General Hospital" ;
+    schema:height "3024"^^xsd:integer ;
+    schema:width "4032"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm3299495424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUwNGRhYTAtNzNhMS00NWVmLTg0NDEtY2M3NWIyNGM1NTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jolie Jenkins and Finn Carr in Alexa & Katie (2018)" ;
+    schema:height "252"^^xsd:integer ;
+    schema:width "448"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm875248128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzk4MDExNGYtMWJlZS00MmYyLTg0YWQtYmI3MjZlZjUzYjEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Laura Bell Bundy, Dave Coulier, Finn Carr, Noah Salsbury Lipson, Ruby Rose Turner, and Kingston Foster in Fuller House (2016)" ;
+    schema:height "3840"^^xsd:integer ;
+    schema:width "5760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm2128641793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjgwNzE5M2EtMzhmNC00ODY4LTg5YWMtZjY4M2JmY2RmZDAyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn as Rocco Falconeri on General Hospital" ;
+    schema:height "4032"^^xsd:integer ;
+    schema:width "3024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm2448391937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmI4MGFjZTktM2FjZC00OTUzLTkyNDQtMTVhZGE0MGYyODZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn as Brian on Pretty Freekin Scary" ;
+    schema:height "4032"^^xsd:integer ;
+    schema:width "3024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm1009465856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjJhMGM2NzktY2EyZi00ZWJmLWIwZWItZmU5NTkyODk4YzA0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn Carr, Michael Campion, Noah Salsbury Lipson, and Elias Harger in Fuller House (2016)" ;
+    schema:height "3840"^^xsd:integer ;
+    schema:width "5760"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm3079514882/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGYzM2U3OTYtYjZhOC00OGM3LThhNzItYjc0MDYwYzZkMDQ4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn Carr" ;
+    schema:height "1822"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm3032657922/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmM4NmQyYjYtNTQwMC00ZmNiLWIxMzgtZmE3NTBkMTRiYjgzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Finn Carr" ;
+    schema:height "2154"^^xsd:integer ;
+    schema:width "1232"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5555784/mediaviewer/rm4004799744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzFmZWFhODMtMzVkYS00ZGQ1LTk5ZDAtODNlMTVhNWU2NDUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Cooper from Alexa and Katie" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5555784/>
+    schema:sameAs <https://www.instagram.com/finn_carr08/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

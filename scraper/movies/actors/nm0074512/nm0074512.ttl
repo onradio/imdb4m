@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0074512/> a schema:Person ;
+    schema:name "Mette Berggreen" ;
+    schema:url <https://www.imdb.com/name/nm0074512/> ;
+    schema:birthDate "1971-07-22"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew" ;
+    schema:description "Mette Berggreen. Actress: Dancer in the Dark. Mette Berggreen was born on 22 July 1971. She is an actress, known for Dancer in the Dark (2000), Zakka West (2003) and Mirakel (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0327321/>,    # Krøniken
+                       <https://www.imdb.com/title/tt0283329/>,    # Zakka West
+                       <https://www.imdb.com/title/tt0344859/>,    # Askepop - The Movie
+                       <https://www.imdb.com/title/tt0235596/>,    # Mirakel
+                       <https://www.imdb.com/title/tt0168629/> . # Dancer in the Dark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Krøniken (2004)
+<https://www.imdb.com/title/tt0327321/> a schema:Movie ;
+    schema:name "Krøniken" ;
+    schema:url <https://www.imdb.com/title/tt0327321/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0074512/> ;
+        schema:characterName "Revy Pige"
+    ] .
+
+# Zakka West (2003)
+<https://www.imdb.com/title/tt0283329/> a schema:Movie ;
+    schema:name "Zakka West" ;
+    schema:url <https://www.imdb.com/title/tt0283329/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0074512/> ;
+        schema:characterName "Girl outside cafe"
+    ] .
+
+# Askepop - The Movie (2003)
+<https://www.imdb.com/title/tt0344859/> a schema:Movie ;
+    schema:name "Askepop - The Movie" ;
+    schema:url <https://www.imdb.com/title/tt0344859/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0074512/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# Mirakel (2000)
+<https://www.imdb.com/title/tt0235596/> a schema:Movie ;
+    schema:name "Mirakel" ;
+    schema:url <https://www.imdb.com/title/tt0235596/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0074512/> ;
+        schema:characterName "Micks mors veninde"
+    ] .
+
+# Dancer in the Dark (2000)
+<https://www.imdb.com/title/tt0168629/> a schema:Movie ;
+    schema:name "Dancer in the Dark" ;
+    schema:url <https://www.imdb.com/title/tt0168629/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0074512/> ;
+        schema:characterName "Receptionist"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

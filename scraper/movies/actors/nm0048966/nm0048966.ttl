@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0048966/> a schema:Person ;
+    schema:name "Thom Baker" ;
+    schema:url <https://www.imdb.com/name/nm0048966/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Thom Baker. Actor: DragonHeart. Thom Baker is known for DragonHeart (1996)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDkwMzA2YmItNWUyZi00YzFkLWFmMDAtMDk2NTNlMDdiYjVmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116136/>,    # DragonHeart
+                       <https://www.imdb.com/title/tt0109424/> ; # Chungking Express
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0048966/mediaviewer/rm234595074/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# DragonHeart (1996)
+<https://www.imdb.com/title/tt0116136/> a schema:Movie ;
+    schema:name "DragonHeart" ;
+    schema:url <https://www.imdb.com/title/tt0116136/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0048966/> ;
+        schema:characterName "Aislinn's Chess Partner"
+    ] .
+
+# Chungking Express (1994)
+<https://www.imdb.com/title/tt0109424/> a schema:Movie ;
+    schema:name "Chungking Express" ;
+    schema:url <https://www.imdb.com/title/tt0109424/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0048966/> ;
+        schema:characterName "Drug Dealer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDkwMzA2YmItNWUyZi00YzFkLWFmMDAtMDk2NTNlMDdiYjVmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDkwMzA2YmItNWUyZi00YzFkLWFmMDAtMDk2NTNlMDdiYjVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Thom Baker" ;
+    schema:height "2172"^^xsd:integer ;
+    schema:width "1629"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0048966/mediaviewer/rm234595074/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDkwMzA2YmItNWUyZi00YzFkLWFmMDAtMDk2NTNlMDdiYjVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Thom Baker" ;
+    schema:height "2172"^^xsd:integer ;
+    schema:width "1629"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

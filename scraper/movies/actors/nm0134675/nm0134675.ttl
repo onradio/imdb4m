@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0134675/> a schema:Person ;
+    schema:name "Mitch Cantor" ;
+    schema:url <https://www.imdb.com/name/nm0134675/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Mitch Cantor. Actor: Evil Dead II. Mitch Cantor is known for Evil Dead II (1987), Flash of Spark and The Decomposeurs." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOWI2ZjE0YzMtNzQzZC00MGRkLWJlMGEtYzdkMjBlYzFmZTljXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7660850/>,    # Succession
+                       <https://www.imdb.com/title/tt0117609/>,    # Sgt. Kabukiman N.Y.P.D.
+                       <https://www.imdb.com/title/tt0092991/> ; # Evil Dead II
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0134675/mediaviewer/rm1696565761/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Succession (2019)
+<https://www.imdb.com/title/tt7660850/> a schema:Movie ;
+    schema:name "Succession" ;
+    schema:url <https://www.imdb.com/title/tt7660850/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0134675/> ;
+        schema:characterName "Party Guest"
+    ] .
+
+# Sgt. Kabukiman N.Y.P.D. (1990)
+<https://www.imdb.com/title/tt0117609/> a schema:Movie ;
+    schema:name "Sgt. Kabukiman N.Y.P.D." ;
+    schema:url <https://www.imdb.com/title/tt0117609/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0134675/> ;
+        schema:characterName "Park Fight Witness"
+    ] .
+
+# Evil Dead II (1987)
+<https://www.imdb.com/title/tt0092991/> a schema:Movie ;
+    schema:name "Evil Dead II" ;
+    schema:url <https://www.imdb.com/title/tt0092991/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0134675/> ;
+        schema:characterName "Fake Shemp"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOWI2ZjE0YzMtNzQzZC00MGRkLWJlMGEtYzdkMjBlYzFmZTljXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWI2ZjE0YzMtNzQzZC00MGRkLWJlMGEtYzdkMjBlYzFmZTljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mitch Cantor" ;
+    schema:height "2576"^^xsd:integer ;
+    schema:width "1932"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0134675/mediaviewer/rm1696565761/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWI2ZjE0YzMtNzQzZC00MGRkLWJlMGEtYzdkMjBlYzFmZTljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mitch Cantor" ;
+    schema:height "2576"^^xsd:integer ;
+    schema:width "1932"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

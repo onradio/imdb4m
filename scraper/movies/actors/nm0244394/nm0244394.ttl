@@ -1,0 +1,122 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0244394/> a schema:Person ;
+    schema:name "Debi Durst" ;
+    schema:url <https://www.imdb.com/name/nm0244394/> ;
+    schema:birthDate "1953-03-24"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew", "Soundtrack" ;
+    schema:description "Debi Durst. Actress: The Nightmare Before Christmas. Debi Durst was born on 24 March 1953 in San Francisco, California, USA. She is an actress, known for The Nightmare Before Christmas (1993), Monkeybone (2001) and The Nightmare Before Christmas: Oogie's Revenge (2004). She has been married to Will Durst since 4 November 1981." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "San Francisco, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3802704/>,    # The Day I Grew Up
+                       <https://www.imdb.com/title/tt3946998/>,    # Hey Monster, Hands Off My City
+                       <https://www.imdb.com/title/tt0475344/>,    # The Nightmare Before Christmas: Oogie's Revenge
+                       <https://www.imdb.com/title/tt0166276/>,    # Monkeybone
+                       <https://www.imdb.com/title/tt0107688/>,    # The Nightmare Before Christmas
+                       <https://www.imdb.com/title/tt0094510/> ; # Midnight Caller
+
+
+    schema:video <https://www.imdb.com/video/vi148291353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Day I Grew Up (2015)
+<https://www.imdb.com/title/tt3802704/> a schema:Movie ;
+    schema:name "The Day I Grew Up" ;
+    schema:url <https://www.imdb.com/title/tt3802704/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Ritz Hotel Clerk"
+    ] .
+
+# Hey Monster, Hands Off My City (2014)
+<https://www.imdb.com/title/tt3946998/> a schema:Movie ;
+    schema:name "Hey Monster, Hands Off My City" ;
+    schema:url <https://www.imdb.com/title/tt3946998/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Mayor's Safety Rep"
+    ] .
+
+# The Nightmare Before Christmas: Oogie's Revenge (2004)
+<https://www.imdb.com/title/tt0475344/> a schema:Movie ;
+    schema:name "The Nightmare Before Christmas: Oogie's Revenge" ;
+    schema:url <https://www.imdb.com/title/tt0475344/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Corpse Kid"
+    ] .
+
+# Monkeybone (2001)
+<https://www.imdb.com/title/tt0166276/> a schema:Movie ;
+    schema:name "Monkeybone" ;
+    schema:url <https://www.imdb.com/title/tt0166276/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Street Squash Snake"
+    ] .
+
+# The Nightmare Before Christmas (1993)
+<https://www.imdb.com/title/tt0107688/> a schema:Movie ;
+    schema:name "The Nightmare Before Christmas" ;
+    schema:url <https://www.imdb.com/title/tt0107688/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Corpse Kid"
+    ] .
+
+# Midnight Caller (1989)
+<https://www.imdb.com/title/tt0094510/> a schema:Movie ;
+    schema:name "Midnight Caller" ;
+    schema:url <https://www.imdb.com/title/tt0094510/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0244394/> ;
+        schema:characterName "Photo Crew #3"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi148291353/> a schema:VideoObject ;
+        schema:name "#BeRobin the Movie" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi148291353/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYThlNjkyMjQtOTRiYy00NTYzLWIyNzMtOGM2ZmVjNDFiOGY4XkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2019-11-06T17:11:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

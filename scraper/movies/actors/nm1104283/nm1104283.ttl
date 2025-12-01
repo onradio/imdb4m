@@ -1,0 +1,148 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1104283/> a schema:Person ;
+    schema:name "Megan Edwards" ;
+    schema:url <https://www.imdb.com/name/nm1104283/> ;
+    schema:birthDate "1963-06-09"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Megan Edwards. Actress: The Lord of the Rings: The Fellowship of the Ring. Megan Edwards was born on 9 June 1963. She is an actress, known for The Lord of the Rings: The Fellowship of the Ring (2001), Mortal Engines (2018) and Hercules: The Legendary Journeys (1995)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4¼″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1571234/>,    # Mortal Engines
+                       <https://www.imdb.com/title/tt1700808/>,    # Fast Girls
+                       <https://www.imdb.com/title/tt1601195/>,    # Home by Christmas
+                       <https://www.imdb.com/title/tt1210359/>,    # Second Hand Wedding
+                       <https://www.imdb.com/title/tt1104141/>,    # Welcome Home
+                       <https://www.imdb.com/title/tt0120737/>,    # The Lord of the Rings: The Fellowship of the Ring
+                       <https://www.imdb.com/title/tt0215446/>,    # A Twist in the Tale
+                       <https://www.imdb.com/title/tt0111999/> ; # Hercules: The Legendary Journeys
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1104283/mediaviewer/rm3986930176/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mortal Engines (2018)
+<https://www.imdb.com/title/tt1571234/> a schema:Movie ;
+    schema:name "Mortal Engines" ;
+    schema:url <https://www.imdb.com/title/tt1571234/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Mrs. Wreyland"
+    ] .
+
+# Fast Girls (2012)
+<https://www.imdb.com/title/tt1700808/> a schema:Movie ;
+    schema:name "Fast Girls" ;
+    schema:url <https://www.imdb.com/title/tt1700808/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Relay Team: Trinidad & Tobago"
+    ] .
+
+# Home by Christmas (2010)
+<https://www.imdb.com/title/tt1601195/> a schema:Movie ;
+    schema:name "Home by Christmas" ;
+    schema:url <https://www.imdb.com/title/tt1601195/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Ed's mother"
+    ] .
+
+# Second Hand Wedding (2008)
+<https://www.imdb.com/title/tt1210359/> a schema:Movie ;
+    schema:name "Second Hand Wedding" ;
+    schema:url <https://www.imdb.com/title/tt1210359/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Celebrant"
+    ] .
+
+# Welcome Home (2007)
+<https://www.imdb.com/title/tt1104141/> a schema:Movie ;
+    schema:name "Welcome Home" ;
+    schema:url <https://www.imdb.com/title/tt1104141/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "French speaking women"
+    ] .
+
+# The Lord of the Rings: The Fellowship of the Ring (2001)
+<https://www.imdb.com/title/tt0120737/> a schema:Movie ;
+    schema:name "The Lord of the Rings: The Fellowship of the Ring" ;
+    schema:url <https://www.imdb.com/title/tt0120737/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Mrs. Proudfoot"
+    ] .
+
+# A Twist in the Tale (1999)
+<https://www.imdb.com/title/tt0215446/> a schema:Movie ;
+    schema:name "A Twist in the Tale" ;
+    schema:url <https://www.imdb.com/title/tt0215446/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Aunt Moya"
+    ] .
+
+# Hercules: The Legendary Journeys (1995)
+<https://www.imdb.com/title/tt0111999/> a schema:Movie ;
+    schema:name "Hercules: The Legendary Journeys" ;
+    schema:url <https://www.imdb.com/title/tt0111999/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1104283/> ;
+        schema:characterName "Servant"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1104283/mediaviewer/rm3986930176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODg0Nzk2MDY0OV5BMl5BanBnXkFtZTcwNDEzNTU0NA@@._V1_.jpg> ;
+    schema:caption "Sean Astin, Sean Bean, Elijah Wood, Viggo Mortensen, Noel Appleby, Orlando Bloom, Billy Boyd, Marton Csokas, Alan Howard, Dominic Monaghan, Craig Parker, John Rhys-Davies, Andy Serkis, Sala Baker, Megan Edwards, and Taniel in The Lord of the Rings: The Fellowship of the Ring (2001)" ;
+    schema:height "1157"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,561 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0969364/> a schema:Person ;
+    schema:name "Corrado Invernizzi" ;
+    schema:url <https://www.imdb.com/name/nm0969364/> ;
+    schema:birthDate "1965-04-25"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Corrado Invernizzi. Actor: Martin Scorsese Presents: The Saints. Corrado Invernizzi was born on 25 April 1965 in Genoa, Liguria, Italy. He is an actor, known for Martin Scorsese Presents: The Saints (2024), Le Mans '66 (2019) and Indiana Jones and the Dial of Destiny (2023)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGViOWIzZTQtZDI3My00NWEyLTkwNzAtMjQ1MjljNzIyMzE0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Genoa, Liguria, Italy"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1950186/>,    # Le Mans '66
+                       <https://www.imdb.com/title/tt6284064/>,    # The Bears' Famous Invasion of Sicily
+                       <https://www.imdb.com/title/tt7572868/>,    # The Name of the Rose
+                       <https://www.imdb.com/title/tt8972442/>,    # Io sono Mia
+                       <https://www.imdb.com/title/tt6328182/>,    # Le rire de ma mère
+                       <https://www.imdb.com/title/tt7169010/>,    # Per una rosa
+                       <https://www.imdb.com/title/tt0436992/>,    # Doctor Who
+                       <https://www.imdb.com/title/tt5673782/>,    # Genius
+                       <https://www.imdb.com/title/tt6024900/>,    # Pagliacci
+                       <https://www.imdb.com/title/tt2396953/>,    # Falco
+                       <https://www.imdb.com/title/tt4536304/>,    # A Little Lust
+                       <https://www.imdb.com/title/tt4460546/>,    # Long Live the Bride
+                       <https://www.imdb.com/title/tt2189461/>,    # Marco Polo
+                       <https://www.imdb.com/title/tt2967008/>,    # The Face of an Angel
+                       <https://www.imdb.com/title/tt2014295/>,    # The Silent Mountain
+                       <https://www.imdb.com/title/tt1429534/>,    # Braquo
+                       <https://www.imdb.com/title/tt2467480/>,    # Il principe abusivo
+                       <https://www.imdb.com/title/tt2281231/>,    # Tender Is the Flesh
+                       <https://www.imdb.com/title/tt1508959/>,    # Les fauves
+                       <https://www.imdb.com/title/tt2379344/>,    # Zabana!
+                       <https://www.imdb.com/title/tt2259665/>,    # The Young Montalbano
+                       <https://www.imdb.com/title/tt1565068/>,    # Piazza Fontana: The Italian Conspiracy
+                       <https://www.imdb.com/title/tt1723047/>,    # Requiem Pour Une Tueuse - Requiem for A Killer
+                       <https://www.imdb.com/title/tt1156173/>,    # Vincere
+                       <https://www.imdb.com/title/tt1223971/>,    # The Rest of the Night
+                       <https://www.imdb.com/title/tt0830161/>,    # Grand Star
+                       <https://www.imdb.com/title/tt0312103/>,    # Carabinieri
+                       <https://www.imdb.com/title/tt0481278/>,    # Guido che sfidò le Brigate Rosse
+                       <https://www.imdb.com/title/tt0807686/>,    # Mafiosa
+                       <https://www.imdb.com/title/tt0314381/>,    # Le miroir d'Alice
+                       <https://www.imdb.com/title/tt0250151/>,    # Ladies of the Law
+                       <https://www.imdb.com/title/tt0303456/>,    # L'emmerdeuse
+                       <https://www.imdb.com/title/tt0920489/>,    # Inspector Montalbano
+                       <https://www.imdb.com/title/tt0143093/>,    # L'albero delle pere
+                       <https://www.imdb.com/title/tt0202730/>,    # Doctor Giorgia
+                       <https://www.imdb.com/title/tt0118054/> ; # Uomo d'acqua dolce
+
+
+    schema:video <https://www.imdb.com/video/vi2010630169/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0969364/mediaviewer/rm3423976449/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm3558194177/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm3786785281/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm1646834689/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm1747497985/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm3104551937/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm3582000640/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm677091586/>,
+                 <https://www.imdb.com/name/nm0969364/mediaviewer/rm2949909505/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Le Mans '66 (2019)
+<https://www.imdb.com/title/tt1950186/> a schema:Movie ;
+    schema:name "Le Mans '66" ;
+    schema:url <https://www.imdb.com/title/tt1950186/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Franco Gozzi"
+    ] .
+
+# The Bears' Famous Invasion of Sicily (2019)
+<https://www.imdb.com/title/tt6284064/> a schema:Movie ;
+    schema:name "The Bears' Famous Invasion of Sicily" ;
+    schema:url <https://www.imdb.com/title/tt6284064/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Il Granduca"
+    ] .
+
+# The Name of the Rose (2019)
+<https://www.imdb.com/title/tt7572868/> a schema:Movie ;
+    schema:name "The Name of the Rose" ;
+    schema:url <https://www.imdb.com/title/tt7572868/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Michele da Cesena"
+    ] .
+
+# Io sono Mia (2019)
+<https://www.imdb.com/title/tt8972442/> a schema:Movie ;
+    schema:name "Io sono Mia" ;
+    schema:url <https://www.imdb.com/title/tt8972442/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Charles Aznavour"
+    ] .
+
+# Le rire de ma mère (2017)
+<https://www.imdb.com/title/tt6328182/> a schema:Movie ;
+    schema:name "Le rire de ma mère" ;
+    schema:url <https://www.imdb.com/title/tt6328182/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Psychanalyste"
+    ] .
+
+# Per una rosa (2017)
+<https://www.imdb.com/title/tt7169010/> a schema:Movie ;
+    schema:name "Per una rosa" ;
+    schema:url <https://www.imdb.com/title/tt7169010/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName ""
+    ] .
+
+# Doctor Who (2017)
+<https://www.imdb.com/title/tt0436992/> a schema:Movie ;
+    schema:name "Doctor Who" ;
+    schema:url <https://www.imdb.com/title/tt0436992/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Cardinal Angelo"
+    ] .
+
+# Genius (2017)
+<https://www.imdb.com/title/tt5673782/> a schema:Movie ;
+    schema:name "Genius" ;
+    schema:url <https://www.imdb.com/title/tt5673782/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Pierre Curie"
+    ] .
+
+# Pagliacci (2016)
+<https://www.imdb.com/title/tt6024900/> a schema:Movie ;
+    schema:name "Pagliacci" ;
+    schema:url <https://www.imdb.com/title/tt6024900/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Canio"
+    ] .
+
+# Falco (2016)
+<https://www.imdb.com/title/tt2396953/> a schema:Movie ;
+    schema:name "Falco" ;
+    schema:url <https://www.imdb.com/title/tt2396953/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Professeur Schultz"
+    ] .
+
+# A Little Lust (2015)
+<https://www.imdb.com/title/tt4536304/> a schema:Movie ;
+    schema:name "A Little Lust" ;
+    schema:url <https://www.imdb.com/title/tt4536304/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Manuele Boldrin"
+    ] .
+
+# Long Live the Bride (2015)
+<https://www.imdb.com/title/tt4460546/> a schema:Movie ;
+    schema:name "Long Live the Bride" ;
+    schema:url <https://www.imdb.com/title/tt4460546/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Concellino"
+    ] .
+
+# Marco Polo (2014)
+<https://www.imdb.com/title/tt2189461/> a schema:Movie ;
+    schema:name "Marco Polo" ;
+    schema:url <https://www.imdb.com/title/tt2189461/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Maffeo Polo"
+    ] .
+
+# The Face of an Angel (2014)
+<https://www.imdb.com/title/tt2967008/> a schema:Movie ;
+    schema:name "The Face of an Angel" ;
+    schema:url <https://www.imdb.com/title/tt2967008/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Francesco"
+    ] .
+
+# The Silent Mountain (2014)
+<https://www.imdb.com/title/tt2014295/> a schema:Movie ;
+    schema:name "The Silent Mountain" ;
+    schema:url <https://www.imdb.com/title/tt2014295/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Nicola Quinziato"
+    ] .
+
+# Braquo (2014)
+<https://www.imdb.com/title/tt1429534/> a schema:Movie ;
+    schema:name "Braquo" ;
+    schema:url <https://www.imdb.com/title/tt1429534/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Docteur Franco Belletti"
+    ] .
+
+# Il principe abusivo (2013)
+<https://www.imdb.com/title/tt2467480/> a schema:Movie ;
+    schema:name "Il principe abusivo" ;
+    schema:url <https://www.imdb.com/title/tt2467480/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Paziente Gesù"
+    ] .
+
+# Tender Is the Flesh (2012)
+<https://www.imdb.com/title/tt2281231/> a schema:Movie ;
+    schema:name "Tender Is the Flesh" ;
+    schema:url <https://www.imdb.com/title/tt2281231/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Victim"
+    ] .
+
+# Les fauves (2012)
+<https://www.imdb.com/title/tt1508959/> a schema:Movie ;
+    schema:name "Les fauves" ;
+    schema:url <https://www.imdb.com/title/tt1508959/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Avocat Munez"
+    ] .
+
+# Zabana! (2012)
+<https://www.imdb.com/title/tt2379344/> a schema:Movie ;
+    schema:name "Zabana!" ;
+    schema:url <https://www.imdb.com/title/tt2379344/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Atlan"
+    ] .
+
+# The Young Montalbano (2012)
+<https://www.imdb.com/title/tt2259665/> a schema:Movie ;
+    schema:name "The Young Montalbano" ;
+    schema:url <https://www.imdb.com/title/tt2259665/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Saverio Ostellino"
+    ] .
+
+# Piazza Fontana: The Italian Conspiracy (2012)
+<https://www.imdb.com/title/tt1565068/> a schema:Movie ;
+    schema:name "Piazza Fontana: The Italian Conspiracy" ;
+    schema:url <https://www.imdb.com/title/tt1565068/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Giudice Pietro Calogero"
+    ] .
+
+# Requiem Pour Une Tueuse - Requiem for A Killer (2011)
+<https://www.imdb.com/title/tt1723047/> a schema:Movie ;
+    schema:name "Requiem Pour Une Tueuse - Requiem for A Killer" ;
+    schema:url <https://www.imdb.com/title/tt1723047/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Vittorio Biamonte"
+    ] .
+
+# Vincere (2009)
+<https://www.imdb.com/title/tt1156173/> a schema:Movie ;
+    schema:name "Vincere" ;
+    schema:url <https://www.imdb.com/title/tt1156173/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Dottor Cappelletti"
+    ] .
+
+# The Rest of the Night (2008)
+<https://www.imdb.com/title/tt1223971/> a schema:Movie ;
+    schema:name "The Rest of the Night" ;
+    schema:url <https://www.imdb.com/title/tt1223971/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Carrozziere"
+    ] .
+
+# Grand Star (2007)
+<https://www.imdb.com/title/tt0830161/> a schema:Movie ;
+    schema:name "Grand Star" ;
+    schema:url <https://www.imdb.com/title/tt0830161/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Bogdan"
+    ] .
+
+# Carabinieri (2007)
+<https://www.imdb.com/title/tt0312103/> a schema:Movie ;
+    schema:name "Carabinieri" ;
+    schema:url <https://www.imdb.com/title/tt0312103/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Oliviero Batti"
+    ] .
+
+# Guido che sfidò le Brigate Rosse (2007)
+<https://www.imdb.com/title/tt0481278/> a schema:Movie ;
+    schema:name "Guido che sfidò le Brigate Rosse" ;
+    schema:url <https://www.imdb.com/title/tt0481278/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Operaio"
+    ] .
+
+# Mafiosa (2006)
+<https://www.imdb.com/title/tt0807686/> a schema:Movie ;
+    schema:name "Mafiosa" ;
+    schema:url <https://www.imdb.com/title/tt0807686/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Technicien italien"
+    ] .
+
+# Le miroir d'Alice (2002)
+<https://www.imdb.com/title/tt0314381/> a schema:Movie ;
+    schema:name "Le miroir d'Alice" ;
+    schema:url <https://www.imdb.com/title/tt0314381/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Le ténor italien"
+    ] .
+
+# Ladies of the Law (2002)
+<https://www.imdb.com/title/tt0250151/> a schema:Movie ;
+    schema:name "Ladies of the Law" ;
+    schema:url <https://www.imdb.com/title/tt0250151/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Le voisin"
+    ] .
+
+# L'emmerdeuse (2001)
+<https://www.imdb.com/title/tt0303456/> a schema:Movie ;
+    schema:name "L'emmerdeuse" ;
+    schema:url <https://www.imdb.com/title/tt0303456/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Prof 2"
+    ] .
+
+# Inspector Montalbano (1999)
+<https://www.imdb.com/title/tt0920489/> a schema:Movie ;
+    schema:name "Inspector Montalbano" ;
+    schema:url <https://www.imdb.com/title/tt0920489/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Lattes"
+    ] .
+
+# L'albero delle pere (1998)
+<https://www.imdb.com/title/tt0143093/> a schema:Movie ;
+    schema:name "L'albero delle pere" ;
+    schema:url <https://www.imdb.com/title/tt0143093/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Laboratory technician"
+    ] .
+
+# Doctor Giorgia (1997)
+<https://www.imdb.com/title/tt0202730/> a schema:Movie ;
+    schema:name "Doctor Giorgia" ;
+    schema:url <https://www.imdb.com/title/tt0202730/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Cesare"
+    ] .
+
+# Uomo d'acqua dolce (1997)
+<https://www.imdb.com/title/tt0118054/> a schema:Movie ;
+    schema:name "Uomo d'acqua dolce" ;
+    schema:url <https://www.imdb.com/title/tt0118054/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0969364/> ;
+        schema:characterName "Tenore"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2010630169/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2010630169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjVlOGVlZmYtYWM3NS00N2IzLWIxM2ItNjMzMjhlODM4MDc2XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M2S"^^xsd:duration ;
+        schema:uploadDate "2025-07-16T10:35:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGViOWIzZTQtZDI3My00NWEyLTkwNzAtMjQ1MjljNzIyMzE0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGViOWIzZTQtZDI3My00NWEyLTkwNzAtMjQ1MjljNzIyMzE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi" ;
+    schema:height "2267"^^xsd:integer ;
+    schema:width "1450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm3423976449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2FlMTE0MzUtYmQ2Yy00MzAxLWFiMDEtMDRhNzQxMGZjZjQ2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi" ;
+    schema:height "2398"^^xsd:integer ;
+    schema:width "1544"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm3558194177/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGI2MWQ3MWEtMWQ5YS00ODllLWJmMzktNGVhNGZiNGEwNmZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi" ;
+    schema:height "4054"^^xsd:integer ;
+    schema:width "2566"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm3786785281/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMyZTFmYzItZDUyNy00OGNkLWJkYjAtZmJhZDcxMTAwYmEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Caught By A Wave by Massimiliano Camaiti" ;
+    schema:height "903"^^xsd:integer ;
+    schema:width "1452"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm1646834689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA3OWViNWMtOWVjYi00ZTdkLWE2NGQtYzc1MzgyZTgxZDg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi and Jon Bernthal in Le Mans '66 (2019)" ;
+    schema:height "888"^^xsd:integer ;
+    schema:width "1777"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm1747497985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjkzYTRhMDEtNGNhYi00NzU3LTlmOWQtNWY4NWI2ZDNjNmUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi and Jon Bernthal in Le Mans '66 (2019)" ;
+    schema:height "888"^^xsd:integer ;
+    schema:width "1777"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm3104551937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWM2NzI0YTctNjc2Yy00ZjI2LTg2YjItNjQwNjk4ZjUxNmIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cannes Film Festival 2009 - VINCERE" ;
+    schema:height "1394"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm3582000640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2OTE5MTE3Ml5BMl5BanBnXkFtZTgwODA3MjE3MzE@._V1_.jpg> ;
+    schema:caption "Pierfrancesco Favino, Corrado Invernizzi, and Lorenzo Richelmy in Marco Polo (2014)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm677091586/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzI1NTdkZDQtNzE5Ny00ODg4LTg1MzgtYmU2MWMyN2Y5MzAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi" ;
+    schema:height "1350"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0969364/mediaviewer/rm2949909505/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY2MGEzMjgtYjBkMy00NzQ4LTkyYTctNTAzZmVjOWExYmJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Corrado Invernizzi" ;
+    schema:height "612"^^xsd:integer ;
+    schema:width "346"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,132 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0338375/> a schema:Person ;
+    schema:name "Tim Green" ;
+    schema:url <https://www.imdb.com/name/nm0338375/> ;
+    schema:birthDate "1939-08-15"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tim Green. Actor: What's Eating Gilbert Grape. Tim Green was born on 15 August 1939 in Dallas, Texas, USA. He was an actor, known for What's Eating Gilbert Grape (1993), On Valentine's Day (1986) and Dallas (1978). He died on 7 April 2020." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dallas, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0108550/>,    # What's Eating Gilbert Grape
+                       <https://www.imdb.com/title/tt0105291/>,    # Ruby
+                       <https://www.imdb.com/title/tt0103652/>,    # All-American Murder
+                       <https://www.imdb.com/title/tt0095816/>,    # Pancho Barnes
+                       <https://www.imdb.com/title/tt0093126/>,    # Guilty of Innocence: The Lenell Geter Story
+                       <https://www.imdb.com/title/tt0091676/>,    # On Valentine's Day
+                       <https://www.imdb.com/title/tt0077000/> . # Dallas
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# What's Eating Gilbert Grape (1993)
+<https://www.imdb.com/title/tt0108550/> a schema:Movie ;
+    schema:name "What's Eating Gilbert Grape" ;
+    schema:url <https://www.imdb.com/title/tt0108550/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Mr. Lamson"
+    ] .
+
+# Ruby (1992)
+<https://www.imdb.com/title/tt0105291/> a schema:Movie ;
+    schema:name "Ruby" ;
+    schema:url <https://www.imdb.com/title/tt0105291/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Judge"
+    ] .
+
+# All-American Murder (1991)
+<https://www.imdb.com/title/tt0103652/> a schema:Movie ;
+    schema:name "All-American Murder" ;
+    schema:url <https://www.imdb.com/title/tt0103652/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Judge Logan"
+    ] .
+
+# Pancho Barnes (1988)
+<https://www.imdb.com/title/tt0095816/> a schema:Movie ;
+    schema:name "Pancho Barnes" ;
+    schema:url <https://www.imdb.com/title/tt0095816/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Movie Director"
+    ] .
+
+# Guilty of Innocence: The Lenell Geter Story (1987)
+<https://www.imdb.com/title/tt0093126/> a schema:Movie ;
+    schema:name "Guilty of Innocence: The Lenell Geter Story" ;
+    schema:url <https://www.imdb.com/title/tt0093126/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Earnest Lock"
+    ] .
+
+# On Valentine's Day (1986)
+<https://www.imdb.com/title/tt0091676/> a schema:Movie ;
+    schema:name "On Valentine's Day" ;
+    schema:url <https://www.imdb.com/title/tt0091676/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Sheriff"
+    ] .
+
+# Dallas (1985)
+<https://www.imdb.com/title/tt0077000/> a schema:Movie ;
+    schema:name "Dallas" ;
+    schema:url <https://www.imdb.com/title/tt0077000/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0338375/> ;
+        schema:characterName "Dallas Police Sgt. Tim Lenthicum"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

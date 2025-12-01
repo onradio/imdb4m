@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1253903/> a schema:Person ;
+    schema:name "Tianyong Zheng" ;
+    schema:url <https://www.imdb.com/name/nm1253903/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tianyong Zheng. Actor: Hero. Tianyong Zheng is known for Hero (2002), Yang san jie gao zhuang (1993) and Zen (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1514753/>,    # Cao Cao
+                       <https://www.imdb.com/title/tt1156470/>,    # Zen
+                       <https://www.imdb.com/title/tt5619290/>,    # The Great Revival
+                       <https://www.imdb.com/title/tt9426052/>,    # Huang Taizi Mishi
+                       <https://www.imdb.com/title/tt10568244/>,    # Shao Nian Tian Zi
+                       <https://www.imdb.com/title/tt1841462/>,    # Towards the Republic
+                       <https://www.imdb.com/title/tt0299977/>,    # Hero
+                       <https://www.imdb.com/title/tt0333689/>,    # Jue sha
+                       <https://www.imdb.com/title/tt32851531/> . # Yang san jie gao zhuang
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cao Cao (2010)
+<https://www.imdb.com/title/tt1514753/> a schema:Movie ;
+    schema:name "Cao Cao" ;
+    schema:url <https://www.imdb.com/title/tt1514753/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Wang Yun"
+    ] .
+
+# Zen (2009)
+<https://www.imdb.com/title/tt1156470/> a schema:Movie ;
+    schema:name "Zen" ;
+    schema:url <https://www.imdb.com/title/tt1156470/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Nyôjô"
+    ] .
+
+# The Great Revival (2007)
+<https://www.imdb.com/title/tt5619290/> a schema:Movie ;
+    schema:name "The Great Revival" ;
+    schema:url <https://www.imdb.com/title/tt5619290/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Wen Zhong (2007)"
+    ] .
+
+# Huang Taizi Mishi (2004)
+<https://www.imdb.com/title/tt9426052/> a schema:Movie ;
+    schema:name "Huang Taizi Mishi" ;
+    schema:url <https://www.imdb.com/title/tt9426052/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Songgotu (2004)"
+    ] .
+
+# Shao Nian Tian Zi (2003)
+<https://www.imdb.com/title/tt10568244/> a schema:Movie ;
+    schema:name "Shao Nian Tian Zi" ;
+    schema:url <https://www.imdb.com/title/tt10568244/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName ""
+    ] .
+
+# Towards the Republic (2003)
+<https://www.imdb.com/title/tt1841462/> a schema:Movie ;
+    schema:name "Towards the Republic" ;
+    schema:url <https://www.imdb.com/title/tt1841462/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Qu Hong-Ji"
+    ] .
+
+# Hero (2002)
+<https://www.imdb.com/title/tt0299977/> a schema:Movie ;
+    schema:name "Hero" ;
+    schema:url <https://www.imdb.com/title/tt0299977/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Old Servant"
+    ] .
+
+# Jue sha (1993)
+<https://www.imdb.com/title/tt0333689/> a schema:Movie ;
+    schema:name "Jue sha" ;
+    schema:url <https://www.imdb.com/title/tt0333689/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName "Uncle Hou"
+    ] .
+
+# Yang san jie gao zhuang (1993)
+<https://www.imdb.com/title/tt32851531/> a schema:Movie ;
+    schema:name "Yang san jie gao zhuang" ;
+    schema:url <https://www.imdb.com/title/tt32851531/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1253903/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

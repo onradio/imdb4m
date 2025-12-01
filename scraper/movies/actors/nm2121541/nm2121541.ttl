@@ -1,0 +1,362 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2121541/> a schema:Person ;
+    schema:name "Evanna Lynch" ;
+    schema:url <https://www.imdb.com/name/nm2121541/> ;
+    schema:birthDate "1991-08-16"^^xsd:date ;
+    schema:jobTitle "Actress", "Soundtrack" ;
+    schema:alternateName "Ev", "Evy", "Eva", "Evanna Patricia Lynch" ;
+    schema:description "Evanna Lynch. Actress: Harry Potter and the Half-Blood Prince. Evanna Patricia Lynch is an Irish actress. Born in the town of Termonfeckin in Ireland, she is one of four children to Donal and Marguerite Lynch. Her acting career began in 2007 when she competed in an open audition against nearly 15,000 girls, and won the coveted role of Luna Lovegood in the \"Harry Potter\" movie franchise. She appeared in four..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BM2JjYzI4ZmYtYzU4OS00MjdiLTllZGUtZmNkNjk0NzFlZWZjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Termonfeckin, Ireland"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.58"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 2¼″ (1.58 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0417741/>,    # Harry Potter and the Half-Blood Prince
+                       <https://www.imdb.com/title/tt0373889/>,    # Harry Potter and the Order of the Phoenix
+                       <https://www.imdb.com/title/tt0926084/>,    # Harry Potter and the Deathly Hallows: Part 1
+                       <https://www.imdb.com/title/tt1201607/>,    # Harry Potter and the Deathly Hallows: Part 2
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt11295850/>,    # Behind the McChicken Wrapper
+                       <https://www.imdb.com/title/tt9165454/>,    # Middle School Moguls
+                       <https://www.imdb.com/title/tt6038042/>,    # Madness in the Method
+                       <https://www.imdb.com/title/tt10533996/>,    # Lucia Joyce: Full Capacity
+                       <https://www.imdb.com/title/tt4656392/>,    # Lego Dimensions
+                       <https://www.imdb.com/title/tt4653556/>,    # Danny and the Human Zoo
+                       <https://www.imdb.com/title/tt3319018/>,    # My Name Is Emily
+                       <https://www.imdb.com/title/tt3328924/>,    # Addiction: A 60's Love Story
+                       <https://www.imdb.com/title/tt3059164/>,    # It Don't Come Easy
+                       <https://www.imdb.com/title/tt2950974/>,    # Apex
+                       <https://www.imdb.com/title/tt2429074/>,    # G.B.F.
+                       <https://www.imdb.com/title/tt2275492/>,    # A Very Potter Senior Year
+                       <https://www.imdb.com/title/tt1979918/>,    # Sinbad
+                       <https://www.imdb.com/title/tt1680310/>,    # Harry Potter and the Deathly Hallows: Part II
+                       <https://www.imdb.com/title/tt1571403/>,    # Harry Potter and the Deathly Hallows: Part I
+                       <https://www.imdb.com/title/tt1395738/>,    # Harry Potter and the Half-Blood Prince
+                       <https://www.imdb.com/title/tt0944836/> ; # Harry Potter and the Order of the Phoenix
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 5 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3492328985/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2121541/mediaviewer/rm658422530/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm3766510592/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm872903169/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm403141121/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm101151233/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm1879536129/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm1983414016/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm606502656/>,
+                 <https://www.imdb.com/name/nm2121541/mediaviewer/rm623279872/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0417741/> a schema:Movie ;
+    schema:name "Harry Potter and the Half-Blood Prince" ;
+    schema:url <https://www.imdb.com/title/tt0417741/> .
+
+<https://www.imdb.com/title/tt0373889/> a schema:Movie ;
+    schema:name "Harry Potter and the Order of the Phoenix" ;
+    schema:url <https://www.imdb.com/title/tt0373889/> .
+
+<https://www.imdb.com/title/tt0926084/> a schema:Movie ;
+    schema:name "Harry Potter and the Deathly Hallows: Part 1" ;
+    schema:url <https://www.imdb.com/title/tt0926084/> .
+
+<https://www.imdb.com/title/tt1201607/> a schema:Movie ;
+    schema:name "Harry Potter and the Deathly Hallows: Part 2" ;
+    schema:url <https://www.imdb.com/title/tt1201607/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Behind the McChicken Wrapper (2019)
+<https://www.imdb.com/title/tt11295850/> a schema:Movie ;
+    schema:name "Behind the McChicken Wrapper" ;
+    schema:url <https://www.imdb.com/title/tt11295850/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Middle School Moguls (2019)
+<https://www.imdb.com/title/tt9165454/> a schema:Movie ;
+    schema:name "Middle School Moguls" ;
+    schema:url <https://www.imdb.com/title/tt9165454/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Academy Voice"
+    ] .
+
+# Madness in the Method (2019)
+<https://www.imdb.com/title/tt6038042/> a schema:Movie ;
+    schema:name "Madness in the Method" ;
+    schema:url <https://www.imdb.com/title/tt6038042/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Abbie Fox"
+    ] .
+
+# Lucia Joyce: Full Capacity (2019)
+<https://www.imdb.com/title/tt10533996/> a schema:Movie ;
+    schema:name "Lucia Joyce: Full Capacity" ;
+    schema:url <https://www.imdb.com/title/tt10533996/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Lucia Joyce"
+    ] .
+
+# Lego Dimensions (2015)
+<https://www.imdb.com/title/tt4656392/> a schema:Movie ;
+    schema:name "Lego Dimensions" ;
+    schema:url <https://www.imdb.com/title/tt4656392/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna Lovegood"
+    ] .
+
+# Danny and the Human Zoo (2015)
+<https://www.imdb.com/title/tt4653556/> a schema:Movie ;
+    schema:name "Danny and the Human Zoo" ;
+    schema:url <https://www.imdb.com/title/tt4653556/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Bridget Riordan"
+    ] .
+
+# My Name Is Emily (2015)
+<https://www.imdb.com/title/tt3319018/> a schema:Movie ;
+    schema:name "My Name Is Emily" ;
+    schema:url <https://www.imdb.com/title/tt3319018/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Emily"
+    ] .
+
+# Addiction: A 60's Love Story (2015)
+<https://www.imdb.com/title/tt3328924/> a schema:Movie ;
+    schema:name "Addiction: A 60's Love Story" ;
+    schema:url <https://www.imdb.com/title/tt3328924/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Theresa Bornstein"
+    ] .
+
+# It Don't Come Easy (2013)
+<https://www.imdb.com/title/tt3059164/> a schema:Movie ;
+    schema:name "It Don't Come Easy" ;
+    schema:url <https://www.imdb.com/title/tt3059164/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Ella"
+    ] .
+
+# Apex (2013)
+<https://www.imdb.com/title/tt2950974/> a schema:Movie ;
+    schema:name "Apex" ;
+    schema:url <https://www.imdb.com/title/tt2950974/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Regan"
+    ] .
+
+# G.B.F. (2013)
+<https://www.imdb.com/title/tt2429074/> a schema:Movie ;
+    schema:name "G.B.F." ;
+    schema:url <https://www.imdb.com/title/tt2429074/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "McKenzie Pryce"
+    ] .
+
+# A Very Potter Senior Year (2013)
+<https://www.imdb.com/title/tt2275492/> a schema:Movie ;
+    schema:name "A Very Potter Senior Year" ;
+    schema:url <https://www.imdb.com/title/tt2275492/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna"
+    ] .
+
+# Sinbad (2012)
+<https://www.imdb.com/title/tt1979918/> a schema:Movie ;
+    schema:name "Sinbad" ;
+    schema:url <https://www.imdb.com/title/tt1979918/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Alehna"
+    ] .
+
+# Harry Potter and the Deathly Hallows: Part II (2011)
+<https://www.imdb.com/title/tt1680310/> a schema:Movie ;
+    schema:name "Harry Potter and the Deathly Hallows: Part II" ;
+    schema:url <https://www.imdb.com/title/tt1680310/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna Lovegood"
+    ] .
+
+# Harry Potter and the Deathly Hallows: Part I (2010)
+<https://www.imdb.com/title/tt1571403/> a schema:Movie ;
+    schema:name "Harry Potter and the Deathly Hallows: Part I" ;
+    schema:url <https://www.imdb.com/title/tt1571403/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna Lovegood"
+    ] .
+
+# Harry Potter and the Half-Blood Prince (2009)
+<https://www.imdb.com/title/tt1395738/> a schema:Movie ;
+    schema:name "Harry Potter and the Half-Blood Prince" ;
+    schema:url <https://www.imdb.com/title/tt1395738/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna Lovegood"
+    ] .
+
+# Harry Potter and the Order of the Phoenix (2007)
+<https://www.imdb.com/title/tt0944836/> a schema:Movie ;
+    schema:name "Harry Potter and the Order of the Phoenix" ;
+    schema:url <https://www.imdb.com/title/tt0944836/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2121541/> ;
+        schema:characterName "Luna Lovegood"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3492328985/> a schema:VideoObject ;
+        schema:name "My Name Is Emily" ;
+        schema:description "Trailer for My Name Is Emily" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3492328985/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjJjMDUzZDAtM2RjZi00NTExLTlkMjctYjJlY2U2YTg5YzIzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M50S"^^xsd:duration ;
+        schema:uploadDate "2017-01-13T16:37:26Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BM2JjYzI4ZmYtYzU4OS00MjdiLTllZGUtZmNkNjk0NzFlZWZjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2JjYzI4ZmYtYzU4OS00MjdiLTllZGUtZmNkNjk0NzFlZWZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "4244"^^xsd:integer ;
+    schema:width "3395"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm658422530/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWMxM2JkNjMtZjRmNS00ZTk3LTg2YzgtZTY0YTZhMmZiYTI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "4480"^^xsd:integer ;
+    schema:width "6720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm3766510592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDlmNzIyY2MtNmFkYi00ZDdjLTlkNzMtMjI4NzJmY2VjMzIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm872903169/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA0OGY2OWMtYjllYy00NDRjLWE2OWEtNWE5YmI1ZTQ3YzQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm403141121/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmJhOWE2NDEtYWI5MS00YjQ5LTk0Y2QtYWRmNmJjNDU4MTU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm101151233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGY5YTBjMGItYmM4Yi00NWJiLTlhMDYtYTk4ZjRlNTI4MDUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "6720"^^xsd:integer ;
+    schema:width "4480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm1879536129/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTFhMzQyOTAtODgwOS00YWZlLThiOTgtNDNiOWViZWRhNTNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch" ;
+    schema:height "5472"^^xsd:integer ;
+    schema:width "3648"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm1983414016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzE5N2Y3MWMtNTJjOS00YmEyLWEyYWYtNmYyZjVlMDIwMTAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tinashe, John Schneider, Juan Pablo Di Pace, Sasha Farber, Artem Chigvintsev, Evanna Lynch, Nikki Glaser, Brandon Armstrong, Milo Manheim, Gleb Savchenko, Witney Carson, Jenna Johnson, Danelle Umstead, and Joe Amabile in Dancing with the Stars (2005)" ;
+    schema:height "2010"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm606502656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2VmMWJiY2EtMDg2My00Nzg4LWFjNTYtNzkwZmJlMDI0MWUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch in Dancing with the Stars (2005)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1997"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2121541/mediaviewer/rm623279872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmM4ODFkNzItM2VmOS00YmJiLWE3ZjItM2U5NjFkNmY1MjczXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Evanna Lynch in Dancing with the Stars (2005)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "1997"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2121541/>
+    schema:sameAs <https://m.facebook.com/evylynchpage>,
+                  <https://www.instagram.com/evannalynch/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

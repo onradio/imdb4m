@@ -1,0 +1,147 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0297306/> a schema:Person ;
+    schema:name "Tony Fucile" ;
+    schema:url <https://www.imdb.com/name/nm0297306/> ;
+    schema:jobTitle "Animation Department", "Art Department", "Actor" ;
+    schema:description "Tony Fucile. Animation Department: The Incredibles. Tony Fucile was born in 1964 in San Francisco, California, USA. He is an actor, known for The Incredibles (2004), The Lion King (1994) and The Iron Giant (1999). He is married to Stacey. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmE2NjE1NGItOTU1ZC00MmI4LThhNDAtNWMxYjZjMTIzMWY0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "San Francisco, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1979388/>,    # The Good Dinosaur
+                       <https://www.imdb.com/title/tt2096673/>,    # Inside Out
+                       <https://www.imdb.com/title/tt1957945/>,    # Boy on the Moon
+                       <https://www.imdb.com/title/tt1425244/>,    # Partly Cloudy
+                       <https://www.imdb.com/title/tt1049413/>,    # Up
+                       <https://www.imdb.com/title/tt0382932/>,    # Ratatouille
+                       <https://www.imdb.com/title/tt0112065/> ; # The Maxx
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0297306/mediaviewer/rm1261943040/>,
+                 <https://www.imdb.com/name/nm0297306/mediaviewer/rm1992015105/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Good Dinosaur (2015)
+<https://www.imdb.com/title/tt1979388/> a schema:Movie ;
+    schema:name "The Good Dinosaur" ;
+    schema:url <https://www.imdb.com/title/tt1979388/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Inside Out (2015)
+<https://www.imdb.com/title/tt2096673/> a schema:Movie ;
+    schema:name "Inside Out" ;
+    schema:url <https://www.imdb.com/title/tt2096673/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Boy on the Moon (2011)
+<https://www.imdb.com/title/tt1957945/> a schema:Movie ;
+    schema:name "Boy on the Moon" ;
+    schema:url <https://www.imdb.com/title/tt1957945/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Papà"
+    ] .
+
+# Partly Cloudy (2009)
+<https://www.imdb.com/title/tt1425244/> a schema:Movie ;
+    schema:name "Partly Cloudy" ;
+    schema:url <https://www.imdb.com/title/tt1425244/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Gus"
+    ] .
+
+# Up (2009)
+<https://www.imdb.com/title/tt1049413/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1049413/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Ratatouille (2007)
+<https://www.imdb.com/title/tt0382932/> a schema:Movie ;
+    schema:name "Ratatouille" ;
+    schema:url <https://www.imdb.com/title/tt0382932/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Pompidou"
+    ] .
+
+# The Maxx (1995)
+<https://www.imdb.com/title/tt0112065/> a schema:Movie ;
+    schema:name "The Maxx" ;
+    schema:url <https://www.imdb.com/title/tt0112065/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0297306/> ;
+        schema:characterName "Sgt. Ocono, Cop, Fridge, The Crappon"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmE2NjE1NGItOTU1ZC00MmI4LThhNDAtNWMxYjZjMTIzMWY0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmE2NjE1NGItOTU1ZC00MmI4LThhNDAtNWMxYjZjMTIzMWY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony Fucile in The Making of the Lion King (1994)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0297306/mediaviewer/rm1261943040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ5MjU5MjQzMl5BMl5BanBnXkFtZTcwNTM4MTA0NQ@@._V1_.jpg> ;
+    schema:caption "Tony Fucile in FernGully: The Last Rainforest (1992)" ;
+    schema:height "1903"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0297306/mediaviewer/rm1992015105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmE2NjE1NGItOTU1ZC00MmI4LThhNDAtNWMxYjZjMTIzMWY0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tony Fucile in The Making of the Lion King (1994)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

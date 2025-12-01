@@ -1,0 +1,176 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0827307/> a schema:Person ;
+    schema:name "Bob Stephenson" ;
+    schema:url <https://www.imdb.com/name/nm0827307/> ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Bob Stephenson. Actor: The Chair. Bob Stephenson was born in sunny Camarillo, California, where he skateboarded, Boogie Boarded, played baseball and soccer, had a huge Lego collection, and watched loads of television. He was a latch-key kid to John Stephenson, a mechanical/civil engineer for the government, and Olive Stephenson, who had her masters in nursing. He went to a fancy boarding school (Stevenson) in Pebble Beach, California, where he designed..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTI3OTI1MDk0OF5BMl5BanBnXkFtZTcwMjUzMzY3Mg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Oxnard, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7587890/>,    # The Rookie
+                       <https://www.imdb.com/title/tt5034326/>,    # Adam Ruins Everything
+                       <https://www.imdb.com/title/tt5770786/>,    # GLOW
+                       <https://www.imdb.com/title/tt7558302/> ; # Lying and Stealing
+
+
+    schema:video <https://www.imdb.com/video/vi2297797401/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0827307/mediaviewer/rm3164624128/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm1243577088/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm3038942208/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm2143744769/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm844187904/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm1873761536/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm1226799872/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm1491748608/>,
+                 <https://www.imdb.com/name/nm0827307/mediaviewer/rm810633472/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Rookie (2019)
+<https://www.imdb.com/title/tt7587890/> a schema:Movie ;
+    schema:name "The Rookie" ;
+    schema:url <https://www.imdb.com/title/tt7587890/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0827307/> ;
+        schema:characterName "Kevin"
+    ] .
+
+# Adam Ruins Everything (2019)
+<https://www.imdb.com/title/tt5034326/> a schema:Movie ;
+    schema:name "Adam Ruins Everything" ;
+    schema:url <https://www.imdb.com/title/tt5034326/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0827307/> ;
+        schema:characterName "Police Sergeant"
+    ] .
+
+# GLOW (2019)
+<https://www.imdb.com/title/tt5770786/> a schema:Movie ;
+    schema:name "GLOW" ;
+    schema:url <https://www.imdb.com/title/tt5770786/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0827307/> ;
+        schema:characterName "Dave the Reporter"
+    ] .
+
+# Lying and Stealing (2019)
+<https://www.imdb.com/title/tt7558302/> a schema:Movie ;
+    schema:name "Lying and Stealing" ;
+    schema:url <https://www.imdb.com/title/tt7558302/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0827307/> ;
+        schema:characterName "Mr. Oklahoma"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2297797401/> a schema:VideoObject ;
+        schema:name "Friends With Money" ;
+        schema:description "Trailer for Friends With Money" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2297797401/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGZlNDAzYWYtMjBhMS00MjJlLWIzOTYtNjM4YzlmZDdkMjc4XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M30S"^^xsd:duration ;
+        schema:uploadDate "2011-01-17T06:14:39Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTI3OTI1MDk0OF5BMl5BanBnXkFtZTcwMjUzMzY3Mg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3OTI1MDk0OF5BMl5BanBnXkFtZTcwMjUzMzY3Mg@@._V1_.jpg> ;
+    schema:caption "Bob Stephenson in The Forgotten (2009)" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "402"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm3164624128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDRjZDEyNWItNmMzNS00OGQzLWJjZTktZDgzNjY1YmMwMDFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Paul Rudd and Bob Stephenson in Our Idiot Brother (2011)" ;
+    schema:height "1214"^^xsd:integer ;
+    schema:width "2546"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm1243577088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWUxMTBmZDUtYTgwNi00ZDFjLWE1OTktYTc5YzExMWUzYzM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marietta DePrima and Bob Stephenson in Lady Bird (2017)" ;
+    schema:height "1036"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm3038942208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAyMjQwODAyM15BMl5BanBnXkFtZTcwNjYxMjk5MQ@@._V1_.jpg> ;
+    schema:caption "Brad Beyer, Clare Carey, Alicia Coppola, Richard Speight Jr., Bob Stephenson, Ashley Scott, and Kenneth Mitchell in Jericho (2006)" ;
+    schema:height "360"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm2143744769/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDUzYTcxMDEtNjg5Ny00MjJlLTkwNjItYjdiNDBhMDIyOTEyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "The Chair" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm844187904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzQyMjQzZmMtZmY3OC00ZDIyLTllMGYtMGE1MWRmNDA0YWVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kaley Cuoco, Johnny Galecki, and Bob Stephenson in The Big Bang Theory (2007)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm1873761536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzdjN2QzOWUtMDNkZS00NjYzLTk5ZDEtYTAwNzM4NWQwMDQyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Stephenson in Fight Club (1999)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm1226799872/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGUwNTg0MjUtMmFiYy00MWQ2LTgyYjQtYzJiMzgxMWU4ZGNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Stephenson in Lady Bird (2017)" ;
+    schema:height "1036"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm1491748608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmY4MWZmYWMtYjY2Ny00YTM1LTk5MTUtZjU1MmI3ODZiMjZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Steve Carell and Bob Stephenson in Battle of the Sexes (2017)" ;
+    schema:height "801"^^xsd:integer ;
+    schema:width "1911"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0827307/mediaviewer/rm810633472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2JmMWI0NDYtYzY0ZC00MjY1LTkwNGItOWIzOTNmMTZmNzIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bob Stephenson in The Big Bang Theory (2007)" ;
+    schema:height "720"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

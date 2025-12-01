@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11044365/> a schema:Person ;
+    schema:name "Franaita Jijana" ;
+    schema:url <https://www.imdb.com/name/nm11044365/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Franaita Jijana. Actress: Dil Bechara. Franaita Jijana is known for Dil Bechara (2020), Saaho (2019) and Indrani: Epic-1 Dharam vs Karam (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6836936/> .    # Saaho
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Saaho (2019)
+<https://www.imdb.com/title/tt6836936/> a schema:Movie ;
+    schema:name "Saaho" ;
+    schema:url <https://www.imdb.com/title/tt6836936/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11044365/> ;
+        schema:characterName "Waitress Angel"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

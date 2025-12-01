@@ -1,0 +1,123 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1250340/> a schema:Person ;
+    schema:name "Dan Birnbaum" ;
+    schema:url <https://www.imdb.com/name/nm1250340/> ;
+    schema:birthDate "1918-01-01"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dan Birnbaum. Actor: Mulholland Drive. Dan Birnbaum was born on 1 January 1918 in the USA. He was an actor, known for Mulholland Drive (2001), Titanic: Secrets Revealed (1998) and Mulholland Dr. (1999). He died on 23 July 2017 in the USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmIyMWY2YWYtYWRkYy00NzMwLWI4ODctOTE0MjI0MmJlMWVlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0166924/>,    # Mulholland Drive
+                       <https://www.imdb.com/title/tt1619856/>,    # Mulholland Dr.
+                       <https://www.imdb.com/title/tt0158274/> ; # Titanic: Secrets Revealed
+
+
+    schema:video <https://www.imdb.com/video/vi4266178073/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1250340/mediaviewer/rm428614144/>,
+                 <https://www.imdb.com/name/nm1250340/mediaviewer/rm411836928/>,
+                 <https://www.imdb.com/name/nm1250340/mediaviewer/rm3527751168/>,
+                 <https://www.imdb.com/name/nm1250340/mediaviewer/rm881598976/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mulholland Drive (2001)
+<https://www.imdb.com/title/tt0166924/> a schema:Movie ;
+    schema:name "Mulholland Drive" ;
+    schema:url <https://www.imdb.com/title/tt0166924/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1250340/> ;
+        schema:characterName "Irene's Companion"
+    ] .
+
+# Mulholland Dr. (1999)
+<https://www.imdb.com/title/tt1619856/> a schema:Movie ;
+    schema:name "Mulholland Dr." ;
+    schema:url <https://www.imdb.com/title/tt1619856/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1250340/> ;
+        schema:characterName "Irene's Companion"
+    ] .
+
+# Titanic: Secrets Revealed (1998)
+<https://www.imdb.com/title/tt0158274/> a schema:Movie ;
+    schema:name "Titanic: Secrets Revealed" ;
+    schema:url <https://www.imdb.com/title/tt0158274/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1250340/> ;
+        schema:characterName "Isidore Strauss"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4266178073/> a schema:VideoObject ;
+        schema:name "Mulholland Drive" ;
+        schema:description "Trailer for Mulholland Drive" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4266178073/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWViMWY2YmQtODg0MS00ZjMzLThmM2YtZTFlYjM1MGRhMmJiXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M26S"^^xsd:duration ;
+        schema:uploadDate "2017-03-30T07:40:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmIyMWY2YWYtYWRkYy00NzMwLWI4ODctOTE0MjI0MmJlMWVlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmIyMWY2YWYtYWRkYy00NzMwLWI4ODctOTE0MjI0MmJlMWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeanne Bates and Dan Birnbaum in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1250340/mediaviewer/rm428614144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTRkZDE4ZGQtZGU0MS00MzAwLWFhZDctN2Q3YzhkOTdmYmUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeanne Bates and Dan Birnbaum in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1250340/mediaviewer/rm411836928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjc3ZDM4NTMtODY4OC00Y2QwLThiZmUtNjg5NTI2YjMxNTYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeanne Bates and Dan Birnbaum in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1250340/mediaviewer/rm3527751168/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmJkM2Y1YjktMGU3Yy00M2MxLTg3MzktMzRmYWI0M2IxOWJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeanne Bates and Dan Birnbaum in Mulholland Drive (2001)" ;
+    schema:height "453"^^xsd:integer ;
+    schema:width "843"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1250340/mediaviewer/rm881598976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmIyMWY2YWYtYWRkYy00NzMwLWI4ODctOTE0MjI0MmJlMWVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jeanne Bates and Dan Birnbaum in Mulholland Drive (2001)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

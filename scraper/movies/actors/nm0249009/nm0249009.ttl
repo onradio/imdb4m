@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0249009/> a schema:Person ;
+    schema:name "Steve Edelman" ;
+    schema:url <https://www.imdb.com/name/nm0249009/> ;
+    schema:jobTitle "Producer", "Writer", "Actor" ;
+    schema:description "Steve Edelman. Actor: Fargo. Steve Edelman is known for Fargo (1996), Lamb Chop's Play-Along (1992) and The Relic Hunter with Ian Grant (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116282/> .    # Fargo
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fargo (1996)
+<https://www.imdb.com/title/tt0116282/> a schema:Movie ;
+    schema:name "Fargo" ;
+    schema:url <https://www.imdb.com/title/tt0116282/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0249009/> ;
+        schema:characterName "Morning Show Host"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

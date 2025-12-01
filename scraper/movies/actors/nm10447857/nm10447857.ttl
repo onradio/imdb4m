@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10447857/> a schema:Person ;
+    schema:name "Ramesh Indhira" ;
+    schema:url <https://www.imdb.com/name/nm10447857/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ramesh Indhira. Actor: K.G.F. Ramesh Indhira is known for K.G.F (2018), Veera Dheera Sooran: Part 2 (2025) and Sapta Sagaradaache Ello: Side B (2023)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7838252/> ;    # K.G.F
+
+
+    schema:video <https://www.imdb.com/video/vi2657208345/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10447857/> ;
+        schema:characterName "Sooryavardhan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2657208345/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2657208345/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYThiMDY5N2UtNzYyYi00NzkzLWJjMDAtMzlhMzg4MDI1MWU4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2025-10-19T03:27:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

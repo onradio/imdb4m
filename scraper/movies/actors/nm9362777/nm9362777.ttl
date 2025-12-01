@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9362777/> a schema:Person ;
+    schema:name "Riya May Atwood" ;
+    schema:url <https://www.imdb.com/name/nm9362777/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Riya May Atwood. Actress: Three Billboards Outside Ebbing, Missouri. Riya May Atwood is known for Three Billboards Outside Ebbing, Missouri (2017), Survive (2021) and Outbound (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5027774/> ;    # Three Billboards Outside Ebbing, Missouri
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9362777/mediaviewer/rm3297213184/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Three Billboards Outside Ebbing, Missouri (2017)
+<https://www.imdb.com/title/tt5027774/> a schema:Movie ;
+    schema:name "Three Billboards Outside Ebbing, Missouri" ;
+    schema:url <https://www.imdb.com/title/tt5027774/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9362777/> ;
+        schema:characterName "Polly"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm9362777/mediaviewer/rm3297213184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWM5MmQzZWItNDI0Ny00M2QzLTllMDktZGUxNjkxYjdhYmFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abbie Cornish, Riya May Atwood, and Selah Atwood in Three Billboards Outside Ebbing, Missouri (2017)" ;
+    schema:height "1088"^^xsd:integer ;
+    schema:width "2630"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

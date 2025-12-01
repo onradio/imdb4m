@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6162435/> a schema:Person ;
+    schema:name "Yasuhiko Oyama" ;
+    schema:url <https://www.imdb.com/name/nm6162435/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Yasuhiko Oyama. Actor: Get Out. Yasuhiko Oyama is known for Get Out (2017)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5052448/> ;    # Get Out
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6162435/mediaviewer/rm2113219072/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Get Out (2017)
+<https://www.imdb.com/title/tt5052448/> a schema:Movie ;
+    schema:name "Get Out" ;
+    schema:url <https://www.imdb.com/title/tt5052448/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6162435/> ;
+        schema:characterName "Hiroki Tanaka"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm6162435/mediaviewer/rm2113219072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjRlOTRiZDQtMmM3Ny00NDM5LTllODItYzE4ODZiYjQwNGZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bradley Whitford and Yasuhiko Oyama in Get Out (2017)" ;
+    schema:height "1058"^^xsd:integer ;
+    schema:width "2542"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

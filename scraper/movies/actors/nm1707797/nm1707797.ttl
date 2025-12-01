@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1707797/> a schema:Person ;
+    schema:name "Lucius Wyatt Cherokee" ;
+    schema:url <https://www.imdb.com/name/nm1707797/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Lucius Wyatt Cherokee. Actor: Leon. Lucius Wyatt Cherokee is known for Leon (1994)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjdmYWMxMzYtZTgyMS00MjMwLTg2ZDYtYTYyMTQ0NmZjYTk4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110413/> ;    # Leon
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1707797/mediaviewer/rm3873405184/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1707797/> ;
+        schema:characterName "Tonto"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjdmYWMxMzYtZTgyMS00MjMwLTg2ZDYtYTYyMTQ0NmZjYTk4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjdmYWMxMzYtZTgyMS00MjMwLTg2ZDYtYTYyMTQ0NmZjYTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucius Wyatt Cherokee" ;
+    schema:height "743"^^xsd:integer ;
+    schema:width "1214"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1707797/mediaviewer/rm3873405184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjdmYWMxMzYtZTgyMS00MjMwLTg2ZDYtYTYyMTQ0NmZjYTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucius Wyatt Cherokee" ;
+    schema:height "743"^^xsd:integer ;
+    schema:width "1214"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

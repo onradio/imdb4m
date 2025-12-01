@@ -1,0 +1,175 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1055187/> a schema:Person ;
+    schema:name "Vivien Cardone" ;
+    schema:url <https://www.imdb.com/name/nm1055187/> ;
+    schema:birthDate "1993-04-14"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Vivien Elisabeth Cardone" ;
+    schema:description "Vivien Cardone. Actress: Everwood. Vivien Cardone was born on April 14, 1993 in Port Jefferson, New York. She has three siblings. She began appearing at the age of 3 months in national campaign commercials for Pizza Hut, Sears, Pillsbury, Sherman Williams, and Prudential to name a few. She had her first big-screen role as Marcee Herman in the Academy Award-winning film \"A Beautiful Mind\", and completed four seasons of The..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTc3NjE1YTQtMGUxNy00MTdkLThjYTEtZjQ4OTQ2NWMwOTA4XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Port Jefferson, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.61"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3½″ (1.61 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0318883/>,    # Everwood
+                       <https://www.imdb.com/title/tt0203259/>,    # Law & Order: Special Victims Unit
+                       <https://www.imdb.com/title/tt0268978/>,    # A Beautiful Mind
+                       <https://www.imdb.com/title/tt0821810/>,    # All Roads Lead Home
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0062595/>,    # One Life to Live
+                       <https://www.imdb.com/title/tt0275140/> ; # Law & Order: Criminal Intent
+
+
+    schema:video <https://www.imdb.com/video/vi1116388633/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1055187/mediaviewer/rm3020379392/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm3087488256/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm3104265472/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm1455507968/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm2986824960/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm3053933824/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm2902938880/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm2701612288/>,
+                 <https://www.imdb.com/name/nm1055187/mediaviewer/rm3728889088/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0318883/> a schema:Movie ;
+    schema:name "Everwood" ;
+    schema:url <https://www.imdb.com/title/tt0318883/> .
+
+<https://www.imdb.com/title/tt0203259/> a schema:Movie ;
+    schema:name "Law & Order: Special Victims Unit" ;
+    schema:url <https://www.imdb.com/title/tt0203259/> .
+
+<https://www.imdb.com/title/tt0268978/> a schema:Movie ;
+    schema:name "A Beautiful Mind" ;
+    schema:url <https://www.imdb.com/title/tt0268978/> .
+
+<https://www.imdb.com/title/tt0821810/> a schema:Movie ;
+    schema:name "All Roads Lead Home" ;
+    schema:url <https://www.imdb.com/title/tt0821810/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# One Life to Live (2011)
+<https://www.imdb.com/title/tt0062595/> a schema:Movie ;
+    schema:name "One Life to Live" ;
+    schema:url <https://www.imdb.com/title/tt0062595/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1055187/> ;
+        schema:characterName "Michelle"
+    ] .
+
+# Law & Order: Criminal Intent (2010)
+<https://www.imdb.com/title/tt0275140/> a schema:Movie ;
+    schema:name "Law & Order: Criminal Intent" ;
+    schema:url <https://www.imdb.com/title/tt0275140/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1055187/> ;
+        schema:characterName "Paulette Bartol"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1116388633/> a schema:VideoObject ;
+        schema:name "Law &amp; Order: Criminal Intent: Delicate" ;
+        schema:description "Law & Order: Criminal Intent: Delicate" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1116388633/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGFkYTc0Y2ItZTYwZC00M2JjLWJlNzgtODdlZDAyMjMwYjk3XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT21S"^^xsd:duration ;
+        schema:uploadDate "2019-03-18T09:07:50Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTc3NjE1YTQtMGUxNy00MTdkLThjYTEtZjQ4OTQ2NWMwOTA4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTc3NjE1YTQtMGUxNy00MTdkLThjYTEtZjQ4OTQ2NWMwOTA4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone" ;
+    schema:height "516"^^xsd:integer ;
+    schema:width "444"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm3020379392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODRhYzU1YjUtZjgyMy00YzQxLTg2NDItZGVhYWFkNjI3ODNmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Treat Williams and Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm3087488256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTJjZDE4ZGUtOTZkZC00NDk1LWExMDEtMWI1MTVlZTU2ZGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm3104265472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDA3NWRiZmItZGRkOS00ZjAxLTg0ZGYtMTFlNTRiZDZjOTA4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm1455507968/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjgyMzJmYTItMDlkOC00Zjc3LTg3MzEtYjQ2ZGJhMDIzNTJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm2986824960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWFiYjBmM2UtZWQ0OC00MTI0LWI4MzktZTE3MDk1ZTkyZGVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gregory Smith and Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm3053933824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGI4ZWM5YmYtNDdkNi00MWIzLTlhZTUtYzYyNDQzNmIwZmM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Treat Williams and Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm2902938880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM4YTE3ZTEtMzEyNy00Njk2LTllODgtODdhNzgzYTkwN2I1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Treat Williams and Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm2701612288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2IyODZlN2UtYzFlMy00ODc3LWE2OGEtNzc1Nzk1ZGFjNDAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1055187/mediaviewer/rm3728889088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDg4YjMxMTEtN2E0ZS00Mjk3LTg4MzAtOWEyNDI4YjkyNTliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vivien Cardone in Everwood (2002)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "656"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

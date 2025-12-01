@@ -1,0 +1,93 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0021201/> a schema:Person ;
+    schema:name "Salvador Allende" ;
+    schema:url <https://www.imdb.com/name/nm0021201/> ;
+    schema:birthDate "1908-06-26"^^xsd:date ;
+    schema:alternateName "Salvador Allende Gossens" ;
+    schema:description "Salvador Allende. Self: ¡Qué hacer!. Allende became the Socialist President of Chile--elected by popular vote--in 1970 who was replaced by the now notorious Augusto Pinochet. It has been reported that Allende committed suicide. But it has not been determined whether his death was the result of a self-inflicted gunshot wound or by fire caused by invading troops in the military coup designed to oust him from office. In retrospect, many..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjI5NjA3MjI1MF5BMl5BanBnXkFtZTgwODY1MDE1MjE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Santiago de Chile, Metropolitan Region, Chile"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0066614/>,    # ¡Qué hacer!
+                       <https://www.imdb.com/title/tt0190318/>,    # Compañero Presidente
+                       <https://www.imdb.com/title/tt0237651/>,    # Richesse des autres
+                       <https://www.imdb.com/title/tt34224934/> ; # Crónica de una victoria
+
+
+    schema:video <https://www.imdb.com/video/vi4031823641/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0021201/mediaviewer/rm737343233/>,
+                 <https://www.imdb.com/name/nm0021201/mediaviewer/rm2801910016/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0066614/> a schema:Movie ;
+    schema:name "¡Qué hacer!" ;
+    schema:url <https://www.imdb.com/title/tt0066614/> .
+
+<https://www.imdb.com/title/tt0190318/> a schema:Movie ;
+    schema:name "Compañero Presidente" ;
+    schema:url <https://www.imdb.com/title/tt0190318/> .
+
+<https://www.imdb.com/title/tt0237651/> a schema:Movie ;
+    schema:name "Richesse des autres" ;
+    schema:url <https://www.imdb.com/title/tt0237651/> .
+
+<https://www.imdb.com/title/tt34224934/> a schema:Movie ;
+    schema:name "Crónica de una victoria" ;
+    schema:url <https://www.imdb.com/title/tt34224934/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4031823641/> a schema:VideoObject ;
+        schema:name "Tráiler [OVS]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4031823641/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTdhZjZkNzUtOWI2OS00ODI0LTgzM2YtYTg3NjdiNmEwYjM4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M16S"^^xsd:duration ;
+        schema:uploadDate "2020-01-29T16:31:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjI5NjA3MjI1MF5BMl5BanBnXkFtZTgwODY1MDE1MjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5NjA3MjI1MF5BMl5BanBnXkFtZTgwODY1MDE1MjE@._V1_.jpg> ;
+    schema:caption "Salvador Allende was a Chilean physician and politician, known as the first Scientific Socialist to become president of a Latin American country through open and democratic elections. And he was the only one politician who pursued the socialist revolution by the peaceful and democratic methods.  " ;
+    schema:height "450"^^xsd:integer ;
+    schema:width "375"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0021201/mediaviewer/rm737343233/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjg5MWRlMDMtMjYyYS00YTNjLWFkOGEtNWFiYTVlN2RhMDczXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Salvador Allende in Colonia Dignidad: Eine deutsche Sekte in Chile (2021)" ;
+    schema:height "1430"^^xsd:integer ;
+    schema:width "1922"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0021201/mediaviewer/rm2801910016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5NjA3MjI1MF5BMl5BanBnXkFtZTgwODY1MDE1MjE@._V1_.jpg> ;
+    schema:caption "Salvador Allende was a Chilean physician and politician, known as the first Scientific Socialist to become president of a Latin American country through open and democratic elections. And he was the only one politician who pursued the socialist revolution by the peaceful and democratic methods.  " ;
+    schema:height "450"^^xsd:integer ;
+    schema:width "375"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

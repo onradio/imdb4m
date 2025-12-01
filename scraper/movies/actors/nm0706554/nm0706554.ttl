@@ -1,0 +1,629 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0706554/> a schema:Person ;
+    schema:name "Joseph Ragno" ;
+    schema:url <https://www.imdb.com/name/nm0706554/> ;
+    schema:birthDate "1936-03-11"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Joseph Ragno. Actor: The Shawshank Redemption. Joseph Ragno was born on 11 March 1936 in Brooklyn, New York, USA. He is an actor, known for The Shawshank Redemption (1994), The Phantom (1996) and Daylight (1996)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQyNzMyNTUwNV5BMl5BanBnXkFtZTcwNjQ2MTcwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5827228/>,    # Bull
+                       <https://www.imdb.com/title/tt2357547/>,    # Jessica Jones
+                       <https://www.imdb.com/title/tt3711626/>,    # The Reward
+                       <https://www.imdb.com/title/tt1430073/>,    # Ben Again
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0275140/>,    # Law & Order: Criminal Intent
+                       <https://www.imdb.com/title/tt0197182/>,    # Third Watch
+                       <https://www.imdb.com/title/tt0291337/>,    # Max Payne
+                       <https://www.imdb.com/title/tt0222851/>,    # Brother
+                       <https://www.imdb.com/title/tt0138946/>,    # The Yards
+                       <https://www.imdb.com/title/tt0211323/>,    # Crossfire
+                       <https://www.imdb.com/title/tt0126908/>,    # A Fish in the Bathtub
+                       <https://www.imdb.com/title/tt0108876/>,    # New York Undercover
+                       <https://www.imdb.com/title/tt0112810/>,    # Day at the Beach
+                       <https://www.imdb.com/title/tt0111921/>,    # The City
+                       <https://www.imdb.com/title/tt0116040/>,    # Daylight
+                       <https://www.imdb.com/title/tt0106079/>,    # NYPD Blue
+                       <https://www.imdb.com/title/tt0117194/>,    # No Way Home
+                       <https://www.imdb.com/title/tt0117331/>,    # The Phantom
+                       <https://www.imdb.com/title/tt0164807/>,    # Pictures of Baby Jane Doe
+                       <https://www.imdb.com/title/tt0111161/>,    # The Shawshank Redemption
+                       <https://www.imdb.com/title/tt0098904/>,    # Seinfeld
+                       <https://www.imdb.com/title/tt0101069/>,    # The Commish
+                       <https://www.imdb.com/title/tt0103747/>,    # The Babe
+                       <https://www.imdb.com/title/tt0090466/>,    # L.A. Law
+                       <https://www.imdb.com/title/tt0102432/>,    # Men of Respect
+                       <https://www.imdb.com/title/tt0062595/>,    # One Life to Live
+                       <https://www.imdb.com/title/tt0194082/>,    # Kojak: It's Always Something
+                       <https://www.imdb.com/title/tt0100207/>,    # Murder in Black and White
+                       <https://www.imdb.com/title/tt0088513/>,    # The Equalizer
+                       <https://www.imdb.com/title/tt0095316/>,    # Homeboy
+                       <https://www.imdb.com/title/tt0093936/>,    # The Secret of My Success
+                       <https://www.imdb.com/title/tt0090410/>,    # Crime Story
+                       <https://www.imdb.com/title/tt0092798/>,    # Critical Condition
+                       <https://www.imdb.com/title/tt0085454/>,    # Don Camillo
+                       <https://www.imdb.com/title/tt0083936/>,    # Fighting Back
+                       <https://www.imdb.com/title/tt0081867/>,    # The Gangster Chronicles
+                       <https://www.imdb.com/title/tt0082434/>,    # Gangster Wars
+                       <https://www.imdb.com/title/tt0081150/>,    # Melvin and Howard
+                       <https://www.imdb.com/title/tt0080997/>,    # The Kidnapping of the President
+                       <https://www.imdb.com/title/tt0081748/>,    # Where the Buffalo Roam
+                       <https://www.imdb.com/title/tt0080139/>,    # Winter Kills
+                       <https://www.imdb.com/title/tt0071743/>,    # Law and Disorder
+                       <https://www.imdb.com/title/tt0167699/> ; # Quand la liberté venait du ciel
+
+
+    schema:video <https://www.imdb.com/video/vi3527263001/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0706554/mediaviewer/rm1050761472/>,
+                 <https://www.imdb.com/name/nm0706554/mediaviewer/rm2971500544/>,
+                 <https://www.imdb.com/name/nm0706554/mediaviewer/rm3088941056/>,
+                 <https://www.imdb.com/name/nm0706554/mediaviewer/rm2619648512/>,
+                 <https://www.imdb.com/name/nm0706554/mediaviewer/rm2602871296/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bull (2019)
+<https://www.imdb.com/title/tt5827228/> a schema:Movie ;
+    schema:name "Bull" ;
+    schema:url <https://www.imdb.com/title/tt5827228/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Judge Weston Stanley"
+    ] .
+
+# Jessica Jones (2015)
+<https://www.imdb.com/title/tt2357547/> a schema:Movie ;
+    schema:name "Jessica Jones" ;
+    schema:url <https://www.imdb.com/title/tt2357547/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Roy Healy"
+    ] .
+
+# The Reward (2014)
+<https://www.imdb.com/title/tt3711626/> a schema:Movie ;
+    schema:name "The Reward" ;
+    schema:url <https://www.imdb.com/title/tt3711626/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Karl"
+    ] .
+
+# Ben Again (2009)
+<https://www.imdb.com/title/tt1430073/> a schema:Movie ;
+    schema:name "Ben Again" ;
+    schema:url <https://www.imdb.com/title/tt1430073/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Joe"
+    ] .
+
+# Law & Order (1998)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Federico Righetti"
+    ] .
+
+# Law & Order: Criminal Intent (2002)
+<https://www.imdb.com/title/tt0275140/> a schema:Movie ;
+    schema:name "Law & Order: Criminal Intent" ;
+    schema:url <https://www.imdb.com/title/tt0275140/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Benny Franconi"
+    ] .
+
+# Third Watch (2001)
+<https://www.imdb.com/title/tt0197182/> a schema:Movie ;
+    schema:name "Third Watch" ;
+    schema:url <https://www.imdb.com/title/tt0197182/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Chuck"
+    ] .
+
+# Max Payne (2001)
+<https://www.imdb.com/title/tt0291337/> a schema:Movie ;
+    schema:name "Max Payne" ;
+    schema:url <https://www.imdb.com/title/tt0291337/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Angelo Punchinello"
+    ] .
+
+# Brother (2000)
+<https://www.imdb.com/title/tt0222851/> a schema:Movie ;
+    schema:name "Brother" ;
+    schema:url <https://www.imdb.com/title/tt0222851/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Mafia Boss Rossi"
+    ] .
+
+# The Yards (2000)
+<https://www.imdb.com/title/tt0138946/> a schema:Movie ;
+    schema:name "The Yards" ;
+    schema:url <https://www.imdb.com/title/tt0138946/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Parole Officer"
+    ] .
+
+# Crossfire (1998)
+<https://www.imdb.com/title/tt0211323/> a schema:Movie ;
+    schema:name "Crossfire" ;
+    schema:url <https://www.imdb.com/title/tt0211323/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Deputy"
+    ] .
+
+# A Fish in the Bathtub (1998)
+<https://www.imdb.com/title/tt0126908/> a schema:Movie ;
+    schema:name "A Fish in the Bathtub" ;
+    schema:url <https://www.imdb.com/title/tt0126908/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Stubby"
+    ] .
+
+# New York Undercover (1998)
+<https://www.imdb.com/title/tt0108876/> a schema:Movie ;
+    schema:name "New York Undercover" ;
+    schema:url <https://www.imdb.com/title/tt0108876/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName ""
+    ] .
+
+# Day at the Beach (1997)
+<https://www.imdb.com/title/tt0112810/> a schema:Movie ;
+    schema:name "Day at the Beach" ;
+    schema:url <https://www.imdb.com/title/tt0112810/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Antonio Gintolini"
+    ] .
+
+# The City (1997)
+<https://www.imdb.com/title/tt0111921/> a schema:Movie ;
+    schema:name "The City" ;
+    schema:url <https://www.imdb.com/title/tt0111921/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Rico Giardano"
+    ] .
+
+# Daylight (1996)
+<https://www.imdb.com/title/tt0116040/> a schema:Movie ;
+    schema:name "Daylight" ;
+    schema:url <https://www.imdb.com/title/tt0116040/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Dispatcher"
+    ] .
+
+# NYPD Blue (1996)
+<https://www.imdb.com/title/tt0106079/> a schema:Movie ;
+    schema:name "NYPD Blue" ;
+    schema:url <https://www.imdb.com/title/tt0106079/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Gary Norcross"
+    ] .
+
+# No Way Home (1996)
+<https://www.imdb.com/title/tt0117194/> a schema:Movie ;
+    schema:name "No Way Home" ;
+    schema:url <https://www.imdb.com/title/tt0117194/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Ralphie"
+    ] .
+
+# The Phantom (1996)
+<https://www.imdb.com/title/tt0117331/> a schema:Movie ;
+    schema:name "The Phantom" ;
+    schema:url <https://www.imdb.com/title/tt0117331/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Ray Zephro"
+    ] .
+
+# Pictures of Baby Jane Doe (1995)
+<https://www.imdb.com/title/tt0164807/> a schema:Movie ;
+    schema:name "Pictures of Baby Jane Doe" ;
+    schema:url <https://www.imdb.com/title/tt0164807/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Vince"
+    ] .
+
+# The Shawshank Redemption (1994)
+<https://www.imdb.com/title/tt0111161/> a schema:Movie ;
+    schema:name "The Shawshank Redemption" ;
+    schema:url <https://www.imdb.com/title/tt0111161/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Ernie"
+    ] .
+
+# Seinfeld (1994)
+<https://www.imdb.com/title/tt0098904/> a schema:Movie ;
+    schema:name "Seinfeld" ;
+    schema:url <https://www.imdb.com/title/tt0098904/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Marty"
+    ] .
+
+# The Commish (1992)
+<https://www.imdb.com/title/tt0101069/> a schema:Movie ;
+    schema:name "The Commish" ;
+    schema:url <https://www.imdb.com/title/tt0101069/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Joey Sanderson"
+    ] .
+
+# The Babe (1992)
+<https://www.imdb.com/title/tt0103747/> a schema:Movie ;
+    schema:name "The Babe" ;
+    schema:url <https://www.imdb.com/title/tt0103747/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Huggins"
+    ] .
+
+# L.A. Law (1991)
+<https://www.imdb.com/title/tt0090466/> a schema:Movie ;
+    schema:name "L.A. Law" ;
+    schema:url <https://www.imdb.com/title/tt0090466/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Dr. James Felder"
+    ] .
+
+# Men of Respect (1990)
+<https://www.imdb.com/title/tt0102432/> a schema:Movie ;
+    schema:name "Men of Respect" ;
+    schema:url <https://www.imdb.com/title/tt0102432/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Padrino Ricci"
+    ] .
+
+# One Life to Live (1990)
+<https://www.imdb.com/title/tt0062595/> a schema:Movie ;
+    schema:name "One Life to Live" ;
+    schema:url <https://www.imdb.com/title/tt0062595/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Harold Gill"
+    ] .
+
+# Kojak: It's Always Something (1990)
+<https://www.imdb.com/title/tt0194082/> a schema:Movie ;
+    schema:name "Kojak: It's Always Something" ;
+    schema:url <https://www.imdb.com/title/tt0194082/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Bunky"
+    ] .
+
+# Murder in Black and White (1990)
+<https://www.imdb.com/title/tt0100207/> a schema:Movie ;
+    schema:name "Murder in Black and White" ;
+    schema:url <https://www.imdb.com/title/tt0100207/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Lt. Pinto"
+    ] .
+
+# The Equalizer (1986)
+<https://www.imdb.com/title/tt0088513/> a schema:Movie ;
+    schema:name "The Equalizer" ;
+    schema:url <https://www.imdb.com/title/tt0088513/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Jock"
+    ] .
+
+# Homeboy (1988)
+<https://www.imdb.com/title/tt0095316/> a schema:Movie ;
+    schema:name "Homeboy" ;
+    schema:url <https://www.imdb.com/title/tt0095316/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Cotten's Trainer"
+    ] .
+
+# The Secret of My Success (1987)
+<https://www.imdb.com/title/tt0093936/> a schema:Movie ;
+    schema:name "The Secret of My Success" ;
+    schema:url <https://www.imdb.com/title/tt0093936/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Shipping Executive"
+    ] .
+
+# Crime Story (1986)
+<https://www.imdb.com/title/tt0090410/> a schema:Movie ;
+    schema:name "Crime Story" ;
+    schema:url <https://www.imdb.com/title/tt0090410/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Dominic Tranchita"
+    ] .
+
+# Critical Condition (1987)
+<https://www.imdb.com/title/tt0092798/> a schema:Movie ;
+    schema:name "Critical Condition" ;
+    schema:url <https://www.imdb.com/title/tt0092798/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Palazzi"
+    ] .
+
+# Don Camillo (1984)
+<https://www.imdb.com/title/tt0085454/> a schema:Movie ;
+    schema:name "Don Camillo" ;
+    schema:url <https://www.imdb.com/title/tt0085454/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Brusco"
+    ] .
+
+# Fighting Back (1982)
+<https://www.imdb.com/title/tt0083936/> a schema:Movie ;
+    schema:name "Fighting Back" ;
+    schema:url <https://www.imdb.com/title/tt0083936/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Mike Pelyk"
+    ] .
+
+# The Gangster Chronicles (1981)
+<https://www.imdb.com/title/tt0081867/> a schema:Movie ;
+    schema:name "The Gangster Chronicles" ;
+    schema:url <https://www.imdb.com/title/tt0081867/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Joseph Profaci"
+    ] .
+
+# Gangster Wars (1981)
+<https://www.imdb.com/title/tt0082434/> a schema:Movie ;
+    schema:name "Gangster Wars" ;
+    schema:url <https://www.imdb.com/title/tt0082434/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Profaci"
+    ] .
+
+# Melvin and Howard (1980)
+<https://www.imdb.com/title/tt0081150/> a schema:Movie ;
+    schema:name "Melvin and Howard" ;
+    schema:url <https://www.imdb.com/title/tt0081150/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "1st Attorney (Maxwell)"
+    ] .
+
+# The Kidnapping of the President (1980)
+<https://www.imdb.com/title/tt0080997/> a schema:Movie ;
+    schema:name "The Kidnapping of the President" ;
+    schema:url <https://www.imdb.com/title/tt0080997/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Saul Malone"
+    ] .
+
+# Where the Buffalo Roam (1980)
+<https://www.imdb.com/title/tt0081748/> a schema:Movie ;
+    schema:name "Where the Buffalo Roam" ;
+    schema:url <https://www.imdb.com/title/tt0081748/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Willins"
+    ] .
+
+# Winter Kills (1979)
+<https://www.imdb.com/title/tt0080139/> a schema:Movie ;
+    schema:name "Winter Kills" ;
+    schema:url <https://www.imdb.com/title/tt0080139/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Doorman"
+    ] .
+
+# Law and Disorder (1974)
+<https://www.imdb.com/title/tt0071743/> a schema:Movie ;
+    schema:name "Law and Disorder" ;
+    schema:url <https://www.imdb.com/title/tt0071743/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Peter"
+    ] .
+
+# Quand la liberté venait du ciel (1967)
+<https://www.imdb.com/title/tt0167699/> a schema:Movie ;
+    schema:name "Quand la liberté venait du ciel" ;
+    schema:url <https://www.imdb.com/title/tt0167699/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0706554/> ;
+        schema:characterName "Un Américain hargneux"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3527263001/> a schema:VideoObject ;
+        schema:name "Trailer" ;
+        schema:description "An ex-cons future is threatened by his brother's involvement with drugs." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3527263001/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmIzZDE0MGItNjcwMi00YzAxLTlmNGItYTRkNDkxZmJjZGI0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M4S"^^xsd:duration ;
+        schema:uploadDate "2022-01-07T16:13:52Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQyNzMyNTUwNV5BMl5BanBnXkFtZTcwNjQ2MTcwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyNzMyNTUwNV5BMl5BanBnXkFtZTcwNjQ2MTcwOA@@._V1_.jpg> ;
+    schema:caption "Joseph Ragno" ;
+    schema:height "671"^^xsd:integer ;
+    schema:width "480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0706554/mediaviewer/rm1050761472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGYxMjMzNWMtNDE3OS00NmRhLTgzMWUtYjA1MTc1ODU3NWU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jerry Seinfeld, Courteney Cox, and Joseph Ragno in Seinfeld (1989)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0706554/mediaviewer/rm2971500544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM0NjUxMDk5MF5BMl5BanBnXkFtZTcwNDMxNDY3Mw@@._V1_.jpg> ;
+    schema:caption "Morgan Freeman, Tim Robbins, William Sadler, Larry Brandenburg, Neil Giuntoli, Brian Libby, David Proval, and Joseph Ragno in The Shawshank Redemption (1994)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0706554/mediaviewer/rm3088941056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMyODE3NTM1Ml5BMl5BanBnXkFtZTcwMzQxNDY3Mw@@._V1_.jpg> ;
+    schema:caption "Larry Brandenburg, David Proval, and Joseph Ragno in The Shawshank Redemption (1994)" ;
+    schema:height "1210"^^xsd:integer ;
+    schema:width "1800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0706554/mediaviewer/rm2619648512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5MTQ5Njg0OV5BMl5BanBnXkFtZTcwNDQ2MTcwOA@@._V1_.jpg> ;
+    schema:caption "Sam Coppola, Joseph Ragno, Ed Setrakian, and Martin Shakar" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0706554/mediaviewer/rm2602871296/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyNzMyNTUwNV5BMl5BanBnXkFtZTcwNjQ2MTcwOA@@._V1_.jpg> ;
+    schema:caption "Joseph Ragno" ;
+    schema:height "671"^^xsd:integer ;
+    schema:width "480"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

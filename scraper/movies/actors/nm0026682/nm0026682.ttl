@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0026682/> a schema:Person ;
+    schema:name "Eric Chase Anderson" ;
+    schema:url <https://www.imdb.com/name/nm0026682/> ;
+    schema:birthDate "1972-09-18"^^xsd:date ;
+    schema:jobTitle "Actor", "Art Department", "Director" ;
+    schema:description "Eric Chase Anderson. Actor: Fantastic Mr. Fox. Eric Chase Anderson was born on 18 September 1972 in Houston, Texas, USA. He is an actor and director, known for Fantastic Mr. Fox (2009), The Life Aquatic with Steve Zissou (2004) and The Royal Tenenbaums (2001)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZWMwZjIwNjAtZTA1MC00Mzc4LTk3NzctYmU2YTlkOWQ1MzE3XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Houston, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1748122/>,    # Moonrise Kingdom
+                       <https://www.imdb.com/title/tt0432283/>,    # Fantastic Mr. Fox
+                       <https://www.imdb.com/title/tt0362270/>,    # The Life Aquatic with Steve Zissou
+                       <https://www.imdb.com/title/tt0265666/>,    # The Royal Tenenbaums
+                       <https://www.imdb.com/title/tt0128445/> ; # Rushmore
+
+
+    schema:video <https://www.imdb.com/video/vi3713925657/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0026682/mediaviewer/rm546351616/>,
+                 <https://www.imdb.com/name/nm0026682/mediaviewer/rm157984513/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Moonrise Kingdom (2012)
+<https://www.imdb.com/title/tt1748122/> a schema:Movie ;
+    schema:name "Moonrise Kingdom" ;
+    schema:url <https://www.imdb.com/title/tt1748122/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0026682/> ;
+        schema:characterName "Secretary McIntire"
+    ] .
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0026682/> ;
+        schema:characterName "Kristofferson"
+    ] .
+
+# The Life Aquatic with Steve Zissou (2004)
+<https://www.imdb.com/title/tt0362270/> a schema:Movie ;
+    schema:name "The Life Aquatic with Steve Zissou" ;
+    schema:url <https://www.imdb.com/title/tt0362270/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0026682/> ;
+        schema:characterName "Air Kentucky Pilot"
+    ] .
+
+# The Royal Tenenbaums (2001)
+<https://www.imdb.com/title/tt0265666/> a schema:Movie ;
+    schema:name "The Royal Tenenbaums" ;
+    schema:url <https://www.imdb.com/title/tt0265666/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0026682/> ;
+        schema:characterName "Medical Student"
+    ] .
+
+# Rushmore (1998)
+<https://www.imdb.com/title/tt0128445/> a schema:Movie ;
+    schema:name "Rushmore" ;
+    schema:url <https://www.imdb.com/title/tt0128445/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0026682/> ;
+        schema:characterName "Architect"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3713925657/> a schema:VideoObject ;
+        schema:name "Fantastic Mr. Fox -- Trailer #2" ;
+        schema:description "Angry farmers, tired of sharing their chickens with a sly fox, look to get rid of their opponent and his family." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3713925657/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjIxNDQ2NTQ1OF5BMl5BanBnXkFtZTgwNTMyNzYyMzE@._V1_.jpg" ;
+        schema:duration "PT2M"^^xsd:duration ;
+        schema:uploadDate "2009-10-09T12:32:10Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZWMwZjIwNjAtZTA1MC00Mzc4LTk3NzctYmU2YTlkOWQ1MzE3XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWMwZjIwNjAtZTA1MC00Mzc4LTk3NzctYmU2YTlkOWQ1MzE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eric Chase Anderson" ;
+    schema:height "750"^^xsd:integer ;
+    schema:width "542"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0026682/mediaviewer/rm546351616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQwMTI0Njg2MV5BMl5BanBnXkFtZTcwNTExMTk5Nw@@._V1_.jpg> ;
+    schema:caption "Eric Chase Anderson" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1463"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0026682/mediaviewer/rm157984513/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWMwZjIwNjAtZTA1MC00Mzc4LTk3NzctYmU2YTlkOWQ1MzE3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eric Chase Anderson" ;
+    schema:height "750"^^xsd:integer ;
+    schema:width "542"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

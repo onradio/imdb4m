@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0360545/> a schema:Person ;
+    schema:name "Bill Hanrahan" ;
+    schema:url <https://www.imdb.com/name/nm0360545/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Bill Hanrahan. Actor: Raging Bull. Bill Hanrahan is known for Raging Bull (1980), The Doctors (1963) and The Nat King Cole Show (1956)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0081398/>,    # Raging Bull
+                       <https://www.imdb.com/title/tt0056752/> . # The Doctors
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Raging Bull (1980)
+<https://www.imdb.com/title/tt0081398/> a schema:Movie ;
+    schema:name "Raging Bull" ;
+    schema:url <https://www.imdb.com/title/tt0081398/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0360545/> ;
+        schema:characterName "Eddie Eagan"
+    ] .
+
+# The Doctors (1968)
+<https://www.imdb.com/title/tt0056752/> a schema:Movie ;
+    schema:name "The Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0056752/> ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0360545/> ;
+        schema:characterName "Newsman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

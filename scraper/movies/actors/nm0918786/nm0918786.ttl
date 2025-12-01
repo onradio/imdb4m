@@ -1,0 +1,169 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0918786/> a schema:Person ;
+    schema:name "Shari Weiser" ;
+    schema:url <https://www.imdb.com/name/nm0918786/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Shari Weiser. Actress: Labyrinth. Shari Weiser is known for Labyrinth (1986), Follow That Bird (1985) and Babes in Toyland (1986)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk5YzA1ZmMtM2I1My00ZjMyLWJiZTktYjI4NjQ5MDI1OTY4XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0124013/>,    # Mr. Willowby's Christmas Tree
+                       <https://www.imdb.com/title/tt9868972/>,    # David Bowie: As the World Falls Down
+                       <https://www.imdb.com/title/tt0090683/>,    # Babes in Toyland
+                       <https://www.imdb.com/title/tt0091369/>,    # Labyrinth
+                       <https://www.imdb.com/title/tt0089994/> ; # Follow That Bird
+
+
+    schema:video <https://www.imdb.com/video/vi3636961561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0918786/mediaviewer/rm1826915584/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm3605960960/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm3083479297/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm3572406528/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm1167272448/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm3041466624/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm2649548544/>,
+                 <https://www.imdb.com/name/nm0918786/mediaviewer/rm1528445184/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mr. Willowby's Christmas Tree (1995)
+<https://www.imdb.com/title/tt0124013/> a schema:Movie ;
+    schema:name "Mr. Willowby's Christmas Tree" ;
+    schema:url <https://www.imdb.com/title/tt0124013/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918786/> ;
+        schema:characterName "Bear"
+    ] .
+
+# David Bowie: As the World Falls Down (1986)
+<https://www.imdb.com/title/tt9868972/> a schema:Movie ;
+    schema:name "David Bowie: As the World Falls Down" ;
+    schema:url <https://www.imdb.com/title/tt9868972/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918786/> ;
+        schema:characterName "Hoggle"
+    ] .
+
+# Babes in Toyland (1986)
+<https://www.imdb.com/title/tt0090683/> a schema:Movie ;
+    schema:name "Babes in Toyland" ;
+    schema:url <https://www.imdb.com/title/tt0090683/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918786/> ;
+        schema:characterName "Trollog"
+    ] .
+
+# Labyrinth (1986)
+<https://www.imdb.com/title/tt0091369/> a schema:Movie ;
+    schema:name "Labyrinth" ;
+    schema:url <https://www.imdb.com/title/tt0091369/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918786/> ;
+        schema:characterName "Hoggle"
+    ] .
+
+# Follow That Bird (1985)
+<https://www.imdb.com/title/tt0089994/> a schema:Movie ;
+    schema:name "Follow That Bird" ;
+    schema:url <https://www.imdb.com/title/tt0089994/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0918786/> ;
+        schema:characterName "Marie Dodo"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3636961561/> a schema:VideoObject ;
+        schema:name "Labyrinth: Blu-Ray" ;
+        schema:description "Trailer for Labyrinth" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3636961561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjNhMDdjYTEtNjc4Ni00OWQ5LWFiNGUtNTdjODgzNmE1MTY3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M29S"^^xsd:duration ;
+        schema:uploadDate "2012-02-04T06:18:46Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk5YzA1ZmMtM2I1My00ZjMyLWJiZTktYjI4NjQ5MDI1OTY4XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5YzA1ZmMtM2I1My00ZjMyLWJiZTktYjI4NjQ5MDI1OTY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brian Henson and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "642"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm1826915584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU1NjY5MTAyNl5BMl5BanBnXkFtZTcwNTIzMTkyNA@@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Brian Henson, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "420"^^xsd:integer ;
+    schema:width "642"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm3605960960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIxNDEzOTY1OF5BMl5BanBnXkFtZTYwMzY5ODA3._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Brian Henson, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm3083479297/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTYwMzNlZWYtODgyOS00OTVjLWEzNGMtMWQ2YjkwZjRhNTgzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, Brian Henson, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "3537"^^xsd:integer ;
+    schema:width "5312"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm3572406528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3MTA0NzIxMl5BMl5BanBnXkFtZTYwMDc5ODA3._V1_.jpg> ;
+    schema:caption "Jim Henson, Brian Henson, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "339"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm1167272448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk4ODUwMDg2M15BMl5BanBnXkFtZTgwMzAxNzUzMjI@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Brian Henson, David Alan Barclay, Robert Beatty, Kevin Clash, Toby Froud, Dave Goelz, Rob Mills, Ron Mueck, Toby Philpott, David Shaughnessy, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm3041466624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGY2Mzk5MDktNWIxOS00NjZiLWIxZTEtNzY2NDgyYTQ5YTk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Brian Henson, Marc Antona, Charles Augins, Kenny Baker, David Alan Barclay, Robert Beatty, Dave Goelz, Rob Mills, Ron Mueck, David Shaughnessy, Ian Thom, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1433"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm2649548544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjM2MDE4OTQwOV5BMl5BanBnXkFtZTgwNjgxMTg2NzE@._V1_.jpg> ;
+    schema:caption "Jennifer Connelly, David Bowie, Frank Oz, Brian Henson, Marc Antona, Michael Attwell, David Alan Barclay, Sean Barrett, Timothy Bateson, Denise Bryer, Kevin Clash, Dave Goelz, Michael Hordern, Peter Marinker, Rob Mills, Ron Mueck, Toby Philpott, Karen Prell, David Shaughnessy, and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1038"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0918786/mediaviewer/rm1528445184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5YzA1ZmMtM2I1My00ZjMyLWJiZTktYjI4NjQ5MDI1OTY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brian Henson and Shari Weiser in Labyrinth (1986)" ;
+    schema:height "544"^^xsd:integer ;
+    schema:width "642"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

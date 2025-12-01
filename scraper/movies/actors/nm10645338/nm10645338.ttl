@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10645338/> a schema:Person ;
+    schema:name "Southern California Community Choir" ;
+    schema:url <https://www.imdb.com/name/nm10645338/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Southern California Community Choir. Actor: The Blues Brothers. Southern California Community Choir is known for The Blues Brothers (1980) and Gospel (1983)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0080455/> .    # The Blues Brothers
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Blues Brothers (1980)
+<https://www.imdb.com/title/tt0080455/> a schema:Movie ;
+    schema:name "The Blues Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0080455/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10645338/> ;
+        schema:characterName "Choir"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

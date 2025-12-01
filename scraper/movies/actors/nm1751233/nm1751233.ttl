@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1751233/> a schema:Person ;
+    schema:name "Maeve Andrews" ;
+    schema:url <https://www.imdb.com/name/nm1751233/> ;
+    schema:jobTitle "Actress", "Animation Department", "Art Department" ;
+    schema:description "Maeve Andrews. Actress: The Incredibles. Maeve Andrews is known for The Incredibles (2004), Incredibles 2 (2018) and The Incredibles: The Video Game (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8952294/>,    # Auntie Edna
+                       <https://www.imdb.com/title/tt8205060/>,    # LEGO the Incredibles
+                       <https://www.imdb.com/title/tt0433576/>,    # The Incredibles: The Video Game
+                       <https://www.imdb.com/title/tt0317705/> ; # The Incredibles
+
+
+    schema:video <https://www.imdb.com/video/vi3613965593/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1751233/mediaviewer/rm633246721/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Auntie Edna (2018)
+<https://www.imdb.com/title/tt8952294/> a schema:Movie ;
+    schema:name "Auntie Edna" ;
+    schema:url <https://www.imdb.com/title/tt8952294/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1751233/> ;
+        schema:characterName "Jack-Jack Parr"
+    ] .
+
+# LEGO the Incredibles (2018)
+<https://www.imdb.com/title/tt8205060/> a schema:Movie ;
+    schema:name "LEGO the Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt8205060/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1751233/> ;
+        schema:characterName "Jack-Jack Parr"
+    ] .
+
+# The Incredibles: The Video Game (2004)
+<https://www.imdb.com/title/tt0433576/> a schema:Movie ;
+    schema:name "The Incredibles: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0433576/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1751233/> ;
+        schema:characterName "Jack-Jack Parr"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1751233/> ;
+        schema:characterName "Jack-Jack Parr"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3613965593/> a schema:VideoObject ;
+        schema:name "LEGO The Incredibles" ;
+        schema:description "LEGO The Incredibles" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3613965593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjAzMmYwYzQtNzEzMi00YTMwLWI2ZTQtNzdhNDc4MTViZWZjXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M15S"^^xsd:duration ;
+        schema:uploadDate "2019-04-16T03:06:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1751233/mediaviewer/rm633246721/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2I4MDk3MDEtOWUwNy00ZDkzLTk2YTQtOGM5OGM5OGYzMzVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Eric Bentley, Jeff Bergman, Sarah Vowell, Eli Fucile, Maeve Andrews, Ally Johnson, and Huck Milner in LEGO the Incredibles (2018)" ;
+    schema:height "912"^^xsd:integer ;
+    schema:width "634"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

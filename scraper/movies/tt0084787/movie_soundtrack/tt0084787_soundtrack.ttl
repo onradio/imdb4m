@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0084787/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Don't Explain" ;
+        schema:byArtist <https://www.imdb.com/name/nm0390507/> ; # Billie Holiday
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Don't Explain" ;
+            schema:composer <https://www.imdb.com/name/nm0390507/> ; # Billie Holiday
+            schema:lyricist <https://www.imdb.com/name/nm0381290/> # Arthur Herzog Jr.
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Superstition" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005567/> ; # Stevie Wonder
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Superstition" ;
+            schema:author <https://www.imdb.com/name/nm0005567/> # Stevie Wonder
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One Chain Don't Make No Prison" ;
+        schema:byArtist <https://www.imdb.com/name/nm1763087/> ; # The Four Tops
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005567/> a schema:Person ;
+    schema:name "Stevie Wonder" .
+<https://www.imdb.com/name/nm0381290/> a schema:Person ;
+    schema:name "Arthur Herzog Jr." .
+<https://www.imdb.com/name/nm0390507/> a schema:Person ;
+    schema:name "Billie Holiday" .
+<https://www.imdb.com/name/nm1763087/> a schema:Person ;
+    schema:name "The Four Tops" .
+# ==============================================================================

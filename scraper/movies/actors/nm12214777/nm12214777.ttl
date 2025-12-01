@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm12214777/> a schema:Person ;
+    schema:name "Shinsuke Fujimoto" ;
+    schema:url <https://www.imdb.com/name/nm12214777/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shinsuke Fujimoto. Actor: The Handmaiden. Shinsuke Fujimoto is known for The Handmaiden (2016) and Pachinko (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4016934/> .    # The Handmaiden
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm12214777/> ;
+        schema:characterName "Japanese Officer 2"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

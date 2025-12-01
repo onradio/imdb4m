@@ -1,0 +1,421 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5939164/> a schema:Person ;
+    schema:name "Zazie Beetz" ;
+    schema:url <https://www.imdb.com/name/nm5939164/> ;
+    schema:birthDate "1991-06-01"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Zazie Olivia Beetz" ;
+    schema:description "Zazie Beetz. Actress: Atlanta. Zazie Beetz (born c. 1991) is a German-American actress known for the role of Vanessa on Atlanta (2016), as well as for starring in Deadpool 2 (2018), Joker (2019), and Nine Days (2020).\n\nBorn in Berlin to a German father and an African-American mother, Beetz was raised in New York speaking both German and English at home. Performing in community theaters and local stages since childhood, Zazie..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMGYwMTVlZmEtMWU3OC00NDViLWE4YmQtNDFiYjQ0MzZmNGExXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Mitte, Berlin, Germany"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.68"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6″ (1.68 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4288182/>,    # Atlanta
+                       <https://www.imdb.com/title/tt10451852/>,    # Nine Days
+                       <https://www.imdb.com/title/tt5463162/>,    # Deadpool 2
+                       <https://www.imdb.com/title/tt7286456/>,    # Joker
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4682804/>,    # Lucy in the Sky
+                       <https://www.imdb.com/title/tt1780967/>,    # Seberg
+                       <https://www.imdb.com/title/tt6466598/>,    # The Undiscovered Country
+                       <https://www.imdb.com/title/tt2583620/>,    # The Twilight Zone
+                       <https://www.imdb.com/title/tt5562056/>,    # Easy
+                       <https://www.imdb.com/title/tt8128188/>,    # High Flying Bird
+                       <https://www.imdb.com/title/tt5913798/>,    # Wounds
+                       <https://www.imdb.com/title/tt4411234/>,    # Slice
+                       <https://www.imdb.com/title/tt7932500/>,    # That's Harassment
+                       <https://www.imdb.com/title/tt7476810/>,    # Dead Pigs
+                       <https://www.imdb.com/title/tt6973858/>,    # Houseplants
+                       <https://www.imdb.com/title/tt1981128/>,    # Geostorm
+                       <https://www.imdb.com/title/tt5180888/>,    # Sollers Point
+                       <https://www.imdb.com/title/tt4995922/>,    # MBFF: Man's Best Friend Forever
+                       <https://www.imdb.com/title/tt5535682/>,    # Margot vs. Lily
+                       <https://www.imdb.com/title/tt4623856/>,    # Wolves
+                       <https://www.imdb.com/title/tt6225734/>,    # 5th & Palisade
+                       <https://www.imdb.com/title/tt5142952/>,    # Double Bind
+                       <https://www.imdb.com/title/tt4270878/>,    # Applesauce
+                       <https://www.imdb.com/title/tt4288636/>,    # James White
+                       <https://www.imdb.com/title/tt4081768/>,    # Beasts
+                       <https://www.imdb.com/title/tt3179570/> ; # The Crocotta
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 17 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi981123097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5939164/mediaviewer/rm765351424/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm2522909185/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm2353281024/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm30624768/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm523185921/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm4071372545/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm3180987137/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm1720653313/>,
+                 <https://www.imdb.com/name/nm5939164/mediaviewer/rm3306363137/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4288182/> a schema:Movie ;
+    schema:name "Atlanta" ;
+    schema:url <https://www.imdb.com/title/tt4288182/> .
+
+<https://www.imdb.com/title/tt10451852/> a schema:Movie ;
+    schema:name "Nine Days" ;
+    schema:url <https://www.imdb.com/title/tt10451852/> .
+
+<https://www.imdb.com/title/tt5463162/> a schema:Movie ;
+    schema:name "Deadpool 2" ;
+    schema:url <https://www.imdb.com/title/tt5463162/> .
+
+<https://www.imdb.com/title/tt7286456/> a schema:Movie ;
+    schema:name "Joker" ;
+    schema:url <https://www.imdb.com/title/tt7286456/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lucy in the Sky (2019)
+<https://www.imdb.com/title/tt4682804/> a schema:Movie ;
+    schema:name "Lucy in the Sky" ;
+    schema:url <https://www.imdb.com/title/tt4682804/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Erin Eccles"
+    ] .
+
+# Seberg (2019)
+<https://www.imdb.com/title/tt1780967/> a schema:Movie ;
+    schema:name "Seberg" ;
+    schema:url <https://www.imdb.com/title/tt1780967/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Dorothy Jamal"
+    ] .
+
+# The Undiscovered Country (2019)
+<https://www.imdb.com/title/tt6466598/> a schema:Movie ;
+    schema:name "The Undiscovered Country" ;
+    schema:url <https://www.imdb.com/title/tt6466598/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Darla"
+    ] .
+
+# The Twilight Zone (2019)
+<https://www.imdb.com/title/tt2583620/> a schema:Movie ;
+    schema:name "The Twilight Zone" ;
+    schema:url <https://www.imdb.com/title/tt2583620/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Sophie Gelson"
+    ] .
+
+# Easy (2016)
+<https://www.imdb.com/title/tt5562056/> a schema:Movie ;
+    schema:name "Easy" ;
+    schema:url <https://www.imdb.com/title/tt5562056/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Noelle"
+    ] .
+
+# High Flying Bird (2019)
+<https://www.imdb.com/title/tt8128188/> a schema:Movie ;
+    schema:name "High Flying Bird" ;
+    schema:url <https://www.imdb.com/title/tt8128188/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Sam"
+    ] .
+
+# Wounds (2019)
+<https://www.imdb.com/title/tt5913798/> a schema:Movie ;
+    schema:name "Wounds" ;
+    schema:url <https://www.imdb.com/title/tt5913798/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Alicia"
+    ] .
+
+# Slice (2018)
+<https://www.imdb.com/title/tt4411234/> a schema:Movie ;
+    schema:name "Slice" ;
+    schema:url <https://www.imdb.com/title/tt4411234/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Astrid"
+    ] .
+
+# That's Harassment (2018)
+<https://www.imdb.com/title/tt7932500/> a schema:Movie ;
+    schema:name "That's Harassment" ;
+    schema:url <https://www.imdb.com/title/tt7932500/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Employee"
+    ] .
+
+# Dead Pigs (2018)
+<https://www.imdb.com/title/tt7476810/> a schema:Movie ;
+    schema:name "Dead Pigs" ;
+    schema:url <https://www.imdb.com/title/tt7476810/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Angie"
+    ] .
+
+# Houseplants (2017)
+<https://www.imdb.com/title/tt6973858/> a schema:Movie ;
+    schema:name "Houseplants" ;
+    schema:url <https://www.imdb.com/title/tt6973858/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Alma"
+    ] .
+
+# Geostorm (2017)
+<https://www.imdb.com/title/tt1981128/> a schema:Movie ;
+    schema:name "Geostorm" ;
+    schema:url <https://www.imdb.com/title/tt1981128/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Dana"
+    ] .
+
+# Sollers Point (2017)
+<https://www.imdb.com/title/tt5180888/> a schema:Movie ;
+    schema:name "Sollers Point" ;
+    schema:url <https://www.imdb.com/title/tt5180888/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Courtney"
+    ] .
+
+# MBFF: Man's Best Friend Forever (2016)
+<https://www.imdb.com/title/tt4995922/> a schema:Movie ;
+    schema:name "MBFF: Man's Best Friend Forever" ;
+    schema:url <https://www.imdb.com/title/tt4995922/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Ivana"
+    ] .
+
+# Margot vs. Lily (2016)
+<https://www.imdb.com/title/tt5535682/> a schema:Movie ;
+    schema:name "Margot vs. Lily" ;
+    schema:url <https://www.imdb.com/title/tt5535682/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Allie"
+    ] .
+
+# Wolves (2016)
+<https://www.imdb.com/title/tt4623856/> a schema:Movie ;
+    schema:name "Wolves" ;
+    schema:url <https://www.imdb.com/title/tt4623856/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Victoria"
+    ] .
+
+# 5th & Palisade (2015)
+<https://www.imdb.com/title/tt6225734/> a schema:Movie ;
+    schema:name "5th & Palisade" ;
+    schema:url <https://www.imdb.com/title/tt6225734/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Det. McBride"
+    ] .
+
+# Double Bind (2015)
+<https://www.imdb.com/title/tt5142952/> a schema:Movie ;
+    schema:name "Double Bind" ;
+    schema:url <https://www.imdb.com/title/tt5142952/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Bailey"
+    ] .
+
+# Applesauce (2015)
+<https://www.imdb.com/title/tt4270878/> a schema:Movie ;
+    schema:name "Applesauce" ;
+    schema:url <https://www.imdb.com/title/tt4270878/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Rain"
+    ] .
+
+# James White (2015)
+<https://www.imdb.com/title/tt4288636/> a schema:Movie ;
+    schema:name "James White" ;
+    schema:url <https://www.imdb.com/title/tt4288636/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Girl #1"
+    ] .
+
+# Beasts (2014)
+<https://www.imdb.com/title/tt4081768/> a schema:Movie ;
+    schema:name "Beasts" ;
+    schema:url <https://www.imdb.com/title/tt4081768/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "Ally"
+    ] .
+
+# The Crocotta (2013)
+<https://www.imdb.com/title/tt3179570/> a schema:Movie ;
+    schema:name "The Crocotta" ;
+    schema:url <https://www.imdb.com/title/tt3179570/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5939164/> ;
+        schema:characterName "The Crocotta"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi981123097/> a schema:VideoObject ;
+        schema:name "Zazie Beetz | Career Retrospective" ;
+        schema:description "Take a closer look at the various roles Zazie Beetz has played throughout her acting career." ;
+        schema:embedUrl <https://www.imdb.com/video/vi981123097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzcyODllODQtODQxYy00ZDI2LWEyMjQtNTY4NGZjNDZhM2E0XkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg" ;
+        schema:duration "PT1M8S"^^xsd:duration ;
+        schema:uploadDate "2021-07-25T19:18:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMGYwMTVlZmEtMWU3OC00NDViLWE4YmQtNDFiYjQ0MzZmNGExXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGYwMTVlZmEtMWU3OC00NDViLWE4YmQtNDFiYjQ0MzZmNGExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zazie Beetz" ;
+    schema:height "664"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm765351424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAxNDY2MzM2OV5BMl5BanBnXkFtZTgwNTM1MDY3NDM@._V1_.jpg> ;
+    schema:caption "Zazie Beetz in Atlanta (2016)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm2522909185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmMyMWFjNzAtNTIwOS00MmIzLWI0MGItOGJkNjM1NGFkNGM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zazie Beetz in Joker (2019)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm2353281024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxMTcwNTk4M15BMl5BanBnXkFtZTgwMTAzODYwMTI@._V1_.jpg> ;
+    schema:caption "Paul Simms, Hiro Murai, Donald Glover, Brian Tyree Henry, LaKeith Stanfield, Zazie Beetz, and Stephen Glover at an event for The 74th Annual Golden Globe Awards (2017)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm30624768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjNmOTY4YzUtOGJkMC00YTFjLThjMmMtNjFhZDllNzAxZTkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zazie Beetz in Deadpool 2 (2018)" ;
+    schema:height "2050"^^xsd:integer ;
+    schema:width "3075"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm523185921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2M2MDNhMTYtODA1Yi00M2RiLThhMTEtYTA5YzBlOWVhMDRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zazie Beetz in Black Mirror (2011)" ;
+    schema:height "2333"^^xsd:integer ;
+    schema:width "3500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm4071372545/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGJmMjk3NTItZTAwYS00MzdiLWJjYWMtYjMwZDQ4YWNjMGQ2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "J.B. Smoove, Zazie Beetz, and Quinta Brunson in History of the World: Part II (2023)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm3180987137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzVkOTFiMTYtZGJiYi00MTA5LTk5ZGUtNmU3ODk1MDk4ODU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Boyega and Zazie Beetz in Zazie Beetz & John Boyega (2022)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm1720653313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2QwOTNhNDQtZmI1Yy00YjllLWIxYjEtNzVjNDc0NmNhMmMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Zazie Beetz in Bullet Train (2022)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5939164/mediaviewer/rm3306363137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTRjOTQ3ZTEtNDY2ZS00YjI0LWE4YmYtNzZlYmFmYmRiMDdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Donald Glover, Brian Tyree Henry, LaKeith Stanfield, and Zazie Beetz in Atlanta (2016)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5939164/>
+    schema:sameAs <https://www.instagram.com/zaziebeetz/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

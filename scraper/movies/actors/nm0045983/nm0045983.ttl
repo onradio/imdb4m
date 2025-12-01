@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0045983/> a schema:Person ;
+    schema:name "Colleen Bade" ;
+    schema:url <https://www.imdb.com/name/nm0045983/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Colleen Bade. Actress: The Untouchables. Colleen Bade is known for The Untouchables (1987) and Jack and Mike (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094226/>,    # The Untouchables
+                       <https://www.imdb.com/title/tt0090460/> . # Jack and Mike
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Untouchables (1987)
+<https://www.imdb.com/title/tt0094226/> a schema:Movie ;
+    schema:name "The Untouchables" ;
+    schema:url <https://www.imdb.com/title/tt0094226/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0045983/> ;
+        schema:characterName "Mrs. Blackmer"
+    ] .
+
+# Jack and Mike (1986)
+<https://www.imdb.com/title/tt0090460/> a schema:Movie ;
+    schema:name "Jack and Mike" ;
+    schema:url <https://www.imdb.com/title/tt0090460/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0045983/> ;
+        schema:characterName "FBI Kate"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

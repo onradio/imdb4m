@@ -1,0 +1,271 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001756/> a schema:Person ;
+    schema:name "Barry Sonnenfeld" ;
+    schema:url <https://www.imdb.com/name/nm0001756/> ;
+    schema:birthDate "1953-04-01"^^xsd:date ;
+    schema:jobTitle "Producer", "Director", "Cinematographer" ;
+    schema:description "Barry Sonnenfeld. Director: Men in Black. Barry Sonnenfeld was born and raised in New York City. He graduated from New York University Film School in 1978. He started work as director of photography on the Oscar-nominated In Our Water (1982). Then Joel Coen and Ethan Coen hired him for Blood Simple (1984). This film began his collaboration with the Coen Bros., who used him for their next two pictures, Raising..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTYzNjY1NzY4MV5BMl5BanBnXkFtZTYwNjk3NDQ0._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0119654/>,    # Men in Black
+                       <https://www.imdb.com/title/tt0106220/>,    # Addams Family Values
+                       <https://www.imdb.com/title/tt0120891/>,    # Wild Wild West
+                       <https://www.imdb.com/title/tt1409024/>,    # Men in Black³
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4834206/>,    # A Series of Unfortunate Events
+                       <https://www.imdb.com/title/tt4383594/>,    # Nine Lives
+                       <https://www.imdb.com/title/tt0449089/>,    # R.V.: Runaway Vacation
+                       <https://www.imdb.com/title/tt0120912/>,    # Men in Black II
+                       <https://www.imdb.com/title/tt0246464/>,    # Big Trouble
+                       <https://www.imdb.com/title/tt0242949/>,    # The Tick
+                       <https://www.imdb.com/title/tt0113161/>,    # Get Shorty
+                       <https://www.imdb.com/title/tt0101272/>,    # The Addams Family
+                       <https://www.imdb.com/title/tt0101410/>,    # Barton Fink
+                       <https://www.imdb.com/title/tt0086979/> ; # Blood Simple
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Primetime Emmy"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 16 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3918510617/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001756/mediaviewer/rm993440768/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm943109120/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm590787584/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm1866305024/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm1681755648/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm1831177728/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm2315425792/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm959218944/>,
+                 <https://www.imdb.com/name/nm0001756/mediaviewer/rm3182336256/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0119654/> a schema:Movie ;
+    schema:name "Men in Black" ;
+    schema:url <https://www.imdb.com/title/tt0119654/> .
+
+<https://www.imdb.com/title/tt0106220/> a schema:Movie ;
+    schema:name "Addams Family Values" ;
+    schema:url <https://www.imdb.com/title/tt0106220/> .
+
+<https://www.imdb.com/title/tt0120891/> a schema:Movie ;
+    schema:name "Wild Wild West" ;
+    schema:url <https://www.imdb.com/title/tt0120891/> .
+
+<https://www.imdb.com/title/tt1409024/> a schema:Movie ;
+    schema:name "Men in Black³" ;
+    schema:url <https://www.imdb.com/title/tt1409024/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Series of Unfortunate Events (2017)
+<https://www.imdb.com/title/tt4834206/> a schema:Movie ;
+    schema:name "A Series of Unfortunate Events" ;
+    schema:url <https://www.imdb.com/title/tt4834206/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Ike Anwhistle"
+    ] .
+
+# Nine Lives (2016)
+<https://www.imdb.com/title/tt4383594/> a schema:Movie ;
+    schema:name "Nine Lives" ;
+    schema:url <https://www.imdb.com/title/tt4383594/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Additional Cat Voices"
+    ] .
+
+# R.V.: Runaway Vacation (2006)
+<https://www.imdb.com/title/tt0449089/> a schema:Movie ;
+    schema:name "R.V.: Runaway Vacation" ;
+    schema:url <https://www.imdb.com/title/tt0449089/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Irv"
+    ] .
+
+# Men in Black II (2002)
+<https://www.imdb.com/title/tt0120912/> a schema:Movie ;
+    schema:name "Men in Black II" ;
+    schema:url <https://www.imdb.com/title/tt0120912/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Neuralyzed Father"
+    ] .
+
+# Big Trouble (2002)
+<https://www.imdb.com/title/tt0246464/> a schema:Movie ;
+    schema:name "Big Trouble" ;
+    schema:url <https://www.imdb.com/title/tt0246464/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Confused Sports Radio Call In"
+    ] .
+
+# The Tick (2001)
+<https://www.imdb.com/title/tt0242949/> a schema:Movie ;
+    schema:name "The Tick" ;
+    schema:url <https://www.imdb.com/title/tt0242949/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Guy in Couch"
+    ] .
+
+# Get Shorty (1995)
+<https://www.imdb.com/title/tt0113161/> a schema:Movie ;
+    schema:name "Get Shorty" ;
+    schema:url <https://www.imdb.com/title/tt0113161/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Doorman"
+    ] .
+
+# The Addams Family (1991)
+<https://www.imdb.com/title/tt0101272/> a schema:Movie ;
+    schema:name "The Addams Family" ;
+    schema:url <https://www.imdb.com/title/tt0101272/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Passenger on Gomez's Train"
+    ] .
+
+# Barton Fink (1991)
+<https://www.imdb.com/title/tt0101410/> a schema:Movie ;
+    schema:name "Barton Fink" ;
+    schema:url <https://www.imdb.com/title/tt0101410/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Page Calling for Barton Fink"
+    ] .
+
+# Blood Simple (1984)
+<https://www.imdb.com/title/tt0086979/> a schema:Movie ;
+    schema:name "Blood Simple" ;
+    schema:url <https://www.imdb.com/title/tt0086979/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001756/> ;
+        schema:characterName "Marty's Vomiting"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3918510617/> a schema:VideoObject ;
+        schema:name "What We Know About The &apos;Untitled Men in Black Spin-Off&apos; ... So Far" ;
+        schema:description "Here come the Men in Black, but not the ones you remember. Here's what we know about the 'Untitled Men in Black Spin-Off' ... So Far." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3918510617/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZWY1YzdmNTEtZjVhMS00ZmFmLWIyZWQtZWJiZWFhOTY1ZDZkXkEyXkFqcGdeQWFhcm9uYmVy._V1_.jpg" ;
+        schema:duration "PT3M14S"^^xsd:duration ;
+        schema:uploadDate "2018-11-02T05:50:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTYzNjY1NzY4MV5BMl5BanBnXkFtZTYwNjk3NDQ0._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTYzNjY1NzY4MV5BMl5BanBnXkFtZTYwNjk3NDQ0._V1_.jpg> ;
+    schema:caption "Barry Sonnenfeld at an event for Big Trouble (2002)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "295"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm993440768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzNTY1OTUyMF5BMl5BanBnXkFtZTcwNTA2Nzc3Nw@@._V1_.jpg> ;
+    schema:caption "Will Smith and Barry Sonnenfeld in Men in Black 3 (2012)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm943109120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2NDYxMjE5NF5BMl5BanBnXkFtZTcwOTA2Nzc3Nw@@._V1_.jpg> ;
+    schema:caption "Tommy Lee Jones and Barry Sonnenfeld in Men in Black 3 (2012)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm590787584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTgzMDIxNTA4Ml5BMl5BanBnXkFtZTcwNDU1Nzc3Nw@@._V1_.jpg> ;
+    schema:caption "Will Smith, Josh Brolin, and Barry Sonnenfeld in Men in Black 3 (2012)" ;
+    schema:height "1362"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm1866305024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwODQ0ODA0NF5BMl5BanBnXkFtZTcwNjYxNzgwMw@@._V1_.jpg> ;
+    schema:caption "Barry Sonnenfeld and Graham Place in Get Shorty (1995)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1431"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm1681755648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIxODY1MzYyNV5BMl5BanBnXkFtZTcwNTMxNzgwMw@@._V1_.jpg> ;
+    schema:caption "Barry Sonnenfeld in Get Shorty (1995)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1404"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm1831177728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQ1Nzg3NzkzMF5BMl5BanBnXkFtZTcwNjQyNTgwMw@@._V1_.jpg> ;
+    schema:caption "Barry Sonnenfeld in The Concierge (1993)" ;
+    schema:height "1300"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm2315425792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyMDQ2MjI3MF5BMl5BanBnXkFtZTYwOTg0Mjk2._V1_.jpg> ;
+    schema:caption "Composer James Newton Howard (left) and Latin jazz legend Arturo Sandoval (center left) collaborated with Sonnenfeld (center right) and producer Tom Jacobson (right). " ;
+    schema:height "329"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm959218944/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0OTIzNTk1Ml5BMl5BanBnXkFtZTcwNTkwNTgzNA@@._V1_.jpg> ;
+    schema:caption "John Travolta and Barry Sonnenfeld in Get Shorty (1995)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001756/mediaviewer/rm3182336256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTIxNTI1ODM4OF5BMl5BanBnXkFtZTYwNzIxOTM3._V1_.jpg> ;
+    schema:caption "Barry Sonnenfeld in R.V.: Runaway Vacation (2006)" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

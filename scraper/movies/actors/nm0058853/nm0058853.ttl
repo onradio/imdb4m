@@ -1,0 +1,146 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0058853/> a schema:Person ;
+    schema:name "Lisbeth Bartlett" ;
+    schema:url <https://www.imdb.com/name/nm0058853/> ;
+    schema:birthDate "1956-02-28"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lisbeth Bartlett. Actress: Amadeus. Lisbeth Bartlett was born on 28 February 1956 in Denver, Colorado, USA. She is an actress, known for Amadeus (1984), Rocket Science (2007) and Suspect (1987)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Denver, Colorado, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1192618/>,    # Bottleworld
+                       <https://www.imdb.com/title/tt0477078/>,    # Rocket Science
+                       <https://www.imdb.com/title/tt0320022/>,    # Hack
+                       <https://www.imdb.com/title/tt0295284/>,    # The Good Thief
+                       <https://www.imdb.com/title/tt0210847/>,    # Moon Juice
+                       <https://www.imdb.com/title/tt0093240/>,    # Me and Him
+                       <https://www.imdb.com/title/tt0094082/>,    # Suspect
+                       <https://www.imdb.com/title/tt0086879/> ; # Amadeus
+
+
+    schema:video <https://www.imdb.com/video/vi2535496985/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bottleworld (2009)
+<https://www.imdb.com/title/tt1192618/> a schema:Movie ;
+    schema:name "Bottleworld" ;
+    schema:url <https://www.imdb.com/title/tt1192618/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Gift Box Customer"
+    ] .
+
+# Rocket Science (2007)
+<https://www.imdb.com/title/tt0477078/> a schema:Movie ;
+    schema:name "Rocket Science" ;
+    schema:url <https://www.imdb.com/title/tt0477078/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Juliet Hefner"
+    ] .
+
+# Hack (2004)
+<https://www.imdb.com/title/tt0320022/> a schema:Movie ;
+    schema:name "Hack" ;
+    schema:url <https://www.imdb.com/title/tt0320022/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Mary Thayer"
+    ] .
+
+# The Good Thief (2003)
+<https://www.imdb.com/title/tt0295284/> a schema:Movie ;
+    schema:name "The Good Thief" ;
+    schema:url <https://www.imdb.com/title/tt0295284/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Sharon Doogan"
+    ] .
+
+# Moon Juice (1998)
+<https://www.imdb.com/title/tt0210847/> a schema:Movie ;
+    schema:name "Moon Juice" ;
+    schema:url <https://www.imdb.com/title/tt0210847/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Lucille"
+    ] .
+
+# Me and Him (1988)
+<https://www.imdb.com/title/tt0093240/> a schema:Movie ;
+    schema:name "Me and Him" ;
+    schema:url <https://www.imdb.com/title/tt0093240/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "News Reporter"
+    ] .
+
+# Suspect (1987)
+<https://www.imdb.com/title/tt0094082/> a schema:Movie ;
+    schema:name "Suspect" ;
+    schema:url <https://www.imdb.com/title/tt0094082/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Marilyn"
+    ] .
+
+# Amadeus (1984)
+<https://www.imdb.com/title/tt0086879/> a schema:Movie ;
+    schema:name "Amadeus" ;
+    schema:url <https://www.imdb.com/title/tt0086879/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0058853/> ;
+        schema:characterName "Papagena"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2535496985/> a schema:VideoObject ;
+        schema:name "Amadeus" ;
+        schema:description "Trailer for Amadeus" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2535496985/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDJiOTBmMTctNGRkYS00MjJjLWFlZTAtNTg4MjRiZDQ4ZWY1XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M20S"^^xsd:duration ;
+        schema:uploadDate "2011-04-22T03:06:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

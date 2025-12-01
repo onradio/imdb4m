@@ -1,0 +1,197 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114746/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "What a Wonderful World" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001918/> ; # Louis Armstrong
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "What a Wonderful World" ;
+            schema:author <https://www.imdb.com/name/nm1176718/>, # Bob Thiele
+                       <https://www.imdb.com/name/nm0918993/> # George David Weiss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blueberry Hill" ;
+        schema:byArtist <https://www.imdb.com/name/nm0231629/> ; # Fats Domino
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blueberry Hill" ;
+            schema:author <https://www.imdb.com/name/nm0506893/>, # Al Lewis
+                       <https://www.imdb.com/name/nm0830731/>, # Larry Stock
+                       <https://www.imdb.com/name/nm0741728/> # Vincent Rose
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sleep Walk" ;
+        schema:byArtist <https://www.imdb.com/name/nm1012976/> ; # B.J. Cole
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sleep Walk" ;
+            schema:author <https://www.imdb.com/name/nm1504036/>, # Johnny Farina
+                       <https://www.imdb.com/name/nm1509805/>, # Ann Farina
+                       <https://www.imdb.com/name/nm1509806/> # Santo Farina
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vertigo Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vertigo Theme" ;
+            schema:author <https://www.imdb.com/name/nm0002136/> # Bernard Herrmann
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Introduccion" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Introduccion" ;
+            schema:author <https://www.imdb.com/name/nm0006226/> # Astor Piazzolla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Comanche" ;
+        schema:byArtist <https://www.imdb.com/name/nm0942052/>, # Link Wray
+                        <https://www.imdb.com/name/nm3448281/> ; # The Wraymen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Comanche" ;
+            schema:author <https://www.imdb.com/name/nm0335572/>, # Milt Grant
+                       <https://www.imdb.com/name/nm0942052/> # Link Wray
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Earth Died Screaming" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001823/> ; # Tom Waits
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Earth Died Screaming" ;
+            schema:author <https://www.imdb.com/name/nm0001823/> # Tom Waits
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Music" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Music" ;
+            schema:author <https://www.imdb.com/name/nm0338948/> # Walter Greene
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pipeline" ;
+        schema:byArtist <https://www.imdb.com/name/nm3170872/> ; # The Chantays
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pipeline" ;
+            schema:author <https://www.imdb.com/name/nm1776012/>, # Bob Spickard
+                       <https://www.imdb.com/name/nm1775993/> # Brian Carman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Concerto No. 21 In C Major, K.467" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Concerto No. 21 In C Major, K.467" ;
+            schema:composer <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Silent Night" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Silent Night" ;
+            schema:composer <https://www.imdb.com/name/nm0345045/> ; # Franz Xaver Gruber
+            schema:lyricist <https://www.imdb.com/name/nm0596063/> # Joseph Mohr
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "String Quartet No. 13 in a Minor 'Rosamunde' D804" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "String Quartet No. 13 in a Minor 'Rosamunde' D804" ;
+            schema:composer <https://www.imdb.com/name/nm0006280/> # Franz Schubert
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001823/> a schema:Person ;
+    schema:name "Tom Waits" .
+<https://www.imdb.com/name/nm0001918/> a schema:Person ;
+    schema:name "Louis Armstrong" .
+<https://www.imdb.com/name/nm0002136/> a schema:Person ;
+    schema:name "Bernard Herrmann" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0006226/> a schema:Person ;
+    schema:name "Astor Piazzolla" .
+<https://www.imdb.com/name/nm0006280/> a schema:Person ;
+    schema:name "Franz Schubert" .
+<https://www.imdb.com/name/nm0231629/> a schema:Person ;
+    schema:name "Fats Domino" .
+<https://www.imdb.com/name/nm0335572/> a schema:Person ;
+    schema:name "Milt Grant" .
+<https://www.imdb.com/name/nm0338948/> a schema:Person ;
+    schema:name "Walter Greene" .
+<https://www.imdb.com/name/nm0345045/> a schema:Person ;
+    schema:name "Franz Xaver Gruber" .
+<https://www.imdb.com/name/nm0506893/> a schema:Person ;
+    schema:name "Al Lewis" .
+<https://www.imdb.com/name/nm0596063/> a schema:Person ;
+    schema:name "Joseph Mohr" .
+<https://www.imdb.com/name/nm0741728/> a schema:Person ;
+    schema:name "Vincent Rose" .
+<https://www.imdb.com/name/nm0830731/> a schema:Person ;
+    schema:name "Larry Stock" .
+<https://www.imdb.com/name/nm0918993/> a schema:Person ;
+    schema:name "George David Weiss" .
+<https://www.imdb.com/name/nm0942052/> a schema:Person ;
+    schema:name "Link Wray" .
+<https://www.imdb.com/name/nm1012976/> a schema:Person ;
+    schema:name "B.J. Cole" .
+<https://www.imdb.com/name/nm1176718/> a schema:Person ;
+    schema:name "Bob Thiele" .
+<https://www.imdb.com/name/nm1504036/> a schema:Person ;
+    schema:name "Johnny Farina" .
+<https://www.imdb.com/name/nm1509805/> a schema:Person ;
+    schema:name "Ann Farina" .
+<https://www.imdb.com/name/nm1509806/> a schema:Person ;
+    schema:name "Santo Farina" .
+<https://www.imdb.com/name/nm1775993/> a schema:Person ;
+    schema:name "Brian Carman" .
+<https://www.imdb.com/name/nm1776012/> a schema:Person ;
+    schema:name "Bob Spickard" .
+<https://www.imdb.com/name/nm3170872/> a schema:Person ;
+    schema:name "The Chantays" .
+<https://www.imdb.com/name/nm3448281/> a schema:Person ;
+    schema:name "The Wraymen" .
+# ==============================================================================

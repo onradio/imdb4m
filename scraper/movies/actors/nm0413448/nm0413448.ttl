@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0413448/> a schema:Person ;
+    schema:name "Desreta Jackson" ;
+    schema:url <https://www.imdb.com/name/nm0413448/> ;
+    schema:jobTitle "Director", "Producer", "Writer" ;
+    schema:description "Desreta Jackson. Actress: The Color Purple. Desreta Jackson is known for The Color Purple (1985), Sister Act (1992) and A Perfect Chaos (2017)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4386312/>,    # A Perfect Chaos
+                       <https://www.imdb.com/title/tt0105417/>,    # Sister Act
+                       <https://www.imdb.com/title/tt0096648/>,    # Mancuso, FBI
+                       <https://www.imdb.com/title/tt0093537/>,    # The Mighty Pawns
+                       <https://www.imdb.com/title/tt0088939/> ; # The Color Purple
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0413448/mediaviewer/rm1334976512/>,
+                 <https://www.imdb.com/name/nm0413448/mediaviewer/rm1167204352/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Perfect Chaos (2017)
+<https://www.imdb.com/title/tt4386312/> a schema:Movie ;
+    schema:name "A Perfect Chaos" ;
+    schema:url <https://www.imdb.com/title/tt4386312/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413448/> ;
+        schema:characterName "Lisa Karen"
+    ] .
+
+# Sister Act (1992)
+<https://www.imdb.com/title/tt0105417/> a schema:Movie ;
+    schema:name "Sister Act" ;
+    schema:url <https://www.imdb.com/title/tt0105417/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413448/> ;
+        schema:characterName "Teenage Girl #1"
+    ] .
+
+# Mancuso, FBI (1989)
+<https://www.imdb.com/title/tt0096648/> a schema:Movie ;
+    schema:name "Mancuso, FBI" ;
+    schema:url <https://www.imdb.com/title/tt0096648/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413448/> ;
+        schema:characterName ""
+    ] .
+
+# The Mighty Pawns (1987)
+<https://www.imdb.com/title/tt0093537/> a schema:Movie ;
+    schema:name "The Mighty Pawns" ;
+    schema:url <https://www.imdb.com/title/tt0093537/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413448/> ;
+        schema:characterName "Lucy"
+    ] .
+
+# The Color Purple (1985)
+<https://www.imdb.com/title/tt0088939/> a schema:Movie ;
+    schema:name "The Color Purple" ;
+    schema:url <https://www.imdb.com/title/tt0088939/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0413448/> ;
+        schema:characterName "Young Celie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0413448/mediaviewer/rm1334976512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjgyYzYxMzUtMmQ1MC00OTg4LTkxMWYtZDQ0MjBhMGM3MjcxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Akosua Busia and Desreta Jackson in The Color Purple (1985)" ;
+    schema:height "1147"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0413448/mediaviewer/rm1167204352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDJkOGVmN2MtMWI5Ny00MmZmLWJjODItZjNjYjI1Zjk5YjUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Danny Glover and Desreta Jackson in The Color Purple (1985)" ;
+    schema:height "501"^^xsd:integer ;
+    schema:width "895"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0413448/>
+    schema:sameAs <http://www.facebook.com/people/Desreta-Jackson/100000744424741> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

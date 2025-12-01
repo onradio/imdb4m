@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11762288/> a schema:Person ;
+    schema:name "Rajie Vijay Sarathi" ;
+    schema:url <https://www.imdb.com/name/nm11762288/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rajie Vijay Sarathi. Actress: Dil Bechara. Rajie Vijay Sarathi is known for Dil Bechara (2020), Bairavaa (2017) and Aarohanam (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6201292/>,    # Bairavaa
+                       <https://www.imdb.com/title/tt2387224/> . # Aarohanam
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bairavaa (2017)
+<https://www.imdb.com/title/tt6201292/> a schema:Movie ;
+    schema:name "Bairavaa" ;
+    schema:url <https://www.imdb.com/title/tt6201292/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11762288/> ;
+        schema:characterName "Mrs. Venkatesh"
+    ] .
+
+# Aarohanam (2012)
+<https://www.imdb.com/title/tt2387224/> a schema:Movie ;
+    schema:name "Aarohanam" ;
+    schema:url <https://www.imdb.com/title/tt2387224/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11762288/> ;
+        schema:characterName "Sandy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

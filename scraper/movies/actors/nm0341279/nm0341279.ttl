@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0341279/> a schema:Person ;
+    schema:name "Laurence Griffin" ;
+    schema:url <https://www.imdb.com/name/nm0341279/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Laurence Griffin. Actor: In the Name of the Father. Laurence Griffin is known for In the Name of the Father (1993) and Vegas Whales Tales (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0446065/>,    # Vegas Whales Tales
+                       <https://www.imdb.com/title/tt0107207/> . # In the Name of the Father
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Vegas Whales Tales (2005)
+<https://www.imdb.com/title/tt0446065/> a schema:Movie ;
+    schema:name "Vegas Whales Tales" ;
+    schema:url <https://www.imdb.com/title/tt0446065/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0341279/> ;
+        schema:characterName "Buttler"
+    ] .
+
+# In the Name of the Father (1993)
+<https://www.imdb.com/title/tt0107207/> a schema:Movie ;
+    schema:name "In the Name of the Father" ;
+    schema:url <https://www.imdb.com/title/tt0107207/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0341279/> ;
+        schema:characterName "Boy in Riot"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

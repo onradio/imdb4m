@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0381681/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "An Ocean Apart" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000365/> ; # Julie Delpy
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "An Ocean Apart" ;
+            schema:composer <https://www.imdb.com/name/nm0000365/> # Julie Delpy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Goldberg Variation Number 25" ;
+        schema:byArtist <https://www.imdb.com/name/nm1774594/> ; # Igor Kipnis
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Goldberg Variation Number 25" ;
+            schema:composer <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Waltz for a Night" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000365/> ; # Julie Delpy
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Waltz for a Night" ;
+            schema:composer <https://www.imdb.com/name/nm0000365/> # Julie Delpy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Just in Time" ;
+        schema:byArtist <https://www.imdb.com/name/nm0800510/> ; # Nina Simone
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Just in Time" ;
+            schema:author <https://www.imdb.com/name/nm0173679/>, # Betty Comden
+                       <https://www.imdb.com/name/nm0337582/>, # Adolph Green
+                       <https://www.imdb.com/name/nm0006312/> # Jule Styne
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Je t'Aime tant" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000365/> ; # Julie Delpy
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Je t'Aime tant" ;
+            schema:composer <https://www.imdb.com/name/nm0000365/> # Julie Delpy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Accordion Music" ;
+        schema:byArtist <https://www.imdb.com/name/nm0318666/> ; # Glover Gill
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Accordion Music" ;
+            schema:composer <https://www.imdb.com/name/nm0318666/> # Glover Gill
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000365/> a schema:Person ;
+    schema:name "Julie Delpy" .
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0006312/> a schema:Person ;
+    schema:name "Jule Styne" .
+<https://www.imdb.com/name/nm0173679/> a schema:Person ;
+    schema:name "Betty Comden" .
+<https://www.imdb.com/name/nm0318666/> a schema:Person ;
+    schema:name "Glover Gill" .
+<https://www.imdb.com/name/nm0337582/> a schema:Person ;
+    schema:name "Adolph Green" .
+<https://www.imdb.com/name/nm0800510/> a schema:Person ;
+    schema:name "Nina Simone" .
+<https://www.imdb.com/name/nm1774594/> a schema:Person ;
+    schema:name "Igor Kipnis" .
+# ==============================================================================

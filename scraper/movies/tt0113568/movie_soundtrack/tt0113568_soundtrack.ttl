@@ -1,0 +1,36 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0113568/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "See You Everyday" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "See You Everyday" ;
+            schema:composer <https://www.imdb.com/name/nm0442766/> # Kenji Kawai
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One Minute Warning" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Shell" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Open theme song" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0442766/> a schema:Person ;
+    schema:name "Kenji Kawai" .
+# ==============================================================================

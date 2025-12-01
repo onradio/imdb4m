@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11157480/> a schema:Person ;
+    schema:name "Ender Arular" ;
+    schema:url <https://www.imdb.com/name/nm11157480/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ender Arular. Actor: The Mountain II. Ender Arular is known for The Mountain II (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5813916/> .    # The Mountain II
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11157480/> ;
+        schema:characterName "Brigadier Giray Dogan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0190332/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "A Love Before Time" ;
+        schema:byArtist <https://www.imdb.com/name/nm0497052/>, # Coco Lee
+                        <https://www.imdb.com/name/nm0530901/> ; # Yo-Yo Ma
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Love Before Time" ;
+            schema:composer <https://www.imdb.com/name/nm0129326/>, # Jorge Calandrelli
+                        <https://www.imdb.com/name/nm0241753/> ; # Dun Tan
+            schema:lyricist <https://www.imdb.com/name/nm0770005/>, # James Schamus
+                        <https://www.imdb.com/name/nm1023304/> # Elaine Chow
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Caravan Bells on the Silk Road" ;
+        schema:byArtist <https://www.imdb.com/name/nm1021826/> ; # Bo Liu
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Moonlight Lover" ;
+        schema:byArtist <https://www.imdb.com/name/nm0497052/>, # Coco Lee
+                        <https://www.imdb.com/name/nm0530901/> ; # Yo-Yo Ma
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Moonlight Lover" ;
+            schema:composer <https://www.imdb.com/name/nm0129326/>, # Jorge Calandrelli
+                        <https://www.imdb.com/name/nm0241753/> ; # Dun Tan
+            schema:lyricist <https://www.imdb.com/name/nm3633141/> # Chia-Yang Yi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0129326/> a schema:Person ;
+    schema:name "Jorge Calandrelli" .
+<https://www.imdb.com/name/nm0241753/> a schema:Person ;
+    schema:name "Dun Tan" .
+<https://www.imdb.com/name/nm0497052/> a schema:Person ;
+    schema:name "Coco Lee" .
+<https://www.imdb.com/name/nm0530901/> a schema:Person ;
+    schema:name "Yo-Yo Ma" .
+<https://www.imdb.com/name/nm0770005/> a schema:Person ;
+    schema:name "James Schamus" .
+<https://www.imdb.com/name/nm1021826/> a schema:Person ;
+    schema:name "Bo Liu" .
+<https://www.imdb.com/name/nm1023304/> a schema:Person ;
+    schema:name "Elaine Chow" .
+<https://www.imdb.com/name/nm3633141/> a schema:Person ;
+    schema:name "Chia-Yang Yi" .
+# ==============================================================================

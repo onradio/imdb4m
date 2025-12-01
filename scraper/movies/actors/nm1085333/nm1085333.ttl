@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1085333/> a schema:Person ;
+    schema:name "Mila Espiga" ;
+    schema:url <https://www.imdb.com/name/nm1085333/> ;
+    schema:birthDate "1961-03-06"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Mila Espiga. Actress: Pan's Labyrinth. Mila Espiga was born on 6 March 1961 in Santo Domingo de la Calzada, La Rioja, Spain. She is an actress, known for Pan's Labyrinth (2006), The Platform 2 (2024) and Libertad (2021)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Santo Domingo de la Calzada, La Rioja, Spain"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6703960/>,    # Ulises
+                       <https://www.imdb.com/title/tt3902698/> . # Rey Gitano
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ulises (2016)
+<https://www.imdb.com/title/tt6703960/> a schema:Movie ;
+    schema:name "Ulises" ;
+    schema:url <https://www.imdb.com/title/tt6703960/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1085333/> ;
+        schema:characterName "Recepcionist"
+    ] .
+
+# Rey Gitano (2015)
+<https://www.imdb.com/title/tt3902698/> a schema:Movie ;
+    schema:name "Rey Gitano" ;
+    schema:url <https://www.imdb.com/title/tt3902698/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1085333/> ;
+        schema:characterName "Moderadora"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

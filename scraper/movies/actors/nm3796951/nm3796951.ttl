@@ -1,0 +1,86 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3796951/> a schema:Person ;
+    schema:name "Won Geun-hee" ;
+    schema:url <https://www.imdb.com/name/nm3796951/> ;
+    schema:birthDate "1943-10-27"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Won Geun-hee. Actor: The Handmaiden. Won Geun-hee was born on 27 October 1943 in the Republic of Korea. He is an actor, known for The Handmaiden (2016), Pandora: Beneath the Paradise (2023) and Indian Summer (2001)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Republic of Korea"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4016934/>,    # The Handmaiden
+                       <https://www.imdb.com/title/tt0293280/>,    # Indian Summer
+                       <https://www.imdb.com/title/tt36956380/> ; # Gwanchon Essay
+
+
+    schema:video <https://www.imdb.com/video/vi514305561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3796951/> ;
+        schema:characterName "Butler"
+    ] .
+
+# Indian Summer (2001)
+<https://www.imdb.com/title/tt0293280/> a schema:Movie ;
+    schema:name "Indian Summer" ;
+    schema:url <https://www.imdb.com/title/tt0293280/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3796951/> ;
+        schema:characterName "(as Geun-hee Won)"
+    ] .
+
+# Gwanchon Essay (1993)
+<https://www.imdb.com/title/tt36956380/> a schema:Movie ;
+    schema:name "Gwanchon Essay" ;
+    schema:url <https://www.imdb.com/title/tt36956380/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3796951/> ;
+        schema:characterName "Math teacher"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi514305561/> a schema:VideoObject ;
+        schema:name "Main trailer" ;
+        schema:description "Indian Summer(2001)" ;
+        schema:embedUrl <https://www.imdb.com/video/vi514305561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODUzNjU5MDgzNV5BMl5BanBnXkFtZTgwNzY5MjM3MzE@._V1_.jpg" ;
+        schema:duration "PT2M36S"^^xsd:duration ;
+        schema:uploadDate "2014-12-17T21:31:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1754166/> a schema:Person ;
+    schema:name "Sachi Kimura" ;
+    schema:url <https://www.imdb.com/name/nm1754166/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Sachi Kimura. Actress: In Bruges. Sachi Kimura is known for In Bruges (2008), Boohbah (2003) and The End of the Line (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2813612/>,    # The End of the Line
+                       <https://www.imdb.com/title/tt0780536/>,    # In Bruges
+                       <https://www.imdb.com/title/tt0475296/>,    # Hiroshima
+                       <https://www.imdb.com/title/tt0398429/> . # Boohbah
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The End of the Line (2009)
+<https://www.imdb.com/title/tt2813612/> a schema:Movie ;
+    schema:name "The End of the Line" ;
+    schema:url <https://www.imdb.com/title/tt2813612/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1754166/> ;
+        schema:characterName ""
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1754166/> ;
+        schema:characterName "Imamoto"
+    ] .
+
+# Hiroshima (2005)
+<https://www.imdb.com/title/tt0475296/> a schema:Movie ;
+    schema:name "Hiroshima" ;
+    schema:url <https://www.imdb.com/title/tt0475296/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1754166/> ;
+        schema:characterName "Takakura's Friend"
+    ] .
+
+# Boohbah (2003)
+<https://www.imdb.com/title/tt0398429/> a schema:Movie ;
+    schema:name "Boohbah" ;
+    schema:url <https://www.imdb.com/title/tt0398429/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1754166/> ;
+        schema:characterName "Auntie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

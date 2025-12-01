@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1658709/> a schema:Person ;
+    schema:name "Ronald Betts" ;
+    schema:url <https://www.imdb.com/name/nm1658709/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ronald Betts. Actor: The Notebook. Ronald Betts is known for The Notebook (2004) and Sickness (2017)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1630657/>,    # Sickness
+                       <https://www.imdb.com/title/tt0332280/> . # The Notebook
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sickness (2017)
+<https://www.imdb.com/title/tt1630657/> a schema:Movie ;
+    schema:name "Sickness" ;
+    schema:url <https://www.imdb.com/title/tt1630657/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1658709/> ;
+        schema:characterName "'Sick' Warren"
+    ] .
+
+# The Notebook (2004)
+<https://www.imdb.com/title/tt0332280/> a schema:Movie ;
+    schema:name "The Notebook" ;
+    schema:url <https://www.imdb.com/title/tt0332280/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1658709/> ;
+        schema:characterName "Male Nurse"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

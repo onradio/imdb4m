@@ -1,0 +1,134 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0086960/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Heat Is On" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004940/> ; # Glenn Frey
+        schema:producer <https://www.imdb.com/name/nm0286850/>, # Keith Forsey
+                       <https://www.imdb.com/name/nm0266536/> ; # Harold Faltermeyer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Heat Is On" ;
+            schema:author <https://www.imdb.com/name/nm0286850/>, # Keith Forsey
+                       <https://www.imdb.com/name/nm0266536/> # Harold Faltermeyer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Neutron Dance" ;
+        schema:byArtist <https://www.imdb.com/name/nm1429298/> ; # The Pointer Sisters
+        schema:producer <https://www.imdb.com/name/nm1453264/> ; # Richard Perry
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Neutron Dance" ;
+            schema:author <https://www.imdb.com/name/nm0932267/>, # Allee Willis
+                       <https://www.imdb.com/name/nm1213970/> # Danny Sembello
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Stir It Up" ;
+        schema:byArtist <https://www.imdb.com/name/nm0479458/> ; # Patti LaBelle
+        schema:producer <https://www.imdb.com/name/nm0286850/>, # Keith Forsey
+                       <https://www.imdb.com/name/nm0266536/> ; # Harold Faltermeyer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Stir It Up" ;
+            schema:author <https://www.imdb.com/name/nm0932267/>, # Allee Willis
+                       <https://www.imdb.com/name/nm1213970/> # Danny Sembello
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Do You Really (Want My Love?)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1903317/> ; # Junior
+        schema:producer <https://www.imdb.com/name/nm1519195/> ; # Nigel Martinez
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Do You Really (Want My Love?)" ;
+            schema:author <https://www.imdb.com/name/nm1903317/>, # Junior
+                       <https://www.imdb.com/name/nm5810253/> # Glenn Nightingale
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "New Attitude" ;
+        schema:byArtist <https://www.imdb.com/name/nm0479458/> ; # Patti LaBelle
+        schema:producer <https://www.imdb.com/name/nm1330175/> ; # Peter Bunetta
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "New Attitude" ;
+            schema:author <https://www.imdb.com/name/nm0733089/>, # Sharon Robinson
+                       <https://www.imdb.com/name/nm0319731/> # Jon Gilutin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nasty Girl" ;
+        schema:byArtist <https://www.imdb.com/name/nm9137400/> ; # Vanity 6
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nasty Girl" ;
+            schema:author <https://www.imdb.com/name/nm0889152/> # Vanity
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Axel F" ;
+        schema:byArtist <https://www.imdb.com/name/nm0266536/> ; # Harold Faltermeyer
+        schema:producer <https://www.imdb.com/name/nm0266536/> ; # Harold Faltermeyer
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Axel F" ;
+            schema:author <https://www.imdb.com/name/nm0266536/> # Harold Faltermeyer
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004940/> a schema:Person ;
+    schema:name "Glenn Frey" .
+<https://www.imdb.com/name/nm0266536/> a schema:Person ;
+    schema:name "Harold Faltermeyer" .
+<https://www.imdb.com/name/nm0286850/> a schema:Person ;
+    schema:name "Keith Forsey" .
+<https://www.imdb.com/name/nm0319731/> a schema:Person ;
+    schema:name "Jon Gilutin" .
+<https://www.imdb.com/name/nm0479458/> a schema:Person ;
+    schema:name "Patti LaBelle" .
+<https://www.imdb.com/name/nm0733089/> a schema:Person ;
+    schema:name "Sharon Robinson" .
+<https://www.imdb.com/name/nm0889152/> a schema:Person ;
+    schema:name "Vanity" .
+<https://www.imdb.com/name/nm0932267/> a schema:Person ;
+    schema:name "Allee Willis" .
+<https://www.imdb.com/name/nm1213970/> a schema:Person ;
+    schema:name "Danny Sembello" .
+<https://www.imdb.com/name/nm1330175/> a schema:Person ;
+    schema:name "Peter Bunetta" .
+<https://www.imdb.com/name/nm1429298/> a schema:Person ;
+    schema:name "The Pointer Sisters" .
+<https://www.imdb.com/name/nm1453264/> a schema:Person ;
+    schema:name "Richard Perry" .
+<https://www.imdb.com/name/nm1519195/> a schema:Person ;
+    schema:name "Nigel Martinez" .
+<https://www.imdb.com/name/nm1903317/> a schema:Person ;
+    schema:name "Junior" .
+<https://www.imdb.com/name/nm5810253/> a schema:Person ;
+    schema:name "Glenn Nightingale" .
+<https://www.imdb.com/name/nm9137400/> a schema:Person ;
+    schema:name "Vanity 6" .
+# ==============================================================================

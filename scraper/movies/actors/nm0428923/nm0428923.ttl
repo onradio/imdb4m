@@ -1,0 +1,408 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0428923/> a schema:Person ;
+    schema:name "Nathan Jones" ;
+    schema:url <https://www.imdb.com/name/nm0428923/> ;
+    schema:jobTitle "Actor", "Director", "Stunts" ;
+    schema:alternateName "Megaman", "Colossus", "The Colossus of Boggo Road" ;
+    schema:description "Nathan Jones. Actor: Mad Max: Fury Road. Nathan Jones's saga is a tapestry of raw power and entertainment, woven from the rugged landscapes of Australia to the glitz of global arenas. A towering figure at 6' 11\", he carved his niche as a colossus in strength athletics, power-lifting his way to stardom in the mid-90s. His moniker \"Megaman\" aptly captured his gargantuan presence, which saw him dominate strongman contests, including..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDAwMzlhMDMtMWQwZi00ZmU5LTllNWYtYzA2ZDMzODVhOGZjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Gold Coast, Queensland, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "2.11"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 11″ (2.11 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1392190/>,    # Mad Max: Fury Road
+                       <https://www.imdb.com/title/tt0293429/>,    # Mortal Kombat
+                       <https://www.imdb.com/title/tt0332452/>,    # Troy
+                       <https://www.imdb.com/title/tt12037194/>,    # Furiosa: A Mad Max Saga
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10378328/>,    # Revenge of the Mask 2
+                       <https://www.imdb.com/title/tt6806448/>,    # Fast & Furious: Hobbs & Shaw
+                       <https://www.imdb.com/title/tt7338690/>,    # The Scorpion King: Book of Souls
+                       <https://www.imdb.com/title/tt5303442/>,    # In Like Flynn
+                       <https://www.imdb.com/title/tt4158594/>,    # Boar
+                       <https://www.imdb.com/title/tt5235880/>,    # A Flying Jatt
+                       <https://www.imdb.com/title/tt4790268/>,    # Never Back Down: No Surrender
+                       <https://www.imdb.com/title/tt3557988/>,    # Boologam
+                       <https://www.imdb.com/title/tt3317874/>,    # Charlie's Farm
+                       <https://www.imdb.com/title/tt0816462/>,    # Conan the Barbarian
+                       <https://www.imdb.com/title/tt1251761/>,    # Muay Thai Giant
+                       <https://www.imdb.com/title/tt0463872/>,    # Asterix at the Olympic Games
+                       <https://www.imdb.com/title/tt0443473/>,    # The Condemned
+                       <https://www.imdb.com/title/tt0446059/>,    # Fearless
+                       <https://www.imdb.com/title/tt0427954/>,    # Warrior King
+                       <https://www.imdb.com/title/tt0227972/>,    # WWF SmackDown!
+                       <https://www.imdb.com/title/tt0353015/>,    # WrestleMania XIX
+                       <https://www.imdb.com/title/tt0185103/>,    # WWE Monday Night RAW
+                       <https://www.imdb.com/title/tt0311992/>,    # WWA: The Inception
+                       <https://www.imdb.com/title/tt0135997/>,    # Doom Runners
+                       <https://www.imdb.com/title/tt0116704/> ; # First Strike
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi815449625/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0428923/mediaviewer/rm566977280/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm2898944768/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm902521600/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm2647286528/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm4180190977/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm3519701760/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm3569115649/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm693703425/>,
+                 <https://www.imdb.com/name/nm0428923/mediaviewer/rm3570390529/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1392190/> a schema:Movie ;
+    schema:name "Mad Max: Fury Road" ;
+    schema:url <https://www.imdb.com/title/tt1392190/> .
+
+<https://www.imdb.com/title/tt0293429/> a schema:Movie ;
+    schema:name "Mortal Kombat" ;
+    schema:url <https://www.imdb.com/title/tt0293429/> .
+
+<https://www.imdb.com/title/tt0332452/> a schema:Movie ;
+    schema:name "Troy" ;
+    schema:url <https://www.imdb.com/title/tt0332452/> .
+
+<https://www.imdb.com/title/tt12037194/> a schema:Movie ;
+    schema:name "Furiosa: A Mad Max Saga" ;
+    schema:url <https://www.imdb.com/title/tt12037194/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Revenge of the Mask 2 (2019)
+<https://www.imdb.com/title/tt10378328/> a schema:Movie ;
+    schema:name "Revenge of the Mask 2" ;
+    schema:url <https://www.imdb.com/title/tt10378328/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Walter"
+    ] .
+
+# Fast & Furious: Hobbs & Shaw (2019)
+<https://www.imdb.com/title/tt6806448/> a schema:Movie ;
+    schema:name "Fast & Furious: Hobbs & Shaw" ;
+    schema:url <https://www.imdb.com/title/tt6806448/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Russian Fighter Pilot"
+    ] .
+
+# The Scorpion King: Book of Souls (2018)
+<https://www.imdb.com/title/tt7338690/> a schema:Movie ;
+    schema:name "The Scorpion King: Book of Souls" ;
+    schema:url <https://www.imdb.com/title/tt7338690/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Enkidu"
+    ] .
+
+# In Like Flynn (2018)
+<https://www.imdb.com/title/tt5303442/> a schema:Movie ;
+    schema:name "In Like Flynn" ;
+    schema:url <https://www.imdb.com/title/tt5303442/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "The Mountain"
+    ] .
+
+# Boar (2017)
+<https://www.imdb.com/title/tt4158594/> a schema:Movie ;
+    schema:name "Boar" ;
+    schema:url <https://www.imdb.com/title/tt4158594/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Bernie"
+    ] .
+
+# A Flying Jatt (2016)
+<https://www.imdb.com/title/tt5235880/> a schema:Movie ;
+    schema:name "A Flying Jatt" ;
+    schema:url <https://www.imdb.com/title/tt5235880/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Raka"
+    ] .
+
+# Never Back Down: No Surrender (2016)
+<https://www.imdb.com/title/tt4790268/> a schema:Movie ;
+    schema:name "Never Back Down: No Surrender" ;
+    schema:url <https://www.imdb.com/title/tt4790268/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Caesar Braga"
+    ] .
+
+# Boologam (2015)
+<https://www.imdb.com/title/tt3557988/> a schema:Movie ;
+    schema:name "Boologam" ;
+    schema:url <https://www.imdb.com/title/tt3557988/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Steven George"
+    ] .
+
+# Charlie's Farm (2014)
+<https://www.imdb.com/title/tt3317874/> a schema:Movie ;
+    schema:name "Charlie's Farm" ;
+    schema:url <https://www.imdb.com/title/tt3317874/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Charlie Wilson"
+    ] .
+
+# Conan the Barbarian (2011)
+<https://www.imdb.com/title/tt0816462/> a schema:Movie ;
+    schema:name "Conan the Barbarian" ;
+    schema:url <https://www.imdb.com/title/tt0816462/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Akhun"
+    ] .
+
+# Muay Thai Giant (2008)
+<https://www.imdb.com/title/tt1251761/> a schema:Movie ;
+    schema:name "Muay Thai Giant" ;
+    schema:url <https://www.imdb.com/title/tt1251761/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Barney Emerald"
+    ] .
+
+# Asterix at the Olympic Games (2008)
+<https://www.imdb.com/title/tt0463872/> a schema:Movie ;
+    schema:name "Asterix at the Olympic Games" ;
+    schema:url <https://www.imdb.com/title/tt0463872/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Humungus"
+    ] .
+
+# The Condemned (2007)
+<https://www.imdb.com/title/tt0443473/> a schema:Movie ;
+    schema:name "The Condemned" ;
+    schema:url <https://www.imdb.com/title/tt0443473/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Petr"
+    ] .
+
+# Fearless (2006)
+<https://www.imdb.com/title/tt0446059/> a schema:Movie ;
+    schema:name "Fearless" ;
+    schema:url <https://www.imdb.com/title/tt0446059/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Hercules O'Brien"
+    ] .
+
+# Warrior King (2005)
+<https://www.imdb.com/title/tt0427954/> a schema:Movie ;
+    schema:name "Warrior King" ;
+    schema:url <https://www.imdb.com/title/tt0427954/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "T.K."
+    ] .
+
+# WWF SmackDown! (2003)
+<https://www.imdb.com/title/tt0227972/> a schema:Movie ;
+    schema:name "WWF SmackDown!" ;
+    schema:url <https://www.imdb.com/title/tt0227972/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Nathan Jones"
+    ] .
+
+# WrestleMania XIX (2003)
+<https://www.imdb.com/title/tt0353015/> a schema:Movie ;
+    schema:name "WrestleMania XIX" ;
+    schema:url <https://www.imdb.com/title/tt0353015/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Nathan Jones"
+    ] .
+
+# WWE Monday Night RAW (2003)
+<https://www.imdb.com/title/tt0185103/> a schema:Movie ;
+    schema:name "WWE Monday Night RAW" ;
+    schema:url <https://www.imdb.com/title/tt0185103/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Nathan Jones"
+    ] .
+
+# WWA: The Inception (2001)
+<https://www.imdb.com/title/tt0311992/> a schema:Movie ;
+    schema:name "WWA: The Inception" ;
+    schema:url <https://www.imdb.com/title/tt0311992/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Nathan Jones"
+    ] .
+
+# Doom Runners (1997)
+<https://www.imdb.com/title/tt0135997/> a schema:Movie ;
+    schema:name "Doom Runners" ;
+    schema:url <https://www.imdb.com/title/tt0135997/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Vike"
+    ] .
+
+# First Strike (1996)
+<https://www.imdb.com/title/tt0116704/> a schema:Movie ;
+    schema:name "First Strike" ;
+    schema:url <https://www.imdb.com/title/tt0116704/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0428923/> ;
+        schema:characterName "Hit Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi815449625/> a schema:VideoObject ;
+        schema:name "Official Trailer 2" ;
+        schema:description "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max." ;
+        schema:embedUrl <https://www.imdb.com/video/vi815449625/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTE3OWYxYTctYjYxZi00MTE4LTg0MGYtMTMyMjI2ZjhiNTczXkEyXkFqcGdeQWpnYW1i._V1_.jpg" ;
+        schema:duration "PT2M27S"^^xsd:duration ;
+        schema:uploadDate "2024-03-19T16:20:51Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDAwMzlhMDMtMWQwZi00ZmU5LTllNWYtYzA2ZDMzODVhOGZjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDAwMzlhMDMtMWQwZi00ZmU5LTllNWYtYzA2ZDMzODVhOGZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones" ;
+    schema:height "883"^^xsd:integer ;
+    schema:width "883"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm566977280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTE0NGM2NDItMzJmMy00YWEzLTk0ZjAtZWVmN2JiY2U1NWI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hardy and Nathan Jones" ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "528"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm2898944768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmU5MDk0YTgtOGRmOC00NGFhLWFkMTktNGU0NTlmMWQ1ZDYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones in Troy (2004)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm902521600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjI2YmY2ZGMtZGIxOS00YWJjLWE2NGUtYjEzOGQ2ZTZjYTliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm2647286528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWYyMDJlNDYtY2ZmNS00M2U4LWIyNzMtMmZmZWRlYmYzYWRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlize Theron and Nathan Jones" ;
+    schema:height "1845"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm4180190977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzllMDk5OGQtZDZjYy00NDBiLTliMjYtZTgxODM5MjIyMmZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones in Mad Max: Fury Road (2015)" ;
+    schema:height "2832"^^xsd:integer ;
+    schema:width "2117"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm3519701760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGIwMDE1ZmMtMmEzZS00NjE1LWFkZGUtMTg4OTJhMmI1NWRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Keir Beck and Nathan Jones" ;
+    schema:height "1602"^^xsd:integer ;
+    schema:width "1148"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm3569115649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmUzYTU5MDUtNjQ3YS00N2E1LThhYmYtMjU3MjRiYjhjNGY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones in The Red (2024)" ;
+    schema:height "1700"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm693703425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjc3ZGY5YTItMTkyNy00N2YzLTg2ZmItZDFiMTcwYWEwNWEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones in Spiderhead (2022)" ;
+    schema:height "1607"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0428923/mediaviewer/rm3570390529/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGIyYjQ3NTMtYjUzYi00MTMzLTg3MTQtMzg3MzI4NGE5ZTNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Nathan Jones and Mehcad Brooks in Mortal Kombat (2021)" ;
+    schema:height "819"^^xsd:integer ;
+    schema:width "1917"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0428923/>
+    schema:sameAs <https://www.instagram.com/rictus_erectus/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

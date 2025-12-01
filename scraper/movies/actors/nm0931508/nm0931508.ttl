@@ -1,0 +1,139 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0931508/> a schema:Person ;
+    schema:name "Rebecca Williams" ;
+    schema:url <https://www.imdb.com/name/nm0931508/> ;
+    schema:jobTitle "Actress", "Sound Department" ;
+    schema:description "Rebecca Williams. Actress: Forrest Gump. Rebecca Williams is known for Forrest Gump (1994), The Sisterhood of the Travelling Pants (2005) and In the Heat of the Night (1988)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmNmOTBiZDYtZWI5My00ZTBiLWE5MjUtN2M4Y2IwNzRkZGFkXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1019431/>,    # The Gathering
+                       <https://www.imdb.com/title/tt0403508/>,    # The Sisterhood of the Travelling Pants
+                       <https://www.imdb.com/title/tt0267901/>,    # Le sablier
+                       <https://www.imdb.com/title/tt0211532/>,    # Mute Love
+                       <https://www.imdb.com/title/tt0109830/>,    # Forrest Gump
+                       <https://www.imdb.com/title/tt0094484/> ; # In the Heat of the Night
+
+
+    schema:video <https://www.imdb.com/video/vi677905689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0931508/mediaviewer/rm1936287488/>,
+                 <https://www.imdb.com/name/nm0931508/mediaviewer/rm4035279360/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Gathering (2007)
+<https://www.imdb.com/title/tt1019431/> a schema:Movie ;
+    schema:name "The Gathering" ;
+    schema:url <https://www.imdb.com/title/tt1019431/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "Tonee Marston"
+    ] .
+
+# The Sisterhood of the Travelling Pants (2005)
+<https://www.imdb.com/title/tt0403508/> a schema:Movie ;
+    schema:name "The Sisterhood of the Travelling Pants" ;
+    schema:url <https://www.imdb.com/title/tt0403508/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "Lemonade Stand Girl"
+    ] .
+
+# Le sablier (1999)
+<https://www.imdb.com/title/tt0267901/> a schema:Movie ;
+    schema:name "Le sablier" ;
+    schema:url <https://www.imdb.com/title/tt0267901/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "Une prostituée"
+    ] .
+
+# Mute Love (1999)
+<https://www.imdb.com/title/tt0211532/> a schema:Movie ;
+    schema:name "Mute Love" ;
+    schema:url <https://www.imdb.com/title/tt0211532/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "Poochie"
+    ] .
+
+# Forrest Gump (1994)
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "Nurse at Park Bench"
+    ] .
+
+# In the Heat of the Night (1992)
+<https://www.imdb.com/title/tt0094484/> a schema:Movie ;
+    schema:name "In the Heat of the Night" ;
+    schema:url <https://www.imdb.com/title/tt0094484/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0931508/> ;
+        schema:characterName "June Simmons"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi677905689/> a schema:VideoObject ;
+        schema:name "Forrest Gump" ;
+        schema:description "Clip: Will you marry me?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi677905689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGY0OWRiNDktYzgxYS00MmRmLTliMmItMWQzNTM4NjQwYjI3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT50S"^^xsd:duration ;
+        schema:uploadDate "2009-11-08T06:16:00Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmNmOTBiZDYtZWI5My00ZTBiLWE5MjUtN2M4Y2IwNzRkZGFkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNmOTBiZDYtZWI5My00ZTBiLWE5MjUtN2M4Y2IwNzRkZGFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks and Rebecca Williams in Forrest Gump (1994)" ;
+    schema:height "764"^^xsd:integer ;
+    schema:width "1482"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0931508/mediaviewer/rm1936287488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzZhODEzNGYtMzAwYi00ZGU5LWJhMTYtYmU4ZDk5ZTQ5NzMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks and Rebecca Williams in Forrest Gump (1994)" ;
+    schema:height "685"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0931508/mediaviewer/rm4035279360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNmOTBiZDYtZWI5My00ZTBiLWE5MjUtN2M4Y2IwNzRkZGFkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks and Rebecca Williams in Forrest Gump (1994)" ;
+    schema:height "764"^^xsd:integer ;
+    schema:width "1482"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

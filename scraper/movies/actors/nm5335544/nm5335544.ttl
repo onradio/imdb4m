@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5335544/> a schema:Person ;
+    schema:name "Deqiang Shi" ;
+    schema:url <https://www.imdb.com/name/nm5335544/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Deqiang Shi. Actor: Ip Man. Deqiang Shi is known for Ip Man (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1220719/> .    # Ip Man
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5335544/> ;
+        schema:characterName "Southern Master"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

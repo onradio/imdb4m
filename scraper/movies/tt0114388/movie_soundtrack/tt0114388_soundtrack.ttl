@@ -1,0 +1,40 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114388/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Weep You No More Sad Fountains" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Weep You No More Sad Fountains" ;
+            schema:composer <https://www.imdb.com/name/nm0236462/> # Patrick Doyle
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Dreame" ;
+        schema:byArtist <https://www.imdb.com/name/nm0247120/> ; # Jane Eaglen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Dreame" ;
+            schema:composer <https://www.imdb.com/name/nm0236462/> ; # Patrick Doyle
+            schema:lyricist <https://www.imdb.com/name/nm0429627/> # Ben Jonson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0236462/> a schema:Person ;
+    schema:name "Patrick Doyle" .
+<https://www.imdb.com/name/nm0247120/> a schema:Person ;
+    schema:name "Jane Eaglen" .
+<https://www.imdb.com/name/nm0429627/> a schema:Person ;
+    schema:name "Ben Jonson" .
+# ==============================================================================

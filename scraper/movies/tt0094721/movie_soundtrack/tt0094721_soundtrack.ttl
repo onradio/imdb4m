@@ -1,0 +1,133 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0094721/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Day-O" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000896/> ; # Harry Belafonte
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Man Smart, Woman Smarter" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000896/> ; # Harry Belafonte
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Man Smart, Woman Smarter" ;
+            schema:author <https://www.imdb.com/name/nm1756558/> # Norman Span
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sweethart from Venezuela" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000896/> ; # Harry Belafonte
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sweethart from Venezuela" ;
+            schema:author <https://www.imdb.com/name/nm1754735/>, # Fitzroy Alexander
+                       <https://www.imdb.com/name/nm0330561/> # Robert Gordon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jump in the Line (Shake Señora)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000896/> ; # Harry Belafonte
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jump in the Line (Shake Señora)" ;
+            schema:composer <https://www.imdb.com/name/nm0508270/>, # Rafael de León
+                        <https://www.imdb.com/name/nm1923892/>, # Gabriel Oller
+                        <https://www.imdb.com/name/nm1925040/> ; # Steve Samuel
+            schema:lyricist <https://www.imdb.com/name/nm1756557/> # Stephen Somvel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Dream" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Dream" ;
+            schema:author <https://www.imdb.com/name/nm1754787/> # Areza Riandra
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Marcha funebre, Sonata Piano No. 2" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Marcha funebre, Sonata Piano No. 2" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Light Cavalry" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Light Cavalry" ;
+            schema:author <https://www.imdb.com/name/nm0903079/> # Franz von Suppé
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lohengrin" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lohengrin" ;
+            schema:author <https://www.imdb.com/name/nm0003471/> # Richard Wagner
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Regnava nel silenzio" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Regnava nel silenzio" ;
+            schema:author <https://www.imdb.com/name/nm0006044/>, # Gaetano Donizetti
+                       <https://www.imdb.com/name/nm0131899/> # Salvatore Cammarano
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000896/> a schema:Person ;
+    schema:name "Harry Belafonte" .
+<https://www.imdb.com/name/nm0003471/> a schema:Person ;
+    schema:name "Richard Wagner" .
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0006044/> a schema:Person ;
+    schema:name "Gaetano Donizetti" .
+<https://www.imdb.com/name/nm0131899/> a schema:Person ;
+    schema:name "Salvatore Cammarano" .
+<https://www.imdb.com/name/nm0330561/> a schema:Person ;
+    schema:name "Robert Gordon" .
+<https://www.imdb.com/name/nm0508270/> a schema:Person ;
+    schema:name "Rafael de León" .
+<https://www.imdb.com/name/nm0903079/> a schema:Person ;
+    schema:name "Franz von Suppé" .
+<https://www.imdb.com/name/nm1754735/> a schema:Person ;
+    schema:name "Fitzroy Alexander" .
+<https://www.imdb.com/name/nm1754787/> a schema:Person ;
+    schema:name "Areza Riandra" .
+<https://www.imdb.com/name/nm1756557/> a schema:Person ;
+    schema:name "Stephen Somvel" .
+<https://www.imdb.com/name/nm1756558/> a schema:Person ;
+    schema:name "Norman Span" .
+<https://www.imdb.com/name/nm1923892/> a schema:Person ;
+    schema:name "Gabriel Oller" .
+<https://www.imdb.com/name/nm1925040/> a schema:Person ;
+    schema:name "Steve Samuel" .
+# ==============================================================================

@@ -1,0 +1,200 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0245712/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Amores Perros" ;
+        schema:byArtist <https://www.imdb.com/name/nm3064242/> ; # Control Machete
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Amores Perros" ;
+            schema:author <https://www.imdb.com/name/nm3064242/> # Control Machete
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La vida es un carnaval" ;
+        schema:byArtist <https://www.imdb.com/name/nm0190272/> ; # Celia Cruz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La vida es un carnaval" ;
+            schema:author <https://www.imdb.com/name/nm1357821/> # Victor Daniel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pesada" ;
+        schema:byArtist <https://www.imdb.com/name/nm3064242/> ; # Control Machete
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pesada" ;
+            schema:author <https://www.imdb.com/name/nm1546318/> # Antonio Hernández
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Yolanda" ;
+        schema:byArtist <https://www.imdb.com/name/nm3620673/> ; # Los Gatos Negros
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Yolanda" ;
+            schema:author <https://www.imdb.com/name/nm2723297/> # Rafael Padilla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Corazón" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Corazón" ;
+            schema:author <https://www.imdb.com/name/nm0005580/> # Carole King
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La cumbia del garrote" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Gimme the Power" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gimme the Power" ;
+            schema:author <https://www.imdb.com/name/nm5071062/> # Miky Huidobro
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mentiras" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Coolo" ;
+        schema:byArtist <https://www.imdb.com/name/nm5008717/> ; # Illya Kuryaki & The Valderramas
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Coolo" ;
+            schema:author <https://www.imdb.com/name/nm1888560/>, # Emmanuel Horvilleur
+                       <https://www.imdb.com/name/nm4202434/> # Dante Spinetta
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lucha de gigantes" ;
+        schema:byArtist <https://www.imdb.com/name/nm3192110/> ; # Nacha Pop
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lucha de gigantes" ;
+            schema:author <https://www.imdb.com/name/nm0891795/>, # Antonio Vega
+                       <https://www.imdb.com/name/nm1868991/> # Nacho García Vega
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Si señor" ;
+        schema:byArtist <https://www.imdb.com/name/nm3064242/> ; # Control Machete
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Atacama" ;
+        schema:byArtist <https://www.imdb.com/name/nm0763395/> ; # Gustavo Santaolalla
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Atacama" ;
+            schema:author <https://www.imdb.com/name/nm0763395/> # Gustavo Santaolalla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Long Cool Woman (In a Black Dress)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1493002/> ; # The Hollies
+        schema:producer <https://www.imdb.com/name/nm2967652/>, # Ron Richman
+                       <https://www.imdb.com/name/nm1493002/> ; # The Hollies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Long Cool Woman (In a Black Dress)" ;
+            schema:author <https://www.imdb.com/name/nm0164646/>, # Allan Clarke
+                       <https://www.imdb.com/name/nm0338443/>, # Roger Greenaway
+                       <https://www.imdb.com/name/nm0177263/> # Roger Cook
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chico Groove" ;
+        schema:byArtist <https://www.imdb.com/name/nm0763395/> ; # Gustavo Santaolalla
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chico Groove" ;
+            schema:author <https://www.imdb.com/name/nm0763395/> # Gustavo Santaolalla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lucha de Gigantes" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lucha de Gigantes" ;
+            schema:author <https://www.imdb.com/name/nm0891795/> # Antonio Vega
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005580/> a schema:Person ;
+    schema:name "Carole King" .
+<https://www.imdb.com/name/nm0164646/> a schema:Person ;
+    schema:name "Allan Clarke" .
+<https://www.imdb.com/name/nm0177263/> a schema:Person ;
+    schema:name "Roger Cook" .
+<https://www.imdb.com/name/nm0190272/> a schema:Person ;
+    schema:name "Celia Cruz" .
+<https://www.imdb.com/name/nm0338443/> a schema:Person ;
+    schema:name "Roger Greenaway" .
+<https://www.imdb.com/name/nm0763395/> a schema:Person ;
+    schema:name "Gustavo Santaolalla" .
+<https://www.imdb.com/name/nm0891795/> a schema:Person ;
+    schema:name "Antonio Vega" .
+<https://www.imdb.com/name/nm1357821/> a schema:Person ;
+    schema:name "Victor Daniel" .
+<https://www.imdb.com/name/nm1493002/> a schema:Person ;
+    schema:name "The Hollies" .
+<https://www.imdb.com/name/nm1546318/> a schema:Person ;
+    schema:name "Antonio Hernández" .
+<https://www.imdb.com/name/nm1868991/> a schema:Person ;
+    schema:name "Nacho García Vega" .
+<https://www.imdb.com/name/nm1888560/> a schema:Person ;
+    schema:name "Emmanuel Horvilleur" .
+<https://www.imdb.com/name/nm2723297/> a schema:Person ;
+    schema:name "Rafael Padilla" .
+<https://www.imdb.com/name/nm2967652/> a schema:Person ;
+    schema:name "Ron Richman" .
+<https://www.imdb.com/name/nm3064242/> a schema:Person ;
+    schema:name "Control Machete" .
+<https://www.imdb.com/name/nm3192110/> a schema:Person ;
+    schema:name "Nacha Pop" .
+<https://www.imdb.com/name/nm3620673/> a schema:Person ;
+    schema:name "Los Gatos Negros" .
+<https://www.imdb.com/name/nm4202434/> a schema:Person ;
+    schema:name "Dante Spinetta" .
+<https://www.imdb.com/name/nm5008717/> a schema:Person ;
+    schema:name "Illya Kuryaki & The Valderramas" .
+<https://www.imdb.com/name/nm5071062/> a schema:Person ;
+    schema:name "Miky Huidobro" .
+# ==============================================================================

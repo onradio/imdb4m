@@ -1,0 +1,127 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0910970/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Put On Your Sunday Clothes" ;
+        schema:byArtist <https://www.imdb.com/name/nm0186903/>, # Michael Crawford
+                        <https://www.imdb.com/name/nm0516906/> ; # Danny Lockin
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Put On Your Sunday Clothes" ;
+            schema:author <https://www.imdb.com/name/nm0379154/> # Jerry Herman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "BNL Jingle" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "BNL Jingle" ;
+            schema:composer <https://www.imdb.com/name/nm0002353/> ; # Thomas Newman
+            schema:lyricist <https://www.imdb.com/name/nm0077007/> # Bill Bernstein
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "It Only Takes a Moment" ;
+        schema:byArtist <https://www.imdb.com/name/nm0186903/>, # Michael Crawford
+                        <https://www.imdb.com/name/nm0564059/> ; # Marianne McAndrew
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It Only Takes a Moment" ;
+            schema:author <https://www.imdb.com/name/nm0379154/> # Jerry Herman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Vie en Rose" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001918/> ; # Louis Armstrong
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Vie en Rose" ;
+            schema:composer <https://www.imdb.com/name/nm0006174/> ; # Louiguy
+            schema:lyricist <https://www.imdb.com/name/nm0681191/>, # Édith Piaf
+                        <https://www.imdb.com/name/nm0202988/> # Mack David
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Don't Worry, Be Happy" ;
+        schema:byArtist <https://www.imdb.com/name/nm0568858/> ; # Bobby McFerrin
+        schema:producer <https://www.imdb.com/name/nm8702784/> ; # Linda Goldstein
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Don't Worry, Be Happy" ;
+            schema:author <https://www.imdb.com/name/nm0568858/> # Bobby McFerrin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Also Sprach Zarathustra" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Also Sprach Zarathustra" ;
+            schema:author <https://www.imdb.com/name/nm0006309/> # Richard Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Down to Earth" ;
+        schema:byArtist <https://www.imdb.com/name/nm0300272/>, # Peter Gabriel
+                        <https://www.imdb.com/name/nm2164473/> ; # Soweto Gospel Choir
+        schema:producer <https://www.imdb.com/name/nm0300272/> ; # Peter Gabriel
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Down to Earth" ;
+            schema:composer <https://www.imdb.com/name/nm0300272/>, # Peter Gabriel
+                        <https://www.imdb.com/name/nm0002353/> ; # Thomas Newman
+            schema:lyricist <https://www.imdb.com/name/nm0300272/> # Peter Gabriel
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001918/> a schema:Person ;
+    schema:name "Louis Armstrong" .
+<https://www.imdb.com/name/nm0002353/> a schema:Person ;
+    schema:name "Thomas Newman" .
+<https://www.imdb.com/name/nm0006174/> a schema:Person ;
+    schema:name "Louiguy" .
+<https://www.imdb.com/name/nm0006309/> a schema:Person ;
+    schema:name "Richard Strauss" .
+<https://www.imdb.com/name/nm0077007/> a schema:Person ;
+    schema:name "Bill Bernstein" .
+<https://www.imdb.com/name/nm0186903/> a schema:Person ;
+    schema:name "Michael Crawford" .
+<https://www.imdb.com/name/nm0202988/> a schema:Person ;
+    schema:name "Mack David" .
+<https://www.imdb.com/name/nm0300272/> a schema:Person ;
+    schema:name "Peter Gabriel" .
+<https://www.imdb.com/name/nm0379154/> a schema:Person ;
+    schema:name "Jerry Herman" .
+<https://www.imdb.com/name/nm0516906/> a schema:Person ;
+    schema:name "Danny Lockin" .
+<https://www.imdb.com/name/nm0564059/> a schema:Person ;
+    schema:name "Marianne McAndrew" .
+<https://www.imdb.com/name/nm0568858/> a schema:Person ;
+    schema:name "Bobby McFerrin" .
+<https://www.imdb.com/name/nm0681191/> a schema:Person ;
+    schema:name "Édith Piaf" .
+<https://www.imdb.com/name/nm2164473/> a schema:Person ;
+    schema:name "Soweto Gospel Choir" .
+<https://www.imdb.com/name/nm8702784/> a schema:Person ;
+    schema:name "Linda Goldstein" .
+# ==============================================================================

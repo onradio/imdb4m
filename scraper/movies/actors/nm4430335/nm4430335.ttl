@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4430335/> a schema:Person ;
+    schema:name "Jarin Towney" ;
+    schema:url <https://www.imdb.com/name/nm4430335/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jarin Towney. Actor: Hacksaw Ridge. Jarin Towney is known for Hacksaw Ridge (2016), Underbelly (2008) and Packed to the Rafters (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2119532/>,    # Hacksaw Ridge
+                       <https://www.imdb.com/title/tt1988386/>,    # Miss Fisher's Murder Mysteries
+                       <https://www.imdb.com/title/tt3451836/>,    # Devil's Playground
+                       <https://www.imdb.com/title/tt1132600/>,    # Packed to the Rafters
+                       <https://www.imdb.com/title/tt1792643/>,    # Two Little Boys
+                       <https://www.imdb.com/title/tt1119176/> ; # Underbelly
+
+
+    schema:video <https://www.imdb.com/video/vi3973624601/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hacksaw Ridge (2016)
+<https://www.imdb.com/title/tt2119532/> a schema:Movie ;
+    schema:name "Hacksaw Ridge" ;
+    schema:url <https://www.imdb.com/title/tt2119532/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Teenage Boy"
+    ] .
+
+# Miss Fisher's Murder Mysteries (2015)
+<https://www.imdb.com/title/tt1988386/> a schema:Movie ;
+    schema:name "Miss Fisher's Murder Mysteries" ;
+    schema:url <https://www.imdb.com/title/tt1988386/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Paddy"
+    ] .
+
+# Devil's Playground (2014)
+<https://www.imdb.com/title/tt3451836/> a schema:Movie ;
+    schema:name "Devil's Playground" ;
+    schema:url <https://www.imdb.com/title/tt3451836/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Jessica Donoghue"
+    ] .
+
+# Packed to the Rafters (2012)
+<https://www.imdb.com/title/tt1132600/> a schema:Movie ;
+    schema:name "Packed to the Rafters" ;
+    schema:url <https://www.imdb.com/title/tt1132600/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Cooper"
+    ] .
+
+# Two Little Boys (2012)
+<https://www.imdb.com/title/tt1792643/> a schema:Movie ;
+    schema:name "Two Little Boys" ;
+    schema:url <https://www.imdb.com/title/tt1792643/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Young Deano"
+    ] .
+
+# Underbelly (2011)
+<https://www.imdb.com/title/tt1119176/> a schema:Movie ;
+    schema:name "Underbelly" ;
+    schema:url <https://www.imdb.com/title/tt1119176/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4430335/> ;
+        schema:characterName "Desperate Urchin"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3973624601/> a schema:VideoObject ;
+        schema:name "Deano and Nige&apos;s Best Last Day Ever" ;
+        schema:description "Trailer for Deano and Nige's Best Last Day Ever" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3973624601/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM5ZGU5M2YtNzIyMC00NzBiLWJmNmUtNWYxZjdjNzQzOGY5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M28S"^^xsd:duration ;
+        schema:uploadDate "2015-08-16T04:16:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

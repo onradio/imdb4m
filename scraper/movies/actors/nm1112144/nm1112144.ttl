@@ -1,0 +1,98 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1112144/> a schema:Person ;
+    schema:name "Yumi Tamai" ;
+    schema:url <https://www.imdb.com/name/nm1112144/> ;
+    schema:birthDate "1977-08-06"^^xsd:date ;
+    schema:jobTitle "Actress", "Writer", "Composer" ;
+    schema:description "Yumi Tamai. Actress: Spirited Away. Yumi Tamai was born on 6 August 1977 in Tokyo, Japan. She is an actress and writer, known for Spirited Away (2001), Monshen (2006) and Edogawa Rampo no bijo (1977)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tokyo, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1300170/>,    # Bônen no zamudo
+                       <https://www.imdb.com/title/tt0851536/>,    # Monshen
+                       <https://www.imdb.com/title/tt0245429/>,    # Spirited Away
+                       <https://www.imdb.com/title/tt24637422/> ; # Edogawa Rampo no bijo
+
+
+    schema:video <https://www.imdb.com/video/vi3355488281/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bônen no zamudo (2008)
+<https://www.imdb.com/title/tt1300170/> a schema:Movie ;
+    schema:name "Bônen no zamudo" ;
+    schema:url <https://www.imdb.com/title/tt1300170/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1112144/> ;
+        schema:characterName "Ishû Benikawa"
+    ] .
+
+# Monshen (2006)
+<https://www.imdb.com/title/tt0851536/> a schema:Movie ;
+    schema:name "Monshen" ;
+    schema:url <https://www.imdb.com/title/tt0851536/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1112144/> ;
+        schema:characterName "Haru"
+    ] .
+
+# Spirited Away (2001)
+<https://www.imdb.com/title/tt0245429/> a schema:Movie ;
+    schema:name "Spirited Away" ;
+    schema:url <https://www.imdb.com/title/tt0245429/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1112144/> ;
+        schema:characterName "Rin"
+    ] .
+
+# Edogawa Rampo no bijo (1978)
+<https://www.imdb.com/title/tt24637422/> a schema:Movie ;
+    schema:name "Edogawa Rampo no bijo" ;
+    schema:url <https://www.imdb.com/title/tt24637422/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1112144/> ;
+        schema:characterName "Shizuko Ishida"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3355488281/> a schema:VideoObject ;
+        schema:name "Spirited Away" ;
+        schema:description "Clip: Kohaku River" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3355488281/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGI2MDJmZDktZDZmNC00YTdkLWE1NWUtZGRhNTkwNDZlYjc1XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M40S"^^xsd:duration ;
+        schema:uploadDate "2015-06-18T04:54:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

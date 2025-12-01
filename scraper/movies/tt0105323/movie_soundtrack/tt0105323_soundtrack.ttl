@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0105323/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Evangeline" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004994/> ; # Emmylou Harris
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Evangeline" ;
+            schema:author <https://www.imdb.com/name/nm0005371/> # Robbie Robertson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "El Relicario" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "El Relicario" ;
+            schema:composer <https://www.imdb.com/name/nm0655739/> # José Padilla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Por una cabeza" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Por una cabeza" ;
+            schema:composer <https://www.imdb.com/name/nm0306624/> ; # Carlos Gardel
+            schema:lyricist <https://www.imdb.com/name/nm0494522/> # Alfredo Le Pera
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Caminito" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Caminito" ;
+            schema:composer <https://www.imdb.com/name/nm0228056/> # Juan de Dios Filiberto
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "La Violetera" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "La Violetera" ;
+            schema:composer <https://www.imdb.com/name/nm0655739/> # José Padilla
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vida mia" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vida mia" ;
+            schema:author <https://www.imdb.com/name/nm1011125/> # Osvaldo Fresedo
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Adiós muchachos" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Adiós muchachos" ;
+            schema:author <https://www.imdb.com/name/nm0761606/>, # Julio C. Sanders
+                       <https://www.imdb.com/name/nm1674299/> # César Felipe Vedani
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "El Choclo" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "El Choclo" ;
+            schema:author <https://www.imdb.com/name/nm1176815/>, # Angel Gregorio Villoldo
+                       <https://www.imdb.com/name/nm8905192/> # Juan Carlos Marambio Catán
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A media luz" ;
+        schema:byArtist <https://www.imdb.com/name/nm13621195/> ; # The Tango Project
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A media luz" ;
+            schema:author <https://www.imdb.com/name/nm1011003/>, # Edgardo Donato
+                       <https://www.imdb.com/name/nm1411983/> # Carlos Lenzi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0004994/> a schema:Person ;
+    schema:name "Emmylou Harris" .
+<https://www.imdb.com/name/nm0005371/> a schema:Person ;
+    schema:name "Robbie Robertson" .
+<https://www.imdb.com/name/nm0228056/> a schema:Person ;
+    schema:name "Juan de Dios Filiberto" .
+<https://www.imdb.com/name/nm0306624/> a schema:Person ;
+    schema:name "Carlos Gardel" .
+<https://www.imdb.com/name/nm0494522/> a schema:Person ;
+    schema:name "Alfredo Le Pera" .
+<https://www.imdb.com/name/nm0655739/> a schema:Person ;
+    schema:name "José Padilla" .
+<https://www.imdb.com/name/nm0761606/> a schema:Person ;
+    schema:name "Julio C. Sanders" .
+<https://www.imdb.com/name/nm1011003/> a schema:Person ;
+    schema:name "Edgardo Donato" .
+<https://www.imdb.com/name/nm1011125/> a schema:Person ;
+    schema:name "Osvaldo Fresedo" .
+<https://www.imdb.com/name/nm1176815/> a schema:Person ;
+    schema:name "Angel Gregorio Villoldo" .
+<https://www.imdb.com/name/nm13621195/> a schema:Person ;
+    schema:name "The Tango Project" .
+<https://www.imdb.com/name/nm1411983/> a schema:Person ;
+    schema:name "Carlos Lenzi" .
+<https://www.imdb.com/name/nm1674299/> a schema:Person ;
+    schema:name "César Felipe Vedani" .
+<https://www.imdb.com/name/nm8905192/> a schema:Person ;
+    schema:name "Juan Carlos Marambio Catán" .
+# ==============================================================================

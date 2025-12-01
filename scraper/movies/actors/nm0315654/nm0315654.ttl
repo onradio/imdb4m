@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0315654/> a schema:Person ;
+    schema:name "Charles Gherardi" ;
+    schema:url <https://www.imdb.com/name/nm0315654/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Charles Gherardi. Actor: Back to the Future Part II. Charles Gherardi is known for Back to the Future Part II (1989), The Naked Gun: From the Files of Police Squad! (1988) and Mortuary Academy (1988)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0096874/>,    # Back to the Future Part II
+                       <https://www.imdb.com/title/tt0095705/>,    # The Naked Gun: From the Files of Police Squad!
+                       <https://www.imdb.com/title/tt0095659/> ; # Mortuary Academy
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0315654/mediaviewer/rm2484768256/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Back to the Future Part II (1989)
+<https://www.imdb.com/title/tt0096874/> a schema:Movie ;
+    schema:name "Back to the Future Part II" ;
+    schema:url <https://www.imdb.com/title/tt0096874/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315654/> ;
+        schema:characterName "'Ayatollah Khomeini' Video Waiter"
+    ] .
+
+# The Naked Gun: From the Files of Police Squad! (1988)
+<https://www.imdb.com/title/tt0095705/> a schema:Movie ;
+    schema:name "The Naked Gun: From the Files of Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0095705/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315654/> ;
+        schema:characterName "Khomeini"
+    ] .
+
+# Mortuary Academy (1988)
+<https://www.imdb.com/title/tt0095659/> a schema:Movie ;
+    schema:name "Mortuary Academy" ;
+    schema:url <https://www.imdb.com/title/tt0095659/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0315654/> ;
+        schema:characterName "Mr. Harding"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0315654/mediaviewer/rm2484768256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxNjU4NzEyMV5BMl5BanBnXkFtZTcwNzY5MDAxMw@@._V1_.jpg> ;
+    schema:caption "Jim Abrahams, David Zucker, David Lloyd Austin, Raye Birk, Charles Gherardi, Prince Hughes, David Katz, Robert K. Weiss, and Robert LuJane in The Naked Gun: From the Files of Police Squad! (1988)" ;
+    schema:height "1245"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

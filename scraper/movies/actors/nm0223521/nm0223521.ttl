@@ -1,0 +1,121 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0223521/> a schema:Person ;
+    schema:name "Anil Dhawan" ;
+    schema:url <https://www.imdb.com/name/nm0223521/> ;
+    schema:birthDate "1947-08-28"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anil Dhawan. Actor: Andhadhun. Anil Dhawan was born on 28 August 1947 in Kanpur, Uttar Pradesh, India. He is an actor, known for Andhadhun (2018), Honeymoon (1973) and Nagin (1976). He is married to Rashmi Dhawan." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOWRjOTQyZDktYzFlOC00ZTliLWFhY2ItNmVlMmMzNTEyM2Q2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Kanpur, Uttar Pradesh, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8108198/>,    # Andhadhun
+                       <https://www.imdb.com/title/tt6656806/>,    # The Game Will Start Now
+                       <https://www.imdb.com/title/tt10010920/>,    # Bhagyalaxmi
+                       <https://www.imdb.com/title/tt2344678/> ; # Himmatwala
+
+
+    schema:video <https://www.imdb.com/video/vi3185952025/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0223521/mediaviewer/rm3812387584/>,
+                 <https://www.imdb.com/name/nm0223521/mediaviewer/rm2648246016/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Andhadhun (2018)
+<https://www.imdb.com/title/tt8108198/> a schema:Movie ;
+    schema:name "Andhadhun" ;
+    schema:url <https://www.imdb.com/title/tt8108198/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0223521/> ;
+        schema:characterName "Pramod Sinha"
+    ] .
+
+# The Game Will Start Now (2016)
+<https://www.imdb.com/title/tt6656806/> a schema:Movie ;
+    schema:name "The Game Will Start Now" ;
+    schema:url <https://www.imdb.com/title/tt6656806/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0223521/> ;
+        schema:characterName "Mr. Sharma - Jai's uncle"
+    ] .
+
+# Bhagyalaxmi (2015)
+<https://www.imdb.com/title/tt10010920/> a schema:Movie ;
+    schema:name "Bhagyalaxmi" ;
+    schema:url <https://www.imdb.com/title/tt10010920/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0223521/> ;
+        schema:characterName "Murlimohan Shukla"
+    ] .
+
+# Himmatwala (2013)
+<https://www.imdb.com/title/tt2344678/> a schema:Movie ;
+    schema:name "Himmatwala" ;
+    schema:url <https://www.imdb.com/title/tt2344678/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0223521/> ;
+        schema:characterName "Dharamurthy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3185952025/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3185952025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGFiMzQ3ZDMtNjBlMy00ZGUxLTgwMTEtZDRlYmZhOTE3MDQ1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2022-12-15T11:12:12Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOWRjOTQyZDktYzFlOC00ZTliLWFhY2ItNmVlMmMzNTEyM2Q2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRjOTQyZDktYzFlOC00ZTliLWFhY2ItNmVlMmMzNTEyM2Q2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anil Dhawan" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "521"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0223521/mediaviewer/rm3812387584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTJlMWU3NDctMGJmNS00N2E2LTgzY2MtM2EwMzU3MzUyMTAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Moushumi Chatterjee, Anil Dhawan, and Shatrughan Sinha in Ghulam Begum Badshah (1973)" ;
+    schema:height "738"^^xsd:integer ;
+    schema:width "756"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0223521/mediaviewer/rm2648246016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRjOTQyZDktYzFlOC00ZTliLWFhY2ItNmVlMmMzNTEyM2Q2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Anil Dhawan" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "521"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

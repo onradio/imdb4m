@@ -1,0 +1,120 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0321798/> a schema:Person ;
+    schema:name "Keith A. Glascoe" ;
+    schema:url <https://www.imdb.com/name/nm0321798/> ;
+    schema:birthDate "1962-12-09"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Keith A. Glascoe. Actor: Leon. Keith A. Glascoe was born on 9 December 1962 in San Francisco, California, USA. He was an actor, known for Leon (1994), Shadow Warriors: Assault on Devil's Island (1997) and 100 Centre Street (2001). He was married to Veronica Squef. He died on 11 September 2001 in New York City, New York, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "San Francisco, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0307328/>,    # The Pirates of Central Park
+                       <https://www.imdb.com/title/tt0260596/>,    # 100 Centre Street
+                       <https://www.imdb.com/title/tt0119945/>,    # Prime Time
+                       <https://www.imdb.com/title/tt0118645/>,    # Shadow Warriors: Assault on Devil's Island
+                       <https://www.imdb.com/title/tt0110413/>,    # Leon
+                       <https://www.imdb.com/title/tt0106757/> . # Dottie Gets Spanked
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Pirates of Central Park (2001)
+<https://www.imdb.com/title/tt0307328/> a schema:Movie ;
+    schema:name "The Pirates of Central Park" ;
+    schema:url <https://www.imdb.com/title/tt0307328/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName "Cop #2"
+    ] .
+
+# 100 Centre Street (2001)
+<https://www.imdb.com/title/tt0260596/> a schema:Movie ;
+    schema:name "100 Centre Street" ;
+    schema:url <https://www.imdb.com/title/tt0260596/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName ""
+    ] .
+
+# Prime Time (1997)
+<https://www.imdb.com/title/tt0119945/> a schema:Movie ;
+    schema:name "Prime Time" ;
+    schema:url <https://www.imdb.com/title/tt0119945/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName "Lamchop"
+    ] .
+
+# Shadow Warriors: Assault on Devil's Island (1997)
+<https://www.imdb.com/title/tt0118645/> a schema:Movie ;
+    schema:name "Shadow Warriors: Assault on Devil's Island" ;
+    schema:url <https://www.imdb.com/title/tt0118645/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName "Carl"
+    ] .
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName "3rd Stansfield Man"
+    ] .
+
+# Dottie Gets Spanked (1993)
+<https://www.imdb.com/title/tt0106757/> a schema:Movie ;
+    schema:name "Dottie Gets Spanked" ;
+    schema:url <https://www.imdb.com/title/tt0106757/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0321798/> ;
+        schema:characterName "Dream Strongman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

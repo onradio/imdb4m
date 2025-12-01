@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2743638/> a schema:Person ;
+    schema:name "Amy Lawrence" ;
+    schema:url <https://www.imdb.com/name/nm2743638/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Amy Lawrence. Actress: Tootsie. Amy Lawrence is known for Tootsie (1982)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0084805/> ;    # Tootsie
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2743638/mediaviewer/rm2287441921/>,
+                 <https://www.imdb.com/name/nm2743638/mediaviewer/rm2153093121/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tootsie (1982)
+<https://www.imdb.com/title/tt0084805/> a schema:Movie ;
+    schema:name "Tootsie" ;
+    schema:url <https://www.imdb.com/title/tt0084805/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2743638/> ;
+        schema:characterName "Amy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2743638/mediaviewer/rm2287441921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDE5Y2VhYmEtMTFiZi00NGVmLWFjZDgtMTY3NDIwNTE3NmFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dustin Hoffman and Amy Lawrence in Tootsie (1982)" ;
+    schema:height "516"^^xsd:integer ;
+    schema:width "1241"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2743638/mediaviewer/rm2153093121/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY1NzlkOTMtMDFhZi00ZmQzLTk4MGQtMDQ1MGY4YjllOTQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dustin Hoffman, Jessica Lange, and Amy Lawrence in Tootsie (1982)" ;
+    schema:height "512"^^xsd:integer ;
+    schema:width "1243"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

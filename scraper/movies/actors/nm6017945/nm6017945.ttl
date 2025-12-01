@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6017945/> a schema:Person ;
+    schema:name "Dominic Charman" ;
+    schema:url <https://www.imdb.com/name/nm6017945/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dominic Charman. Actor: The Imitation Game. Dominic Charman is known for The Imitation Game (2014), Bob Marley: One Love (2024) and Savage House." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY3MzQyOTI3MF5BMl5BanBnXkFtZTgwNDYyMTI0MzE@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2084970/> ;    # The Imitation Game
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6017945/mediaviewer/rm392689664/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Imitation Game (2014)
+<https://www.imdb.com/title/tt2084970/> a schema:Movie ;
+    schema:name "The Imitation Game" ;
+    schema:url <https://www.imdb.com/title/tt2084970/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6017945/> ;
+        schema:characterName "Sherborne Student 1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY3MzQyOTI3MF5BMl5BanBnXkFtZTgwNDYyMTI0MzE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3MzQyOTI3MF5BMl5BanBnXkFtZTgwNDYyMTI0MzE@._V1_.jpg> ;
+    schema:caption "Dominic Charman" ;
+    schema:height "3648"^^xsd:integer ;
+    schema:width "2736"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6017945/mediaviewer/rm392689664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3MzQyOTI3MF5BMl5BanBnXkFtZTgwNDYyMTI0MzE@._V1_.jpg> ;
+    schema:caption "Dominic Charman" ;
+    schema:height "3648"^^xsd:integer ;
+    schema:width "2736"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

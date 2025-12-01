@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0848041/> a schema:Person ;
+    schema:name "Lisa Talerico" ;
+    schema:url <https://www.imdb.com/name/nm0848041/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lisa Talerico. Actress: Twelve Monkeys. Lisa Talerico is known for Twelve Monkeys (1995), Philadelphia (1993) and Space: Above and Beyond (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112173/>,    # Space: Above and Beyond
+                       <https://www.imdb.com/title/tt0114746/>,    # Twelve Monkeys
+                       <https://www.imdb.com/title/tt0107818/> . # Philadelphia
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Space: Above and Beyond (1996)
+<https://www.imdb.com/title/tt0112173/> a schema:Movie ;
+    schema:name "Space: Above and Beyond" ;
+    schema:url <https://www.imdb.com/title/tt0112173/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0848041/> ;
+        schema:characterName "Sgt. Parker"
+    ] .
+
+# Twelve Monkeys (1995)
+<https://www.imdb.com/title/tt0114746/> a schema:Movie ;
+    schema:name "Twelve Monkeys" ;
+    schema:url <https://www.imdb.com/title/tt0114746/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0848041/> ;
+        schema:characterName "Ticket Agent"
+    ] .
+
+# Philadelphia (1993)
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0848041/> ;
+        schema:characterName "Shelby"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

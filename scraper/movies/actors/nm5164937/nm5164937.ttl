@@ -1,0 +1,204 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5164937/> a schema:Person ;
+    schema:name "Craig Tate" ;
+    schema:url <https://www.imdb.com/name/nm5164937/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Craig Tate. Actor: 12 Years a Slave. Craig Tate is known for 12 Years a Slave (2013), King Richard (2021) and Greyhound (2020)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNWU3Yjk4ZTktYjFmNC00ZDMwLTk2YmQtMzczMDg0MjU3ZjFlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2024544/>,    # 12 Years a Slave
+                       <https://www.imdb.com/title/tt2247476/>,    # When the Game Stands Tall
+                       <https://www.imdb.com/title/tt6048922/>,    # Greyhound
+                       <https://www.imdb.com/title/tt9620288/>,    # King Richard
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8594028/>,    # Reprisal
+                       <https://www.imdb.com/title/tt6589732/>,    # Play Day
+                       <https://www.imdb.com/title/tt6439752/>,    # Snowfall
+                       <https://www.imdb.com/title/tt4031126/>,    # Lycan
+                       <https://www.imdb.com/title/tt4664950/> ; # Snowfall: Original Pilot
+
+
+    schema:video <https://www.imdb.com/video/vi3594757657/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5164937/mediaviewer/rm2189805312/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm1587932416/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm2991582976/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm1386605824/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm1373347585/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm3671760641/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm1543738113/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm1385988609/>,
+                 <https://www.imdb.com/name/nm5164937/mediaviewer/rm2411433985/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2024544/> a schema:Movie ;
+    schema:name "12 Years a Slave" ;
+    schema:url <https://www.imdb.com/title/tt2024544/> .
+
+<https://www.imdb.com/title/tt2247476/> a schema:Movie ;
+    schema:name "When the Game Stands Tall" ;
+    schema:url <https://www.imdb.com/title/tt2247476/> .
+
+<https://www.imdb.com/title/tt6048922/> a schema:Movie ;
+    schema:name "Greyhound" ;
+    schema:url <https://www.imdb.com/title/tt6048922/> .
+
+<https://www.imdb.com/title/tt9620288/> a schema:Movie ;
+    schema:name "King Richard" ;
+    schema:url <https://www.imdb.com/title/tt9620288/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Reprisal (2019)
+<https://www.imdb.com/title/tt8594028/> a schema:Movie ;
+    schema:name "Reprisal" ;
+    schema:url <https://www.imdb.com/title/tt8594028/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164937/> ;
+        schema:characterName "Earl"
+    ] .
+
+# Play Day (2017)
+<https://www.imdb.com/title/tt6589732/> a schema:Movie ;
+    schema:name "Play Day" ;
+    schema:url <https://www.imdb.com/title/tt6589732/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164937/> ;
+        schema:characterName "Aaron"
+    ] .
+
+# Snowfall (2017)
+<https://www.imdb.com/title/tt6439752/> a schema:Movie ;
+    schema:name "Snowfall" ;
+    schema:url <https://www.imdb.com/title/tt6439752/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164937/> ;
+        schema:characterName "Lenny"
+    ] .
+
+# Lycan (2017)
+<https://www.imdb.com/title/tt4031126/> a schema:Movie ;
+    schema:name "Lycan" ;
+    schema:url <https://www.imdb.com/title/tt4031126/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164937/> ;
+        schema:characterName "Irving Robinson"
+    ] .
+
+# Snowfall: Original Pilot (2017)
+<https://www.imdb.com/title/tt4664950/> a schema:Movie ;
+    schema:name "Snowfall: Original Pilot" ;
+    schema:url <https://www.imdb.com/title/tt4664950/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5164937/> ;
+        schema:characterName "Lenny"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3594757657/> a schema:VideoObject ;
+        schema:name "The Butler" ;
+        schema:description "The Butler tells the story of a White House butler who served eight American presidents over three decades. The film traces the dramatic changes that swept American society during this time, from the civil rights movement to Vietnam and beyond, and how those changes affected this manÂ’s life and family." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3594757657/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTk0NDI0Mjc5NV5BMl5BanBnXkFtZTcwODI4NTc2OQ@@._V1_.jpg" ;
+        schema:duration "PT2M32S"^^xsd:duration ;
+        schema:uploadDate "2013-06-14T11:29:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNWU3Yjk4ZTktYjFmNC00ZDMwLTk2YmQtMzczMDg0MjU3ZjFlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWU3Yjk4ZTktYjFmNC00ZDMwLTk2YmQtMzczMDg0MjU3ZjFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "1662"^^xsd:integer ;
+    schema:width "1125"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm2189805312/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDQ4Njk3NzEtMDZhNC00Njg2LWE5MzgtYWQzOTAzZjQwOTA4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1198"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm1587932416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWJhZjZhY2UtMjMwOC00NzNjLTg4NGUtOTNiMjE5YTY3NjFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "899"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm2991582976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTE3NzcyNjUtYWFlNC00NzIyLTkzZDgtZjYyNjc3MzBmMWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm1386605824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjNkY2IzNjUtNWE4Ny00NzA5LTgxNWMtYjI2YmFhMjI3MzM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "899"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm1373347585/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM4ZGUwNGQtYWYyOC00MjMxLWEyMmMtOGJkMDVkZDg2YWZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "2282"^^xsd:integer ;
+    schema:width "2162"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm3671760641/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTViYzRmY2QtMTYxOS00NmEzLWI3Y2EtN2MxMjFiZjAzMWUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "1038"^^xsd:integer ;
+    schema:width "714"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm1543738113/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWYyNWU4OTQtMTVkMS00MjA4LWE5YTAtY2E4Zjc2MTQzOGY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "700"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm1385988609/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDVmODllODgtYjE1Zi00NGQ1LWIxNWItOTdkMDY3OWNiYzZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5164937/mediaviewer/rm2411433985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGVmOGQ1MGMtMzc1Mi00NDJjLThhYmYtOTAxODFlMWFhYTgyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Craig Tate" ;
+    schema:height "2282"^^xsd:integer ;
+    schema:width "2162"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

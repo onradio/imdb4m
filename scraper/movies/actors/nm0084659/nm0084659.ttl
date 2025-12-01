@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0084659/> a schema:Person ;
+    schema:name "Denise Bixler" ;
+    schema:url <https://www.imdb.com/name/nm0084659/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Denise Bixler. Actress: Evil Dead II. Denise graduated from John Glenn High School, Westland, MI in 1983 where she starred in many plays and musicals. She also appeared on a Detroit television show \"Kelly and Company\" where she sang and danced with fellow John Glenn students Leo Daignault and Richard Winfrey, accompanied by Sean Robinson. She sang in the school's concert choir as well as the show choir \"Chamber Singers\"..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNTM5ZjAxZjUtYTE2My00YThhLTkyNmQtNWE4NjQxNjgwMDZlXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0104026/>,    # Crisis in the Kremlin
+                       <https://www.imdb.com/title/tt0096550/>,    # Booker
+                       <https://www.imdb.com/title/tt0092991/> ; # Evil Dead II
+
+
+    schema:video <https://www.imdb.com/video/vi1871249689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0084659/mediaviewer/rm1488026112/>,
+                 <https://www.imdb.com/name/nm0084659/mediaviewer/rm1253145088/>,
+                 <https://www.imdb.com/name/nm0084659/mediaviewer/rm1286699520/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Crisis in the Kremlin (1992)
+<https://www.imdb.com/title/tt0104026/> a schema:Movie ;
+    schema:name "Crisis in the Kremlin" ;
+    schema:url <https://www.imdb.com/title/tt0104026/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0084659/> ;
+        schema:characterName "Yanina"
+    ] .
+
+# Booker (1990)
+<https://www.imdb.com/title/tt0096550/> a schema:Movie ;
+    schema:name "Booker" ;
+    schema:url <https://www.imdb.com/title/tt0096550/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0084659/> ;
+        schema:characterName "Lisa Brooks"
+    ] .
+
+# Evil Dead II (1987)
+<https://www.imdb.com/title/tt0092991/> a schema:Movie ;
+    schema:name "Evil Dead II" ;
+    schema:url <https://www.imdb.com/title/tt0092991/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0084659/> ;
+        schema:characterName "Linda"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1871249689/> a schema:VideoObject ;
+        schema:name "The Assassination Game" ;
+        schema:description "Home Video Trailer from New Concorde" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1871249689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMmQyZDRkNmUtY2NhMC00ZWQwLThlOWQtNWM0ZDBkM2U2NmU3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT33S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T16:11:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNTM5ZjAxZjUtYTE2My00YThhLTkyNmQtNWE4NjQxNjgwMDZlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM5ZjAxZjUtYTE2My00YThhLTkyNmQtNWE4NjQxNjgwMDZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Bixler in Crisis in the Kremlin (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0084659/mediaviewer/rm1488026112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGZlYmRjZjMtYzgyZC00YjQwLWE0NzYtM2I5NDliNmUxNTZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Bixler and Robert Rusler in Crisis in the Kremlin (1992)" ;
+    schema:height "530"^^xsd:integer ;
+    schema:width "717"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0084659/mediaviewer/rm1253145088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWVkMjc1YjgtMThhNi00YjgyLWI3OGUtM2U5MGE1ZjhkMDk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Bixler in Crisis in the Kremlin (1992)" ;
+    schema:height "351"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0084659/mediaviewer/rm1286699520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM5ZjAxZjUtYTE2My00YThhLTkyNmQtNWE4NjQxNjgwMDZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Denise Bixler in Crisis in the Kremlin (1992)" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

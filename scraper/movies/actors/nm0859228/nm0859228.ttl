@@ -1,0 +1,418 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0859228/> a schema:Person ;
+    schema:name "Matthew James Thomas" ;
+    schema:url <https://www.imdb.com/name/nm0859228/> ;
+    schema:birthDate "1988-03-03"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Producer" ;
+    schema:description "Matthew James Thomas. Actor: Summer of Rockets. Matthew James Thomas (occasionally credited as Matthew Thomas) is a British actor, writer and director. Best known for such films and TV series as Summer of Rockets (2019), The Devil You Know (2015), Britannia High (2008), Trevor's World of Sport (2003), and About a Boy (2002). He relocated to the USA in 2009 to play the title character in Julie Taymor's Broadway production..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNjk3ZGEyODgtYzg2YS00Y2I3LWEwYjgtNTkzYzA5MzgyOTJiXkEyXkFqcGc@._V1_CR341,657,3333,5000_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Buckinghamshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8001214/>,    # Summer of Rockets
+                       <https://www.imdb.com/title/tt0249462/>,    # Billy Elliot
+                       <https://www.imdb.com/title/tt0349747/>,    # The Lost Prince
+                       <https://www.imdb.com/title/tt3560084/>,    # NCIS: New Orleans
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6476782/>,    # Shelter
+                       <https://www.imdb.com/title/tt4503022/>,    # The Devil You Know
+                       <https://www.imdb.com/title/tt2592094/>,    # Believe
+                       <https://www.imdb.com/title/tt1693847/>,    # Possession
+                       <https://www.imdb.com/title/tt0118401/>,    # Midsomer Murders
+                       <https://www.imdb.com/title/tt0096555/>,    # Casualty
+                       <https://www.imdb.com/title/tt1186331/>,    # Britannia High
+                       <https://www.imdb.com/title/tt10513968/>,    # Britannia High Backstage
+                       <https://www.imdb.com/title/tt0795111/>,    # Genie in the House
+                       <https://www.imdb.com/title/tt0241383/>,    # Doctors
+                       <https://www.imdb.com/title/tt1039167/>,    # Desperados
+                       <https://www.imdb.com/title/tt0435937/>,    # Afterlife
+                       <https://www.imdb.com/title/tt0406465/>,    # Shane
+                       <https://www.imdb.com/title/tt0361250/>,    # Trevor's World of Sport
+                       <https://www.imdb.com/title/tt0160904/>,    # Spooks
+                       <https://www.imdb.com/title/tt0276751/>,    # About a Boy
+                       <https://www.imdb.com/title/tt0263181/>,    # Care
+                       <https://www.imdb.com/title/tt0203248/>,    # Bad Girls
+                       <https://www.imdb.com/title/tt0241250/>,    # The Blind Date
+                       <https://www.imdb.com/title/tt0320866/>,    # Hero to Zero
+                       <https://www.imdb.com/title/tt0084987/>,    # The Bill
+                       <https://www.imdb.com/title/tt0179060/> ; # Wonderful You
+
+    schema:award [
+        a schema:Award ;
+        schema:description "7 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2875705369/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0859228/mediaviewer/rm1336547329/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm30008065/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm3720995585/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm13230849/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm1254851329/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm2007630337/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm3559755265/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm1731599616/>,
+                 <https://www.imdb.com/name/nm0859228/mediaviewer/rm305536256/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8001214/> a schema:Movie ;
+    schema:name "Summer of Rockets" ;
+    schema:url <https://www.imdb.com/title/tt8001214/> .
+
+<https://www.imdb.com/title/tt0249462/> a schema:Movie ;
+    schema:name "Billy Elliot" ;
+    schema:url <https://www.imdb.com/title/tt0249462/> .
+
+<https://www.imdb.com/title/tt0349747/> a schema:Movie ;
+    schema:name "The Lost Prince" ;
+    schema:url <https://www.imdb.com/title/tt0349747/> .
+
+<https://www.imdb.com/title/tt3560084/> a schema:Movie ;
+    schema:name "NCIS: New Orleans" ;
+    schema:url <https://www.imdb.com/title/tt3560084/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shelter (2017)
+<https://www.imdb.com/title/tt6476782/> a schema:Movie ;
+    schema:name "Shelter" ;
+    schema:url <https://www.imdb.com/title/tt6476782/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Dr. Sam"
+    ] .
+
+# The Devil You Know (2015)
+<https://www.imdb.com/title/tt4503022/> a schema:Movie ;
+    schema:name "The Devil You Know" ;
+    schema:url <https://www.imdb.com/title/tt4503022/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Henry Paine"
+    ] .
+
+# Believe (2014)
+<https://www.imdb.com/title/tt2592094/> a schema:Movie ;
+    schema:name "Believe" ;
+    schema:url <https://www.imdb.com/title/tt2592094/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Morgan"
+    ] .
+
+# Possession (2010)
+<https://www.imdb.com/title/tt1693847/> a schema:Movie ;
+    schema:name "Possession" ;
+    schema:url <https://www.imdb.com/title/tt1693847/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Seth"
+    ] .
+
+# Midsomer Murders (2010)
+<https://www.imdb.com/title/tt0118401/> a schema:Movie ;
+    schema:name "Midsomer Murders" ;
+    schema:url <https://www.imdb.com/title/tt0118401/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Orlando Guest"
+    ] .
+
+# Casualty (2010)
+<https://www.imdb.com/title/tt0096555/> a schema:Movie ;
+    schema:name "Casualty" ;
+    schema:url <https://www.imdb.com/title/tt0096555/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Gary Yates"
+    ] .
+
+# Britannia High (2008)
+<https://www.imdb.com/title/tt1186331/> a schema:Movie ;
+    schema:name "Britannia High" ;
+    schema:url <https://www.imdb.com/title/tt1186331/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Jez"
+    ] .
+
+# Britannia High Backstage (2008)
+<https://www.imdb.com/title/tt10513968/> a schema:Movie ;
+    schema:name "Britannia High Backstage" ;
+    schema:url <https://www.imdb.com/title/tt10513968/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Jez"
+    ] .
+
+# Genie in the House (2007)
+<https://www.imdb.com/title/tt0795111/> a schema:Movie ;
+    schema:name "Genie in the House" ;
+    schema:url <https://www.imdb.com/title/tt0795111/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Dave"
+    ] .
+
+# Doctors (2007)
+<https://www.imdb.com/title/tt0241383/> a schema:Movie ;
+    schema:name "Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0241383/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Mickey Carly"
+    ] .
+
+# Desperados (2007)
+<https://www.imdb.com/title/tt1039167/> a schema:Movie ;
+    schema:name "Desperados" ;
+    schema:url <https://www.imdb.com/title/tt1039167/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Gary Black"
+    ] .
+
+# Afterlife (2005)
+<https://www.imdb.com/title/tt0435937/> a schema:Movie ;
+    schema:name "Afterlife" ;
+    schema:url <https://www.imdb.com/title/tt0435937/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Bardo's Lawyer"
+    ] .
+
+# Shane (2004)
+<https://www.imdb.com/title/tt0406465/> a schema:Movie ;
+    schema:name "Shane" ;
+    schema:url <https://www.imdb.com/title/tt0406465/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Spotty Kid"
+    ] .
+
+# Trevor's World of Sport (2003)
+<https://www.imdb.com/title/tt0361250/> a schema:Movie ;
+    schema:name "Trevor's World of Sport" ;
+    schema:url <https://www.imdb.com/title/tt0361250/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Toby"
+    ] .
+
+# Spooks (2002)
+<https://www.imdb.com/title/tt0160904/> a schema:Movie ;
+    schema:name "Spooks" ;
+    schema:url <https://www.imdb.com/title/tt0160904/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Demonstrator"
+    ] .
+
+# About a Boy (2002)
+<https://www.imdb.com/title/tt0276751/> a schema:Movie ;
+    schema:name "About a Boy" ;
+    schema:url <https://www.imdb.com/title/tt0276751/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Candy Thrower"
+    ] .
+
+# Care (2000)
+<https://www.imdb.com/title/tt0263181/> a schema:Movie ;
+    schema:name "Care" ;
+    schema:url <https://www.imdb.com/title/tt0263181/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Brian"
+    ] .
+
+# Bad Girls (2000)
+<https://www.imdb.com/title/tt0203248/> a schema:Movie ;
+    schema:name "Bad Girls" ;
+    schema:url <https://www.imdb.com/title/tt0203248/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Tom Fenner"
+    ] .
+
+# The Blind Date (2000)
+<https://www.imdb.com/title/tt0241250/> a schema:Movie ;
+    schema:name "The Blind Date" ;
+    schema:url <https://www.imdb.com/title/tt0241250/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Matthew Davey"
+    ] .
+
+# Hero to Zero (2000)
+<https://www.imdb.com/title/tt0320866/> a schema:Movie ;
+    schema:name "Hero to Zero" ;
+    schema:url <https://www.imdb.com/title/tt0320866/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Ben"
+    ] .
+
+# The Bill (1999)
+<https://www.imdb.com/title/tt0084987/> a schema:Movie ;
+    schema:name "The Bill" ;
+    schema:url <https://www.imdb.com/title/tt0084987/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Karl Drake"
+    ] .
+
+# Wonderful You (1999)
+<https://www.imdb.com/title/tt0179060/> a schema:Movie ;
+    schema:name "Wonderful You" ;
+    schema:url <https://www.imdb.com/title/tt0179060/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0859228/> ;
+        schema:characterName "Joe"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2875705369/> a schema:VideoObject ;
+        schema:name "The Beast In Me: Season 1" ;
+        schema:description "The Beast In Me: Season 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2875705369/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYmYzYjY3NWUtOGI1NC00NzVhLWJhMDctZGUwOWM1MzJjYmE2XkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT28S"^^xsd:duration ;
+        schema:uploadDate "2025-10-24T07:13:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNjk3ZGEyODgtYzg2YS00Y2I3LWEwYjgtNTkzYzA5MzgyOTJiXkEyXkFqcGc@._V1_CR341,657,3333,5000_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjk3ZGEyODgtYzg2YS00Y2I3LWEwYjgtNTkzYzA5MzgyOTJiXkEyXkFqcGc@._V1_CR341,657,3333,5000_.jpg> ;
+    schema:caption "Matthew James Thomas" ;
+    schema:height "5000"^^xsd:integer ;
+    schema:width "3333"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm1336547329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDhkM2Y5NWItZWIzNy00MjUzLTgyNjQtM2EyMDQzMTFjNzljXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew James Thomas" ;
+    schema:height "2300"^^xsd:integer ;
+    schema:width "1535"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm30008065/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODhjY2E0NzctMDEwMS00ZjZiLTlhZmYtODI1MDMyNGVmOTMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still from NCIS CBS" ;
+    schema:height "1632"^^xsd:integer ;
+    schema:width "2844"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm3720995585/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzBmNjgyNmUtMzcyZS00MjIyLTg5NDgtODY0ZDUzOGJhYzdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lily Sacofsky and Matthew James Thomas in Summer Of Rockets" ;
+    schema:height "1964"^^xsd:integer ;
+    schema:width "3024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm13230849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTQ4MGE2OWUtNmM3YS00ZjM3LThjZDEtMjQzMjU5OWQ1ZDMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still from NCIS" ;
+    schema:height "1827"^^xsd:integer ;
+    schema:width "3142"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm1254851329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTc0MzE0YjEtY2ZiYi00OTY3LTg1NWItYzJiOTQ0OTU0MTBiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew James Thomas" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm2007630337/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGU4YmQ3ZWUtZjA5Yy00MmNjLWE0ZTEtOGVhNjY5NDk1M2M2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sothebys Commercial shoot, Naked City films" ;
+    schema:height "1174"^^xsd:integer ;
+    schema:width "1823"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm3559755265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWRjNjFjMTMtNTAwNy00YzUyLWEzYjctYThiNDZkMGEyMzc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew James Thomas, Mitch Hewer, Sapphire Elia, Georgina Hagen, Rana Roy, and Marcquelle Ward in Britannia High (2008)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm1731599616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzk4Y2I3YWMtNzQ3Yy00YzI2LTg3ZjUtZDY1OTJjMjViZjJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew James Thomas in The Lost Prince (2003)" ;
+    schema:height "2097"^^xsd:integer ;
+    schema:width "1333"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0859228/mediaviewer/rm305536256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmM2YzAzYzMtOTVkNy00YzI1LTg4YmEtYmFkNjBiY2E0ZWM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matthew James Thomas in The Lost Prince (2003)" ;
+    schema:height "1324"^^xsd:integer ;
+    schema:width "2110"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

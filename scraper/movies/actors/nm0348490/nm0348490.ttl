@@ -1,0 +1,132 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0348490/> a schema:Person ;
+    schema:name "Rajendra Gupta" ;
+    schema:url <https://www.imdb.com/name/nm0348490/> ;
+    schema:birthDate "1947-10-17"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rajendra Gupta. Actor: Paan Singh Tomar. With a distinguished career spanning theatre, television, and cinema, Gupta continues to inspire with his commitment to meaningful storytelling.\n\nIn 2025, he starred in A Life Inside Me, an award-winning indie LGBTQ+ film, working with newcomers purely for the love of the story and its message - a testament to his enduring passion for the art of cinema." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjQwZTZkYjctNjk3OC00ODc2LTg3NDctNzBiMTY4NDNlZjhiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Panipat, Punjab, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1620933/>,    # Paan Singh Tomar
+                       <https://www.imdb.com/title/tt0169102/>,    # Lagaan: Once Upon a Time in India
+                       <https://www.imdb.com/title/tt1412386/>,    # The Best Exotic Marigold Hotel
+                       <https://www.imdb.com/title/tt9531772/>,    # Sooryavanshi
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4981786/>,    # Ek Aur Mahabharat
+                       <https://www.imdb.com/title/tt10340590/> ; # Raavan
+
+
+    schema:video <https://www.imdb.com/video/vi4273915673/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0348490/mediaviewer/rm397026561/>,
+                 <https://www.imdb.com/name/nm0348490/mediaviewer/rm3438878464/>,
+                 <https://www.imdb.com/name/nm0348490/mediaviewer/rm508616704/>,
+                 <https://www.imdb.com/name/nm0348490/mediaviewer/rm1555237888/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1620933/> a schema:Movie ;
+    schema:name "Paan Singh Tomar" ;
+    schema:url <https://www.imdb.com/title/tt1620933/> .
+
+<https://www.imdb.com/title/tt0169102/> a schema:Movie ;
+    schema:name "Lagaan: Once Upon a Time in India" ;
+    schema:url <https://www.imdb.com/title/tt0169102/> .
+
+<https://www.imdb.com/title/tt1412386/> a schema:Movie ;
+    schema:name "The Best Exotic Marigold Hotel" ;
+    schema:url <https://www.imdb.com/title/tt1412386/> .
+
+<https://www.imdb.com/title/tt9531772/> a schema:Movie ;
+    schema:name "Sooryavanshi" ;
+    schema:url <https://www.imdb.com/title/tt9531772/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ek Aur Mahabharat (1997)
+<https://www.imdb.com/title/tt4981786/> a schema:Movie ;
+    schema:name "Ek Aur Mahabharat" ;
+    schema:url <https://www.imdb.com/title/tt4981786/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0348490/> ;
+        schema:characterName ""
+    ] .
+
+# Raavan (2006)
+<https://www.imdb.com/title/tt10340590/> a schema:Movie ;
+    schema:name "Raavan" ;
+    schema:url <https://www.imdb.com/title/tt10340590/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0348490/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4273915673/> a schema:VideoObject ;
+        schema:name "Sandeep Bhaiya | Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4273915673/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDU0MDQyNjEtZTQ4OS00MGYxLTkxMWItYzQ0MjYzMDI4ZGMyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M36S"^^xsd:duration ;
+        schema:uploadDate "2023-06-27T11:08:59Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjQwZTZkYjctNjk3OC00ODc2LTg3NDctNzBiMTY4NDNlZjhiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQwZTZkYjctNjk3OC00ODc2LTg3NDctNzBiMTY4NDNlZjhiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rajendra Gupta" ;
+    schema:height "692"^^xsd:integer ;
+    schema:width "528"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0348490/mediaviewer/rm397026561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWI4MGUzNmEtYjBjMy00MDM4LWE5NGItYTZlZTFlNjc3YWFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rajendra Gupta, Punit Tiwari, Deepali Gautam, Sunny Hinduja, and Abhinav Anand in Sandeep Bhaiya (2023)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2702"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0348490/mediaviewer/rm3438878464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY2OWE2OTktY2ZmYy00MmIzLWIzOGMtYjk0MTVjZDE0NGFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Basheer Ali, Anand Raj Anand, Tinnu Anand, Mohnish Behl, Danny Denzongpa, Rajendra Gupta, Mohan Joshi, Shahbaaz Khan, Pran Sikand, Santosh Saroj, Suniel Shetty, and Ashish Vidyarthi in Ek Hindustani (2003)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "680"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0348490/mediaviewer/rm508616704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWM1YzEzZjItMzI5OS00NWRkLTgwZDYtMzMxZGEzNzc4MDliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ila Arun, Rajendra Gupta, Ravi Jhankal, Rajit Kapoor, Ravi Kishan, Yashpal Sharma, Boman Irani, Sammir Dattani, and Minissha Lamba in Well Done Abba! (2009)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1038"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0348490/mediaviewer/rm1555237888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQwZTZkYjctNjk3OC00ODc2LTg3NDctNzBiMTY4NDNlZjhiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rajendra Gupta" ;
+    schema:height "692"^^xsd:integer ;
+    schema:width "528"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

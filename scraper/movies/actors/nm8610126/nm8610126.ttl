@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8610126/> a schema:Person ;
+    schema:name "Surojit Das" ;
+    schema:url <https://www.imdb.com/name/nm8610126/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Surojit Das. Actor: Lion. Surojit Das is known for Lion (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3741834/> .    # Lion
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Lion (2016)
+<https://www.imdb.com/title/tt3741834/> a schema:Movie ;
+    schema:name "Lion" ;
+    schema:url <https://www.imdb.com/title/tt3741834/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8610126/> ;
+        schema:characterName "Shonedeep"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

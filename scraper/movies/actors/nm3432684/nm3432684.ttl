@@ -1,0 +1,377 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3432684/> a schema:Person ;
+    schema:name "Emily Ricks Hahn" ;
+    schema:url <https://www.imdb.com/name/nm3432684/> ;
+    schema:birthDate "2000-07-28"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Emily Ricks Hahn. Actress: Toy Story 3. Emily Ricks Hahn was born on 28 July 2000 in Los Angeles, California, USA. She is an actress, known for Toy Story 3 (2010), Beautifully Broken (2018) and House M.D. (2004)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzYyYTdhMjQtYTVkNy00NmI3LWEzODUtNmFlOTYyYWYzZjUwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0435761/>,    # Toy Story 3
+                       <https://www.imdb.com/title/tt0412142/>,    # House
+                       <https://www.imdb.com/title/tt1772341/>,    # Wreck-It Ralph
+                       <https://www.imdb.com/title/tt5645932/>,    # Beautifully Broken
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3551096/>,    # Fresh Off the Boat
+                       <https://www.imdb.com/title/tt4703182/>,    # Camp Cool Kids
+                       <https://www.imdb.com/title/tt3473654/>,    # Toy Story That Time Forgot
+                       <https://www.imdb.com/title/tt2446040/>,    # Toy Story of Terror
+                       <https://www.imdb.com/title/tt1900920/>,    # Lip Service
+                       <https://www.imdb.com/title/tt2340678/>,    # Toy Story Toons: Partysaurus Rex
+                       <https://www.imdb.com/title/tt1623288/>,    # ParaNorman
+                       <https://www.imdb.com/title/tt2267146/>,    # Kinect Rush: A Disney-Pixar Adventure
+                       <https://www.imdb.com/title/tt1935929/>,    # Tooth Fairy 2
+                       <https://www.imdb.com/title/tt2033372/>,    # Toy Story Toons: Small Fry
+                       <https://www.imdb.com/title/tt1462059/>,    # Falling Skies
+                       <https://www.imdb.com/title/tt1850374/>,    # Toy Story Toons: Hawaiian Vacation
+                       <https://www.imdb.com/title/tt1302067/>,    # Yogi Bear
+                       <https://www.imdb.com/title/tt5535518/>,    # Disney Tangled: The Video Game
+                       <https://www.imdb.com/title/tt0758737/>,    # Brothers & Sisters
+                       <https://www.imdb.com/title/tt1382367/>,    # Hawthorne
+                       <https://www.imdb.com/title/tt1623789/>,    # Toy Story 3: The Video Game
+                       <https://www.imdb.com/title/tt1342403/> ; # Toys in the Attic
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 1 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Toy Story That Time Forgot)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "1500"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3207579673/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3432684/mediaviewer/rm3551742720/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm1823107073/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm1688889345/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm4144874240/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm4159084546/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm1772775425/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm2468393986/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm2300621826/>,
+                 <https://www.imdb.com/name/nm3432684/mediaviewer/rm2367730690/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0435761/> a schema:Movie ;
+    schema:name "Toy Story 3" ;
+    schema:url <https://www.imdb.com/title/tt0435761/> .
+
+<https://www.imdb.com/title/tt0412142/> a schema:Movie ;
+    schema:name "House" ;
+    schema:url <https://www.imdb.com/title/tt0412142/> .
+
+<https://www.imdb.com/title/tt1772341/> a schema:Movie ;
+    schema:name "Wreck-It Ralph" ;
+    schema:url <https://www.imdb.com/title/tt1772341/> .
+
+<https://www.imdb.com/title/tt5645932/> a schema:Movie ;
+    schema:name "Beautifully Broken" ;
+    schema:url <https://www.imdb.com/title/tt5645932/> .
+
+<https://www.imdb.com/title/tt3473654/> a schema:Movie ;
+    schema:name "Toy Story That Time Forgot" ;
+    schema:url <https://www.imdb.com/title/tt3473654/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fresh Off the Boat (2017)
+<https://www.imdb.com/title/tt3551096/> a schema:Movie ;
+    schema:name "Fresh Off the Boat" ;
+    schema:url <https://www.imdb.com/title/tt3551096/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Sally Nelson"
+    ] .
+
+# Camp Cool Kids (2017)
+<https://www.imdb.com/title/tt4703182/> a schema:Movie ;
+    schema:name "Camp Cool Kids" ;
+    schema:url <https://www.imdb.com/title/tt4703182/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Jen"
+    ] .
+
+# Toy Story That Time Forgot (2014)
+<https://www.imdb.com/title/tt3473654/> a schema:Movie ;
+    schema:name "Toy Story That Time Forgot" ;
+    schema:url <https://www.imdb.com/title/tt3473654/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Toy Story of Terror (2013)
+<https://www.imdb.com/title/tt2446040/> a schema:Movie ;
+    schema:name "Toy Story of Terror" ;
+    schema:url <https://www.imdb.com/title/tt2446040/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Lip Service (2013)
+<https://www.imdb.com/title/tt1900920/> a schema:Movie ;
+    schema:name "Lip Service" ;
+    schema:url <https://www.imdb.com/title/tt1900920/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Paloma"
+    ] .
+
+# Toy Story Toons: Partysaurus Rex (2012)
+<https://www.imdb.com/title/tt2340678/> a schema:Movie ;
+    schema:name "Toy Story Toons: Partysaurus Rex" ;
+    schema:url <https://www.imdb.com/title/tt2340678/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# ParaNorman (2012)
+<https://www.imdb.com/title/tt1623288/> a schema:Movie ;
+    schema:name "ParaNorman" ;
+    schema:url <https://www.imdb.com/title/tt1623288/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Sweet Girl"
+    ] .
+
+# Kinect Rush: A Disney-Pixar Adventure (2012)
+<https://www.imdb.com/title/tt2267146/> a schema:Movie ;
+    schema:name "Kinect Rush: A Disney-Pixar Adventure" ;
+    schema:url <https://www.imdb.com/title/tt2267146/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Tooth Fairy 2 (2012)
+<https://www.imdb.com/title/tt1935929/> a schema:Movie ;
+    schema:name "Tooth Fairy 2" ;
+    schema:url <https://www.imdb.com/title/tt1935929/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "(voice, as Emily Hahn)"
+    ] .
+
+# Toy Story Toons: Small Fry (2011)
+<https://www.imdb.com/title/tt2033372/> a schema:Movie ;
+    schema:name "Toy Story Toons: Small Fry" ;
+    schema:url <https://www.imdb.com/title/tt2033372/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Falling Skies (2011)
+<https://www.imdb.com/title/tt1462059/> a schema:Movie ;
+    schema:name "Falling Skies" ;
+    schema:url <https://www.imdb.com/title/tt1462059/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Young Survivor Kid"
+    ] .
+
+# Toy Story Toons: Hawaiian Vacation (2011)
+<https://www.imdb.com/title/tt1850374/> a schema:Movie ;
+    schema:name "Toy Story Toons: Hawaiian Vacation" ;
+    schema:url <https://www.imdb.com/title/tt1850374/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Yogi Bear (2010)
+<https://www.imdb.com/title/tt1302067/> a schema:Movie ;
+    schema:name "Yogi Bear" ;
+    schema:url <https://www.imdb.com/title/tt1302067/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Additional Voice-Over"
+    ] .
+
+# Disney Tangled: The Video Game (2010)
+<https://www.imdb.com/title/tt5535518/> a schema:Movie ;
+    schema:name "Disney Tangled: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt5535518/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Katie"
+    ] .
+
+# Brothers & Sisters (2010)
+<https://www.imdb.com/title/tt0758737/> a schema:Movie ;
+    schema:name "Brothers & Sisters" ;
+    schema:url <https://www.imdb.com/title/tt0758737/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Margaret Hartley"
+    ] .
+
+# Hawthorne (2010)
+<https://www.imdb.com/title/tt1382367/> a schema:Movie ;
+    schema:name "Hawthorne" ;
+    schema:url <https://www.imdb.com/title/tt1382367/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Ginger Dayton"
+    ] .
+
+# Toy Story 3: The Video Game (2010)
+<https://www.imdb.com/title/tt1623789/> a schema:Movie ;
+    schema:name "Toy Story 3: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt1623789/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Bonnie"
+    ] .
+
+# Toys in the Attic (2009)
+<https://www.imdb.com/title/tt1342403/> a schema:Movie ;
+    schema:name "Toys in the Attic" ;
+    schema:url <https://www.imdb.com/title/tt1342403/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3432684/> ;
+        schema:characterName "Andrejka"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3207579673/> a schema:VideoObject ;
+        schema:name "Emily Ricks Hahn Sizzle Reel" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3207579673/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGNkYmU1ZjgtOTc2My00MTk1LTliYTktYzc2NjU5MzU0YmEzXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M2S"^^xsd:duration ;
+        schema:uploadDate "2025-09-04T02:38:52Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzYyYTdhMjQtYTVkNy00NmI3LWEzODUtNmFlOTYyYWYzZjUwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYyYTdhMjQtYTVkNy00NmI3LWEzODUtNmFlOTYyYWYzZjUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Beautifully Broken Premiere" ;
+    schema:height "1309"^^xsd:integer ;
+    schema:width "1086"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm3551742720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODA3Mzc0YmItMzdjNC00MTY2LWIyYmItZjJjZGRjNmRmYTY1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Eric Roberts, Michael W. Smith, Scott William Winters, Benjamin A. Onyango, Eugene Khumbanyiwa, Emily Ricks Hahn, CJ Obilom, Eva Ndachi, and Caitlin Nicol-Thomas in Beautifully Broken (2018)" ;
+    schema:height "477"^^xsd:integer ;
+    schema:width "324"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm1823107073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmY4ODkzMjgtZTgyNC00M2VmLThkNjQtNWIyY2I5M2MyOTY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm1688889345/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDBlMTJiZjYtYmMzZS00NDA2LTk3MTgtZWQ1ZjliNzVlZTdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "513"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm4144874240/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc5Mzk1NjM1OF5BMl5BanBnXkFtZTgwMDA3MjIzMjE@._V1_.jpg> ;
+    schema:caption "Beau Dremann and Emily Ricks Hahn in House M.D. (2004)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm4159084546/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmNjOTZhZTYtNzcwMi00MGE4LWJhMzEtZmJjZGNmOTBiZmFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "2936"^^xsd:integer ;
+    schema:width "2202"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm1772775425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmM5ZTA0ZDMtNzE4NC00NDc2LTkyMDMtNWViNDA2NzE0MWIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "640"^^xsd:integer ;
+    schema:width "446"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm2468393986/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2JkYWQyMzktZmE4Yi00NzcyLTkzNmUtZjY4MzQ0NWQzZGFlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "1083"^^xsd:integer ;
+    schema:width "1999"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm2300621826/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2Y0OGIyNTMtNThmZS00NmVlLTg0YTEtNWFkYTM5Mzg1YjJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "849"^^xsd:integer ;
+    schema:width "1362"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3432684/mediaviewer/rm2367730690/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjBjZWJkODItM2JhYy00YmE0LWI3YzAtY2JmOTBhMGQ4ZjgzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Emily Ricks Hahn" ;
+    schema:height "836"^^xsd:integer ;
+    schema:width "1449"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

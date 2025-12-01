@@ -1,0 +1,382 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2353862/> a schema:Person ;
+    schema:name "Dev Patel" ;
+    schema:url <https://www.imdb.com/name/nm2353862/> ;
+    schema:birthDate "1990-04-23"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Director" ;
+    schema:description "Dev Patel. Actor: Slumdog Millionaire. Dev Patel was born in London's Harrow district to Anita, a caregiver, and Raj, who works in IT; hailing from Nairobi, Kenya, they are both of Gujarati-Indian descent. Patel secured his first professional acting gig playing Anwar on the cult hit television series Skins (2007), where he starred for two seasons. His mainstream breakout came soon thereafter, when he was cast as Jamal in Danny..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjgxMjQwNDc5Nl5BMl5BanBnXkFtZTgwODI5Njk2NDE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Harrow, London, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1010048/>,    # Slumdog Millionaire
+                       <https://www.imdb.com/title/tt3741834/>,    # Lion
+                       <https://www.imdb.com/title/tt9214772/>,    # Monkey Man
+                       <https://www.imdb.com/title/tt9243804/>,    # The Green Knight
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8543390/>,    # Modern Love
+                       <https://www.imdb.com/title/tt6439020/>,    # The Personal History of David Copperfield
+                       <https://www.imdb.com/title/tt9806192/>,    # I Lost My Body
+                       <https://www.imdb.com/title/tt7645780/>,    # The Wedding Guest
+                       <https://www.imdb.com/title/tt5461944/>,    # Hotel Mumbai
+                       <https://www.imdb.com/title/tt0787524/>,    # The Man Who Knew Infinity
+                       <https://www.imdb.com/title/tt1823672/>,    # Chappie
+                       <https://www.imdb.com/title/tt2555736/>,    # The Second Best Exotic Marigold Hotel
+                       <https://www.imdb.com/title/tt1870479/>,    # The Newsroom
+                       <https://www.imdb.com/title/tt2962876/>,    # The Road Within
+                       <https://www.imdb.com/title/tt1945062/>,    # Cherry
+                       <https://www.imdb.com/title/tt1412386/>,    # The Best Exotic Marigold Hotel
+                       <https://www.imdb.com/title/tt1764641/>,    # The Commuter
+                       <https://www.imdb.com/title/tt0938283/>,    # The Last Airbender
+                       <https://www.imdb.com/title/tt1666339/>,    # The Last Airbender
+                       <https://www.imdb.com/title/tt1219818/>,    # Mister Eleven
+                       <https://www.imdb.com/title/tt0840196/>,    # Skins
+                       <https://www.imdb.com/title/tt1108863/>,    # Skins: Secret Party
+                       <https://www.imdb.com/title/tt0102587/> ; # Only Yesterday
+
+    schema:award [
+        a schema:Award ;
+        schema:description "27 wins & 74 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi192921625/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2353862/mediaviewer/rm2825433346/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm857373953/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2439070977/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2288076033/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2506179841/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2338407681/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2321630465/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2304853249/>,
+                 <https://www.imdb.com/name/nm2353862/mediaviewer/rm2388739329/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> .
+
+<https://www.imdb.com/title/tt3741834/> a schema:Movie ;
+    schema:name "Lion" ;
+    schema:url <https://www.imdb.com/title/tt3741834/> .
+
+<https://www.imdb.com/title/tt9214772/> a schema:Movie ;
+    schema:name "Monkey Man" ;
+    schema:url <https://www.imdb.com/title/tt9214772/> .
+
+<https://www.imdb.com/title/tt9243804/> a schema:Movie ;
+    schema:name "The Green Knight" ;
+    schema:url <https://www.imdb.com/title/tt9243804/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Modern Love (2019)
+<https://www.imdb.com/title/tt8543390/> a schema:Movie ;
+    schema:name "Modern Love" ;
+    schema:url <https://www.imdb.com/title/tt8543390/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Joshua"
+    ] .
+
+# The Personal History of David Copperfield (2019)
+<https://www.imdb.com/title/tt6439020/> a schema:Movie ;
+    schema:name "The Personal History of David Copperfield" ;
+    schema:url <https://www.imdb.com/title/tt6439020/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "David Copperfield"
+    ] .
+
+# I Lost My Body (2019)
+<https://www.imdb.com/title/tt9806192/> a schema:Movie ;
+    schema:name "I Lost My Body" ;
+    schema:url <https://www.imdb.com/title/tt9806192/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Naoufel"
+    ] .
+
+# The Wedding Guest (2018)
+<https://www.imdb.com/title/tt7645780/> a schema:Movie ;
+    schema:name "The Wedding Guest" ;
+    schema:url <https://www.imdb.com/title/tt7645780/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Jay"
+    ] .
+
+# Hotel Mumbai (2018)
+<https://www.imdb.com/title/tt5461944/> a schema:Movie ;
+    schema:name "Hotel Mumbai" ;
+    schema:url <https://www.imdb.com/title/tt5461944/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Arjun"
+    ] .
+
+# The Man Who Knew Infinity (2015)
+<https://www.imdb.com/title/tt0787524/> a schema:Movie ;
+    schema:name "The Man Who Knew Infinity" ;
+    schema:url <https://www.imdb.com/title/tt0787524/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "S. Ramanujan"
+    ] .
+
+# Chappie (2015)
+<https://www.imdb.com/title/tt1823672/> a schema:Movie ;
+    schema:name "Chappie" ;
+    schema:url <https://www.imdb.com/title/tt1823672/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Deon Wilson"
+    ] .
+
+# The Second Best Exotic Marigold Hotel (2015)
+<https://www.imdb.com/title/tt2555736/> a schema:Movie ;
+    schema:name "The Second Best Exotic Marigold Hotel" ;
+    schema:url <https://www.imdb.com/title/tt2555736/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Sonny Kapoor"
+    ] .
+
+# The Newsroom (2012)
+<https://www.imdb.com/title/tt1870479/> a schema:Movie ;
+    schema:name "The Newsroom" ;
+    schema:url <https://www.imdb.com/title/tt1870479/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Neal Sampat"
+    ] .
+
+# The Road Within (2014)
+<https://www.imdb.com/title/tt2962876/> a schema:Movie ;
+    schema:name "The Road Within" ;
+    schema:url <https://www.imdb.com/title/tt2962876/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Alex"
+    ] .
+
+# Cherry (2012)
+<https://www.imdb.com/title/tt1945062/> a schema:Movie ;
+    schema:name "Cherry" ;
+    schema:url <https://www.imdb.com/title/tt1945062/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Andrew"
+    ] .
+
+# The Best Exotic Marigold Hotel (2011)
+<https://www.imdb.com/title/tt1412386/> a schema:Movie ;
+    schema:name "The Best Exotic Marigold Hotel" ;
+    schema:url <https://www.imdb.com/title/tt1412386/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Sonny Kapoor"
+    ] .
+
+# The Commuter (2010)
+<https://www.imdb.com/title/tt1764641/> a schema:Movie ;
+    schema:name "The Commuter" ;
+    schema:url <https://www.imdb.com/title/tt1764641/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "The Commuter"
+    ] .
+
+# The Last Airbender (2010)
+<https://www.imdb.com/title/tt0938283/> a schema:Movie ;
+    schema:name "The Last Airbender" ;
+    schema:url <https://www.imdb.com/title/tt0938283/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Prince Zuko"
+    ] .
+
+# The Last Airbender (2010)
+<https://www.imdb.com/title/tt1666339/> a schema:Movie ;
+    schema:name "The Last Airbender" ;
+    schema:url <https://www.imdb.com/title/tt1666339/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Zuko"
+    ] .
+
+# Mister Eleven (2009)
+<https://www.imdb.com/title/tt1219818/> a schema:Movie ;
+    schema:name "Mister Eleven" ;
+    schema:url <https://www.imdb.com/title/tt1219818/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Hotel Waiter"
+    ] .
+
+# Skins (2007)
+<https://www.imdb.com/title/tt0840196/> a schema:Movie ;
+    schema:name "Skins" ;
+    schema:url <https://www.imdb.com/title/tt0840196/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Anwar"
+    ] .
+
+# Skins: Secret Party (2007)
+<https://www.imdb.com/title/tt1108863/> a schema:Movie ;
+    schema:name "Skins: Secret Party" ;
+    schema:url <https://www.imdb.com/title/tt1108863/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Anwar Kharral"
+    ] .
+
+# Only Yesterday (1991)
+<https://www.imdb.com/title/tt0102587/> a schema:Movie ;
+    schema:name "Only Yesterday" ;
+    schema:url <https://www.imdb.com/title/tt0102587/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2353862/> ;
+        schema:characterName "Toshio"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi192921625/> a schema:VideoObject ;
+        schema:name "Dev Patel on the Roles That Changed His Life" ;
+        schema:description "Dev Patel reveals to IMDb how he feels that he's been reincarnated with each of his life-changing roles in \"Skins\" (2007-2008), 'Slumdog Millionaire' (2008), 'Lion' (2016), and 'The Green Knight' (2021)." ;
+        schema:embedUrl <https://www.imdb.com/video/vi192921625/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYmYyMTJhZTUtMTliNS00MzJmLTgwNzItMGNjMjZiMjVlMjU2XkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2021-07-28T23:58:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjgxMjQwNDc5Nl5BMl5BanBnXkFtZTgwODI5Njk2NDE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjgxMjQwNDc5Nl5BMl5BanBnXkFtZTgwODI5Njk2NDE@._V1_.jpg> ;
+    schema:caption "Dev Patel at an event for Chappie (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2825433346/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzg4NjAzZWItM2M0YS00ZWRhLWFmMzAtNGVhNGNhYjc0NmFmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel in Rabbit Trap (2025)" ;
+    schema:height "1665"^^xsd:integer ;
+    schema:width "2500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm857373953/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTM2Y2Y3YzMtMGU5Yy00NmE3LTg3MjktZjZkZjQ0N2RhMzkwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel and Madhur Mittal in Slumdog Millionaire (2008)" ;
+    schema:height "663"^^xsd:integer ;
+    schema:width "773"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2439070977/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDdkNjYxYzctMzI2Zi00NzViLTkxZDItOTVjY2ZlY2M1NjRkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "3576"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2288076033/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjY4OWI0NTUtZGRhNS00MDc0LWFjYzUtMGFkNjE0NDdjNTQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel and Pitobash in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "3576"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2506179841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWIxMmRjZGEtMzY2MC00ZGVkLTliMmMtMjg0YzQwNmJhNWJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "2667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2338407681/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWQ0Y2QwMDItMzkxOS00MjAxLTllNWItOTM1ZmY1MzY2YmNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "2667"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2321630465/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTg4ZWU0MDItN2Q0ZC00ZWNhLWE0NDMtY2E1MGRkNjI3YjRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sharlto Copley and Dev Patel in Monkey Man (2024)" ;
+    schema:height "4160"^^xsd:integer ;
+    schema:width "6240"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2304853249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTA3ZDA3MTUtMjhhZC00N2ZjLTg5MzAtMzljYTUzNTg3NjNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Vipin Sharma and Dev Patel in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "3576"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2353862/mediaviewer/rm2388739329/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODc5YWYwNTktY2FjMS00NWMyLWFjNjgtNzEzMmRhNmIxYmFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dev Patel in Monkey Man (2024)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "3593"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

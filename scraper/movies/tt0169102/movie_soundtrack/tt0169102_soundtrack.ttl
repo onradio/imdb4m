@@ -1,0 +1,141 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0169102/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Ghanan Ghanan" ;
+        schema:byArtist <https://www.imdb.com/name/nm0621257/>, # Udit Narayan
+                        <https://www.imdb.com/name/nm0003504/>, # Alka Yagnik
+                        <https://www.imdb.com/name/nm0802240/>, # Sukhwinder Singh
+                        <https://www.imdb.com/name/nm0536708/> ; # Shankar Mahadevan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ghanan Ghanan" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Mitwa" ;
+        schema:byArtist <https://www.imdb.com/name/nm0621257/>, # Udit Narayan
+                        <https://www.imdb.com/name/nm0003504/>, # Alka Yagnik
+                        <https://www.imdb.com/name/nm0802240/> ; # Sukhwinder Singh
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Mitwa" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Radha Kaise Na Jale" ;
+        schema:byArtist <https://www.imdb.com/name/nm0080427/>, # Asha Bhosle
+                        <https://www.imdb.com/name/nm0621257/>, # Udit Narayan
+                        <https://www.imdb.com/name/nm1999469/> ; # Vaishali Samant
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Radha Kaise Na Jale" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Rey Chhori" ;
+        schema:byArtist <https://www.imdb.com/name/nm0621257/>, # Udit Narayan
+                        <https://www.imdb.com/name/nm0003504/>, # Alka Yagnik
+                        <https://www.imdb.com/name/nm0201918/> ; # Vasundhara Das
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Rey Chhori" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chale Chalo" ;
+        schema:byArtist <https://www.imdb.com/name/nm0006246/>, # A.R. Rahman
+                        <https://www.imdb.com/name/nm0820204/> ; # Srinivas
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chale Chalo" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Waltz for a Romance" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Waltz for a Romance" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> # A.R. Rahman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "O Palanhaare" ;
+        schema:byArtist <https://www.imdb.com/name/nm0542196/>, # Lata Mangeshkar
+                        <https://www.imdb.com/name/nm0621257/> ; # Udit Narayan
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "O Palanhaare" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lagaan - Once Upon a Time in India" ;
+        schema:byArtist <https://www.imdb.com/name/nm0820268/> ; # Anuradha Sriram
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lagaan - Once Upon a Time in India" ;
+            schema:composer <https://www.imdb.com/name/nm0006246/> ; # A.R. Rahman
+            schema:lyricist <https://www.imdb.com/name/nm0015287/> # Javed Akhtar
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003504/> a schema:Person ;
+    schema:name "Alka Yagnik" .
+<https://www.imdb.com/name/nm0006246/> a schema:Person ;
+    schema:name "A.R. Rahman" .
+<https://www.imdb.com/name/nm0015287/> a schema:Person ;
+    schema:name "Javed Akhtar" .
+<https://www.imdb.com/name/nm0080427/> a schema:Person ;
+    schema:name "Asha Bhosle" .
+<https://www.imdb.com/name/nm0201918/> a schema:Person ;
+    schema:name "Vasundhara Das" .
+<https://www.imdb.com/name/nm0536708/> a schema:Person ;
+    schema:name "Shankar Mahadevan" .
+<https://www.imdb.com/name/nm0542196/> a schema:Person ;
+    schema:name "Lata Mangeshkar" .
+<https://www.imdb.com/name/nm0621257/> a schema:Person ;
+    schema:name "Udit Narayan" .
+<https://www.imdb.com/name/nm0802240/> a schema:Person ;
+    schema:name "Sukhwinder Singh" .
+<https://www.imdb.com/name/nm0820204/> a schema:Person ;
+    schema:name "Srinivas" .
+<https://www.imdb.com/name/nm0820268/> a schema:Person ;
+    schema:name "Anuradha Sriram" .
+<https://www.imdb.com/name/nm1999469/> a schema:Person ;
+    schema:name "Vaishali Samant" .
+# ==============================================================================

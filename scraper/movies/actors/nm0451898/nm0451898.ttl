@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0451898/> a schema:Person ;
+    schema:name "Elias Khoury" ;
+    schema:url <https://www.imdb.com/name/nm0451898/> ;
+    schema:birthDate "1948-07-12"^^xsd:date ;
+    schema:jobTitle "Writer", "Actor" ;
+    schema:description "Elias Khoury. Actor: Capernaum. Elias Khoury was born on 12 July 1948 in Beirut, Lebanon. He was a writer and actor, known for Capernaum (2018), Bab el shams (2004) and Out of Life (1991). He was married to Najla. He died on 15 September 2024 in Beirut, Lebanon." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Beirut, Lebanon"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8267604/> .    # Capernaum
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Capernaum (2018)
+<https://www.imdb.com/title/tt8267604/> a schema:Movie ;
+    schema:name "Capernaum" ;
+    schema:url <https://www.imdb.com/title/tt8267604/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0451898/> ;
+        schema:characterName "The Judge"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

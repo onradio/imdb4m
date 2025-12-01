@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0477082/> a schema:Person ;
+    schema:name "Lee-Na Kwan" ;
+    schema:url <https://www.imdb.com/name/nm0477082/> ;
+    schema:jobTitle "Makeup Department", "Actress" ;
+    schema:description "Lee-Na Kwan. Makeup Department: House of Flying Daggers. Lee-Na Kwan is known for House of Flying Daggers (2004), Shang-Chi and the Legend of the Ten Rings (2021) and Chungking Express (1994)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0116001/>,    # Tri-Star
+                       <https://www.imdb.com/title/tt0112913/>,    # Fallen Angels
+                       <https://www.imdb.com/title/tt0109424/> . # Chungking Express
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tri-Star (1996)
+<https://www.imdb.com/title/tt0116001/> a schema:Movie ;
+    schema:name "Tri-Star" ;
+    schema:url <https://www.imdb.com/title/tt0116001/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0477082/> ;
+        schema:characterName ""
+    ] .
+
+# Fallen Angels (1995)
+<https://www.imdb.com/title/tt0112913/> a schema:Movie ;
+    schema:name "Fallen Angels" ;
+    schema:url <https://www.imdb.com/title/tt0112913/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0477082/> ;
+        schema:characterName "Woman Pressed to Buy Vegetables"
+    ] .
+
+# Chungking Express (1994)
+<https://www.imdb.com/title/tt0109424/> a schema:Movie ;
+    schema:name "Chungking Express" ;
+    schema:url <https://www.imdb.com/title/tt0109424/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0477082/> ;
+        schema:characterName "Richard"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

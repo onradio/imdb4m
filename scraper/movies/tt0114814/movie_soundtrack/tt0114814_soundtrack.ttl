@@ -1,0 +1,46 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114814/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Le sons et les parfums tournent dans l'air du soir" ;
+        schema:byArtist <https://www.imdb.com/name/nm0003179/> ; # Jon Kull
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Le sons et les parfums tournent dans l'air du soir" ;
+            schema:composer <https://www.imdb.com/name/nm0006033/> # Claude Debussy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Steppin' Out" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Steppin' Out" ;
+            schema:composer <https://www.imdb.com/name/nm0894177/> # Carl Verheyen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Old MacDonald Had a Farm" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000286/> ; # Stephen Baldwin
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000286/> a schema:Person ;
+    schema:name "Stephen Baldwin" .
+<https://www.imdb.com/name/nm0003179/> a schema:Person ;
+    schema:name "Jon Kull" .
+<https://www.imdb.com/name/nm0006033/> a schema:Person ;
+    schema:name "Claude Debussy" .
+<https://www.imdb.com/name/nm0894177/> a schema:Person ;
+    schema:name "Carl Verheyen" .
+# ==============================================================================

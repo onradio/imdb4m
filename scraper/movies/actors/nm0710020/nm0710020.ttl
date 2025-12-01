@@ -1,0 +1,348 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0710020/> a schema:Person ;
+    schema:name "Joe Ranft" ;
+    schema:url <https://www.imdb.com/name/nm0710020/> ;
+    schema:birthDate "1960-03-13"^^xsd:date ;
+    schema:jobTitle "Writer", "Actor", "Additional Crew" ;
+    schema:alternateName "Joseph Henry Ranft" ;
+    schema:description "Joe Ranft. Writer: The Brave Little Toaster. Joseph Ranft was an American writer, voice actor, animator, storyboard artist and magician. He worked for Disney and Pixar. He worked on The Lion King, The Brave Little Toaster, Toy Story, A Bug's Life, Cars, Monsters, Inc and Finding Nemo. He voiced in the many films he worked on, notably as Heimlich the Caterpillar from A Bug's Life and the outtakes of Toy..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDY2NDY2ODM5N15BMl5BanBnXkFtZTcwMzU4MDM5OA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pasadena, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "2.03"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 8″ (2.03 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0092695/>,    # The Brave Little Toaster
+                       <https://www.imdb.com/title/tt0114709/>,    # Toy Story
+                       <https://www.imdb.com/title/tt0120363/>,    # Toy Story 2
+                       <https://www.imdb.com/title/tt0317219/>,    # Cars
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1278169/>,    # Cars Mater-National
+                       <https://www.imdb.com/title/tt0317705/>,    # The Incredibles
+                       <https://www.imdb.com/title/tt0405906/>,    # Extreme Skate Adventure
+                       <https://www.imdb.com/title/tt28154261/>,    # A Bug's Land
+                       <https://www.imdb.com/title/tt0266543/>,    # Finding Nemo
+                       <https://www.imdb.com/title/tt18334372/>,    # Finding Nemo: Nemo's Underwater World of Fun
+                       <https://www.imdb.com/title/tt0401422/>,    # Finding Nemo
+                       <https://www.imdb.com/title/tt2258493/>,    # Monsters, Inc. Scream Arena
+                       <https://www.imdb.com/title/tt13237030/>,    # Toy Story 2 DVD Read-Along
+                       <https://www.imdb.com/title/tt0198781/>,    # Monsters, Inc.
+                       <https://www.imdb.com/title/tt0166276/>,    # Monkeybone
+                       <https://www.imdb.com/title/tt0181196/>,    # Buzz Lightyear of Star Command: The Adventure Begins
+                       <https://www.imdb.com/title/tt6705128/>,    # A Bug's Life: The Video Game
+                       <https://www.imdb.com/title/tt0120623/>,    # A Bug's Life
+                       <https://www.imdb.com/title/tt0291777/>,    # A Bug's Life: The Video Game
+                       <https://www.imdb.com/title/tt9097794/>,    # Disney's Animated Storybook: Toy Story
+                       <https://www.imdb.com/title/tt0101414/>,    # Beauty and the Beast
+                       <https://www.imdb.com/title/tt0096438/>,    # Who Framed Roger Rabbit
+                       <https://www.imdb.com/title/tt0367989/> ; # Luau
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 9 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi94548505/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0710020/mediaviewer/rm1825890049/>,
+                 <https://www.imdb.com/name/nm0710020/mediaviewer/rm1328125952/>,
+                 <https://www.imdb.com/name/nm0710020/mediaviewer/rm2300286976/>,
+                 <https://www.imdb.com/name/nm0710020/mediaviewer/rm3343363328/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0092695/> a schema:Movie ;
+    schema:name "The Brave Little Toaster" ;
+    schema:url <https://www.imdb.com/title/tt0092695/> .
+
+<https://www.imdb.com/title/tt0114709/> a schema:Movie ;
+    schema:name "Toy Story" ;
+    schema:url <https://www.imdb.com/title/tt0114709/> .
+
+<https://www.imdb.com/title/tt0120363/> a schema:Movie ;
+    schema:name "Toy Story 2" ;
+    schema:url <https://www.imdb.com/title/tt0120363/> .
+
+<https://www.imdb.com/title/tt0317219/> a schema:Movie ;
+    schema:name "Cars" ;
+    schema:url <https://www.imdb.com/title/tt0317219/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cars Mater-National (2007)
+<https://www.imdb.com/title/tt1278169/> a schema:Movie ;
+    schema:name "Cars Mater-National" ;
+    schema:url <https://www.imdb.com/title/tt1278169/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Red"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Extreme Skate Adventure (2003)
+<https://www.imdb.com/title/tt0405906/> a schema:Movie ;
+    schema:name "Extreme Skate Adventure" ;
+    schema:url <https://www.imdb.com/title/tt0405906/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Wheezy"
+    ] .
+
+# A Bug's Land (2003)
+<https://www.imdb.com/title/tt28154261/> a schema:Movie ;
+    schema:name "A Bug's Land" ;
+    schema:url <https://www.imdb.com/title/tt28154261/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Heimlich"
+    ] .
+
+# Finding Nemo (2003)
+<https://www.imdb.com/title/tt0266543/> a schema:Movie ;
+    schema:name "Finding Nemo" ;
+    schema:url <https://www.imdb.com/title/tt0266543/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Jacques"
+    ] .
+
+# Finding Nemo: Nemo's Underwater World of Fun (2003)
+<https://www.imdb.com/title/tt18334372/> a schema:Movie ;
+    schema:name "Finding Nemo: Nemo's Underwater World of Fun" ;
+    schema:url <https://www.imdb.com/title/tt18334372/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Jacques"
+    ] .
+
+# Finding Nemo (2003)
+<https://www.imdb.com/title/tt0401422/> a schema:Movie ;
+    schema:name "Finding Nemo" ;
+    schema:url <https://www.imdb.com/title/tt0401422/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Jacques"
+    ] .
+
+# Monsters, Inc. Scream Arena (2002)
+<https://www.imdb.com/title/tt2258493/> a schema:Movie ;
+    schema:name "Monsters, Inc. Scream Arena" ;
+    schema:url <https://www.imdb.com/title/tt2258493/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Ward"
+    ] .
+
+# Toy Story 2 DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13237030/> a schema:Movie ;
+    schema:name "Toy Story 2 DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13237030/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Wheezy"
+    ] .
+
+# Monsters, Inc. (2001)
+<https://www.imdb.com/title/tt0198781/> a schema:Movie ;
+    schema:name "Monsters, Inc." ;
+    schema:url <https://www.imdb.com/title/tt0198781/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Ward"
+    ] .
+
+# Monkeybone (2001)
+<https://www.imdb.com/title/tt0166276/> a schema:Movie ;
+    schema:name "Monkeybone" ;
+    schema:url <https://www.imdb.com/title/tt0166276/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Street Squash Rabbit"
+    ] .
+
+# Buzz Lightyear of Star Command: The Adventure Begins (2000)
+<https://www.imdb.com/title/tt0181196/> a schema:Movie ;
+    schema:name "Buzz Lightyear of Star Command: The Adventure Begins" ;
+    schema:url <https://www.imdb.com/title/tt0181196/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Wheezy"
+    ] .
+
+# A Bug's Life: The Video Game (1998)
+<https://www.imdb.com/title/tt6705128/> a schema:Movie ;
+    schema:name "A Bug's Life: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt6705128/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Heimlich"
+    ] .
+
+# A Bug's Life (1998)
+<https://www.imdb.com/title/tt0120623/> a schema:Movie ;
+    schema:name "A Bug's Life" ;
+    schema:url <https://www.imdb.com/title/tt0120623/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Heimlich"
+    ] .
+
+# A Bug's Life: The Video Game (1998)
+<https://www.imdb.com/title/tt0291777/> a schema:Movie ;
+    schema:name "A Bug's Life: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0291777/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Heimlich"
+    ] .
+
+# Disney's Animated Storybook: Toy Story (1996)
+<https://www.imdb.com/title/tt9097794/> a schema:Movie ;
+    schema:name "Disney's Animated Storybook: Toy Story" ;
+    schema:url <https://www.imdb.com/title/tt9097794/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Lenny"
+    ] .
+
+# Beauty and the Beast (1991)
+<https://www.imdb.com/title/tt0101414/> a schema:Movie ;
+    schema:name "Beauty and the Beast" ;
+    schema:url <https://www.imdb.com/title/tt0101414/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Various Screams"
+    ] .
+
+# Who Framed Roger Rabbit (1988)
+<https://www.imdb.com/title/tt0096438/> a schema:Movie ;
+    schema:name "Who Framed Roger Rabbit" ;
+    schema:url <https://www.imdb.com/title/tt0096438/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "Forensic #3"
+    ] .
+
+# Luau (1982)
+<https://www.imdb.com/title/tt0367989/> a schema:Movie ;
+    schema:name "Luau" ;
+    schema:url <https://www.imdb.com/title/tt0367989/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0710020/> ;
+        schema:characterName "I.Q."
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi94548505/> a schema:VideoObject ;
+        schema:name "Finding Nemo: 3D BD" ;
+        schema:description "Clip: Impressions" ;
+        schema:embedUrl <https://www.imdb.com/video/vi94548505/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGIyZDM5YzAtYjhlNC00ZjdmLWE4Y2UtYjAzZDVlMDE1NjU2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M"^^xsd:duration ;
+        schema:uploadDate "2015-10-28T04:31:30Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDY2NDY2ODM5N15BMl5BanBnXkFtZTcwMzU4MDM5OA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY2NDY2ODM5N15BMl5BanBnXkFtZTcwMzU4MDM5OA@@._V1_.jpg> ;
+    schema:caption "Joe Ranft in A Bug's Life (1998)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1334"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710020/mediaviewer/rm1825890049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjIyNmZiZmEtNjRjNS00ZmEwLWFlMjAtMDg1OTcyNjE4NGE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Joe Ranft in A Bug's Life (1998)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710020/mediaviewer/rm1328125952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0MTM5Mzg2M15BMl5BanBnXkFtZTYwMzM0ODY2._V1_.jpg> ;
+    schema:caption "Joe Ranft in Finding Nemo (2003)" ;
+    schema:height "283"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710020/mediaviewer/rm2300286976/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI1NzEyNDcyMF5BMl5BanBnXkFtZTYwNDE2Nzk2._V1_.jpg> ;
+    schema:caption "Joe Ranft in Toy Story 2 (1999)" ;
+    schema:height "298"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0710020/mediaviewer/rm3343363328/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY2NDY2ODM5N15BMl5BanBnXkFtZTcwMzU4MDM5OA@@._V1_.jpg> ;
+    schema:caption "Joe Ranft in A Bug's Life (1998)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1334"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

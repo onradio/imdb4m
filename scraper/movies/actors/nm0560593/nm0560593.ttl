@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0560593/> a schema:Person ;
+    schema:name "Carl J. Matusovich" ;
+    schema:url <https://www.imdb.com/name/nm0560593/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Carl J. Matusovich. Actor: Leon. Carl J. Matusovich was born in October 1986. He is an actor, known for Leon (1994), Nobody's Fool (1994) and At First Sight (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0132512/>,    # At First Sight
+                       <https://www.imdb.com/title/tt0110684/>,    # Nobody's Fool
+                       <https://www.imdb.com/title/tt0108733/>,    # The Cosby Mysteries
+                       <https://www.imdb.com/title/tt0110413/> . # Leon
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Law & Order (1999)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0560593/> ;
+        schema:characterName "Shane Bowker"
+    ] .
+
+# At First Sight (1999)
+<https://www.imdb.com/title/tt0132512/> a schema:Movie ;
+    schema:name "At First Sight" ;
+    schema:url <https://www.imdb.com/title/tt0132512/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0560593/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# Nobody's Fool (1994)
+<https://www.imdb.com/title/tt0110684/> a schema:Movie ;
+    schema:name "Nobody's Fool" ;
+    schema:url <https://www.imdb.com/title/tt0110684/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0560593/> ;
+        schema:characterName "Wacker"
+    ] .
+
+# The Cosby Mysteries (1994)
+<https://www.imdb.com/title/tt0108733/> a schema:Movie ;
+    schema:name "The Cosby Mysteries" ;
+    schema:url <https://www.imdb.com/title/tt0108733/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0560593/> ;
+        schema:characterName "Russell Jr."
+    ] .
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0560593/> ;
+        schema:characterName "Mathilda's Brother"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

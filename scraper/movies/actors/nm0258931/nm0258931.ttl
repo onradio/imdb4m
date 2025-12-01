@@ -1,0 +1,149 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0258931/> a schema:Person ;
+    schema:name "Tom Erhart" ;
+    schema:url <https://www.imdb.com/name/nm0258931/> ;
+    schema:birthDate "1929-05-23"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tom Erhart. Actor: The Blues Brothers. Tom Erhart was born on 23 May 1929 in Alameda, California, USA. He was an actor, known for The Blues Brothers (1980), Silver Streak (1976) and Nickelodeon (1976). He died on 17 March 1996 in Hovland, Minnesota, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Alameda, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0080455/>,    # The Blues Brothers
+                       <https://www.imdb.com/title/tt0076582/>,    # Loose Shoes
+                       <https://www.imdb.com/title/tt0074964/>,    # Nickelodeon
+                       <https://www.imdb.com/title/tt0075223/>,    # Silver Streak
+                       <https://www.imdb.com/title/tt2144356/>,    # I'll Quit Tomorrow
+                       <https://www.imdb.com/title/tt0067817/>,    # A Date with a Lonely Girl
+                       <https://www.imdb.com/title/tt0064684/>,    # The Monitors
+                       <https://www.imdb.com/title/tt0320239/>,    # Parable
+                       <https://www.imdb.com/title/tt0144947/> . # Goldstein
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Blues Brothers (1980)
+<https://www.imdb.com/title/tt0080455/> a schema:Movie ;
+    schema:name "The Blues Brothers" ;
+    schema:url <https://www.imdb.com/title/tt0080455/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Prison Guard"
+    ] .
+
+# Loose Shoes (1978)
+<https://www.imdb.com/title/tt0076582/> a schema:Movie ;
+    schema:name "Loose Shoes" ;
+    schema:url <https://www.imdb.com/title/tt0076582/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Father O'Malley"
+    ] .
+
+# Nickelodeon (1976)
+<https://www.imdb.com/title/tt0074964/> a schema:Movie ;
+    schema:name "Nickelodeon" ;
+    schema:url <https://www.imdb.com/title/tt0074964/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Nickelodeon Projectionist"
+    ] .
+
+# Silver Streak (1976)
+<https://www.imdb.com/title/tt0075223/> a schema:Movie ;
+    schema:name "Silver Streak" ;
+    schema:url <https://www.imdb.com/title/tt0075223/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Cab Driver"
+    ] .
+
+# I'll Quit Tomorrow (1975)
+<https://www.imdb.com/title/tt2144356/> a schema:Movie ;
+    schema:name "I'll Quit Tomorrow" ;
+    schema:url <https://www.imdb.com/title/tt2144356/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# A Date with a Lonely Girl (1971)
+<https://www.imdb.com/title/tt0067817/> a schema:Movie ;
+    schema:name "A Date with a Lonely Girl" ;
+    schema:url <https://www.imdb.com/title/tt0067817/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Landlord"
+    ] .
+
+# The Monitors (1969)
+<https://www.imdb.com/title/tt0064684/> a schema:Movie ;
+    schema:name "The Monitors" ;
+    schema:url <https://www.imdb.com/title/tt0064684/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Parable (1964)
+<https://www.imdb.com/title/tt0320239/> a schema:Movie ;
+    schema:name "Parable" ;
+    schema:url <https://www.imdb.com/title/tt0320239/> ;
+    schema:datePublished "1964"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Punch"
+    ] .
+
+# Goldstein (1964)
+<https://www.imdb.com/title/tt0144947/> a schema:Movie ;
+    schema:name "Goldstein" ;
+    schema:url <https://www.imdb.com/title/tt0144947/> ;
+    schema:datePublished "1964"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0258931/> ;
+        schema:characterName "Sculptor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0105166/> a schema:Person ;
+    schema:name "Penelope Branning" ;
+    schema:url <https://www.imdb.com/name/nm0105166/> ;
+    schema:birthDate "1940-10-12"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Penelope Branning. Actress: What's Eating Gilbert Grape. Penelope Branning was born on 12 October 1940 in Newton, Massachusetts, USA. She was an actress, known for What's Eating Gilbert Grape (1993), Almost Dead (1994) and General Hospital (1963). She died on 5 August 2021 in Lancaster, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Newton, Massachusetts, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0117478/>,    # The Right to Remain Silent
+                       <https://www.imdb.com/title/tt0109086/>,    # Almost Dead
+                       <https://www.imdb.com/title/tt0108550/>,    # What's Eating Gilbert Grape
+                       <https://www.imdb.com/title/tt0090466/>,    # L.A. Law
+                       <https://www.imdb.com/title/tt0104491/>,    # Overruled
+                       <https://www.imdb.com/title/tt0056758/> . # General Hospital
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Right to Remain Silent (1996)
+<https://www.imdb.com/title/tt0117478/> a schema:Movie ;
+    schema:name "The Right to Remain Silent" ;
+    schema:url <https://www.imdb.com/title/tt0117478/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Annie"
+    ] .
+
+# Almost Dead (1994)
+<https://www.imdb.com/title/tt0109086/> a schema:Movie ;
+    schema:name "Almost Dead" ;
+    schema:url <https://www.imdb.com/title/tt0109086/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Angela Roshak"
+    ] .
+
+# What's Eating Gilbert Grape (1993)
+<https://www.imdb.com/title/tt0108550/> a schema:Movie ;
+    schema:name "What's Eating Gilbert Grape" ;
+    schema:url <https://www.imdb.com/title/tt0108550/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Becky's Grandma"
+    ] .
+
+# L.A. Law (1992)
+<https://www.imdb.com/title/tt0090466/> a schema:Movie ;
+    schema:name "L.A. Law" ;
+    schema:url <https://www.imdb.com/title/tt0090466/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Judge Wanda Lipcott"
+    ] .
+
+# Overruled (1992)
+<https://www.imdb.com/title/tt0104491/> a schema:Movie ;
+    schema:name "Overruled" ;
+    schema:url <https://www.imdb.com/title/tt0104491/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Blair Lipton"
+    ] .
+
+# General Hospital (1963)
+<https://www.imdb.com/title/tt0056758/> a schema:Movie ;
+    schema:name "General Hospital" ;
+    schema:url <https://www.imdb.com/title/tt0056758/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0105166/> ;
+        schema:characterName "Betty"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

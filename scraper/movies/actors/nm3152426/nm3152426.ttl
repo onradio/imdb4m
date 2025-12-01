@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3152426/> a schema:Person ;
+    schema:name "Scott Siegel" ;
+    schema:url <https://www.imdb.com/name/nm3152426/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Scott Siegel. Actor: The Wrestler. Scott Siegel is known for The Wrestler (2008) and Orange Is the New Black (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2372162/>,    # Orange Is the New Black
+                       <https://www.imdb.com/title/tt1125849/> . # The Wrestler
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Orange Is the New Black (2014)
+<https://www.imdb.com/title/tt2372162/> a schema:Movie ;
+    schema:name "Orange Is the New Black" ;
+    schema:url <https://www.imdb.com/title/tt2372162/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3152426/> ;
+        schema:characterName "Menacing CO"
+    ] .
+
+# The Wrestler (2008)
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3152426/> ;
+        schema:characterName "Greg"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

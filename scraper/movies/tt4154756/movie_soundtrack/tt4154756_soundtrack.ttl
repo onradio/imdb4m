@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4154756/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Rubberband Man" ;
+        schema:byArtist <https://www.imdb.com/name/nm0818971/> ; # The Spinners
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Rubberband Man" ;
+            schema:author <https://www.imdb.com/name/nm0068543/>, # Thom Bell
+                       <https://www.imdb.com/name/nm0187217/> # Linda Creed
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Black Panther Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Black Panther Theme" ;
+            schema:composer <https://www.imdb.com/name/nm3234869/> # Ludwig Göransson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0068543/> a schema:Person ;
+    schema:name "Thom Bell" .
+<https://www.imdb.com/name/nm0187217/> a schema:Person ;
+    schema:name "Linda Creed" .
+<https://www.imdb.com/name/nm0818971/> a schema:Person ;
+    schema:name "The Spinners" .
+<https://www.imdb.com/name/nm3234869/> a schema:Person ;
+    schema:name "Ludwig Göransson" .
+# ==============================================================================

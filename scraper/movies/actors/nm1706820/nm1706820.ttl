@@ -1,0 +1,72 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1706820/> a schema:Person ;
+    schema:name "Richard Castaldo" ;
+    schema:url <https://www.imdb.com/name/nm1706820/> ;
+    schema:jobTitle "Actor", "Music Department" ;
+    schema:description "Richard Castaldo. Music Department: The Uncanny. Richard Castaldo is known for The Uncanny (2023), Getting Lemons (2012) and Playing Columbine (2008)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTI2NzM0NjE0MV5BMl5BanBnXkFtZTYwOTM1NTU3._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2458810/> ;    # Getting Lemons
+
+
+    schema:video <https://www.imdb.com/video/vi3948937241/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1706820/mediaviewer/rm714840320/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Getting Lemons (2012)
+<https://www.imdb.com/title/tt2458810/> a schema:Movie ;
+    schema:name "Getting Lemons" ;
+    schema:url <https://www.imdb.com/title/tt2458810/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1706820/> ;
+        schema:characterName "Funeral Mourner"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3948937241/> a schema:VideoObject ;
+        schema:name "Playing Columbine" ;
+        schema:description "\"Playing Columbine\" brings together an array of experts to examine the issues surrounding the future of videogames as an art form and how one game about the Columbine shooting has touched upon the larger development of an emergent form of expression." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3948937241/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTMzMjc3OTEyNl5BMl5BanBnXkFtZTcwNDQ1Mjk5MQ@@._V1_.jpg" ;
+        schema:duration "PT35S"^^xsd:duration ;
+        schema:uploadDate "2008-10-17T04:18:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTI2NzM0NjE0MV5BMl5BanBnXkFtZTYwOTM1NTU3._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI2NzM0NjE0MV5BMl5BanBnXkFtZTYwOTM1NTU3._V1_.jpg> ;
+    schema:caption "Richard Castaldo in Bowling for Columbine (2002)" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1706820/mediaviewer/rm714840320/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI2NzM0NjE0MV5BMl5BanBnXkFtZTYwOTM1NTU3._V1_.jpg> ;
+    schema:caption "Richard Castaldo in Bowling for Columbine (2002)" ;
+    schema:height "358"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

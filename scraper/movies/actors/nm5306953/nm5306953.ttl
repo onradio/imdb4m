@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5306953/> a schema:Person ;
+    schema:name "Gautam Belur" ;
+    schema:url <https://www.imdb.com/name/nm5306953/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gautam Belur. Actor: Life of Pi. Gautam Belur is known for Life of Pi (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0454876/> ;    # Life of Pi
+
+
+    schema:video <https://www.imdb.com/video/vi2646320921/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Life of Pi (2012)
+<https://www.imdb.com/title/tt0454876/> a schema:Movie ;
+    schema:name "Life of Pi" ;
+    schema:url <https://www.imdb.com/title/tt0454876/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5306953/> ;
+        schema:characterName "Pi Patel (5 Years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2646320921/> a schema:VideoObject ;
+        schema:name "Winner: Best Director" ;
+        schema:description "A young man who survives a disaster at sea is hurtled into an epic journey of adventure and discovery. While cast away, he forms an unexpected connection with another survivor ... a fearsome Bengal tiger." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2646320921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjAxMDA3NTkwMV5BMl5BanBnXkFtZTcwMTkyMzQ3OA@@._V1_.jpg" ;
+        schema:duration "PT2M38S"^^xsd:duration ;
+        schema:uploadDate "2012-11-16T14:59:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

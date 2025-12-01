@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7860900/> a schema:Person ;
+    schema:name "Ben Carolan" ;
+    schema:url <https://www.imdb.com/name/nm7860900/> ;
+    schema:birthDate "2000-01-21"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ben Carolan. Actor: Sing Street. Ben Carolan was born on 21 January 2000 in Dublin, Ireland. He is an actor, known for Sing Street (2016), I Kill Giants (2017) and Life on Mercury." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dublin, Ireland"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4547194/>,    # I Kill Giants
+                       <https://www.imdb.com/title/tt5624770/>,    # The Cherishing
+                       <https://www.imdb.com/title/tt3544112/> ; # Sing Street
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7860900/mediaviewer/rm1121852416/>,
+                 <https://www.imdb.com/name/nm7860900/mediaviewer/rm3799834880/>,
+                 <https://www.imdb.com/name/nm7860900/mediaviewer/rm2958846720/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# I Kill Giants (2017)
+<https://www.imdb.com/title/tt4547194/> a schema:Movie ;
+    schema:name "I Kill Giants" ;
+    schema:url <https://www.imdb.com/title/tt4547194/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860900/> ;
+        schema:characterName "Mophead"
+    ] .
+
+# The Cherishing (2016)
+<https://www.imdb.com/title/tt5624770/> a schema:Movie ;
+    schema:name "The Cherishing" ;
+    schema:url <https://www.imdb.com/title/tt5624770/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860900/> ;
+        schema:characterName "Noel Chambers"
+    ] .
+
+# Sing Street (2016)
+<https://www.imdb.com/title/tt3544112/> a schema:Movie ;
+    schema:name "Sing Street" ;
+    schema:url <https://www.imdb.com/title/tt3544112/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7860900/> ;
+        schema:characterName "Darren"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm7860900/mediaviewer/rm1121852416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODAwMjMwMzMzMl5BMl5BanBnXkFtZTgwODM2MjU1ODE@._V1_.jpg> ;
+    schema:caption "Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1049"^^xsd:integer ;
+    schema:width "1236"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7860900/mediaviewer/rm3799834880/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4OTM3MjIyNF5BMl5BanBnXkFtZTgwOTU3OTA1NzE@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "1343"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7860900/mediaviewer/rm2958846720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODVmNGYzZDQtYTdjZi00NGJjLTkxODYtYWQ5M2ExNWZlNmE5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lucy Boynton, Ian Kenny, Karl Rice, Ferdia Walsh-Peelo, Mark McKenna, Ben Carolan, Percy Chamburuka, and Conor Hamilton in Sing Street (2016)" ;
+    schema:height "290"^^xsd:integer ;
+    schema:width "215"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

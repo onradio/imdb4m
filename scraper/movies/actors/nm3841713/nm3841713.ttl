@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3841713/> a schema:Person ;
+    schema:name "Calvin Ka-Sing Cheng" ;
+    schema:url <https://www.imdb.com/name/nm3841713/> ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Calvin Ka-Sing Cheng. Actor: Ip Man. Calvin Ka-Sing Cheng is known for Ip Man (2008), Ip Man 2 (2010) and The Monkey King: Havoc in Heavens Palace (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1717715/>,    # The Monkey King: Havoc in Heavens Palace
+                       <https://www.imdb.com/title/tt1386932/>,    # Ip Man 2
+                       <https://www.imdb.com/title/tt1220719/> ; # Ip Man
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3841713/mediaviewer/rm4245402112/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Monkey King: Havoc in Heavens Palace (2014)
+<https://www.imdb.com/title/tt1717715/> a schema:Movie ;
+    schema:name "The Monkey King: Havoc in Heavens Palace" ;
+    schema:url <https://www.imdb.com/title/tt1717715/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3841713/> ;
+        schema:characterName "Nezha"
+    ] .
+
+# Ip Man 2 (2010)
+<https://www.imdb.com/title/tt1386932/> a schema:Movie ;
+    schema:name "Ip Man 2" ;
+    schema:url <https://www.imdb.com/title/tt1386932/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3841713/> ;
+        schema:characterName "Chow Kong-Yiu"
+    ] .
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3841713/> ;
+        schema:characterName "Yao"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm3841713/mediaviewer/rm4245402112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxMTQ5ODkyMV5BMl5BanBnXkFtZTcwNTY2NzIwNw@@._V1_.jpg> ;
+    schema:caption "Louis Fan, Donnie Yen, and Calvin Ka-Sing Cheng in Ip Man (2008)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

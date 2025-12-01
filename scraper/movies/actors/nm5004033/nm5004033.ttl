@@ -1,0 +1,106 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5004033/> a schema:Person ;
+    schema:name "Dickie Beau" ;
+    schema:url <https://www.imdb.com/name/nm5004033/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dickie Beau. Actor: Bohemian Rhapsody. Dickie Beau is known for Bohemian Rhapsody (2018), Colette (2018) and Country of Hotels (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3893206/>,    # Country of Hotels
+                       <https://www.imdb.com/title/tt1727824/>,    # Bohemian Rhapsody
+                       <https://www.imdb.com/title/tt5437928/>,    # Colette
+                       <https://www.imdb.com/title/tt5692740/> ; # The Windsors
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5004033/mediaviewer/rm1394018561/>,
+                 <https://www.imdb.com/name/nm5004033/mediaviewer/rm2317737473/>,
+                 <https://www.imdb.com/name/nm5004033/mediaviewer/rm453068032/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Country of Hotels (2019)
+<https://www.imdb.com/title/tt3893206/> a schema:Movie ;
+    schema:name "Country of Hotels" ;
+    schema:url <https://www.imdb.com/title/tt3893206/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5004033/> ;
+        schema:characterName "Talk Show Host"
+    ] .
+
+# Bohemian Rhapsody (2018)
+<https://www.imdb.com/title/tt1727824/> a schema:Movie ;
+    schema:name "Bohemian Rhapsody" ;
+    schema:url <https://www.imdb.com/title/tt1727824/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5004033/> ;
+        schema:characterName "Kenny Everett"
+    ] .
+
+# Colette (2018)
+<https://www.imdb.com/title/tt5437928/> a schema:Movie ;
+    schema:name "Colette" ;
+    schema:url <https://www.imdb.com/title/tt5437928/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5004033/> ;
+        schema:characterName "Wague"
+    ] .
+
+# The Windsors (2017)
+<https://www.imdb.com/title/tt5692740/> a schema:Movie ;
+    schema:name "The Windsors" ;
+    schema:url <https://www.imdb.com/title/tt5692740/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5004033/> ;
+        schema:characterName "James I"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5004033/mediaviewer/rm1394018561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGQwNmIyM2UtYjI5Ny00NTFlLTgzZTgtMTNhYTY0MTJiZTQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Laurence Cendrowicz, Lance Patrick, and Dickie Beau in The Sandman (2022)" ;
+    schema:height "2700"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5004033/mediaviewer/rm2317737473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjgwZmM0ZTMtOTczMy00N2ZhLWI2YjktODIzNjViYzk4MWU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Keira Knightley and Dickie Beau in Colette (2018)" ;
+    schema:height "536"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5004033/mediaviewer/rm453068032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA0Njg0Mzk3MTVeQTJeQWpwZ15BbWU4MDc2MzUzMDYz._V1_.jpg> ;
+    schema:caption "Keira Knightley and Dickie Beau in Colette (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

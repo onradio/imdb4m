@@ -1,0 +1,88 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1090043/> a schema:Person ;
+    schema:name "Mishal Husain" ;
+    schema:url <https://www.imdb.com/name/nm1090043/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Mishal Husain. Actress: Children of Men. Mishal Husain was born in England to Pakistani parents in 1973, and grew up in the Middle East and the U.K. Her interest in journalism was piqued in 1991 while interning at a local English-language Pakistani daily, where she quickly rose to the level of reporter, covering stories in such countries as Pakistan, Russia, Uzbekistan and Georgia. Fluent in Russian, she also taught English..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "England, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7493974/>,    # Bodyguard
+                       <https://www.imdb.com/title/tt2463518/>,    # The Hapless Love Life of Jesus Grey
+                       <https://www.imdb.com/title/tt1202522/>,    # Flugten
+                       <https://www.imdb.com/title/tt0206634/> . # Children of Men
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bodyguard (2018)
+<https://www.imdb.com/title/tt7493974/> a schema:Movie ;
+    schema:name "Bodyguard" ;
+    schema:url <https://www.imdb.com/title/tt7493974/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1090043/> ;
+        schema:characterName "Mishal Husain"
+    ] .
+
+# The Hapless Love Life of Jesus Grey (2013)
+<https://www.imdb.com/title/tt2463518/> a schema:Movie ;
+    schema:name "The Hapless Love Life of Jesus Grey" ;
+    schema:url <https://www.imdb.com/title/tt2463518/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1090043/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# Flugten (2009)
+<https://www.imdb.com/title/tt1202522/> a schema:Movie ;
+    schema:name "Flugten" ;
+    schema:url <https://www.imdb.com/title/tt1202522/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1090043/> ;
+        schema:characterName "BBC Journalist"
+    ] .
+
+# Children of Men (2006)
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1090043/> ;
+        schema:characterName "Newsreader"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

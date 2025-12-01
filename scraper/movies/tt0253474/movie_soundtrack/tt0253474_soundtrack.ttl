@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0253474/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Nocturne in C# Minor, Posthumous" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nocturne in C# Minor, Posthumous" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Grande Polonaise Brillante, Op. 22 - Allegro Molto" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Grande Polonaise Brillante, Op. 22 - Allegro Molto" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ballad No. 1 in G Minor, Op. 23" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ballad No. 1 in G Minor, Op. 23" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Sonata No. 14 in C sharp minor, Op. 27 No. 2 'Moonlight" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Sonata No. 14 in C sharp minor, Op. 27 No. 2 'Moonlight" ;
+            schema:author <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Suite No. 1 BWV 1007 for Solo Cello" ;
+        schema:byArtist <https://www.imdb.com/name/nm3720490/> ; # Jerzy Wolochowicz
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Suite No. 1 BWV 1007 for Solo Cello" ;
+            schema:author <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tantz, Tantz Yidelekh" ;
+        schema:byArtist <https://www.imdb.com/name/nm3720607/> ; # The Burning Bush
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Umowilem sie z nia na dziewiata" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Umowilem sie z nia na dziewiata" ;
+            schema:composer <https://www.imdb.com/name/nm0890205/> ; # Henry Vars
+            schema:lyricist <https://www.imdb.com/name/nm0772136/> # Emanuel Schlechter
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Marsz Strzelcow" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Marsz Strzelcow" ;
+            schema:composer <https://www.imdb.com/name/nm2687119/> ; # Wladyslaw Ludwik Anczyc
+            schema:lyricist <https://www.imdb.com/name/nm2687119/>, # Wladyslaw Ludwik Anczyc
+                        <https://www.imdb.com/name/nm1638890/> # Michael Kunze
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Polish National Anthem" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0772136/> a schema:Person ;
+    schema:name "Emanuel Schlechter" .
+<https://www.imdb.com/name/nm0890205/> a schema:Person ;
+    schema:name "Henry Vars" .
+<https://www.imdb.com/name/nm1638890/> a schema:Person ;
+    schema:name "Michael Kunze" .
+<https://www.imdb.com/name/nm2687119/> a schema:Person ;
+    schema:name "Wladyslaw Ludwik Anczyc" .
+<https://www.imdb.com/name/nm3720490/> a schema:Person ;
+    schema:name "Jerzy Wolochowicz" .
+<https://www.imdb.com/name/nm3720607/> a schema:Person ;
+    schema:name "The Burning Bush" .
+# ==============================================================================

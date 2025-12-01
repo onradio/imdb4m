@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0387765/> a schema:Person ;
+    schema:name "Drew Hocevar" ;
+    schema:url <https://www.imdb.com/name/nm0387765/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Drew Hocevar. Actor: A Christmas Story. Drew Hocevar is known for A Christmas Story (1983), Clarkworld (2009) and Timeless Traditions: The Impact of the Greatest Christmas Movie of All Time (2024)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0085334/> ;    # A Christmas Story
+
+
+    schema:video <https://www.imdb.com/video/vi2486829593/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Christmas Story (1983)
+<https://www.imdb.com/title/tt0085334/> a schema:Movie ;
+    schema:name "A Christmas Story" ;
+    schema:url <https://www.imdb.com/title/tt0085334/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0387765/> ;
+        schema:characterName "Male Elf"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2486829593/> a schema:VideoObject ;
+        schema:name "ClarkWORLD" ;
+        schema:description "Story of a Storyteller, Bob Clark, the director of \"A Christmas Story\". Clip title: Bob at the center of \"A Christmas Story\"" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2486829593/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTc2NTEyNzcxMF5BMl5BanBnXkFtZTcwMjg4NDY3Mg@@._V1_.jpg" ;
+        schema:duration "PT1M40S"^^xsd:duration ;
+        schema:uploadDate "2009-08-09T09:53:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

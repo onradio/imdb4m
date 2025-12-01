@@ -1,0 +1,135 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0468820/> a schema:Person ;
+    schema:name "Mark Kozelek" ;
+    schema:url <https://www.imdb.com/name/nm0468820/> ;
+    schema:birthDate "1967-01-24"^^xsd:date ;
+    schema:jobTitle "Actor", "Composer", "Director" ;
+    schema:description "Mark Kozelek. Actor: Almost Famous. Common As Light And Love Are Red Valleys of Blood is the new release by Mark Kozelek's Sun Kil Moon. Released February 24, 2017 on Caldo Verde Records/Rough Trade, the double album was recorded in 2016 with drummer Steve Shelley. Sun Kil Moon will support the album this year with tours in Australia, New Zealand, Europe and The USA.\n\nOn May 27, 2016, Mark Kozelek Sings..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Massillon, Ohio, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3312830/>,    # Youth
+                       <https://www.imdb.com/title/tt0338427/>,    # Shopgirl
+                       <https://www.imdb.com/title/tt0259711/>,    # Vanilla Sky
+                       <https://www.imdb.com/title/tt0181875/> ; # Almost Famous
+
+
+    schema:video <https://www.imdb.com/video/vi1798419225/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0468820/mediaviewer/rm1470373888/>,
+                 <https://www.imdb.com/name/nm0468820/mediaviewer/rm182139904/>,
+                 <https://www.imdb.com/name/nm0468820/mediaviewer/rm591763712/>,
+                 <https://www.imdb.com/name/nm0468820/mediaviewer/rm105224448/>,
+                 <https://www.imdb.com/name/nm0468820/mediaviewer/rm71670016/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Youth (2015)
+<https://www.imdb.com/title/tt3312830/> a schema:Movie ;
+    schema:name "Youth" ;
+    schema:url <https://www.imdb.com/title/tt3312830/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468820/> ;
+        schema:characterName "Mark Kozelek"
+    ] .
+
+# Shopgirl (2005)
+<https://www.imdb.com/title/tt0338427/> a schema:Movie ;
+    schema:name "Shopgirl" ;
+    schema:url <https://www.imdb.com/title/tt0338427/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468820/> ;
+        schema:characterName "Luther"
+    ] .
+
+# Vanilla Sky (2001)
+<https://www.imdb.com/title/tt0259711/> a schema:Movie ;
+    schema:name "Vanilla Sky" ;
+    schema:url <https://www.imdb.com/title/tt0259711/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468820/> ;
+        schema:characterName "Dude, Fix Your Face Guy"
+    ] .
+
+# Almost Famous (2000)
+<https://www.imdb.com/title/tt0181875/> a schema:Movie ;
+    schema:name "Almost Famous" ;
+    schema:url <https://www.imdb.com/title/tt0181875/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0468820/> ;
+        schema:characterName "Larry Fellows"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1798419225/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Official trailer for \"Youth\" starring Michael Caine, Harvey Keitel, and Rachel Weisz." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1798419225/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ1Mjk2NDQ4Ml5BMl5BanBnXkFtZTgwMjIwNzU2NjE@._V1_.jpg" ;
+        schema:duration "PT2M33S"^^xsd:duration ;
+        schema:uploadDate "2015-08-27T05:37:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0468820/mediaviewer/rm1470373888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTY4MzljNGItYjE5YS00MTIwLThmYWYtMDMyZDIzMTFmODc3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Crudup, Jason Lee, and Mark Kozelek in Almost Famous (2000)" ;
+    schema:height "1141"^^xsd:integer ;
+    schema:width "2034"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468820/mediaviewer/rm182139904/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzc0Y2FiYTYtZTRkMC00Njc4LTkzNTktYjA2MjI3ZjcyNTJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Billy Crudup, Jason Lee, and Mark Kozelek in Almost Famous (2000)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468820/mediaviewer/rm591763712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTczOTA3MjE5OV5BMl5BanBnXkFtZTYwODQ5Njc3._V1_.jpg> ;
+    schema:caption "L to R - Jason Lee, John Fedevich, Noah Taylor, Billy Crudup and Mark Kozelek" ;
+    schema:height "431"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468820/mediaviewer/rm105224448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDUxNjg4NzYxM15BMl5BanBnXkFtZTYwMTg5Njc3._V1_.jpg> ;
+    schema:caption "The members of the Stillwater tour" ;
+    schema:height "805"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0468820/mediaviewer/rm71670016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwOTQwNjE4OF5BMl5BanBnXkFtZTYwMzg5Njc3._V1_.jpg> ;
+    schema:caption "The members of Stillwater" ;
+    schema:height "883"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,176 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8066738/> a schema:Person ;
+    schema:name "Abhishek Bharate" ;
+    schema:url <https://www.imdb.com/name/nm8066738/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Abhishek Bharate. Actor: Lion. Abhishek Bharate is known for Lion (2016), Firkee (2018) and Love Sonia (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDc1ZGE1MjYtN2FkYy00OWY5LTk1NjktMDFlM2RkMzc3NTlmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3823392/>,    # Love Sonia
+                       <https://www.imdb.com/title/tt6441720/>,    # The Good Karma Hospital
+                       <https://www.imdb.com/title/tt7678460/>,    # Firkee
+                       <https://www.imdb.com/title/tt3741834/>,    # Lion
+                       <https://www.imdb.com/title/tt33052074/> ; # Salaam
+
+
+    schema:video <https://www.imdb.com/video/vi917096217/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm8066738/mediaviewer/rm3254592512/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm4244448256/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm4043121664/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm4076676096/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm2914071040/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm2729521664/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm3545238528/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm4164644608/>,
+                 <https://www.imdb.com/name/nm8066738/mediaviewer/rm2281993472/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Love Sonia (2018)
+<https://www.imdb.com/title/tt3823392/> a schema:Movie ;
+    schema:name "Love Sonia" ;
+    schema:url <https://www.imdb.com/title/tt3823392/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8066738/> ;
+        schema:characterName "Amar Kumar"
+    ] .
+
+# The Good Karma Hospital (2018)
+<https://www.imdb.com/title/tt6441720/> a schema:Movie ;
+    schema:name "The Good Karma Hospital" ;
+    schema:url <https://www.imdb.com/title/tt6441720/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8066738/> ;
+        schema:characterName "Hari Chari"
+    ] .
+
+# Firkee (2018)
+<https://www.imdb.com/title/tt7678460/> a schema:Movie ;
+    schema:name "Firkee" ;
+    schema:url <https://www.imdb.com/title/tt7678460/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8066738/> ;
+        schema:characterName "Raghav"
+    ] .
+
+# Lion (2016)
+<https://www.imdb.com/title/tt3741834/> a schema:Movie ;
+    schema:name "Lion" ;
+    schema:url <https://www.imdb.com/title/tt3741834/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8066738/> ;
+        schema:characterName "Guddu"
+    ] .
+
+# Salaam (2014)
+<https://www.imdb.com/title/tt33052074/> a schema:Movie ;
+    schema:name "Salaam" ;
+    schema:url <https://www.imdb.com/title/tt33052074/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8066738/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi917096217/> a schema:VideoObject ;
+        schema:name "Official trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi917096217/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGNlNjc1Y2ItYWI2ZS00NWRmLTkyNjgtNjUyMmIwZjFmOWIzXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M18S"^^xsd:duration ;
+        schema:uploadDate "2023-07-07T09:36:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDc1ZGE1MjYtN2FkYy00OWY5LTk1NjktMDFlM2RkMzc3NTlmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDc1ZGE1MjYtN2FkYy00OWY5LTk1NjktMDFlM2RkMzc3NTlmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abhishek Bharate in Lion (2016)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm3254592512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmE1ZGRjMTUtZmJlYS00NzljLWI4ODItMjdlMWYzYTY5NGYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar and Abhishek Bharate in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm4244448256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOThjNTI5ZDItMzMyNy00ZDY4LTkxYjEtNjFhOGE2N2I0M2E3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar and Abhishek Bharate in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm4043121664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjYzOTU1YzEtYWFhYS00NTA2LThhM2YtMGQ2NzI1ZmE2ZDlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abhishek Bharate in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm4076676096/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2I0MjJhYzAtYjJmNi00ZGQyLWIwZTUtNjIxODRhNjBmYjE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abhishek Bharate in Lion (2016)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm2914071040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzg1ZWEwODQtMjk4ZS00YzcyLTkxNzItYjcwMGI4NGVkZDRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Abhishek Bharate in Love Sonia (2018)" ;
+    schema:height "1061"^^xsd:integer ;
+    schema:width "1464"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm2729521664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjE4MGU5ZmQtOWZhMy00ODc2LWIyZTMtNTRjYTI2NGFmYzQzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mrunal Thakur, Riya Sisodia, and Abhishek Bharate in Love Sonia (2018)" ;
+    schema:height "1445"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm3545238528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzA2Mjg1MmQtNzZkMy00MDc3LWE4ODEtYmMyYTkxYjcwODRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sunny Pawar and Abhishek Bharate in Lion (2016)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm4164644608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTlhMWE2ZGEtYzk4OS00NWQyLWE1MjUtZGQxZGExMWVmMjJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rooney Mara, Dev Patel, Sunny Pawar, and Abhishek Bharate in Lion (2016)" ;
+    schema:height "2835"^^xsd:integer ;
+    schema:width "1984"^^xsd:integer .
+
+<https://www.imdb.com/name/nm8066738/mediaviewer/rm2281993472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2MyYWE4NDQtZTUyYS00NWZlLTk2NzAtNTBjMjg2MGUyZjgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rooney Mara, Dev Patel, Sunny Pawar, and Abhishek Bharate in Lion (2016)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

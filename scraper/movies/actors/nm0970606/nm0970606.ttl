@@ -1,0 +1,430 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0970606/> a schema:Person ;
+    schema:name "Cody Cameron" ;
+    schema:url <https://www.imdb.com/name/nm0970606/> ;
+    schema:birthDate "1970-10-12"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Director" ;
+    schema:description "Cody Cameron. Actor: Shrek. Cody Cameron is an American voice actor, animator and storyboard artist from California who is known for his work at DreamWorks Animation and Sony Pictures Animation. He voiced Pinocchio and the Three Little Pigs in the Shrek franchise and Mr. Weenie in the Open Season franchise. He voiced Pinocchio in various Shrek video games." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYWY3YmE0OGMtNDdiOS00YzNlLWJhNDQtODY0YjA3ZWZmMzViXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0126029/>,    # Shrek
+                       <https://www.imdb.com/title/tt0298148/>,    # Shrek 2
+                       <https://www.imdb.com/title/tt0413267/>,    # Shrek the Third
+                       <https://www.imdb.com/title/tt1985966/>,    # Cloudy with a Chance of Meatballs 2
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3280840/>,    # Earl Scouts
+                       <https://www.imdb.com/title/tt3608838/>,    # Dreamworks Spooky Stories
+                       <https://www.imdb.com/title/tt2486724/>,    # Shrek's Thrilling Tales
+                       <https://www.imdb.com/title/tt1430607/>,    # Arthur Christmas
+                       <https://www.imdb.com/title/tt2087984/>,    # The Pig Who Cried Werewolf
+                       <https://www.imdb.com/title/tt2051999/>,    # Shrek: Thriller Night
+                       <https://www.imdb.com/title/tt1830577/>,    # Donkey's Caroling Christmas-tacular
+                       <https://www.imdb.com/title/tt1725156/>,    # Scared Shrekless
+                       <https://www.imdb.com/title/tt1646926/>,    # Open Season 3
+                       <https://www.imdb.com/title/tt1640561/>,    # Shrek Forever After: The Game
+                       <https://www.imdb.com/title/tt0892791/>,    # Shrek Forever After
+                       <https://www.imdb.com/title/tt0844471/>,    # Cloudy with a Chance of Meatballs
+                       <https://www.imdb.com/title/tt1473417/>,    # Shrek's Carnival Craze
+                       <https://www.imdb.com/title/tt1982806/>,    # Open Season 2
+                       <https://www.imdb.com/title/tt1107365/>,    # Open Season 2
+                       <https://www.imdb.com/title/tt1024946/>,    # Shrek the Third
+                       <https://www.imdb.com/title/tt0897387/>,    # Shrek the Halls
+                       <https://www.imdb.com/title/tt19814024/>,    # Shrek: Ogres & Dronkeys
+                       <https://www.imdb.com/title/tt1103971/>,    # The Chubbchubbs Save Xmas
+                       <https://www.imdb.com/title/tt0937390/>,    # Boog & Elliot's Midnight Bun Run
+                       <https://www.imdb.com/title/tt0928070/>,    # Shrek: Smash n' Crash Racing
+                       <https://www.imdb.com/title/tt0400717/>,    # Open Season
+                       <https://www.imdb.com/title/tt7550132/>,    # Shrek SuperSlam
+                       <https://www.imdb.com/title/tt0351283/>,    # Madagascar
+                       <https://www.imdb.com/title/tt0438844/>,    # Far Far Away Idol
+                       <https://www.imdb.com/title/tt0410595/>,    # Shrek 2: The Video Game
+                       <https://www.imdb.com/title/tt0360985/>,    # Shrek: The Ghost of Lord Farquaad
+                       <https://www.imdb.com/title/tt0307461/> ; # Shrek in the Swamp Karaoke Dance Party
+
+
+    schema:video <https://www.imdb.com/video/vi1583652377/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0970606/mediaviewer/rm152493568/>,
+                 <https://www.imdb.com/name/nm0970606/mediaviewer/rm3749907713/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0126029/> a schema:Movie ;
+    schema:name "Shrek" ;
+    schema:url <https://www.imdb.com/title/tt0126029/> .
+
+<https://www.imdb.com/title/tt0298148/> a schema:Movie ;
+    schema:name "Shrek 2" ;
+    schema:url <https://www.imdb.com/title/tt0298148/> .
+
+<https://www.imdb.com/title/tt0413267/> a schema:Movie ;
+    schema:name "Shrek the Third" ;
+    schema:url <https://www.imdb.com/title/tt0413267/> .
+
+<https://www.imdb.com/title/tt1985966/> a schema:Movie ;
+    schema:name "Cloudy with a Chance of Meatballs 2" ;
+    schema:url <https://www.imdb.com/title/tt1985966/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Earl Scouts (2013)
+<https://www.imdb.com/title/tt3280840/> a schema:Movie ;
+    schema:name "Earl Scouts" ;
+    schema:url <https://www.imdb.com/title/tt3280840/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Barry and Pickle"
+    ] .
+
+# Dreamworks Spooky Stories (2012)
+<https://www.imdb.com/title/tt3608838/> a schema:Movie ;
+    schema:name "Dreamworks Spooky Stories" ;
+    schema:url <https://www.imdb.com/title/tt3608838/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "(voice: English version)"
+    ] .
+
+# Shrek's Thrilling Tales (2012)
+<https://www.imdb.com/title/tt2486724/> a schema:Movie ;
+    schema:name "Shrek's Thrilling Tales" ;
+    schema:url <https://www.imdb.com/title/tt2486724/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Pigs"
+    ] .
+
+# Arthur Christmas (2011)
+<https://www.imdb.com/title/tt1430607/> a schema:Movie ;
+    schema:name "Arthur Christmas" ;
+    schema:url <https://www.imdb.com/title/tt1430607/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Elf"
+    ] .
+
+# The Pig Who Cried Werewolf (2011)
+<https://www.imdb.com/title/tt2087984/> a schema:Movie ;
+    schema:name "The Pig Who Cried Werewolf" ;
+    schema:url <https://www.imdb.com/title/tt2087984/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Horst"
+    ] .
+
+# Shrek: Thriller Night (2011)
+<https://www.imdb.com/title/tt2051999/> a schema:Movie ;
+    schema:name "Shrek: Thriller Night" ;
+    schema:url <https://www.imdb.com/title/tt2051999/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Donkey's Caroling Christmas-tacular (2010)
+<https://www.imdb.com/title/tt1830577/> a schema:Movie ;
+    schema:name "Donkey's Caroling Christmas-tacular" ;
+    schema:url <https://www.imdb.com/title/tt1830577/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Little Pigs"
+    ] .
+
+# Scared Shrekless (2010)
+<https://www.imdb.com/title/tt1725156/> a schema:Movie ;
+    schema:name "Scared Shrekless" ;
+    schema:url <https://www.imdb.com/title/tt1725156/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Open Season 3 (2010)
+<https://www.imdb.com/title/tt1646926/> a schema:Movie ;
+    schema:name "Open Season 3" ;
+    schema:url <https://www.imdb.com/title/tt1646926/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Mr. Weenie"
+    ] .
+
+# Shrek Forever After: The Game (2010)
+<https://www.imdb.com/title/tt1640561/> a schema:Movie ;
+    schema:name "Shrek Forever After: The Game" ;
+    schema:url <https://www.imdb.com/title/tt1640561/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Little Pigs"
+    ] .
+
+# Shrek Forever After (2010)
+<https://www.imdb.com/title/tt0892791/> a schema:Movie ;
+    schema:name "Shrek Forever After" ;
+    schema:url <https://www.imdb.com/title/tt0892791/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Cloudy with a Chance of Meatballs (2009)
+<https://www.imdb.com/title/tt0844471/> a schema:Movie ;
+    schema:name "Cloudy with a Chance of Meatballs" ;
+    schema:url <https://www.imdb.com/title/tt0844471/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Shrek's Carnival Craze (2008)
+<https://www.imdb.com/title/tt1473417/> a schema:Movie ;
+    schema:name "Shrek's Carnival Craze" ;
+    schema:url <https://www.imdb.com/title/tt1473417/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Open Season 2 (2008)
+<https://www.imdb.com/title/tt1982806/> a schema:Movie ;
+    schema:name "Open Season 2" ;
+    schema:url <https://www.imdb.com/title/tt1982806/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Mr. Weenie"
+    ] .
+
+# Open Season 2 (2008)
+<https://www.imdb.com/title/tt1107365/> a schema:Movie ;
+    schema:name "Open Season 2" ;
+    schema:url <https://www.imdb.com/title/tt1107365/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Mr. Weenie"
+    ] .
+
+# Shrek the Third (2007)
+<https://www.imdb.com/title/tt1024946/> a schema:Movie ;
+    schema:name "Shrek the Third" ;
+    schema:url <https://www.imdb.com/title/tt1024946/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Shrek the Halls (2007)
+<https://www.imdb.com/title/tt0897387/> a schema:Movie ;
+    schema:name "Shrek the Halls" ;
+    schema:url <https://www.imdb.com/title/tt0897387/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Shrek: Ogres & Dronkeys (2007)
+<https://www.imdb.com/title/tt19814024/> a schema:Movie ;
+    schema:name "Shrek: Ogres & Dronkeys" ;
+    schema:url <https://www.imdb.com/title/tt19814024/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# The Chubbchubbs Save Xmas (2007)
+<https://www.imdb.com/title/tt1103971/> a schema:Movie ;
+    schema:name "The Chubbchubbs Save Xmas" ;
+    schema:url <https://www.imdb.com/title/tt1103971/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Elf"
+    ] .
+
+# Boog & Elliot's Midnight Bun Run (2006)
+<https://www.imdb.com/title/tt0937390/> a schema:Movie ;
+    schema:name "Boog & Elliot's Midnight Bun Run" ;
+    schema:url <https://www.imdb.com/title/tt0937390/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Mr. Weenie"
+    ] .
+
+# Shrek: Smash n' Crash Racing (2006)
+<https://www.imdb.com/title/tt0928070/> a schema:Movie ;
+    schema:name "Shrek: Smash n' Crash Racing" ;
+    schema:url <https://www.imdb.com/title/tt0928070/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Little Pigs"
+    ] .
+
+# Open Season (2006)
+<https://www.imdb.com/title/tt0400717/> a schema:Movie ;
+    schema:name "Open Season" ;
+    schema:url <https://www.imdb.com/title/tt0400717/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Mr. Weenie"
+    ] .
+
+# Shrek SuperSlam (2005)
+<https://www.imdb.com/title/tt7550132/> a schema:Movie ;
+    schema:name "Shrek SuperSlam" ;
+    schema:url <https://www.imdb.com/title/tt7550132/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Madagascar (2005)
+<https://www.imdb.com/title/tt0351283/> a schema:Movie ;
+    schema:name "Madagascar" ;
+    schema:url <https://www.imdb.com/title/tt0351283/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Willie"
+    ] .
+
+# Far Far Away Idol (2004)
+<https://www.imdb.com/title/tt0438844/> a schema:Movie ;
+    schema:name "Far Far Away Idol" ;
+    schema:url <https://www.imdb.com/title/tt0438844/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Shrek 2: The Video Game (2004)
+<https://www.imdb.com/title/tt0410595/> a schema:Movie ;
+    schema:name "Shrek 2: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0410595/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Little Pigs"
+    ] .
+
+# Shrek: The Ghost of Lord Farquaad (2003)
+<https://www.imdb.com/title/tt0360985/> a schema:Movie ;
+    schema:name "Shrek: The Ghost of Lord Farquaad" ;
+    schema:url <https://www.imdb.com/title/tt0360985/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Pinocchio"
+    ] .
+
+# Shrek in the Swamp Karaoke Dance Party (2001)
+<https://www.imdb.com/title/tt0307461/> a schema:Movie ;
+    schema:name "Shrek in the Swamp Karaoke Dance Party" ;
+    schema:url <https://www.imdb.com/title/tt0307461/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0970606/> ;
+        schema:characterName "Three Pigs"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1583652377/> a schema:VideoObject ;
+        schema:name "Open Season 2" ;
+        schema:description "Trailer for Open Season 2" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1583652377/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDAxOGVkZDYtZGI1ZS00MWY2LWIwOTctOGI4Yzg4MTk3ODdlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M51S"^^xsd:duration ;
+        schema:uploadDate "2011-12-07T06:25:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYWY3YmE0OGMtNDdiOS00YzNlLWJhNDQtODY0YjA3ZWZmMzViXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWY3YmE0OGMtNDdiOS00YzNlLWJhNDQtODY0YjA3ZWZmMzViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cody Cameron" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "396"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0970606/mediaviewer/rm152493568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMwOTYwNzA2OF5BMl5BanBnXkFtZTgwNTI1NDYyMDE@._V1_.jpg> ;
+    schema:caption "Cody Cameron and Kris Pearn in Cloudy with a Chance of Meatballs 2 (2013)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0970606/mediaviewer/rm3749907713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWY3YmE0OGMtNDdiOS00YzNlLWJhNDQtODY0YjA3ZWZmMzViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cody Cameron" ;
+    schema:height "594"^^xsd:integer ;
+    schema:width "396"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0892736/> a schema:Person ;
+    schema:name "G. Velts" ;
+    schema:url <https://www.imdb.com/name/nm0892736/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "G. Velts. Actor: Come and See. G. Velts is known for Come and See (1985), Gosudarstvennaya granitsa (1980) and Ill Omen (1987)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0096937/>,    # Blagorodnyy razboynik Vladimir Dubrovskiy
+                       <https://www.imdb.com/title/tt0092293/>,    # Ill Omen
+                       <https://www.imdb.com/title/tt0091251/>,    # Come and See
+                       <https://www.imdb.com/title/tt5237710/>,    # Den vozvrashcheniya
+                       <https://www.imdb.com/title/tt9600900/>,    # Gosudarstvennaya granitsa
+                       <https://www.imdb.com/title/tt4845050/> . # Nadyozhnyy chelovek
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blagorodnyy razboynik Vladimir Dubrovskiy (1990)
+<https://www.imdb.com/title/tt0096937/> a schema:Movie ;
+    schema:name "Blagorodnyy razboynik Vladimir Dubrovskiy" ;
+    schema:url <https://www.imdb.com/title/tt0096937/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName "The Judge"
+    ] .
+
+# Ill Omen (1987)
+<https://www.imdb.com/title/tt0092293/> a schema:Movie ;
+    schema:name "Ill Omen" ;
+    schema:url <https://www.imdb.com/title/tt0092293/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName ""
+    ] .
+
+# Come and See (1985)
+<https://www.imdb.com/title/tt0091251/> a schema:Movie ;
+    schema:name "Come and See" ;
+    schema:url <https://www.imdb.com/title/tt0091251/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName "Medical NCO"
+    ] .
+
+# Den vozvrashcheniya (1980)
+<https://www.imdb.com/title/tt5237710/> a schema:Movie ;
+    schema:name "Den vozvrashcheniya" ;
+    schema:url <https://www.imdb.com/title/tt5237710/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName ""
+    ] .
+
+# Gosudarstvennaya granitsa (1980)
+<https://www.imdb.com/title/tt9600900/> a schema:Movie ;
+    schema:name "Gosudarstvennaya granitsa" ;
+    schema:url <https://www.imdb.com/title/tt9600900/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName "Germanskiy ofitser"
+    ] .
+
+# Nadyozhnyy chelovek (1975)
+<https://www.imdb.com/title/tt4845050/> a schema:Movie ;
+    schema:name "Nadyozhnyy chelovek" ;
+    schema:url <https://www.imdb.com/title/tt4845050/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0892736/> ;
+        schema:characterName "Guest"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

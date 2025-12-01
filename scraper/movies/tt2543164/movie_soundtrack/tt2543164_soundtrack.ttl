@@ -1,0 +1,37 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2543164/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "On the Nature of Daylight" ;
+        schema:byArtist <https://www.imdb.com/name/nm2068037/> ; # Max Richter
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "On the Nature of Daylight" ;
+            schema:author <https://www.imdb.com/name/nm2068037/> # Max Richter
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Serenade in E Major, Op. 22, B. 52: IV Larghetto" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Serenade in E Major, Op. 22, B. 52: IV Larghetto" ;
+            schema:author <https://www.imdb.com/name/nm0006053/> # Antonín Dvorák
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006053/> a schema:Person ;
+    schema:name "Antonín Dvorák" .
+<https://www.imdb.com/name/nm2068037/> a schema:Person ;
+    schema:name "Max Richter" .
+# ==============================================================================

@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0925369/> a schema:Person ;
+    schema:name "Richard White" ;
+    schema:url <https://www.imdb.com/name/nm0925369/> ;
+    schema:birthDate "1953-08-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:alternateName "Dickie" ;
+    schema:description "Richard White. Actor: Beauty and the Beast. Richard White was born on 4 August 1953 in Oak Ridge, Tennessee, USA. He is an actor, known for Beauty and the Beast (1991), House of Mouse (2001) and Great Performances (1971). He was previously married to Sharon Halley." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmMyOGM2ZGItMjg0Mi00Mjc3LWIwZTAtYTlhODA5MTk1ZjgyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Oak Ridge, Tennessee, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0101414/>,    # Beauty and the Beast
+                       <https://www.imdb.com/title/tt0159876/>,    # Great Performances
+                       <https://www.imdb.com/title/tt0272388/>,    # House of Mouse
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4375664/>,    # King's Quest
+                       <https://www.imdb.com/title/tt13283686/> ; # Beauty and the Beast DVD Read-Along
+
+
+    schema:video <https://www.imdb.com/video/vi3404641817/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0925369/mediaviewer/rm2742112768/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0101414/> a schema:Movie ;
+    schema:name "Beauty and the Beast" ;
+    schema:url <https://www.imdb.com/title/tt0101414/> .
+
+<https://www.imdb.com/title/tt0159876/> a schema:Movie ;
+    schema:name "Great Performances" ;
+    schema:url <https://www.imdb.com/title/tt0159876/> .
+
+<https://www.imdb.com/title/tt0272388/> a schema:Movie ;
+    schema:name "House of Mouse" ;
+    schema:url <https://www.imdb.com/title/tt0272388/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# King's Quest (2015)
+<https://www.imdb.com/title/tt4375664/> a schema:Movie ;
+    schema:name "King's Quest" ;
+    schema:url <https://www.imdb.com/title/tt4375664/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925369/> ;
+        schema:characterName "Whisper"
+    ] .
+
+# Beauty and the Beast DVD Read-Along (2002)
+<https://www.imdb.com/title/tt13283686/> a schema:Movie ;
+    schema:name "Beauty and the Beast DVD Read-Along" ;
+    schema:url <https://www.imdb.com/title/tt13283686/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0925369/> ;
+        schema:characterName "Gaston"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3404641817/> a schema:VideoObject ;
+        schema:name "King&apos;s Quest (VG)" ;
+        schema:description "Lifetime Of Adventure trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3404641817/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTkxNjdlNjgtZjRiZi00YjVhLWJjMDktOTU2Y2E4Y2Y2YjM5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M17S"^^xsd:duration ;
+        schema:uploadDate "2016-11-15T09:17:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmMyOGM2ZGItMjg0Mi00Mjc3LWIwZTAtYTlhODA5MTk1ZjgyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmMyOGM2ZGItMjg0Mi00Mjc3LWIwZTAtYTlhODA5MTk1ZjgyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard White" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1067"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0925369/mediaviewer/rm2742112768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmMyOGM2ZGItMjg0Mi00Mjc3LWIwZTAtYTlhODA5MTk1ZjgyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard White" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1067"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

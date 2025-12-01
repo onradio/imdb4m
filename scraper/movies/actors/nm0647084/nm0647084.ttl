@@ -1,0 +1,247 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0647084/> a schema:Person ;
+    schema:name "Robert Oliveri" ;
+    schema:url <https://www.imdb.com/name/nm0647084/> ;
+    schema:birthDate "1978-04-28"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Robert Dane Oliveri" ;
+    schema:description "Robert Oliveri. Actor: Honey, I Shrunk the Kids. Robert Oliveri was born on 28 April 1978 in Los Angeles, California, USA. He is an actor, known for Honey, I Shrunk the Kids (1989), Honey, I Blew Up the Kid (1992) and Edward Scissorhands (1990)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTk5MDUzNDA4Nl5BMl5BanBnXkFtZTcwNTk1MDkwMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11½″ (1.82 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0097523/>,    # Honey, I Shrunk the Kids
+                       <https://www.imdb.com/title/tt0094512/>,    # Monsters
+                       <https://www.imdb.com/title/tt0099487/>,    # Edward Scissorhands
+                       <https://www.imdb.com/title/tt0104437/>,    # Honey, I Blew Up the Kid
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0113325/>,    # Honey, I Shrunk the Audience
+                       <https://www.imdb.com/title/tt0075471/>,    # ABC Weekend Specials
+                       <https://www.imdb.com/title/tt0756647/>,    # The Flockens
+                       <https://www.imdb.com/title/tt6022394/>,    # Let's Get Mom
+                       <https://www.imdb.com/title/tt0176357/>,    # American Playhouse
+                       <https://www.imdb.com/title/tt0092357/>,    # Friday the 13th: The Series
+                       <https://www.imdb.com/title/tt0202179/>,    # ABC Afterschool Specials
+                       <https://www.imdb.com/title/tt0191731/> ; # Square One TV
+
+
+    schema:video <https://www.imdb.com/video/vi2519974169/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0647084/mediaviewer/rm3400280833/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm3629339392/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm861098752/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm3775499776/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm4010380800/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm3825831424/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm3859385856/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm2979702017/>,
+                 <https://www.imdb.com/name/nm0647084/mediaviewer/rm2014837248/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097523/> a schema:Movie ;
+    schema:name "Honey, I Shrunk the Kids" ;
+    schema:url <https://www.imdb.com/title/tt0097523/> .
+
+<https://www.imdb.com/title/tt0094512/> a schema:Movie ;
+    schema:name "Monsters" ;
+    schema:url <https://www.imdb.com/title/tt0094512/> .
+
+<https://www.imdb.com/title/tt0099487/> a schema:Movie ;
+    schema:name "Edward Scissorhands" ;
+    schema:url <https://www.imdb.com/title/tt0099487/> .
+
+<https://www.imdb.com/title/tt0104437/> a schema:Movie ;
+    schema:name "Honey, I Blew Up the Kid" ;
+    schema:url <https://www.imdb.com/title/tt0104437/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Honey, I Shrunk the Audience (1994)
+<https://www.imdb.com/title/tt0113325/> a schema:Movie ;
+    schema:name "Honey, I Shrunk the Audience" ;
+    schema:url <https://www.imdb.com/title/tt0113325/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Nick Szalinski"
+    ] .
+
+# ABC Weekend Specials (1990)
+<https://www.imdb.com/title/tt0075471/> a schema:Movie ;
+    schema:name "ABC Weekend Specials" ;
+    schema:url <https://www.imdb.com/title/tt0075471/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Ryan"
+    ] .
+
+# The Flockens (1990)
+<https://www.imdb.com/title/tt0756647/> a schema:Movie ;
+    schema:name "The Flockens" ;
+    schema:url <https://www.imdb.com/title/tt0756647/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Danny Flocken"
+    ] .
+
+# Let's Get Mom (1989)
+<https://www.imdb.com/title/tt6022394/> a schema:Movie ;
+    schema:name "Let's Get Mom" ;
+    schema:url <https://www.imdb.com/title/tt6022394/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Danny"
+    ] .
+
+# American Playhouse (1984)
+<https://www.imdb.com/title/tt0176357/> a schema:Movie ;
+    schema:name "American Playhouse" ;
+    schema:url <https://www.imdb.com/title/tt0176357/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Young Nelson"
+    ] .
+
+# Friday the 13th: The Series (1989)
+<https://www.imdb.com/title/tt0092357/> a schema:Movie ;
+    schema:name "Friday the 13th: The Series" ;
+    schema:url <https://www.imdb.com/title/tt0092357/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Mike Carlson"
+    ] .
+
+# ABC Afterschool Specials (1987)
+<https://www.imdb.com/title/tt0202179/> a schema:Movie ;
+    schema:name "ABC Afterschool Specials" ;
+    schema:url <https://www.imdb.com/title/tt0202179/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Paul Bard"
+    ] .
+
+# Square One TV (1987)
+<https://www.imdb.com/title/tt0191731/> a schema:Movie ;
+    schema:name "Square One TV" ;
+    schema:url <https://www.imdb.com/title/tt0191731/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0647084/> ;
+        schema:characterName "Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2519974169/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "The Szalinski family is back, this time hilarious disaster strikes when an experiment causes their new toddler son to grow many stories tall." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2519974169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODIwYjJhY2UtZTE1ZC00ZThkLTg2OWYtMDBkZTAzZmU5YTNkXkEyXkFqcGdeQXN3aWZ0dw@@._V1_.jpg" ;
+        schema:duration "PT16S"^^xsd:duration ;
+        schema:uploadDate "2020-11-26T16:58:03Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTk5MDUzNDA4Nl5BMl5BanBnXkFtZTcwNTk1MDkwMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk5MDUzNDA4Nl5BMl5BanBnXkFtZTcwNTk1MDkwMw@@._V1_.jpg> ;
+    schema:caption "Robert Oliveri in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "1267"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm3400280833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzk1YThlNzUtNGYwMy00MDJjLWEzMjEtNmNhYmJiZTkyNGUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Johnny Depp and Robert Oliveri in Edward Scissorhands (1990)" ;
+    schema:height "3706"^^xsd:integer ;
+    schema:width "5463"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm3629339392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODEwMTg0ZDAtMzY2ZS00YTYxLWFiMGUtMDUzZmUxMTkzZmJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Winona Ryder, Anthony Michael Hall, and Robert Oliveri in Edward Scissorhands (1990)" ;
+    schema:height "1035"^^xsd:integer ;
+    schema:width "1905"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm861098752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTEzYjJiMjgtYjc1YS00YzBiLThiZDEtMjlkZTZlNTMzOWM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Johnny Depp, Winona Ryder, Alan Arkin, Dianne Wiest, and Robert Oliveri in Edward Scissorhands (1990)" ;
+    schema:height "1030"^^xsd:integer ;
+    schema:width "1907"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm3775499776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc2NjM3Nzg2NF5BMl5BanBnXkFtZTcwODk1MDkwMw@@._V1_.jpg> ;
+    schema:caption "Thomas Wilson Brown, Amy O'Neill, Robert Oliveri, and Jared Rushton in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "1221"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm4010380800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc3NjQ2NDgyNF5BMl5BanBnXkFtZTcwNDE2MDkwMw@@._V1_.jpg> ;
+    schema:caption "Joe Johnston, Thomas Wilson Brown, Amy O'Neill, and Robert Oliveri in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "1251"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm3825831424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3MTM0MTM0OF5BMl5BanBnXkFtZTcwNjg1MDkwMw@@._V1_.jpg> ;
+    schema:caption "Thomas Wilson Brown, Amy O'Neill, Robert Oliveri, and Jared Rushton in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "1231"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm3859385856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM3MDY0NDkwMF5BMl5BanBnXkFtZTcwNDc1MDkwMw@@._V1_.jpg> ;
+    schema:caption "Robert Oliveri in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "1235"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm2979702017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmFiMjE3NDAtODIxMS00Y2EwLWE1MmUtNjEyOTIyZDc0MGYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rick Moranis, Thomas Wilson Brown, Amy O'Neill, Robert Oliveri, and Jared Rushton" ;
+    schema:height "265"^^xsd:integer ;
+    schema:width "190"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0647084/mediaviewer/rm2014837248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc1MjA4MTk4Ml5BMl5BanBnXkFtZTgwODg1NTkwMzE@._V1_.jpg> ;
+    schema:caption "Rick Moranis, Thomas Wilson Brown, Amy O'Neill, Robert Oliveri, and Jared Rushton in Honey, I Shrunk the Kids (1989)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "375"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

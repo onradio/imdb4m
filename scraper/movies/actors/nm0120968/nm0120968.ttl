@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0120968/> a schema:Person ;
+    schema:name "David Burdick" ;
+    schema:url <https://www.imdb.com/name/nm0120968/> ;
+    schema:jobTitle "Actor", "Director", "Cinematographer" ;
+    schema:description "David Burdick. Actor: When Harry Met Sally. David Burdick is known for When Harry Met Sally (1989), Club Dread (2004) and Smash & Grab: An Ascent of Burkett Needle (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0157245/>,    # Trinity
+                       <https://www.imdb.com/title/tt0218790/>,    # Shalom Sesame
+                       <https://www.imdb.com/title/tt0098635/>,    # When Harry Met Sally
+                       <https://www.imdb.com/title/tt0044265/> . # The Guiding Light
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Trinity (1998)
+<https://www.imdb.com/title/tt0157245/> a schema:Movie ;
+    schema:name "Trinity" ;
+    schema:url <https://www.imdb.com/title/tt0157245/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120968/> ;
+        schema:characterName "Bar Guy"
+    ] .
+
+# Shalom Sesame (1990)
+<https://www.imdb.com/title/tt0218790/> a schema:Movie ;
+    schema:name "Shalom Sesame" ;
+    schema:url <https://www.imdb.com/title/tt0218790/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120968/> ;
+        schema:characterName "Olive Oil Jug"
+    ] .
+
+# When Harry Met Sally (1989)
+<https://www.imdb.com/title/tt0098635/> a schema:Movie ;
+    schema:name "When Harry Met Sally" ;
+    schema:url <https://www.imdb.com/title/tt0098635/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120968/> ;
+        schema:characterName "9 Year Old Boy"
+    ] .
+
+# The Guiding Light (1986)
+<https://www.imdb.com/title/tt0044265/> a schema:Movie ;
+    schema:name "The Guiding Light" ;
+    schema:url <https://www.imdb.com/title/tt0044265/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0120968/> ;
+        schema:characterName "Cub scout"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

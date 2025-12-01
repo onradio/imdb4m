@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0108550/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "This Magic Moment" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "This Magic Moment" ;
+            schema:author <https://www.imdb.com/name/nm0690219/>, # Doc Pomus
+                       <https://www.imdb.com/name/nm0795837/> # Mort Shuman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Music from 'Sorry, Wrong Number" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Music from 'Sorry, Wrong Number" ;
+            schema:author <https://www.imdb.com/name/nm0000077/> # Franz Waxman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Music from Indiscretion of an American Wife" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Music from Indiscretion of an American Wife" ;
+            schema:author <https://www.imdb.com/name/nm0006007/> # Alessandro Cicognini
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Music from 'Harmony Lane" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Music from 'Harmony Lane" ;
+            schema:author <https://www.imdb.com/name/nm0442996/> # Arthur Kay
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Foodland Muzak" ;
+        schema:byArtist <https://www.imdb.com/name/nm0213358/> ; # Joseph S. DeBeasi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Foodland Muzak" ;
+            schema:author <https://www.imdb.com/name/nm0213358/> # Joseph S. DeBeasi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Waterfalls" ;
+        schema:byArtist <https://www.imdb.com/name/nm0213358/> ; # Joseph S. DeBeasi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Waterfalls" ;
+            schema:author <https://www.imdb.com/name/nm0213358/> # Joseph S. DeBeasi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000077/> a schema:Person ;
+    schema:name "Franz Waxman" .
+<https://www.imdb.com/name/nm0006007/> a schema:Person ;
+    schema:name "Alessandro Cicognini" .
+<https://www.imdb.com/name/nm0213358/> a schema:Person ;
+    schema:name "Joseph S. DeBeasi" .
+<https://www.imdb.com/name/nm0442996/> a schema:Person ;
+    schema:name "Arthur Kay" .
+<https://www.imdb.com/name/nm0690219/> a schema:Person ;
+    schema:name "Doc Pomus" .
+<https://www.imdb.com/name/nm0795837/> a schema:Person ;
+    schema:name "Mort Shuman" .
+# ==============================================================================

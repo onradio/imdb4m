@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0808633/> a schema:Person ;
+    schema:name "Jason Bose Smith" ;
+    schema:url <https://www.imdb.com/name/nm0808633/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jason Bose Smith. Actor: Friday. Jason Bose Smith was born in May 1979. He is an actor, known for Friday (1995), American History X (1998) and Fist of Justice (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0224821/>,    # The '70s
+                       <https://www.imdb.com/title/tt0120586/>,    # American History X
+                       <https://www.imdb.com/title/tt0118249/>,    # 413 Hope St.
+                       <https://www.imdb.com/title/tt0113118/>,    # Friday
+                       <https://www.imdb.com/title/tt0112451/>,    # Fist of Justice
+                       <https://www.imdb.com/title/tt0106171/>,    # Where I Live
+                       <https://www.imdb.com/title/tt0103524/>,    # Renegade
+                       <https://www.imdb.com/title/tt0098933/> . # True Colors
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The '70s (2000)
+<https://www.imdb.com/title/tt0224821/> a schema:Movie ;
+    schema:name "The '70s" ;
+    schema:url <https://www.imdb.com/title/tt0224821/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "CETA Kid #3"
+    ] .
+
+# American History X (1998)
+<https://www.imdb.com/title/tt0120586/> a schema:Movie ;
+    schema:name "American History X" ;
+    schema:url <https://www.imdb.com/title/tt0120586/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Little Henry"
+    ] .
+
+# 413 Hope St. (1997)
+<https://www.imdb.com/title/tt0118249/> a schema:Movie ;
+    schema:name "413 Hope St." ;
+    schema:url <https://www.imdb.com/title/tt0118249/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Adam"
+    ] .
+
+# Friday (1995)
+<https://www.imdb.com/title/tt0113118/> a schema:Movie ;
+    schema:name "Friday" ;
+    schema:url <https://www.imdb.com/title/tt0113118/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Lil Chris"
+    ] .
+
+# Fist of Justice (1995)
+<https://www.imdb.com/title/tt0112451/> a schema:Movie ;
+    schema:name "Fist of Justice" ;
+    schema:url <https://www.imdb.com/title/tt0112451/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Where I Live (1993)
+<https://www.imdb.com/title/tt0106171/> a schema:Movie ;
+    schema:name "Where I Live" ;
+    schema:url <https://www.imdb.com/title/tt0106171/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Kwanzie"
+    ] .
+
+# Renegade (1993)
+<https://www.imdb.com/title/tt0103524/> a schema:Movie ;
+    schema:name "Renegade" ;
+    schema:url <https://www.imdb.com/title/tt0103524/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Jason Moses"
+    ] .
+
+# True Colors (1991)
+<https://www.imdb.com/title/tt0098933/> a schema:Movie ;
+    schema:name "True Colors" ;
+    schema:url <https://www.imdb.com/title/tt0098933/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0808633/> ;
+        schema:characterName "Young Terry"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

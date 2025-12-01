@@ -1,0 +1,313 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001636/> a schema:Person ;
+    schema:name "Priscilla Presley" ;
+    schema:url <https://www.imdb.com/name/nm0001636/> ;
+    schema:birthDate "1945-05-24"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Writer" ;
+    schema:alternateName "Cilla", "Pris", "Satnin", "Nona", "Priscilla Ann Wagner" ;
+    schema:description "Priscilla Presley. Actress: The Naked Gun 2½: The Smell of Fear. Priscilla Presley's stepfather was an Air Force officer stationed in West Germany when as a teenager she met Elvis Presley in 1959, then four years into his meteoric career in rock and roll and serving with the U.S. Armed Forces. After an eight year courtship, she married him on 1 May 1967. As their marriage was winding down, she..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQxNTQ5MTExMl5BMl5BanBnXkFtZTcwNjMwMTAxMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0102510/>,    # The Naked Gun 2½: The Smell of Fear
+                       <https://www.imdb.com/title/tt0095705/>,    # The Naked Gun: From the Files of Police Squad!
+                       <https://www.imdb.com/title/tt0098987/>,    # The Adventures of Ford Fairlane
+                       <https://www.imdb.com/title/tt0110622/>,    # Naked Gun 33 1/3: The Final Insult
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10768410/>,    # Christmas at Graceland: Home for the Holidays
+                       <https://www.imdb.com/title/tt9777092/>,    # Wedding at Graceland
+                       <https://www.imdb.com/title/tt5952298/>,    # Them Guns: Muffins
+                       <https://www.imdb.com/title/tt0214753/>,    # Hayley Wagner, Star
+                       <https://www.imdb.com/title/tt0115369/>,    # Spin City
+                       <https://www.imdb.com/title/tt0157675/>,    # Breakfast with Einstein
+                       <https://www.imdb.com/title/tt0108968/>,    # Touched by an Angel
+                       <https://www.imdb.com/title/tt0103491/>,    # Melrose Place
+                       <https://www.imdb.com/title/tt0096708/>,    # Tales from the Crypt
+                       <https://www.imdb.com/title/tt0077000/>,    # Dallas
+                       <https://www.imdb.com/title/tt0081859/>,    # The Fall Guy
+                       <https://www.imdb.com/title/tt0085870/> ; # Love Is Forever
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 2 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Dallas)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "30000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi85376025/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001636/mediaviewer/rm1161933570/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm2676383488/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm3430875392/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm153338368/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm2905588224/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm2754134528/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm2975252992/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm4065706496/>,
+                 <https://www.imdb.com/name/nm0001636/mediaviewer/rm892521472/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0102510/> a schema:Movie ;
+    schema:name "The Naked Gun 2½: The Smell of Fear" ;
+    schema:url <https://www.imdb.com/title/tt0102510/> .
+
+<https://www.imdb.com/title/tt0095705/> a schema:Movie ;
+    schema:name "The Naked Gun: From the Files of Police Squad!" ;
+    schema:url <https://www.imdb.com/title/tt0095705/> .
+
+<https://www.imdb.com/title/tt0098987/> a schema:Movie ;
+    schema:name "The Adventures of Ford Fairlane" ;
+    schema:url <https://www.imdb.com/title/tt0098987/> .
+
+<https://www.imdb.com/title/tt0110622/> a schema:Movie ;
+    schema:name "Naked Gun 33 1/3: The Final Insult" ;
+    schema:url <https://www.imdb.com/title/tt0110622/> .
+
+<https://www.imdb.com/title/tt0077000/> a schema:Movie ;
+    schema:name "Dallas" ;
+    schema:url <https://www.imdb.com/title/tt0077000/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Christmas at Graceland: Home for the Holidays (2019)
+<https://www.imdb.com/title/tt10768410/> a schema:Movie ;
+    schema:name "Christmas at Graceland: Home for the Holidays" ;
+    schema:url <https://www.imdb.com/title/tt10768410/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Priscilla Presley"
+    ] .
+
+# Wedding at Graceland (2019)
+<https://www.imdb.com/title/tt9777092/> a schema:Movie ;
+    schema:name "Wedding at Graceland" ;
+    schema:url <https://www.imdb.com/title/tt9777092/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Priscilla Presley"
+    ] .
+
+# Them Guns: Muffins (2016)
+<https://www.imdb.com/title/tt5952298/> a schema:Movie ;
+    schema:name "Them Guns: Muffins" ;
+    schema:url <https://www.imdb.com/title/tt5952298/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Priscilla Presley"
+    ] .
+
+# Hayley Wagner, Star (1999)
+<https://www.imdb.com/title/tt0214753/> a schema:Movie ;
+    schema:name "Hayley Wagner, Star" ;
+    schema:url <https://www.imdb.com/title/tt0214753/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Sue Wagner"
+    ] .
+
+# Spin City (1999)
+<https://www.imdb.com/title/tt0115369/> a schema:Movie ;
+    schema:name "Spin City" ;
+    schema:url <https://www.imdb.com/title/tt0115369/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Aunt Marie Paterno"
+    ] .
+
+# Breakfast with Einstein (1998)
+<https://www.imdb.com/title/tt0157675/> a schema:Movie ;
+    schema:name "Breakfast with Einstein" ;
+    schema:url <https://www.imdb.com/title/tt0157675/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Keelin"
+    ] .
+
+# Touched by an Angel (1997)
+<https://www.imdb.com/title/tt0108968/> a schema:Movie ;
+    schema:name "Touched by an Angel" ;
+    schema:url <https://www.imdb.com/title/tt0108968/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Dr. Meg Salter"
+    ] .
+
+# Melrose Place (1996)
+<https://www.imdb.com/title/tt0103491/> a schema:Movie ;
+    schema:name "Melrose Place" ;
+    schema:url <https://www.imdb.com/title/tt0103491/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Nurse Benson"
+    ] .
+
+# Tales from the Crypt (1993)
+<https://www.imdb.com/title/tt0096708/> a schema:Movie ;
+    schema:name "Tales from the Crypt" ;
+    schema:url <https://www.imdb.com/title/tt0096708/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Gina"
+    ] .
+
+# Dallas (1983)
+<https://www.imdb.com/title/tt0077000/> a schema:Movie ;
+    schema:name "Dallas" ;
+    schema:url <https://www.imdb.com/title/tt0077000/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Jenna Wade"
+    ] .
+
+# The Fall Guy (1983)
+<https://www.imdb.com/title/tt0081859/> a schema:Movie ;
+    schema:name "The Fall Guy" ;
+    schema:url <https://www.imdb.com/title/tt0081859/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Sabrina Caldwell"
+    ] .
+
+# Love Is Forever (1983)
+<https://www.imdb.com/title/tt0085870/> a schema:Movie ;
+    schema:name "Love Is Forever" ;
+    schema:url <https://www.imdb.com/title/tt0085870/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001636/> ;
+        schema:characterName "Sandy Redford"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi85376025/> a schema:VideoObject ;
+        schema:name "Wedding at Graceland: Television Release" ;
+        schema:description "Trailer 1" ;
+        schema:embedUrl <https://www.imdb.com/video/vi85376025/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmE5MWU3NjUtMzFmNi00ZTc5LTk0ZmEtNzIwOTkyNzMwNzEzXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg" ;
+        schema:duration "PT33S"^^xsd:duration ;
+        schema:uploadDate "2019-07-04T17:17:21Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQxNTQ5MTExMl5BMl5BanBnXkFtZTcwNjMwMTAxMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQxNTQ5MTExMl5BMl5BanBnXkFtZTcwNjMwMTAxMw@@._V1_.jpg> ;
+    schema:caption "Priscilla Presley in The Naked Gun: From the Files of Police Squad! (1988)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1874"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm1161933570/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAzMTZmMmYtMGJhYS00ODlkLTg1ZDAtNWExZmViYjM1YjgzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leslie Nielsen and Priscilla Presley in The Naked Gun: From the Files of Police Squad! (1988)" ;
+    schema:height "1604"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm2676383488/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2YzMDkyNDctZjMzMS00OWExLTgxZTQtOTM0ZjZmYzFmZmJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Priscilla Presley and John Dye in Touched by an Angel (1994)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm3430875392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM4NjMzMDU4MV5BMl5BanBnXkFtZTgwMzA3NDA1MDI@._V1_.jpg> ;
+    schema:caption "Priscilla Presley in Dallas (1978)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "1163"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm153338368/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNDI3MjQ2M15BMl5BanBnXkFtZTgwNDUyMjIyMjE@._V1_.jpg> ;
+    schema:caption "Barbara Bel Geddes and Priscilla Presley in Dallas (1978)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm2905588224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3NDU5ODcxMF5BMl5BanBnXkFtZTgwMDEzMTIyMjE@._V1_.jpg> ;
+    schema:caption "Priscilla Presley in Dallas (1978)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm2754134528/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTExNDY0NTIzODleQTJeQWpwZ15BbWU4MDA0NDkxMjIx._V1_.jpg> ;
+    schema:caption "Patrick Duffy, Priscilla Presley, and Sam Anderson in Dallas (1978)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm2975252992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM3MjIzMzE5NF5BMl5BanBnXkFtZTgwNjk4ODEyMjE@._V1_.jpg> ;
+    schema:caption "Patrick Duffy and Priscilla Presley in Dallas (1978)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm4065706496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjc3MjcxOTg1OV5BMl5BanBnXkFtZTgwNjA3ODEyMjE@._V1_.jpg> ;
+    schema:caption "Patrick Duffy, Priscilla Presley, and Steve Kanaly in Dallas (1978)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001636/mediaviewer/rm892521472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTM5MzY3MzkyNF5BMl5BanBnXkFtZTgwNTI0OTIwMjE@._V1_.jpg> ;
+    schema:caption "Leslie Nielsen and Priscilla Presley in Naked Gun 33 1/3: The Final Insult (1994)" ;
+    schema:height "2826"^^xsd:integer ;
+    schema:width "4309"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

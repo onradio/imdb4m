@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5177448/> a schema:Person ;
+    schema:name "Vibish Sivakumar" ;
+    schema:url <https://www.imdb.com/name/nm5177448/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Vibish Sivakumar. Actor: Life of Pi. Vibish Sivakumar is known for Life of Pi (2012), Love in the Rain (2019) and Beta: Come Home (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11262178/>,    # Love in the Rain
+                       <https://www.imdb.com/title/tt6241770/>,    # Beta
+                       <https://www.imdb.com/title/tt5721284/>,    # Beta: Come Home
+                       <https://www.imdb.com/title/tt0454876/> . # Life of Pi
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Love in the Rain (2019)
+<https://www.imdb.com/title/tt11262178/> a schema:Movie ;
+    schema:name "Love in the Rain" ;
+    schema:url <https://www.imdb.com/title/tt11262178/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5177448/> ;
+        schema:characterName "Manish"
+    ] .
+
+# Beta (2017)
+<https://www.imdb.com/title/tt6241770/> a schema:Movie ;
+    schema:name "Beta" ;
+    schema:url <https://www.imdb.com/title/tt6241770/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5177448/> ;
+        schema:characterName ""
+    ] .
+
+# Beta: Come Home (2016)
+<https://www.imdb.com/title/tt5721284/> a schema:Movie ;
+    schema:name "Beta: Come Home" ;
+    schema:url <https://www.imdb.com/title/tt5721284/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5177448/> ;
+        schema:characterName "Beta"
+    ] .
+
+# Life of Pi (2012)
+<https://www.imdb.com/title/tt0454876/> a schema:Movie ;
+    schema:name "Life of Pi" ;
+    schema:url <https://www.imdb.com/title/tt0454876/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5177448/> ;
+        schema:characterName "Ravi Patel (18-19 Years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

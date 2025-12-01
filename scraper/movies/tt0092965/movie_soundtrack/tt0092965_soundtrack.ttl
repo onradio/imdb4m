@@ -1,0 +1,106 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0092965/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Suo Gan" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Nightingale Sang in Berkeley Square" ;
+        schema:byArtist <https://www.imdb.com/name/nm0974758/> ; # Elizabeth Welch
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Nightingale Sang in Berkeley Square" ;
+            schema:lyricist <https://www.imdb.com/name/nm0556178/>, # Eric Maschwitz
+                        <https://www.imdb.com/name/nm0792777/> # Manning Sherwin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "These Foolish Things" ;
+        schema:byArtist <https://www.imdb.com/name/nm0974758/> ; # Elizabeth Welch
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "These Foolish Things" ;
+            schema:lyricist <https://www.imdb.com/name/nm0556178/>, # Eric Maschwitz
+                        <https://www.imdb.com/name/nm0663839/> # Jack Strachey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "South of the Border" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101286/>, # Al Bowlly
+                        <https://www.imdb.com/name/nm1684193/> ; # Ronnie Munro
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "South of the Border" ;
+            schema:author <https://www.imdb.com/name/nm0448102/>, # Jimmy Kennedy
+                       <https://www.imdb.com/name/nm0139805/> # Michael Carr
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Swing is in the Air" ;
+        schema:byArtist <https://www.imdb.com/name/nm0405139/> ; # Jack Hylton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Swing is in the Air" ;
+            schema:author <https://www.imdb.com/name/nm0503645/>, # Samuel Lerner
+                       <https://www.imdb.com/name/nm0328907/>, # Al Goodhart
+                       <https://www.imdb.com/name/nm0388800/> # Al Hoffman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Chopin Mazurka Opus 17 No. 4" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Chopin Mazurka Opus 17 No. 4" ;
+            schema:author <https://www.imdb.com/name/nm0006004/> # Frédéric Chopin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The British Grenadiers" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006004/> a schema:Person ;
+    schema:name "Frédéric Chopin" .
+<https://www.imdb.com/name/nm0101286/> a schema:Person ;
+    schema:name "Al Bowlly" .
+<https://www.imdb.com/name/nm0139805/> a schema:Person ;
+    schema:name "Michael Carr" .
+<https://www.imdb.com/name/nm0328907/> a schema:Person ;
+    schema:name "Al Goodhart" .
+<https://www.imdb.com/name/nm0388800/> a schema:Person ;
+    schema:name "Al Hoffman" .
+<https://www.imdb.com/name/nm0405139/> a schema:Person ;
+    schema:name "Jack Hylton" .
+<https://www.imdb.com/name/nm0448102/> a schema:Person ;
+    schema:name "Jimmy Kennedy" .
+<https://www.imdb.com/name/nm0503645/> a schema:Person ;
+    schema:name "Samuel Lerner" .
+<https://www.imdb.com/name/nm0556178/> a schema:Person ;
+    schema:name "Eric Maschwitz" .
+<https://www.imdb.com/name/nm0663839/> a schema:Person ;
+    schema:name "Jack Strachey" .
+<https://www.imdb.com/name/nm0792777/> a schema:Person ;
+    schema:name "Manning Sherwin" .
+<https://www.imdb.com/name/nm0974758/> a schema:Person ;
+    schema:name "Elizabeth Welch" .
+<https://www.imdb.com/name/nm1684193/> a schema:Person ;
+    schema:name "Ronnie Munro" .
+# ==============================================================================

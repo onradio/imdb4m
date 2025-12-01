@@ -1,0 +1,61 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2467417/> a schema:Person ;
+    schema:name "Anointing Lukola" ;
+    schema:url <https://www.imdb.com/name/nm2467417/> ;
+    schema:birthDate "1996-09-04"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Tingting" ;
+    schema:description "Anointing Lukola. Actress: Blood Diamond. Anointing Lukola was born on 4 September 1996 in Johannesburg, South Africa. She is an actress, known for Blood Diamond (2006)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Johannesburg, South Africa"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.72"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7¾″ (1.72 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0450259/> .    # Blood Diamond
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Blood Diamond (2006)
+<https://www.imdb.com/title/tt0450259/> a schema:Movie ;
+    schema:name "Blood Diamond" ;
+    schema:url <https://www.imdb.com/title/tt0450259/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2467417/> ;
+        schema:characterName "N'Yanda Vandy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,136 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120737/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Flaming Red Hair" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Flaming Red Hair" ;
+            schema:composer <https://www.imdb.com/name/nm0232087/>, # David Donaldson
+                        <https://www.imdb.com/name/nm0518937/>, # David Long
+                        <https://www.imdb.com/name/nm0733981/>, # Steve Roche
+                        <https://www.imdb.com/name/nm0734480/>, # Janet Roddick
+                        <https://www.imdb.com/name/nm0640271/> # Chris O'Connor
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Road Goes Ever On" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005212/>, # Ian McKellen
+                        <https://www.imdb.com/name/nm0000453/> ; # Ian Holm
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Road Goes Ever On" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0866058/> # J.R.R. Tolkien
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "In Dreams" ;
+        schema:byArtist <https://www.imdb.com/name/nm1297453/> ; # Edward Ross
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "In Dreams" ;
+            schema:author <https://www.imdb.com/name/nm0909638/>, # Fran Walsh
+                       <https://www.imdb.com/name/nm0006290/> # Howard Shore
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "May It Be" ;
+        schema:byArtist <https://www.imdb.com/name/nm0258216/> ; # Enya
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "May It Be" ;
+            schema:author <https://www.imdb.com/name/nm0258216/>, # Enya
+                       <https://www.imdb.com/name/nm0752822/> # Roma Ryan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aníron" ;
+        schema:byArtist <https://www.imdb.com/name/nm0258216/> ; # Enya
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Aníron" ;
+            schema:composer <https://www.imdb.com/name/nm0258216/> # Enya
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "To The Bottle I Go" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101710/>, # Billy Boyd
+                        <https://www.imdb.com/name/nm0597480/>, # Dominic Monaghan
+                        <https://www.imdb.com/name/nm0000704/> ; # Elijah Wood
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "To The Bottle I Go" ;
+            schema:author <https://www.imdb.com/name/nm0909638/>, # Fran Walsh
+                       <https://www.imdb.com/name/nm0101991/> # Philippa Boyens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Song of Beren and Luthien" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001557/> ; # Viggo Mortensen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Song of Beren and Luthien" ;
+            schema:composer <https://www.imdb.com/name/nm0006290/> ; # Howard Shore
+            schema:lyricist <https://www.imdb.com/name/nm0866058/> # J.R.R. Tolkien
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000453/> a schema:Person ;
+    schema:name "Ian Holm" .
+<https://www.imdb.com/name/nm0000704/> a schema:Person ;
+    schema:name "Elijah Wood" .
+<https://www.imdb.com/name/nm0001557/> a schema:Person ;
+    schema:name "Viggo Mortensen" .
+<https://www.imdb.com/name/nm0005212/> a schema:Person ;
+    schema:name "Ian McKellen" .
+<https://www.imdb.com/name/nm0006290/> a schema:Person ;
+    schema:name "Howard Shore" .
+<https://www.imdb.com/name/nm0101710/> a schema:Person ;
+    schema:name "Billy Boyd" .
+<https://www.imdb.com/name/nm0101991/> a schema:Person ;
+    schema:name "Philippa Boyens" .
+<https://www.imdb.com/name/nm0232087/> a schema:Person ;
+    schema:name "David Donaldson" .
+<https://www.imdb.com/name/nm0258216/> a schema:Person ;
+    schema:name "Enya" .
+<https://www.imdb.com/name/nm0518937/> a schema:Person ;
+    schema:name "David Long" .
+<https://www.imdb.com/name/nm0597480/> a schema:Person ;
+    schema:name "Dominic Monaghan" .
+<https://www.imdb.com/name/nm0640271/> a schema:Person ;
+    schema:name "Chris O'Connor" .
+<https://www.imdb.com/name/nm0733981/> a schema:Person ;
+    schema:name "Steve Roche" .
+<https://www.imdb.com/name/nm0734480/> a schema:Person ;
+    schema:name "Janet Roddick" .
+<https://www.imdb.com/name/nm0752822/> a schema:Person ;
+    schema:name "Roma Ryan" .
+<https://www.imdb.com/name/nm0866058/> a schema:Person ;
+    schema:name "J.R.R. Tolkien" .
+<https://www.imdb.com/name/nm0909638/> a schema:Person ;
+    schema:name "Fran Walsh" .
+<https://www.imdb.com/name/nm1297453/> a schema:Person ;
+    schema:name "Edward Ross" .
+# ==============================================================================

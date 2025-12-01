@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0094770/> a schema:Person ;
+    schema:name "Gérard Bonn" ;
+    schema:url <https://www.imdb.com/name/nm0094770/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gérard Bonn. Actor: Die Hard. Gérard Bonn is known for Die Hard (1988), Killing Zoe (1993) and Vanille fraise (1989)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110265/>,    # Killing Zoe
+                       <https://www.imdb.com/title/tt0106662/>,    # Danielle Steel's 'Message from Nam'
+                       <https://www.imdb.com/title/tt0148003/>,    # College
+                       <https://www.imdb.com/title/tt0098578/>,    # Vanille fraise
+                       <https://www.imdb.com/title/tt0095016/> . # Die Hard
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Killing Zoe (1993)
+<https://www.imdb.com/title/tt0110265/> a schema:Movie ;
+    schema:name "Killing Zoe" ;
+    schema:url <https://www.imdb.com/title/tt0110265/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0094770/> ;
+        schema:characterName "Assistant Bank Manager"
+    ] .
+
+# Danielle Steel's 'Message from Nam' (1993)
+<https://www.imdb.com/title/tt0106662/> a schema:Movie ;
+    schema:name "Danielle Steel's 'Message from Nam'" ;
+    schema:url <https://www.imdb.com/title/tt0106662/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0094770/> ;
+        schema:characterName "Jean Pierre Biernet"
+    ] .
+
+# College (1990)
+<https://www.imdb.com/title/tt0148003/> a schema:Movie ;
+    schema:name "College" ;
+    schema:url <https://www.imdb.com/title/tt0148003/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0094770/> ;
+        schema:characterName "Diego"
+    ] .
+
+# Vanille fraise (1989)
+<https://www.imdb.com/title/tt0098578/> a schema:Movie ;
+    schema:name "Vanille fraise" ;
+    schema:url <https://www.imdb.com/title/tt0098578/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0094770/> ;
+        schema:characterName "Agent secret Pologne"
+    ] .
+
+# Die Hard (1988)
+<https://www.imdb.com/title/tt0095016/> a schema:Movie ;
+    schema:name "Die Hard" ;
+    schema:url <https://www.imdb.com/title/tt0095016/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0094770/> ;
+        schema:characterName "Kristoff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

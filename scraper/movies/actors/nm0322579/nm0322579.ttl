@@ -1,0 +1,125 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0322579/> a schema:Person ;
+    schema:name "Charles Glenn" ;
+    schema:url <https://www.imdb.com/name/nm0322579/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Charles Glenn. Actor: Philadelphia. Charles Glenn is known for Philadelphia (1993), Hairshirt (1998) and Some Things Never Die (1998)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0228711/>,    # The Perfect Nanny
+                       <https://www.imdb.com/title/tt0135165/>,    # Some Things Never Die
+                       <https://www.imdb.com/title/tt0120603/>,    # Beloved
+                       <https://www.imdb.com/title/tt0133832/>,    # Hairshirt
+                       <https://www.imdb.com/title/tt0107818/> ; # Philadelphia
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0322579/mediaviewer/rm3599792640/>,
+                 <https://www.imdb.com/name/nm0322579/mediaviewer/rm1435531776/>,
+                 <https://www.imdb.com/name/nm0322579/mediaviewer/rm691768832/>,
+                 <https://www.imdb.com/name/nm0322579/mediaviewer/rm859540992/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Perfect Nanny (2001)
+<https://www.imdb.com/title/tt0228711/> a schema:Movie ;
+    schema:name "The Perfect Nanny" ;
+    schema:url <https://www.imdb.com/title/tt0228711/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0322579/> ;
+        schema:characterName "Dr. Tanner Wallace"
+    ] .
+
+# Some Things Never Die (1998)
+<https://www.imdb.com/title/tt0135165/> a schema:Movie ;
+    schema:name "Some Things Never Die" ;
+    schema:url <https://www.imdb.com/title/tt0135165/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0322579/> ;
+        schema:characterName "Governor"
+    ] .
+
+# Beloved (1998)
+<https://www.imdb.com/title/tt0120603/> a schema:Movie ;
+    schema:name "Beloved" ;
+    schema:url <https://www.imdb.com/title/tt0120603/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0322579/> ;
+        schema:characterName "Helpful Gentleman"
+    ] .
+
+# Hairshirt (1998)
+<https://www.imdb.com/title/tt0133832/> a schema:Movie ;
+    schema:name "Hairshirt" ;
+    schema:url <https://www.imdb.com/title/tt0133832/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0322579/> ;
+        schema:characterName "B.J. Copp Producer"
+    ] .
+
+# Philadelphia (1993)
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0322579/> ;
+        schema:characterName "Kenneth Killcoyne"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0322579/mediaviewer/rm3599792640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTMzNmU1ZjItYmIzMC00YTA0LTg1ZTMtMjVkYzJiZDExYjRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks, Roger Corman, Jason Robards, Charles Glenn, and Robert Ridgely in Philadelphia (1993)" ;
+    schema:height "1038"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0322579/mediaviewer/rm1435531776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWIyMGJiY2YtZmE4YS00MjI0LTk4ZmMtODI5MTQwZDRmZjUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks, Jason Robards, Charles Glenn, Robert Ridgely, and Ron Vawter in Philadelphia (1993)" ;
+    schema:height "1038"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0322579/mediaviewer/rm691768832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDU0NTI3ODQyMV5BMl5BanBnXkFtZTcwOTI3NjgwMw@@._V1_.jpg> ;
+    schema:caption "Tom Hanks, Jason Robards, Charles Glenn, Robert Ridgely, and Ron Vawter in Philadelphia (1993)" ;
+    schema:height "1341"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0322579/mediaviewer/rm859540992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0ODI3NjA3N15BMl5BanBnXkFtZTcwMDQ4NjgwMw@@._V1_.jpg> ;
+    schema:caption "Jason Robards, Mary Steenburgen, Obba Babatundé, Charles Glenn, James B. Howard, and Robert Ridgely in Philadelphia (1993)" ;
+    schema:height "1344"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

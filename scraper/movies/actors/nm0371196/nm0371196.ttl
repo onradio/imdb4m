@@ -1,0 +1,447 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0371196/> a schema:Person ;
+    schema:name "Reginald C. Hayes" ;
+    schema:url <https://www.imdb.com/name/nm0371196/> ;
+    schema:birthDate "1969-07-15"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Soundtrack" ;
+    schema:description "Reginald C. Hayes. Actor: Girlfriends. Reginald C. Hayes was born on 15 July 1969 in Chicago, Illinois, USA. He is an actor and writer, known for Girlfriends (2000), Charlie's Angels (2000) and Being John Malkovich (1999)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU3ODAxNTg1M15BMl5BanBnXkFtZTgwOTQwOTc5MjE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chicago, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0247102/>,    # Girlfriends
+                       <https://www.imdb.com/title/tt0120601/>,    # Being John Malkovich
+                       <https://www.imdb.com/title/tt0137334/>,    # Getting Personal
+                       <https://www.imdb.com/title/tt1832979/>,    # Hart of Dixie
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3487356/>,    # Black-ish
+                       <https://www.imdb.com/title/tt3735398/>,    # Carter High
+                       <https://www.imdb.com/title/tt0364845/>,    # NCIS: Naval Criminal Investigative Service
+                       <https://www.imdb.com/title/tt3698420/>,    # Mother's Day
+                       <https://www.imdb.com/title/tt2631130/>,    # The Devon Taylor Show
+                       <https://www.imdb.com/title/tt2330327/>,    # The First Family
+                       <https://www.imdb.com/title/tt1676701/>,    # Let's Stay Together
+                       <https://www.imdb.com/title/tt0452046/>,    # Criminal Minds
+                       <https://www.imdb.com/title/tt1841108/>,    # Femme Fatales
+                       <https://www.imdb.com/title/tt0420937/>,    # Stop Thief!
+                       <https://www.imdb.com/title/tt0293737/>,    # The Proud Family
+                       <https://www.imdb.com/title/tt0278866/>,    # Kim Possible
+                       <https://www.imdb.com/title/tt0318252/>,    # The Twilight Zone
+                       <https://www.imdb.com/title/tt0160127/>,    # Charlie's Angels
+                       <https://www.imdb.com/title/tt0202766/>,    # Then Came You
+                       <https://www.imdb.com/title/tt0157246/>,    # Will & Grace
+                       <https://www.imdb.com/title/tt0201391/>,    # Roswell
+                       <https://www.imdb.com/title/tt0209638/>,    # Grown Ups
+                       <https://www.imdb.com/title/tt0108894/>,    # Party of Five
+                       <https://www.imdb.com/title/tt0119278/>,    # Chicago Cab
+                       <https://www.imdb.com/title/tt0115320/>,    # The Pretender
+                       <https://www.imdb.com/title/tt0115365/>,    # Something So Right
+                       <https://www.imdb.com/title/tt0115292/>,    # Nick Freno: Licensed Teacher
+                       <https://www.imdb.com/title/tt0112173/>,    # Space: Above and Beyond
+                       <https://www.imdb.com/title/tt0116275/> ; # A Family Thing
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3633235225/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0371196/mediaviewer/rm1018886144/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm2155792128/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm439130112/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm1613535232/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm729025792/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm1577433088/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm3254123008/>,
+                 <https://www.imdb.com/name/nm0371196/mediaviewer/rm777491456/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0247102/> a schema:Movie ;
+    schema:name "Girlfriends" ;
+    schema:url <https://www.imdb.com/title/tt0247102/> .
+
+<https://www.imdb.com/title/tt0120601/> a schema:Movie ;
+    schema:name "Being John Malkovich" ;
+    schema:url <https://www.imdb.com/title/tt0120601/> .
+
+<https://www.imdb.com/title/tt0137334/> a schema:Movie ;
+    schema:name "Getting Personal" ;
+    schema:url <https://www.imdb.com/title/tt0137334/> .
+
+<https://www.imdb.com/title/tt1832979/> a schema:Movie ;
+    schema:name "Hart of Dixie" ;
+    schema:url <https://www.imdb.com/title/tt1832979/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Black-ish (2019)
+<https://www.imdb.com/title/tt3487356/> a schema:Movie ;
+    schema:name "Black-ish" ;
+    schema:url <https://www.imdb.com/title/tt3487356/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Walter"
+    ] .
+
+# Carter High (2015)
+<https://www.imdb.com/title/tt3735398/> a schema:Movie ;
+    schema:name "Carter High" ;
+    schema:url <https://www.imdb.com/title/tt3735398/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Mr. Russeau"
+    ] .
+
+# NCIS: Naval Criminal Investigative Service (2015)
+<https://www.imdb.com/title/tt0364845/> a schema:Movie ;
+    schema:name "NCIS: Naval Criminal Investigative Service" ;
+    schema:url <https://www.imdb.com/title/tt0364845/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Café Owner"
+    ] .
+
+# Mother's Day (2014)
+<https://www.imdb.com/title/tt3698420/> a schema:Movie ;
+    schema:name "Mother's Day" ;
+    schema:url <https://www.imdb.com/title/tt3698420/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Clyde"
+    ] .
+
+# The Devon Taylor Show (2013)
+<https://www.imdb.com/title/tt2631130/> a schema:Movie ;
+    schema:name "The Devon Taylor Show" ;
+    schema:url <https://www.imdb.com/title/tt2631130/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Mitchell Taylor"
+    ] .
+
+# The First Family (2013)
+<https://www.imdb.com/title/tt2330327/> a schema:Movie ;
+    schema:name "The First Family" ;
+    schema:url <https://www.imdb.com/title/tt2330327/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Reginald"
+    ] .
+
+# Let's Stay Together (2013)
+<https://www.imdb.com/title/tt1676701/> a schema:Movie ;
+    schema:name "Let's Stay Together" ;
+    schema:url <https://www.imdb.com/title/tt1676701/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Jesse"
+    ] .
+
+# Criminal Minds (2012)
+<https://www.imdb.com/title/tt0452046/> a schema:Movie ;
+    schema:name "Criminal Minds" ;
+    schema:url <https://www.imdb.com/title/tt0452046/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Detective Wiliam Richards"
+    ] .
+
+# Femme Fatales (2011)
+<https://www.imdb.com/title/tt1841108/> a schema:Movie ;
+    schema:name "Femme Fatales" ;
+    schema:url <https://www.imdb.com/title/tt1841108/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Kevin Freeman"
+    ] .
+
+# Stop Thief! (2004)
+<https://www.imdb.com/title/tt0420937/> a schema:Movie ;
+    schema:name "Stop Thief!" ;
+    schema:url <https://www.imdb.com/title/tt0420937/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Security Guard"
+    ] .
+
+# The Proud Family (2003)
+<https://www.imdb.com/title/tt0293737/> a schema:Movie ;
+    schema:name "The Proud Family" ;
+    schema:url <https://www.imdb.com/title/tt0293737/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Minister"
+    ] .
+
+# Kim Possible (2003)
+<https://www.imdb.com/title/tt0278866/> a schema:Movie ;
+    schema:name "Kim Possible" ;
+    schema:url <https://www.imdb.com/title/tt0278866/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Dr. Freeman"
+    ] .
+
+# The Twilight Zone (2003)
+<https://www.imdb.com/title/tt0318252/> a schema:Movie ;
+    schema:name "The Twilight Zone" ;
+    schema:url <https://www.imdb.com/title/tt0318252/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Dr. Bernardi"
+    ] .
+
+# Charlie's Angels (2000)
+<https://www.imdb.com/title/tt0160127/> a schema:Movie ;
+    schema:name "Charlie's Angels" ;
+    schema:url <https://www.imdb.com/title/tt0160127/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Red Star Systems Techie"
+    ] .
+
+# Then Came You (2000)
+<https://www.imdb.com/title/tt0202766/> a schema:Movie ;
+    schema:name "Then Came You" ;
+    schema:url <https://www.imdb.com/title/tt0202766/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Leon"
+    ] .
+
+# Will & Grace (2000)
+<https://www.imdb.com/title/tt0157246/> a schema:Movie ;
+    schema:name "Will & Grace" ;
+    schema:url <https://www.imdb.com/title/tt0157246/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Dr. Osher"
+    ] .
+
+# Roswell (1999)
+<https://www.imdb.com/title/tt0201391/> a schema:Movie ;
+    schema:name "Roswell" ;
+    schema:url <https://www.imdb.com/title/tt0201391/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Agent Hart"
+    ] .
+
+# Grown Ups (1999)
+<https://www.imdb.com/title/tt0209638/> a schema:Movie ;
+    schema:name "Grown Ups" ;
+    schema:url <https://www.imdb.com/title/tt0209638/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Dominic Fowler"
+    ] .
+
+# Party of Five (1999)
+<https://www.imdb.com/title/tt0108894/> a schema:Movie ;
+    schema:name "Party of Five" ;
+    schema:url <https://www.imdb.com/title/tt0108894/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Music Store Owner"
+    ] .
+
+# Chicago Cab (1997)
+<https://www.imdb.com/title/tt0119278/> a schema:Movie ;
+    schema:name "Chicago Cab" ;
+    schema:url <https://www.imdb.com/title/tt0119278/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Architect"
+    ] .
+
+# The Pretender (1997)
+<https://www.imdb.com/title/tt0115320/> a schema:Movie ;
+    schema:name "The Pretender" ;
+    schema:url <https://www.imdb.com/title/tt0115320/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Froman"
+    ] .
+
+# Something So Right (1997)
+<https://www.imdb.com/title/tt0115365/> a schema:Movie ;
+    schema:name "Something So Right" ;
+    schema:url <https://www.imdb.com/title/tt0115365/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Salesman"
+    ] .
+
+# Nick Freno: Licensed Teacher (1996)
+<https://www.imdb.com/title/tt0115292/> a schema:Movie ;
+    schema:name "Nick Freno: Licensed Teacher" ;
+    schema:url <https://www.imdb.com/title/tt0115292/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Mr. Mezz Crosby"
+    ] .
+
+# Space: Above and Beyond (1996)
+<https://www.imdb.com/title/tt0112173/> a schema:Movie ;
+    schema:name "Space: Above and Beyond" ;
+    schema:url <https://www.imdb.com/title/tt0112173/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Wallace"
+    ] .
+
+# A Family Thing (1996)
+<https://www.imdb.com/title/tt0116275/> a schema:Movie ;
+    schema:name "A Family Thing" ;
+    schema:url <https://www.imdb.com/title/tt0116275/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0371196/> ;
+        schema:characterName "Virgil's Friend"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3633235225/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Carly Stewart is the queen of holiday celebrations, but her mistletoe misstep sends her running to a Holiday Hideaway that teaches her the importance of family, forgiveness, and fighting for love." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3633235225/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTVhZjg4NDQtMzQyMy00MjY2LWE1ZjAtNTQyYTcxZDZlM2FkXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M56S"^^xsd:duration ;
+        schema:uploadDate "2022-11-25T14:47:53Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU3ODAxNTg1M15BMl5BanBnXkFtZTgwOTQwOTc5MjE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3ODAxNTg1M15BMl5BanBnXkFtZTgwOTQwOTc5MjE@._V1_.jpg> ;
+    schema:caption "Reginald C. Hayes in Girlfriends (2000)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm1018886144/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMDEzMjEyOV5BMl5BanBnXkFtZTgwMzYyODkzMzE@._V1_.jpg> ;
+    schema:caption "Reginald C. Hayes and Khalil Kain in Girlfriends (2000)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm2155792128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzY3MTc1OTIzNV5BMl5BanBnXkFtZTgwNzUxMjY2MjE@._V1_.jpg> ;
+    schema:caption "Reginald C. Hayes in Femme Fatales (2011)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm439130112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY3OTAzMTMwOF5BMl5BanBnXkFtZTYwMjkwMDc2._V1_.jpg> ;
+    schema:caption "Reginald C. Hayes and Keesha Sharp in Girlfriends (2000)" ;
+    schema:height "323"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm1613535232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzMjgwMTkwNl5BMl5BanBnXkFtZTYwNDIxMDc2._V1_.jpg> ;
+    schema:caption "Golden Brooks, Reginald C. Hayes, Jill Marie Jones, Tracee Ellis Ross, and Persia White in Girlfriends (2000)" ;
+    schema:height "554"^^xsd:integer ;
+    schema:width "441"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm729025792/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgyMzA1MTE2Ml5BMl5BanBnXkFtZTgwMjYwMTYxMDI@._V1_.jpg> ;
+    schema:caption "Vivica A. Fox, Charles S. Dutton, Pooch Hall, and Reginald C. Hayes in Carter High (2015)" ;
+    schema:height "2147"^^xsd:integer ;
+    schema:width "1525"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm1577433088/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDIyNTAwMTUzN15BMl5BanBnXkFtZTcwNTkyMTgwNQ@@._V1_.jpg> ;
+    schema:caption "Kevin Freeman (Reggie Hayes) joins Alexis (Daphne Duplaix) for the ultimate \"Speed Date\"" ;
+    schema:height "3744"^^xsd:integer ;
+    schema:width "5616"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm3254123008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3ODAxNTg1M15BMl5BanBnXkFtZTgwOTQwOTc5MjE@._V1_.jpg> ;
+    schema:caption "Reginald C. Hayes in Girlfriends (2000)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0371196/mediaviewer/rm777491456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxNTk3NTc3OF5BMl5BanBnXkFtZTcwNDc3NDg5MQ@@._V1_.jpg> ;
+    schema:caption "Golden Brooks, Reginald C. Hayes, Jill Marie Jones, Tracee Ellis Ross, and Persia White in Girlfriends (2000)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "355"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

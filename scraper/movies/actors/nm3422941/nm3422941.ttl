@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3422941/> a schema:Person ;
+    schema:name "Jeremy Leary" ;
+    schema:url <https://www.imdb.com/name/nm3422941/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jeremy Leary. Actor: Up. Jeremy Leary is known for Up (2009) and Play by Play (2011)." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1733261/>,    # Play by Play
+                       <https://www.imdb.com/title/tt1049413/> ; # Up
+
+
+    schema:video <https://www.imdb.com/video/vi487761689/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Play by Play (2011)
+<https://www.imdb.com/title/tt1733261/> a schema:Movie ;
+    schema:name "Play by Play" ;
+    schema:url <https://www.imdb.com/title/tt1733261/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3422941/> ;
+        schema:characterName "Steve"
+    ] .
+
+# Up (2009)
+<https://www.imdb.com/title/tt1049413/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1049413/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3422941/> ;
+        schema:characterName "Young Carl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi487761689/> a schema:VideoObject ;
+        schema:name "Up: 3D BD" ;
+        schema:description "Bonus Clip: Love of Dug" ;
+        schema:embedUrl <https://www.imdb.com/video/vi487761689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzcyNDQxNDY3MF5BMl5BanBnXkFtZTcwNDQ5NTEwOQ@@._V1_.jpg" ;
+        schema:duration "PT1M5S"^^xsd:duration ;
+        schema:uploadDate "2013-01-27T06:47:29Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

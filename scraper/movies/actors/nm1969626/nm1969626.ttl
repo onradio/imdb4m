@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1969626/> a schema:Person ;
+    schema:name "Franco Vaz" ;
+    schema:url <https://www.imdb.com/name/nm1969626/> ;
+    schema:jobTitle "Composer", "Music Department", "Actor" ;
+    schema:description "Franco Vaz. Music Department: Andhadhun. Franco Vaz was a composer and actor, known for Andhadhun (2018), Awara Paagal Deewana (2002) and Dastak (1996). He died on 7 February 2024 in India." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BODkzYzMxNzAtYzgxOC00N2FjLTlmNzgtMWMxMmExNmQ5OWZmXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8108198/> ;    # Andhadhun
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1969626/mediaviewer/rm3417766145/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Andhadhun (2018)
+<https://www.imdb.com/title/tt8108198/> a schema:Movie ;
+    schema:name "Andhadhun" ;
+    schema:url <https://www.imdb.com/title/tt8108198/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1969626/> ;
+        schema:characterName "Franco"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BODkzYzMxNzAtYzgxOC00N2FjLTlmNzgtMWMxMmExNmQ5OWZmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODkzYzMxNzAtYzgxOC00N2FjLTlmNzgtMWMxMmExNmQ5OWZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Franco Vaz" ;
+    schema:height "277"^^xsd:integer ;
+    schema:width "265"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1969626/mediaviewer/rm3417766145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODkzYzMxNzAtYzgxOC00N2FjLTlmNzgtMWMxMmExNmQ5OWZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Franco Vaz" ;
+    schema:height "277"^^xsd:integer ;
+    schema:width "265"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,62 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0755972/> a schema:Person ;
+    schema:name "Anatoly M. Sagalevitch" ;
+    schema:url <https://www.imdb.com/name/nm0755972/> ;
+    schema:birthDate "1938-09-05"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Soundtrack" ;
+    schema:description "Anatoly M. Sagalevitch. Actor: Titanic. Anatoly M. Sagalevitch was born on 5 September 1938 in the USSR. He is an actor, known for Titanic (1997), Ghosts of the Abyss (2003) and Aliens of the Deep (2005)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "USSR"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0120338/> ;    # Titanic
+
+
+    schema:video <https://www.imdb.com/video/vi1155334425/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Titanic (1997)
+<https://www.imdb.com/title/tt0120338/> a schema:Movie ;
+    schema:name "Titanic" ;
+    schema:url <https://www.imdb.com/title/tt0120338/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0755972/> ;
+        schema:characterName "Anatoly Milkailavich"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1155334425/> a schema:VideoObject ;
+        schema:name "Aliens of the Deep" ;
+        schema:description "CT #1 Post" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1155334425/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjk0NWU2NjQtNGViZC00ZmIwLWFlMWYtZGY4MjE3MWUwZTMyXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M34S"^^xsd:duration ;
+        schema:uploadDate "2008-08-04T03:03:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

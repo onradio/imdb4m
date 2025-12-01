@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5370515/> a schema:Person ;
+    schema:name "Mohd. Abbas Khaleeli" ;
+    schema:url <https://www.imdb.com/name/nm5370515/> ;
+    schema:jobTitle "Cinematographer", "Camera and Electrical Department", "Actor" ;
+    schema:description "Mohd. Abbas Khaleeli. Actor: Life of Pi. Mohd. Abbas Khaleeli is known for Life of Pi (2012), The Devil's Ball (2023) and Sila Nodigalil (2023)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0454876/> .    # Life of Pi
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Life of Pi (2012)
+<https://www.imdb.com/title/tt0454876/> a schema:Movie ;
+    schema:name "Life of Pi" ;
+    schema:url <https://www.imdb.com/title/tt0454876/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5370515/> ;
+        schema:characterName "Ravi Patel (13-14 Years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

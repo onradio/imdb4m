@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0462332/> a schema:Person ;
+    schema:name "Jay Koch" ;
+    schema:url <https://www.imdb.com/name/nm0462332/> ;
+    schema:birthDate "1926-02-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jay Koch. Actor: Back to the Future Part II. Born in Rechnitz, Austria and raised in Brooklyn from the age of three, Julius Koch, Jr. had been a New York City police officer who walked a beat and retired with the rank of sergeant in 1969. At retirement, he moved to California, where Ronald Reagan was then governor.\n\nHis second career began when his wife Sylvia secretly sent Koch's photo to..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Rechnitz, Burgenland, Austria"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0114084/>,    # Panther
+                       <https://www.imdb.com/title/tt0109487/>,    # Cosmic Slop
+                       <https://www.imdb.com/title/tt0107144/>,    # Hot Shots! Part Deux
+                       <https://www.imdb.com/title/tt0096874/>,    # Back to the Future Part II
+                       <https://www.imdb.com/title/tt0088457/> . # Mad Mission 3
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Panther (1995)
+<https://www.imdb.com/title/tt0114084/> a schema:Movie ;
+    schema:name "Panther" ;
+    schema:url <https://www.imdb.com/title/tt0114084/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0462332/> ;
+        schema:characterName "Governor Reagan"
+    ] .
+
+# Cosmic Slop (1994)
+<https://www.imdb.com/title/tt0109487/> a schema:Movie ;
+    schema:name "Cosmic Slop" ;
+    schema:url <https://www.imdb.com/title/tt0109487/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0462332/> ;
+        schema:characterName "Alien Press Secretary"
+    ] .
+
+# Hot Shots! Part Deux (1993)
+<https://www.imdb.com/title/tt0107144/> a schema:Movie ;
+    schema:name "Hot Shots! Part Deux" ;
+    schema:url <https://www.imdb.com/title/tt0107144/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0462332/> ;
+        schema:characterName "Ronald Reagan"
+    ] .
+
+# Back to the Future Part II (1989)
+<https://www.imdb.com/title/tt0096874/> a schema:Movie ;
+    schema:name "Back to the Future Part II" ;
+    schema:url <https://www.imdb.com/title/tt0096874/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0462332/> ;
+        schema:characterName "'Ronald Reagan' Video Waiter"
+    ] .
+
+# Mad Mission 3 (1984)
+<https://www.imdb.com/title/tt0088457/> a schema:Movie ;
+    schema:name "Mad Mission 3" ;
+    schema:url <https://www.imdb.com/title/tt0088457/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0462332/> ;
+        schema:characterName "Ronald Reagan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

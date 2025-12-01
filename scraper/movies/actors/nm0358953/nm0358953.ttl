@@ -1,0 +1,82 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0358953/> a schema:Person ;
+    schema:name "Bruce Hampton" ;
+    schema:url <https://www.imdb.com/name/nm0358953/> ;
+    schema:birthDate "1947-04-30"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Col. Bruce Hampton", "Gustav Valentine Berglund III" ;
+    schema:description "Bruce Hampton. Actor: Sling Blade. Bruce Hampton was born on 30 April 1947. He was an actor, known for Sling Blade (1996), Here Comes Rusty (2016) and Gilda Sue Rosenstern: The Motion Picture! (2018). He died on 1 May 2017 in Atlanta, Georgia, USA." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0117666/>,    # Sling Blade
+                       <https://www.imdb.com/title/tt1983240/>,    # Duckworth
+                       <https://www.imdb.com/title/tt3693252/>,    # Gilda Sue Rosenstern: The Motion Picture!
+                       <https://www.imdb.com/title/tt4621736/>,    # Here Comes Rusty
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0108937/>,    # Space Ghost Coast to Coast
+                       <https://www.imdb.com/title/tt0108358/> . # Tombstone
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0117666/> a schema:Movie ;
+    schema:name "Sling Blade" ;
+    schema:url <https://www.imdb.com/title/tt0117666/> .
+
+<https://www.imdb.com/title/tt1983240/> a schema:Movie ;
+    schema:name "Duckworth" ;
+    schema:url <https://www.imdb.com/title/tt1983240/> .
+
+<https://www.imdb.com/title/tt3693252/> a schema:Movie ;
+    schema:name "Gilda Sue Rosenstern: The Motion Picture!" ;
+    schema:url <https://www.imdb.com/title/tt3693252/> .
+
+<https://www.imdb.com/title/tt4621736/> a schema:Movie ;
+    schema:name "Here Comes Rusty" ;
+    schema:url <https://www.imdb.com/title/tt4621736/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Space Ghost Coast to Coast (1998)
+<https://www.imdb.com/title/tt0108937/> a schema:Movie ;
+    schema:name "Space Ghost Coast to Coast" ;
+    schema:url <https://www.imdb.com/title/tt0108937/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0358953/> ;
+        schema:characterName "Warren"
+    ] .
+
+# Tombstone (1993)
+<https://www.imdb.com/title/tt0108358/> a schema:Movie ;
+    schema:name "Tombstone" ;
+    schema:url <https://www.imdb.com/title/tt0108358/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0358953/> ;
+        schema:characterName "Bar Patron"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

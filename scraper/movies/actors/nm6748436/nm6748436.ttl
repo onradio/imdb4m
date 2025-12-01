@@ -1,0 +1,161 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6748436/> a schema:Person ;
+    schema:name "Dafne Keen" ;
+    schema:url <https://www.imdb.com/name/nm6748436/> ;
+    schema:birthDate "2005-01-04"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:alternateName "Daphne Keen Fernández" ;
+    schema:description "Dafne Keen. Actress: Logan. Dafne Keen Fernández is a British and Spanish actress who played the role of the mutant Laura Kinney / X-23 in Logan (2017) and Lyra in the HBO series His Dark Materials (2019).\n\nShe is the daughter of British actor Will Keen, and Spanish actress, theatre director and writer María Fernández Ache.\n\nKeen made her acting debut in 2014 alongside her father with the television series The Refugees,..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOWI1M2MxM2YtMDdiNy00NTAwLWE2YzctMmU0MDlmNDUwYTIzXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Madrid, Spain"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.55"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 1″ (1.55 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3315342/>,    # Logan
+                       <https://www.imdb.com/title/tt12262202/>,    # The Acolyte
+                       <https://www.imdb.com/title/tt5607976/>,    # His Dark Materials
+                       <https://www.imdb.com/title/tt6263850/>,    # Deadpool & Wolverine
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4011172/> ; # The Refugees
+
+    schema:award [
+        a schema:Award ;
+        schema:description "5 wins & 17 nominations total"
+    ] ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6748436/mediaviewer/rm3086446593/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm1198227201/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm2020310785/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm668499457/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm3653729793/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm1339180289/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm1879128833/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm821232641/>,
+                 <https://www.imdb.com/name/nm6748436/mediaviewer/rm1441858561/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3315342/> a schema:Movie ;
+    schema:name "Logan" ;
+    schema:url <https://www.imdb.com/title/tt3315342/> .
+
+<https://www.imdb.com/title/tt12262202/> a schema:Movie ;
+    schema:name "The Acolyte" ;
+    schema:url <https://www.imdb.com/title/tt12262202/> .
+
+<https://www.imdb.com/title/tt5607976/> a schema:Movie ;
+    schema:name "His Dark Materials" ;
+    schema:url <https://www.imdb.com/title/tt5607976/> .
+
+<https://www.imdb.com/title/tt6263850/> a schema:Movie ;
+    schema:name "Deadpool & Wolverine" ;
+    schema:url <https://www.imdb.com/title/tt6263850/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Refugees (2014)
+<https://www.imdb.com/title/tt4011172/> a schema:Movie ;
+    schema:name "The Refugees" ;
+    schema:url <https://www.imdb.com/title/tt4011172/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6748436/> ;
+        schema:characterName "Ana"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOWI1M2MxM2YtMDdiNy00NTAwLWE2YzctMmU0MDlmNDUwYTIzXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWI1M2MxM2YtMDdiNy00NTAwLWE2YzctMmU0MDlmNDUwYTIzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen" ;
+    schema:height "3500"^^xsd:integer ;
+    schema:width "2671"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm3086446593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQ0MGFhYmYtNzZkMy00MTJmLWE1MzAtOTc1ZTc5M2RmOWM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Archie Singh Swali and Dafne Keen in The Acolyte (2024)" ;
+    schema:height "1422"^^xsd:integer ;
+    schema:width "3412"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm1198227201/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjc1NTE1YmQtZDY1Yi00MmZiLTliYzAtNTM1NDBiYWJlOTMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen in The Acolyte (2024)" ;
+    schema:height "1604"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm2020310785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5NGY2YTctZmQ5NC00ZjBlLWIyOTgtMDlmNjk1ODI0MThhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Jung-jae, Hassan Taj, Charlie Barnett, Amandla Stenberg, and Dafne Keen in The Acolyte (2024)" ;
+    schema:height "1593"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm668499457/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjk0YjEzZDEtZDcwZi00OTRkLTlkYzUtM2YyNmUzMjA3ZjNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen in The Acolyte (2024)" ;
+    schema:height "5464"^^xsd:integer ;
+    schema:width "8192"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm3653729793/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0N2I1MGEtYTM0Ny00MjExLTg0ZmMtMDU0YzViNDZmNjIwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen in The Acolyte (2024)" ;
+    schema:height "5464"^^xsd:integer ;
+    schema:width "8192"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm1339180289/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODhkYzgyMTQtNDdjMy00NmE0LThhMzAtMGZlM2U5NmY5MTI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlie Barnett and Dafne Keen in The Acolyte (2024)" ;
+    schema:height "1788"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm1879128833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzcwOTMxMTYtNWZlNy00ODg4LWE2MzAtYTc2MTRlMjU2NTNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ruth Wilson and Dafne Keen in His Dark Materials (2019)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm821232641/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFjNGM3NzUtNDgyMi00ZWU0LTk2NTctNTQ5ZjZhMjhmNzJhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen and Amir Wilson in His Dark Materials (2019)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6748436/mediaviewer/rm1441858561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODk2NjNiYjItYzA5MS00MzVjLWJlYjUtOTQwNTZjN2RlN2VkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dafne Keen in His Dark Materials (2019)" ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm6748436/>
+    schema:sameAs <https://www.facebook.com/DafneKeen/>,
+                  <https://www.instagram.com/dafnekeen> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

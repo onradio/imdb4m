@@ -1,0 +1,542 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0138210/> a schema:Person ;
+    schema:name "Mark Carlton" ;
+    schema:url <https://www.imdb.com/name/nm0138210/> ;
+    schema:birthDate "1945-01-15"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Production Manager" ;
+    schema:description "Mark Carlton. Actor: Heathers. Mark Carlton was born on 15 January 1945 in Tuscaloosa, Alabama, USA. He is an actor and production manager, known for Heathers (1989), RoboCop (1987) and Total Recall (1990)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tuscaloosa, Alabama, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0097493/>,    # Heathers
+                       <https://www.imdb.com/title/tt0093870/>,    # RoboCop
+                       <https://www.imdb.com/title/tt0100802/>,    # Total Recall
+                       <https://www.imdb.com/title/tt0109198/>,    # Bad Girls
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0329216/>,    # I Witness
+                       <https://www.imdb.com/title/tt0330065/>,    # The Biz
+                       <https://www.imdb.com/title/tt0206588/>,    # Beethoven's 3rd
+                       <https://www.imdb.com/title/tt0207764/>,    # Submitted for Your Approval
+                       <https://www.imdb.com/title/tt0206220/>,    # Powerplay
+                       <https://www.imdb.com/title/tt0159995/>,    # Angel's Dance
+                       <https://www.imdb.com/title/tt0113747/>,    # Malevolence
+                       <https://www.imdb.com/title/tt0112022/>,    # JAG
+                       <https://www.imdb.com/title/tt0153080/>,    # The Tiger Woods Story
+                       <https://www.imdb.com/title/tt0115647/>,    # Behind Enemy Lines
+                       <https://www.imdb.com/title/tt0274164/>,    # Tomcat Alley
+                       <https://www.imdb.com/title/tt0105147/>,    # Play Nice
+                       <https://www.imdb.com/title/tt0100147/>,    # Midnight Fear
+                       <https://www.imdb.com/title/tt0100232/>,    # Navy Seals
+                       <https://www.imdb.com/title/tt0094490/>,    # Just the Ten of Us
+                       <https://www.imdb.com/title/tt0094540/>,    # Roseanne
+                       <https://www.imdb.com/title/tt0098126/>,    # Prime Target
+                       <https://www.imdb.com/title/tt0095485/>,    # Ladykillers
+                       <https://www.imdb.com/title/tt0077000/>,    # Dallas
+                       <https://www.imdb.com/title/tt0092346/>,    # Duet
+                       <https://www.imdb.com/title/tt0095565/>,    # Made in U.S.A.
+                       <https://www.imdb.com/title/tt0093289/>,    # J. Edgar Hoover
+                       <https://www.imdb.com/title/tt0090660/>,    # Armed and Dangerous
+                       <https://www.imdb.com/title/tt0089653/>,    # My Wicked, Wicked Ways: The Legend of Errol Flynn
+                       <https://www.imdb.com/title/tt0088290/>,    # A Touch of Scandal
+                       <https://www.imdb.com/title/tt5017548/>,    # London and Davis in New York
+                       <https://www.imdb.com/title/tt0085616/>,    # Grace Kelly
+                       <https://www.imdb.com/title/tt0078704/>,    # Trapper John, M.D.
+                       <https://www.imdb.com/title/tt0083885/>,    # Endangered Species
+                       <https://www.imdb.com/title/tt0083293/>,    # Violet
+                       <https://www.imdb.com/title/tt0082392/>,    # Fly Away Home
+                       <https://www.imdb.com/title/tt0140804/>,    # America Lost
+                       <https://www.imdb.com/title/tt0333317/>,    # Del otro lado del puente
+                       <https://www.imdb.com/title/tt0078723/>,    # 1941
+                       <https://www.imdb.com/title/tt0069557/>,    # Barnaby Jones
+                       <https://www.imdb.com/title/tt0077001/>,    # David Cassidy - Man Undercover
+                       <https://www.imdb.com/title/tt0075488/>,    # CHiPs
+                       <https://www.imdb.com/title/tt0077617/>,    # Go Tell the Spartans
+                       <https://www.imdb.com/title/tt0077362/>,    # Coming Home
+                       <https://www.imdb.com/title/tt0074706/> . # Jackson County Jail
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0097493/> a schema:Movie ;
+    schema:name "Heathers" ;
+    schema:url <https://www.imdb.com/title/tt0097493/> .
+
+<https://www.imdb.com/title/tt0093870/> a schema:Movie ;
+    schema:name "RoboCop" ;
+    schema:url <https://www.imdb.com/title/tt0093870/> .
+
+<https://www.imdb.com/title/tt0100802/> a schema:Movie ;
+    schema:name "Total Recall" ;
+    schema:url <https://www.imdb.com/title/tt0100802/> .
+
+<https://www.imdb.com/title/tt0109198/> a schema:Movie ;
+    schema:name "Bad Girls" ;
+    schema:url <https://www.imdb.com/title/tt0109198/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# I Witness (2003)
+<https://www.imdb.com/title/tt0329216/> a schema:Movie ;
+    schema:name "I Witness" ;
+    schema:url <https://www.imdb.com/title/tt0329216/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Mr. Carter"
+    ] .
+
+# The Biz (2002)
+<https://www.imdb.com/title/tt0330065/> a schema:Movie ;
+    schema:name "The Biz" ;
+    schema:url <https://www.imdb.com/title/tt0330065/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Detective McEnroe"
+    ] .
+
+# Beethoven's 3rd (2000)
+<https://www.imdb.com/title/tt0206588/> a schema:Movie ;
+    schema:name "Beethoven's 3rd" ;
+    schema:url <https://www.imdb.com/title/tt0206588/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Ranger Smith"
+    ] .
+
+# Submitted for Your Approval (2000)
+<https://www.imdb.com/title/tt0207764/> a schema:Movie ;
+    schema:name "Submitted for Your Approval" ;
+    schema:url <https://www.imdb.com/title/tt0207764/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Buck"
+    ] .
+
+# Powerplay (1999)
+<https://www.imdb.com/title/tt0206220/> a schema:Movie ;
+    schema:name "Powerplay" ;
+    schema:url <https://www.imdb.com/title/tt0206220/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Mr. Klein"
+    ] .
+
+# Angel's Dance (1999)
+<https://www.imdb.com/title/tt0159995/> a schema:Movie ;
+    schema:name "Angel's Dance" ;
+    schema:url <https://www.imdb.com/title/tt0159995/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Bob"
+    ] .
+
+# Malevolence (1999)
+<https://www.imdb.com/title/tt0113747/> a schema:Movie ;
+    schema:name "Malevolence" ;
+    schema:url <https://www.imdb.com/title/tt0113747/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Heck Billings"
+    ] .
+
+# JAG (1998)
+<https://www.imdb.com/title/tt0112022/> a schema:Movie ;
+    schema:name "JAG" ;
+    schema:url <https://www.imdb.com/title/tt0112022/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Undersecretary Darrel Spratt"
+    ] .
+
+# The Tiger Woods Story (1998)
+<https://www.imdb.com/title/tt0153080/> a schema:Movie ;
+    schema:name "The Tiger Woods Story" ;
+    schema:url <https://www.imdb.com/title/tt0153080/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Art Garrett"
+    ] .
+
+# Behind Enemy Lines (1997)
+<https://www.imdb.com/title/tt0115647/> a schema:Movie ;
+    schema:name "Behind Enemy Lines" ;
+    schema:url <https://www.imdb.com/title/tt0115647/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Col. Wolfe"
+    ] .
+
+# Tomcat Alley (1994)
+<https://www.imdb.com/title/tt0274164/> a schema:Movie ;
+    schema:name "Tomcat Alley" ;
+    schema:url <https://www.imdb.com/title/tt0274164/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName ""
+    ] .
+
+# Play Nice (1992)
+<https://www.imdb.com/title/tt0105147/> a schema:Movie ;
+    schema:name "Play Nice" ;
+    schema:url <https://www.imdb.com/title/tt0105147/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Detective Ball"
+    ] .
+
+# Midnight Fear (1991)
+<https://www.imdb.com/title/tt0100147/> a schema:Movie ;
+    schema:name "Midnight Fear" ;
+    schema:url <https://www.imdb.com/title/tt0100147/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Lt. Steele"
+    ] .
+
+# Navy Seals (1990)
+<https://www.imdb.com/title/tt0100232/> a schema:Movie ;
+    schema:name "Navy Seals" ;
+    schema:url <https://www.imdb.com/title/tt0100232/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Jim Elmore"
+    ] .
+
+# Just the Ten of Us (1989)
+<https://www.imdb.com/title/tt0094490/> a schema:Movie ;
+    schema:name "Just the Ten of Us" ;
+    schema:url <https://www.imdb.com/title/tt0094490/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Truck Driver"
+    ] .
+
+# Roseanne (1989)
+<https://www.imdb.com/title/tt0094540/> a schema:Movie ;
+    schema:name "Roseanne" ;
+    schema:url <https://www.imdb.com/title/tt0094540/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Sgt. Wilcox"
+    ] .
+
+# Prime Target (1989)
+<https://www.imdb.com/title/tt0098126/> a schema:Movie ;
+    schema:name "Prime Target" ;
+    schema:url <https://www.imdb.com/title/tt0098126/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Mr. Weissman"
+    ] .
+
+# Ladykillers (1988)
+<https://www.imdb.com/title/tt0095485/> a schema:Movie ;
+    schema:name "Ladykillers" ;
+    schema:url <https://www.imdb.com/title/tt0095485/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Sgt. Kramer"
+    ] .
+
+# Dallas (1988)
+<https://www.imdb.com/title/tt0077000/> a schema:Movie ;
+    schema:name "Dallas" ;
+    schema:url <https://www.imdb.com/title/tt0077000/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Detective Jackson"
+    ] .
+
+# Duet (1987)
+<https://www.imdb.com/title/tt0092346/> a schema:Movie ;
+    schema:name "Duet" ;
+    schema:url <https://www.imdb.com/title/tt0092346/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Ernest the Bum"
+    ] .
+
+# Made in U.S.A. (1987)
+<https://www.imdb.com/title/tt0095565/> a schema:Movie ;
+    schema:name "Made in U.S.A." ;
+    schema:url <https://www.imdb.com/title/tt0095565/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Ford Salesman"
+    ] .
+
+# J. Edgar Hoover (1987)
+<https://www.imdb.com/title/tt0093289/> a schema:Movie ;
+    schema:name "J. Edgar Hoover" ;
+    schema:url <https://www.imdb.com/title/tt0093289/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "1st Agent"
+    ] .
+
+# Armed and Dangerous (1986)
+<https://www.imdb.com/title/tt0090660/> a schema:Movie ;
+    schema:name "Armed and Dangerous" ;
+    schema:url <https://www.imdb.com/title/tt0090660/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Court Clerk"
+    ] .
+
+# My Wicked, Wicked Ways: The Legend of Errol Flynn (1985)
+<https://www.imdb.com/title/tt0089653/> a schema:Movie ;
+    schema:name "My Wicked, Wicked Ways: The Legend of Errol Flynn" ;
+    schema:url <https://www.imdb.com/title/tt0089653/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Art Skildany"
+    ] .
+
+# A Touch of Scandal (1984)
+<https://www.imdb.com/title/tt0088290/> a schema:Movie ;
+    schema:name "A Touch of Scandal" ;
+    schema:url <https://www.imdb.com/title/tt0088290/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Cop"
+    ] .
+
+# London and Davis in New York (1984)
+<https://www.imdb.com/title/tt5017548/> a schema:Movie ;
+    schema:name "London and Davis in New York" ;
+    schema:url <https://www.imdb.com/title/tt5017548/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Police Captain"
+    ] .
+
+# Grace Kelly (1983)
+<https://www.imdb.com/title/tt0085616/> a schema:Movie ;
+    schema:name "Grace Kelly" ;
+    schema:url <https://www.imdb.com/title/tt0085616/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Shipboard Reporter #2"
+    ] .
+
+# Trapper John, M.D. (1982)
+<https://www.imdb.com/title/tt0078704/> a schema:Movie ;
+    schema:name "Trapper John, M.D." ;
+    schema:url <https://www.imdb.com/title/tt0078704/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Yakut Suslov"
+    ] .
+
+# Endangered Species (1982)
+<https://www.imdb.com/title/tt0083885/> a schema:Movie ;
+    schema:name "Endangered Species" ;
+    schema:url <https://www.imdb.com/title/tt0083885/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Mercenary"
+    ] .
+
+# Violet (1981)
+<https://www.imdb.com/title/tt0083293/> a schema:Movie ;
+    schema:name "Violet" ;
+    schema:url <https://www.imdb.com/title/tt0083293/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "The Preacher"
+    ] .
+
+# Fly Away Home (1981)
+<https://www.imdb.com/title/tt0082392/> a schema:Movie ;
+    schema:name "Fly Away Home" ;
+    schema:url <https://www.imdb.com/title/tt0082392/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName ""
+    ] .
+
+# America Lost (1980)
+<https://www.imdb.com/title/tt0140804/> a schema:Movie ;
+    schema:name "America Lost" ;
+    schema:url <https://www.imdb.com/title/tt0140804/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Rebel Sergeant"
+    ] .
+
+# Del otro lado del puente (1980)
+<https://www.imdb.com/title/tt0333317/> a schema:Movie ;
+    schema:name "Del otro lado del puente" ;
+    schema:url <https://www.imdb.com/title/tt0333317/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName ""
+    ] .
+
+# 1941 (1979)
+<https://www.imdb.com/title/tt0078723/> a schema:Movie ;
+    schema:name "1941" ;
+    schema:url <https://www.imdb.com/title/tt0078723/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Stilwell Aide"
+    ] .
+
+# Barnaby Jones (1979)
+<https://www.imdb.com/title/tt0069557/> a schema:Movie ;
+    schema:name "Barnaby Jones" ;
+    schema:url <https://www.imdb.com/title/tt0069557/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Clerk"
+    ] .
+
+# David Cassidy - Man Undercover (1979)
+<https://www.imdb.com/title/tt0077001/> a schema:Movie ;
+    schema:name "David Cassidy - Man Undercover" ;
+    schema:url <https://www.imdb.com/title/tt0077001/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Donavan"
+    ] .
+
+# CHiPs (1978)
+<https://www.imdb.com/title/tt0075488/> a schema:Movie ;
+    schema:name "CHiPs" ;
+    schema:url <https://www.imdb.com/title/tt0075488/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Pete"
+    ] .
+
+# Go Tell the Spartans (1978)
+<https://www.imdb.com/title/tt0077617/> a schema:Movie ;
+    schema:name "Go Tell the Spartans" ;
+    schema:url <https://www.imdb.com/title/tt0077617/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Capt. Schlitz"
+    ] .
+
+# Coming Home (1978)
+<https://www.imdb.com/title/tt0077362/> a schema:Movie ;
+    schema:name "Coming Home" ;
+    schema:url <https://www.imdb.com/title/tt0077362/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Mark at Rap Session"
+    ] .
+
+# Jackson County Jail (1976)
+<https://www.imdb.com/title/tt0074706/> a schema:Movie ;
+    schema:name "Jackson County Jail" ;
+    schema:url <https://www.imdb.com/title/tt0074706/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0138210/> ;
+        schema:characterName "Highway Patrolman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

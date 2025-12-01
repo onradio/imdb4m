@@ -1,0 +1,173 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0503266/> a schema:Person ;
+    schema:name "Ray LePere" ;
+    schema:url <https://www.imdb.com/name/nm0503266/> ;
+    schema:birthDate "1934-09-19"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ray LePere. Actor: JFK. Ray LePere was born on 19 September 1934 in Dallas Texas. He was an actor, known for JFK (1991), Tender Mercies (1983) and Caged Fear (1991). He died on 2 January 2023 in the USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dallas Texas"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0102138/>,    # JFK
+                       <https://www.imdb.com/title/tt0102062/>,    # Caged Fear
+                       <https://www.imdb.com/title/tt0098079/>,    # Perfect Profile
+                       <https://www.imdb.com/title/tt0077000/>,    # Dallas
+                       <https://www.imdb.com/title/tt0090085/>,    # Stormin' Home
+                       <https://www.imdb.com/title/tt0088273/>,    # Time Bomb
+                       <https://www.imdb.com/title/tt0086423/>,    # Tender Mercies
+                       <https://www.imdb.com/title/tt0082215/>,    # Crisis at Central High
+                       <https://www.imdb.com/title/tt0077374/>,    # Cotton Candy
+                       <https://www.imdb.com/title/tt0078228/>,    # The Seniors
+                       <https://www.imdb.com/title/tt0076841/> . # The Trial of Lee Harvey Oswald
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Zapruder"
+    ] .
+
+# Caged Fear (1991)
+<https://www.imdb.com/title/tt0102062/> a schema:Movie ;
+    schema:name "Caged Fear" ;
+    schema:url <https://www.imdb.com/title/tt0102062/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Night Dorm Guard"
+    ] .
+
+# Perfect Profile (1989)
+<https://www.imdb.com/title/tt0098079/> a schema:Movie ;
+    schema:name "Perfect Profile" ;
+    schema:url <https://www.imdb.com/title/tt0098079/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Coach Bexler"
+    ] .
+
+# Dallas (1978)
+<https://www.imdb.com/title/tt0077000/> a schema:Movie ;
+    schema:name "Dallas" ;
+    schema:url <https://www.imdb.com/title/tt0077000/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Manager"
+    ] .
+
+# Stormin' Home (1985)
+<https://www.imdb.com/title/tt0090085/> a schema:Movie ;
+    schema:name "Stormin' Home" ;
+    schema:url <https://www.imdb.com/title/tt0090085/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Uncle Ernie"
+    ] .
+
+# Time Bomb (1984)
+<https://www.imdb.com/title/tt0088273/> a schema:Movie ;
+    schema:name "Time Bomb" ;
+    schema:url <https://www.imdb.com/title/tt0088273/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Felix"
+    ] .
+
+# Tender Mercies (1983)
+<https://www.imdb.com/title/tt0086423/> a schema:Movie ;
+    schema:name "Tender Mercies" ;
+    schema:url <https://www.imdb.com/title/tt0086423/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Man in Bar"
+    ] .
+
+# Crisis at Central High (1981)
+<https://www.imdb.com/title/tt0082215/> a schema:Movie ;
+    schema:name "Crisis at Central High" ;
+    schema:url <https://www.imdb.com/title/tt0082215/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "George Truitt"
+    ] .
+
+# Cotton Candy (1978)
+<https://www.imdb.com/title/tt0077374/> a schema:Movie ;
+    schema:name "Cotton Candy" ;
+    schema:url <https://www.imdb.com/title/tt0077374/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Coach Grimes"
+    ] .
+
+# The Seniors (1978)
+<https://www.imdb.com/title/tt0078228/> a schema:Movie ;
+    schema:name "The Seniors" ;
+    schema:url <https://www.imdb.com/title/tt0078228/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName "Businessman"
+    ] .
+
+# The Trial of Lee Harvey Oswald (1977)
+<https://www.imdb.com/title/tt0076841/> a schema:Movie ;
+    schema:name "The Trial of Lee Harvey Oswald" ;
+    schema:url <https://www.imdb.com/title/tt0076841/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0503266/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

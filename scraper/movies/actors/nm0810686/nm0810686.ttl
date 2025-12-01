@@ -1,0 +1,386 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0810686/> a schema:Person ;
+    schema:name "Dick Smothers" ;
+    schema:url <https://www.imdb.com/name/nm0810686/> ;
+    schema:birthDate "1938-11-20"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:alternateName "Dickie", "Richard Remick Smothers" ;
+    schema:description "Dick Smothers. Actor: Casino. Dick Smothers was born on 20 November 1938 in New York City, New York, USA. He is an actor and writer, known for Casino (1995), The Smothers Brothers Comedy Hour (1967) and The Informant! (2009). He was previously married to Denby Franklin, Lorraine Wallace and Linda Ann Miller." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTU2MjA0NjczNF5BMl5BanBnXkFtZTYwMzc5MTQ1._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112641/>,    # Casino
+                       <https://www.imdb.com/title/tt0061296/>,    # The Smothers Brothers Comedy Hour
+                       <https://www.imdb.com/title/tt0098369/>,    # Speed Zone
+                       <https://www.imdb.com/title/tt1130080/>,    # The Informant!
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0096697/>,    # The Simpsons
+                       <https://www.imdb.com/title/tt0324864/>,    # Kingdom Hospital
+                       <https://www.imdb.com/title/tt0320053/>,    # Life with Bonnie
+                       <https://www.imdb.com/title/tt12317316/>,    # Mr. Bill Does Vegas
+                       <https://www.imdb.com/title/tt0167110/>,    # The Debtors
+                       <https://www.imdb.com/title/tt0111942/>,    # Dr. Katz, Professional Therapist
+                       <https://www.imdb.com/title/tt7059706/>,    # Timmy's Special Delivery: A Precious Moments Christmas
+                       <https://www.imdb.com/title/tt0169511/>,    # What's Alan Watching?
+                       <https://www.imdb.com/title/tt21077662/>,    # Cinemax Comedy Experiment
+                       <https://www.imdb.com/title/tt0078569/>,    # Benson
+                       <https://www.imdb.com/title/tt0075592/>,    # Tales of the Unexpected
+                       <https://www.imdb.com/title/tt0084779/>,    # Terror at Alcatraz
+                       <https://www.imdb.com/title/tt0077008/>,    # Fantasy Island
+                       <https://www.imdb.com/title/tt0081862/>,    # Fitz and Bones
+                       <https://www.imdb.com/title/tt0062572/>,    # It Takes a Thief
+                       <https://www.imdb.com/title/tt0062601/>,    # Rowan & Martin's Laugh-In
+                       <https://www.imdb.com/title/tt0060088/>,    # Alice Through the Looking Glass
+                       <https://www.imdb.com/title/tt0188362/>,    # The Smothers Brothers Show
+                       <https://www.imdb.com/title/tt0056745/>,    # Burke's Law
+                       <https://www.imdb.com/title/tt0045410/> ; # The Danny Thomas Show
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 3 nominations total"
+    ] ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0810686/mediaviewer/rm4178414849/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm3200465920/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm3828812032/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm3606784/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm859244800/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm446499072/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm4087089408/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm4019980544/>,
+                 <https://www.imdb.com/name/nm0810686/mediaviewer/rm3868985600/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> .
+
+<https://www.imdb.com/title/tt0061296/> a schema:Movie ;
+    schema:name "The Smothers Brothers Comedy Hour" ;
+    schema:url <https://www.imdb.com/title/tt0061296/> .
+
+<https://www.imdb.com/title/tt0098369/> a schema:Movie ;
+    schema:name "Speed Zone" ;
+    schema:url <https://www.imdb.com/title/tt0098369/> .
+
+<https://www.imdb.com/title/tt1130080/> a schema:Movie ;
+    schema:name "The Informant!" ;
+    schema:url <https://www.imdb.com/title/tt1130080/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Simpsons (2009)
+<https://www.imdb.com/title/tt0096697/> a schema:Movie ;
+    schema:name "The Simpsons" ;
+    schema:url <https://www.imdb.com/title/tt0096697/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick Smothers"
+    ] .
+
+# Kingdom Hospital (2004)
+<https://www.imdb.com/title/tt0324864/> a schema:Movie ;
+    schema:name "Kingdom Hospital" ;
+    schema:url <https://www.imdb.com/title/tt0324864/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Janitor"
+    ] .
+
+# Life with Bonnie (2003)
+<https://www.imdb.com/title/tt0320053/> a schema:Movie ;
+    schema:name "Life with Bonnie" ;
+    schema:url <https://www.imdb.com/title/tt0320053/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick Smothers"
+    ] .
+
+# Mr. Bill Does Vegas (2002)
+<https://www.imdb.com/title/tt12317316/> a schema:Movie ;
+    schema:name "Mr. Bill Does Vegas" ;
+    schema:url <https://www.imdb.com/title/tt12317316/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName ""
+    ] .
+
+# The Debtors (1999)
+<https://www.imdb.com/title/tt0167110/> a schema:Movie ;
+    schema:name "The Debtors" ;
+    schema:url <https://www.imdb.com/title/tt0167110/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName ""
+    ] .
+
+# Dr. Katz, Professional Therapist (1997)
+<https://www.imdb.com/title/tt0111942/> a schema:Movie ;
+    schema:name "Dr. Katz, Professional Therapist" ;
+    schema:url <https://www.imdb.com/title/tt0111942/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick"
+    ] .
+
+# Timmy's Special Delivery: A Precious Moments Christmas (1993)
+<https://www.imdb.com/title/tt7059706/> a schema:Movie ;
+    schema:name "Timmy's Special Delivery: A Precious Moments Christmas" ;
+    schema:url <https://www.imdb.com/title/tt7059706/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Father"
+    ] .
+
+# What's Alan Watching? (1989)
+<https://www.imdb.com/title/tt0169511/> a schema:Movie ;
+    schema:name "What's Alan Watching?" ;
+    schema:url <https://www.imdb.com/title/tt0169511/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick Smothers"
+    ] .
+
+# Cinemax Comedy Experiment (1988)
+<https://www.imdb.com/title/tt21077662/> a schema:Movie ;
+    schema:name "Cinemax Comedy Experiment" ;
+    schema:url <https://www.imdb.com/title/tt21077662/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName ""
+    ] .
+
+# Benson (1985)
+<https://www.imdb.com/title/tt0078569/> a schema:Movie ;
+    schema:name "Benson" ;
+    schema:url <https://www.imdb.com/title/tt0078569/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Elevator Musician"
+    ] .
+
+# Tales of the Unexpected (1983)
+<https://www.imdb.com/title/tt0075592/> a schema:Movie ;
+    schema:name "Tales of the Unexpected" ;
+    schema:url <https://www.imdb.com/title/tt0075592/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dr. Humphrey Baxter"
+    ] .
+
+# Terror at Alcatraz (1982)
+<https://www.imdb.com/title/tt0084779/> a schema:Movie ;
+    schema:name "Terror at Alcatraz" ;
+    schema:url <https://www.imdb.com/title/tt0084779/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Ryan Fitzpatrick"
+    ] .
+
+# Fantasy Island (1982)
+<https://www.imdb.com/title/tt0077008/> a schema:Movie ;
+    schema:name "Fantasy Island" ;
+    schema:url <https://www.imdb.com/title/tt0077008/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Ron Price"
+    ] .
+
+# Fitz and Bones (1981)
+<https://www.imdb.com/title/tt0081862/> a schema:Movie ;
+    schema:name "Fitz and Bones" ;
+    schema:url <https://www.imdb.com/title/tt0081862/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Ryan Fitzpatrick"
+    ] .
+
+# It Takes a Thief (1970)
+<https://www.imdb.com/title/tt0062572/> a schema:Movie ;
+    schema:name "It Takes a Thief" ;
+    schema:url <https://www.imdb.com/title/tt0062572/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "P.K. Rhodes"
+    ] .
+
+# Rowan & Martin's Laugh-In (1969)
+<https://www.imdb.com/title/tt0062601/> a schema:Movie ;
+    schema:name "Rowan & Martin's Laugh-In" ;
+    schema:url <https://www.imdb.com/title/tt0062601/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Guest Performer"
+    ] .
+
+# Alice Through the Looking Glass (1966)
+<https://www.imdb.com/title/tt0060088/> a schema:Movie ;
+    schema:name "Alice Through the Looking Glass" ;
+    schema:url <https://www.imdb.com/title/tt0060088/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Tweedledee"
+    ] .
+
+# The Smothers Brothers Show (1965)
+<https://www.imdb.com/title/tt0188362/> a schema:Movie ;
+    schema:name "The Smothers Brothers Show" ;
+    schema:url <https://www.imdb.com/title/tt0188362/> ;
+    schema:datePublished "1965"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick Smothers"
+    ] .
+
+# Burke's Law (1964)
+<https://www.imdb.com/title/tt0056745/> a schema:Movie ;
+    schema:name "Burke's Law" ;
+    schema:url <https://www.imdb.com/title/tt0056745/> ;
+    schema:datePublished "1964"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Luke Rafer"
+    ] .
+
+# The Danny Thomas Show (1962)
+<https://www.imdb.com/title/tt0045410/> a schema:Movie ;
+    schema:name "The Danny Thomas Show" ;
+    schema:url <https://www.imdb.com/title/tt0045410/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0810686/> ;
+        schema:characterName "Dick Smothers - The Smothers Brothers"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTU2MjA0NjczNF5BMl5BanBnXkFtZTYwMzc5MTQ1._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU2MjA0NjczNF5BMl5BanBnXkFtZTYwMzc5MTQ1._V1_.jpg> ;
+    schema:caption "Dick Smothers and Tom Smothers" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "307"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm4178414849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzZlNGI1MTctNTEzZS00ZTNmLWE2ZjgtYmMyN2Q4ZmM4NTdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dick Smothers and Tom Smothers in Saturday Night Live (1975)" ;
+    schema:height "673"^^xsd:integer ;
+    schema:width "1000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm3200465920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGZkMzlmOGUtZGQ0NC00MjYzLTlkZDQtZmJlOWZjYTljNDZkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dick Smothers and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "1654"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm3828812032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjkzYWY2MTYtYzgwNi00ZDgxLThlZWEtODAzMmIyZGFkYTcwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Glen Campbell, Dick Smothers, and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "605"^^xsd:integer ;
+    schema:width "907"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm3606784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTM0N2UzNWUtNTA1NC00YTg4LTgwODEtN2IzYzNlMWFhMDhlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dick Smothers and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "957"^^xsd:integer ;
+    schema:width "725"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm859244800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQyZThhYmYtYzNhYi00ZDljLTk2ODItM2U4MDlhOGI0ZTBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Linda Ronstadt, Dick Smothers, and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "608"^^xsd:integer ;
+    schema:width "463"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm446499072/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWY1MGI2NWYtN2UyNi00ZGNkLWFiNmQtYzMxY2E4ZjhkMTk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Edgar Bergen, Dick Smothers, and Effie Klinker in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1536"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm4087089408/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzc3Yzg4NTItMTdiOS00ZmZiLTg2NjgtNGUzYTBlMDNmYzc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "George Harrison, Dick Smothers, and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm4019980544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjZmNzRjMTUtMzk1ZC00YTdhLWE5YzktNDM5MjQ5OTY0N2RjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Steve Martin, Dick Smothers, and Tom Smothers in The Smothers Brothers Comedy Hour: The 20th Reunion (1988)" ;
+    schema:height "1536"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0810686/mediaviewer/rm3868985600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTQxYzBiNDgtOTQ4Yy00ZWNmLTk0ZTQtNmIzMGZhYTJmMmE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Seeger, Dick Smothers, and Tom Smothers in The Smothers Brothers Comedy Hour (1967)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1536"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

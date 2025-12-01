@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0118473/> a schema:Person ;
+    schema:name "Jason Buckham" ;
+    schema:url <https://www.imdb.com/name/nm0118473/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jason Buckham. Actor: Snatch. Jason Buckham is known for Snatch (2000), Siamese Cop (1998) and Self Help (2000)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0451195/>,    # Self Help
+                       <https://www.imdb.com/title/tt0208092/>,    # Snatch
+                       <https://www.imdb.com/title/tt0120825/>,    # Siamese Cop
+                       <https://www.imdb.com/title/tt0092964/> . # Empire State
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Self Help (2000)
+<https://www.imdb.com/title/tt0451195/> a schema:Movie ;
+    schema:name "Self Help" ;
+    schema:url <https://www.imdb.com/title/tt0451195/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0118473/> ;
+        schema:characterName "The Dodger"
+    ] .
+
+# Snatch (2000)
+<https://www.imdb.com/title/tt0208092/> a schema:Movie ;
+    schema:name "Snatch" ;
+    schema:url <https://www.imdb.com/title/tt0208092/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0118473/> ;
+        schema:characterName "Gary"
+    ] .
+
+# Siamese Cop (1998)
+<https://www.imdb.com/title/tt0120825/> a schema:Movie ;
+    schema:name "Siamese Cop" ;
+    schema:url <https://www.imdb.com/title/tt0120825/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0118473/> ;
+        schema:characterName "Dan pinto"
+    ] .
+
+# Empire State (1987)
+<https://www.imdb.com/title/tt0092964/> a schema:Movie ;
+    schema:name "Empire State" ;
+    schema:url <https://www.imdb.com/title/tt0092964/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0118473/> ;
+        schema:characterName "Clubber"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

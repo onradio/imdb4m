@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0068756/> a schema:Person ;
+    schema:name "Lisa Bellard" ;
+    schema:url <https://www.imdb.com/name/nm0068756/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Lisa Bellard. Actress: Ferris Bueller's Day Off. Lisa Bellard is known for Ferris Bueller's Day Off (1986)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0091042/> .    # Ferris Bueller's Day Off
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ferris Bueller's Day Off (1986)
+<https://www.imdb.com/title/tt0091042/> a schema:Movie ;
+    schema:name "Ferris Bueller's Day Off" ;
+    schema:url <https://www.imdb.com/title/tt0091042/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0068756/> ;
+        schema:characterName "Economics Student"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

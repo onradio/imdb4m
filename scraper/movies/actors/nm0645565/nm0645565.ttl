@@ -1,0 +1,674 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0645565/> a schema:Person ;
+    schema:name "Bob Okazaki" ;
+    schema:url <https://www.imdb.com/name/nm0645565/> ;
+    schema:birthDate "1902-02-03"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Bob Okazaki. Actor: Blade Runner. Bob Okazaki was born on 3 February 1902 in Tokyo, Japan. He was an actor, known for Blade Runner (1982), I Spy (1965) and Hawaiian Eye (1959). He died on 28 May 1985 in Los Angeles, California, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Tokyo, Japan"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0078562/>,    # Archie Bunker's Place
+                       <https://www.imdb.com/title/tt0083658/>,    # Blade Runner
+                       <https://www.imdb.com/title/tt0068098/>,    # M*A*S*H
+                       <https://www.imdb.com/title/tt0074064/>,    # The Tony Randall Show
+                       <https://www.imdb.com/title/tt0072556/>,    # Phyllis
+                       <https://www.imdb.com/title/tt0068093/>,    # Kung Fu
+                       <https://www.imdb.com/title/tt0068128/>,    # Sanford and Son
+                       <https://www.imdb.com/title/tt0069606/>,    # The Magician
+                       <https://www.imdb.com/title/tt0061266/>,    # Ironside
+                       <https://www.imdb.com/title/tt0067065/>,    # Escape from the Planet of the Apes
+                       <https://www.imdb.com/title/tt0066273/>,    # R.P.M.
+                       <https://www.imdb.com/title/tt0058801/>,    # The F.B.I.
+                       <https://www.imdb.com/title/tt0043224/>,    # The Red Skelton Show
+                       <https://www.imdb.com/title/tt0061927/>,    # Luv
+                       <https://www.imdb.com/title/tt0057765/>,    # The Man from U.N.C.L.E.
+                       <https://www.imdb.com/title/tt0831400/>,    # CBS Playhouse
+                       <https://www.imdb.com/title/tt0057733/>,    # Bewitched
+                       <https://www.imdb.com/title/tt0060003/>,    # Love on a Rooftop
+                       <https://www.imdb.com/title/tt0060036/>,    # The Time Tunnel
+                       <https://www.imdb.com/title/tt0061170/>,    # Walk Don't Run
+                       <https://www.imdb.com/title/tt0050051/>,    # Perry Mason
+                       <https://www.imdb.com/title/tt0058816/>,    # I Spy
+                       <https://www.imdb.com/title/tt0057393/>,    # PT 109
+                       <https://www.imdb.com/title/tt0055657/>,    # The Alfred Hitchcock Hour
+                       <https://www.imdb.com/title/tt0056021/>,    # A Girl Named Tamiko
+                       <https://www.imdb.com/title/tt0055689/>,    # McHale's Navy
+                       <https://www.imdb.com/title/tt0055697/>,    # Our Man Higgins
+                       <https://www.imdb.com/title/tt0050025/>,    # Have Gun - Will Travel
+                       <https://www.imdb.com/title/tt0052472/>,    # Hawaiian Eye
+                       <https://www.imdb.com/title/tt0054513/>,    # Alcoa Premiere
+                       <https://www.imdb.com/title/tt0052463/>,    # The Detectives
+                       <https://www.imdb.com/title/tt0056699/>,    # Womanhunt
+                       <https://www.imdb.com/title/tt0055436/>,    # 7 Women from Hell
+                       <https://www.imdb.com/title/tt0054772/>,    # Cry for Happy
+                       <https://www.imdb.com/title/tt0053482/>,    # Assignment: Underwater
+                       <https://www.imdb.com/title/tt0053480/>,    # Angel
+                       <https://www.imdb.com/title/tt0053901/>,    # Hell to Eternity
+                       <https://www.imdb.com/title/tt0052497/>,    # Not for Hire
+                       <https://www.imdb.com/title/tt0052606/>,    # Battle of the Coral Sea
+                       <https://www.imdb.com/title/tt0052479/>,    # Johnny Staccato
+                       <https://www.imdb.com/title/tt0052713/>,    # The Crimson Kimono
+                       <https://www.imdb.com/title/tt0053399/>,    # Up Periscope
+                       <https://www.imdb.com/title/tt0053364/>,    # Tokyo After Dark
+                       <https://www.imdb.com/title/tt0050579/>,    # Jungle Heat
+                       <https://www.imdb.com/title/tt0048903/>,    # Telephone Time
+                       <https://www.imdb.com/title/tt0044248/>,    # Cavalcade of America
+                       <https://www.imdb.com/title/tt0048960/>,    # Around the World in 80 Days
+                       <https://www.imdb.com/title/tt0049544/>,    # Mother, Sir!
+                       <https://www.imdb.com/title/tt0048182/>,    # House of Bamboo
+                       <https://www.imdb.com/title/tt0035298/>,    # Secret Agent of Japan
+                       <https://www.imdb.com/title/tt0035574/>,    # China Caravan
+                       <https://www.imdb.com/title/tt0034281/> ; # They Met in Bombay
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0645565/mediaviewer/rm3077384704/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Archie Bunker's Place (1982)
+<https://www.imdb.com/title/tt0078562/> a schema:Movie ;
+    schema:name "Archie Bunker's Place" ;
+    schema:url <https://www.imdb.com/title/tt0078562/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Bruce"
+    ] .
+
+# Blade Runner (1982)
+<https://www.imdb.com/title/tt0083658/> a schema:Movie ;
+    schema:name "Blade Runner" ;
+    schema:url <https://www.imdb.com/title/tt0083658/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Sushi Master"
+    ] .
+
+# M*A*S*H (1979)
+<https://www.imdb.com/title/tt0068098/> a schema:Movie ;
+    schema:name "M*A*S*H" ;
+    schema:url <https://www.imdb.com/title/tt0068098/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Farmer"
+    ] .
+
+# The Tony Randall Show (1976)
+<https://www.imdb.com/title/tt0074064/> a schema:Movie ;
+    schema:name "The Tony Randall Show" ;
+    schema:url <https://www.imdb.com/title/tt0074064/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Mr. Hosimoto"
+    ] .
+
+# Phyllis (1976)
+<https://www.imdb.com/title/tt0072556/> a schema:Movie ;
+    schema:name "Phyllis" ;
+    schema:url <https://www.imdb.com/title/tt0072556/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Emcee"
+    ] .
+
+# Kung Fu (1975)
+<https://www.imdb.com/title/tt0068093/> a schema:Movie ;
+    schema:name "Kung Fu" ;
+    schema:url <https://www.imdb.com/title/tt0068093/> ;
+    schema:datePublished "1975"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Sou Kin"
+    ] .
+
+# Sanford and Son (1974)
+<https://www.imdb.com/title/tt0068128/> a schema:Movie ;
+    schema:name "Sanford and Son" ;
+    schema:url <https://www.imdb.com/title/tt0068128/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Grandfather Masaki"
+    ] .
+
+# The Magician (1974)
+<https://www.imdb.com/title/tt0069606/> a schema:Movie ;
+    schema:name "The Magician" ;
+    schema:url <https://www.imdb.com/title/tt0069606/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Oriental Man"
+    ] .
+
+# Ironside (1971)
+<https://www.imdb.com/title/tt0061266/> a schema:Movie ;
+    schema:name "Ironside" ;
+    schema:url <https://www.imdb.com/title/tt0061266/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Watanabe"
+    ] .
+
+# Escape from the Planet of the Apes (1971)
+<https://www.imdb.com/title/tt0067065/> a schema:Movie ;
+    schema:name "Escape from the Planet of the Apes" ;
+    schema:url <https://www.imdb.com/title/tt0067065/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Broadcaster"
+    ] .
+
+# R.P.M. (1970)
+<https://www.imdb.com/title/tt0066273/> a schema:Movie ;
+    schema:name "R.P.M." ;
+    schema:url <https://www.imdb.com/title/tt0066273/> ;
+    schema:datePublished "1970"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "6th Professor at Dining Table"
+    ] .
+
+# The F.B.I. (1966)
+<https://www.imdb.com/title/tt0058801/> a schema:Movie ;
+    schema:name "The F.B.I." ;
+    schema:url <https://www.imdb.com/title/tt0058801/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Gardener"
+    ] .
+
+# The Red Skelton Show (1969)
+<https://www.imdb.com/title/tt0043224/> a schema:Movie ;
+    schema:name "The Red Skelton Show" ;
+    schema:url <https://www.imdb.com/title/tt0043224/> ;
+    schema:datePublished "1969"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Father - Chinese Sketch"
+    ] .
+
+# Luv (1967)
+<https://www.imdb.com/title/tt0061927/> a schema:Movie ;
+    schema:name "Luv" ;
+    schema:url <https://www.imdb.com/title/tt0061927/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Maitre d'"
+    ] .
+
+# The Man from U.N.C.L.E. (1967)
+<https://www.imdb.com/title/tt0057765/> a schema:Movie ;
+    schema:name "The Man from U.N.C.L.E." ;
+    schema:url <https://www.imdb.com/title/tt0057765/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Police Inspector"
+    ] .
+
+# CBS Playhouse (1967)
+<https://www.imdb.com/title/tt0831400/> a schema:Movie ;
+    schema:name "CBS Playhouse" ;
+    schema:url <https://www.imdb.com/title/tt0831400/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Village Elder 2"
+    ] .
+
+# Bewitched (1967)
+<https://www.imdb.com/title/tt0057733/> a schema:Movie ;
+    schema:name "Bewitched" ;
+    schema:url <https://www.imdb.com/title/tt0057733/> ;
+    schema:datePublished "1967"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Mr. Watanabe"
+    ] .
+
+# Love on a Rooftop (1966)
+<https://www.imdb.com/title/tt0060003/> a schema:Movie ;
+    schema:name "Love on a Rooftop" ;
+    schema:url <https://www.imdb.com/title/tt0060003/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Farmer"
+    ] .
+
+# The Time Tunnel (1966)
+<https://www.imdb.com/title/tt0060036/> a schema:Movie ;
+    schema:name "The Time Tunnel" ;
+    schema:url <https://www.imdb.com/title/tt0060036/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Tasaka"
+    ] .
+
+# Walk Don't Run (1966)
+<https://www.imdb.com/title/tt0061170/> a schema:Movie ;
+    schema:name "Walk Don't Run" ;
+    schema:url <https://www.imdb.com/title/tt0061170/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Plant Manager"
+    ] .
+
+# Perry Mason (1965)
+<https://www.imdb.com/title/tt0050051/> a schema:Movie ;
+    schema:name "Perry Mason" ;
+    schema:url <https://www.imdb.com/title/tt0050051/> ;
+    schema:datePublished "1965"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Manager"
+    ] .
+
+# I Spy (1965)
+<https://www.imdb.com/title/tt0058816/> a schema:Movie ;
+    schema:name "I Spy" ;
+    schema:url <https://www.imdb.com/title/tt0058816/> ;
+    schema:datePublished "1965"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Attendant"
+    ] .
+
+# PT 109 (1963)
+<https://www.imdb.com/title/tt0057393/> a schema:Movie ;
+    schema:name "PT 109" ;
+    schema:url <https://www.imdb.com/title/tt0057393/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Captain"
+    ] .
+
+# The Alfred Hitchcock Hour (1963)
+<https://www.imdb.com/title/tt0055657/> a schema:Movie ;
+    schema:name "The Alfred Hitchcock Hour" ;
+    schema:url <https://www.imdb.com/title/tt0055657/> ;
+    schema:datePublished "1963"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Wong"
+    ] .
+
+# A Girl Named Tamiko (1962)
+<https://www.imdb.com/title/tt0056021/> a schema:Movie ;
+    schema:name "A Girl Named Tamiko" ;
+    schema:url <https://www.imdb.com/title/tt0056021/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Kimitaka"
+    ] .
+
+# McHale's Navy (1962)
+<https://www.imdb.com/title/tt0055689/> a schema:Movie ;
+    schema:name "McHale's Navy" ;
+    schema:url <https://www.imdb.com/title/tt0055689/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Officer No. 1"
+    ] .
+
+# Our Man Higgins (1962)
+<https://www.imdb.com/title/tt0055697/> a schema:Movie ;
+    schema:name "Our Man Higgins" ;
+    schema:url <https://www.imdb.com/title/tt0055697/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Miyako"
+    ] .
+
+# Have Gun - Will Travel (1962)
+<https://www.imdb.com/title/tt0050025/> a schema:Movie ;
+    schema:name "Have Gun - Will Travel" ;
+    schema:url <https://www.imdb.com/title/tt0050025/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Osata - Shopkeeper"
+    ] .
+
+# Hawaiian Eye (1960)
+<https://www.imdb.com/title/tt0052472/> a schema:Movie ;
+    schema:name "Hawaiian Eye" ;
+    schema:url <https://www.imdb.com/title/tt0052472/> ;
+    schema:datePublished "1960"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Coroner"
+    ] .
+
+# Alcoa Premiere (1962)
+<https://www.imdb.com/title/tt0054513/> a schema:Movie ;
+    schema:name "Alcoa Premiere" ;
+    schema:url <https://www.imdb.com/title/tt0054513/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Officer"
+    ] .
+
+# The Detectives (1962)
+<https://www.imdb.com/title/tt0052463/> a schema:Movie ;
+    schema:name "The Detectives" ;
+    schema:url <https://www.imdb.com/title/tt0052463/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Mr. Ito"
+    ] .
+
+# Womanhunt (1962)
+<https://www.imdb.com/title/tt0056699/> a schema:Movie ;
+    schema:name "Womanhunt" ;
+    schema:url <https://www.imdb.com/title/tt0056699/> ;
+    schema:datePublished "1962"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Dr. Sheng"
+    ] .
+
+# 7 Women from Hell (1961)
+<https://www.imdb.com/title/tt0055436/> a schema:Movie ;
+    schema:name "7 Women from Hell" ;
+    schema:url <https://www.imdb.com/title/tt0055436/> ;
+    schema:datePublished "1961"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Capt. Oda"
+    ] .
+
+# Cry for Happy (1961)
+<https://www.imdb.com/title/tt0054772/> a schema:Movie ;
+    schema:name "Cry for Happy" ;
+    schema:url <https://www.imdb.com/title/tt0054772/> ;
+    schema:datePublished "1961"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Izumi"
+    ] .
+
+# Assignment: Underwater (1960)
+<https://www.imdb.com/title/tt0053482/> a schema:Movie ;
+    schema:name "Assignment: Underwater" ;
+    schema:url <https://www.imdb.com/title/tt0053482/> ;
+    schema:datePublished "1960"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Hideo"
+    ] .
+
+# Angel (1960)
+<https://www.imdb.com/title/tt0053480/> a schema:Movie ;
+    schema:name "Angel" ;
+    schema:url <https://www.imdb.com/title/tt0053480/> ;
+    schema:datePublished "1960"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Gardener"
+    ] .
+
+# Hell to Eternity (1960)
+<https://www.imdb.com/title/tt0053901/> a schema:Movie ;
+    schema:name "Hell to Eternity" ;
+    schema:url <https://www.imdb.com/title/tt0053901/> ;
+    schema:datePublished "1960"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Papa Une"
+    ] .
+
+# Not for Hire (1959)
+<https://www.imdb.com/title/tt0052497/> a schema:Movie ;
+    schema:name "Not for Hire" ;
+    schema:url <https://www.imdb.com/title/tt0052497/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Ito"
+    ] .
+
+# Battle of the Coral Sea (1959)
+<https://www.imdb.com/title/tt0052606/> a schema:Movie ;
+    schema:name "Battle of the Coral Sea" ;
+    schema:url <https://www.imdb.com/title/tt0052606/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Guard"
+    ] .
+
+# Johnny Staccato (1959)
+<https://www.imdb.com/title/tt0052479/> a schema:Movie ;
+    schema:name "Johnny Staccato" ;
+    schema:url <https://www.imdb.com/title/tt0052479/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Taki - Clerk"
+    ] .
+
+# The Crimson Kimono (1959)
+<https://www.imdb.com/title/tt0052713/> a schema:Movie ;
+    schema:name "The Crimson Kimono" ;
+    schema:url <https://www.imdb.com/title/tt0052713/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "George Yoshinaga"
+    ] .
+
+# Up Periscope (1959)
+<https://www.imdb.com/title/tt0053399/> a schema:Movie ;
+    schema:name "Up Periscope" ;
+    schema:url <https://www.imdb.com/title/tt0053399/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese"
+    ] .
+
+# Tokyo After Dark (1959)
+<https://www.imdb.com/title/tt0053364/> a schema:Movie ;
+    schema:name "Tokyo After Dark" ;
+    schema:url <https://www.imdb.com/title/tt0053364/> ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Store Proprietor"
+    ] .
+
+# Jungle Heat (1957)
+<https://www.imdb.com/title/tt0050579/> a schema:Movie ;
+    schema:name "Jungle Heat" ;
+    schema:url <https://www.imdb.com/title/tt0050579/> ;
+    schema:datePublished "1957"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Kuji"
+    ] .
+
+# Telephone Time (1956)
+<https://www.imdb.com/title/tt0048903/> a schema:Movie ;
+    schema:name "Telephone Time" ;
+    schema:url <https://www.imdb.com/title/tt0048903/> ;
+    schema:datePublished "1956"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Pit-a-Pit's father"
+    ] .
+
+# Cavalcade of America (1956)
+<https://www.imdb.com/title/tt0044248/> a schema:Movie ;
+    schema:name "Cavalcade of America" ;
+    schema:url <https://www.imdb.com/title/tt0044248/> ;
+    schema:datePublished "1956"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName ""
+    ] .
+
+# Around the World in 80 Days (1956)
+<https://www.imdb.com/title/tt0048960/> a schema:Movie ;
+    schema:name "Around the World in 80 Days" ;
+    schema:url <https://www.imdb.com/title/tt0048960/> ;
+    schema:datePublished "1956"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Minor Role"
+    ] .
+
+# Mother, Sir! (1956)
+<https://www.imdb.com/title/tt0049544/> a schema:Movie ;
+    schema:name "Mother, Sir!" ;
+    schema:url <https://www.imdb.com/title/tt0049544/> ;
+    schema:datePublished "1956"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Porter"
+    ] .
+
+# House of Bamboo (1955)
+<https://www.imdb.com/title/tt0048182/> a schema:Movie ;
+    schema:name "House of Bamboo" ;
+    schema:url <https://www.imdb.com/title/tt0048182/> ;
+    schema:datePublished "1955"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Mr Hommaru"
+    ] .
+
+# Secret Agent of Japan (1942)
+<https://www.imdb.com/title/tt0035298/> a schema:Movie ;
+    schema:name "Secret Agent of Japan" ;
+    schema:url <https://www.imdb.com/title/tt0035298/> ;
+    schema:datePublished "1942"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Lieutenant"
+    ] .
+
+# China Caravan (1942)
+<https://www.imdb.com/title/tt0035574/> a schema:Movie ;
+    schema:name "China Caravan" ;
+    schema:url <https://www.imdb.com/title/tt0035574/> ;
+    schema:datePublished "1942"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese Officer"
+    ] .
+
+# They Met in Bombay (1941)
+<https://www.imdb.com/title/tt0034281/> a schema:Movie ;
+    schema:name "They Met in Bombay" ;
+    schema:url <https://www.imdb.com/title/tt0034281/> ;
+    schema:datePublished "1941"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0645565/> ;
+        schema:characterName "Japanese General"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0645565/mediaviewer/rm3077384704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWQxZmI1MWQtNzc0ZC00NWFhLWFiM2QtNTVkNzJkMTk5YWYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "James Carroll, Bob Okazaki, and Edward Winter in M*A*S*H (1972)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1067"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

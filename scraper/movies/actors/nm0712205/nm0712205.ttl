@@ -1,0 +1,86 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0712205/> a schema:Person ;
+    schema:name "Héloïse Rauth" ;
+    schema:url <https://www.imdb.com/name/nm0712205/> ;
+    schema:birthDate "1978-05-06"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Héloïse Rauth. Actress: La haine. Héloïse Rauth was born on 6 May 1978 in Charenton-le-Pont, Val-de-Marne, France. She is an actress, known for La haine (1995), Métisse (1993) and Les maîtresses de mon mari (1995)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Charenton-le-Pont, Val-de-Marne, France"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113247/>,    # La haine
+                       <https://www.imdb.com/title/tt0220636/>,    # Les maîtresses de mon mari
+                       <https://www.imdb.com/title/tt0107642/> ; # Métisse
+
+
+    schema:video <https://www.imdb.com/video/vi372810777/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# La haine (1995)
+<https://www.imdb.com/title/tt0113247/> a schema:Movie ;
+    schema:name "La haine" ;
+    schema:url <https://www.imdb.com/title/tt0113247/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0712205/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Les maîtresses de mon mari (1995)
+<https://www.imdb.com/title/tt0220636/> a schema:Movie ;
+    schema:name "Les maîtresses de mon mari" ;
+    schema:url <https://www.imdb.com/title/tt0220636/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0712205/> ;
+        schema:characterName "Marion"
+    ] .
+
+# Métisse (1993)
+<https://www.imdb.com/title/tt0107642/> a schema:Movie ;
+    schema:name "Métisse" ;
+    schema:url <https://www.imdb.com/title/tt0107642/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0712205/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi372810777/> a schema:VideoObject ;
+        schema:name "La Haine: The Criterion Collection [Blu-Ray]" ;
+        schema:description "Trailer for La Haine" ;
+        schema:embedUrl <https://www.imdb.com/video/vi372810777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzIxZDA4ZTUtYjA3Yy00OWNmLWFlNmItMTVkNTlhNGM3YTA5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2012-09-26T03:22:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

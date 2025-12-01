@@ -1,0 +1,110 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0270152/> a schema:Person ;
+    schema:name "John Fedevich" ;
+    schema:url <https://www.imdb.com/name/nm0270152/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "John Fedevich. Actor: Almost Famous. John Fedevich is known for Almost Famous (2000), Vanilla Sky (2001) and Shopgirl (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0338427/>,    # Shopgirl
+                       <https://www.imdb.com/title/tt0259711/>,    # Vanilla Sky
+                       <https://www.imdb.com/title/tt0181875/> ; # Almost Famous
+
+
+    schema:video <https://www.imdb.com/video/vi2943458841/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0270152/mediaviewer/rm786119680/>,
+                 <https://www.imdb.com/name/nm0270152/mediaviewer/rm591763712/>,
+                 <https://www.imdb.com/name/nm0270152/mediaviewer/rm105224448/>,
+                 <https://www.imdb.com/name/nm0270152/mediaviewer/rm71670016/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shopgirl (2005)
+<https://www.imdb.com/title/tt0338427/> a schema:Movie ;
+    schema:name "Shopgirl" ;
+    schema:url <https://www.imdb.com/title/tt0338427/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0270152/> ;
+        schema:characterName "Hot Tears Band Member"
+    ] .
+
+# Vanilla Sky (2001)
+<https://www.imdb.com/title/tt0259711/> a schema:Movie ;
+    schema:name "Vanilla Sky" ;
+    schema:url <https://www.imdb.com/title/tt0259711/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0270152/> ;
+        schema:characterName "Silent Ed Vallencourt"
+    ] .
+
+# Almost Famous (2000)
+<https://www.imdb.com/title/tt0181875/> a schema:Movie ;
+    schema:name "Almost Famous" ;
+    schema:url <https://www.imdb.com/title/tt0181875/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0270152/> ;
+        schema:characterName "Ed Vallencourt"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2943458841/> a schema:VideoObject ;
+        schema:name "Almost Famous" ;
+        schema:description "Theatrical Trailer from Dreamworks" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2943458841/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTRmOGU3MjktN2I2OC00OWRiLWI5ZWQtNWYzMjVlMzM5MTAyXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2011-12-01T06:05:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0270152/mediaviewer/rm786119680/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTU5MzBjMjMtMjg5ZS00OGU0LTg3OGItNjVjNGE5ZDA1Mjg5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Fedevich and Patrick Fugit in Almost Famous (2000)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0270152/mediaviewer/rm591763712/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTczOTA3MjE5OV5BMl5BanBnXkFtZTYwODQ5Njc3._V1_.jpg> ;
+    schema:caption "L to R - Jason Lee, John Fedevich, Noah Taylor, Billy Crudup and Mark Kozelek" ;
+    schema:height "431"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0270152/mediaviewer/rm105224448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDUxNjg4NzYxM15BMl5BanBnXkFtZTYwMTg5Njc3._V1_.jpg> ;
+    schema:caption "The members of the Stillwater tour" ;
+    schema:height "805"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0270152/mediaviewer/rm71670016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwOTQwNjE4OF5BMl5BanBnXkFtZTYwMzg5Njc3._V1_.jpg> ;
+    schema:caption "The members of Stillwater" ;
+    schema:height "883"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

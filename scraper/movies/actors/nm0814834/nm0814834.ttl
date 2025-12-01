@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0814834/> a schema:Person ;
+    schema:name "Mark Sorensen Jr." ;
+    schema:url <https://www.imdb.com/name/nm0814834/> ;
+    schema:birthDate "1962-03-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Mark Sorensen Jr.. Actor: Philadelphia. Mark Sorensen Jr. was born on 4 March 1962 in Philadelphia, Pennsylvania, USA. He was an actor, known for Philadelphia (1993). He died on 17 September 1993 in Pennsylvania, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Philadelphia, Pennsylvania, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0107818/> .    # Philadelphia
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Philadelphia (1993)
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0814834/> ;
+        schema:characterName "Clinic Patient"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

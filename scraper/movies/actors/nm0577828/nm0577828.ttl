@@ -1,0 +1,76 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0577828/> a schema:Person ;
+    schema:name "Joseph Melito" ;
+    schema:url <https://www.imdb.com/name/nm0577828/> ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Joey Melts" ;
+    schema:description "Joseph Melito. Actor: Twelve Monkeys. Joseph was born in the middle of a snowstorm to Joseph and Linda Melito. Joseph is of mixed Italian, and Irish background. He never wanted to act but fell into it almost accidentally. When he was ten casting director Mike Lemon picked him out of thousands of Philadelphia actors during an open call to play the part of young Cole in Terry Gilliam's 12 Monkeys...." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.74"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8½″ (1.74 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0120510/>,    # Wide Awake
+                       <https://www.imdb.com/title/tt0114746/> ; # Twelve Monkeys
+
+
+    schema:video <https://www.imdb.com/video/vi3214197017/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wide Awake (1998)
+<https://www.imdb.com/title/tt0120510/> a schema:Movie ;
+    schema:name "Wide Awake" ;
+    schema:url <https://www.imdb.com/title/tt0120510/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0577828/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Twelve Monkeys (1995)
+<https://www.imdb.com/title/tt0114746/> a schema:Movie ;
+    schema:name "Twelve Monkeys" ;
+    schema:url <https://www.imdb.com/title/tt0114746/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0577828/> ;
+        schema:characterName "Young Cole"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3214197017/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3214197017/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYjQwOTUyZjgtMmIyOC00ZjllLTg0MWMtNTlkZWRlMGE2MTNkXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M26S"^^xsd:duration ;
+        schema:uploadDate "2020-09-28T10:09:18Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

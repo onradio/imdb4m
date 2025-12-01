@@ -1,0 +1,60 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0477348/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Puño de tierra" ;
+        schema:byArtist <https://www.imdb.com/name/nm2655184/>, # Angel H. Alvarado Jr.
+                        <https://www.imdb.com/name/nm2655188/>, # David A. Gomez
+                        <https://www.imdb.com/name/nm2655182/>, # Milton Hernandez
+                        <https://www.imdb.com/name/nm2655186/> ; # John Mancha
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Las mañanitas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0069661/> ; # Lola Beltrán
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Young Men Dead" ;
+        schema:byArtist <https://www.imdb.com/name/nm3169668/> ; # The Black Angels
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Young Men Dead" ;
+            schema:author <https://www.imdb.com/name/nm3169668/>, # The Black Angels
+                       <https://www.imdb.com/name/nm3074588/>, # Christian Bland
+                       <https://www.imdb.com/name/nm3649530/>, # Alex Maas
+                       <https://www.imdb.com/name/nm5989757/>, # Stephanie Bailey
+                       <https://www.imdb.com/name/nm3706638/> # Jennifer Raines
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0069661/> a schema:Person ;
+    schema:name "Lola Beltrán" .
+<https://www.imdb.com/name/nm2655182/> a schema:Person ;
+    schema:name "Milton Hernandez" .
+<https://www.imdb.com/name/nm2655184/> a schema:Person ;
+    schema:name "Angel H. Alvarado Jr." .
+<https://www.imdb.com/name/nm2655186/> a schema:Person ;
+    schema:name "John Mancha" .
+<https://www.imdb.com/name/nm2655188/> a schema:Person ;
+    schema:name "David A. Gomez" .
+<https://www.imdb.com/name/nm3074588/> a schema:Person ;
+    schema:name "Christian Bland" .
+<https://www.imdb.com/name/nm3169668/> a schema:Person ;
+    schema:name "The Black Angels" .
+<https://www.imdb.com/name/nm3649530/> a schema:Person ;
+    schema:name "Alex Maas" .
+<https://www.imdb.com/name/nm3706638/> a schema:Person ;
+    schema:name "Jennifer Raines" .
+<https://www.imdb.com/name/nm5989757/> a schema:Person ;
+    schema:name "Stephanie Bailey" .
+# ==============================================================================

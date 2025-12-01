@@ -1,0 +1,65 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0281073/> a schema:Person ;
+    schema:name "Mark Flanagan" ;
+    schema:url <https://www.imdb.com/name/nm0281073/> ;
+    schema:jobTitle "Actor", "Director", "Producer" ;
+    schema:alternateName "Flanagan" ;
+    schema:description "Mark Flanagan. Actor: Magnolia. Mark Flanagan was born in Belfast, Ireland, UK. He is known for Magnolia (1999), Largo (2008) and Licorice Pizza (2021)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Belfast, Ireland, UK"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0240291/>,    # Pobol y Cwm
+                       <https://www.imdb.com/title/tt0175880/> . # Magnolia
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Pobol y Cwm (2012)
+<https://www.imdb.com/title/tt0240291/> a schema:Movie ;
+    schema:name "Pobol y Cwm" ;
+    schema:url <https://www.imdb.com/title/tt0240291/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281073/> ;
+        schema:characterName "Jinx"
+    ] .
+
+# Magnolia (1999)
+<https://www.imdb.com/title/tt0175880/> a schema:Movie ;
+    schema:name "Magnolia" ;
+    schema:url <https://www.imdb.com/title/tt0175880/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0281073/> ;
+        schema:characterName "Joseph Green"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

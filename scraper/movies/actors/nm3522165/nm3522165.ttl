@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3522165/> a schema:Person ;
+    schema:name "Themba Nkosi" ;
+    schema:url <https://www.imdb.com/name/nm3522165/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Themba Nkosi. Actor: District 9. Themba Nkosi is known for District 9 (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1136608/> .    # District 9
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# District 9 (2009)
+<https://www.imdb.com/title/tt1136608/> a schema:Movie ;
+    schema:name "District 9" ;
+    schema:url <https://www.imdb.com/title/tt1136608/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3522165/> ;
+        schema:characterName "Interviewee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

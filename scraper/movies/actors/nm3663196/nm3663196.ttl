@@ -1,0 +1,234 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3663196/> a schema:Person ;
+    schema:name "Ariana DeBose" ;
+    schema:url <https://www.imdb.com/name/nm3663196/> ;
+    schema:birthDate "1991-01-25"^^xsd:date ;
+    schema:jobTitle "Actress", "Director", "Writer" ;
+    schema:alternateName "Ariana Nicole DeBose" ;
+    schema:description "Ariana DeBose. Actress: West Side Story. Ariana DeBose is an American actress, dancer, and singer. Known for her performances on stage and screen, she has received multiple accolades, including an Academy Award, a British Academy Film Award and a Golden Globe Award. In 2022, Time magazine named her one of the 100 most influential people in the world.\n\nDeBose made her television debut competing on the sixth season of So You..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNzk1NTNiYzgtZjgzZS00NTk1LWExMDYtYWRhNTVhZDRkNTczXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Raleigh, North Carolina, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4¼″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3581652/>,    # West Side Story
+                       <https://www.imdb.com/title/tt11304740/>,    # Wish
+                       <https://www.imdb.com/title/tt15009428/>,    # Argylle
+                       <https://www.imdb.com/title/tt8790086/>,    # Kraven the Hunter
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10177192/>,    # Fragile
+                       <https://www.imdb.com/title/tt5776928/>,    # Seaside
+                       <https://www.imdb.com/title/tt3444938/>,    # The Tonight Show Starring Jimmy Fallon
+                       <https://www.imdb.com/title/tt1595859/>,    # Blue Bloods
+                       <https://www.imdb.com/title/tt3340334/>,    # WERQ: The Labor Day Song
+                       <https://www.imdb.com/title/tt1942831/> ; # Company
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "35 wins & 58 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1348912921/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3663196/mediaviewer/rm518940417/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm1616929025/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm3386862849/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm3453971713/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm4260261121/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm1348751105/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm587483649/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm974935041/>,
+                 <https://www.imdb.com/name/nm3663196/mediaviewer/rm2791759873/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3581652/> a schema:Movie ;
+    schema:name "West Side Story" ;
+    schema:url <https://www.imdb.com/title/tt3581652/> .
+
+<https://www.imdb.com/title/tt11304740/> a schema:Movie ;
+    schema:name "Wish" ;
+    schema:url <https://www.imdb.com/title/tt11304740/> .
+
+<https://www.imdb.com/title/tt15009428/> a schema:Movie ;
+    schema:name "Argylle" ;
+    schema:url <https://www.imdb.com/title/tt15009428/> .
+
+<https://www.imdb.com/title/tt8790086/> a schema:Movie ;
+    schema:name "Kraven the Hunter" ;
+    schema:url <https://www.imdb.com/title/tt8790086/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fragile (2019)
+<https://www.imdb.com/title/tt10177192/> a schema:Movie ;
+    schema:name "Fragile" ;
+    schema:url <https://www.imdb.com/title/tt10177192/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName "Her"
+    ] .
+
+# Seaside (2018)
+<https://www.imdb.com/title/tt5776928/> a schema:Movie ;
+    schema:name "Seaside" ;
+    schema:url <https://www.imdb.com/title/tt5776928/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName "Daphne"
+    ] .
+
+# The Tonight Show Starring Jimmy Fallon (2018)
+<https://www.imdb.com/title/tt3444938/> a schema:Movie ;
+    schema:name "The Tonight Show Starring Jimmy Fallon" ;
+    schema:url <https://www.imdb.com/title/tt3444938/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName "Disco Donna"
+    ] .
+
+# Blue Bloods (2016)
+<https://www.imdb.com/title/tt1595859/> a schema:Movie ;
+    schema:name "Blue Bloods" ;
+    schema:url <https://www.imdb.com/title/tt1595859/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName "Sophia Ortiz"
+    ] .
+
+# WERQ: The Labor Day Song (2013)
+<https://www.imdb.com/title/tt3340334/> a schema:Movie ;
+    schema:name "WERQ: The Labor Day Song" ;
+    schema:url <https://www.imdb.com/title/tt3340334/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName ""
+    ] .
+
+# Company (2011)
+<https://www.imdb.com/title/tt1942831/> a schema:Movie ;
+    schema:name "Company" ;
+    schema:url <https://www.imdb.com/title/tt1942831/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3663196/> ;
+        schema:characterName "Ensemble"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1348912921/> a schema:VideoObject ;
+        schema:name "Burning Questions With Ariana DeBose" ;
+        schema:description "'I.S.S.' star Ariana DeBose steps in as IMDb Guest Editor to answer everything from preparing to play an astronaut and the feasibility of an 'I.S.S.' Broadway musical to favorite movies, go-to Karaoke songs, and more." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1348912921/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTEzMmE4NWItNzQzZi00MGVhLTkxNmItZDdkZTRhODI1MWUwXkEyXkFqcGdeQXJoYW5uYWg@._V1_.jpg" ;
+        schema:duration "PT3M54S"^^xsd:duration ;
+        schema:uploadDate "2024-01-12T18:47:49Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNzk1NTNiYzgtZjgzZS00NTk1LWExMDYtYWRhNTVhZDRkNTczXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzk1NTNiYzgtZjgzZS00NTk1LWExMDYtYWRhNTVhZDRkNTczXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "2668"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm518940417/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODk3MDI4ZGItNmFjNC00NTE3LWJlZWUtYTFjODk0MjA4NTJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ke Huy Quan and Ariana DeBose in Love Hurts (2025)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm1616929025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczNGZmMjktMTg0Yy00MDE3LWI1OGItNmYwYTFlZTAwOThlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose and Charlie Puth in Watch What Happens: Live (2009)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm3386862849/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2RlNjcwMjMtYTVlNy00OGU0LWI5ZTgtOTI5ODYwMzgyYjVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose in House of Spoils (2024)" ;
+    schema:height "1495"^^xsd:integer ;
+    schema:width "2999"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm3453971713/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFlMTMzNjQtZmViZi00Yzk4LWFhZjctNTkwNzBmMTY0Njk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose and Barbie Ferreira in House of Spoils (2024)" ;
+    schema:height "2000"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm4260261121/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzI0OTI5MTAtMmFiZS00NzVkLTg2NjQtYmMxYWQxOTJiZmRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose in House of Spoils (2024)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm1348751105/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGQ5YzRkYzgtZDYxOC00MzBmLThhMzgtMTJhMDE2NDM5ZDY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose in Westworld (2016)" ;
+    schema:height "1281"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm587483649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODZhYWI0NDYtODIwZi00MDIyLWI1MGMtYWMwYTk1NDFmZjI3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose in I.S.S. (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "2579"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm974935041/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTFlZGI0MzItNmUzNi00ZTM3LThiOWMtY2FjMTBkNWExMjlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Chris Pine and Ariana DeBose in Wish (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3663196/mediaviewer/rm2791759873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQyNGQ4NmQtOTUzMy00ODNmLTkxMjctZjNlMDQ0MmFlZmQwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ariana DeBose in Saturday Night Live (1975)" ;
+    schema:height "1178"^^xsd:integer ;
+    schema:width "2097"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm3663196/>
+    schema:sameAs <https://www.facebook.com/ArianaNDeBose>,
+                  <https://www.instagram.com/arianadebose/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

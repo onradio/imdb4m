@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4774058/> a schema:Person ;
+    schema:name "Jules Atlas" ;
+    schema:url <https://www.imdb.com/name/nm4774058/> ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:description "Jules Atlas. Actress: The Perks of Being a Wallflower. Jules Atlas is known for The Perks of Being a Wallflower (2012), Bullsh*t (2024) and Party On (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1659337/> .    # The Perks of Being a Wallflower
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Perks of Being a Wallflower (2012)
+<https://www.imdb.com/title/tt1659337/> a schema:Movie ;
+    schema:name "The Perks of Being a Wallflower" ;
+    schema:url <https://www.imdb.com/title/tt1659337/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4774058/> ;
+        schema:characterName "Twin Girl"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

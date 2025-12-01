@@ -1,0 +1,43 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095159/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Nel blu, dipinto di blu" ;
+        schema:byArtist <https://www.imdb.com/name/nm0595340/> ; # Domenico Modugno
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nel blu, dipinto di blu" ;
+            schema:author <https://www.imdb.com/name/nm0585914/>, # Franco Migliacci
+                       <https://www.imdb.com/name/nm0595340/> # Domenico Modugno
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Deutschlandlied" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Deutschlandlied" ;
+            schema:author <https://www.imdb.com/name/nm0370817/>, # Joseph Haydn
+                       <https://www.imdb.com/name/nm1755328/> # August Heinrich Hoffman von Fallersleben
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0370817/> a schema:Person ;
+    schema:name "Joseph Haydn" .
+<https://www.imdb.com/name/nm0585914/> a schema:Person ;
+    schema:name "Franco Migliacci" .
+<https://www.imdb.com/name/nm0595340/> a schema:Person ;
+    schema:name "Domenico Modugno" .
+<https://www.imdb.com/name/nm1755328/> a schema:Person ;
+    schema:name "August Heinrich Hoffman von Fallersleben" .
+# ==============================================================================

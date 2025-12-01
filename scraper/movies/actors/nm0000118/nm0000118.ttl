@@ -1,0 +1,376 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000118/> a schema:Person ;
+    schema:name "John Carpenter" ;
+    schema:url <https://www.imdb.com/name/nm0000118/> ;
+    schema:birthDate "1948-01-16"^^xsd:date ;
+    schema:jobTitle "Music Department", "Writer", "Composer" ;
+    schema:alternateName "JC", "John Howard Carpenter" ;
+    schema:description "John Carpenter. Writer: The Fog. John Howard Carpenter was born in Carthage, New York, to mother Milton Jean (Carter) and father Howard Ralph Carpenter. His family moved to Bowling Green, Kentucky, where his father, a professor, was head of the music department at Western Kentucky University. He attended Western Kentucky University and then USC film school in Los Angeles. He began making short films in 1962, and won an Academy..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTAzMzgwNDgzODBeQTJeQWpwZ15BbWU4MDA2OTk2NDEx._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Carthage, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0080749/>,    # The Fog
+                       <https://www.imdb.com/title/tt0069945/>,    # Dark Star
+                       <https://www.imdb.com/title/tt0077651/>,    # Halloween
+                       <https://www.imdb.com/title/tt0096256/>,    # They Live
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7375082/>,    # John Carpenter: Christine
+                       <https://www.imdb.com/title/tt6404974/>,    # John Carpenter: Utopian Facade
+                       <https://www.imdb.com/title/tt5340864/>,    # The Puppet Man
+                       <https://www.imdb.com/title/tt5476430/>,    # Gunship: Tech Noir
+                       <https://www.imdb.com/title/tt5644786/>,    # John Carpenter: Night
+                       <https://www.imdb.com/title/tt0335473/>,    # The Thing
+                       <https://www.imdb.com/title/tt0114852/>,    # Village of the Damned
+                       <https://www.imdb.com/title/tt0111190/>,    # The Silence of the Hams
+                       <https://www.imdb.com/title/tt0106449/>,    # Body Bags
+                       <https://www.imdb.com/title/tt0104850/>,    # Memoirs of an Invisible Man
+                       <https://www.imdb.com/title/tt13618718/>,    # The Coupe de Villes: Big Trouble in Little China
+                       <https://www.imdb.com/title/tt0090768/>,    # The Boy Who Could Fly
+                       <https://www.imdb.com/title/tt0090728/>,    # Big Trouble in Little China
+                       <https://www.imdb.com/title/tt0088172/>,    # Starman
+                       <https://www.imdb.com/title/tt0084787/>,    # The Thing
+                       <https://www.imdb.com/title/tt0082340/>,    # Escape from New York
+                       <https://www.imdb.com/title/tt0074156/> ; # Assault on Precinct 13
+
+    schema:award [
+        a schema:Award ;
+        schema:description "32 wins & 29 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Halloween)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "10000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2711468569/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000118/mediaviewer/rm446800641/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm3315256832/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm2345908480/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm3054396416/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm1120189184/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm3335222016/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm3647895808/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm1489053952/>,
+                 <https://www.imdb.com/name/nm0000118/mediaviewer/rm2700159232/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0080749/> a schema:Movie ;
+    schema:name "The Fog" ;
+    schema:url <https://www.imdb.com/title/tt0080749/> .
+
+<https://www.imdb.com/title/tt0069945/> a schema:Movie ;
+    schema:name "Dark Star" ;
+    schema:url <https://www.imdb.com/title/tt0069945/> .
+
+<https://www.imdb.com/title/tt0077651/> a schema:Movie ;
+    schema:name "Halloween" ;
+    schema:url <https://www.imdb.com/title/tt0077651/> .
+
+<https://www.imdb.com/title/tt0096256/> a schema:Movie ;
+    schema:name "They Live" ;
+    schema:url <https://www.imdb.com/title/tt0096256/> .
+
+<https://www.imdb.com/title/tt0077651/> a schema:Movie ;
+    schema:name "Halloween" ;
+    schema:url <https://www.imdb.com/title/tt0077651/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# John Carpenter: Christine (2017)
+<https://www.imdb.com/title/tt7375082/> a schema:Movie ;
+    schema:name "John Carpenter: Christine" ;
+    schema:url <https://www.imdb.com/title/tt7375082/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "John Carpenter"
+    ] .
+
+# John Carpenter: Utopian Facade (2016)
+<https://www.imdb.com/title/tt6404974/> a schema:Movie ;
+    schema:name "John Carpenter: Utopian Facade" ;
+    schema:url <https://www.imdb.com/title/tt6404974/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "John Carpenter"
+    ] .
+
+# The Puppet Man (2016)
+<https://www.imdb.com/title/tt5340864/> a schema:Movie ;
+    schema:name "The Puppet Man" ;
+    schema:url <https://www.imdb.com/title/tt5340864/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "The Taxi Driver"
+    ] .
+
+# Gunship: Tech Noir (2015)
+<https://www.imdb.com/title/tt5476430/> a schema:Movie ;
+    schema:name "Gunship: Tech Noir" ;
+    schema:url <https://www.imdb.com/title/tt5476430/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "The Narrator"
+    ] .
+
+# John Carpenter: Night (2015)
+<https://www.imdb.com/title/tt5644786/> a schema:Movie ;
+    schema:name "John Carpenter: Night" ;
+    schema:url <https://www.imdb.com/title/tt5644786/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "John Carpenter"
+    ] .
+
+# The Thing (2002)
+<https://www.imdb.com/title/tt0335473/> a schema:Movie ;
+    schema:name "The Thing" ;
+    schema:url <https://www.imdb.com/title/tt0335473/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Dr. Faraday"
+    ] .
+
+# Village of the Damned (1995)
+<https://www.imdb.com/title/tt0114852/> a schema:Movie ;
+    schema:name "Village of the Damned" ;
+    schema:url <https://www.imdb.com/title/tt0114852/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Man at Gas Station Phone"
+    ] .
+
+# The Silence of the Hams (1994)
+<https://www.imdb.com/title/tt0111190/> a schema:Movie ;
+    schema:name "The Silence of the Hams" ;
+    schema:url <https://www.imdb.com/title/tt0111190/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Trenchcoat Man"
+    ] .
+
+# Body Bags (1993)
+<https://www.imdb.com/title/tt0106449/> a schema:Movie ;
+    schema:name "Body Bags" ;
+    schema:url <https://www.imdb.com/title/tt0106449/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Coroner"
+    ] .
+
+# Memoirs of an Invisible Man (1992)
+<https://www.imdb.com/title/tt0104850/> a schema:Movie ;
+    schema:name "Memoirs of an Invisible Man" ;
+    schema:url <https://www.imdb.com/title/tt0104850/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Helicopter Pilot"
+    ] .
+
+# The Coupe de Villes: Big Trouble in Little China (1986)
+<https://www.imdb.com/title/tt13618718/> a schema:Movie ;
+    schema:name "The Coupe de Villes: Big Trouble in Little China" ;
+    schema:url <https://www.imdb.com/title/tt13618718/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "John Carpenter"
+    ] .
+
+# The Boy Who Could Fly (1986)
+<https://www.imdb.com/title/tt0090768/> a schema:Movie ;
+    schema:name "The Boy Who Could Fly" ;
+    schema:url <https://www.imdb.com/title/tt0090768/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "The Coupe de Villes"
+    ] .
+
+# Big Trouble in Little China (1986)
+<https://www.imdb.com/title/tt0090728/> a schema:Movie ;
+    schema:name "Big Trouble in Little China" ;
+    schema:url <https://www.imdb.com/title/tt0090728/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Worker in Chinatown"
+    ] .
+
+# Starman (1984)
+<https://www.imdb.com/title/tt0088172/> a schema:Movie ;
+    schema:name "Starman" ;
+    schema:url <https://www.imdb.com/title/tt0088172/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Man in Helicopter"
+    ] .
+
+# The Thing (1982)
+<https://www.imdb.com/title/tt0084787/> a schema:Movie ;
+    schema:name "The Thing" ;
+    schema:url <https://www.imdb.com/title/tt0084787/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Norwegian"
+    ] .
+
+# Escape from New York (1981)
+<https://www.imdb.com/title/tt0082340/> a schema:Movie ;
+    schema:name "Escape from New York" ;
+    schema:url <https://www.imdb.com/title/tt0082340/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Secret Service #2"
+    ] .
+
+# Assault on Precinct 13 (1976)
+<https://www.imdb.com/title/tt0074156/> a schema:Movie ;
+    schema:name "Assault on Precinct 13" ;
+    schema:url <https://www.imdb.com/title/tt0074156/> ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000118/> ;
+        schema:characterName "Gang Member"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2711468569/> a schema:VideoObject ;
+        schema:name "Through the Lens: Defining Carpenteresque and Why It Belongs in the Dictionary" ;
+        schema:description "In October 2018, several filmmakers were added to the Oxford English Dictionary in adjective form. Somehow, John Carpenter wasn't one of them. Today, we'll travel \"Through the Lens\" to define John Carpenter's style and influence, to define Carpenteresque, and why the term belongs in the dictionary." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2711468569/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTA3MzhkNjItZjdhMC00ZWZmLTliM2YtMDA4ZTI5ODM1ZmJkXkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg" ;
+        schema:duration "PT4M54S"^^xsd:duration ;
+        schema:uploadDate "2018-10-19T18:21:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTAzMzgwNDgzODBeQTJeQWpwZ15BbWU4MDA2OTk2NDEx._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAzMzgwNDgzODBeQTJeQWpwZ15BbWU4MDA2OTk2NDEx._V1_.jpg> ;
+    schema:caption "John Carpenter" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm446800641/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWM5NTJiMGEtY2Y1ZS00OWQ4LTkxNjQtMWM2NDUwMmQyZmE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter in Body Bags (1993)" ;
+    schema:height "370"^^xsd:integer ;
+    schema:width "525"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm3315256832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzNDY0NzIxOV5BMl5BanBnXkFtZTgwNDAwOTU3MTE@._V1_.jpg> ;
+    schema:caption "Adrienne Barbeau, John Carpenter, Jamie Lee Curtis, and Janet Leigh in The Fog (1980)" ;
+    schema:height "4873"^^xsd:integer ;
+    schema:width "5848"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm2345908480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODQ1NDI5MjA1OV5BMl5BanBnXkFtZTcwNTY0MzgxNQ@@._V1_.jpg> ;
+    schema:caption "John Carpenter in The Ward (2010)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm3054396416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGIwZTAxYzktZGZmZS00OWM0LWEzZDUtN2ZkOTFhYzc2N2U0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter and Mick Garris in Post Mortem with Mick Garris (2009)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "1500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm1120189184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzMxMzQ5NDI1MF5BMl5BanBnXkFtZTcwMjAwOTM2NA@@._V1_.jpg> ;
+    schema:caption "John Carpenter and Mick Garris in Post Mortem with Mick Garris (2009)" ;
+    schema:height "598"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm3335222016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTllZTRkZDUtOTExNS00MWIyLThiMTctYTA0YWE4MzdmODU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter and Nick Castle" ;
+    schema:height "821"^^xsd:integer ;
+    schema:width "1080"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm3647895808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTcyNjM4NTYxMl5BMl5BanBnXkFtZTgwNDczMjcyNjM@._V1_.jpg> ;
+    schema:caption "John Carpenter in Halloween (2018)" ;
+    schema:height "1366"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm1489053952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTZkYmU5NDItNGMwNy00OWEwLTgzNmQtOTIyYThiZTNmM2ViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter, Dean Cundey, Clyde E. Bryan, and Raymond Stella in The Thing (1982)" ;
+    schema:height "1028"^^xsd:integer ;
+    schema:width "2042"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000118/mediaviewer/rm2700159232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmNjYjYwNmEtZTllMi00MzQ4LTg0YTUtOWFlZjhhMTRhNzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Carpenter, Dean Cundey, Clyde E. Bryan, and Raymond Stella in The Thing (1982)" ;
+    schema:height "1256"^^xsd:integer ;
+    schema:width "2042"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000118/>
+    schema:sameAs <https://www.facebook.com/directorjohncarpenter/>,
+                  <https://www.instagram.com/JohnCarpenterOfficial/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

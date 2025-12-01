@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10201626/> a schema:Person ;
+    schema:name "Cedra Izzam" ;
+    schema:url <https://www.imdb.com/name/nm10201626/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Cedra Izzam. Actress: Capernaum. Cedra Izzam is known for Capernaum (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8267604/> ;    # Capernaum
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10201626/mediaviewer/rm637606145/>,
+                 <https://www.imdb.com/name/nm10201626/mediaviewer/rm462587137/>,
+                 <https://www.imdb.com/name/nm10201626/mediaviewer/rm479364353/>,
+                 <https://www.imdb.com/name/nm10201626/mediaviewer/rm512918785/>,
+                 <https://www.imdb.com/name/nm10201626/mediaviewer/rm361923841/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Capernaum (2018)
+<https://www.imdb.com/title/tt8267604/> a schema:Movie ;
+    schema:name "Capernaum" ;
+    schema:url <https://www.imdb.com/title/tt8267604/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10201626/> ;
+        schema:characterName "Sahar, the Sister"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm10201626/mediaviewer/rm637606145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTg1ZDNmYzQtNzA5MS00MDUxLTk0MWUtOWJkODQwMjUwN2U2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cedra Izzam and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "565"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10201626/mediaviewer/rm462587137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzhlZmVhYmEtY2M0My00MmVhLWIwNDItZDU0NWY0Zjk3YzAxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cedra Izzam and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "849"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10201626/mediaviewer/rm479364353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWZjY2UxMDQtMjZmZS00NDNmLWIxOWMtYzA4MDhkZTM2ZWU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cedra Izzam and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "1200"^^xsd:integer ;
+    schema:width "790"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10201626/mediaviewer/rm512918785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWI4MjNmNDctMjBmNi00N2Y2LWJjZjgtZmVkOGY4YTkwZDgyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cedra Izzam and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "522"^^xsd:integer ;
+    schema:width "696"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10201626/mediaviewer/rm361923841/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxZWFhOTktYWNlZC00MjQxLTk2OWEtODljMmVhYjE0YzQyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Cedra Izzam and Zain Al Rafeea in Capernaum (2018)" ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "679"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0236628/> a schema:Person ;
+    schema:name "Héctor Drachtman" ;
+    schema:url <https://www.imdb.com/name/nm0236628/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Héctor Drachtman. Actor: Wild Tales. Héctor Drachtman is known for Wild Tales (2014), Felicidades (2000) and La ñata contra el vidrio (1972)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt15264632/>,    # Kukoc
+                       <https://www.imdb.com/title/tt3011894/>,    # Wild Tales
+                       <https://www.imdb.com/title/tt2339641/>,    # Simulacro
+                       <https://www.imdb.com/title/tt0451509/>,    # Una familia especial
+                       <https://www.imdb.com/title/tt0267490/>,    # Felicidades
+                       <https://www.imdb.com/title/tt0264240/>,    # La elegida
+                       <https://www.imdb.com/title/tt0144698/> ; # La ñata contra el vidrio
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0236628/mediaviewer/rm3386411521/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kukoc (2017)
+<https://www.imdb.com/title/tt15264632/> a schema:Movie ;
+    schema:name "Kukoc" ;
+    schema:url <https://www.imdb.com/title/tt15264632/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName "Kukoc"
+    ] .
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName "Padre Pasternak"
+    ] .
+
+# Simulacro (2012)
+<https://www.imdb.com/title/tt2339641/> a schema:Movie ;
+    schema:name "Simulacro" ;
+    schema:url <https://www.imdb.com/title/tt2339641/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName ""
+    ] .
+
+# Una familia especial (2005)
+<https://www.imdb.com/title/tt0451509/> a schema:Movie ;
+    schema:name "Una familia especial" ;
+    schema:url <https://www.imdb.com/title/tt0451509/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName ""
+    ] .
+
+# Felicidades (2000)
+<https://www.imdb.com/title/tt0267490/> a schema:Movie ;
+    schema:name "Felicidades" ;
+    schema:url <https://www.imdb.com/title/tt0267490/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName "Daniela's Father"
+    ] .
+
+# La elegida (1992)
+<https://www.imdb.com/title/tt0264240/> a schema:Movie ;
+    schema:name "La elegida" ;
+    schema:url <https://www.imdb.com/title/tt0264240/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName "Dr. Carreras"
+    ] .
+
+# La ñata contra el vidrio (1972)
+<https://www.imdb.com/title/tt0144698/> a schema:Movie ;
+    schema:name "La ñata contra el vidrio" ;
+    schema:url <https://www.imdb.com/title/tt0144698/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0236628/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0236628/mediaviewer/rm3386411521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDdhNjJiZmYtOTY2Yi00MGFjLTk3NzItM2VmYTdhYjNlNWM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Héctor Drachtman and María Rosa López Ottonello in Wild Tales (2014)" ;
+    schema:height "536"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

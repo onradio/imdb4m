@@ -1,0 +1,258 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3451086/> a schema:Person ;
+    schema:name "Luke Thompson" ;
+    schema:url <https://www.imdb.com/name/nm3451086/> ;
+    schema:birthDate "1988-07-04"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Luke Thompson. Actor: Dunkirk. Luke Thompson grew up in France from the age of 2, but was born in Southampton, UK. He speaks French and English. His father was an engineer and his mother a teacher , and he is one of three children. He attended a French school in Fontainebleau with an Anglophone Section from 1997 to 2005. Arriving in the UK in 2006, Thompson spent a year with..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZWZkYTcxMTktOGEwYy00NWYzLTg1ZjEtNWFlOTMyNzUyZGNkXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Southampton, Hampshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5013056/>,    # Dunkirk
+                       <https://www.imdb.com/title/tt4074180/>,    # Shakespeare's Globe: A Midsummer Night's Dream
+                       <https://www.imdb.com/title/tt5730690/>,    # Kiss Me First
+                       <https://www.imdb.com/title/tt8740790/>,    # Bridgerton
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6268222/>,    # Making Noise Quietly
+                       <https://www.imdb.com/title/tt38689284/>,    # The Second Pan Book of Horror Stories
+                       <https://www.imdb.com/title/tt9055926/>,    # National Theatre Live: King Lear
+                       <https://www.imdb.com/title/tt8219328/>,    # Hamlet
+                       <https://www.imdb.com/title/tt15425434/>,    # Between the Ears
+                       <https://www.imdb.com/title/tt3428478/>,    # In the Club
+                       <https://www.imdb.com/title/tt6352700/>,    # The Complete Walk: Romeo and Juliet
+                       <https://www.imdb.com/title/tt7282048/>,    # Globe on Screen: Julius Caesar
+                       <https://www.imdb.com/title/tt11460508/> ; # The Suspicions of Mr Whicher
+
+
+    schema:video <https://www.imdb.com/video/vi2034812697/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3451086/mediaviewer/rm3847475969/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm1689576449/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm1656022017/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm895528450/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm912305666/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm929082882/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm2448987394/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm2532873474/>,
+                 <https://www.imdb.com/name/nm3451086/mediaviewer/rm592868097/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5013056/> a schema:Movie ;
+    schema:name "Dunkirk" ;
+    schema:url <https://www.imdb.com/title/tt5013056/> .
+
+<https://www.imdb.com/title/tt4074180/> a schema:Movie ;
+    schema:name "Shakespeare's Globe: A Midsummer Night's Dream" ;
+    schema:url <https://www.imdb.com/title/tt4074180/> .
+
+<https://www.imdb.com/title/tt5730690/> a schema:Movie ;
+    schema:name "Kiss Me First" ;
+    schema:url <https://www.imdb.com/title/tt5730690/> .
+
+<https://www.imdb.com/title/tt8740790/> a schema:Movie ;
+    schema:name "Bridgerton" ;
+    schema:url <https://www.imdb.com/title/tt8740790/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Making Noise Quietly (2019)
+<https://www.imdb.com/title/tt6268222/> a schema:Movie ;
+    schema:name "Making Noise Quietly" ;
+    schema:url <https://www.imdb.com/title/tt6268222/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Oliver Bell"
+    ] .
+
+# The Second Pan Book of Horror Stories (2018)
+<https://www.imdb.com/title/tt38689284/> a schema:Movie ;
+    schema:name "The Second Pan Book of Horror Stories" ;
+    schema:url <https://www.imdb.com/title/tt38689284/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Malcomson"
+    ] .
+
+# National Theatre Live: King Lear (2018)
+<https://www.imdb.com/title/tt9055926/> a schema:Movie ;
+    schema:name "National Theatre Live: King Lear" ;
+    schema:url <https://www.imdb.com/title/tt9055926/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Edgar"
+    ] .
+
+# Hamlet (2018)
+<https://www.imdb.com/title/tt8219328/> a schema:Movie ;
+    schema:name "Hamlet" ;
+    schema:url <https://www.imdb.com/title/tt8219328/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Laertes"
+    ] .
+
+# Between the Ears (2016)
+<https://www.imdb.com/title/tt15425434/> a schema:Movie ;
+    schema:name "Between the Ears" ;
+    schema:url <https://www.imdb.com/title/tt15425434/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# In the Club (2014)
+<https://www.imdb.com/title/tt3428478/> a schema:Movie ;
+    schema:name "In the Club" ;
+    schema:url <https://www.imdb.com/title/tt3428478/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Simon"
+    ] .
+
+# The Complete Walk: Romeo and Juliet (2016)
+<https://www.imdb.com/title/tt6352700/> a schema:Movie ;
+    schema:name "The Complete Walk: Romeo and Juliet" ;
+    schema:url <https://www.imdb.com/title/tt6352700/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Romeo"
+    ] .
+
+# Globe on Screen: Julius Caesar (2015)
+<https://www.imdb.com/title/tt7282048/> a schema:Movie ;
+    schema:name "Globe on Screen: Julius Caesar" ;
+    schema:url <https://www.imdb.com/title/tt7282048/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Mark Antony"
+    ] .
+
+# The Suspicions of Mr Whicher (2014)
+<https://www.imdb.com/title/tt11460508/> a schema:Movie ;
+    schema:name "The Suspicions of Mr Whicher" ;
+    schema:url <https://www.imdb.com/title/tt11460508/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3451086/> ;
+        schema:characterName "Joshua Hallows"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2034812697/> a schema:VideoObject ;
+        schema:name "Trailer[OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2034812697/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmE0YzkzOTEtNTBjMS00MzI2LWIyNWQtMGVkZjIxMTYwZDdlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2024-02-08T06:19:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZWZkYTcxMTktOGEwYy00NWYzLTg1ZjEtNWFlOTMyNzUyZGNkXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWZkYTcxMTktOGEwYy00NWYzLTg1ZjEtNWFlOTMyNzUyZGNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson" ;
+    schema:height "5760"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm3847475969/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjYwZjNkZjEtOTg0Ni00NzJlLWIxNTEtOTNlOTY4MzBkYzA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jonathan Bailey, Ruth Gemmell, Florence Hunt, Luke Thompson, Phoebe Dynevor, Luke Newton, Claudia Jessie, and Will Tilston in The Duke and I (2020)" ;
+    schema:height "2405"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm1689576449/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQwODZhNjAtZWYwOC00N2YxLWFlYTQtNWViOTdjMjU3YzZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jonathan Bailey, Luke Thompson, and Luke Newton in Off to the Races (2022)" ;
+    schema:height "2404"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm1656022017/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDE2MWYxMzMtZTk4NS00ZmE4LWE1ZmEtMmJjZmUwMzg0MzRlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jonathan Bailey, Rupert Young, Luke Thompson, and Simone Ashley in Victory (2022)" ;
+    schema:height "2404"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm895528450/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmE2NjU4MTMtMDRhOS00Y2JkLWEzMmQtMmZhMTQ5ZjAwYjZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson and Yerin Ha in Episode #4.1 (2026)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm912305666/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDNjMTcyNzQtZjE4Yy00ZjJkLTk4MmQtOTYzNWExNTY1MjM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson and Yerin Ha in Episode #4.1 (2026)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm929082882/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODczZmQ5NTctMjI1ZC00ZWNmLWIwOGYtM2QyNThmOTRlNTAzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson and Yerin Ha in Episode #4.1 (2026)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm2448987394/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDYwMDRkMDYtNmQwNC00YmYxLWFkYjktMTlhZTM5MGZiZjdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson in Episode #4.1 (2026)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm2532873474/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTJmMjlkMTAtZmVhNi00OWEwLTllZWMtZDc4NGJhNDAxZWRmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson and Yerin Ha in Episode #4.1 (2026)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3451086/mediaviewer/rm592868097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmUxOWU0MTItNjI3Yi00MGQ5LWE2YTQtMGRmOTVkYjkwOTI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Luke Thompson in Joining of Hands (2024)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

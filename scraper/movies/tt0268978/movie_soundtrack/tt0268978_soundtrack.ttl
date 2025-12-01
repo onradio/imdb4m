@@ -1,0 +1,73 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0268978/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "All Love Can Be" ;
+        schema:byArtist <https://www.imdb.com/name/nm0161355/> ; # Charlotte Church
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "All Love Can Be" ;
+            schema:composer <https://www.imdb.com/name/nm0000035/> ; # James Horner
+            schema:lyricist <https://www.imdb.com/name/nm0421263/> # Will Jennings
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Columba aspexit" ;
+        schema:byArtist <https://www.imdb.com/name/nm0456581/> ; # Emma Kirkby
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Columba aspexit" ;
+            schema:author <https://www.imdb.com/name/nm1388183/> # Hildegard von Bingen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Sonata No. 11 in A Major, K. 331" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Sonata No. 11 in A Major, K. 331" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Lonely Tear" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Lonely Tear" ;
+            schema:composer <https://www.imdb.com/name/nm0736680/> # Roger Roger
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hot Liquorice" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000035/> a schema:Person ;
+    schema:name "James Horner" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0161355/> a schema:Person ;
+    schema:name "Charlotte Church" .
+<https://www.imdb.com/name/nm0421263/> a schema:Person ;
+    schema:name "Will Jennings" .
+<https://www.imdb.com/name/nm0456581/> a schema:Person ;
+    schema:name "Emma Kirkby" .
+<https://www.imdb.com/name/nm0736680/> a schema:Person ;
+    schema:name "Roger Roger" .
+<https://www.imdb.com/name/nm1388183/> a schema:Person ;
+    schema:name "Hildegard von Bingen" .
+# ==============================================================================

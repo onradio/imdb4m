@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0941621/> a schema:Person ;
+    schema:name "John Worsham" ;
+    schema:url <https://www.imdb.com/name/nm0941621/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "John Worsham. Actor: Forrest Gump. John Worsham is known for Forrest Gump (1994), All Alone (2011) and The Price of Power: William Goebel the Man and the Myth (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2177110/>,    # Saturday
+                       <https://www.imdb.com/title/tt1270079/>,    # All Alone
+                       <https://www.imdb.com/title/tt2099761/>,    # The Price of Power: William Goebel the Man and the Myth
+                       <https://www.imdb.com/title/tt0293547/>,    # The Legend of Razorback
+                       <https://www.imdb.com/title/tt0109830/> ; # Forrest Gump
+
+
+    schema:video <https://www.imdb.com/video/vi363767065/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Saturday (2012)
+<https://www.imdb.com/title/tt2177110/> a schema:Movie ;
+    schema:name "Saturday" ;
+    schema:url <https://www.imdb.com/title/tt2177110/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0941621/> ;
+        schema:characterName "Abe"
+    ] .
+
+# All Alone (2011)
+<https://www.imdb.com/title/tt1270079/> a schema:Movie ;
+    schema:name "All Alone" ;
+    schema:url <https://www.imdb.com/title/tt1270079/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0941621/> ;
+        schema:characterName "Homeless Man"
+    ] .
+
+# The Price of Power: William Goebel the Man and the Myth (2009)
+<https://www.imdb.com/title/tt2099761/> a schema:Movie ;
+    schema:name "The Price of Power: William Goebel the Man and the Myth" ;
+    schema:url <https://www.imdb.com/title/tt2099761/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0941621/> ;
+        schema:characterName "Heckler"
+    ] .
+
+# The Legend of Razorback (2002)
+<https://www.imdb.com/title/tt0293547/> a schema:Movie ;
+    schema:name "The Legend of Razorback" ;
+    schema:url <https://www.imdb.com/title/tt0293547/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0941621/> ;
+        schema:characterName "Hammy"
+    ] .
+
+# Forrest Gump (1994)
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0941621/> ;
+        schema:characterName "Southern Gentleman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi363767065/> a schema:VideoObject ;
+        schema:name "All Alone" ;
+        schema:description "Trailer for All Alone" ;
+        schema:embedUrl <https://www.imdb.com/video/vi363767065/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMGExNzQ4YWQtYjRiMy00MjI2LWIwMGQtM2Y5OWJjOWMzN2Y0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M29S"^^xsd:duration ;
+        schema:uploadDate "2012-07-12T03:05:45Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,198 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0085794/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Jerry Langford Theme" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Come Rain or Come Shine" ;
+        schema:byArtist <https://www.imdb.com/name/nm0153124/>, # Ray Charles
+                        <https://www.imdb.com/name/nm0000928/> ; # Sandra Bernhard
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Come Rain or Come Shine" ;
+            schema:author <https://www.imdb.com/name/nm0002182/>, # Harold Arlen
+                       <https://www.imdb.com/name/nm0006197/> # Johnny Mercer
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sweet Sixteen Bars" ;
+        schema:byArtist <https://www.imdb.com/name/nm0153124/> ; # Ray Charles
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sweet Sixteen Bars" ;
+            schema:author <https://www.imdb.com/name/nm0153124/> # Ray Charles
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Finer Things" ;
+        schema:byArtist <https://www.imdb.com/name/nm0760824/> ; # David Sanborn
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Finer Things" ;
+            schema:author <https://www.imdb.com/name/nm0004907/> # Donald Fagen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Back on the Chain Gang" ;
+        schema:byArtist <https://www.imdb.com/name/nm0696539/> ; # The Pretenders
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Back on the Chain Gang" ;
+            schema:author <https://www.imdb.com/name/nm0005038/> # Chrissie Hynde
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Fly Me to the Moon" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000069/> ; # Frank Sinatra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Fly Me to the Moon" ;
+            schema:author <https://www.imdb.com/name/nm0397140/> # Bart Howard
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Swamp" ;
+        schema:byArtist <https://www.imdb.com/name/nm0848088/> ; # Talking Heads
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Swamp" ;
+            schema:composer <https://www.imdb.com/name/nm0848088/> ; # Talking Heads
+            schema:lyricist <https://www.imdb.com/name/nm0126154/> # David Byrne
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rainbow Sleeves" ;
+        schema:byArtist <https://www.imdb.com/name/nm0429122/> ; # Rickie Lee Jones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Rainbow Sleeves" ;
+            schema:author <https://www.imdb.com/name/nm0001823/> # Tom Waits
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Between Trains" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005371/> ; # Robbie Robertson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Between Trains" ;
+            schema:author <https://www.imdb.com/name/nm0005371/> # Robbie Robertson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "T'Ain't Nobody's Bizness If I Do" ;
+        schema:byArtist <https://www.imdb.com/name/nm0454475/> ; # B.B. King
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "T'Ain't Nobody's Bizness If I Do" ;
+            schema:author <https://www.imdb.com/name/nm0334450/>, # Porter Grainger
+                       <https://www.imdb.com/name/nm3400276/> # Everett Robbins
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Steal The Night" ;
+        schema:byArtist <https://www.imdb.com/name/nm0643619/> ; # Ric Ocasek
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Steal The Night" ;
+            schema:author <https://www.imdb.com/name/nm0643619/> # Ric Ocasek
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Best Of Everything" ;
+        schema:byArtist <https://www.imdb.com/name/nm0678816/> ; # Tom Petty
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Best Of Everything" ;
+            schema:author <https://www.imdb.com/name/nm0678816/> # Tom Petty
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Rupert's Theme" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wonderful Remark" ;
+        schema:byArtist <https://www.imdb.com/name/nm0607341/> ; # Van Morrison
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Wonderful Remark" ;
+            schema:author <https://www.imdb.com/name/nm0607341/> # Van Morrison
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000069/> a schema:Person ;
+    schema:name "Frank Sinatra" .
+<https://www.imdb.com/name/nm0000928/> a schema:Person ;
+    schema:name "Sandra Bernhard" .
+<https://www.imdb.com/name/nm0001823/> a schema:Person ;
+    schema:name "Tom Waits" .
+<https://www.imdb.com/name/nm0002182/> a schema:Person ;
+    schema:name "Harold Arlen" .
+<https://www.imdb.com/name/nm0004907/> a schema:Person ;
+    schema:name "Donald Fagen" .
+<https://www.imdb.com/name/nm0005038/> a schema:Person ;
+    schema:name "Chrissie Hynde" .
+<https://www.imdb.com/name/nm0005371/> a schema:Person ;
+    schema:name "Robbie Robertson" .
+<https://www.imdb.com/name/nm0006197/> a schema:Person ;
+    schema:name "Johnny Mercer" .
+<https://www.imdb.com/name/nm0126154/> a schema:Person ;
+    schema:name "David Byrne" .
+<https://www.imdb.com/name/nm0153124/> a schema:Person ;
+    schema:name "Ray Charles" .
+<https://www.imdb.com/name/nm0334450/> a schema:Person ;
+    schema:name "Porter Grainger" .
+<https://www.imdb.com/name/nm0397140/> a schema:Person ;
+    schema:name "Bart Howard" .
+<https://www.imdb.com/name/nm0429122/> a schema:Person ;
+    schema:name "Rickie Lee Jones" .
+<https://www.imdb.com/name/nm0454475/> a schema:Person ;
+    schema:name "B.B. King" .
+<https://www.imdb.com/name/nm0607341/> a schema:Person ;
+    schema:name "Van Morrison" .
+<https://www.imdb.com/name/nm0643619/> a schema:Person ;
+    schema:name "Ric Ocasek" .
+<https://www.imdb.com/name/nm0678816/> a schema:Person ;
+    schema:name "Tom Petty" .
+<https://www.imdb.com/name/nm0696539/> a schema:Person ;
+    schema:name "The Pretenders" .
+<https://www.imdb.com/name/nm0760824/> a schema:Person ;
+    schema:name "David Sanborn" .
+<https://www.imdb.com/name/nm0848088/> a schema:Person ;
+    schema:name "Talking Heads" .
+<https://www.imdb.com/name/nm3400276/> a schema:Person ;
+    schema:name "Everett Robbins" .
+# ==============================================================================

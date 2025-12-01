@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3150523/> a schema:Person ;
+    schema:name "Maurizio Ferrigno" ;
+    schema:url <https://www.imdb.com/name/nm3150523/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Maurizio Ferrigno. Actor: The Wrestler. Maurizio Ferrigno is known for The Wrestler (2008), Metal Gear (2011) and Stealing Chanel (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3129692/>,    # Stealing Chanel
+                       <https://www.imdb.com/title/tt2646462/>,    # Tiramisu
+                       <https://www.imdb.com/title/tt1964915/>,    # Metal Gear
+                       <https://www.imdb.com/title/tt1125849/>,    # The Wrestler
+                       <https://www.imdb.com/title/tt0834943/>,    # Victoriana
+                       <https://www.imdb.com/title/tt1024880/> . # What's Your Problem?
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Stealing Chanel (2015)
+<https://www.imdb.com/title/tt3129692/> a schema:Movie ;
+    schema:name "Stealing Chanel" ;
+    schema:url <https://www.imdb.com/title/tt3129692/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "Cell Mate"
+    ] .
+
+# Tiramisu (2012)
+<https://www.imdb.com/title/tt2646462/> a schema:Movie ;
+    schema:name "Tiramisu" ;
+    schema:url <https://www.imdb.com/title/tt2646462/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "'The Bird'"
+    ] .
+
+# Metal Gear (2011)
+<https://www.imdb.com/title/tt1964915/> a schema:Movie ;
+    schema:name "Metal Gear" ;
+    schema:url <https://www.imdb.com/title/tt1964915/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "Franco"
+    ] .
+
+# The Wrestler (2008)
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "Spotter"
+    ] .
+
+# Victoriana (2007)
+<https://www.imdb.com/title/tt0834943/> a schema:Movie ;
+    schema:name "Victoriana" ;
+    schema:url <https://www.imdb.com/title/tt0834943/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "Yuri"
+    ] .
+
+# What's Your Problem? (2007)
+<https://www.imdb.com/title/tt1024880/> a schema:Movie ;
+    schema:name "What's Your Problem?" ;
+    schema:url <https://www.imdb.com/title/tt1024880/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150523/> ;
+        schema:characterName "Thug"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

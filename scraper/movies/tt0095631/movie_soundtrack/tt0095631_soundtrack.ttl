@@ -1,0 +1,30 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095631/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Come Fly with Me" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000134/> ; # Robert De Niro
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Come Fly with Me" ;
+            schema:composer <https://www.imdb.com/name/nm0006329/> ; # Jimmy Van Heusen
+            schema:lyricist <https://www.imdb.com/name/nm0005991/> # Sammy Cahn
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000134/> a schema:Person ;
+    schema:name "Robert De Niro" .
+<https://www.imdb.com/name/nm0005991/> a schema:Person ;
+    schema:name "Sammy Cahn" .
+<https://www.imdb.com/name/nm0006329/> a schema:Person ;
+    schema:name "Jimmy Van Heusen" .
+# ==============================================================================

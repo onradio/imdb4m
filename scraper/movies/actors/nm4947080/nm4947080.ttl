@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm4947080/> a schema:Person ;
+    schema:name "Zhong Zhou" ;
+    schema:url <https://www.imdb.com/name/nm4947080/> ;
+    schema:jobTitle "Actor", "Director" ;
+    schema:description "Zhong Zhou. Actor: Ip Man. Zhong Zhou is known for Ip Man (2008), Shi xue jiang jun (2016) and Wo de hei dao mei mei (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt9296868/>,    # Qianli lei sheng wanli shan
+                       <https://www.imdb.com/title/tt4079152/>,    # The Dead End
+                       <https://www.imdb.com/title/tt1941705/>,    # Treasure Inn
+                       <https://www.imdb.com/title/tt2475634/>,    # The Legend of Crazy Monk 3
+                       <https://www.imdb.com/title/tt1220719/>,    # Ip Man
+                       <https://www.imdb.com/title/tt1332723/> . # Shen qiang shou yu zhi duo xing
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Qianli lei sheng wanli shan (2016)
+<https://www.imdb.com/title/tt9296868/> a schema:Movie ;
+    schema:name "Qianli lei sheng wanli shan" ;
+    schema:url <https://www.imdb.com/title/tt9296868/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName "Chen yufu"
+    ] .
+
+# The Dead End (2015)
+<https://www.imdb.com/title/tt4079152/> a schema:Movie ;
+    schema:name "The Dead End" ;
+    schema:url <https://www.imdb.com/title/tt4079152/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName "Killer A"
+    ] .
+
+# Treasure Inn (2011)
+<https://www.imdb.com/title/tt1941705/> a schema:Movie ;
+    schema:name "Treasure Inn" ;
+    schema:url <https://www.imdb.com/title/tt1941705/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName "Constable B"
+    ] .
+
+# The Legend of Crazy Monk 3 (2010)
+<https://www.imdb.com/title/tt2475634/> a schema:Movie ;
+    schema:name "The Legend of Crazy Monk 3" ;
+    schema:url <https://www.imdb.com/title/tt2475634/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName "Mo Jun"
+    ] .
+
+# Ip Man (2008)
+<https://www.imdb.com/title/tt1220719/> a schema:Movie ;
+    schema:name "Ip Man" ;
+    schema:url <https://www.imdb.com/title/tt1220719/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName "Southern Master"
+    ] .
+
+# Shen qiang shou yu zhi duo xing (2007)
+<https://www.imdb.com/title/tt1332723/> a schema:Movie ;
+    schema:name "Shen qiang shou yu zhi duo xing" ;
+    schema:url <https://www.imdb.com/title/tt1332723/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm4947080/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

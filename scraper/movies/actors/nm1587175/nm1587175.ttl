@@ -1,0 +1,346 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1587175/> a schema:Person ;
+    schema:name "Mona Singh" ;
+    schema:url <https://www.imdb.com/name/nm1587175/> ;
+    schema:birthDate "1981-10-08"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer" ;
+    schema:description "Mona Singh. Actress: Laal Singh Chaddha. Mona Singh was born on 8 October 1981 in Chandigarh, India. She is an actress and producer, known for Laal Singh Chaddha (2022), 3 Idiots (2009) and Made in Heaven (2019). She has been married to Shyam Rajagopalan since 27 December 2019." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOTc2OGFhZTktYjU1Mi00MjcxLTg5NWEtYjc4YWNhYzU2MWQ1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chandigarh, India"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.65"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5″ (1.65 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10028196/>,    # Laal Singh Chaddha
+                       <https://www.imdb.com/title/tt0401949/>,    # Jassi Jaissi Koi Nahin
+                       <https://www.imdb.com/title/tt1187043/>,    # 3 Idiots
+                       <https://www.imdb.com/title/tt6494622/>,    # Made in Heaven
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8006806/>,    # Kehne Ko Humsafar Hain
+                       <https://www.imdb.com/title/tt10262178/>,    # Glitch
+                       <https://www.imdb.com/title/tt12875546/>,    # Ek Choti Si Ego
+                       <https://www.imdb.com/title/tt12334248/>,    # Lutf
+                       <https://www.imdb.com/title/tt10449366/>,    # Mission Over Mars
+                       <https://www.imdb.com/title/tt5323298/>,    # Naagin
+                       <https://www.imdb.com/title/tt8396186/>,    # Amavas
+                       <https://www.imdb.com/title/tt8595766/>,    # Yeh Meri Family
+                       <https://www.imdb.com/title/tt7478474/>,    # Pyaar Ko Ho Jaane Do
+                       <https://www.imdb.com/title/tt6352300/>,    # Kavach... Kaali Shaktiyon Se
+                       <https://www.imdb.com/title/tt8616144/>,    # Comedy Nights Bachao Taaza
+                       <https://www.imdb.com/title/tt4190220/>,    # Zed Plus
+                       <https://www.imdb.com/title/tt2429838/>,    # Kya Huaa Tera Vaada
+                       <https://www.imdb.com/title/tt1809399/>,    # Utt Pataang
+                       <https://www.imdb.com/title/tt7843350/>,    # Radhaa Ki Betiyaan Kuch Kar Dikhayengi
+                       <https://www.imdb.com/title/tt5500822/> ; # Mujhe Khabar Thi Wo Mera Nahi
+
+    schema:award [
+        a schema:Award ;
+        schema:description "20 wins & 12 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3142633497/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1587175/mediaviewer/rm294156288/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm327710720/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm361265152/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm176715776/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm260601856/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm25720832/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm3217245440/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm3066250496/>,
+                 <https://www.imdb.com/name/nm1587175/mediaviewer/rm1455637760/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt10028196/> a schema:Movie ;
+    schema:name "Laal Singh Chaddha" ;
+    schema:url <https://www.imdb.com/title/tt10028196/> .
+
+<https://www.imdb.com/title/tt0401949/> a schema:Movie ;
+    schema:name "Jassi Jaissi Koi Nahin" ;
+    schema:url <https://www.imdb.com/title/tt0401949/> .
+
+<https://www.imdb.com/title/tt1187043/> a schema:Movie ;
+    schema:name "3 Idiots" ;
+    schema:url <https://www.imdb.com/title/tt1187043/> .
+
+<https://www.imdb.com/title/tt6494622/> a schema:Movie ;
+    schema:name "Made in Heaven" ;
+    schema:url <https://www.imdb.com/title/tt6494622/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Kehne Ko Humsafar Hain (2018)
+<https://www.imdb.com/title/tt8006806/> a schema:Movie ;
+    schema:name "Kehne Ko Humsafar Hain" ;
+    schema:url <https://www.imdb.com/title/tt8006806/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Ananya"
+    ] .
+
+# Glitch (2019)
+<https://www.imdb.com/title/tt10262178/> a schema:Movie ;
+    schema:name "Glitch" ;
+    schema:url <https://www.imdb.com/title/tt10262178/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName ""
+    ] .
+
+# Ek Choti Si Ego (2019)
+<https://www.imdb.com/title/tt12875546/> a schema:Movie ;
+    schema:name "Ek Choti Si Ego" ;
+    schema:url <https://www.imdb.com/title/tt12875546/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Priya"
+    ] .
+
+# Lutf (2019)
+<https://www.imdb.com/title/tt12334248/> a schema:Movie ;
+    schema:name "Lutf" ;
+    schema:url <https://www.imdb.com/title/tt12334248/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Meghna Joshi"
+    ] .
+
+# Mission Over Mars (2019)
+<https://www.imdb.com/title/tt10449366/> a schema:Movie ;
+    schema:name "Mission Over Mars" ;
+    schema:url <https://www.imdb.com/title/tt10449366/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Moushumi Ghosh"
+    ] .
+
+# Naagin (2019)
+<https://www.imdb.com/title/tt5323298/> a schema:Movie ;
+    schema:name "Naagin" ;
+    schema:url <https://www.imdb.com/title/tt5323298/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Ananya Sharma"
+    ] .
+
+# Amavas (2019)
+<https://www.imdb.com/title/tt8396186/> a schema:Movie ;
+    schema:name "Amavas" ;
+    schema:url <https://www.imdb.com/title/tt8396186/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Dr. Shivani"
+    ] .
+
+# Yeh Meri Family (2018)
+<https://www.imdb.com/title/tt8595766/> a schema:Movie ;
+    schema:name "Yeh Meri Family" ;
+    schema:url <https://www.imdb.com/title/tt8595766/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Mummy"
+    ] .
+
+# Pyaar Ko Ho Jaane Do (2015)
+<https://www.imdb.com/title/tt7478474/> a schema:Movie ;
+    schema:name "Pyaar Ko Ho Jaane Do" ;
+    schema:url <https://www.imdb.com/title/tt7478474/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Preet Ishaan Hooda (2015-2016)"
+    ] .
+
+# Kavach... Kaali Shaktiyon Se (2016)
+<https://www.imdb.com/title/tt6352300/> a schema:Movie ;
+    schema:name "Kavach... Kaali Shaktiyon Se" ;
+    schema:url <https://www.imdb.com/title/tt6352300/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Paridhi Rajbeer Bundela"
+    ] .
+
+# Comedy Nights Bachao Taaza (2016)
+<https://www.imdb.com/title/tt8616144/> a schema:Movie ;
+    schema:name "Comedy Nights Bachao Taaza" ;
+    schema:url <https://www.imdb.com/title/tt8616144/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName ""
+    ] .
+
+# Zed Plus (2014)
+<https://www.imdb.com/title/tt4190220/> a schema:Movie ;
+    schema:name "Zed Plus" ;
+    schema:url <https://www.imdb.com/title/tt4190220/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Hameeda (Aslam's Wife)"
+    ] .
+
+# Kya Huaa Tera Vaada (2012)
+<https://www.imdb.com/title/tt2429838/> a schema:Movie ;
+    schema:name "Kya Huaa Tera Vaada" ;
+    schema:url <https://www.imdb.com/title/tt2429838/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Mona Pradeep Singh"
+    ] .
+
+# Utt Pataang (2011)
+<https://www.imdb.com/title/tt1809399/> a schema:Movie ;
+    schema:name "Utt Pataang" ;
+    schema:url <https://www.imdb.com/title/tt1809399/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Koel Datta"
+    ] .
+
+# Radhaa Ki Betiyaan Kuch Kar Dikhayengi (2008)
+<https://www.imdb.com/title/tt7843350/> a schema:Movie ;
+    schema:name "Radhaa Ki Betiyaan Kuch Kar Dikhayengi" ;
+    schema:url <https://www.imdb.com/title/tt7843350/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName "Raunaq Kapoor"
+    ] .
+
+# Mujhe Khabar Thi Wo Mera Nahi (2007)
+<https://www.imdb.com/title/tt5500822/> a schema:Movie ;
+    schema:name "Mujhe Khabar Thi Wo Mera Nahi" ;
+    schema:url <https://www.imdb.com/title/tt5500822/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1587175/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3142633497/> a schema:VideoObject ;
+        schema:name "Watch Thode Door Thode Paas on Zee5" ;
+        schema:description "Ashwin Mehta has a challenge for his family: say no to all gadgets in the home for 6 months and win one crore! Can the Mehtas survive this digital detox? How far will they go for the cash prize?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3142633497/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDFlMzhlNjAtNmRiZS00YTcwLWFmMTgtZGE1YmY4ZWM4OTNjXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M8S"^^xsd:duration ;
+        schema:uploadDate "2025-11-01T10:55:25Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOTc2OGFhZTktYjU1Mi00MjcxLTg5NWEtYjc4YWNhYzU2MWQ1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTc2OGFhZTktYjU1Mi00MjcxLTg5NWEtYjc4YWNhYzU2MWQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh" ;
+    schema:height "1024"^^xsd:integer ;
+    schema:width "729"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm294156288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDRhMzYwYmQtNGI0Yi00ZThjLWE1YmMtN2M5OTEzODVlOGVmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Vivek Dahiya in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm327710720/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMGZjNDk1YWMtYmIyYi00ODhhLWJjMTctMTdmN2I1YmM2Zjk4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Arjun Bijlani in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm361265152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTA4YTk3NWEtMTVmZS00YTg2LTk1YTItNjhjMjYwMjJkMGU0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Vivek Dahiya in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "1728"^^xsd:integer ;
+    schema:width "2592"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm176715776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzhlYjUyMTUtYjJhMy00ZjhmLTkwNjItOGQwNWM1OWI3NzYwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Arjun Bijlani in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm260601856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzEyZjQzMzAtYTU5ZC00NTMwLWE0OTMtNjVkZDk4NWIzY2QzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Arjun Bijlani in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm25720832/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjcwNDIxZTUtMmJjYS00ZjI1LWE4MjQtNzYxMjEyNGNhY2QwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Vivek Dahiya in Kavach... Kaali Shaktiyon Se (2016)" ;
+    schema:height "2304"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm3217245440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODUwOWQ5YWYtOWI1NS00MmE3LTgyOWItYzdhN2FhYTI3YjI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Akarsh Khurana in Yeh Meri Family (2018)" ;
+    schema:height "580"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm3066250496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWQ1YzFmZGQtODMyMy00OTg1LTg3ZjctOTM3NmVmMWFjNWMzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Akarsh Khurana in Yeh Meri Family (2018)" ;
+    schema:height "580"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1587175/mediaviewer/rm1455637760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjc3ZTAxNzctYzg1ZC00OTcxLTllMWEtOTE3NDkwNjY4N2M4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mona Singh and Ahan Nirban in Yeh Meri Family (2018)" ;
+    schema:height "580"^^xsd:integer ;
+    schema:width "1366"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

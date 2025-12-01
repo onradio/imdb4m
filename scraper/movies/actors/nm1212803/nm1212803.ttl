@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1212803/> a schema:Person ;
+    schema:name "Jill the Dog" ;
+    schema:url <https://www.imdb.com/name/nm1212803/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jill the Dog. Actress: As Good as It Gets. Jill the Dog is known for As Good as It Gets (1997) and Carolina (2003)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ0Njc1MTA4MF5BMl5BanBnXkFtZTYwMDU5MjY2._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0289889/>,    # Carolina
+                       <https://www.imdb.com/title/tt0119822/> ; # As Good as It Gets
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1212803/mediaviewer/rm2160665344/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm128189952/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm626038784/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm558929920/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm793810944/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm777033728/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm760256512/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm1045469184/>,
+                 <https://www.imdb.com/name/nm1212803/mediaviewer/rm1028691968/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Carolina (2003)
+<https://www.imdb.com/title/tt0289889/> a schema:Movie ;
+    schema:name "Carolina" ;
+    schema:url <https://www.imdb.com/title/tt0289889/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1212803/> ;
+        schema:characterName "Fur Person"
+    ] .
+
+# As Good as It Gets (1997)
+<https://www.imdb.com/title/tt0119822/> a schema:Movie ;
+    schema:name "As Good as It Gets" ;
+    schema:url <https://www.imdb.com/title/tt0119822/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1212803/> ;
+        schema:characterName "Verdell"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ0Njc1MTA4MF5BMl5BanBnXkFtZTYwMDU5MjY2._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ0Njc1MTA4MF5BMl5BanBnXkFtZTYwMDU5MjY2._V1_.jpg> ;
+    schema:caption "Verdell" ;
+    schema:height "267"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm2160665344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTcwNDYwNDkxMF5BMl5BanBnXkFtZTgwNTk3MjMyMzI@._V1_.jpg> ;
+    schema:caption "Jack Nicholson and Jill the Dog in As Good as It Gets (1997)" ;
+    schema:height "781"^^xsd:integer ;
+    schema:width "1440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm128189952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTBmN2U3ODQtOTExNC00ZTI3LTliMzItNTg2YjQ4ZjZlNzA3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jack Nicholson and Jill the Dog in As Good as It Gets (1997)" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "434"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm626038784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI5NDIwNDI5N15BMl5BanBnXkFtZTYwMTQ5MjY2._V1_.jpg> ;
+    schema:caption "Melvin & Verdell" ;
+    schema:height "266"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm558929920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIwMTc4ODExNl5BMl5BanBnXkFtZTYwOTQ5MjY2._V1_.jpg> ;
+    schema:caption "Greg Kinnear as Simon" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "269"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm793810944/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjExODgwNDU4OV5BMl5BanBnXkFtZTYwNDU5MjY2._V1_.jpg> ;
+    schema:caption "Cuba Gooding Jr. as Frank" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "269"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm777033728/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwNTI5OTUyOF5BMl5BanBnXkFtZTYwNjU5MjY2._V1_.jpg> ;
+    schema:caption "Simon & Verdell" ;
+    schema:height "267"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm760256512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyNDA3MDgxOF5BMl5BanBnXkFtZTYwODU5MjY2._V1_.jpg> ;
+    schema:caption "Melvin, Simon & Verdell" ;
+    schema:height "267"^^xsd:integer ;
+    schema:width "400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm1045469184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzcxODUwNjY1MF5BMl5BanBnXkFtZTYwOTg5MjY2._V1_.jpg> ;
+    schema:caption "Jack Nicholson and Jill the Dog in As Good as It Gets (1997)" ;
+    schema:height "312"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1212803/mediaviewer/rm1028691968/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTE5NzkyNjA4NV5BMl5BanBnXkFtZTYwMTk5MjY2._V1_.jpg> ;
+    schema:caption "Jack Nicholson, Greg Kinnear, and Jill the Dog in As Good as It Gets (1997)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "475"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

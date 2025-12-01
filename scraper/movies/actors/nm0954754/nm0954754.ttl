@@ -1,0 +1,77 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0954754/> a schema:Person ;
+    schema:name "Alexander Zemeckis" ;
+    schema:url <https://www.imdb.com/name/nm0954754/> ;
+    schema:birthDate "1985-12-11"^^xsd:date ;
+    schema:jobTitle "Actor", "Production Department", "Additional Crew" ;
+    schema:description "Alexander Zemeckis. Actor: Forrest Gump. Alexander Zemeckis was born on 11 December 1985 in Los Angeles, California, USA. He is an actor, known for Forrest Gump (1994), Contact (1997) and Beowulf (2007)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0429018/>,    # Rabbit Fever
+                       <https://www.imdb.com/title/tt0118884/>,    # Contact
+                       <https://www.imdb.com/title/tt0109830/> . # Forrest Gump
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Rabbit Fever (2006)
+<https://www.imdb.com/title/tt0429018/> a schema:Movie ;
+    schema:name "Rabbit Fever" ;
+    schema:url <https://www.imdb.com/title/tt0429018/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0954754/> ;
+        schema:characterName "Howard Plumb"
+    ] .
+
+# Contact (1997)
+<https://www.imdb.com/title/tt0118884/> a schema:Movie ;
+    schema:name "Contact" ;
+    schema:url <https://www.imdb.com/title/tt0118884/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0954754/> ;
+        schema:characterName "Major Russell's Son"
+    ] .
+
+# Forrest Gump (1994)
+<https://www.imdb.com/title/tt0109830/> a schema:Movie ;
+    schema:name "Forrest Gump" ;
+    schema:url <https://www.imdb.com/title/tt0109830/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0954754/> ;
+        schema:characterName "School Bus Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

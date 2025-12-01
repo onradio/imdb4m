@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0943174/> a schema:Person ;
+    schema:name "Tao Wu" ;
+    schema:url <https://www.imdb.com/name/nm0943174/> ;
+    schema:jobTitle "Actor", "Producer", "Writer" ;
+    schema:description "Tao Wu. Actor: The Last Emperor. Tao Wu is known for The Last Emperor (1987), Wrath and Chong · Zhuang (2025)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0200486/>,    # So Close to Paradise
+                       <https://www.imdb.com/title/tt0130380/>,    # Zhou mo qing ren
+                       <https://www.imdb.com/title/tt0093389/> ; # The Last Emperor
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0943174/mediaviewer/rm4056183808/>,
+                 <https://www.imdb.com/name/nm0943174/mediaviewer/rm3627333888/>,
+                 <https://www.imdb.com/name/nm0943174/mediaviewer/rm3543502336/>,
+                 <https://www.imdb.com/name/nm0943174/mediaviewer/rm994221568/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# So Close to Paradise (1998)
+<https://www.imdb.com/title/tt0200486/> a schema:Movie ;
+    schema:name "So Close to Paradise" ;
+    schema:url <https://www.imdb.com/title/tt0200486/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0943174/> ;
+        schema:characterName "Su Wu"
+    ] .
+
+# Zhou mo qing ren (1993)
+<https://www.imdb.com/title/tt0130380/> a schema:Movie ;
+    schema:name "Zhou mo qing ren" ;
+    schema:url <https://www.imdb.com/title/tt0130380/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0943174/> ;
+        schema:characterName ""
+    ] .
+
+# The Last Emperor (1987)
+<https://www.imdb.com/title/tt0093389/> a schema:Movie ;
+    schema:name "The Last Emperor" ;
+    schema:url <https://www.imdb.com/title/tt0093389/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0943174/> ;
+        schema:characterName "Pu Yi (15 years)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0943174/mediaviewer/rm4056183808/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjcwMzAyMjAtNzM5YS00YmU5LTliNWUtODcwODY3ZDVkYjUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Peter O'Toole and Tao Wu in The Last Emperor (1987)" ;
+    schema:height "1096"^^xsd:integer ;
+    schema:width "1827"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0943174/mediaviewer/rm3627333888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3NTc2MTU2Ml5BMl5BanBnXkFtZTcwNDI0OTkzNQ@@._V1_.jpg> ;
+    schema:caption "Joan Chen and Tao Wu in The Last Emperor (1987)" ;
+    schema:height "1383"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0943174/mediaviewer/rm3543502336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYxNDU3NDU1Nl5BMl5BanBnXkFtZTcwMzM2OTgwMw@@._V1_.jpg> ;
+    schema:caption "Joan Chen and Tao Wu in The Last Emperor (1987)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0943174/mediaviewer/rm994221568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIzNjg3MzkzMl5BMl5BanBnXkFtZTYwMTU0NDU5._V1_.jpg> ;
+    schema:caption "Joan Chen and Tao Wu in The Last Emperor (1987)" ;
+    schema:height "475"^^xsd:integer ;
+    schema:width "273"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0566770/> a schema:Person ;
+    schema:name "Larry McCoy" ;
+    schema:url <https://www.imdb.com/name/nm0566770/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Larry McCoy. Actor: The Players Club. Larry McCoy is known for The Players Club (1998), Dead Presidents (1995) and Bulletproof (1996)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0450997/>,    # Boss'n Up
+                       <https://www.imdb.com/title/tt0354766/>,    # Never Die Alone
+                       <https://www.imdb.com/title/tt0160768/>,    # Rising to the Top
+                       <https://www.imdb.com/title/tt0119905/>,    # The Players Club
+                       <https://www.imdb.com/title/tt0115783/>,    # Bulletproof
+                       <https://www.imdb.com/title/tt0112819/>,    # Dead Presidents
+                       <https://www.imdb.com/title/tt0212210/>,    # Helicopter
+                       <https://www.imdb.com/title/tt0104797/> ; # Malcolm X
+
+
+    schema:video <https://www.imdb.com/video/vi3904618009/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boss'n Up (2005)
+<https://www.imdb.com/title/tt0450997/> a schema:Movie ;
+    schema:name "Boss'n Up" ;
+    schema:url <https://www.imdb.com/title/tt0450997/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Mint Condition"
+    ] .
+
+# Never Die Alone (2004)
+<https://www.imdb.com/title/tt0354766/> a schema:Movie ;
+    schema:name "Never Die Alone" ;
+    schema:url <https://www.imdb.com/title/tt0354766/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Henchman"
+    ] .
+
+# Rising to the Top (1999)
+<https://www.imdb.com/title/tt0160768/> a schema:Movie ;
+    schema:name "Rising to the Top" ;
+    schema:url <https://www.imdb.com/title/tt0160768/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Slay"
+    ] .
+
+# The Players Club (1998)
+<https://www.imdb.com/title/tt0119905/> a schema:Movie ;
+    schema:name "The Players Club" ;
+    schema:url <https://www.imdb.com/title/tt0119905/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "St. Louis"
+    ] .
+
+# Bulletproof (1996)
+<https://www.imdb.com/title/tt0115783/> a schema:Movie ;
+    schema:name "Bulletproof" ;
+    schema:url <https://www.imdb.com/title/tt0115783/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Detective Sulliman"
+    ] .
+
+# Dead Presidents (1995)
+<https://www.imdb.com/title/tt0112819/> a schema:Movie ;
+    schema:name "Dead Presidents" ;
+    schema:url <https://www.imdb.com/title/tt0112819/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Nicky"
+    ] .
+
+# Helicopter (1994)
+<https://www.imdb.com/title/tt0212210/> a schema:Movie ;
+    schema:name "Helicopter" ;
+    schema:url <https://www.imdb.com/title/tt0212210/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Helicopter's Father"
+    ] .
+
+# Malcolm X (1992)
+<https://www.imdb.com/title/tt0104797/> a schema:Movie ;
+    schema:name "Malcolm X" ;
+    schema:url <https://www.imdb.com/title/tt0104797/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0566770/> ;
+        schema:characterName "Sammy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3904618009/> a schema:VideoObject ;
+        schema:name "Boss&apos;n Up" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3904618009/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjQ3NDk3ZDEtODIwYy00ZmJkLTg4NDQtYzVkNmQ1YWJiNTUyXkEyXkFqcGdeQVRoaXJkUGFydHlJbmdlc3Rpb25Xb3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M8S"^^xsd:duration ;
+        schema:uploadDate "2020-02-29T17:02:24Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

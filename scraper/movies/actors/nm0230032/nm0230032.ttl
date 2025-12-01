@@ -1,0 +1,245 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0230032/> a schema:Person ;
+    schema:name "Pete Docter" ;
+    schema:url <https://www.imdb.com/name/nm0230032/> ;
+    schema:birthDate "1968-10-09"^^xsd:date ;
+    schema:jobTitle "Producer", "Writer", "Additional Crew" ;
+    schema:alternateName "Peter Hans Docter" ;
+    schema:description "Pete Docter. Writer: Up. Pete Docter is the Oscar®-winning director of \"Monsters, Inc.,\" \"Up,\" and \"Inside Out,\" and Chief Creative Officer at Pixar Animation Studios. He is currently directing Pixar's feature film \"Soul\" with producer Dana Murray, which is set to release June 19, 2020.\n\nStarting at Pixar in 1990 as the studio's third animator, Docter collaborated and help develop the story and characters for \"Toy Story,\" Pixar's first full-length animated..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZjg1OWQxM2MtMjY4Yi00OTA4LTlhMmYtMDgwOTJjYjVlZDgxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bloomington, Minnesota, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1049413/>,    # Up
+                       <https://www.imdb.com/title/tt0910970/>,    # WALL·E
+                       <https://www.imdb.com/title/tt2096673/>,    # Inside Out
+                       <https://www.imdb.com/title/tt2948372/>,    # Soul
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt4941804/>,    # Riley's First Date?
+                       <https://www.imdb.com/title/tt0486141/>,    # Mr. Incredible and Pals
+                       <https://www.imdb.com/title/tt0317705/>,    # The Incredibles
+                       <https://www.imdb.com/title/tt0198781/>,    # Monsters, Inc.
+                       <https://www.imdb.com/title/tt0120623/>,    # A Bug's Life
+                       <https://www.imdb.com/title/tt2516830/>,    # Palm Springs
+                       <https://www.imdb.com/title/tt0096450/> ; # Winter
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 3 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "61 wins & 86 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi950256409/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0230032/mediaviewer/rm1944951040/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm1928173824/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm2129500416/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm523266049/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm305162241/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm658246913/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm1161497857/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm2067467521/>,
+                 <https://www.imdb.com/name/nm0230032/mediaviewer/rm3830956801/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1049413/> a schema:Movie ;
+    schema:name "Up" ;
+    schema:url <https://www.imdb.com/title/tt1049413/> .
+
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> .
+
+<https://www.imdb.com/title/tt2096673/> a schema:Movie ;
+    schema:name "Inside Out" ;
+    schema:url <https://www.imdb.com/title/tt2096673/> .
+
+<https://www.imdb.com/title/tt2948372/> a schema:Movie ;
+    schema:name "Soul" ;
+    schema:url <https://www.imdb.com/title/tt2948372/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Riley's First Date? (2015)
+<https://www.imdb.com/title/tt4941804/> a schema:Movie ;
+    schema:name "Riley's First Date?" ;
+    schema:url <https://www.imdb.com/title/tt4941804/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Dad's Anger"
+    ] .
+
+# Mr. Incredible and Pals (2005)
+<https://www.imdb.com/title/tt0486141/> a schema:Movie ;
+    schema:name "Mr. Incredible and Pals" ;
+    schema:url <https://www.imdb.com/title/tt0486141/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Mr. Incredible"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# Monsters, Inc. (2001)
+<https://www.imdb.com/title/tt0198781/> a schema:Movie ;
+    schema:name "Monsters, Inc." ;
+    schema:url <https://www.imdb.com/title/tt0198781/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# A Bug's Life (1998)
+<https://www.imdb.com/title/tt0120623/> a schema:Movie ;
+    schema:name "A Bug's Life" ;
+    schema:url <https://www.imdb.com/title/tt0120623/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Ant #3"
+    ] .
+
+# Palm Springs (1989)
+<https://www.imdb.com/title/tt2516830/> a schema:Movie ;
+    schema:name "Palm Springs" ;
+    schema:url <https://www.imdb.com/title/tt2516830/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Sigmond Dinosaur"
+    ] .
+
+# Winter (1988)
+<https://www.imdb.com/title/tt0096450/> a schema:Movie ;
+    schema:name "Winter" ;
+    schema:url <https://www.imdb.com/title/tt0096450/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0230032/> ;
+        schema:characterName "Voice"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi950256409/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Follows the Pixar's SparkShorts filmmaking process, specifically on the processes of Corbin and Gonzales, offering an intimate look as they bring their personal visions to the screen." ;
+        schema:embedUrl <https://www.imdb.com/video/vi950256409/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjAxZGQ4NzItMWYyMy00ZmVlLTkyZTQtM2VjMTM0OGNlYTY4XkEyXkFqcGdeQWFuaW5vc2M@._V1_.jpg" ;
+        schema:duration "PT1M50S"^^xsd:duration ;
+        schema:uploadDate "2021-09-21T05:21:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZjg1OWQxM2MtMjY4Yi00OTA4LTlhMmYtMDgwOTJjYjVlZDgxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjg1OWQxM2MtMjY4Yi00OTA4LTlhMmYtMDgwOTJjYjVlZDgxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter at an event for The 93rd Academy Awards (2021)" ;
+    schema:height "5000"^^xsd:integer ;
+    schema:width "3299"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm1944951040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg2NjY5NDE0N15BMl5BanBnXkFtZTYwMzk5NzA3._V1_.jpg> ;
+    schema:caption "John Lasseter and Pete Docter in Monsters, Inc. (2001)" ;
+    schema:height "333"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm1928173824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU5NzEwNDg5OV5BMl5BanBnXkFtZTYwNDk5NzA3._V1_.jpg> ;
+    schema:caption "Darla K. Anderson, Pete Docter, and Lee Unkrich in Monsters, Inc. (2001)" ;
+    schema:height "333"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm2129500416/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjQ0Mjg2MTA2MF5BMl5BanBnXkFtZTYwNTAwODA3._V1_.jpg> ;
+    schema:caption "Billy Crystal, John Goodman, John Lasseter, Randy Newman, Darla K. Anderson, and Pete Docter in Monsters, Inc. (2001)" ;
+    schema:height "334"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm523266049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2JmMzkwMDgtMGQ1Ni00MTUwLThmZGQtZmMxYjk3ZWVmMTE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter" ;
+    schema:height "3527"^^xsd:integer ;
+    schema:width "2352"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm305162241/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmQ4MzVhNzktNGMyZS00MzZjLWJhOWUtNmQzODdjNTE4ODdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter" ;
+    schema:height "3474"^^xsd:integer ;
+    schema:width "2407"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm658246913/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2Q4NGUyMGItOGM5OS00Njk3LTk1YzAtMmExMjg2ZTk4YTdmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter and Amy Poehler" ;
+    schema:height "3592"^^xsd:integer ;
+    schema:width "5392"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm1161497857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjAxOTRhYjUtYjQ1MS00MzUxLWExNGYtMmFhNTU4NTBkYjJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter" ;
+    schema:height "3554"^^xsd:integer ;
+    schema:width "2361"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm2067467521/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTFhNjA2NGUtNjcyOC00N2U5LTgwZjQtOGU5YWExN2EyYzVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter and Jim Morris" ;
+    schema:height "2394"^^xsd:integer ;
+    schema:width "3270"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0230032/mediaviewer/rm3830956801/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWViYjljOTQtNmZmYS00ZTIzLThlODktZTE3M2EyYWNkYzU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Pete Docter and Dana Murray at an event for The 93rd Academy Awards (2021)" ;
+    schema:height "3031"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0230032/>
+    schema:sameAs <https://www.instagram.com/petedocter> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

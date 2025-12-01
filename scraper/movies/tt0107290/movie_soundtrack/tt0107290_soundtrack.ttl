@@ -1,0 +1,24 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0107290/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Las Gaviotas" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Las Gaviotas" ;
+            schema:author <https://www.imdb.com/name/nm8077809/> # Dolores Guadalupe Olivares
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm8077809/> a schema:Person ;
+    schema:name "Dolores Guadalupe Olivares" .
+# ==============================================================================

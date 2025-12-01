@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4430212/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Carbon Copy" ;
+        schema:byArtist <https://www.imdb.com/name/nm3939840/>, # Ash King
+                        <https://www.imdb.com/name/nm1126068/> ; # Meghna Gulzar
+        schema:producer <https://www.imdb.com/name/nm0080235/> ; # Vishal Bhardwaj
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Carbon Copy" ;
+            schema:author <https://www.imdb.com/name/nm0347899/> # Gulzar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kab Kahan Se" ;
+        schema:byArtist <https://www.imdb.com/name/nm0433881/> ; # Krishnakumar Kunnath
+        schema:producer <https://www.imdb.com/name/nm0080235/> ; # Vishal Bhardwaj
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kab Kahan Se" ;
+            schema:author <https://www.imdb.com/name/nm0347899/> # Gulzar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kya Pataa" ;
+        schema:byArtist <https://www.imdb.com/name/nm3858033/> ; # Arijit Singh
+        schema:producer <https://www.imdb.com/name/nm0080235/> ; # Vishal Bhardwaj
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Kya Pataa" ;
+            schema:author <https://www.imdb.com/name/nm0347899/> # Gulzar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dum Ghutta Hai" ;
+        schema:byArtist <https://www.imdb.com/name/nm0080234/>, # Rekha Bhardwaj
+                        <https://www.imdb.com/name/nm0019389/> ; # Rahat Fateh Ali Khan
+        schema:producer <https://www.imdb.com/name/nm0080235/> ; # Vishal Bhardwaj
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dum Ghutta Hai" ;
+            schema:author <https://www.imdb.com/name/nm0347899/> # Gulzar
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0019389/> a schema:Person ;
+    schema:name "Rahat Fateh Ali Khan" .
+<https://www.imdb.com/name/nm0080234/> a schema:Person ;
+    schema:name "Rekha Bhardwaj" .
+<https://www.imdb.com/name/nm0080235/> a schema:Person ;
+    schema:name "Vishal Bhardwaj" .
+<https://www.imdb.com/name/nm0347899/> a schema:Person ;
+    schema:name "Gulzar" .
+<https://www.imdb.com/name/nm0433881/> a schema:Person ;
+    schema:name "Krishnakumar Kunnath" .
+<https://www.imdb.com/name/nm1126068/> a schema:Person ;
+    schema:name "Meghna Gulzar" .
+<https://www.imdb.com/name/nm3858033/> a schema:Person ;
+    schema:name "Arijit Singh" .
+<https://www.imdb.com/name/nm3939840/> a schema:Person ;
+    schema:name "Ash King" .
+# ==============================================================================

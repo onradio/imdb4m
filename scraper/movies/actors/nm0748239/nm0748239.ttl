@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0748239/> a schema:Person ;
+    schema:name "Tex Rubinowitz" ;
+    schema:url <https://www.imdb.com/name/nm0748239/> ;
+    schema:birthDate "1961-12-05"^^xsd:date ;
+    schema:jobTitle "Art Department", "Writer", "Actor" ;
+    schema:description "Tex Rubinowitz. Actor: Before Sunrise. Tex Rubinowitz was born on 5 December 1961 in Hannover, Lower Saxony, Germany. He is a writer and actor, known for Before Sunrise (1995), Roadhouse 66 (1984) and Dorfers Donnerstalk (2004)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hannover, Lower Saxony, Germany"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt12846666/>,    # Tanzcafe Jenseits
+                       <https://www.imdb.com/title/tt0108829/>,    # Rex: A Cop's Best Friend
+                       <https://www.imdb.com/title/tt0112471/>,    # Before Sunrise
+                       <https://www.imdb.com/title/tt0299364/> . # Phettbergs nette Leit Show
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tanzcafe Jenseits (2009)
+<https://www.imdb.com/title/tt12846666/> a schema:Movie ;
+    schema:name "Tanzcafe Jenseits" ;
+    schema:url <https://www.imdb.com/title/tt12846666/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0748239/> ;
+        schema:characterName ""
+    ] .
+
+# Rex: A Cop's Best Friend (1997)
+<https://www.imdb.com/title/tt0108829/> a schema:Movie ;
+    schema:name "Rex: A Cop's Best Friend" ;
+    schema:url <https://www.imdb.com/title/tt0108829/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0748239/> ;
+        schema:characterName "Kellner Paul"
+    ] .
+
+# Before Sunrise (1995)
+<https://www.imdb.com/title/tt0112471/> a schema:Movie ;
+    schema:name "Before Sunrise" ;
+    schema:url <https://www.imdb.com/title/tt0112471/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0748239/> ;
+        schema:characterName "Guy on Bridge"
+    ] .
+
+# Phettbergs nette Leit Show (1994)
+<https://www.imdb.com/title/tt0299364/> a schema:Movie ;
+    schema:name "Phettbergs nette Leit Show" ;
+    schema:url <https://www.imdb.com/title/tt0299364/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0748239/> ;
+        schema:characterName "Die Würste"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

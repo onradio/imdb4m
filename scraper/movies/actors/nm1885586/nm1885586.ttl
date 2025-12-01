@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1885586/> a schema:Person ;
+    schema:name "Christina Frankenfield" ;
+    schema:url <https://www.imdb.com/name/nm1885586/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Christina Frankenfield. Actress: Sin City. Christina Frankenfield is known for Sin City (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0401792/> .    # Sin City
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sin City (2005)
+<https://www.imdb.com/title/tt0401792/> a schema:Movie ;
+    schema:name "Sin City" ;
+    schema:url <https://www.imdb.com/title/tt0401792/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1885586/> ;
+        schema:characterName "Judge"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

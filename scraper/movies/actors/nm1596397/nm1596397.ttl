@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1596397/> a schema:Person ;
+    schema:name "Erick Oliveira" ;
+    schema:url <https://www.imdb.com/name/nm1596397/> ;
+    schema:jobTitle "Actor", "Director", "Cinematographer" ;
+    schema:description "Erick Oliveira. Actor: Elite Squad. Erick Oliveira is known for Elite Squad (2007), City of God (2002) and Cidadão Silva (2002)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3914116/>,    # The Miracles of Jesus
+                       <https://www.imdb.com/title/tt0861739/>,    # Elite Squad
+                       <https://www.imdb.com/title/tt0470087/>,    # Show de Bola
+                       <https://www.imdb.com/title/tt0424374/>,    # Quase Dois Irmãos
+                       <https://www.imdb.com/title/tt0317248/> . # City of God
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Miracles of Jesus (2014)
+<https://www.imdb.com/title/tt3914116/> a schema:Movie ;
+    schema:name "The Miracles of Jesus" ;
+    schema:url <https://www.imdb.com/title/tt3914116/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1596397/> ;
+        schema:characterName ""
+    ] .
+
+# Elite Squad (2007)
+<https://www.imdb.com/title/tt0861739/> a schema:Movie ;
+    schema:name "Elite Squad" ;
+    schema:url <https://www.imdb.com/title/tt0861739/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1596397/> ;
+        schema:characterName "Marcinho"
+    ] .
+
+# Show de Bola (2007)
+<https://www.imdb.com/title/tt0470087/> a schema:Movie ;
+    schema:name "Show de Bola" ;
+    schema:url <https://www.imdb.com/title/tt0470087/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1596397/> ;
+        schema:characterName "Gang Member 1"
+    ] .
+
+# Quase Dois Irmãos (2004)
+<https://www.imdb.com/title/tt0424374/> a schema:Movie ;
+    schema:name "Quase Dois Irmãos" ;
+    schema:url <https://www.imdb.com/title/tt0424374/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1596397/> ;
+        schema:characterName "Duda"
+    ] .
+
+# City of God (2002)
+<https://www.imdb.com/title/tt0317248/> a schema:Movie ;
+    schema:name "City of God" ;
+    schema:url <https://www.imdb.com/title/tt0317248/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1596397/> ;
+        schema:characterName "Bando Cenoura"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

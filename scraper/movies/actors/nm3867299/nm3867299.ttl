@@ -1,0 +1,346 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3867299/> a schema:Person ;
+    schema:name "Alex Lawther" ;
+    schema:url <https://www.imdb.com/name/nm3867299/> ;
+    schema:birthDate "1995-05-04"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Alex Lawther. Actor: The End of the F***ing World. Alex Lawther was born in Petersfield, Hampshire, England in 1995. He is known for his role as the young Alan Turing in The Imitation Game (2014) for which he won the London Film Critics' Circle Award for \"Young British Performer of the Year\" in January of 2015. Being the youngest of three, and the son of two lawyers, he found out..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMDUyM2MyNWItMzk4ZS00ZmRmLTgzMDItYTExNjE1OWYxMzVlXkEyXkFqcGc@._V1_CR971,121,2396,3594_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Petersfield, Hampshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6257970/>,    # The End of the F***ing World
+                       <https://www.imdb.com/title/tt2084970/>,    # The Imitation Game
+                       <https://www.imdb.com/title/tt2085059/>,    # Black Mirror
+                       <https://www.imdb.com/title/tt9253284/>,    # Andor
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6270534/>,    # Les traducteurs
+                       <https://www.imdb.com/title/tt7466820/>,    # Alex's Dream
+                       <https://www.imdb.com/title/tt36585019/>,    # The London Necropolis Railway
+                       <https://www.imdb.com/title/tt5724948/>,    # Old Boys
+                       <https://www.imdb.com/title/tt2577192/>,    # Howards End
+                       <https://www.imdb.com/title/tt5516328/>,    # Ghost Stories
+                       <https://www.imdb.com/title/tt1653665/>,    # Goodbye Christopher Robin
+                       <https://www.imdb.com/title/tt6667360/>,    # Carnage
+                       <https://www.imdb.com/title/tt5089534/>,    # Freak Show
+                       <https://www.imdb.com/title/tt5974014/>,    # Narrated By
+                       <https://www.imdb.com/title/tt2248739/>,    # Departure
+                       <https://www.imdb.com/title/tt3358444/>,    # Yussef Is Complicated
+                       <https://www.imdb.com/title/tt3149038/>,    # X+Y
+                       <https://www.imdb.com/title/tt0184122/>,    # Holby City
+                       <https://www.imdb.com/title/tt2543298/>,    # Benjamin Britten: Peace and Conflict
+                       <https://www.imdb.com/title/tt1628015/> ; # The Fear
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 5 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2136000537/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3867299/mediaviewer/rm2713911296/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm1388840704/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm2753224704/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm1739387136/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm2414565376/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm2273836800/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm1379379970/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm3242109442/>,
+                 <https://www.imdb.com/name/nm3867299/mediaviewer/rm3509565186/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt6257970/> a schema:Movie ;
+    schema:name "The End of the F***ing World" ;
+    schema:url <https://www.imdb.com/title/tt6257970/> .
+
+<https://www.imdb.com/title/tt2084970/> a schema:Movie ;
+    schema:name "The Imitation Game" ;
+    schema:url <https://www.imdb.com/title/tt2084970/> .
+
+<https://www.imdb.com/title/tt2085059/> a schema:Movie ;
+    schema:name "Black Mirror" ;
+    schema:url <https://www.imdb.com/title/tt2085059/> .
+
+<https://www.imdb.com/title/tt9253284/> a schema:Movie ;
+    schema:name "Andor" ;
+    schema:url <https://www.imdb.com/title/tt9253284/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Les traducteurs (2019)
+<https://www.imdb.com/title/tt6270534/> a schema:Movie ;
+    schema:name "Les traducteurs" ;
+    schema:url <https://www.imdb.com/title/tt6270534/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Alex Goodman"
+    ] .
+
+# Alex's Dream (2018)
+<https://www.imdb.com/title/tt7466820/> a schema:Movie ;
+    schema:name "Alex's Dream" ;
+    schema:url <https://www.imdb.com/title/tt7466820/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Alex Morin"
+    ] .
+
+# The London Necropolis Railway (2018)
+<https://www.imdb.com/title/tt36585019/> a schema:Movie ;
+    schema:name "The London Necropolis Railway" ;
+    schema:url <https://www.imdb.com/title/tt36585019/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Barney"
+    ] .
+
+# Old Boys (2018)
+<https://www.imdb.com/title/tt5724948/> a schema:Movie ;
+    schema:name "Old Boys" ;
+    schema:url <https://www.imdb.com/title/tt5724948/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Amberson"
+    ] .
+
+# Howards End (2017)
+<https://www.imdb.com/title/tt2577192/> a schema:Movie ;
+    schema:name "Howards End" ;
+    schema:url <https://www.imdb.com/title/tt2577192/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Tibby Schlegel"
+    ] .
+
+# Ghost Stories (2017)
+<https://www.imdb.com/title/tt5516328/> a schema:Movie ;
+    schema:name "Ghost Stories" ;
+    schema:url <https://www.imdb.com/title/tt5516328/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Simon Rifkind"
+    ] .
+
+# Goodbye Christopher Robin (2017)
+<https://www.imdb.com/title/tt1653665/> a schema:Movie ;
+    schema:name "Goodbye Christopher Robin" ;
+    schema:url <https://www.imdb.com/title/tt1653665/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Christopher Robin Aged 18"
+    ] .
+
+# Carnage (2017)
+<https://www.imdb.com/title/tt6667360/> a schema:Movie ;
+    schema:name "Carnage" ;
+    schema:url <https://www.imdb.com/title/tt6667360/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Joseph"
+    ] .
+
+# Freak Show (2017)
+<https://www.imdb.com/title/tt5089534/> a schema:Movie ;
+    schema:name "Freak Show" ;
+    schema:url <https://www.imdb.com/title/tt5089534/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Narrated By (2016)
+<https://www.imdb.com/title/tt5974014/> a schema:Movie ;
+    schema:name "Narrated By" ;
+    schema:url <https://www.imdb.com/title/tt5974014/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Sam Sipowitz"
+    ] .
+
+# Departure (2015)
+<https://www.imdb.com/title/tt2248739/> a schema:Movie ;
+    schema:name "Departure" ;
+    schema:url <https://www.imdb.com/title/tt2248739/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Elliot"
+    ] .
+
+# Yussef Is Complicated (2015)
+<https://www.imdb.com/title/tt3358444/> a schema:Movie ;
+    schema:name "Yussef Is Complicated" ;
+    schema:url <https://www.imdb.com/title/tt3358444/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Alex"
+    ] .
+
+# X+Y (2014)
+<https://www.imdb.com/title/tt3149038/> a schema:Movie ;
+    schema:name "X+Y" ;
+    schema:url <https://www.imdb.com/title/tt3149038/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Isaac Cooper"
+    ] .
+
+# Holby City (2014)
+<https://www.imdb.com/title/tt0184122/> a schema:Movie ;
+    schema:name "Holby City" ;
+    schema:url <https://www.imdb.com/title/tt0184122/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Fred Bamber"
+    ] .
+
+# Benjamin Britten: Peace and Conflict (2013)
+<https://www.imdb.com/title/tt2543298/> a schema:Movie ;
+    schema:name "Benjamin Britten: Peace and Conflict" ;
+    schema:url <https://www.imdb.com/title/tt2543298/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "Benjamin Britten"
+    ] .
+
+# The Fear (2010)
+<https://www.imdb.com/title/tt1628015/> a schema:Movie ;
+    schema:name "The Fear" ;
+    schema:url <https://www.imdb.com/title/tt1628015/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3867299/> ;
+        schema:characterName "The Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2136000537/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Two gentle friends, Leonard and Hungry Paul, navigate life's challenges as overlooked nice guys, their journeys unfolding through humorous and poignant moments exploring themes of inciting change versus acceptance." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2136000537/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZGJiOTM4OTAtZjNkYi00NTdmLTkwODItNjAzMjcyYmI1YjM4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2025-10-31T23:38:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMDUyM2MyNWItMzk4ZS00ZmRmLTgzMDItYTExNjE1OWYxMzVlXkEyXkFqcGc@._V1_CR971,121,2396,3594_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDUyM2MyNWItMzk4ZS00ZmRmLTgzMDItYTExNjE1OWYxMzVlXkEyXkFqcGc@._V1_CR971,121,2396,3594_.jpg> ;
+    schema:caption "Alex Lawther" ;
+    schema:height "3594"^^xsd:integer ;
+    schema:width "2396"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm2713911296/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3OTQ5OTIxNl5BMl5BanBnXkFtZTgwNzI2MzgzMDI@._V1_.jpg> ;
+    schema:caption "Jerome Flynn and Alex Lawther in Black Mirror (2011)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm1388840704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjcwMzQxNDcxNF5BMl5BanBnXkFtZTgwMjQzMTQ2MDI@._V1_.jpg> ;
+    schema:caption "Charlie Brooker, Jerome Flynn, Bryce Dallas Howard, Alice Eve, Gugu Mbatha-Raw, Annabel Jones, Malachi Kirby, and Alex Lawther at an event for Black Mirror (2011)" ;
+    schema:height "1315"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm2753224704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyMTkyNDczOF5BMl5BanBnXkFtZTgwMTE1OTI0NzE@._V1_.jpg> ;
+    schema:caption "Alex Lawther" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1499"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm1739387136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDcyMjM5ODU2M15BMl5BanBnXkFtZTgwODA0NzkwNTE@._V1_.jpg> ;
+    schema:caption "Alex Lawther" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1501"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm2414565376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYxMjUyMTAzN15BMl5BanBnXkFtZTgwNTM5ODYwNDI@._V1_.jpg> ;
+    schema:caption "Paul Warren and Alex Lawther in Ghost Stories (2017)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1359"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm2273836800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwNzU0MjQ4MF5BMl5BanBnXkFtZTgwOTQ4NDA5MzE@._V1_.jpg> ;
+    schema:caption "Matthew Beard, Benedict Cumberbatch, Allen Leech, Eddie Redmayne, and Alex Lawther" ;
+    schema:height "1360"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm1379379970/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmQ5N2I0ZDctM2IxNy00YTE1LTkzY2UtMjUzNDkzNWY1YWI4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alex Lawther and Sydney Chandler in Alien: Earth (2025)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm3242109442/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGRjNTFlMzEtZGMwNi00Y2M1LTlhMDktMjA2MzlhOGE5MWY2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alex Lawther, Sydney Chandler, and Lily Newmark in Alien: Earth (2025)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3867299/mediaviewer/rm3509565186/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDNhM2E5MDItOWIxYi00NDBjLWI3Y2QtMDc5NTNhY2U2OTJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alex Lawther in Alien: Earth (2025)" ;
+    schema:height "2098"^^xsd:integer ;
+    schema:width "2797"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

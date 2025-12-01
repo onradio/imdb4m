@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2945384/> a schema:Person ;
+    schema:name "Craig Mutsch" ;
+    schema:url <https://www.imdb.com/name/nm2945384/> ;
+    schema:jobTitle "Actor", "Transportation Department" ;
+    schema:description "Craig Mutsch. Actor: Into the Wild. Craig Mutsch is known for Into the Wild (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0758758/> .    # Into the Wild
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Into the Wild (2007)
+<https://www.imdb.com/title/tt0758758/> a schema:Movie ;
+    schema:name "Into the Wild" ;
+    schema:url <https://www.imdb.com/title/tt0758758/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2945384/> ;
+        schema:characterName "Wayne's Crew #1"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

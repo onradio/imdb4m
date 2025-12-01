@@ -1,0 +1,49 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0325980/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Yo Ho (A Pirate's Life for Me)" ;
+        schema:byArtist <https://www.imdb.com/name/nm1096355/>, # Lucinda Dryzek
+                        <https://www.imdb.com/name/nm0461136/>, # Keira Knightley
+                        <https://www.imdb.com/name/nm0000136/> ; # Johnny Depp
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Yo Ho (A Pirate's Life for Me)" ;
+            schema:composer <https://www.imdb.com/name/nm0005980/> ; # George Bruns
+            schema:lyricist <https://www.imdb.com/name/nm0040362/> # Xavier Atencio
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Pirate Musk" ;
+        schema:byArtist <https://www.imdb.com/name/nm1014747/> ; # Craig Eastman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pirate Musk" ;
+            schema:author <https://www.imdb.com/name/nm1014747/> # Craig Eastman
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000136/> a schema:Person ;
+    schema:name "Johnny Depp" .
+<https://www.imdb.com/name/nm0005980/> a schema:Person ;
+    schema:name "George Bruns" .
+<https://www.imdb.com/name/nm0040362/> a schema:Person ;
+    schema:name "Xavier Atencio" .
+<https://www.imdb.com/name/nm0461136/> a schema:Person ;
+    schema:name "Keira Knightley" .
+<https://www.imdb.com/name/nm1014747/> a schema:Person ;
+    schema:name "Craig Eastman" .
+<https://www.imdb.com/name/nm1096355/> a schema:Person ;
+    schema:name "Lucinda Dryzek" .
+# ==============================================================================

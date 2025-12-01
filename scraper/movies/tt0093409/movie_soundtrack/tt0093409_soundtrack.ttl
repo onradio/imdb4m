@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093409/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Lethal Weapon" ;
+        schema:byArtist <https://www.imdb.com/name/nm2307807/> ; # Honeymoon Suite
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lethal Weapon" ;
+            schema:author <https://www.imdb.com/name/nm0004383/>, # Michael Kamen
+                       <https://www.imdb.com/name/nm0760824/>, # David Sanborn
+                       <https://www.imdb.com/name/nm0002008/> # Eric Clapton
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jingle Bell Rock" ;
+        schema:byArtist <https://www.imdb.com/name/nm0375742/> ; # Bobby Helms
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jingle Bell Rock" ;
+            schema:author <https://www.imdb.com/name/nm1745946/>, # Joe Beal
+                       <https://www.imdb.com/name/nm1745949/> # Jim Boothe
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bugs Bunny Theme - This Is It" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000305/> ; # Mel Blanc
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bugs Bunny Theme - This Is It" ;
+            schema:author <https://www.imdb.com/name/nm0202988/>, # Mack David
+                       <https://www.imdb.com/name/nm0515256/> # Jerry Livingston
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Bad to the Bone" ;
+        schema:byArtist <https://www.imdb.com/name/nm3170961/> ; # George Thorogood & The Destroyers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bad to the Bone" ;
+            schema:author <https://www.imdb.com/name/nm0973888/> # George Thorogood
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Be Home For Christmas" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000062/> ; # Elvis Presley
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Be Home For Christmas" ;
+            schema:author <https://www.imdb.com/name/nm0304469/>, # Kim Gannon
+                       <https://www.imdb.com/name/nm0448876/>, # Walter Kent
+                       <https://www.imdb.com/name/nm0118410/> # Buck Ram
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday to You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday to You" ;
+            schema:author <https://www.imdb.com/name/nm0384558/>, # Patty S. Hill
+                       <https://www.imdb.com/name/nm0384530/> # Mildred J. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Silent Night" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Silent Night" ;
+            schema:composer <https://www.imdb.com/name/nm0345045/>, # Franz Xaver Gruber
+                        <https://www.imdb.com/name/nm0596063/> # Joseph Mohr
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The First Nowell" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Double Deck The Hall" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Deck The Halls" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Deck The Halls" ;
+            schema:author <https://www.imdb.com/name/nm1725711/> # Thomas Oliphant
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jingle Bells" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jingle Bells" ;
+            schema:author <https://www.imdb.com/name/nm0682602/> # James Pierpont
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000062/> a schema:Person ;
+    schema:name "Elvis Presley" .
+<https://www.imdb.com/name/nm0000305/> a schema:Person ;
+    schema:name "Mel Blanc" .
+<https://www.imdb.com/name/nm0002008/> a schema:Person ;
+    schema:name "Eric Clapton" .
+<https://www.imdb.com/name/nm0004383/> a schema:Person ;
+    schema:name "Michael Kamen" .
+<https://www.imdb.com/name/nm0118410/> a schema:Person ;
+    schema:name "Buck Ram" .
+<https://www.imdb.com/name/nm0202988/> a schema:Person ;
+    schema:name "Mack David" .
+<https://www.imdb.com/name/nm0304469/> a schema:Person ;
+    schema:name "Kim Gannon" .
+<https://www.imdb.com/name/nm0345045/> a schema:Person ;
+    schema:name "Franz Xaver Gruber" .
+<https://www.imdb.com/name/nm0375742/> a schema:Person ;
+    schema:name "Bobby Helms" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0448876/> a schema:Person ;
+    schema:name "Walter Kent" .
+<https://www.imdb.com/name/nm0515256/> a schema:Person ;
+    schema:name "Jerry Livingston" .
+<https://www.imdb.com/name/nm0596063/> a schema:Person ;
+    schema:name "Joseph Mohr" .
+<https://www.imdb.com/name/nm0682602/> a schema:Person ;
+    schema:name "James Pierpont" .
+<https://www.imdb.com/name/nm0760824/> a schema:Person ;
+    schema:name "David Sanborn" .
+<https://www.imdb.com/name/nm0973888/> a schema:Person ;
+    schema:name "George Thorogood" .
+<https://www.imdb.com/name/nm1725711/> a schema:Person ;
+    schema:name "Thomas Oliphant" .
+<https://www.imdb.com/name/nm1745946/> a schema:Person ;
+    schema:name "Joe Beal" .
+<https://www.imdb.com/name/nm1745949/> a schema:Person ;
+    schema:name "Jim Boothe" .
+<https://www.imdb.com/name/nm2307807/> a schema:Person ;
+    schema:name "Honeymoon Suite" .
+<https://www.imdb.com/name/nm3170961/> a schema:Person ;
+    schema:name "George Thorogood & The Destroyers" .
+# ==============================================================================

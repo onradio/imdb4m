@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1261643/> a schema:Person ;
+    schema:name "Jeneva Talwar" ;
+    schema:url <https://www.imdb.com/name/nm1261643/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jeneva Talwar. Actress: Slumdog Millionaire. Jeneva Talwar is known for Slumdog Millionaire (2008), The Guru (2002) and Outsourced (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1535467/>,    # Patiala House
+                       <https://www.imdb.com/title/tt1666184/>,    # Turning 30!!!
+                       <https://www.imdb.com/title/tt1314367/>,    # Ru-Ba-Ru
+                       <https://www.imdb.com/title/tt1010048/>,    # Slumdog Millionaire
+                       <https://www.imdb.com/title/tt1101665/>,    # Shaurya
+                       <https://www.imdb.com/title/tt1159917/>,    # Bombay to Bangkok
+                       <https://www.imdb.com/title/tt0425326/>,    # Outsourced
+                       <https://www.imdb.com/title/tt0280720/> ; # The Guru
+
+
+    schema:video <https://www.imdb.com/video/vi2220163097/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Patiala House (2011)
+<https://www.imdb.com/title/tt1535467/> a schema:Movie ;
+    schema:name "Patiala House" ;
+    schema:url <https://www.imdb.com/title/tt1535467/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Preity Kahlon"
+    ] .
+
+# Turning 30!!! (2011)
+<https://www.imdb.com/title/tt1666184/> a schema:Movie ;
+    schema:name "Turning 30!!!" ;
+    schema:url <https://www.imdb.com/title/tt1666184/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Rukhsana Ali Sarin"
+    ] .
+
+# Ru-Ba-Ru (2008)
+<https://www.imdb.com/title/tt1314367/> a schema:Movie ;
+    schema:name "Ru-Ba-Ru" ;
+    schema:url <https://www.imdb.com/title/tt1314367/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Nadia"
+    ] .
+
+# Slumdog Millionaire (2008)
+<https://www.imdb.com/title/tt1010048/> a schema:Movie ;
+    schema:name "Slumdog Millionaire" ;
+    schema:url <https://www.imdb.com/title/tt1010048/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Vision Mixer"
+    ] .
+
+# Shaurya (2008)
+<https://www.imdb.com/title/tt1101665/> a schema:Movie ;
+    schema:name "Shaurya" ;
+    schema:url <https://www.imdb.com/title/tt1101665/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Nandini A. Kapoor"
+    ] .
+
+# Bombay to Bangkok (2008)
+<https://www.imdb.com/title/tt1159917/> a schema:Movie ;
+    schema:name "Bombay to Bangkok" ;
+    schema:url <https://www.imdb.com/title/tt1159917/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Dr. Rati"
+    ] .
+
+# Outsourced (2006)
+<https://www.imdb.com/title/tt0425326/> a schema:Movie ;
+    schema:name "Outsourced" ;
+    schema:url <https://www.imdb.com/title/tt0425326/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Rani"
+    ] .
+
+# The Guru (2002)
+<https://www.imdb.com/title/tt0280720/> a schema:Movie ;
+    schema:name "The Guru" ;
+    schema:url <https://www.imdb.com/title/tt0280720/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1261643/> ;
+        schema:characterName "Mira"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2220163097/> a schema:VideoObject ;
+        schema:name "Slumdog Millionaire" ;
+        schema:description "The story of how impoverished Indian teen Jamal Malik became a contestant on the Hindi version of \"Who Wants to be A Millionaire?\" -- an endeavor made in  an effort to prove his love for his friend Latika, who is an ardent fan of the show." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2220163097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ3MjQzNzU2MV5BMl5BanBnXkFtZTgwOTEzOTYzMzE@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2008-11-04T12:56:19Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

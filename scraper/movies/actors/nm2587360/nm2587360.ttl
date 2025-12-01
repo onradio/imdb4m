@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2587360/> a schema:Person ;
+    schema:name "Krishnappa" ;
+    schema:url <https://www.imdb.com/name/nm2587360/> ;
+    schema:jobTitle "Producer", "Actor" ;
+    schema:description "Krishnappa. Producer: Moggina Manasu. Krishnappa is known for Moggina Manasu (2008), K.G.F (2018) and Kaadu Kudure (1978)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10800956/>,    # Ekate
+                       <https://www.imdb.com/title/tt7838252/> . # K.G.F
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ekate (2019)
+<https://www.imdb.com/title/tt10800956/> a schema:Movie ;
+    schema:name "Ekate" ;
+    schema:url <https://www.imdb.com/title/tt10800956/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2587360/> ;
+        schema:characterName ""
+    ] .
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2587360/> ;
+        schema:characterName "Old Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

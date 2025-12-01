@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1333953/> a schema:Person ;
+    schema:name "Kam Fung Hui" ;
+    schema:url <https://www.imdb.com/name/nm1333953/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kam Fung Hui. Actor: Infernal Affairs. Kam Fung Hui is known for Infernal Affairs (2002), Infernal Affairs II (2003) and Triple Tap (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1535495/>,    # Triple Tap
+                       <https://www.imdb.com/title/tt1092287/>,    # Ai him yan muk
+                       <https://www.imdb.com/title/tt0440200/>,    # Cheng chong chui lui chai 2004
+                       <https://www.imdb.com/title/tt0369060/>,    # Infernal Affairs II
+                       <https://www.imdb.com/title/tt0338564/>,    # Infernal Affairs
+                       <https://www.imdb.com/title/tt0352420/> . # Hyn huet ching nin
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Triple Tap (2010)
+<https://www.imdb.com/title/tt1535495/> a schema:Movie ;
+    schema:name "Triple Tap" ;
+    schema:url <https://www.imdb.com/title/tt1535495/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Professor Lau"
+    ] .
+
+# Ai him yan muk (2007)
+<https://www.imdb.com/title/tt1092287/> a schema:Movie ;
+    schema:name "Ai him yan muk" ;
+    schema:url <https://www.imdb.com/title/tt1092287/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Wai Sir"
+    ] .
+
+# Cheng chong chui lui chai 2004 (2004)
+<https://www.imdb.com/title/tt0440200/> a schema:Movie ;
+    schema:name "Cheng chong chui lui chai 2004" ;
+    schema:url <https://www.imdb.com/title/tt0440200/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Office Ye"
+    ] .
+
+# Infernal Affairs II (2003)
+<https://www.imdb.com/title/tt0369060/> a schema:Movie ;
+    schema:name "Infernal Affairs II" ;
+    schema:url <https://www.imdb.com/title/tt0369060/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Cadet School Principal"
+    ] .
+
+# Infernal Affairs (2002)
+<https://www.imdb.com/title/tt0338564/> a schema:Movie ;
+    schema:name "Infernal Affairs" ;
+    schema:url <https://www.imdb.com/title/tt0338564/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Cadet School Principal"
+    ] .
+
+# Hyn huet ching nin (2002)
+<https://www.imdb.com/title/tt0352420/> a schema:Movie ;
+    schema:name "Hyn huet ching nin" ;
+    schema:url <https://www.imdb.com/title/tt0352420/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1333953/> ;
+        schema:characterName "Dr. Liu"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

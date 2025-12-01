@@ -1,0 +1,222 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0293589/> a schema:Person ;
+    schema:name "Sarah Rayne" ;
+    schema:url <https://www.imdb.com/name/nm0293589/> ;
+    schema:birthDate "1986-09-26"^^xsd:date ;
+    schema:jobTitle "Actress", "Additional Crew", "Soundtrack" ;
+    schema:description "Sarah Rayne. Actress: Toy Story. Sarah Rayne was born on 26 September 1986 in Los Angeles, California, USA. She is an actress, known for Toy Story (1995), House at the End of the Street (2012) and Legacy (1998)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0114709/>,    # Toy Story
+                       <https://www.imdb.com/title/tt0120800/>,    # Quest for Camelot
+                       <https://www.imdb.com/title/tt0168344/>,    # Legacy
+                       <https://www.imdb.com/title/tt1582507/>,    # House at the End of the Street
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt12681556/>,    # Timon and Pumbaa at the Movies
+                       <https://www.imdb.com/title/tt3091166/>,    # Our Footloose Remake
+                       <https://www.imdb.com/title/tt0321021/>,    # Without a Trace
+                       <https://www.imdb.com/title/tt0285370/>,    # The Guardian
+                       <https://www.imdb.com/title/tt0115083/>,    # 7th Heaven
+                       <https://www.imdb.com/title/tt0118437/>,    # The Practice
+                       <https://www.imdb.com/title/tt0200337/>,    # Family Law
+                       <https://www.imdb.com/title/tt0177991/>,    # Providence
+                       <https://www.imdb.com/title/tt0115101/>,    # Arli$$
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0168977/>,    # Lovely
+                       <https://www.imdb.com/title/tt0177455/>,    # Oh Yeah! Cartoons
+                       <https://www.imdb.com/title/tt0120187/> ; # Spoiler
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 2 nominations total"
+    ]  .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0114709/> a schema:Movie ;
+    schema:name "Toy Story" ;
+    schema:url <https://www.imdb.com/title/tt0114709/> .
+
+<https://www.imdb.com/title/tt0120800/> a schema:Movie ;
+    schema:name "Quest for Camelot" ;
+    schema:url <https://www.imdb.com/title/tt0120800/> .
+
+<https://www.imdb.com/title/tt0168344/> a schema:Movie ;
+    schema:name "Legacy" ;
+    schema:url <https://www.imdb.com/title/tt0168344/> .
+
+<https://www.imdb.com/title/tt1582507/> a schema:Movie ;
+    schema:name "House at the End of the Street" ;
+    schema:url <https://www.imdb.com/title/tt1582507/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Timon and Pumbaa at the Movies (2019)
+<https://www.imdb.com/title/tt12681556/> a schema:Movie ;
+    schema:name "Timon and Pumbaa at the Movies" ;
+    schema:url <https://www.imdb.com/title/tt12681556/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Hannah Phillips"
+    ] .
+
+# Our Footloose Remake (2011)
+<https://www.imdb.com/title/tt3091166/> a schema:Movie ;
+    schema:name "Our Footloose Remake" ;
+    schema:url <https://www.imdb.com/title/tt3091166/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Ariel Moore"
+    ] .
+
+# Without a Trace (2004)
+<https://www.imdb.com/title/tt0321021/> a schema:Movie ;
+    schema:name "Without a Trace" ;
+    schema:url <https://www.imdb.com/title/tt0321021/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "16-year-old Jesse"
+    ] .
+
+# The Guardian (2002)
+<https://www.imdb.com/title/tt0285370/> a schema:Movie ;
+    schema:name "The Guardian" ;
+    schema:url <https://www.imdb.com/title/tt0285370/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Jena"
+    ] .
+
+# 7th Heaven (1999)
+<https://www.imdb.com/title/tt0115083/> a schema:Movie ;
+    schema:name "7th Heaven" ;
+    schema:url <https://www.imdb.com/title/tt0115083/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Sarah Magnee"
+    ] .
+
+# The Practice (2000)
+<https://www.imdb.com/title/tt0118437/> a schema:Movie ;
+    schema:name "The Practice" ;
+    schema:url <https://www.imdb.com/title/tt0118437/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Sarah Jamison"
+    ] .
+
+# Family Law (2000)
+<https://www.imdb.com/title/tt0200337/> a schema:Movie ;
+    schema:name "Family Law" ;
+    schema:url <https://www.imdb.com/title/tt0200337/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "(as Sarah Freeman)"
+    ] .
+
+# Providence (2000)
+<https://www.imdb.com/title/tt0177991/> a schema:Movie ;
+    schema:name "Providence" ;
+    schema:url <https://www.imdb.com/title/tt0177991/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Katie"
+    ] .
+
+# Arli$$ (1999)
+<https://www.imdb.com/title/tt0115101/> a schema:Movie ;
+    schema:name "Arli$$" ;
+    schema:url <https://www.imdb.com/title/tt0115101/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName ""
+    ] .
+
+# ER (1999)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Sarah Bengossi"
+    ] .
+
+# Lovely (1998)
+<https://www.imdb.com/title/tt0168977/> a schema:Movie ;
+    schema:name "Lovely" ;
+    schema:url <https://www.imdb.com/title/tt0168977/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Montage Typist"
+    ] .
+
+# Oh Yeah! Cartoons (1998)
+<https://www.imdb.com/title/tt0177455/> a schema:Movie ;
+    schema:name "Oh Yeah! Cartoons" ;
+    schema:url <https://www.imdb.com/title/tt0177455/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Taung"
+    ] .
+
+# Spoiler (1998)
+<https://www.imdb.com/title/tt0120187/> a schema:Movie ;
+    schema:name "Spoiler" ;
+    schema:url <https://www.imdb.com/title/tt0120187/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0293589/> ;
+        schema:characterName "Maggie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

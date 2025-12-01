@@ -1,0 +1,174 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7159554/> a schema:Person ;
+    schema:name "Dante Pereira-Olson" ;
+    schema:url <https://www.imdb.com/name/nm7159554/> ;
+    schema:birthDate "2008-08-13"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dante Pereira-Olson. Actor: Joker. Dante Pereira-Olson is an American child actor, born in Los Angeles, California on August 13, 2008. He is of Portuguese and Norwegian descent. He is best known for starring as a young Bruce Wayne in the 2019 Blockbuster movie \"Joker,\" directed by Todd Phillips, which grossed over one billion as a Box office hit of late 2019 and early 2020.\n\nHe has appeared in other films, such..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7286456/>,    # Joker
+                       <https://www.imdb.com/title/tt15851766/>,    # Wolverine
+                       <https://www.imdb.com/title/tt2452242/>,    # Happy!
+                       <https://www.imdb.com/title/tt5742374/>,    # You Were Never Really Here
+                       <https://www.imdb.com/title/tt3502172/>,    # Mozart in the Jungle
+                       <https://www.imdb.com/title/tt2357547/>,    # Jessica Jones
+                       <https://www.imdb.com/title/tt3476576/>,    # The Slap
+                       <https://www.imdb.com/title/tt3530232/>,    # Last Week Tonight with John Oliver
+                       <https://www.imdb.com/title/tt4488742/> ; # Bruno's
+
+
+    schema:video <https://www.imdb.com/video/vi1339865113/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7159554/mediaviewer/rm914753537/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Joker (2019)
+<https://www.imdb.com/title/tt7286456/> a schema:Movie ;
+    schema:name "Joker" ;
+    schema:url <https://www.imdb.com/title/tt7286456/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Bruce Wayne"
+    ] .
+
+# Wolverine (2018)
+<https://www.imdb.com/title/tt15851766/> a schema:Movie ;
+    schema:name "Wolverine" ;
+    schema:url <https://www.imdb.com/title/tt15851766/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Johnny Moses"
+    ] .
+
+# Happy! (2017)
+<https://www.imdb.com/title/tt2452242/> a schema:Movie ;
+    schema:name "Happy!" ;
+    schema:url <https://www.imdb.com/title/tt2452242/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Gerry Scaramucci"
+    ] .
+
+# You Were Never Really Here (2017)
+<https://www.imdb.com/title/tt5742374/> a schema:Movie ;
+    schema:name "You Were Never Really Here" ;
+    schema:url <https://www.imdb.com/title/tt5742374/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Young Joe"
+    ] .
+
+# Mozart in the Jungle (2015)
+<https://www.imdb.com/title/tt3502172/> a schema:Movie ;
+    schema:name "Mozart in the Jungle" ;
+    schema:url <https://www.imdb.com/title/tt3502172/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "5 Year Old Bradford"
+    ] .
+
+# Jessica Jones (2015)
+<https://www.imdb.com/title/tt2357547/> a schema:Movie ;
+    schema:name "Jessica Jones" ;
+    schema:url <https://www.imdb.com/title/tt2357547/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Boy"
+    ] .
+
+# The Slap (2015)
+<https://www.imdb.com/title/tt3476576/> a schema:Movie ;
+    schema:name "The Slap" ;
+    schema:url <https://www.imdb.com/title/tt3476576/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Hero Kid"
+    ] .
+
+# Last Week Tonight with John Oliver (2015)
+<https://www.imdb.com/title/tt3530232/> a schema:Movie ;
+    schema:name "Last Week Tonight with John Oliver" ;
+    schema:url <https://www.imdb.com/title/tt3530232/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Jeff Campaign Supporter"
+    ] .
+
+# Bruno's (2014)
+<https://www.imdb.com/title/tt4488742/> a schema:Movie ;
+    schema:name "Bruno's" ;
+    schema:url <https://www.imdb.com/title/tt4488742/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7159554/> ;
+        schema:characterName "Kid Jeff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1339865113/> a schema:VideoObject ;
+        schema:name "Lynne Ramsay&apos;s Latest" ;
+        schema:description "A traumatized veteran, unafraid of violence, tracks down missing girls for a living. When a job spins out of control, Joe's nightmares overtake him as a conspiracy is uncovered leading to what may be his death trip or his awakening." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1339865113/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzJjMmVmNTUtOTE5NS00OGViLTg5YmItNTk3NDRkNWNkZjk3XkEyXkFqcGdeQXVyMjM4OTI2MTU@._V1_.jpg" ;
+        schema:duration "PT2M9S"^^xsd:duration ;
+        schema:uploadDate "2018-02-07T21:25:09Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm7159554/mediaviewer/rm914753537/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDBmYmM4NTQtN2VkNi00NGMwLTgzZDMtNTI4N2QyZDU1MTRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Brooke Bloom and Dante Pereira-Olson in Porcupine (2021)" ;
+    schema:height "2310"^^xsd:integer ;
+    schema:width "4286"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

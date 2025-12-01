@@ -1,0 +1,152 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0825574/> a schema:Person ;
+    schema:name "Michael Stein" ;
+    schema:url <https://www.imdb.com/name/nm0825574/> ;
+    schema:birthDate "1967-01-06"^^xsd:date ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Michael Stein. Actor: Boogie Nights. Michael Stein was born on 6 January 1967 in Encino, California, USA. He is an actor and director, known for Boogie Nights (1997), Rituals and Resolutions (1999) and Love Hollywood Style (2006)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA3MTI2NTI2MF5BMl5BanBnXkFtZTcwNjc5NjYyMQ@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Encino, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2255729/>,    # American Interlude
+                       <https://www.imdb.com/title/tt0361852/>,    # Love Hollywood Style
+                       <https://www.imdb.com/title/tt0118749/>,    # Boogie Nights
+                       <https://www.imdb.com/title/tt0138403/>,    # The Dirk Diggler Story
+                       <https://www.imdb.com/title/tt0087644/> ; # Love Streams
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0825574/mediaviewer/rm1764113409/>,
+                 <https://www.imdb.com/name/nm0825574/mediaviewer/rm1791400448/>,
+                 <https://www.imdb.com/name/nm0825574/mediaviewer/rm1774623232/>,
+                 <https://www.imdb.com/name/nm0825574/mediaviewer/rm1757846016/>,
+                 <https://www.imdb.com/name/nm0825574/mediaviewer/rm1808177664/>,
+                 <https://www.imdb.com/name/nm0825574/mediaviewer/rm4105477376/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# American Interlude (2011)
+<https://www.imdb.com/title/tt2255729/> a schema:Movie ;
+    schema:name "American Interlude" ;
+    schema:url <https://www.imdb.com/title/tt2255729/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0825574/> ;
+        schema:characterName "Jack"
+    ] .
+
+# Love Hollywood Style (2006)
+<https://www.imdb.com/title/tt0361852/> a schema:Movie ;
+    schema:name "Love Hollywood Style" ;
+    schema:url <https://www.imdb.com/title/tt0361852/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0825574/> ;
+        schema:characterName "Milton Sperling"
+    ] .
+
+# Boogie Nights (1997)
+<https://www.imdb.com/title/tt0118749/> a schema:Movie ;
+    schema:name "Boogie Nights" ;
+    schema:url <https://www.imdb.com/title/tt0118749/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0825574/> ;
+        schema:characterName "Stereo Customer"
+    ] .
+
+# The Dirk Diggler Story (1988)
+<https://www.imdb.com/title/tt0138403/> a schema:Movie ;
+    schema:name "The Dirk Diggler Story" ;
+    schema:url <https://www.imdb.com/title/tt0138403/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0825574/> ;
+        schema:characterName "Dirk Diggler"
+    ] .
+
+# Love Streams (1984)
+<https://www.imdb.com/title/tt0087644/> a schema:Movie ;
+    schema:name "Love Streams" ;
+    schema:url <https://www.imdb.com/title/tt0087644/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0825574/> ;
+        schema:characterName "Porter (Las Vegas)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA3MTI2NTI2MF5BMl5BanBnXkFtZTcwNjc5NjYyMQ@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3MTI2NTI2MF5BMl5BanBnXkFtZTcwNjc5NjYyMQ@@._V1_.jpg> ;
+    schema:caption "Michael Stein" ;
+    schema:height "355"^^xsd:integer ;
+    schema:width "254"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm1764113409/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2YzNTZjMmYtNGRlMS00MDgyLWI4ZjctMjIyNTFiMTczODcwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Boogie Nights with Don Cheadle" ;
+    schema:height "623"^^xsd:integer ;
+    schema:width "932"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm1791400448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU5MTgxODA0OF5BMl5BanBnXkFtZTYwNzE4NDcy._V1_.jpg> ;
+    schema:caption "Michael Stein" ;
+    schema:height "330"^^xsd:integer ;
+    schema:width "440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm1774623232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0MDQzNzY4Nl5BMl5BanBnXkFtZTYwOTE4NDcy._V1_.jpg> ;
+    schema:caption "Michael Stein and Stephen Tobolowsky" ;
+    schema:height "330"^^xsd:integer ;
+    schema:width "440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm1757846016/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTczNTkyMjIxNF5BMl5BanBnXkFtZTYwMTI4NDcy._V1_.jpg> ;
+    schema:caption "Faye Dunaway and Michael Stein" ;
+    schema:height "330"^^xsd:integer ;
+    schema:width "440"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm1808177664/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5MjQ3Mzg0MV5BMl5BanBnXkFtZTYwNTE4NDcy._V1_.jpg> ;
+    schema:caption "Final Day for Cast of \"Love.....Hollywood Style\"" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "288"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0825574/mediaviewer/rm4105477376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3MTI2NTI2MF5BMl5BanBnXkFtZTcwNjc5NjYyMQ@@._V1_.jpg> ;
+    schema:caption "Michael Stein" ;
+    schema:height "355"^^xsd:integer ;
+    schema:width "254"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

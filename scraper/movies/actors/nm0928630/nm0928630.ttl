@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0928630/> a schema:Person ;
+    schema:name "Shane Wilder" ;
+    schema:url <https://www.imdb.com/name/nm0928630/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Shane Wilder. Actor: Terminator 2: Judgment Day. Shane Wilder is known for Terminator 2: Judgment Day (1991), Fist of Justice (1995) and Super Why (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1105469/>,    # Super Why
+                       <https://www.imdb.com/title/tt0112451/>,    # Fist of Justice
+                       <https://www.imdb.com/title/tt0103064/> . # Terminator 2: Judgment Day
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Super Why (2007)
+<https://www.imdb.com/title/tt1105469/> a schema:Movie ;
+    schema:name "Super Why" ;
+    schema:url <https://www.imdb.com/title/tt1105469/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0928630/> ;
+        schema:characterName "Additional Voice"
+    ] .
+
+# Fist of Justice (1995)
+<https://www.imdb.com/title/tt0112451/> a schema:Movie ;
+    schema:name "Fist of Justice" ;
+    schema:url <https://www.imdb.com/title/tt0112451/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0928630/> ;
+        schema:characterName "Motel Patron"
+    ] .
+
+# Terminator 2: Judgment Day (1991)
+<https://www.imdb.com/title/tt0103064/> a schema:Movie ;
+    schema:name "Terminator 2: Judgment Day" ;
+    schema:url <https://www.imdb.com/title/tt0103064/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0928630/> ;
+        schema:characterName "Trucker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

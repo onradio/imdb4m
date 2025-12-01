@@ -1,0 +1,150 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0096438/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Why Don't You Do Right?" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001388/> ; # Amy Irving
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Why Don't You Do Right?" ;
+            schema:author <https://www.imdb.com/name/nm1598025/> # Joe McCoy
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Merry-Go-Round Broke Down" ;
+        schema:byArtist <https://www.imdb.com/name/nm0281486/>, # Charles Fleischer
+                        <https://www.imdb.com/name/nm0001364/> ; # Bob Hoskins
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Merry-Go-Round Broke Down" ;
+            schema:author <https://www.imdb.com/name/nm0295522/>, # Cliff Friend
+                       <https://www.imdb.com/name/nm0291399/> # Dave Franklin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Smile, Darn Ya, Smile" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Smile, Darn Ya, Smile" ;
+            schema:author <https://www.imdb.com/name/nm0581906/>, # Jack Meskill
+                       <https://www.imdb.com/name/nm1381145/>, # Charles O'Flynn
+                       <https://www.imdb.com/name/nm0723686/> # Max Rich
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Witchcraft" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000069/> ; # Frank Sinatra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Witchcraft" ;
+            schema:author <https://www.imdb.com/name/nm0170990/>, # Cy Coleman
+                       <https://www.imdb.com/name/nm0500190/> # Carolyn Leigh
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hungarian Rhapsody No. 2" ;
+        schema:byArtist <https://www.imdb.com/name/nm0030615/>, # Tony Anselmo
+                        <https://www.imdb.com/name/nm0000305/> ; # Mel Blanc
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hungarian Rhapsody No. 2" ;
+            schema:composer <https://www.imdb.com/name/nm0006172/> # Franz Liszt
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Stars and Stripes Forever" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Stars and Stripes Forever" ;
+            schema:composer <https://www.imdb.com/name/nm0815971/> # John Philip Sousa
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Giant Killers (a)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Giant Killers (a)" ;
+            schema:composer <https://www.imdb.com/name/nm0828558/> # Len Stevens
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wild Clown #1" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Wild Clown #1" ;
+            schema:composer <https://www.imdb.com/name/nm0322874/> # Ib Glindemann
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Sorcerer's Apprentice" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Sorcerer's Apprentice" ;
+            schema:composer <https://www.imdb.com/name/nm0241152/> # Paul Dukas
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000069/> a schema:Person ;
+    schema:name "Frank Sinatra" .
+<https://www.imdb.com/name/nm0000305/> a schema:Person ;
+    schema:name "Mel Blanc" .
+<https://www.imdb.com/name/nm0001364/> a schema:Person ;
+    schema:name "Bob Hoskins" .
+<https://www.imdb.com/name/nm0001388/> a schema:Person ;
+    schema:name "Amy Irving" .
+<https://www.imdb.com/name/nm0006172/> a schema:Person ;
+    schema:name "Franz Liszt" .
+<https://www.imdb.com/name/nm0030615/> a schema:Person ;
+    schema:name "Tony Anselmo" .
+<https://www.imdb.com/name/nm0170990/> a schema:Person ;
+    schema:name "Cy Coleman" .
+<https://www.imdb.com/name/nm0241152/> a schema:Person ;
+    schema:name "Paul Dukas" .
+<https://www.imdb.com/name/nm0281486/> a schema:Person ;
+    schema:name "Charles Fleischer" .
+<https://www.imdb.com/name/nm0291399/> a schema:Person ;
+    schema:name "Dave Franklin" .
+<https://www.imdb.com/name/nm0295522/> a schema:Person ;
+    schema:name "Cliff Friend" .
+<https://www.imdb.com/name/nm0322874/> a schema:Person ;
+    schema:name "Ib Glindemann" .
+<https://www.imdb.com/name/nm0500190/> a schema:Person ;
+    schema:name "Carolyn Leigh" .
+<https://www.imdb.com/name/nm0581906/> a schema:Person ;
+    schema:name "Jack Meskill" .
+<https://www.imdb.com/name/nm0723686/> a schema:Person ;
+    schema:name "Max Rich" .
+<https://www.imdb.com/name/nm0815971/> a schema:Person ;
+    schema:name "John Philip Sousa" .
+<https://www.imdb.com/name/nm0828558/> a schema:Person ;
+    schema:name "Len Stevens" .
+<https://www.imdb.com/name/nm1381145/> a schema:Person ;
+    schema:name "Charles O'Flynn" .
+<https://www.imdb.com/name/nm1598025/> a schema:Person ;
+    schema:name "Joe McCoy" .
+# ==============================================================================

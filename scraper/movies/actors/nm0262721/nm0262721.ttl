@@ -1,0 +1,139 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0262721/> a schema:Person ;
+    schema:name "E&apos;Casanova" ;
+    schema:url <https://www.imdb.com/name/nm0262721/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "E'Casanova. Actor: Back to the Future Part II. E'Casanova is known for Back to the Future Part II (1989), Punk'd (2003) and Blossom (1990)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYzcwZGZmOTgtZWE0Ny00YmJiLTgxMmQtMzczODcyMTE0ZmE1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt21906768/>,    # The Fashion Police
+                       <https://www.imdb.com/title/tt0361227/>,    # Punk'd
+                       <https://www.imdb.com/title/tt0101050/>,    # Blossom
+                       <https://www.imdb.com/title/tt6663648/>,    # Michael Jackson: Who Is It
+                       <https://www.imdb.com/title/tt0096874/> ; # Back to the Future Part II
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0262721/mediaviewer/rm1145341952/>,
+                 <https://www.imdb.com/name/nm0262721/mediaviewer/rm1128564736/>,
+                 <https://www.imdb.com/name/nm0262721/mediaviewer/rm1111787520/>,
+                 <https://www.imdb.com/name/nm0262721/mediaviewer/rm3224376833/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Fashion Police (2012)
+<https://www.imdb.com/title/tt21906768/> a schema:Movie ;
+    schema:name "The Fashion Police" ;
+    schema:url <https://www.imdb.com/title/tt21906768/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0262721/> ;
+        schema:characterName "Rick 'Big Papa' Razzi"
+    ] .
+
+# Punk'd (2007)
+<https://www.imdb.com/title/tt0361227/> a schema:Movie ;
+    schema:name "Punk'd" ;
+    schema:url <https://www.imdb.com/title/tt0361227/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0262721/> ;
+        schema:characterName "Michael Jackson"
+    ] .
+
+# Blossom (1994)
+<https://www.imdb.com/title/tt0101050/> a schema:Movie ;
+    schema:name "Blossom" ;
+    schema:url <https://www.imdb.com/title/tt0101050/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0262721/> ;
+        schema:characterName "Michael Jackson"
+    ] .
+
+# Michael Jackson: Who Is It (1993)
+<https://www.imdb.com/title/tt6663648/> a schema:Movie ;
+    schema:name "Michael Jackson: Who Is It" ;
+    schema:url <https://www.imdb.com/title/tt6663648/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0262721/> ;
+        schema:characterName "Michael Jackson"
+    ] .
+
+# Back to the Future Part II (1989)
+<https://www.imdb.com/title/tt0096874/> a schema:Movie ;
+    schema:name "Back to the Future Part II" ;
+    schema:url <https://www.imdb.com/title/tt0096874/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0262721/> ;
+        schema:characterName "'Michael Jackson' Video Waiter"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYzcwZGZmOTgtZWE0Ny00YmJiLTgxMmQtMzczODcyMTE0ZmE1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzcwZGZmOTgtZWE0Ny00YmJiLTgxMmQtMzczODcyMTE0ZmE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "E'Casanova" ;
+    schema:height "565"^^xsd:integer ;
+    schema:width "1038"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0262721/mediaviewer/rm1145341952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTllNjRjNTYtMWEwYS00ODMxLTlkYjMtNmY3YTY4ZGE4MTIxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "E. Casanova Worlds Best Michael Jackson Tribute Artist" ;
+    schema:height "290"^^xsd:integer ;
+    schema:width "248"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0262721/mediaviewer/rm1128564736/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzg2M2QxNWUtM2UxNS00NjY5LWJlNjQtNDk3ZTJmNjNhNGJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "E. Casanova Tribute to Michael Jackson" ;
+    schema:height "700"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0262721/mediaviewer/rm1111787520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzEwMzNlYzktZTkzYy00Y2M4LTk1ODQtYzBhMmEzM2VkODM1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "E. Casanova Worlds Best Michael Jackson Tribute Artist" ;
+    schema:height "285"^^xsd:integer ;
+    schema:width "334"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0262721/mediaviewer/rm3224376833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzcwZGZmOTgtZWE0Ny00YmJiLTgxMmQtMzczODcyMTE0ZmE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "E'Casanova" ;
+    schema:height "565"^^xsd:integer ;
+    schema:width "1038"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

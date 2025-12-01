@@ -1,0 +1,100 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0454876/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Pi's Lullaby" ;
+        schema:byArtist <https://www.imdb.com/name/nm1425113/> ; # Bombay Jayashri
+        schema:producer <https://www.imdb.com/name/nm0002217/> ; # Mychael Danna
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Pi's Lullaby" ;
+            schema:composer <https://www.imdb.com/name/nm0002217/> ; # Mychael Danna
+            schema:lyricist <https://www.imdb.com/name/nm1425113/> # Bombay Jayashri
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sous le Ciel de Paris" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sous le Ciel de Paris" ;
+            schema:composer <https://www.imdb.com/name/nm0320782/> ; # Hubert Giraud
+            schema:lyricist <https://www.imdb.com/name/nm0237449/> # Jean Dréjac
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Raga Ahir Bhairav" ;
+        schema:byArtist <https://www.imdb.com/name/nm1380426/> ; # Pandit Jasraj
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Anandi's Dance" ;
+        schema:byArtist <https://www.imdb.com/name/nm5370170/> ; # Padmini Ramachandran
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Anandi's Dance" ;
+            schema:author <https://www.imdb.com/name/nm5590071/> # Sheejith Krishna
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tum Aa Gaye Ho Noor Aa" ;
+        schema:byArtist <https://www.imdb.com/name/nm0542196/>, # Lata Mangeshkar
+                        <https://www.imdb.com/name/nm0005983/>, # Rahul Dev Burman
+                        <https://www.imdb.com/name/nm0474822/> ; # Kishore Kumar
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tum Aa Gaye Ho Noor Aa" ;
+            schema:author <https://www.imdb.com/name/nm0005983/>, # Rahul Dev Burman
+                       <https://www.imdb.com/name/nm0347899/> # Gulzar
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tiruppukal" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tiruppukal" ;
+            schema:author <https://www.imdb.com/name/nm6897498/> # Arunagirinathar
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002217/> a schema:Person ;
+    schema:name "Mychael Danna" .
+<https://www.imdb.com/name/nm0005983/> a schema:Person ;
+    schema:name "Rahul Dev Burman" .
+<https://www.imdb.com/name/nm0237449/> a schema:Person ;
+    schema:name "Jean Dréjac" .
+<https://www.imdb.com/name/nm0320782/> a schema:Person ;
+    schema:name "Hubert Giraud" .
+<https://www.imdb.com/name/nm0347899/> a schema:Person ;
+    schema:name "Gulzar" .
+<https://www.imdb.com/name/nm0474822/> a schema:Person ;
+    schema:name "Kishore Kumar" .
+<https://www.imdb.com/name/nm0542196/> a schema:Person ;
+    schema:name "Lata Mangeshkar" .
+<https://www.imdb.com/name/nm1380426/> a schema:Person ;
+    schema:name "Pandit Jasraj" .
+<https://www.imdb.com/name/nm1425113/> a schema:Person ;
+    schema:name "Bombay Jayashri" .
+<https://www.imdb.com/name/nm5370170/> a schema:Person ;
+    schema:name "Padmini Ramachandran" .
+<https://www.imdb.com/name/nm5590071/> a schema:Person ;
+    schema:name "Sheejith Krishna" .
+<https://www.imdb.com/name/nm6897498/> a schema:Person ;
+    schema:name "Arunagirinathar" .
+# ==============================================================================

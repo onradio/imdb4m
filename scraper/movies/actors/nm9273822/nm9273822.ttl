@@ -1,0 +1,152 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9273822/> a schema:Person ;
+    schema:name "Adam Hugill" ;
+    schema:url <https://www.imdb.com/name/nm9273822/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Adam Hugill. Actor: Doctor Strange in the Multiverse of Madness. Adam Hugill is known for Doctor Strange in the Multiverse of Madness (2022), Sherwood (2022) and 1917 (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BOGZlMmEwYjctNTA1Yy00ZjQzLWIyMWEtMGM2ZjJmODIwNDk2XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8579674/>,    # 1917
+                       <https://www.imdb.com/title/tt8001092/>,    # World on Fire
+                       <https://www.imdb.com/title/tt8425532/> ; # Pennyworth
+
+
+    schema:video <https://www.imdb.com/video/vi4182360601/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9273822/mediaviewer/rm2277052929/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm4127773441/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm544658689/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm3322467073/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm1736598785/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm2061666049/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm3272135425/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm4060664577/>,
+                 <https://www.imdb.com/name/nm9273822/mediaviewer/rm3916813569/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 1917 (2019)
+<https://www.imdb.com/title/tt8579674/> a schema:Movie ;
+    schema:name "1917" ;
+    schema:url <https://www.imdb.com/title/tt8579674/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9273822/> ;
+        schema:characterName "Private Atkins"
+    ] .
+
+# World on Fire (2019)
+<https://www.imdb.com/title/tt8001092/> a schema:Movie ;
+    schema:name "World on Fire" ;
+    schema:url <https://www.imdb.com/title/tt8001092/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9273822/> ;
+        schema:characterName "Vic"
+    ] .
+
+# Pennyworth (2019)
+<https://www.imdb.com/title/tt8425532/> a schema:Movie ;
+    schema:name "Pennyworth" ;
+    schema:url <https://www.imdb.com/title/tt8425532/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9273822/> ;
+        schema:characterName "Jack (Junior Detective)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4182360601/> a schema:VideoObject ;
+        schema:name "Now Streaming" ;
+        schema:description "Two shocking and unexpected murders shatter an already fractured community leading to one of the largest manhunts in British history." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4182360601/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGZjYWZjMzYtMTBlNi00MzA3LTg2MTItODVmMjEwNjA3NTAwXkEyXkFqcGdeQWFkcmllY2xh._V1_.jpg" ;
+        schema:duration "PT31S"^^xsd:duration ;
+        schema:uploadDate "2022-09-28T20:47:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BOGZlMmEwYjctNTA1Yy00ZjQzLWIyMWEtMGM2ZjJmODIwNDk2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGZlMmEwYjctNTA1Yy00ZjQzLWIyMWEtMGM2ZjJmODIwNDk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Hugill" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2302"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm2277052929/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTY0MWM3MzAtZjcxZS00NzZjLWFkOTAtNDA0MTFiMjMxNTUwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Benedict Wong, Benedict Cumberbatch, Daniel Swain, Eden Nathenson, and Adam Hugill in Doctor Strange in the Multiverse of Madness (2022)" ;
+    schema:height "1716"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm4127773441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxZGE3Y2EtZmRlZi00YzBhLWJlNTgtZTk4NzZjNjU5NTZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marama Corlett, Adam Hugill, and Joni Ayton-Kent in The Watch (2020)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm544658689/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWQ4OGQ3MzQtYzliYy00NTk1LThlODAtNDhlMmFkNzI0ZDYyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mark Strong, Gerran Howell, and Adam Hugill in 1917 (2019)" ;
+    schema:height "433"^^xsd:integer ;
+    schema:width "650"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm3322467073/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQzNjU1ZjMtZTZjYy00ZjkyLWIzMDUtOGJhZDg5YTE4MmZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adrian Collins and Adam Hugill in The Watch (2020)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm1736598785/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmVhMDg0MjgtYzFlOC00ZjVjLTk1NWUtNmM0NzFhZDQyOTc2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lesley Manville, David Morrissey, and Adam Hugill in Sherwood (2022)" ;
+    schema:height "546"^^xsd:integer ;
+    schema:width "970"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm2061666049/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTJmYWQ0MmMtZGZhZC00YTI0LWFjMDEtMTYyMWJiMDM2NGQxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Marama Corlett and Adam Hugill in The Watch (2020)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm3272135425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg1NDEzYzgtNTBlZC00MTFkLWI1ODUtZTc4Nzk1Y2NiNDY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard Dormer, Marama Corlett, Adam Hugill, and Joni Ayton-Kent in The Watch (2020)" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "4500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm4060664577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzk4YWZiMDEtMWRmYS00ODE5LTkzYTMtZDQ0NGFkYTRkNDViXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Richard Dormer, Marama Corlett, Lara Rossi, Craig Macrae, Adam Hugill, and Joni Ayton-Kent in The Watch (2020)" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "4961"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9273822/mediaviewer/rm3916813569/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGZlMmEwYjctNTA1Yy00ZjQzLWIyMWEtMGM2ZjJmODIwNDk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Adam Hugill" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2302"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

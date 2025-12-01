@@ -1,0 +1,183 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0027572/> a schema:Person ;
+    schema:name "Wes Anderson" ;
+    schema:url <https://www.imdb.com/name/nm0027572/> ;
+    schema:birthDate "1969-05-01"^^xsd:date ;
+    schema:jobTitle "Director", "Writer", "Producer" ;
+    schema:alternateName "Wesley Wales Anderson" ;
+    schema:description "Wes Anderson. Director: Fantastic Mr. Fox. Wesley Wales Anderson was born in Houston, Texas. His mother, Texas Ann (Burroughs), is an archaeologist turned real estate agent, and his father, Melver Leonard Anderson, worked in advertising and public relations. He has two brothers, Eric and Mel. Anderson's parents divorced when he was a young child, an event that he described as the most crucial event of his brothers' and his growing..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY1MjgzODIwNF5BMl5BanBnXkFtZTcwNTM2NzExMw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Houston, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.85"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 1″ (1.85 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0432283/>,    # Fantastic Mr. Fox
+                       <https://www.imdb.com/title/tt0128445/>,    # Rushmore
+                       <https://www.imdb.com/title/tt0265666/>,    # The Royal Tenenbaums
+                       <https://www.imdb.com/title/tt1748122/>,    # Moonrise Kingdom
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3470600/>,    # Sing
+                       <https://www.imdb.com/title/tt4283584/> ; # American Express: My Life. My Card.
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "83 wins & 215 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3563832345/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0027572/mediaviewer/rm678788097/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm296433152/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm397096448/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2335632640/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2318855424/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2352409856/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2201414912/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2151083264/>,
+                 <https://www.imdb.com/name/nm0027572/mediaviewer/rm2385964288/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> .
+
+<https://www.imdb.com/title/tt0128445/> a schema:Movie ;
+    schema:name "Rushmore" ;
+    schema:url <https://www.imdb.com/title/tt0128445/> .
+
+<https://www.imdb.com/title/tt0265666/> a schema:Movie ;
+    schema:name "The Royal Tenenbaums" ;
+    schema:url <https://www.imdb.com/title/tt0265666/> .
+
+<https://www.imdb.com/title/tt1748122/> a schema:Movie ;
+    schema:name "Moonrise Kingdom" ;
+    schema:url <https://www.imdb.com/title/tt1748122/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Sing (2016)
+<https://www.imdb.com/title/tt3470600/> a schema:Movie ;
+    schema:name "Sing" ;
+    schema:url <https://www.imdb.com/title/tt3470600/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0027572/> ;
+        schema:characterName "Additional Voices"
+    ] .
+
+# American Express: My Life. My Card. (2006)
+<https://www.imdb.com/title/tt4283584/> a schema:Movie ;
+    schema:name "American Express: My Life. My Card." ;
+    schema:url <https://www.imdb.com/title/tt4283584/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0027572/> ;
+        schema:characterName "Wes Anderson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3563832345/> a schema:VideoObject ;
+        schema:name "A Guide to the Films of Wes Anderson" ;
+        schema:description "From 'Rushmore' and 'The Royal Tenenbaums' to 'The Grand Budapest Hotel' and 'Asteroid City,' IMDb takes a closer look at the trademarks of Wes Anderson's directorial style, including tracking shots, hand-placed objects, distinct color palettes, and more." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3563832345/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmFkZWFlZTEtMGUyNS00ZTRiLTg5OTQtMjBjY2IxOWE3ZDE2XkEyXkFqcGdeQWplZmZscA@@._V1_.jpg" ;
+        schema:duration "PT1M57S"^^xsd:duration ;
+        schema:uploadDate "2023-05-10T14:47:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY1MjgzODIwNF5BMl5BanBnXkFtZTcwNTM2NzExMw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY1MjgzODIwNF5BMl5BanBnXkFtZTcwNTM2NzExMw@@._V1_.jpg> ;
+    schema:caption "Wes Anderson" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "295"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm678788097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDJiNDVjNzAtMDczNS00OTVkLTg2ZjAtNjQ5ODczNGUyMDU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wes Anderson" ;
+    schema:height "1906"^^xsd:integer ;
+    schema:width "2205"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm296433152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTBhYjdkZjAtMTc1YS00ZGZmLWI4YmQtMGRiOTQ5NzAzNWUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Robert D. Yeoman and Wes Anderson in American Express: My Life. My Card. (2006)" ;
+    schema:height "715"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm397096448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTVmOGQ1YTEtMmM2OC00YWZlLWExYjQtZDYxMGNjMjBjMzYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wes Anderson in American Express: My Life. My Card. (2006)" ;
+    schema:height "716"^^xsd:integer ;
+    schema:width "1276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2335632640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcwMzA3NTc4OF5BMl5BanBnXkFtZTgwNDg1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Noah Baumbach and Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2318855424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk0NjQxMTUwOV5BMl5BanBnXkFtZTgwNTg1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Noah Baumbach and Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2352409856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3NjAxMzU3MF5BMl5BanBnXkFtZTgwMzg1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Noah Baumbach and Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2201414912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTE1MzYxMDQ3M15BMl5BanBnXkFtZTgwODc1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2151083264/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ1MTg5ODYyMl5BMl5BanBnXkFtZTgwMDg1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Noah Baumbach and Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0027572/mediaviewer/rm2385964288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzg2ODMwMjk0Ml5BMl5BanBnXkFtZTgwMTg1MDYwNzE@._V1_.jpg> ;
+    schema:caption "Wes Anderson in Mistress America (2015)" ;
+    schema:height "576"^^xsd:integer ;
+    schema:width "864"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

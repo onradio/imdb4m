@@ -1,0 +1,229 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5623883/> a schema:Person ;
+    schema:name "Phillipa Soo" ;
+    schema:url <https://www.imdb.com/name/nm5623883/> ;
+    schema:birthDate "1990-05-31"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Additional Crew" ;
+    schema:alternateName "Pippa", "Phillipa Anne Soo" ;
+    schema:description "Phillipa Soo. Actress: Hamilton. Phillipa Anne Soo is an American actress. Soo is best known for originating the role of Eliza Hamilton in the Broadway musical Hamilton, a performance which earned her a nomination for a 2016 Tony Award for Best Actress in a Leading Role in a Musical and a Grammy Award for Best Musical Theater Album in the same year. She also originated the role of Natasha Rostova..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjI5NjcxNmEtN2E0ZC00MzM4LWJiOWItZDRkMWEzMGM0NjNlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Libertyville, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.71"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7½″ (1.71 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8503618/>,    # Hamilton
+                       <https://www.imdb.com/title/tt3521164/>,    # Moana
+                       <https://www.imdb.com/title/tt7488208/>,    # Over the Moon
+                       <https://www.imdb.com/title/tt8721424/>,    # tick, tick... BOOM!
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8888168/>,    # The Code
+                       <https://www.imdb.com/title/tt6069162/>,    # Blue Night
+                       <https://www.imdb.com/title/tt8274914/>,    # The 8th Year of the Emergency
+                       <https://www.imdb.com/title/tt3551322/>,    # Dangerous Liaisons
+                       <https://www.imdb.com/title/tt1825133/>,    # Smash
+                       <https://www.imdb.com/title/tt2918084/> ; # Keep the Change
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3137521945/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5623883/mediaviewer/rm2081165313/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm2064388097/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm885592833/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm920329473/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm4181108737/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm3342247937/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm4281772033/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm4248217601/>,
+                 <https://www.imdb.com/name/nm5623883/mediaviewer/rm4013336577/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8503618/> a schema:Movie ;
+    schema:name "Hamilton" ;
+    schema:url <https://www.imdb.com/title/tt8503618/> .
+
+<https://www.imdb.com/title/tt3521164/> a schema:Movie ;
+    schema:name "Moana" ;
+    schema:url <https://www.imdb.com/title/tt3521164/> .
+
+<https://www.imdb.com/title/tt7488208/> a schema:Movie ;
+    schema:name "Over the Moon" ;
+    schema:url <https://www.imdb.com/title/tt7488208/> .
+
+<https://www.imdb.com/title/tt8721424/> a schema:Movie ;
+    schema:name "tick, tick... BOOM!" ;
+    schema:url <https://www.imdb.com/title/tt8721424/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Code (2019)
+<https://www.imdb.com/title/tt8888168/> a schema:Movie ;
+    schema:name "The Code" ;
+    schema:url <https://www.imdb.com/title/tt8888168/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Lieutenant Harper Li"
+    ] .
+
+# Blue Night (2018)
+<https://www.imdb.com/title/tt6069162/> a schema:Movie ;
+    schema:name "Blue Night" ;
+    schema:url <https://www.imdb.com/title/tt6069162/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Oona"
+    ] .
+
+# The 8th Year of the Emergency (2018)
+<https://www.imdb.com/title/tt8274914/> a schema:Movie ;
+    schema:name "The 8th Year of the Emergency" ;
+    schema:url <https://www.imdb.com/title/tt8274914/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Ruthie"
+    ] .
+
+# Dangerous Liaisons (2014)
+<https://www.imdb.com/title/tt3551322/> a schema:Movie ;
+    schema:name "Dangerous Liaisons" ;
+    schema:url <https://www.imdb.com/title/tt3551322/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Nia"
+    ] .
+
+# Smash (2013)
+<https://www.imdb.com/title/tt1825133/> a schema:Movie ;
+    schema:name "Smash" ;
+    schema:url <https://www.imdb.com/title/tt1825133/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Lexi"
+    ] .
+
+# Keep the Change (2013)
+<https://www.imdb.com/title/tt2918084/> a schema:Movie ;
+    schema:name "Keep the Change" ;
+    schema:url <https://www.imdb.com/title/tt2918084/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5623883/> ;
+        schema:characterName "Karen"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3137521945/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Max is the new on-board doctor for a luxury cruise ship where the small but mighty medical team navigate unique medical crises and each other, miles from shore." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3137521945/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzhjZTU5OGItOWY5OC00NDgzLThjZmMtNDZlOWIzOTA5MzA4XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M33S"^^xsd:duration ;
+        schema:uploadDate "2025-02-11T17:13:01Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjI5NjcxNmEtN2E0ZC00MzM4LWJiOWItZDRkMWEzMGM0NjNlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjI5NjcxNmEtN2E0ZC00MzM4LWJiOWItZDRkMWEzMGM0NjNlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phillipa Soo" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1237"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm2081165313/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2Y3MmFiZDItZWQyZS00NzBlLWFlOWItNWY0OGYzZmZkM2RkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phillipa Soo in Offset (2022)" ;
+    schema:height "473"^^xsd:integer ;
+    schema:width "838"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm2064388097/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNThhZGViMjAtZWJhOS00MGQ2LWE1ZjEtMDIyNWU4ODZhMGM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phillipa Soo in Offset (2022)" ;
+    schema:height "473"^^xsd:integer ;
+    schema:width "838"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm885592833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE5N2Q1ODktMGM5OS00MWQyLWEyZjItMmNhMzc3ZmI5MDM4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Elisabeth Moss and Phillipa Soo in Screamer (2022)" ;
+    schema:height "473"^^xsd:integer ;
+    schema:width "838"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm920329473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDcwNDZjYTktMjgxMi00NzczLTliNmYtM2E5NTAxOGQ5NzZjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Phillipa Soo in Cutline (2022)" ;
+    schema:height "4160"^^xsd:integer ;
+    schema:width "6240"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm4181108737/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGFlOTFkNGYtM2YzOC00NDc5LTg1YzQtYTVlODNlNzBiMzk2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lin-Manuel Miranda and Phillipa Soo in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm3342247937/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGE3OWVmY2EtMGQ0ZC00N2FmLTkxNWQtZDI3ZDU1YjIyNTExXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lin-Manuel Miranda and Phillipa Soo in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm4281772033/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjI2ZTI5ZWItZDI4YS00NTU3LTlkMjEtZDZhYTE1OTljNzY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lin-Manuel Miranda and Phillipa Soo in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm4248217601/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2UwZjNiZjItNmUxMy00MThiLTgwNzEtNmQ1MmJhZjM1OGI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lin-Manuel Miranda and Phillipa Soo in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5623883/mediaviewer/rm4013336577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWRmMjBlMDctMWYwYi00NzU1LTgxMjctYzYwZGYyMGUyOThlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Renée Elise Goldsberry, Jasmine Cephas Jones, and Phillipa Soo in Hamilton (2020)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm5623883/>
+    schema:sameAs <https://www.instagram.com/phillipasoo> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8770973/> a schema:Person ;
+    schema:name "Maria Frangos" ;
+    schema:url <https://www.imdb.com/name/nm8770973/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Maria Frangos. Actress: The Big Short. Maria Frangos is known for The Big Short (2015) and Before the Thunder (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1596363/>,    # The Big Short
+                       <https://www.imdb.com/title/tt5891024/> . # Before the Thunder
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Big Short (2015)
+<https://www.imdb.com/title/tt1596363/> a schema:Movie ;
+    schema:name "The Big Short" ;
+    schema:url <https://www.imdb.com/title/tt1596363/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8770973/> ;
+        schema:characterName "Exotic Dancer"
+    ] .
+
+# Before the Thunder (2013)
+<https://www.imdb.com/title/tt5891024/> a schema:Movie ;
+    schema:name "Before the Thunder" ;
+    schema:url <https://www.imdb.com/title/tt5891024/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8770973/> ;
+        schema:characterName "Donna"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

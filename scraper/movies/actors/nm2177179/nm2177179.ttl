@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2177179/> a schema:Person ;
+    schema:name "Stephanie Searson" ;
+    schema:url <https://www.imdb.com/name/nm2177179/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Stephanie Searson. Actress: Blue's ABC Time. Stephanie Searson is known for Blue's ABC Time (1998), Monica and Friends (1976) and The Berenstain Bears in the Dark (1996)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0209144/>,    # Memento
+                       <https://www.imdb.com/title/tt0185194/>,    # Blue's Birthday Adventure
+                       <https://www.imdb.com/title/tt2765302/>,    # Monica and Friends
+                       <https://www.imdb.com/title/tt0174508/>,    # Blue's ABC Time
+                       <https://www.imdb.com/title/tt11447930/> . # The Berenstain Bears in the Dark
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Memento (2000)
+<https://www.imdb.com/title/tt0209144/> a schema:Movie ;
+    schema:name "Memento" ;
+    schema:url <https://www.imdb.com/title/tt0209144/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2177179/> ;
+        schema:characterName "Jimmy's Daughter"
+    ] .
+
+# Blue's Birthday Adventure (1998)
+<https://www.imdb.com/title/tt0185194/> a schema:Movie ;
+    schema:name "Blue's Birthday Adventure" ;
+    schema:url <https://www.imdb.com/title/tt0185194/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2177179/> ;
+        schema:characterName "Tickety Tock"
+    ] .
+
+# Monica and Friends (1998)
+<https://www.imdb.com/title/tt2765302/> a schema:Movie ;
+    schema:name "Monica and Friends" ;
+    schema:url <https://www.imdb.com/title/tt2765302/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2177179/> ;
+        schema:characterName "Jimmy Five"
+    ] .
+
+# Blue's ABC Time (1998)
+<https://www.imdb.com/title/tt0174508/> a schema:Movie ;
+    schema:name "Blue's ABC Time" ;
+    schema:url <https://www.imdb.com/title/tt0174508/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2177179/> ;
+        schema:characterName "Tickety Tock"
+    ] .
+
+# The Berenstain Bears in the Dark (1996)
+<https://www.imdb.com/title/tt11447930/> a schema:Movie ;
+    schema:name "The Berenstain Bears in the Dark" ;
+    schema:url <https://www.imdb.com/title/tt11447930/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2177179/> ;
+        schema:characterName "Singing Teddy Bear"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

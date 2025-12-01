@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0666132/> a schema:Person ;
+    schema:name "Barbara June Patterson" ;
+    schema:url <https://www.imdb.com/name/nm0666132/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Barbara June Patterson. Actress: The Straight Story. Barbara June Patterson was an actress, known for The Straight Story (1999), Victimless Crimes (1991) and Bill's Gun Shop (2001). She died on 21 February 2023 in the USA." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1533046/>,    # Insalata Caprese
+                       <https://www.imdb.com/title/tt0264425/>,    # Bill's Gun Shop
+                       <https://www.imdb.com/title/tt0166896/>,    # The Straight Story
+                       <https://www.imdb.com/title/tt0100868/> . # Victimless Crimes
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Insalata Caprese (2009)
+<https://www.imdb.com/title/tt1533046/> a schema:Movie ;
+    schema:name "Insalata Caprese" ;
+    schema:url <https://www.imdb.com/title/tt1533046/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0666132/> ;
+        schema:characterName "Adelpha"
+    ] .
+
+# Bill's Gun Shop (2001)
+<https://www.imdb.com/title/tt0264425/> a schema:Movie ;
+    schema:name "Bill's Gun Shop" ;
+    schema:url <https://www.imdb.com/title/tt0264425/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0666132/> ;
+        schema:characterName "Arnie's Mom"
+    ] .
+
+# The Straight Story (1999)
+<https://www.imdb.com/title/tt0166896/> a schema:Movie ;
+    schema:name "The Straight Story" ;
+    schema:url <https://www.imdb.com/title/tt0166896/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0666132/> ;
+        schema:characterName "Woman on Bus"
+    ] .
+
+# Victimless Crimes (1991)
+<https://www.imdb.com/title/tt0100868/> a schema:Movie ;
+    schema:name "Victimless Crimes" ;
+    schema:url <https://www.imdb.com/title/tt0100868/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0666132/> ;
+        schema:characterName "Northshore mother"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

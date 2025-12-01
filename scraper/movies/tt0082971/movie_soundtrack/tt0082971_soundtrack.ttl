@@ -1,0 +1,42 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0082971/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "I am the Monarch of the Sea" ;
+        schema:byArtist <https://www.imdb.com/name/nm0722636/> ; # John Rhys-Davies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I am the Monarch of the Sea" ;
+            schema:composer <https://www.imdb.com/name/nm0837956/> ; # Arthur Sullivan
+            schema:lyricist <https://www.imdb.com/name/nm0318275/> # W.S. Gilbert
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A British Tar" ;
+        schema:byArtist <https://www.imdb.com/name/nm0722636/> ; # John Rhys-Davies
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A British Tar" ;
+            schema:composer <https://www.imdb.com/name/nm0837956/> ; # Arthur Sullivan
+            schema:lyricist <https://www.imdb.com/name/nm0318275/> # W.S. Gilbert
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0318275/> a schema:Person ;
+    schema:name "W.S. Gilbert" .
+<https://www.imdb.com/name/nm0722636/> a schema:Person ;
+    schema:name "John Rhys-Davies" .
+<https://www.imdb.com/name/nm0837956/> a schema:Person ;
+    schema:name "Arthur Sullivan" .
+# ==============================================================================

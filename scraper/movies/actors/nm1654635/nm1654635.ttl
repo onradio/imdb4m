@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1654635/> a schema:Person ;
+    schema:name "Bradley D. Capshaw" ;
+    schema:url <https://www.imdb.com/name/nm1654635/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Bradley D. Capshaw. Actor: The Notebook. Bradley D. Capshaw is known for The Notebook (2004)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0332280/> .    # The Notebook
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Notebook (2004)
+<https://www.imdb.com/title/tt0332280/> a schema:Movie ;
+    schema:name "The Notebook" ;
+    schema:url <https://www.imdb.com/title/tt0332280/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1654635/> ;
+        schema:characterName "Injured Soldier"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0916088/> a schema:Person ;
+    schema:name "Des Webb" ;
+    schema:url <https://www.imdb.com/name/nm0916088/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Des Webb. Actor: Star Wars: Episode V - The Empire Strikes Back. Des Webb was an actor, known for Star Wars: Episode V - The Empire Strikes Back (1980), Morons from Outer Space (1985) and The Black Adder (1982). He died on 21 May 2002 in London, England, UK." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "2.08"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 10″ (2.08 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0089622/>,    # Morons from Outer Space
+                       <https://www.imdb.com/title/tt0084988/>,    # The Black Adder
+                       <https://www.imdb.com/title/tt0080684/> . # Star Wars: Episode V - The Empire Strikes Back
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Morons from Outer Space (1985)
+<https://www.imdb.com/title/tt0089622/> a schema:Movie ;
+    schema:name "Morons from Outer Space" ;
+    schema:url <https://www.imdb.com/title/tt0089622/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916088/> ;
+        schema:characterName "Eskimo chief"
+    ] .
+
+# The Black Adder (1983)
+<https://www.imdb.com/title/tt0084988/> a schema:Movie ;
+    schema:name "The Black Adder" ;
+    schema:url <https://www.imdb.com/title/tt0084988/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916088/> ;
+        schema:characterName "Person of Unrestricted Growth"
+    ] .
+
+# Star Wars: Episode V - The Empire Strikes Back (1980)
+<https://www.imdb.com/title/tt0080684/> a schema:Movie ;
+    schema:name "Star Wars: Episode V - The Empire Strikes Back" ;
+    schema:url <https://www.imdb.com/title/tt0080684/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0916088/> ;
+        schema:characterName "Snow Creature"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

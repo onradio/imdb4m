@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1084394/> a schema:Person ;
+    schema:name "Charles Armstrong" ;
+    schema:url <https://www.imdb.com/name/nm1084394/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Charles Armstrong. Actor: Rocketman. Charles Armstrong is a British actor who was born in London. He studied French and Philosophy at St Catherine's College, Oxford University before training at Drama Studio London.\n\nHis film work includes: One Life, Rocketman and The King's Speech. TV credits include: The Ballad of Renegade Nell (Disney+), Inside No 9 (BBC), The English Game (Netflix), It's a Sin (Channel 4), The Irregulars (Netflix) and The First..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDA4M2Q0ZTMtOTYyMS00MTgwLWJmMGMtNTczY2JiYTU5ODVhXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7736572/>,    # Temple
+                       <https://www.imdb.com/title/tt8694364/> ; # Years and Years
+
+
+    schema:video <https://www.imdb.com/video/vi2544092953/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1084394/mediaviewer/rm3185976321/>,
+                 <https://www.imdb.com/name/nm1084394/mediaviewer/rm3018204161/>,
+                 <https://www.imdb.com/name/nm1084394/mediaviewer/rm3085313025/>,
+                 <https://www.imdb.com/name/nm1084394/mediaviewer/rm2732991489/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Temple (2019)
+<https://www.imdb.com/title/tt7736572/> a schema:Movie ;
+    schema:name "Temple" ;
+    schema:url <https://www.imdb.com/title/tt7736572/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1084394/> ;
+        schema:characterName "Johnson"
+    ] .
+
+# Years and Years (2019)
+<https://www.imdb.com/title/tt8694364/> a schema:Movie ;
+    schema:name "Years and Years" ;
+    schema:url <https://www.imdb.com/title/tt8694364/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1084394/> ;
+        schema:characterName "Economics Editor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2544092953/> a schema:VideoObject ;
+        schema:name "Showreel 2023" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2544092953/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWU0MzZkNzktNGY5Yi00YTc5LTkyOTQtMGUyZGQ3ZGExZmU1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M33S"^^xsd:duration ;
+        schema:uploadDate "2023-07-01T16:36:30Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDA4M2Q0ZTMtOTYyMS00MTgwLWJmMGMtNTczY2JiYTU5ODVhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDA4M2Q0ZTMtOTYyMS00MTgwLWJmMGMtNTczY2JiYTU5ODVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Armstrong" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1084394/mediaviewer/rm3185976321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjA5ZTNjMzctMTAyMS00N2NhLTljZmItMDQ2MTI2NTIwM2M4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Armstrong" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1084394/mediaviewer/rm3018204161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjA5MzAzNjEtNDA1MC00NDNhLTliZmUtOGY5YmZlY2M2ZjM2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Armstrong" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1084394/mediaviewer/rm3085313025/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjdkMjJiZDItOWFmNi00OTMxLThlNmEtYzg2Y2VmZGQyMGE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Armstrong" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1084394/mediaviewer/rm2732991489/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDA4M2Q0ZTMtOTYyMS00MTgwLWJmMGMtNTczY2JiYTU5ODVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charles Armstrong" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

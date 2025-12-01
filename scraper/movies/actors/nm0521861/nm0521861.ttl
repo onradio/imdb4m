@@ -1,0 +1,102 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0521861/> a schema:Person ;
+    schema:name "Dominique Louis" ;
+    schema:url <https://www.imdb.com/name/nm0521861/> ;
+    schema:birthDate "1967-03-15"^^xsd:date ;
+    schema:jobTitle "Art Department", "Animation Department", "Actor" ;
+    schema:description "Dominique Louis. Actor: The Incredibles. Dominique Louis was born on 15 March 1967 in Burgundy, France. He is an actor, known for The Incredibles (2004), Pacific Rim (2013) and The Croods (2013)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZGFhMmNmMGUtYzAyNS00OGRiLWI3MTEtNTA0NDQ0NWU0NjlhXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Burgundy, France"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8205060/>,    # LEGO the Incredibles
+                       <https://www.imdb.com/title/tt0433576/>,    # The Incredibles: The Video Game
+                       <https://www.imdb.com/title/tt0317705/> ; # The Incredibles
+
+
+    schema:video <https://www.imdb.com/video/vi2963250457/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0521861/mediaviewer/rm847986688/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# LEGO the Incredibles (2018)
+<https://www.imdb.com/title/tt8205060/> a schema:Movie ;
+    schema:name "LEGO the Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt8205060/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0521861/> ;
+        schema:characterName "Bomb Voyage"
+    ] .
+
+# The Incredibles: The Video Game (2004)
+<https://www.imdb.com/title/tt0433576/> a schema:Movie ;
+    schema:name "The Incredibles: The Video Game" ;
+    schema:url <https://www.imdb.com/title/tt0433576/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0521861/> ;
+        schema:characterName "Bomb Voyage"
+    ] .
+
+# The Incredibles (2004)
+<https://www.imdb.com/title/tt0317705/> a schema:Movie ;
+    schema:name "The Incredibles" ;
+    schema:url <https://www.imdb.com/title/tt0317705/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0521861/> ;
+        schema:characterName "Bomb Voyage"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2963250457/> a schema:VideoObject ;
+        schema:name "The Incredibles: Blu-ray Release" ;
+        schema:description "New Nomanisan Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2963250457/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjk2ZmY4MTMtZDRmNy00YWM1LThmZWUtMWM3ZmViNzA3ZjU3XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT40S"^^xsd:duration ;
+        schema:uploadDate "2011-03-18T03:56:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZGFhMmNmMGUtYzAyNS00OGRiLWI3MTEtNTA0NDQ0NWU0NjlhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGFhMmNmMGUtYzAyNS00OGRiLWI3MTEtNTA0NDQ0NWU0NjlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dominique Louis" ;
+    schema:height "450"^^xsd:integer ;
+    schema:width "300"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0521861/mediaviewer/rm847986688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGFhMmNmMGUtYzAyNS00OGRiLWI3MTEtNTA0NDQ0NWU0NjlhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dominique Louis" ;
+    schema:height "450"^^xsd:integer ;
+    schema:width "300"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

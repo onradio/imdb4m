@@ -1,0 +1,149 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120762/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Honor to Us All" ;
+        schema:byArtist <https://www.imdb.com/name/nm0288659/>, # Beth Fowler
+                        <https://www.imdb.com/name/nm0791467/>, # Freda Foh Shen
+                        <https://www.imdb.com/name/nm0633262/>, # Marni Nixon
+                        <https://www.imdb.com/name/nm0758964/> ; # Lea Salonga
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Honor to Us All" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Reflection" ;
+        schema:byArtist <https://www.imdb.com/name/nm0758964/> ; # Lea Salonga
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Reflection" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Make a Man Out of You" ;
+        schema:byArtist <https://www.imdb.com/name/nm0005287/>, # Donny Osmond
+                        <https://www.imdb.com/name/nm0867139/>, # Jerry Tondo
+                        <https://www.imdb.com/name/nm0001213/>, # Harvey Fierstein
+                        <https://www.imdb.com/name/nm0928607/>, # Matthew Wilder
+                        <https://www.imdb.com/name/nm0000552/>, # Eddie Murphy
+                        <https://www.imdb.com/name/nm0758964/> ; # Lea Salonga
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Make a Man Out of You" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Girl Worth Fighting For" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001213/>, # Harvey Fierstein
+                        <https://www.imdb.com/name/nm0393222/>, # James Hong
+                        <https://www.imdb.com/name/nm0758964/>, # Lea Salonga
+                        <https://www.imdb.com/name/nm0867139/>, # Jerry Tondo
+                        <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Girl Worth Fighting For" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'll Make a Man Out of You (Reprise)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'll Make a Man Out of You (Reprise)" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "True to Your Heart" ;
+        schema:byArtist <https://www.imdb.com/name/nm1568359/>, # 98 Degrees
+                        <https://www.imdb.com/name/nm0005567/> ; # Stevie Wonder
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "True to Your Heart" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Reflection (Pop Version)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004694/> ; # Christina Aguilera
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Reflection (Pop Version)" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> ; # Matthew Wilder
+            schema:lyricist <https://www.imdb.com/name/nm0957138/> # David Zippel
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Reflection (UK Europe and South America Version)" ;
+        schema:byArtist <https://www.imdb.com/name/nm0535316/> ; # Vanessa-Mae
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Reflection (UK Europe and South America Version)" ;
+            schema:composer <https://www.imdb.com/name/nm0928607/> # Matthew Wilder
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000552/> a schema:Person ;
+    schema:name "Eddie Murphy" .
+<https://www.imdb.com/name/nm0001213/> a schema:Person ;
+    schema:name "Harvey Fierstein" .
+<https://www.imdb.com/name/nm0004694/> a schema:Person ;
+    schema:name "Christina Aguilera" .
+<https://www.imdb.com/name/nm0005287/> a schema:Person ;
+    schema:name "Donny Osmond" .
+<https://www.imdb.com/name/nm0005567/> a schema:Person ;
+    schema:name "Stevie Wonder" .
+<https://www.imdb.com/name/nm0288659/> a schema:Person ;
+    schema:name "Beth Fowler" .
+<https://www.imdb.com/name/nm0393222/> a schema:Person ;
+    schema:name "James Hong" .
+<https://www.imdb.com/name/nm0535316/> a schema:Person ;
+    schema:name "Vanessa-Mae" .
+<https://www.imdb.com/name/nm0633262/> a schema:Person ;
+    schema:name "Marni Nixon" .
+<https://www.imdb.com/name/nm0758964/> a schema:Person ;
+    schema:name "Lea Salonga" .
+<https://www.imdb.com/name/nm0791467/> a schema:Person ;
+    schema:name "Freda Foh Shen" .
+<https://www.imdb.com/name/nm0867139/> a schema:Person ;
+    schema:name "Jerry Tondo" .
+<https://www.imdb.com/name/nm0928607/> a schema:Person ;
+    schema:name "Matthew Wilder" .
+<https://www.imdb.com/name/nm0957138/> a schema:Person ;
+    schema:name "David Zippel" .
+<https://www.imdb.com/name/nm1568359/> a schema:Person ;
+    schema:name "98 Degrees" .
+# ==============================================================================

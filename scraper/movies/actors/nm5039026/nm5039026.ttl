@@ -1,0 +1,150 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5039026/> a schema:Person ;
+    schema:name "Lasse Fogelstrøm" ;
+    schema:url <https://www.imdb.com/name/nm5039026/> ;
+    schema:birthDate "1996-05-15"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Lasse Fogelstrøm. Actor: The Hunt. Lasse Fogelstrøm was born on 15 May 1996 in Hvidovre, Denmark. He is an actor, known for The Hunt (2012), Planeten drejer stadig (2016) and 2 Døgn (2021)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hvidovre, Denmark"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10232790/>,    # Alice i Lalandia
+                       <https://www.imdb.com/title/tt5062938/>,    # While We Live
+                       <https://www.imdb.com/title/tt6044544/>,    # Planeten drejer stadig
+                       <https://www.imdb.com/title/tt5226774/>,    # Punani
+                       <https://www.imdb.com/title/tt3671886/>,    # The Attic
+                       <https://www.imdb.com/title/tt1973692/>,    # Rita
+                       <https://www.imdb.com/title/tt2106476/> ; # The Hunt
+
+
+    schema:video <https://www.imdb.com/video/vi3694904089/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5039026/mediaviewer/rm1580250112/>,
+                 <https://www.imdb.com/name/nm5039026/mediaviewer/rm3834620928/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Alice i Lalandia (2019)
+<https://www.imdb.com/title/tt10232790/> a schema:Movie ;
+    schema:name "Alice i Lalandia" ;
+    schema:url <https://www.imdb.com/title/tt10232790/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Storm"
+    ] .
+
+# While We Live (2017)
+<https://www.imdb.com/title/tt5062938/> a schema:Movie ;
+    schema:name "While We Live" ;
+    schema:url <https://www.imdb.com/title/tt5062938/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Leo"
+    ] .
+
+# Planeten drejer stadig (2016)
+<https://www.imdb.com/title/tt6044544/> a schema:Movie ;
+    schema:name "Planeten drejer stadig" ;
+    schema:url <https://www.imdb.com/title/tt6044544/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Magnus"
+    ] .
+
+# Punani (2015)
+<https://www.imdb.com/title/tt5226774/> a schema:Movie ;
+    schema:name "Punani" ;
+    schema:url <https://www.imdb.com/title/tt5226774/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Benjamin"
+    ] .
+
+# The Attic (2014)
+<https://www.imdb.com/title/tt3671886/> a schema:Movie ;
+    schema:name "The Attic" ;
+    schema:url <https://www.imdb.com/title/tt3671886/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Peter"
+    ] .
+
+# Rita (2013)
+<https://www.imdb.com/title/tt1973692/> a schema:Movie ;
+    schema:name "Rita" ;
+    schema:url <https://www.imdb.com/title/tt1973692/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Mads 9.A"
+    ] .
+
+# The Hunt (2012)
+<https://www.imdb.com/title/tt2106476/> a schema:Movie ;
+    schema:name "The Hunt" ;
+    schema:url <https://www.imdb.com/title/tt2106476/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5039026/> ;
+        schema:characterName "Marcus"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3694904089/> a schema:VideoObject ;
+        schema:name "Stenofonen Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3694904089/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWEwYzk1MjgtZTA2MS00MDY5LTliMmYtZDZmNDdlMGI2OTQwXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M2S"^^xsd:duration ;
+        schema:uploadDate "2022-01-06T13:00:04Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5039026/mediaviewer/rm1580250112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIyODA2NTA0MV5BMl5BanBnXkFtZTcwMDA4NTc3Nw@@._V1_.jpg> ;
+    schema:caption "Mads Mikkelsen and Lasse Fogelstrøm in The Hunt (2012)" ;
+    schema:height "2126"^^xsd:integer ;
+    schema:width "3189"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5039026/mediaviewer/rm3834620928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQyOTg5NjcyOV5BMl5BanBnXkFtZTcwNzczMDk3OA@@._V1_.jpg> ;
+    schema:caption "Mads Mikkelsen and Lasse Fogelstrøm in The Hunt (2012)" ;
+    schema:height "1396"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

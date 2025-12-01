@@ -1,0 +1,51 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt5323662/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "My Generation" ;
+        schema:byArtist <https://www.imdb.com/name/nm1277963/> ; # The Who
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "My Generation" ;
+            schema:author <https://www.imdb.com/name/nm0870175/> # Pete Townshend
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Silent Voice/Koe no Katachi" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ai wo Shita no wa (Loving Is)" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "All This Time" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Show Me the Meaning of Being Lonely" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Wherever You Will Go" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Iris" ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0870175/> a schema:Person ;
+    schema:name "Pete Townshend" .
+<https://www.imdb.com/name/nm1277963/> a schema:Person ;
+    schema:name "The Who" .
+# ==============================================================================

@@ -1,0 +1,243 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0123785/> a schema:Person ;
+    schema:name "Ben Burtt" ;
+    schema:url <https://www.imdb.com/name/nm0123785/> ;
+    schema:birthDate "1948-07-12"^^xsd:date ;
+    schema:jobTitle "Sound Department", "Additional Crew", "Editor" ;
+    schema:alternateName "Ben Burtt Jr.", "Benjamin Pickering Burtt Jr." ;
+    schema:description "Ben Burtt. Sound Department: WALL·E. Ben Burtt was born in New York, USA. Though he is a writer, an editor and a director, he is best known for his work as a sound designer. Ben has worked on many Pixar and Star Trek movies and all of the Star Wars movies. He is credited for creating Chewbacca's voice and sounds as well as the voice of Yoda and several others...." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTg5NTY4NjY1OV5BMl5BanBnXkFtZTcwNjQwNzkyMg@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Jamesville, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0910970/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0076759/>,    # Star Wars: Episode IV - A New Hope
+                       <https://www.imdb.com/title/tt0120915/>,    # Star Wars: Episode I - The Phantom Menace
+                       <https://www.imdb.com/title/tt1650062/>,    # Super 8
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt5691474/>,    # Star Wars Jedi: Fallen Order
+                       <https://www.imdb.com/title/tt8575060/>,    # Lego DC Super-Villains
+                       <https://www.imdb.com/title/tt1643247/>,    # Star Tours: The Adventures Continue
+                       <https://www.imdb.com/title/tt1340049/>,    # WALL·E
+                       <https://www.imdb.com/title/tt0121765/>,    # Star Wars: Episode II - Attack of the Clones
+                       <https://www.imdb.com/title/tt0086190/>,    # Star Wars: Episode VI - Return of the Jedi
+                       <https://www.imdb.com/title/tt7489498/> ; # Rod Flash Conquers Infinity
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 2 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "20 wins & 49 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4080122905/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0123785/mediaviewer/rm778536193/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm4091910657/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm3926890496/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm3910113280/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm3053279744/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm384142592/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm662537472/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm3054209536/>,
+                 <https://www.imdb.com/name/nm0123785/mediaviewer/rm3020655104/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> .
+
+<https://www.imdb.com/title/tt0076759/> a schema:Movie ;
+    schema:name "Star Wars: Episode IV - A New Hope" ;
+    schema:url <https://www.imdb.com/title/tt0076759/> .
+
+<https://www.imdb.com/title/tt0120915/> a schema:Movie ;
+    schema:name "Star Wars: Episode I - The Phantom Menace" ;
+    schema:url <https://www.imdb.com/title/tt0120915/> .
+
+<https://www.imdb.com/title/tt1650062/> a schema:Movie ;
+    schema:name "Super 8" ;
+    schema:url <https://www.imdb.com/title/tt1650062/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Star Wars Jedi: Fallen Order (2019)
+<https://www.imdb.com/title/tt5691474/> a schema:Movie ;
+    schema:name "Star Wars Jedi: Fallen Order" ;
+    schema:url <https://www.imdb.com/title/tt5691474/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "BD-1"
+    ] .
+
+# Lego DC Super-Villains (2018)
+<https://www.imdb.com/title/tt8575060/> a schema:Movie ;
+    schema:name "Lego DC Super-Villains" ;
+    schema:url <https://www.imdb.com/title/tt8575060/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Star Tours: The Adventures Continue (2011)
+<https://www.imdb.com/title/tt1643247/> a schema:Movie ;
+    schema:name "Star Tours: The Adventures Continue" ;
+    schema:url <https://www.imdb.com/title/tt1643247/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "BB-8"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt1340049/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt1340049/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "WALL·E"
+    ] .
+
+# Star Wars: Episode II - Attack of the Clones (2002)
+<https://www.imdb.com/title/tt0121765/> a schema:Movie ;
+    schema:name "Star Wars: Episode II - Attack of the Clones" ;
+    schema:url <https://www.imdb.com/title/tt0121765/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "Wat Tambor"
+    ] .
+
+# Star Wars: Episode VI - Return of the Jedi (1983)
+<https://www.imdb.com/title/tt0086190/> a schema:Movie ;
+    schema:name "Star Wars: Episode VI - Return of the Jedi" ;
+    schema:url <https://www.imdb.com/title/tt0086190/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "'Freeze' Officer in Endor Bunker"
+    ] .
+
+# Rod Flash Conquers Infinity (1973)
+<https://www.imdb.com/title/tt7489498/> a schema:Movie ;
+    schema:name "Rod Flash Conquers Infinity" ;
+    schema:url <https://www.imdb.com/title/tt7489498/> ;
+    schema:datePublished "1973"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0123785/> ;
+        schema:characterName "Rod Flash"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4080122905/> a schema:VideoObject ;
+        schema:name "Official Video Game Trailer" ;
+        schema:description "The Jedi have fallen. Now you will rise. In STAR WARS Jedi: Fallen Order, hone your Force powers, master lightsaber combat, and learn to fight like a Jedi." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4080122905/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDhlNWFiZTItMjFhZi00NGRmLWI2ZmUtNzdjYjUzM2VmNDIxXkEyXkFqcGdeQW1yb3NzZXI@._V1_.jpg" ;
+        schema:duration "PT2M2S"^^xsd:duration ;
+        schema:uploadDate "2019-06-09T20:42:11Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTg5NTY4NjY1OV5BMl5BanBnXkFtZTcwNjQwNzkyMg@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg5NTY4NjY1OV5BMl5BanBnXkFtZTcwNjQwNzkyMg@@._V1_.jpg> ;
+    schema:caption "Ben Burtt" ;
+    schema:height "949"^^xsd:integer ;
+    schema:width "1050"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm778536193/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWUwMjMxZmYtMmZhYS00ZWM1LWE1OGUtMjYzZmRlMzhlYzY5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "George Lucas and Ben Burtt in The Beginning: Making 'Episode I' (2001)" ;
+    schema:height "716"^^xsd:integer ;
+    schema:width "1268"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm4091910657/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDNlMTlkMDAtMjc4MC00N2IyLWE3YzktNGNkNjFmMDVlODliXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ben Burtt" ;
+    schema:height "1238"^^xsd:integer ;
+    schema:width "930"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm3926890496/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE5NzcyODYxOV5BMl5BanBnXkFtZTcwOTk1MzQ1MQ@@._V1_.jpg> ;
+    schema:caption "Ben Burtt in WALL·E (2008)" ;
+    schema:height "446"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm3910113280/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUxMDU2Nzk3NF5BMl5BanBnXkFtZTYwMDk3MDk2._V1_.jpg> ;
+    schema:caption "Ben Burtt in WALL·E (2008)" ;
+    schema:height "402"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm3053279744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzU0NTkwZmMtMzUyNy00MzU5LTljZTAtOWZhOWM2NWJhZmJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Warwick Davis and Ben Burtt in Star Wars: Episode VI - Return of the Jedi (1983)" ;
+    schema:height "1044"^^xsd:integer ;
+    schema:width "1557"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm384142592/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY0OTM1MjM2OF5BMl5BanBnXkFtZTcwNjgwMzMzMw@@._V1_.jpg> ;
+    schema:caption "Ben Burtt in WALL·E (2008)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm662537472/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjUwNTA4NjYxNF5BMl5BanBnXkFtZTcwNjYyMzYzNA@@._V1_.jpg> ;
+    schema:caption "Special Achievement Award recipient Benjamin Burtt Jr. with presenters Anthony Daniels as C-3PO and Mark Hamill (\"Star Wars\") at the 50th Academy Awards." ;
+    schema:height "2025"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm3054209536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI3MTk3Mzc1NF5BMl5BanBnXkFtZTcwMTAxNzkyMg@@._V1_.jpg> ;
+    schema:caption "Ben Burtt, Mae Whitman, and Jamie Caliri at an event for Big Hero 6 (2014)" ;
+    schema:height "979"^^xsd:integer ;
+    schema:width "1414"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0123785/mediaviewer/rm3020655104/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzU2MTYwNzA2OV5BMl5BanBnXkFtZTcwMzAxNzkyMg@@._V1_.jpg> ;
+    schema:caption "Ben Burtt, Nick Park, and Mae Whitman at an event for A Matter of Loaf and Death (2008)" ;
+    schema:height "1039"^^xsd:integer ;
+    schema:width "1529"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2401565/> a schema:Person ;
+    schema:name "Thomas B. Duffy" ;
+    schema:url <https://www.imdb.com/name/nm2401565/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Thomas B. Duffy. Actor: Edge of Darkness. Thomas B. Duffy is known for Edge of Darkness (2010), Shutter Island (2010) and The Departed (2006)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1130884/>,    # Shutter Island
+                       <https://www.imdb.com/title/tt1226273/>,    # Edge of Darkness
+                       <https://www.imdb.com/title/tt0407887/> . # The Departed
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Shutter Island (2010)
+<https://www.imdb.com/title/tt1130884/> a schema:Movie ;
+    schema:name "Shutter Island" ;
+    schema:url <https://www.imdb.com/title/tt1130884/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401565/> ;
+        schema:characterName "Guard"
+    ] .
+
+# Edge of Darkness (2010)
+<https://www.imdb.com/title/tt1226273/> a schema:Movie ;
+    schema:name "Edge of Darkness" ;
+    schema:url <https://www.imdb.com/title/tt1226273/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401565/> ;
+        schema:characterName "Boston Police Detective"
+    ] .
+
+# The Departed (2006)
+<https://www.imdb.com/title/tt0407887/> a schema:Movie ;
+    schema:name "The Departed" ;
+    schema:url <https://www.imdb.com/title/tt0407887/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2401565/> ;
+        schema:characterName "Governor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,132 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2705327/> a schema:Person ;
+    schema:name "Zhihui Chen" ;
+    schema:url <https://www.imdb.com/name/nm2705327/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Zhihui Chen. Actor: Fearless. Zhihui Chen is known for Fearless (2006), The Legend Is Born: Ip Man (2010) and Ip Man (2008)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt32110530/>,    # The New Fong Sai Yuk: Duel in the City of Death
+                       <https://www.imdb.com/title/tt10473414/>,    # Tianxia di yi biaoju
+                       <https://www.imdb.com/title/tt7070302/>,    # The Advisors Alliance
+                       <https://www.imdb.com/title/tt6502208/>,    # Master of the Drunken Fist
+                       <https://www.imdb.com/title/tt7794398/>,    # Bai jia quan zhi Guanmen dizi
+                       <https://www.imdb.com/title/tt5544284/> ; # The Patriot Yue Fei
+
+
+    schema:video <https://www.imdb.com/video/vi2687345689/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2705327/mediaviewer/rm3753810176/>,
+                 <https://www.imdb.com/name/nm2705327/mediaviewer/rm650090752/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The New Fong Sai Yuk: Duel in the City of Death (2019)
+<https://www.imdb.com/title/tt32110530/> a schema:Movie ;
+    schema:name "The New Fong Sai Yuk: Duel in the City of Death" ;
+    schema:url <https://www.imdb.com/title/tt32110530/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName "Tiger Lei"
+    ] .
+
+# Tianxia di yi biaoju (2018)
+<https://www.imdb.com/title/tt10473414/> a schema:Movie ;
+    schema:name "Tianxia di yi biaoju" ;
+    schema:url <https://www.imdb.com/title/tt10473414/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName ""
+    ] .
+
+# The Advisors Alliance (2017)
+<https://www.imdb.com/title/tt7070302/> a schema:Movie ;
+    schema:name "The Advisors Alliance" ;
+    schema:url <https://www.imdb.com/title/tt7070302/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName "Cao Hong"
+    ] .
+
+# Master of the Drunken Fist (2016)
+<https://www.imdb.com/title/tt6502208/> a schema:Movie ;
+    schema:name "Master of the Drunken Fist" ;
+    schema:url <https://www.imdb.com/title/tt6502208/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName ""
+    ] .
+
+# Bai jia quan zhi Guanmen dizi (2016)
+<https://www.imdb.com/title/tt7794398/> a schema:Movie ;
+    schema:name "Bai jia quan zhi Guanmen dizi" ;
+    schema:url <https://www.imdb.com/title/tt7794398/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName "Dong Yuntang"
+    ] .
+
+# The Patriot Yue Fei (2013)
+<https://www.imdb.com/title/tt5544284/> a schema:Movie ;
+    schema:name "The Patriot Yue Fei" ;
+    schema:url <https://www.imdb.com/title/tt5544284/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2705327/> ;
+        schema:characterName "Liu Ge"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2687345689/> a schema:VideoObject ;
+        schema:name "White Vengeance" ;
+        schema:description "Trailer for White Vengeance" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2687345689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWE3NTE0MTQtZDhiOC00MTRhLTg4OGItOGM1ZjQyYWJiNjBlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M38S"^^xsd:duration ;
+        schema:uploadDate "2012-10-06T03:51:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2705327/mediaviewer/rm3753810176/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMyNzM0NDg0OF5BMl5BanBnXkFtZTYwNzMyNTQ3._V1_.jpg> ;
+    schema:caption "Jet Li and Zhihui Chen in Fearless (2006)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2705327/mediaviewer/rm650090752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg1NzY0MDg1M15BMl5BanBnXkFtZTYwNTYyNTQ3._V1_.jpg> ;
+    schema:caption "Jet Li and Zhihui Chen in Fearless (2006)" ;
+    schema:height "322"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0453248/> a schema:Person ;
+    schema:name "Buzz Kilman" ;
+    schema:url <https://www.imdb.com/name/nm0453248/> ;
+    schema:birthDate "1944-08-19"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Buzz Kilman. Actor: The Manchurian Candidate. Buzz Kilman was born in Detroit, Michigan, but left almost immediately thanks to the quick thinking of his mother Bette. His father, Julian, was in public relations, and Buzz spent his formative years moving from city to city as his Dad partied his way to the top of his field, ultimately winding up in Miami. Buzz remained in Miami where he attended Coral Gables..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Detroit, Michigan, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0368008/>,    # The Manchurian Candidate
+                       <https://www.imdb.com/title/tt0091983/>,    # Something Wild
+                       <https://www.imdb.com/title/tt0102926/>,    # The Silence of the Lambs
+                       <https://www.imdb.com/title/tt0107818/>,    # Philadelphia
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0379265/>,    # Outing Riley
+                       <https://www.imdb.com/title/tt0476623/>,    # Mouse
+                       <https://www.imdb.com/title/tt0095593/> ; # Married to the Mob
+
+
+    schema:video <https://www.imdb.com/video/vi644332313/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0453248/mediaviewer/rm764443136/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0368008/> a schema:Movie ;
+    schema:name "The Manchurian Candidate" ;
+    schema:url <https://www.imdb.com/title/tt0368008/> .
+
+<https://www.imdb.com/title/tt0091983/> a schema:Movie ;
+    schema:name "Something Wild" ;
+    schema:url <https://www.imdb.com/title/tt0091983/> .
+
+<https://www.imdb.com/title/tt0102926/> a schema:Movie ;
+    schema:name "The Silence of the Lambs" ;
+    schema:url <https://www.imdb.com/title/tt0102926/> .
+
+<https://www.imdb.com/title/tt0107818/> a schema:Movie ;
+    schema:name "Philadelphia" ;
+    schema:url <https://www.imdb.com/title/tt0107818/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Outing Riley (2004)
+<https://www.imdb.com/title/tt0379265/> a schema:Movie ;
+    schema:name "Outing Riley" ;
+    schema:url <https://www.imdb.com/title/tt0379265/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0453248/> ;
+        schema:characterName "(uncredited)"
+    ] .
+
+# Mouse (2003)
+<https://www.imdb.com/title/tt0476623/> a schema:Movie ;
+    schema:name "Mouse" ;
+    schema:url <https://www.imdb.com/title/tt0476623/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0453248/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Married to the Mob (1988)
+<https://www.imdb.com/title/tt0095593/> a schema:Movie ;
+    schema:name "Married to the Mob" ;
+    schema:url <https://www.imdb.com/title/tt0095593/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0453248/> ;
+        schema:characterName "Ruthless Sniper"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi644332313/> a schema:VideoObject ;
+        schema:name "Philadelphia" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi644332313/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTEwN2JkZmMtMjdkMi00MDI3LWJlZjEtNWQ2OGEzZjY3OTdkXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg" ;
+        schema:duration "PT2M59S"^^xsd:duration ;
+        schema:uploadDate "2018-09-08T17:14:30Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0453248/mediaviewer/rm764443136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzVmMzVjN2YtYWZjZi00ZmU4LWFjZjktMGFiNDQzZjMyYzQ5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Hanks, Denzel Washington, and Buzz Kilman in Philadelphia (1993)" ;
+    schema:height "1427"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

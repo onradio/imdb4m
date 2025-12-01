@@ -1,0 +1,85 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10346132/> a schema:Person ;
+    schema:name "Ramachandra Raju" ;
+    schema:url <https://www.imdb.com/name/nm10346132/> ;
+    schema:birthDate "1980-07-07"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ramachandra Raju. Actor: K.G.F. KGF's director Prashanth Neel revealed that the plot of KGF is 100% based on Mahabharata's story. The powerful gang of Gold fields is inspired from the Kuru family which is governed by 4 partners . The old freaking Suryavardhan's character is inspired from Dhritarashtra/Bhishma. To end this family politics, enters Rocky. Rocky's character is based on Karna (the protagonist of Mahabharata) who rises from the streets..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzA2OTlkMTgtMjgxMy00MzM2LTgzMTAtYTEyOGZjMGY1OGJmXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Bangalore, Karanataka, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7838252/> ;    # K.G.F
+
+
+    schema:video <https://www.imdb.com/video/vi352438297/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm10346132/mediaviewer/rm129863682/>,
+                 <https://www.imdb.com/name/nm10346132/mediaviewer/rm3152671745/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10346132/> ;
+        schema:characterName "Garuda"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi352438297/> a schema:VideoObject ;
+        schema:name "Official Teaser" ;
+        schema:description "What happens if two sworn enemies from a previous life are reborn as father-son in a new birth? What wins - love or revenge?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi352438297/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTkzZDJhNTMtZjFlOS00ZjY3LTkwMjQtZTIxYzhiODUyZWI3XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M44S"^^xsd:duration ;
+        schema:uploadDate "2025-09-19T09:45:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzA2OTlkMTgtMjgxMy00MzM2LTgzMTAtYTEyOGZjMGY1OGJmXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzA2OTlkMTgtMjgxMy00MzM2LTgzMTAtYTEyOGZjMGY1OGJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ramachandra Raju" ;
+    schema:height "269"^^xsd:integer ;
+    schema:width "200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10346132/mediaviewer/rm129863682/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzA2OTlkMTgtMjgxMy00MzM2LTgzMTAtYTEyOGZjMGY1OGJmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ramachandra Raju" ;
+    schema:height "269"^^xsd:integer ;
+    schema:width "200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm10346132/mediaviewer/rm3152671745/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzAwNTg3OTYtNjdmYi00MjAzLWE2NmEtNGFmNTE2Zjk4YzhjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jagapathi Babu, Ramachandra Raju, Siddharth, Sharwanand, Aditi Rao Hydari, Rao Ramesh, and Anu Emmanuel in Maha Samudram (2021)" ;
+    schema:height "864"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

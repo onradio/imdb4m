@@ -1,0 +1,189 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0249462/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Top Hat, White Tie, and Tails" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000001/> ; # Fred Astaire
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Top Hat, White Tie, and Tails" ;
+            schema:composer <https://www.imdb.com/name/nm0000927/> # Irving Berlin
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Child Is Born" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Children of the Revolution" ;
+        schema:byArtist <https://www.imdb.com/name/nm0721004/> ; # T. Rex
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Children of the Revolution" ;
+            schema:composer <https://www.imdb.com/name/nm0092647/> ; # Marc Bolan
+            schema:lyricist <https://www.imdb.com/name/nm0092647/> # Marc Bolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Cosmic Dancer" ;
+        schema:byArtist <https://www.imdb.com/name/nm0721004/> ; # T. Rex
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Cosmic Dancer" ;
+            schema:composer <https://www.imdb.com/name/nm0092647/> ; # Marc Bolan
+            schema:lyricist <https://www.imdb.com/name/nm0092647/> # Marc Bolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Get It On" ;
+        schema:byArtist <https://www.imdb.com/name/nm0721004/> ; # T. Rex
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Get It On" ;
+            schema:composer <https://www.imdb.com/name/nm0092647/> ; # Marc Bolan
+            schema:lyricist <https://www.imdb.com/name/nm0092647/> # Marc Bolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Love to Boogie" ;
+        schema:byArtist <https://www.imdb.com/name/nm0721004/> ; # T. Rex
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Love to Boogie" ;
+            schema:composer <https://www.imdb.com/name/nm0092647/> ; # Marc Bolan
+            schema:lyricist <https://www.imdb.com/name/nm0092647/> # Marc Bolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Believe" ;
+        schema:byArtist <https://www.imdb.com/name/nm0309519/> ; # Stephen Gately
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Believe" ;
+            schema:author <https://www.imdb.com/name/nm0531173/>, # Steve Mac
+                       <https://www.imdb.com/name/nm1216681/> # Wayne Hector
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "London Calling" ;
+        schema:byArtist <https://www.imdb.com/name/nm1502648/> ; # The Clash
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "London Calling" ;
+            schema:author <https://www.imdb.com/name/nm0835329/>, # Joe Strummer
+                       <https://www.imdb.com/name/nm0428851/>, # Mick Jones
+                       <https://www.imdb.com/name/nm0800650/> # Paul Simonon
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ride A White Swan" ;
+        schema:byArtist <https://www.imdb.com/name/nm0721004/> ; # T. Rex
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ride A White Swan" ;
+            schema:composer <https://www.imdb.com/name/nm0092647/> ; # Marc Bolan
+            schema:lyricist <https://www.imdb.com/name/nm0092647/> # Marc Bolan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Town Called Malice" ;
+        schema:byArtist <https://www.imdb.com/name/nm1949648/> ; # The Jam
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Town Called Malice" ;
+            schema:author <https://www.imdb.com/name/nm0919883/> # Paul Weller
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Burning Up" ;
+        schema:byArtist <https://www.imdb.com/name/nm0156069/> ; # Eagle Eye Cherry
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Burning Up" ;
+            schema:author <https://www.imdb.com/name/nm0156069/> # Eagle Eye Cherry
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Scène" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Scène" ;
+            schema:composer <https://www.imdb.com/name/nm0006318/> # Pyotr Ilyich Tchaikovsky
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Jingle Bells" ;
+        schema:byArtist <https://www.imdb.com/name/nm0068260/> ; # Jamie Bell
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Jingle Bells" ;
+            schema:author <https://www.imdb.com/name/nm0682602/> # James Pierpont
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000001/> a schema:Person ;
+    schema:name "Fred Astaire" .
+<https://www.imdb.com/name/nm0000927/> a schema:Person ;
+    schema:name "Irving Berlin" .
+<https://www.imdb.com/name/nm0006318/> a schema:Person ;
+    schema:name "Pyotr Ilyich Tchaikovsky" .
+<https://www.imdb.com/name/nm0068260/> a schema:Person ;
+    schema:name "Jamie Bell" .
+<https://www.imdb.com/name/nm0092647/> a schema:Person ;
+    schema:name "Marc Bolan" .
+<https://www.imdb.com/name/nm0156069/> a schema:Person ;
+    schema:name "Eagle Eye Cherry" .
+<https://www.imdb.com/name/nm0309519/> a schema:Person ;
+    schema:name "Stephen Gately" .
+<https://www.imdb.com/name/nm0428851/> a schema:Person ;
+    schema:name "Mick Jones" .
+<https://www.imdb.com/name/nm0531173/> a schema:Person ;
+    schema:name "Steve Mac" .
+<https://www.imdb.com/name/nm0682602/> a schema:Person ;
+    schema:name "James Pierpont" .
+<https://www.imdb.com/name/nm0721004/> a schema:Person ;
+    schema:name "T. Rex" .
+<https://www.imdb.com/name/nm0800650/> a schema:Person ;
+    schema:name "Paul Simonon" .
+<https://www.imdb.com/name/nm0835329/> a schema:Person ;
+    schema:name "Joe Strummer" .
+<https://www.imdb.com/name/nm0919883/> a schema:Person ;
+    schema:name "Paul Weller" .
+<https://www.imdb.com/name/nm1216681/> a schema:Person ;
+    schema:name "Wayne Hector" .
+<https://www.imdb.com/name/nm1502648/> a schema:Person ;
+    schema:name "The Clash" .
+<https://www.imdb.com/name/nm1949648/> a schema:Person ;
+    schema:name "The Jam" .
+# ==============================================================================

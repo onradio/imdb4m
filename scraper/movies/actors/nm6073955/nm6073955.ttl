@@ -1,0 +1,289 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6073955/> a schema:Person ;
+    schema:name "Florence Pugh" ;
+    schema:url <https://www.imdb.com/name/nm6073955/> ;
+    schema:birthDate "1996-01-03"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:alternateName "Flossie Rose", "Florence Rose Pugh" ;
+    schema:description "Florence Pugh. Actress: The Falling. Florence Pugh is an English actress. She is known for Midsommar (2019), Little Women (2019), her MCU debut Black Widow (2021), and Fighting with My Family (2019).\n\nPugh made her film debut in The Falling (2014). She also appears in Lady Macbeth (2016), Outlaw/King (2018), Malevolent (2018), and the AMC Mini-Series The Little Drummer Girl (2018).\n\nIn 2018, she was nominated for a BAFTA EE Rising Star..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmIxMTFkZTctYzhkZi00MmQ4LThhYzEtMmQwMGZjNzA5MDg0XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Oxford, Oxfordshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.62"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3¾″ (1.62 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3294200/>,    # The Falling
+                       <https://www.imdb.com/title/tt1590193/>,    # The Commuter
+                       <https://www.imdb.com/title/tt4291600/>,    # Lady Macbeth
+                       <https://www.imdb.com/title/tt5269594/>,    # Marcella
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3281548/>,    # Little Women
+                       <https://www.imdb.com/title/tt8772262/>,    # Midsommar
+                       <https://www.imdb.com/title/tt10154910/>,    # In the Time It Takes to Get There
+                       <https://www.imdb.com/title/tt6513120/>,    # Fighting with My Family
+                       <https://www.imdb.com/title/tt7598448/>,    # The Little Drummer Girl
+                       <https://www.imdb.com/title/tt2386237/>,    # Malevolent
+                       <https://www.imdb.com/title/tt6679794/>,    # Outlaw/King
+                       <https://www.imdb.com/title/tt8743180/>,    # Leading Lady Parts
+                       <https://www.imdb.com/title/tt7473890/>,    # King Lear
+                       <https://www.imdb.com/title/tt4450878/>,    # Studio City
+                       <https://www.imdb.com/title/tt8286172/> ; # Paradise Lost?
+
+    schema:award [
+        a schema:Award ;
+        schema:description "43 wins & 102 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4205037081/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6073955/mediaviewer/rm2154674434/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm2406332674/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm4147348994/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm4113794562/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm4046685698/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm3946022402/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm3929245186/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm3962799618/>,
+                 <https://www.imdb.com/name/nm6073955/mediaviewer/rm4013131266/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3294200/> a schema:Movie ;
+    schema:name "The Falling" ;
+    schema:url <https://www.imdb.com/title/tt3294200/> .
+
+<https://www.imdb.com/title/tt1590193/> a schema:Movie ;
+    schema:name "The Commuter" ;
+    schema:url <https://www.imdb.com/title/tt1590193/> .
+
+<https://www.imdb.com/title/tt4291600/> a schema:Movie ;
+    schema:name "Lady Macbeth" ;
+    schema:url <https://www.imdb.com/title/tt4291600/> .
+
+<https://www.imdb.com/title/tt5269594/> a schema:Movie ;
+    schema:name "Marcella" ;
+    schema:url <https://www.imdb.com/title/tt5269594/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Little Women (2019)
+<https://www.imdb.com/title/tt3281548/> a schema:Movie ;
+    schema:name "Little Women" ;
+    schema:url <https://www.imdb.com/title/tt3281548/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Amy March"
+    ] .
+
+# Midsommar (2019)
+<https://www.imdb.com/title/tt8772262/> a schema:Movie ;
+    schema:name "Midsommar" ;
+    schema:url <https://www.imdb.com/title/tt8772262/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Dani"
+    ] .
+
+# In the Time It Takes to Get There (2019)
+<https://www.imdb.com/title/tt10154910/> a schema:Movie ;
+    schema:name "In the Time It Takes to Get There" ;
+    schema:url <https://www.imdb.com/title/tt10154910/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Lucille"
+    ] .
+
+# Fighting with My Family (2019)
+<https://www.imdb.com/title/tt6513120/> a schema:Movie ;
+    schema:name "Fighting with My Family" ;
+    schema:url <https://www.imdb.com/title/tt6513120/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Saraya Knight"
+    ] .
+
+# The Little Drummer Girl (2018)
+<https://www.imdb.com/title/tt7598448/> a schema:Movie ;
+    schema:name "The Little Drummer Girl" ;
+    schema:url <https://www.imdb.com/title/tt7598448/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Charlie"
+    ] .
+
+# Malevolent (2018)
+<https://www.imdb.com/title/tt2386237/> a schema:Movie ;
+    schema:name "Malevolent" ;
+    schema:url <https://www.imdb.com/title/tt2386237/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Angela"
+    ] .
+
+# Outlaw/King (2018)
+<https://www.imdb.com/title/tt6679794/> a schema:Movie ;
+    schema:name "Outlaw/King" ;
+    schema:url <https://www.imdb.com/title/tt6679794/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Elizabeth de Burgh"
+    ] .
+
+# Leading Lady Parts (2018)
+<https://www.imdb.com/title/tt8743180/> a schema:Movie ;
+    schema:name "Leading Lady Parts" ;
+    schema:url <https://www.imdb.com/title/tt8743180/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Actress 4"
+    ] .
+
+# King Lear (2018)
+<https://www.imdb.com/title/tt7473890/> a schema:Movie ;
+    schema:name "King Lear" ;
+    schema:url <https://www.imdb.com/title/tt7473890/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Cordelia"
+    ] .
+
+# Studio City (2015)
+<https://www.imdb.com/title/tt4450878/> a schema:Movie ;
+    schema:name "Studio City" ;
+    schema:url <https://www.imdb.com/title/tt4450878/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Cat"
+    ] .
+
+# Paradise Lost? (2015)
+<https://www.imdb.com/title/tt8286172/> a schema:Movie ;
+    schema:name "Paradise Lost?" ;
+    schema:url <https://www.imdb.com/title/tt8286172/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6073955/> ;
+        schema:characterName "Eve"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4205037081/> a schema:VideoObject ;
+        schema:name "Where Could Dune Go Next?" ;
+        schema:description "Did you see Dune: Part Two, and you're still dreaming of Arrakis? Then, dive headfirst into the sands of spoiler country to speculate what filmmaker Denis Villeneuve has planned for the spiciest franchise starring Timothée Chalamet, Zendaya, Florence Pugh, Rebecca Ferguson, Javier Bardem, and Josh Brolin." ;
+        schema:embedUrl <https://www.imdb.com/video/vi4205037081/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQyOTA5N2MtMGE0NC00NmJmLThiOTItY2E3ZjIwMjE2OWQ0XkEyXkFqcGdeQWFsZWxvZw@@._V1_.jpg" ;
+        schema:duration "PT3M5S"^^xsd:duration ;
+        schema:uploadDate "2024-03-01T21:12:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmIxMTFkZTctYzhkZi00MmQ4LThhYzEtMmQwMGZjNzA5MDg0XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmIxMTFkZTctYzhkZi00MmQ4LThhYzEtMmQwMGZjNzA5MDg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Florence Pugh" ;
+    schema:height "1600"^^xsd:integer ;
+    schema:width "1194"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm2154674434/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2Q5YzFlZTgtMjUzYi00NzljLTg1NDMtNjgxNDI0MDgyYWRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, Hannah John-Kamen, Lewis Pullman, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "1440"^^xsd:integer ;
+    schema:width "2560"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm2406332674/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWFjNzhiMTktY2RkNy00MTEzLWE1MGQtMDBiMjgyNjc3ZWY4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, Hannah John-Kamen, Lewis Pullman, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "1440"^^xsd:integer ;
+    schema:width "2560"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm4147348994/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmE0MWQ3NWYtNThhMC00YTBkLTk2NmEtZmZmMjc0MDI0YjFjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, David Harbour, Hannah John-Kamen, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "3441"^^xsd:integer ;
+    schema:width "5472"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm4113794562/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY1MmNjNzItYjFjNi00NDUxLTkwMzgtZDQ2MWJiN2ZkODkxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Matt Einhorn and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "3623"^^xsd:integer ;
+    schema:width "5688"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm4046685698/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTNiNjY2MjMtZjI1Zi00Nzg2LTg4NjUtN2UxYWQwYWRmMzIyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, Hannah John-Kamen, Lewis Pullman, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "3648"^^xsd:integer ;
+    schema:width "5472"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm3946022402/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2I3ODc3MTItMGFmZS00ZjQ3LWEyMDctNGM2ZmVjZGM0YjA2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, David Harbour, Sebastian Stan, Hannah John-Kamen, Lewis Pullman, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "3150"^^xsd:integer ;
+    schema:width "4933"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm3929245186/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjcxNjE2NDctODg0YS00YjcyLWFkMjMtMzBhMjlmZGFjNWU2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, David Harbour, Sebastian Stan, Hannah John-Kamen, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "3567"^^xsd:integer ;
+    schema:width "5349"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm3962799618/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDI3OTNiNTMtNjdkNS00Mjk0LWFlOWItYzU0Zjc5ZjExODk1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Wyatt Russell, David Harbour, Hannah John-Kamen, and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "1714"^^xsd:integer ;
+    schema:width "4093"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6073955/mediaviewer/rm4013131266/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmRmNzZhNmEtMDIzNC00OTAzLTg4ZGEtNDgzNmVhZTVlMGYzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lewis Pullman and Florence Pugh in Thunderbolts* (2025)" ;
+    schema:height "4000"^^xsd:integer ;
+    schema:width "6000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm6073955/>
+    schema:sameAs <https://instagram.com/florencepugh?igshid=YmMyMTA2M2Y=> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,140 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2553988/> a schema:Person ;
+    schema:name "Pip Carter" ;
+    schema:url <https://www.imdb.com/name/nm2553988/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Pip Carter. Actor: Spectre. Pip Carter is known for Spectre (2015), 1917 (2019) and Robin Hood (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8579674/>,    # 1917
+                       <https://www.imdb.com/title/tt4786824/>,    # The Crown
+                       <https://www.imdb.com/title/tt14240648/>,    # National Theatre Live: Consent
+                       <https://www.imdb.com/title/tt4645330/>,    # Denial
+                       <https://www.imdb.com/title/tt2379713/>,    # Spectre
+                       <https://www.imdb.com/title/tt3495652/>,    # New Worlds
+                       <https://www.imdb.com/title/tt2904626/>,    # Salting the Battlefield
+                       <https://www.imdb.com/title/tt2647420/> ; # Fleming
+
+
+    schema:video <https://www.imdb.com/video/vi906079769/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 1917 (2019)
+<https://www.imdb.com/title/tt8579674/> a schema:Movie ;
+    schema:name "1917" ;
+    schema:url <https://www.imdb.com/title/tt8579674/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Lieutenant Gordon"
+    ] .
+
+# The Crown (2017)
+<https://www.imdb.com/title/tt4786824/> a schema:Movie ;
+    schema:name "The Crown" ;
+    schema:url <https://www.imdb.com/title/tt4786824/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Colin Tennant"
+    ] .
+
+# National Theatre Live: Consent (2017)
+<https://www.imdb.com/title/tt14240648/> a schema:Movie ;
+    schema:name "National Theatre Live: Consent" ;
+    schema:url <https://www.imdb.com/title/tt14240648/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Tim"
+    ] .
+
+# Denial (2016)
+<https://www.imdb.com/title/tt4645330/> a schema:Movie ;
+    schema:name "Denial" ;
+    schema:url <https://www.imdb.com/title/tt4645330/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Anthony Forbes-Watson"
+    ] .
+
+# Spectre (2015)
+<https://www.imdb.com/title/tt2379713/> a schema:Movie ;
+    schema:name "Spectre" ;
+    schema:url <https://www.imdb.com/title/tt2379713/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "SC019 Police Commander"
+    ] .
+
+# New Worlds (2014)
+<https://www.imdb.com/title/tt3495652/> a schema:Movie ;
+    schema:name "New Worlds" ;
+    schema:url <https://www.imdb.com/title/tt3495652/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Judge Jeffreys"
+    ] .
+
+# Salting the Battlefield (2014)
+<https://www.imdb.com/title/tt2904626/> a schema:Movie ;
+    schema:name "Salting the Battlefield" ;
+    schema:url <https://www.imdb.com/title/tt2904626/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Freddy Lagarde"
+    ] .
+
+# Fleming (2014)
+<https://www.imdb.com/title/tt2647420/> a schema:Movie ;
+    schema:name "Fleming" ;
+    schema:url <https://www.imdb.com/title/tt2647420/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2553988/> ;
+        schema:characterName "Flight Lieutenant Cholmondeley"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi906079769/> a schema:VideoObject ;
+        schema:name "New Worlds" ;
+        schema:description "Trailer for New Worlds" ;
+        schema:embedUrl <https://www.imdb.com/video/vi906079769/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOWRkMDk0MWUtZjNiNS00YTU3LWI4YmYtMTM0MTBlNjI2MjU5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M2S"^^xsd:duration ;
+        schema:uploadDate "2015-02-12T07:46:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

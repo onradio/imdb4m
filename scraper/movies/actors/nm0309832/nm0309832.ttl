@@ -1,0 +1,86 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0309832/> a schema:Person ;
+    schema:name "Peter Gatto" ;
+    schema:url <https://www.imdb.com/name/nm0309832/> ;
+    schema:birthDate "1946-01-24"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Peter Gatto. Actor: Tootsie. Peter Gatto was born on 24 January 1946 in Brooklyn, New York, USA. He is an actor, known for Tootsie (1982), The Edge of Night (1956) and Love of Life (1951)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Brooklyn, New York, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0084805/>,    # Tootsie
+                       <https://www.imdb.com/title/tt0043214/>,    # Love of Life
+                       <https://www.imdb.com/title/tt0048845/>,    # As the World Turns
+                       <https://www.imdb.com/title/tt0048860/>,    # The Edge of Night
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0081909/>,    # Nurse
+                       <https://www.imdb.com/title/tt0056752/> . # The Doctors
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0084805/> a schema:Movie ;
+    schema:name "Tootsie" ;
+    schema:url <https://www.imdb.com/title/tt0084805/> .
+
+<https://www.imdb.com/title/tt0043214/> a schema:Movie ;
+    schema:name "Love of Life" ;
+    schema:url <https://www.imdb.com/title/tt0043214/> .
+
+<https://www.imdb.com/title/tt0048845/> a schema:Movie ;
+    schema:name "As the World Turns" ;
+    schema:url <https://www.imdb.com/title/tt0048845/> .
+
+<https://www.imdb.com/title/tt0048860/> a schema:Movie ;
+    schema:name "The Edge of Night" ;
+    schema:url <https://www.imdb.com/title/tt0048860/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Nurse (1981)
+<https://www.imdb.com/title/tt0081909/> a schema:Movie ;
+    schema:name "Nurse" ;
+    schema:url <https://www.imdb.com/title/tt0081909/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0309832/> ;
+        schema:characterName "Dr. Harlington"
+    ] .
+
+# The Doctors (1977)
+<https://www.imdb.com/title/tt0056752/> a schema:Movie ;
+    schema:name "The Doctors" ;
+    schema:url <https://www.imdb.com/title/tt0056752/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0309832/> ;
+        schema:characterName "Lou"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

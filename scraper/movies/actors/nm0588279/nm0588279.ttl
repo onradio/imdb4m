@@ -1,0 +1,101 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0588279/> a schema:Person ;
+    schema:name "Dutch Miller" ;
+    schema:url <https://www.imdb.com/name/nm0588279/> ;
+    schema:birthDate "1927-03-16"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dutch Miller. Actor: Once Upon a Time in America. Dutch Miller was born on 16 March 1927 in Jersey City, New Jersey, USA. He was an actor, known for Once Upon a Time in America (1984), Loose Cannons (1990) and The Edge of Night (1956). He died on 4 October 1992 in New York City, New York, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Jersey City, New Jersey, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0100053/>,    # Loose Cannons
+                       <https://www.imdb.com/title/tt0087843/>,    # Once Upon a Time in America
+                       <https://www.imdb.com/title/tt0048860/>,    # The Edge of Night
+                       <https://www.imdb.com/title/tt0068163/>,    # AWOL
+                       <https://www.imdb.com/title/tt0068970/> . # La mortadella
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Loose Cannons (1990)
+<https://www.imdb.com/title/tt0100053/> a schema:Movie ;
+    schema:name "Loose Cannons" ;
+    schema:url <https://www.imdb.com/title/tt0100053/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588279/> ;
+        schema:characterName "Jacuzzi Guy"
+    ] .
+
+# Once Upon a Time in America (1984)
+<https://www.imdb.com/title/tt0087843/> a schema:Movie ;
+    schema:name "Once Upon a Time in America" ;
+    schema:url <https://www.imdb.com/title/tt0087843/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588279/> ;
+        schema:characterName "Van Linden"
+    ] .
+
+# The Edge of Night (1982)
+<https://www.imdb.com/title/tt0048860/> a schema:Movie ;
+    schema:name "The Edge of Night" ;
+    schema:url <https://www.imdb.com/title/tt0048860/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588279/> ;
+        schema:characterName "Pascal"
+    ] .
+
+# AWOL (1972)
+<https://www.imdb.com/title/tt0068163/> a schema:Movie ;
+    schema:name "AWOL" ;
+    schema:url <https://www.imdb.com/title/tt0068163/> ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588279/> ;
+        schema:characterName "Cupp"
+    ] .
+
+# La mortadella (1971)
+<https://www.imdb.com/title/tt0068970/> a schema:Movie ;
+    schema:name "La mortadella" ;
+    schema:url <https://www.imdb.com/title/tt0068970/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588279/> ;
+        schema:characterName "Gallagher"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

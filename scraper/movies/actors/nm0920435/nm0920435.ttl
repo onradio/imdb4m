@@ -1,0 +1,119 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0920435/> a schema:Person ;
+    schema:name "Stuart Wells" ;
+    schema:url <https://www.imdb.com/name/nm0920435/> ;
+    schema:birthDate "1982-09-18"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Stuart Wells. Actor: Billy Elliot. After working as an Actor between 1999 and 2001 Stuart enlisted in the British army in October 2001. Stuart served as an Infantry Soldier progressing through the ranks from Private to Corporal until he left the Army in 2008. Whilst serving his country Stuart completed three operational tours including two of Iraq, the first of which was during the 'War Phase' in 2003. Stuart crossed..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNGQwYzM4MjItMjE4YS00ZDIxLTkxZmEtZWI0YzQxYzhmMTZlXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Wallsend, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0258816/>,    # The Reckoning
+                       <https://www.imdb.com/title/tt0106097/>,    # Peak Practice
+                       <https://www.imdb.com/title/tt0796303/>,    # Baited Breath
+                       <https://www.imdb.com/title/tt0249462/> ; # Billy Elliot
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0920435/mediaviewer/rm3367200256/>,
+                 <https://www.imdb.com/name/nm0920435/mediaviewer/rm2528339456/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Reckoning (2003)
+<https://www.imdb.com/title/tt0258816/> a schema:Movie ;
+    schema:name "The Reckoning" ;
+    schema:url <https://www.imdb.com/title/tt0258816/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920435/> ;
+        schema:characterName "Springer"
+    ] .
+
+# Peak Practice (2001)
+<https://www.imdb.com/title/tt0106097/> a schema:Movie ;
+    schema:name "Peak Practice" ;
+    schema:url <https://www.imdb.com/title/tt0106097/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920435/> ;
+        schema:characterName "Charlie Webster"
+    ] .
+
+# Baited Breath (2001)
+<https://www.imdb.com/title/tt0796303/> a schema:Movie ;
+    schema:name "Baited Breath" ;
+    schema:url <https://www.imdb.com/title/tt0796303/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920435/> ;
+        schema:characterName "Lee Barker"
+    ] .
+
+# Billy Elliot (2000)
+<https://www.imdb.com/title/tt0249462/> a schema:Movie ;
+    schema:name "Billy Elliot" ;
+    schema:url <https://www.imdb.com/title/tt0249462/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0920435/> ;
+        schema:characterName "Michael"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNGQwYzM4MjItMjE4YS00ZDIxLTkxZmEtZWI0YzQxYzhmMTZlXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQwYzM4MjItMjE4YS00ZDIxLTkxZmEtZWI0YzQxYzhmMTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Stuart Wells in Billy Elliot (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920435/mediaviewer/rm3367200256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTAwZjc0ZTYtOTUxMC00ZjhiLTg1MjAtOGNkZjRmM2M2YWM5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jamie Bell and Stuart Wells in Billy Elliot (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0920435/mediaviewer/rm2528339456/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQwYzM4MjItMjE4YS00ZDIxLTkxZmEtZWI0YzQxYzhmMTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Stuart Wells in Billy Elliot (2000)" ;
+    schema:height "696"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

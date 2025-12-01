@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm10449074/> a schema:Person ;
+    schema:name "Balakrishna" ;
+    schema:url <https://www.imdb.com/name/nm10449074/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Balakrishna. Actor: K.G.F. Balakrishna is known for K.G.F (2018), K.G.F: Chapter 2 (2022) and Jhansi (2022)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7838252/> ;    # K.G.F
+
+
+    schema:video <https://www.imdb.com/video/vi2725363993/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# K.G.F (2018)
+<https://www.imdb.com/title/tt7838252/> a schema:Movie ;
+    schema:name "K.G.F" ;
+    schema:url <https://www.imdb.com/title/tt7838252/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm10449074/> ;
+        schema:characterName "Inayath Khalil"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2725363993/> a schema:VideoObject ;
+        schema:name "Official Teaser" ;
+        schema:description "Here We Go, Glimpse Into An Empire Called KGF and a Glance of Rocky's World.\n\nHombale Films Presents the Official Teaser of KGF Chapter 2.\n\nWritten and Directed by Prashanth Neel Produced by Vijay Kiragandur\n\nStarring: Rocking Star Yash, Sanjay Dutt, Srinidhi Shetty, Raveena Tandon, Prakash Raj, Malvika Avinash, Achyuth Kumar, Ayyappa P. Sharma, Rao Ramesh, Eshwari Rao, Archana Jois, T. S. Nagabharana, Saran, Avinash, Lakki Lakshman, Vashishta Simha, Harish Rai, Dinesh Mangalore, Tarak, Ramachandra Raju, Vinay Bidappa, Ashok Sharma, Mohan Juneja, Govinda Gowda, John Kokken, Srinivas Murthy\n\nTurn on Subtitles in Your Preferred Language.\n\nDirector of Photography: Bhuvan Gowda\n\nSound Design, Music & Background Score: Ravi Basrur\n\nDirection Team: Kirtan Nadagouda, Dhool Prakash, Bhargav N, Prashanth Hosmane, Chandan L, Yuvindraja, Nishanth Varma, Sanjay Muruli Muddenahally, Ghattimutthu Shashidhar, Abhijith Gorachi, Shiva Kumar, Mithilesh Gowda, Akash Thaargar, Akash Rambo, Farman Ullah\n\nCameraman Team: Sandy, Prajwal Gowda, Kumar Gowda, Sagar Gowda, Manuraj   Still - M G Narayan(Nani)\n\nExecutive Producer: Karthik Gowda, K. V Rama Rao Editor: Ujwal Kulkarni Production Design: Shivakumar Action: Anbariv Choreography: Harsha, Mohan Dubbing: Anand Y. S Costume Designer: Yogi G Raj, Sania Sardhariya, Navin Shetty, Ashwin Mawle, Hassan Khan Dialogues: Chandramouli.M, Dr. Suri, Prashanth Neel Sound Effects: Nanndhu J & Team Production Managers: K S Champakadama,Gagan Murthy, S Kumar Production Incharge: Chidanand, Suresh Shankarananhalli, Shashikanth DI & VFX: Unify Media VFX Supervisor: Konda Reddy Suresh Colorist: Fergus Hally, Ashwath Marketing: Likitha Reddy, Naren Marol, Anil Kumar, Shreya Unchalli, Manoj Shetty, Lakshmi Narayan Digital Media PR: Prasad Bhimanadham Art Department: Venkata Chalapathi, Kiran Kumar, Ramesh, Shankar, Sunil, Deva, Abhi, Shyam, Koti, Goutham\n\nFemale Humming Solo Voice: Ananya Bhat\n\nChorus Singers Batch A:  Ravi Basrur, Sachin Basrur, Krishna B" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2725363993/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTY2NTJhNTUtMmNiMi00YTgwLWI2YTktNDczZWYxYmExNTczXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M17S"^^xsd:duration ;
+        schema:uploadDate "2021-01-13T23:27:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

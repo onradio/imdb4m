@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0185125/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Gorrión" ;
+        schema:byArtist <https://www.imdb.com/name/nm1041425/>, # Dino Saluzzi
+                        <https://www.imdb.com/name/nm2272371/>, # Marc Johnson
+                        <https://www.imdb.com/name/nm2273771/> ; # José Saluzzi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Gorrión" ;
+            schema:author <https://www.imdb.com/name/nm1041425/> # Dino Saluzzi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Coral para mi pequeño y lejano pueblo" ;
+        schema:byArtist <https://www.imdb.com/name/nm1041425/>, # Dino Saluzzi
+                        <https://www.imdb.com/name/nm2272371/>, # Marc Johnson
+                        <https://www.imdb.com/name/nm2273771/> ; # José Saluzzi
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Coral para mi pequeño y lejano pueblo" ;
+            schema:author <https://www.imdb.com/name/nm1041425/> # Dino Saluzzi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tajabone" ;
+        schema:byArtist <https://www.imdb.com/name/nm0530420/> ; # Ismaël Lô
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tajabone" ;
+            schema:lyricist <https://www.imdb.com/name/nm0530420/> ; # Ismaël Lô
+            schema:author <https://www.imdb.com/name/nm0530420/> # Ismaël Lô
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0530420/> a schema:Person ;
+    schema:name "Ismaël Lô" .
+<https://www.imdb.com/name/nm1041425/> a schema:Person ;
+    schema:name "Dino Saluzzi" .
+<https://www.imdb.com/name/nm2272371/> a schema:Person ;
+    schema:name "Marc Johnson" .
+<https://www.imdb.com/name/nm2273771/> a schema:Person ;
+    schema:name "José Saluzzi" .
+# ==============================================================================

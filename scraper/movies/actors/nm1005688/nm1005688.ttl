@@ -1,0 +1,109 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1005688/> a schema:Person ;
+    schema:name "Jeffrey Zubernis" ;
+    schema:url <https://www.imdb.com/name/nm1005688/> ;
+    schema:birthDate "1987-07-24"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jeffrey Zubernis. Actor: The Sixth Sense. Jeffrey Zubernis was born on 24 July 1987 in Philadelphia, Pennsylvania, USA. He is an actor, known for The Sixth Sense (1999), The Last Airbender (2010) and Law & Order: Special Victims Unit (1999)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTQ2OTI5NjM0MV5BMl5BanBnXkFtZTYwOTY3NjAz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Philadelphia, Pennsylvania, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.70"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 7″ (1.70 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0938283/>,    # The Last Airbender
+                       <https://www.imdb.com/title/tt0203259/>,    # Law & Order: Special Victims Unit
+                       <https://www.imdb.com/title/tt0167404/> ; # The Sixth Sense
+
+
+    schema:video <https://www.imdb.com/video/vi1906613529/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1005688/mediaviewer/rm3196164608/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Last Airbender (2010)
+<https://www.imdb.com/title/tt0938283/> a schema:Movie ;
+    schema:name "The Last Airbender" ;
+    schema:url <https://www.imdb.com/title/tt0938283/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1005688/> ;
+        schema:characterName "Water Tribe Soldier"
+    ] .
+
+# Law & Order: Special Victims Unit (2001)
+<https://www.imdb.com/title/tt0203259/> a schema:Movie ;
+    schema:name "Law & Order: Special Victims Unit" ;
+    schema:url <https://www.imdb.com/title/tt0203259/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1005688/> ;
+        schema:characterName "Boy #1"
+    ] .
+
+# The Sixth Sense (1999)
+<https://www.imdb.com/title/tt0167404/> a schema:Movie ;
+    schema:name "The Sixth Sense" ;
+    schema:url <https://www.imdb.com/title/tt0167404/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1005688/> ;
+        schema:characterName "Bobby"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1906613529/> a schema:VideoObject ;
+        schema:name "The Sixth Sense" ;
+        schema:description "Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1906613529/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGViM2JkYTItZGU2ZC00ZGFlLWJlNDEtNDg5MTMzODBmZjZhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M"^^xsd:duration ;
+        schema:uploadDate "2011-03-13T06:53:33Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTQ2OTI5NjM0MV5BMl5BanBnXkFtZTYwOTY3NjAz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2OTI5NjM0MV5BMl5BanBnXkFtZTYwOTY3NjAz._V1_.jpg> ;
+    schema:caption "Jeffrey Zubernis" ;
+    schema:height "690"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1005688/mediaviewer/rm3196164608/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2OTI5NjM0MV5BMl5BanBnXkFtZTYwOTY3NjAz._V1_.jpg> ;
+    schema:caption "Jeffrey Zubernis" ;
+    schema:height "690"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

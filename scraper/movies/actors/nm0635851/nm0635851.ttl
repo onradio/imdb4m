@@ -1,0 +1,355 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0635851/> a schema:Person ;
+    schema:name "Lee Norris" ;
+    schema:url <https://www.imdb.com/name/nm0635851/> ;
+    schema:birthDate "1981-09-25"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Lee Michael Norris" ;
+    schema:description "Lee Norris. Actor: Zodiac. Lee Norris was born on 25 September 1981 in Greenville, North Carolina, USA. He is an actor, known for Zodiac (2007), Gone Girl (2014) and One Tree Hill (2003). He has been married to Andrea Norris since 10 September 2011." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjI4ZDUyMmEtMzMzZC00ODY5LWFhOTQtY2FiY2UzNzM1MjMwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Greenville, North Carolina, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.79"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10½″ (1.79 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0443706/>,    # Zodiac
+                       <https://www.imdb.com/title/tt0101223/>,    # The Torkelsons
+                       <https://www.imdb.com/title/tt0368530/>,    # One Tree Hill
+                       <https://www.imdb.com/title/tt2267998/>,    # Gone Girl
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10482348/>,    # A Christmas Wish
+                       <https://www.imdb.com/title/tt1520211/>,    # The Walking Dead
+                       <https://www.imdb.com/title/tt2543796/>,    # Girl Meets World
+                       <https://www.imdb.com/title/tt2249238/>,    # Paulilu Mixtape
+                       <https://www.imdb.com/title/tt1210039/>,    # Blood Done Sign My Name
+                       <https://www.imdb.com/title/tt0756573/>,    # October Road
+                       <https://www.imdb.com/title/tt0456014/>,    # Surf School
+                       <https://www.imdb.com/title/tt0118300/>,    # Dawson's Creek
+                       <https://www.imdb.com/title/tt0105958/>,    # Boy Meets World
+                       <https://www.imdb.com/title/tt0119312/>,    # Hope
+                       <https://www.imdb.com/title/tt0118630/>,    # Any Place But Home
+                       <https://www.imdb.com/title/tt0117740/>,    # A Step Toward Tomorrow
+                       <https://www.imdb.com/title/tt0117094/>,    # A Mother's Instinct
+                       <https://www.imdb.com/title/tt0111880/>,    # American Gothic
+                       <https://www.imdb.com/title/tt0113490/>,    # The Journey of August King
+                       <https://www.imdb.com/title/tt0103586/>,    # The Young Indiana Jones Chronicles
+                       <https://www.imdb.com/title/tt0105939/> ; # Almost Home
+
+
+    schema:video <https://www.imdb.com/video/vi2856256537/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0635851/mediaviewer/rm2337276928/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm1499973376/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm560318208/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm3194275584/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm423019008/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm1129759232/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm2052506112/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm4149527040/>,
+                 <https://www.imdb.com/name/nm0635851/mediaviewer/rm3847537152/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0443706/> a schema:Movie ;
+    schema:name "Zodiac" ;
+    schema:url <https://www.imdb.com/title/tt0443706/> .
+
+<https://www.imdb.com/title/tt0101223/> a schema:Movie ;
+    schema:name "The Torkelsons" ;
+    schema:url <https://www.imdb.com/title/tt0101223/> .
+
+<https://www.imdb.com/title/tt0368530/> a schema:Movie ;
+    schema:name "One Tree Hill" ;
+    schema:url <https://www.imdb.com/title/tt0368530/> .
+
+<https://www.imdb.com/title/tt2267998/> a schema:Movie ;
+    schema:name "Gone Girl" ;
+    schema:url <https://www.imdb.com/title/tt2267998/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Christmas Wish (2019)
+<https://www.imdb.com/title/tt10482348/> a schema:Movie ;
+    schema:name "A Christmas Wish" ;
+    schema:url <https://www.imdb.com/title/tt10482348/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Ryan"
+    ] .
+
+# The Walking Dead (2017)
+<https://www.imdb.com/title/tt1520211/> a schema:Movie ;
+    schema:name "The Walking Dead" ;
+    schema:url <https://www.imdb.com/title/tt1520211/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Todd"
+    ] .
+
+# Girl Meets World (2014)
+<https://www.imdb.com/title/tt2543796/> a schema:Movie ;
+    schema:name "Girl Meets World" ;
+    schema:url <https://www.imdb.com/title/tt2543796/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Stuart Minkus"
+    ] .
+
+# Paulilu Mixtape (2012)
+<https://www.imdb.com/title/tt2249238/> a schema:Movie ;
+    schema:name "Paulilu Mixtape" ;
+    schema:url <https://www.imdb.com/title/tt2249238/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Young Dad"
+    ] .
+
+# Blood Done Sign My Name (2010)
+<https://www.imdb.com/title/tt1210039/> a schema:Movie ;
+    schema:name "Blood Done Sign My Name" ;
+    schema:url <https://www.imdb.com/title/tt1210039/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Roger Oakley"
+    ] .
+
+# October Road (2007)
+<https://www.imdb.com/title/tt0756573/> a schema:Movie ;
+    schema:name "October Road" ;
+    schema:url <https://www.imdb.com/title/tt0756573/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Ian"
+    ] .
+
+# Surf School (2006)
+<https://www.imdb.com/title/tt0456014/> a schema:Movie ;
+    schema:name "Surf School" ;
+    schema:url <https://www.imdb.com/title/tt0456014/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Larry"
+    ] .
+
+# Dawson's Creek (2000)
+<https://www.imdb.com/title/tt0118300/> a schema:Movie ;
+    schema:name "Dawson's Creek" ;
+    schema:url <https://www.imdb.com/title/tt0118300/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Random Student #2"
+    ] .
+
+# Boy Meets World (1993)
+<https://www.imdb.com/title/tt0105958/> a schema:Movie ;
+    schema:name "Boy Meets World" ;
+    schema:url <https://www.imdb.com/title/tt0105958/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Stuart Minkus"
+    ] .
+
+# Hope (1997)
+<https://www.imdb.com/title/tt0119312/> a schema:Movie ;
+    schema:name "Hope" ;
+    schema:url <https://www.imdb.com/title/tt0119312/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Billy October"
+    ] .
+
+# Any Place But Home (1997)
+<https://www.imdb.com/title/tt0118630/> a schema:Movie ;
+    schema:name "Any Place But Home" ;
+    schema:url <https://www.imdb.com/title/tt0118630/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "John Wesley Danforth"
+    ] .
+
+# A Step Toward Tomorrow (1996)
+<https://www.imdb.com/title/tt0117740/> a schema:Movie ;
+    schema:name "A Step Toward Tomorrow" ;
+    schema:url <https://www.imdb.com/title/tt0117740/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Perry"
+    ] .
+
+# A Mother's Instinct (1996)
+<https://www.imdb.com/title/tt0117094/> a schema:Movie ;
+    schema:name "A Mother's Instinct" ;
+    schema:url <https://www.imdb.com/title/tt0117094/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Jeremy"
+    ] .
+
+# American Gothic (1995)
+<https://www.imdb.com/title/tt0111880/> a schema:Movie ;
+    schema:name "American Gothic" ;
+    schema:url <https://www.imdb.com/title/tt0111880/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Benji Healy"
+    ] .
+
+# The Journey of August King (1995)
+<https://www.imdb.com/title/tt0113490/> a schema:Movie ;
+    schema:name "The Journey of August King" ;
+    schema:url <https://www.imdb.com/title/tt0113490/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Silver Boy"
+    ] .
+
+# The Young Indiana Jones Chronicles (1993)
+<https://www.imdb.com/title/tt0103586/> a schema:Movie ;
+    schema:name "The Young Indiana Jones Chronicles" ;
+    schema:url <https://www.imdb.com/title/tt0103586/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Kid #1"
+    ] .
+
+# Almost Home (1993)
+<https://www.imdb.com/title/tt0105939/> a schema:Movie ;
+    schema:name "Almost Home" ;
+    schema:url <https://www.imdb.com/title/tt0105939/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0635851/> ;
+        schema:characterName "Chuckie Lee Torkelson"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2856256537/> a schema:VideoObject ;
+        schema:name "Blood Done Sign My Name" ;
+        schema:description "A drama based on the true story in which a black Vietnam-era veteran is allegedly murdered by a local white businessman who is later exonerated. The plot focuses on the role of a local high school teacher and the civil unrest that followed the acquittal." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2856256537/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTc5MDEwMjY3MV5BMl5BanBnXkFtZTcwNzg0NzYxMw@@._V1_.jpg" ;
+        schema:duration "PT2M30S"^^xsd:duration ;
+        schema:uploadDate "2010-02-05T17:15:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjI4ZDUyMmEtMzMzZC00ODY5LWFhOTQtY2FiY2UzNzM1MjMwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI4ZDUyMmEtMzMzZC00ODY5LWFhOTQtY2FiY2UzNzM1MjMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Norris" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1062"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm2337276928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTA1MDAwZWYtM2RhNS00YjBlLWI1MWEtM2YzNzE0YTI1MjdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Lee Norris and Ciara Moriarty in Zodiac (2007)" ;
+    schema:height "424"^^xsd:integer ;
+    schema:width "1024"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm1499973376/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI5MDUyODQ4N15BMl5BanBnXkFtZTgwNjYzMDY2MjE@._V1_.jpg> ;
+    schema:caption "Danielle Fishel, William Daniels, and Lee Norris in Boy Meets World (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm560318208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5NjgzODEwNl5BMl5BanBnXkFtZTgwOTg2OTU2MjE@._V1_.jpg> ;
+    schema:caption "Danielle Fishel, Ben Savage, Lee Norris, and Rider Strong in Boy Meets World (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm3194275584/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwNjIxMDIxMV5BMl5BanBnXkFtZTgwMjc1OTU2MjE@._V1_.jpg> ;
+    schema:caption "Ben Savage, Lee Norris, and Rider Strong in Boy Meets World (1993)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm423019008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzNDU1MTQzMV5BMl5BanBnXkFtZTgwOTMyNzIyMjE@._V1_.jpg> ;
+    schema:caption "Allison Munn and Lee Norris in One Tree Hill (2003)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm1129759232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3MDkzMDI1Nl5BMl5BanBnXkFtZTgwNzc4ODEyMjE@._V1_.jpg> ;
+    schema:caption "Lee Norris in One Tree Hill (2003)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm2052506112/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTEwODkxNDE5OTZeQTJeQWpwZ15BbWU4MDk2ODgxMjIx._V1_.jpg> ;
+    schema:caption "Michael Copon and Lee Norris in One Tree Hill (2003)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm4149527040/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkyMjkxNzA3OF5BMl5BanBnXkFtZTgwMDQ0ODEyMjE@._V1_.jpg> ;
+    schema:caption "Lee Norris and Lisa Goldstein Kirsch in One Tree Hill (2003)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0635851/mediaviewer/rm3847537152/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIwMDE2NjcxOV5BMl5BanBnXkFtZTgwMzI0ODEyMjE@._V1_.jpg> ;
+    schema:caption "Lee Norris in One Tree Hill (2003)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,29 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0892769/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Sticks and Stones" ;
+        schema:byArtist <https://www.imdb.com/name/nm1743706/> ; # Jon Thor Birgisson
+        schema:producer <https://www.imdb.com/name/nm3926614/>, # Alex Somers
+                       <https://www.imdb.com/name/nm1743706/> ; # Jon Thor Birgisson
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sticks and Stones" ;
+            schema:author <https://www.imdb.com/name/nm1743706/> # Jon Thor Birgisson
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm1743706/> a schema:Person ;
+    schema:name "Jon Thor Birgisson" .
+<https://www.imdb.com/name/nm3926614/> a schema:Person ;
+    schema:name "Alex Somers" .
+# ==============================================================================

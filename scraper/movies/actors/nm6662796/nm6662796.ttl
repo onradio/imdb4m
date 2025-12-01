@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6662796/> a schema:Person ;
+    schema:name "David Kaff" ;
+    schema:url <https://www.imdb.com/name/nm6662796/> ;
+    schema:birthDate "1946-04-17"^^xsd:date ;
+    schema:jobTitle "Actor", "Music Department", "Soundtrack" ;
+    schema:alternateName "David Kaffinetti" ;
+    schema:description "David Kaff. Actor: This Is Spinal Tap. David Kaff was born on 17 April 1946 in Folkestone, Kent, England, UK. He was an actor, known for This Is Spinal Tap (1984), Black Dog (1998) and Trust (2018). He was married to Marjolein Anna Cardon. He died on 11 July 2025." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Folkestone, Kent, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088258/>,    # This Is Spinal Tap
+                       <https://www.imdb.com/title/tt0439825/> ; # Spinal Tap: The Final Tour
+
+
+    schema:video <https://www.imdb.com/video/vi2231173401/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6662796/mediaviewer/rm2319629056/>,
+                 <https://www.imdb.com/name/nm6662796/mediaviewer/rm4265401600/>,
+                 <https://www.imdb.com/name/nm6662796/mediaviewer/rm3108158208/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# This Is Spinal Tap (1984)
+<https://www.imdb.com/title/tt0088258/> a schema:Movie ;
+    schema:name "This Is Spinal Tap" ;
+    schema:url <https://www.imdb.com/title/tt0088258/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6662796/> ;
+        schema:characterName "Viv Savage"
+    ] .
+
+# Spinal Tap: The Final Tour (1981)
+<https://www.imdb.com/title/tt0439825/> a schema:Movie ;
+    schema:name "Spinal Tap: The Final Tour" ;
+    schema:url <https://www.imdb.com/title/tt0439825/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6662796/> ;
+        schema:characterName "Viv Savage"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2231173401/> a schema:VideoObject ;
+        schema:name "This Is Spinal Tap" ;
+        schema:description "Home Video Trailer from Columbia Pictures" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2231173401/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMDJkNWI0ZGEtOWE4MS00M2MxLWI3YzEtZjk1ZTNkNTM5ZTU4XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M36S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T17:24:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm6662796/mediaviewer/rm2319629056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQxNDk1NTYzNF5BMl5BanBnXkFtZTcwMjAzMzY3NA@@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Patrick Macnee, Tony Hendra, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1023"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6662796/mediaviewer/rm4265401600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MTIzMzg5Nl5BMl5BanBnXkFtZTgwOTc5NDI1MDE@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "979"^^xsd:integer ;
+    schema:width "653"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6662796/mediaviewer/rm3108158208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTMxNDgzMzc2MF5BMl5BanBnXkFtZTcwNzgyMzY3NA@@._V1_.jpg> ;
+    schema:caption "Christopher Guest, Michael McKean, R.J. Parnell, Harry Shearer, Spinal Tap, and David Kaff in This Is Spinal Tap (1984)" ;
+    schema:height "1023"^^xsd:integer ;
+    schema:width "708"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

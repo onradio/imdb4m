@@ -1,0 +1,185 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1601882/> a schema:Person ;
+    schema:name "Phil Johnston" ;
+    schema:url <https://www.imdb.com/name/nm1601882/> ;
+    schema:birthDate "1971-10-26"^^xsd:date ;
+    schema:jobTitle "Writer", "Producer", "Actor" ;
+    schema:description "Phil Johnston. Writer: Zootropolis. Phil Johnston was born on 26 October 1971 in Hennepin County, Minnesota, USA. He is a writer and producer, known for Zootropolis (2016), Wreck-It Ralph (2012) and Ralph Breaks the Internet (2018). He has been married to Jill Cordes since 7 October 2000. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTg1MDEwNzMzMV5BMl5BanBnXkFtZTgwMTUxMzY3ODE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hennepin County, Minnesota, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5848272/>,    # Ralph Breaks the Internet
+                       <https://www.imdb.com/title/tt2948356/>,    # Zootropolis
+                       <https://www.imdb.com/title/tt3141670/>,    # Garlan Hulse: Where Potential Lives
+                       <https://www.imdb.com/title/tt1772341/>,    # Wreck-It Ralph
+                       <https://www.imdb.com/title/tt6639618/>,    # Wreck-It Ralph
+                       <https://www.imdb.com/title/tt0458467/> ; # Rupture
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1601882/mediaviewer/rm664146432/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm820737536/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm1055618560/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm1038841344/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm1022064128/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm1005286912/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm988509696/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm971732480/>,
+                 <https://www.imdb.com/name/nm1601882/mediaviewer/rm116094464/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ralph Breaks the Internet (2018)
+<https://www.imdb.com/title/tt5848272/> a schema:Movie ;
+    schema:name "Ralph Breaks the Internet" ;
+    schema:url <https://www.imdb.com/title/tt5848272/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Surge Protector"
+    ] .
+
+# Zootropolis (2016)
+<https://www.imdb.com/title/tt2948356/> a schema:Movie ;
+    schema:name "Zootropolis" ;
+    schema:url <https://www.imdb.com/title/tt2948356/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Gideon Grey"
+    ] .
+
+# Garlan Hulse: Where Potential Lives (2013)
+<https://www.imdb.com/title/tt3141670/> a schema:Movie ;
+    schema:name "Garlan Hulse: Where Potential Lives" ;
+    schema:url <https://www.imdb.com/title/tt3141670/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Garlan Hulse"
+    ] .
+
+# Wreck-It Ralph (2012)
+<https://www.imdb.com/title/tt1772341/> a schema:Movie ;
+    schema:name "Wreck-It Ralph" ;
+    schema:url <https://www.imdb.com/title/tt1772341/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Surge Protector"
+    ] .
+
+# Wreck-It Ralph (2012)
+<https://www.imdb.com/title/tt6639618/> a schema:Movie ;
+    schema:name "Wreck-It Ralph" ;
+    schema:url <https://www.imdb.com/title/tt6639618/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Surge Protector"
+    ] .
+
+# Rupture (2005)
+<https://www.imdb.com/title/tt0458467/> a schema:Movie ;
+    schema:name "Rupture" ;
+    schema:url <https://www.imdb.com/title/tt0458467/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1601882/> ;
+        schema:characterName "Chet Rimson (Radio Announcer)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTg1MDEwNzMzMV5BMl5BanBnXkFtZTgwMTUxMzY3ODE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg1MDEwNzMzMV5BMl5BanBnXkFtZTgwMTUxMzY3ODE@._V1_.jpg> ;
+    schema:caption "Phil Johnston" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "575"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm664146432/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ4NDkyNTYxOV5BMl5BanBnXkFtZTgwMTIxMzY3ODE@._V1_.jpg> ;
+    schema:caption "Phil Johnston" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "575"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm820737536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIzMDE4OTkxN15BMl5BanBnXkFtZTgwNzE1ODI4NjM@._V1_.jpg> ;
+    schema:caption "Phil Johnston at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm1055618560/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3NDQ1ODE1MV5BMl5BanBnXkFtZTgwOTE1ODI4NjM@._V1_.jpg> ;
+    schema:caption "Rich Moore, Sarah Silverman, Clark Spencer, and Phil Johnston at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm1038841344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDM2NzkxNTA1OF5BMl5BanBnXkFtZTgwMDI1ODI4NjM@._V1_.jpg> ;
+    schema:caption "Rich Moore and Phil Johnston at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm1022064128/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzg3ODA0NTU0OV5BMl5BanBnXkFtZTgwMTI1ODI4NjM@._V1_.jpg> ;
+    schema:caption "John C. Reilly, Rich Moore, Sarah Silverman, Clark Spencer, Phil Johnston, and Gal Gadot at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1250"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm1005286912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjUwNTU4NzU0NV5BMl5BanBnXkFtZTgwMzI1ODI4NjM@._V1_.jpg> ;
+    schema:caption "John C. Reilly and Phil Johnston at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1478"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm988509696/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg0ODg3MzQyM15BMl5BanBnXkFtZTgwNDI1ODI4NjM@._V1_.jpg> ;
+    schema:caption "John C. Reilly, Rich Moore, Sarah Silverman, Clark Spencer, Phil Johnston, and Gal Gadot at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1587"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm971732480/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkzMjgwNTQ0N15BMl5BanBnXkFtZTgwNTI1ODI4NjM@._V1_.jpg> ;
+    schema:caption "Phil Johnston at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1601882/mediaviewer/rm116094464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAxOTg1NzgyMjZeQTJeQWpwZ15BbWU4MDgyNTgyODYz._V1_.jpg> ;
+    schema:caption "John C. Reilly, Rich Moore, Sarah Silverman, Clark Spencer, Phil Johnston, and Gal Gadot at an event for Ralph Breaks the Internet (2018)" ;
+    schema:height "1431"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

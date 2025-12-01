@@ -1,0 +1,137 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1504320/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Le nozze di Figaro Overture" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Le nozze di Figaro Overture" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Symphony No. 7 in A major Op. 92 II. Allegretto" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Symphony No. 7 in A major Op. 92 II. Allegretto" ;
+            schema:author <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Piano Concerto No. 5 in E-flat major Op. 73 'Emperor' II. Adagio un poco mosso" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Piano Concerto No. 5 in E-flat major Op. 73 'Emperor' II. Adagio un poco mosso" ;
+            schema:author <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Ein deutsches Requiem Op. 45 II. Denn alles Fleisch, es ist wie Gras" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Ein deutsches Requiem Op. 45 II. Denn alles Fleisch, es ist wie Gras" ;
+            schema:author <https://www.imdb.com/name/nm0005974/> # Johannes Brahms
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Clarinet Concerto in A major K. 622 I. Allegro" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Clarinet Concerto in A major K. 622 I. Allegro" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Who's Been Polishing the Sun?" ;
+        schema:byArtist <https://www.imdb.com/name/nm1820486/>, # Bert Ambrose and His Orchestra
+                        <https://www.imdb.com/name/nm0114629/> ; # Sam Browne
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Who's Been Polishing the Sun?" ;
+            schema:composer <https://www.imdb.com/name/nm0310796/> ; # Noel Gay
+            schema:lyricist <https://www.imdb.com/name/nm3608387/> # Charles Gaynor
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Shout for Happiness" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101286/> ; # Al Bowlly
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I Love You, Truly" ;
+        schema:byArtist <https://www.imdb.com/name/nm0101286/>, # Al Bowlly
+                        <https://www.imdb.com/name/nm0633656/> ; # Ray Noble
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Love You, Truly" ;
+            schema:author <https://www.imdb.com/name/nm0093895/>, # Carrie Jacobs Bond
+                       <https://www.imdb.com/name/nm2096233/> # Irving King
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Swanee River" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Swanee River" ;
+            schema:author <https://www.imdb.com/name/nm0288062/> # Stephen Foster
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Camptown Races" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Camptown Races" ;
+            schema:author <https://www.imdb.com/name/nm0288062/> # Stephen Foster
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0005974/> a schema:Person ;
+    schema:name "Johannes Brahms" .
+<https://www.imdb.com/name/nm0093895/> a schema:Person ;
+    schema:name "Carrie Jacobs Bond" .
+<https://www.imdb.com/name/nm0101286/> a schema:Person ;
+    schema:name "Al Bowlly" .
+<https://www.imdb.com/name/nm0114629/> a schema:Person ;
+    schema:name "Sam Browne" .
+<https://www.imdb.com/name/nm0288062/> a schema:Person ;
+    schema:name "Stephen Foster" .
+<https://www.imdb.com/name/nm0310796/> a schema:Person ;
+    schema:name "Noel Gay" .
+<https://www.imdb.com/name/nm0633656/> a schema:Person ;
+    schema:name "Ray Noble" .
+<https://www.imdb.com/name/nm1820486/> a schema:Person ;
+    schema:name "Bert Ambrose and His Orchestra" .
+<https://www.imdb.com/name/nm2096233/> a schema:Person ;
+    schema:name "Irving King" .
+<https://www.imdb.com/name/nm3608387/> a schema:Person ;
+    schema:name "Charles Gaynor" .
+# ==============================================================================

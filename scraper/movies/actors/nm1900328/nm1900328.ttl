@@ -1,0 +1,156 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1900328/> a schema:Person ;
+    schema:name "Rudy Blomme" ;
+    schema:url <https://www.imdb.com/name/nm1900328/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rudy Blomme. Actor: In Bruges. Rudy Blomme is known for In Bruges (2008), Spoed (2000) and Wittekerke (1993)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0169462/>,    # Louis la brocante
+                       <https://www.imdb.com/title/tt1454910/>,    # Copacabana
+                       <https://www.imdb.com/title/tt0780536/>,    # In Bruges
+                       <https://www.imdb.com/title/tt0149546/>,    # Wittekerke
+                       <https://www.imdb.com/title/tt0891395/>,    # Mega Mindy
+                       <https://www.imdb.com/title/tt0162076/>,    # Familie
+                       <https://www.imdb.com/title/tt0227969/>,    # Verschoten & zoon
+                       <https://www.imdb.com/title/tt0235139/> ; # Spoed
+
+
+    schema:video <https://www.imdb.com/video/vi783417625/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1900328/mediaviewer/rm1308464640/>,
+                 <https://www.imdb.com/name/nm1900328/mediaviewer/rm3518273536/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Louis la brocante (2011)
+<https://www.imdb.com/title/tt0169462/> a schema:Movie ;
+    schema:name "Louis la brocante" ;
+    schema:url <https://www.imdb.com/title/tt0169462/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Till"
+    ] .
+
+# Copacabana (2010)
+<https://www.imdb.com/title/tt1454910/> a schema:Movie ;
+    schema:name "Copacabana" ;
+    schema:url <https://www.imdb.com/title/tt1454910/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Le commerçant"
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Ticket Seller"
+    ] .
+
+# Wittekerke (2007)
+<https://www.imdb.com/title/tt0149546/> a schema:Movie ;
+    schema:name "Wittekerke" ;
+    schema:url <https://www.imdb.com/title/tt0149546/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Koffiehandelaar"
+    ] .
+
+# Mega Mindy (2006)
+<https://www.imdb.com/title/tt0891395/> a schema:Movie ;
+    schema:name "Mega Mindy" ;
+    schema:url <https://www.imdb.com/title/tt0891395/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Klant"
+    ] .
+
+# Familie (2000)
+<https://www.imdb.com/title/tt0162076/> a schema:Movie ;
+    schema:name "Familie" ;
+    schema:url <https://www.imdb.com/title/tt0162076/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Lid carnavalsgroep"
+    ] .
+
+# Verschoten & zoon (2005)
+<https://www.imdb.com/title/tt0227969/> a schema:Movie ;
+    schema:name "Verschoten & zoon" ;
+    schema:url <https://www.imdb.com/title/tt0227969/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Klant"
+    ] .
+
+# Spoed (2000)
+<https://www.imdb.com/title/tt0235139/> a schema:Movie ;
+    schema:name "Spoed" ;
+    schema:url <https://www.imdb.com/title/tt0235139/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1900328/> ;
+        schema:characterName "Doopmeester"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi783417625/> a schema:VideoObject ;
+        schema:name "In Bruges" ;
+        schema:description "In Bruges Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi783417625/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTYyOTM2NjA5M15BMl5BanBnXkFtZTgwNTA0NDYzMzE@._V1_.jpg" ;
+        schema:duration "PT2M28S"^^xsd:duration ;
+        schema:uploadDate "2007-12-15T15:46:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm1900328/mediaviewer/rm1308464640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA3NjYwNjkyMl5BMl5BanBnXkFtZTcwNjc0Mzg1MQ@@._V1_.jpg> ;
+    schema:caption "Ralph Fiennes, Brendan Gleeson, and Rudy Blomme in In Bruges (2008)" ;
+    schema:height "1361"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1900328/mediaviewer/rm3518273536/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc4OTkzMDM5OV5BMl5BanBnXkFtZTcwMjQ2Mzc1MQ@@._V1_.jpg> ;
+    schema:caption "Colin Farrell and Rudy Blomme at an event for In Bruges (2008)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "272"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

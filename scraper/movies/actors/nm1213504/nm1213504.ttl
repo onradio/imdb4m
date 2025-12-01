@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1213504/> a schema:Person ;
+    schema:name "Philip McGrade" ;
+    schema:url <https://www.imdb.com/name/nm1213504/> ;
+    schema:jobTitle "Writer", "Actor" ;
+    schema:description "Philip McGrade. Actor: How to Train Your Dragon. Philip McGrade is known for How to Train Your Dragon (2010), I'll Be There (2003) and The Late Late Show with Craig Ferguson (2005)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1646971/>,    # How to Train Your Dragon 2
+                       <https://www.imdb.com/title/tt0892769/>,    # How to Train Your Dragon
+                       <https://www.imdb.com/title/tt1172063/>,    # The Kreutzer Sonata
+                       <https://www.imdb.com/title/tt0437729/>,    # The Late Late Show with Craig Ferguson
+                       <https://www.imdb.com/title/tt0123346/>,    # Get Well Soon
+                       <https://www.imdb.com/title/tt0129709/> . # Rab C. Nesbitt
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# How to Train Your Dragon 2 (2014)
+<https://www.imdb.com/title/tt1646971/> a schema:Movie ;
+    schema:name "How to Train Your Dragon 2" ;
+    schema:url <https://www.imdb.com/title/tt1646971/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Starkard"
+    ] .
+
+# How to Train Your Dragon (2010)
+<https://www.imdb.com/title/tt0892769/> a schema:Movie ;
+    schema:name "How to Train Your Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0892769/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Starkard"
+    ] .
+
+# The Kreutzer Sonata (2008)
+<https://www.imdb.com/title/tt1172063/> a schema:Movie ;
+    schema:name "The Kreutzer Sonata" ;
+    schema:url <https://www.imdb.com/title/tt1172063/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Presenter"
+    ] .
+
+# The Late Late Show with Craig Ferguson (2006)
+<https://www.imdb.com/title/tt0437729/> a schema:Movie ;
+    schema:name "The Late Late Show with Craig Ferguson" ;
+    schema:url <https://www.imdb.com/title/tt0437729/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Pilar Martinez"
+    ] .
+
+# Get Well Soon (1997)
+<https://www.imdb.com/title/tt0123346/> a schema:Movie ;
+    schema:name "Get Well Soon" ;
+    schema:url <https://www.imdb.com/title/tt0123346/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Crawford"
+    ] .
+
+# Rab C. Nesbitt (1990)
+<https://www.imdb.com/title/tt0129709/> a schema:Movie ;
+    schema:name "Rab C. Nesbitt" ;
+    schema:url <https://www.imdb.com/title/tt0129709/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1213504/> ;
+        schema:characterName "Creditor"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

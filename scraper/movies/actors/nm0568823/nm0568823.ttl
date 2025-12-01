@@ -1,0 +1,122 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0568823/> a schema:Person ;
+    schema:name "Sharon McFarlane" ;
+    schema:url <https://www.imdb.com/name/nm0568823/> ;
+    schema:jobTitle "Actress", "Casting Director", "Executive" ;
+    schema:description "Sharon McFarlane. Actress: Saving Hope. Sharon McFarlane is known for Saving Hope (2012), Spotlight (2015) and The Girlfriend Experience (2016)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYmYzNjhjMzUtNDU5OS00ZDFlLTkzMTktZTJlOGVjNzcwMzE1XkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10133224/>,    # Trapped: The Alex Cooper Story
+                       <https://www.imdb.com/title/tt4131818/>,    # The Hot Zone
+                       <https://www.imdb.com/title/tt7944094/>,    # Girl in the Bunker
+                       <https://www.imdb.com/title/tt7970242/> ; # Jailbirds
+
+
+    schema:video <https://www.imdb.com/video/vi1258405401/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0568823/mediaviewer/rm3988568577/>,
+                 <https://www.imdb.com/name/nm0568823/mediaviewer/rm2445064705/>,
+                 <https://www.imdb.com/name/nm0568823/mediaviewer/rm2545728001/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Trapped: The Alex Cooper Story (2019)
+<https://www.imdb.com/title/tt10133224/> a schema:Movie ;
+    schema:name "Trapped: The Alex Cooper Story" ;
+    schema:url <https://www.imdb.com/title/tt10133224/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568823/> ;
+        schema:characterName "Administrator"
+    ] .
+
+# The Hot Zone (2019)
+<https://www.imdb.com/title/tt4131818/> a schema:Movie ;
+    schema:name "The Hot Zone" ;
+    schema:url <https://www.imdb.com/title/tt4131818/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568823/> ;
+        schema:characterName "Hazleton Secretary"
+    ] .
+
+# Girl in the Bunker (2018)
+<https://www.imdb.com/title/tt7944094/> a schema:Movie ;
+    schema:name "Girl in the Bunker" ;
+    schema:url <https://www.imdb.com/title/tt7944094/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568823/> ;
+        schema:characterName "Mathematics Teacher"
+    ] .
+
+# Jailbirds (2017)
+<https://www.imdb.com/title/tt7970242/> a schema:Movie ;
+    schema:name "Jailbirds" ;
+    schema:url <https://www.imdb.com/title/tt7970242/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0568823/> ;
+        schema:characterName "Martha"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1258405401/> a schema:VideoObject ;
+        schema:name "Demo Reel" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1258405401/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjFlYTExYWQtODc3MC00ZWMxLTk3MmUtNzdlYWM3MGVhODAxXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M14S"^^xsd:duration ;
+        schema:uploadDate "2020-07-06T17:16:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYmYzNjhjMzUtNDU5OS00ZDFlLTkzMTktZTJlOGVjNzcwMzE1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmYzNjhjMzUtNDU5OS00ZDFlLTkzMTktZTJlOGVjNzcwMzE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sharon McFarlane" ;
+    schema:height "3727"^^xsd:integer ;
+    schema:width "5218"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0568823/mediaviewer/rm3988568577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTk3MThmMWQtOTBiNy00ZWM2LTllMWEtZGRiMmNhN2ZhZDg5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sharon McFarlane" ;
+    schema:height "3640"^^xsd:integer ;
+    schema:width "5096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0568823/mediaviewer/rm2445064705/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2Y3YzNkNWUtMzJlZi00MDg5LWFkYWMtYTYzMDc2ZWNiNDZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sharon McFarlane" ;
+    schema:height "3871"^^xsd:integer ;
+    schema:width "5420"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0568823/mediaviewer/rm2545728001/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmYzNjhjMzUtNDU5OS00ZDFlLTkzMTktZTJlOGVjNzcwMzE1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Sharon McFarlane" ;
+    schema:height "3727"^^xsd:integer ;
+    schema:width "5218"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

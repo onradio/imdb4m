@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3522550/> a schema:Person ;
+    schema:name "Elizabeth Mkandawie" ;
+    schema:url <https://www.imdb.com/name/nm3522550/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Elizabeth Mkandawie. Actress: District 9. Elizabeth Mkandawie is known for District 9 (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1136608/> ;    # District 9
+
+
+    schema:video <https://www.imdb.com/video/vi3896050201/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# District 9 (2009)
+<https://www.imdb.com/title/tt1136608/> a schema:Movie ;
+    schema:name "District 9" ;
+    schema:url <https://www.imdb.com/title/tt1136608/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3522550/> ;
+        schema:characterName "Interviewee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3896050201/> a schema:VideoObject ;
+        schema:name "District 9: TV Spot" ;
+        schema:description "A TV trailer for District 9" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3896050201/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTc2NzE1MDA5Nl5BMl5BanBnXkFtZTgwNTM4MDczMzE@._V1_.jpg" ;
+        schema:duration "PT1M3S"^^xsd:duration ;
+        schema:uploadDate "2009-08-08T09:57:07Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

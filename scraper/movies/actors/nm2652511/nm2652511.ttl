@@ -1,0 +1,80 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2652511/> a schema:Person ;
+    schema:name "Ann Elsley" ;
+    schema:url <https://www.imdb.com/name/nm2652511/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Ann Elsley. Actress: In Bruges. Ann Elsley is known for In Bruges (2008) and The Scouting Book for Boys (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1022885/>,    # The Scouting Book for Boys
+                       <https://www.imdb.com/title/tt0780536/>,    # In Bruges
+                       <https://www.imdb.com/title/tt0088512/> ; # EastEnders
+
+
+    schema:video <https://www.imdb.com/video/vi783417625/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Scouting Book for Boys (2009)
+<https://www.imdb.com/title/tt1022885/> a schema:Movie ;
+    schema:name "The Scouting Book for Boys" ;
+    schema:url <https://www.imdb.com/title/tt1022885/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2652511/> ;
+        schema:characterName "Lucy"
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2652511/> ;
+        schema:characterName "Overweight Woman #2"
+    ] .
+
+# EastEnders (2004)
+<https://www.imdb.com/title/tt0088512/> a schema:Movie ;
+    schema:name "EastEnders" ;
+    schema:url <https://www.imdb.com/title/tt0088512/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2652511/> ;
+        schema:characterName "Beryl the Bailiff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi783417625/> a schema:VideoObject ;
+        schema:name "In Bruges" ;
+        schema:description "In Bruges Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi783417625/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTYyOTM2NjA5M15BMl5BanBnXkFtZTgwNTA0NDYzMzE@._V1_.jpg" ;
+        schema:duration "PT2M28S"^^xsd:duration ;
+        schema:uploadDate "2007-12-15T15:46:08Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

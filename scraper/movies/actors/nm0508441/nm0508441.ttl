@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0508441/> a schema:Person ;
+    schema:name "Kai Li" ;
+    schema:url <https://www.imdb.com/name/nm0508441/> ;
+    schema:jobTitle "Actor", "Production Department", "Director" ;
+    schema:description "Kai Li. Actor: Crouching Tiger, Hidden Dragon. Kai Li is known for Crouching Tiger, Hidden Dragon (2000), Welcome to the Jungle (2003) and Ba yue wei yang (2021)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0173909/>,    # Honolulu CRU
+                       <https://www.imdb.com/title/tt0922489/>,    # Lessons Learned
+                       <https://www.imdb.com/title/tt0190332/>,    # Crouching Tiger, Hidden Dragon
+                       <https://www.imdb.com/title/tt0103518/>,    # Raven
+                       <https://www.imdb.com/title/tt0096617/>,    # Island Son
+                       <https://www.imdb.com/title/tt1754201/> . # Mi wu yi yun
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Honolulu CRU (1998)
+<https://www.imdb.com/title/tt0173909/> a schema:Movie ;
+    schema:name "Honolulu CRU" ;
+    schema:url <https://www.imdb.com/title/tt0173909/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName ""
+    ] .
+
+# Lessons Learned (2000)
+<https://www.imdb.com/title/tt0922489/> a schema:Movie ;
+    schema:name "Lessons Learned" ;
+    schema:url <https://www.imdb.com/title/tt0922489/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName "Ranger"
+    ] .
+
+# Crouching Tiger, Hidden Dragon (2000)
+<https://www.imdb.com/title/tt0190332/> a schema:Movie ;
+    schema:name "Crouching Tiger, Hidden Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0190332/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName "Gou Jun Pei"
+    ] .
+
+# Raven (1992)
+<https://www.imdb.com/title/tt0103518/> a schema:Movie ;
+    schema:name "Raven" ;
+    schema:url <https://www.imdb.com/title/tt0103518/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName "Mercenary"
+    ] .
+
+# Island Son (1989)
+<https://www.imdb.com/title/tt0096617/> a schema:Movie ;
+    schema:name "Island Son" ;
+    schema:url <https://www.imdb.com/title/tt0096617/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName "Youth Karate Champion"
+    ] .
+
+# Mi wu yi yun (1974)
+<https://www.imdb.com/title/tt1754201/> a schema:Movie ;
+    schema:name "Mi wu yi yun" ;
+    schema:url <https://www.imdb.com/title/tt1754201/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0508441/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

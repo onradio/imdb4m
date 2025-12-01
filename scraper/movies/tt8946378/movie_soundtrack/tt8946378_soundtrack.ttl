@@ -1,0 +1,128 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8946378/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Inspector" ;
+        schema:byArtist <https://www.imdb.com/name/nm0074866/> ; # Tal Bergman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Inspector" ;
+            schema:author <https://www.imdb.com/name/nm0074866/> # Tal Bergman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "More Than This" ;
+        schema:byArtist <https://www.imdb.com/name/nm0746911/> ; # Roxy Music
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "More Than This" ;
+            schema:author <https://www.imdb.com/name/nm0275069/> # Bryan Ferry
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Animal Zoo" ;
+        schema:byArtist <https://www.imdb.com/name/nm3083211/> ; # Spirit
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Animal Zoo" ;
+            schema:author <https://www.imdb.com/name/nm0272471/> # Jay Ferguson
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Righteous Rocker #1" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sundown" ;
+        schema:byArtist <https://www.imdb.com/name/nm0004492/> ; # Gordon Lightfoot
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sundown" ;
+            schema:author <https://www.imdb.com/name/nm0004492/> # Gordon Lightfoot
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lightning Rod" ;
+        schema:byArtist <https://www.imdb.com/name/nm0139223/> ; # Craig Carothers
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lightning Rod" ;
+            schema:author <https://www.imdb.com/name/nm0139223/> # Craig Carothers
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "E strano! - Ah, fors'e lui [La traviata / Act 1]" ;
+        schema:byArtist <https://www.imdb.com/name/nm1356025/>, # Anna Netrebko
+                        <https://www.imdb.com/name/nm1168453/>, # Wiener Philharmoniker
+                        <https://www.imdb.com/name/nm0729841/> ; # Carlo Rizzi
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Losing My Mind" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Losing My Mind" ;
+            schema:author <https://www.imdb.com/name/nm0814227/> # Stephen Sondheim
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sweet Virginia" ;
+        schema:byArtist <https://www.imdb.com/name/nm1213869/> ; # The Rolling Stones
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sweet Virginia" ;
+            schema:author <https://www.imdb.com/name/nm0001396/>, # Mick Jagger
+                       <https://www.imdb.com/name/nm0724189/> # Keith Richards
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001396/> a schema:Person ;
+    schema:name "Mick Jagger" .
+<https://www.imdb.com/name/nm0004492/> a schema:Person ;
+    schema:name "Gordon Lightfoot" .
+<https://www.imdb.com/name/nm0074866/> a schema:Person ;
+    schema:name "Tal Bergman" .
+<https://www.imdb.com/name/nm0139223/> a schema:Person ;
+    schema:name "Craig Carothers" .
+<https://www.imdb.com/name/nm0272471/> a schema:Person ;
+    schema:name "Jay Ferguson" .
+<https://www.imdb.com/name/nm0275069/> a schema:Person ;
+    schema:name "Bryan Ferry" .
+<https://www.imdb.com/name/nm0724189/> a schema:Person ;
+    schema:name "Keith Richards" .
+<https://www.imdb.com/name/nm0729841/> a schema:Person ;
+    schema:name "Carlo Rizzi" .
+<https://www.imdb.com/name/nm0746911/> a schema:Person ;
+    schema:name "Roxy Music" .
+<https://www.imdb.com/name/nm0814227/> a schema:Person ;
+    schema:name "Stephen Sondheim" .
+<https://www.imdb.com/name/nm1168453/> a schema:Person ;
+    schema:name "Wiener Philharmoniker" .
+<https://www.imdb.com/name/nm1213869/> a schema:Person ;
+    schema:name "The Rolling Stones" .
+<https://www.imdb.com/name/nm1356025/> a schema:Person ;
+    schema:name "Anna Netrebko" .
+<https://www.imdb.com/name/nm3083211/> a schema:Person ;
+    schema:name "Spirit" .
+# ==============================================================================

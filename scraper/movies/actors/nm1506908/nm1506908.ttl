@@ -1,0 +1,409 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1506908/> a schema:Person ;
+    schema:name "Talulah Riley" ;
+    schema:url <https://www.imdb.com/name/nm1506908/> ;
+    schema:birthDate "1985-09-26"^^xsd:date ;
+    schema:jobTitle "Actress", "Director", "Writer" ;
+    schema:alternateName "Talulah Jane Riley-Milburn" ;
+    schema:description "Talulah Riley. Actress: Pride & Prejudice. Talulah Riley is an English actress. She has appeared in films such as Pride & Prejudice (2005), St. Trinian's (2007), The Boat That Rocked (2009) and Inception (2010).\n\nShe made her stage debut in The Philadelphia Story at the Old Vic in 2005. Her television credits include episodes of Poirot (Five Little Pigs (2003)), Marple (The Moving Finger (2006)), Doctor Who (Silence in the Library..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE0MzUwNTUxM15BMl5BanBnXkFtZTcwNzU1OTY5Ng@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hertfordshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0414387/>,    # Pride & Prejudice
+                       <https://www.imdb.com/title/tt0475784/>,    # Westworld
+                       <https://www.imdb.com/title/tt1131729/>,    # The Boat That Rocked
+                       <https://www.imdb.com/title/tt1375666/>,    # Inception
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3709552/>,    # The Last Witness
+                       <https://www.imdb.com/title/tt3236976/>,    # Submerged
+                       <https://www.imdb.com/title/tt4660980/>,    # The Bad Education Movie
+                       <https://www.imdb.com/title/tt4194108/>,    # Scottish Mussel
+                       <https://www.imdb.com/title/tt2322517/>,    # Mojave
+                       <https://www.imdb.com/title/tt1981115/>,    # Thor: The Dark World
+                       <https://www.imdb.com/title/tt2294677/>,    # In a World...
+                       <https://www.imdb.com/title/tt2081437/>,    # The Liability
+                       <https://www.imdb.com/title/tt1877797/>,    # The Knot
+                       <https://www.imdb.com/title/tt1967697/>,    # White Frog
+                       <https://www.imdb.com/title/tt1578275/>,    # The Dilemma
+                       <https://www.imdb.com/title/tt1686782/>,    # Love and Distrust
+                       <https://www.imdb.com/title/tt1210106/>,    # St Trinian's 2: The Legend of Fritton's Gold
+                       <https://www.imdb.com/title/tt0918631/>,    # The Summer House
+                       <https://www.imdb.com/title/tt0436992/>,    # Doctor Who
+                       <https://www.imdb.com/title/tt1116185/>,    # Phoo Action
+                       <https://www.imdb.com/title/tt1090020/>,    # Nearly Famous
+                       <https://www.imdb.com/title/tt0964587/>,    # St. Trinian's
+                       <https://www.imdb.com/title/tt1100091/>,    # Friends Forever
+                       <https://www.imdb.com/title/tt1734537/>,    # Marple
+                       <https://www.imdb.com/title/tt0094525/> ; # Poirot
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 6 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3864639513/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1506908/mediaviewer/rm3578007809/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm3460567297/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm4181987585/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm3105007360/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm2970789632/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm3071452928/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm2903680768/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm4060717568/>,
+                 <https://www.imdb.com/name/nm1506908/mediaviewer/rm4027163136/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0414387/> a schema:Movie ;
+    schema:name "Pride & Prejudice" ;
+    schema:url <https://www.imdb.com/title/tt0414387/> .
+
+<https://www.imdb.com/title/tt0475784/> a schema:Movie ;
+    schema:name "Westworld" ;
+    schema:url <https://www.imdb.com/title/tt0475784/> .
+
+<https://www.imdb.com/title/tt1131729/> a schema:Movie ;
+    schema:name "The Boat That Rocked" ;
+    schema:url <https://www.imdb.com/title/tt1131729/> .
+
+<https://www.imdb.com/title/tt1375666/> a schema:Movie ;
+    schema:name "Inception" ;
+    schema:url <https://www.imdb.com/title/tt1375666/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Last Witness (2018)
+<https://www.imdb.com/title/tt3709552/> a schema:Movie ;
+    schema:name "The Last Witness" ;
+    schema:url <https://www.imdb.com/title/tt3709552/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Jeanette Mitchell"
+    ] .
+
+# Submerged (2016)
+<https://www.imdb.com/title/tt3236976/> a schema:Movie ;
+    schema:name "Submerged" ;
+    schema:url <https://www.imdb.com/title/tt3236976/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Jessie"
+    ] .
+
+# The Bad Education Movie (2015)
+<https://www.imdb.com/title/tt4660980/> a schema:Movie ;
+    schema:name "The Bad Education Movie" ;
+    schema:url <https://www.imdb.com/title/tt4660980/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Phoebe"
+    ] .
+
+# Scottish Mussel (2015)
+<https://www.imdb.com/title/tt4194108/> a schema:Movie ;
+    schema:name "Scottish Mussel" ;
+    schema:url <https://www.imdb.com/title/tt4194108/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Beth"
+    ] .
+
+# Mojave (2015)
+<https://www.imdb.com/title/tt2322517/> a schema:Movie ;
+    schema:name "Mojave" ;
+    schema:url <https://www.imdb.com/title/tt2322517/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Jemima"
+    ] .
+
+# Thor: The Dark World (2013)
+<https://www.imdb.com/title/tt1981115/> a schema:Movie ;
+    schema:name "Thor: The Dark World" ;
+    schema:url <https://www.imdb.com/title/tt1981115/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Nurse"
+    ] .
+
+# In a World... (2013)
+<https://www.imdb.com/title/tt2294677/> a schema:Movie ;
+    schema:name "In a World..." ;
+    schema:url <https://www.imdb.com/title/tt2294677/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Pippa"
+    ] .
+
+# The Liability (2012)
+<https://www.imdb.com/title/tt2081437/> a schema:Movie ;
+    schema:name "The Liability" ;
+    schema:url <https://www.imdb.com/title/tt2081437/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "The Girl"
+    ] .
+
+# The Knot (2012)
+<https://www.imdb.com/title/tt1877797/> a schema:Movie ;
+    schema:name "The Knot" ;
+    schema:url <https://www.imdb.com/title/tt1877797/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Alexandra"
+    ] .
+
+# White Frog (2012)
+<https://www.imdb.com/title/tt1967697/> a schema:Movie ;
+    schema:name "White Frog" ;
+    schema:url <https://www.imdb.com/title/tt1967697/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Ms. Lee"
+    ] .
+
+# The Dilemma (2011)
+<https://www.imdb.com/title/tt1578275/> a schema:Movie ;
+    schema:name "The Dilemma" ;
+    schema:url <https://www.imdb.com/title/tt1578275/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Concept Car Spokesmodel"
+    ] .
+
+# Love and Distrust (2010)
+<https://www.imdb.com/title/tt1686782/> a schema:Movie ;
+    schema:name "Love and Distrust" ;
+    schema:url <https://www.imdb.com/title/tt1686782/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Jane"
+    ] .
+
+# St Trinian's 2: The Legend of Fritton's Gold (2009)
+<https://www.imdb.com/title/tt1210106/> a schema:Movie ;
+    schema:name "St Trinian's 2: The Legend of Fritton's Gold" ;
+    schema:url <https://www.imdb.com/title/tt1210106/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Annabelle Fritton"
+    ] .
+
+# The Summer House (2009)
+<https://www.imdb.com/title/tt0918631/> a schema:Movie ;
+    schema:name "The Summer House" ;
+    schema:url <https://www.imdb.com/title/tt0918631/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Jane"
+    ] .
+
+# Doctor Who (2008)
+<https://www.imdb.com/title/tt0436992/> a schema:Movie ;
+    schema:name "Doctor Who" ;
+    schema:url <https://www.imdb.com/title/tt0436992/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Miss Evangelista"
+    ] .
+
+# Phoo Action (2008)
+<https://www.imdb.com/title/tt1116185/> a schema:Movie ;
+    schema:name "Phoo Action" ;
+    schema:url <https://www.imdb.com/title/tt1116185/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Lady Elenor Rigsby"
+    ] .
+
+# Nearly Famous (2007)
+<https://www.imdb.com/title/tt1090020/> a schema:Movie ;
+    schema:name "Nearly Famous" ;
+    schema:url <https://www.imdb.com/title/tt1090020/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Lila Reed"
+    ] .
+
+# St. Trinian's (2007)
+<https://www.imdb.com/title/tt0964587/> a schema:Movie ;
+    schema:name "St. Trinian's" ;
+    schema:url <https://www.imdb.com/title/tt0964587/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Annabelle Fritton"
+    ] .
+
+# Friends Forever (2007)
+<https://www.imdb.com/title/tt1100091/> a schema:Movie ;
+    schema:name "Friends Forever" ;
+    schema:url <https://www.imdb.com/title/tt1100091/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Grace"
+    ] .
+
+# Marple (2006)
+<https://www.imdb.com/title/tt1734537/> a schema:Movie ;
+    schema:name "Marple" ;
+    schema:url <https://www.imdb.com/title/tt1734537/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Megan Hunter"
+    ] .
+
+# Poirot (2003)
+<https://www.imdb.com/title/tt0094525/> a schema:Movie ;
+    schema:name "Poirot" ;
+    schema:url <https://www.imdb.com/title/tt0094525/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1506908/> ;
+        schema:characterName "Young Angela"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3864639513/> a schema:VideoObject ;
+        schema:name "The Last Witness" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3864639513/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjMwYWNjM2QtOWM2ZS00MDk1LTgyNzAtNDlkMzJkZTRkMmIzXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M58S"^^xsd:duration ;
+        schema:uploadDate "2018-04-28T17:16:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE0MzUwNTUxM15BMl5BanBnXkFtZTcwNzU1OTY5Ng@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE0MzUwNTUxM15BMl5BanBnXkFtZTcwNzU1OTY5Ng@@._V1_.jpg> ;
+    schema:caption "Talulah Riley" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1510"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm3578007809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRlNzA3NzktM2NkMi00ZDkxLWEyODEtYjAzYjQ4ZWRkMTg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Thomas Brodie-Sangster and Talulah Riley in Pistol (2022)" ;
+    schema:height "2001"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm3460567297/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQ4ZGU2ZWYtZTdjZC00NDE4LTk5NTQtYmNlNjExNTRjZmJlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Thomas Brodie-Sangster, Talulah Riley, Toby Wallace, and Sydney Chandler in Pistol (2022)" ;
+    schema:height "1989"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm4181987585/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGQxN2ExNWQtYTNmZC00YjgwLThhZjQtZDliODNlM2JhNTI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Talulah Riley and Sydney Chandler in Pistol (2022)" ;
+    schema:height "2001"^^xsd:integer ;
+    schema:width "3000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm3105007360/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg3NjU2MzIyOF5BMl5BanBnXkFtZTcwMDY4NDA2OQ@@._V1_.jpg> ;
+    schema:caption "Talulah Riley in St. Trinian's (2007)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1370"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm2970789632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjMzOTY0MDkyM15BMl5BanBnXkFtZTcwMTU4NDA2OQ@@._V1_.jpg> ;
+    schema:caption "Tamsin Egerton, Talulah Riley, Antonia Bernath, Amara Karan, and Gemma Arterton in St. Trinian's (2007)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1370"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm3071452928/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjIzNjM1NzAxOV5BMl5BanBnXkFtZTcwNTQ4NDA2OQ@@._V1_.jpg> ;
+    schema:caption "Kathryn Drysdale, Talulah Riley, Gemma Arterton, and Paloma Faith in St. Trinian's (2007)" ;
+    schema:height "1370"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm2903680768/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA4NzQxNDU5Ml5BMl5BanBnXkFtZTcwOTM4NDA2OQ@@._V1_.jpg> ;
+    schema:caption "Kathryn Drysdale, Tamsin Egerton, Juno Temple, Talulah Riley, Antonia Bernath, Lily Cole, Amara Karan, Paloma Faith, and Victoria Harrild in St. Trinian's (2007)" ;
+    schema:height "1370"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm4060717568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3NzE3MjIyMF5BMl5BanBnXkFtZTcwMzM4OTUwOQ@@._V1_.jpg> ;
+    schema:caption "Talulah Riley in The Liability (2012)" ;
+    schema:height "1520"^^xsd:integer ;
+    schema:width "1018"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1506908/mediaviewer/rm4027163136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5NTIwODk4OV5BMl5BanBnXkFtZTcwNTM4OTUwOQ@@._V1_.jpg> ;
+    schema:caption "Talulah Riley in The Liability (2012)" ;
+    schema:height "864"^^xsd:integer ;
+    schema:width "1520"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm1506908/>
+    schema:sameAs <https://www.instagram.com/talulahrm/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

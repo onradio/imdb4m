@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0801660/> a schema:Person ;
+    schema:name "Kenny Sinclair" ;
+    schema:url <https://www.imdb.com/name/nm0801660/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Kenny Sinclair. Actor: Tootsie. Kenny Sinclair is known for Tootsie (1982) and The Reading (2020)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0084805/> .    # Tootsie
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tootsie (1982)
+<https://www.imdb.com/title/tt0084805/> a schema:Movie ;
+    schema:name "Tootsie" ;
+    schema:url <https://www.imdb.com/title/tt0084805/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0801660/> ;
+        schema:characterName "Boy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

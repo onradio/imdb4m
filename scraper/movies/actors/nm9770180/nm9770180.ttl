@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9770180/> a schema:Person ;
+    schema:name "Rafael Silva" ;
+    schema:url <https://www.imdb.com/name/nm9770180/> ;
+    schema:birthDate "1990-09-07"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:description "Rafael Silva. Actor: The Compatriots. Rafael Silva was born in São Paulo, São Paulo, Brazil. As a child, he lived in Brazil, Colombia, and the United States where he learned to speak Portuguese, Spanish, and English, respectively. He is an actor, writer, producer, and musician known for The Compatriots (2024), Don't Look Up (2021), Godmothered (2020), and Little Women (2019)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjQyZTkxYTAtYWU3YS00ZjVkLWFjN2ItMzE1NjE5NjlmNjU1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "São Paulo, São Paulo, Brazil"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3281548/>,    # Little Women
+                       <https://www.imdb.com/title/tt12517230/>,    # Americano
+                       <https://www.imdb.com/title/tt7390750/> ; # Grave Mysteries
+
+
+    schema:video <https://www.imdb.com/video/vi2238760985/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm9770180/mediaviewer/rm1228336385/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm1362554113/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm2917195009/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm2690887425/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm691512577/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm4212465665/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm1597435137/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm630319873/>,
+                 <https://www.imdb.com/name/nm9770180/mediaviewer/rm2479418113/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Little Women (2019)
+<https://www.imdb.com/title/tt3281548/> a schema:Movie ;
+    schema:name "Little Women" ;
+    schema:url <https://www.imdb.com/title/tt3281548/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9770180/> ;
+        schema:characterName "Friedrich's Friend"
+    ] .
+
+# Americano (2019)
+<https://www.imdb.com/title/tt12517230/> a schema:Movie ;
+    schema:name "Americano" ;
+    schema:url <https://www.imdb.com/title/tt12517230/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9770180/> ;
+        schema:characterName "(2019)"
+    ] .
+
+# Grave Mysteries (2019)
+<https://www.imdb.com/title/tt7390750/> a schema:Movie ;
+    schema:name "Grave Mysteries" ;
+    schema:url <https://www.imdb.com/title/tt7390750/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9770180/> ;
+        schema:characterName "Shariff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2238760985/> a schema:VideoObject ;
+        schema:name "Rafael Silva" ;
+        schema:description "A select pick of Rafael Silva's work in films and TV." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2238760985/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzc0NzQzNDItNGRkNy00YzMwLWE3MDItOTUxZjhhN2I1YzA5XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT3M21S"^^xsd:duration ;
+        schema:uploadDate "2025-10-03T15:43:47Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjQyZTkxYTAtYWU3YS00ZjVkLWFjN2ItMzE1NjE5NjlmNjU1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjQyZTkxYTAtYWU3YS00ZjVkLWFjN2ItMzE1NjE5NjlmNjU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rafael Silva" ;
+    schema:height "4727"^^xsd:integer ;
+    schema:width "3304"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm1228336385/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmU1YTUwNWQtMDBkZC00ZjgxLTllNzQtNGViNWE4MzY2NDdkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hettienne Park and Rafael Silva in Don't Look Up (2021)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "2880"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm1362554113/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY1YzcwOGYtZTFjNS00YTRmLTljMDctNDBkMjM3YTViMTNhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rafael Silva in Don't Look Up (2021)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "2880"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm2917195009/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOGM2MGY1M2UtMWRhMC00ZmY5LWFiNzMtNTM4MzM0ZjIyYzQ2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Still of Rafael Silva and Benz Veal in Godmothered" ;
+    schema:height "1440"^^xsd:integer ;
+    schema:width "2877"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm2690887425/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjgwOTJkZGItZWFlOC00YmQ2LTlhOGQtZjI2MTM0NjJiMTYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Drive Thru N Chill" ;
+    schema:height "480"^^xsd:integer ;
+    schema:width "853"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm691512577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTQ4N2RhZmEtNmY0YS00OTg3LTlhOTctYmZlZjlkNTExMmRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rafael Silva - To Be Heard" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm4212465665/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgwZjhiMGQtNmNjZC00MGNlLWE0ZTYtZTQ1YWNkYWM2OGI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Salvador Coco and Rafael Silva in Being Dead (2020)" ;
+    schema:height "1175"^^xsd:integer ;
+    schema:width "2074"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm1597435137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTg2ZDdmOTAtNjczOS00NjllLTk4ODctZjQ3NjhlNWFhYWRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hettienne Park and Rafael Silva in Don't Look Up (2021)" ;
+    schema:height "1800"^^xsd:integer ;
+    schema:width "2880"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm630319873/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODg5YmRkN2MtNmZmYi00MDRlLWE4ZGYtNzhhY2RhZDRhNzQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tanya Avendaño Stockler, Fady Demian, and Rafael Silva in The New Tenant (2020)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm9770180/mediaviewer/rm2479418113/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEzMDk3MDQtZWUzZC00Y2E3LTliOWYtZmRkZGFkZjFhZTAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rafael Silva" ;
+    schema:height "5159"^^xsd:integer ;
+    schema:width "3707"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm9770180/>
+    schema:sameAs <http://instagram.com/rafacsilva> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

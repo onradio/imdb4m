@@ -1,0 +1,397 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0089185/> a schema:Person ;
+    schema:name "John Bloom" ;
+    schema:url <https://www.imdb.com/name/nm0089185/> ;
+    schema:birthDate "1953-01-27"^^xsd:date ;
+    schema:jobTitle "Actor", "Writer", "Producer" ;
+    schema:alternateName "Joe Bob Briggs", "John Irving Bloom" ;
+    schema:description "John Bloom. Actor: The Last Drive-In with Joe Bob Briggs. John Bloom is an investigative reporter, essayist and actor who was born in Dallas, raised in Little Rock, Arkansas, and attended Vanderbilt University on a sports-writing scholarship. Bloom began his writing career in Texas, earning two National Magazine Award nominations for his work with Texas Monthly. He was later fired from the Dallas Times-Herald for writing (as \"Joe Bob Briggs\")..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjc3NzYwMGUtNjA5NC00MDViLWI1OGEtZDBmMzQ3ZjY2MTRiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Dallas, Texas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.93"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 4″ (1.93 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0112641/>,    # Casino
+                       <https://www.imdb.com/title/tt0119094/>,    # Face/Off
+                       <https://www.imdb.com/title/tt0158420/>,    # Monstervision
+                       <https://www.imdb.com/title/tt8284230/>,    # Joe Bob's Last Drive-In
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7521214/>,    # Scare Package
+                       <https://www.imdb.com/title/tt7006476/>,    # Poetry Slammed
+                       <https://www.imdb.com/title/tt4374502/>,    # The Ghosts of Johnson Woods
+                       <https://www.imdb.com/title/tt0923722/>,    # Hogzilla
+                       <https://www.imdb.com/title/tt0249516/>,    # Foodfight!
+                       <https://www.imdb.com/title/tt1971558/>,    # The Sleeper
+                       <https://www.imdb.com/title/tt1128085/>,    # Wretched
+                       <https://www.imdb.com/title/tt0482577/>,    # Rapturious
+                       <https://www.imdb.com/title/tt0494228/>,    # Accursed Blood
+                       <https://www.imdb.com/title/tt0480760/>,    # Evil Ever After
+                       <https://www.imdb.com/title/tt0421579/>,    # All That You Love Will Be Carried Away
+                       <https://www.imdb.com/title/tt0202599/>,    # The Storytellers
+                       <https://www.imdb.com/title/tt0296360/>,    # Joe Bob's Drive-In Theater
+                       <https://www.imdb.com/title/tt0092400/>,    # Married with Children
+                       <https://www.imdb.com/title/tt0108941/>,    # The Stand
+                       <https://www.imdb.com/title/tt0439556/>,    # Indecision '92: Election Night
+                       <https://www.imdb.com/title/tt2248845/>,    # Indecision '92: The Republican National Convention
+                       <https://www.imdb.com/title/tt0097457/>,    # Great Balls of Fire!
+                       <https://www.imdb.com/title/tt33039543/>,    # Joe Bob Briggs: Dead in Concert
+                       <https://www.imdb.com/title/tt0092076/> ; # The Texas Chainsaw Massacre 2
+
+    schema:award [
+        a schema:Award ;
+        schema:description "9 wins & 0 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1298581785/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0089185/mediaviewer/rm2497034497/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm3437134593/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm3453911809/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm383419137/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm3839394561/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm4291068673/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm3510012161/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm171280641/>,
+                 <https://www.imdb.com/name/nm0089185/mediaviewer/rm2089650433/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0112641/> a schema:Movie ;
+    schema:name "Casino" ;
+    schema:url <https://www.imdb.com/title/tt0112641/> .
+
+<https://www.imdb.com/title/tt0119094/> a schema:Movie ;
+    schema:name "Face/Off" ;
+    schema:url <https://www.imdb.com/title/tt0119094/> .
+
+<https://www.imdb.com/title/tt0158420/> a schema:Movie ;
+    schema:name "Monstervision" ;
+    schema:url <https://www.imdb.com/title/tt0158420/> .
+
+<https://www.imdb.com/title/tt8284230/> a schema:Movie ;
+    schema:name "Joe Bob's Last Drive-In" ;
+    schema:url <https://www.imdb.com/title/tt8284230/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Scare Package (2019)
+<https://www.imdb.com/title/tt7521214/> a schema:Movie ;
+    schema:name "Scare Package" ;
+    schema:url <https://www.imdb.com/title/tt7521214/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Joe Bob Briggs"
+    ] .
+
+# Poetry Slammed (2018)
+<https://www.imdb.com/title/tt7006476/> a schema:Movie ;
+    schema:name "Poetry Slammed" ;
+    schema:url <https://www.imdb.com/title/tt7006476/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Warren"
+    ] .
+
+# The Ghosts of Johnson Woods (2015)
+<https://www.imdb.com/title/tt4374502/> a schema:Movie ;
+    schema:name "The Ghosts of Johnson Woods" ;
+    schema:url <https://www.imdb.com/title/tt4374502/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Warren"
+    ] .
+
+# Hogzilla (2014)
+<https://www.imdb.com/title/tt0923722/> a schema:Movie ;
+    schema:name "Hogzilla" ;
+    schema:url <https://www.imdb.com/title/tt0923722/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Andy McGraw"
+    ] .
+
+# Foodfight! (2012)
+<https://www.imdb.com/title/tt0249516/> a schema:Movie ;
+    schema:name "Foodfight!" ;
+    schema:url <https://www.imdb.com/title/tt0249516/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Additonal Voices"
+    ] .
+
+# The Sleeper (2012)
+<https://www.imdb.com/title/tt1971558/> a schema:Movie ;
+    schema:name "The Sleeper" ;
+    schema:url <https://www.imdb.com/title/tt1971558/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Doctor Briggs"
+    ] .
+
+# Wretched (2007)
+<https://www.imdb.com/title/tt1128085/> a schema:Movie ;
+    schema:name "Wretched" ;
+    schema:url <https://www.imdb.com/title/tt1128085/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Eric"
+    ] .
+
+# Rapturious (2007)
+<https://www.imdb.com/title/tt0482577/> a schema:Movie ;
+    schema:name "Rapturious" ;
+    schema:url <https://www.imdb.com/title/tt0482577/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Doctor Gabriel"
+    ] .
+
+# Accursed Blood (2007)
+<https://www.imdb.com/title/tt0494228/> a schema:Movie ;
+    schema:name "Accursed Blood" ;
+    schema:url <https://www.imdb.com/title/tt0494228/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Clancy"
+    ] .
+
+# Evil Ever After (2006)
+<https://www.imdb.com/title/tt0480760/> a schema:Movie ;
+    schema:name "Evil Ever After" ;
+    schema:url <https://www.imdb.com/title/tt0480760/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Marvin"
+    ] .
+
+# All That You Love Will Be Carried Away (2004)
+<https://www.imdb.com/title/tt0421579/> a schema:Movie ;
+    schema:name "All That You Love Will Be Carried Away" ;
+    schema:url <https://www.imdb.com/title/tt0421579/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Alfie Zimmer"
+    ] .
+
+# The Storytellers (1999)
+<https://www.imdb.com/title/tt0202599/> a schema:Movie ;
+    schema:name "The Storytellers" ;
+    schema:url <https://www.imdb.com/title/tt0202599/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Scrappy the Janitor"
+    ] .
+
+# Joe Bob's Drive-In Theater (1991)
+<https://www.imdb.com/title/tt0296360/> a schema:Movie ;
+    schema:name "Joe Bob's Drive-In Theater" ;
+    schema:url <https://www.imdb.com/title/tt0296360/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Joe Bob Briggs"
+    ] .
+
+# Married with Children (1993)
+<https://www.imdb.com/title/tt0092400/> a schema:Movie ;
+    schema:name "Married with Children" ;
+    schema:url <https://www.imdb.com/title/tt0092400/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Billy Ray Wetnap"
+    ] .
+
+# The Stand (1994)
+<https://www.imdb.com/title/tt0108941/> a schema:Movie ;
+    schema:name "The Stand" ;
+    schema:url <https://www.imdb.com/title/tt0108941/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Deputy Joe-Bob Brentwood"
+    ] .
+
+# Indecision '92: Election Night (1992)
+<https://www.imdb.com/title/tt0439556/> a schema:Movie ;
+    schema:name "Indecision '92: Election Night" ;
+    schema:url <https://www.imdb.com/title/tt0439556/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Joe Bob Briggs"
+    ] .
+
+# Indecision '92: The Republican National Convention (1992)
+<https://www.imdb.com/title/tt2248845/> a schema:Movie ;
+    schema:name "Indecision '92: The Republican National Convention" ;
+    schema:url <https://www.imdb.com/title/tt2248845/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Joe Bob Briggs"
+    ] .
+
+# Great Balls of Fire! (1989)
+<https://www.imdb.com/title/tt0097457/> a schema:Movie ;
+    schema:name "Great Balls of Fire!" ;
+    schema:url <https://www.imdb.com/title/tt0097457/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Dewey 'Daddy-O' Phillips"
+    ] .
+
+# Joe Bob Briggs: Dead in Concert (1986)
+<https://www.imdb.com/title/tt33039543/> a schema:Movie ;
+    schema:name "Joe Bob Briggs: Dead in Concert" ;
+    schema:url <https://www.imdb.com/title/tt33039543/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Joe Bob Briggs"
+    ] .
+
+# The Texas Chainsaw Massacre 2 (1986)
+<https://www.imdb.com/title/tt0092076/> a schema:Movie ;
+    schema:name "The Texas Chainsaw Massacre 2" ;
+    schema:url <https://www.imdb.com/title/tt0092076/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0089185/> ;
+        schema:characterName "Gonzo Moviegoer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1298581785/> a schema:VideoObject ;
+        schema:name "The Fairfield County Four (2025) Campaign Teaser" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1298581785/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjVkNDViM2EtOWM1MC00ZTEwLWFjMTQtNjUxZGQ1NjJiYjE1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M5S"^^xsd:duration ;
+        schema:uploadDate "2025-03-12T03:51:13Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjc3NzYwMGUtNjA5NC00MDViLWI1OGEtZDBmMzQ3ZjY2MTRiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjc3NzYwMGUtNjA5NC00MDViLWI1OGEtZDBmMzQ3ZjY2MTRiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom in Hello Mary Lou: Prom Night II (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm2497034497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWEzOWMwMzgtMzVmYi00M2YzLWFhOTQtMGU2NDI2ZDVkNTZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom, Lloyd Kaufman, Tim Kulig, Jason Carvey, James Rolfe, Shawn C. Phillips, Kenneth Powell, and James Richardson in VHS Massacre 2 (2020)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm3437134593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGYyNDEwM2UtZjMxMC00MThhLWEzYzktZWQyODE4ODdmNWJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom in Joe Bob's Red Christmas: Silent Night, Deadly Night Part 2 (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm3453911809/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM5Y2YzMTAtNzViNS00YmViLWI2OWQtYzk0NzM4ZjE1NGM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom and Diana Prince in Joe Bob's Red Christmas: Silent Night, Deadly Night Part 2 (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm383419137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDJkYTY1YzgtOTE0ZS00ZjVmLWJkM2EtZWExZDM3MDhjOGZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom in Joe Bob's Red Christmas: Jack Frost (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm3839394561/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTZlYjgyODgtNGM5Yy00MGE3LTlkYWYtYzNhYTg5M2UzODBjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom, Yuki Nakamura, and Diana Prince in Joe Bob's Red Christmas: Black Christmas (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm4291068673/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjkzMThkZjItOGM0NS00ZjlhLWFkYTktMWQxNjUyMmRkYzg4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom and Diana Prince in Joe Bob's Red Christmas: Black Christmas (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm3510012161/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjkyMDljOTQtZjAwZC00MTAyLWI3Y2MtMzMyMWFiYzAyMzZlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom and Lyle Blackburn in The Last Drive-In with Joe Bob Briggs (2018)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm171280641/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGQ0YmVjYzMtNzcwNC00NTdkLTkzZGItMmIxMGExZGQyNWVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom in The Last Drive-In with Joe Bob Briggs (2018)" ;
+    schema:height "765"^^xsd:integer ;
+    schema:width "1358"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0089185/mediaviewer/rm2089650433/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2JiOTk2ZWItZWU5NS00N2JmLWIwZjUtMDY5OTI4N2Q1Njc1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "John Bloom in Street Trash (2019)" ;
+    schema:height "900"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0089185/>
+    schema:sameAs <https://www.facebook.com/JoeBobBriggs> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

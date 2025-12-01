@@ -1,0 +1,426 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0284129/> a schema:Person ;
+    schema:name "Ellen Foley" ;
+    schema:url <https://www.imdb.com/name/nm0284129/> ;
+    schema:birthDate "1951-06-05"^^xsd:date ;
+    schema:jobTitle "Actress", "Music Department", "Soundtrack" ;
+    schema:description "Ellen Foley. Actress: Hair. Ellen Foley was born on 5 June 1951 in St. Louis, Missouri, USA. She is an actress, known for Hair (1979), Fatal Attraction (1987) and Cocktail (1988). She has been married to Doug Bernstein since 29 April 1990. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDAxMTMzMDY3MF5BMl5BanBnXkFtZTcwMTQxMTkwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "St. Louis, Missouri, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0079261/>,    # Hair
+                       <https://www.imdb.com/title/tt0085794/>,    # The King of Comedy
+                       <https://www.imdb.com/title/tt0093010/>,    # Fatal Attraction
+                       <https://www.imdb.com/title/tt0094889/>,    # Cocktail
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt3177086/>,    # No Pay, Nudity
+                       <https://www.imdb.com/title/tt2287861/>,    # Lies I Told My Little Sister
+                       <https://www.imdb.com/title/tt1587669/>,    # Body of Proof
+                       <https://www.imdb.com/title/tt0098844/>,    # Law & Order
+                       <https://www.imdb.com/title/tt0156934/>,    # Random Hearts
+                       <https://www.imdb.com/title/tt0108787/>,    # Ghostwriter
+                       <https://www.imdb.com/title/tt0065272/>,    # All My Children
+                       <https://www.imdb.com/title/tt0100207/>,    # Murder in Black and White
+                       <https://www.imdb.com/title/tt22812932/>,    # Pandora's Box: Good Girls Go to Heaven (Bad Girls Go Everywhere)
+                       <https://www.imdb.com/title/tt0095593/>,    # Married to the Mob
+                       <https://www.imdb.com/title/tt0088612/>,    # Spenser: For Hire
+                       <https://www.imdb.com/title/tt9708272/>,    # Into the Woods
+                       <https://www.imdb.com/title/tt0086770/>,    # Night Court
+                       <https://www.imdb.com/title/tt5860136/>,    # Love Cycle: A Soap Operetta
+                       <https://www.imdb.com/title/tt22809038/>,    # Ellen Foley: Boys in the Attic
+                       <https://www.imdb.com/title/tt0084805/>,    # Tootsie
+                       <https://www.imdb.com/title/tt22809196/>,    # Ellen Foley: The Shuttered Palace
+                       <https://www.imdb.com/title/tt22810606/>,    # Ellen Foley: The Shuttered Palace, Version 2
+                       <https://www.imdb.com/title/tt22809554/>,    # Ellen Foley: Torchlight
+                       <https://www.imdb.com/title/tt22812958/>,    # Ellen Foley: Stupid Girl
+                       <https://www.imdb.com/title/tt22811470/>,    # Ellen Foley: We Belong to the Night
+                       <https://www.imdb.com/title/tt22811164/>,    # Ellen Foley: What's a Matter Baby (Is It Hurting You)
+                       <https://www.imdb.com/title/tt8933114/> ; # Meat Loaf: Bat Out of Hell
+
+
+    schema:video <https://www.imdb.com/video/vi543007001/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0284129/mediaviewer/rm949665281/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm2274934273/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm1314232321/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm1263835137/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm4048667136/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm2891039232/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm1397867008/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm1867629056/>,
+                 <https://www.imdb.com/name/nm0284129/mediaviewer/rm38912512/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0079261/> a schema:Movie ;
+    schema:name "Hair" ;
+    schema:url <https://www.imdb.com/title/tt0079261/> .
+
+<https://www.imdb.com/title/tt0085794/> a schema:Movie ;
+    schema:name "The King of Comedy" ;
+    schema:url <https://www.imdb.com/title/tt0085794/> .
+
+<https://www.imdb.com/title/tt0093010/> a schema:Movie ;
+    schema:name "Fatal Attraction" ;
+    schema:url <https://www.imdb.com/title/tt0093010/> .
+
+<https://www.imdb.com/title/tt0094889/> a schema:Movie ;
+    schema:name "Cocktail" ;
+    schema:url <https://www.imdb.com/title/tt0094889/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# No Pay, Nudity (2016)
+<https://www.imdb.com/title/tt3177086/> a schema:Movie ;
+    schema:name "No Pay, Nudity" ;
+    schema:url <https://www.imdb.com/title/tt3177086/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Tani Marshall"
+    ] .
+
+# Lies I Told My Little Sister (2014)
+<https://www.imdb.com/title/tt2287861/> a schema:Movie ;
+    schema:name "Lies I Told My Little Sister" ;
+    schema:url <https://www.imdb.com/title/tt2287861/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Laura Lucien"
+    ] .
+
+# Body of Proof (2011)
+<https://www.imdb.com/title/tt1587669/> a schema:Movie ;
+    schema:name "Body of Proof" ;
+    schema:url <https://www.imdb.com/title/tt1587669/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Evelyn Brant"
+    ] .
+
+# Law & Order (2000)
+<https://www.imdb.com/title/tt0098844/> a schema:Movie ;
+    schema:name "Law & Order" ;
+    schema:url <https://www.imdb.com/title/tt0098844/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Annette Tobin"
+    ] .
+
+# Random Hearts (1999)
+<https://www.imdb.com/title/tt0156934/> a schema:Movie ;
+    schema:name "Random Hearts" ;
+    schema:url <https://www.imdb.com/title/tt0156934/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Young Woman at Fundraiser"
+    ] .
+
+# Ghostwriter (1992)
+<https://www.imdb.com/title/tt0108787/> a schema:Movie ;
+    schema:name "Ghostwriter" ;
+    schema:url <https://www.imdb.com/title/tt0108787/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Principal Kelley"
+    ] .
+
+# All My Children (1992)
+<https://www.imdb.com/title/tt0065272/> a schema:Movie ;
+    schema:name "All My Children" ;
+    schema:url <https://www.imdb.com/title/tt0065272/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Marji Buckel"
+    ] .
+
+# Murder in Black and White (1990)
+<https://www.imdb.com/title/tt0100207/> a schema:Movie ;
+    schema:name "Murder in Black and White" ;
+    schema:url <https://www.imdb.com/title/tt0100207/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Emma"
+    ] .
+
+# Pandora's Box: Good Girls Go to Heaven (Bad Girls Go Everywhere) (1989)
+<https://www.imdb.com/title/tt22812932/> a schema:Movie ;
+    schema:name "Pandora's Box: Good Girls Go to Heaven (Bad Girls Go Everywhere)" ;
+    schema:url <https://www.imdb.com/title/tt22812932/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Married to the Mob (1988)
+<https://www.imdb.com/title/tt0095593/> a schema:Movie ;
+    schema:name "Married to the Mob" ;
+    schema:url <https://www.imdb.com/title/tt0095593/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Theresa"
+    ] .
+
+# Spenser: For Hire (1987)
+<https://www.imdb.com/title/tt0088612/> a schema:Movie ;
+    schema:name "Spenser: For Hire" ;
+    schema:url <https://www.imdb.com/title/tt0088612/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ruth"
+    ] .
+
+# Into the Woods (1987)
+<https://www.imdb.com/title/tt9708272/> a schema:Movie ;
+    schema:name "Into the Woods" ;
+    schema:url <https://www.imdb.com/title/tt9708272/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Witch"
+    ] .
+
+# Night Court (1984)
+<https://www.imdb.com/title/tt0086770/> a schema:Movie ;
+    schema:name "Night Court" ;
+    schema:url <https://www.imdb.com/title/tt0086770/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Billie Young"
+    ] .
+
+# Love Cycle: A Soap Operetta (1984)
+<https://www.imdb.com/title/tt5860136/> a schema:Movie ;
+    schema:name "Love Cycle: A Soap Operetta" ;
+    schema:url <https://www.imdb.com/title/tt5860136/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Laundry-Doer"
+    ] .
+
+# Ellen Foley: Boys in the Attic (1983)
+<https://www.imdb.com/title/tt22809038/> a schema:Movie ;
+    schema:name "Ellen Foley: Boys in the Attic" ;
+    schema:url <https://www.imdb.com/title/tt22809038/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Tootsie (1982)
+<https://www.imdb.com/title/tt0084805/> a schema:Movie ;
+    schema:name "Tootsie" ;
+    schema:url <https://www.imdb.com/title/tt0084805/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Jacqui"
+    ] .
+
+# Ellen Foley: The Shuttered Palace (1981)
+<https://www.imdb.com/title/tt22809196/> a schema:Movie ;
+    schema:name "Ellen Foley: The Shuttered Palace" ;
+    schema:url <https://www.imdb.com/title/tt22809196/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Ellen Foley: The Shuttered Palace, Version 2 (1981)
+<https://www.imdb.com/title/tt22810606/> a schema:Movie ;
+    schema:name "Ellen Foley: The Shuttered Palace, Version 2" ;
+    schema:url <https://www.imdb.com/title/tt22810606/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Ellen Foley: Torchlight (1981)
+<https://www.imdb.com/title/tt22809554/> a schema:Movie ;
+    schema:name "Ellen Foley: Torchlight" ;
+    schema:url <https://www.imdb.com/title/tt22809554/> ;
+    schema:datePublished "1981"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Ellen Foley: Stupid Girl (1980)
+<https://www.imdb.com/title/tt22812958/> a schema:Movie ;
+    schema:name "Ellen Foley: Stupid Girl" ;
+    schema:url <https://www.imdb.com/title/tt22812958/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Ellen Foley: We Belong to the Night (1979)
+<https://www.imdb.com/title/tt22811470/> a schema:Movie ;
+    schema:name "Ellen Foley: We Belong to the Night" ;
+    schema:url <https://www.imdb.com/title/tt22811470/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Ellen Foley: What's a Matter Baby (Is It Hurting You) (1979)
+<https://www.imdb.com/title/tt22811164/> a schema:Movie ;
+    schema:name "Ellen Foley: What's a Matter Baby (Is It Hurting You)" ;
+    schema:url <https://www.imdb.com/title/tt22811164/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# Meat Loaf: Bat Out of Hell (1979)
+<https://www.imdb.com/title/tt8933114/> a schema:Movie ;
+    schema:name "Meat Loaf: Bat Out of Hell" ;
+    schema:url <https://www.imdb.com/title/tt8933114/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0284129/> ;
+        schema:characterName "Ellen Foley"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi543007001/> a schema:VideoObject ;
+        schema:name "Cocktail" ;
+        schema:description "Clip: Jamaica Montage" ;
+        schema:embedUrl <https://www.imdb.com/video/vi543007001/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYmMxOGU3MDQtNDY3Yy00MzczLTgzOWMtMWEyYWRjNTQxOTZlXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M6S"^^xsd:duration ;
+        schema:uploadDate "2012-03-11T06:10:19Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDAxMTMzMDY3MF5BMl5BanBnXkFtZTcwMTQxMTkwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDAxMTMzMDY3MF5BMl5BanBnXkFtZTcwMTQxMTkwOA@@._V1_.jpg> ;
+    schema:caption "Ellen Foley" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1634"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm949665281/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTAxZjEyNjEtZGUwYi00MjUwLWFiNTctOGViMTNlZjUxMzBkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Debbie Allen, Ellen Foley, and Mimi Kennedy in 3 Girls 3 (1977)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "385"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm2274934273/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzRkZTJlODktNDY1Mi00ZWU4LWEyZmEtMzNhNTY2ODVmMGVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Debbie Allen, Ellen Foley, and Mimi Kennedy in 3 Girls 3 (1977)" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "385"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm1314232321/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzk3ZmRlZDItNjY0NS00YmZlLWI5ZjEtNDA1ZTIyNzViZjU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dabney Coleman, Doris Belack, and Ellen Foley in Tootsie (1982)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm1263835137/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc4MzcyMDItMTU2Ni00ZWY3LTg4YjEtZmZhY2M0ZTFmZGVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Ellen Foley in Tootsie (1982)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm4048667136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTAwNTE3OTM3NTleQTJeQWpwZ15BbWU4MDE0NjcxMjIx._V1_.jpg> ;
+    schema:caption "Harry Anderson and Ellen Foley in Night Court (1984)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm2891039232/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjAyMTUyNzU0MV5BMl5BanBnXkFtZTgwODY1NzEyMjE@._V1_.jpg> ;
+    schema:caption "Elisha Cook Jr., Kenneth Danziger, Ellen Foley, and John Larroquette in Night Court (1984)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm1397867008/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI3MDQzNzEyNF5BMl5BanBnXkFtZTgwMTQ1NzEyMjE@._V1_.jpg> ;
+    schema:caption "Harry Anderson, John Astin, Ellen Foley, and Charles Robinson in Night Court (1984)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm1867629056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ2MDY4Njc1Ml5BMl5BanBnXkFtZTgwODg0NzEyMjE@._V1_.jpg> ;
+    schema:caption "Ellen Foley, John Larroquette, Sydney Lassick, and Richard Moll in Night Court (1984)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0284129/mediaviewer/rm38912512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA0NzIzMTYzMl5BMl5BanBnXkFtZTgwODU0NzEyMjE@._V1_.jpg> ;
+    schema:caption "Harry Anderson, Oliver Clark, and Ellen Foley in Night Court (1984)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

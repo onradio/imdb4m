@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0877519/> a schema:Person ;
+    schema:name "Douglas Turner" ;
+    schema:url <https://www.imdb.com/name/nm0877519/> ;
+    schema:jobTitle "Additional Crew", "Art Department", "Special Effects" ;
+    schema:description "Douglas Turner. Art Department: Beetlejuice. Douglas Turner is known for Beetlejuice (1988), Masters of the Universe (1987) and The Blob (1988)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0094721/> ;    # Beetlejuice
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0877519/mediaviewer/rm3055240448/>,
+                 <https://www.imdb.com/name/nm0877519/mediaviewer/rm3210123520/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Beetlejuice (1988)
+<https://www.imdb.com/title/tt0094721/> a schema:Movie ;
+    schema:name "Beetlejuice" ;
+    schema:url <https://www.imdb.com/title/tt0094721/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0877519/> ;
+        schema:characterName "Char Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0877519/mediaviewer/rm3055240448/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDIzYmIyYzctYmFlZi00NDNiLWE2OGYtYzMxNTFhYTdmNjM0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alec Baldwin and Douglas Turner in Beetlejuice (1988)" ;
+    schema:height "1485"^^xsd:integer ;
+    schema:width "2640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0877519/mediaviewer/rm3210123520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTA4MTMyOTkwNF5BMl5BanBnXkFtZTYwOTM0Mzg3._V1_.jpg> ;
+    schema:caption "Geena Davis, Alec Baldwin, and Douglas Turner in Beetlejuice (1988)" ;
+    schema:height "324"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

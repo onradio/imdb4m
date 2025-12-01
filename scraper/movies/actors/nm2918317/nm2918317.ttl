@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2918317/> a schema:Person ;
+    schema:name "Tora Hallström" ;
+    schema:url <https://www.imdb.com/name/nm2918317/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Tora Hallström. Actress: Hachi: A Dog's Tale. Tora Hallström was born in 1995 in Stockholm, Stockholms län, Sweden. She is an actress, known for Hachi: A Dog's Tale (2009), Safe Haven (2013) and The Map That Leads to You (2025)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNGM2NTU1NTktY2QwNC00MjVhLWE5N2UtZmJhOTBkNzFlYTQ1XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Stockholm, Stockholms län, Sweden"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1702439/>,    # Safe Haven
+                       <https://www.imdb.com/title/tt1028532/> ; # Hachi: A Dog's Tale
+
+
+    schema:video <https://www.imdb.com/video/vi1774765337/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2918317/mediaviewer/rm3938973441/>,
+                 <https://www.imdb.com/name/nm2918317/mediaviewer/rm845540353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Safe Haven (2013)
+<https://www.imdb.com/title/tt1702439/> a schema:Movie ;
+    schema:name "Safe Haven" ;
+    schema:url <https://www.imdb.com/title/tt1702439/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2918317/> ;
+        schema:characterName "Ivan's Waitress"
+    ] .
+
+# Hachi: A Dog's Tale (2009)
+<https://www.imdb.com/title/tt1028532/> a schema:Movie ;
+    schema:name "Hachi: A Dog's Tale" ;
+    schema:url <https://www.imdb.com/title/tt1028532/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2918317/> ;
+        schema:characterName "Heather"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1774765337/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Exploring Hilma af Klint's enigmatic life, now recognized as one of the Western world's first abstract artists." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1774765337/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTI3ZTQ4M2ItNTk4YS00ODU0LWFiNGMtMDU5NzkwMDU5OTIyXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT2M44S"^^xsd:duration ;
+        schema:uploadDate "2023-01-16T14:31:51Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNGM2NTU1NTktY2QwNC00MjVhLWE5N2UtZmJhOTBkNzFlYTQ1XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGM2NTU1NTktY2QwNC00MjVhLWE5N2UtZmJhOTBkNzFlYTQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tora Hallström" ;
+    schema:height "626"^^xsd:integer ;
+    schema:width "436"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2918317/mediaviewer/rm3938973441/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDRjNTkzMTMtYTQ0Zi00NjI0LWJhZGUtODEzNWNiZmIyNTYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tora Hallström" ;
+    schema:height "1983"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2918317/mediaviewer/rm845540353/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNGM2NTU1NTktY2QwNC00MjVhLWE5N2UtZmJhOTBkNzFlYTQ1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tora Hallström" ;
+    schema:height "626"^^xsd:integer ;
+    schema:width "436"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

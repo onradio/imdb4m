@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0643254/> a schema:Person ;
+    schema:name "Tom Oberhaus" ;
+    schema:url <https://www.imdb.com/name/nm0643254/> ;
+    schema:jobTitle "Actor", "Producer", "Stunts" ;
+    schema:description "Tom Oberhaus. Actor: The Terminator. Tom Oberhaus is known for The Terminator (1984), The Hermaphrodite (1996) and Where the Buffalo Roam (1980)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0088247/>,    # The Terminator
+                       <https://www.imdb.com/title/tt0078607/>,    # The Dukes of Hazzard
+                       <https://www.imdb.com/title/tt0081748/>,    # Where the Buffalo Roam
+                       <https://www.imdb.com/title/tt0078150/>,    # Remember My Name
+                       <https://www.imdb.com/title/tt0078522/> . # Zero to Sixty
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Terminator (1984)
+<https://www.imdb.com/title/tt0088247/> a schema:Movie ;
+    schema:name "The Terminator" ;
+    schema:url <https://www.imdb.com/title/tt0088247/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643254/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# The Dukes of Hazzard (1980)
+<https://www.imdb.com/title/tt0078607/> a schema:Movie ;
+    schema:name "The Dukes of Hazzard" ;
+    schema:url <https://www.imdb.com/title/tt0078607/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643254/> ;
+        schema:characterName "Gumbs"
+    ] .
+
+# Where the Buffalo Roam (1980)
+<https://www.imdb.com/title/tt0081748/> a schema:Movie ;
+    schema:name "Where the Buffalo Roam" ;
+    schema:url <https://www.imdb.com/title/tt0081748/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643254/> ;
+        schema:characterName "Secret Service Man #4"
+    ] .
+
+# Remember My Name (1978)
+<https://www.imdb.com/title/tt0078150/> a schema:Movie ;
+    schema:name "Remember My Name" ;
+    schema:url <https://www.imdb.com/title/tt0078150/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643254/> ;
+        schema:characterName "Policeman"
+    ] .
+
+# Zero to Sixty (1978)
+<https://www.imdb.com/title/tt0078522/> a schema:Movie ;
+    schema:name "Zero to Sixty" ;
+    schema:url <https://www.imdb.com/title/tt0078522/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0643254/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

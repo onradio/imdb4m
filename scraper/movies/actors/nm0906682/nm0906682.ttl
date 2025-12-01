@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0906682/> a schema:Person ;
+    schema:name "Rywka Wajsbrot" ;
+    schema:url <https://www.imdb.com/name/nm0906682/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Rywka Wajsbrot. Actress: La haine. Rywka Wajsbrot is known for La haine (1995), Métisse (1993) and Mina Tannenbaum (1994)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0117065/>,    # Madame Jacques sur la Croisette
+                       <https://www.imdb.com/title/tt0113247/>,    # La haine
+                       <https://www.imdb.com/title/tt0110958/>,    # Regarde les hommes tomber
+                       <https://www.imdb.com/title/tt0110521/>,    # Mina Tannenbaum
+                       <https://www.imdb.com/title/tt0107642/>,    # Métisse
+                       <https://www.imdb.com/title/tt0195974/> ; # Papa veut pas que je t'épouse
+
+
+    schema:video <https://www.imdb.com/video/vi372810777/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Madame Jacques sur la Croisette (1997)
+<https://www.imdb.com/title/tt0117065/> a schema:Movie ;
+    schema:name "Madame Jacques sur la Croisette" ;
+    schema:url <https://www.imdb.com/title/tt0117065/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName "Mme Herman"
+    ] .
+
+# La haine (1995)
+<https://www.imdb.com/title/tt0113247/> a schema:Movie ;
+    schema:name "La haine" ;
+    schema:url <https://www.imdb.com/title/tt0113247/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName "Grand-mère Vinz"
+    ] .
+
+# Regarde les hommes tomber (1994)
+<https://www.imdb.com/title/tt0110958/> a schema:Movie ;
+    schema:name "Regarde les hommes tomber" ;
+    schema:url <https://www.imdb.com/title/tt0110958/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName "Mme Rajenski"
+    ] .
+
+# Mina Tannenbaum (1994)
+<https://www.imdb.com/title/tt0110521/> a schema:Movie ;
+    schema:name "Mina Tannenbaum" ;
+    schema:url <https://www.imdb.com/title/tt0110521/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName "(as Rywka Waisbrod)"
+    ] .
+
+# Métisse (1993)
+<https://www.imdb.com/title/tt0107642/> a schema:Movie ;
+    schema:name "Métisse" ;
+    schema:url <https://www.imdb.com/title/tt0107642/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName "Felix's aunt"
+    ] .
+
+# Papa veut pas que je t'épouse (1992)
+<https://www.imdb.com/title/tt0195974/> a schema:Movie ;
+    schema:name "Papa veut pas que je t'épouse" ;
+    schema:url <https://www.imdb.com/title/tt0195974/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906682/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi372810777/> a schema:VideoObject ;
+        schema:name "La Haine: The Criterion Collection [Blu-Ray]" ;
+        schema:description "Trailer for La Haine" ;
+        schema:embedUrl <https://www.imdb.com/video/vi372810777/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzIxZDA4ZTUtYjA3Yy00OWNmLWFlNmItMTVkNTlhNGM3YTA5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M32S"^^xsd:duration ;
+        schema:uploadDate "2012-09-26T03:22:37Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

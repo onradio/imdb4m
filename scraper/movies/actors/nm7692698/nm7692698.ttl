@@ -1,0 +1,229 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm7692698/> a schema:Person ;
+    schema:name "Katherine Langford" ;
+    schema:url <https://www.imdb.com/name/nm7692698/> ;
+    schema:birthDate "1996-04-29"^^xsd:date ;
+    schema:jobTitle "Actress", "Composer", "Producer" ;
+    schema:alternateName "Kat" ;
+    schema:description "Katherine Langford. Actress: Knives Out. Katherine Langford is an Australian actress. She is known for starring as Hannah Baker in the 2017 Netflix series 13 Reasons Why (2017), based on the novel of the same name, for which she received a Golden Globe Award nomination. In 2018, she appeared as Leah Burke in the romantic comedy-drama film Love, Simon (2018).\n\nLangford was born in Perth and raised in Perth, Western Australia...." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZWE4MzQyNmQtYWMzYi00NzE5LWEzOWQtZGQ5ODI2MjRkN2QxXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Perth, Western Australia, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.66"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 5¼″ (1.66 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8946378/>,    # Knives Out
+                       <https://www.imdb.com/title/tt1837492/>,    # 13 Reasons Why
+                       <https://www.imdb.com/title/tt5164432/>,    # Love, Simon
+                       <https://www.imdb.com/title/tt5774062/>,    # Spontaneous
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0437745/>,    # Robot Chicken
+                       <https://www.imdb.com/title/tt8354800/>,    # 13 Reasons Why: Season 2 Date Announcement Commercial
+                       <https://www.imdb.com/title/tt6417256/>,    # The Misguided
+                       <https://www.imdb.com/title/tt6603568/>,    # Imperfect Quadrant
+                       <https://www.imdb.com/title/tt5582390/>,    # Daughter
+                       <https://www.imdb.com/title/tt8355676/> ; # Story of Miss Oxygen
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 10 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2538652185/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm7692698/mediaviewer/rm373656577/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm611032833/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm2183665921/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm806836224/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm2835373568/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm1996273153/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm1889773057/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm1738778113/>,
+                 <https://www.imdb.com/name/nm7692698/mediaviewer/rm497264129/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt8946378/> a schema:Movie ;
+    schema:name "Knives Out" ;
+    schema:url <https://www.imdb.com/title/tt8946378/> .
+
+<https://www.imdb.com/title/tt1837492/> a schema:Movie ;
+    schema:name "13 Reasons Why" ;
+    schema:url <https://www.imdb.com/title/tt1837492/> .
+
+<https://www.imdb.com/title/tt5164432/> a schema:Movie ;
+    schema:name "Love, Simon" ;
+    schema:url <https://www.imdb.com/title/tt5164432/> .
+
+<https://www.imdb.com/title/tt5774062/> a schema:Movie ;
+    schema:name "Spontaneous" ;
+    schema:url <https://www.imdb.com/title/tt5774062/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Robot Chicken (2018)
+<https://www.imdb.com/title/tt0437745/> a schema:Movie ;
+    schema:name "Robot Chicken" ;
+    schema:url <https://www.imdb.com/title/tt0437745/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Steffy"
+    ] .
+
+# 13 Reasons Why: Season 2 Date Announcement Commercial (2018)
+<https://www.imdb.com/title/tt8354800/> a schema:Movie ;
+    schema:name "13 Reasons Why: Season 2 Date Announcement Commercial" ;
+    schema:url <https://www.imdb.com/title/tt8354800/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Hannah Baker"
+    ] .
+
+# The Misguided (2017)
+<https://www.imdb.com/title/tt6417256/> a schema:Movie ;
+    schema:name "The Misguided" ;
+    schema:url <https://www.imdb.com/title/tt6417256/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Vesna"
+    ] .
+
+# Imperfect Quadrant (2016)
+<https://www.imdb.com/title/tt6603568/> a schema:Movie ;
+    schema:name "Imperfect Quadrant" ;
+    schema:url <https://www.imdb.com/title/tt6603568/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Ruby"
+    ] .
+
+# Daughter (2016)
+<https://www.imdb.com/title/tt5582390/> a schema:Movie ;
+    schema:name "Daughter" ;
+    schema:url <https://www.imdb.com/title/tt5582390/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Scarlett"
+    ] .
+
+# Story of Miss Oxygen (2015)
+<https://www.imdb.com/title/tt8355676/> a schema:Movie ;
+    schema:name "Story of Miss Oxygen" ;
+    schema:url <https://www.imdb.com/title/tt8355676/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm7692698/> ;
+        schema:characterName "Miss Reflection"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2538652185/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2538652185/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BODA4OTJjMWMtNjU4Ni00YzQ1LWIyNzAtM2ViNzQyNDJmNmUwXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M31S"^^xsd:duration ;
+        schema:uploadDate "2022-09-06T11:52:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZWE4MzQyNmQtYWMzYi00NzE5LWEzOWQtZGQ5ODI2MjRkN2QxXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWE4MzQyNmQtYWMzYi00NzE5LWEzOWQtZGQ5ODI2MjRkN2QxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Actress, Avengers: Endgame (2019)" ;
+    schema:height "960"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm373656577/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3OWQ5YmUtMWY0Mi00ZTI3LWJmN2YtNzJlNmFlZDkxMzUyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jamie Lee Curtis, Don Johnson, Toni Collette, Michael Shannon, Riki Lindhome, Jaeden Martell, and Katherine Langford in Knives Out (2019)" ;
+    schema:height "3898"^^xsd:integer ;
+    schema:width "5711"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm611032833/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNmZmY2I2OTQtODI2YS00ZWM1LWFjZGEtYTliOTkzODkzMzQ3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jamie Lee Curtis, Don Johnson, Toni Collette, Christopher Plummer, K Callan, Chris Evans, Michael Shannon, Riki Lindhome, Ana de Armas, Jaeden Martell, and Katherine Langford in Knives Out (2019)" ;
+    schema:height "2667"^^xsd:integer ;
+    schema:width "4000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm2183665921/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2Y0YWU3ZTYtMWIzMi00OWE2LWFhMzAtMGE4MjU3ZjFiNzU1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Dylan Minnette and Katherine Langford in 13 Reasons Why (2017)" ;
+    schema:height "651"^^xsd:integer ;
+    schema:width "444"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm806836224/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGMzOTMzZTEtYzIyNC00ZWNlLWExZjMtNDcxYjZiODZlMTNkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Alexandra Shipp, Nick Robinson, Jorge Lendeborg Jr., and Katherine Langford in Love, Simon (2018)" ;
+    schema:height "2050"^^xsd:integer ;
+    schema:width "3075"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm2835373568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzE5MTM0MzQ0M15BMl5BanBnXkFtZTgwNTY1NTYyNDM@._V1_.jpg> ;
+    schema:caption "Selena Gomez, Dylan Minnette, and Katherine Langford in 13 Reasons Why (2017)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm1996273153/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTk0ZDE5ZmUtYTA5NS00YmNmLThlZDctNjA0NWUwZDYzOGE2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Katherine Langford in Cursed (2020)" ;
+    schema:height "1185"^^xsd:integer ;
+    schema:width "800"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm1889773057/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDU2ZTJiNWMtMmZmOS00MzAyLWFkMWUtMWE0OWY3YzAzZmZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Kaitlyn Bernard, Katherine Langford, and Hayley Law in Spontaneous (2020)" ;
+    schema:height "3333"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm1738778113/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWI0MWRkNjAtYjU3My00Mzc1LWI5NjUtNjg2NzRiMjU5OTFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlie Plummer and Katherine Langford in Spontaneous (2020)" ;
+    schema:height "3333"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm7692698/mediaviewer/rm497264129/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTI3Y2U0ODEtZDVjMy00ZjkyLWI4NmEtZWUzNDVlMTFkNzJkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Yvonne Orji, Katherine Langford, and Hayley Law in Spontaneous (2020)" ;
+    schema:height "3333"^^xsd:integer ;
+    schema:width "5000"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm7692698/>
+    schema:sameAs <https://www.instagram.com/katherinelangford/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

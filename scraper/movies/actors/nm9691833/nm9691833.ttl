@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9691833/> a schema:Person ;
+    schema:name "Hudson Galloway" ;
+    schema:url <https://www.imdb.com/name/nm9691833/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Hudson Galloway. Actor: Green Book. Hudson Galloway is known for Green Book (2018)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6966692/> .    # Green Book
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Green Book (2018)
+<https://www.imdb.com/title/tt6966692/> a schema:Movie ;
+    schema:name "Green Book" ;
+    schema:url <https://www.imdb.com/title/tt6966692/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9691833/> ;
+        schema:characterName "Nick Vallelonga"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

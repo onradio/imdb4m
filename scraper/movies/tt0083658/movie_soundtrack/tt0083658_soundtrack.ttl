@@ -1,0 +1,75 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0083658/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Harps of the Ancient Temples" ;
+        schema:byArtist <https://www.imdb.com/name/nm3990328/> ; # Gail Laughton
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Harps of the Ancient Temples" ;
+            schema:composer <https://www.imdb.com/name/nm3990328/> # Gail Laughton
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One More Kiss Dear" ;
+        schema:byArtist <https://www.imdb.com/name/nm0006331/> ; # Vangelis
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "One More Kiss Dear" ;
+            schema:author <https://www.imdb.com/name/nm0804000/> # Peter Skellern
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Theme" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Theme" ;
+            schema:author <https://www.imdb.com/name/nm0006331/> # Vangelis
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Tales of the Future" ;
+        schema:byArtist <https://www.imdb.com/name/nm0746096/> ; # Demis Roussos
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Tales of the Future" ;
+            schema:author <https://www.imdb.com/name/nm0006331/> # Vangelis
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Search For Clues" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Search For Clues" ;
+            schema:author <https://www.imdb.com/name/nm0000035/> # James Horner
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000035/> a schema:Person ;
+    schema:name "James Horner" .
+<https://www.imdb.com/name/nm0006331/> a schema:Person ;
+    schema:name "Vangelis" .
+<https://www.imdb.com/name/nm0746096/> a schema:Person ;
+    schema:name "Demis Roussos" .
+<https://www.imdb.com/name/nm0804000/> a schema:Person ;
+    schema:name "Peter Skellern" .
+<https://www.imdb.com/name/nm3990328/> a schema:Person ;
+    schema:name "Gail Laughton" .
+# ==============================================================================

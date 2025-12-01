@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1060476/> a schema:Person ;
+    schema:name "Richard Mead" ;
+    schema:url <https://www.imdb.com/name/nm1060476/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Richard Mead. Actor: Mulholland Drive. Richard Mead is known for Mulholland Drive (2001) and Mulholland Dr. (1999)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0166924/>,    # Mulholland Drive
+                       <https://www.imdb.com/title/tt1619856/> . # Mulholland Dr.
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Mulholland Drive (2001)
+<https://www.imdb.com/title/tt0166924/> a schema:Movie ;
+    schema:name "Mulholland Drive" ;
+    schema:url <https://www.imdb.com/title/tt0166924/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1060476/> ;
+        schema:characterName "Hairy-Armed Man"
+    ] .
+
+# Mulholland Dr. (1999)
+<https://www.imdb.com/title/tt1619856/> a schema:Movie ;
+    schema:name "Mulholland Dr." ;
+    schema:url <https://www.imdb.com/title/tt1619856/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1060476/> ;
+        schema:characterName "Hairy-Armed Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

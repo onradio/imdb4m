@@ -1,0 +1,175 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0112471/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Dido And Aeneas: Overture" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Dido And Aeneas: Overture" ;
+            schema:composer <https://www.imdb.com/name/nm0700722/> # Henry Purcell
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Dancing With Da Rat" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Yakety Sax" ;
+        schema:byArtist <https://www.imdb.com/name/nm0709879/> ; # Boots Randolph
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Yakety Sax" ;
+            schema:composer <https://www.imdb.com/name/nm0709879/>, # Boots Randolph
+                        <https://www.imdb.com/name/nm3624484/> # James Rich
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Come Here" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Anti Body" ;
+        schema:byArtist <https://www.imdb.com/name/nm1299316/> ; # Fetish 69
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Anti Body" ;
+            schema:composer <https://www.imdb.com/name/nm1299316/> # Fetish 69
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Sonata No. 8 In C Minor, Opus 13 ('Pathétique') Rondo: Allegro" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Sonata No. 8 In C Minor, Opus 13 ('Pathétique') Rondo: Allegro" ;
+            schema:composer <https://www.imdb.com/name/nm0002727/> # Ludwig van Beethoven
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Concerto In B-Flat Major For Violin And Oboe With Ripieno Strings, RV 358" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Concerto In B-Flat Major For Violin And Oboe With Ripieno Strings, RV 358" ;
+            schema:composer <https://www.imdb.com/name/nm0006334/> # Antonio Vivaldi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Human Pump" ;
+        schema:byArtist <https://www.imdb.com/name/nm0906464/> ; # Harald Waiglein
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Human Pump" ;
+            schema:composer <https://www.imdb.com/name/nm0906464/> # Harald Waiglein
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Vienna Blood" ;
+        schema:byArtist <https://www.imdb.com/name/nm0458516/>, # Barbara Klebel
+                        <https://www.imdb.com/name/nm0823101/> ; # Wolfgang Staribacher
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Vienna Blood" ;
+            schema:composer <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Trapeze" ;
+        schema:byArtist <https://www.imdb.com/name/nm1101536/> ; # Lou Christie
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Trapeze" ;
+            schema:composer <https://www.imdb.com/name/nm1101536/>, # Lou Christie
+                        <https://www.imdb.com/name/nm3186306/> # Twyla Herbert
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Variatio 25' of 'The Goldberg Variations" ;
+        schema:byArtist <https://www.imdb.com/name/nm0323421/> ; # Wolfgang Glüxam
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Variatio 25' of 'The Goldberg Variations" ;
+            schema:composer <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Andante' from 'Sonata No. 1 In G Major, BWV 1027" ;
+        schema:byArtist <https://www.imdb.com/name/nm0530901/> ; # Yo-Yo Ma
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Andante' from 'Sonata No. 1 In G Major, BWV 1027" ;
+            schema:composer <https://www.imdb.com/name/nm0001925/> # Johann Sebastian Bach
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Living Life" ;
+        schema:byArtist <https://www.imdb.com/name/nm2625193/> ; # Kathy McCarty
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Living Life" ;
+            schema:composer <https://www.imdb.com/name/nm1895845/> # Daniel Johnston
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0001925/> a schema:Person ;
+    schema:name "Johann Sebastian Bach" .
+<https://www.imdb.com/name/nm0002727/> a schema:Person ;
+    schema:name "Ludwig van Beethoven" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0006334/> a schema:Person ;
+    schema:name "Antonio Vivaldi" .
+<https://www.imdb.com/name/nm0323421/> a schema:Person ;
+    schema:name "Wolfgang Glüxam" .
+<https://www.imdb.com/name/nm0458516/> a schema:Person ;
+    schema:name "Barbara Klebel" .
+<https://www.imdb.com/name/nm0530901/> a schema:Person ;
+    schema:name "Yo-Yo Ma" .
+<https://www.imdb.com/name/nm0700722/> a schema:Person ;
+    schema:name "Henry Purcell" .
+<https://www.imdb.com/name/nm0709879/> a schema:Person ;
+    schema:name "Boots Randolph" .
+<https://www.imdb.com/name/nm0823101/> a schema:Person ;
+    schema:name "Wolfgang Staribacher" .
+<https://www.imdb.com/name/nm0906464/> a schema:Person ;
+    schema:name "Harald Waiglein" .
+<https://www.imdb.com/name/nm1101536/> a schema:Person ;
+    schema:name "Lou Christie" .
+<https://www.imdb.com/name/nm1299316/> a schema:Person ;
+    schema:name "Fetish 69" .
+<https://www.imdb.com/name/nm1895845/> a schema:Person ;
+    schema:name "Daniel Johnston" .
+<https://www.imdb.com/name/nm2625193/> a schema:Person ;
+    schema:name "Kathy McCarty" .
+<https://www.imdb.com/name/nm3186306/> a schema:Person ;
+    schema:name "Twyla Herbert" .
+<https://www.imdb.com/name/nm3624484/> a schema:Person ;
+    schema:name "James Rich" .
+# ==============================================================================

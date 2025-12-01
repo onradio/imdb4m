@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1276375/> a schema:Person ;
+    schema:name "Li Li" ;
+    schema:url <https://www.imdb.com/name/nm1276375/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Li Li. Actress: Crouching Tiger, Hidden Dragon. Li Li is known for Crouching Tiger, Hidden Dragon (2000), Kuet chin chi gam ji din (2000) and Kuang long cheng ying hao (1994)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BYjBiZTNjMDQtNmIwYS00NjQxLTkzNzAtZmYyZGZlNzUzZWFhXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6602672/>,    # Happy Lover
+                       <https://www.imdb.com/title/tt9139776/>,    # Return of the Heirloom
+                       <https://www.imdb.com/title/tt0190332/>,    # Crouching Tiger, Hidden Dragon
+                       <https://www.imdb.com/title/tt0243876/>,    # Kuet chin chi gam ji din
+                       <https://www.imdb.com/title/tt3582030/>,    # Lao bing jiu ba
+                       <https://www.imdb.com/title/tt0182897/>,    # Kuang long cheng ying hao
+                       <https://www.imdb.com/title/tt0347562/> ; # Mo gui fa qia
+
+
+    schema:video <https://www.imdb.com/video/vi1046455321/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1276375/mediaviewer/rm2048556544/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Happy Lover (2014)
+<https://www.imdb.com/title/tt6602672/> a schema:Movie ;
+    schema:name "Happy Lover" ;
+    schema:url <https://www.imdb.com/title/tt6602672/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName "Jiang Qing (2014)"
+    ] .
+
+# Return of the Heirloom (2007)
+<https://www.imdb.com/title/tt9139776/> a schema:Movie ;
+    schema:name "Return of the Heirloom" ;
+    schema:url <https://www.imdb.com/title/tt9139776/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName ""
+    ] .
+
+# Crouching Tiger, Hidden Dragon (2000)
+<https://www.imdb.com/title/tt0190332/> a schema:Movie ;
+    schema:name "Crouching Tiger, Hidden Dragon" ;
+    schema:url <https://www.imdb.com/title/tt0190332/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName "May"
+    ] .
+
+# Kuet chin chi gam ji din (2000)
+<https://www.imdb.com/title/tt0243876/> a schema:Movie ;
+    schema:name "Kuet chin chi gam ji din" ;
+    schema:url <https://www.imdb.com/title/tt0243876/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName ""
+    ] .
+
+# Lao bing jiu ba (1999)
+<https://www.imdb.com/title/tt3582030/> a schema:Movie ;
+    schema:name "Lao bing jiu ba" ;
+    schema:url <https://www.imdb.com/title/tt3582030/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName "(1999)"
+    ] .
+
+# Kuang long cheng ying hao (1994)
+<https://www.imdb.com/title/tt0182897/> a schema:Movie ;
+    schema:name "Kuang long cheng ying hao" ;
+    schema:url <https://www.imdb.com/title/tt0182897/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName "Shanmei"
+    ] .
+
+# Mo gui fa qia (1994)
+<https://www.imdb.com/title/tt0347562/> a schema:Movie ;
+    schema:name "Mo gui fa qia" ;
+    schema:url <https://www.imdb.com/title/tt0347562/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1276375/> ;
+        schema:characterName "Wenwen's Mother"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1046455321/> a schema:VideoObject ;
+        schema:name "Crouching Tiger, Hidden Dragon" ;
+        schema:description "Trailer for Crouching Tiger, Hidden Dragon" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1046455321/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDY1ZjQ4YzAtODZmNy00M2JhLTkwNzItNjA0NDFmZDM2MzFkXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M4S"^^xsd:duration ;
+        schema:uploadDate "2012-11-02T03:08:49Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BYjBiZTNjMDQtNmIwYS00NjQxLTkzNzAtZmYyZGZlNzUzZWFhXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjBiZTNjMDQtNmIwYS00NjQxLTkzNzAtZmYyZGZlNzUzZWFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Li Li" ;
+    schema:height "751"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1276375/mediaviewer/rm2048556544/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjBiZTNjMDQtNmIwYS00NjQxLTkzNzAtZmYyZGZlNzUzZWFhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Li Li" ;
+    schema:height "751"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

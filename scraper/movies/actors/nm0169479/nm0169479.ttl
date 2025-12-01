@@ -1,0 +1,90 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0169479/> a schema:Person ;
+    schema:name "Jedidiah Cohen" ;
+    schema:url <https://www.imdb.com/name/nm0169479/> ;
+    schema:birthDate "1975-11-30"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Jed Cohen" ;
+    schema:description "Jedidiah Cohen. Actor: Home Alone. Jedidiah Cohen was born on 30 November 1975 in Michigan, USA. He is an actor, known for Home Alone (1990), Home Alone 2: Lost in New York (1992) and No Vladimir (2000). He has been married to Kate Dawson since 25 February 2007." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Michigan, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0305900/>,    # No Vladimir
+                       <https://www.imdb.com/title/tt0409707/>,    # Artemin Goldberg: Custom Tailor of Brassieres
+                       <https://www.imdb.com/title/tt0104431/>,    # Home Alone 2: Lost in New York
+                       <https://www.imdb.com/title/tt0099785/> . # Home Alone
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# No Vladimir (2000)
+<https://www.imdb.com/title/tt0305900/> a schema:Movie ;
+    schema:name "No Vladimir" ;
+    schema:url <https://www.imdb.com/title/tt0305900/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0169479/> ;
+        schema:characterName "Vladimir"
+    ] .
+
+# Artemin Goldberg: Custom Tailor of Brassieres (2000)
+<https://www.imdb.com/title/tt0409707/> a schema:Movie ;
+    schema:name "Artemin Goldberg: Custom Tailor of Brassieres" ;
+    schema:url <https://www.imdb.com/title/tt0409707/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0169479/> ;
+        schema:characterName "Jedidiah"
+    ] .
+
+# Home Alone 2: Lost in New York (1992)
+<https://www.imdb.com/title/tt0104431/> a schema:Movie ;
+    schema:name "Home Alone 2: Lost in New York" ;
+    schema:url <https://www.imdb.com/title/tt0104431/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0169479/> ;
+        schema:characterName "Rod"
+    ] .
+
+# Home Alone (1990)
+<https://www.imdb.com/title/tt0099785/> a schema:Movie ;
+    schema:name "Home Alone" ;
+    schema:url <https://www.imdb.com/title/tt0099785/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0169479/> ;
+        schema:characterName "Rod"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

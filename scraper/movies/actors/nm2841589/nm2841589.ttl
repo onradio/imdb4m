@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2841589/> a schema:Person ;
+    schema:name "Louis Nummy" ;
+    schema:url <https://www.imdb.com/name/nm2841589/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Louis Nummy. Actor: In Bruges. Louis Nummy is known for In Bruges (2008), Foyle's War (2002) and BBC Learning: True Stories (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0310455/>,    # Foyle's War
+                       <https://www.imdb.com/title/tt0780536/> ; # In Bruges
+
+
+    schema:video <https://www.imdb.com/video/vi2491989273/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Foyle's War (2008)
+<https://www.imdb.com/title/tt0310455/> a schema:Movie ;
+    schema:name "Foyle's War" ;
+    schema:url <https://www.imdb.com/title/tt0310455/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2841589/> ;
+        schema:characterName "Daniel Dawson"
+    ] .
+
+# In Bruges (2008)
+<https://www.imdb.com/title/tt0780536/> a schema:Movie ;
+    schema:name "In Bruges" ;
+    schema:url <https://www.imdb.com/title/tt0780536/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2841589/> ;
+        schema:characterName "Harry's Child #3"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2491989273/> a schema:VideoObject ;
+        schema:name "Foyle&apos;s War: Casualties Of War" ;
+        schema:description "Foyle's War: Casualties Of War" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2491989273/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOGM4OGVhMDYtZGM0OS00MzAwLWE4NjItMjRmOGRiYjdkNGNiXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT49S"^^xsd:duration ;
+        schema:uploadDate "2019-03-18T07:06:48Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,57 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0372784/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Folletto!...Folletto!" ;
+        schema:byArtist <https://www.imdb.com/name/nm3136737/>, # The Ambrosian Singers
+                        <https://www.imdb.com/name/nm1499772/> ; # London Symphony Orchestra
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Folletto!...Folletto!" ;
+            schema:author <https://www.imdb.com/name/nm0092435/> # Arrigo Boito
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday To You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday To You" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Divertimento in D Major, K.136 (2nd movement)" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Divertimento in D Major, K.136 (2nd movement)" ;
+            schema:author <https://www.imdb.com/name/nm0003665/> # Wolfgang Amadeus Mozart
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0003665/> a schema:Person ;
+    schema:name "Wolfgang Amadeus Mozart" .
+<https://www.imdb.com/name/nm0092435/> a schema:Person ;
+    schema:name "Arrigo Boito" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm1499772/> a schema:Person ;
+    schema:name "London Symphony Orchestra" .
+<https://www.imdb.com/name/nm3136737/> a schema:Person ;
+    schema:name "The Ambrosian Singers" .
+# ==============================================================================

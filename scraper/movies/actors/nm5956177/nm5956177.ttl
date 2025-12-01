@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5956177/> a schema:Person ;
+    schema:name "Andrew Villarreal" ;
+    schema:url <https://www.imdb.com/name/nm5956177/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Andrew Villarreal. Actor: Boyhood. Andrew Villarreal is known for Boyhood (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1065073/> ;    # Boyhood
+
+
+    schema:video <https://www.imdb.com/video/vi869116953/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyhood (2014)
+<https://www.imdb.com/title/tt1065073/> a schema:Movie ;
+    schema:name "Boyhood" ;
+    schema:url <https://www.imdb.com/title/tt1065073/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5956177/> ;
+        schema:characterName "Randy"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi869116953/> a schema:VideoObject ;
+        schema:name "Boyhood" ;
+        schema:description "Clip: Talk To Me" ;
+        schema:embedUrl <https://www.imdb.com/video/vi869116953/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWFmMTEyMTEtMDUwOS00YjE2LWE2ODgtYjA0YmM2ZDE5ZGI2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M10S"^^xsd:duration ;
+        schema:uploadDate "2014-07-25T04:10:23Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,156 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001343/> a schema:Person ;
+    schema:name "Carrie Henn" ;
+    schema:url <https://www.imdb.com/name/nm0001343/> ;
+    schema:birthDate "1976-05-07"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:alternateName "Screamer", "Newt", "Caroline Marie Henn" ;
+    schema:description "Carrie Henn. Actress: Aliens. Carrie Henn is a former American child actress, who rose to prominence at the age of ten (10) after co-starring with Sigourney Weaver in the movie \"Aliens,\" the 1986 sequel to the 1979 hit, \"Alien.\" She has been married to her husband Nathan Kutcher since July 2, 2005. They have one child together." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BNDg5OTE4ZWEtZjk1ZC00YmE5LTljZGQtYWNjZGQ0ZTI2YmJiXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Panama City, Florida, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.69"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 6½″ (1.69 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0090605/>,    # Aliens
+                       <https://www.imdb.com/title/tt0297720/>,    # Alien Evolution
+                       <https://www.imdb.com/title/tt10533976/>,    # Thunder Island
+                       <https://www.imdb.com/title/tt4885144/> ; # Triborn
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 2 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3507926809/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001343/mediaviewer/rm247478272/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm1632177920/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm2741549824/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm320966400/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm270634752/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm1981910784/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm1197709568/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm1130600704/>,
+                 <https://www.imdb.com/name/nm0001343/mediaviewer/rm1315150080/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0090605/> a schema:Movie ;
+    schema:name "Aliens" ;
+    schema:url <https://www.imdb.com/title/tt0090605/> .
+
+<https://www.imdb.com/title/tt0297720/> a schema:Movie ;
+    schema:name "Alien Evolution" ;
+    schema:url <https://www.imdb.com/title/tt0297720/> .
+
+<https://www.imdb.com/title/tt10533976/> a schema:Movie ;
+    schema:name "Thunder Island" ;
+    schema:url <https://www.imdb.com/title/tt10533976/> .
+
+<https://www.imdb.com/title/tt4885144/> a schema:Movie ;
+    schema:name "Triborn" ;
+    schema:url <https://www.imdb.com/title/tt4885144/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3507926809/> a schema:VideoObject ;
+        schema:name "Kevin Smith Geeks Out With Newt From &apos;Aliens&apos;" ;
+        schema:description "If you've ever wondered what happened to the actress who played Newt in 'Aliens,' we've got the answer! Kevin Smith geeks out with Carrie Henn, who played the memorable child character in the sci-fi film, aboard the IMDb Yacht at San Diego Comic-Con. Find out what she's been up to in the 30 years since the movie was released." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3507926809/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDg1NjkxNzMzOV5BMl5BanBnXkFtZTgwODkxNzA1OTE@._V1_.jpg" ;
+        schema:duration "PT3M2S"^^xsd:duration ;
+        schema:uploadDate "2016-07-22T09:00:22Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BNDg5OTE4ZWEtZjk1ZC00YmE5LTljZGQtYWNjZGQ0ZTI2YmJiXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDg5OTE4ZWEtZjk1ZC00YmE5LTljZGQtYWNjZGQ0ZTI2YmJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Henn" ;
+    schema:height "967"^^xsd:integer ;
+    schema:width "770"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm247478272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2NmYzUwNDAtZWYwMy00NzQ3LThhNDEtNWU1ODE2OTVjOGEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Carrie Henn in Aliens (1986)" ;
+    schema:height "331"^^xsd:integer ;
+    schema:width "501"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm1632177920/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTM4ODE0MDcwN15BMl5BanBnXkFtZTgwMjEwNzc5OTE@._V1_.jpg> ;
+    schema:caption "Sigourney Weaver and Carrie Henn in Aliens (1986)" ;
+    schema:height "1404"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm2741549824/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ4NTMyODA4NV5BMl5BanBnXkFtZTcwODY0MTI3NA@@._V1_.jpg> ;
+    schema:caption "Sigourney Weaver and Carrie Henn in Aliens (1986)" ;
+    schema:height "1352"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm320966400/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjAzNDAwODUwMF5BMl5BanBnXkFtZTcwODkzODEyMw@@._V1_.jpg> ;
+    schema:caption "Carrie Henn in Aliens (1986)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm270634752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTA5Njc3MzU2ODdeQTJeQWpwZ15BbWU3MDEwNDgxMjM@._V1_.jpg> ;
+    schema:caption "Sigourney Weaver and Carrie Henn in Aliens (1986)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1370"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm1981910784/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI4OTY5Nzg5NV5BMl5BanBnXkFtZTcwMzM0ODEyMw@@._V1_.jpg> ;
+    schema:caption "Carrie Henn in Aliens (1986)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm1197709568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg4MTMyNjcyNl5BMl5BanBnXkFtZTYwMTk0NDY3._V1_.jpg> ;
+    schema:caption "Sigourney Weaver and Carrie Henn in Aliens (1986)" ;
+    schema:height "719"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm1130600704/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTg3MTkzMTg5NV5BMl5BanBnXkFtZTYwNTk0NDY3._V1_.jpg> ;
+    schema:caption "Sigourney Weaver and Carrie Henn in Aliens (1986)" ;
+    schema:height "723"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001343/mediaviewer/rm1315150080/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTIyMDU3MTAzOV5BMl5BanBnXkFtZTYwMjA1NDY3._V1_.jpg> ;
+    schema:caption "Sigourney Weaver, Michael Biehn, Jenette Goldstein, and Carrie Henn in Aliens (1986)" ;
+    schema:height "324"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0001343/>
+    schema:sameAs <https://www.instagram.com/officialcarriehenn> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

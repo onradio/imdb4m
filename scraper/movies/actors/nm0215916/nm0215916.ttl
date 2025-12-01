@@ -1,0 +1,143 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0215916/> a schema:Person ;
+    schema:name "Barry Del Sherman" ;
+    schema:url <https://www.imdb.com/name/nm0215916/> ;
+    schema:birthDate "1962-11-10"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Barry Del Sherman. Actor: American Beauty. Barry Del Sherman was born on 10 November 1962 in Fontana, California, USA. He is an actor, known for American Beauty (1999), Independence Day (1996) and Suicide Kings (1997). He has been married to Georgina Reskala since 2005. He was previously married to Alexandra Powers." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Fontana, California, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8257430/>,    # Majnuni
+                       <https://www.imdb.com/title/tt6437340/>,    # Moonlighter
+                       <https://www.imdb.com/title/tt5629938/>,    # Street Level: Behind the Scenes Featurrette
+                       <https://www.imdb.com/title/tt4438594/>,    # Street Level
+                       <https://www.imdb.com/title/tt4457322/>,    # Wiglum
+                       <https://www.imdb.com/title/tt2992000/>,    # Yosemite
+                       <https://www.imdb.com/title/tt3549524/> ; # Saint Francis
+
+
+    schema:video <https://www.imdb.com/video/vi904902169/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0215916/mediaviewer/rm3973645825/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Majnuni (2019)
+<https://www.imdb.com/title/tt8257430/> a schema:Movie ;
+    schema:name "Majnuni" ;
+    schema:url <https://www.imdb.com/title/tt8257430/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName ""
+    ] .
+
+# Moonlighter (2018)
+<https://www.imdb.com/title/tt6437340/> a schema:Movie ;
+    schema:name "Moonlighter" ;
+    schema:url <https://www.imdb.com/title/tt6437340/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Franko"
+    ] .
+
+# Street Level: Behind the Scenes Featurrette (2016)
+<https://www.imdb.com/title/tt5629938/> a schema:Movie ;
+    schema:name "Street Level: Behind the Scenes Featurrette" ;
+    schema:url <https://www.imdb.com/title/tt5629938/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Cyrus Gilby"
+    ] .
+
+# Street Level (2015)
+<https://www.imdb.com/title/tt4438594/> a schema:Movie ;
+    schema:name "Street Level" ;
+    schema:url <https://www.imdb.com/title/tt4438594/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Cyrus Gilbey"
+    ] .
+
+# Wiglum (2015)
+<https://www.imdb.com/title/tt4457322/> a schema:Movie ;
+    schema:name "Wiglum" ;
+    schema:url <https://www.imdb.com/title/tt4457322/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Wiglum"
+    ] .
+
+# Yosemite (2015)
+<https://www.imdb.com/title/tt2992000/> a schema:Movie ;
+    schema:name "Yosemite" ;
+    schema:url <https://www.imdb.com/title/tt2992000/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Daniel"
+    ] .
+
+# Saint Francis (2014)
+<https://www.imdb.com/title/tt3549524/> a schema:Movie ;
+    schema:name "Saint Francis" ;
+    schema:url <https://www.imdb.com/title/tt3549524/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0215916/> ;
+        schema:characterName "Jerry"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi904902169/> a schema:VideoObject ;
+        schema:name "Street Level" ;
+        schema:description "Trailer for Street Level" ;
+        schema:embedUrl <https://www.imdb.com/video/vi904902169/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZDNlNWQ3NjctZDliZS00ZmNhLWJhY2EtNDg0MTJiNzYwNjQ0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2016-11-15T09:45:06Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0215916/mediaviewer/rm3973645825/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzBmZGExMTItMTgwYi00ZjQ0LWJhYTItOTJkNjYyNGFhNjVlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Téa Leoni, Barry Del Sherman, and Tom Verica in The Naked Truth (1995)" ;
+    schema:height "717"^^xsd:integer ;
+    schema:width "955"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

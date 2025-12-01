@@ -1,0 +1,55 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1111054/> a schema:Person ;
+    schema:name "Masaki Terasoma" ;
+    schema:url <https://www.imdb.com/name/nm1111054/> ;
+    schema:birthDate "1962-05-08"^^xsd:date ;
+    schema:jobTitle "Actor", "Soundtrack" ;
+    schema:description "Masaki Terasoma. Actor: Kamen Rider Den-O. Masaki Terasoma was born on 8 May 1962 in Nishinomiya, Hyogo, Japan. He is an actor, known for Kamen Rider Den-O (2007), Kamen Rider Black (1987) and Super Hero Taisen: Kamen Rider vs. Super Sentai (2012)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Nishinomiya, Hyogo, Japan"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi3576806937/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3576806937/> a schema:VideoObject ;
+        schema:name "Trailer [OVS]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3576806937/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjE5ZGVlOGMtMTIzNy00ZGJlLWFiMGQtNTVjNWM1Yjk3MzY0XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M38S"^^xsd:duration ;
+        schema:uploadDate "2020-05-29T10:05:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

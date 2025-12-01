@@ -1,0 +1,311 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0001253/> a schema:Person ;
+    schema:name "Mason Gamble" ;
+    schema:url <https://www.imdb.com/name/nm0001253/> ;
+    schema:birthDate "1986-01-16"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:alternateName "Mason Wilson Gamble" ;
+    schema:description "Mason Gamble. Actor: Dennis the Menace. Mason began his film-acting career at age six when director Harold Ramis cast him in Groundhog Day (1993). Three months later, Mason won the title role in the hit comedy, Dennis the Menace (1993). He was chosen from twenty thousand other hopefuls in a nationwide casting call launched by John Hughes and Warner Bros. It was an early and special opportunity to work with..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjA2MTYxODAyN15BMl5BanBnXkFtZTcwMTI5MDEzOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chicago, Illinois, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0106701/>,    # Dennis the Menace
+                       <https://www.imdb.com/title/tt0117723/>,    # Spy Hard
+                       <https://www.imdb.com/title/tt0119177/>,    # Gattaca
+                       <https://www.imdb.com/title/tt0128445/>,    # Rushmore
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1448497/>,    # Golf in the Kingdom
+                       <https://www.imdb.com/title/tt0313043/>,    # CSI: Miami
+                       <https://www.imdb.com/title/tt0415739/>,    # The Trouble with Dee Dee
+                       <https://www.imdb.com/title/tt0460631/>,    # Close to Home
+                       <https://www.imdb.com/title/tt0260924/>,    # A Gentleman's Game
+                       <https://www.imdb.com/title/tt0248638/>,    # Kate Brasher
+                       <https://www.imdb.com/title/tt0201020/>,    # The Rising Place
+                       <https://www.imdb.com/title/tt0218819/>,    # Anya's Bell
+                       <https://www.imdb.com/title/tt0137363/>,    # Arlington Road
+                       <https://www.imdb.com/title/tt0108757/>,    # ER
+                       <https://www.imdb.com/title/tt0166671/>,    # Just in Time
+                       <https://www.imdb.com/title/tt0115163/>,    # Early Edition
+                       <https://www.imdb.com/title/tt0115610/> ; # Bad Moon
+
+    schema:award [
+        a schema:Award ;
+        schema:description "2 wins & 3 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1941176601/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0001253/mediaviewer/rm3455860992/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm3489415424/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1576812800/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1425817856/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1174159616/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1929134336/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1945911552/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm1996243200/>,
+                 <https://www.imdb.com/name/nm0001253/mediaviewer/rm676118272/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0106701/> a schema:Movie ;
+    schema:name "Dennis the Menace" ;
+    schema:url <https://www.imdb.com/title/tt0106701/> .
+
+<https://www.imdb.com/title/tt0117723/> a schema:Movie ;
+    schema:name "Spy Hard" ;
+    schema:url <https://www.imdb.com/title/tt0117723/> .
+
+<https://www.imdb.com/title/tt0119177/> a schema:Movie ;
+    schema:name "Gattaca" ;
+    schema:url <https://www.imdb.com/title/tt0119177/> .
+
+<https://www.imdb.com/title/tt0128445/> a schema:Movie ;
+    schema:name "Rushmore" ;
+    schema:url <https://www.imdb.com/title/tt0128445/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Golf in the Kingdom (2010)
+<https://www.imdb.com/title/tt1448497/> a schema:Movie ;
+    schema:name "Golf in the Kingdom" ;
+    schema:url <https://www.imdb.com/title/tt1448497/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Michael Murphy"
+    ] .
+
+# CSI: Miami (2006)
+<https://www.imdb.com/title/tt0313043/> a schema:Movie ;
+    schema:name "CSI: Miami" ;
+    schema:url <https://www.imdb.com/title/tt0313043/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Scott Satlin"
+    ] .
+
+# The Trouble with Dee Dee (2005)
+<https://www.imdb.com/title/tt0415739/> a schema:Movie ;
+    schema:name "The Trouble with Dee Dee" ;
+    schema:url <https://www.imdb.com/title/tt0415739/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Christopher Rutherford"
+    ] .
+
+# Close to Home (2005)
+<https://www.imdb.com/title/tt0460631/> a schema:Movie ;
+    schema:name "Close to Home" ;
+    schema:url <https://www.imdb.com/title/tt0460631/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Derrick Adler"
+    ] .
+
+# A Gentleman's Game (2002)
+<https://www.imdb.com/title/tt0260924/> a schema:Movie ;
+    schema:name "A Gentleman's Game" ;
+    schema:url <https://www.imdb.com/title/tt0260924/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Timmy Price"
+    ] .
+
+# Kate Brasher (2001)
+<https://www.imdb.com/title/tt0248638/> a schema:Movie ;
+    schema:name "Kate Brasher" ;
+    schema:url <https://www.imdb.com/title/tt0248638/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Elvis Brasher"
+    ] .
+
+# The Rising Place (2001)
+<https://www.imdb.com/title/tt0201020/> a schema:Movie ;
+    schema:name "The Rising Place" ;
+    schema:url <https://www.imdb.com/title/tt0201020/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Franklin Pou (age 12)"
+    ] .
+
+# Anya's Bell (1999)
+<https://www.imdb.com/title/tt0218819/> a schema:Movie ;
+    schema:name "Anya's Bell" ;
+    schema:url <https://www.imdb.com/title/tt0218819/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Scott Rhymes"
+    ] .
+
+# Arlington Road (1999)
+<https://www.imdb.com/title/tt0137363/> a schema:Movie ;
+    schema:name "Arlington Road" ;
+    schema:url <https://www.imdb.com/title/tt0137363/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Brady Lang"
+    ] .
+
+# ER (1997)
+<https://www.imdb.com/title/tt0108757/> a schema:Movie ;
+    schema:name "ER" ;
+    schema:url <https://www.imdb.com/title/tt0108757/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Robert Potter"
+    ] .
+
+# Just in Time (1996)
+<https://www.imdb.com/title/tt0166671/> a schema:Movie ;
+    schema:name "Just in Time" ;
+    schema:url <https://www.imdb.com/title/tt0166671/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Noah"
+    ] .
+
+# Early Edition (1996)
+<https://www.imdb.com/title/tt0115163/> a schema:Movie ;
+    schema:name "Early Edition" ;
+    schema:url <https://www.imdb.com/title/tt0115163/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Bryce Porter"
+    ] .
+
+# Bad Moon (1996)
+<https://www.imdb.com/title/tt0115610/> a schema:Movie ;
+    schema:name "Bad Moon" ;
+    schema:url <https://www.imdb.com/title/tt0115610/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0001253/> ;
+        schema:characterName "Brett"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1941176601/> a schema:VideoObject ;
+        schema:name "A Gentleman&apos;s Game" ;
+        schema:description "Home Video Trailer from First Look" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1941176601/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTdlZmM0MTYtYmEyNy00ZWZkLThhOGYtYjIyZjA1YjRiZGE0XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M5S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T05:38:31Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjA2MTYxODAyN15BMl5BanBnXkFtZTcwMTI5MDEzOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA2MTYxODAyN15BMl5BanBnXkFtZTcwMTI5MDEzOA@@._V1_.jpg> ;
+    schema:caption "Mason Gamble" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1508"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm3455860992/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTdiMDViNmQtOTE0Yy00MTZmLThiNDYtY2E2MGRmYzdlYmNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm3489415424/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDM3NjljMGEtNmJhNS00ZGZlLWJhMDQtYjNiM2IyMjYzMzg3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1576812800/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWI3MDVkYWEtMmE0OC00MWQwLWEyMTAtMmQwZTlkM2QyNDVhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1425817856/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDA1Y2M0MGUtYmU3NS00MWY2LTg1YWMtOTE2OTY2NjZhNGRjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1174159616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDRmNWQ0NGEtZTk5MS00MWVmLWEyNzktNzYxNmUxZWU1ZWI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble and Philip Baker Hall in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1929134336/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2RmMzNiNTgtMmJmNy00YTk1LTgzN2UtNjJmYmMxYjQ5ZWJiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gary Sinise and Mason Gamble in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1945911552/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjEzNTRjY2YtMDk5Mi00NmZhLTgzZDktOGM2ZjZlM2RmOGI0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble and Ellen Muth in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm1996243200/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk3NGNhMTgtMDNmYS00OTJmLTg2YzYtN2I2Y2M5MzRlMzI5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Mason Gamble and Ellen Muth in A Gentleman's Game (2002)" ;
+    schema:height "304"^^xsd:integer ;
+    schema:width "720"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0001253/mediaviewer/rm676118272/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzkxMTEzNDc5OF5BMl5BanBnXkFtZTcwMDU2MTgwNg@@._V1_.jpg> ;
+    schema:caption "Mason Gamble in Golf in the Kingdom (2010)" ;
+    schema:height "540"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

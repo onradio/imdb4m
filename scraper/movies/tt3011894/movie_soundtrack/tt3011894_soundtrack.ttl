@@ -1,0 +1,131 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt3011894/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Love Theme From Flashdance" ;
+        schema:byArtist <https://www.imdb.com/name/nm1107615/> ; # Helen St. John
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Love Theme From Flashdance" ;
+            schema:composer <https://www.imdb.com/name/nm0002380/> # Giorgio Moroder
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Lady, Lady, Lady" ;
+        schema:byArtist <https://www.imdb.com/name/nm0261174/> ; # Joe Esposito
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Lady, Lady, Lady" ;
+            schema:composer <https://www.imdb.com/name/nm0002380/> ; # Giorgio Moroder
+            schema:lyricist <https://www.imdb.com/name/nm0286850/> # Keith Forsey
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Titanium" ;
+        schema:byArtist <https://www.imdb.com/name/nm1615892/>, # David Guetta
+                        <https://www.imdb.com/name/nm2397981/> ; # Sia
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Titanium" ;
+            schema:author <https://www.imdb.com/name/nm1615892/>, # David Guetta
+                       <https://www.imdb.com/name/nm2015876/>, # Giorgio Tuinfort
+                       <https://www.imdb.com/name/nm4315345/>, # Afrojack
+                       <https://www.imdb.com/name/nm2397981/> # Sia
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Fly Me to the Moon (In Other Words) (P) 1968" ;
+        schema:byArtist <https://www.imdb.com/name/nm0938810/> ; # Bobby Womack
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Fly Me to the Moon (In Other Words) (P) 1968" ;
+            schema:author <https://www.imdb.com/name/nm0397140/> # Bart Howard
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Hallelujah" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Hallelujah" ;
+            schema:composer <https://www.imdb.com/name/nm0651945/> ; # Kobi Oshrat
+            schema:lyricist <https://www.imdb.com/name/nm0649288/> # Shimrit Or
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday" ;
+            schema:composer <https://www.imdb.com/name/nm0384530/> ; # Mildred J. Hill
+            schema:lyricist <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aire Libre" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Aire Salvaje" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Blue Danube, Opus 314" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Blue Danube, Opus 314" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0002380/> a schema:Person ;
+    schema:name "Giorgio Moroder" .
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0261174/> a schema:Person ;
+    schema:name "Joe Esposito" .
+<https://www.imdb.com/name/nm0286850/> a schema:Person ;
+    schema:name "Keith Forsey" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm0397140/> a schema:Person ;
+    schema:name "Bart Howard" .
+<https://www.imdb.com/name/nm0649288/> a schema:Person ;
+    schema:name "Shimrit Or" .
+<https://www.imdb.com/name/nm0651945/> a schema:Person ;
+    schema:name "Kobi Oshrat" .
+<https://www.imdb.com/name/nm0938810/> a schema:Person ;
+    schema:name "Bobby Womack" .
+<https://www.imdb.com/name/nm1107615/> a schema:Person ;
+    schema:name "Helen St. John" .
+<https://www.imdb.com/name/nm1615892/> a schema:Person ;
+    schema:name "David Guetta" .
+<https://www.imdb.com/name/nm2015876/> a schema:Person ;
+    schema:name "Giorgio Tuinfort" .
+<https://www.imdb.com/name/nm2397981/> a schema:Person ;
+    schema:name "Sia" .
+<https://www.imdb.com/name/nm4315345/> a schema:Person ;
+    schema:name "Afrojack" .
+# ==============================================================================

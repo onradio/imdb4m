@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1616932/> a schema:Person ;
+    schema:name "Namaki Masakazu" ;
+    schema:url <https://www.imdb.com/name/nm1616932/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Namaki Masakazu. Actor: Ghost in the Shell. Namaki Masakazu is known for Ghost in the Shell (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0113568/> .    # Ghost in the Shell
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Ghost in the Shell (1995)
+<https://www.imdb.com/title/tt0113568/> a schema:Movie ;
+    schema:name "Ghost in the Shell" ;
+    schema:url <https://www.imdb.com/title/tt0113568/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1616932/> ;
+        schema:characterName "Urisu hakase"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

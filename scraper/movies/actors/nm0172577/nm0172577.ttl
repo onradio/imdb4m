@@ -1,0 +1,118 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0172577/> a schema:Person ;
+    schema:name "Nicola Collins" ;
+    schema:url <https://www.imdb.com/name/nm0172577/> ;
+    schema:jobTitle "Actress", "Director", "Cinematographer" ;
+    schema:description "Nicola Collins. Actress: Snatch. Nicola Collins was born in London, England, where, as a teenager, she began fashion modeling and traveling the world for clients such as Vogue, Elle & Stella McCartney. It was during this time that critically acclaimed director Guy Ritchie approached Nicola and her twin sister Teena to appear in his film, Snatch. Despite her success in front of the lens, Nicola's truest passion is with what..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTY5MDc0NzI0Nl5BMl5BanBnXkFtZTcwNTg0MDgwOA@@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0208092/>,    # Snatch
+                       <https://www.imdb.com/title/tt0460732/>,    # Caffeine
+                       <https://www.imdb.com/title/tt1323914/>,    # The End
+                       <https://www.imdb.com/title/tt1776153/>,    # Do As You Likey
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0865905/> ; # The Insect Chorus
+
+    schema:award [
+        a schema:Award ;
+        schema:description "3 wins & 1 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi1196163865/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0172577/mediaviewer/rm1915656960/>,
+                 <https://www.imdb.com/name/nm0172577/mediaviewer/rm359176960/>,
+                 <https://www.imdb.com/name/nm0172577/mediaviewer/rm1780325632/>,
+                 <https://www.imdb.com/name/nm0172577/mediaviewer/rm3744573952/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0208092/> a schema:Movie ;
+    schema:name "Snatch" ;
+    schema:url <https://www.imdb.com/title/tt0208092/> .
+
+<https://www.imdb.com/title/tt0460732/> a schema:Movie ;
+    schema:name "Caffeine" ;
+    schema:url <https://www.imdb.com/title/tt0460732/> .
+
+<https://www.imdb.com/title/tt1323914/> a schema:Movie ;
+    schema:name "The End" ;
+    schema:url <https://www.imdb.com/title/tt1323914/> .
+
+<https://www.imdb.com/title/tt1776153/> a schema:Movie ;
+    schema:name "Do As You Likey" ;
+    schema:url <https://www.imdb.com/title/tt1776153/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Insect Chorus (2006)
+<https://www.imdb.com/title/tt0865905/> a schema:Movie ;
+    schema:name "The Insect Chorus" ;
+    schema:url <https://www.imdb.com/title/tt0865905/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0172577/> ;
+        schema:characterName "Juliette"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1196163865/> a schema:VideoObject ;
+        schema:name "The End" ;
+        schema:description "The End is a story never before been told of a group of men with a common bond. All born in the East End of London into poverty striving for a better life and all found that life in crime." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1196163865/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjIzMTUzMjEzMF5BMl5BanBnXkFtZTgwMjQ5NTczMzE@._V1_.jpg" ;
+        schema:duration "PT2M44S"^^xsd:duration ;
+        schema:uploadDate "2009-04-23T11:56:59Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTY5MDc0NzI0Nl5BMl5BanBnXkFtZTcwNTg0MDgwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5MDc0NzI0Nl5BMl5BanBnXkFtZTcwNTg0MDgwOA@@._V1_.jpg> ;
+    schema:caption "Nicola Collins" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1407"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172577/mediaviewer/rm1915656960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0Mjk0MjcxNF5BMl5BanBnXkFtZTYwMjQxODE1._V1_.jpg> ;
+    schema:caption "Nicola Collins and Teena Collins" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "251"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172577/mediaviewer/rm359176960/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUwMTAyNjQzMF5BMl5BanBnXkFtZTYwNDcxNjc0._V1_.jpg> ;
+    schema:caption "Nicola Collins and Teena Collins" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "234"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172577/mediaviewer/rm1780325632/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0MzUyNDA2MF5BMl5BanBnXkFtZTcwNDM0MjYzMQ@@._V1_.jpg> ;
+    schema:caption "Callum Blue, Nicola Collins, and Teena Collins in Caffeine (2006)" ;
+    schema:height "300"^^xsd:integer ;
+    schema:width "450"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0172577/mediaviewer/rm3744573952/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTY5MDc0NzI0Nl5BMl5BanBnXkFtZTcwNTg0MDgwOA@@._V1_.jpg> ;
+    schema:caption "Nicola Collins" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1407"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

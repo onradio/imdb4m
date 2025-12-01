@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1491148/> a schema:Person ;
+    schema:name "Ray Godshall Sr." ;
+    schema:url <https://www.imdb.com/name/nm1491148/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Ray Godshall Sr.. Actor: The Last Samurai. Ray Godshall Sr. is known for The Last Samurai (2003) and Love & Other Drugs (2010)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0758752/>,    # Love & Other Drugs
+                       <https://www.imdb.com/title/tt0325710/> . # The Last Samurai
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Love & Other Drugs (2010)
+<https://www.imdb.com/title/tt0758752/> a schema:Movie ;
+    schema:name "Love & Other Drugs" ;
+    schema:url <https://www.imdb.com/title/tt0758752/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491148/> ;
+        schema:characterName "Friendly Senior"
+    ] .
+
+# The Last Samurai (2003)
+<https://www.imdb.com/title/tt0325710/> a schema:Movie ;
+    schema:name "The Last Samurai" ;
+    schema:url <https://www.imdb.com/title/tt0325710/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1491148/> ;
+        schema:characterName "Convention Hall Attendee"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

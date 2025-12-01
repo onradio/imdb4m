@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0276074/> a schema:Person ;
+    schema:name "Emma Field-Rayner" ;
+    schema:url <https://www.imdb.com/name/nm0276074/> ;
+    schema:jobTitle "Set Decorator", "Actress", "Art Department" ;
+    schema:description "Emma Field-Rayner. Actress: V for Vendetta. Emma Field-Rayner is known for V for Vendetta (2005), Goal! (2005) and Goal II: Living the Dream (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt6090860/>,    # Dirty Work
+                       <https://www.imdb.com/title/tt1078589/>,    # Opening Night
+                       <https://www.imdb.com/title/tt0473360/>,    # Goal II: Living the Dream
+                       <https://www.imdb.com/title/tt0434409/>,    # V for Vendetta
+                       <https://www.imdb.com/title/tt0184122/>,    # Holby City
+                       <https://www.imdb.com/title/tt0380389/> . # Goal!
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dirty Work (2016)
+<https://www.imdb.com/title/tt6090860/> a schema:Movie ;
+    schema:name "Dirty Work" ;
+    schema:url <https://www.imdb.com/title/tt6090860/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName ""
+    ] .
+
+# Opening Night (2007)
+<https://www.imdb.com/title/tt1078589/> a schema:Movie ;
+    schema:name "Opening Night" ;
+    schema:url <https://www.imdb.com/title/tt1078589/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName "Sarah"
+    ] .
+
+# Goal II: Living the Dream (2007)
+<https://www.imdb.com/title/tt0473360/> a schema:Movie ;
+    schema:name "Goal II: Living the Dream" ;
+    schema:url <https://www.imdb.com/title/tt0473360/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName "Lorraine"
+    ] .
+
+# V for Vendetta (2005)
+<https://www.imdb.com/title/tt0434409/> a schema:Movie ;
+    schema:name "V for Vendetta" ;
+    schema:url <https://www.imdb.com/title/tt0434409/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName "Guy Fawkes Lover"
+    ] .
+
+# Holby City (2005)
+<https://www.imdb.com/title/tt0184122/> a schema:Movie ;
+    schema:name "Holby City" ;
+    schema:url <https://www.imdb.com/title/tt0184122/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName "Adele Kester"
+    ] .
+
+# Goal! (2005)
+<https://www.imdb.com/title/tt0380389/> a schema:Movie ;
+    schema:name "Goal!" ;
+    schema:url <https://www.imdb.com/title/tt0380389/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0276074/> ;
+        schema:characterName "Lorraine"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

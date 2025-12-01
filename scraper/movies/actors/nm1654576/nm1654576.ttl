@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1654576/> a schema:Person ;
+    schema:name "Frederick Bingham" ;
+    schema:url <https://www.imdb.com/name/nm1654576/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Frederick Bingham. Actor: The Notebook. Although having a small role in \"The Notebook\",as well as larger parts in films never released ( including \"Pecos Pierre\" and \"The June 3rd Supper Club\" ), Frederick Bingham is mostly known for his photography and the videos and amateur shows that he has produced over the years. Recently divorced from his second wife, he now lives in San Antonio, Texas." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0332280/> .    # The Notebook
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Notebook (2004)
+<https://www.imdb.com/title/tt0332280/> a schema:Movie ;
+    schema:name "The Notebook" ;
+    schema:url <https://www.imdb.com/title/tt0332280/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1654576/> ;
+        schema:characterName "Postman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

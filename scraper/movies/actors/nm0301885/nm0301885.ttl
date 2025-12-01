@@ -1,0 +1,188 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0301885/> a schema:Person ;
+    schema:name "Megan Gale" ;
+    schema:url <https://www.imdb.com/name/nm0301885/> ;
+    schema:birthDate "1975-08-07"^^xsd:date ;
+    schema:jobTitle "Producer", "Actress" ;
+    schema:description "Megan Gale. Actress: Mad Max: Fury Road. Megan Kate Gale is an Australian model, brand ambassador, fashion designer and actress. Born in Perth, Western Australia, Gale won a modeling competition at 18 in her home town. In 1999, she was cast in a series of advertisements for Italian telecommunications company Omnitel. This led to wide exposure in both Italy and Gale's native Australia and Gale would appear in their advertising..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTUyNDUxNzc3Ml5BMl5BanBnXkFtZTgwODcwNDQ3NTE@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Perth, Australia"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.82"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11¾″ (1.82 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1392190/>,    # Mad Max: Fury Road
+                       <https://www.imdb.com/title/tt0382992/>,    # Stealth
+                       <https://www.imdb.com/title/tt3007512/>,    # The Water Diviner
+                       <https://www.imdb.com/title/tt9198364/>,    # Three Thousand Years of Longing
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt2879390/>,    # Wonderland
+                       <https://www.imdb.com/title/tt1376709/>,    # I Love You Too
+                       <https://www.imdb.com/title/tt0283017/> ; # Stregati dalla luna
+
+
+    schema:video <https://www.imdb.com/video/vi3537028377/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0301885/mediaviewer/rm3314521857/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm823594752/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm857149184/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm890703616/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm3507883776/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm2071525120/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm2039609600/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm2073164032/>,
+                 <https://www.imdb.com/name/nm0301885/mediaviewer/rm3820777473/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1392190/> a schema:Movie ;
+    schema:name "Mad Max: Fury Road" ;
+    schema:url <https://www.imdb.com/title/tt1392190/> .
+
+<https://www.imdb.com/title/tt0382992/> a schema:Movie ;
+    schema:name "Stealth" ;
+    schema:url <https://www.imdb.com/title/tt0382992/> .
+
+<https://www.imdb.com/title/tt3007512/> a schema:Movie ;
+    schema:name "The Water Diviner" ;
+    schema:url <https://www.imdb.com/title/tt3007512/> .
+
+<https://www.imdb.com/title/tt9198364/> a schema:Movie ;
+    schema:name "Three Thousand Years of Longing" ;
+    schema:url <https://www.imdb.com/title/tt9198364/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wonderland (2014)
+<https://www.imdb.com/title/tt2879390/> a schema:Movie ;
+    schema:name "Wonderland" ;
+    schema:url <https://www.imdb.com/title/tt2879390/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0301885/> ;
+        schema:characterName "Amelia Windsor"
+    ] .
+
+# I Love You Too (2010)
+<https://www.imdb.com/title/tt1376709/> a schema:Movie ;
+    schema:name "I Love You Too" ;
+    schema:url <https://www.imdb.com/title/tt1376709/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0301885/> ;
+        schema:characterName "Francesca Moretti"
+    ] .
+
+# Stregati dalla luna (2001)
+<https://www.imdb.com/title/tt0283017/> a schema:Movie ;
+    schema:name "Stregati dalla luna" ;
+    schema:url <https://www.imdb.com/title/tt0283017/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0301885/> ;
+        schema:characterName "Viviana"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3537028377/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "Superenalotto winner Pasquale Esposito, his family and two penniless students from Emilia and the Colombo and Covelli families, who accidentally rent the same chalet, will spend the Christmas holidays in Cortina d'Ampezzo." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3537028377/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTY4NjA3NzctMzRjYS00MThkLThmMGUtOTQ1Yjk5ODMyMzkzXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" ;
+        schema:duration "PT1M45S"^^xsd:duration ;
+        schema:uploadDate "2022-12-29T21:17:39Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTUyNDUxNzc3Ml5BMl5BanBnXkFtZTgwODcwNDQ3NTE@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNDUxNzc3Ml5BMl5BanBnXkFtZTgwODcwNDQ3NTE@._V1_.jpg> ;
+    schema:caption "Megan Gale at an event for Sicario (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1327"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm3314521857/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmQzMTYzMzItYTk2Ni00MDQzLWE3NzYtNDI5M2EwZjBlNTUzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Megan Gale and Ben Mingay in Wonderland (2013)" ;
+    schema:height "375"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm823594752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDY5NGE2MTgtMDJjZi00YWNiLTgxMmQtMGY0MjE3ZjQ1YmI1XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Megan Gale in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm857149184/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWNhNzEyZDctM2Y5Ny00YTc4LTllNWMtYzE2MTUyNTNkZDQ0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlize Theron, Megan Gale, Tom Hardy, Melissa Jaffer, Gillian Jones, Melita Jurisic, Antoinette Kellermann, Joy Smithers, Riley Keough, Zoë Kravitz, Abbey Lee, Courtney Eaton, and Christina Koch in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm890703616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWIwOTE3ZGMtNWFmYS00NzkzLThjZDYtYzk0ZGQ2ZjNmNDZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlize Theron, Megan Gale, Melissa Jaffer, Gillian Jones, Melita Jurisic, Antoinette Kellermann, Joy Smithers, Riley Keough, Zoë Kravitz, Abbey Lee, Courtney Eaton, and Christina Koch in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm3507883776/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDI4MTAwN2UtZWVkMi00NDQxLTk3NWQtYzAxOTk3OWNmODhlXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Charlize Theron and Megan Gale in Mad Max: Fury Road (2015)" ;
+    schema:height "800"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm2071525120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQyMDM4MTA4Nl5BMl5BanBnXkFtZTgwNTI3NTE2NTE@._V1_.jpg> ;
+    schema:caption "Megan Gale in Mad Max: Fury Road (2015)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1363"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm2039609600/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ5ODcxMTIzOV5BMl5BanBnXkFtZTgwMTE5NDY1MzE@._V1_.jpg> ;
+    schema:caption "Megan Gale, Magda Szubanski, and Matt Preston in Can of Worms (2011)" ;
+    schema:height "1183"^^xsd:integer ;
+    schema:width "1772"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm2073164032/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzEzMTMzMDY0NV5BMl5BanBnXkFtZTgwOTA5NDY1MzE@._V1_.jpg> ;
+    schema:caption "Megan Gale, Magda Szubanski, Chrissie Swan, and Matt Preston in Can of Worms (2011)" ;
+    schema:height "1179"^^xsd:integer ;
+    schema:width "1772"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0301885/mediaviewer/rm3820777473/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFiNmM5MWMtNjFiYi00M2M4LWI4NmQtZjBiMmM0ODdjMGU3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Megan Gale and Lachy Hulme at an event for Three Thousand Years of Longing (2022)" ;
+    schema:height "5184"^^xsd:integer ;
+    schema:width "3456"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0301885/>
+    schema:sameAs <https://www.instagram.com/megankgale> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,48 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0364569/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Bring My Love" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Bring My Love" ;
+            schema:author <https://www.imdb.com/name/nm1576150/> # Starsailor
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Winter" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Winter" ;
+            schema:author <https://www.imdb.com/name/nm0006334/> # Antonio Vivaldi
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Waltz" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Waltz" ;
+            schema:author <https://www.imdb.com/name/nm0006154/> # Aram Khachaturyan
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006154/> a schema:Person ;
+    schema:name "Aram Khachaturyan" .
+<https://www.imdb.com/name/nm0006334/> a schema:Person ;
+    schema:name "Antonio Vivaldi" .
+<https://www.imdb.com/name/nm1576150/> a schema:Person ;
+    schema:name "Starsailor" .
+# ==============================================================================

@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3828643/> a schema:Person ;
+    schema:name "Gonenc Uyanik" ;
+    schema:url <https://www.imdb.com/name/nm3828643/> ;
+    schema:jobTitle "Director", "Actor", "Writer" ;
+    schema:description "Gonenc Uyanik. Director: Last Call for Istanbul. Gonenc Uyanik is known for Last Call for Istanbul (2023), The Protector (2018) and The Gift (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5813916/> ;    # The Mountain II
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3828643/mediaviewer/rm116614656/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Mountain II (2016)
+<https://www.imdb.com/title/tt5813916/> a schema:Movie ;
+    schema:name "The Mountain II" ;
+    schema:url <https://www.imdb.com/title/tt5813916/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3828643/> ;
+        schema:characterName "Enemy Tank Commander"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm3828643/mediaviewer/rm116614656/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYWE3ZmUxNzMtZGNjNS00Nzg4LTgzNzctZWJkMmE5MTZhZjMxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Umut Aral and Gonenc Uyanik at an event for The Protector (2018)" ;
+    schema:height "1441"^^xsd:integer ;
+    schema:width "960"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm3828643/>
+    schema:sameAs <https://www.instagram.com/gomench> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

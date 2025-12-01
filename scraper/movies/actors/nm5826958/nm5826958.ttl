@@ -1,0 +1,92 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5826958/> a schema:Person ;
+    schema:name "Charlie Ian" ;
+    schema:url <https://www.imdb.com/name/nm5826958/> ;
+    schema:jobTitle "Actor", "Writer", "Stunts" ;
+    schema:description "Charlie Ian. Actor: Whiplash. Charlie Ian is known for Whiplash (2014), Assassination (2016) and The Bright Sessions (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt13267116/>,    # The Bright Sessions
+                       <https://www.imdb.com/title/tt6856592/>,    # #Captured
+                       <https://www.imdb.com/title/tt2582802/>,    # Whiplash
+                       <https://www.imdb.com/title/tt1921052/> ; # Packing Up
+
+
+    schema:video <https://www.imdb.com/video/vi228046873/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Bright Sessions (2016)
+<https://www.imdb.com/title/tt13267116/> a schema:Movie ;
+    schema:name "The Bright Sessions" ;
+    schema:url <https://www.imdb.com/title/tt13267116/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5826958/> ;
+        schema:characterName "Damien"
+    ] .
+
+# #Captured (2017)
+<https://www.imdb.com/title/tt6856592/> a schema:Movie ;
+    schema:name "#Captured" ;
+    schema:url <https://www.imdb.com/title/tt6856592/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5826958/> ;
+        schema:characterName "Brock"
+    ] .
+
+# Whiplash (2014)
+<https://www.imdb.com/title/tt2582802/> a schema:Movie ;
+    schema:name "Whiplash" ;
+    schema:url <https://www.imdb.com/title/tt2582802/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5826958/> ;
+        schema:characterName "Dustin"
+    ] .
+
+# Packing Up (2011)
+<https://www.imdb.com/title/tt1921052/> a schema:Movie ;
+    schema:name "Packing Up" ;
+    schema:url <https://www.imdb.com/title/tt1921052/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5826958/> ;
+        schema:characterName "Charlie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi228046873/> a schema:VideoObject ;
+        schema:name "#Captured" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi228046873/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDVkZmVjMzctNGVjZS00M2VjLWJjYWItNzNjOTczNTFmYTVhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT1M39S"^^xsd:duration ;
+        schema:uploadDate "2017-12-14T16:00:36Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

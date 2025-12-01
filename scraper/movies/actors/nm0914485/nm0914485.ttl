@@ -1,0 +1,206 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0914485/> a schema:Person ;
+    schema:name "John M. Watson Sr." ;
+    schema:url <https://www.imdb.com/name/nm0914485/> ;
+    schema:birthDate "1937-01-10"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "John M. Watson Sr.. Actor: The Fugitive. John M. Watson Sr. was born on 10 January 1937 in Ohio, USA. He was an actor, known for The Fugitive (1993), Groundhog Day (1993) and Natural Born Killers (1994). He was married to Virginia. He died on 7 September 2006 in Chicago, Illinois, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Ohio, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0106977/>,    # The Fugitive
+                       <https://www.imdb.com/title/tt0107048/>,    # Groundhog Day
+                       <https://www.imdb.com/title/tt0110632/>,    # Natural Born Killers
+                       <https://www.imdb.com/title/tt0420223/>,    # Stranger Than Fiction
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0893510/>,    # Bodega
+                       <https://www.imdb.com/title/tt0488929/>,    # 39: A Film by Carroll McKane
+                       <https://www.imdb.com/title/tt0391229/>,    # I Want Someone to Eat Cheese With
+                       <https://www.imdb.com/title/tt0415739/>,    # The Trouble with Dee Dee
+                       <https://www.imdb.com/title/tt0206113/>,    # Madison
+                       <https://www.imdb.com/title/tt0278255/>,    # What About Joan
+                       <https://www.imdb.com/title/tt0115163/>,    # Early Edition
+                       <https://www.imdb.com/title/tt0119311/>,    # Hoodlum
+                       <https://www.imdb.com/title/tt0120169/>,    # Soul Food
+                       <https://www.imdb.com/title/tt0119572/>,    # Love Jones
+                       <https://www.imdb.com/title/tt0117927/>,    # To Sir, with Love II
+                       <https://www.imdb.com/title/tt0106067/> . # Missing Persons
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0106977/> a schema:Movie ;
+    schema:name "The Fugitive" ;
+    schema:url <https://www.imdb.com/title/tt0106977/> .
+
+<https://www.imdb.com/title/tt0107048/> a schema:Movie ;
+    schema:name "Groundhog Day" ;
+    schema:url <https://www.imdb.com/title/tt0107048/> .
+
+<https://www.imdb.com/title/tt0110632/> a schema:Movie ;
+    schema:name "Natural Born Killers" ;
+    schema:url <https://www.imdb.com/title/tt0110632/> .
+
+<https://www.imdb.com/title/tt0420223/> a schema:Movie ;
+    schema:name "Stranger Than Fiction" ;
+    schema:url <https://www.imdb.com/title/tt0420223/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Bodega (2006)
+<https://www.imdb.com/title/tt0893510/> a schema:Movie ;
+    schema:name "Bodega" ;
+    schema:url <https://www.imdb.com/title/tt0893510/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Old Man"
+    ] .
+
+# 39: A Film by Carroll McKane (2006)
+<https://www.imdb.com/title/tt0488929/> a schema:Movie ;
+    schema:name "39: A Film by Carroll McKane" ;
+    schema:url <https://www.imdb.com/title/tt0488929/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Jake"
+    ] .
+
+# I Want Someone to Eat Cheese With (2006)
+<https://www.imdb.com/title/tt0391229/> a schema:Movie ;
+    schema:name "I Want Someone to Eat Cheese With" ;
+    schema:url <https://www.imdb.com/title/tt0391229/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Cabbie"
+    ] .
+
+# The Trouble with Dee Dee (2005)
+<https://www.imdb.com/title/tt0415739/> a schema:Movie ;
+    schema:name "The Trouble with Dee Dee" ;
+    schema:url <https://www.imdb.com/title/tt0415739/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Ali"
+    ] .
+
+# Madison (2001)
+<https://www.imdb.com/title/tt0206113/> a schema:Movie ;
+    schema:name "Madison" ;
+    schema:url <https://www.imdb.com/title/tt0206113/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Walter"
+    ] .
+
+# What About Joan (2000)
+<https://www.imdb.com/title/tt0278255/> a schema:Movie ;
+    schema:name "What About Joan" ;
+    schema:url <https://www.imdb.com/title/tt0278255/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Fred the Watchman"
+    ] .
+
+# Early Edition (1996)
+<https://www.imdb.com/title/tt0115163/> a schema:Movie ;
+    schema:name "Early Edition" ;
+    schema:url <https://www.imdb.com/title/tt0115163/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Morris Sanford"
+    ] .
+
+# Hoodlum (1997)
+<https://www.imdb.com/title/tt0119311/> a schema:Movie ;
+    schema:name "Hoodlum" ;
+    schema:url <https://www.imdb.com/title/tt0119311/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Manager of Pool Hall"
+    ] .
+
+# Soul Food (1997)
+<https://www.imdb.com/title/tt0120169/> a schema:Movie ;
+    schema:name "Soul Food" ;
+    schema:url <https://www.imdb.com/title/tt0120169/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Uncle Pete"
+    ] .
+
+# Love Jones (1997)
+<https://www.imdb.com/title/tt0119572/> a schema:Movie ;
+    schema:name "Love Jones" ;
+    schema:url <https://www.imdb.com/title/tt0119572/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Tiki Room Bartender"
+    ] .
+
+# To Sir, with Love II (1996)
+<https://www.imdb.com/title/tt0117927/> a schema:Movie ;
+    schema:name "To Sir, with Love II" ;
+    schema:url <https://www.imdb.com/title/tt0117927/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Publisher"
+    ] .
+
+# Missing Persons (1993)
+<https://www.imdb.com/title/tt0106067/> a schema:Movie ;
+    schema:name "Missing Persons" ;
+    schema:url <https://www.imdb.com/title/tt0106067/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0914485/> ;
+        schema:characterName "Eddie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

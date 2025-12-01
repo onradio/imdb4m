@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3572187/> a schema:Person ;
+    schema:name "Juman Malouf" ;
+    schema:url <https://www.imdb.com/name/nm3572187/> ;
+    schema:jobTitle "Art Department", "Actress", "Costume Department" ;
+    schema:description "Juman Malouf. Actress: Fantastic Mr. Fox. Juman Malouf is known for Fantastic Mr. Fox (2009), The Grand Budapest Hotel (2014) and Moonrise Kingdom (2012)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0432283/> .    # Fantastic Mr. Fox
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fantastic Mr. Fox (2009)
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3572187/> ;
+        schema:characterName "Agnes"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6130315/> a schema:Person ;
+    schema:name "David Azar" ;
+    schema:url <https://www.imdb.com/name/nm6130315/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "David Azar. Actor: Her. David Azar is known for Her (2013). He has been married to Melissa Greenspan since 3 October 2004. They have one child." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1798709/> .    # Her
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Her (2013)
+<https://www.imdb.com/title/tt1798709/> a schema:Movie ;
+    schema:name "Her" ;
+    schema:url <https://www.imdb.com/title/tt1798709/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6130315/> ;
+        schema:characterName "Theodore's Divorce Attorney"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

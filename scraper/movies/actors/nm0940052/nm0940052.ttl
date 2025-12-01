@@ -1,0 +1,413 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0940052/> a schema:Person ;
+    schema:name "Tom Wood" ;
+    schema:url <https://www.imdb.com/name/nm0940052/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Tom Wood. Actor: The Fugitive. Tom Wood was born in Long Beach, California, USA. He is an actor and director, known for The Fugitive (1993), Under Siege (1992) and U.S. Marshals (1998). He has been married to Jenifer since 1996. They have four children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTI1OGQzY2UtMWE5Yi00MWViLTgzZDMtMWUxNGZkMDc1ZTJjXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Long Beach, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.89"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2½″ (1.89 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0106977/>,    # The Fugitive
+                       <https://www.imdb.com/title/tt0105690/>,    # Under Siege
+                       <https://www.imdb.com/title/tt0112384/>,    # Apollo 13
+                       <https://www.imdb.com/title/tt0120873/>,    # U.S. Marshals
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt33092450/>,    # Governor Tom: Zombie Killer
+                       <https://www.imdb.com/title/tt0242956/>,    # Meat Loaf: To Hell and Back
+                       <https://www.imdb.com/title/tt0108724/>,    # Chicago Hope
+                       <https://www.imdb.com/title/tt0158421/>,    # Vengeance Unlimited
+                       <https://www.imdb.com/title/tt0120095/>,    # Tinseltown
+                       <https://www.imdb.com/title/tt0120402/>,    # Ulee's Gold
+                       <https://www.imdb.com/title/tt0118867/>,    # Close to Danger
+                       <https://www.imdb.com/title/tt0122308/>,    # Waiting Game
+                       <https://www.imdb.com/title/tt0114536/>,    # Steal Big Steal Little
+                       <https://www.imdb.com/title/tt0112602/>,    # Bushwhacked
+                       <https://www.imdb.com/title/tt0106423/>,    # Black Widow Murders: The Blanche Taylor Moore Story
+                       <https://www.imdb.com/title/tt0103515/>,    # The Powers That Be
+                       <https://www.imdb.com/title/tt0104888/>,    # Mission of Justice
+                       <https://www.imdb.com/title/tt0094582/>,    # The Wonder Years
+                       <https://www.imdb.com/title/tt0103404/>,    # Down the Shore
+                       <https://www.imdb.com/title/tt0105577/>,    # This Is My Life
+                       <https://www.imdb.com/title/tt0101055/>,    # Brooklyn Bridge
+                       <https://www.imdb.com/title/tt0101854/>,    # False Arrest
+                       <https://www.imdb.com/title/tt0099073/>,    # Avalon
+                       <https://www.imdb.com/title/tt0094433/>,    # China Beach
+                       <https://www.imdb.com/title/tt0096267/>,    # Tiger Warsaw
+                       <https://www.imdb.com/title/tt0096286/> ; # Too Young the Hero
+
+
+    schema:video <https://www.imdb.com/video/vi1091160345/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0940052/mediaviewer/rm892509954/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm1717278978/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm3484418305/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm4293041410/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm3048861440/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm2713317120/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm456297984/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm37132288/>,
+                 <https://www.imdb.com/name/nm0940052/mediaviewer/rm157726722/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0106977/> a schema:Movie ;
+    schema:name "The Fugitive" ;
+    schema:url <https://www.imdb.com/title/tt0106977/> .
+
+<https://www.imdb.com/title/tt0105690/> a schema:Movie ;
+    schema:name "Under Siege" ;
+    schema:url <https://www.imdb.com/title/tt0105690/> .
+
+<https://www.imdb.com/title/tt0112384/> a schema:Movie ;
+    schema:name "Apollo 13" ;
+    schema:url <https://www.imdb.com/title/tt0112384/> .
+
+<https://www.imdb.com/title/tt0120873/> a schema:Movie ;
+    schema:name "U.S. Marshals" ;
+    schema:url <https://www.imdb.com/title/tt0120873/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Governor Tom: Zombie Killer (2013)
+<https://www.imdb.com/title/tt33092450/> a schema:Movie ;
+    schema:name "Governor Tom: Zombie Killer" ;
+    schema:url <https://www.imdb.com/title/tt33092450/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Zombie"
+    ] .
+
+# Meat Loaf: To Hell and Back (2000)
+<https://www.imdb.com/title/tt0242956/> a schema:Movie ;
+    schema:name "Meat Loaf: To Hell and Back" ;
+    schema:url <https://www.imdb.com/title/tt0242956/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Kevin Frears"
+    ] .
+
+# Chicago Hope (2000)
+<https://www.imdb.com/title/tt0108724/> a schema:Movie ;
+    schema:name "Chicago Hope" ;
+    schema:url <https://www.imdb.com/title/tt0108724/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Mr. Fleming"
+    ] .
+
+# Vengeance Unlimited (1998)
+<https://www.imdb.com/title/tt0158421/> a schema:Movie ;
+    schema:name "Vengeance Unlimited" ;
+    schema:url <https://www.imdb.com/title/tt0158421/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Deputy Rick Hubbell"
+    ] .
+
+# Tinseltown (1997)
+<https://www.imdb.com/title/tt0120095/> a schema:Movie ;
+    schema:name "Tinseltown" ;
+    schema:url <https://www.imdb.com/title/tt0120095/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Tiger"
+    ] .
+
+# Ulee's Gold (1997)
+<https://www.imdb.com/title/tt0120402/> a schema:Movie ;
+    schema:name "Ulee's Gold" ;
+    schema:url <https://www.imdb.com/title/tt0120402/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Jimmy Jackson"
+    ] .
+
+# Close to Danger (1997)
+<https://www.imdb.com/title/tt0118867/> a schema:Movie ;
+    schema:name "Close to Danger" ;
+    schema:url <https://www.imdb.com/title/tt0118867/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Reed Culley"
+    ] .
+
+# Waiting Game (1996)
+<https://www.imdb.com/title/tt0122308/> a schema:Movie ;
+    schema:name "Waiting Game" ;
+    schema:url <https://www.imdb.com/title/tt0122308/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Nathan"
+    ] .
+
+# Steal Big Steal Little (1995)
+<https://www.imdb.com/title/tt0114536/> a schema:Movie ;
+    schema:name "Steal Big Steal Little" ;
+    schema:url <https://www.imdb.com/title/tt0114536/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Dan McCann"
+    ] .
+
+# Bushwhacked (1995)
+<https://www.imdb.com/title/tt0112602/> a schema:Movie ;
+    schema:name "Bushwhacked" ;
+    schema:url <https://www.imdb.com/title/tt0112602/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Agent McMurrey"
+    ] .
+
+# Black Widow Murders: The Blanche Taylor Moore Story (1993)
+<https://www.imdb.com/title/tt0106423/> a schema:Movie ;
+    schema:name "Black Widow Murders: The Blanche Taylor Moore Story" ;
+    schema:url <https://www.imdb.com/title/tt0106423/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Doug, Dwight's Son"
+    ] .
+
+# The Powers That Be (1992)
+<https://www.imdb.com/title/tt0103515/> a schema:Movie ;
+    schema:name "The Powers That Be" ;
+    schema:url <https://www.imdb.com/title/tt0103515/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Hitchhiker"
+    ] .
+
+# Mission of Justice (1992)
+<https://www.imdb.com/title/tt0104888/> a schema:Movie ;
+    schema:name "Mission of Justice" ;
+    schema:url <https://www.imdb.com/title/tt0104888/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Samuel"
+    ] .
+
+# The Wonder Years (1992)
+<https://www.imdb.com/title/tt0094582/> a schema:Movie ;
+    schema:name "The Wonder Years" ;
+    schema:url <https://www.imdb.com/title/tt0094582/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Peter Rotelli"
+    ] .
+
+# Down the Shore (1992)
+<https://www.imdb.com/title/tt0103404/> a schema:Movie ;
+    schema:name "Down the Shore" ;
+    schema:url <https://www.imdb.com/title/tt0103404/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Spazman"
+    ] .
+
+# This Is My Life (1992)
+<https://www.imdb.com/title/tt0105577/> a schema:Movie ;
+    schema:name "This Is My Life" ;
+    schema:url <https://www.imdb.com/title/tt0105577/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Brooklyn Bridge (1992)
+<https://www.imdb.com/title/tt0101055/> a schema:Movie ;
+    schema:name "Brooklyn Bridge" ;
+    schema:url <https://www.imdb.com/title/tt0101055/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Lt. Mark Billings"
+    ] .
+
+# False Arrest (1991)
+<https://www.imdb.com/title/tt0101854/> a schema:Movie ;
+    schema:name "False Arrest" ;
+    schema:url <https://www.imdb.com/title/tt0101854/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Michael Redmond"
+    ] .
+
+# Avalon (1990)
+<https://www.imdb.com/title/tt0099073/> a schema:Movie ;
+    schema:name "Avalon" ;
+    schema:url <https://www.imdb.com/title/tt0099073/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Michael as an Adult"
+    ] .
+
+# China Beach (1989)
+<https://www.imdb.com/title/tt0094433/> a schema:Movie ;
+    schema:name "China Beach" ;
+    schema:url <https://www.imdb.com/title/tt0094433/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Larry Fitzkee"
+    ] .
+
+# Tiger Warsaw (1988)
+<https://www.imdb.com/title/tt0096267/> a schema:Movie ;
+    schema:name "Tiger Warsaw" ;
+    schema:url <https://www.imdb.com/title/tt0096267/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Lt. Fontana"
+    ] .
+
+# Too Young the Hero (1988)
+<https://www.imdb.com/title/tt0096286/> a schema:Movie ;
+    schema:name "Too Young the Hero" ;
+    schema:url <https://www.imdb.com/title/tt0096286/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0940052/> ;
+        schema:characterName "Davy Cluff"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1091160345/> a schema:VideoObject ;
+        schema:name "Tom Wood Demo Reel 2 min." ;
+        schema:description "The Fugitive Ulee's Gold U.S. Marshals Chicago Hope" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1091160345/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjg2ZjMzMTItMmZkOS00OTc4LWIxZWQtZTVjNTZkNjI1MDAyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M1S"^^xsd:duration ;
+        schema:uploadDate "2025-02-17T01:45:41Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTI1OGQzY2UtMWE5Yi00MWViLTgzZDMtMWUxNGZkMDc1ZTJjXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTI1OGQzY2UtMWE5Yi00MWViLTgzZDMtMWUxNGZkMDc1ZTJjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Wood" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm892509954/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDNjMjBjZjctN2QyNy00MmY3LTllYjMtNGY4MTEyOTg3ZDlkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Wood" ;
+    schema:height "3000"^^xsd:integer ;
+    schema:width "2400"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm1717278978/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjFhNDUxNTMtNGZkYy00Yjk2LTk4YmQtY2NkYmFmZGVmN2M5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "The Granada Theater \"The Fugitive\" Celebration Screening 11/24" ;
+    schema:height "1265"^^xsd:integer ;
+    schema:width "961"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm3484418305/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZWFlNDQ2ZTAtZGI3ZC00ZGI2LWE1YmEtMDE2YWY2YzMwZjBmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Wood as Governor Tom" ;
+    schema:height "2100"^^xsd:integer ;
+    schema:width "2100"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm4293041410/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDVjMjEzYmQtYzY1ZC00MTMwLWE4MDItNWNlYmVkNjVkMjNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "The Granada Theater \"The Fugitive\" Celebration Screening 11/24" ;
+    schema:height "876"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm3048861440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQzODA0ODk1MV5BMl5BanBnXkFtZTgwOTIzNjQ3NjE@._V1_.jpg> ;
+    schema:caption "Tom Wood in U.S. Marshals (1998)" ;
+    schema:height "2452"^^xsd:integer ;
+    schema:width "1712"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm2713317120/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzA2MDU3MjY4N15BMl5BanBnXkFtZTgwNjEzNjQ3NjE@._V1_.jpg> ;
+    schema:caption "Tom Wood in The Fugitive (1993)" ;
+    schema:height "1196"^^xsd:integer ;
+    schema:width "961"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm456297984/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BODkxMTc2MTkwMF5BMl5BanBnXkFtZTcwNjU2ODgwMw@@._V1_.jpg> ;
+    schema:caption "Tom Wood in Ulee's Gold (1997)" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1475"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm37132288/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzQ3NDAxMzkzMF5BMl5BanBnXkFtZTYwNzIxNTg2._V1_.jpg> ;
+    schema:caption "Tommy Lee Jones stars as Sam Gerard" ;
+    schema:height "278"^^xsd:integer ;
+    schema:width "432"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0940052/mediaviewer/rm157726722/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmU3MzViMzgtY2QwMC00Zjk0LWEyOGMtMTNkN2ZjYzRiN2FkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Tom Wood in \"Under Siege\"" ;
+    schema:height "4284"^^xsd:integer ;
+    schema:width "5712"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

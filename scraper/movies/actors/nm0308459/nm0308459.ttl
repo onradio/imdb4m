@@ -1,0 +1,366 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0308459/> a schema:Person ;
+    schema:name "Rob Garrison" ;
+    schema:url <https://www.imdb.com/name/nm0308459/> ;
+    schema:birthDate "1960-01-23"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew", "Writer" ;
+    schema:alternateName "Robert Scott Garrison" ;
+    schema:description "Rob Garrison. Actor: The Karate Kid. Rob Garrison was born on 23 January 1960 in Wheeling, West Virginia, USA. He was an actor and writer, known for The Karate Kid (1984), The Karate Kid Part II (1986) and Iron Eagle (1986). He died on 27 September 2019 in Wheeling, West Virginia, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZDI3ZDdiODMtZjBjNC00MGUwLWI0OTgtNjMwZmI4ZTUwNWI2XkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Wheeling, West Virginia, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.76"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9¼″ (1.76 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0087538/>,    # The Karate Kid
+                       <https://www.imdb.com/title/tt0081383/>,    # Prom Night
+                       <https://www.imdb.com/title/tt0091278/>,    # Iron Eagle
+                       <https://www.imdb.com/title/tt0091326/>,    # The Karate Kid Part II
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7221388/>,    # Cobra Kai
+                       <https://www.imdb.com/title/tt1878917/>,    # The Pledge
+                       <https://www.imdb.com/title/tt14759188/>,    # No More Kings: Sweep the Leg
+                       <https://www.imdb.com/title/tt0103460/>,    # Kung Fu: The Legend Continues
+                       <https://www.imdb.com/title/tt0101121/>,    # Homefront
+                       <https://www.imdb.com/title/tt0376098/>,    # Punk Vacation
+                       <https://www.imdb.com/title/tt0096560/>,    # Coach
+                       <https://www.imdb.com/title/tt0099783/>,    # Hollywood Hot Tubs 2: Educating Crystal
+                       <https://www.imdb.com/title/tt0097083/>,    # Columbo: Columbo Goes to the Guillotine
+                       <https://www.imdb.com/title/tt0094518/>,    # The Munsters Today
+                       <https://www.imdb.com/title/tt0160386/>,    # Human Error
+                       <https://www.imdb.com/title/tt0092468/>,    # Tour of Duty
+                       <https://www.imdb.com/title/tt0088559/>,    # MacGyver
+                       <https://www.imdb.com/title/tt0083483/>,    # St. Elsewhere
+                       <https://www.imdb.com/title/tt0083643/>,    # Best Revenge
+                       <https://www.imdb.com/title/tt0084986/>,    # The Best of Times
+                       <https://www.imdb.com/title/tt0078644/>,    # The Littlest Hobo
+                       <https://www.imdb.com/title/tt0080474/>,    # Brubaker
+                       <https://www.imdb.com/title/tt0072529/>,    # King of Kensington
+                       <https://www.imdb.com/title/tt0079486/>,    # Lost and Found
+                       <https://www.imdb.com/title/tt0083040/>,    # Search and Destroy
+                       <https://www.imdb.com/title/tt0076760/> ; # Starship Invasions
+
+
+    schema:video <https://www.imdb.com/video/vi813087257/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0308459/mediaviewer/rm1551945729/>,
+                 <https://www.imdb.com/name/nm0308459/mediaviewer/rm448782593/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087538/> a schema:Movie ;
+    schema:name "The Karate Kid" ;
+    schema:url <https://www.imdb.com/title/tt0087538/> .
+
+<https://www.imdb.com/title/tt0081383/> a schema:Movie ;
+    schema:name "Prom Night" ;
+    schema:url <https://www.imdb.com/title/tt0081383/> .
+
+<https://www.imdb.com/title/tt0091278/> a schema:Movie ;
+    schema:name "Iron Eagle" ;
+    schema:url <https://www.imdb.com/title/tt0091278/> .
+
+<https://www.imdb.com/title/tt0091326/> a schema:Movie ;
+    schema:name "The Karate Kid Part II" ;
+    schema:url <https://www.imdb.com/title/tt0091326/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Cobra Kai (2019)
+<https://www.imdb.com/title/tt7221388/> a schema:Movie ;
+    schema:name "Cobra Kai" ;
+    schema:url <https://www.imdb.com/title/tt7221388/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Tommy"
+    ] .
+
+# The Pledge (2011)
+<https://www.imdb.com/title/tt1878917/> a schema:Movie ;
+    schema:name "The Pledge" ;
+    schema:url <https://www.imdb.com/title/tt1878917/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Pat Kern"
+    ] .
+
+# No More Kings: Sweep the Leg (2007)
+<https://www.imdb.com/title/tt14759188/> a schema:Movie ;
+    schema:name "No More Kings: Sweep the Leg" ;
+    schema:url <https://www.imdb.com/title/tt14759188/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Cobra Kai Member"
+    ] .
+
+# Kung Fu: The Legend Continues (1995)
+<https://www.imdb.com/title/tt0103460/> a schema:Movie ;
+    schema:name "Kung Fu: The Legend Continues" ;
+    schema:url <https://www.imdb.com/title/tt0103460/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Sheriff Blaine"
+    ] .
+
+# Homefront (1991)
+<https://www.imdb.com/title/tt0101121/> a schema:Movie ;
+    schema:name "Homefront" ;
+    schema:url <https://www.imdb.com/title/tt0101121/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Sailor #2"
+    ] .
+
+# Punk Vacation (1990)
+<https://www.imdb.com/title/tt0376098/> a schema:Movie ;
+    schema:name "Punk Vacation" ;
+    schema:url <https://www.imdb.com/title/tt0376098/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Billy"
+    ] .
+
+# Coach (1990)
+<https://www.imdb.com/title/tt0096560/> a schema:Movie ;
+    schema:name "Coach" ;
+    schema:url <https://www.imdb.com/title/tt0096560/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Insurance Salesman"
+    ] .
+
+# Hollywood Hot Tubs 2: Educating Crystal (1990)
+<https://www.imdb.com/title/tt0099783/> a schema:Movie ;
+    schema:name "Hollywood Hot Tubs 2: Educating Crystal" ;
+    schema:url <https://www.imdb.com/title/tt0099783/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Billy Dare"
+    ] .
+
+# Columbo: Columbo Goes to the Guillotine (1989)
+<https://www.imdb.com/title/tt0097083/> a schema:Movie ;
+    schema:name "Columbo: Columbo Goes to the Guillotine" ;
+    schema:url <https://www.imdb.com/title/tt0097083/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Young Man"
+    ] .
+
+# The Munsters Today (1988)
+<https://www.imdb.com/title/tt0094518/> a schema:Movie ;
+    schema:name "The Munsters Today" ;
+    schema:url <https://www.imdb.com/title/tt0094518/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Ralph"
+    ] .
+
+# Human Error (1988)
+<https://www.imdb.com/title/tt0160386/> a schema:Movie ;
+    schema:name "Human Error" ;
+    schema:url <https://www.imdb.com/title/tt0160386/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName ""
+    ] .
+
+# Tour of Duty (1988)
+<https://www.imdb.com/title/tt0092468/> a schema:Movie ;
+    schema:name "Tour of Duty" ;
+    schema:url <https://www.imdb.com/title/tt0092468/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Lt. Biggs"
+    ] .
+
+# MacGyver (1987)
+<https://www.imdb.com/title/tt0088559/> a schema:Movie ;
+    schema:name "MacGyver" ;
+    schema:url <https://www.imdb.com/title/tt0088559/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Patrol Officer"
+    ] .
+
+# St. Elsewhere (1986)
+<https://www.imdb.com/title/tt0083483/> a schema:Movie ;
+    schema:name "St. Elsewhere" ;
+    schema:url <https://www.imdb.com/title/tt0083483/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Bomber"
+    ] .
+
+# Best Revenge (1984)
+<https://www.imdb.com/title/tt0083643/> a schema:Movie ;
+    schema:name "Best Revenge" ;
+    schema:url <https://www.imdb.com/title/tt0083643/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Eddie"
+    ] .
+
+# The Best of Times (1983)
+<https://www.imdb.com/title/tt0084986/> a schema:Movie ;
+    schema:name "The Best of Times" ;
+    schema:url <https://www.imdb.com/title/tt0084986/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Cliff"
+    ] .
+
+# The Littlest Hobo (1980)
+<https://www.imdb.com/title/tt0078644/> a schema:Movie ;
+    schema:name "The Littlest Hobo" ;
+    schema:url <https://www.imdb.com/title/tt0078644/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName ""
+    ] .
+
+# Brubaker (1980)
+<https://www.imdb.com/title/tt0080474/> a schema:Movie ;
+    schema:name "Brubaker" ;
+    schema:url <https://www.imdb.com/title/tt0080474/> ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Pretty Boy"
+    ] .
+
+# King of Kensington (1979)
+<https://www.imdb.com/title/tt0072529/> a schema:Movie ;
+    schema:name "King of Kensington" ;
+    schema:url <https://www.imdb.com/title/tt0072529/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Stan"
+    ] .
+
+# Lost and Found (1979)
+<https://www.imdb.com/title/tt0079486/> a schema:Movie ;
+    schema:name "Lost and Found" ;
+    schema:url <https://www.imdb.com/title/tt0079486/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Ed Connally"
+    ] .
+
+# Search and Destroy (1979)
+<https://www.imdb.com/title/tt0083040/> a schema:Movie ;
+    schema:name "Search and Destroy" ;
+    schema:url <https://www.imdb.com/title/tt0083040/> ;
+    schema:datePublished "1979"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "R.J."
+    ] .
+
+# Starship Invasions (1977)
+<https://www.imdb.com/title/tt0076760/> a schema:Movie ;
+    schema:name "Starship Invasions" ;
+    schema:url <https://www.imdb.com/title/tt0076760/> ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0308459/> ;
+        schema:characterName "Suicide Crewman"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi813087257/> a schema:VideoObject ;
+        schema:name "The Karate Kid" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi813087257/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmU0YTU1MTQtMjM5OC00Yzg1LWFmOWQtYjFkOTJkYWRiMTgxXkEyXkFqcGdeQXRoaXJkLXBhcnR5LXZpZGVvLXVwZGF0ZXI@._V1_.jpg" ;
+        schema:duration "PT2M15S"^^xsd:duration ;
+        schema:uploadDate "2019-02-02T17:14:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZDI3ZDdiODMtZjBjNC00MGUwLWI0OTgtNjMwZmI4ZTUwNWI2XkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI3ZDdiODMtZjBjNC00MGUwLWI0OTgtNjMwZmI4ZTUwNWI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rob Garrison in Cobra Kai (2018)" ;
+    schema:height "1431"^^xsd:integer ;
+    schema:width "1263"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0308459/mediaviewer/rm1551945729/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmQyOTk2ZmItNThmNC00N2UzLTliM2QtZWUxMGViNGZlYzcyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rob Garrison in Aftermath (2021)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0308459/mediaviewer/rm448782593/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDI3ZDdiODMtZjBjNC00MGUwLWI0OTgtNjMwZmI4ZTUwNWI2XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rob Garrison in Cobra Kai (2018)" ;
+    schema:height "1431"^^xsd:integer ;
+    schema:width "1263"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

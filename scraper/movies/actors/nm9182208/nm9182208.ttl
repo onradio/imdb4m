@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9182208/> a schema:Person ;
+    schema:name "Michael Toy" ;
+    schema:url <https://www.imdb.com/name/nm9182208/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Michael Toy. Actor: The Sorcerer. Michael Toy is known for The Sorcerer (2015)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1235203/>,    # The Sorcerer
+                       <https://www.imdb.com/title/tt0910970/> . # WALL·E
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Sorcerer (2015)
+<https://www.imdb.com/title/tt1235203/> a schema:Movie ;
+    schema:name "The Sorcerer" ;
+    schema:url <https://www.imdb.com/title/tt1235203/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9182208/> ;
+        schema:characterName "Sebastian"
+    ] .
+
+# WALL·E (2008)
+<https://www.imdb.com/title/tt0910970/> a schema:Movie ;
+    schema:name "WALL·E" ;
+    schema:url <https://www.imdb.com/title/tt0910970/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9182208/> ;
+        schema:characterName "Commercial Human"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

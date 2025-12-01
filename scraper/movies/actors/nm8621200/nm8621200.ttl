@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm8621200/> a schema:Person ;
+    schema:name "Ha Si-yeon" ;
+    schema:url <https://www.imdb.com/name/nm8621200/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Ha Si-yeon. Actress: The Handmaiden. Ha Si-yeon is known for The Handmaiden (2016), A Stray Goat (2017) and So I Married an Anti-Fan (2021)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10468098/>,    # A Stray Goat
+                       <https://www.imdb.com/title/tt4016934/> . # The Handmaiden
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# A Stray Goat (2017)
+<https://www.imdb.com/title/tt10468098/> a schema:Movie ;
+    schema:name "A Stray Goat" ;
+    schema:url <https://www.imdb.com/title/tt10468098/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8621200/> ;
+        schema:characterName "Homeroom Teacher"
+    ] .
+
+# The Handmaiden (2016)
+<https://www.imdb.com/title/tt4016934/> a schema:Movie ;
+    schema:name "The Handmaiden" ;
+    schema:url <https://www.imdb.com/title/tt4016934/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm8621200/> ;
+        schema:characterName "Maid 3"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

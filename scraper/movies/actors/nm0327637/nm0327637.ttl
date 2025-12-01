@@ -1,0 +1,90 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0327637/> a schema:Person ;
+    schema:name "Bobby Gonzalez" ;
+    schema:url <https://www.imdb.com/name/nm0327637/> ;
+    schema:birthDate "1988-02-23"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Additional Crew" ;
+    schema:description "Bobby Gonzalez. Actor: The Invisible Guest. Bobby Gonzalez was born on 23 February 1988 in Miami, Florida, USA. He is an actor and producer, known for The Invisible Guest (2016), The Brothers Garcia (2000) and Alvin (2025)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Miami, Florida, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.73"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 8″ (1.73 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt4857264/>,    # The Invisible Guest
+                       <https://www.imdb.com/title/tt0235913/>,    # The Brothers Garcia
+                       <https://www.imdb.com/title/tt1874483/>,    # Effections
+                       <https://www.imdb.com/title/tt22647496/>,    # A Latino Hollywood Nightmare
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0404835/> ; # The Brothers Garcia: Mysteries of the Maya
+
+
+    schema:video <https://www.imdb.com/video/vi1289008665/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt4857264/> a schema:Movie ;
+    schema:name "The Invisible Guest" ;
+    schema:url <https://www.imdb.com/title/tt4857264/> .
+
+<https://www.imdb.com/title/tt0235913/> a schema:Movie ;
+    schema:name "The Brothers Garcia" ;
+    schema:url <https://www.imdb.com/title/tt0235913/> .
+
+<https://www.imdb.com/title/tt1874483/> a schema:Movie ;
+    schema:name "Effections" ;
+    schema:url <https://www.imdb.com/title/tt1874483/> .
+
+<https://www.imdb.com/title/tt22647496/> a schema:Movie ;
+    schema:name "A Latino Hollywood Nightmare" ;
+    schema:url <https://www.imdb.com/title/tt22647496/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Brothers Garcia: Mysteries of the Maya (2003)
+<https://www.imdb.com/title/tt0404835/> a schema:Movie ;
+    schema:name "The Brothers Garcia: Mysteries of the Maya" ;
+    schema:url <https://www.imdb.com/title/tt0404835/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0327637/> ;
+        schema:characterName "George Garcia"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1289008665/> a schema:VideoObject ;
+        schema:name "Contratiempo Trailer nov 18th" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1289008665/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDA1Nzg3ODY4MV5BMl5BanBnXkFtZTgwNTU3MTQ2MDI@._V1_.jpg" ;
+        schema:duration "PT1M45S"^^xsd:duration ;
+        schema:uploadDate "2016-11-19T07:00:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

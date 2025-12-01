@@ -1,0 +1,111 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5511912/> a schema:Person ;
+    schema:name "Salimata Kamate" ;
+    schema:url <https://www.imdb.com/name/nm5511912/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Salimata Kamate. Actress: Untouchable. Salimata Kamate is known for Untouchable (2011), Serial (Bad) Weddings (2014) and Represent (2023)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11826840/>,    # Assinie
+                       <https://www.imdb.com/title/tt6556670/>,    # Serial (Bad) Weddings 2
+                       <https://www.imdb.com/title/tt2800240/>,    # Serial (Bad) Weddings
+                       <https://www.imdb.com/title/tt1675434/>,    # Untouchable
+                       <https://www.imdb.com/title/tt0920794/> ; # Le pari de l'amour
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5511912/mediaviewer/rm1444634624/>,
+                 <https://www.imdb.com/name/nm5511912/mediaviewer/rm912220672/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Assinie (2019)
+<https://www.imdb.com/title/tt11826840/> a schema:Movie ;
+    schema:name "Assinie" ;
+    schema:url <https://www.imdb.com/title/tt11826840/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511912/> ;
+        schema:characterName "Adjoba Kadjane"
+    ] .
+
+# Serial (Bad) Weddings 2 (2019)
+<https://www.imdb.com/title/tt6556670/> a schema:Movie ;
+    schema:name "Serial (Bad) Weddings 2" ;
+    schema:url <https://www.imdb.com/title/tt6556670/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511912/> ;
+        schema:characterName "Madeleine Kofi"
+    ] .
+
+# Serial (Bad) Weddings (2014)
+<https://www.imdb.com/title/tt2800240/> a schema:Movie ;
+    schema:name "Serial (Bad) Weddings" ;
+    schema:url <https://www.imdb.com/title/tt2800240/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511912/> ;
+        schema:characterName "Madeleine Koffi"
+    ] .
+
+# Untouchable (2011)
+<https://www.imdb.com/title/tt1675434/> a schema:Movie ;
+    schema:name "Untouchable" ;
+    schema:url <https://www.imdb.com/title/tt1675434/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511912/> ;
+        schema:characterName "Fatou"
+    ] .
+
+# Le pari de l'amour (2003)
+<https://www.imdb.com/title/tt0920794/> a schema:Movie ;
+    schema:name "Le pari de l'amour" ;
+    schema:url <https://www.imdb.com/title/tt0920794/> ;
+    schema:datePublished "2003"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5511912/> ;
+        schema:characterName "Dany Rose"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm5511912/mediaviewer/rm1444634624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2FhNmQ3ODctYmU4MC00OGUzLWI2M2MtYTNmNjBkMDE3NTBiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christian Clavier, Élodie Fontan, Chantal Lauby, Pascal N'Zonzi, Frédérique Bel, Émilie Caen, Julia Piaton, Noom Diawara, Frédéric Chau, Ary Abittan, Medi Sadoun, and Salimata Kamate in Serial (Bad) Weddings 2 (2019)" ;
+    schema:height "3508"^^xsd:integer ;
+    schema:width "2480"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5511912/mediaviewer/rm912220672/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZGVjZjg4YjktYzlkYi00M2ZlLThmNTUtYTI3Mzc3OWI5OWRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Christian Clavier, Élodie Fontan, Chantal Lauby, Pascal N'Zonzi, Claudia Tagbo, Frédérique Bel, Tatiana Rojo, Émilie Caen, Julia Piaton, Noom Diawara, Frédéric Chau, Ary Abittan, Medi Sadoun, and Salimata Kamate in Serial (Bad) Weddings 2 (2019)" ;
+    schema:height "600"^^xsd:integer ;
+    schema:width "420"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

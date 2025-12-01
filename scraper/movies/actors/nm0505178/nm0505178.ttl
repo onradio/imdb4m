@@ -1,0 +1,107 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0505178/> a schema:Person ;
+    schema:name "Aline Levasseur" ;
+    schema:url <https://www.imdb.com/name/nm0505178/> ;
+    schema:birthDate "1983-04-07"^^xsd:date ;
+    schema:jobTitle "Actress" ;
+    schema:description "Aline Levasseur. Actress: Unforgiven. Aline Levasseur was born on 7 April 1983 in Calgary, Alberta, Canada. She is an actress, known for Unforgiven (1992), Bye Bye Blues (1989) and One More Mountain (1994). She was previously married to Simon Snow." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Calgary, Alberta, Canada"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.60"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 3″ (1.60 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110734/>,    # One More Mountain
+                       <https://www.imdb.com/title/tt0105695/>,    # Unforgiven
+                       <https://www.imdb.com/title/tt0096999/> ; # Bye Bye Blues
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0505178/mediaviewer/rm3265099520/>,
+                 <https://www.imdb.com/name/nm0505178/mediaviewer/rm1223718912/>,
+                 <https://www.imdb.com/name/nm0505178/mediaviewer/rm4280254464/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# One More Mountain (1994)
+<https://www.imdb.com/title/tt0110734/> a schema:Movie ;
+    schema:name "One More Mountain" ;
+    schema:url <https://www.imdb.com/title/tt0110734/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505178/> ;
+        schema:characterName "Patty Reed"
+    ] .
+
+# Unforgiven (1992)
+<https://www.imdb.com/title/tt0105695/> a schema:Movie ;
+    schema:name "Unforgiven" ;
+    schema:url <https://www.imdb.com/title/tt0105695/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505178/> ;
+        schema:characterName "Penny Munny"
+    ] .
+
+# Bye Bye Blues (1989)
+<https://www.imdb.com/title/tt0096999/> a schema:Movie ;
+    schema:name "Bye Bye Blues" ;
+    schema:url <https://www.imdb.com/title/tt0096999/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0505178/> ;
+        schema:characterName "Emma Cooper"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0505178/mediaviewer/rm3265099520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWU2NGNmYTMtOTJlMS00NTg5LWEwNmMtZTFmMDEzNjgxYWU5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Aline Levasseur, and Shane Thomas Meier in Unforgiven (1992)" ;
+    schema:height "801"^^xsd:integer ;
+    schema:width "1891"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0505178/mediaviewer/rm1223718912/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2NiZWE4YzktZWNkMS00ZGRlLWI2NWUtYzljZDUxYzk1NTAxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Aline Levasseur, and Shane Thomas Meier in Unforgiven (1992)" ;
+    schema:height "1044"^^xsd:integer ;
+    schema:width "2481"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0505178/mediaviewer/rm4280254464/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM3MzM5MDIyMV5BMl5BanBnXkFtZTcwMzM5NDY3Mw@@._V1_.jpg> ;
+    schema:caption "Clint Eastwood, Aline Levasseur, and Shane Thomas Meier in Unforgiven (1992)" ;
+    schema:height "1222"^^xsd:integer ;
+    schema:width "1798"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

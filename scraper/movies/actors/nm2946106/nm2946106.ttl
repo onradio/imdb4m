@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2946106/> a schema:Person ;
+    schema:name "Jim Gallien" ;
+    schema:url <https://www.imdb.com/name/nm2946106/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jim Gallien. Actor: Into the Wild. Jim Gallien was the last person to see Christopher \"Alexander Supertramp\" Johnson McCandless. He gave Chris a ride from Fairbanks, Alaska to the head of Stampede Trail. Jim was concerned about Chris, who had little gear and no experience in the Alaskan wilderness. He tried to persuade Chris to defer his trip and offered to drive him to Anchorage to buy suitable equipment. Eventually,..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0758758/> .    # Into the Wild
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Into the Wild (2007)
+<https://www.imdb.com/title/tt0758758/> a schema:Movie ;
+    schema:name "Into the Wild" ;
+    schema:url <https://www.imdb.com/title/tt0758758/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2946106/> ;
+        schema:characterName "Jim Gallien"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

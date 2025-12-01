@@ -1,0 +1,33 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0083944/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "It's a Long Road" ;
+        schema:byArtist <https://www.imdb.com/name/nm0384161/> ; # Dan Hill
+        schema:producer <https://www.imdb.com/name/nm0098567/> ; # Bruce Botnick
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "It's a Long Road" ;
+            schema:composer <https://www.imdb.com/name/nm0000025/> ; # Jerry Goldsmith
+            schema:lyricist <https://www.imdb.com/name/nm0788428/> # Hal Shaper
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000025/> a schema:Person ;
+    schema:name "Jerry Goldsmith" .
+<https://www.imdb.com/name/nm0098567/> a schema:Person ;
+    schema:name "Bruce Botnick" .
+<https://www.imdb.com/name/nm0384161/> a schema:Person ;
+    schema:name "Dan Hill" .
+<https://www.imdb.com/name/nm0788428/> a schema:Person ;
+    schema:name "Hal Shaper" .
+# ==============================================================================

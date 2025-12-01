@@ -1,0 +1,234 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0906301/> a schema:Person ;
+    schema:name "Robert Wahlberg" ;
+    schema:url <https://www.imdb.com/name/nm0906301/> ;
+    schema:birthDate "1967-12-18"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer" ;
+    schema:alternateName "Bob", "Robert George Wahlberg" ;
+    schema:description "Robert Wahlberg. Actor: The Equalizer. Robert Wahlberg was born on 18 December 1967 in Boston, Massachusetts, USA. He is an actor and producer, known for The Equalizer (2014), The Departed (2006) and Mystic River (2003). He has been married to Gina Santangelo since 25 September 1994. They have two children." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTkxMjY5NzYyOF5BMl5BanBnXkFtZTYwOTc3Nzg0._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Boston, Massachusetts, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0455944/>,    # The Equalizer
+                       <https://www.imdb.com/title/tt0327056/>,    # Mystic River
+                       <https://www.imdb.com/title/tt0407887/>,    # The Departed
+                       <https://www.imdb.com/title/tt0452623/>,    # Gone Baby Gone
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7187044/>,    # City on a Hill
+                       <https://www.imdb.com/title/tt8337080/>,    # Lies Gone Viral
+                       <https://www.imdb.com/title/tt4400824/>,    # If Only
+                       <https://www.imdb.com/title/tt1524137/>,    # Contraband
+                       <https://www.imdb.com/title/tt1281374/>,    # Absence of Suspicion
+                       <https://www.imdb.com/title/tt0796339/>,    # On Broadway
+                       <https://www.imdb.com/title/tt0179098/>,    # Moonlight Mile
+                       <https://www.imdb.com/title/tt0265709/>,    # Scenes of the Crime
+                       <https://www.imdb.com/title/tt0193365/>,    # Orphan
+                       <https://www.imdb.com/title/tt0199504/>,    # The Exchange
+                       <https://www.imdb.com/title/tt0118766/> ; # Southie
+
+
+    schema:video <https://www.imdb.com/video/vi1334575385/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0906301/mediaviewer/rm560443392/>,
+                 <https://www.imdb.com/name/nm0906301/mediaviewer/rm4185627392/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0455944/> a schema:Movie ;
+    schema:name "The Equalizer" ;
+    schema:url <https://www.imdb.com/title/tt0455944/> .
+
+<https://www.imdb.com/title/tt0327056/> a schema:Movie ;
+    schema:name "Mystic River" ;
+    schema:url <https://www.imdb.com/title/tt0327056/> .
+
+<https://www.imdb.com/title/tt0407887/> a schema:Movie ;
+    schema:name "The Departed" ;
+    schema:url <https://www.imdb.com/title/tt0407887/> .
+
+<https://www.imdb.com/title/tt0452623/> a schema:Movie ;
+    schema:name "Gone Baby Gone" ;
+    schema:url <https://www.imdb.com/title/tt0452623/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# City on a Hill (2019)
+<https://www.imdb.com/title/tt7187044/> a schema:Movie ;
+    schema:name "City on a Hill" ;
+    schema:url <https://www.imdb.com/title/tt7187044/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Bernie Hannahan"
+    ] .
+
+# Lies Gone Viral (2018)
+<https://www.imdb.com/title/tt8337080/> a schema:Movie ;
+    schema:name "Lies Gone Viral" ;
+    schema:url <https://www.imdb.com/title/tt8337080/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Stuart Franklin"
+    ] .
+
+# If Only (2015)
+<https://www.imdb.com/title/tt4400824/> a schema:Movie ;
+    schema:name "If Only" ;
+    schema:url <https://www.imdb.com/title/tt4400824/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Counselor Bob"
+    ] .
+
+# Contraband (2012)
+<https://www.imdb.com/title/tt1524137/> a schema:Movie ;
+    schema:name "Contraband" ;
+    schema:url <https://www.imdb.com/title/tt1524137/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "John Bryce"
+    ] .
+
+# Absence of Suspicion (2009)
+<https://www.imdb.com/title/tt1281374/> a schema:Movie ;
+    schema:name "Absence of Suspicion" ;
+    schema:url <https://www.imdb.com/title/tt1281374/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Alfred"
+    ] .
+
+# On Broadway (2007)
+<https://www.imdb.com/title/tt0796339/> a schema:Movie ;
+    schema:name "On Broadway" ;
+    schema:url <https://www.imdb.com/title/tt0796339/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Kevin Sheehan"
+    ] .
+
+# Moonlight Mile (2002)
+<https://www.imdb.com/title/tt0179098/> a schema:Movie ;
+    schema:name "Moonlight Mile" ;
+    schema:url <https://www.imdb.com/title/tt0179098/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Pinky"
+    ] .
+
+# Scenes of the Crime (2001)
+<https://www.imdb.com/title/tt0265709/> a schema:Movie ;
+    schema:name "Scenes of the Crime" ;
+    schema:url <https://www.imdb.com/title/tt0265709/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Arnon"
+    ] .
+
+# Orphan (2001)
+<https://www.imdb.com/title/tt0193365/> a schema:Movie ;
+    schema:name "Orphan" ;
+    schema:url <https://www.imdb.com/title/tt0193365/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Timmy Cummings"
+    ] .
+
+# The Exchange (2000)
+<https://www.imdb.com/title/tt0199504/> a schema:Movie ;
+    schema:name "The Exchange" ;
+    schema:url <https://www.imdb.com/title/tt0199504/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Lee Naldoff"
+    ] .
+
+# Southie (1998)
+<https://www.imdb.com/title/tt0118766/> a schema:Movie ;
+    schema:name "Southie" ;
+    schema:url <https://www.imdb.com/title/tt0118766/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0906301/> ;
+        schema:characterName "Davy Quinn"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1334575385/> a schema:VideoObject ;
+        schema:name "The Exchange" ;
+        schema:description "Home Video Trailer from Vanguard" ;
+        schema:embedUrl <https://www.imdb.com/video/vi1334575385/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTkwOTE3ZDYtOTI4Yi00Y2MyLWE5NGEtOTZiYWMzMzNlYjcyXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M3S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T16:20:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTkxMjY5NzYyOF5BMl5BanBnXkFtZTYwOTc3Nzg0._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxMjY5NzYyOF5BMl5BanBnXkFtZTYwOTc3Nzg0._V1_.jpg> ;
+    schema:caption "Mark Wahlberg, Donnie Wahlberg, and Robert Wahlberg at an event for Boogie Nights (1997)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "268"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0906301/mediaviewer/rm560443392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTYwNDIyODI2OV5BMl5BanBnXkFtZTcwOTY4MzMyNw@@._V1_.jpg> ;
+    schema:caption "Mark Wahlberg, Alec Baldwin, Matt Damon, Anthony Anderson, James Badge Dale, and Robert Wahlberg in The Departed (2006)" ;
+    schema:height "1337"^^xsd:integer ;
+    schema:width "2000"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0906301/mediaviewer/rm4185627392/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxMjY5NzYyOF5BMl5BanBnXkFtZTYwOTc3Nzg0._V1_.jpg> ;
+    schema:caption "Mark Wahlberg, Donnie Wahlberg, and Robert Wahlberg at an event for Boogie Nights (1997)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "268"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

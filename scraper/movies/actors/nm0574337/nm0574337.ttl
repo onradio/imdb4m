@@ -1,0 +1,427 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0574337/> a schema:Person ;
+    schema:name "Chad McQueen" ;
+    schema:url <https://www.imdb.com/name/nm0574337/> ;
+    schema:birthDate "1960-12-28"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Casting Director" ;
+    schema:alternateName "Chadwick Steven McQueen" ;
+    schema:description "Chad McQueen. Actor: The Karate Kid. Chad McQueen was born on 28 December 1960 in Los Angeles, California, USA. He was an actor and producer, known for The Karate Kid (1984), The Karate Kid Part II (1986) and Firepower (1993). He was married to Jeanie Galbraith and Stacey Toten. He died on 11 September 2024 in Palm Springs, California, USA." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjEyNjI2NzkwOF5BMl5BanBnXkFtZTcwNTQwNTUwOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.75"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 9″ (1.75 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0087538/>,    # The Karate Kid
+                       <https://www.imdb.com/title/tt0091326/>,    # The Karate Kid Part II
+                       <https://www.imdb.com/title/tt0106915/>,    # Firepower
+                       <https://www.imdb.com/title/tt0465311/>,    # Yucatan
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt0213642/>,    # Fall
+                       <https://www.imdb.com/title/tt0120247/>,    # Surface to Air
+                       <https://www.imdb.com/title/tt0119856/>,    # Papertrail
+                       <https://www.imdb.com/title/tt0117451/>,    # Red Line
+                       <https://www.imdb.com/title/tt0114016/>,    # Number One Fan
+                       <https://www.imdb.com/title/tt0179694/>,    # Bullet II
+                       <https://www.imdb.com/title/tt0110134/>,    # Indecent Behavior II
+                       <https://www.imdb.com/title/tt0110875/>,    # Possessed by the Night
+                       <https://www.imdb.com/title/tt0110197/>,    # Jimmy Hollywood
+                       <https://www.imdb.com/title/tt0111097/>,    # Search and Rescue
+                       <https://www.imdb.com/title/tt0111138/>,    # Sexual Malice
+                       <https://www.imdb.com/title/tt0185510/>,    # Squanderers
+                       <https://www.imdb.com/title/tt0117169/>,    # New York Undercover Cop
+                       <https://www.imdb.com/title/tt0111695/>,    # Where the Red Fern Grows: Part Two
+                       <https://www.imdb.com/title/tt0106688/>,    # Death Ring
+                       <https://www.imdb.com/title/tt0104822/>,    # Martial Law
+                       <https://www.imdb.com/title/tt5238496/>,    # The Fascination
+                       <https://www.imdb.com/title/tt0096618/>,    # Jesse Hawkes
+                       <https://www.imdb.com/title/tt0093627/>,    # Nightforce
+                       <https://www.imdb.com/title/tt0089139/>,    # Fever Pitch
+                       <https://www.imdb.com/title/tt0086822/>,    # V
+                       <https://www.imdb.com/title/tt0087378/>,    # Hadley's Rebellion
+                       <https://www.imdb.com/title/tt0076721/> ; # Skateboard
+
+
+    schema:video <https://www.imdb.com/video/vi1851962137/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0574337/mediaviewer/rm1942235136/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm348399616/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm2177050624/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm365045760/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm2562795520/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm3032557568/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm2697013248/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm2311071744/>,
+                 <https://www.imdb.com/name/nm0574337/mediaviewer/rm1438656512/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0087538/> a schema:Movie ;
+    schema:name "The Karate Kid" ;
+    schema:url <https://www.imdb.com/title/tt0087538/> .
+
+<https://www.imdb.com/title/tt0091326/> a schema:Movie ;
+    schema:name "The Karate Kid Part II" ;
+    schema:url <https://www.imdb.com/title/tt0091326/> .
+
+<https://www.imdb.com/title/tt0106915/> a schema:Movie ;
+    schema:name "Firepower" ;
+    schema:url <https://www.imdb.com/title/tt0106915/> .
+
+<https://www.imdb.com/title/tt0465311/> a schema:Movie ;
+    schema:name "Yucatan" ;
+    schema:url <https://www.imdb.com/title/tt0465311/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Fall (2001)
+<https://www.imdb.com/title/tt0213642/> a schema:Movie ;
+    schema:name "Fall" ;
+    schema:url <https://www.imdb.com/title/tt0213642/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Manny Carlotti"
+    ] .
+
+# Surface to Air (1998)
+<https://www.imdb.com/title/tt0120247/> a schema:Movie ;
+    schema:name "Surface to Air" ;
+    schema:url <https://www.imdb.com/title/tt0120247/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Lt. Dylan 'Raven' Massin"
+    ] .
+
+# Papertrail (1997)
+<https://www.imdb.com/title/tt0119856/> a schema:Movie ;
+    schema:name "Papertrail" ;
+    schema:url <https://www.imdb.com/title/tt0119856/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "William Frost"
+    ] .
+
+# Red Line (1995)
+<https://www.imdb.com/title/tt0117451/> a schema:Movie ;
+    schema:name "Red Line" ;
+    schema:url <https://www.imdb.com/title/tt0117451/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Jim"
+    ] .
+
+# Number One Fan (1995)
+<https://www.imdb.com/title/tt0114016/> a schema:Movie ;
+    schema:name "Number One Fan" ;
+    schema:url <https://www.imdb.com/title/tt0114016/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Zane Barry"
+    ] .
+
+# Bullet II (1994)
+<https://www.imdb.com/title/tt0179694/> a schema:Movie ;
+    schema:name "Bullet II" ;
+    schema:url <https://www.imdb.com/title/tt0179694/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Bullet"
+    ] .
+
+# Indecent Behavior II (1994)
+<https://www.imdb.com/title/tt0110134/> a schema:Movie ;
+    schema:name "Indecent Behavior II" ;
+    schema:url <https://www.imdb.com/title/tt0110134/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Darrell Martine"
+    ] .
+
+# Possessed by the Night (1994)
+<https://www.imdb.com/title/tt0110875/> a schema:Movie ;
+    schema:name "Possessed by the Night" ;
+    schema:url <https://www.imdb.com/title/tt0110875/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Gus"
+    ] .
+
+# Jimmy Hollywood (1994)
+<https://www.imdb.com/title/tt0110197/> a schema:Movie ;
+    schema:name "Jimmy Hollywood" ;
+    schema:url <https://www.imdb.com/title/tt0110197/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Audition Partner"
+    ] .
+
+# Search and Rescue (1994)
+<https://www.imdb.com/title/tt0111097/> a schema:Movie ;
+    schema:name "Search and Rescue" ;
+    schema:url <https://www.imdb.com/title/tt0111097/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Dean"
+    ] .
+
+# Sexual Malice (1994)
+<https://www.imdb.com/title/tt0111138/> a schema:Movie ;
+    schema:name "Sexual Malice" ;
+    schema:url <https://www.imdb.com/title/tt0111138/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "David"
+    ] .
+
+# Squanderers (1996)
+<https://www.imdb.com/title/tt0185510/> a schema:Movie ;
+    schema:name "Squanderers" ;
+    schema:url <https://www.imdb.com/title/tt0185510/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "John"
+    ] .
+
+# New York Undercover Cop (1993)
+<https://www.imdb.com/title/tt0117169/> a schema:Movie ;
+    schema:name "New York Undercover Cop" ;
+    schema:url <https://www.imdb.com/title/tt0117169/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Hawk"
+    ] .
+
+# Where the Red Fern Grows: Part Two (1992)
+<https://www.imdb.com/title/tt0111695/> a schema:Movie ;
+    schema:name "Where the Red Fern Grows: Part Two" ;
+    schema:url <https://www.imdb.com/title/tt0111695/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Rainie Pritchard"
+    ] .
+
+# Death Ring (1992)
+<https://www.imdb.com/title/tt0106688/> a schema:Movie ;
+    schema:name "Death Ring" ;
+    schema:url <https://www.imdb.com/title/tt0106688/> ;
+    schema:datePublished "1992"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "'Skylord' Harris"
+    ] .
+
+# Martial Law (1990)
+<https://www.imdb.com/title/tt0104822/> a schema:Movie ;
+    schema:name "Martial Law" ;
+    schema:url <https://www.imdb.com/title/tt0104822/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Sean Thompson"
+    ] .
+
+# The Fascination (1989)
+<https://www.imdb.com/title/tt5238496/> a schema:Movie ;
+    schema:name "The Fascination" ;
+    schema:url <https://www.imdb.com/title/tt5238496/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "A photographer"
+    ] .
+
+# Jesse Hawkes (1989)
+<https://www.imdb.com/title/tt0096618/> a schema:Movie ;
+    schema:name "Jesse Hawkes" ;
+    schema:url <https://www.imdb.com/title/tt0096618/> ;
+    schema:datePublished "1989"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName ""
+    ] .
+
+# Nightforce (1987)
+<https://www.imdb.com/title/tt0093627/> a schema:Movie ;
+    schema:name "Nightforce" ;
+    schema:url <https://www.imdb.com/title/tt0093627/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Henry"
+    ] .
+
+# Fever Pitch (1985)
+<https://www.imdb.com/title/tt0089139/> a schema:Movie ;
+    schema:name "Fever Pitch" ;
+    schema:url <https://www.imdb.com/title/tt0089139/> ;
+    schema:datePublished "1985"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Prisoner"
+    ] .
+
+# V (1984)
+<https://www.imdb.com/title/tt0086822/> a schema:Movie ;
+    schema:name "V" ;
+    schema:url <https://www.imdb.com/title/tt0086822/> ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Dean Boddicker"
+    ] .
+
+# Hadley's Rebellion (1983)
+<https://www.imdb.com/title/tt0087378/> a schema:Movie ;
+    schema:name "Hadley's Rebellion" ;
+    schema:url <https://www.imdb.com/title/tt0087378/> ;
+    schema:datePublished "1983"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Rick Stanton"
+    ] .
+
+# Skateboard (1978)
+<https://www.imdb.com/title/tt0076721/> a schema:Movie ;
+    schema:name "Skateboard" ;
+    schema:url <https://www.imdb.com/title/tt0076721/> ;
+    schema:datePublished "1978"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0574337/> ;
+        schema:characterName "Competition Skateboarder"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1851962137/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "By 1970, Steve McQueen ruled Hollywood. He was the King of Cool and the world's most notorious ladies' man. Hot off the back of classics like 'The Thomas Crown Affair' and 'Bullitt,' the racing fanatic began production of his passion project, 'Le Mans,' centered on the 24-hour car race in France. But the infamously troubled production was plagued with financial troubles, on-set rivalries and the star's own personal issues. This documentary film interweaves stunning, newly discovered footage and McQueen's private recordings with original interviews to reveal the true story of how this cinema legend would risk everything in pursuit of his dream." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1851962137/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjMwMjYwMzc4OF5BMl5BanBnXkFtZTgwMjg0MTQ5NjE@._V1_.jpg" ;
+        schema:duration "PT2M10S"^^xsd:duration ;
+        schema:uploadDate "2015-10-02T09:43:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjEyNjI2NzkwOF5BMl5BanBnXkFtZTcwNTQwNTUwOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEyNjI2NzkwOF5BMl5BanBnXkFtZTcwNTQwNTUwOA@@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1510"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm1942235136/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTc1ODQwODg4N15BMl5BanBnXkFtZTgwMDA1MzM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "335"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm348399616/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU3MjcxOTgzNl5BMl5BanBnXkFtZTgwNjY0MzM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "331"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm2177050624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUzMDYwOTE3OF5BMl5BanBnXkFtZTgwODEzMzM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "337"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm365045760/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU0OTIyNTc0NV5BMl5BanBnXkFtZTgwMDI5MjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "338"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm2562795520/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTkxNTczNzkzM15BMl5BanBnXkFtZTgwNjk3MjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "330"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm3032557568/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTUyNzAyNjExMV5BMl5BanBnXkFtZTgwMDU3MjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "333"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm2697013248/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTgxMzg1NjQwMF5BMl5BanBnXkFtZTgwNjM3MjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "330"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm2311071744/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczMjY3MDY4OV5BMl5BanBnXkFtZTgwODU0MjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "500"^^xsd:integer ;
+    schema:width "328"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0574337/mediaviewer/rm1438656512/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA0NjU4MjI3M15BMl5BanBnXkFtZTgwNDkzMjM1MjI@._V1_.jpg> ;
+    schema:caption "Chad McQueen" ;
+    schema:height "337"^^xsd:integer ;
+    schema:width "500"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

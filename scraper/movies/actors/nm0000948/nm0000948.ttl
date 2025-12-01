@@ -1,0 +1,362 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0000948/> a schema:Person ;
+    schema:name "Shane Black" ;
+    schema:url <https://www.imdb.com/name/nm0000948/> ;
+    schema:birthDate "1961-12-16"^^xsd:date ;
+    schema:jobTitle "Writer", "Actor", "Director" ;
+    schema:description "Shane Black. Actor: Predator. Considered one of the pioneer screenwriters of the action genre, Black made his mark with his Lethal Weapon (1987) screenplay. He also collaborated on the story of the sequel, Lethal Weapon 2 (1989). Each successive script he turned in had a higher price attached it, from The Last Boy Scout (1991) to The Long Kiss Goodnight (1996), and in between a re-write on the McTiernan/Schwarzenegger Last..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTM2ODI3NzkyNl5BMl5BanBnXkFtZTYwMDQ3OTYz._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Pittsburgh, Pennsylvania, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0093773/>,    # Predator
+                       <https://www.imdb.com/title/tt0373469/>,    # Kiss Kiss Bang Bang
+                       <https://www.imdb.com/title/tt1300854/>,    # Iron Man 3
+                       <https://www.imdb.com/title/tt3799694/>,    # The Nice Guys
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt8571370/>,    # Wild Nothing
+                       <https://www.imdb.com/title/tt38631907/>,    # The 43th Annual Saturn Awards
+                       <https://www.imdb.com/title/tt5301544/>,    # Swing State
+                       <https://www.imdb.com/title/tt3266948/>,    # Fighting Demons
+                       <https://www.imdb.com/title/tt3067038/>,    # Marvel One-Shot: Agent Carter
+                       <https://www.imdb.com/title/tt1320349/>,    # Monkeys
+                       <https://www.imdb.com/title/tt0356442/>,    # The Boy Scout
+                       <https://www.imdb.com/title/tt0119822/>,    # As Good as It Gets
+                       <https://www.imdb.com/title/tt0118577/>,    # An Alan Smithee Film: Burn Hollywood Burn
+                       <https://www.imdb.com/title/tt0110664/>,    # Night Realm
+                       <https://www.imdb.com/title/tt1320348/>,    # Mike the Detective
+                       <https://www.imdb.com/title/tt0101073/>,    # Dark Justice
+                       <https://www.imdb.com/title/tt0107978/>,    # RoboCop 3
+                       <https://www.imdb.com/title/tt0099810/>,    # The Hunt for Red October
+                       <https://www.imdb.com/title/tt0094961/>,    # Dead Heat
+                       <https://www.imdb.com/title/tt0091630/> ; # Night of the Creeps
+
+    schema:award [
+        a schema:Award ;
+        schema:description "4 wins & 13 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (The Long Kiss Goodnight)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "4000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2241249561/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000948/mediaviewer/rm4264701185/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm1012810752/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm3223410688/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm1519737344/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm3832283648/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm4016833024/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm2015837440/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm1765124098/>,
+                 <https://www.imdb.com/name/nm0000948/mediaviewer/rm2337822208/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0093773/> a schema:Movie ;
+    schema:name "Predator" ;
+    schema:url <https://www.imdb.com/title/tt0093773/> .
+
+<https://www.imdb.com/title/tt0373469/> a schema:Movie ;
+    schema:name "Kiss Kiss Bang Bang" ;
+    schema:url <https://www.imdb.com/title/tt0373469/> .
+
+<https://www.imdb.com/title/tt1300854/> a schema:Movie ;
+    schema:name "Iron Man 3" ;
+    schema:url <https://www.imdb.com/title/tt1300854/> .
+
+<https://www.imdb.com/title/tt3799694/> a schema:Movie ;
+    schema:name "The Nice Guys" ;
+    schema:url <https://www.imdb.com/title/tt3799694/> .
+
+<https://www.imdb.com/title/tt0116908/> a schema:Movie ;
+    schema:name "The Long Kiss Goodnight" ;
+    schema:url <https://www.imdb.com/title/tt0116908/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wild Nothing (2018)
+<https://www.imdb.com/title/tt8571370/> a schema:Movie ;
+    schema:name "Wild Nothing" ;
+    schema:url <https://www.imdb.com/title/tt8571370/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Phil"
+    ] .
+
+# The 43th Annual Saturn Awards (2017)
+<https://www.imdb.com/title/tt38631907/> a schema:Movie ;
+    schema:name "The 43th Annual Saturn Awards" ;
+    schema:url <https://www.imdb.com/title/tt38631907/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Heself"
+    ] .
+
+# Swing State (2017)
+<https://www.imdb.com/title/tt5301544/> a schema:Movie ;
+    schema:name "Swing State" ;
+    schema:url <https://www.imdb.com/title/tt5301544/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Luke"
+    ] .
+
+# Fighting Demons (2015)
+<https://www.imdb.com/title/tt3266948/> a schema:Movie ;
+    schema:name "Fighting Demons" ;
+    schema:url <https://www.imdb.com/title/tt3266948/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Gino"
+    ] .
+
+# Marvel One-Shot: Agent Carter (2013)
+<https://www.imdb.com/title/tt3067038/> a schema:Movie ;
+    schema:name "Marvel One-Shot: Agent Carter" ;
+    schema:url <https://www.imdb.com/title/tt3067038/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "The Disembodied Voice"
+    ] .
+
+# Monkeys (2007)
+<https://www.imdb.com/title/tt1320349/> a schema:Movie ;
+    schema:name "Monkeys" ;
+    schema:url <https://www.imdb.com/title/tt1320349/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName ""
+    ] .
+
+# The Boy Scout (2002)
+<https://www.imdb.com/title/tt0356442/> a schema:Movie ;
+    schema:name "The Boy Scout" ;
+    schema:url <https://www.imdb.com/title/tt0356442/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Henchman #2"
+    ] .
+
+# As Good as It Gets (1997)
+<https://www.imdb.com/title/tt0119822/> a schema:Movie ;
+    schema:name "As Good as It Gets" ;
+    schema:url <https://www.imdb.com/title/tt0119822/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Cafe 24 Manager"
+    ] .
+
+# An Alan Smithee Film: Burn Hollywood Burn (1997)
+<https://www.imdb.com/title/tt0118577/> a schema:Movie ;
+    schema:name "An Alan Smithee Film: Burn Hollywood Burn" ;
+    schema:url <https://www.imdb.com/title/tt0118577/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Shane Black"
+    ] .
+
+# Night Realm (1994)
+<https://www.imdb.com/title/tt0110664/> a schema:Movie ;
+    schema:name "Night Realm" ;
+    schema:url <https://www.imdb.com/title/tt0110664/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName ""
+    ] .
+
+# Mike the Detective (1993)
+<https://www.imdb.com/title/tt1320348/> a schema:Movie ;
+    schema:name "Mike the Detective" ;
+    schema:url <https://www.imdb.com/title/tt1320348/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Mike"
+    ] .
+
+# Dark Justice (1991)
+<https://www.imdb.com/title/tt0101073/> a schema:Movie ;
+    schema:name "Dark Justice" ;
+    schema:url <https://www.imdb.com/title/tt0101073/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Caldecott Rush"
+    ] .
+
+# RoboCop 3 (1993)
+<https://www.imdb.com/title/tt0107978/> a schema:Movie ;
+    schema:name "RoboCop 3" ;
+    schema:url <https://www.imdb.com/title/tt0107978/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Donnelly"
+    ] .
+
+# The Hunt for Red October (1990)
+<https://www.imdb.com/title/tt0099810/> a schema:Movie ;
+    schema:name "The Hunt for Red October" ;
+    schema:url <https://www.imdb.com/title/tt0099810/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "USS Reuben James Crewman"
+    ] .
+
+# Dead Heat (1988)
+<https://www.imdb.com/title/tt0094961/> a schema:Movie ;
+    schema:name "Dead Heat" ;
+    schema:url <https://www.imdb.com/title/tt0094961/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Patrolman"
+    ] .
+
+# Night of the Creeps (1986)
+<https://www.imdb.com/title/tt0091630/> a schema:Movie ;
+    schema:name "Night of the Creeps" ;
+    schema:url <https://www.imdb.com/title/tt0091630/> ;
+    schema:datePublished "1986"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000948/> ;
+        schema:characterName "Cop in Police Station"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2241249561/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "When it was released in 1987, The Monster Squad was deemed a failure by critics and was, according to the box office, a film no one cared about. But over the last three decades, word of mouth has turned this sleeping hit into a cultural phenomenon." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2241249561/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTgyOTg1YjQtZWNiNS00YzM5LTk0YTAtZDM5ZWU0NTEyZGEyXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg" ;
+        schema:duration "PT1M23S"^^xsd:duration ;
+        schema:uploadDate "2020-09-29T19:54:54Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTM2ODI3NzkyNl5BMl5BanBnXkFtZTYwMDQ3OTYz._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTM2ODI3NzkyNl5BMl5BanBnXkFtZTYwMDQ3OTYz._V1_.jpg> ;
+    schema:caption "Shane Black at an event for Kiss Kiss Bang Bang (2005)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "276"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm4264701185/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWRkNTRiOWQtNGYwMy00YzE3LThlNjEtZWZlZWNiYTRkNmZhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger, Shane Black, Jesse Ventura, Carl Weathers, Bill Duke, Richard Chaves, and Sonny Landham in Predator (1987)" ;
+    schema:height "3660"^^xsd:integer ;
+    schema:width "5704"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm1012810752/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BN2Q5ZmUwYTctOWMzNC00N2YzLWE5NTQtMGI5YmE3NTk1MDdhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shane Black in Conan (2010)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm3223410688/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BY2IwYjU2YzItNGUzOS00NWRjLTg4ZmItNzc5ODA5MzU3OTRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger, Shane Black, Jesse Ventura, Carl Weathers, Bill Duke, Richard Chaves, and Sonny Landham in Predator (1987)" ;
+    schema:height "2442"^^xsd:integer ;
+    schema:width "2990"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm1519737344/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE3MjUzMTQ5Ml5BMl5BanBnXkFtZTgwNTcyNjI5MzI@._V1_.jpg> ;
+    schema:caption "Arnold Schwarzenegger and Shane Black in Predator (1987)" ;
+    schema:height "1352"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm3832283648/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOTE0Mjc4MTYwN15BMl5BanBnXkFtZTgwOTYzMDQyMDI@._V1_.jpg> ;
+    schema:caption "Shane Black and Joel Silver in Kiss Kiss Bang Bang (2005)" ;
+    schema:height "2249"^^xsd:integer ;
+    schema:width "3072"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm4016833024/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjEwOTM3MDIyMV5BMl5BanBnXkFtZTgwODYzMDQyMDI@._V1_.jpg> ;
+    schema:caption "Robert Downey Jr. and Shane Black in Kiss Kiss Bang Bang (2005)" ;
+    schema:height "3072"^^xsd:integer ;
+    schema:width "1978"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm2015837440/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTcxOTg2MDExNl5BMl5BanBnXkFtZTgwMzA0MjI1MTI@._V1_.jpg> ;
+    schema:caption "Shane Black, Keegan-Michael Key, Sterling K. Brown, Olivia Munn, Boyd Holbrook, Jacob Tremblay, and Trevante Rhodes in The Predator (2018)" ;
+    schema:height "692"^^xsd:integer ;
+    schema:width "1200"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm1765124098/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzQwOTljZGUtMGQ0ZS00NjlmLWE1YzItNTA2NjU1YzM4NzFiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Shane Black, Philippe Rousselot, Jasin Boland, Sebastian Carr, and Rupert Raineri in Play Dirty (2025)" ;
+    schema:height "2600"^^xsd:integer ;
+    schema:width "3900"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000948/mediaviewer/rm2337822208/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNDk2NTM4OTExOV5BMl5BanBnXkFtZTgwNTQ1NTc3NDM@._V1_.jpg> ;
+    schema:caption "Robert Downey Jr., Shane Black, and Paul Bettany in Iron Man 3 (2013)" ;
+    schema:height "675"^^xsd:integer ;
+    schema:width "1013"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000948/>
+    schema:sameAs <https://www.instagram.com/bonafideblack/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

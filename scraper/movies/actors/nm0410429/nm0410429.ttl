@@ -1,0 +1,69 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0410429/> a schema:Person ;
+    schema:name "Nate Irwin" ;
+    schema:url <https://www.imdb.com/name/nm0410429/> ;
+    schema:birthDate "1936-08-14"^^xsd:date ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Nate Irwin. Actor: The Thing. Nate Irwin was born in Gregory, Arkansas on 8 August 1936, the 7th of 10 children. As a child he picked cotton until the family moved to Oregon when he was 14. He went into the Navy at 19 with his brother Jack. At 20 he married Nancy Edwards whom he met while stationed in Washington State. They had 3 children during their marriage and..." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Gregory, Arkansas, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0084787/> ;    # The Thing
+
+
+    schema:video <https://www.imdb.com/video/vi2298151193/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Thing (1982)
+<https://www.imdb.com/title/tt0084787/> a schema:Movie ;
+    schema:name "The Thing" ;
+    schema:url <https://www.imdb.com/title/tt0084787/> ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0410429/> ;
+        schema:characterName "Helicopter Pilot"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2298151193/> a schema:VideoObject ;
+        schema:name "The Thing" ;
+        schema:description "Scientists in the Antarctic are confronted by a shape-shifting alien that assumes the appearance of the people that it kills." ;
+        schema:embedUrl <https://www.imdb.com/video/vi2298151193/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzBhZmNmYzgtMmZkMC00ODYxLWJiYjctOGFkOTYwMWZhZDk4XkEyXkFqcGdeQWpvaG5oYXJ0._V1_.jpg" ;
+        schema:duration "PT1M54S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T17:15:47Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

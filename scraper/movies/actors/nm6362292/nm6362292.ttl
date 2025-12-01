@@ -1,0 +1,104 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6362292/> a schema:Person ;
+    schema:name "Sukhesh Arora" ;
+    schema:url <https://www.imdb.com/name/nm6362292/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sukhesh Arora. Actor: Tamasha. Sukhesh Arora trained in theater, first in Delhi and then at Royal Holloway College, London. He has worked on stage and in film across a wide spectrum of genres. His first inde feature was Nishit Saran's critically acclaimed \"Perfect Day\" after which came \"The Game\" based on Milan Kundera's short story The Hitchhiking Game directed by Sidharth Anand Kumar. His first \"Bollywood\" role was in Imtiaz..." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt28336960/>,    # Detective Roy
+                       <https://www.imdb.com/title/tt5842616/>,    # Veere Di Wedding
+                       <https://www.imdb.com/title/tt3148502/>,    # Tamasha
+                       <https://www.imdb.com/title/tt5121000/>,    # Aligarh
+                       <https://www.imdb.com/title/tt3526430/> ; # After the Third Bell
+
+
+    schema:video <https://www.imdb.com/video/vi2308817689/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Detective Roy (2018)
+<https://www.imdb.com/title/tt28336960/> a schema:Movie ;
+    schema:name "Detective Roy" ;
+    schema:url <https://www.imdb.com/title/tt28336960/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6362292/> ;
+        schema:characterName "Detective Roy"
+    ] .
+
+# Veere Di Wedding (2018)
+<https://www.imdb.com/title/tt5842616/> a schema:Movie ;
+    schema:name "Veere Di Wedding" ;
+    schema:url <https://www.imdb.com/title/tt5842616/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6362292/> ;
+        schema:characterName "Keshav"
+    ] .
+
+# Tamasha (2015)
+<https://www.imdb.com/title/tt3148502/> a schema:Movie ;
+    schema:name "Tamasha" ;
+    schema:url <https://www.imdb.com/title/tt3148502/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6362292/> ;
+        schema:characterName ""
+    ] .
+
+# Aligarh (2015)
+<https://www.imdb.com/title/tt5121000/> a schema:Movie ;
+    schema:name "Aligarh" ;
+    schema:url <https://www.imdb.com/title/tt5121000/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6362292/> ;
+        schema:characterName "Tahir Islam"
+    ] .
+
+# After the Third Bell (2014)
+<https://www.imdb.com/title/tt3526430/> a schema:Movie ;
+    schema:name "After the Third Bell" ;
+    schema:url <https://www.imdb.com/title/tt3526430/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6362292/> ;
+        schema:characterName "Amol Kaushik"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2308817689/> a schema:VideoObject ;
+        schema:name "The Rapist trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2308817689/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTlkMDdkNmEtYWJiZC00MGVjLWE3ZDItYzdlZTVjODE5NjEyXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M25S"^^xsd:duration ;
+        schema:uploadDate "2021-10-13T10:01:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

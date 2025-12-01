@@ -1,0 +1,63 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3116410/> a schema:Person ;
+    schema:name "Sonny Vue" ;
+    schema:url <https://www.imdb.com/name/nm3116410/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Sonny Vue. Actor: Gran Torino. Sonny Vue is known for Gran Torino (2008) and Gran Torino: Next Door (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1205489/> ;    # Gran Torino
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3116410/mediaviewer/rm1241893888/>,
+                 <https://www.imdb.com/name/nm3116410/mediaviewer/rm232557056/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Gran Torino (2008)
+<https://www.imdb.com/title/tt1205489/> a schema:Movie ;
+    schema:name "Gran Torino" ;
+    schema:url <https://www.imdb.com/title/tt1205489/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3116410/> ;
+        schema:characterName "Smokie"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm3116410/mediaviewer/rm1241893888/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTc5NjE4MzYxOF5BMl5BanBnXkFtZTgwMTgwNjMwMjE@._V1_.jpg> ;
+    schema:caption "Doua Moua, Bee Vang, Lee Mong Vang, Sonny Vue, Jerry Lee, and Elvis Thao in Gran Torino (2008)" ;
+    schema:height "444"^^xsd:integer ;
+    schema:width "504"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3116410/mediaviewer/rm232557056/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQ3MzkxNTU3MF5BMl5BanBnXkFtZTcwMTgwMzUxMg@@._V1_.jpg> ;
+    schema:caption "Doua Moua, Bee Vang, Lee Mong Vang, Sonny Vue, Jerry Lee, and Elvis Thao in Gran Torino (2008)" ;
+    schema:height "483"^^xsd:integer ;
+    schema:width "725"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

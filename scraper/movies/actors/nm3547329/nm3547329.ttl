@@ -1,0 +1,116 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3547329/> a schema:Person ;
+    schema:name "Sunil Chitkara" ;
+    schema:url <https://www.imdb.com/name/nm3547329/> ;
+    schema:jobTitle "Actor", "Additional Crew" ;
+    schema:description "Sunil Chitkara. Actor: Bajrangi Bhaijaan. Sunil Chitkara is known for Bajrangi Bhaijaan (2015), Sahi Dhandhe Galat Bande (2011) and The Sky Is Pink (2019)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8902990/>,    # The Sky Is Pink
+                       <https://www.imdb.com/title/tt3863552/>,    # Bajrangi Bhaijaan
+                       <https://www.imdb.com/title/tt2848824/>,    # Bajatey Raho
+                       <https://www.imdb.com/title/tt2106537/>,    # Matru Ki Bijlee Ka Mandola
+                       <https://www.imdb.com/title/tt1630282/>,    # Sahi Dhandhe Galat Bande
+                       <https://www.imdb.com/title/tt1474424/> ; # Kaash
+
+
+    schema:video <https://www.imdb.com/video/vi3104163353/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Sky Is Pink (2019)
+<https://www.imdb.com/title/tt8902990/> a schema:Movie ;
+    schema:name "The Sky Is Pink" ;
+    schema:url <https://www.imdb.com/title/tt8902990/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName "Mr. Chaudhary"
+    ] .
+
+# Bajrangi Bhaijaan (2015)
+<https://www.imdb.com/title/tt3863552/> a schema:Movie ;
+    schema:name "Bajrangi Bhaijaan" ;
+    schema:url <https://www.imdb.com/title/tt3863552/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName "Fat Man Cop (Pakistani Police Officer)"
+    ] .
+
+# Bajatey Raho (2013)
+<https://www.imdb.com/title/tt2848824/> a schema:Movie ;
+    schema:name "Bajatey Raho" ;
+    schema:url <https://www.imdb.com/title/tt2848824/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName "Jogi"
+    ] .
+
+# Matru Ki Bijlee Ka Mandola (2013)
+<https://www.imdb.com/title/tt2106537/> a schema:Movie ;
+    schema:name "Matru Ki Bijlee Ka Mandola" ;
+    schema:url <https://www.imdb.com/title/tt2106537/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName "Inspector"
+    ] .
+
+# Sahi Dhandhe Galat Bande (2011)
+<https://www.imdb.com/title/tt1630282/> a schema:Movie ;
+    schema:name "Sahi Dhandhe Galat Bande" ;
+    schema:url <https://www.imdb.com/title/tt1630282/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName ""
+    ] .
+
+# Kaash (2007)
+<https://www.imdb.com/title/tt1474424/> a schema:Movie ;
+    schema:name "Kaash" ;
+    schema:url <https://www.imdb.com/title/tt1474424/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3547329/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3104163353/> a schema:VideoObject ;
+        schema:name "Trailer [OV]" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3104163353/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmNiNjY3ZDMtNTUxOC00OWZjLTg3NTctZjk4N2E1ZjJhYzkzXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M49S"^^xsd:duration ;
+        schema:uploadDate "2024-08-02T07:58:56Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

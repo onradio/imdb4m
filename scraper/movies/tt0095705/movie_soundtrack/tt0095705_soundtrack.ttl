@@ -1,0 +1,89 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0095705/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "I Love L.A." ;
+        schema:byArtist <https://www.imdb.com/name/nm0005271/> ; # Randy Newman
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I Love L.A." ;
+            schema:author <https://www.imdb.com/name/nm0005271/> # Randy Newman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I'm Into Something Good" ;
+        schema:byArtist <https://www.imdb.com/name/nm0634760/> ; # Peter Noone
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I'm Into Something Good" ;
+            schema:author <https://www.imdb.com/name/nm1132342/>, # Gerry Goffin
+                       <https://www.imdb.com/name/nm0005580/> # Carole King
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Louie, Louie" ;
+        schema:byArtist <https://www.imdb.com/name/nm3692958/> ; # Rice University Marching Owl Band
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Louie, Louie" ;
+            schema:author <https://www.imdb.com/name/nm1807606/> # Richard Berry
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Trumpet Fanfare" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Trumpet Fanfare" ;
+            schema:author <https://www.imdb.com/name/nm0647006/> # Stephen Oliver
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "God Save the King!" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "The Star Spangled Banner" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Star Spangled Banner" ;
+            schema:composer <https://www.imdb.com/name/nm2397901/> ; # John Stafford Smith
+            schema:lyricist <https://www.imdb.com/name/nm1411746/> # Francis Scott Key
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005271/> a schema:Person ;
+    schema:name "Randy Newman" .
+<https://www.imdb.com/name/nm0005580/> a schema:Person ;
+    schema:name "Carole King" .
+<https://www.imdb.com/name/nm0634760/> a schema:Person ;
+    schema:name "Peter Noone" .
+<https://www.imdb.com/name/nm0647006/> a schema:Person ;
+    schema:name "Stephen Oliver" .
+<https://www.imdb.com/name/nm1132342/> a schema:Person ;
+    schema:name "Gerry Goffin" .
+<https://www.imdb.com/name/nm1411746/> a schema:Person ;
+    schema:name "Francis Scott Key" .
+<https://www.imdb.com/name/nm1807606/> a schema:Person ;
+    schema:name "Richard Berry" .
+<https://www.imdb.com/name/nm2397901/> a schema:Person ;
+    schema:name "John Stafford Smith" .
+<https://www.imdb.com/name/nm3692958/> a schema:Person ;
+    schema:name "Rice University Marching Owl Band" .
+# ==============================================================================

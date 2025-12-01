@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3150949/> a schema:Person ;
+    schema:name "Tommy Farra" ;
+    schema:url <https://www.imdb.com/name/nm3150949/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Tommy Farra. Actor: The Wrestler. Tommy Farra is known for The Wrestler (2008), Deep South Wrestling (2006) and Within the Ring (2009)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1125849/>,    # The Wrestler
+                       <https://www.imdb.com/title/tt0828741/> . # Deep South Wrestling
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Wrestler (2008)
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150949/> ;
+        schema:characterName "Tommy Rotten"
+    ] .
+
+# Deep South Wrestling (2006)
+<https://www.imdb.com/title/tt0828741/> a schema:Movie ;
+    schema:name "Deep South Wrestling" ;
+    schema:url <https://www.imdb.com/title/tt0828741/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3150949/> ;
+        schema:characterName "Tommy Suede (2006)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

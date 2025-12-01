@@ -1,0 +1,167 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2948356/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "Try Everything" ;
+        schema:byArtist <https://www.imdb.com/name/nm0787680/> ; # Shakira
+        schema:producer <https://www.imdb.com/name/nm7466139/> ; # Stargate
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Try Everything" ;
+            schema:author <https://www.imdb.com/name/nm2397981/>, # Sia
+                       <https://www.imdb.com/name/nm1590999/>, # Tor Erik Hermansen
+                       <https://www.imdb.com/name/nm1484591/> # Mikkel Storleer Eriksen
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Parlez-Vous Rap" ;
+        schema:byArtist <https://www.imdb.com/name/nm4377526/> ; # Daveed Diggs
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Parlez-Vous Rap" ;
+            schema:lyricist <https://www.imdb.com/name/nm0185415/> # Tom MacDougall
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Can't Do Nuthin' Right" ;
+        schema:byArtist <https://www.imdb.com/name/nm6637243/> ; # Madisen Ward
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Can't Do Nuthin' Right" ;
+            schema:author <https://www.imdb.com/name/nm0185415/> # Tom MacDougall
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "One More Time" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "One More Time" ;
+            schema:author <https://www.imdb.com/name/nm4189482/>, # Barrie Gledden
+                       <https://www.imdb.com/name/nm4500516/> # Peter Shand
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Carrot Days" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Carrot Days" ;
+            schema:composer <https://www.imdb.com/name/nm1915174/> ; # Andrea Datzman
+            schema:lyricist <https://www.imdb.com/name/nm1915174/> # Andrea Datzman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Give Me A Try" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Give Me A Try" ;
+            schema:composer <https://www.imdb.com/name/nm1915174/> ; # Andrea Datzman
+            schema:lyricist <https://www.imdb.com/name/nm1915174/> # Andrea Datzman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "A Wonderful Show" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "A Wonderful Show" ;
+            schema:composer <https://www.imdb.com/name/nm1915174/> ; # Andrea Datzman
+            schema:lyricist <https://www.imdb.com/name/nm1915174/> # Andrea Datzman
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Everybody Hurts" ;
+        schema:byArtist <https://www.imdb.com/name/nm1032121/> ; # R.E.M.
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Everybody Hurts" ;
+            schema:author <https://www.imdb.com/name/nm0077494/>, # Bill Berry
+                       <https://www.imdb.com/name/nm0005468/>, # Michael Stipe
+                       <https://www.imdb.com/name/nm0118407/>, # Peter Buck
+                       <https://www.imdb.com/name/nm0590121/> # Mike Mills
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "All By Myself" ;
+        schema:byArtist <https://www.imdb.com/name/nm0138381/> ; # Eric Carmen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "All By Myself" ;
+            schema:author <https://www.imdb.com/name/nm0138381/>, # Eric Carmen
+                       <https://www.imdb.com/name/nm0006245/> # Sergei Rachmaninoff
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "I, Loser" ;
+        schema:byArtist <https://www.imdb.com/name/nm4963520/> ; # 'Country' Winston Marshall
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "I, Loser" ;
+            schema:author <https://www.imdb.com/name/nm4963520/> # 'Country' Winston Marshall
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0005468/> a schema:Person ;
+    schema:name "Michael Stipe" .
+<https://www.imdb.com/name/nm0006245/> a schema:Person ;
+    schema:name "Sergei Rachmaninoff" .
+<https://www.imdb.com/name/nm0077494/> a schema:Person ;
+    schema:name "Bill Berry" .
+<https://www.imdb.com/name/nm0118407/> a schema:Person ;
+    schema:name "Peter Buck" .
+<https://www.imdb.com/name/nm0138381/> a schema:Person ;
+    schema:name "Eric Carmen" .
+<https://www.imdb.com/name/nm0185415/> a schema:Person ;
+    schema:name "Tom MacDougall" .
+<https://www.imdb.com/name/nm0590121/> a schema:Person ;
+    schema:name "Mike Mills" .
+<https://www.imdb.com/name/nm0787680/> a schema:Person ;
+    schema:name "Shakira" .
+<https://www.imdb.com/name/nm1032121/> a schema:Person ;
+    schema:name "R.E.M." .
+<https://www.imdb.com/name/nm1484591/> a schema:Person ;
+    schema:name "Mikkel Storleer Eriksen" .
+<https://www.imdb.com/name/nm1590999/> a schema:Person ;
+    schema:name "Tor Erik Hermansen" .
+<https://www.imdb.com/name/nm1915174/> a schema:Person ;
+    schema:name "Andrea Datzman" .
+<https://www.imdb.com/name/nm2397981/> a schema:Person ;
+    schema:name "Sia" .
+<https://www.imdb.com/name/nm4189482/> a schema:Person ;
+    schema:name "Barrie Gledden" .
+<https://www.imdb.com/name/nm4377526/> a schema:Person ;
+    schema:name "Daveed Diggs" .
+<https://www.imdb.com/name/nm4500516/> a schema:Person ;
+    schema:name "Peter Shand" .
+<https://www.imdb.com/name/nm4963520/> a schema:Person ;
+    schema:name "'Country' Winston Marshall" .
+<https://www.imdb.com/name/nm6637243/> a schema:Person ;
+    schema:name "Madisen Ward" .
+<https://www.imdb.com/name/nm7466139/> a schema:Person ;
+    schema:name "Stargate" .
+# ==============================================================================

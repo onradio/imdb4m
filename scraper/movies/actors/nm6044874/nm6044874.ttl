@@ -1,0 +1,191 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6044874/> a schema:Person ;
+    schema:name "Hadley Robinson" ;
+    schema:url <https://www.imdb.com/name/nm6044874/> ;
+    schema:birthDate "1995-12-05"^^xsd:date ;
+    schema:jobTitle "Actress", "Producer", "Soundtrack" ;
+    schema:description "Hadley Robinson. Actress: Anyone But You. Hadley Robinson was born on 5 December 1995 in Vermont, Montpelier, United States. She is an actress and producer, known for Anyone But You (2023), Little Women (2019) and Moxie (2021)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjE4MDkyMTIyNV5BMl5BanBnXkFtZTgwNTExNTA2NjM@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Vermont, Montpelier, United States"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt26047818/>,    # Anyone But You
+                       <https://www.imdb.com/title/tt1856080/>,    # The Boys in the Boat
+                       <https://www.imdb.com/title/tt3281548/>,    # Little Women
+                       <https://www.imdb.com/title/tt6432466/>,    # Moxie
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt10670236/>,    # Look At Me
+                       <https://www.imdb.com/title/tt8746478/>,    # Fosse/Verdon
+                       <https://www.imdb.com/title/tt3868334/>,    # Violets Are Blue
+                       <https://www.imdb.com/title/tt3291238/> ; # Burning
+
+
+    schema:video <https://www.imdb.com/video/vi1492043545/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6044874/mediaviewer/rm1189359617/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm961483265/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm3555728897/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm1395850497/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm1446182145/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm1294138625/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm3916485633/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm3983594497/>,
+                 <https://www.imdb.com/name/nm6044874/mediaviewer/rm3858538497/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt26047818/> a schema:Movie ;
+    schema:name "Anyone But You" ;
+    schema:url <https://www.imdb.com/title/tt26047818/> .
+
+<https://www.imdb.com/title/tt1856080/> a schema:Movie ;
+    schema:name "The Boys in the Boat" ;
+    schema:url <https://www.imdb.com/title/tt1856080/> .
+
+<https://www.imdb.com/title/tt3281548/> a schema:Movie ;
+    schema:name "Little Women" ;
+    schema:url <https://www.imdb.com/title/tt3281548/> .
+
+<https://www.imdb.com/title/tt6432466/> a schema:Movie ;
+    schema:name "Moxie" ;
+    schema:url <https://www.imdb.com/title/tt6432466/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Look At Me (2019)
+<https://www.imdb.com/title/tt10670236/> a schema:Movie ;
+    schema:name "Look At Me" ;
+    schema:url <https://www.imdb.com/title/tt10670236/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6044874/> ;
+        schema:characterName ""
+    ] .
+
+# Fosse/Verdon (2019)
+<https://www.imdb.com/title/tt8746478/> a schema:Movie ;
+    schema:name "Fosse/Verdon" ;
+    schema:url <https://www.imdb.com/title/tt8746478/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6044874/> ;
+        schema:characterName "Caroline"
+    ] .
+
+# Violets Are Blue (2014)
+<https://www.imdb.com/title/tt3868334/> a schema:Movie ;
+    schema:name "Violets Are Blue" ;
+    schema:url <https://www.imdb.com/title/tt3868334/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6044874/> ;
+        schema:characterName "Mae"
+    ] .
+
+# Burning (2014)
+<https://www.imdb.com/title/tt3291238/> a schema:Movie ;
+    schema:name "Burning" ;
+    schema:url <https://www.imdb.com/title/tt3291238/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6044874/> ;
+        schema:characterName "(as Haley Robinson)"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1492043545/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "A young fashion designer's life spirals as her darkest inner thoughts manifest into something gruesome- that won't stop growing." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1492043545/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzljNDgwZWItY2ZiNS00MTZmLTljZWQtODFmNDhkM2Q1NTJhXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M49S"^^xsd:duration ;
+        schema:uploadDate "2023-09-18T14:31:20Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjE4MDkyMTIyNV5BMl5BanBnXkFtZTgwNTExNTA2NjM@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE4MDkyMTIyNV5BMl5BanBnXkFtZTgwNTExNTA2NjM@._V1_.jpg> ;
+    schema:caption "Hadley Robinson" ;
+    schema:height "1405"^^xsd:integer ;
+    schema:width "1600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm1189359617/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BOWY3NGJjOWEtODA5NC00NTZkLWI0MGUtYjlmMzJjMmRjZjAwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hadley Robinson in Appendage (2023)" ;
+    schema:height "534"^^xsd:integer ;
+    schema:width "950"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm961483265/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjg3MzA0ZGQtMjI1Ny00NWU4LWFkNGItMjQwZDc5MzE1NDZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gaby Hoffmann and Hadley Robinson in Winning Time: The Rise of the Lakers Dynasty (2022)" ;
+    schema:height "427"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm3555728897/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZTQwZmZjZDQtMDdlZi00ODdiLTg0MDktY2EwYmJhZjNlZDA5XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gaby Hoffmann and Hadley Robinson in Winning Time: The Rise of the Lakers Dynasty (2022)" ;
+    schema:height "1280"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm1395850497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYmUyZjZkMzgtNjIxZC00MWNjLTk5NTMtZDdiOWFlZjA4MDc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hadley Robinson in Today (1952)" ;
+    schema:height "1422"^^xsd:integer ;
+    schema:width "2438"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm1446182145/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMWFiNTg3MTAtNDk0YS00ZDdiLTlhZDQtOTE5ZTgwODljYjVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Amy Poehler and Hadley Robinson in Today (1952)" ;
+    schema:height "1441"^^xsd:integer ;
+    schema:width "2551"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm1294138625/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDE2ZjkwMTAtYzVkMy00NjQ1LThhOTEtZTgxOWIwMDk3OTkzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Amy Poehler, Jenna Bush Hager, Hoda Kotb, and Hadley Robinson in Today (1952)" ;
+    schema:height "1438"^^xsd:integer ;
+    schema:width "2551"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm3916485633/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNjc5ZTQwODctMDRmOS00OTY5LWI2OWMtMzdmZDg5ZDdhOTYxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hadley Robinson and Nico Hiraga in Moxie (2021)" ;
+    schema:height "2400"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm3983594497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTQxNmFmY2YtODM2Zi00ZDM2LWI5NjYtMGZmYTNkMGYxZTRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Hadley Robinson in Moxie (2021)" ;
+    schema:height "1920"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm6044874/mediaviewer/rm3858538497/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNWM1YjY3MmYtMzY1Mi00MTBkLTk3NjItMGYzNzhkNTYxYTdjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jessie Buckley, Hadley Robinson, and Gus Birney in I'm Thinking of Ending Things (2020)" ;
+    schema:height "2405"^^xsd:integer ;
+    schema:width "3600"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

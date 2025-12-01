@@ -1,0 +1,98 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0278908/> a schema:Person ;
+    schema:name "Fred Fischer" ;
+    schema:url <https://www.imdb.com/name/nm0278908/> ;
+    schema:birthDate "1940-10-11"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Fred Fischer. Actor: Leon. Fred Fischer was born on 11 October 1940 in Morristown, New Jersey, USA. He was an actor, known for Leon (1994), A Bronx Tale (1993) and Un mystère par jour (1970). He died on 7 April 2023 in Edison, New Jersey, USA." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Morristown, New Jersey, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0110413/>,    # Leon
+                       <https://www.imdb.com/title/tt0106489/>,    # A Bronx Tale
+                       <https://www.imdb.com/title/tt0170916/>,    # Un mystère par jour
+                       <https://www.imdb.com/title/tt0060474/> ; # Don't Look Now... We're Being Shot At!
+
+
+    schema:video <https://www.imdb.com/video/vi2744254745/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Leon (1994)
+<https://www.imdb.com/title/tt0110413/> a schema:Movie ;
+    schema:name "Leon" ;
+    schema:url <https://www.imdb.com/title/tt0110413/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278908/> ;
+        schema:characterName "Newspaperman"
+    ] .
+
+# A Bronx Tale (1993)
+<https://www.imdb.com/title/tt0106489/> a schema:Movie ;
+    schema:name "A Bronx Tale" ;
+    schema:url <https://www.imdb.com/title/tt0106489/> ;
+    schema:datePublished "1993"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278908/> ;
+        schema:characterName "JoJo the Whale"
+    ] .
+
+# Un mystère par jour (1974)
+<https://www.imdb.com/title/tt0170916/> a schema:Movie ;
+    schema:name "Un mystère par jour" ;
+    schema:url <https://www.imdb.com/title/tt0170916/> ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278908/> ;
+        schema:characterName "Richard"
+    ] .
+
+# Don't Look Now... We're Being Shot At! (1966)
+<https://www.imdb.com/title/tt0060474/> a schema:Movie ;
+    schema:name "Don't Look Now... We're Being Shot At!" ;
+    schema:url <https://www.imdb.com/title/tt0060474/> ;
+    schema:datePublished "1966"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0278908/> ;
+        schema:characterName "Un colonel Allemand"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2744254745/> a schema:VideoObject ;
+        schema:name "The Professional" ;
+        schema:description "Theatrical Trailer from Columbia Pictures" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2744254745/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZjlkOWI0YzUtYmI1OS00M2ZkLTgwYjAtNjc3MzhjMGY3ODQ5XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M25S"^^xsd:duration ;
+        schema:uploadDate "2008-04-11T14:48:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

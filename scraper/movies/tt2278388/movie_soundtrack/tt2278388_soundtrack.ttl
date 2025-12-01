@@ -1,0 +1,76 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt2278388/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Linden Tree" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "s'Rothe-Zäuerli" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Svetit Mesyats" ;
+        schema:byArtist <https://www.imdb.com/name/nm6611814/>, # The Ludmila Zykina State Academic Russian National Balalaika Ensemble
+                        <https://www.imdb.com/name/nm7146723/> ; # Orchestre de Balalaikas Saint-Georges
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Roses from the South" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Roses from the South" ;
+            schema:author <https://www.imdb.com/name/nm0006310/> # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Birthday to You" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Birthday to You" ;
+            schema:author <https://www.imdb.com/name/nm0384530/>, # Mildred J. Hill
+                       <https://www.imdb.com/name/nm0384558/> # Patty S. Hill
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Kamarinskaya" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Concerto for Lute and Plucked Strings I. Moderato" ;
+        schema:byArtist <https://www.imdb.com/name/nm1595623/> ; # Siegfried Behrend
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Concerto for Lute and Plucked Strings I. Moderato" ;
+            schema:author <https://www.imdb.com/name/nm0006334/> # Antonio Vivaldi
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0006310/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm0006334/> a schema:Person ;
+    schema:name "Antonio Vivaldi" .
+<https://www.imdb.com/name/nm0384530/> a schema:Person ;
+    schema:name "Mildred J. Hill" .
+<https://www.imdb.com/name/nm0384558/> a schema:Person ;
+    schema:name "Patty S. Hill" .
+<https://www.imdb.com/name/nm1595623/> a schema:Person ;
+    schema:name "Siegfried Behrend" .
+<https://www.imdb.com/name/nm6611814/> a schema:Person ;
+    schema:name "The Ludmila Zykina State Academic Russian National Balalaika Ensemble" .
+<https://www.imdb.com/name/nm7146723/> a schema:Person ;
+    schema:name "Orchestre de Balalaikas Saint-Georges" .
+# ==============================================================================

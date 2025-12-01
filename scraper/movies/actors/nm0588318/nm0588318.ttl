@@ -1,0 +1,151 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0588318/> a schema:Person ;
+    schema:name "Ernest Miller" ;
+    schema:url <https://www.imdb.com/name/nm0588318/> ;
+    schema:birthDate "1964-01-14"^^xsd:date ;
+    schema:jobTitle "Actor", "Producer", "Stunts" ;
+    schema:alternateName "The Cat", "Ernest Clifford Miller" ;
+    schema:description "Ernest Miller. Actor: The Wrestler. Ernest Miller was born on 14 January 1964 in Atlanta, Georgia, USA. He is an actor and producer, known for The Wrestler (2008), Blood and Bone (2009) and WCW Thunder (1998)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Atlanta, Georgia, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1125849/>,    # The Wrestler
+                       <https://www.imdb.com/title/tt0227972/>,    # WWE Smackdown!
+                       <https://www.imdb.com/title/tt0346631/>,    # Blood and Bone
+                       <https://www.imdb.com/title/tt1274418/>,    # Fist of the Warrior
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt1059455/>,    # The Legend of Bruce Lee
+                       <https://www.imdb.com/title/tt0321013/>,    # WWE Velocity
+                       <https://www.imdb.com/title/tt0251469/>,    # WCW Thunder
+                       <https://www.imdb.com/title/tt0185130/>,    # WCW Monday Nitro
+                       <https://www.imdb.com/title/tt0268860/>,    # World Wide Wrestling
+                       <https://www.imdb.com/title/tt0222648/> ; # WCW Saturday Night
+
+
+    schema:video <https://www.imdb.com/video/vi972605465/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1125849/> a schema:Movie ;
+    schema:name "The Wrestler" ;
+    schema:url <https://www.imdb.com/title/tt1125849/> .
+
+<https://www.imdb.com/title/tt0227972/> a schema:Movie ;
+    schema:name "WWE Smackdown!" ;
+    schema:url <https://www.imdb.com/title/tt0227972/> .
+
+<https://www.imdb.com/title/tt0346631/> a schema:Movie ;
+    schema:name "Blood and Bone" ;
+    schema:url <https://www.imdb.com/title/tt0346631/> .
+
+<https://www.imdb.com/title/tt1274418/> a schema:Movie ;
+    schema:name "Fist of the Warrior" ;
+    schema:url <https://www.imdb.com/title/tt1274418/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Legend of Bruce Lee (2008)
+<https://www.imdb.com/title/tt1059455/> a schema:Movie ;
+    schema:name "The Legend of Bruce Lee" ;
+    schema:url <https://www.imdb.com/title/tt1059455/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "Earnie Shavers"
+    ] .
+
+# WWE Velocity (2002)
+<https://www.imdb.com/title/tt0321013/> a schema:Movie ;
+    schema:name "WWE Velocity" ;
+    schema:url <https://www.imdb.com/title/tt0321013/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "The Cat"
+    ] .
+
+# WCW Thunder (1998)
+<https://www.imdb.com/title/tt0251469/> a schema:Movie ;
+    schema:name "WCW Thunder" ;
+    schema:url <https://www.imdb.com/title/tt0251469/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "Ernest 'The Cat' Miller"
+    ] .
+
+# WCW Monday Nitro (1997)
+<https://www.imdb.com/title/tt0185130/> a schema:Movie ;
+    schema:name "WCW Monday Nitro" ;
+    schema:url <https://www.imdb.com/title/tt0185130/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "The Cat"
+    ] .
+
+# World Wide Wrestling (2000)
+<https://www.imdb.com/title/tt0268860/> a schema:Movie ;
+    schema:name "World Wide Wrestling" ;
+    schema:url <https://www.imdb.com/title/tt0268860/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "Ernest Miller"
+    ] .
+
+# WCW Saturday Night (1997)
+<https://www.imdb.com/title/tt0222648/> a schema:Movie ;
+    schema:name "WCW Saturday Night" ;
+    schema:url <https://www.imdb.com/title/tt0222648/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0588318/> ;
+        schema:characterName "Ernest 'The Cat' Miller"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi972605465/> a schema:VideoObject ;
+        schema:name "Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi972605465/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYThmYzI1YTEtZWNmYS00MTk1LTk5YzYtMTczOGI5ZTIwMTVlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M1S"^^xsd:duration ;
+        schema:uploadDate "2025-06-17T12:43:14Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

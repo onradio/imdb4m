@@ -1,0 +1,68 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6492684/> a schema:Person ;
+    schema:name "Jagbir" ;
+    schema:url <https://www.imdb.com/name/nm6492684/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Jagbir. Actor: Dangal. Jagbir is known for Dangal (2016) and Kaand Black Scandal (2013)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt5074352/>,    # Dangal
+                       <https://www.imdb.com/title/tt3728220/> ; # Kaand Black Scandal
+
+
+    schema:video <https://www.imdb.com/video/vi4051222041/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Dangal (2016)
+<https://www.imdb.com/title/tt5074352/> a schema:Movie ;
+    schema:name "Dangal" ;
+    schema:url <https://www.imdb.com/title/tt5074352/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6492684/> ;
+        schema:characterName "Government Officer"
+    ] .
+
+# Kaand Black Scandal (2013)
+<https://www.imdb.com/title/tt3728220/> a schema:Movie ;
+    schema:name "Kaand Black Scandal" ;
+    schema:url <https://www.imdb.com/title/tt3728220/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6492684/> ;
+        schema:characterName "Beera"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4051222041/> a schema:VideoObject ;
+        schema:name "Kaand Black Scandal (2013) Trailer" ;
+        schema:description "Kaand is the story of brothers who return to their village and find themselves pulled into a feudal intrigue.[3] Beera is a sports coach in the college in which his younger brother Rajveer (Suraj K Shah) is a student. Beera falls for the new girl in college, seema, but she turns down his marrage proposal. Rajveer falls in love with another college student, rekha, but she too rejects him. Beera and Rajveer go to their village during college holidays. Seema, too, lands up in the same village, to visit her uncle, Viraj. Beera and seema meet often and soom fall in love. However, when beera tells his father, Dharamdas, that he want to marry seema, he refuses him. Dharamdas tells Beera about the incident that had happened decades ago. Dharamdas wife, Rukmani, consider Viraj her brother. She had gone to his house on Raksha Bandhan to tie him a rakhi but never returned. Viraj claimed that Rukmani din't come to his house, but Dharamdas suspected him of lying and of having killed or kidnapped her. The relationship between Dharamdas and Viraj had soured, and now Dharamdas din't want to have anything to do with Viraj. Rekha come to visit Seema and meets Rajveer again. They also soon fall in love. Meanwhile, Gujri, wife of Ajit singh, who is Viraj's brother, hatches a plan to get their son, Umed, marrried to Seema, who is the niece of Viraj's wife, Gujri realizes that seema love Beera, so she kills her husband Ajit, to frame Beera for his murder. Beera is arrested by the police. But the police soon learn that Gujri has kidnapped Seema to force her to marry Umed. Will Seema be Freed? Will Seema and Beera find Love? Will rajveer and Rekha find love? and is Rajveer's mother still alive?" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4051222041/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNmM2MjY2ZGMtY2VlOC00NWNiLTk1MzMtZmVhZTg5NjliOTcxXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT2M3S"^^xsd:duration ;
+        schema:uploadDate "2020-07-24T05:13:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

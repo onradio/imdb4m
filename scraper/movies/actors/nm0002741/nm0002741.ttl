@@ -1,0 +1,84 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0002741/> a schema:Person ;
+    schema:name "Oliver Block" ;
+    schema:url <https://www.imdb.com/name/nm0002741/> ;
+    schema:birthDate "1977-01-10"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Oliver Block. Actor: Big. Oliver Block was born on 10 January 1977 in New York City, New York, USA. He is an actor, known for Big (1988), Awakenings (1990) and Radio Days (1987). He was previously married to Astrid Block." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "New York City, New York, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.78"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 10″ (1.78 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0099077/>,    # Awakenings
+                       <https://www.imdb.com/title/tt0094737/>,    # Big
+                       <https://www.imdb.com/title/tt0093818/> . # Radio Days
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Awakenings (1990)
+<https://www.imdb.com/title/tt0099077/> a schema:Movie ;
+    schema:name "Awakenings" ;
+    schema:url <https://www.imdb.com/title/tt0099077/> ;
+    schema:datePublished "1990"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0002741/> ;
+        schema:characterName "Leonard's Friend #1"
+    ] .
+
+# Big (1988)
+<https://www.imdb.com/title/tt0094737/> a schema:Movie ;
+    schema:name "Big" ;
+    schema:url <https://www.imdb.com/title/tt0094737/> ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0002741/> ;
+        schema:characterName "Freddie Benson"
+    ] .
+
+# Radio Days (1987)
+<https://www.imdb.com/title/tt0093818/> a schema:Movie ;
+    schema:name "Radio Days" ;
+    schema:url <https://www.imdb.com/title/tt0093818/> ;
+    schema:datePublished "1987"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0002741/> ;
+        schema:characterName "Nick"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

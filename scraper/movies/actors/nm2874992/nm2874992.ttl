@@ -1,0 +1,150 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2874992/> a schema:Person ;
+    schema:name "Rahul Kumar" ;
+    schema:url <https://www.imdb.com/name/nm2874992/> ;
+    schema:birthDate "1995-09-09"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Rahul Kumar. Actor: 3 Idiots. Rahul Kumar was born on 9 September 1995 in Nainital, Uttarakhand, India. He is an actor, known for 3 Idiots (2009), Bandish Bandits (2020) and Sandeep Aur Pinky Faraar (2021)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMzYxYjNkZDMtYWEyYi00NzNjLTljNGEtYWE2ODVlZWEzZGMwXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Nainital, Uttarakhand, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1187043/>,    # 3 Idiots
+                       <https://www.imdb.com/title/tt0488414/>,    # Omkara
+                       <https://www.imdb.com/title/tt7094488/>,    # Sandeep Aur Pinky Faraar
+                       <https://www.imdb.com/title/tt9814458/>,    # Bandish Bandits
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt6149820/>,    # Zoo
+                       <https://www.imdb.com/title/tt5715750/>,    # The Thief
+                       <https://www.imdb.com/title/tt2294685/>,    # Jeena Hai Toh Thok Daal
+                       <https://www.imdb.com/title/tt0457802/>,    # The Blue Umbrella
+                       <https://www.imdb.com/title/tt1161409/> ; # Chandaal Atma
+
+
+    schema:video <https://www.imdb.com/video/vi3086596889/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2874992/mediaviewer/rm115108352/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1187043/> a schema:Movie ;
+    schema:name "3 Idiots" ;
+    schema:url <https://www.imdb.com/title/tt1187043/> .
+
+<https://www.imdb.com/title/tt0488414/> a schema:Movie ;
+    schema:name "Omkara" ;
+    schema:url <https://www.imdb.com/title/tt0488414/> .
+
+<https://www.imdb.com/title/tt7094488/> a schema:Movie ;
+    schema:name "Sandeep Aur Pinky Faraar" ;
+    schema:url <https://www.imdb.com/title/tt7094488/> .
+
+<https://www.imdb.com/title/tt9814458/> a schema:Movie ;
+    schema:name "Bandish Bandits" ;
+    schema:url <https://www.imdb.com/title/tt9814458/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Zoo (2018)
+<https://www.imdb.com/title/tt6149820/> a schema:Movie ;
+    schema:name "Zoo" ;
+    schema:url <https://www.imdb.com/title/tt6149820/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2874992/> ;
+        schema:characterName "Messi"
+    ] .
+
+# The Thief (2017)
+<https://www.imdb.com/title/tt5715750/> a schema:Movie ;
+    schema:name "The Thief" ;
+    schema:url <https://www.imdb.com/title/tt5715750/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2874992/> ;
+        schema:characterName "Siddharth"
+    ] .
+
+# Jeena Hai Toh Thok Daal (2012)
+<https://www.imdb.com/title/tt2294685/> a schema:Movie ;
+    schema:name "Jeena Hai Toh Thok Daal" ;
+    schema:url <https://www.imdb.com/title/tt2294685/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2874992/> ;
+        schema:characterName "Bitwa"
+    ] .
+
+# The Blue Umbrella (2005)
+<https://www.imdb.com/title/tt0457802/> a schema:Movie ;
+    schema:name "The Blue Umbrella" ;
+    schema:url <https://www.imdb.com/title/tt0457802/> ;
+    schema:datePublished "2005"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2874992/> ;
+        schema:characterName "Tikku"
+    ] .
+
+# Chandaal Atma (1999)
+<https://www.imdb.com/title/tt1161409/> a schema:Movie ;
+    schema:name "Chandaal Atma" ;
+    schema:url <https://www.imdb.com/title/tt1161409/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2874992/> ;
+        schema:characterName "Chandan Das"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3086596889/> a schema:VideoObject ;
+        schema:name "3 Idiots trailer" ;
+        schema:description "3 Idiots is a movie starring Aamir Khan, Madhavan, and Mona Singh. Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them \"idiots\"." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3086596889/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYTVmZDgxYjQtODk5Ni00OTJlLTgxZjItZGNjNDFmOTYzYzNlXkEyXkFqcGdeQXRodW1ibmFpbC1pbml0aWFsaXplcg@@._V1_.jpg" ;
+        schema:duration "PT1M34S"^^xsd:duration ;
+        schema:uploadDate "2018-06-22T11:30:38Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMzYxYjNkZDMtYWEyYi00NzNjLTljNGEtYWE2ODVlZWEzZGMwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYxYjNkZDMtYWEyYi00NzNjLTljNGEtYWE2ODVlZWEzZGMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rahul Kumar" ;
+    schema:height "851"^^xsd:integer ;
+    schema:width "851"^^xsd:integer .
+
+<https://www.imdb.com/name/nm2874992/mediaviewer/rm115108352/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMzYxYjNkZDMtYWEyYi00NzNjLTljNGEtYWE2ODVlZWEzZGMwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rahul Kumar" ;
+    schema:height "851"^^xsd:integer ;
+    schema:width "851"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm2874992/>
+    schema:sameAs <https://www.facebook.com/rahul.kumar.5851127?mibextid=LQQJ4d>,
+                  <https://www.instagram.com/isthis_rahul?igsh=ZTh3Njlrdm53ZG10&utm_source=qr> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

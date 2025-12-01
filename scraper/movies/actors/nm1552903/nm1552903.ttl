@@ -1,0 +1,71 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1552903/> a schema:Person ;
+    schema:name "Brian Price" ;
+    schema:url <https://www.imdb.com/name/nm1552903/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Brian Price. Actor: Eternal Sunshine of the Spotless Mind. Brian Price is known for Eternal Sunshine of the Spotless Mind (2004), My Life, My Damage (2013) and Pestilence (2007)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt2943112/>,    # My Life, My Damage
+                       <https://www.imdb.com/title/tt1223968/>,    # Pestilence
+                       <https://www.imdb.com/title/tt0338013/> . # Eternal Sunshine of the Spotless Mind
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# My Life, My Damage (2013)
+<https://www.imdb.com/title/tt2943112/> a schema:Movie ;
+    schema:name "My Life, My Damage" ;
+    schema:url <https://www.imdb.com/title/tt2943112/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1552903/> ;
+        schema:characterName "Doctor"
+    ] .
+
+# Pestilence (2007)
+<https://www.imdb.com/title/tt1223968/> a schema:Movie ;
+    schema:name "Pestilence" ;
+    schema:url <https://www.imdb.com/title/tt1223968/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1552903/> ;
+        schema:characterName "Boy"
+    ] .
+
+# Eternal Sunshine of the Spotless Mind (2004)
+<https://www.imdb.com/title/tt0338013/> a schema:Movie ;
+    schema:name "Eternal Sunshine of the Spotless Mind" ;
+    schema:url <https://www.imdb.com/title/tt0338013/> ;
+    schema:datePublished "2004"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1552903/> ;
+        schema:characterName "Young Bully"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

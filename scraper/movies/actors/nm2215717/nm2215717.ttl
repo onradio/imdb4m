@@ -1,0 +1,122 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2215717/> a schema:Person ;
+    schema:name "Thayne Jasperson" ;
+    schema:url <https://www.imdb.com/name/nm2215717/> ;
+    schema:birthDate "1980-07-27"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Thayne Jasperson. Actor: Hamilton. Thayne Jasperson was born on 27 July 1980 in Provo, Utah, USA. He is an actor, known for Hamilton (2020), Smash (2012) and Submissions Only (2010)." ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Provo, Utah, USA"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11540842/>,    # What Are You Doing NYE?
+                       <https://www.imdb.com/title/tt2360751/>,    # Submissions Only
+                       <https://www.imdb.com/title/tt1825133/>,    # Smash
+                       <https://www.imdb.com/title/tt1160313/>,    # The American Mall
+                       <https://www.imdb.com/title/tt0810900/>,    # High School Musical 2
+                       <https://www.imdb.com/title/tt0475293/> ; # High School Musical
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2215717/mediaviewer/rm4264994817/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# What Are You Doing NYE? (2019)
+<https://www.imdb.com/title/tt11540842/> a schema:Movie ;
+    schema:name "What Are You Doing NYE?" ;
+    schema:url <https://www.imdb.com/title/tt11540842/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# Submissions Only (2012)
+<https://www.imdb.com/title/tt2360751/> a schema:Movie ;
+    schema:name "Submissions Only" ;
+    schema:url <https://www.imdb.com/title/tt2360751/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "Opening credit actor"
+    ] .
+
+# Smash (2012)
+<https://www.imdb.com/title/tt1825133/> a schema:Movie ;
+    schema:name "Smash" ;
+    schema:url <https://www.imdb.com/title/tt1825133/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "Dancer"
+    ] .
+
+# The American Mall (2008)
+<https://www.imdb.com/title/tt1160313/> a schema:Movie ;
+    schema:name "The American Mall" ;
+    schema:url <https://www.imdb.com/title/tt1160313/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "Principal Dancer"
+    ] .
+
+# High School Musical 2 (2007)
+<https://www.imdb.com/title/tt0810900/> a schema:Movie ;
+    schema:name "High School Musical 2" ;
+    schema:url <https://www.imdb.com/title/tt0810900/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "East High Dancer"
+    ] .
+
+# High School Musical (2006)
+<https://www.imdb.com/title/tt0475293/> a schema:Movie ;
+    schema:name "High School Musical" ;
+    schema:url <https://www.imdb.com/title/tt0475293/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2215717/> ;
+        schema:characterName "Brainiac Dancer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2215717/mediaviewer/rm4264994817/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMDA0YTllOWQtNGUwMy00MjAzLThlODUtMzFiN2MwYmIwYmZmXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Seth Stewart, Thayne Jasperson, Jon Rua, Ephraim Sykes, Ariana DeBose, Elizabeth Judd, Austin Smith, Daveed Diggs, Sasha Hutchings, Sydney James Harcourt, and Carleigh Bettiol in Hamilton (2020)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0708260/> a schema:Person ;
+    schema:name "Anthony Ramirez" ;
+    schema:url <https://www.imdb.com/name/nm0708260/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Anthony Ramirez. Actor: JFK. Anthony Ramirez is known for JFK (1991), Hard (1998) and Walker, Texas Ranger (1993)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0482263/>,    # Snitch in New York
+                       <https://www.imdb.com/title/tt0193997/>,    # Hard
+                       <https://www.imdb.com/title/tt0106168/>,    # Walker, Texas Ranger
+                       <https://www.imdb.com/title/tt0102138/>,    # JFK
+                       <https://www.imdb.com/title/tt0101878/> . # Finding the Way Home
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Snitch in New York (2002)
+<https://www.imdb.com/title/tt0482263/> a schema:Movie ;
+    schema:name "Snitch in New York" ;
+    schema:url <https://www.imdb.com/title/tt0482263/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0708260/> ;
+        schema:characterName ""
+    ] .
+
+# Hard (1998)
+<https://www.imdb.com/title/tt0193997/> a schema:Movie ;
+    schema:name "Hard" ;
+    schema:url <https://www.imdb.com/title/tt0193997/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0708260/> ;
+        schema:characterName "Bartender"
+    ] .
+
+# Walker, Texas Ranger (1996)
+<https://www.imdb.com/title/tt0106168/> a schema:Movie ;
+    schema:name "Walker, Texas Ranger" ;
+    schema:url <https://www.imdb.com/title/tt0106168/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0708260/> ;
+        schema:characterName "Little Eddie"
+    ] .
+
+# JFK (1991)
+<https://www.imdb.com/title/tt0102138/> a schema:Movie ;
+    schema:name "JFK" ;
+    schema:url <https://www.imdb.com/title/tt0102138/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0708260/> ;
+        schema:characterName "Epileptic"
+    ] .
+
+# Finding the Way Home (1991)
+<https://www.imdb.com/title/tt0101878/> a schema:Movie ;
+    schema:name "Finding the Way Home" ;
+    schema:url <https://www.imdb.com/title/tt0101878/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0708260/> ;
+        schema:characterName "Ins Officer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

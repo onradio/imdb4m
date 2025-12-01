@@ -1,0 +1,58 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0166896/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "The Most Requested Song" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "The Most Requested Song" ;
+            schema:author <https://www.imdb.com/name/nm1339529/>, # Middlejohn
+                       <https://www.imdb.com/name/nm1103097/> # John Neff
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Solo Spin Out" ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Y'Ready" ;
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Y'Ready" ;
+            schema:author <https://www.imdb.com/name/nm0177622/> # Spade Cooley
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Happy Times" ;
+        schema:byArtist <https://www.imdb.com/name/nm0821300/> ; # Jo Stafford
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Happy Times" ;
+            schema:author <https://www.imdb.com/name/nm0277660/> # Sidney Fine
+        ] ;
+    ] .
+
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0177622/> a schema:Person ;
+    schema:name "Spade Cooley" .
+<https://www.imdb.com/name/nm0277660/> a schema:Person ;
+    schema:name "Sidney Fine" .
+<https://www.imdb.com/name/nm0821300/> a schema:Person ;
+    schema:name "Jo Stafford" .
+<https://www.imdb.com/name/nm1103097/> a schema:Person ;
+    schema:name "John Neff" .
+<https://www.imdb.com/name/nm1339529/> a schema:Person ;
+    schema:name "Middlejohn" .
+# ==============================================================================

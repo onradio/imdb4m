@@ -1,0 +1,111 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0250468/> a schema:Person ;
+    schema:name "Jennifer Edwards-Hughes" ;
+    schema:url <https://www.imdb.com/name/nm0250468/> ;
+    schema:jobTitle "Actress" ;
+    schema:description "Jennifer Edwards-Hughes. Actress: The Straight Story. Jennifer Edwards-Hughes is known for The Straight Story (1999), Thin Ice (2011) and The Public Domain (2015). She is married to Tim Hughes. They have three children." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.63"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 4″ (1.63 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3626508/>,    # The Public Domain
+                       <https://www.imdb.com/title/tt2262640/>,    # Stay Then Go
+                       <https://www.imdb.com/title/tt1512240/>,    # Thin Ice
+                       <https://www.imdb.com/title/tt0166896/>,    # The Straight Story
+                       <https://www.imdb.com/title/tt0403075/> ; # Go Fish Go
+
+
+    schema:video <https://www.imdb.com/video/vi3701973273/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Public Domain (2015)
+<https://www.imdb.com/title/tt3626508/> a schema:Movie ;
+    schema:name "The Public Domain" ;
+    schema:url <https://www.imdb.com/title/tt3626508/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0250468/> ;
+        schema:characterName "Barbara Dixon"
+    ] .
+
+# Stay Then Go (2014)
+<https://www.imdb.com/title/tt2262640/> a schema:Movie ;
+    schema:name "Stay Then Go" ;
+    schema:url <https://www.imdb.com/title/tt2262640/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0250468/> ;
+        schema:characterName "Karla Baird"
+    ] .
+
+# Thin Ice (2011)
+<https://www.imdb.com/title/tt1512240/> a schema:Movie ;
+    schema:name "Thin Ice" ;
+    schema:url <https://www.imdb.com/title/tt1512240/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0250468/> ;
+        schema:characterName "Sherri"
+    ] .
+
+# The Straight Story (1999)
+<https://www.imdb.com/title/tt0166896/> a schema:Movie ;
+    schema:name "The Straight Story" ;
+    schema:url <https://www.imdb.com/title/tt0166896/> ;
+    schema:datePublished "1999"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0250468/> ;
+        schema:characterName "Brenda"
+    ] .
+
+# Go Fish Go (1997)
+<https://www.imdb.com/title/tt0403075/> a schema:Movie ;
+    schema:name "Go Fish Go" ;
+    schema:url <https://www.imdb.com/title/tt0403075/> ;
+    schema:datePublished "1997"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0250468/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3701973273/> a schema:VideoObject ;
+        schema:name "U.S. Version" ;
+        schema:description "An insurance agent looking for a way out of frigid Wisconsin is blackmailed by an unstable locksmith in the theft of a rare violin that belongs to a retired farmer." ;
+        schema:embedUrl <https://www.imdb.com/video/vi3701973273/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTgyMjMyMjIyNV5BMl5BanBnXkFtZTgwNjAyMzMzMzE@._V1_.jpg" ;
+        schema:duration "PT2M23S"^^xsd:duration ;
+        schema:uploadDate "2012-01-07T10:20:29Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

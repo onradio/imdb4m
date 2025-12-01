@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm9189209/> a schema:Person ;
+    schema:name "Emily Edström" ;
+    schema:url <https://www.imdb.com/name/nm9189209/> ;
+    schema:jobTitle "Actress", "Music Department" ;
+    schema:description "Emily Edström. Actress: Little Women. Emily Edstrom is an actor. She is known for Little Women (Greta Gerwig, 2019), Avow (2018), A Dolt's Life (2018) and several short indie films. She is also known for regional and national commercial work. Edstrom has worked in the United States and internationally in Scotland and Italy in theater roles." ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.80"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "5′ 11″ (1.80 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3281548/>,    # Little Women
+                       <https://www.imdb.com/title/tt7187544/>,    # Avow
+                       <https://www.imdb.com/title/tt8594952/> . # A Dolt's Life
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Little Women (2019)
+<https://www.imdb.com/title/tt3281548/> a schema:Movie ;
+    schema:name "Little Women" ;
+    schema:url <https://www.imdb.com/title/tt3281548/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9189209/> ;
+        schema:characterName "Friedrich's Friend"
+    ] .
+
+# Avow (2018)
+<https://www.imdb.com/title/tt7187544/> a schema:Movie ;
+    schema:name "Avow" ;
+    schema:url <https://www.imdb.com/title/tt7187544/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9189209/> ;
+        schema:characterName "Irene"
+    ] .
+
+# A Dolt's Life (2018)
+<https://www.imdb.com/title/tt8594952/> a schema:Movie ;
+    schema:name "A Dolt's Life" ;
+    schema:url <https://www.imdb.com/title/tt8594952/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm9189209/> ;
+        schema:characterName "Sydney"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

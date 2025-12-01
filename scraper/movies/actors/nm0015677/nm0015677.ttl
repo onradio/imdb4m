@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0015677/> a schema:Person ;
+    schema:name "Hudhail Al-Amir" ;
+    schema:url <https://www.imdb.com/name/nm0015677/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Hudhail Al-Amir. Actor: Boyz n the Hood. Hudhail Al-Amir is known for Boyz n the Hood (1991)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0101507/> ;    # Boyz n the Hood
+
+
+    schema:video <https://www.imdb.com/video/vi3818766105/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Boyz n the Hood (1991)
+<https://www.imdb.com/title/tt0101507/> a schema:Movie ;
+    schema:name "Boyz n the Hood" ;
+    schema:url <https://www.imdb.com/title/tt0101507/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0015677/> ;
+        schema:characterName "S.A.T. Man"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi3818766105/> a schema:VideoObject ;
+        schema:name "Boyz n the Hood" ;
+        schema:description "Official Trailer" ;
+        schema:embedUrl <https://www.imdb.com/video/vi3818766105/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTI3ZGQ0MDMtZWRjOC00OGNkLTk1NDktZmI1MTg2OTAwMWI2XkEyXkFqcGdeQTNwaW5nZXN0._V1_.jpg" ;
+        schema:duration "PT2M37S"^^xsd:duration ;
+        schema:uploadDate "2019-09-25T17:08:43Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

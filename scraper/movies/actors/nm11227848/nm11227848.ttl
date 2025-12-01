@@ -1,0 +1,59 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm11227848/> a schema:Person ;
+    schema:name "Benjamin Adams" ;
+    schema:url <https://www.imdb.com/name/nm11227848/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Benjamin Adams. Actor: 1917. Benjamin Adams is known for 1917 (2019) and Derren Brown: The Push (2016)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt8579674/>,    # 1917
+                       <https://www.imdb.com/title/tt5340856/> . # Derren Brown: The Push
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# 1917 (2019)
+<https://www.imdb.com/title/tt8579674/> a schema:Movie ;
+    schema:name "1917" ;
+    schema:url <https://www.imdb.com/title/tt8579674/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11227848/> ;
+        schema:characterName "Sergeant Harrop"
+    ] .
+
+# Derren Brown: The Push (2016)
+<https://www.imdb.com/title/tt5340856/> a schema:Movie ;
+    schema:name "Derren Brown: The Push" ;
+    schema:url <https://www.imdb.com/title/tt5340856/> ;
+    schema:datePublished "2016"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm11227848/> ;
+        schema:characterName "Drunk Guest"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

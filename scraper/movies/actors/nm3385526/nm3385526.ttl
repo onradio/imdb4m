@@ -1,0 +1,105 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm3385526/> a schema:Person ;
+    schema:name "Gopal Singh" ;
+    schema:url <https://www.imdb.com/name/nm3385526/> ;
+    schema:birthDate "1976-11-14"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Gopal Singh. Actor: Andhadhun. Gopal Singh was born on 14 November 1976 in Chirimiri, Koriya, Chhattisgarh, India. He is an actor, known for Andhadhun (2018), Badlapur (2015) and Company (2002)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BZmU5YjczYTYtMmU5ZS00ODE5LWI4NTUtZGJkMWIyMzE0NWMyXkEyXkFqcGc@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Chirimiri, Koriya, Chhattisgarh, India"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt11548710/>,    # Tipu
+                       <https://www.imdb.com/title/tt11081206/>,    # Khari Biscuit
+                       <https://www.imdb.com/title/tt10029264/>,    # Eerypur
+                       <https://www.imdb.com/title/tt9778022/> ; # Abhay
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm3385526/mediaviewer/rm1881734657/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Tipu (2019)
+<https://www.imdb.com/title/tt11548710/> a schema:Movie ;
+    schema:name "Tipu" ;
+    schema:url <https://www.imdb.com/title/tt11548710/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3385526/> ;
+        schema:characterName "Stranger"
+    ] .
+
+# Khari Biscuit (2019)
+<https://www.imdb.com/title/tt11081206/> a schema:Movie ;
+    schema:name "Khari Biscuit" ;
+    schema:url <https://www.imdb.com/title/tt11081206/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3385526/> ;
+        schema:characterName "Abbas Chacha"
+    ] .
+
+# Eerypur (2019)
+<https://www.imdb.com/title/tt10029264/> a schema:Movie ;
+    schema:name "Eerypur" ;
+    schema:url <https://www.imdb.com/title/tt10029264/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3385526/> ;
+        schema:characterName ""
+    ] .
+
+# Abhay (2019)
+<https://www.imdb.com/title/tt9778022/> a schema:Movie ;
+    schema:name "Abhay" ;
+    schema:url <https://www.imdb.com/title/tt9778022/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm3385526/> ;
+        schema:characterName "Rawat"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BZmU5YjczYTYtMmU5ZS00ODE5LWI4NTUtZGJkMWIyMzE0NWMyXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmU5YjczYTYtMmU5ZS00ODE5LWI4NTUtZGJkMWIyMzE0NWMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gopal Singh" ;
+    schema:height "389"^^xsd:integer ;
+    schema:width "281"^^xsd:integer .
+
+<https://www.imdb.com/name/nm3385526/mediaviewer/rm1881734657/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmU5YjczYTYtMmU5ZS00ODE5LWI4NTUtZGJkMWIyMzE0NWMyXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Gopal Singh" ;
+    schema:height "389"^^xsd:integer ;
+    schema:width "281"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

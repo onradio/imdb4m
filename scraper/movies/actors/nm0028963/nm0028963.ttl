@@ -1,0 +1,83 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0028963/> a schema:Person ;
+    schema:name "Branko Andric" ;
+    schema:url <https://www.imdb.com/name/nm0028963/> ;
+    schema:jobTitle "Actor", "Director", "Writer" ;
+    schema:description "Branko Andric. Actor: Before Sunrise. Branko Andric is known for Before Sunrise (1995), The Way Steel Was Tempered (1988) and James Dean Meets Yves Montand (1995)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0429137/>,    # Summer Samba
+                       <https://www.imdb.com/title/tt0261706/>,    # Gelbe Kirschen
+                       <https://www.imdb.com/title/tt0112471/>,    # Before Sunrise
+                       <https://www.imdb.com/title/tt0110233/> . # Kameni Grad - Stadt aus Stein
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Summer Samba (2002)
+<https://www.imdb.com/title/tt0429137/> a schema:Movie ;
+    schema:name "Summer Samba" ;
+    schema:url <https://www.imdb.com/title/tt0429137/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0028963/> ;
+        schema:characterName "Gitarrist"
+    ] .
+
+# Gelbe Kirschen (2001)
+<https://www.imdb.com/title/tt0261706/> a schema:Movie ;
+    schema:name "Gelbe Kirschen" ;
+    schema:url <https://www.imdb.com/title/tt0261706/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0028963/> ;
+        schema:characterName ""
+    ] .
+
+# Before Sunrise (1995)
+<https://www.imdb.com/title/tt0112471/> a schema:Movie ;
+    schema:name "Before Sunrise" ;
+    schema:url <https://www.imdb.com/title/tt0112471/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0028963/> ;
+        schema:characterName "Cafe Patron"
+    ] .
+
+# Kameni Grad - Stadt aus Stein (1994)
+<https://www.imdb.com/title/tt0110233/> a schema:Movie ;
+    schema:name "Kameni Grad - Stadt aus Stein" ;
+    schema:url <https://www.imdb.com/title/tt0110233/> ;
+    schema:datePublished "1994"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0028963/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

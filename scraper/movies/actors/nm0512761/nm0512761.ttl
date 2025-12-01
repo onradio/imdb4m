@@ -1,0 +1,96 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm0512761/> a schema:Person ;
+    schema:name "Dennis Lingard" ;
+    schema:url <https://www.imdb.com/name/nm0512761/> ;
+    schema:birthDate "1950-04-21"^^xsd:date ;
+    schema:jobTitle "Actor" ;
+    schema:description "Dennis Lingard. Actor: Billy Elliot. Dennis Lingard was born on 21 April 1950. He was an actor, known for Billy Elliot (2000), Spender (1991) and The Gambling Man (1995). He was married to Susan. He died on 14 May 2004 in Cumbria, England, UK." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0249462/>,    # Billy Elliot
+                       <https://www.imdb.com/title/tt0227903/>,    # The Gambling Man
+                       <https://www.imdb.com/title/tt0163437/>,    # Byker Grove
+                       <https://www.imdb.com/title/tt0098913/>,    # Spender
+                       <https://www.imdb.com/title/tt0398496/> . # Joe and the Gladiator
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Billy Elliot (2000)
+<https://www.imdb.com/title/tt0249462/> a schema:Movie ;
+    schema:name "Billy Elliot" ;
+    schema:url <https://www.imdb.com/title/tt0249462/> ;
+    schema:datePublished "2000"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0512761/> ;
+        schema:characterName "NCB Official"
+    ] .
+
+# The Gambling Man (1995)
+<https://www.imdb.com/title/tt0227903/> a schema:Movie ;
+    schema:name "The Gambling Man" ;
+    schema:url <https://www.imdb.com/title/tt0227903/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0512761/> ;
+        schema:characterName "Little Joe"
+    ] .
+
+# Byker Grove (1991)
+<https://www.imdb.com/title/tt0163437/> a schema:Movie ;
+    schema:name "Byker Grove" ;
+    schema:url <https://www.imdb.com/title/tt0163437/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0512761/> ;
+        schema:characterName "Tyrone"
+    ] .
+
+# Spender (1991)
+<https://www.imdb.com/title/tt0098913/> a schema:Movie ;
+    schema:name "Spender" ;
+    schema:url <https://www.imdb.com/title/tt0098913/> ;
+    schema:datePublished "1991"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0512761/> ;
+        schema:characterName "Skillet"
+    ] .
+
+# Joe and the Gladiator (1971)
+<https://www.imdb.com/title/tt0398496/> a schema:Movie ;
+    schema:name "Joe and the Gladiator" ;
+    schema:url <https://www.imdb.com/title/tt0398496/> ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0512761/> ;
+        schema:characterName "Joe Darling"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

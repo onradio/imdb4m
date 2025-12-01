@@ -1,0 +1,144 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm5852535/> a schema:Person ;
+    schema:name "&apos;Poo&apos; Ram" ;
+    schema:url <https://www.imdb.com/name/nm5852535/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "'Poo' Ram. Actor: Soorarai Pottru. 'Poo' Ram is known for Soorarai Pottru (2020), Karnan (2021) and Pariyerum Perumal (2018)." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMmFhZDNjYWQtNzRiZS00Y2YzLWExYTMtMGYxNzMxOGZiMmEwXkEyXkFqcGc@._V1_.jpg> ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt10023080/>,    # Nedunalvaadai
+                       <https://www.imdb.com/title/tt8042260/>,    # Kanne Kalaimaane
+                       <https://www.imdb.com/title/tt7019912/>,    # Aan Devathai
+                       <https://www.imdb.com/title/tt8176054/>,    # Pariyerum Perumal
+                       <https://www.imdb.com/title/tt7738784/>,    # Peranbu
+                       <https://www.imdb.com/title/tt8108232/>,    # Thilagar
+                       <https://www.imdb.com/title/tt4221390/> ; # Kaadu
+
+
+    schema:video <https://www.imdb.com/video/vi2313799449/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm5852535/mediaviewer/rm3968157697/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Nedunalvaadai (2019)
+<https://www.imdb.com/title/tt10023080/> a schema:Movie ;
+    schema:name "Nedunalvaadai" ;
+    schema:url <https://www.imdb.com/title/tt10023080/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName "Karuvathevar - Chelliah"
+    ] .
+
+# Kanne Kalaimaane (2019)
+<https://www.imdb.com/title/tt8042260/> a schema:Movie ;
+    schema:name "Kanne Kalaimaane" ;
+    schema:url <https://www.imdb.com/title/tt8042260/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName "Ramasamy (Kamalakannan's Father)"
+    ] .
+
+# Aan Devathai (2018)
+<https://www.imdb.com/title/tt7019912/> a schema:Movie ;
+    schema:name "Aan Devathai" ;
+    schema:url <https://www.imdb.com/title/tt7019912/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName ""
+    ] .
+
+# Pariyerum Perumal (2018)
+<https://www.imdb.com/title/tt8176054/> a schema:Movie ;
+    schema:name "Pariyerum Perumal" ;
+    schema:url <https://www.imdb.com/title/tt8176054/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName "Law College Principal"
+    ] .
+
+# Peranbu (2018)
+<https://www.imdb.com/title/tt7738784/> a schema:Movie ;
+    schema:name "Peranbu" ;
+    schema:url <https://www.imdb.com/title/tt7738784/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName "David"
+    ] .
+
+# Thilagar (2015)
+<https://www.imdb.com/title/tt8108232/> a schema:Movie ;
+    schema:name "Thilagar" ;
+    schema:url <https://www.imdb.com/title/tt8108232/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName "Ukkirapandi"
+    ] .
+
+# Kaadu (2014)
+<https://www.imdb.com/title/tt4221390/> a schema:Movie ;
+    schema:name "Kaadu" ;
+    schema:url <https://www.imdb.com/title/tt4221390/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm5852535/> ;
+        schema:characterName ""
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2313799449/> a schema:VideoObject ;
+        schema:name "Thuritham - Official Trailer" ;
+        schema:description "" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2313799449/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNWNlZDQ1ZmMtN2YyYy00MGZlLTkyOTYtNzdhZDdmMWJlMmJlXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg" ;
+        schema:duration "PT1M40S"^^xsd:duration ;
+        schema:uploadDate "2023-09-13T10:15:35Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMmFhZDNjYWQtNzRiZS00Y2YzLWExYTMtMGYxNzMxOGZiMmEwXkEyXkFqcGc@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmFhZDNjYWQtNzRiZS00Y2YzLWExYTMtMGYxNzMxOGZiMmEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "'Poo' Ram" ;
+    schema:height "934"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+<https://www.imdb.com/name/nm5852535/mediaviewer/rm3968157697/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMmFhZDNjYWQtNzRiZS00Y2YzLWExYTMtMGYxNzMxOGZiMmEwXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "'Poo' Ram" ;
+    schema:height "934"^^xsd:integer ;
+    schema:width "640"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

@@ -1,0 +1,376 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm1006741/> a schema:Person ;
+    schema:name "Jarvis Cocker" ;
+    schema:url <https://www.imdb.com/name/nm1006741/> ;
+    schema:birthDate "1963-09-19"^^xsd:date ;
+    schema:jobTitle "Actor", "Composer", "Director" ;
+    schema:alternateName "Jarvis Branson Cocker" ;
+    schema:description "Jarvis Cocker. Actor: Fantastic Mr. Fox. Jarvis Cocker was born on 19 September 1963 in Sheffield, Yorkshire, England, UK. He is an actor and composer, known for Fantastic Mr. Fox (2009), Harry Potter and the Goblet of Fire (2005) and Children of Men (2006). He was previously married to Camille Bidault-Waddington." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMTczNjM3NTY5M15BMl5BanBnXkFtZTcwMDc1ODMxOA@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Sheffield, Yorkshire, England, UK"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.88"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ 2″ (1.88 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt0432283/>,    # Fantastic Mr. Fox
+                       <https://www.imdb.com/title/tt0206634/>,    # Children of Men
+                       <https://www.imdb.com/title/tt0330373/>,    # Harry Potter and the Goblet of Fire
+                       <https://www.imdb.com/title/tt14230388/>,    # Asteroid City
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt34334691/>,    # The Thing
+                       <https://www.imdb.com/title/tt7182742/>,    # Feist feat. Jarvis Cocker: Century
+                       <https://www.imdb.com/title/tt6794478/>,    # Wave
+                       <https://www.imdb.com/title/tt3682888/>,    # Sneezy on the Mic
+                       <https://www.imdb.com/title/tt3675556/>,    # Stripes V Stripes
+                       <https://www.imdb.com/title/tt6607094/>,    # Zebra Face: Cloud Trouble
+                       <https://www.imdb.com/title/tt6584636/>,    # Hot Press: Uncovered
+                       <https://www.imdb.com/title/tt1522877/>,    # Wakefield
+                       <https://www.imdb.com/title/tt28115413/>,    # Charlotte Gainsbourg - The Operatio
+                       <https://www.imdb.com/title/tt36046201/>,    # Jarvis Cocker: Don't Let Him Waste Your Time
+                       <https://www.imdb.com/title/tt28115424/>,    # Charlotte Gainsbourg: The Songs That We Sing
+                       <https://www.imdb.com/title/tt0829170/>,    # Five Ways John Wayne Didn't Die
+                       <https://www.imdb.com/title/tt32793626/>,    # Pulp: Bad Cover Version
+                       <https://www.imdb.com/title/tt23847858/>,    # Nick Cave & The Bad Seeds: Fifteen Feet of Pure White Snow
+                       <https://www.imdb.com/title/tt7521568/>,    # Pulp: This Is Hardcore
+                       <https://www.imdb.com/title/tt5076164/>,    # L'Integrale des Clips de Different Class
+                       <https://www.imdb.com/title/tt37916294/>,    # Pulp: Something Changed
+                       <https://www.imdb.com/title/tt7441752/>,    # Pulp: Common People
+                       <https://www.imdb.com/title/tt12253094/> ; # Pulp: Disco 2000
+
+    schema:award [
+        a schema:Award ;
+        schema:description "1 wins & 4 nominations total"
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi4006787097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm1006741/mediaviewer/rm3437216256/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm2883504640/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm1222560256/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm3511720192/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm150534401/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm3503334401/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm942997249/>,
+                 <https://www.imdb.com/name/nm1006741/mediaviewer/rm2562042624/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0432283/> a schema:Movie ;
+    schema:name "Fantastic Mr. Fox" ;
+    schema:url <https://www.imdb.com/title/tt0432283/> .
+
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> .
+
+<https://www.imdb.com/title/tt0330373/> a schema:Movie ;
+    schema:name "Harry Potter and the Goblet of Fire" ;
+    schema:url <https://www.imdb.com/title/tt0330373/> .
+
+<https://www.imdb.com/title/tt14230388/> a schema:Movie ;
+    schema:name "Asteroid City" ;
+    schema:url <https://www.imdb.com/title/tt14230388/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# The Thing (2018)
+<https://www.imdb.com/title/tt34334691/> a schema:Movie ;
+    schema:name "The Thing" ;
+    schema:url <https://www.imdb.com/title/tt34334691/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Feist feat. Jarvis Cocker: Century (2017)
+<https://www.imdb.com/title/tt7182742/> a schema:Movie ;
+    schema:name "Feist feat. Jarvis Cocker: Century" ;
+    schema:url <https://www.imdb.com/title/tt7182742/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Wave (2017)
+<https://www.imdb.com/title/tt6794478/> a schema:Movie ;
+    schema:name "Wave" ;
+    schema:url <https://www.imdb.com/title/tt6794478/> ;
+    schema:datePublished "2017"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Narrator"
+    ] .
+
+# Sneezy on the Mic (2014)
+<https://www.imdb.com/title/tt3682888/> a schema:Movie ;
+    schema:name "Sneezy on the Mic" ;
+    schema:url <https://www.imdb.com/title/tt3682888/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName ""
+    ] .
+
+# Stripes V Stripes (2014)
+<https://www.imdb.com/title/tt3675556/> a schema:Movie ;
+    schema:name "Stripes V Stripes" ;
+    schema:url <https://www.imdb.com/title/tt3675556/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName ""
+    ] .
+
+# Zebra Face: Cloud Trouble (2014)
+<https://www.imdb.com/title/tt6607094/> a schema:Movie ;
+    schema:name "Zebra Face: Cloud Trouble" ;
+    schema:url <https://www.imdb.com/title/tt6607094/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Sun"
+    ] .
+
+# Hot Press: Uncovered (2014)
+<https://www.imdb.com/title/tt6584636/> a schema:Movie ;
+    schema:name "Hot Press: Uncovered" ;
+    schema:url <https://www.imdb.com/title/tt6584636/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Wakefield (2009)
+<https://www.imdb.com/title/tt1522877/> a schema:Movie ;
+    schema:name "Wakefield" ;
+    schema:url <https://www.imdb.com/title/tt1522877/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "(voice)"
+    ] .
+
+# Charlotte Gainsbourg - The Operatio (2011)
+<https://www.imdb.com/title/tt28115413/> a schema:Movie ;
+    schema:name "Charlotte Gainsbourg - The Operatio" ;
+    schema:url <https://www.imdb.com/title/tt28115413/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName ""
+    ] .
+
+# Jarvis Cocker: Don't Let Him Waste Your Time (2007)
+<https://www.imdb.com/title/tt36046201/> a schema:Movie ;
+    schema:name "Jarvis Cocker: Don't Let Him Waste Your Time" ;
+    schema:url <https://www.imdb.com/title/tt36046201/> ;
+    schema:datePublished "2007"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName ""
+    ] .
+
+# Charlotte Gainsbourg: The Songs That We Sing (2006)
+<https://www.imdb.com/title/tt28115424/> a schema:Movie ;
+    schema:name "Charlotte Gainsbourg: The Songs That We Sing" ;
+    schema:url <https://www.imdb.com/title/tt28115424/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName ""
+    ] .
+
+# Five Ways John Wayne Didn't Die (2002)
+<https://www.imdb.com/title/tt0829170/> a schema:Movie ;
+    schema:name "Five Ways John Wayne Didn't Die" ;
+    schema:url <https://www.imdb.com/title/tt0829170/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Newlywed"
+    ] .
+
+# Pulp: Bad Cover Version (2002)
+<https://www.imdb.com/title/tt32793626/> a schema:Movie ;
+    schema:name "Pulp: Bad Cover Version" ;
+    schema:url <https://www.imdb.com/title/tt32793626/> ;
+    schema:datePublished "2002"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Brian May"
+    ] .
+
+# Nick Cave & The Bad Seeds: Fifteen Feet of Pure White Snow (2001)
+<https://www.imdb.com/title/tt23847858/> a schema:Movie ;
+    schema:name "Nick Cave & The Bad Seeds: Fifteen Feet of Pure White Snow" ;
+    schema:url <https://www.imdb.com/title/tt23847858/> ;
+    schema:datePublished "2001"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Pulp: This Is Hardcore (1998)
+<https://www.imdb.com/title/tt7521568/> a schema:Movie ;
+    schema:name "Pulp: This Is Hardcore" ;
+    schema:url <https://www.imdb.com/title/tt7521568/> ;
+    schema:datePublished "1998"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# L'Integrale des Clips de Different Class (1996)
+<https://www.imdb.com/title/tt5076164/> a schema:Movie ;
+    schema:name "L'Integrale des Clips de Different Class" ;
+    schema:url <https://www.imdb.com/title/tt5076164/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Pulp: Something Changed (1996)
+<https://www.imdb.com/title/tt37916294/> a schema:Movie ;
+    schema:name "Pulp: Something Changed" ;
+    schema:url <https://www.imdb.com/title/tt37916294/> ;
+    schema:datePublished "1996"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Pulp: Common People (1995)
+<https://www.imdb.com/title/tt7441752/> a schema:Movie ;
+    schema:name "Pulp: Common People" ;
+    schema:url <https://www.imdb.com/title/tt7441752/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# Pulp: Disco 2000 (1995)
+<https://www.imdb.com/title/tt12253094/> a schema:Movie ;
+    schema:name "Pulp: Disco 2000" ;
+    schema:url <https://www.imdb.com/title/tt12253094/> ;
+    schema:datePublished "1995"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm1006741/> ;
+        schema:characterName "Jarvis Cocker"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi4006787097/> a schema:VideoObject ;
+        schema:name "Pulp: a Film About Life, Death &amp; Supermarkets" ;
+        schema:description "Trailer for Pulp: a Film About Life, Death & Supermarkets" ;
+        schema:embedUrl <https://www.imdb.com/video/vi4006787097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjU2ZmZjYTYtN2ZhYS00YTJkLTg2NTgtNzYyZGM0ZDFhOWVhXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_.jpg" ;
+        schema:duration "PT2M6S"^^xsd:duration ;
+        schema:uploadDate "2018-02-01T17:15:34Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMTczNjM3NTY5M15BMl5BanBnXkFtZTcwMDc1ODMxOA@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczNjM3NTY5M15BMl5BanBnXkFtZTcwMDc1ODMxOA@@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm3437216256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjE2MTI4NjU0Nl5BMl5BanBnXkFtZTgwMDkxMzYxMjE@._V1_.jpg> ;
+    schema:caption "SXSW World Premiere. Steve Mackey, Florian Habicht & Jarvis Cocker." ;
+    schema:height "3251"^^xsd:integer ;
+    schema:width "2883"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm2883504640/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTQzMjM3NjM5MF5BMl5BanBnXkFtZTgwODQ4NzEzMTE@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker in Pulp: A Film About Life, Death and Supermarkets (2014)" ;
+    schema:height "1365"^^xsd:integer ;
+    schema:width "2048"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm1222560256/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjA1NTc5NDY1MV5BMl5BanBnXkFtZTgwODE4NzEzMTE@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker in Pulp: A Film About Life, Death and Supermarkets (2014)" ;
+    schema:height "368"^^xsd:integer ;
+    schema:width "552"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm3511720192/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU1MTU5Njg2NV5BMl5BanBnXkFtZTYwMDQzMTg3._V1_.jpg> ;
+    schema:caption "Beth Orton and Jarvis Cocker in Leonard Cohen: I'm Your Man (2005)" ;
+    schema:height "378"^^xsd:integer ;
+    schema:width "485"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm150534401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNzliZWNjM2ItOGExYi00ZWNhLWE2MmMtMzNmNzg3YmYwMjY3XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker at an event for The French Dispatch (2021)" ;
+    schema:height "3712"^^xsd:integer ;
+    schema:width "5568"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm3503334401/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYTEyMmMxNTEtNTdkMi00YTE5LWI4MTktZjhiN2E3ODEyODVkXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker" ;
+    schema:height "4047"^^xsd:integer ;
+    schema:width "2637"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm942997249/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTU1YmNkZWYtYmExNC00YWE1LTk2NWEtMTQ2ODhmYTA5MmZiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Bill Murray, Willem Dafoe, Frances McDormand, Liev Schreiber, Bob Balaban, Benicio Del Toro, Edward Norton, Henry Winkler, Adrien Brody, Jason Schwartzman, Owen Wilson, Mathieu Amalric, Steve Park, Lois Smith, Tilda Swinton, Christoph Waltz, Wallace Wolodarsky, Jeffrey Wright, Jarvis Cocker, Mohamed Belhadjine, Saoirse Ronan, Tony Revolori, Timothée Chalamet, Lyna Khoudri, and Krishna Bagadiya in The French Dispatch (2021)" ;
+    schema:height "1500"^^xsd:integer ;
+    schema:width "1013"^^xsd:integer .
+
+<https://www.imdb.com/name/nm1006741/mediaviewer/rm2562042624/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMTczNjM3NTY5M15BMl5BanBnXkFtZTcwMDc1ODMxOA@@._V1_.jpg> ;
+    schema:caption "Jarvis Cocker" ;
+    schema:height "2048"^^xsd:integer ;
+    schema:width "1365"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

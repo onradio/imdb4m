@@ -1,0 +1,56 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm6850010/> a schema:Person ;
+    schema:name "Juan Santiago Linari" ;
+    schema:url <https://www.imdb.com/name/nm6850010/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Juan Santiago Linari. Actor: Wild Tales. Juan Santiago Linari is known for Wild Tales (2014)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt3011894/> ;    # Wild Tales
+
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm6850010/mediaviewer/rm584681985/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Wild Tales (2014)
+<https://www.imdb.com/title/tt3011894/> a schema:Movie ;
+    schema:name "Wild Tales" ;
+    schema:url <https://www.imdb.com/title/tt3011894/> ;
+    schema:datePublished "2014"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm6850010/> ;
+        schema:characterName "Alexis"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm6850010/mediaviewer/rm584681985/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZjFhOGM4ZDMtZTNjMS00ZmVkLWE3MzItOTM1YTJjMDI0NmVjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "César Bordón, Julieta Zylberberg, and Juan Santiago Linari in Wild Tales (2014)" ;
+    schema:height "536"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

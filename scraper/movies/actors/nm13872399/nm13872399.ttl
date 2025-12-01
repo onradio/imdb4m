@@ -1,0 +1,47 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm13872399/> a schema:Person ;
+    schema:name "Aftab" ;
+    schema:url <https://www.imdb.com/name/nm13872399/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Aftab. Actor: Dil Bechara. Aftab is known for Dil Bechara (2020) and The Flight (2020)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt12217846/> .    # Hum Haii Rowdy SP
+
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hum Haii Rowdy SP (2019)
+<https://www.imdb.com/title/tt12217846/> a schema:Movie ;
+    schema:name "Hum Haii Rowdy SP" ;
+    schema:url <https://www.imdb.com/title/tt12217846/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm13872399/> ;
+        schema:characterName "Hooligan"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.

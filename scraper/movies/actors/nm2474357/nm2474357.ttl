@@ -1,0 +1,113 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://www.imdb.com/name/nm2474357/> a schema:Person ;
+    schema:name "Chris Gilbert" ;
+    schema:url <https://www.imdb.com/name/nm2474357/> ;
+    schema:jobTitle "Actor" ;
+    schema:description "Chris Gilbert. Actor: Children of Men. Chris Gilbert is known for Children of Men (2006), Blood Siblings (2009) and Band of Drivers (2011)." ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt7515456/>,    # Hurricane
+                       <https://www.imdb.com/title/tt2069002/>,    # Band of Drivers
+                       <https://www.imdb.com/title/tt1322896/>,    # Blood Siblings
+                       <https://www.imdb.com/title/tt1456114/>,    # Patterns
+                       <https://www.imdb.com/title/tt0206634/> ; # Children of Men
+
+
+    schema:video <https://www.imdb.com/video/vi1791427097/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm2474357/mediaviewer/rm736312064/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Hurricane (2018)
+<https://www.imdb.com/title/tt7515456/> a schema:Movie ;
+    schema:name "Hurricane" ;
+    schema:url <https://www.imdb.com/title/tt7515456/> ;
+    schema:datePublished "2018"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474357/> ;
+        schema:characterName "German Soldier 4"
+    ] .
+
+# Band of Drivers (2011)
+<https://www.imdb.com/title/tt2069002/> a schema:Movie ;
+    schema:name "Band of Drivers" ;
+    schema:url <https://www.imdb.com/title/tt2069002/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474357/> ;
+        schema:characterName "Rick"
+    ] .
+
+# Blood Siblings (2009)
+<https://www.imdb.com/title/tt1322896/> a schema:Movie ;
+    schema:name "Blood Siblings" ;
+    schema:url <https://www.imdb.com/title/tt1322896/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474357/> ;
+        schema:characterName "Stoneman"
+    ] .
+
+# Patterns (2009)
+<https://www.imdb.com/title/tt1456114/> a schema:Movie ;
+    schema:name "Patterns" ;
+    schema:url <https://www.imdb.com/title/tt1456114/> ;
+    schema:datePublished "2009"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474357/> ;
+        schema:characterName "Brad"
+    ] .
+
+# Children of Men (2006)
+<https://www.imdb.com/title/tt0206634/> a schema:Movie ;
+    schema:name "Children of Men" ;
+    schema:url <https://www.imdb.com/title/tt0206634/> ;
+    schema:datePublished "2006"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm2474357/> ;
+        schema:characterName "Café Customer"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi1791427097/> a schema:VideoObject ;
+        schema:name "Patterns" ;
+        schema:description "A card playing juggler is caught cheating at a poker table, forcing him to run for his life." ;
+        schema:embedUrl <https://www.imdb.com/video/vi1791427097/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTYzMTI0Mjc5Ml5BMl5BanBnXkFtZTcwMDQ5MTM3Mg@@._V1_.jpg" ;
+        schema:duration "PT35S"^^xsd:duration ;
+        schema:uploadDate "2009-07-24T00:39:58Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm2474357/mediaviewer/rm736312064/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDIxZjRlMWQtNGE1NC00MmNkLThjOTQtZmFjZmM4M2M0NmUxXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Rita Davies, Kim Fenton, Clive Owen, Atalanta White, Phoebe Hawthorne, Chris Gilbert, Jon Chevalier, Rebecca Howard, and Laurence Woodbridge in Children of Men (2006)" ;
+    schema:height "688"^^xsd:integer ;
+    schema:width "1280"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.
