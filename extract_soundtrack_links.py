@@ -144,6 +144,11 @@ def parse_args():
 		action='store_true',
 		help='Skip movies that already have output files'
 	)
+	parser.add_argument(
+		'--reverse',
+		action='store_true',
+		help='Process movies in reverse order'
+	)
 	
 	return parser.parse_args()
 
@@ -320,6 +325,9 @@ def main():
 	
 	# Get all movie folders but skip 'actors' folder
 	movie_folders = sorted([d for d in dataset_root.iterdir() if d.is_dir() and d.name != 'actors'])
+	
+	if args.reverse:
+		movie_folders = list(reversed(movie_folders))
 	
 	if not movie_folders:
 		logger.error(f"No movie folders found in: {dataset_root}")
