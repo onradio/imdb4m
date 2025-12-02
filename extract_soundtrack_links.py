@@ -276,10 +276,13 @@ def process_movie(
 						f"{result.error[:100]}"
 					)
 		
-		# Save results
-		output_path.parent.mkdir(parents=True, exist_ok=True)
-		save_results_to_json(results, str(output_path))
-		logger.info(f"✓ Saved results to: {output_path}")
+		# Save results only if at least one match was found
+		if successful_matches > 0:
+			output_path.parent.mkdir(parents=True, exist_ok=True)
+			save_results_to_json(results, str(output_path))
+			logger.info(f"✓ Saved results to: {output_path}")
+		else:
+			logger.warning(f"⚠️  No successful matches found for {imdb_id}, skipping JSON save")
 		
 		# Print summary
 		logger.info(f"\nSummary for {imdb_id}:")
