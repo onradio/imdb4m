@@ -2,7 +2,7 @@
 """
 Knowledge Graph Analysis Script
 
-Loads all .ttl files from /scraper/movies subdirectories into a single RDF graph,
+Loads all .ttl files from /extractor/movies subdirectories into a single RDF graph,
 converts it to NetworkX for graph analysis, and computes statistics.
 """
 
@@ -508,7 +508,7 @@ def save_kg(rdf_graph: Graph, output_dir: Path, filename: str = "imdb_kg_cleaned
 
 def main():
     # Configuration
-    BASE_PATH = Path(__file__).parent / "scraper" / "movies"
+    BASE_PATH = Path(__file__).parent / "extractor" / "movies"
     OUTPUT_DIR = Path(__file__).parent / "KG"
     
     print("=" * 70)

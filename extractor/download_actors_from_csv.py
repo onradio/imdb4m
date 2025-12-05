@@ -8,12 +8,12 @@ from pathlib import Path
 from typing import Iterable, Set
 
 try:
-    from scraper.download_imdb_actor import download_imdb_actor, extract_actor_id
+    from extractor.download_imdb_actor import download_imdb_actor, extract_actor_id
 except ModuleNotFoundError:  # pragma: no cover
     import sys
 
     sys.path.append(str(Path(__file__).resolve().parent.parent))
-    from scraper.download_imdb_actor import download_imdb_actor, extract_actor_id
+    from extractor.download_imdb_actor import download_imdb_actor, extract_actor_id
 
 
 def read_actor_urls(csv_path: Path) -> Iterable[str]:

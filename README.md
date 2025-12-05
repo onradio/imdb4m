@@ -2,16 +2,18 @@
 
 # 🎬 IMDB4M
 
-### A Large-Scale Multi-Modal Knowledge Graph of Movies
+### A Large-Scale Quad-Modal Knowledge Graph of Movies
 
 [![ESWC 2026](https://img.shields.io/badge/ESWC-2026-blueviolet?style=for-the-badge)](https://2026.eswc-conferences.org/)
 [![Resource Track](https://img.shields.io/badge/Resource-Track-orange?style=for-the-badge)]()
 [![RDF](https://img.shields.io/badge/RDF-Turtle-00ADD8?style=for-the-badge&logo=semantic-web)](https://www.w3.org/TR/turtle/)
 [![Schema.org](https://img.shields.io/badge/Schema.org-Vocabulary-red?style=for-the-badge)](https://schema.org/)
+[![CC-BY-NC](https://img.shields.io/badge/License-CC--BY--NC-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![1.8M Triples](https://img.shields.io/badge/Triples-1.8M-green?style=for-the-badge)]()
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
 <p align="center">
-  <strong>A comprehensive RDF knowledge graph combining movie metadata, soundtracks, videos, images, and reviews from IMDb</strong>
+  <strong>A comprehensive RDF knowledge graph integrating Text, Images, Video, and Audio modalities for 376 fully-annotated movies</strong>
 </p>
 
 [Overview](#-overview) •
@@ -28,51 +30,74 @@
 
 ## 📖 Overview
 
-**IMDB4M** (IMDb Multi-Modal Movie Metadata) is a large-scale knowledge graph resource that captures rich, multi-modal information about movies from the Internet Movie Database (IMDb). This resource was developed for submission to the **International Semantic Web Conference (ESWC) 2026 Resource Track**.
+**IMDB4M** is a large-scale, **quad-modal** knowledge graph for the movie domain that overcomes the bimodal bottleneck of existing multimodal knowledge graphs. This resource was developed for submission to the **Extended Semantic Web Conference (ESWC) 2026 Resource Track**.
+
+IMDB4M comprehensively harmonises symbolic metadata of movies and actors and integrates them with **four distinct modalities**: text (plots, comments, reviews), images (posters, stills), video (trailers), and audio (soundtracks). Unlike prior resources often constructed with ad-hoc vocabularies, IMDB4M is engineered on **schema.org** to ensure semantic interoperability, discoverability, and structural quality.
 
 The knowledge graph integrates:
-- 🎥 **Movie Metadata**: Titles, plots, genres, ratings, release dates, production companies
-- 🎭 **Cast & Crew**: Actors, directors, writers with their complete filmographies
-- 🎵 **Soundtracks**: Music recordings, compositions, performers, composers, lyricists
-- 📹 **Videos**: Movie trailers with thumbnails, duration, and upload dates
-- 🖼️ **Images**: Movie stills and promotional images with captions
-- ⭐ **Reviews & Ratings**: User reviews, aggregate ratings, Metacritic scores
-- 🔗 **External Links**: Wikidata entity alignments via `owl:sameAs` mappings
+- 🎥 **Movie Metadata**: Titles, plots, genres, ratings, release dates, budgets, revenues, production companies
+- 🎭 **Cast & Crew**: 5,484 actors, directors, writers with complete filmographies using `schema:PerformanceRole`
+- 🎵 **Soundtracks**: Music recordings and compositions with performers, composers, lyricists (avg. 11.2 per movie)
+- 📹 **Videos**: Movie trailers with thumbnails, duration, and upload dates (99.2% coverage)
+- 🖼️ **Images**: Movie stills and promotional images with captions and entity links (avg. 7.9 per movie)
+- ⭐ **Reviews & Ratings**: User reviews, aggregate ratings, Metacritic scores, AI-generated summaries
+- 🔗 **External Links**: Wikidata entity alignments via `owl:sameAs` mappings (78.1% artist coverage)
+
+**Key Design Principles:**
+- **Linking over Hosting**: Stores external URIs to legitimate platforms (IMDb, YouTube) rather than raw media to respect copyright
+- **Schema.org Vocabulary**: Ensures semantic interoperability and Web-scale discoverability
+- **First-class Multimodal Objects**: Modalities are typed semantic objects, not flat attributes
 
 ---
 
 ## ✨ Features
 
-### 🗃️ Multi-Modal Data Integration
-| Modality | Description | Schema.org Types |
-|----------|-------------|------------------|
-| **Textual** | Plots, reviews, keywords, captions | `schema:abstract`, `schema:Review` |
-| **Visual** | Movie stills, posters | `schema:ImageObject` |
-| **Video** | Movie trailers, clips | `schema:VideoObject` |
-| **Audio** | Soundtrack metadata | `schema:MusicRecording`, `schema:MusicComposition` |
-| **Structural** | Entity relationships | `schema:Person`, `schema:Movie`, `schema:Organization` |
+### 🗃️ Quad-Modal Data Integration
+| Modality | Description | Schema.org Types | Properties |
+|----------|-------------|------------------|------------|
+| **Text** | Plots, reviews, keywords, genre | `schema:description`, `schema:Review` | 100% coverage, 48.6 avg/movie |
+| **Image** | Stills, posters with captions & entity links | `schema:ImageObject` | 100% coverage, 7.9 avg/movie |
+| **Video** | Trailers with thumbnails, duration, upload dates | `schema:VideoObject` | 99.2% coverage |
+| **Audio** | Soundtracks with performers, composers, lyricists | `schema:MusicRecording`, `schema:MusicComposition` | 94.15% coverage, 11.2 avg/movie |
 
 ### 📊 Knowledge Graph Statistics
 
 | Metric | Value |
 |--------|-------|
-| Movies | 379+ |
-| Actors/Crew | 1000+ |
-| Soundtracks | 379+ movies with audio metadata |
-| Videos/Trailers | Multiple per movie |
-| Images | Multiple per movie with captions |
-| RDF Triples | 100,000+ |
-| Predicates | 40+ Schema.org properties |
+| **RDF Triples** | 1,815,922 |
+| **Unique Nodes** | 660,039 |
+| **Unique Predicates** | 58 |
+| **Seed Movies (fully annotated)** | 376 |
+| **Total Movies (after expansion)** | 50,756 |
+| **Artists (actors, directors, composers)** | 5,484 |
+| **PerformanceRole instances** | 232,492 |
+| **ImageObjects** | 36,844 |
+| **Wikidata Alignments (Artists)** | 4,284 (78.1%) |
+| **Entity Types** | 17 |
+
+### 📈 Modality Coverage (Seed Movies)
+
+| Modality | Coverage | Avg. per Movie |
+|----------|----------|----------------|
+| Text (plots, reviews, keywords) | 100% | 48.63 elements |
+| Images (stills, posters) | 100% | 7.91 images |
+| Video (trailers) | 99.2% | 0.99 videos |
+| Audio (soundtracks) | 94.15% | 11.20 clips |
+
+**93.62%** of movies possess all four modalities simultaneously.
 
 ### 🔗 External Linkage
-- **Wikidata Integration**: `owl:sameAs` mappings for movies and actors
-- **YouTube Links**: Soundtrack-to-video linking via intelligent matching
+- **Wikidata Integration**: `owl:sameAs` mappings with 78.1% coverage for artists and 100% for seed movies
+- **YouTube Links**: Soundtrack-to-video linking via neuro-symbolic RAG pipeline (87.16% accuracy)
 
 ---
 
 ## 🏗️ Knowledge Graph Schema
 
-IMDB4M uses [Schema.org](https://schema.org/) vocabulary as its primary ontology. Below is a simplified view of the schema:
+IMDB4M uses [Schema.org](https://schema.org/) vocabulary as its primary ontology, chosen for:
+1. **Coverage**: Provides primitives for movies, creative works, media objects, ratings, monetary values
+2. **Expressiveness**: Rich typed representations via `schema:ImageObject`, `schema:VideoObject`, `schema:MusicRecording`
+3. **Interoperability**: Widely adopted across the Web of Data, natively used by IMDb and YouTube
 
 ```
                           ┌─────────────────┐
@@ -82,45 +107,53 @@ IMDB4M uses [Schema.org](https://schema.org/) vocabulary as its primary ontology
     ┌──────────────────────────────┼──────────────────────────────┐
     │              │               │               │              │
     ▼              ▼               ▼               ▼              ▼
-┌────────┐  ┌───────────┐  ┌────────────┐  ┌───────────┐  ┌────────┐
-│ Person │  │ImageObject│  │VideoObject │  │  Review   │  │ Audio  │
-│(Actors)│  │ (Stills)  │  │ (Trailers) │  │(Ratings)  │  │(Music) │
-└────────┘  └───────────┘  └────────────┘  └───────────┘  └────────┘
-    │                                                          │
-    │                                                          ▼
-    │                                          ┌───────────────────────┐
-    │                                          │ schema:MusicRecording │
-    │                                          └───────────┬───────────┘
-    │                                                      │
-    │                                                      ▼
-    │                                          ┌───────────────────────┐
-    │                                          │schema:MusicComposition│
-    │                                          └───────────────────────┘
-    │
-    ▼
-┌─────────────────────────┐
-│ schema:performerIn      │
-│ (Actor Filmographies)   │
-└─────────────────────────┘
+┌────────────┐ ┌───────────┐ ┌────────────┐ ┌───────────┐ ┌────────────────┐
+│Performance │ │ImageObject│ │VideoObject │ │  Review   │ │MusicRecording  │
+│   Role     │ │ (Stills)  │ │ (Trailers) │ │(Ratings)  │ │ (Soundtracks)  │
+└─────┬──────┘ └─────┬─────┘ └────────────┘ └───────────┘ └───────┬────────┘
+      │              │                                            │
+      ▼              ▼                                            ▼
+┌──────────┐  ┌───────────┐                          ┌───────────────────────┐
+│  Person  │  │mainEntity │                          │ schema:MusicComposition│
+│ (Actor)  │  │ (Person)  │                          └───────────┬───────────┘
+└────┬─────┘  └───────────┘                                      │
+     │                                               ┌───────────┴───────────┐
+     ▼                                               ▼                       ▼
+┌─────────────────────────┐                   ┌───────────┐           ┌───────────┐
+│ schema:performerIn      │                   │ composer  │           │ lyricist  │
+│ (Actor Filmographies)   │                   │ (Person)  │           │ (Person)  │
+└─────────────────────────┘                   └───────────┘           └───────────┘
 ```
+
+### Schema Design Principles
+
+- **PerformanceRole Pattern**: Actor participation uses `schema:PerformanceRole` to capture actor, movie, and `schema:characterName` together
+- **N-ary Structures**: Typed blank nodes with `xsd:date`, `xsd:dateTime`, `xsd:duration`, `xsd:integer`, `xsd:decimal`
+- **Two-level Audio**: `schema:MusicRecording` for performed audio, `schema:MusicComposition` for underlying work
 
 ### Key Properties
 
 | Property | Domain | Range | Description |
 |----------|--------|-------|-------------|
-| `schema:actor` | Movie | Person | Cast member |
+| `schema:actor` | Movie | PerformanceRole | Cast member with character |
+| `schema:characterName` | PerformanceRole | Text | Character played by actor |
 | `schema:director` | Movie | Person | Film director |
+| `schema:creator` | Movie | Person | Writer/creator |
 | `schema:trailer` | Movie | VideoObject | Movie trailer |
 | `schema:audio` | Movie | MusicRecording | Soundtrack entry |
 | `schema:image` | Movie | ImageObject | Movie still/poster |
 | `schema:aggregateRating` | Movie | AggregateRating | IMDb/Metacritic score |
 | `schema:review` | Movie | Review | User review |
 | `schema:byArtist` | MusicRecording | Person | Performer |
+| `schema:recordingOf` | MusicRecording | MusicComposition | Underlying musical work |
 | `schema:composer` | MusicComposition | Person | Music composer |
+| `schema:lyricist` | MusicComposition | Person | Lyrics writer |
 | `schema:caption` | ImageObject | Text | Image description |
+| `schema:mainEntity` | ImageObject | Person | Cast members in image |
 | `schema:embedUrl` | VideoObject | URL | Trailer embed URL |
 | `schema:thumbnailUrl` | VideoObject | URL | Trailer thumbnail |
-| `schema:duration` | VideoObject | Duration | Video length |
+| `schema:duration` | VideoObject | Duration | Video length (xsd:duration) |
+| `schema:performerIn` | Person | Movie | Actor filmography |
 | `owl:sameAs` | Entity | WikidataURI | External link |
 
 ---
@@ -145,9 +178,9 @@ imdb4m/
 │   ├── gemini_matcher.py           # LLM-powered matching
 │   └── music_linker.py             # Main orchestrator
 │
-├── 📂 scraper/                      # Data collection scripts
-│   ├── download_imdb_movie.py      # Movie page scraper
-│   ├── download_imdb_actor.py      # Actor page scraper
+├── 📂 extractor/                     # Data collection scripts
+│   ├── download_imdb_movie.py      # Movie page extractor
+│   ├── download_imdb_actor.py      # Actor page extractor
 │   └── 📂 movie_seeds/             # Movie selection criteria
 │
 ├── 📂 QA/                           # Quality assurance
@@ -162,6 +195,36 @@ imdb4m/
 ├── 📜 create_sameas_mappings.py    # Wikidata linking
 └── 📜 requirements.txt             # Python dependencies
 ```
+
+---
+
+## 🔧 Construction Methodology
+
+IMDB4M follows a four-stage pipeline:
+
+### 1. Seeding Strategy
+- Sampled **N=100 movies per decade** (1980-2020) for temporal diversity
+- Resulted in **376 distinct seed movies** after deduplication
+- Each seed enriched with top 20 cast, trailers, images, reviews
+
+### 2. Recursive Expansion
+- Extracted **5,484 unique artists** from seed movies
+- Retrieved complete filmographies to extend neighbourhood structure
+- Captured latent connections through shared collaborators
+
+### 3. Pruning
+- Removed ~69,000 leaf-node movies connected to only one artist
+- Yielded refined core of **660,039 movies** and **5,484 artists**
+
+### 4. External Linking
+- **Wikidata Alignment**: Query SPARQL endpoint via IMDb ID property P345
+- **YouTube Linking**: RAG pipeline with Gemini verification for soundtracks
+
+### Data Extraction
+The extraction pipeline leverages:
+- **JSON-LD blocks** from IMDb pages (primary source for schema.org metadata)
+- **Next.js data payloads** for deeply nested structures (credits, filmographies, reviews)
+- **DOM traversal fallback** for alternate titles, budgets, gallery references
 
 ---
 
@@ -270,7 +333,12 @@ python parse_imdb_movie.py path/to/movie.html -o output.ttl
 python parse_soundtrack_to_ttl.py path/to/soundtrack.html
 ```
 
-### Music Linker
+### Neuro-Symbolic Audio Linker
+
+The Music Linker uses a **Retrieval-Augmented Generation (RAG)** pipeline to link soundtrack entities to YouTube videos:
+
+1. **Stage 1 - Retrieval**: Query YouTube Data API v3 using soundtrack metadata (title, artist, movie) with progressive relaxation
+2. **Stage 2 - Verification**: Use Gemini 2.5 Flash as a neuro-symbolic reasoner to verify candidates and disambiguate between official releases vs covers
 
 ```python
 from linker import MusicLinker, SoundtrackParser, Config
@@ -288,7 +356,7 @@ soundtracks = SoundtrackParser.parse_soundtrack_ttl(
     imdb_id="tt0120338"  # Titanic
 )
 
-# Find YouTube matches
+# Find YouTube matches (87.16% accuracy)
 results = linker.find_matches_batch(soundtracks)
 
 for result in results:
@@ -298,9 +366,20 @@ for result in results:
 
 ---
 
-## 📊 Evaluation
+## 📊 Validation & Evaluation
 
-IMDB4M includes a comprehensive Question-Answering (QA) evaluation framework to assess the completeness and accuracy of the knowledge graph.
+IMDB4M includes a comprehensive validation framework combining SPARQL-based question answering and link verification.
+
+### Validation Results
+
+| Metric | Value |
+|--------|-------|
+| **Overall F1 Score** | 94.4% |
+| **Precision** | 99.3% |
+| **Recall** | 90.0% |
+| **Avg. Levenshtein Similarity** | 0.993 |
+| **Query Success Rate** | 99.3% |
+| **YouTube Link Accuracy** | 87.16% |
 
 ### Running Evaluation
 
@@ -309,25 +388,28 @@ cd QA
 python evaluate_qa.py
 ```
 
-### Evaluation Metrics
+### 18 Competency Questions (SPARQL Queries)
 
-| Metric | Description |
-|--------|-------------|
-| **Precision** | Correct answers / Predicted answers |
-| **Recall** | Correct answers / Gold standard answers |
-| **F1 Score** | Harmonic mean of Precision and Recall |
-| **Levenshtein Similarity** | String-based fuzzy matching |
-| **Exact Match Rate** | Percentage of perfect matches |
-
-### Sample Questions Evaluated
-
-- Who directed the movie?
-- Who are the actors in the movie?
-- What is the rating of the movie?
-- What is the plot of the movie?
-- What are the soundtracks of the movie?
-- What is the trailer of the movie?
-- Which are the images and their captions?
+| ID | Query | Coverage |
+|----|-------|----------|
+| Q1 | Who directed the movie? | 100% |
+| Q2 | Who wrote the script? | 100% |
+| Q3 | Who are the actors? | 100% |
+| Q4 | What is the rating? | 100% |
+| Q5 | How many ratings? | 100% |
+| Q6 | What is the plot? | 100% |
+| Q7 | When was it released? | 100% |
+| Q8 | What is the runtime? | 100% |
+| Q9 | What is the Metacritic score? | 95.2% |
+| Q10 | What are the keywords? | 100% |
+| Q11 | What is the budget? | 95.5% |
+| Q12 | What is the trailer? | 99.2% |
+| Q13 | What is the genre? | 100% |
+| Q14 | What is the poster? | 100% |
+| Q15 | Production companies? | 100% |
+| Q16 | Alternate names? | 98.9% |
+| Q17 | Content rating? | 98.4% |
+| Q18 | Images and captions? | 100% |
 
 ---
 
@@ -409,13 +491,50 @@ python create_sameas_mappings.py
 python analyze_kg.py
 ```
 
-This generates:
-- Triple counts and distribution
-- Node degree statistics
-- Connected component analysis
-- Predicate frequency analysis
-- Entity type distribution
-- Orphan movie detection and cleanup
+### Graph Structure Statistics
+
+| Metric | Value |
+|--------|-------|
+| Connected Components | 1 (fully connected) |
+| Graph Density | 5.05 × 10⁻⁵ |
+| Average Degree | 5.5 |
+| Leaf Nodes | 38.6% (primarily literals) |
+| Sink Nodes | 45% |
+| Hub Nodes (top 1%) | 6,656 |
+| Max Out-Degree | 787 (prolific actor) |
+
+### Entity Type Distribution
+
+| Type | Count |
+|------|-------|
+| `schema:PerformanceRole` | 232,492 |
+| `schema:Movie` | 50,756 |
+| `schema:ImageObject` | 36,844 |
+| `schema:Person` | 16,994 |
+| Blank Nodes | 253,369 (38.4%) |
+
+**Top Predicates** (72% of all triples): `schema:actor`, `rdf:type`, `schema:performerIn`, `schema:characterName`
+
+---
+
+## 🎯 Applications
+
+IMDB4M enables research across multiple domains:
+
+### 🎥 Movie Recommendation
+- Content-based recommendation using visual style of posters and acoustic features of soundtracks
+- Extract audio embeddings from linked YouTube videos
+- Temporal visual features from trailers for queries like "find movies with high-paced action sequences and electronic scores"
+
+### 🔍 Multimodal Question Answering
+- Knowledge Graph Question Answering (KGQA) with perceptual grounding
+- Multimodal RAG systems answering "Who is the actor shown in this scene, and what other movies have they directed?"
+- Complex queries involving reified relations ("Who played character X in movie Y?")
+
+### 🧩 Multimodal Knowledge Graph Completion
+- **Link Prediction**: Infer `schema:genre` from poster and plot
+- **Entity Alignment**: Cross-platform alignment via visual similarity of actor portraits
+- **KG Embeddings**: Train multimodal embedding models (e.g., TransE with visual features)
 
 ---
 
@@ -433,7 +552,9 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is released under a **Creative Commons Attribution-NonCommercial (CC-BY-NC)** license to ensure alignment with IMDb's terms of use, which restrict data utilisation to academic and non-commercial settings.
+
+IMDB4M functions strictly as a structural indexing layer rather than a media hosting platform. The resource does not store or redistribute any raw multimedia files—only external URIs that reference the original content hosted on IMDb and YouTube.
 
 ---
 
@@ -443,12 +564,23 @@ If you use IMDB4M in your research, please cite:
 
 ```bibtex
 @inproceedings{imdb4m2026,
-  title={IMDB4M: A Large-Scale Multi-Modal Knowledge Graph of Movies},
-  author={[Authors]},
+  title={{IMDB4M}: A Large-Scale Multi-Modal Knowledge Graph of Movies},
+  author={Anonymous},
   booktitle={Extended Semantic Web Conference (ESWC) - Resource Track},
-  year={2026}
+  year={2026},
+  note={Under review}
 }
 ```
+
+### Comparison with Related Work
+
+| Dataset | Text | Image | Video | Audio | #Entity | #Relation |
+|---------|------|-------|-------|-------|---------|-----------|
+| MKG-W | 14,123 | 14,463 | – | – | 15,000 | 169 |
+| MKG-Y | 12,305 | 14,244 | – | – | 15,000 | 28 |
+| TIVA-KG | 11,858 | 11,636 | 10,269 | 2,441 | 11,858 | 16 |
+| KVC16K | 14,822 | 14,822 | 14,822 | 14,822 | 16,015 | 4 |
+| **IMDB4M** | **385,595** | **37,220** | **3,983** | **4,211** | **660,039** | **58** |
 
 ---
 

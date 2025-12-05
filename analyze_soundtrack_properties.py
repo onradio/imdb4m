@@ -171,7 +171,7 @@ def main():
     """
     Main function to analyze all soundtrack HTML files.
     """
-    base_dir = Path('/home/ioannis/PycharmProjects/imdb4m/scraper/movies')
+    base_dir = Path('/home/ioannis/PycharmProjects/imdb4m/extractor/movies')
     
     # Find all soundtrack HTML files
     sound_files = list(base_dir.glob('**/movie_soundtrack/*_sound.html'))

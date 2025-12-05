@@ -8,18 +8,18 @@ from pathlib import Path
 from typing import Iterable, Set
 
 try:
-    from scraper.download_imdb_movie import (
+    from extractor.download_imdb_movie import (
         download_imdb_movie,
         download_imdb_soundtrack,
         extract_movie_id,
     )
 except ModuleNotFoundError:  # pragma: no cover
-    # Allow running as `python scraper/download_from_csv.py`
+    # Allow running as `python extractor/download_from_csv.py`
     import sys
     from pathlib import Path as _Path
 
     sys.path.append(str(_Path(__file__).resolve().parent.parent))
-    from scraper.download_imdb_movie import (
+    from extractor.download_imdb_movie import (
         download_imdb_movie,
         download_imdb_soundtrack,
         extract_movie_id,

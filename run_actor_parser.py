@@ -32,7 +32,7 @@ from parse_imdb_actor import SCHEMA  # type: ignore  # Reuse shared namespace de
 
 def extract_nm_id(html_path: Path) -> str:
     """Extract IMDb nm ID from HTML file path or content."""
-    # Try to extract from parent directory name (e.g., scraper/movies/actors/nm0000138/actor.html)
+    # Try to extract from parent directory name (e.g., extractor/movies/actors/nm0000138/actor.html)
     parent = html_path.parent
     if parent.name.startswith("nm") and re.match(r"^nm\d+$", parent.name):
         return parent.name
@@ -259,7 +259,7 @@ def main() -> int:
     parser.add_argument(
         "--actors-root",
         type=Path,
-        default=PROJECT_ROOT / "scraper" / "movies" / "actors",
+        default=PROJECT_ROOT / "extractor" / "movies" / "actors",
         help="Root directory that holds actor folders (used with --all-actors).",
     )
     parser.add_argument(

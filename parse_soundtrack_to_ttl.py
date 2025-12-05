@@ -410,7 +410,7 @@ def main():
     parser.add_argument(
         '--input-dir',
         type=Path,
-        default=Path('/home/ioannis/PycharmProjects/imdb4m/scraper/movies'),
+        default=Path('/home/ioannis/PycharmProjects/imdb4m/extractor/movies'),
         help='Base directory containing movie folders'
     )
     parser.add_argument(

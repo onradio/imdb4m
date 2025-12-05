@@ -189,7 +189,7 @@ def main() -> int:
     parser.add_argument(
         "--movies-root",
         type=Path,
-        default=PROJECT_ROOT / "scraper" / "movies",
+        default=PROJECT_ROOT / "extractor" / "movies",
         help="Root directory that holds movie folders (used with --all-movies).",
     )
     parser.add_argument(
