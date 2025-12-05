@@ -1,11 +1,12 @@
 <div align="center">
 
+<img src="logo.jpg" alt="IMDB4M Logo" width="400">
+
 # 🎬 IMDB4M
 
 ### A Large-Scale Quad-Modal Knowledge Graph of Movies
 
-[![ESWC 2026](https://img.shields.io/badge/ESWC-2026-blueviolet?style=for-the-badge)](https://2026.eswc-conferences.org/)
-[![Resource Track](https://img.shields.io/badge/Resource-Track-orange?style=for-the-badge)]()
+[![Under Review](https://img.shields.io/badge/Under-Review-blueviolet?style=for-the-badge)]()
 [![RDF](https://img.shields.io/badge/RDF-Turtle-00ADD8?style=for-the-badge&logo=semantic-web)](https://www.w3.org/TR/turtle/)
 [![Schema.org](https://img.shields.io/badge/Schema.org-Vocabulary-red?style=for-the-badge)](https://schema.org/)
 [![CC-BY-NC](https://img.shields.io/badge/License-CC--BY--NC-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -30,7 +31,7 @@
 
 ## 📖 Overview
 
-**IMDB4M** is a large-scale, **quad-modal** knowledge graph for the movie domain that overcomes the bimodal bottleneck of existing multimodal knowledge graphs. This resource was developed for submission to the **Extended Semantic Web Conference (ESWC) 2026 Resource Track**.
+**IMDB4M** is a large-scale, **quad-modal** knowledge graph for the movie domain that overcomes the bimodal bottleneck of existing multimodal knowledge graphs.
 
 IMDB4M comprehensively harmonises symbolic metadata of movies and actors and integrates them with **four distinct modalities**: text (plots, comments, reviews), images (posters, stills), video (trailers), and audio (soundtracks). Unlike prior resources often constructed with ad-hoc vocabularies, IMDB4M is engineered on **schema.org** to ensure semantic interoperability, discoverability, and structural quality.
 
@@ -99,31 +100,9 @@ IMDB4M uses [Schema.org](https://schema.org/) vocabulary as its primary ontology
 2. **Expressiveness**: Rich typed representations via `schema:ImageObject`, `schema:VideoObject`, `schema:MusicRecording`
 3. **Interoperability**: Widely adopted across the Web of Data, natively used by IMDb and YouTube
 
-```
-                          ┌─────────────────┐
-                          │  schema:Movie   │
-                          └────────┬────────┘
-                                   │
-    ┌──────────────────────────────┼──────────────────────────────┐
-    │              │               │               │              │
-    ▼              ▼               ▼               ▼              ▼
-┌────────────┐ ┌───────────┐ ┌────────────┐ ┌───────────┐ ┌────────────────┐
-│Performance │ │ImageObject│ │VideoObject │ │  Review   │ │MusicRecording  │
-│   Role     │ │ (Stills)  │ │ (Trailers) │ │(Ratings)  │ │ (Soundtracks)  │
-└─────┬──────┘ └─────┬─────┘ └────────────┘ └───────────┘ └───────┬────────┘
-      │              │                                            │
-      ▼              ▼                                            ▼
-┌──────────┐  ┌───────────┐                          ┌───────────────────────┐
-│  Person  │  │mainEntity │                          │ schema:MusicComposition│
-│ (Actor)  │  │ (Person)  │                          └───────────┬───────────┘
-└────┬─────┘  └───────────┘                                      │
-     │                                               ┌───────────┴───────────┐
-     ▼                                               ▼                       ▼
-┌─────────────────────────┐                   ┌───────────┐           ┌───────────┐
-│ schema:performerIn      │                   │ composer  │           │ lyricist  │
-│ (Actor Filmographies)   │                   │ (Person)  │           │ (Person)  │
-└─────────────────────────┘                   └───────────┘           └───────────┘
-```
+<div align="center">
+<img src="imdb_example.png" alt="IMDB4M Knowledge Graph Schema" width="800">
+</div>
 
 ### Schema Design Principles
 
@@ -565,8 +544,7 @@ If you use IMDB4M in your research, please cite:
 ```bibtex
 @inproceedings{imdb4m2026,
   title={{IMDB4M}: A Large-Scale Multi-Modal Knowledge Graph of Movies},
-  author={Anonymous},
-  booktitle={Extended Semantic Web Conference (ESWC) - Resource Track},
+  author={Reklos, Ioannis and de Berardinis, Jacopo and Simperl, Elena and Mero{\~n}o-Pe{\~n}uela, Albert},
   year={2026},
   note={Under review}
 }
