@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB4M - A Large-Scale Quad-Modal Knowledge Graph of Movies</title>
+    <meta name="description" content="IMDB4M is a large-scale, quad-modal knowledge graph integrating text, images, video, and audio modalities for 376 fully-annotated movies. Built on schema.org with 1.8M+ RDF triples.">
+    <meta property="og:title" content="IMDB4M - Quad-Modal Knowledge Graph of Movies">
+    <meta property="og:description" content="The first knowledge graph combining text, images, video, and audio modalities for the movie domain. 1.8M+ RDF triples, 376 movies, 5,484 artists.">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IMDB4M - Quad-Modal Knowledge Graph of Movies">
+    <meta name="twitter:description" content="The first knowledge graph combining text, images, video, and audio modalities for the movie domain.">
+    <meta name="twitter:image" content="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4BA;
+            --gold-dark: #996515;
+            --deep-navy: #0a0f1a;
+            --navy: #121a2e;
+            --navy-light: #1a2540;
+            --slate: #2d3a52;
+            --silver: #8892a4;
+            --pearl: #e8eaf0;
+            --white: #ffffff;
+            --red-accent: #e63946;
+            --cyan-accent: #4ecdc4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--deep-navy);
+            color: var(--pearl);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Film grain overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: linear-gradient(to bottom, rgba(10, 15, 26, 0.95), transparent);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--silver);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 6rem 2rem;
+            position: relative;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(78, 205, 196, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(18, 26, 46, 1) 0%, var(--deep-navy) 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(212, 175, 55, 0.01) 2px,
+                rgba(212, 175, 55, 0.01) 4px
+            );
+            pointer-events: none;
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .badge {
+            padding: 0.4rem 1rem;
+            border-radius: 2px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid;
+        }
+
+        .badge-rdf {
+            background: rgba(78, 205, 196, 0.15);
+            border-color: rgba(78, 205, 196, 0.4);
+            color: var(--cyan-accent);
+        }
+
+        .badge-schema {
+            background: rgba(230, 57, 70, 0.15);
+            border-color: rgba(230, 57, 70, 0.4);
+            color: #ff6b6b;
+        }
+
+        .hero-logo {
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .logo-image {
+            max-width: 420px;
+            width: 90%;
+            height: auto;
+            border-radius: 16px;
+            background: var(--white);
+            padding: 1.5rem;
+            box-shadow: 
+                0 25px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.02) translateY(-4px);
+            box-shadow: 
+                0 35px 80px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(212, 175, 55, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .logo-image {
+                max-width: 300px;
+                padding: 1rem;
+            }
+        }
+
+        .footer-logo-img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 8px;
+            background: var(--white);
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4rem, 12vw, 9rem);
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -2px;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--gold-light) 50%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.1); }
+        }
+
+        .hero-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--silver);
+            font-weight: 400;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            font-size: 1.15rem;
+            color: var(--silver);
+            margin-bottom: 3rem;
+            line-height: 1.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--gold);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--silver);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--deep-navy);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--pearl);
+            border: 1px solid var(--slate);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 8rem 4rem;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--silver);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Modalities Section */
+        #modalities {
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--navy) 100%);
+        }
+
+        .modalities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .modality-card {
+            background: linear-gradient(145deg, var(--navy-light) 0%, var(--navy) 100%);
+            border: 1px solid var(--slate);
+            border-radius: 4px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .modality-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .modality-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .modality-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .modality-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .modality-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+
+        .modality-coverage {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .modality-desc {
+            font-size: 0.9rem;
+            color: var(--silver);
+        }
+
+        /* Stats Section */
+        #stats {
+            background: var(--navy);
+        }
+
+        .stats-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 4rem;
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 1.25rem 2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--slate);
+        }
+
+        .stats-table th {
+            font-weight: 600;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        .stats-table td {
+            font-size: 1rem;
+            color: var(--pearl);
+        }
+
+        .stats-table td:last-child {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--cyan-accent);
+            text-align: right;
+        }
+
+        .stats-table tr:hover {
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            margin-top: 4rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem 1.5rem;
+            text-align: center;
+            border: 1px solid var(--slate);
+        }
+
+        .comparison-table th {
+            background: var(--navy-light);
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+        }
+
+        .comparison-table td {
+            color: var(--silver);
+        }
+
+        .comparison-table tr:last-child {
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .comparison-table tr:last-child td {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .highlight-cell {
+            color: var(--gold) !important;
+            font-weight: 600;
+        }
+
+        /* Schema Section */
+        #schema {
+            background: linear-gradient(180deg, var(--navy) 0%, var(--deep-navy) 100%);
+        }
+
+        .schema-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .schema-diagram {
+            background: var(--navy-light);
+            border: 1px solid var(--slate);
+            border-radius: 4px;
+            padding: 3rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            overflow-x: auto;
+            white-space: pre;
+            color: var(--pearl);
+        }
+
+        .schema-highlight {
+            color: var(--gold);
+        }
+
+        .schema-type {
+            color: var(--cyan-accent);
+        }
+
+        .principles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .principle-card {
+            background: var(--navy-light);
+            border-left: 3px solid var(--gold);
+            padding: 2rem;
+        }
+
+        .principle-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+
+        .principle-desc {
+            font-size: 0.9rem;
+            color: var(--silver);
+        }
+
+        /* Validation Section */
+        #validation {
+            background: var(--deep-navy);
+        }
+
+        .validation-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+        }
+
+        .validation-card {
+            background: linear-gradient(145deg, var(--navy) 0%, var(--navy-light) 100%);
+            border-radius: 4px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid var(--slate);
+        }
+
+        .validation-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 3rem;
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .validation-label {
+            font-size: 0.85rem;
+            color: var(--silver);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Applications Section */
+        #applications {
+            background: linear-gradient(180deg, var(--deep-navy) 0%, var(--navy) 100%);
+        }
+
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .app-card {
+            background: var(--navy-light);
+            border: 1px solid var(--slate);
+            border-radius: 4px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .app-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-4px);
+        }
+
+        .app-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .app-desc {
+            font-size: 0.95rem;
+            color: var(--silver);
+            line-height: 1.8;
+        }
+
+        .app-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .app-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            color: var(--silver);
+        }
+
+        .app-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+        }
+
+        /* Citation Section */
+        #citation {
+            background: var(--navy);
+            text-align: center;
+        }
+
+        .citation-box {
+            background: var(--navy-light);
+            border: 1px solid var(--slate);
+            border-radius: 4px;
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .citation-code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--pearl);
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+
+        .citation-key {
+            color: var(--gold);
+        }
+
+        .citation-field {
+            color: var(--cyan-accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-navy);
+            padding: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--slate);
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--silver);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        .footer-note {
+            color: var(--silver);
+            font-size: 0.85rem;
+        }
+
+        .footer-note a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .license-badge {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.5rem 1.5rem;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--gold);
+            border-radius: 2px;
+            font-size: 0.8rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .modalities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .principles-grid,
+            .validation-grid,
+            .applications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            section {
+                padding: 5rem 2rem;
+            }
+
+            nav {
+                padding: 1rem 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .modalities-grid,
+            .principles-grid,
+            .validation-grid,
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                gap: 2rem;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .comparison-table {
+                font-size: 0.75rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">IMDB4M</a>
+        <ul class="nav-links">
+            <li><a href="#modalities">Modalities</a></li>
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#schema">Schema</a></li>
+            <li><a href="#validation">Validation</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#citation">Citation</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-logo">
+            <img src="logo.jpg" alt="IMDB4M Logo - A Large-Scale Multi-Modal Knowledge Graph of Movies" class="logo-image">
+        </div>
+        <div class="badge-row">
+            <span class="badge badge-rdf">RDF / Turtle</span>
+            <span class="badge badge-schema">Schema.org</span>
+        </div>
+        <p class="hero-description">
+            The first knowledge graph to combine a culturally rich domain with comprehensive coverage of 
+            <strong>text, images, video, and audio</strong>. Engineered on schema.org 
+            for semantic interoperability, discoverability, and structural quality.
+        </p>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-value">1.8M+</span>
+                <span class="stat-label">RDF Triples</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">376</span>
+                <span class="stat-label">Seed Movies</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">5,484</span>
+                <span class="stat-label">Artists</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value">93.6%</span>
+                <span class="stat-label">Quad-Modal</span>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="https://github.com/onradio/imdb4m" class="btn btn-primary">View on GitHub</a>
+            <a href="#schema" class="btn btn-secondary">Explore Schema</a>
+        </div>
+    </section>
+
+    <section id="modalities">
+        <div class="section-header">
+            <span class="section-tag">Multimodal Coverage</span>
+            <h2 class="section-title">Four Modalities, One Graph</h2>
+            <p class="section-subtitle">
+                IMDB4M overcomes the bimodal bottleneck of existing knowledge graphs by integrating 
+                text, images, video, and audio as first-class semantic objects.
+            </p>
+        </div>
+        <div class="modalities-grid">
+            <div class="modality-card">
+                <span class="modality-icon">📝</span>
+                <h3 class="modality-title">Text</h3>
+                <div class="modality-coverage">100%</div>
+                <p class="modality-desc">Plots, reviews, keywords, genres, cast bios</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">48.6 avg/movie</p>
+            </div>
+            <div class="modality-card">
+                <span class="modality-icon">🖼️</span>
+                <h3 class="modality-title">Images</h3>
+                <div class="modality-coverage">100%</div>
+                <p class="modality-desc">Stills, posters with captions & entity links</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">7.9 avg/movie</p>
+            </div>
+            <div class="modality-card">
+                <span class="modality-icon">🎬</span>
+                <h3 class="modality-title">Video</h3>
+                <div class="modality-coverage">99.2%</div>
+                <p class="modality-desc">Trailers with thumbnails, duration, dates</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">0.99 avg/movie</p>
+            </div>
+            <div class="modality-card">
+                <span class="modality-icon">🎵</span>
+                <h3 class="modality-title">Audio</h3>
+                <div class="modality-coverage">94.1%</div>
+                <p class="modality-desc">Soundtracks with performers & composers</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">11.2 avg/movie</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="section-header">
+            <span class="section-tag">Knowledge Graph</span>
+            <h2 class="section-title">By the Numbers</h2>
+            <p class="section-subtitle">
+                A comprehensive resource comprising over 1.8 million RDF triples describing movies, 
+                artists, and their multimodal content.
+            </p>
+        </div>
+        <div class="stats-container">
+            <table class="stats-table">
+                <tr>
+                    <th>Metric</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>RDF Triples</td>
+                    <td>1,815,922</td>
+                </tr>
+                <tr>
+                    <td>Unique Nodes</td>
+                    <td>660,039</td>
+                </tr>
+                <tr>
+                    <td>Unique Predicates</td>
+                    <td>58</td>
+                </tr>
+                <tr>
+                    <td>Seed Movies (fully annotated)</td>
+                    <td>376</td>
+                </tr>
+                <tr>
+                    <td>Total Movies (after expansion)</td>
+                    <td>50,756</td>
+                </tr>
+                <tr>
+                    <td>Artists (actors, directors, composers)</td>
+                    <td>5,484</td>
+                </tr>
+                <tr>
+                    <td>PerformanceRole Instances</td>
+                    <td>232,492</td>
+                </tr>
+                <tr>
+                    <td>ImageObjects</td>
+                    <td>36,844</td>
+                </tr>
+                <tr>
+                    <td>Wikidata Alignments (Artists)</td>
+                    <td>4,284 (78.1%)</td>
+                </tr>
+                <tr>
+                    <td>Entity Types</td>
+                    <td>17</td>
+                </tr>
+            </table>
+
+            <div class="comparison-section">
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--white); margin-bottom: 2rem; text-align: center;">
+                    Comparison with Related Work
+                </h3>
+                <table class="comparison-table">
+                    <tr>
+                        <th>Dataset</th>
+                        <th>Text</th>
+                        <th>Image</th>
+                        <th>Video</th>
+                        <th>Audio</th>
+                        <th>#Entity</th>
+                        <th>#Relation</th>
+                    </tr>
+                    <tr>
+                        <td>MKG-W</td>
+                        <td>14,123</td>
+                        <td>14,463</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>15,000</td>
+                        <td>169</td>
+                    </tr>
+                    <tr>
+                        <td>MKG-Y</td>
+                        <td>12,305</td>
+                        <td>14,244</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>15,000</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>TIVA-KG</td>
+                        <td>11,858</td>
+                        <td>11,636</td>
+                        <td>10,269</td>
+                        <td>2,441</td>
+                        <td>11,858</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>KVC16K</td>
+                        <td>14,822</td>
+                        <td>14,822</td>
+                        <td>14,822</td>
+                        <td>14,822</td>
+                        <td>16,015</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IMDB4M</strong></td>
+                        <td class="highlight-cell">385,595</td>
+                        <td class="highlight-cell">37,220</td>
+                        <td class="highlight-cell">3,983</td>
+                        <td class="highlight-cell">4,211</td>
+                        <td class="highlight-cell">660,039</td>
+                        <td class="highlight-cell">58</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="schema">
+        <div class="section-header">
+            <span class="section-tag">Ontology</span>
+            <h2 class="section-title">Schema.org Foundation</h2>
+            <p class="section-subtitle">
+                Built on widely adopted vocabulary standards for semantic interoperability 
+                and Web-scale discoverability.
+            </p>
+        </div>
+        <div class="schema-container">
+            <div class="schema-diagram" style="background: transparent; border: none; padding: 0; text-align: center;">
+                <img src="imdb_example.png" alt="IMDB4M Knowledge Graph Schema" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);">
+            </div>
+
+            <div class="principles-grid">
+                <div class="principle-card">
+                    <h4 class="principle-title">PerformanceRole Pattern</h4>
+                    <p class="principle-desc">
+                        Actor participation captures actor, movie, and character name together, 
+                        preserving identity separately from fictional roles.
+                    </p>
+                </div>
+                <div class="principle-card">
+                    <h4 class="principle-title">N-ary Structures</h4>
+                    <p class="principle-desc">
+                        Typed blank nodes with xsd:date, xsd:dateTime, xsd:duration, xsd:integer, 
+                        and xsd:decimal for machine-interpretable values.
+                    </p>
+                </div>
+                <div class="principle-card">
+                    <h4 class="principle-title">Two-level Audio</h4>
+                    <p class="principle-desc">
+                        schema:MusicRecording for performed audio artifacts and 
+                        schema:MusicComposition for the underlying musical work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="validation">
+        <div class="section-header">
+            <span class="section-tag">Quality Assurance</span>
+            <h2 class="section-title">Validated & Verified</h2>
+            <p class="section-subtitle">
+                Systematic validation through SPARQL-based question answering and 
+                human-in-the-loop link verification.
+            </p>
+        </div>
+        <div class="validation-grid">
+            <div class="validation-card">
+                <div class="validation-value">94.4%</div>
+                <div class="validation-label">F1 Score</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">99.3%</div>
+                <div class="validation-label">Precision</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">90.0%</div>
+                <div class="validation-label">Recall</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">99.3%</div>
+                <div class="validation-label">Query Success</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">87.2%</div>
+                <div class="validation-label">YouTube Link Accuracy</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">0.993</div>
+                <div class="validation-label">Levenshtein Similarity</div>
+            </div>
+        </div>
+        <p style="text-align: center; color: var(--silver); max-width: 700px; margin: 0 auto;">
+            Evaluated against <strong style="color: var(--gold);">18 competency questions</strong> formalized as SPARQL queries, 
+            covering directors, writers, actors, ratings, plots, trailers, soundtracks, images, and more.
+        </p>
+    </section>
+
+    <section id="applications">
+        <div class="section-header">
+            <span class="section-tag">Use Cases</span>
+            <h2 class="section-title">Research Applications</h2>
+            <p class="section-subtitle">
+                IMDB4M enables research across multiple domains in the Semantic Web 
+                and Multimedia communities.
+            </p>
+        </div>
+        <div class="applications-grid">
+            <div class="app-card">
+                <div class="app-icon">🎥</div>
+                <h3 class="app-title">Movie Recommendation</h3>
+                <p class="app-desc">
+                    Content-based recommendation using visual style of posters and acoustic 
+                    features of soundtracks.
+                </p>
+                <ul class="app-list">
+                    <li>Audio embeddings from linked YouTube videos</li>
+                    <li>Visual style analysis of movie posters</li>
+                    <li>Temporal features from trailers</li>
+                </ul>
+            </div>
+            <div class="app-card">
+                <div class="app-icon">🔍</div>
+                <h3 class="app-title">Multimodal QA</h3>
+                <p class="app-desc">
+                    Knowledge Graph Question Answering (KGQA) with perceptual grounding 
+                    and RAG systems.
+                </p>
+                <ul class="app-list">
+                    <li>Joint reasoning over symbolic and perceptual modalities</li>
+                    <li>Complex queries with reified relations</li>
+                    <li>Multimodal RAG benchmarking</li>
+                </ul>
+            </div>
+            <div class="app-card">
+                <div class="app-icon">🧩</div>
+                <h3 class="app-title">KG Completion</h3>
+                <p class="app-desc">
+                    Multimodal Knowledge Graph Completion including link prediction 
+                    and entity alignment.
+                </p>
+                <ul class="app-list">
+                    <li>Infer genre from poster and plot</li>
+                    <li>Cross-platform entity alignment</li>
+                    <li>Multimodal KG embeddings (TransE+)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="citation">
+        <div class="section-header">
+            <span class="section-tag">Reference</span>
+            <h2 class="section-title">Cite This Work</h2>
+            <p class="section-subtitle">
+                If you use IMDB4M in your research, please cite our paper.
+            </p>
+        </div>
+        <div class="citation-box">
+            <code class="citation-code"><span class="citation-key">@inproceedings</span>{imdb4m2026,
+  <span class="citation-field">title</span>     = {{IMDB4M}: A Large-Scale Multi-Modal Knowledge Graph of Movies},
+  <span class="citation-field">author</span>    = {Reklos, Ioannis and de Berardinis, Jacopo and Simperl, Elena and Mero{\~n}o-Pe{\~n}uela, Albert},
+  <span class="citation-field">year</span>      = {2026},
+  <span class="citation-field">note</span>      = {Under review}
+}</code>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="https://github.com/onradio/imdb4m" class="btn btn-primary">Download Dataset</a>
+        </div>
+    </section>
+
+    <footer>
+        <img src="logo.jpg" alt="IMDB4M" class="footer-logo-img">
+        <div class="footer-links">
+            <a href="https://github.com/onradio/imdb4m">GitHub</a>
+            <a href="https://schema.org/">Schema.org</a>
+            <a href="https://www.wikidata.org/">Wikidata</a>
+        </div>
+        <p class="footer-note">
+            Made with ❤️ for the Semantic Web community
+        </p>
+        <div class="license-badge">CC-BY-NC License</div>
+    </footer>
+
+    <script>
+        // Smooth reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.modality-card, .validation-card, .app-card, .principle-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 15, 26, 0.98)';
+            } else {
+                nav.style.background = 'linear-gradient(to bottom, rgba(10, 15, 26, 0.95), transparent)';
+            }
+        });
+    </script>
+</body>
+</html>
+
