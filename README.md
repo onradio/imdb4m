@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.jpg" alt="IMDB4M Logo" width="400">
+<img src="docs/logo.jpg" alt="IMDB4M Logo" width="400">
 
 # 🎬 IMDB4M
 
@@ -101,7 +101,7 @@ IMDB4M uses [Schema.org](https://schema.org/) vocabulary as its primary ontology
 3. **Interoperability**: Widely adopted across the Web of Data, natively used by IMDb and YouTube
 
 <div align="center">
-<img src="assets/imdb_example.png" alt="IMDB4M Knowledge Graph Schema" width="800">
+<img src="docs/imdb_example.png" alt="IMDB4M Knowledge Graph Schema" width="800">
 </div>
 
 ### Schema Design Principles
