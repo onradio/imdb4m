@@ -1,0 +1,170 @@
+# SPARQL Queries for QA on IMDB Movie TTL files
+# Each query corresponds to a question in questions.txt
+# Queries are generic and work with any movie TTL file
+
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Q1: Who directed the movie?
+SELECT ?movieName ?directorName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:director ?director .
+    ?director schema:name ?directorName .
+}
+
+# Q2: Who wrote the script for the movie?
+SELECT ?movieName ?writerName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:creator ?writer .
+    ?writer schema:name ?writerName .
+}
+
+# Q3: Who are the actors of the movie?
+SELECT ?movieName ?actorName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:actor ?actor .
+    ?actor schema:name ?actorName .
+}
+
+# Q4: What is the rating of the movie?
+SELECT ?movieName ?ratingValue
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:aggregateRating ?rating .
+    ?rating a schema:AggregateRating ;
+            schema:ratingValue ?ratingValue .
+    FILTER NOT EXISTS { ?rating schema:name "Metacritic Score" }
+}
+
+# Q5: How many people have rated the movie?
+SELECT ?movieName ?ratingCount
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:aggregateRating ?rating .
+    ?rating a schema:AggregateRating ;
+            schema:ratingCount ?ratingCount .
+}
+
+# Q6: What is the plot of the movie?
+SELECT ?movieName ?plot
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:abstract ?plot .
+}
+
+# Q7: When was the movie released?
+SELECT ?movieName ?releaseDate
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:datePublished ?releaseDate .
+}
+
+# Q8: What is the runtime of the movie?
+SELECT ?movieName ?duration
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:duration ?duration .
+}
+
+# Q9: What is the Metacritic Score of the movie?
+SELECT ?movieName ?metacriticScore
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:aggregateRating ?rating .
+    ?rating schema:name "Metacritic Score" ;
+            schema:ratingValue ?metacriticScore .
+}
+
+# Q10: What are the keywords associated with the movie?
+SELECT ?movieName ?keywords
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:keywords ?keywords .
+}
+
+# Q11: What is the budget of the movie?
+SELECT ?movieName ?budgetValue ?currency ?budgetDescription
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:productionBudget ?budget .
+    ?budget schema:value ?budgetValue ;
+            schema:currency ?currency ;
+            schema:description ?budgetDescription .
+}
+
+# Q12: What is the trailer of the movie?
+SELECT ?movieName ?trailerUrl ?trailerName ?trailerDescription
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:trailer ?trailer .
+    ?trailer schema:embedUrl ?trailerUrl .
+    OPTIONAL { ?trailer schema:name ?trailerName }
+    OPTIONAL { ?trailer schema:description ?trailerDescription }
+}
+
+# Q13: What is the genre of the movie?
+SELECT ?movieName ?genre
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:genre ?genre .
+}
+
+# Q14: What is the poster of the movie?
+SELECT ?movieName ?posterUrl
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:thumbnail ?posterUrl .
+}
+
+# Q15: Which are the production companies of the movie?
+SELECT ?movieName ?companyName ?companyUrl
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:productionCompany ?company .
+    ?company schema:name ?companyName .
+    OPTIONAL { ?company schema:url ?companyUrl }
+}
+
+# Q16: What are alternate names of the movie?
+SELECT ?movieName ?alternateName
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:alternateName ?alternateName .
+}
+
+# Q17: What is the content rating of the movie?
+SELECT ?movieName ?contentRating
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:contentRating ?contentRating .
+}
+
+# Q18: Which are the images of the movie and their captions?
+SELECT ?movieName ?imageUrl ?caption
+WHERE {
+    ?movie a schema:Movie ;
+           schema:name ?movieName ;
+           schema:image ?image .
+    ?image schema:url ?imageUrl .
+    OPTIONAL { ?image schema:caption ?caption }
+}

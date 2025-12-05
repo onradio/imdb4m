@@ -1,0 +1,87 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# SOUNDTRACKS
+# ==============================================================================
+
+<https://www.imdb.com/title/tt0120338/> schema:audio
+    [
+        a schema:MusicRecording ;
+        schema:name "My Heart Will Go On" ;
+        schema:byArtist <https://www.imdb.com/name/nm0001144/> ; # Céline Dion
+        schema:producer <https://www.imdb.com/name/nm0000035/>, # James Horner
+                        <https://www.imdb.com/name/nm0290788/> ; # Simon Franglen
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "My Heart Will Go On" ;
+            schema:composer <https://www.imdb.com/name/nm0000035/> ; # James Horner
+            schema:lyricist <https://www.imdb.com/name/nm0421263/> ; # Will Jennings
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Come Josephine, in My Flying Machine" ;
+        schema:byArtist <https://www.imdb.com/name/nm0000138/> ; # Leonardo DiCaprio
+        schema:producer <https://www.imdb.com/name/nm0743919> ; # William Ross
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Come Josephine, in My Flying Machine" ;
+            schema:author <https://www.imdb.com/name/nm0279494/>,  # Fred Fisher
+                          <https://www.imdb.com/name/nm0116890/> ; # Al Bryan
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Blue Danube" ;
+        schema:byArtist <https://www.imdb.com/name/nm9200859/> ; # I Salonisti
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Blue Danube" ;
+            schema:composer <https://www.imdb.com/name/nm0006310/> ; # Johann Strauss
+        ] ;
+    ],
+    [
+        a schema:MusicRecording ;
+        schema:name "Nearer My God To Thee" ;
+        schema:byArtist <https://www.imdb.com/name/nm9200859/> ; # I Salonisti
+        schema:producer <https://www.imdb.com/name/nm0368229/> ; # Lorenz Hasler
+        schema:recordingOf
+        [
+            a schema:MusicComposition ;
+            schema:name "Nearer My God To Thee" ;
+            schema:composer <https://www.imdb.com/name/nm1131663/>, # Lowell Mason
+                        <https://www.imdb.com/name/nm1131805/> ; # Sarah F. Adams
+        ] ;
+    ] .
+    
+# --- Define People (Composers, Performers, etc.) ---
+
+<https://www.imdb.com/name/nm0000035/> a schema:Person ;
+    schema:name "James Horner" .
+<https://www.imdb.com/name/nm0421263/> a schema:Person ;
+    schema:name "Will Jennings" .
+<https://www.imdb.com/name/nm0001144/> a schema:Person ;
+    schema:name "Céline Dion" .
+<https://www.imdb.com/name/nm0290788/> a schema:Person ;
+    schema:name "Simon Franglen" .
+<https://www.imdb.com/name/nm0279494/> a schema:Person ;
+    schema:name "Fred Fisher" .
+<https://www.imdb.com/name/nm0116890/> a schema:Person ;
+    schema:name "Al Bryan" .
+<https://www.imdb.com/name/nm0006209/> a schema:Person ;
+    schema:name "Johann Strauss" .
+<https://www.imdb.com/name/nm1131663/> a schema:Person ;
+    schema:name "Lowell Mason" .
+<https://www.imdb.com/name/nm1131805/> a schema:Person ;
+    schema:name "Sarah F. Adams" .
+<https://www.imdb.com/name/nm0743919/> a schema:Person ;
+    schema:name "William Ross" .
+<https://www.imdb.com/name/nm9200859/> a schema:Person ;
+    schema:name "I Salonisti" .
+<https://www.imdb.com/name/nm0368229/> a schema:Person ;
+    schema:name "Lorenz Hasler" .
+# ==============================================================================

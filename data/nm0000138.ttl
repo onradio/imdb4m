@@ -1,0 +1,299 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ==============================================================================
+# LEONARDO DICAPRIO (schema:Person)
+# ==============================================================================
+
+<https://www.imdb.com/name/nm0000138/> a schema:Person ;
+    schema:name "Leonardo DiCaprio" ;
+    schema:url <https://www.imdb.com/name/nm0000138/> ;
+    schema:birthDate "1974-11-11"^^xsd:date ;
+    schema:jobTitle "Producer", "Actor", "Writer" ;
+    schema:alternateName "Leo", "Lenny D", "Leonardo Wilhelm DiCaprio" ;
+    schema:description "Few actors in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member of the sitcom Growing Pains (1985) and low budget horror movies, such as Critters 3 (1991), to a major teenage heartthrob in the 1990s, as the hunky lead actor in movies such as Romeo + Juliet (1996) and Titanic..." ;
+    schema:image <https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_.jpg> ;
+
+    schema:birthPlace [
+        a schema:Place ;
+        schema:description "Hollywood, Los Angeles, California, USA"
+    ] ;
+
+    schema:height [
+        a schema:QuantitativeValue ;
+        schema:value "1.83"^^xsd:decimal ;
+        schema:unitCode "MTR" ;
+        schema:description "6′ (1.83 m)"
+    ] ;
+    
+    schema:performerIn <https://www.imdb.com/title/tt1375666/>,    # Inception
+                       <https://www.imdb.com/title/tt0120338/>,    # Titanic
+                       <https://www.imdb.com/title/tt0407887/>,    # The Departed
+                       <https://www.imdb.com/title/tt0993846/>,    # The Wolf of Wall Street
+                       # More (With Character Roles)
+                       <https://www.imdb.com/title/tt7131622/>,    # Once Upon a Time... in Hollywood
+                       <https://www.imdb.com/title/tt10199110/>,    # Lil Dicky: Earth
+                       <https://www.imdb.com/title/tt1663202/>,    # The Revenant
+                       <https://www.imdb.com/title/tt4016250/>,    # The Audition
+                       <https://www.imdb.com/title/tt1343092/>,    # The Great Gatsby
+                       <https://www.imdb.com/title/tt1853728/>,    # Django Unchained
+                       <https://www.imdb.com/title/tt1616195/>,    # J. Edgar
+                       <https://www.imdb.com/title/tt1130884/>,    # Shutter Island
+                       <https://www.imdb.com/title/tt0959337/>,    # Revolutionary Road
+                       <https://www.imdb.com/title/tt0758774/> . # Body of Lies
+
+    schema:award [
+        a schema:Award ;
+        schema:name "Won 1 Oscar"
+    ] ;
+    schema:award [
+        a schema:Award ;
+        schema:description "110 wins & 285 nominations total"
+    ] ;
+
+    schema:additionalProperty [
+        a schema:PropertyValue ;
+        schema:name "Salary (Killers of the Flower Moon)" ;
+        schema:value [
+            a schema:MonetaryAmount ;
+            schema:currency "USD" ;
+            schema:value "30000000"^^xsd:integer
+        ]
+    ] ;
+
+    schema:video <https://www.imdb.com/video/vi2517485337/> ;
+
+    # Link to gallery images
+    schema:image <https://www.imdb.com/name/nm0000138/mediaviewer/rm2808983298/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm4088506370/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm659272962/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm642495746/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm3662329090/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm3511334146/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm3494556930/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm478656514/>,
+                 <https://www.imdb.com/name/nm0000138/mediaviewer/rm2244955649/> .
+
+# ==============================================================================
+# KNOWN FOR (schema:Movie definitions)
+# ==============================================================================
+
+<https://www.imdb.com/title/tt1375666/> a schema:Movie ;
+    schema:name "Inception" ;
+    schema:url <https://www.imdb.com/title/tt1375666/> .
+
+<https://www.imdb.com/title/tt0120338/> a schema:Movie ;
+    schema:name "Titanic" ;
+    schema:url <https://www.imdb.com/title/tt0120338/> .
+
+<https://www.imdb.com/title/tt0407887/> a schema:Movie ;
+    schema:name "The Departed" ;
+    schema:url <https://www.imdb.com/title/tt0407887/> .
+
+<https://www.imdb.com/title/tt0993846/> a schema:Movie ;
+    schema:name "The Wolf of Wall Street" ;
+    schema:url <https://www.imdb.com/title/tt0993846/> .
+
+<https://www.imdb.com/title/tt5537002/> a schema:Movie ;
+    schema:name "Killers of the Flower Moon" ;
+    schema:url <https://www.imdb.com/title/tt5537002/> .
+
+
+# ==============================================================================
+# MOVIE DEFINITIONS (With Character Roles)
+# ==============================================================================
+
+# Once Upon a Time... in Hollywood (2019)
+<https://www.imdb.com/title/tt7131622/> a schema:Movie ;
+    schema:name "Once Upon a Time... in Hollywood" ;
+    schema:url <https://www.imdb.com/title/tt7131622/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Rick Dalton"
+    ] .
+
+# Lil Dicky: Earth (2019)
+<https://www.imdb.com/title/tt10199110/> a schema:Movie ;
+    schema:name "Lil Dicky: Earth" ;
+    schema:url <https://www.imdb.com/title/tt10199110/> ;
+    schema:datePublished "2019"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Leo"
+    ] .
+
+# The Revenant (2015)
+<https://www.imdb.com/title/tt1663202/> a schema:Movie ;
+    schema:name "The Revenant" ;
+    schema:url <https://www.imdb.com/title/tt1663202/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Hugh Glass"
+    ] .
+
+# The Audition (2015)
+<https://www.imdb.com/title/tt4016250/> a schema:Movie ;
+    schema:name "The Audition" ;
+    schema:url <https://www.imdb.com/title/tt4016250/> ;
+    schema:datePublished "2015"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Leonardo DiCaprio"
+    ] .
+
+# The Great Gatsby (2013)
+<https://www.imdb.com/title/tt1343092/> a schema:Movie ;
+    schema:name "The Great Gatsby" ;
+    schema:url <https://www.imdb.com/title/tt1343092/> ;
+    schema:datePublished "2013"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Jay Gatsby"
+    ] .
+
+# Django Unchained (2012)
+<https://www.imdb.com/title/tt1853728/> a schema:Movie ;
+    schema:name "Django Unchained" ;
+    schema:url <https://www.imdb.com/title/tt1853728/> ;
+    schema:datePublished "2012"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Calvin J. Candie"
+    ] .
+
+# J. Edgar (2011)
+<https://www.imdb.com/title/tt1616195/> a schema:Movie ;
+    schema:name "J. Edgar" ;
+    schema:url <https://www.imdb.com/title/tt1616195/> ;
+    schema:datePublished "2011"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "J. Edgar Hoover"
+    ] .
+
+# Shutter Island (2010)
+<https://www.imdb.com/title/tt1130884/> a schema:Movie ;
+    schema:name "Shutter Island" ;
+    schema:url <https://www.imdb.com/title/tt1130884/> ;
+    schema:datePublished "2010"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Teddy Daniels"
+    ] .
+
+# Revolutionary Road (2008)
+<https://www.imdb.com/title/tt0959337/> a schema:Movie ;
+    schema:name "Revolutionary Road" ;
+    schema:url <https://www.imdb.com/title/tt0959337/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Frank Wheeler"
+    ] .
+
+# Body of Lies (2008)
+<https://www.imdb.com/title/tt0758774/> a schema:Movie ;
+    schema:name "Body of Lies" ;
+    schema:url <https://www.imdb.com/title/tt0758774/> ;
+    schema:datePublished "2008"^^xsd:gYear ;
+    schema:actor [
+        a schema:PerformanceRole ;
+        schema:actor <https://www.imdb.com/name/nm0000138/> ;
+        schema:characterName "Roger Ferris"
+    ] .
+
+# ==============================================================================
+# VIDEO (schema:VideoObject definition) 
+# ==============================================================================
+
+<https://www.imdb.com/video/vi2517485337/> a schema:VideoObject ;
+        schema:name "The Rise of Leonardo DiCaprio" ;
+        schema:description "IMDb breaks down the acting career of Academy Award-winning actor Leonardo DiCaprio from his early childhood parts in TV and commercials to his role in Martin Scorsese's 'Killers of the Flower Moon.'" ;
+        schema:embedUrl <https://www.imdb.com/video/vi2517485337/> ;
+        schema:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZmI2YzQzZDEtMTJkMS00NmNiLTk2NWYtYmQzYTc2ZmMxZGM1XkEyXkFqcGdeQXJoYW5uYWg@._V1_.jpg" ;
+        schema:duration "PT4M29S"^^xsd:duration ;
+        schema:uploadDate "2023-12-19T18:23:40Z"^^xsd:dateTime .
+
+# ==============================================================================
+# IMAGES (schema:ImageObject definitions)
+# ==============================================================================
+
+<https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_.jpg> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjI0MTg3MzI0M15BMl5BanBnXkFtZTcwMzQyODU2Mw@@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio at an event for Inception (2010)" ;
+    schema:height "400"^^xsd:integer ;
+    schema:width "297"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm2808983298/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZmVkZWFhZjMtMDU3OC00OWQ4LTk2NGEtN2Q1ODhjYzI1ZTg0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio and Martin Scorsese in Method Director (2025)" ;
+    schema:height "2160"^^xsd:integer ;
+    schema:width "3840"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm4088506370/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BZDdmYjI4YmEtOGQyOS00NTdiLTkzMTctN2IzNjU4N2M1OWNjXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
+    schema:height "667"^^xsd:integer ;
+    schema:width "736"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm659272962/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTg5MTYwZGQtOGM5MC00MWE4LThjMWQtNDIzYTIwNmZlNjE0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
+    schema:height "4096"^^xsd:integer ;
+    schema:width "6144"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm642495746/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYzVkNmI2ZWYtYTJkOS00ZTRjLWExM2QtZGYxNDU1YTkyMjc0XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
+    schema:height "4096"^^xsd:integer ;
+    schema:width "6144"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm3662329090/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTE0ZDc1YmQtNjE2Yi00Mzg2LWIyNzctNmQ4OWVkNzJlN2NiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
+    schema:height "4096"^^xsd:integer ;
+    schema:width "6144"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm3511334146/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BM2Q3MmMzZTYtOTBhNS00ODVhLTk4Y2EtMzM1NDhjNjUzMTkzXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio and Teyana Taylor in One Battle After Another (2025)" ;
+    schema:height "3112"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm3494556930/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BYjFiMjQ5YjItYzIzOC00NmQwLWE0M2UtOTg3MjBkMGMxMDU4XkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in One Battle After Another (2025)" ;
+    schema:height "3112"^^xsd:integer ;
+    schema:width "4096"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm478656514/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BNTJjY2FkZjAtNzZjOC00NjhkLTlmMzYtNWM0ODdjZDZjZDNiXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio, Sara Gilbert, and Jenny Beck in Roseanne (1988)" ;
+    schema:height "1659"^^xsd:integer ;
+    schema:width "2956"^^xsd:integer .
+
+<https://www.imdb.com/name/nm0000138/mediaviewer/rm2244955649/> a schema:ImageObject ;
+    schema:url <https://m.media-amazon.com/images/M/MV5BMjQwOWNiZmQtOWY3Zi00NzAyLWIwYTAtZTlkYjhhOTY3MWRhXkEyXkFqcGc@._V1_.jpg> ;
+    schema:caption "Leonardo DiCaprio in Killers of the Flower Moon (2023)" ;
+    schema:height "1080"^^xsd:integer ;
+    schema:width "1920"^^xsd:integer .
+
+# ==============================================================================
+# Entity alignments
+# ==============================================================================
+<https://www.imdb.com/name/nm0000138/>
+    schema:sameAs <https://www.facebook.com/LeonardoDiCaprio>,
+                  <https://www.instagram.com/leonardodicaprio/> .
+
+# TODO: Add Wikidata URI via querying the SPARQL endpoint with URI lookup.
