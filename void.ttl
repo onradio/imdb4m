@@ -1,0 +1,89 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+<https://github.com/onradio/imdb4m/> a void:Dataset ;
+    foaf:homepage <https://github.com/onradio/imdb4m> ;
+    foaf:page <https://github.com/onradio/imdb4m/> ;
+    dcterms:title "IMDB4M: A Large-Scale Quad-Modal Knowledge Graph of Movies" ;
+    dcterms:description "A comprehensive RDF knowledge graph integrating Text, Images, Video, and Audio modalities for movies. IMDB4M harmonizes symbolic metadata of movies and actors from IMDb, combining 376 fully-annotated seed movies with 50,756 total movies after recursive expansion. The dataset uses Schema.org vocabulary for semantic interoperability and follows the 'Linking over Hosting' principle—storing external URIs to legitimate platforms rather than raw media files." ;
+    dcterms:creator <https://orcid.org/0000-0003-4957-4987> ;
+    dcterms:creator <https://www.jonnybluesman.github.io/> ;
+    dcterms:creator <https://elenasimperl.eu/> ;
+    dcterms:creator <https://www.albertmeronyo.org/> ;
+    dcterms:contributor <https://www.kcl.ac.uk/> ;
+    dcterms:contributor <https://www.liverpool.ac.uk/> ;
+    dcterms:source <https://www.imdb.com/> ;
+    dcterms:source <https://www.wikidata.org/> ;
+    dcterms:modified "2025-12-05"^^xsd:date ;
+    dcterms:publisher <https://www.kcl.ac.uk/> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:subject <https://dbpedia.org/resource/Film> ;
+    dcterms:subject <https://dbpedia.org/resource/Knowledge_graph> ;
+    dcterms:subject <https://dbpedia.org/resource/Linked_data> ;
+    dcterms:subject <https://dbpedia.org/resource/Multimodal_learning> ;
+    dcterms:subject <https://dbpedia.org/resource/Semantic_Web> ;
+    dcterms:subject <https://dbpedia.org/resource/IMDb> ;
+    dcterms:feature <http://www.w3.org/ns/formats/Turtle> ;
+    void:dataDump <https://github.com/onradio/imdb4m/blob/main/data/kg/imdb_kg_cleaned.ttl> ;
+    void:exampleResource <https://www.imdb.com/title/tt0120338> ;
+    void:exampleResource <https://www.imdb.com/name/nm0000138> ;
+    void:exampleResource <https://www.imdb.com/video/vi1740686617> ;
+    void:uriRegexPattern "^https://www\\.imdb\\.com/(title|name|company|video)/.*" ;
+    void:vocabulary <http://schema.org/> ;
+    void:vocabulary <http://www.w3.org/2002/07/owl#> ;
+    void:triples "1815922" ;
+    void:entities "660039" ;
+    void:distinctSubjects "660039" ;
+    void:properties "58" ;
+    void:classes "17" ;
+    .
+
+# Linkset to Wikidata
+<https://github.com/onradio/imdb4m/sameas> a void:Linkset ;
+    dcterms:title "IMDB4M to Wikidata owl:sameAs Links" ;
+    dcterms:description "Entity alignments between IMDB4M entities (artists and movies) and Wikidata, providing 78.1% coverage for artists and 100% for seed movies." ;
+    void:target <https://github.com/onradio/imdb4m/> ;
+    void:target <https://www.wikidata.org/> ;
+    void:linkPredicate owl:sameAs ;
+    void:dataDump <https://github.com/onradio/imdb4m/blob/main/data/kg/sameas_mappings.ttl> ;
+    .
+
+# Dataset Creators
+<https://orcid.org/0000-0003-4957-4987> a foaf:Person ;
+    rdfs:label "Ioannis Reklos" ;
+    foaf:name "Ioannis Reklos" ;
+    .
+
+<https://www.jonnybluesman.github.io/> a foaf:Person ;
+    rdfs:label "Jacopo de Berardinis" ;
+    foaf:name "Jacopo de Berardinis" ;
+    foaf:mbox <mailto:jonnybluesman@gmail.com> ;
+    .
+
+<https://elenasimperl.eu/> a foaf:Person ;
+    rdfs:label "Elena Simperl" ;
+    foaf:name "Elena Simperl" ;
+    .
+
+<https://www.albertmeronyo.org/> a foaf:Person ;
+    rdfs:label "Albert Meroño-Peñuela" ;
+    foaf:name "Albert Meroño-Peñuela" ;
+    foaf:mbox <mailto:albert.meronyo@gmail.com> ;
+    .
+
+# Affiliated Institutions
+<https://www.kcl.ac.uk/> a foaf:Organization ;
+    rdfs:label "King's College London" ;
+    foaf:name "King's College London" ;
+    .
+
+<https://www.liverpool.ac.uk/> a foaf:Organization ;
+    rdfs:label "University of Liverpool" ;
+    foaf:name "University of Liverpool" ;
+    .
