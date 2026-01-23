@@ -19,9 +19,10 @@
 
 [Overview](#-overview) •
 [Features](#-features) •
-[Knowledge Graph Schema](#-knowledge-graph-schema) •
+[Schema](#-knowledge-graph-schema) •
 [Installation](#-installation) •
 [Usage](#-usage) •
+[Media Downloader](#media-downloader) •
 [Evaluation](#-evaluation) •
 [Citation](#-citation)
 
@@ -156,6 +157,14 @@ imdb4m/
 │   ├── youtube_client.py           # YouTube API integration
 │   ├── gemini_matcher.py           # LLM-powered matching
 │   └── music_linker.py             # Main orchestrator
+│
+├── 📂 media_downloader/             # Media Download module
+│   ├── kg_parser.py                # KG parser for media URLs
+│   ├── image_downloader.py         # Image download from Amazon CDN
+│   ├── video_downloader.py         # Video download from IMDb
+│   ├── audio_downloader.py         # Audio download from YouTube
+│   ├── download_entity.py          # Single entity downloader
+│   └── download_all.py             # Batch downloader with resume
 │
 ├── 📂 extractor/                     # Data collection scripts
 │   ├── download_imdb_movie.py      # Movie page extractor
@@ -342,6 +351,80 @@ for result in results:
     if result.best_match:
         print(f"🎵 {result.soundtrack.title}: {result.best_match.url}")
 ```
+
+### Media Downloader
+
+The **Media Downloader** module allows you to download actual media files (images, videos, audio) referenced in the Knowledge Graph. It respects rate limits and supports resumable batch downloads.
+
+#### Download Media for a Single Entity
+
+```bash
+# Download all media for a movie (images, trailer, soundtrack audio)
+python -m media_downloader.download_entity tt0120338
+
+# Download all media for an actor
+python -m media_downloader.download_entity nm0000138
+
+# Download only images
+python -m media_downloader.download_entity tt0120338 --images-only
+
+# Download only videos (trailers)
+python -m media_downloader.download_entity tt0120338 --videos-only
+
+# Download only audio (from YouTube soundtracks)
+python -m media_downloader.download_entity tt0120338 --audio-only
+```
+
+#### Batch Download All Entities
+
+```bash
+# Download media for all entities in the KG
+python -m media_downloader.download_all
+
+# Only movies, only images
+python -m media_downloader.download_all --movies-only --images-only
+
+# Only persons (actors, directors)
+python -m media_downloader.download_all --persons-only
+
+# Custom rate limiting (slower for sensitive servers)
+python -m media_downloader.download_all --delay 5 --entity-delay 10 --batch-delay 120
+
+# Test with limited entities
+python -m media_downloader.download_all --max-entities 100
+```
+
+#### Output Structure
+
+```
+output/
+├── tt0120338/              # Titanic
+│   ├── images/             # Movie stills and posters
+│   ├── videos/             # Trailers (MP4)
+│   └── audio/              # Soundtrack tracks (from YouTube)
+├── nm0000138/              # Leonardo DiCaprio
+│   ├── images/             # Actor photos
+│   └── videos/             # Actor-related videos
+└── download_progress.json  # Resume tracking
+```
+
+#### Features
+
+| Feature | Description |
+|---------|-------------|
+| **Resume Support** | Progress saved to JSON; interrupted downloads resume automatically |
+| **Rate Limiting** | Configurable delays between downloads to avoid anti-bot measures |
+| **Batch Processing** | Process all 50,000+ entities with automatic breaks |
+| **Selective Download** | Filter by entity type (movie/person) or media type (image/video/audio) |
+
+#### Rate Limiting Defaults
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `--delay` | 2.0s | Delay between individual media downloads |
+| `--entity-delay` | 5.0s | Delay between entities |
+| `--batch-size` | 10 | Entities per batch before longer break |
+| `--batch-delay` | 30s | Break duration between batches |
 
 ---
 
