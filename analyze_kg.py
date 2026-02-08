@@ -508,7 +508,7 @@ def save_kg(rdf_graph: Graph, output_dir: Path, filename: str = "imdb_kg_cleaned
 
 def main():
     # Configuration
-    BASE_PATH = Path(__file__).parent / "extractor" / "movies"
+    BASE_PATH = Path(__file__).parent / "data" / "movies"
     OUTPUT_DIR = Path(__file__).parent / "KG"
     
     print("=" * 70)

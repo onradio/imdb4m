@@ -30,7 +30,17 @@ def parse_imdb_html(html_content):
     # 1. Base Data from JSON-LD (still useful for core metadata)
     json_ld_script = soup.find('script', type='application/ld+json')
     json_data = json.loads(json_ld_script.string) if json_ld_script else {}
-    
+
+    # Extract __NEXT_DATA__ for additional structured data
+    next_data_script = soup.find('script', id='__NEXT_DATA__')
+    next_data = {}
+    if next_data_script:
+        try:
+            next_data = json.loads(next_data_script.string)
+        except:
+            pass
+    above_fold = next_data.get('props', {}).get('pageProps', {}).get('aboveTheFoldData', {})
+
     # Define Main Movie URI
     movie_url = json_data.get('url', 'https://www.imdb.com/title/tt0120338/')
     if not movie_url.startswith('http'): movie_url = f"https://www.imdb.com{movie_url}"
@@ -87,11 +97,21 @@ def parse_imdb_html(html_content):
     for link in lang_links:
         g.add((movie_uri, SCHEMA.inLanguage, Literal(link.get_text(strip=True))))
 
-    # Genres
+    # Genres - from interests in __NEXT_DATA__ (includes sub-genres) + JSON-LD fallback
+    genres_seen = set()
+    interests = above_fold.get('interests', {}).get('edges', [])
+    for edge in interests:
+        genre_text = edge.get('node', {}).get('primaryText', {}).get('text', '')
+        if genre_text and genre_text not in genres_seen:
+            genres_seen.add(genre_text)
+            g.add((movie_uri, SCHEMA.genre, Literal(genre_text)))
+    # Fallback/merge with JSON-LD genres
     if 'genre' in json_data:
-        genres = json_data['genre'] if isinstance(json_data['genre'], list) else [json_data['genre']]
-        for genre in genres:
-            g.add((movie_uri, SCHEMA.genre, Literal(genre)))
+        ld_genres = json_data['genre'] if isinstance(json_data['genre'], list) else [json_data['genre']]
+        for genre in ld_genres:
+            if genre not in genres_seen:
+                genres_seen.add(genre)
+                g.add((movie_uri, SCHEMA.genre, Literal(genre)))
 
     # Keywords
     if 'keywords' in json_data:

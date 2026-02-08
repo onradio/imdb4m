@@ -34,6 +34,16 @@ def create_knowledge_graph(html_content, base_url="https://www.imdb.com/"):
     data = extract_json_ld(soup)
     # print(data.keys())
 
+    # Extract __NEXT_DATA__ for additional structured data
+    next_data_script = soup.find('script', id='__NEXT_DATA__')
+    next_data = {}
+    if next_data_script:
+        try:
+            next_data = json.loads(next_data_script.string)
+        except:
+            pass
+    above_fold = next_data.get('props', {}).get('pageProps', {}).get('aboveTheFoldData', {})
+
     if not data:
         print("Error: No JSON-LD found in HTML.")
         return None
@@ -73,11 +83,21 @@ def create_knowledge_graph(html_content, base_url="https://www.imdb.com/"):
     for link in lang_links:
         g.add((movie_uri, SCHEMA.inLanguage, Literal(link.text.strip())))
 
-    # Genres
+    # Genres - from interests in __NEXT_DATA__ (includes sub-genres) + JSON-LD fallback
+    genres_seen = set()
+    interests = above_fold.get('interests', {}).get('edges', [])
+    for edge in interests:
+        genre_text = edge.get('node', {}).get('primaryText', {}).get('text', '')
+        if genre_text and genre_text not in genres_seen:
+            genres_seen.add(genre_text)
+            g.add((movie_uri, SCHEMA.genre, Literal(genre_text)))
+    # Fallback/merge with JSON-LD genres
     if 'genre' in data:
-        genres = data['genre'] if isinstance(data['genre'], list) else [data['genre']]
-        for genre in genres:
-            g.add((movie_uri, SCHEMA.genre, Literal(genre)))
+        ld_genres = data['genre'] if isinstance(data['genre'], list) else [data['genre']]
+        for genre in ld_genres:
+            if genre not in genres_seen:
+                genres_seen.add(genre)
+                g.add((movie_uri, SCHEMA.genre, Literal(genre)))
 
     # Keywords
     if 'keywords' in data: # FIXME these should be comma-split if single string and more triples added

@@ -428,6 +428,46 @@ output/
 
 ---
 
+## 📥 Accessing Modality Data
+
+IMDB4M follows a **linking-over-hosting** principle: the knowledge graph stores URIs pointing to media hosted on their original platforms (IMDb, YouTube, Amazon CDN) rather than redistributing raw files. This ensures copyright compliance and keeps the resource lightweight.
+
+There are two ways to obtain the actual media files for research purposes:
+
+### Option A: Download from Source (Self-Service)
+
+Use the **Media Downloader** module included in this repository to retrieve media files directly from their original sources by following the URIs in the knowledge graph:
+
+```bash
+# Download all media for all entities
+python -m media_downloader.download_all
+
+# Download media for a specific movie
+python -m media_downloader.download_entity tt0120338
+
+# Download only specific modalities
+python -m media_downloader.download_entity tt0120338 --images-only
+python -m media_downloader.download_entity tt0120338 --videos-only
+python -m media_downloader.download_entity tt0120338 --audio-only
+```
+
+The downloader includes adaptive rate limiting and resume support for multi-day runs. See the [Media Downloader](#media-downloader) section for full usage details.
+
+> **Note:** Source availability depends on the original platforms. Some media may become unavailable over time due to content changes on IMDb or YouTube.
+
+### Option B: Request a Confidential Dump
+
+For researchers who require a complete, pre-downloaded copy of the multimodal resource (including images, video frames, and audio files), we can provide a confidential dump for **non-commercial academic use only**.
+
+To request access, please contact us at: **ioannis.reklos [at] kcl [dot] ac [dot] uk**
+
+Please include in your request:
+- Your name and institutional affiliation
+- A brief description of your intended use case
+- Confirmation that the data will be used for non-commercial research purposes only
+
+---
+
 ## 📊 Validation & Evaluation
 
 IMDB4M includes a comprehensive validation framework combining SPARQL-based question answering and link verification.
@@ -436,9 +476,9 @@ IMDB4M includes a comprehensive validation framework combining SPARQL-based ques
 
 | Metric | Value |
 |--------|-------|
-| **Overall F1 Score** | 94.4% |
-| **Precision** | 99.3% |
-| **Recall** | 90.0% |
+| **Overall F1 Score** | 98.7% |
+| **Precision** | 99.4% |
+| **Recall** | 98.1% |
 | **Avg. Levenshtein Similarity** | 0.993 |
 | **Query Success Rate** | 99.3% |
 | **YouTube Link Accuracy** | 87.16% |

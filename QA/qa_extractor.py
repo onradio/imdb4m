@@ -447,11 +447,23 @@ def extract_from_html(movie_id: str) -> dict:
     except Exception:
         pass
     
-    # Q13: Genre - from __NEXT_DATA__
+    # Q13: Genre - from __NEXT_DATA__ (interests + genres)
     try:
+        genres = []
+        seen = set()
+        interests = atf.get('interests', {}).get('edges', [])
+        for edge in interests:
+            text = edge.get('node', {}).get('primaryText', {}).get('text', '')
+            if text and text not in seen:
+                seen.add(text)
+                genres.append(text)
+        # Fallback/merge with genres field
         genres_data = atf.get('genres', {}).get('genres', [])
-        genres = [g.get('text', '') for g in genres_data]
-        genres = [g for g in genres if g]
+        for g_item in genres_data:
+            text = g_item.get('text', '')
+            if text and text not in seen:
+                seen.add(text)
+                genres.append(text)
         answers["What is the genre of the movie?"] = genres
     except Exception:
         pass

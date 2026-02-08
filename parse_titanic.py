@@ -150,11 +150,21 @@ def parse_imdb_html(html_file_path):
         if lang_text:
             g.add((movie_uri, SCHEMA.inLanguage, Literal(lang_text)))
     
-    # Genres
+    # Genres - from interests in __NEXT_DATA__ (includes sub-genres) + JSON-LD fallback
+    genres_seen = set()
+    interests = above_fold.get('interests', {}).get('edges', [])
+    for edge in interests:
+        genre_text = edge.get('node', {}).get('primaryText', {}).get('text', '')
+        if genre_text and genre_text not in genres_seen:
+            genres_seen.add(genre_text)
+            g.add((movie_uri, SCHEMA.genre, Literal(genre_text)))
+    # Fallback/merge with JSON-LD genres
     if 'genre' in json_data:
-        genres = json_data['genre'] if isinstance(json_data['genre'], list) else [json_data['genre']]
-        for genre in genres:
-            g.add((movie_uri, SCHEMA.genre, Literal(genre)))
+        ld_genres = json_data['genre'] if isinstance(json_data['genre'], list) else [json_data['genre']]
+        for genre in ld_genres:
+            if genre not in genres_seen:
+                genres_seen.add(genre)
+                g.add((movie_uri, SCHEMA.genre, Literal(genre)))
     
     # Keywords - format as comma-separated with spaces
     if 'keywords' in json_data:
