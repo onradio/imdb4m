@@ -6,12 +6,13 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
+@prefix imdb4m: <http://imdb4m.org/embedding/> .
 
 <https://github.com/onradio/imdb4m/> a void:Dataset ;
     foaf:homepage <https://github.com/onradio/imdb4m> ;
     foaf:page <https://github.com/onradio/imdb4m/> ;
     dcterms:title "IMDB4M: A Large-Scale Quad-Modal Knowledge Graph of Movies" ;
-    dcterms:description "A comprehensive RDF knowledge graph integrating Text, Images, Video, and Audio modalities for movies. IMDB4M harmonizes symbolic metadata of movies and actors from IMDb, combining 376 fully-annotated seed movies with 50,756 total movies after recursive expansion. The dataset uses Schema.org vocabulary for semantic interoperability and follows the 'Linking over Hosting' principle—storing external URIs to legitimate platforms rather than raw media files." ;
+    dcterms:description "A comprehensive RDF knowledge graph integrating Text, Images, Video, and Audio modalities for movies. IMDB4M harmonizes symbolic metadata of movies and actors from IMDb, combining 376 fully-annotated seed movies with 50,756 total movies after recursive expansion. The dataset uses Schema.org vocabulary for semantic interoperability and follows the 'Linking over Hosting' principle—storing external URIs to legitimate platforms rather than raw media files. The released `data/kg/imdb_kg_cleaned.ttl` is disk-aligned and one-for-one paired with the pre-computed image, video, audio, text, and KG (RotatE) embeddings released on Zenodo, via `imdb4m:hasEmbedding` records." ;
     dcterms:creator <https://orcid.org/0000-0003-4957-4987> ;
     dcterms:creator <https://www.jonnybluesman.github.io/> ;
     dcterms:creator <https://elenasimperl.eu/> ;
@@ -20,7 +21,7 @@
     dcterms:contributor <https://www.liverpool.ac.uk/> ;
     dcterms:source <https://www.imdb.com/> ;
     dcterms:source <https://www.wikidata.org/> ;
-    dcterms:modified "2025-12-05"^^xsd:date ;
+    dcterms:modified "2026-05-03"^^xsd:date ;
     dcterms:publisher <https://www.kcl.ac.uk/> ;
     dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
     dcterms:subject <https://dbpedia.org/resource/Film> ;
@@ -37,21 +38,60 @@
     void:uriRegexPattern "^https://www\\.imdb\\.com/(title|name|company|video)/.*" ;
     void:vocabulary <http://schema.org/> ;
     void:vocabulary <http://www.w3.org/2002/07/owl#> ;
-    void:triples "1815922" ;
-    void:entities "660039" ;
-    void:distinctSubjects "660039" ;
+    void:vocabulary <http://xmlns.com/foaf/0.1/> ;
+    void:vocabulary <http://purl.org/dc/terms/> ;
+    void:vocabulary <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ;
+    void:vocabulary <http://www.w3.org/2000/01/rdf-schema#> ;
+    void:vocabulary <http://www.w3.org/2001/XMLSchema#> ;
+    void:vocabulary <http://imdb4m.org/embedding/> ;
+    void:triples "1800490" ;
+    void:entities "656003" ;
+    void:distinctSubjects "359615" ;
+    void:distinctObjects "655975" ;
     void:properties "58" ;
-    void:classes "17" ;
+    void:classes "15" ;
+    void:subset <https://github.com/onradio/imdb4m/sameas> ;
+    void:subset <https://github.com/onradio/imdb4m/embeddings> ;
+    void:subset <https://github.com/onradio/imdb4m/embeddings/metadata> ;
     .
 
 # Linkset to Wikidata
 <https://github.com/onradio/imdb4m/sameas> a void:Linkset ;
     dcterms:title "IMDB4M to Wikidata owl:sameAs Links" ;
-    dcterms:description "Entity alignments between IMDB4M entities (artists and movies) and Wikidata, providing 78.1% coverage for artists and 100% for seed movies." ;
+    dcterms:description "Entity alignments between IMDB4M entities and Wikidata: 4,284 actor mappings + 376 movie mappings (4,660 owl:sameAs triples). Coverage: 78.1% of analysed artists and 100% of seed movies. Distributed in `data/kg/sameas_mappings.ttl` (not merged into the main KG)." ;
     void:target <https://github.com/onradio/imdb4m/> ;
     void:target <https://www.wikidata.org/> ;
     void:linkPredicate owl:sameAs ;
+    void:triples "4660" ;
     void:dataDump <https://github.com/onradio/imdb4m/blob/main/data/kg/sameas_mappings.ttl> ;
+    .
+
+# Pre-computed Embeddings (released on Zenodo)
+<https://github.com/onradio/imdb4m/embeddings> a void:Dataset ;
+    dcterms:title "IMDB4M Pre-computed Multimodal and KG Embeddings" ;
+    dcterms:description "L2-normalised embedding vectors for every released modality plus knowledge-graph embeddings, aligned one-for-one to `data/kg/imdb_kg_cleaned.ttl` via `imdb4m:hasEmbedding` records. Image: 33,247 x 768 (openai/clip-vit-large-patch14). Video: 4,350 x 512 (microsoft/xclip-base-patch32). Audio: 4,034 x 512 (laion/larger_clap_music_and_speech). Text: 4,216 x 1,024 (BAAI/bge-large-en-v1.5; predicates schema:abstract, schema:description, schema:reviewBody, schema:caption). KG: 139,465 URIRef entities x 512-d real (256-d complex) trained with PyKEEN RotatE on 1,800,490 triples; an additional all-labels held-out variant uses 1,731,988 training triples (66,838 held out). Distributed as Parquet (zstd) and HDF5 (gzip-4) with shared row order." ;
+    dcterms:isPartOf <https://github.com/onradio/imdb4m/> ;
+    dcterms:creator <https://orcid.org/0000-0003-4957-4987> ;
+    dcterms:creator <https://www.jonnybluesman.github.io/> ;
+    dcterms:creator <https://elenasimperl.eu/> ;
+    dcterms:creator <https://www.albertmeronyo.org/> ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    dcterms:modified "2026-05-03"^^xsd:date ;
+    dcterms:format "application/vnd.apache.parquet" ;
+    dcterms:format "application/x-hdf5" ;
+    void:vocabulary <http://imdb4m.org/embedding/> ;
+    void:dataDump <https://doi.org/10.5281/zenodo.PLACEHOLDER> ;
+    .
+
+# Linkset between KG entities and embedding rows
+<https://github.com/onradio/imdb4m/embeddings/metadata> a void:Linkset ;
+    dcterms:title "IMDB4M imdb4m:hasEmbedding Links" ;
+    dcterms:description "One imdb4m:hasEmbedding record per released embedding row, linking a KG subject (e.g. a schema:ImageObject, schema:VideoObject, schema:MusicRecording, text-bearing entity, or any URIRef KG entity) to its parquet file, parquet row, HDF5 group, and HDF5 row index in the Zenodo embedding bundle. Released as `embedding_metadata.ttl` alongside the parquet/HDF5 files." ;
+    void:target <https://github.com/onradio/imdb4m/> ;
+    void:target <https://github.com/onradio/imdb4m/embeddings> ;
+    void:linkPredicate imdb4m:hasEmbedding ;
+    void:vocabulary <http://imdb4m.org/embedding/> ;
+    void:dataDump <https://doi.org/10.5281/zenodo.PLACEHOLDER> ;
     .
 
 # Dataset Creators
