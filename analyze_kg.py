@@ -2,10 +2,24 @@
 """
 Knowledge Graph Analysis Script
 
-Loads all .ttl files from /extractor/movies subdirectories into a single RDF graph,
-converts it to NetworkX for graph analysis, and computes statistics.
+Two modes:
+
+  1) Analyze a pre-built KG file (default).
+     Reads ``data/kg/imdb_kg_cleaned.ttl`` (or ``--kg PATH``), computes RDF
+     and graph-structure statistics, and prints them.  No files are written.
+
+  2) Build-and-prune from per-entity TTL files (legacy, opt-in via ``--build``).
+     Walks ``--source-dir`` (default ``data/movies/``), merges every ``*.ttl``
+     into a single graph, identifies "orphan" single-actor movies that carry
+     only minimal metadata, removes them, and saves the cleaned KG.
+     This was the original behaviour of the script.
+
+The default mode is non-destructive: it never modifies the input KG and
+never writes anywhere.  Use ``--build`` only when you actually want to
+regenerate ``imdb_kg_cleaned.ttl`` from the per-entity TTL corpus.
 """
 
+import argparse
 import os
 from pathlib import Path
 from collections import Counter
@@ -506,87 +520,139 @@ def save_kg(rdf_graph: Graph, output_dir: Path, filename: str = "imdb_kg_cleaned
     return output_path
 
 
-def main():
-    # Configuration
-    BASE_PATH = Path(__file__).parent / "data" / "movies"
-    OUTPUT_DIR = Path(__file__).parent / "KG"
-    
+def analyze_existing_kg(kg_path: Path) -> dict:
+    """Load an already-built KG file and compute statistics on it (no writes)."""
     print("=" * 70)
-    print("🎬 IMDB KNOWLEDGE GRAPH ANALYZER")
+    print("🎬 IMDB KNOWLEDGE GRAPH ANALYZER (analyze-only)")
     print("=" * 70)
-    print(f"\n📂 Scanning directory: {BASE_PATH}")
-    
-    # Find all TTL files
-    ttl_files = find_ttl_files(BASE_PATH)
+    print(f"\n📂 KG file: {kg_path}")
+
+    if not kg_path.exists():
+        raise FileNotFoundError(f"KG file not found: {kg_path}")
+
+    print("\n📥 Loading KG via rdflib...")
+    rdf_graph = Graph()
+    rdf_graph.bind("schema", "http://schema.org/")
+    rdf_graph.bind("xsd", "http://www.w3.org/2001/XMLSchema#")
+    rdf_graph.parse(str(kg_path), format="turtle")
+    print(f"✅ Loaded {len(rdf_graph):,} triples")
+
+    print("\n🔄 Building NetworkX views...")
+    nx_directed = rdf_to_networkx(rdf_graph)
+    nx_undirected = rdf_to_networkx_undirected(rdf_graph)
+    print(
+        f"✅ Directed full-graph view:   {nx_directed.number_of_nodes():,} nodes, "
+        f"{nx_directed.number_of_edges():,} edges"
+    )
+    print(
+        f"✅ Undirected entity view:     {nx_undirected.number_of_nodes():,} nodes, "
+        f"{nx_undirected.number_of_edges():,} edges"
+    )
+
+    print("\n" + "=" * 70)
+    print("📊 KNOWLEDGE GRAPH STATISTICS")
+    print("=" * 70)
+    stats = compute_statistics(rdf_graph, nx_directed, nx_undirected)
+
+    print("\n" + "=" * 70)
+    print("✅ Analysis complete. No files were modified.")
+    print("=" * 70)
+    return stats
+
+
+def build_and_prune(source_dir: Path, output_dir: Path, output_name: str = "imdb_kg_cleaned.ttl"):
+    """Legacy mode: walk per-entity TTL files, merge, prune, and save a cleaned KG."""
+    print("=" * 70)
+    print("🎬 IMDB KNOWLEDGE GRAPH BUILDER (build + prune)")
+    print("=" * 70)
+    print(f"\n📂 Scanning directory: {source_dir}")
+
+    ttl_files = find_ttl_files(source_dir)
     print(f"✅ Found {len(ttl_files):,} TTL files")
-    
     if not ttl_files:
         print("❌ No TTL files found. Exiting.")
         return
-    
-    # Load into RDF graph
+
     print("\n📥 Loading TTL files into RDF graph...")
     rdf_graph = load_kg(ttl_files)
     print(f"✅ Loaded {len(rdf_graph):,} triples")
-    
-    # Convert to NetworkX
+
     print("\n🔄 Converting to NetworkX graphs...")
     nx_directed = rdf_to_networkx(rdf_graph)
     nx_undirected = rdf_to_networkx_undirected(rdf_graph)
-    print(f"✅ Created directed graph: {nx_directed.number_of_nodes():,} nodes, {nx_directed.number_of_edges():,} edges")
-    print(f"✅ Created undirected entity graph: {nx_undirected.number_of_nodes():,} nodes, {nx_undirected.number_of_edges():,} edges")
-    
-    # Compute statistics (original graph)
+    print(
+        f"✅ Directed graph: {nx_directed.number_of_nodes():,} nodes, "
+        f"{nx_directed.number_of_edges():,} edges"
+    )
+    print(
+        f"✅ Undirected entity graph: {nx_undirected.number_of_nodes():,} nodes, "
+        f"{nx_undirected.number_of_edges():,} edges"
+    )
+
     print("\n" + "=" * 70)
     print("📊 ORIGINAL KNOWLEDGE GRAPH STATISTICS")
     print("=" * 70)
     stats = compute_statistics(rdf_graph, nx_directed, nx_undirected)
-    
-    # Get orphan movies from stats
-    orphan_movies = stats.get('orphan_movies', [])
-    
+    orphan_movies = stats.get("orphan_movies", [])
+
     if orphan_movies:
-        # Remove orphan movie triples
         rdf_graph = remove_orphan_movies(rdf_graph, orphan_movies)
-        
-        # Rebuild NetworkX graphs from cleaned RDF
         print("\n🔄 Rebuilding NetworkX graphs from cleaned KG...")
         nx_directed_clean = rdf_to_networkx(rdf_graph)
         nx_undirected_clean = rdf_to_networkx_undirected(rdf_graph)
-        print(f"✅ Created directed graph: {nx_directed_clean.number_of_nodes():,} nodes, {nx_directed_clean.number_of_edges():,} edges")
-        print(f"✅ Created undirected entity graph: {nx_undirected_clean.number_of_nodes():,} nodes, {nx_undirected_clean.number_of_edges():,} edges")
-        
-        # Compute statistics (cleaned graph)
         print("\n" + "=" * 70)
         print("📊 CLEANED KNOWLEDGE GRAPH STATISTICS")
         print("=" * 70)
         stats_clean = compute_statistics(rdf_graph, nx_directed_clean, nx_undirected_clean)
-        
-        # Save cleaned KG
-        output_path = save_kg(rdf_graph, OUTPUT_DIR)
-        
-        # Summary comparison
-        print("\n" + "=" * 70)
-        print("📈 SUMMARY COMPARISON")
-        print("=" * 70)
-        print(f"  {'Metric':<30} {'Original':>15} {'Cleaned':>15} {'Removed':>15}")
-        print("-" * 75)
-        print(f"  {'Triples':<30} {stats['num_triples']:>15,} {stats_clean['num_triples']:>15,} {stats['num_triples'] - stats_clean['num_triples']:>15,}")
-        print(f"  {'Nodes':<30} {stats['num_nodes']:>15,} {stats_clean['num_nodes']:>15,} {stats['num_nodes'] - stats_clean['num_nodes']:>15,}")
-        print(f"  {'Connected Components':<30} {stats['num_components']:>15,} {stats_clean['num_components']:>15,} {stats_clean['num_components'] - stats['num_components']:>15,}")
-        print(f"  {'Leaf Nodes':<30} {stats['num_leaf_nodes']:>15,} {stats_clean['num_leaf_nodes']:>15,} {stats['num_leaf_nodes'] - stats_clean['num_leaf_nodes']:>15,}")
     else:
-        # No orphan movies found, just save original
-        output_path = save_kg(rdf_graph, OUTPUT_DIR, "imdb_kg_full.ttl")
         stats_clean = stats
-        nx_directed_clean = nx_directed
-        nx_undirected_clean = nx_undirected
-    
-    print("\n" + "=" * 70)
-    print("✅ Analysis Complete!")
-    print("=" * 70)
-    
-    return rdf_graph, nx_directed_clean, nx_undirected_clean, stats_clean
+
+    output_path = save_kg(rdf_graph, output_dir, output_name)
+    print(f"\n💾 Wrote cleaned KG to: {output_path}")
+    return stats_clean
+
+
+def main():
+    project_root = Path(__file__).parent
+    parser = argparse.ArgumentParser(description="Analyze the IMDB4M knowledge graph.")
+    parser.add_argument(
+        "--kg",
+        type=Path,
+        default=project_root / "data" / "kg" / "imdb_kg_cleaned.ttl",
+        help="Path to a pre-built KG file (Turtle).  Default: data/kg/imdb_kg_cleaned.ttl",
+    )
+    parser.add_argument(
+        "--build",
+        action="store_true",
+        help=(
+            "Legacy mode: walk per-entity TTL files under --source-dir, merge, "
+            "prune orphan single-actor movies, and save a fresh cleaned KG."
+        ),
+    )
+    parser.add_argument(
+        "--source-dir",
+        type=Path,
+        default=project_root / "data" / "movies",
+        help="Per-entity TTL corpus directory used by --build (default: data/movies)",
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=project_root / "data" / "kg",
+        help="Output directory for --build (default: data/kg)",
+    )
+    parser.add_argument(
+        "--output-name",
+        type=str,
+        default="imdb_kg_cleaned.ttl",
+        help="Output filename for --build (default: imdb_kg_cleaned.ttl)",
+    )
+    args = parser.parse_args()
+
+    if args.build:
+        build_and_prune(args.source_dir, args.output_dir, args.output_name)
+    else:
+        analyze_existing_kg(args.kg)
 
 
 if __name__ == "__main__":

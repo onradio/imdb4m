@@ -568,6 +568,102 @@
             color: var(--silver);
         }
 
+        /* Embeddings Section */
+        #embeddings {
+            background: var(--deep-navy);
+        }
+
+        .embeddings-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .embeddings-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 3rem;
+            font-size: 0.9rem;
+        }
+
+        .embeddings-table th,
+        .embeddings-table td {
+            padding: 1rem 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--slate);
+        }
+
+        .embeddings-table th {
+            background: var(--navy-light);
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+        }
+
+        .embeddings-table td {
+            color: var(--pearl);
+        }
+
+        .embeddings-table td.numeric,
+        .embeddings-table td.code {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--cyan-accent);
+        }
+
+        .quality-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        .quality-table th,
+        .quality-table td {
+            padding: 0.9rem 1.25rem;
+            border-bottom: 1px solid var(--slate);
+            text-align: center;
+        }
+
+        .quality-table th {
+            background: var(--navy-light);
+            color: var(--gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+        }
+
+        .quality-table td:first-child {
+            text-align: left;
+            color: var(--pearl);
+        }
+
+        .quality-table td {
+            color: var(--silver);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .quality-table tr.highlight-row td {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .embedding-note {
+            background: var(--navy-light);
+            border-left: 3px solid var(--gold);
+            padding: 1.25rem 1.75rem;
+            margin: 2rem 0;
+            color: var(--silver);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .embedding-note strong {
+            color: var(--gold);
+        }
+
         /* Validation Section */
         #validation {
             background: var(--deep-navy);
@@ -836,6 +932,7 @@
             <li><a href="#modalities">Modalities</a></li>
             <li><a href="#stats">Statistics</a></li>
             <li><a href="#schema">Schema</a></li>
+            <li><a href="#embeddings">Embeddings</a></li>
             <li><a href="#validation">Validation</a></li>
             <li><a href="#applications">Applications</a></li>
             <li><a href="#citation">Citation</a></li>
@@ -849,15 +946,18 @@
         <div class="badge-row">
             <span class="badge badge-rdf">RDF / Turtle</span>
             <span class="badge badge-schema">Schema.org</span>
+            <span class="badge badge-rdf">Embeddings on Zenodo</span>
+            <span class="badge badge-schema">CC-BY-NC</span>
         </div>
         <p class="hero-description">
-            The first knowledge graph to combine a culturally rich domain with comprehensive coverage of 
-            <strong>text, images, video, and audio</strong>. Engineered on schema.org 
-            for semantic interoperability, discoverability, and structural quality.
+            The first knowledge graph to combine a culturally rich domain with comprehensive coverage of
+            <strong>text, images, video, and audio</strong>. Engineered on schema.org
+            for semantic interoperability, with pre-computed image, video, audio, text, and KG (RotatE)
+            embeddings released on Zenodo.
         </p>
         <div class="hero-stats">
             <div class="stat">
-                <span class="stat-value">1.8M+</span>
+                <span class="stat-value">1.80M</span>
                 <span class="stat-label">RDF Triples</span>
             </div>
             <div class="stat">
@@ -869,7 +969,7 @@
                 <span class="stat-label">Artists</span>
             </div>
             <div class="stat">
-                <span class="stat-value">93.6%</span>
+                <span class="stat-value">94.41%</span>
                 <span class="stat-label">Quad-Modal</span>
             </div>
         </div>
@@ -884,8 +984,9 @@
             <span class="section-tag">Multimodal Coverage</span>
             <h2 class="section-title">Four Modalities, One Graph</h2>
             <p class="section-subtitle">
-                IMDB4M overcomes the bimodal bottleneck of existing knowledge graphs by integrating 
-                text, images, video, and audio as first-class semantic objects.
+                IMDB4M overcomes the bimodal bottleneck of existing knowledge graphs by integrating
+                text, images, video, and audio as first-class semantic objects. All numbers below are
+                derived directly from <code>data/kg/imdb_kg_cleaned.ttl</code> on the 376 seed movies.
             </p>
         </div>
         <div class="modalities-grid">
@@ -893,31 +994,35 @@
                 <span class="modality-icon">📝</span>
                 <h3 class="modality-title">Text</h3>
                 <div class="modality-coverage">100%</div>
-                <p class="modality-desc">Plots, reviews, keywords, genres, cast bios</p>
-                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">48.6 avg/movie</p>
+                <p class="modality-desc">Plots, reviews, keywords, captions, genres</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">18.58 triples / seed movie</p>
             </div>
             <div class="modality-card">
                 <span class="modality-icon">🖼️</span>
                 <h3 class="modality-title">Images</h3>
                 <div class="modality-coverage">100%</div>
-                <p class="modality-desc">Stills, posters with captions & entity links</p>
-                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">7.9 avg/movie</p>
+                <p class="modality-desc">Stills, posters with captions &amp; entity links</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">6.91 triples / seed movie</p>
             </div>
             <div class="modality-card">
                 <span class="modality-icon">🎬</span>
                 <h3 class="modality-title">Video</h3>
-                <div class="modality-coverage">99.2%</div>
+                <div class="modality-coverage">99.20%</div>
                 <p class="modality-desc">Trailers with thumbnails, duration, dates</p>
-                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">0.99 avg/movie</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">0.99 triples / seed movie</p>
             </div>
             <div class="modality-card">
                 <span class="modality-icon">🎵</span>
                 <h3 class="modality-title">Audio</h3>
-                <div class="modality-coverage">94.1%</div>
-                <p class="modality-desc">Soundtracks with performers & composers</p>
-                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">11.2 avg/movie</p>
+                <div class="modality-coverage">94.95%</div>
+                <p class="modality-desc">Soundtracks with performers, composers, lyricists</p>
+                <p class="modality-desc" style="margin-top: 0.5rem; color: var(--gold);">12.02 triples / seed movie</p>
             </div>
         </div>
+        <p style="text-align: center; max-width: 760px; margin: 3rem auto 0; color: var(--silver); font-size: 0.95rem;">
+            <strong style="color: var(--gold);">355 / 376 seed movies (94.41%)</strong> carry all four modalities
+            simultaneously in the cleaned KG.
+        </p>
     </section>
 
     <section id="stats">
@@ -937,14 +1042,18 @@
                 </tr>
                 <tr>
                     <td>RDF Triples</td>
-                    <td>1,815,922</td>
+                    <td>1,800,490</td>
                 </tr>
                 <tr>
-                    <td>Unique Nodes</td>
-                    <td>660,039</td>
+                    <td>PyKEEN Entities (URIs + literals + bnodes)</td>
+                    <td>656,003</td>
                 </tr>
                 <tr>
-                    <td>Unique Predicates</td>
+                    <td>URIRef Entities (released as KG embeddings)</td>
+                    <td>139,465</td>
+                </tr>
+                <tr>
+                    <td>Distinct Predicates</td>
                     <td>58</td>
                 </tr>
                 <tr>
@@ -952,28 +1061,48 @@
                     <td>376</td>
                 </tr>
                 <tr>
-                    <td>Total Movies (after expansion)</td>
+                    <td>Total Movies (<code>schema:Movie</code>)</td>
                     <td>50,756</td>
                 </tr>
                 <tr>
-                    <td>Artists (actors, directors, composers)</td>
+                    <td>Artists Analyzed (actors, directors, composers)</td>
                     <td>5,484</td>
                 </tr>
                 <tr>
-                    <td>PerformanceRole Instances</td>
+                    <td><code>schema:PerformanceRole</code> Instances</td>
                     <td>232,492</td>
                 </tr>
                 <tr>
-                    <td>ImageObjects</td>
-                    <td>36,844</td>
+                    <td><code>schema:ImageObject</code> Instances</td>
+                    <td>34,039</td>
                 </tr>
                 <tr>
-                    <td>Wikidata Alignments (Artists)</td>
-                    <td>4,284 (78.1%)</td>
+                    <td><code>schema:VideoObject</code> Instances</td>
+                    <td>3,981</td>
                 </tr>
                 <tr>
-                    <td>Entity Types</td>
-                    <td>17</td>
+                    <td><code>schema:Person</code> Instances</td>
+                    <td>16,994</td>
+                </tr>
+                <tr>
+                    <td><code>schema:MusicRecording</code> Instances</td>
+                    <td>4,521</td>
+                </tr>
+                <tr>
+                    <td><code>schema:MusicComposition</code> Instances</td>
+                    <td>3,970</td>
+                </tr>
+                <tr>
+                    <td><code>schema:AggregateRating</code> Instances</td>
+                    <td>734</td>
+                </tr>
+                <tr>
+                    <td><code>schema:Review</code> Instances</td>
+                    <td>563</td>
+                </tr>
+                <tr>
+                    <td>Wikidata Alignments (<code>owl:sameAs</code>)</td>
+                    <td>4,284 actors + 376 movies (4,660 triples)</td>
                 </tr>
             </table>
 
@@ -1029,11 +1158,11 @@
                     </tr>
                     <tr>
                         <td><strong>IMDB4M</strong></td>
-                        <td class="highlight-cell">385,595</td>
-                        <td class="highlight-cell">37,220</td>
-                        <td class="highlight-cell">3,983</td>
-                        <td class="highlight-cell">4,211</td>
-                        <td class="highlight-cell">660,039</td>
+                        <td class="highlight-cell">390,747</td>
+                        <td class="highlight-cell">34,039</td>
+                        <td class="highlight-cell">3,981</td>
+                        <td class="highlight-cell">4,521</td>
+                        <td class="highlight-cell">656,003</td>
                         <td class="highlight-cell">58</td>
                     </tr>
                 </table>
@@ -1081,44 +1210,224 @@
         </div>
     </section>
 
+    <section id="embeddings">
+        <div class="section-header">
+            <span class="section-tag">Pre-computed Vectors</span>
+            <h2 class="section-title">Multi-Modal &amp; KG Embeddings</h2>
+            <p class="section-subtitle">
+                IMDB4M ships pre-computed embeddings for every released modality plus
+                knowledge-graph embeddings trained with PyKEEN&rsquo;s RotatE. All vectors are L2-normalised
+                and aligned one-for-one to the KG via <code>imdb4m:hasEmbedding</code> records.
+            </p>
+        </div>
+        <div class="embeddings-container">
+            <div class="embedding-note">
+                <strong>Where to get them:</strong> the embedding files are <em>not</em> stored in this git repository.
+                They are released as a Zenodo bundle (DOI TBD). The <code>embeddings/</code> Python module in this
+                repo is the <em>generator</em> of those vectors and can be re-run locally.
+            </div>
+
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--white); margin-bottom: 1.25rem; text-align: center;">
+                Released Vectors
+            </h3>
+            <table class="embeddings-table">
+                <tr>
+                    <th>Modality</th>
+                    <th>Rows</th>
+                    <th>Dim</th>
+                    <th>Model</th>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td class="numeric">33,247</td>
+                    <td class="numeric">768</td>
+                    <td class="code">openai/clip-vit-large-patch14</td>
+                </tr>
+                <tr>
+                    <td>Video</td>
+                    <td class="numeric">4,350</td>
+                    <td class="numeric">512</td>
+                    <td class="code">microsoft/xclip-base-patch32</td>
+                </tr>
+                <tr>
+                    <td>Audio</td>
+                    <td class="numeric">4,034</td>
+                    <td class="numeric">512</td>
+                    <td class="code">laion/larger_clap_music_and_speech</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td class="numeric">4,216</td>
+                    <td class="numeric">1,024</td>
+                    <td class="code">BAAI/bge-large-en-v1.5</td>
+                </tr>
+                <tr>
+                    <td>KG (RotatE)</td>
+                    <td class="numeric">139,465</td>
+                    <td class="numeric">512</td>
+                    <td class="code">PyKEEN RotatE (256-d complex / 512-d real)</td>
+                </tr>
+            </table>
+
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--white); margin: 3rem 0 1.25rem; text-align: center;">
+                Held-out KG Variants
+            </h3>
+            <p style="text-align: center; color: var(--silver); max-width: 760px; margin: 0 auto 1.5rem;">
+                RotatE is additionally trained with specific label predicates removed before training,
+                supporting clean classification benchmarks. The <code>all-labels</code> run held out
+                66,838 triples (1,731,988 used for training).
+            </p>
+            <table class="embeddings-table">
+                <tr>
+                    <th>Variant</th>
+                    <th>Held-out Predicate(s)</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><code>full</code></td>
+                    <td class="code">none</td>
+                    <td>KG retrieval, projections, fusion</td>
+                </tr>
+                <tr>
+                    <td><code>genre</code></td>
+                    <td class="code">schema:genre</td>
+                    <td>Clean genre classification</td>
+                </tr>
+                <tr>
+                    <td><code>rating</code></td>
+                    <td class="code">schema:contentRating</td>
+                    <td>Clean rating classification</td>
+                </tr>
+                <tr>
+                    <td><code>decade</code></td>
+                    <td class="code">schema:datePublished</td>
+                    <td>Clean decade classification</td>
+                </tr>
+                <tr>
+                    <td><code>language</code></td>
+                    <td class="code">schema:inLanguage</td>
+                    <td>Clean language classification</td>
+                </tr>
+                <tr>
+                    <td><code>all-labels</code></td>
+                    <td class="code">the four above, jointly</td>
+                    <td>Stricter robustness setting</td>
+                </tr>
+            </table>
+
+            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--white); margin: 3rem 0 1.25rem; text-align: center;">
+                Embedding Quality (Leave-one-out NCC accuracy)
+            </h3>
+            <p style="text-align: center; color: var(--silver); max-width: 760px; margin: 0 auto 1.5rem;">
+                How well each modality (and several fusion strategies) recovers KG-derived labels for the
+                352-movie multimodal intersection. Headline numbers from <code>plots/out/tab_fusion_metrics.tex</code>.
+            </p>
+            <table class="quality-table">
+                <tr>
+                    <th>Modality / Fusion</th>
+                    <th>Decade (5)</th>
+                    <th>Rating (4)</th>
+                    <th>Genre (9)</th>
+                </tr>
+                <tr>
+                    <td>Random baseline</td>
+                    <td>20.0%</td>
+                    <td>25.0%</td>
+                    <td>11.1%</td>
+                </tr>
+                <tr>
+                    <td>Poster (CLIP ViT-L/14)</td>
+                    <td>77.6%</td>
+                    <td>61.2%</td>
+                    <td>37.5%</td>
+                </tr>
+                <tr>
+                    <td>Trailer (X-CLIP)</td>
+                    <td>44.6%</td>
+                    <td>56.9%</td>
+                    <td>30.1%</td>
+                </tr>
+                <tr>
+                    <td>Soundtrack (CLAP)</td>
+                    <td>34.9%</td>
+                    <td>29.5%</td>
+                    <td>13.8%</td>
+                </tr>
+                <tr>
+                    <td>KG (RotatE, label-held-out)</td>
+                    <td>38.4%</td>
+                    <td>48.0%</td>
+                    <td>25.8%</td>
+                </tr>
+                <tr>
+                    <td>Text balanced avg. (BGE)</td>
+                    <td>40.3%</td>
+                    <td>64.3%</td>
+                    <td>50.1%</td>
+                </tr>
+                <tr>
+                    <td>Fused, late, poster-weighted (2:1:1:1:1)</td>
+                    <td>65.6%</td>
+                    <td>63.7%</td>
+                    <td>42.7%</td>
+                </tr>
+                <tr class="highlight-row">
+                    <td>Fused, supervised CV late</td>
+                    <td>80.0% &plusmn; 4.2</td>
+                    <td>61.6% &plusmn; 2.2</td>
+                    <td>57.4% &plusmn; 6.0</td>
+                </tr>
+            </table>
+
+            <div class="embedding-note" style="margin-top: 2.5rem;">
+                <strong>Alignment guarantee:</strong> every row in the released parquet files has a matching
+                subject in <code>data/kg/imdb_kg_cleaned.ttl</code>. Each modality is delivered as a Parquet
+                (zstd) file and an HDF5 (gzip-4) group with shared row order, so
+                <code>parquet_row == hdf5_index</code>.
+            </div>
+        </div>
+    </section>
+
     <section id="validation">
         <div class="section-header">
             <span class="section-tag">Quality Assurance</span>
-            <h2 class="section-title">Validated & Verified</h2>
+            <h2 class="section-title">Validated &amp; Verified</h2>
             <p class="section-subtitle">
-                Systematic validation through SPARQL-based question answering and 
-                human-in-the-loop link verification.
+                Systematic validation through SPARQL-based question answering, KG-wide competency-question
+                coverage, and human-validated link verification.
             </p>
         </div>
         <div class="validation-grid">
             <div class="validation-card">
-                <div class="validation-value">94.4%</div>
+                <div class="validation-value">98.72%</div>
                 <div class="validation-label">F1 Score</div>
             </div>
             <div class="validation-card">
-                <div class="validation-value">99.3%</div>
+                <div class="validation-value">99.35%</div>
                 <div class="validation-label">Precision</div>
             </div>
             <div class="validation-card">
-                <div class="validation-value">90.0%</div>
+                <div class="validation-value">98.09%</div>
                 <div class="validation-label">Recall</div>
             </div>
             <div class="validation-card">
-                <div class="validation-value">99.3%</div>
-                <div class="validation-label">Query Success</div>
+                <div class="validation-value">94.72%</div>
+                <div class="validation-label">Exact Match Rate</div>
             </div>
             <div class="validation-card">
-                <div class="validation-value">87.2%</div>
+                <div class="validation-value">99.29%</div>
+                <div class="validation-label">Query Success (KG-wide)</div>
+            </div>
+            <div class="validation-card">
+                <div class="validation-value">87.16%</div>
                 <div class="validation-label">YouTube Link Accuracy</div>
             </div>
-            <div class="validation-card">
-                <div class="validation-value">0.993</div>
-                <div class="validation-label">Levenshtein Similarity</div>
-            </div>
         </div>
-        <p style="text-align: center; color: var(--silver); max-width: 700px; margin: 0 auto;">
-            Evaluated against <strong style="color: var(--gold);">18 competency questions</strong> formalized as SPARQL queries, 
+        <p style="text-align: center; color: var(--silver); max-width: 760px; margin: 0 auto;">
+            Evaluated against <strong style="color: var(--gold);">18 competency questions</strong> formalised as SPARQL queries,
             covering directors, writers, actors, ratings, plots, trailers, soundtracks, images, and more.
+            Query success is re-run over all 376 seed movies (6,720 / 6,768 instances return at least one answer);
+            YouTube-link accuracy is the human-validated agreement rate (129 / 148 sampled links).
         </p>
     </section>
 
@@ -1162,13 +1471,13 @@
                 <div class="app-icon">🧩</div>
                 <h3 class="app-title">KG Completion</h3>
                 <p class="app-desc">
-                    Multimodal Knowledge Graph Completion including link prediction 
+                    Multimodal Knowledge Graph Completion including link prediction
                     and entity alignment.
                 </p>
                 <ul class="app-list">
-                    <li>Infer genre from poster and plot</li>
-                    <li>Cross-platform entity alignment</li>
-                    <li>Multimodal KG embeddings (TransE+)</li>
+                    <li>Infer <code>schema:genre</code> from poster and plot</li>
+                    <li>Cross-platform entity alignment via <code>imdb4m:hasEmbedding</code></li>
+                    <li>Released RotatE vectors + held-out variants for clean evaluation</li>
                 </ul>
             </div>
         </div>
@@ -1179,7 +1488,8 @@
             <span class="section-tag">Reference</span>
             <h2 class="section-title">Cite This Work</h2>
             <p class="section-subtitle">
-                If you use IMDB4M in your research, please cite our paper.
+                If you use IMDB4M in your research, please cite our paper. The embedding bundle is archived
+                separately on Zenodo and should be cited via its dataset DOI.
             </p>
         </div>
         <div class="citation-box">
@@ -1190,8 +1500,16 @@
   <span class="citation-field">note</span>      = {Under review}
 }</code>
         </div>
+        <div class="citation-box" style="margin-top: 1.5rem;">
+            <code class="citation-code"><span class="citation-key">@dataset</span>{imdb4m_embeddings_2026,
+  <span class="citation-field">title</span>     = {{IMDB4M} Multi-Modal and KG Embeddings (v1)},
+  <span class="citation-field">author</span>    = {Reklos, Ioannis and de Berardinis, Jacopo and Simperl, Elena and Mero{\~n}o-Pe{\~n}uela, Albert},
+  <span class="citation-field">year</span>      = {2026},
+  <span class="citation-field">doi</span>       = {&lt;ZENODO_DOI&gt;}
+}</code>
+        </div>
         <div style="text-align: center; margin-top: 3rem;">
-            <a href="https://github.com/onradio/imdb4m" class="btn btn-primary">Download Dataset</a>
+            <a href="https://github.com/onradio/imdb4m" class="btn btn-primary">View on GitHub</a>
         </div>
     </section>
 
