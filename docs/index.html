@@ -1045,8 +1045,8 @@
                     <td>1,800,490</td>
                 </tr>
                 <tr>
-                    <td>PyKEEN Entities (URIs + literals + bnodes)</td>
-                    <td>656,003</td>
+                    <td>Unique RDF Nodes (URIs + literals + bnodes)</td>
+                    <td>656,121</td>
                 </tr>
                 <tr>
                     <td>URIRef Entities (released as KG embeddings)</td>
@@ -1162,7 +1162,7 @@
                         <td class="highlight-cell">34,039</td>
                         <td class="highlight-cell">3,981</td>
                         <td class="highlight-cell">4,521</td>
-                        <td class="highlight-cell">656,003</td>
+                        <td class="highlight-cell">656,121</td>
                         <td class="highlight-cell">58</td>
                     </tr>
                 </table>
@@ -1225,6 +1225,21 @@
                 <strong>Where to get them:</strong> the embedding files are <em>not</em> stored in this git repository.
                 They are released as a Zenodo bundle (DOI TBD). The <code>embeddings/</code> Python module in this
                 repo is the <em>generator</em> of those vectors and can be re-run locally.
+            </div>
+
+            <div class="embedding-note">
+                <strong>Note on entity counts (rdflib vs PyKEEN).</strong>
+                All KG-size figures elsewhere on this page (e.g. <strong>656,121</strong> unique RDF nodes,
+                <strong>263,343</strong> literal nodes) are computed by parsing
+                <code>data/kg/imdb_kg_cleaned.ttl</code> with <code>rdflib</code>. The PyKEEN entity table that
+                backs the released KG embeddings has <strong>656,003</strong> rows instead &mdash; 118 fewer than
+                rdflib reports &mdash; because PyKEEN dedupes literals more aggressively than rdflib (literals
+                with identical lexical form but different datatypes or language tags are collapsed into one
+                entity). The 118-node delta is entirely in the literal block (rdflib: 263,343 distinct literals;
+                PyKEEN: 263,225). Concretely, the released bundle contains <strong>139,465</strong> rows in the
+                URIRef KG-embedding table (the table most users consume &mdash; unaffected by the dedup difference)
+                and <strong>~656,003</strong> rows in the optional <code>/kg_pykeen_entities/</code> HDF5 group.
+                Both numbers describe the same KG; they differ only in how the literal namespace is collapsed.
             </div>
 
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--white); margin-bottom: 1.25rem; text-align: center;">

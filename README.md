@@ -75,7 +75,7 @@ The knowledge graph integrates:
 | Metric | Value |
 |--------|-------|
 | **RDF Triples** | 1,800,490 |
-| **PyKEEN Entities** (URIs + literals + bnodes) | 656,003 |
+| **Unique RDF Nodes** (URIs + literals + bnodes) | 656,121 |
 | **URIRef Entities** (released as KG embeddings) | 139,465 |
 | **Distinct Predicates** | 58 |
 | **Seed Movies (fully annotated)** | 376 |
@@ -90,6 +90,8 @@ The knowledge graph integrates:
 | **`schema:AggregateRating` instances** | 734 |
 | **`schema:Review` instances** | 563 |
 | **Wikidata Alignments** | 4,284 actors + 376 movies (4,660 `owl:sameAs` triples) |
+
+> The companion `void.ttl` reports `void:entities = 392,778` (URIs + blank nodes only), per the [VoID vocabulary](https://www.w3.org/TR/void/) where literals are values *of* entities rather than entities themselves. The 656,121 figure above includes literals, which is the more useful number when sizing the KG for loading. See the [Embeddings](#-embeddings) section for the separate **656,003** PyKEEN entity-table count and why it differs by 118 from the rdflib node count.
 
 ### 📈 Modality Coverage (Seed Movies, KG-derived)
 
@@ -227,7 +229,6 @@ imdb4m/
 ├── 📜 modality_count_actors.py     # Per-actor modality coverage
 ├── 📜 count_youtube_links.py       # Soundtrack ↔ YouTube link counter
 ├── 📜 create_sameas_mappings.py    # Wikidata linking
-├── 📜 changes_tracking.md          # Numeric values mirrored into the repo HTML
 └── 📜 requirements.txt             # Python dependencies
 ```
 
@@ -252,7 +253,7 @@ IMDB4M follows a four-stage pipeline:
 ### 3. Pruning and Disk Alignment
 - Removed leaf-node movies connected to only one artist
 - Reconciled the KG against the actually downloaded media (`kg_cleanup/` pipeline) so every media triple in `data/kg/imdb_kg_cleaned.ttl` corresponds to a file that exists on disk
-- Yielded a refined core of **50,756 movies**, **5,484 artists**, **656,003 PyKEEN entities** (139,465 distinct URIRefs), and **1,800,490 triples** across **58 distinct predicates**
+- Yielded a refined core of **50,756 movies**, **5,484 artists**, **656,121 unique RDF nodes** (139,465 distinct URIRefs), and **1,800,490 triples** across **58 distinct predicates**
 
 ### 4. External Linking
 - **Wikidata Alignment**: Query SPARQL endpoint via IMDb ID property P345 → 4,284 actor + 376 movie `owl:sameAs` mappings
@@ -561,6 +562,13 @@ IMDB4M ships pre-computed embeddings for **every released modality** (image, vid
 
 > **Where to get them:** the embedding files are **not stored in this git repository**. They are released as a Zenodo bundle at `<ZENODO_DOI>` (TBD). The `embeddings/` Python module in this repo is the *generator* of those vectors and can be re-run locally — see [Reproduce Locally](#reproduce-locally) below.
 
+> **Note on entity counts (rdflib vs PyKEEN).** All KG-size figures elsewhere in this README (e.g. **656,121 unique RDF nodes**, **263,343 literal nodes**) are computed by parsing `data/kg/imdb_kg_cleaned.ttl` with `rdflib`. The PyKEEN entity table that backs the released KG embeddings has **656,003** rows instead — 118 fewer than rdflib reports — because PyKEEN dedupes literals more aggressively than rdflib (e.g., literals with identical lexical form but different datatypes or language tags are collapsed into one entity). The 118-node delta is entirely in the literal block (rdflib: 263,343 distinct literals; PyKEEN: 263,225). Concretely, the released bundle contains:
+>
+> - **139,465** rows in the URIRef KG-embedding table (the table most users actually consume) — unaffected by the dedup difference.
+> - **~656,003** rows in the optional `/kg_pykeen_entities/` HDF5 group, which exposes embeddings for *every* PyKEEN entity (URIs + blank nodes + deduped literals).
+>
+> Both numbers describe the same KG (`data/kg/imdb_kg_cleaned.ttl`); they differ only in how the literal namespace is collapsed.
+
 ### Released Vectors
 
 | Modality | Rows | Dim | Model | Source predicates / files |
@@ -748,37 +756,29 @@ The graph below is the directed multigraph induced by all `(subject, predicate, 
 |--------|------:|-------|
 | Total Triples | 1,800,490 | rdflib parse |
 | Unique Subjects | 359,615 | URIs + blank nodes that appear as subjects |
-| Unique Objects | 655,975 | URIs + blank nodes + literals |
+| Unique Objects | 656,093 | URIs + blank nodes + literals |
 | Unique Predicates | 58 | |
-| Unique Nodes (full graph) | 656,003 | 139,465 URIs + 253,313 blank nodes + 263,225 literals |
+| Unique Nodes (full graph) | 656,121 | 139,465 URIs + 253,313 blank nodes + 263,343 literals |
 | Connected Components (URI view) | 1 | the URI-entity subgraph is fully connected |
 | Largest Component (URI view) | 139,096 nodes (100.0%) | every URI entity is reachable |
-| Average Degree (full graph) | 5.48 | undirected total degree |
+| Average Degree (full graph) | 5.49 | undirected total degree |
 | Average In/Out Degree (full graph) | 2.74 / 2.74 | matches `triples / nodes` |
 | Average Degree (URI view) | 7.19 | URI ↔ URI edges only |
 | Max Total Degree | 232,492 | the `schema:PerformanceRole` *type* node (every PerformanceRole points to it) |
 | Max Out-Degree | 786 | the most prolific actor URI (a hub of `schema:performerIn` edges) |
 | Max In-Degree | 232,492 | same `schema:PerformanceRole` type hub |
 | Source Nodes (in=0, out>0) | 28 | typically top-level seeds and namespace hubs |
-| Sink Nodes (out=0, in>0) | 296,131 (45.2% of full graph) | predominantly literals and dangling references |
-| Leaf Nodes (full graph, deg=1) | 253,772 (38.7%) | mostly literals |
+| Sink Nodes (out=0, in>0) | 296,249 (45.2% of full graph) | predominantly literals and dangling references |
+| Leaf Nodes (full graph, deg=1) | 253,779 (38.7%) | mostly literals |
 | Leaf Nodes (URI view, deg=1) | 35,960 (25.9%) | one-off URI references (e.g. external links) |
 | Blank Nodes | 253,313 (38.61% of all nodes) | mostly `schema:PerformanceRole`, `schema:MusicRecording`, `schema:Rating`, `schema:Review`, `schema:MonetaryAmount` reified relations |
-| Hub Nodes (top 1% by total degree) | 6,560 nodes with degree ≥ 37 | dominated by prolific actors, schema-type hubs, and frequently-referenced roles |
-| Density (URI view) | 5.2 × 10⁻⁵ | sparse, as expected for a Web-scale KG |
+| Hub Nodes (top 1% by total degree) | 6,630 nodes with degree ≥ 37 | dominated by prolific actors, schema-type hubs, and frequently-referenced roles |
+| Density (URI view) | 5.17 × 10⁻⁵ | sparse, as expected for a Web-scale KG |
 | Movies with a single actor (`schema:performerIn`) | 1 | residual edge case from the cleanup pipeline |
 | Orphan movies (single actor + minimal info) | 0 | the disk-alignment pipeline removes them |
 
 These statistics are produced by `analyze_kg.py` (analyse-only mode) in roughly 70 seconds on a single core. The full output, including a breakdown of movies by actor count and the top-15 predicate / type distributions, is printed to stdout.
 
-### Why earlier versions of `analyze_kg.py` were unreliable
-
-Two issues produced inconsistent or simply non-running results before this refactor:
-
-1. **The script pointed at a directory that no longer existed.** Its `BASE_PATH` was hard-coded to `extractor/movies`, but the per-entity TTL corpus has been at `data/movies/` for several iterations. Running it as-is produced "0 TTL files found" and exited.
-2. **It was a *destructive* script.** The legacy entry point loaded ~5,800 per-entity TTL files via `rdflib`, identified single-actor "orphan" movies, *deleted those triples*, and **wrote out a fresh `imdb_kg_cleaned.ttl`**, overwriting whatever was already there. That is why running it after the disk-alignment pipeline (`kg_cleanup/`) had been applied produced different graph-structure numbers each time: it was effectively re-pruning the graph from scratch using a different definition of "orphan" than the disk-aligner. It also re-parsed every per-entity file, which is slow and exposes any malformed TTL in the corpus.
-
-The refactored `analyze_kg.py` defaults to *analyse-only* mode, which loads the already-cleaned KG (`data/kg/imdb_kg_cleaned.ttl`) directly via `rdflib.Graph.parse()` and prints the statistics without modifying anything. The legacy build pipeline is still available behind the explicit `--build` flag for users who actually want to rebuild the KG from the per-entity corpus.
 
 ---
 
@@ -912,7 +912,7 @@ The embedding bundle is archived separately on Zenodo and should be cited via it
 | MKG-Y | 12,305 | 14,244 | – | – | 15,000 | 28 |
 | TIVA-KG | 11,858 | 11,636 | 10,269 | 2,441 | 11,858 | 16 |
 | KVC16K | 14,822 | 14,822 | 14,822 | 14,822 | 16,015 | 4 |
-| **IMDB4M** | **390,747** | **34,039** | **3,981** | **4,521** | **656,003** | **58** |
+| **IMDB4M** | **390,747** | **34,039** | **3,981** | **4,521** | **656,121** | **58** |
 
 ---
 
