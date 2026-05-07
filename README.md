@@ -64,7 +64,7 @@ The knowledge graph integrates:
 ### 🗃️ Quad-Modal Data Integration
 | Modality | Description | Schema.org Types | Coverage on seed movies (KG-derived) |
 |----------|-------------|------------------|------------|
-| **Text** | Plots, reviews, keywords, captions | `schema:abstract`, `schema:description`, `schema:reviewBody`, `schema:caption`, `schema:keywords`, `schema:genre`, `schema:inLanguage`, `schema:contentRating`, `schema:alternateName`, `schema:name` | 100.00% coverage, 18.58 text triples / seed movie |
+| **Text** | Plots, reviews, keywords, captions | `schema:abstract`, `schema:description`, `schema:reviewBody`, `schema:caption`, `schema:keywords`, `schema:genre`, `schema:inLanguage`, `schema:contentRating`, `schema:alternateName`, `schema:name` | 100.00% coverage, 15.10 text triples / seed movie |
 | **Image** | Stills, posters with captions & entity links | `schema:ImageObject` | 100.00% coverage, 6.91 `schema:image` triples / seed movie |
 | **Video** | Trailers with thumbnails, duration, upload dates | `schema:VideoObject` | 99.20% coverage, 0.99 `schema:trailer` triples / seed movie |
 | **Audio** | Soundtracks with performers, composers, lyricists | `schema:MusicRecording`, `schema:MusicComposition` | 94.95% coverage, 12.02 `schema:audio` triples / seed movie |
@@ -100,7 +100,7 @@ All values below are computed directly from `data/kg/imdb_kg_cleaned.ttl`. "Cove
 
 | Modality | Coverage | Avg. per Seed Movie | Seed-set Total |
 |----------|----------|--------------------:|---------------:|
-| Text (10 properties: name, abstract, description, reviewBody, caption, keywords, genre, inLanguage, contentRating, alternateName) | 100.00% (376/376) | 16.10 | 6,052 |
+| Text (10 properties: name, abstract, description, reviewBody, caption, keywords, genre, inLanguage, contentRating, alternateName) | 100.00% (376/376) | 15.10 | 5,676 |
 | Images (`schema:image`) | 100.00% (376/376) | 6.91 | 2,599 |
 | Video (`schema:trailer`) | 99.20% (373/376) | 0.99 | 373 |
 | Audio (`schema:audio`) | 94.95% (357/376) | 12.02 | 4,521 |
