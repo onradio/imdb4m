@@ -1,15 +1,15 @@
 # IMDB4M Release — Licence and Use
 
-> **Note.** This is a *stub* prepared by the release-bundling pipeline.
-> Please replace the text below with the final legal text you intend to
-> publish alongside the dataset.  The exact wording matters and should
-> be reviewed by your institution before dissemination.
+This bundle ships the IMDB4M code and knowledge graph; the matching
+embedding vectors are archived on Zenodo at
+[10.5281/zenodo.20057840](https://doi.org/10.5281/zenodo.20057840) and
+inherit the licence terms described below.
 
 ## 1. Knowledge graph and embedding vectors
 
-The RDF files (`kg/*.ttl`, `embeddings/embedding_metadata.ttl`) and the
-numerical embedding tables (`embeddings/*.parquet`, `embeddings/*.h5`)
-are released for **non-commercial research use** under
+The RDF files (`kg/*.ttl`, `embedding_metadata.ttl` on Zenodo) and the
+numerical embedding tables (`*.parquet`, `embeddings.h5` on Zenodo) are
+released for **non-commercial research use** under
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 If you redistribute, modify, or build derivative works:

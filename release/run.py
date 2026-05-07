@@ -2,11 +2,23 @@
 
 Runs in order:
 
-1. :mod:`release.verify_alignment` — compute the alignment report.
-2. :mod:`release.regenerate_metadata` — emit a fresh companion TTL.
-3. :mod:`release.enhance_embeddings` — gzip-compress + enrich HDF5.
-4. :mod:`release.make_bundle` — copy artefacts and compute SHA-256
-   manifest into ``release_output/imdb4m-release-v1/``.
+1. :mod:`release.verify_alignment` — compute the alignment report
+   between ``data/kg/imdb_kg_cleaned.ttl`` and the per-modality parquet
+   files (image / video / audio) sitting in ``embeddings_output/``.
+2. :mod:`release.regenerate_metadata` — emit a fresh companion TTL of
+   ``imdb4m:hasEmbedding`` records for the four media modalities.
+3. :mod:`release.enhance_embeddings` — gzip-compress + enrich the
+   master HDF5, dynamically covering every group present in the source
+   (media + KG + KG-heldout variants + PyKEEN entity tables).
+4. :mod:`release.make_bundle` — copy the cleaned KG TTL, the alignment
+   report, the README/LICENSE templates, and an empty
+   ``embeddings_output/`` (with a Zenodo-pointer README) into
+   ``release_output/imdb4m-release-v1/`` and compute the SHA-256
+   manifest.
+
+The embedding parquet/HDF5/TTL artefacts produced by stages 2–3 are
+**not** included in the bundle — they are uploaded separately to Zenodo
+(DOI ``10.5281/zenodo.20057840``).
 
 Each stage can be skipped via CLI flags so you can re-run individual
 steps without repeating expensive work.

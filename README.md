@@ -11,7 +11,8 @@
 [![Schema.org](https://img.shields.io/badge/Schema.org-Vocabulary-red?style=for-the-badge)](https://schema.org/)
 [![CC-BY-NC](https://img.shields.io/badge/License-CC--BY--NC-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![1.80M Triples](https://img.shields.io/badge/Triples-1.80M-green?style=for-the-badge)]()
-[![Embeddings on Zenodo](https://img.shields.io/badge/Embeddings-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)]()
+[![Embeddings on Zenodo](https://img.shields.io/badge/Embeddings-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20057840)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20057840-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.20057840)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 
 <p align="center">
@@ -182,14 +183,17 @@ imdb4m/
 │   │   └── sameas_mappings.ttl     # Wikidata alignments
 │   └── 📂 sample/                   # Sample subset for testing
 │
-├── 📂 embeddings/                   # Embedding generators (image, video,
-│   ├── embed_all.py                #   audio, text, KG-RotatE).  These
-│   ├── image_embedder.py           #   scripts produce the vectors that
-│   ├── video_embedder.py           #   are released on Zenodo; the
-│   ├── audio_embedder.py           #   vectors themselves are NOT in git.
-│   ├── text_embedder.py
-│   ├── kg_rotate.py                # PyKEEN RotatE training pipeline
+├── 📂 embeddings/                   # Embedding-pipeline source code, kept
+│   ├── embed_all.py                #   for transparency / model attribution.
+│   ├── image_embedder.py           #   The released vectors live on Zenodo
+│   ├── video_embedder.py           #   (DOI 10.5281/zenodo.20057840) — the
+│   ├── audio_embedder.py           #   pipeline is not re-runnable without
+│   ├── text_embedder.py            #   the source media, which we do not
+│   ├── kg_rotate.py                #   redistribute (Linking over Hosting).
 │   └── KG_ROTATE.md                # KG embedding documentation
+│
+├── 📂 embeddings_output/            # Empty by default. Drop the Zenodo
+│   └── README.md                   #   files here so the project picks them up.
 │
 ├── 📂 kg_cleanup/                   # Disk-alignment pipeline that produces
 │   └── README.md                   #   the released `imdb_kg_cleaned.ttl`
@@ -232,7 +236,7 @@ imdb4m/
 └── 📜 requirements.txt             # Python dependencies
 ```
 
-> **Note:** the local generation directory `embeddings_output/` is not in git. The released embedding vectors live on Zenodo (see the [Embeddings](#-embeddings) section below).
+> **Note:** the `embeddings_output/` directory ships empty in this repository — the project code reads from it, but the actual vectors are too large to distribute via git. Download them from Zenodo ([10.5281/zenodo.20057840](https://doi.org/10.5281/zenodo.20057840)) and drop the files directly into `embeddings_output/`. See the [Embeddings](#-embeddings) section below for full instructions.
 
 ---
 
@@ -260,9 +264,10 @@ IMDB4M follows a four-stage pipeline:
 - **YouTube Linking**: RAG pipeline with Gemini verification → 4,211 soundtrack-to-YouTube links across 357 movies (asserted as 4,521 `schema:audio` triples in the cleaned KG)
 
 ### 5. Embedding
-- **Media + text encoders** in `embeddings/embed_all.py` produce the per-modality vectors
-- **KG embeddings** in `embeddings/kg_rotate.py` train PyKEEN `RotatE` on the full KG plus four held-out variants (decade / rating / genre / language) and a stricter `all-labels` variant — see [embeddings/KG_ROTATE.md](embeddings/KG_ROTATE.md)
-- The trained vectors are uploaded to Zenodo and referenced from the KG via `imdb4m:hasEmbedding` (see [Embeddings](#-embeddings))
+- **Media + text vectors** were produced from the downloaded media files with CLIP ViT-L/14 (images), X-CLIP base-32 (videos), LAION CLAP (audio), and BGE-large-EN (KG text literals)
+- **KG vectors** were trained with PyKEEN's `RotatE` on the full KG plus four held-out variants (decade / rating / genre / language) and a stricter `all-labels` variant — see [embeddings/KG_ROTATE.md](embeddings/KG_ROTATE.md) for the full pipeline write-up
+- The trained vectors are archived on Zenodo at [10.5281/zenodo.20057840](https://doi.org/10.5281/zenodo.20057840) and referenced from the KG via `imdb4m:hasEmbedding` (see [Embeddings](#-embeddings))
+- The original images, videos, and audio files are **not redistributed** with this project, in line with IMDb / YouTube terms of use; only the URLs and the derived vectors are shared.
 
 ### Data Extraction
 The extraction pipeline leverages:
@@ -560,7 +565,7 @@ python create_sameas_mappings.py
 
 IMDB4M ships pre-computed embeddings for **every released modality** (image, video, audio, text) plus **knowledge-graph embeddings** trained with PyKEEN's RotatE on `data/kg/imdb_kg_cleaned.ttl`. All vectors are L2-normalised (cosine similarity equals dot product) and aligned one-for-one to the KG via `imdb4m:hasEmbedding` records.
 
-> **Where to get them:** the embedding files are **not stored in this git repository**. They are released as a Zenodo bundle at `<ZENODO_DOI>` (TBD). The `embeddings/` Python module in this repo is the *generator* of those vectors and can be re-run locally — see [Reproduce Locally](#reproduce-locally) below.
+> **Where to get them:** the embedding files are **not stored in this git repository**. They are released as a Zenodo deposit at [10.5281/zenodo.20057840](https://doi.org/10.5281/zenodo.20057840). After cloning this repo, drop the Zenodo files into the empty `embeddings_output/` directory at the project root — see [Download from Zenodo](#download-from-zenodo) below.
 
 > **Note on entity counts (rdflib vs PyKEEN).** All KG-size figures elsewhere in this README (e.g. **656,121 unique RDF nodes**, **263,343 literal nodes**) are computed by parsing `data/kg/imdb_kg_cleaned.ttl` with `rdflib`. The PyKEEN entity table that backs the released KG embeddings has **656,003** rows instead — 118 fewer than rdflib reports — because PyKEEN dedupes literals more aggressively than rdflib (e.g., literals with identical lexical form but different datatypes or language tags are collapsed into one entity). The 118-node delta is entirely in the literal block (rdflib: 263,343 distinct literals; PyKEEN: 263,225). Concretely, the released bundle contains:
 >
@@ -676,19 +681,41 @@ Every row in the released parquet files has a matching subject in `data/kg/imdb_
 
 \* Three movies assert ≥1 soundtrack track in the KG but the track lacks a resolvable YouTube URL and was therefore not embedded.
 
-### Reproduce Locally
+### Download from Zenodo
 
-The vectors on Zenodo were produced by the scripts in `embeddings/`:
+The pre-computed vectors are archived at
+[10.5281/zenodo.20057840](https://doi.org/10.5281/zenodo.20057840). To
+hook them up to the project code, clone this repo and drop every file
+from the Zenodo deposit into the empty `embeddings_output/` directory:
 
 ```bash
-# Image, video, audio, and text encoders
-python -m embeddings.embed_all --modalities image video audio text
+git clone https://github.com/onradio/imdb4m.git
+cd imdb4m
+pip install -r requirements.txt
 
-# KG embeddings: full + four held-out variants + the all-labels variant
-python -m embeddings.kg_rotate --variant all --dim 256 --epochs 300
+# Pull every file from the Zenodo record straight into embeddings_output/
+pip install zenodo_get
+zenodo_get 10.5281/zenodo.20057840 -o embeddings_output/
+
+# Sanity-check that everything is in place
+python verify_embeddings_output.py
 ```
 
-Output is written to the local-only directory `embeddings_output/` and can then be uploaded to Zenodo. See [embeddings/KG_ROTATE.md](embeddings/KG_ROTATE.md) for the full RotatE pipeline (RDF → PyKEEN labelled triples → exported URIRef table) and [release/README_bundle.md](release/README_bundle.md) for the bundle layout.
+Once `embeddings_output/` is populated, the rest of the project (KG
+loaders, plotting code, embedding-quality scripts, the `release/`
+bundling pipeline, etc.) picks the files up automatically — no further
+configuration is needed. See [embeddings/KG_ROTATE.md](embeddings/KG_ROTATE.md)
+for the per-variant training metadata that ships alongside the vectors,
+and [release/README_bundle.md](release/README_bundle.md) for the
+release-bundle layout.
+
+> **Note on reproducibility.** IMDB4M follows the *Linking over
+> Hosting* principle and does not redistribute the underlying images,
+> videos, or audio clips, so the embedding pipeline cannot be re-run
+> end-to-end without first re-downloading the source media from IMDb
+> and YouTube under their respective terms of use. The code under
+> `embeddings/` is published for transparency and review of the exact
+> models / hyper-parameters used to produce the released vectors.
 
 ---
 
@@ -900,7 +927,8 @@ The embedding bundle is archived separately on Zenodo and should be cited via it
   title  = {{IMDB4M} Multi-Modal and KG Embeddings (v1)},
   author = {Reklos, Ioannis and de Berardinis, Jacopo and Simperl, Elena and Mero{\~n}o-Pe{\~n}uela, Albert},
   year   = {2026},
-  doi    = {<ZENODO_DOI>}
+  doi    = {10.5281/zenodo.20057840},
+  url    = {https://doi.org/10.5281/zenodo.20057840}
 }
 ```
 
