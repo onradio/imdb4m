@@ -46,7 +46,7 @@ The knowledge graph integrates:
 - 🎭 **Cast & Crew**: 5,484 actors, directors, writers with complete filmographies using `schema:PerformanceRole`
 - 🎵 **Soundtracks**: Music recordings and compositions with performers, composers, lyricists (94.95% of seed movies, avg. 12.02 `schema:audio` triples per seed movie in the KG)
 - 📹 **Videos**: Movie trailers with thumbnails, duration, and upload dates (99.20% coverage)
-- 🖼️ **Images**: Movie stills and promotional images with captions and entity links (avg. 6.91 `schema:image` triples per seed movie; 34,039 distinct `schema:ImageObject` instances across the whole KG)
+- 🖼️ **Images**: Movie stills and promotional images with captions and entity links (avg. 7.91 image triples per seed movie incl. `schema:image` and `schema:thumbnail`; 34,039 distinct `schema:ImageObject` instances across the whole KG)
 - ⭐ **Reviews & Ratings**: User reviews, aggregate ratings, Metacritic scores, AI-generated summaries
 - 🔗 **External Links**: Wikidata entity alignments via `owl:sameAs` mappings (4,284 actors and 376 movies)
 - 🧠 **Pre-computed Embeddings (Zenodo)**: Image (CLIP ViT-L/14, 768-d), video (X-CLIP, 512-d), audio (CLAP, 512-d), text (BGE-large-EN, 1024-d), and KG (RotatE 256-d complex / 512-d real) — all L2-normalised
@@ -64,8 +64,8 @@ The knowledge graph integrates:
 ### 🗃️ Quad-Modal Data Integration
 | Modality | Description | Schema.org Types | Coverage on seed movies (KG-derived) |
 |----------|-------------|------------------|------------|
-| **Text** | Plots, reviews, keywords, captions | `schema:abstract`, `schema:description`, `schema:reviewBody`, `schema:caption`, `schema:keywords`, `schema:genre`, `schema:inLanguage`, `schema:contentRating`, `schema:alternateName`, `schema:name` | 100.00% coverage, 15.10 text triples / seed movie |
-| **Image** | Stills, posters with captions & entity links | `schema:ImageObject` | 100.00% coverage, 6.91 `schema:image` triples / seed movie |
+| **Text** | Plots, reviews, keywords, captions, character/job names | `schema:name`, `schema:abstract`, `schema:description`, `schema:reviewBody`, `schema:caption`, `schema:keywords`, `schema:genre`, `schema:inLanguage`, `schema:contentRating`, `schema:alternateName`, `schema:characterName`, `schema:jobTitle`, `schema:currency`, `schema:unitCode` | 100.00% coverage, 70.44 text triples / seed movie |
+| **Image** | Stills, posters with captions & entity links | `schema:ImageObject` | 100.00% coverage, 7.91 image triples / seed movie (`schema:image` + `schema:thumbnail`) |
 | **Video** | Trailers with thumbnails, duration, upload dates | `schema:VideoObject` | 99.20% coverage, 0.99 `schema:trailer` triples / seed movie |
 | **Audio** | Soundtracks with performers, composers, lyricists | `schema:MusicRecording`, `schema:MusicComposition` | 94.95% coverage, 12.02 `schema:audio` triples / seed movie |
 
@@ -96,12 +96,12 @@ The knowledge graph integrates:
 
 ### 📈 Modality Coverage (Seed Movies, KG-derived)
 
-All values below are computed directly from `data/kg/imdb_kg_cleaned.ttl`. "Coverage" is the number of seed movies (those carrying at least one `schema:abstract` literal) that also assert at least one triple of the corresponding modality. "Avg. per movie" is the per-modality triple count attached directly to seed movie URIs (the cleaned KG contains both `https://www.imdb.com/title/tt…` and `…/tt…/` URI variants for some movies; these are unioned by `tt` ID to avoid double-counting).
+All values below are computed directly from `data/kg/imdb_kg_cleaned.ttl` by `modality_count_from_cleaned_kg.py` and match the paper's Table 5 verbatim. "Coverage" is the number of seed movies (those carrying at least one `schema:abstract` literal) that also assert at least one triple of the corresponding modality. "Avg. per movie" is the per-modality element count obtained by traversing seed-movie URIs together with the directly attached blank nodes and media objects (reviews, performance roles, recordings, image/video objects); the cleaned KG contains both `https://www.imdb.com/title/tt…` and `…/tt…/` URI variants for some movies, which are unioned by `tt` ID to avoid double-counting.
 
 | Modality | Coverage | Avg. per Seed Movie | Seed-set Total |
 |----------|----------|--------------------:|---------------:|
-| Text (10 properties: name, abstract, description, reviewBody, caption, keywords, genre, inLanguage, contentRating, alternateName) | 100.00% (376/376) | 15.10 | 5,676 |
-| Images (`schema:image`) | 100.00% (376/376) | 6.91 | 2,599 |
+| Text (14 predicates: name, abstract, description, reviewBody, caption, keywords, genre, inLanguage, contentRating, alternateName, characterName, jobTitle, currency, unitCode) | 100.00% (376/376) | 70.44 | 26,486 |
+| Images (`schema:image` + `schema:thumbnail`) | 100.00% (376/376) | 7.91 | 2,975 |
 | Video (`schema:trailer`) | 99.20% (373/376) | 0.99 | 373 |
 | Audio (`schema:audio`) | 94.95% (357/376) | 12.02 | 4,521 |
 
