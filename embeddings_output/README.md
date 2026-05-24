@@ -56,7 +56,7 @@ embeddings_output/
 You can sanity-check the layout with:
 
 ```bash
-python verify_embeddings_output.py
+python scripts/embeddings/verify_embeddings_output.py
 ```
 
 ## Why these files are not in git

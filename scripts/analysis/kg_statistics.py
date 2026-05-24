@@ -741,7 +741,15 @@ def main(ttl_file: Optional[str] = None):
     
     # Default file path
     if ttl_file is None:
-        ttl_file = Path(__file__).parent / "data" / "kg" / "imdb_kg_cleaned.ttl"
+        import sys
+        from pathlib import Path
+
+        _repo = Path(__file__).resolve().parents[2]
+        if str(_repo) not in sys.path:
+            sys.path.insert(0, str(_repo))
+        from scripts.paths import KG_DIR
+
+        ttl_file = KG_DIR / "imdb_kg_cleaned.ttl"
     else:
         ttl_file = Path(ttl_file)
     

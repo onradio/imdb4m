@@ -412,6 +412,13 @@ class YouTubeValidator:
 def main():
     """Main entry point."""
     import argparse
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPORTS_VALIDATION
     
     parser = argparse.ArgumentParser(
         description="Interactive YouTube link validator with GUI"
@@ -419,7 +426,7 @@ def main():
     parser.add_argument(
         '--excel-file',
         type=str,
-        default='soundtrack_links.xlsx',
+        default=str(REPORTS_VALIDATION / "soundtrack_links.xlsx"),
         help='Path to Excel file with soundtrack links'
     )
     parser.add_argument(

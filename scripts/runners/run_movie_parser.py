@@ -17,11 +17,16 @@ from rdflib import Graph
 from rdflib.namespace import RDF
 from openpyxl import Workbook
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+import sys
+from pathlib import Path
 
-from parse_imdb_movie import SCHEMA  # type: ignore  # Reuse shared namespace definitions
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+from scripts.paths import PARSING_DIR, REPO_ROOT, REPORTS_STATS
+
+from scripts.parsing.parse_imdb_movie import SCHEMA  # type: ignore  # Reuse shared namespace definitions
 
 
 def run_parser(
@@ -177,8 +182,8 @@ def main() -> int:
     parser.add_argument(
         "--parse-script",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "parse_imdb_movie.py",
-        help="Optional path to parse_imdb_movie.py (defaults to project root).",
+        default=PARSING_DIR / "parse_imdb_movie.py",
+        help="Optional path to parse_imdb_movie.py (defaults to scripts/parsing/).",
     )
     parser.add_argument(
         "--output-dir",
@@ -189,19 +194,19 @@ def main() -> int:
     parser.add_argument(
         "--movies-root",
         type=Path,
-        default=PROJECT_ROOT / "extractor" / "movies",
+        default=REPO_ROOT / "extractor" / "movies",
         help="Root directory that holds movie folders (used with --all-movies).",
     )
     parser.add_argument(
         "--stats-xlsx",
         type=Path,
-        default=PROJECT_ROOT / "movie_stats.xlsx",
+        default=REPORTS_STATS / "movie_stats.xlsx",
         help="Path to the Excel file that will store per-movie statistics.",
     )
     parser.add_argument(
         "--error-log",
         type=Path,
-        default=PROJECT_ROOT / "error.txt",
+        default=REPO_ROOT / "error.txt",
         help="Path to the text file that will capture failures.",
     )
     parser.add_argument(

@@ -7,12 +7,18 @@ and ensure the property mapping covers all cases.
 import os
 import re
 import json
+import sys
 from pathlib import Path
+
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
 from bs4 import BeautifulSoup
 from collections import Counter, defaultdict
 
 # Import the comprehensive property mapping
-from soundtrack_property_mapping import (
+from scripts.parsing.soundtrack_property_mapping import (
     PROPERTY_MAPPING, 
     COMPOUND_ROLES, 
     SCHEMA_ORG_MAPPING,
@@ -171,7 +177,9 @@ def main():
     """
     Main function to analyze all soundtrack HTML files.
     """
-    base_dir = Path('/home/ioannis/PycharmProjects/imdb4m/extractor/movies')
+    from scripts.paths import REPO_ROOT
+
+    base_dir = REPO_ROOT / "extractor" / "movies"
     
     # Find all soundtrack HTML files
     sound_files = list(base_dir.glob('**/movie_soundtrack/*_sound.html'))

@@ -199,7 +199,16 @@ def generate_excel(sample_dir: Path, output_file: Path):
 def main():
     """Main entry point."""
     import argparse
-    
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPORTS_VALIDATION
+
+    default_output = str(REPORTS_VALIDATION / "soundtrack_links.xlsx")
+
     parser = argparse.ArgumentParser(
         description="Generate Excel file with soundtrack information from sample directory"
     )
@@ -212,7 +221,7 @@ def main():
     parser.add_argument(
         '--output',
         type=str,
-        default='soundtrack_links.xlsx',
+        default=default_output,
         help='Output Excel filename'
     )
     

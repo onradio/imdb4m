@@ -131,8 +131,15 @@ def analyze_actor(actor_dir: Path) -> Optional[dict]:
 
 
 def main():
-    # Path to actors directory
-    actors_dir = Path(__file__).parent / "data" / "movies" / "actors"
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR, REPORTS_STATS
+
+    actors_dir = DATA_DIR / "movies" / "actors"
     
     if not actors_dir.exists():
         print(f"Error: Actors directory not found: {actors_dir}")
@@ -253,7 +260,7 @@ def main():
     df_output = df[column_order]
     
     # Save to Excel
-    output_file = Path(__file__).parent / "modality_counts_actors.xlsx"
+    output_file = REPORTS_STATS / "modality_counts_actors.xlsx"
     
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
         # Write summary sheet

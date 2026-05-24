@@ -23,11 +23,16 @@ from rdflib import Graph
 from rdflib.namespace import RDF
 from openpyxl import Workbook
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-if str(PROJECT_ROOT) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT))
+import sys
+from pathlib import Path
 
-from parse_imdb_actor import SCHEMA  # type: ignore  # Reuse shared namespace definitions
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+from scripts.paths import PARSING_DIR, REPO_ROOT, REPORTS_STATS
+
+from scripts.parsing.parse_imdb_actor import SCHEMA  # type: ignore  # Reuse shared namespace definitions
 
 
 def extract_nm_id(html_path: Path) -> str:
@@ -247,8 +252,8 @@ def main() -> int:
     parser.add_argument(
         "--parse-script",
         type=Path,
-        default=PROJECT_ROOT / "parse_imdb_actor.py",
-        help="Optional path to parse_imdb_actor.py (defaults to project root).",
+        default=PARSING_DIR / "parse_imdb_actor.py",
+        help="Optional path to parse_imdb_actor.py (defaults to scripts/parsing/).",
     )
     parser.add_argument(
         "--output-dir",
@@ -259,19 +264,19 @@ def main() -> int:
     parser.add_argument(
         "--actors-root",
         type=Path,
-        default=PROJECT_ROOT / "extractor" / "movies" / "actors",
+        default=REPO_ROOT / "extractor" / "movies" / "actors",
         help="Root directory that holds actor folders (used with --all-actors).",
     )
     parser.add_argument(
         "--stats-xlsx",
         type=Path,
-        default=PROJECT_ROOT / "actor_stats.xlsx",
+        default=REPORTS_STATS / "actor_stats.xlsx",
         help="Path to the Excel file that will store per-actor statistics.",
     )
     parser.add_argument(
         "--error-log",
         type=Path,
-        default=PROJECT_ROOT / "actor_errors.txt",
+        default=REPO_ROOT / "actor_errors.txt",
         help="Path to the text file that will capture failures.",
     )
     parser.add_argument(

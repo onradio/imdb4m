@@ -150,8 +150,15 @@ def print_results(results: dict):
 
 
 def main():
-    # Path to the KG file
-    kg_file = Path(__file__).parent / "data" / "kg" / "imdb_kg_cleaned.ttl"
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import KG_DIR
+
+    kg_file = KG_DIR / "imdb_kg_cleaned.ttl"
     
     # Count properties
     results = count_kg_properties(str(kg_file))

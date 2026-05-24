@@ -435,10 +435,21 @@ def generate_report(movies_dir: str, output_file: str):
     print(f"\nDetailed report saved to: {output_file}")
 
 
-if __name__ == "__main__":
-    # Path configuration
-    MOVIES_DIR = "/home/ioannis/PycharmProjects/imdb4m/data/movies"
-    OUTPUT_FILE = "/home/ioannis/PycharmProjects/imdb4m/modality_availability_report.xlsx"
+def main():
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR, REPORTS_STATS
+
+    MOVIES_DIR = str(DATA_DIR / "movies")
+    OUTPUT_FILE = str(REPORTS_STATS / "modality_availability_report.xlsx")
     
     generate_report(MOVIES_DIR, OUTPUT_FILE)
+
+
+if __name__ == "__main__":
+    main()
 

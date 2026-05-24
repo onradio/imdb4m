@@ -613,7 +613,15 @@ def build_and_prune(source_dir: Path, output_dir: Path, output_name: str = "imdb
 
 
 def main():
-    project_root = Path(__file__).parent
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR, KG_DIR, REPO_ROOT
+
+    project_root = REPO_ROOT
     parser = argparse.ArgumentParser(description="Analyze the IMDB4M knowledge graph.")
     parser.add_argument(
         "--kg",

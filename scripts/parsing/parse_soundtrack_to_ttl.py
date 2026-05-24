@@ -8,12 +8,17 @@ import os
 import re
 import json
 import html
+import sys
 from pathlib import Path
 from bs4 import BeautifulSoup
 from typing import Dict, List, Tuple, Optional, Set
 from dataclasses import dataclass, field
 
-from soundtrack_property_mapping import (
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
+from scripts.parsing.soundtrack_property_mapping import (
     PROPERTY_MAPPING,
     COMPOUND_ROLES,
     normalize_label,
@@ -403,6 +408,13 @@ def process_soundtrack_file(html_path: Path, output_dir: Optional[Path] = None) 
 def main():
     """Main function to process all soundtrack HTML files."""
     import argparse
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPO_ROOT
     
     parser = argparse.ArgumentParser(
         description='Parse IMDb soundtrack HTML files and generate TTL files'
@@ -410,7 +422,7 @@ def main():
     parser.add_argument(
         '--input-dir',
         type=Path,
-        default=Path('/home/ioannis/PycharmProjects/imdb4m/extractor/movies'),
+        default=REPO_ROOT / "extractor" / "movies",
         help='Base directory containing movie folders'
     )
     parser.add_argument(

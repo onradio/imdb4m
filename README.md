@@ -26,9 +26,6 @@
 [Usage](#-usage) •
 [Media Downloader](#media-downloader) •
 [Embeddings](#-embeddings) •
-[Embedding Quality](#-embedding-quality) •
-[KG Analysis](#-knowledge-graph-analysis) •
-[Validation](#-validation--evaluation) •
 [Citation](#-citation)
 
 </div>
@@ -58,6 +55,20 @@ The knowledge graph integrates:
 - **Disk-aligned KG with Embedding Pointers**: The released `data/kg/imdb_kg_cleaned.ttl` is one-for-one aligned with the embedding rows on Zenodo via `imdb4m:hasEmbedding` records
 
 ---
+
+### Comparison with Related Work
+
+| Dataset | Text | Image | Video | Audio | #Entity | #Relation |
+|---------|------|-------|-------|-------|---------|-----------|
+| MKG-W | 14,123 | 14,463 | – | – | 15,000 | 169 |
+| MKG-Y | 12,305 | 14,244 | – | – | 15,000 | 28 |
+| TIVA-KG | 11,858 | 11,636 | 10,269 | 2,441 | 11,858 | 16 |
+| KVC16K | 14,822 | 14,822 | 14,822 | 14,822 | 16,015 | 4 |
+| **IMDB4M** | **392,035** | **34,039** | **3,981** | **4,521** | **656,121** | **58** |
+
+---
+
+
 
 ## ✨ Features
 
@@ -96,7 +107,7 @@ The knowledge graph integrates:
 
 ### 📈 Modality Coverage (Seed Movies, KG-derived)
 
-All values below are computed directly from `data/kg/imdb_kg_cleaned.ttl` by `modality_count_from_cleaned_kg.py` and match the paper's Table 5 verbatim. "Coverage" is the number of seed movies (those carrying at least one `schema:abstract` literal) that also assert at least one triple of the corresponding modality. "Avg. per movie" is the per-modality element count obtained by traversing seed-movie URIs together with the directly attached blank nodes and media objects (reviews, performance roles, recordings, image/video objects); the cleaned KG contains both `https://www.imdb.com/title/tt…` and `…/tt…/` URI variants for some movies, which are unioned by `tt` ID to avoid double-counting.
+All values below are computed directly from `data/kg/imdb_kg_cleaned.ttl` by `scripts/analysis/modality_count_from_cleaned_kg.py` and match the paper's Table 5 verbatim. "Coverage" is the number of seed movies (those carrying at least one `schema:abstract` literal) that also assert at least one triple of the corresponding modality. "Avg. per movie" is the per-modality element count obtained by traversing seed-movie URIs together with the directly attached blank nodes and media objects (reviews, performance roles, recordings, image/video objects); the cleaned KG contains both `https://www.imdb.com/title/tt…` and `…/tt…/` URI variants for some movies, which are unioned by `tt` ID to avoid double-counting.
 
 | Modality | Coverage | Avg. per Seed Movie | Seed-set Total |
 |----------|----------|--------------------:|---------------:|
@@ -224,15 +235,28 @@ imdb4m/
 ├── 📂 QA/                           # Competency questions, gold answers, and
 │                                    # the QA evaluator (see Validation below)
 │
-├── 📜 parse_imdb_movie.py          # HTML → RDF parser (movies)
-├── 📜 parse_imdb_actor.py          # HTML → RDF parser (actors)
-├── 📜 parse_soundtrack_to_ttl.py   # Soundtrack → RDF parser
-├── 📜 analyze_kg.py                # KG statistics & analysis
-├── 📜 count_kg_properties.py       # Predicate / type frequency report
-├── 📜 modality_count_movies.py     # Per-movie modality coverage
-├── 📜 modality_count_actors.py     # Per-actor modality coverage
-├── 📜 count_youtube_links.py       # Soundtrack ↔ YouTube link counter
-├── 📜 create_sameas_mappings.py    # Wikidata linking
+├── 📂 scripts/                      # Standalone analysis & utility scripts
+│   ├── paths.py                     # Shared REPO_ROOT / path constants
+│   ├── parsing/                     # HTML → RDF parsers
+│   │   ├── parse_imdb_movie.py
+│   │   ├── parse_imdb_actor.py
+│   │   └── parse_soundtrack_to_ttl.py
+│   ├── analysis/                    # KG statistics & modality coverage
+│   │   ├── analyze_kg.py
+│   │   ├── count_kg_properties.py
+│   │   ├── modality_count_movies.py
+│   │   ├── modality_count_actors.py
+│   │   └── count_youtube_links.py
+│   ├── wikidata/
+│   │   └── create_sameas_mappings.py
+│   ├── embeddings/
+│   │   └── verify_embeddings_output.py
+│   └── runners/                     # Batch parser runners
+│
+├── 📂 reports/                      # Generated Excel reports & stats
+│   ├── stats/                       # Parser / modality statistics
+│   └── validation/                  # Human-validated QA spreadsheets
+│
 └── 📜 requirements.txt             # Python dependencies
 ```
 
@@ -377,10 +401,10 @@ for row in g.query(query):
 
 ```bash
 # Parse a movie HTML file
-python parse_imdb_movie.py path/to/movie.html -o output.ttl
+python scripts/parsing/parse_imdb_movie.py path/to/movie.html -o output.ttl
 
 # Parse soundtrack data
-python parse_soundtrack_to_ttl.py path/to/soundtrack.html
+python scripts/parsing/parse_soundtrack_to_ttl.py path/to/soundtrack.html
 ```
 
 ### Neuro-Symbolic Audio Linker
@@ -556,7 +580,7 @@ IMDB4M includes `owl:sameAs` mappings to Wikidata for enhanced interoperability 
 
 Generate mappings:
 ```bash
-python create_sameas_mappings.py
+python scripts/wikidata/create_sameas_mappings.py
 ```
 
 ---
@@ -583,19 +607,6 @@ IMDB4M ships pre-computed embeddings for **every released modality** (image, vid
 | Audio | 4,034 | 512 | [`laion/larger_clap_music_and_speech`](https://huggingface.co/laion/larger_clap_music_and_speech) | Soundtrack tracks resolved to YouTube |
 | Text | 4,216 | 1,024 | [`BAAI/bge-large-en-v1.5`](https://huggingface.co/BAAI/bge-large-en-v1.5) | `schema:abstract`, `schema:description`, `schema:reviewBody`, `schema:caption` |
 | KG (RotatE) | 139,465 | 512 (real, from 256-d complex) | `pykeen/rotate/imdb4m-full-d256` | All KG `URIRef` entities |
-
-### Held-out KG Variants
-
-To support clean classification benchmarks, RotatE is additionally trained with specific label predicates removed before training. Held-out predicates are listed below; the all-labels run held out 66,838 triples (1,731,988 used for training).
-
-| Variant | Held-out predicate(s) | Purpose |
-|---|---|---|
-| `full` | none | KG retrieval, projections, and KG-inclusive fusion |
-| `genre` | `schema:genre` | Clean genre classification |
-| `rating` | `schema:contentRating` | Clean rating classification |
-| `decade` | `schema:datePublished` | Clean decade classification |
-| `language` | `schema:inLanguage` | Clean language classification |
-| `all-labels` | the four above, jointly | Stricter robustness setting |
 
 ### Storage Format
 
@@ -669,17 +680,6 @@ SELECT ?movie ?poster ?row WHERE {
 }
 ```
 
-### Alignment Guarantee
-
-Every row in the released parquet files has a matching subject in `data/kg/imdb_kg_cleaned.ttl`.
-
-| Modality | Parquet rows | KG references | Orphans | Missing |
-|---|---:|---:|---:|---:|
-| Image | 33,247 | 33,247 | 0 | 0 |
-| Video | 4,350 | 4,350 | 0 | 0 |
-| Audio | 4,034 | 357 entities | 0 | 3 entities* |
-
-\* Three movies assert ≥1 soundtrack track in the KG but the track lacks a resolvable YouTube URL and was therefore not embedded.
 
 ### Download from Zenodo
 
@@ -698,7 +698,7 @@ pip install zenodo_get
 zenodo_get 10.5281/zenodo.20057840 -o embeddings_output/
 
 # Sanity-check that everything is in place
-python verify_embeddings_output.py
+python scripts/embeddings/verify_embeddings_output.py
 ```
 
 Once `embeddings_output/` is populated, the rest of the project (KG
@@ -718,38 +718,6 @@ release-bundle layout.
 > models / hyper-parameters used to produce the released vectors.
 
 ---
-
-## 📐 Embedding Quality
-
-The `plots/embedding_projections.py` pipeline measures how well each modality (and several fusion strategies) recovers KG-derived labels for the 352-movie multimodal intersection. Headline numbers from [plots/out/tab_fusion_metrics.tex](plots/out/tab_fusion_metrics.tex), evaluated with leave-one-out **NCC accuracy**:
-
-| Modality / Fusion | Decade (5 classes) | Rating (4 classes) | Genre (9 classes) |
-|---|---:|---:|---:|
-| Random baseline | 20.0% | 25.0% | 11.1% |
-| Poster (CLIP ViT-L/14) | 77.6% | 61.2% | 37.5% |
-| Trailer (X-CLIP) | 44.6% | 56.9% | 30.1% |
-| Soundtrack (CLAP) | 34.9% | 29.5% | 13.8% |
-| KG (RotatE, label-held-out) | 38.4% | 48.0% | 25.8% |
-| Text balanced avg. (BGE) | 40.3% | 64.3% | 50.1% |
-| Fused, late, poster-weighted (2:1:1:1:1) | **65.6%** | **63.7%** | **42.7%** |
-| Fused, supervised CV late | **80.0%** ± 4.2 | **61.6%** ± 2.2 | **57.4%** ± 6.0 |
-
-Visualisations (UMAP / t-SNE 2-D projections per modality, qualitative top-5 retrieval grids, intra-movie consistency plots) and the full numerical breakdown live under [plots/out/](plots/out/), described in [plots/EMBEDDING_VIZ.md](plots/EMBEDDING_VIZ.md).
-
-> **Caveat:** the language-classification numbers are reported in the appendix only — ~94 % of the pool is English, so minority centroids are unreliable.
-
----
-
-## 📈 Knowledge Graph Analysis
-
-```bash
-# Analyse the released KG (no files are written)
-python analyze_kg.py                                  # defaults to data/kg/imdb_kg_cleaned.ttl
-python analyze_kg.py --kg path/to/other.ttl          # analyse a different KG file
-
-# Legacy mode: rebuild the cleaned KG from the per-entity TTL corpus
-python analyze_kg.py --build --source-dir data/movies --output-dir data/kg
-```
 
 ### Entity Type Distribution
 
@@ -804,18 +772,13 @@ The graph below is the directed multigraph induced by all `(subject, predicate, 
 | Movies with a single actor (`schema:performerIn`) | 1 | residual edge case from the cleanup pipeline |
 | Orphan movies (single actor + minimal info) | 0 | the disk-alignment pipeline removes them |
 
-These statistics are produced by `analyze_kg.py` (analyse-only mode) in roughly 70 seconds on a single core. The full output, including a breakdown of movies by actor count and the top-15 predicate / type distributions, is printed to stdout.
+These statistics are produced by `scripts/analysis/analyze_kg.py` (analyse-only mode) in roughly 70 seconds on a single core. The full output, including a breakdown of movies by actor count and the top-15 predicate / type distributions, is printed to stdout.
 
 
 ---
-
-## 📊 Validation & Evaluation
-
-IMDB4M includes a comprehensive validation framework combining SPARQL-based question answering, KG-wide competency-question coverage, and human-validated link verification.
-
 ### Validation Results
 
-The headline metrics come from `QA/evaluate_qa.py` (a `QA/qa_kg.json` ↔ `QA/QA_gold.json` comparison over 18 competency questions × 20 sample movies = 360 question instances). The query-success rate is computed by re-running each SPARQL pattern over **all 376 seed movies** in `data/kg/imdb_kg_cleaned.ttl` (so 6,768 total question instances, of which 6,720 return at least one answer). The YouTube-link accuracy is the human-validated agreement rate from `soundtrack_links.xlsx` (148 validated links, 129 confirmed correct).
+The headline metrics come from `QA/evaluate_qa.py` (a `QA/qa_kg.json` ↔ `QA/QA_gold.json` comparison over 18 competency questions × 20 sample movies = 360 question instances). The query-success rate is computed by re-running each SPARQL pattern over **all 376 seed movies** in `data/kg/imdb_kg_cleaned.ttl` (so 6,768 total question instances, of which 6,720 return at least one answer). The YouTube-link accuracy is the human-validated agreement rate from `reports/validation/soundtrack_links.xlsx` (148 validated links, 129 confirmed correct).
 
 | Metric | Value | Source |
 |--------|------:|--------|
@@ -825,7 +788,7 @@ The headline metrics come from `QA/evaluate_qa.py` (a `QA/qa_kg.json` ↔ `QA/QA
 | Exact Match Rate | 94.72% | `QA/evaluate_qa.py` |
 | Avg. Levenshtein Similarity | 0.993 | `QA/evaluate_qa.py` |
 | Query Success Rate (KG-wide) | 99.29% | 6,720 / 6,768 question instances over 376 seeds |
-| YouTube Link Accuracy | 87.16% | `soundtrack_links.xlsx` (129/148 human-validated) |
+| YouTube Link Accuracy | 87.16% | `reports/validation/soundtrack_links.xlsx` (129/148 human-validated) |
 
 ### Running Evaluation
 
@@ -834,7 +797,7 @@ The headline metrics come from `QA/evaluate_qa.py` (a `QA/qa_kg.json` ↔ `QA/QA
 python QA/evaluate_qa.py            # writes QA/evaluation_results.csv
 
 # KG-wide graph + RDF statistics (analyse-only, no writes)
-python analyze_kg.py                # reads data/kg/imdb_kg_cleaned.ttl
+python scripts/analysis/analyze_kg.py                # reads data/kg/imdb_kg_cleaned.ttl
 ```
 
 ### 18 Competency Questions (SPARQL Queries)
@@ -866,26 +829,7 @@ The per-question precision / recall / F1 against the gold-standard sample (20 mo
 
 ---
 
-## 🎯 Applications
 
-IMDB4M enables research across multiple domains:
-
-### 🎥 Movie Recommendation
-- Content-based recommendation using visual style of posters and acoustic features of soundtracks
-- Extract audio embeddings from linked YouTube videos
-- Temporal visual features from trailers for queries like "find movies with high-paced action sequences and electronic scores"
-
-### 🔍 Multimodal Question Answering
-- Knowledge Graph Question Answering (KGQA) with perceptual grounding
-- Multimodal RAG systems answering "Who is the actor shown in this scene, and what other movies have they directed?"
-- Complex queries involving reified relations ("Who played character X in movie Y?")
-
-### 🧩 Multimodal Knowledge Graph Completion
-- **Link Prediction**: Infer `schema:genre` from poster and plot using the released image and KG embeddings
-- **Entity Alignment**: Cross-platform alignment via visual similarity of actor portraits and `imdb4m:hasEmbedding` pointers
-- **KG Embeddings**: Use the released RotatE vectors directly, or fine-tune them with multimodal features (image / video / audio / text) using the held-out variants for a clean evaluation
-
----
 
 ## 🤝 Contributing
 
@@ -932,32 +876,10 @@ The embedding bundle is archived separately on Zenodo and should be cited via it
 }
 ```
 
-### Comparison with Related Work
-
-| Dataset | Text | Image | Video | Audio | #Entity | #Relation |
-|---------|------|-------|-------|-------|---------|-----------|
-| MKG-W | 14,123 | 14,463 | – | – | 15,000 | 169 |
-| MKG-Y | 12,305 | 14,244 | – | – | 15,000 | 28 |
-| TIVA-KG | 11,858 | 11,636 | 10,269 | 2,441 | 11,858 | 16 |
-| KVC16K | 14,822 | 14,822 | 14,822 | 14,822 | 16,015 | 4 |
-| **IMDB4M** | **392,035** | **34,039** | **3,981** | **4,521** | **656,121** | **58** |
-
----
-
-## 🙏 Acknowledgments
-
-- **IMDb** for movie metadata
-- **Wikidata** for entity linking
-- **Schema.org** for vocabulary standards
-- **YouTube Data API** for video linking
-- **Google Gemini** for intelligent matching
-
----
 
 <div align="center">
 
 **[⬆ Back to Top](#-imdb4m)**
 
-Made with ❤️ for the Semantic Web community
 
 </div>

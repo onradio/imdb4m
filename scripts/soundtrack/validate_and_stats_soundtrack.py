@@ -371,6 +371,13 @@ def print_summary(stats_list: List[SoundtrackStats]):
 def main():
     """Main function."""
     import argparse
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPO_ROOT, REPORTS_VALIDATION
     
     parser = argparse.ArgumentParser(
         description='Validate soundtrack TTL files and generate statistics'
@@ -378,13 +385,13 @@ def main():
     parser.add_argument(
         '--input-dir',
         type=Path,
-        default=Path('/home/ioannis/PycharmProjects/imdb4m/extractor/movies'),
+        default=REPO_ROOT / "extractor" / "movies",
         help='Base directory containing movie folders'
     )
     parser.add_argument(
         '--output',
         type=Path,
-        default=Path('/home/ioannis/PycharmProjects/imdb4m/soundtrack_stats.xlsx'),
+        default=REPORTS_VALIDATION / "soundtrack_stats.xlsx",
         help='Output Excel file path'
     )
     

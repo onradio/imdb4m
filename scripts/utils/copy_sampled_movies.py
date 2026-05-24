@@ -40,10 +40,17 @@ def copy_movie_directory(source_dir: Path, dest_dir: Path, movie_id: str) -> boo
 
 
 def main():
-    # Paths
-    csv_path = Path('extractor/movie_seeds/sampled_movies.csv')
-    source_movies_dir = Path('extractor/movies')
-    dest_dir = Path('sampled_movies')
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPO_ROOT
+
+    csv_path = REPO_ROOT / "extractor" / "movie_seeds" / "sampled_movies.csv"
+    source_movies_dir = REPO_ROOT / "extractor" / "movies"
+    dest_dir = REPO_ROOT / "sampled_movies"
     
     # Read movie IDs from CSV
     print(f"Reading movie IDs from {csv_path}...")

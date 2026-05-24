@@ -76,8 +76,15 @@ def count_youtube_links(movies_dir: str) -> dict:
 
 
 def main():
-    # Path to the movies directory
-    movies_dir = Path(__file__).parent / 'data' / 'movies'
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR
+
+    movies_dir = DATA_DIR / "movies"
     
     print(f"Scanning movies directory: {movies_dir}")
     print("-" * 60)

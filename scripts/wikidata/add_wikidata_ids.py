@@ -67,8 +67,15 @@ def query_wikidata_by_imdb_id(imdb_id: str) -> Tuple[Optional[str], Optional[str
 
 
 def main():
-    # Load the Excel file
-    input_file = "movie_stats.xlsx"
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPORTS_STATS
+
+    input_file = REPORTS_STATS / "movie_stats.xlsx"
     print(f"Loading {input_file}...")
     df = pd.read_excel(input_file)
     

@@ -52,9 +52,16 @@ def find_all_movie_ttl_files(base_dir: str) -> list[Path]:
 
 
 def main():
-    # Paths
-    sparql_file = '/home/ioannis/PycharmProjects/imdb4m/QA/sparql_queries.txt'
-    movies_dir = '/home/ioannis/PycharmProjects/imdb4m/data/movies'
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR, REPO_ROOT
+
+    sparql_file = str(REPO_ROOT / "QA" / "sparql_queries.txt")
+    movies_dir = str(DATA_DIR / "movies")
     
     # Parse queries
     print("Parsing SPARQL queries...")

@@ -62,11 +62,17 @@ def sample_movies(movies: List[Dict[str, str]], required_movies: List[Dict[str, 
 
 
 def main():
-    # Set random seed for reproducibility (optional)
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPO_ROOT
+
     random.seed(42)
     
-    # Define CSV files
-    csv_dir = Path('extractor/movie_seeds')
+    csv_dir = REPO_ROOT / "extractor" / "movie_seeds"
     csv_files = [
         csv_dir / 'Movie, Release date between 1980-01-01 and 1990-12-31, IMDb ratings between 7 and 10, Number of votes at least 100000 (Sorted by User rating Descending).csv',
         csv_dir / 'Movie, Release date between 1990-01-01 and 2000-12-31, IMDb ratings between 7 and 10, Number of votes at least 100000 (Sorted by User rating Descending).csv',

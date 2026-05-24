@@ -28,9 +28,15 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
 import pandas as pd
 from rdflib import BNode, Graph, Literal, Namespace, URIRef
 from tqdm import tqdm
+
+from scripts.paths import DATA_DIR, KG_DIR, REPORTS_STATS
 
 SCHEMA = Namespace("http://schema.org/")
 
@@ -56,9 +62,10 @@ VIDEO_PREDICATES = {SCHEMA.trailer, SCHEMA.video}
 AUDIO_PREDICATES = {SCHEMA.audio}
 
 
-REPO_ROOT = Path(__file__).parent
-TTL_PATH = REPO_ROOT / "data" / "kg" / "imdb_kg_cleaned.ttl"
-MOVIES_DIR = REPO_ROOT / "data" / "movies"
+from scripts.paths import DATA_DIR, KG_DIR, REPORTS_STATS
+
+TTL_PATH = KG_DIR / "imdb_kg_cleaned.ttl"
+MOVIES_DIR = DATA_DIR / "movies"
 ACTORS_DIR = MOVIES_DIR / "actors"
 
 
@@ -235,7 +242,7 @@ def main() -> int:
     summarise("MOVIES", movies_df, with_audio=True, n_seed=len(movie_ids))
     summarise("ACTORS", actors_df, with_audio=False, n_seed=len(actor_ids))
 
-    out = REPO_ROOT / "modality_counts_from_cleaned_kg.xlsx"
+    out = REPORTS_STATS / "modality_counts_from_cleaned_kg.xlsx"
     with pd.ExcelWriter(out, engine="openpyxl") as w:
         movies_df.to_excel(w, sheet_name="Movies", index=False)
         actors_df.to_excel(w, sheet_name="Actors", index=False)

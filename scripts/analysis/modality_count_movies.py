@@ -175,8 +175,15 @@ def analyze_movie(movie_dir: Path) -> Optional[dict]:
 
 
 def main():
-    # Path to movies directory
-    movies_dir = Path(__file__).parent / "data" / "movies"
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import DATA_DIR, REPORTS_STATS
+
+    movies_dir = DATA_DIR / "movies"
     
     if not movies_dir.exists():
         print(f"Error: Movies directory not found: {movies_dir}")
@@ -306,7 +313,7 @@ def main():
     df_output = df[column_order]
     
     # Save to Excel
-    output_file = Path(__file__).parent / "modality_counts_movies.xlsx"
+    output_file = REPORTS_STATS / "modality_counts_movies.xlsx"
     
     with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
         # Write summary sheet

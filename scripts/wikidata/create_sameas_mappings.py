@@ -103,11 +103,17 @@ def process_actors(df: pd.DataFrame, graph: Graph) -> tuple[int, int]:
 
 
 def main():
-    # Define file paths
-    base_path = Path(__file__).parent
-    movie_stats_file = base_path / "movie_stats.xlsx"
-    actor_stats_file = base_path / "actor_stats.xlsx"
-    output_file = base_path / "KG" / "sameas_mappings.ttl"
+    import sys
+    from pathlib import Path
+
+    _repo = Path(__file__).resolve().parents[2]
+    if str(_repo) not in sys.path:
+        sys.path.insert(0, str(_repo))
+    from scripts.paths import REPO_ROOT, REPORTS_STATS
+
+    movie_stats_file = REPORTS_STATS / "movie_stats.xlsx"
+    actor_stats_file = REPORTS_STATS / "actor_stats.xlsx"
+    output_file = REPO_ROOT / "KG" / "sameas_mappings.ttl"
     
     # Create KG directory if it doesn't exist
     output_file.parent.mkdir(parents=True, exist_ok=True)
